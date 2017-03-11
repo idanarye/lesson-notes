@@ -1,0 +1,2419 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+הנושא מתחיל עם המשוואה 
+\begin_inset Formula $x^{2}+1=0$
+\end_inset
+
+ שאין לה פתרון בממשיים.
+ ניסוח אחר - לפולינום 
+\begin_inset Formula $P\left(x\right)=x^{2}+1$
+\end_inset
+
+ אין שורשים ממשיים.
+\end_layout
+
+\begin_layout Standard
+המציאו "מספר דמיוני" 
+\begin_inset Formula $i=\sqrt{-1}$
+\end_inset
+
+ שפותר את המשוואה.
+\end_layout
+
+\begin_layout Standard
+אבל יש עוד פולינומים ללא שורשים ממשיים, למשל 
+\begin_inset Formula $P\left(x\right)=x^{2}+9$
+\end_inset
+
+.
+ אומרים שיש לו שורש 
+\begin_inset Formula $3i$
+\end_inset
+
+ ואז
+\begin_inset Formula 
+\[
+\left(3i\right)\left(3i\right)=3i3i=3\cdot3\cdot i\cdot i=9\cdot\left(-1\right)=-9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה: 
+\begin_inset Formula $P\left(x\right)=x^{2}+4x+8$
+\end_inset
+
+.
+ השורשים הם לכאורה
+\begin_inset Formula 
+\[
+x=\cfrac{-4\pm\sqrt{16-32}}{2}=\cfrac{-4\pm\sqrt{-16}}{2}\overset{?}{=}\cfrac{-4\pm4i}{2}=-2\pm2i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המספרים האלה נקראים "מרוכבים".
+ ז.א., מספרים מהסוג 
+\begin_inset Formula $a+bi,a,b\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח שהם מקיימים את המשוואה 
+\begin_inset Formula $x^{2}+4x+8=0$
+\end_inset
+
+ נצטרך להפעיל את כל כללי האריתמטיקה במספרים הממשיים.
+\end_layout
+
+\begin_layout Paragraph
+ובכן
+\end_layout
+
+\begin_layout Standard
+הגדירו את המספרים המרוכבים 
+\begin_inset Formula $\mathbb{C}=\left\{ a+bi\middle|a,b\in\mathbb{R}\right\} $
+\end_inset
+
+ והוכיחו שהוא "שדה", ז.א.
+ יש ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ חיבור, חיסור, כפל וחילוק עם כל הכללים הרגילים.
+\end_layout
+
+\begin_layout Paragraph
+בפרט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\begin{array}{c}
+z=a+bi\\
+w=c+di
+\end{array}$
+\end_inset
+
+ 
+\bar under
+מגדירים
+\bar default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\begin{array}{c}
+z+w=\left(a+c\right)+\left(b+d\right)i\\
+zw=\left(ac-bd\right)+\left(ad+bc\right)i
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+היחידה לחיבור היא 
+\begin_inset Formula $0=0+0i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+היחידה לגבי כפל היא 
+\begin_inset Formula $1=1+0i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעצם, 
+\begin_inset Formula $\mathbb{R}\subset\mathbb{C}$
+\end_inset
+
+.
+ באופן טבעי: אם 
+\begin_inset Formula $z=a+bi\in\mathbb{C}$
+\end_inset
+
+ ואם 
+\begin_inset Formula $b=0$
+\end_inset
+
+ אז למעשה 
+\begin_inset Formula $z$
+\end_inset
+
+ ממשי.
+ לכן 
+\begin_inset Formula $0,1$
+\end_inset
+
+ שתי דוגמאות של מספרים ממשיים בתוך 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+לגבי חילוק
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $w\neq0$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\cfrac{z}{w}=\cfrac{a+bi}{c+di}=\cfrac{a+bi}{c+di}\cfrac{c-di}{c-di}=\cfrac{ac+bd}{c^{2}+d^{2}}+\cfrac{bc-ad}{c^{2}+d^{2}}i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרות נוספות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a$
+\end_inset
+
+ נקרא החלק הממשי של 
+\begin_inset Formula $z$
+\end_inset
+
+, מסומן 
+\begin_inset Formula $a=\textnormal{Re }z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b$
+\end_inset
+
+ נקרא החלק המדומה של 
+\begin_inset Formula $z$
+\end_inset
+
+, מסומן 
+\begin_inset Formula $b=\textnormal{Im }z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+"הצמוד של 
+\begin_inset Formula $z$
+\end_inset
+
+" הוא 
+\begin_inset Formula $\bar{z}=a-bi$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+תכונות של הצמוד:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{z\pm w}=\bar{z}\pm\bar{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{zw}=\bar{z}\bar{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{\left(\cfrac{z}{w}\right)}=\cfrac{\bar{z}}{\bar{w}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{\left(z^{n}\right)}=\bar{z}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z+\bar{z}=2\textnormal{Re }z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z-\bar{z}=2i\textnormal{Im }z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{\left(\bar{z}\right)}=z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z\in\mathbb{R}\Leftrightarrow z=\bar{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=-\bar{z}$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $z$
+\end_inset
+
+ "מדומה טהור"
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אפשר להכליל את הכללים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2,3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לסכומים ומכפלות של הרבה מספרים)אבר רק לסכומים ומכפלות סופיים(
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\sum\limits _{k=0}^{n}a_{k}x^{k}=P\left(x\right)$
+\end_inset
+
+ פולינום ממשי.
+ ז.א.
+ כל ה
+\begin_inset Formula $\mathbb{R}\ni a_{kj}$
+\end_inset
+
+.
+ ונניח של
+\begin_inset Formula $P$
+\end_inset
+
+ קיים שורש מרוכב.
+ ז"א קיים 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+.
+ אזי גם 
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הנתון אומר 
+\begin_inset Formula $0=P\left(z\right)=\sum\limits _{k=0}^{n}a_{k}z^{k}$
+\end_inset
+
+.
+ "נצמיד": 
+\begin_inset Formula 
+\[
+0=\bar{0}=\overline{P\left(z\right)}=\overline{\sum\limits _{k=0}^{n}a_{k}z^{k}}=\sum_{k=0}^{n}\overline{a_{k}z^{k}}=\sum_{k=0}^{n}\overline{a_{k}}\overline{z^{k}}=\sum_{k=0}^{n}a_{k}\overline{z^{k}}=\sum_{k=0}^{n}a_{k}\bar{z}^{k}=P\left(\bar{z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המישור המרוכב
+\end_layout
+
+\begin_layout Standard
+במישור רגיל עם צירים 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ נתאים לנקודה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ את המספר 
+\begin_inset Formula $z=x+yi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+ להיות המרחק מ
+\begin_inset Formula $z$
+\end_inset
+
+ ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במישור המרוכב.
+ ז.א.
+\begin_inset Formula 
+\[
+\left|z\right|=\sqrt{a^{2}+b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שתמיד 
+\begin_inset Formula $z\cdot\bar{z}=\left(a+bi\right)\left(a-bi\right)=a^{2}+b^{2}=\left|z\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תכונות של ערך מוחלט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $z,w\in\mathbb{C}$
+\end_inset
+
+, אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|zw\right|=\left|z\right|\left|w\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\cfrac{z}{w}\right|=\cfrac{\left|z\right|}{\left|w\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אי שוויון המשולש: 
+\begin_inset Formula $\left|z+w\right|\le\left|z\right|+\left|w\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|z-w\right|\ge\left|z\right|-\left|w\right|$
+\end_inset
+
+)גירסה שנייה לאי שוויון המשולש(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|zw\right|^{2}=\left(zw\right)\overline{\left(zw\right)}=\left(zw\right)\left(\bar{z}\bar{w}\right)=z\bar{z}w\bar{w}=\left|z\right|^{2}\left|w\right|^{2}$
+\end_inset
+
+ ששקול לתכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\cfrac{z}{w}\right|^{2}=\left(\cfrac{z}{w}\right)\overline{\left(\cfrac{z}{w}\right)}=\left(\cfrac{z}{w}\right)\left(\cfrac{\bar{z}}{\bar{w}}\right)=\cfrac{z\bar{z}}{w\bar{w}}=\cfrac{\left|z\right|^{2}}{\left|w\right|^{2}}$
+\end_inset
+
+ ששקול לתכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+הוכחה גיאומטרית - בונים משולש.
+ 
+\begin_inset Formula $\left|z+w\right|$
+\end_inset
+
+= אורך צלע אחת
+\begin_inset Formula $\ge$
+\end_inset
+
+סכום שתי צלעות = 
+\begin_inset Formula $\left|z\right|+\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+הוכחה אנליטית:
+\end_layout
+
+\begin_layout Standard
+נסתמך על דבר פשוט: אם 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|\textnormal{Re }z\right|\le\left|z\right|$
+\end_inset
+
+)כי אם 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|\textnormal{Re }z\right|=\left|a\right|=\sqrt{a^{2}}\le\sqrt{a^{2}+b^{2}}=\left|z\right|$
+\end_inset
+
+(.
+ כעת נוכיח את התכונה:
+\begin_inset Formula 
+\[
+\left|z+w\right|^{2}=\left(z+w\right)\left(\bar{z}+\bar{w}\right)=z\bar{z}+z\bar{w}+w\bar{z}+w\bar{w}=\left|z\right|^{2}+z\bar{w}+\overline{z\bar{w}}+\left|w\right|^{2}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|z\right|^{2}+z\textnormal{Re}\left(z\bar{w}\right)+\left|w\right|^{2}\le\left|z\right|^{2}+2\left|z\bar{w}\right|+\left|w\right|^{2}=\left|z\right|^{2}+2\left|z\right|\left|\bar{w}\right|+\left|w\right|^{2}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|z\right|^{2}+2\left|z\right|\left|w\right|+\left|w\right|^{2}=\left(\left|z\right|+\left|w\right|\right)^{2}
+\]
+
+\end_inset
+
+וזה שקול לתכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נרשום 
+\begin_inset Formula $z=\left(z-w\right)+w$
+\end_inset
+
+.
+ לפי תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\begin_inset Formula 
+\[
+\left|z\right|\le\left|z-w\right|+\left|w\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|z\right|-\left|w\right|\le\left|z-w\right|
+\]
+
+\end_inset
+
+ע"פ סימטריות:
+\begin_inset Formula 
+\[
+\left|w\right|-\left|z\right|\le\left|w-z\right|=\left|z-w\right|
+\]
+
+\end_inset
+
+נובע:
+\begin_inset Formula 
+\[
+\left|\left|z\right|-\left|w\right|\right|\le\left|z-w\right|
+\]
+
+\end_inset
+
+וזה תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+הכללה של אי שוויון המשולש:
+\begin_inset Formula 
+\[
+\left|\sum_{k=1}^{n}z_{k}\right|\le\sum_{k=1}^{n}\left|z_{k}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הצגה קטבית)פולארית( של מספרים מרוכבים
+\end_layout
+
+\begin_layout Standard
+נחזור למישור המרוכב:
+\begin_inset Formula 
+\[
+z=x+iy
+\]
+
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $r$
+\end_inset
+
+ את המרחק מהראשית, וב
+\begin_inset Formula $\theta$
+\end_inset
+
+ את הזוית מציר ה
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x=r\cos\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=r\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=x+iy=r\cos\theta+ir\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=r\left(\cos\theta+i\sin\theta\right)
+\]
+
+\end_inset
+
+בקיצור:
+\begin_inset Formula 
+\[
+z=r\textnormal{cis}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r$
+\end_inset
+
+=מרחק מאפס=
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\theta$
+\end_inset
+
+ נקרא הזוית של 
+\begin_inset Formula $z$
+\end_inset
+
+ או הארגומנט של 
+\begin_inset Formula $z$
+\end_inset
+
+, מסומן 
+\begin_inset Formula $\theta=\arg z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r$
+\end_inset
+
+ מוגדר באופן חד משמעי, אבל בגלל מחזוריות 
+\begin_inset Formula $\textnormal{cis}\left(\theta\right)=\textnormal{cis}\left(\theta+2\pi\right)=\textnormal{cis}\left(\theta+2k\pi\right)$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ ז.א.
+ לאותו 
+\begin_inset Formula $z$
+\end_inset
+
+ אפשר להתאים 
+\begin_inset Formula $\infty$
+\end_inset
+
+ זויות.
+\end_layout
+
+\begin_layout Standard
+כדי לקבל ערך אחד ויחיד ל
+\begin_inset Formula $\arg z$
+\end_inset
+
+ אפשר להגביל אותו.
+ ובכן, יש מגדירים את הערך העיקרי או הענף העיקרי של 
+\begin_inset Formula $\arg z$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\textnormal{Arg}z$
+\end_inset
+
+ כאשר מוסכם
+\begin_inset Formula 
+\[
+-\pi<\textnormal{Arg}z\le\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{Argz}$
+\end_inset
+
+ זו פונקציה של 
+\begin_inset Formula $z$
+\end_inset
+
+)ז.א.
+ חד-משמעית( אבל היא לא רציפה כי היא קופצת 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ בבת אחת בקרן השמאלית של ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\lang english
+Great moments in mathematics
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+z_{1}=r_{1}\textnormal{cis}\theta_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{2}=r_{2}\textnormal{cis}\theta_{2}
+\]
+
+\end_inset
+
+ונכפיל:
+\begin_inset Formula 
+\[
+z_{1}z_{2}=r_{1}\left(\cos\theta_{1}+i\sin\theta_{1}\right)\cdot r_{2}\left(\cos\theta_{2}+i\sin\theta_{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=r_{1}f_{2}\left(\cos\theta_{1}\cos\theta_{2}-\sin\theta_{1}\sin\theta_{2}+i\left(\sin\theta_{1}\cos\theta_{2}+\sin\theta_{2}\cos\theta_{1}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=r_{1}r_{2}\left(\cos\left(\theta_{1}+\theta_{2}\right)+i\sin\left(\theta_{1}+\theta_{2}\right)\right)=r_{1}r_{2}\textnormal{cis}\left(\theta_{1}+\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ז.א.:
+\begin_inset Formula 
+\[
+\left|z_{1}z_{2}\right|=r_{1}r_{2}=\left|z_{1}\right|\left|z_{2}\right|
+\]
+
+\end_inset
+
+)שכבר הוכחנו!(
+\begin_inset Formula 
+\[
+\arg\left(z_{1}z_{2}\right)=\arg z_{1}+\arg z_{2}
+\]
+
+\end_inset
+
+זה בעצם שוויון של קבוצות.
+ לכל אגף יש 
+\begin_inset Formula $\infty$
+\end_inset
+
+ ערכים והם אותם הערכים.
+\end_layout
+
+\begin_layout Standard
+לגבי 
+\begin_inset Formula $\textnormal{Arg}z$
+\end_inset
+
+, אין שוויון ממש אלא
+\begin_inset Formula 
+\[
+\textnormal{Arg}\left(z_{1}z_{2}\right)=\textnormal{Arg}z_{1}+\textnormal{Arg}z_{2}\textnormal{ mod }2\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאת חישוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{1}=z_{2}=-i
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|z_{1}\right|=\left|z_{2}\right|=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Arg}z_{1}=\textnormal{Arg}z_{2}=-\cfrac{\pi}{2}
+\]
+
+\end_inset
+
+כי חייבים לבחור 
+\begin_inset Formula $\textnormal{Arg}z$
+\end_inset
+
+ בין 
+\begin_inset Formula $-\pi$
+\end_inset
+
+ ל
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+z_{1}z_{2}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Arg}\left(z_{1}z_{2}\right)=\textnormal{Arg}\left(-1\right)=\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Arg}z_{1}+\textnormal{Arg}z_{2}=\cfrac{-\pi}{2}+\cfrac{-\pi}{2}=-\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שוויון רק מודולו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+ראינו
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z_{1}=r_{1}\textnormal{cis}\theta_{1},z_{2}=r_{2}\textnormal{cis}\theta_{2}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $z_{1}z_{2}=r_{1}r_{2}\textnormal{cis}\left(\theta_{1}+\theta_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+חילוק
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\cfrac{z_{1}}{z_{2}}=\cfrac{r_{1}\textnormal{cis}\theta_{1}}{r_{2}\textnormal{cis}\theta_{2}}
+\]
+
+\end_inset
+
+נעיר:
+\begin_inset Formula 
+\[
+\bar{z}_{2}=r_{2}\textnormal{cis}\left(-\theta_{2}\right)
+\]
+
+\end_inset
+
+כי
+\begin_inset Formula 
+\[
+r_{2}\textnormal{cis}\left(-\theta_{2}\right)=r_{2}\left(\cos\left(-\theta_{2}\right)+i\sin\left(-\theta_{2}\right)\right)=r_{2}\left(\cos\theta_{2}-i\sin\theta_{2}\right)=\bar{z}_{2}
+\]
+
+\end_inset
+
+לפי זה:
+\begin_inset Formula 
+\[
+\cfrac{z_{1}}{z_{2}}=\cfrac{r_{1}\textnormal{cis}\theta_{1}}{r_{2}\textnormal{cis}\theta_{2}}\cfrac{\cancel{r_{2}}\textnormal{cis}\left(-\theta_{2}\right)}{\cancel{r_{2}}\textnormal{cis}\left(-\theta_{2}\right)}=\cfrac{r_{1}\textnormal{cis}\left(\theta_{1}-\theta_{2}\right)}{r_{2}\textnormal{cis}\left(\theta_{2}-\theta_{2}\right)}=\cfrac{r_{1}}{r_{2}}\textnormal{cis}\left(\theta_{1}-\theta_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הכללה
+\end_layout
+
+\begin_layout Standard
+למכפלה 
+\begin_inset Formula $z_{1}\cdot z_{2}\cdots z_{n}$
+\end_inset
+
+ מכפילים את הערכים המוחלטים ומחזירים את הזויות.
+ ז.א., אם לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $z_{k}=r_{k}\textnormal{cis}\left(\theta_{k}\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+z_{1}z_{2}\cdots z_{n}=r_{1}r_{2}\cdots r_{n}\textnormal{cis}\left(\theta_{1}+\theta_{2}+...+\theta_{n}\right)
+\]
+
+\end_inset
+
+ובפרט אם
+\begin_inset Formula 
+\[
+z=r\textnormal{cis}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{n}=r^{n}\textnormal{cis}\left(n\theta\right)
+\]
+
+\end_inset
+
+במקרה 
+\begin_inset Formula $r=1$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $\left(\textnormal{cis}\theta\right)^{n}=\textnormal{cis}\left(n\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ז.א.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\cos\theta+i\sin\theta\right)^{n}=\cos\left(n\theta\right)+i\sin\left(n\theta\right)
+\]
+
+\end_inset
+
+"נוסחת דה מואבר".
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+המציאו נוסחאות ל
+\begin_inset Formula $\cos30$
+\end_inset
+
+ ו
+\begin_inset Formula $\sin30$
+\end_inset
+
+ בעזרת דה מואבר.
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\left(30\right)+i\sin\left(30\right)=\left(\cos\theta+i\sin\theta\right)^{3}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cos^{3}\theta+3i\cos^{2}\theta\sin\theta+3\cos\theta\left(i\sin\theta\right)^{2}+\left(i\sin\theta\right)^{3}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos^{3}\theta-3\cos\theta\sin^{2}\theta+i\left(3\cos^{2}\theta\sin\theta-\sin^{3}\theta\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\cos\left(3\theta\right)=\cos^{3}\theta-3\cos\theta\sin^{2}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\left(3\theta\right)=3\cos^{2}\theta\sin\theta-\sin^{3}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שורשים של מספרים מרוכבים
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $z=r\textnormal{cis}\theta\in\mathbb{C}$
+\end_inset
+
+ ו
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ נחשב 
+\begin_inset Formula $\sqrt[n]{z}=z^{\unitfrac{1}{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ובכן: אם 
+\begin_inset Formula $w=r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $w^{n}=\left(r^{\unitfrac{1}{n}}\right)^{n}\textnormal{cis}\left(\cfrac{\theta}{n}\cdot n\right)=r\textnormal{cis}\theta=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל, לכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=r\textnormal{cis}\left(\theta\right)=r\textnormal{cis}\left(\theta+2\pi k\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+z^{\unitfrac{1}{n}}=r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}+\cfrac{2\pi k}{n}\right),\qquad k=0,1,2,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכאורה, יש כאן 
+\begin_inset Formula $\infty$
+\end_inset
+
+ שורשים מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אבל אינו כן, כי למשל אם 
+\begin_inset Formula $k=n$
+\end_inset
+
+ נקבל שורש
+\begin_inset Formula 
+\[
+r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}+\cfrac{2\pi n}{n}\right)=r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}+2\pi\right)=r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}\right)
+\]
+
+\end_inset
+
+שזה שווה לשורש הראשון)
+\begin_inset Formula $k=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+גם עבור 
+\begin_inset Formula $k>n$
+\end_inset
+
+ השורשים חוזרים על עצמם באופן מחזורי.
+ התוצאה היא שלכל 
+\begin_inset Formula $\mathbb{C}\ni z\neq0$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $n$
+\end_inset
+
+ שורשים מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{\unitfrac{1}{n}}=r^{\unitfrac{1}{n}}\textnormal{cis}\left(\cfrac{\theta}{n}+\cfrac{2\pi k}{n}\right),\qquad k=0,1,2,...n-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+נחשב את כל הערכים המרוכבים של 
+\begin_inset Formula $\sqrt[4]{-\sqrt{3}+i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $z=-\sqrt{3}+i$
+\end_inset
+
+.
+ תחילה נעביר אותו להצגה קטבית.
+\begin_inset Formula 
+\[
+r=\left|z\right|=\sqrt{\left(-\sqrt{3}\right)^{2}+1}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta=\arctan\unitfrac{y}{x}
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+z=2\textnormal{cis}\left(\cfrac{5\pi}{6}\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+z^{\unitfrac{1}{4}}=2^{\unitfrac{1}{4}}\textnormal{cis}\left(\cfrac{5\pi}{24}\right)=\sqrt[4]{2}\textnormal{cis}\left(\cfrac{5\pi}{24}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגילים נוספים
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\theta$
+\end_inset
+
+ כלשהו חשבו 
+\begin_inset Formula $\left|\textnormal{cis}\theta\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{cis}\theta=\cos\theta+i\sin\theta
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\left|\textnormal{cis}\right|=\sqrt{\cos^{2}\theta+\sin^{2}\theta}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הוכיחו ש
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\bar{z}=\unitfrac{1}{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|z\right|=1\Leftrightarrow\left|z\right|^{2}=1\Leftrightarrow z\bar{z}=1\Leftrightarrow\bar{z}=\unitfrac{1}{z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח ש
+\begin_inset Formula $a\in\mathbb{C}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbb{C}\ni z\neq a$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+.
+ הוכיחו: 
+\begin_inset Formula $\left|\cfrac{a-z}{1-\bar{a}z}\right|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $w=\cfrac{a-z}{1-\bar{a}z}$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\bar{w}=\unitfrac{1}{w}$
+\end_inset
+
+.
+ ובכן:
+\begin_inset Formula 
+\[
+\bar{w}=\overline{\left(\cfrac{a-z}{1-\bar{a}z}\right)}=\cfrac{\bar{a}-\bar{z}}{1-a\bar{z}}=\cfrac{\bar{a}-\unitfrac{1}{z}}{1-a\cdot\cfrac{1}{z}}=\cfrac{\bar{a}\cdot z-1}{z-a}=\cfrac{1}{w}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הערה - שימושים
+\end_layout
+
+\begin_layout Standard
+הגדרנו 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+= המרחק מהראשית.
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\left|z-w\right|$
+\end_inset
+
+=המרחק מ
+\begin_inset Formula $z$
+\end_inset
+
+ ל
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מעגל ברדיוס 
+\begin_inset Formula $r$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|=r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העיגול שבתוך המעגל מתואר ע"י
+\begin_inset Formula 
+\[
+\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|<r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+סדרות מרוכבות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ סדרה של מספרים מרוכבים, ויהי 
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $\lim\limits _{n\to\infty}=z_{0}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|z_{n}-z_{0}\right|<\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ z_{n}\right\} =\left\{ x_{n}+iy_{n}\right\} $
+\end_inset
+
+ סדרה מרוכבת, ותהי 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}\in\mathbb{C}$
+\end_inset
+
+.
+ אזי הטענות הבאות שקולות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}z_{n}=z_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}\left|z_{n}-z_{0}\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}x_{n}=x_{0}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\lim\limits _{n\to\infty}y_{n}=y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}\left(x_{n},y_{n}\right)=\left(x_{0},y_{0}\right)$
+\end_inset
+
+ במובן של התכנסות ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)אריתמטיקה של גבולות(
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\lim\limits _{n\to\infty}z_{n}=z_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $\lim\limits _{n\to\infty}w_{n}=w_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbb{C}\ni c$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}\left(z_{n}\pm w_{n}\right)=z_{0}\pm w_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}cz_{n}=cz_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{n\to\infty}z_{n}w_{n}=z_{0}w_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w_{0}\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{n\to\infty}\cfrac{z_{n}}{w_{n}}=\cfrac{z_{0}}{w_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פונקציות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+מוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)=z_{0}\left(\in\mathbb{C}\right)$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $0<\left|t-t_{0}\right|<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|z\left(t\right)-z_{0}\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $z\left(t\right)=x\left(t\right)+iy\left(t\right)$
+\end_inset
+
+ מוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}\in\mathbb{C}$
+\end_inset
+
+, אזי הטענות הבאות שקולות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)=z_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}\left|z\left(t\right)-z_{0}\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}x\left(t\right)=x_{0}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\lim\limits _{t\to t_{0}}y\left(t\right)\to y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל סדרה 
+\begin_inset Formula $t_{0}\neq t_{n}\to t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{n\to\infty}z\left(t_{n}\right)=z_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+)אריתמטיקה של גבולות(
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)=z_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $\lim\limits _{t\to t_{0}}w\left(t\right)=w_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $c\in\mathbb{C}$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)\pm w\left(t\right)=z_{0}\pm w_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}cz\left(t\right)=cz_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)w\left(t\right)=z_{0}w_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $w_{0}\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{t\to t_{0}}\cfrac{z\left(t\right)}{w\left(t\right)}=\cfrac{z_{0}}{w_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ מוגדרת בסביבה שלמה של 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ נאמר שהיא רציפה ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\lim\limits _{t\to t_{0}}z\left(t\right)=z\left(t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z\left(t\right)=x\left(t\right)+iy\left(t\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+רציפות ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יש אריתמטיקה: אם 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $w\left(t\right)$
+\end_inset
+
+ רציפות ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, אז 
+\begin_inset Formula $z\left(t\right)\pm w\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $cz\left(t\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $z\left(t\right)w\left(t\right)$
+\end_inset
+
+ רציפות ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $w\left(t_{0}\right)\neq0$
+\end_inset
+
+ גם 
+\begin_inset Formula $\cfrac{z\left(t\right)}{w\left(t\right)}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+נגזרות
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ מוגדרת בסביבת 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ ונגדיר
+\begin_inset Formula 
+\[
+z'\left(t_{0}\right)=\lim_{t\to t_{0}}\cfrac{z\left(t\right)-z\left(t_{0}\right)}{t-t_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z\left(t\right)=x\left(t\right)+iy\left(t\right)$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+z'\left(t_{0}\right)=\lim_{t\to t_{0}}\cfrac{x\left(t\right)+iy\left(t\right)-\left[x\left(t_{0}\right)+iy\left(t_{0}\right)\right]}{t-t_{0}}=\lim_{t\to t_{0}}\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}+i\cfrac{y\left(t\right)-y\left(t_{0}\right)}{t-t_{0}}=x'\left(t_{0}\right)+iy'\left(t_{0}\right)
+\]
+
+\end_inset
+
+בתנאי ש
+\begin_inset Formula $x'\left(t_{0}\right)$
+\end_inset
+
+ו
+\begin_inset Formula $y'\left(t_{0}\right)$
+\end_inset
+
+ שניהם קיימים.
+\end_layout
+
+\end_body
+\end_document

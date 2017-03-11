@@ -1,0 +1,739 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פתרון מערכת משוואות לינאריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ax=b
+\]
+
+\end_inset
+
+עבור מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+, רוצים למצוא בקלות את הפתרונות לכל 
+\begin_inset Formula $b$
+\end_inset
+
+ שיתנו לנו.
+ בשביל זה רוצים "לזכור" את התהליך של דירוג המטריצה, שכן הוא תלוי רק ב
+\begin_inset Formula $A$
+\end_inset
+
+ ולא ב
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשלב ה
+\begin_inset Formula $i$
+\end_inset
+
+ מאפסים את העמודה ה
+\begin_inset Formula $i$
+\end_inset
+
+.
+ לכן, למשל לפני השלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ המערכת 
+\begin_inset Formula $A^{\left(2\right)}x=b^{\left(2\right)}$
+\end_inset
+
+ תראה כך:
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{11}^{\left(1\right)} & a_{12}^{\left(1\right)} & \cdots & a_{1n}^{\left(1\right)}\\
+0 & a_{22}^{\left(2\right)} & \cdots & a_{22}^{\left(2\right)}\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & a_{n2}^{\left(2\right)} & \cdots & a_{nn}^{\left(2\right)}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשלב ה
+\begin_inset Formula $k$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A^{\left(k\right)}=\begin{pmatrix}a_{11}^{\left(1\right)} & a_{12}^{\left(1\right)} & \cdots & \cdots & \cdots & a_{1n}^{\left(1\right)}\\
+0 & a_{22}^{\left(2\right)} & \cdots & \cdots & \cdots & a_{22}^{\left(2\right)}\\
+\vdots & \vdots & \ddots & \ddots & \ddots & \vdots\\
+0 & \cdots & 0 & a_{kk}^{\left(k\right)} & \cdots & a_{kn}^{\left(k\right)}\\
+\vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\
+0 & \cdots & 0 & a_{nk}^{\left(k\right)} & \cdots & a_{nn}^{\left(k\right)}
+\end{pmatrix}
+\]
+
+\end_inset
+
+בכל איטרציה מקבלים סט חדש של משוואות, אבל למעשה הוא שקול לפי סט הפתרונות
+ שאמור להתקבל.
+\end_layout
+
+\begin_layout Standard
+ניתן לחשב מטריצת כופלים:
+\begin_inset Formula 
+\[
+m_{ik}=\cfrac{a_{ik}^{\left(k\right)}}{a_{kk}^{\left(k\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל שלב, כדי לעבור לסט המשוואות החדש, צריך לעדכן לכל 
+\begin_inset Formula $i,j=k+1,\dots n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{ij}^{\left(k+1\right)}=a_{ij}^{\left(k\right)}-m_{ik}\cdot a_{kj}^{\left(k\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{i}^{\left(k+1\right)}=b_{i}^{\left(k\right)}-m_{ik}\cdot b_{k}^{\left(k\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+השורות 
+\begin_inset Formula $i=1,\dots k$
+\end_inset
+
+ נותרות ללא שינוי - שכן לא נוגעים בהן בשלב הזה של דירוג)הן כבר מדורגות(
+\end_layout
+
+\begin_layout Itemize
+העמודות 
+\begin_inset Formula $j=1,\dots k$
+\end_inset
+
+ נותרות ללא שינוי - בעמודות האלה, בשורות שבהן כן נוגעים, יש רק אפסים, ולכן
+ מקבלים חיבור של אפסים והתוצאה נשארת אפס.
+\end_layout
+
+\begin_layout Itemize
+יוצא הדופן הוא 
+\begin_inset Formula $a_{kk}^{\left(k\right)}$
+\end_inset
+
+ - שתמיד יקבל אפס.
+\end_layout
+
+\begin_layout Standard
+בסוף כל התהליך מקבלים מטריצה משולשית עליונה 
+\begin_inset Formula $A^{\left(n\right)}$
+\end_inset
+
+ - כל מה שמתחת לאלכסון זה אפסים.
+ נסמן:
+\begin_inset Formula 
+\[
+U=A^{\left(n\right)}\qquad g=b^{\left(n\right)}
+\]
+
+\end_inset
+
+מהשלב הזה הפתרון מחושב בצורה קלה ע"י הצבה לאחור: אם יש לנו
+\begin_inset Formula 
+\[
+\begin{pmatrix}u_{11} & \cdots & u_{1n}\\
+\vdots & \ddots & \vdots\\
+u_{n1} & \cdots & u_{nn}
+\end{pmatrix}\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}=\begin{pmatrix}g_{1}\\
+\vdots\\
+g_{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+מתחילים לחשב מ
+\begin_inset Formula $x_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+u_{nn}x_{n}=g_{n}\Rightarrow\boxed{x_{n}=\cfrac{g_{n}}{u_{nn}}}
+\]
+
+\end_inset
+
+וממשיכים אחורה:
+\begin_inset Formula 
+\[
+u_{n-1,n-1}x_{n-1}+u_{n-1,n}x_{n}=g_{n-1}\Rightarrow\boxed{x_{n-1}=\cfrac{g_{n-1}-u_{n-1,n}x_{n}}{u_{n-1,n-1}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן הלאה, כל פעם מחשבים את 
+\begin_inset Formula $\boxed{x_{k}=\cfrac{g_{k}-\sum_{i=k+1}^{n}u_{ki}x_{i}}{u_{kk}}}$
+\end_inset
+
+, עד שמגיעים ל
+\begin_inset Formula $x_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+פירוק מטריצות למטריצות משולשיות)
+\lang english
+L U decomposition
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+בתהליך הזה קיבלנו מטריצה 
+\begin_inset Formula $U$
+\end_inset
+
+, שהיא המשולשית העליונה שנוצרה אחרי תהליך הדירוג.
+ בשביל לשמור אותה בזיכרון, מספיק לנו החצי הימני עליון של המטריצה - מה נעשה
+ עם החצי השמאלי תחתון?
+\end_layout
+
+\begin_layout Standard
+ניתן לאכסן שם את הכופלים 
+\begin_inset Formula $m_{ij}$
+\end_inset
+
+, ולקבל מטריצה
+\begin_inset Formula 
+\[
+L=\begin{pmatrix}1 & 0 & 0 & \cdots & 0\\
+m_{21} & 1 & 0 & \cdots & 0\\
+\vdots & \ddots & \ddots & \ddots & 0\\
+m_{n1} & m_{n2} & \cdots & m_{n,n-1} & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסתבר שהמטריצה המקורית שווה למכפלה של שני תוצרי הלואי:
+\begin_inset Formula 
+\[
+\boxed{A=L\cdot U}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(LU\right)_{ij}=\begin{pmatrix}m_{i1} & \cdots & m_{i,i-1} & 1 & 0 & \cdots & 0\end{pmatrix}\begin{pmatrix}u_{1j}\\
+\vdots\\
+u_{jj}\\
+0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+מבדילים בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שני מקרים: 
+\begin_inset Formula $i\le j$
+\end_inset
+
+ ו
+\begin_inset Formula $i>j$
+\end_inset
+
+, ורואים כי בשני המקרים 
+\begin_inset Formula $\left(LU\right)_{ij}=a_{ij}^{\left(1\right)}=a_{ij}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $LU=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det\left(A\right)=\det\left(LU\right)=\det\left(U\right)\cdot\det\left(L\right)
+\]
+
+\end_inset
+
+אבל הדטרמיננטה של מטריצה משולשית היא איברי האלכסון, ולכן
+\begin_inset Formula 
+\[
+\det\left(U\right)=\prod_{i=1}^{n}u_{ii}\qquad\det\left(L\right)=1
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\det\left(A\right)=\prod_{i=1}^{n}u_{ii}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משמעות מעשית
+\end_layout
+
+\begin_layout Standard
+נניח שפתרנו 
+\begin_inset Formula $A\cdot x=b$
+\end_inset
+
+ עבור 
+\begin_inset Formula $A,b$
+\end_inset
+
+ מסויימים.
+ זה אומר שכבר ידוע לנו הפירוק 
+\begin_inset Formula $A=L\cdot U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במידה ואנו נדרשים לפתור שוב את המערכת, עבור אותו 
+\begin_inset Formula $A$
+\end_inset
+
+ אבל 
+\begin_inset Formula $b$
+\end_inset
+
+ חדש, ניתן להשתמש ב
+\begin_inset Formula $L$
+\end_inset
+
+ ו
+\begin_inset Formula $U$
+\end_inset
+
+ כדי לקצר את התהליך:
+\begin_inset Formula 
+\[
+\left(L\cdot U\right)x=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(Ux\right)=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ux=b'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\cdot b'=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula $b$
+\end_inset
+
+ ידוע, ו
+\begin_inset Formula $L$
+\end_inset
+
+ משולשית תחתונה וגם ידועה, ולכן ניתן לבצע הצבה לפנים כדי למצוא את 
+\begin_inset Formula $b'$
+\end_inset
+
+.
+ כעת חוזרים ל
+\begin_inset Formula $Ux=b'$
+\end_inset
+
+, ומכיוון שגם 
+\begin_inset Formula $U$
+\end_inset
+
+ כבר ידועה והיא משולשית עליונה, ניתן לבצע הצבה לאחור ולמצוא את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+סיבוכיות
+\end_layout
+
+\begin_layout Itemize
+באיטרציה הראשונה, דבר ראשון צריך למצוא 
+\begin_inset Formula $n-1$
+\end_inset
+
+ כופלים - אלו 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פעולות חילוק.
+ לאחר מכן צריך לבצע 
+\begin_inset Formula $n\left(n-1\right)$
+\end_inset
+
+ פעולות כפל וחיסור)על כל שורה צריך לעשות 
+\begin_inset Formula $n$
+\end_inset
+
+ מכפלות ו
+\begin_inset Formula $n$
+\end_inset
+
+ חיסורים)העמודה הראשונה רק אפסים, אבל מחשבים גם על 
+\begin_inset Formula $b$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+באיטרציה ה
+\begin_inset Formula $k$
+\end_inset
+
+ צריך לבצע 
+\begin_inset Formula $n-k$
+\end_inset
+
+ פעולות חילוק כדי למצוא 
+\begin_inset Formula $n-k$
+\end_inset
+
+ כופלים.
+ עם כל כופל)כלומר לכל שורה( מבצעים 
+\begin_inset Formula $n-k+1$
+\end_inset
+
+ פעולות כפל וחיסור, ויש 
+\begin_inset Formula $n-k$
+\end_inset
+
+ שורות, וסה"כ 
+\begin_inset Formula $\left(n-k+1\right)\left(n-k\right)$
+\end_inset
+
+ פעולות.
+\end_layout
+
+\begin_layout Standard
+מספר הפעולות הכולל:
+\end_layout
+
+\begin_layout Itemize
+מספר פעולות חילוק:
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n-1}\left(n-k\right)=\sum_{i=1}^{n-1}i=\cfrac{1}{2}n\left(n-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מספר פעולות הכפל/חיסור:
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n-1}\left(n-k\right)\left(n-k+1\right)=\sum_{i=1}^{n-1}i\left(i+1\right)=\cfrac{1}{3}n\left(n^{2}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה"כ, לפתרון המערכת דרושות 
+\begin_inset Formula $\cfrac{2n^{3}}{3}+\cfrac{n^{2}}{2}-\cfrac{7n}{6}$
+\end_inset
+
+ פעולות - כלומר סדר הגודל של הסיבוכיות הוא 
+\begin_inset Formula $\theta\left(n^{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לאחר מכן יש לבצע הצבה לאחור - אבל סדר הגודל של זה הוא 
+\begin_inset Formula $\theta\left(n^{2}\right)$
+\end_inset
+
+, אז זה לא משפיע על סדר הגודל של הסיבוכיות.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם יש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ ווקטורי 
+\begin_inset Formula $b$
+\end_inset
+
+ שונים, ונרצה לחשב את הפתרונות לכולם מההתחלה - זה סדר גודל של 
+\begin_inset Formula $\theta\left(n^{4}\right)$
+\end_inset
+
+.
+ לעומת זאת, אם מבצעים פירוק 
+\begin_inset Formula $LU$
+\end_inset
+
+ אז מבצעים פעם אחת את הפירוק ב
+\begin_inset Formula $\theta\left(n^{3}\right)$
+\end_inset
+
+, ואז מוצאים את כל הפתרונות לכל ווקטורי ה
+\begin_inset Formula $b$
+\end_inset
+
+ ב
+\begin_inset Formula $\theta\left(n^{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שימוש - מציאת מטריצה הופכית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\cdot X=I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ax^{1}=e_{1},Ax^{2}=e_{2},\dots Ax^{n}=e_{n}
+\]
+
+\end_inset
+
+כלומר היפוך מטריצה הוא פתרון של 
+\begin_inset Formula $n$
+\end_inset
+
+ מערכות עם אותו 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $b$
+\end_inset
+
+ים שונים.
+\end_layout
+
+\end_body
+\end_document

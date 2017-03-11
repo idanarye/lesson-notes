@@ -1,0 +1,1153 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+גאומטריה דיפרנציאלית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אתר
+\begin_inset space ~
+\end_inset
+
+הקורס
+\series default
+: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.math-wiki.com/index.php?title=88-201_%D7%AA%D7%A9%D7%A2%D7%92_%D7%A1%D7%
+9E%D7%A1%D7%98%D7%A8_%D7%91
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מתרגל
+\series default
+: מיכאל טויטו
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוא"ל
+\series default
+: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+mtwito101@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מטרת הקורס
+\end_layout
+
+\begin_layout Standard
+להשתמש בכליפ של אינפי)נגזרת ואינטגרל( בכדי לחקור אובייקטים גיאומטריים, כגון
+ עקומות ומשטחים.
+\end_layout
+
+\begin_layout Standard
+ככל הנראה לא נהיה קפדניים במיוחד בהוכחות.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+עקום ז'ורדן ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ הוא עקום סגור שאינו חותך על עצמו)חוץ בנקודת החיבור(
+\end_layout
+
+\begin_layout Standard
+משפט ז'ורדן קובע שכל עקום ז'ורדן מחלק את המישור לשתי קבוצות - 
+\emph on
+פנים
+\emph default
+ ו
+\emph on
+חוץ
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+משפט אי השוויון האיזופרימטרי
+\end_layout
+
+\begin_layout Standard
+יהי עקום ז'ורדן ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, בעל אורך 
+\begin_inset Formula $L$
+\end_inset
+
+, הכולא שטח 
+\begin_inset Formula $A$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\left(\frac{L}{2\pi}\right)^{2}-\frac{A}{\pi}\ge0
+\]
+
+\end_inset
+
+שקול:
+\begin_inset Formula 
+\[
+L^{2}-4\pi A\ge0
+\]
+
+\end_inset
+
+שוויון מתקיים אם"ם העקום הוא מעגל.
+\end_layout
+
+\begin_layout Standard
+נגדיר את המנה האיזופרימטרית:
+\begin_inset Formula 
+\[
+Q=\frac{4\pi A}{L^{2}}
+\]
+
+\end_inset
+
+אי השוויון אומר 
+\begin_inset Formula $Q\le1$
+\end_inset
+
+, ויש שוויון אם"ם מדובר במעגל.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו את המנה האיזופרימטרית עבור מלבן צר וארוך.
+ כלומר מלבן עם צלעות 
+\begin_inset Formula $h,\frac{1}{h}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=h\cdot\frac{1}{h}=1\qquad L=2h+2\cdot\frac{1}{h}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q=\frac{4\pi\cdot1}{\left(2h+2\frac{1}{h}\right)^{2}}=\frac{4\pi}{4h^{2}+8+\frac{4}{h^{2}}}=\frac{4\pi h^{2}}{4h^{4}+8h^{2}+4}
+\]
+
+\end_inset
+
+אם נשאיף את 
+\begin_inset Formula $h$
+\end_inset
+
+ ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל 
+\begin_inset Formula 
+\[
+\frac{4\pi^{2}}{4\pi^{4}+8h^{2}+4}\xrightarrow{h\to0}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q$
+\end_inset
+
+ יכול להיות קטן ככל שנרצה.
+\end_layout
+
+\begin_layout Part*
+סימוני איינשטיין
+\end_layout
+
+\begin_layout Section*
+וקטורים
+\end_layout
+
+\begin_layout Standard
+וקטור ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ מוצג כצירוף לינארי של וקטורי בסיס.
+ את וקטורי הבסיס נסמן עם אינדקס תחתון: 
+\begin_inset Formula $e_{1},e_{2},\dots e_{n}$
+\end_inset
+
+.
+ את הקואורדינטות של וקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ נסמן עם אינדקס עליון
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נראה כמו חזקה - אבל זה לא חזקה!
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+v=v^{1}e_{1}+v^{2}e_{2}+\cdots+v^{n}e_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פונקציונאלים
+\end_layout
+
+\begin_layout Standard
+עבור פונקציונאלים 
+\begin_inset Formula $\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ ההפך נכון: לוקטורי הבסיס ניתן אינדקס עליון 
+\begin_inset Formula $e^{1},e^{2},\dots e^{n}$
+\end_inset
+
+ ולקואורדינטות אינדקס תחתון:
+\begin_inset Formula 
+\[
+f=f_{1}e^{1}+f_{2}e^{2}+\cdots+f_{n}e^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציונאלים נקראים גם 
+\emph on
+קו-וקטורים
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+סימון איינשטיין
+\end_layout
+
+\begin_layout Standard
+אם בביטוי מופיע אותו האינדקס גם למעלה וגם למטה.
+ יש לסכום על כל הערכים של אינדקס זה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+בקצרה
+\series default
+: משמיטים את ה
+\begin_inset Formula $\sum$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $v\in\mathbb{R}^{3}$
+\end_inset
+
+, נחליף את הרישום
+\begin_inset Formula 
+\[
+v=v^{1}e_{1}+v^{2}e_{2}+v^{3}e_{3}=\sum_{i=1}^{3}v^{i}e_{i}=v^{i}e_{i}
+\]
+
+\end_inset
+
+ברור ש
+\begin_inset Formula $i$
+\end_inset
+
+ רץ בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי מדובר במרחב תלת מימדי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימון איינשטיין עוזר לרשום נוסחאות מסובכות יותר בקצרה:
+\end_layout
+
+\begin_layout Subsection*
+מטריצות
+\end_layout
+
+\begin_layout Standard
+מטריצה 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ תסומן 
+\begin_inset Formula $A_{\hspace{4bp}j}^{i}$
+\end_inset
+
+ או 
+\begin_inset Formula $a_{\hspace{4bp}j}^{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i$
+\end_inset
+
+ הוא אינדקס השורה והוא למעלה )בד"כ(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $j$
+\end_inset
+
+ הוא אינדקס העמודה והוא למטה )בד"כ(
+\end_layout
+
+\begin_layout Standard
+בניגוד לאלגברה לינארית, שם רשמנו 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ או 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הצדקה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\underset{n\times n}{A}\cdot\underset{n\times1}{u}=\underset{n\times1}{v}$
+\end_inset
+
+ מהי הנוסחה לרכיבי 
+\begin_inset Formula $v$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\begin{pmatrix}A_{\hspace{4bp}1}^{1} & A_{\hspace{4bp}2}^{1} & \cdots & A_{\hspace{4bp}n}^{1}\\
+A_{\hspace{4bp}1}^{2} & A_{\hspace{4bp}2}^{2} & \cdots & A_{\hspace{4bp}n}^{2}\\
+\vdots & \vdots & \ddots & \vdots\\
+A_{\hspace{4bp}1}^{i} & A_{\hspace{4bp}2}^{i} & \cdots & A_{\hspace{4bp}n}^{i}\\
+\vdots & \vdots & \ddots & \vdots\\
+A_{\hspace{4bp}1}^{i} & A_{\hspace{4bp}2}^{i} & \cdots & A_{\hspace{4bp}n}^{i}
+\end{pmatrix}\begin{pmatrix}u^{1}\\
+u^{2}\\
+\vdots\\
+u^{i}\\
+\vdots\\
+u^{n}
+\end{pmatrix}=\begin{pmatrix}v^{1}\\
+v^{2}\\
+\vdots\\
+v^{i}\\
+\vdots\\
+v^{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v^{i}=A_{\hspace{4bp}1}^{i}u^{1}+A_{\hspace{4bp}2}^{i}u^{2}+\cdots+A_{\hspace{4bp}n}^{i}u^{n}=\xcancel{\sum_{j}}A_{\hspace{4bp}j}^{i}u^{j}=A_{\hspace{4bp}j}^{i}u^{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle e_{i},e_{j}\right\rangle =\begin{cases}
+0 & i\neq j\\
+1 & i=j
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left\{ e_{i}\right\} _{i=1}^{3}$
+\end_inset
+
+ בסיס אורתונורמלי עבור 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $\begin{array}{c}
+u=u^{i}\\
+v=v^{i}
+\end{array}$
+\end_inset
+
+ וקטורים.
+ מצא נוסחה למכפלה הסקלרית 
+\begin_inset Formula $u\cdot v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\cdot v=\left\langle u,v\right\rangle =u^{1}v^{1}+u^{2}v^{2}+u^{3}v^{3}=\sum_{i=1}^{3}u^{i}v^{i}\neq\begin{array}{c}
+u^{i}v_{i}\\
+u_{i}v^{i}
+\end{array}
+\]
+
+\end_inset
+
+אי אפשר להוריד את אחד האינדקסים - כי 
+\begin_inset Formula $u,v$
+\end_inset
+
+ הם וקטורים, לא קו-וקטורים.
+ לכן נשתמש בדלטה של קרונקר: 
+\begin_inset Formula $\delta_{ij}=\delta_{\hspace{4bp}j}^{i}=\delta_{j}^{\hspace{4bp}i}=\begin{cases}
+1 & i=j\\
+0 & i\neq j
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{rcll}
+\delta_{ij}u^{i}v^{j}=\sum_{i=1}^{3}\sum_{j=1}^{3}\delta_{ij}u^{i}v^{j} & = & \delta_{11}u^{1}v^{1}+\xcancel{\delta_{12}u^{1}v^{2}}+\xcancel{\delta_{13}u^{1}v^{3}}\\
+ & + & \xcancel{\delta_{21}u^{2}v^{1}}+\delta_{22}u^{2}v^{2}+\xcancel{\delta_{23}u^{2}v^{3}}\\
+ & + & \xcancel{\delta_{31}u^{3}v^{1}}+\xcancel{\delta_{32}u^{3}v^{2}}+\delta_{33}u^{3}v^{3} & =u^{1}v^{1}+u^{2}v^{2}+u^{3}v^{3}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+למה 
+\begin_inset Formula $u\cdot v\neq\delta_{ij}u^{i}v^{i}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+אינדקס שלא סוכמים עליו נקרא 
+\emph on
+אינדקס חופשי
+\emph default
+.
+ בנוסחה למעלה 
+\begin_inset Formula $j$
+\end_inset
+
+ חופשי.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שפעולת כפל מטריצות היא אסוציאטיבית, כלומר 
+\begin_inset Formula $A\cdot\left(B\cdot C\right)=\left(A\cdot B\right)\cdot C$
+\end_inset
+
+, בעזרת סימוני איינשטיין.
+\end_layout
+
+\begin_layout Subsection*
+הקדמה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M,N\in\mathbb{R}^{n\times n}$
+\end_inset
+
+, מיהו 
+\begin_inset Formula $\left(M\cdot N\right)_{\hspace{4bp}j}^{i}$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\left(M\cdot N\right)_{\hspace{4bp}j}^{i}=R_{i}\left(M\right)\cdot C_{j}\left(N\right)=\sum_{k=1}^{n}M_{\hspace{4bp}k}^{i}N_{\hspace{4bp}j}^{k}=M_{\hspace{4bp}k}^{i}N_{\hspace{4bp}j}^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $i,j$
+\end_inset
+
+ הם אינדקסים חופשיים כאן, ו
+\begin_inset Formula $k$
+\end_inset
+
+ אינדקס רץ.
+\end_layout
+
+\begin_layout Subsection*
+פתרון התרגיל
+\end_layout
+
+\begin_layout Standard
+נוכיח שוויון בכל רכיב)
+\begin_inset Formula $ij$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\left[A\cdot\left(B\cdot C\right)\right]_{\hspace{4bp}j}^{i}=A_{\hspace{4bp}k}^{i}\left(B\cdot C\right)_{\hspace{4bp}j}^{k}=A_{\hspace{4bp}k}^{i}\left(B_{\hspace{4bp}l}^{k}C_{\hspace{4bp}j}^{l}\right)=\left(A_{\hspace{4bp}k}^{i}B_{\hspace{4bp}l}^{k}\right)C_{\hspace{4bp}j}^{l}=\left(AB\right)_{\hspace{4bp}l}^{i}\cdot C_{\hspace{4bp}j}^{l}=\left[\left(A\cdot B\right)\cdot C\right]_{\hspace{4bp}j}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i,j$
+\end_inset
+
+ הם אינדקסים חופשיים, ו
+\begin_inset Formula $k,l$
+\end_inset
+
+ אינדקסים רצים.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{\hspace{4bp}k}^{i}\left(B_{\hspace{4bp}l}^{k}C_{\hspace{4bp}j}^{l}\right)=\left(A_{\hspace{4bp}k}^{i}B_{\hspace{4bp}l}^{k}\right)C_{\hspace{4bp}j}^{l}$
+\end_inset
+
+ בגלל האסוציאטיביות ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+וקטורים ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+)אצלנו בד"כ 
+\begin_inset Formula $n=2,3$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $u,v\in\mathbb{R}^{n}$
+\end_inset
+
+ מוגדרת המכפלה הסקלרית 
+\begin_inset Formula $u\cdot v$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+u\cdot v\equiv\left\langle u,v\right\rangle :=u^{1}v^{1}+u^{2}v^{2}+\cdots+u^{n}v^{n}=\sum_{i=1}^{n}u^{i}v^{i}\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+: זה מספר! לא וקטור!
+\end_layout
+
+\begin_layout Standard
+נוסחה גיאומטרית:
+\begin_inset Formula 
+\[
+u\cdot v=\left\Vert u\right\Vert \cdot\left\Vert v\right\Vert \cdot\cos\theta
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא הזווית בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\cdot v=0\iff u\perp v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\cdot v=v\cdot u$
+\end_inset
+
+ - סימטריות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\cdot\left(v+w\right)=u\cdot v+u\cdot w$
+\end_inset
+
+ - פילוג
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתונים 
+\begin_inset Formula $u=\begin{pmatrix}1\\
+3\\
+-5
+\end{pmatrix},v=\begin{pmatrix}4\\
+-2\\
+-1
+\end{pmatrix}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+u\cdot v=1\cdot4+3\cdot\left(-2\right)+\left(-5\right)\cdot\left(-1\right)=4-6+5=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $u,v\in\mathbb{R}^{3}$
+\end_inset
+
+ מוגדרת המכפלה הוקטורים ע"י
+\begin_inset Formula 
+\[
+u\times v=\begin{vmatrix}e_{1} & e_{2} & e_{3}\\
+u^{1} & u^{2} & u^{3}\\
+v^{1} & v^{2} & v^{3}
+\end{vmatrix}=\left(u^{2}v^{3}-u^{3}v^{2}\right)e_{1}+\left(u^{3}v^{1}-u^{1}v^{3}\right)e_{2}+\left(u^{1}v^{2}-u^{2}v^{1}\right)e_{3}\in\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+: זה וקטור! לא מספר כמו קודם!
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Enumerate
+שטח המקבילית הנתפשת ע"י 
+\begin_inset Formula $u,v$
+\end_inset
+
+=
+\begin_inset Formula $\left\Vert u\times v\right\Vert =\left\Vert u\right\Vert \cdot\left\Vert v\right\Vert \sin\theta$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ הזוית בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\times v$
+\end_inset
+
+ מאונך ל
+\begin_inset Formula $u$
+\end_inset
+
+ וגם ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+ זה משאיר שתי אופציות.
+ הכיוון נקבע ע"י כלל יד ימין:
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection*
+כלל יד ימין
+\end_layout
+
+\begin_layout Standard
+אם האצבע המורה ביד ימין היא בכיוון 
+\begin_inset Formula $u$
+\end_inset
+
+ והאמה היא בכיוון 
+\begin_inset Formula $v$
+\end_inset
+
+, אזי האגודל מצביע בכיוון של 
+\begin_inset Formula $u\times v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לחלופין אפשר לסובב את האצבעות מ
+\begin_inset Formula $u$
+\end_inset
+
+ אל 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u\times v=-\left(v\times u\right)$
+\end_inset
+
+ - אנטי-סימטריות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\times\left(v+w\right)=u\times v+u\times w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\times\left(b\times c\right)+b\times\left(c\times a\right)+c\times\left(a\times b\right)=0$
+\end_inset
+
+ - זהות יעקובי
+\end_layout
+
+\begin_layout Subsection*
+נוכיח את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נוכיח בעזרת חישוב מפורט:
+\begin_inset Formula 
+\[
+a=a^{i}\qquad b=b^{i}\qquad c=c^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b\times c=\begin{vmatrix}e_{1} & e_{2} & e_{3}\\
+b^{1} & b^{2} & b^{3}\\
+c^{1} & c^{2} & c^{3}
+\end{vmatrix}=\left(b^{2}c^{3}-b^{3}c^{2}\right)e_{1}+\left(b^{3}c^{1}-b^{1}c^{3}\right)e_{2}+\left(b^{1}c^{2}-b^{2}c^{1}\right)e_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\times\left(b\times c\right)=\begin{vmatrix}e_{1} & e_{2} & e_{3}\\
+a^{1} & a^{2} & a^{3}\\
+b^{2}c^{3}-b^{3}c^{2} & b^{3}c^{1}-b^{1}c^{3} & b^{1}c^{2}-b^{2}c^{1}
+\end{vmatrix}
+\]
+
+\end_inset
+
+וממשיכים...
+\end_layout
+
+\end_body
+\end_document

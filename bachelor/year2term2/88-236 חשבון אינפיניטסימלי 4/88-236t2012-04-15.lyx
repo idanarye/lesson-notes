@@ -1,0 +1,974 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בשיעור שעבר הגדרנו:
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+0
+\numeric off
+-תבנית דיפרנציאלית מעל 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+: שדה סקלרי 
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+1
+\numeric off
+-תבנית דיפרנציאלית מעל 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+: 
+\begin_inset Formula $P\mathrm{\, d}x+Q\mathrm{\, d}y+R\mathrm{\, d}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\numeric off
+-תבנית דיפרנציאלית מעל 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+: 
+\begin_inset Formula $P\mathrm{\, d}x\wedge\mathrm{d}y+Q\mathrm{\, d}y\wedge\mathrm{d}z+R\mathrm{\, d}z\wedge\mathrm{d}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+3
+\numeric off
+-תבנית דיפרנציאלית מעל 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+: 
+\begin_inset Formula $P\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסדר חשוב : 
+\begin_inset Formula $\xymatrix{\mathrm{d}x\ar[r] & \mathrm{d}y\ar[r] & \mathrm{d}z\ar@/_{1pc}/[ll]}
+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סימון
+\end_layout
+
+\begin_layout Standard
+אוסף כל התבניות הדיפרנציאליות ממעלה/דרגה/סדר 
+\begin_inset Formula $k$
+\end_inset
+
+/
+\begin_inset Formula $degree$
+\end_inset
+
+( ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ יסומן ע"י 
+\begin_inset Formula $\Omega^{k}\mathbb{R}^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+כפל וודג')
+\lang english
+wedge
+\lang hebrew
+( בין זוג תבניות דיפרנציאליות ממעלות 
+\begin_inset Formula $k$
+\end_inset
+
+ ו
+\begin_inset Formula $m$
+\end_inset
+
+ הוא תבנית דיפרנציאלית ממעלה 
+\begin_inset Formula $k+m$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\wedge:\Omega^{k}\left(\mathbb{R}^{3}\right)\times\Omega^{m}\left(\mathbb{R}^{3}\right)\to\Omega^{k+n}\left(\mathbb{R}^{3}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega\times\eta\mapsto\omega\wedge\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Standard
+מכפלת וודג' מקיימת את האקסיומות הבאות:
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+אסוציאטיביות
+\bar default
+: לכל 
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\alpha\wedge\beta\right)\wedge\gamma=\alpha\wedge\left(\beta\wedge\gamma\right)$
+\end_inset
+
+, ולכן אין צורך בסוגריים.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+בילינאריות
+\bar default
+: 
+\begin_inset Formula 
+\[
+\left(\omega_{1}+\omega_{2}\right)\wedge\eta=\omega_{1}\wedge\eta+\omega_{2}\wedge\eta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f\omega\right)\wedge\eta=f\left(\omega\wedge\eta\right)
+\]
+
+\end_inset
+
+זה נכון לכל התבניות הדיפרנציאליות 
+\begin_inset Formula $\omega_{1},\omega_{2},\omega,\eta$
+\end_inset
+
+ ולכל שדה סקלרי 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\omega\wedge\left(\eta_{1}+\eta_{2}\right)=\omega\wedge\eta_{1}+\omega\wedge\eta_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega\wedge\left(f\eta\right)=f\left(\omega\wedge\eta\right)
+\]
+
+\end_inset
+
+ה"סקלרים" כאן הם לא מספרים 
+\begin_inset Formula $"c"$
+\end_inset
+
+ אלא פונקציות סקלריות 
+\begin_inset Formula $"f"$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+אנטי-סימטריות
+\bar default
+: אם 
+\begin_inset Formula $\begin{array}{c}
+\deg\omega=k\\
+\deg\eta=m
+\end{array}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\omega\wedge\eta=\left(-1\right)^{km}\eta\wedge\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{d}x\wedge\mathrm{d}y=-\mathrm{d}y\wedge\mathrm{d}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{d}x\wedge\mathrm{d}y\wedge\mathrm{d}z=-\mathrm{d}x\wedge\mathrm{d}z\wedge\mathrm{d}y=\mathrm{d}z\wedge\mathrm{d}x\wedge\mathrm{d}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\omega$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית אזי 
+\begin_inset Formula $\omega\wedge\omega=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\deg\left(\mathrm{d}y\right)=\deg\left(\mathrm{d}x\right)=1$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\mathrm{d}x\wedge\mathrm{d}y=\left(-1\right)^{1\cdot1}\mathrm{d}y\wedge\mathrm{d}x=-\mathrm{d}y\wedge\mathrm{d}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+דומה ל)
+\numeric on
+1
+\numeric off
+(: עושים שני חילופים.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\deg\omega=1$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\omega\wedge\omega=-\omega\wedge\omega
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\omega\wedge\omega=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\omega\wedge\omega=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\omega=xy\mathrm{\, d}y\wedge\mathrm{d}z+x^{2}\mathrm{\, d}x\wedge\mathrm{d}y\\
+\eta=\mathrm{d}x+\mathrm{d}z
+\end{array}\right.$
+\end_inset
+
+.
+ חשב את 
+\begin_inset Formula $\omega\wedge\eta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega\wedge\eta=\left(xy\mathrm{\, d}y\wedge\mathrm{d}z+x^{2}\mathrm{\, d}x\mathrm{\, d}y\right)\wedge\left(\mathrm{d}x+\mathrm{d}z\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(xy\mathrm{\, d}y\wedge\mathrm{\, d}z\right)\wedge\mathrm{d}x+\underbrace{\xcancel{xy\mathrm{\, d}y\wedge\mathrm{d}z\wedge\mathrm{d}z}}_{=0}+\underbrace{\xcancel{x^{2}\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}x}}_{=0}+x^{2}\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=xy\mathrm{\, d}y\wedge\mathrm{d}z\wedge\mathrm{d}x+x^{2}\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z=\boxed{\left(xy+x^{2}\right)\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\omega=x^{2}\mathrm{\, d}z\\
+\eta=\sin x\mathrm{\, d}x+xy\mathrm{\, d}y+\mathrm{d}z
+\end{array}\right.$
+\end_inset
+
+.
+ חשב 
+\begin_inset Formula $\omega\wedge\eta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega\wedge\eta=\left(x^{2}\mathrm{\, d}z\right)\wedge\left(\sin x\mathrm{\, d}x+xy\mathrm{\, d}y+\mathrm{d}z\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(x^{2}\mathrm{\, d}z\right)\wedge\left(\sin x\mathrm{\, d}x\right)+\left(x^{2}\mathrm{\, d}z\right)\wedge\left(xy\mathrm{\, d}y\right)+\xcancel{\left(x^{2}\mathrm{\, d}z\right)\wedge\mathrm{d}z}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=x^{2}\sin x\mathrm{\, d}z\wedge\mathrm{d}x+x^{2}y\mathrm{\, d}z\wedge\mathrm{d}y=\boxed{x^{2}\sin x\mathrm{\, d}z\wedge\mathrm{d}x-x^{3}y\mathrm{\, d}y\wedge\mathrm{d}z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אוסף כל ה
+\begin_inset Formula $k$
+\end_inset
+
+-תבניות הדיפרנציאליות נקרא "אלגברה חיצונית"
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נגזרת חיצונית היא מיפוי בין 
+\begin_inset Formula $k$
+\end_inset
+
+-תבניות דיפרנציאליות ל
+\begin_inset Formula $\left(k+1\right)$
+\end_inset
+
+-תבניות דיפרנציאליות:
+\begin_inset Formula 
+\[
+\mathrm{d}:\Omega^{k}\left(\mathbb{R}^{n}\right)\to\Omega^{k+1}\left(\mathbb{R}^{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+-תבנית)שדה סקלרי( 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}f$
+\end_inset
+
+ מוגדר ע"י 
+\begin_inset Formula $\mathrm{d}f=\cfrac{\partial f}{\partial x}\mathrm{d}x+\cfrac{\partial f}{\partial y}\mathrm{d}y+\cfrac{\partial f}{\partial z}\mathrm{d}z$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+]ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ עם קואורדינטות 
+\begin_inset Formula $\left(x_{1},\dots x_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}f=\cfrac{\partial f}{\partial x_{1}}\mathrm{d}x_{1}+\cfrac{\partial f}{\partial x_{2}}\mathrm{d}x_{2}+\dots+\cfrac{\partial f}{\partial x_{n}}\mathrm{d}x_{n}$
+\end_inset
+
+[
+\begin_inset Newline newline
+\end_inset
+
+בכל מקרה זוהי תהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית מהצורה 
+\begin_inset Formula $\omega=f\mathrm{\, d}x_{1}\wedge\mathrm{d}x_{2}\wedge\dots\wedge\mathrm{d}x_{k}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\mathrm{d}f\wedge\mathrm{d}x_{1}\wedge\dots\wedge\mathrm{d}x_{k}
+\]
+
+\end_inset
+
+ההגדרה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית כללית נובעת מלינאריות: 
+\begin_inset Formula $\mathrm{d}\left(\omega_{1}+\omega_{2}\right)=\mathrm{d}\omega_{1}+\mathrm{d}\omega_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית 
+\begin_inset Formula $\omega=y^{2}\cos x\mathrm{\, d}y+xy\mathrm{\, d}x+\mathrm{d}z$
+\end_inset
+
+.
+ חשב את 
+\begin_inset Formula $\mathrm{d}\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\mathrm{d}\left(y^{2}\cos x\mathrm{\, d}y+xy\mathrm{\, d}x+\mathrm{d}z\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\mathrm{d}\left(y^{2}\cos x\right)\wedge\mathrm{d}y+\mathrm{d}\left(xy\right)\wedge\mathrm{d}x+\mathrm{d}\left(1\right)\wedge\mathrm{d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(-y^{2}\sin x\mathrm{\, d}x+\cancel{2y\cos\mathrm{\, d}y}+\xcancel{0\mathrm{\, d}z}\right)\wedge\mathrm{d}y+\left(\xcancel{y\mathrm{\, d}x}+x\mathrm{\, d}y+\xcancel{0\mathrm{\, d}z}\right)\wedge\mathrm{d}x+\xcancel{\left(0\mathrm{\, d}x+0\mathrm{\, d}y+0\mathrm{\, d}z\right)\wedge\mathrm{d}z}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-y^{2}\sin x\mathrm{\, d}x\wedge\mathrm{d}y+x\mathrm{\, d}y\wedge\mathrm{d}x=\boxed{\left(-y^{2}\sin x-x\right)\mathrm{\, d}x\wedge\mathrm{d}y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית דיפרנציאלית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ נקראת 
+\bar under
+סגורה
+\bar default
+ אם 
+\begin_inset Formula $\mathrm{d}\omega=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למשל
+\series default
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+-תבנית דיפרנציאלית סגורה, כי 
+\begin_inset Formula $\mathrm{d}\left(1\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית דיפרנציאלית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ נקראת 
+\bar under
+מדוייקת
+\bar default
+ אם קיימת 
+\begin_inset Formula $k-1$
+\end_inset
+
+ תבנית דיפרנציאלית 
+\begin_inset Formula $\eta$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\mathrm{d}\eta=\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למשל
+\series default
+: 
+\begin_inset Formula $\omega=\left(-y^{2}\sin x-x\right)\mathrm{\, d}x\wedge\mathrm{d}y$
+\end_inset
+
+ מדוייקת כי 
+\begin_inset Formula $\omega=\mathrm{d}\left(y^{2}\cos x\mathrm{\, d}y+xy\mathrm{\, d}x+\mathrm{d}z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ מדוייקת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\omega$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשב 
+\begin_inset Formula $\mathrm{d}\omega$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\omega=\left(-y^{2}\sin x-x\right)\mathrm{\, d}x\wedge\mathrm{d}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\left(\left(-y^{2}\cos x-1\right)\mathrm{\, d}x-2y\sin x\mathrm{\, d}y\right)\wedge\mathrm{d}x\wedge\mathrm{d}y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

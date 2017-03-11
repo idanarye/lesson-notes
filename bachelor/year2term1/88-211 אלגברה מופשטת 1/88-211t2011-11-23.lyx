@@ -1,0 +1,1045 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שיעור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סדרים והומומורפיזם
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שהחבורה 
+\begin_inset Formula $\mathbb{Z}_{n}\times\mathbb{Z}_{n}$
+\end_inset
+
+ אינה ציקלית)=נוצרת על ידי חיבורים של איבר ספציפי עם עצמו מספר פעמים
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\mathbb{Z}_{n}\times\mathbb{Z}_{n}\right|=n^{2}$
+\end_inset
+
+.
+ כלומר אם קיים איבר 
+\begin_inset Formula $g\in\mathbb{Z}_{n}\times\mathbb{Z}_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\langle g\right\rangle =\mathbb{Z}_{n}\times\mathbb{Z}_{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $o\left(g\right)=n^{2}$
+\end_inset
+
+.
+ ניקח איבר כלשהו 
+\begin_inset Formula $g=\left(a,b\right)\in\mathbb{Z}_{n}\times\mathbb{Z}_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{n\, times}{\overbrace{g+...+g}}=\overset{n\, times}{\overbrace{\left(a,b\right)+...+\left(a,b\right)}}=\left(na,nb\right)=\left(0,0\right)=e
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow o\left(g\right)\le n\Rightarrow o\left(g\right)\ne n^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{Z}_{n}\times\mathbb{Z}_{n}$
+\end_inset
+
+ לא ציקלית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בכל חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+ אם 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $g^{n}=e$
+\end_inset
+
+ אזי 
+\begin_inset Formula $o\left(g\right)\mid n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נחלק את 
+\begin_inset Formula $n$
+\end_inset
+
+ ב
+\begin_inset Formula $o\left(g\right)$
+\end_inset
+
+ עם שארית 
+\begin_inset Formula $n=ao\left(g\right)+r$
+\end_inset
+
+ כך ש
+\begin_inset Formula $0\le r<o\left(g\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e=g^{n}=g^{ao\left(g\right)+r}=g^{ao\left(g\right)}g^{r}=\left(g^{o\left(g\right)}\right)^{a}g^{r}=e^{a}g^{r}=eg^{r}=g^{r}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $o\left(g\right)=x$
+\end_inset
+
+ הוא המינימלי שעבורו 
+\begin_inset Formula $g^{x}=e$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $r=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $o\left(g\right)\mid n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המשפט היסודי של חבורות ציקליות
+\end_layout
+
+\begin_layout Enumerate
+כל תת חבורה של חבורה ציקלית היא גם כן ציקלית.
+\end_layout
+
+\begin_layout Enumerate
+)נכון גם לחבורות לא ציקליות( הסדר של תת חבורה מחלק את הסדר של החבורה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה ציקלית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי לכל מחלק של 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ קיימת תת חבורה של 
+\begin_inset Formula $G$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+התת חבורות היחידות של 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ הן 
+\begin_inset Formula $k\mathbb{Z}_{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k\mid n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+]שאלה - מה הסדר של 
+\begin_inset Formula $k\mathbb{Z}_{n}$
+\end_inset
+
+? תשובה: 
+\begin_inset Formula $\cfrac{n}{k}$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+התת חבורות היחידות של 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ הן 
+\begin_inset Formula $\cfrac{n}{k}\mathbb{Z}_{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k\mid n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=6$
+\end_inset
+
+, המחלקים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2,3,6
+\numeric off
+, ולכן תת החבורות של 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+ הן:
+\begin_inset Formula 
+\[
+6\mathbb{Z}_{6}=\left\{ 0\right\} ,3\mathbb{Z}_{6}=\left\{ 0,3\right\} ,2\mathbb{Z}_{6}=\left\{ 0,2,4\right\} ,1\mathbb{Z}_{6}=\mathbb{Z}_{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל בית
+\end_layout
+
+\begin_layout Standard
+הראו שבחרובה ציקלית 
+\begin_inset Formula $G=\left\langle g\right\rangle $
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $o\left(g^{k}\right)=\cfrac{\left|G\right|}{\gcd\left(k,\left|G\right|\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכח או הפרך: אם 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ איברים מסדר סופי אזי 
+\begin_inset Formula $ab$
+\end_inset
+
+ גם כן מסדר סופי.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ אבלית נוכיח:
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $o\left(a\right)=n,o\left(b\right)=m$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(ab\right)^{nm}=abab...ab=a^{nm}b^{nm}=\left(a^{n}\right)^{m}\left(b^{m}\right)^{n}=e^{m}e^{n}=e
+\]
+
+\end_inset
+
+
+\begin_inset Formula $o\left(ab\right)\le nm<\infty$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הסדר סופי
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ לא אבלית אז נפריך:
+\begin_inset Formula 
+\[
+a=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix},b=\begin{pmatrix}0 & 1\\
+-1 & -1
+\end{pmatrix}
+\]
+
+\end_inset
+
+ראינו קודם כי 
+\begin_inset Formula $o\left(b\right)=3$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+a^{4}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=e
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+o\left(a\right)=4
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+ab=\begin{pmatrix}1 & 1\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(ab\right)^{n}=\begin{pmatrix}1 & n\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $1\le n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(ab\right)^{n}\ne e$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $o\left(ab\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה מסדר סופי זוגי.
+ הוכח כי קיים איבר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $G$
+\end_inset
+
+]כלומר הוכח כי קיים 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $g^{2}=e$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי לא קיים איבר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ נחלק את 
+\begin_inset Formula $G$
+\end_inset
+
+ לתת קבוצות זרות באופן הבא:
+\begin_inset Formula 
+\[
+G=\left\{ e\right\} \cup\left\{ a_{1},a_{1}^{-1}\right\} \cup\left\{ a_{2},a_{2}^{-1}\right\} \cup...
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\emptyset\ne\left\{ a_{n},a_{n}^{-1}\right\} \cap\left\{ a_{k},a_{k}^{-1}\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\{ a_{k},a_{k}^{-1}\right\} =\left\{ a_{n},a_{n}^{-1}\right\} $
+\end_inset
+
+ לכן אפשר להניח כי הקבוצות זרות.
+\end_layout
+
+\begin_layout Standard
+כעת, בגלל שהקבוצות זרות מתקיים 
+\begin_inset Formula $\left|G\right|=1+2+...+2=2m+1$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left|G\right|$
+\end_inset
+
+ אי זוגי.
+\end_layout
+
+\begin_layout Section*
+תרגיל בית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה.
+ 
+\begin_inset Formula $g,h\in G$
+\end_inset
+
+ איברים מתחלפים.
+ נסמן 
+\begin_inset Formula $o\left(g\right)=n,o\left(h\right)=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gcd\left(k,n\right)=1$
+\end_inset
+
+.
+ הראו ש
+\begin_inset Formula $o\left(gh\right)=o\left(g\right)o\left(h\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה, 
+\begin_inset Formula $A\subseteq G$
+\end_inset
+
+ תת 
+\bar under
+קבוצה
+\bar default
+.
+ התת-חבורה של 
+\begin_inset Formula $G$
+\end_inset
+
+ הנוצרת ע"י 
+\begin_inset Formula $A$
+\end_inset
+
+ היא התת חבורה המינימלית המכילה את 
+\begin_inset Formula $A$
+\end_inset
+
+ ומסמנים אותה 
+\begin_inset Formula $\left\langle A\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\langle A\right\rangle =\bigcap\limits _{\begin{array}{c}
+M\le G\\
+A\subseteq M
+\end{array}}M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\langle A\right\rangle =\left\{ x_{1}^{m_{1}}\cdot...\cdot x_{k}^{m_{k}}\middle|\begin{array}{c}
+x_{1},...x_{k}\in A\\
+m_{1},...m_{k}\in\mathbb{Z}
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{Z}_{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 4,6\right\rangle =\left\langle 2\right\rangle =2\mathbb{Z}_{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתונות שתי חבורות 
+\begin_inset Formula $\left(G,*,e\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(H,\Delta,I\right)$
+\end_inset
+
+.
+ פונקציה 
+\begin_inset Formula $\varphi:G\to H$
+\end_inset
+
+ נקראת הומומורפיזם אם 
+\begin_inset Formula $\varphi\left(a*b\right)=\varphi\left(a\right)\Delta\varphi\left(b\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi\left(e\right)=I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi\left(x^{-1}\right)=\left(\varphi\left(x\right)\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi\left(x^{n}\right)=\left(\varphi\left(x\right)\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הגדרות
+\end_layout
+
+\begin_layout Itemize
+אפימורפיזם = הומומורפיזם על.
+\end_layout
+
+\begin_layout Itemize
+מונומורפיזם = הומומורפיזם חח"ע.
+\end_layout
+
+\begin_layout Itemize
+איזומורפיזם = אפימורפיזם+מונומורפיזם.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:G\to H$
+\end_inset
+
+ אפימורפיזם.
+ הראו שאם 
+\begin_inset Formula $G$
+\end_inset
+
+ אבלית אזי 
+\begin_inset Formula $H$
+\end_inset
+
+ אבלית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ על, לכן קיימים 
+\begin_inset Formula $\bar{a},\bar{b}\in G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(\bar{b}\right)=b,f\left(\bar{a}\right)=a$
+\end_inset
+
+.
+ מתקיים:
+\begin_inset Formula 
+\[
+ab=f\left(\bar{a}\right)f\left(\bar{b}\right)=f\left(\bar{a}\bar{b}\right)=f\left(\bar{b}\bar{a}\right)=f\left(\bar{b}\right)f\left(\bar{a}\right)=ba
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $H$
+\end_inset
+
+ אבלית.
+\end_layout
+
+\begin_layout Section*
+תרגיל בית
+\end_layout
+
+\begin_layout Standard
+הראו כי אם 
+\begin_inset Formula $f:G\to H$
+\end_inset
+
+ איזומורפיזם אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ ציקלית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ ציקלית
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:G\to H$
+\end_inset
+
+ הומומורפיזם.
+ הראו ש
+\begin_inset Formula $o_{H}\left(f\left(x\right)\right)\mid o_{G}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f\left(x\right)\right)^{o_{G}\left(x\right)}=f\left(x\right)...f\left(x\right)=f\left(x^{o_{G}\left(x\right)}\right)=f\left(e\right)=e\Rightarrow o\left(f\left(x\right)\right)\mid o\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

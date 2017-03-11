@@ -1,0 +1,930 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משפט הפונקציות הסתומות)למערכת משוואות(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F:\Omega\subseteq\mathbb{R}^{k}\times\mathbb{R}^{s}\to\mathbb{R}^{s}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קבוצה פתוחה( רציפה בסביבה של 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+F\left(x^{0},y^{0}\right)=0,\hspace{1em}\left.\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}\right|_{\left(x^{0},y^{0}\right)}\neq0
+\]
+
+\end_inset
+
+אזי קיימת 
+\begin_inset Formula $a',b'>0$
+\end_inset
+
+ ופונקציה יחידה 
+\begin_inset Formula $\varphi:I\to\mathbb{R}^{s}\hspace{1em}y=\varphi\left(x\right)$
+\end_inset
+
+ המוגדרת בתא 
+\begin_inset Formula $I=\left\{ x\in\mathbb{R}^{k}\middle|\left|x_{i}-x_{i}^{0}\right|\le a'\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert \varphi\right\Vert \le b'$
+\end_inset
+
+ ו
+\begin_inset Formula $F\left(x,\varphi\left(x\right)\right)=0$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi\left(x^{0}\right)=y^{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תוספת: משפט
+\end_layout
+
+\begin_layout Standard
+אם נ
+\bar under
+חזק
+\bar default
+ את ההנחה לגבי 
+\begin_inset Formula $F$
+\end_inset
+
+ ו
+\bar under
+נניח
+\bar default
+ ש
+\begin_inset Formula $F$
+\end_inset
+
+ היא ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ לגבי 
+\bar under
+כל
+\bar default
+ המשתנים)גם ה
+\begin_inset Formula $x$
+\end_inset
+
+ים!(, גם הפתרון 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ גם הוא ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+)מקומית(, והנוסחא נכונה עבור 
+\begin_inset Formula $\cfrac{\partial\varphi_{r}}{\partial x_{i}}$
+\end_inset
+
+ בסביבה:
+\begin_inset Formula 
+\[
+\forall i=1,...k,\forall r=1,...s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\partial\varphi_{r}}{\partial x_{i}}=-\cfrac{J_{i}}{J}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $J=\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}$
+\end_inset
+
+ היעקוביאן ו
+\begin_inset Formula $J_{i}$
+\end_inset
+
+ הוא הדטרמיננטה המתכקבלת מ
+\begin_inset Formula $J$
+\end_inset
+
+ ע"י החלפת 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ בעמודה ה
+\begin_inset Formula $r$
+\end_inset
+
+ית.:
+\begin_inset Formula 
+\[
+J=\begin{vmatrix}\cfrac{\partial F_{1}}{\partial y_{1}} & ... & \cfrac{\partial F_{r}}{\partial y_{i}} & | & ... & \cfrac{\partial F_{s}}{\partial F_{s}}\\
+\vdots &  & \vdots & |\\
+\cfrac{\partial F_{1}}{\partial y_{1}} &  & \cfrac{\partial F_{r}}{\partial y_{i}} & | &  & \cfrac{\partial F_{s}}{\partial y_{s}}
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה חלקית
+\end_layout
+
+\begin_layout Enumerate
+הפתרון 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ בסביבה של 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+)נדלג על ההוכחה(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,\varphi\left(x\right)\right)=0$
+\end_inset
+
+ בסביבה של 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $F$
+\end_inset
+
+ היא 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+ היא 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן כלל השרשרת נכון עבור הפונ' המורכבת הנ"ל בסביבה.
+\end_layout
+
+\begin_layout Standard
+נגזור לפי 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+)
+\begin_inset Formula $\forall i$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+F_{r}\left(x_{1},...x_{k};\varphi_{1}\left(x_{1},...x_{k}\right),...\varphi_{s}\left(x_{1},...x_{k}\right)\right)=0\hspace{1em}\forall r=1,...s
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial F_{r}}{\partial x_{i}}\cdot1+\sum_{j=1}^{k}\cfrac{\partial F_{r}}{\partial y_{j}}\cfrac{\partial y_{j}}{\partial x_{i}}=0
+\]
+
+\end_inset
+
+)נגזרת לפי 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ של הפונקציות()
+\begin_inset Formula $y_{j}\equiv\varphi_{j}\left(x\right)$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\sum_{j=1}^{s}\cfrac{\partial F_{r}}{\partial y_{j}}\cfrac{\partial\varphi_{j}}{\partial x_{i}}=-\cfrac{mpF_{r}}{\partial x_{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $1\le r\le s$
+\end_inset
+
+, יש 
+\begin_inset Formula $s$
+\end_inset
+
+ משוואות לינאריות עבור 
+\begin_inset Formula $s$
+\end_inset
+
+ הנעלמים 
+\begin_inset Formula $\cfrac{\partial\varphi_{1}}{\partial x_{i}},...\cfrac{\partial\varphi_{s}}{\partial x_{i}}$
+\end_inset
+
+)
+\begin_inset Formula $i$
+\end_inset
+
+ קבוע בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל
+\begin_inset Formula $k$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+דטרמיננטת המקדמים היא 
+\begin_inset Formula $\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}$
+\end_inset
+
+)היעבוביאן(, שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנק' 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+, היא סכום מכפלות של הנגזרות 
+\begin_inset Formula $\cfrac{\partial F_{r}}{\partial y_{j}}$
+\end_inset
+
+ הרציפות בסביבה.
+ גם היעקוביאן 
+\begin_inset Formula $J$
+\end_inset
+
+ הנ"ל רציף בסביבה, וכיוון שהוא 
+\begin_inset Formula $0\ne$
+\end_inset
+
+ ב
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+ הרי 
+\begin_inset Formula $J\ne0$
+\end_inset
+
+ 
+\bar under
+בסביבה מסויימת
+\bar default
+ של 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפתרון של מערכת המשוואות ניתן אז ע"י נוסחת קרמר
+\begin_inset Formula 
+\[
+\cfrac{\partial\varphi_{r}}{\partial x_{i}}=\cfrac{\begin{vmatrix}\cdots & -\cfrac{\partial F_{r}}{\partial y_{i}} & \cdots\end{vmatrix}}{J}=-\cfrac{J_{i}}{J}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=2,s=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+F_{1}\\
+F_{2}
+\end{array}\left\{ \begin{array}{c}
+x^{2}+y^{2}-z^{2}-u^{2}=0\\
+x^{3}+y^{3}-z^{3}+u^{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ בכל המרחב)כי פולינום(.
+\begin_inset Formula 
+\[
+\underline{F}=\left(F_{1},F_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}=\left(x,y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{y}=\left(z,u\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{F}\left(\underline{0},\underline{0}\right)=\underline{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial\left(F_{1},F_{2}\right)}{\partial\left(z,u\right)}=\begin{vmatrix}-2z & -3z^{2}\\
+2u & 3u^{2}
+\end{vmatrix}=6\left(z^{2}u-zu^{2}\right)=6zu\left(z-y\right)\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial F}{\partial x}=-\cfrac{\begin{vmatrix}2x & 2u\\
+3x^{2} & 3u^{2}
+\end{vmatrix}}{6zu\left(z-u\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial z}{\partial y}=-\cfrac{xu^{2}-x^{2}u}{zu\left(z-u\right)}=\cfrac{xu-x^{2}}{z\left(z-u\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial y}{\partial x}=\cfrac{x^{2}-x}{z\left(z-u\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J_{1}=\cfrac{\partial F}{\partial x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial\varphi}{\partial x}=-\cfrac{\cfrac{\partial F}{\partial x}}{\cfrac{\partial F}{\partial y}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\sqrt{r^{2}-x^{2}}=\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi'\left(x\right)=-\cfrac{x}{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משפט ההעתקה ההפוכה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\Omega\subset\mathbb{R}^{k}\to\mathbb{R}^{k}$
+\end_inset
+
+)
+\begin_inset Formula $\Omega$
+\end_inset
+
+ פתוחה( ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, ונניח שבנקודה מסויימת 
+\begin_inset Formula $x^{0}\in\Omega$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left.\cfrac{\partial\left(f_{1},...f_{k}\right)}{\partial\left(x_{1},...x_{k}\right)}\right|_{x^{0}}\neq0$
+\end_inset
+
+.
+ אזי קיימות סביבות 
+\begin_inset Formula $U$
+\end_inset
+
+ של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $y^{0}\Doteq f\left(x^{0}\right)$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $y\in V$
+\end_inset
+
+ קיים 
+\begin_inset Formula $x$
+\end_inset
+
+ יחיד ב
+\begin_inset Formula $V$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע של 
+\begin_inset Formula $U$
+\end_inset
+
+ על 
+\begin_inset Formula $V$
+\end_inset
+
+(, והפונקציה ההפוכה)הקיימת בהכרח מ
+\begin_inset Formula $V$
+\end_inset
+
+ ל
+\begin_inset Formula $U$
+\end_inset
+
+( היא ג"כ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $F:\Omega\times\mathbb{R}^{k}\to\mathbb{R}^{k}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $F\left(x^{\in\Omega},y^{\in\mathbb{R}^{k}}\right)=f\left(x\right)-y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה:
+\begin_inset Formula 
+\[
+F\left(x^{0},y^{0}\right)=f\left(x^{0}\right)-y^{0}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי נתון:
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial\left(F_{1},...F_{k}\right)}{\partial\left(x_{i},...x_{k}\right)}\right|_{\left(x^{0},y^{0}\right)}=\left.\cfrac{\partial\left(f_{1},...f_{k}\right)}{\partial\left(x_{1},...x_{k}\right)}\right|_{x^{0}}\ne0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי משפט הפונקציות הסתומות 
+\bar under
+למערכת משוואות
+\bar default
+, קיים פתרון יחיד 
+\uuline on
+מקומי
+\uuline default
+ עבור הנעלם 
+\begin_inset Formula $x$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ כלומר: יש סביבה 
+\begin_inset Formula $U$
+\end_inset
+
+ של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ וסביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $y^{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $V$
+\end_inset
+
+ יש 
+\begin_inset Formula $x$
+\end_inset
+
+ יחיד ב
+\begin_inset Formula $U$
+\end_inset
+
+ הפותר את המשוואה 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+)
+\begin_inset Formula $f\left(x\right)-y\Doteq$
+\end_inset
+
+(.
+ ז"א, כך ש
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+, ולפי התוספת למשפט הפונקציות הסתומות, הפתרון הוא 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+)שהרי 
+\begin_inset Formula $F$
+\end_inset
+
+ היא ממ"ח 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ לפי כל משתניה(.
+\end_layout
+
+\begin_layout Part*
+נקודות קיצון עם אילוצים
+\end_layout
+
+\begin_layout Standard
+בעיה: מצא נקודות קיצון עבור 
+\begin_inset Formula $F:\Omega\subseteq\mathbb{R}^{k}\times\mathbb{R}^{s}\to\mathbb{R}$
+\end_inset
+
+ עם אילוץ 
+\begin_inset Formula $G\left(x,y\right)=0$
+\end_inset
+
+ במקום ש
+\begin_inset Formula $G:\Omega\to\mathbb{R}^{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+עקרונית, בשיטת החילוץ מוצאים את נקודות הקיצון של הפונקציה המורכבת 
+\begin_inset Formula $F\left(x,\varphi\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שיטת כופלי לגדרנז'
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $F:\Omega^{\subseteq\mathbb{R}^{k}\times\mathbb{R}^{S}}\to\mathbb{R}$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, ונניח:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( 
+\begin_inset Formula $G\left(x^{0},y^{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $\left.\cfrac{\partial\left(G_{1},...G_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}\right|_{\left(x^{0},y^{0}\right)}\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+ היא נק' קיצון של הפונ' 
+\begin_inset Formula $F$
+\end_inset
+
+ תחת האילוץ 
+\begin_inset Formula $G\left(x^{0},y^{0}\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+)דהיינו 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+ היא נק' קיצון מקומית של הפונ' המורכבת 
+\begin_inset Formula $F\left(x,\varphi\left(x\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+ פתרון מקומי של האילוץ, ו
+\begin_inset Formula $y^{0}=\varphi\left(x^{0}\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אזי: קיים וקטור 
+\begin_inset Formula $c=\left(c_{1},...c_{s}\right)$
+\end_inset
+
+ קבוע כך ש
+\begin_inset Formula 
+\[
+\boxed{\nabla\left(F-c\cdot G\right)=0}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $c\cdot G=\sum c_{j}G_{j}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ נקראים כופלי לגרנז'.
+\end_layout
+
+\end_body
+\end_document

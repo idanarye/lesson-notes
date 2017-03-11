@@ -1,0 +1,1604 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תכנות דינאמי
+\end_layout
+
+\begin_layout Standard
+בתכנות דינאמי שומרים את הפתרונות לתתי הבעיות בזיכרון, כדי שלא נצטרך לחשב
+ אותם יותר מפעם אחת.
+\end_layout
+
+\begin_layout Section*
+בעיית פס הייצור הנע
+\end_layout
+
+\begin_layout Standard
+יש לנו שני פסי יצור - פס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ואפשר להעביר מוצר באמצע מפס לפס - עם עלות מסויימת.
+ מעבר מוצר בין תחנות באותו פס לא עולה כלום - אבל העבודה בתחנות כן עולה,
+ והביקור בתחנה כן עולה.
+ צריך להחליט איך עוברים בין התחנות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ עלות עבודה בפס 
+\begin_inset Formula $i$
+\end_inset
+
+ תחנה 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $t_{ij}$
+\end_inset
+
+ עלות מעבר מפס 
+\begin_inset Formula $i$
+\end_inset
+
+ תחנה 
+\begin_inset Formula $j$
+\end_inset
+
+ לפס 
+\begin_inset Formula $3-i$
+\end_inset
+
+ תחנה 
+\begin_inset Formula $j+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $^{e_{i}}$
+\end_inset
+
+ זמן אתחול בפס 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ זמן סיום בפס 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e_{i}+\sum_{j=1}^{n}a_{ij}+x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+( אלגוריתם נאיבי
+\end_layout
+
+\begin_layout Standard
+לעבור על כל 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ האפשרויות.
+ הזמן לחישוב כל אפשריות: 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+.
+ הזמן של הפתרון הנאיבי - 
+\begin_inset Formula $O\left(n2^{n}\right)$
+\end_inset
+
+.
+ מספיק להגיד 
+\begin_inset Formula $\Omega\left(2^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+( פתרון רקורסיבי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(i,j\right)$
+\end_inset
+
+ - הזמן המינימלי לעבודה שמסתיים בפס 
+\begin_inset Formula $i$
+\end_inset
+
+ בתחנה 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(i,j\right)=\min\left\{ f\left(i,j-1\right)+a_{ij},f\left(3-i,j-1\right)+t_{3-i}+a_{ij}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(i,1\right)=e_{i}+a_{i1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(1,n\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(2,n\right)
+\]
+
+\end_inset
+
+הפתרון הסופי הוא:
+\begin_inset Formula 
+\[
+f^{*}=\min\left\{ f\left(1,n\right)+x_{1},f\left(2,n\right)+x_{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(n\right)=2T\left(n-1\right)+\theta\left(1\right)\to\theta\left(2^{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הנוסחא הרקורסיבית
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על התחנה ה
+\begin_inset Formula $k$
+\end_inset
+
+.
+ כלומר, בכל שלב נוכיח ש
+\begin_inset Formula $f\left(i,k\right)$
+\end_inset
+
+ הוא הפתרון האופטימלי המסתיים בפס 
+\begin_inset Formula $i$
+\end_inset
+
+ בתחנה 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ נוכיח רק ל
+\begin_inset Formula $f\left(1,k\right)$
+\end_inset
+
+, ו
+\begin_inset Formula $f\left(2,k\right)$
+\end_inset
+
+ הוא בצורה דומה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בסיס
+\begin_inset Formula $k=1$
+\end_inset
+
+: צריך להוכיח נכונות 
+\begin_inset Formula $f\left(1,1\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(1,1\right)=e_{1}+a_{11}
+\]
+
+\end_inset
+
+זו האפשריות היחידה ולכן תנאי העצירה נכון.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בסיס
+\begin_inset Formula $k=2$
+\end_inset
+
+: 
+\begin_inset Formula $f\left(1,2\right)=\min\left\{ f\left(1,1\right)+a_{12},f,\left(2,1\right)+t_{21}+a_{12}\right\} =$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\min\left\{ e_{1}+a_{11}+a_{12},e_{2}+a_{2}+t_{21}+a_{12}\right\} 
+\]
+
+\end_inset
+
+מתקיים לפי מבנה השאלה: יש שתי אפשרויות לסיים בפס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תחנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ואנחנו לוקחים את האפשרות המינימלית.
+\end_layout
+
+\begin_layout Standard
+נניח שהנוסחאות 
+\begin_inset Formula $f\left(i,j\right)$
+\end_inset
+
+ נכונות לכל 
+\begin_inset Formula $j\le k-1$
+\end_inset
+
+.
+ נוכיח: הנוסחאות 
+\begin_inset Formula $f\left(i,k\right)$
+\end_inset
+
+ נכונות.
+ נניח שהפתרון שקיבלנו מהאלג' הוא 
+\begin_inset Formula $f\left(1,k\right)=C$
+\end_inset
+
+.
+ נניח בשלילה שהאלג' לא נותן פתרון אופטימלי, כלומר קיים פתרון 
+\begin_inset Formula $f'\left(1,k\right)=C'$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $C'<C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסתכל בסידור שעבורו 
+\begin_inset Formula $f'\left(1,k\right)=C'$
+\end_inset
+
+.
+ יש שתי אפשרויות:
+\end_layout
+
+\begin_layout Enumerate
+הגענו מפס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתחנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ מכאן 
+\begin_inset Formula $f'\left(1,k-1\right)=C'-a_{ik}$
+\end_inset
+
+.
+ לפי הנחת האינדוקציה 
+\begin_inset Formula $f\left(1,k-1\right)$
+\end_inset
+
+ הוא הפתרון האופטימלי)=הזמן המינימלי(, לכן 
+\begin_inset Formula $f\left(1,k-1\right)\le C'-a_{1k}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מה נקבל מהאלג':
+\begin_inset Formula 
+\[
+C=f\left(1,k\right)=\min\left\{ f\left(1,k-1\right)+a_{1k},f\left(2,k-1\right)+t_{2,k-1}+a_{1k}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le f\left(1,k-1\right)+a_{1k}\le C'-a_{1k}+a_{k}=C'\Rightarrow C\le C'
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+סתירה להנחה 
+\begin_inset Formula $C'<C$
+\end_inset
+
+.
+ ז"א ש
+\begin_inset Formula $C$
+\end_inset
+
+ פתרון אופטימלי.
+\end_layout
+
+\begin_layout Enumerate
+הגענו מפס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתחנה 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula 
+\[
+f'\left(2,k-1\right)=C'-t_{2,k-1}-a_{1k}
+\]
+
+\end_inset
+
+מהנחת האינדוקציה:
+\begin_inset Formula 
+\[
+f\left(x,k-q\right)\le C'-t_{1,k-1}-a_{1k}
+\]
+
+\end_inset
+
+ועושים אותו דבר כמו קודם, ושוב מגיעים לסתירה.
+\end_layout
+
+\begin_layout Standard
+קיבלנו ש
+\begin_inset Formula $f\left(1,n\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(2,n\right)$
+\end_inset
+
+ הם פתרונות אופטימליים, ולכן 
+\begin_inset Formula $f^{*}=\min\left\{ f\left(1,n\right)+x_{1},f\left(2,n\right)+x_{2}\right\} $
+\end_inset
+
+ יתן לנו את הזמן המינימלי.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+3
+\numeric off
+( אלגוריתם תכנות דינאמי
+\end_layout
+
+\begin_layout Subsubsection*
+מבנה הנתונים:
+\end_layout
+
+\begin_layout Standard
+מערך דו מימדי בגודל 
+\begin_inset Formula $2\times n$
+\end_inset
+
+ שבו בתא 
+\begin_inset Formula $F\left[i,j\right]$
+\end_inset
+
+ תהיה העלות המינימלית של מסלול המסתיים בפס 
+\begin_inset Formula $i$
+\end_inset
+
+ בתחנה 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+אופן מילוי:
+\end_layout
+
+\begin_layout Standard
+בשביל 
+\begin_inset Formula $F\left[i,j\right]$
+\end_inset
+
+ אנחנו צריכים את 
+\begin_inset Formula $F\left[i,j-1\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $F\left[3-i,j-1\right]$
+\end_inset
+
+.
+ לכן נמלא את מבנה הנתונים לפי סדר תחנות.
+\end_layout
+
+\begin_layout Subsubsection*
+האלגוריתם
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+ אתחול 
+\begin_inset Formula $F\left[1,1\right]=e_{1}+a_{11},F\left[2,1\right]=e_{2}+a_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ עבור 
+\begin_inset Formula $j$
+\end_inset
+
+ מ
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $n$
+\end_inset
+
+ בצע:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם 
+\begin_inset Formula $F\left[1,j-1\right]+a_{1j}\le F\left[2,j-1\right]+t_{2,j-1}+a_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.1.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז 
+\begin_inset Formula $F\left[1,j\right]=F\left[1,j-1\right]+a_{1j}$
+\end_inset
+
+, 
+\begin_inset Formula $L\left[1,j\right]=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרת 
+\begin_inset Formula $F\left[1,j\right]=F\left[2,j-1\right]+t_{2,j-1}+a_{ij=1j}$
+\end_inset
+
+, 
+\begin_inset Formula $L\left[1,j\right]=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם 
+\begin_inset Formula $F\left[2,j-1\right]+a_{2j}\le F\left[1,j-1\right]+t_{1,j-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.3.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז 
+\begin_inset Formula $F\left[2,j\right]=F\left[2,j-1\right]+a_{2j}$
+\end_inset
+
+, 
+\begin_inset Formula $L\left[2,j\right]=2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרת 
+\begin_inset Formula $F\left[2,j\right]=F\left[1,j-1\right]+t_{1,j-1}+a_{2j}$
+\end_inset
+
+, 
+\begin_inset Formula $L\left[2,j\right]=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ החזר: 
+\begin_inset Formula $\min\left\{ F\left[1,n\right]+x_{1},F\left[2,n\right]+x_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+זמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ כי עוברים על כל התחנות ומבצעים 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ פעולות בכל תחנה.
+\end_layout
+
+\begin_layout Subsubsection*
+מקום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ כי שומרים את המערך בגודל 
+\begin_inset Formula $2\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם לא משתמשים במערך 
+\begin_inset Formula $L$
+\end_inset
+
+)שמשמש רק בשביל לשמור את המסלול(, אפשר לחסוך במקום כי נשמור רק את שתי התחנות
+ האחרונות שרק אותן צריך לרקורסיה - 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ מקום.
+\end_layout
+
+\begin_layout Subsubsection*
+שחזור פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left[i,k\right]$
+\end_inset
+
+ - הפס שבו הייתה התחנה הקודמת עבור פתרון אופטימלי שהסתיים בפס 
+\begin_inset Formula $i$
+\end_inset
+
+ תחנה 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left[i,j\right]$
+\end_inset
+
+ הוא מערך בגודל 
+\begin_inset Formula $2\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+בעיית העברת הודעה על עץ
+\end_layout
+
+\begin_layout Standard
+נתון עץ בינארי מושרש 
+\begin_inset Formula $T$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ושורש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+root
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+בשורש יש הודעה 
+\begin_inset Formula $M$
+\end_inset
+
+ שרוצים להעביר לכל קודקודי העץ.
+ העברת הודעה היא בכל שלב מאב לאחד הבנים שלו.
+ הזמן להעברת הודעה מאב לבן היא יחידת זמן אחת.
+ רוצים למצוא את הזמן המינימלי שידרש להעברת ההודעה 
+\begin_inset Formula $M$
+\end_inset
+
+ לכל קודקודי העץ.
+\end_layout
+
+\begin_layout Section*
+פתרון נאיבי
+\end_layout
+
+\begin_layout Standard
+אם יש 
+\begin_inset Formula $t$
+\end_inset
+
+ קודקודים עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים אז מס' האפשרויות הוא 
+\begin_inset Formula $2^{t}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $t=O\left(n\right)$
+\end_inset
+
+ אז מס' האפשרויות הוא 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $1<a\le2$
+\end_inset
+
+ - כלומר זמן אקספוננציאלי.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם רקורסיבי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $t\left(u\right)$
+\end_inset
+
+ הזמן המינימלי שלוקח לקודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ להעביר את ההודעה לכל התת-עץ שלו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $u.right$
+\end_inset
+
+ הבן הימני
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $u.left$
+\end_inset
+
+ הבן השמאלי.
+\end_layout
+
+\begin_layout Standard
+אם יש בן יחיד - 
+\begin_inset Formula $t\left(u\right)=t\left(u.left\right)+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש שני בנים: 
+\begin_inset Formula 
+\[
+t\left(u\right)=\min\left\{ \begin{array}{c}
+\max\left\{ t\left(u.left\right)+1,t\left(u.right\right)+2\right\} \\
+\max\left\{ t\left(u.left\right)+2,t\left(u.right\right)+1\right\} 
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת הנוסחה הרקורסיבית
+\end_layout
+
+\begin_layout Standard
+טענת האינדוקציה: 
+\begin_inset Formula $t\left(u\right)$
+\end_inset
+
+ מחושב נכון לכל 
+\begin_inset Formula $u$
+\end_inset
+
+ בעץ.
+ נוכיח באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+ מספר הקודקודים בכל תת עץ:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $k=1$
+\end_inset
+
+ יש עלה.
+ 
+\begin_inset Formula $t\left(u\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $k=2$
+\end_inset
+
+ יש עלה ואב.
+ הזמן הוא 
+\begin_inset Formula $t\left(u\right)=t\left(u.left\right)+1=0+1=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $k=3$
+\end_inset
+
+ נסתכל על המקרה אב עם שני בנים.
+ 
+\begin_inset Formula $t\left(u\right)=\cdots=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $t\left(u\right)$
+\end_inset
+
+ נכון לכל תת עץ עד גודל 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ נוכיח לעץ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נניח קיבלנו לפי האלג' שלעץ שהשורש שלו 
+\begin_inset Formula $u$
+\end_inset
+
+ וגודלו 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t\left(u\right)=C$
+\end_inset
+
+.
+ נניח בשלילה שהאלגוריתם לא נותן פתרון אופטימלי.
+ כלומר יש פתרון 
+\begin_inset Formula $C'<C$
+\end_inset
+
+, 
+\begin_inset Formula $t'\left(u\right)=C'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם ל
+\begin_inset Formula $u$
+\end_inset
+
+ יש בן יחיד: 
+\begin_inset Formula $u.left$
+\end_inset
+
+, אז 
+\begin_inset Formula $t'\left(u.left\right)=C'-1$
+\end_inset
+
+, כלומר באלג' נקבל 
+\begin_inset Formula $t\left(u.left\right)\le C'-1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=t\left(u\right)=t\left(u.left\right)+1\le C'-1+1=C'\Rightarrow C\le C'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש שני בנים: יש שתי אפשרויות:
+\end_layout
+
+\begin_layout Enumerate
+הבן השמאלי נבחר ראשון.
+\begin_inset Newline newline
+\end_inset
+
+או: 
+\begin_inset Formula $t'\left(u.left\right)=C'-1$
+\end_inset
+
+ ו
+\begin_inset Formula $t'\left(u.right\right)\le C'-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+או: 
+\begin_inset Formula $t'\left(u.left\right)\le C'-1$
+\end_inset
+
+ ו
+\begin_inset Formula $t'\left(u.right\right)=C'-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+לפי הנחת האינדוקציה)נשתמש כי שני גדלי העצים של 
+\begin_inset Formula $u.left$
+\end_inset
+
+ ו
+\begin_inset Formula $u.right$
+\end_inset
+
+ קטנים מ
+\begin_inset Formula $k$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+t\left(u.left\right)\le C'-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\left(u.right\right)\le C'-2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max\left\{ t\left(u.left\right)+1,t\left(u.right\right)+2\right\} \le\max\left\{ C'-1+1,C'-2+2\right\} =C'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max\left\{ t\left(u.left\right)+2,t\left(u.right\right)+1\right\} \le\max\left\{ C'-1+2,C'-2+1\right\} =C'+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=t\left(u\right)\le\min\left\{ C',C'+1\right\} =C'\Rightarrow C\le C'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם הבן הימני נבחר ראשון - אותו דבר רק הפוך.
+\end_layout
+
+\end_body
+\end_document

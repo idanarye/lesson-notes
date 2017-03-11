@@ -1,0 +1,845 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פונקציה הרמונית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ נקראת הרמונית אם"ם 
+\begin_inset Formula $u_{xx}+u_{yy}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הרמונית צמודה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ נקראת הרמונית צמודה ל
+\begin_inset Formula $u$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $v$
+\end_inset
+
+ הרמונית וגם מקיימת יחד עם 
+\begin_inset Formula $u$
+\end_inset
+
+ תנאי קושי-רימן
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+ אנליטית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u,v$
+\end_inset
+
+ פונקציות הרמוניות צמודות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Enumerate
+האם קיימת פונקציה אנליטית 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\textnormal{Re}\left(f\right)=x^{2}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מצא פונקציה אנליטית 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\textnormal{Re}\left(f\right)=x^{3}-3xy^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Re}\left(f\right)=u=x^{2}y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+u_{xx}=2y\\
+u_{yy}=0
+\end{array}\Rightarrow u_{xx}+u_{yy}=2y\neq0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ לא הרמונית, ולפי המשפט 
+\begin_inset Formula $f$
+\end_inset
+
+ לא אנליטית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u=x^{3}-3xy^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{xx}=6x,u_{yy}=-6x\Rightarrow u_{xx}+u_{yy}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{x}=-u_{y}=6xy\Rightarrow v=\int6xy\mathrm{\, d}x=3x^{2}y+C\left(y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{y}=3x^{2}+C'\left(y\right)=u_{x}=3x^{2}-3y^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C'\left(y\right)=-3y^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C\left(y\right)=-3y^{3}-C_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{v=3x^{2}y-y^{3}+C_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=u+iv=x^{3}-3xy^{2}+i\left(3x^{2}y-y^{3}\right)+iC_{1}=\underbrace{x^{3}-3xy^{2}+i3x^{2}y-iy^{3}}_{\left[\left(x\pm y\right)^{3}=x^{3}\pm3x^{2}y+3xy^{2}\pm y^{3}\right]}=\left(x+iy\right)^{3}+iC_{1}=z^{3}+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{C}\ni c=\textnormal{const}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+בתחום 
+\bar under
+פשוט-קשר
+\bar default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+תחום פשוט-קשר זה תחום שאין בו "חורים", שכל מסלול סגור אפשר לכווץ אותו לנקודה
+ אחת
+\end_layout
+
+\end_inset
+
+ לכל פונקציה הרמונית 
+\begin_inset Formula $u$
+\end_inset
+
+, קיימת פונקציה הרמונית פשוטה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u:\mathbb{R}^{2}\backslash\left\{ \left(0,0\right)\right\} \to\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(x,y\right)=\cfrac{1}{2}\ln\left(x^{2}+y^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $\begin{array}{c}
+D_{1}=\left\{ \left(x,y\right)\middle|x>0,y\in\mathbb{R}\right\} \\
+D_{2}=\left\{ \left(x,y\right)\middle|x<0,y\in\mathbb{R}\right\} 
+\end{array}$
+\end_inset
+
+.
+ יש למצוא פונקציה הרמונית צמודה ל
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+האם קיימת פונקציה הרמונית צמודה ב
+\begin_inset Formula $\mathbb{R}^{2}\backslash\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+u_{x}=\cfrac{x}{x^{2}+y^{2}}\qquad u_{y}=\cfrac{y}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{xx}=\cfrac{y^{2}-x^{2}}{\left(x^{2}+y^{2}\right)^{2}}\qquad u_{yy}=\cfrac{x^{2}-y^{2}}{\left(x^{2}+y^{2}\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}=v_{y}\Rightarrow v=\int\cfrac{x}{x^{2}+y^{2}}\mathrm{\, d}y=\arctan\left(\cfrac{y}{x}\right)+C\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{x}=-u_{y}=\cfrac{-y}{x^{2}+y^{2}}=-\cfrac{y}{x^{2}+y^{2}}+C'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C'\left(x\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C\left(x\right)=\textnormal{const}=C_{!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{v=\arctan\cfrac{y}{x}+C_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח כי קיימת פונקציה 
+\begin_inset Formula $v$
+\end_inset
+
+ הרמונית צמודה ל
+\begin_inset Formula $u$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $\mathbb{R}^{2}\backslash\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+v\left(x,y\right)=\begin{cases}
+\arctan\left(\cfrac{y}{x}\right) & x>0,y\in\mathbb{R}\\
+\arctan\left(\cfrac{y}{x}\right)+C & x>0,y\in\mathbb{R}\\
+? & x=0,y\in\mathbb{R}
+\end{cases}
+\]
+
+\end_inset
+
+נסתכל על נק' 
+\begin_inset Formula $\left(0,y_{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}>0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\lim_{x\to0^{+}}v\left(x,y_{1}\right)=\lim_{x\to0^{+}}\arctan\left(\cfrac{y_{1}}{x}\right)=\cfrac{\pi}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0^{-}}v\left(x,y_{1}\right)=-\cfrac{\pi}{2}+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+כיוון ש
+\begin_inset Formula $v$
+\end_inset
+
+ רציפה 
+\begin_inset Formula $-\cfrac{\pi}{2}+C=\cfrac{\pi}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $C=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבחר נקודה 
+\begin_inset Formula $\left(0,y_{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}<0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0^{+}}\arctan\left(\cfrac{y_{2}}{x}\right)=-\cfrac{\pi}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0^{-}}\arctan\left(\cfrac{y_{2}}{x}\right)+\pi=\cfrac{3\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+טריגונומטריה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{z}=e^{x+iy}=e^{x}\left(\cos y+i\sin y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin z=\cfrac{e^{iz}-e^{-iz}}{2i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos z=\cfrac{e^{iz}+e^{-iz}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cosh z=\cfrac{e^{z}+e^{-z}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sinh z=\cfrac{e^{z}-e^{-z}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+זהויות
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\left(z+\omega\right)=\cos z\cos\omega-\sin z\sin\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{e^{iz}+e^{-iz}}{2}\cdot\cfrac{e^{i\omega}+e^{-i\omega}}{2}-\cfrac{e^{iz}-e^{-iz}}{2i}\cdot\cfrac{e^{i\omega}-e^{-i\omega}}{2i}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\left(e^{iz}+e^{-iz}\right)\left(e^{i\omega}+e^{-i\omega}\right)+\left(e^{iz}-e^{-iz}\right)\left(e^{i\omega}-e^{-i\omega}\right)}{4}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{2e^{iz}\cdot e^{i\omega}+2e^{-iz}\cdot e^{-i\omega}}{4}=\cfrac{e^{i\left(z+\omega\right)}+e^{-i\left(z+\omega\right)}}{2}=\cos\left(z+\omega\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד זהויות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\cos z\right)'_{z}=\left(\cfrac{e^{iz}+e^{-iz}}{2}\right)'_{z}=\cfrac{ie^{iz}-ie^{-iz}}{2}=i\cdot\cfrac{e^{iz}-e^{-iz}}{2}=-\cfrac{e^{iz}-e^{-iz}}{2i}=-\sin z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=-\cfrac{1}{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sinh z\right)'=\cosh z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cosh z\right)'=\sinh z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+ענף אנליטי
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ פונקציה רב-ערכית בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ נקראת ענף אנליטי של
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $\forall_{z\in D}f\left(z\right)\in F\left(z\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\log\left(z\right)=\ln\left|z\right|+i\arg\left(z\right)
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\ln$
+\end_inset
+
+ פונקציה ממשית, פועלת על 
+\begin_inset Formula $\left|z\right|\in\mathbb{R}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ענף עיקרי של לוגריתם:
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(z\right)=\ln\left|z\right|+i\textnormal{Arg}\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכורת: 
+\begin_inset Formula $\textnormal{Arg}\left(z\right):\mathbb{C}\backslash\left\{ 0\right\} \to\left[-\pi,\pi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{\alpha}=e^{\alpha\log\left(z\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(1-i\right)=\ln\left|1-i\right|+i\textnormal{Arg}\left(1-i\right)=\ln\sqrt{2}-i\cfrac{\pi}{4}=\cfrac{1}{2}\ln2-i\cfrac{\pi}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(1-i\right)=\cfrac{1}{2}\ln2+i\left(-\cfrac{\pi}{4}+2\pi k\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1^{a+ib}=e^{\left(a+ib\right)\log1}=e^{\left(a+ib\right)\cdot\left(\ln\left|1\right|+i2\pi k\right)}=e^{\left(a+ib\right)\left(i2\pi k\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=e^{-2\pi kb}\left(\cos\left(2\pi ka\right)+i\sin\left(2\pi ka\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+צ"ל שלפונקציה 
+\begin_inset Formula $\log\left(z\right)$
+\end_inset
+
+ אין ענף אנליטי ב
+\begin_inset Formula $D=\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי קיים ענף אנליטי בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ נסמן אותו ב
+\begin_inset Formula $L$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+L\left(1\right)=\ln1+i\textnormal{arg}\left(1\right)=i\cdot2\pi k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(e^{i\theta}\right)=\ln\left|e^{i\theta}\right|+i\textnormal{arg}\left(e^{i\theta}\right)=i\theta+i2\pi k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{\theta\to2\pi}L\left(e^{i\theta}\right)=\lim_{\theta\to2\pi}\left(i\theta+i2\pi k\right)=i\cdot2\pi\left(k+1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{\theta\to2\pi}L\left(e^{i\theta}\right)=L\left(\lim_{\theta\to2\pi}e^{i\theta}\right)=L\left(1\right)=i\cdot2\pi k
+\]
+
+\end_inset
+
+קיבלנו שהגבול שונה, ולכן אין גבול, ולכן אין ענף אנליטי.
+\end_layout
+
+\end_body
+\end_document

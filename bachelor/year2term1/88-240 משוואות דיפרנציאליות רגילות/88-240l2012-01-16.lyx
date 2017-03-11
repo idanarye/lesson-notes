@@ -1,0 +1,1331 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+התמרת לפלס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Laplace Transform
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ מוגדרת עבור 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+, ועבור 
+\begin_inset Formula $s\in\mathbb{R}$
+\end_inset
+
+ כלשהו האינטגרל 
+\begin_inset Formula $F\left(s\right)=\int_{0}^{\infty}e^{-st}f\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+ 
+\series bold
+\bar under
+קיים
+\series default
+\bar default
+, אזי קוראים ל
+\begin_inset Formula $F\left(s\right)$
+\end_inset
+
+ "התמרת לפלס" של 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כדאי לזכור אותן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+0
+\numeric off
+( 
+\begin_inset Formula $f\left(t\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+s>0\hspace{1em}F\left(s\right)=\int_{0}^{\infty}e^{-st}\mathrm{\, d}t=\left[\cfrac{-e^{-st}}{s}\right]_{0}^{\infty}=\cfrac{1}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+1
+\numeric off
+( 
+\begin_inset Formula $f\left(t\right)=t^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+n>-1\\
+s>0
+\end{array}\hspace{1em}F\left(s\right)=\int_{0}^{\infty}t^{n}e^{-st}\mathrm{\, d}t=\cfrac{1}{s^{n+1}}\int_{0}^{\infty}\left(st\right)^{n}e^{-st}s\mathrm{\, d}t=...
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $y=st$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...=\cfrac{1}{s^{n+1}}\int_{0}^{\infty}y^{n}e^{-y}\mathrm{\, d}y=\cfrac{\Gamma\left(n+1\right)}{s^{n+1}}
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $n$
+\end_inset
+
+ שלם, אז זה שווה ל
+\begin_inset Formula $\cfrac{n!}{s^{n+1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+2
+\numeric off
+( 
+\begin_inset Formula $f\left(t\right)=e^{\alpha t}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קבוע.
+\begin_inset Formula 
+\[
+F\left(s\right)=\int_{0}^{\infty}e^{-st}e^{\alpha t}dt=\int_{0}^{\infty}e^{\left(\alpha-s\right)t}\mathrm{\, d}t=\qquad s>\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left[\cfrac{e^{\left(\alpha-s\right)t}}{\left(\alpha-s\right)}\right]_{0}^{\infty}=\cfrac{1}{s-\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+3
+\numeric off
+( 
+\begin_inset Formula $f\left(t\right)=\cos\alpha t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s>0\qquad F\left(s\right)=\int_{0}^{\infty}e^{-st}\cos\alpha t\mathrm{\, d}t=\int_{0}^{\infty}e^{-st}\left(\cfrac{e^{i\alpha t}+e^{-i\alpha t}}{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\int_{0}^{\infty}\left(e^{\left(-s+i\alpha\right)t}+e^{\left(-s-i\alpha\right)t}\right)\mathrm{\, d}t=\cfrac{1}{2}\left[\cfrac{e^{\left(-s+i\alpha\right)t}}{-s+i\alpha}+\cfrac{e^{\left(-s-i\alpha\right)t}}{-s-i\alpha}\right]_{0}^{\infty}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\left(\cfrac{1}{-s+i\alpha}+\cfrac{1}{-s-i\alpha}\right)=\cfrac{s}{s^{2}+\alpha^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+4
+\numeric off
+( 
+\begin_inset Formula $f\left(t\right)=\sin\alpha t$
+\end_inset
+
+ - נקבל באופן דומה:
+\begin_inset Formula 
+\[
+F\left(s\right)=\cfrac{\alpha}{s^{2}+\alpha^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ היא פונקציה רציפה למקוטעין על 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ אם יש מספר סופי של נקודות של אי-רציפות, ובכל נקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ של אי-רציפות הגבולות 
+\begin_inset Formula $\lim\limits _{t\to x^{-}}f\left(t\right),\lim\limits _{t\to x^{+}}f\left(t\right)$
+\end_inset
+
+ קיימים)אבל לאו דווקא שווים(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ היא פונקציה מסוג מעריכי אם קיימים 
+\begin_inset Formula $c,\alpha$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f\left(t\right)\right|\le ce^{\alpha t}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+דוגמה של פונקציה 
+\bar under
+שאיננה
+\bar default
+ מסוג מעריכי: 
+\begin_inset Formula $e^{t^{2}}$
+\end_inset
+
+)או 
+\begin_inset Formula $e^{e^{e^{t}}}$
+\end_inset
+
+ וכו'(
+\end_layout
+
+\begin_layout Section*
+משפט)לא נוכיח אבל קל(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא רציפה למקוטעין ומסוג מעריכי אזי קיים 
+\begin_inset Formula $\beta$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\left(s\right)$
+\end_inset
+
+ מוגדר לכל 
+\begin_inset Formula $s>\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נגדיר:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $=A$
+\end_inset
+
+}פונקציות 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרות על 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+, רציפות למקוטעין, מסוג מעריכי{
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $=B$
+\end_inset
+
+}פונקציות מוגדרות על 
+\begin_inset Formula $\left(\beta,\infty\right)$
+\end_inset
+
+ עבור איזשהו 
+\begin_inset Formula $\beta\in\mathbb{R}$
+\end_inset
+
+{
+\end_layout
+
+\begin_layout Section*
+משפט)לא נוכיח - קשה מאוד!(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f,g\in A$
+\end_inset
+
+ וההתמרות של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ הן שוות)ב
+\begin_inset Formula $B$
+\end_inset
+
+( אזי 
+\begin_inset Formula $f\left(t\right)=g\left(t\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+ למעט)אולי( בנקודות שאחת מ
+\begin_inset Formula $f$
+\end_inset
+
+ או 
+\begin_inset Formula $g$
+\end_inset
+
+ איננה רציפה.
+\end_layout
+
+\begin_layout Section*
+תוצאה
+\end_layout
+
+\begin_layout Standard
+אם אנחנו יודעים התמרה של 
+\begin_inset Formula $f$
+\end_inset
+
+ - בעצם
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+לא יודעים את כל 
+\begin_inset Formula $f$
+\end_inset
+
+, אבל מה שלא יודעים זה מספר סופי של נקודות אי רציפות - את שאר 
+\begin_inset Formula $f$
+\end_inset
+
+ יודעים.
+\end_layout
+
+\end_inset
+
+ יודעים את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+תכונות של התמרת לפלס
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+1
+\numeric off
+( ליניאריות
+\end_layout
+
+\begin_layout Standard
+אם ההתמרה של 
+\begin_inset Formula $f_{1}\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $F_{1}\left(s\right)$
+\end_inset
+
+ מוגדרת בקטע 
+\begin_inset Formula $\left(\beta_{1},\infty\right)$
+\end_inset
+
+, וההתמרה של 
+\begin_inset Formula $f_{2}\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $F_{2}\left(s\right)$
+\end_inset
+
+ מוגדרת בקטע 
+\begin_inset Formula $\left(\beta_{2},\infty\right)$
+\end_inset
+
+, אזי ההתמרה של 
+\begin_inset Formula $c_{1}f_{1}\left(t\right)+c_{2}f_{2}\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $c_{1}F_{1}\left(s\right)+c_{2}F_{2}\left(s\right)$
+\end_inset
+
+ מוגדרת בקטע 
+\begin_inset Formula $\left(\max\left(\beta_{1},\beta_{2}\right),\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ע"י ליניאריות של אינטגרל.
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+אם ההתמרה של 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $F\left(s\right)$
+\end_inset
+
+ מוגדרת ב
+\begin_inset Formula $\left(\beta,\infty\right)$
+\end_inset
+
+, אזי ההתמרה של 
+\begin_inset Formula $e^{\alpha t}f\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $F\left(s-\alpha\right)$
+\end_inset
+
+ מוגדרת ב
+\begin_inset Formula $\left(\beta+\alpha,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}d-st\left[e^{\alpha t}f\left(t\right)\right]\mathrm{\, d}t=\int_{0}^{\infty}e^{-\left(s-\alpha\right)t}f\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+3
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+אם ההתמרה של 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $F\left(s\right)$
+\end_inset
+
+, אזי ההתמרה של 
+\begin_inset Formula $f\left(at\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $\cfrac{1}{a}F\left(\cfrac{s}{a}\right)$
+\end_inset
+
+]
+\begin_inset Formula $a>0$
+\end_inset
+
+ קבוע[
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}e^{-st}f\left(\underbrace{at}_{t':=at}\right)\mathrm{\, d}t=\int_{0}^{\infty}e^{-s\unitfrac{t'}{a}}f\left(t'\right)\mathrm{\, d}\cfrac{t'}{a}=\cfrac{1}{a}F\left(\cfrac{s}{a}\right)\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos t\to\cfrac{s}{s^{2}+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\alpha t\to\cfrac{1}{\alpha}\cfrac{\unitfrac{s}{\alpha}}{\left(\unitfrac{s}{\alpha}\right)^{2}+1}=\cfrac{s}{s^{2}+\alpha^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+4
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+התמרה של 
+\begin_inset Formula $f'\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $sF\left(s\right)-f\left(0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}f'\left(t\right)e^{-st}\mathrm{\, d}t=\left[f\left(t\right)\cdot e^{-st}\right]_{0}^{\infty}-\int_{0}^{\infty}f\left(t\right)\left(-se^{-st}\right)\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-f\left(0\right)+s\int_{0}^{\infty}f\left(t\right)e^{-st}\mathrm{\, d}t=sF\left(s\right)-f\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f''\left(t\right)\to s\left(sF\left(s\right)-f\left(0\right)\right)-f'\left(0\right)=s^{2}F\left(s\right)-sf\left(0\right)-f'\left(0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'''=s\left(s^{2}F\left(s\right)-sf\left(0\right)-f'\left(0\right)\right)-f''\left(0\right)=s^{3}F\left(s\right)-s^{2}f\left(0\right)-sf'\left(0\right)-f''\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+5
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+ההתמרה של 
+\begin_inset Formula $tf\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $-\cfrac{df}{ds}$
+\end_inset
+
+, 
+\begin_inset Formula $F\left(s\right)=\int_{0}^{\infty}e^{-ts}f\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{df}{ds}=\int_{0}^{\infty}-te^{-ts}f\left(t\right)\mathrm{\, d}t=-\int_{0}^{\infty}e^{-ts}\left[tf\left(t\right)\right]\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שימוש בפתרון מד"ר
+\end_layout
+
+\begin_layout Standard
+פונקציות של 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $y''-y=1\quad\begin{array}{c}
+y\left(0\right)=0\\
+y'\left(0\right)=1
+\end{array}$
+\end_inset
+
+ אי הומוגני עם מקדמים קבועים ותנאי התחלה.
+\end_layout
+
+\begin_layout Standard
+נעשה התמרה: ההתמרה פעולה ליניארית, נעשה התמחה לכל משתנה בנפרד, ל
+\begin_inset Formula $y''$
+\end_inset
+
+ ול
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ההתמרה של 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $Y\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ההתמרה של 
+\begin_inset Formula $y''\left(s\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $Y''\left(s\right)=s^{2}Y\left(s\right)-s\underbrace{y\left(0\right)}_{=0}-\underbrace{y'\left(0\right)}_{=1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב במשוואה:
+\begin_inset Formula 
+\[
+\left[s^{2}Y\left(s\right)-s\cdot0-1\right]-Y\left(s\right)==\cfrac{1}{s}
+\]
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+t^{2}\to\cfrac{1}{s^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{\alpha t}t^{2}\to\cfrac{1}{\left(s-\alpha\right)^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s^{2}-1\right)Y\left(s\right)=\cfrac{1}{s}+1=\cfrac{1+s}{s}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y\left(s\right)=\cfrac{1+s}{s\left(s^{2}-1\right)}=\cfrac{1}{s\left(s-1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y\left(s\right)=\cfrac{1}{s-1}-\cfrac{1}{s}
+\]
+
+\end_inset
+
+לפי טבלת ההתמרות מחפשים את 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ שנותנת לנו את ההתמרה 
+\begin_inset Formula $Y\left(s\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{y\left(t\right)=e^{t}-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\left(0\right)=y\left(0\right)=0\hspace{1em}\begin{array}{c}
+x'+x+2y=e^{2y}\\
+y'+2x'-x=0
+\end{array}
+\]
+
+\end_inset
+
+ההתמרות הן 
+\begin_inset Formula $\begin{array}{c}
+x\to X\\
+y\to Y
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעשה התמרה:
+\begin_inset Formula 
+\[
+sX+X+2Y=\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+sY+2sX-X=0\Rightarrow Y=\cfrac{\left(1-2s\right)X}{s}=\cfrac{1}{s}-2X
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[s+1+2\left(\cfrac{1}{s}-2\right)\right]X=\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X=\cfrac{1}{\left(s-2\right)\left(s+\cfrac{2}{s}-3\right)}=\cfrac{s}{\left(s-2\right)\left(s^{2}-3s+2\right)}=\cfrac{s}{\left(s-1\right)\left(s-2\right)^{2}}=\cfrac{1}{s-1}-\cfrac{1}{s-2}+\cfrac{2}{\left(s-2\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{\left(s-2\right)^{2}}=\cfrac{-d}{ds}\cfrac{1}{\left(s-2\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=e^{t}-e^{2t}+2te^{2t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=\cfrac{1-2s}{s}X=\cfrac{1-2s}{\left(s-1\right)\left(s-2\right)^{2}}=\cfrac{-1}{s-1}+\cfrac{1}{s-2}+\cfrac{-3}{\left(s-2\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(t\right)=-e^{t}+e^{2t}-3te^{2t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+4y'+13y=2t+3e^{-2t}\cos3t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(0\right)=0\qquad y'\left(0\right)=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left(s^{2}Y+1\right)+4sY+13Y=\cfrac{2}{s^{2}}+3\cfrac{s+2}{\left(s+2\right)^{2}+9}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left(s^{2}+4s+13\right)Y=\cfrac{2}{s^{2}-1}+\cfrac{3s+6}{s^{2}+4s+13}=\cfrac{2\left(s^{2}+4s+13\right)-s^{2}\left(s^{2}+4s+13\right)+\left(3s+6\right)s^{2}}{\left(s^{2}+4s+13\right)s^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow Y=\cfrac{-s^{4}-s^{3}-5s^{2}+8s+26}{s^{2}\left(s^{2}+4s+13\right)^{2}}=...
+\]
+
+\end_inset
+
+נפשט במחשב
+\begin_inset Formula 
+\[
+...=\cfrac{3s+6}{\left(s^{2}+4s+13\right)^{2}}+\cfrac{2}{13s^{2}}+\cfrac{1}{169}\cdot\cfrac{8s-163}{s^{2}+4s+13}-\cfrac{8}{169s}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\cfrac{3}{2}\cfrac{d}{dt}\left(\cfrac{1}{\left(s+2\right)^{2}+9}\right)=\cfrac{1}{2}te^{-2t}\sin3t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heaviside
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(t\right)=\begin{cases}
+1 & t>0\\
+0 & t<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההתמרה:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}H\left(t-c\right)e^{-st}\mathrm{\, d}t=\int_{c}^{\infty}e^{-st}\mathrm{\, d}t=\left[\cfrac{-e^{-st}}{s}\right]_{c}^{\infty}=\cfrac{e^{-sc}}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציית 
+\begin_inset Formula $H_{a,b}=\begin{cases}
+1 & a<tcb\\
+0 & t<a,t>b
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H\left(t-a\right)-H\left(t-b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההתמרה:
+\begin_inset Formula 
+\[
+\cfrac{e^{-as}-e^{-bs}}{s}
+\]
+
+\end_inset
+
+מה ההתמרה? 
+\begin_inset Formula $f\left(t-c\right)H\left(t-c\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c>0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}t\left(t-c\right)H\left(t-c\right)e^{-st}\mathrm{\, d}t=\int_{c}^{\infty}f\left(t-c\right)H\left(t-c\right)e^{-st}\mathrm{\, d}t\underset{t=c+t'}{=}\int_{0}^{\infty}f\left(t'\right)e^{-s\left(c+t'\right)}\mathrm{\, d}t'=e^{-sc}F\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+כתוב את הפונקציה ע"י פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heaviside
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומצאו את אתמרת לפלס שלה.
+\begin_inset Formula 
+\[
+f\left(t\right)=\begin{cases}
+1 & 0<t\le1\\
+4 & 1<t\le3\\
+6 & 3<t\le5\\
+-3 & t>5
+\end{cases}
+\]
+
+\end_inset
+
+פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heaviside
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נתחיל משמאל:
+\begin_inset Formula 
+\[
+f\left(t\right)=H\left(t\right)+3H\left(t-1\right)+2H\left(t-3\right)-2H\left(t-5\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(s\right)=\cfrac{1}{s}+3\cfrac{e^{-s}}{s}+\cfrac{2e^{-3s}}{s}-\cfrac{9e^{-5s}}{5}=\cfrac{1}{s}\left(1+3e^{-5}+2e^{-3s}-9e^{-5s}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ננסה לפתור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-4y'+3y=\begin{cases}
+\sin t & 0<t<\pi\\
+0 & t\ge\pi
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin t-\sin tH\left(t-\pi\right)=\sin t+\sin\left(t-\pi\right)H\left(t-\pi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s^{2}Y-4sY+3Y=\cfrac{1}{s^{2}+1}+\cfrac{1}{s^{2}+1}e^{-s\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\left(s^{2}-4s+3\right)}_{\left(s-1\right)\left(s-3\right)}Y=\cfrac{1}{s^{2}+1}\left(1+e^{-s\pi}\right)
+\]
+
+\end_inset
+
+)משאירים לפעם הבאה(
+\end_layout
+
+\end_body
+\end_document

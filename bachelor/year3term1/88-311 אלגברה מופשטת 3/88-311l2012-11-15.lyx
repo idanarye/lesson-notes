@@ -1,0 +1,1614 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אוטומורפיזם הוא איזומורפיזם מחוג לעצמו.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+אוטומורפיזם 
+\begin_inset Formula $\mathbb{Q}\left[\sqrt{2}\right]\to\mathbb{Q}\left[\sqrt{2}\right]$
+\end_inset
+
+ מוגדר ע"י 
+\begin_inset Formula $\sqrt{2}\mapsto-\sqrt{2}$
+\end_inset
+
+.
+ זה בעצם אומר שאין הבדל אלגברי בין 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ ל
+\begin_inset Formula $-\sqrt{2}$
+\end_inset
+
+.
+ אבל צריך להיזהר! זה נכון כשמתסכלים על 
+\begin_inset Formula $\mathbb{Q}\left[\sqrt{2}\right]$
+\end_inset
+
+, אבל לא בהכרח אם מסתכלים על שדה יותר גדול - למשל ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ הוא ריבועי ו
+\begin_inset Formula $-\sqrt{2}$
+\end_inset
+
+ אינו ריבועי.
+ כלומר 
+\begin_inset Formula $\exists_{b\in\mathbb{R}}b^{2}=a$
+\end_inset
+
+ נכון עבור 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ ולא עבור 
+\begin_inset Formula $-\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:K\to R$
+\end_inset
+
+ הוא הומומורפיזם
+\begin_inset Formula $0\neq$
+\end_inset
+
+ של חוגים ו
+\begin_inset Formula $K$
+\end_inset
+
+ שדה, אז 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא חח"ע.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ker f\lhd K\implies\ker f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $F$
+\end_inset
+
+ שדה.
+ 
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברה קומוטטיבית הוא חוג שמכיל את 
+\begin_inset Formula $F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)הגדרה זמנית לצורך הקורס(
+\end_layout
+
+\begin_layout Standard
+הומומורפיזם של 
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברות הוא הומומורפיזם של חוגים 
+\begin_inset Formula $\varphi:K\to R$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $K,R$
+\end_inset
+
+ שניהם 
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברות ו
+\begin_inset Formula $\forall_{\alpha\in F}\varphi\left(\alpha\right)=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\nicefrac{K}{F}$
+\end_inset
+
+)
+\begin_inset Formula $K$
+\end_inset
+
+ שדה( הרחבה של 
+\begin_inset Formula $F$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left[K:F\right]<\infty$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi:K\to K$
+\end_inset
+
+ הומומורפיזם של 
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברות אז 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ אוטומורפיזם.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi$
+\end_inset
+
+ חח"ע לפי ההערה.
+ לכן 
+\begin_inset Formula $\varphi\left(K\right)\subseteq K$
+\end_inset
+
+ ו
+\begin_inset Formula $\left[\varphi\left(K\right):F\right]=\left[K:F\right]$
+\end_inset
+
+)כי 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ מעביר בסיס 
+\begin_inset Formula $\left\{ b_{1},\dots b_{n}\right\} $
+\end_inset
+
+ של 
+\begin_inset Formula $K$
+\end_inset
+
+ לבסיס 
+\begin_inset Formula $\left\{ \varphi\left(b_{1}\right),\dots\varphi\left(b_{n}\right)\right\} $
+\end_inset
+
+ של 
+\begin_inset Formula $\varphi\left(K\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\varphi\left(K\right)=K$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ על 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ איזומורפיזם.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+קיבלנו "ספר בישול" לבנות אוטומורפיזמים של 
+\begin_inset Formula $K=F\left[a\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a\in K$
+\end_inset
+
+ אלגברי מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $f\in F\left[\lambda\right]$
+\end_inset
+
+ הפולינום המינימלי של 
+\begin_inset Formula $a$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק )מדרגה
+\begin_inset Formula $\left[K:F\right]=$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ניקח את השורשים 
+\begin_inset Formula $a_{1},\dots a_{n}$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ לכל אחד יש הומומורפיזם-
+\begin_inset Formula $F$
+\end_inset
+
+, ולכן אוטומורפיזם-
+\begin_inset Formula $F$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\sigma:K\to K\qquad\sigma\left(a\right)=a_{i}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\sigma\left(\sum\alpha_{j}a^{j}\right)=\sum\alpha_{j}a_{i}^{j}\qquad\alpha_{j}\in F
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\textnormal{Gal}\left(\nicefrac{K}{F}\right)=m$
+\end_inset
+
+ בדוגמא הזאת.
+\end_layout
+
+\begin_layout Section*
+דוגמאות של אלגבראות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbb{C},\mathbb{R}$
+\end_inset
+
+ הם 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+-אלגברות.
+\end_layout
+
+\begin_layout Enumerate
+כל שדה עם מאפיין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ אלגברה.
+\end_layout
+
+\begin_layout Enumerate
+כל שדה עם מאפיין 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\mathbb{F}_{p}$
+\end_inset
+
+-אלגברה.
+\end_layout
+
+\begin_deeper
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+נתון חוג כלשהו 
+\begin_inset Formula $R$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $\varphi:\mathbb{Z}\to R$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\varphi\left(n\right)=\underbrace{1+1+1+\cdots+1}_{n\textnormal{ times}}\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ker\varphi\lhd\mathbb{Z}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\ker\varphi=m\mathbb{Z}$
+\end_inset
+
+ עבור איזשהו 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{char}\left(R\right)=m$
+\end_inset
+
+ עבור 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות.
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא מספר ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ מש' נותר 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{F}_{p}\cong\nicefrac{\mathbb{Z}}{\ker\varphi}\hookrightarrow R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+המשך דוגמאות
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $F\left[\lambda\right]$
+\end_inset
+
+ הוא 
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מתון אם המקדם העליון הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ המקדם העליון של 
+\begin_inset Formula $f$
+\end_inset
+
+ אז 
+\begin_inset Formula $\alpha^{-1}f$
+\end_inset
+
+ פולינום מתוקן 
+\series bold
+עם אותם שורשים
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\in F\left[x\right]$
+\end_inset
+
+ מתוקן 
+\bar under
+מתפצל
+\bar default
+ אם 
+\begin_inset Formula $f=\left(\lambda-\alpha_{1}\right)\cdots\left(\lambda-\alpha_{n}\right)$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $f\left[\lambda\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\emph on
+שדה פיצול
+\emph default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ מתפצל בתוך 
+\begin_inset Formula $E$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\series bold
+אינו
+\series default
+ מתפצל בכל שדה 
+\begin_inset Formula $L$
+\end_inset
+
+ עבור 
+\begin_inset Formula $F\le L<E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במילים אחרות, 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $E$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E=F\left[a_{1},\dots a_{n}\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f=\left(\lambda-a_{1}\right)\cdots\left(\lambda-a_{n}\right)$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $E\left[\lambda\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+האם אפשר לבנות שדה פיצול?
+\end_layout
+
+\begin_layout Enumerate
+האם הוא יחיד עד 
+\begin_inset Formula $F$
+\end_inset
+
+-איזומורפיזם?
+\end_layout
+
+\begin_layout Subsection*
+פתרון ל
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ גורם אי פריק של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $K_{1}=\nicefrac{F\left[\lambda\right]}{F\left[\lambda\right]g_{1}}$
+\end_inset
+
+.
+ הוא מכיל שורש 
+\begin_inset Formula $a_{1}:=\lambda+F\left[\lambda\right]g_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתוך 
+\begin_inset Formula $K_{1}\left[\lambda\right]$
+\end_inset
+
+, 
+\begin_inset Formula $f=\left(\lambda-a_{1}\right)h_{2}$
+\end_inset
+
+)
+\begin_inset Formula $h_{2}\in K_{1}\left[\lambda\right]$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ממשיכים למצוא 
+\begin_inset Formula $K_{2}\supset K_{1}$
+\end_inset
+
+ עםפ שורש 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ של 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+, ונעשה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים עד שמגיעים ל
+\begin_inset Formula $K_{n}$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+K_{n}=F\left[a_{1},\dots a_{n}\right]
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $K$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ שדה הפיצול של 
+\begin_inset Formula $F$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{7}+3\lambda^{6}+17\lambda^{5}+13\lambda^{4}+4\lambda^{3}-10002\lambda^{2}+\lambda-10
+\]
+
+\end_inset
+
+אולי 
+\begin_inset Formula $\left[E:F\right]=7!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $\deg f=2$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק)ב
+\begin_inset Formula $F\left[\lambda\right]$
+\end_inset
+
+( אז 
+\begin_inset Formula $2=\left[E:F\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+למשל 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ שדה הפיצול של 
+\begin_inset Formula $\lambda^{2}+1$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Q}\left[\sqrt{2}\right]$
+\end_inset
+
+ שדה הפיצול של 
+\begin_inset Formula $\lambda^{2}-2$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f=\lambda^{n}-1=\prod\limits _{i=1}^{n-1}\left(\lambda-p^{i}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ שורש 
+\begin_inset Formula $n$
+\end_inset
+
+-פרימיטיבי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $E=F\left[p\right]$
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left[E:F\right]=\deg p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $m$
+\end_inset
+
+ ראשוני ו
+\begin_inset Formula $F=\mathbb{Q}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left[E:F\right]=n-1=\deg p$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f=\lambda^{n}-p\in\mathbb{Q}\left[\lambda\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ מספר ראשוני.
+ 
+\begin_inset Formula $\sqrt[n]{p}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\mathbb{Q}\left[\sqrt[n]{p}\right]\subseteq E$
+\end_inset
+
+.
+ השורשים כולם הם 
+\begin_inset Formula $\rho^{i}\sqrt[n]{p}$
+\end_inset
+
+, 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\rho=\frac{\rho\sqrt[n]{p}}{\sqrt[n]{p}}\in E$
+\end_inset
+
+, לכן 
+\begin_inset Formula $p^{i}\sqrt[n]{p}\in\mathbb{Q}\left[\rho,\sqrt[n]{p}\right]\subseteq E$
+\end_inset
+
+, 
+\begin_inset Formula $E=\mathbb{Q}\left[\rho,\sqrt[n]{p}\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הערות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $g\mid f$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ מתפצל אז 
+\begin_inset Formula $g$
+\end_inset
+
+ מתפצל.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset Formula $hg=f=\left(\lambda-a_{1}\right)\cdots\left(\lambda-a_{n}\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $g=\left(\lambda-a_{i_{1}}\right)\cdots\left(\lambda-a_{i_{t}}\right)$
+\end_inset
+
+ לאיזשהם 
+\begin_inset Formula $i_{1},\dots i_{t}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+גם אם 
+\begin_inset Formula $\deg g=1$
+\end_inset
+
+ - אז 
+\begin_inset Formula $g$
+\end_inset
+
+ כבר מפוצל, וזה נחשב שהוא פולינום מתפצל.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $a$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $f$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $E\supset K$
+\end_inset
+
+ ו
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ ו
+\begin_inset Formula $f=\left(\lambda-a_{1}\right)g\in K\left[\lambda\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $g$
+\end_inset
+
+ מעל 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $F\subset K\subset E$
+\end_inset
+
+ ו
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $E$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ גם שדה פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה)משפט(
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $E_{1},E_{2}$
+\end_inset
+
+ שדות פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $E_{1}\cong E_{2}$
+\end_inset
+
+כ
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברות.
+\end_layout
+
+\begin_layout Section*
+משפט יותר כללי
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varphi:F_{1}\to F_{2}$
+\end_inset
+
+ איזומורפיזם של שדות ו
+\begin_inset Formula $f=\sum\limits _{i=0}^{n}\alpha_{i}\lambda^{i}\in F_{1}\left[\lambda\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{\varphi}=\sum\varphi\left(\alpha_{i}\right)\lambda^{i}\in F_{2}\left[\lambda\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f_{\varphi}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+, א 
+\begin_inset Formula $E_{1}\cong E_{2}$
+\end_inset
+
+כ
+\begin_inset Formula $F$
+\end_inset
+
+-אלגברות.
+\end_layout
+
+\begin_layout Subsection*
+למה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f_{\varphi}$
+\end_inset
+
+ מתפצל בתוך 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+שדה ההרחבה של 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi:F_{1}\to F_{2}$
+\end_inset
+
+ הומומורפיזם של שדות.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הלמה
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ כלומר שורש של 
+\begin_inset Formula $g$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ גורם אי פריק של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{\varphi}$
+\end_inset
+
+ מתפצל בתוך 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ כי 
+\begin_inset Formula $g_{\varphi}\mid f_{\varphi}$
+\end_inset
+
+)אם 
+\begin_inset Formula $f=gh$
+\end_inset
+
+ אז 
+\begin_inset Formula $f_{\varphi}=g_{\varphi}h_{\varphi}$
+\end_inset
+
+(.
+ יש לו שורש 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+.
+ יש הומומורפיזם הצבה לגבי 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\begin_inset Formula $\psi:F\left[\lambda\right]\to L_{2}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\lambda\mapsto b_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\sum\alpha_{i}\lambda^{i}=\sum\varphi\left(\alpha_{i}\right)b_{1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\ker\psi=\left\{ h=\sum\alpha_{i}\lambda^{i}\middle|h_{\varphi}\left(b_{1}\right)=\sum\varphi\left(\alpha_{i}\right)b_{1}^{i}=0\right\} 
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $g\in\ker\psi$
+\end_inset
+
+ לפי בחירת 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+.
+ לכן יש הומומורפיזם 
+\begin_inset Formula $\nicefrac{F\left[\lambda\right]}{F\left[\lambda\right]g}\to L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left[a_{n}\right]=\nicefrac{F\left[\lambda\right]}{F\left[\lambda\right]g}\to L_{2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחנו את הלמה ולכן את המשפט.
+\end_layout
+
+\begin_layout Section*
+שאלה הבאה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $=L_{1}=L_{2}$
+\end_inset
+
+שדה הפיצול 
+\begin_inset Formula $E$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אז כמה אוטומורפיזמים-
+\begin_inset Formula $F$
+\end_inset
+
+ של 
+\begin_inset Formula $E$
+\end_inset
+
+ אפשר לקבל? כלומר 
+\begin_inset Formula $\left|\textnormal{Gal}\left(\nicefrac{E}{F}\right)\right|=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\series default
+: בהוכחה שלחנו 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $g$
+\end_inset
+
+ לתמונה 
+\begin_inset Formula $g=g_{\varphi}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\varphi=1$
+\end_inset
+
+.
+ מספר הבחירות הוא מספר השורשים בתוך 
+\begin_inset Formula $E$
+\end_inset
+
+)מס' הבחירות הוא
+\begin_inset Formula $\deg g\ge$
+\end_inset
+
+, ויש שוויון אם אין שורש כפול של 
+\begin_inset Formula $g$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+בסיכום, מספר הבחירות
+\begin_inset Formula $\ge$
+\end_inset
+
+מכפלת הממדים של ההרחבות המינימליות בכל שלב, וזה שווה ל:
+\begin_inset Formula 
+\[
+\left[E:K_{n-1}\right]\left[K_{n-1}:K_{n-2}\right]\cdots\left[K_{2}:F\right]=\left[E:F\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל שדה 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left|\textnormal{Gal}\left(\nicefrac{E}{F}\right)\right|\le\left[E:F\right]$
+\end_inset
+
+, ויש שוויון כאשר אין ל
+\begin_inset Formula $f$
+\end_inset
+
+ שורש כפול ב
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

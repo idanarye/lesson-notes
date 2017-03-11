@@ -1,0 +1,1115 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+צורות קנוניות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מעגל
+\series default
+: 
+\begin_inset Formula $x^{2}+y^{2}=R^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הנקודה היא מקרה פרטי של המעגל: 
+\begin_inset Formula $x^{2}+y^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אליפסה
+\series default
+: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+היפרבולה
+\series default
+: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקרה פרטי של ההיפרבולה: כאשר 
+\begin_inset Formula $a=b\to0$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $x^{2}-y^{2}=0$
+\end_inset
+
+, שזה הקוים המצטלבים 
+\begin_inset Formula $y=\pm x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פרבולה
+\series default
+: 
+\begin_inset Formula $x=ay^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סיווג תבניות ריבועיות
+\end_layout
+
+\begin_layout Standard
+לא תמיד נקבל משוואה קנונית.
+ בד"כ אפשר בקלות להמיר לצורה:
+\begin_inset Formula 
+\[
+ax^{2}+2bxy+cy^{2}+dx+ey+f=0
+\]
+
+\end_inset
+
+שזה בעצם:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b\\
+b & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=0
+\]
+
+\end_inset
+
+נסתכל על המחובר הראשון - נסמן 
+\begin_inset Formula $A=\begin{pmatrix}a & b\\
+b & c
+\end{pmatrix}$
+\end_inset
+
+, ואז:
+\begin_inset Formula 
+\[
+A_{ij}x^{i}x^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{1}=x\qquad x^{2}=y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{11}=a\qquad A_{12}=A_{21}=b\qquad A_{22}=c
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $A=A^{t}$
+\end_inset
+
+ - מטריצה סימטרית - ולכן יש 
+\begin_inset Formula $v,u$
+\end_inset
+
+ וקטורים עצמיים עם ערכים עצמיים 
+\begin_inset Formula $\lambda_{1},\lambda_{2}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\begin{array}{c}
+Av=\lambda_{1}v\\
+Au=\lambda_{2}v
+\end{array}$
+\end_inset
+
+, ו
+\begin_inset Formula $u,v$
+\end_inset
+
+ אורתוגונלים:
+\begin_inset Formula 
+\[
+\lambda_{2}\left\langle u,v\right\rangle =\left\langle Au,v\right\rangle =\left\langle A^{t}u,v\right\rangle =\left\langle u,Av\right\rangle =\left\langle u,\lambda v\right\rangle =\lambda_{1}\left\langle u,v\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda_{1}-\lambda_{2}\right)\left\langle u,v\right\rangle =0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יש קבוצת וקטורים עצמיים של מטריצה סימטרית שהיא בסיס אורתונורמלי למרחב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר: יש מטריצה מלכסנת 
+\begin_inset Formula $P$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P^{t}=P^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר: 
+\begin_inset Formula $P\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=\begin{pmatrix}x\\
+y
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x' & y'\end{pmatrix}P^{t}AP\begin{pmatrix}x'\\
+y'
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}P\begin{pmatrix}x'\\
+y'
+\end{pmatrix}+f=0
+\]
+
+\end_inset
+
+ומכאן אפשר להגיע לצורה:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x' & y'\end{pmatrix}\begin{pmatrix}\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}+\begin{pmatrix}g & h\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}\left(x'\right)^{2}+\lambda_{2}\left(y'\right)^{2}+gx'+hy'+f=0
+\]
+
+\end_inset
+
+וזה כבר יותר דומה לצורה הריבועית - רק צריך להיפתר מהגורמים הלינאריים, 
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $h$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\lambda_{1}\left(x'+\alpha\right)^{2}=\lambda_{1}\left(x'\right)^{2}+2\alpha\lambda_{1}x'+\lambda_{1}\alpha^{2}
+\]
+
+\end_inset
+
+ולכן כדי לאפס את 
+\begin_inset Formula $g$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $2\alpha\lambda_{1}=g$
+\end_inset
+
+, ואותו דבר כדי לאפס את 
+\begin_inset Formula $h$
+\end_inset
+
+ - נבחר 
+\begin_inset Formula $\beta$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $2\beta\lambda_{2}=h$
+\end_inset
+
+.
+ נקבל:
+\begin_inset Formula 
+\[
+\lambda_{1}\left(x'+\frac{g}{2\lambda_{1}}\right)^{2}+\lambda_{2}\left(y'+\frac{h}{2\lambda_{1}}\right)^{2}+f-\frac{g^{2}}{4\lambda_{1}}+\frac{h^{2}}{4\lambda_{2}}=0
+\]
+
+\end_inset
+
+ובכתיב יותר פשוט:
+\begin_inset Formula 
+\[
+\lambda_{1}\left(x'-\alpha\right)^{2}+\lambda_{2}\left(y'-\beta\right)^{2}+k=0
+\]
+
+\end_inset
+
+וקיבלנו צורה קנונית ריבועית, שהיא מוזזת ומסובבת.
+\end_layout
+
+\begin_layout Standard
+כאשר אחד מהערכים העצמיים שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפס, אי אפשר לאפס את שני הגורמים הלינאריים, ומקבלים פרבולה.
+ כאשר 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=0$
+\end_inset
+
+, מקבלים קו ישר.
+\end_layout
+
+\begin_layout Standard
+לפי סימני הערכים העצמיים אפשר לדעת איזה צורה קיבלנו:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אליפסה
+\series default
+: 
+\begin_inset Formula $\lambda_{1}\lambda_{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+היפרבולה
+\series default
+: 
+\begin_inset Formula $\lambda_{1}\lambda_{2}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פרבולה
+\series default
+: 
+\begin_inset Formula $\lambda_{1}\lambda_{2}=0$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\lambda_{1}\neq0\vee\lambda_{2}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קו
+\begin_inset space ~
+\end_inset
+
+ישר
+\series default
+: 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לבדוק את הסימנים ישירות לפי 
+\begin_inset Formula $\det A$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\lambda_{1}\lambda_{2}=\begin{vmatrix}\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{vmatrix}=\det\left(P^{-1}AP\right)=\cancel{\det\left(P^{-1}\right)}\det A\cancel{\det P}=\det A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{1}{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+xy-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}0 & \frac{1}{2}\\
+\frac{1}{2} & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{vmatrix}-\lambda & \frac{1}{2}\\
+\frac{1}{2} & -\lambda
+\end{vmatrix}=0\implies\lambda^{2}-\frac{1}{4}=0\implies\lambda=\pm\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}-\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} & -\frac{1}{2}
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta
+\end{pmatrix}=\begin{pmatrix}0\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha=\beta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{1}=\begin{pmatrix}\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{2}=-\frac{1}{2}\qquad v_{2}=\begin{pmatrix}\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P=\begin{pmatrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x' & y'\end{pmatrix}\begin{pmatrix}\frac{1}{2} & 0\\
+0 & -\frac{1}{2}
+\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{x'^{2}}{2}-\frac{y'^{2}}{2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+חתכי חרוט -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Conic Sections
+\end_layout
+
+\begin_layout Standard
+נסתכל על המשוואה 
+\begin_inset Formula $x^{2}+y^{2}-z^{2}=0$
+\end_inset
+
+)או 
+\begin_inset Formula $x^{2}+y^{2}=z^{2}$
+\end_inset
+
+(.
+ המשוואה הזו מתארת זוג חרוטים במרחב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לראות בציור שבאמצעות חיתוכים של מישור עם החרוט אפשר לקבל:
+\end_layout
+
+\begin_layout Enumerate
+אם חותכים בדיוק ב
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ מקבלים פרבולה
+\end_layout
+
+\begin_layout Enumerate
+אם חותכים בזווית הקטנה מ
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ מקבלים אליפסה)כאשר חותכים ב
+\begin_inset Formula $0^{\circ}$
+\end_inset
+
+ מקבלים מעגל(
+\end_layout
+
+\begin_layout Enumerate
+אם חותכים בזוית הגדולה מ
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ מקבלים היפרבולה
+\end_layout
+
+\begin_layout Standard
+אפשר לבצע על החרוט סיבוב והזזה, ולקבל
+\begin_inset Formula 
+\[
+\left(\overbrace{x-\alpha}^{x'}\right)^{2}+\left(\overbrace{y-\beta}^{y'}\right)^{2}-\left(\overbrace{z-\gamma}^{z'}\right)^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x' & y' & z'\end{pmatrix}\begin{pmatrix}1\\
+ & 1\\
+ &  & 1
+\end{pmatrix}\begin{pmatrix}x'\\
+y'\\
+z'
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+לדוגמה:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x'\\
+y'\\
+z'
+\end{pmatrix}=\begin{pmatrix}\cos30 & 0 & -\sin30\\
+0 & 1 & 0\\
+\sin30 & 0 & \cos30
+\end{pmatrix}\begin{pmatrix}x''\\
+y''\\
+z''
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x'=\cos30\cdot x''-\sin30\cdot z''
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P^{t}AP=\begin{pmatrix}\frac{\sqrt{3}}{2} & 0 & \frac{1}{2}\\
+0 & 1 & 0\\
+-\frac{1}{2} & 0 & \frac{\sqrt{3}}{2}
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & -1
+\end{pmatrix}\begin{pmatrix}\frac{\sqrt{3}}{2} & 0 & -\frac{1}{2}\\
+0 & 1 & 0\\
+\frac{1}{2} & 0 & \frac{\sqrt{3}}{2}
+\end{pmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}\frac{\sqrt{3}}{2} & 0 & -\frac{1}{2}\\
+0 & 1 & 0\\
+-\frac{1}{2} & 0 & -\frac{\sqrt{3}}{2}
+\end{pmatrix}\begin{pmatrix}\frac{\sqrt{3}}{2} & 0 & -\frac{1}{2}\\
+0 & 1 & 0\\
+\frac{1}{2} & 0 & \frac{\sqrt{3}}{2}
+\end{pmatrix}=\begin{pmatrix}\frac{1}{2} & 0 & -\frac{\sqrt{3}}{2}\\
+0 & 1 & 0\\
+\frac{\sqrt{3}}{2} & 0 & -\frac{1}{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x'' & y'' & z''\end{pmatrix}\begin{pmatrix}\frac{1}{2} & 0 & -\frac{\sqrt{3}}{2}\\
+0 & 1 & 0\\
+\frac{\sqrt{3}}{2} & 0 & -\frac{1}{2}
+\end{pmatrix}\begin{pmatrix}x''\\
+y''\\
+z''
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תבניות ריבועיות במרחב
+\end_layout
+
+\begin_layout Standard
+תבניות ריבועיות במרחב הן מהצורה:
+\begin_inset Formula 
+\[
+ax^{2}+by^{2}+cz^{2}+2dy+2exz+2fyz+gx+hy+jz+k=0
+\]
+
+\end_inset
+
+לאחר סיבוב והזזה אפשר להגיע לאחת מהצורות הבאות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אליפסואיד
+\series default
+: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+היפרבולויד
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יריעה אחת 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שתי יריעות 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פרבולואיד
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אליפטי: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+היפרבולי: 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=z$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+עקומות
+\end_layout
+
+\begin_layout Standard
+אפשר לייצג קו ישר ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula 
+\[
+f:\mathbb{R}\to\mathbb{R}^{n}\qquad f\left(t\right)=\vec{v}+t\vec{u}\qquad t\in\left(-\infty,\infty\right)
+\]
+
+\end_inset
+
+אם רוצים לייצג קוים לא ישרים, משתמשים בפונקציה לא לינארית: 
+\begin_inset Formula $\begin{pmatrix}f^{1}\left(t\right)\\
+f^{2}\left(t\right)\\
+f^{3}\left(t\right)
+\end{pmatrix}$
+\end_inset
+
+.
+ למשל:
+\begin_inset Formula 
+\[
+\begin{pmatrix}t\\
+t^{2}\\
+t^{3}
+\end{pmatrix}\qquad\begin{pmatrix}\sin t^{2}\\
+\cos t^{2}
+\end{pmatrix}\qquad\begin{pmatrix}f^{1}\left(t^{3}\right)\\
+f^{2}\left(t^{3}\right)\\
+f^{3}\left(t^{3}\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף לעקומות יש לנו עולם נוסף של יצורים החיים על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ - פונקציות סקלריות 
+\begin_inset Formula $g:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש לנו מיפוי 
+\begin_inset Formula $f\circ g=f\left(g\left(t\right)\right):\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רוצים להסתכל על הנגזרת של זה, אבל הבעיה היא ש
+\begin_inset Formula $f$
+\end_inset
+
+ לא תמיד מגיע לכל המרחב.
+ בכל זאת - נסתכל על הנגזרת:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}g\left(f\left(t\right)\right)=\frac{\partial g}{\partial x^{1}}\frac{\mathrm{d}f^{1}}{\mathrm{d}t}+\frac{\partial g}{\partial x^{2}}\frac{\mathrm{d}f^{2}}{\mathrm{d}t}+\frac{\partial g}{\partial x^{3}}\frac{\mathrm{d}f^{3}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}g=\frac{\partial g}{\partial x^{1}}\mathrm{\, d}x^{1}+\frac{\partial g}{\partial x^{2}}\mathrm{\, d}x^{2}+\frac{\partial g}{\partial x^{3}}\mathrm{\, d}x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{df}}{\mathrm{d}t}=\frac{\mathrm{d}f^{1}}{\mathrm{d}t}\frac{\partial}{\partial x^{1}}+\frac{\mathrm{d}f^{2}}{\mathrm{d}t}\frac{\partial}{\partial x^{2}}+\frac{\mathrm{d}f^{3}}{\mathrm{d}t}\frac{\partial}{\partial x^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{d}g$
+\end_inset
+
+ נקרא ה
+\emph on
+גרדיאנט
+\emph default
+ של 
+\begin_inset Formula $g$
+\end_inset
+
+, והוא בעצם וקטור קצב השינוי.
+ למשל: עבור 
+\begin_inset Formula $g=\frac{w}{h^{2}}$
+\end_inset
+
+ הגרדיאנט הוא:
+\begin_inset Formula 
+\[
+\mathrm{d}g=\frac{1}{h^{2}}\mathrm{\, d}w-\frac{2w}{h^{3}}\mathrm{\, d}h\implies\begin{pmatrix}\frac{1}{h^{2}} & \frac{2w}{h^{3}}\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\mathrm{d}f}{\mathrm{d}t}$
+\end_inset
+
+ הוא וקטור המהירות של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אם נכפיל אותם - 
+\begin_inset Formula $\mathrm{d}g\cdot\frac{\mathrm{d}f}{\mathrm{d}t}$
+\end_inset
+
+ - נקבל את הנגזרת של 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+בעצם...
+\end_layout
+
+\begin_layout Itemize
+וקטור הוא 
+\bar under
+מהירות
+\bar default
+ של עקומה - 
+\begin_inset Formula $v^{i}=\frac{\mathrm{d}f}{\mathrm{d}t}=\begin{pmatrix}\\
+\\
+\end{pmatrix}$
+\end_inset
+
+ - והם יהיו וקטורי עמודה
+\end_layout
+
+\begin_layout Itemize
+קו-וקטור הוא מיפוי לינארי ממרחב הוקטורים לסקלרים - 
+\begin_inset Formula $u_{i}=\mathrm{d}g$
+\end_inset
+
+ - והם יהיו וקטורי שורה
+\end_layout
+
+\begin_layout Standard
+ולכן נסמן 
+\begin_inset Formula $\mathrm{d}g\cdot\frac{\mathrm{d}f}{\mathrm{d}t}=u_{i}v^{i}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

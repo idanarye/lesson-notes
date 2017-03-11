@@ -1,0 +1,439 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל)
+\begin_inset Formula $Tile5$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נתבונן בגרסא של בעיית הריצוף שבה, בנוסף לדרישות הרגילות, דורשים שכל צבע
+ שעל קב' האריחים יופיע אינסוף פעמים.
+\end_layout
+
+\begin_layout Standard
+האם השפה כריעה? ניתנת לזיהוי? הוכח.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נוכיח שהשפה לא ניתנת לזיהוי ברדוקציה מ
+\begin_inset Formula $Tile$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(A,A_{0}\right)\in Tile\Leftrightarrow\left(T,t_{0}\right)\in Tile5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Standard
+ראשית 
+\begin_inset Formula $T\supseteq A$
+\end_inset
+
+.
+ נסמן את צבעי 
+\begin_inset Formula $A$
+\end_inset
+
+ ב
+\begin_inset Formula $1,...\Gamma$
+\end_inset
+
+.
+ ניצור אריח לוגו חדש 
+\begin_inset Formula $t_{0}=\boxed{\begin{matrix} & \#\\
+\# &  & 1\\
+ & *
+\end{matrix}}$
+\end_inset
+
+)*,# סימנים שלא היו קיימים(.
+ בנוסף, אם 
+\begin_inset Formula $a_{0}=\boxed{\begin{matrix} & c_{1}\\
+c_{4} &  & c_{2}\\
+ & c_{3}
+\end{matrix}}$
+\end_inset
+
+ ניצור אריח חדש 
+\begin_inset Formula $t_{1}=\boxed{\begin{matrix} & c_{1}\\
+c_{4} &  & c_{2}\\
+ & \#
+\end{matrix}}$
+\end_inset
+
+.
+ וכעת, לכל 
+\begin_inset Formula $1\le\gamma\le r-1$
+\end_inset
+
+ ולכל סימן 
+\begin_inset Formula $c$
+\end_inset
+
+ ב
+\begin_inset Formula $A$
+\end_inset
+
+ ניצור אריח 
+\begin_inset Formula $t_{\gamma}^{c}=\boxed{\begin{matrix} & c\\
+\gamma &  & \gamma+1\\
+ & *
+\end{matrix}}$
+\end_inset
+
+.
+ ולבסוף ניצור אריח 
+\begin_inset Formula $t_{\#}^{c}=\boxed{\begin{matrix} & c\\
+\Gamma &  & \#\\
+ & *
+\end{matrix}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מובן שהבנייה חישובית.
+\end_layout
+
+\begin_layout Subsection*
+נכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ תרגיל.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח 
+\begin_inset Formula $\left(t,T_{0}\right)\in Tile5$
+\end_inset
+
+, כלומר קיים ריצוף כשר לחצי המישור בעזרת 
+\begin_inset Formula $T$
+\end_inset
+
+ עם 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ בראשית, )וכל סימן מופיע אינסוף פעמים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+לא צריך להגיד את זה - זה נובע ישירות מכך שהריצוף כשר.
+\end_layout
+
+\end_inset
+
+( בהכרח בנק' 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ מופיע 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+.
+ בשורה 
+\begin_inset Formula $y=1$
+\end_inset
+
+ יכולים להופיע רק אריחים מ
+\begin_inset Formula $A$
+\end_inset
+
+ או 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+.
+ בשורות 
+\begin_inset Formula $y\ge2$
+\end_inset
+
+ יכולים להופיע רק אריחי 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כעת, ניתן להסתכל על ריצוף זהה ש"מורד" בשורה אחת.
+ ריצוף זה בנוי רק מאריחי 
+\begin_inset Formula $A$
+\end_inset
+
+ ומהאריח 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+)שמופיע בפרט ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ואולי בעוד מקומות בשורה התחתונה(.
+\begin_inset Newline newline
+\end_inset
+
+כעת נחליף את 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ ב
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ ונקבל ריצוף כשר בחצי המישור בעזרת 
+\begin_inset Formula $A$
+\end_inset
+
+ עם 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ בראשית.
+ 
+\begin_inset Formula 
+\[
+\left(A,a_{0}\right)\in Tile
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי השפה 
+\begin_inset Formula $W_{SPC}=\left\{ \left(\left\langle M\right\rangle ,w\right)\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט במודל 
+\begin_inset Formula $B$
+\end_inset
+
+ שבמהלך הריצה 
+\begin_inset Formula $M\left(w\right)$
+\end_inset
+
+ כותבת את תו הרווח.
+\end_layout
+
+\begin_layout Standard
+האם השפה כריעה וכו'.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+השפה ניתנת לזיהוי)פשוט מריצים עד שמקבלים רווח או עד ש
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת(.
+\end_layout
+
+\begin_layout Standard
+ננסה להראות רדוקציה מ
+\begin_inset Formula $A_{TM}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\left\langle M'\right\rangle ,w'\right)\in A_{TM}\Leftrightarrow\left(\left\langle M\right\rangle ,w\right)\in W_{SPC}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Itemize
+נחליף כל מעבר מהצורה 
+\begin_inset Formula $\left(q_{i},a\right)\to q_{acc}$
+\end_inset
+
+ במעבר 
+\begin_inset Formula $\left(q_{i},a\right)\to\left(q_{i},\_\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בנוסף יש לדאוג ש
+\begin_inset Formula $M$
+\end_inset
+
+)החדשה( לא תכתוב 
+\begin_inset Formula $\_$
+\end_inset
+
+ בשום מקום אחר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל מעבר מהצורה 
+\begin_inset Formula $\left(q_{i},a\right)\to\left(q_{j},\_\right)$
+\end_inset
+
+ נחליף במעבר 
+\begin_inset Formula $\left(q_{i},a\right)\to\left(q_{j},*\right)$
+\end_inset
+
+)* סימן חדש(.
+\end_layout
+
+\begin_layout Itemize
+עבור כל מעבר 
+\begin_inset Formula $\left(q_{i},\_\right)\to\left(q_{j},x\right)$
+\end_inset
+
+ נוסיף מעבר 
+\begin_inset Formula $\left(q_{i},*\right)\to\left(q_{j},x\right)$
+\end_inset
+
+)בלי לבטל את הקודם(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כל שאר פרטי 
+\begin_inset Formula $M$
+\end_inset
+
+ זהים ל
+\begin_inset Formula $M'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לבסוף נקבע 
+\begin_inset Formula $w-w'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מובן שהבנייה חישובית.
+\end_layout
+
+\begin_layout Subsection*
+נכונות - בבית
+\end_layout
+
+\end_body
+\end_document

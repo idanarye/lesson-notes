@@ -1,0 +1,849 @@
+#LyX 2.0.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+% Added by lyx2lyx
+%  for proper underlining
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\let\cite@rig\cite
+\newcommand{\b@xcite}[2][\%]{\def\def@pt{\%}\def\pas@pt{#1}
+  \mbox{\ifx\def@pt\pas@pt\cite@rig{#2}\else\cite@rig[#1]{#2}\fi}}
+\renewcommand{\underbar}[1]{{\let\cite\b@xcite\uline{#1}}}
+\date{}
+\end_preamble
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ העתקה מ
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $df$
+\end_inset
+
+ העתקה 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ליניארית.
+\begin_inset Formula 
+\[
+f\left(x+h\right)-f\left(x\right)-\left.\left(df\right)\right|_{x}h=o\left(\left\Vert h\right\Vert \right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ ליניארית זה שווה ל
+\begin_inset Formula 
+\[
+f\left(x\right)+f\left(h\right)-f\left(x\right)-f\left(h\right)=0=o\left(\left\Vert h\right\Vert \right)
+\]
+
+\end_inset
+
+מקבלים ש
+\begin_inset Formula $\left.df\right|_{x}h=f\left(h\right)$
+\end_inset
+
+.
+ כלומר אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לינארית נסמן 
+\begin_inset Formula $f\left(h\right)=hA$
+\end_inset
+
+)
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה( ואז
+\begin_inset Formula 
+\[
+h\left(\left.\cfrac{\partial f}{\partial x}\right|_{x}\right)=\left.df\right|_{x}h=f\left(h\right)=hA
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן גם לחשב ישירות:
+\begin_inset Formula 
+\[
+f\left(h\right)=hA
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{i}\left(h\right)=\sum_{j=1}^{k}x_{i}a_{ij}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cfrac{\partial f_{i}}{\partial x_{i}}\right)=\begin{pmatrix}\\
+ & a_{ij}\\
+ &  & \,
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את הנפח של אליפסואיד 
+\begin_inset Formula $\cfrac{x^{2}}{a^{2}}+\cfrac{y^{2}}{b^{2}}+\cfrac{z^{2}}{c^{2}}=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left(\cfrac{\partial f}{\partial x}\right)=A,\, A=\begin{pmatrix}a & 0 & 0\\
+0 & b & 0\\
+0 & 0 & c
+\end{pmatrix}=\cfrac{\partial\left(x,y,z\right)}{\partial\left(u,v,w\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(u,v,w\right)\begin{pmatrix}a & | & 0\\
+ & b\\
+0 & | & c
+\end{pmatrix}=\left(au,bv,cw\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{x}{a}=u
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{y}{b}=v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{z}{c}=w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}'=\left\{ u,v,w\middle|u^{2}+v^{2}+w^{2}\le1\right\} 
+\]
+
+\end_inset
+
+שזה כדור בעל רדיוס אחד)במערכת הצירים החדשה(
+\begin_inset Formula 
+\[
+\left|J\left(w\right)\right|=\begin{vmatrix}a & 0 & 0\\
+0 & b & 0\\
+0 & 0 & c
+\end{vmatrix}=abc
+\]
+
+\end_inset
+
+
+\numeric on
+
+\begin_inset Formula 
+\[
+V=\iiint\limits _{\bar{D}}\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\iiint\limits _{\bar{D}'}\left|\cfrac{\partial x}{\partial u}\right|\mathrm{\, d}u\mathrm{\, d}v\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=abc\iiint\limits _{\bar{D}'}\mathrm{\, d}u\mathrm{\, d}v\mathrm{\, d}w=\cfrac{4\pi}{3}abc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אינטגרציה על תחום 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ לא חסום)ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+עד עכשיו דיברנו על תחומים חסומים.
+ נניח שקיבלנו תחום 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ סגור לא חסום.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\bar under
+מניחים
+\bar default
+: 
+\begin_inset Formula $\bar{D}_{R}\Doteq\bar{D}\cap\bar{B}\left(0,R\right)$
+\end_inset
+
+ תחום)סגור( בעל 
+\bar under
+תכולה
+\bar default
+ לכל 
+\begin_inset Formula $R>0$
+\end_inset
+
+, והוא חסום כי הוא מוכל בכדור 
+\begin_inset Formula $\bar{B}\left(0,R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\bar under
+מניחים
+\bar default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית על כל תחום כנ"ל 
+\begin_inset Formula $\bar{D}_{R}$
+\end_inset
+
+)למשל: 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $I_{R}=\mathop{\int\cdots\int}\limits _{\bar{D}_{R}}f\mathrm{\, d}x$
+\end_inset
+
+ )מוגדר היטב( )
+\begin_inset Formula $dx=dx_{1}...dx_{k}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אומרים שהאינטגרל 
+\begin_inset Formula $\mathop{\int\cdots\int}\limits _{\bar{D}}f\mathrm{\, d}x$
+\end_inset
+
+ 
+\bar under
+קיים
+\bar default
+)או מתכנס( אם 
+\begin_inset Formula $\lim\limits _{R\to\infty}I_{r}$
+\end_inset
+
+ קיים, וגבול זה נקרא אז האינטגרל 
+\begin_inset Formula $\mathop{\int\cdots\int}\limits _{\bar{D}}f\mathrm{\, d}x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\mathop{\int\cdots\int}\limits _{\bar{D}}=\lim_{R\to\infty}\mathop{\int\cdots\int}\limits _{\bar{D}}f\mathrm{\, d}x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iint\limits _{\bar{D}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y=?
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}=\left\{ \left(x,y\right)\middle|\begin{array}{c}
+x\ge0\\
+x\ge0
+\end{array}\right\} 
+\]
+
+\end_inset
+
+)הרבעון החיובי הסגור(
+\begin_inset Formula 
+\[
+\bar{D}_{R}=\bar{D}\cap\bar{B}\left(0,R\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{R}=\iint\limits _{\bar{D}_{R}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y
+\]
+
+\end_inset
+
+נעביר לקואורדינטות פולריות: 
+\begin_inset Formula $\cfrac{\partial\left(x,y\right)}{\partial\left(r,\varphi\right)}=r$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=r^{2},\left\{ \begin{array}{c}
+x=r\cos\varphi\\
+y=r\sin\varphi
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\left(r,\varphi\right)}_{\in\left[0,R\right]\times\left[0,\frac{\pi}{2}\right]=\bar{D}'_{R}}\to\left(x,y\right)\in\overline{D}_{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{R}=\int_{0}^{\unitfrac{\pi}{2}}\int_{0}^{R}e^{-r^{2}}r\mathrm{\, d}r\mathrm{\, d}\varphi=\int_{0}^{\unitfrac{\pi}{2}}\mathrm{\, d}\varphi\cdot\int_{0}^{R}e^{-r^{2}}r\mathrm{\, d}r=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\pi}{2}\cfrac{1}{2}\int_{0}^{R^{2}}e^{-u}\mathrm{\, d}u\qquad\left(\begin{array}{c}
+u=r^{2}\\
+du=2r\mathrm{\, d}r
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left.e^{-u}\right|_{R^{2}}^{0}=1-e^{-R^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{I_{R}=\cfrac{\pi}{4}\left(1-e^{-R^{2}}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{R\to\infty}I_{R}=\cfrac{\pi}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה: 
+\begin_inset Formula $\iint\limits _{\bar{D}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y=\cfrac{\pi}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דרך אחרת
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\bar{K}_{R}=\left\{ \left(x,y\right)\middle|\begin{array}{c}
+0\le x\le R\\
+0\le y\le R
+\end{array}\right\} $
+\end_inset
+
+.
+ התחום 
+\begin_inset Formula $\bar{D}_{R}$
+\end_inset
+
+ נמצא בתוך הריבוע שחוסם את הרבע עיגול שחוסם אותו:
+\begin_inset Formula 
+\[
+\bar{K}_{R}\subseteq\bar{D}_{R\sqrt{2}}\subseteq\bar{K}_{R\sqrt{2}}
+\]
+
+\end_inset
+
+לכן מתקיים
+\begin_inset Formula 
+\[
+\boxed{\iint\limits _{\bar{K}_{R}}...\mathrm{\, d}x\mathrm{\, d}y\le\iint\limits _{\bar{D}_{R\sqrt{2}}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y\le\iint\limits _{\bar{K}_{R\sqrt{2}}}...\mathrm{\, d}x\mathrm{\, d}y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{R}=\cfrac{\pi}{4}\left(1-e^{-R}\right)\le\iint\limits _{\left[0,x\right]\times\left[0,R\right]}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y=\cfrac{\pi}{4}\left(1-e^{-2R}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\pi}{4}\left(1-e^{-R^{2}}\right)\le\left(\int_{0}^{R}e^{-x^{2}}\mathrm{\, d}x\right)\left(\int_{0}^{R}e^{-x^{2}}\mathrm{\, d}y\right)\le\cfrac{\pi}{4}\left(1-e^{-2R^{2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\exists\lim_{R\to\infty}\int_{0}^{R}e^{-x^{2}}\mathrm{\, d}x=\cfrac{\sqrt{\pi}}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר קיבלנו
+\begin_inset Formula 
+\[
+\exists\int_{0}^{\infty}e^{-x^{2}}\mathrm{\, d}x=\cfrac{\sqrt{\pi}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכיוון ש
+\begin_inset Formula $e^{-x^{2}}$
+\end_inset
+
+ פונקציה זוגית נקבל
+\begin_inset Formula 
+\[
+\exists\int_{-\infty}^{\infty}e^{-x^{2}}\mathrm{\, d}x=\sqrt{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+\begin_layout Plain Layout
+
+\backslash
+rule[[0.5ex]]{1.0\backslash
+columnwidth}{1pt}
+\end_layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\underline{n}=\left(1,2,3\right)$
+\end_inset
+
+.
+ מצא את משוואת המישור הניצב ל
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{0}=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ - נקודה כלשהי על המישור.
+ 
+\begin_inset Formula $\underline{x}=\left(x,y,z\right)$
+\end_inset
+
+ - נקודה כללית על המישור.
+ הוקטור ביניהם:
+\begin_inset Formula 
+\[
+\underline{u}=\left(x,y,z\right)-\left(x_{0},y_{0},z_{0}\right)
+\]
+
+\end_inset
+
+ הוקטור הכללי הזה ניצב ל
+\begin_inset Formula $\underline{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{\underline{n}\cdot\underline{u}=\bar{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{n_{1}\left(x-x_{0}\right)+n_{2}\left(y-y_{0}\right)+n_{3}\left(z-z_{0}\right)=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דרך אחרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underline{n}$
+\end_inset
+
+ הוא הנורמל של כל מישור הניצב לו - כלומר ניצב לכל וקטור במישור כזה, ולכן
+ גם לכל שני וקטורים כאלה:
+\begin_inset Formula 
+\[
+\underline{n}=\begin{vmatrix}\underline{i} & \underline{j} & \underline{k}\\
+x_{1}-x_{0} & y_{1}-x_{0} & z_{1}-z_{0}\\
+x_{2}-x_{0} & y_{2}-y_{0} & z_{2}-z_{0}
+\end{vmatrix}
+\]
+
+\end_inset
+
+משוואת המישור העובר דרך שלושת הנקודות הנתונות 
+\begin_inset Formula $\left(x_{i},y_{i},z_{i}\right),i=0,1,2$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\begin{vmatrix}x-x_{0} & y-y_{0} & z-z_{0}\\
+x_{1}-x_{0} & y_{1}-y_{0} & z_{1}-z_{0}\\
+x_{2}-x_{0} & y_{2}-y_{0} & z_{2}-z_{0}
+\end{vmatrix}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובצורה אלגברית:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+ax+by+cz+d=0\\
+ax_{0}+by_{0}+cz_{0}+d=0\\
+ax_{1}+by_{1}+cz_{1}+d=0\\
+ax_{2}+by_{2}+cz_{2}+d=0
+\end{array}\right.
+\]
+
+\end_inset
+
+כדי שיהיה פתרון לא טריוויאלי הדטרמיננטה של המקדמים צריכה להיות אפס:
+\begin_inset Formula 
+\[
+\begin{vmatrix}x & y & z & 1\\
+x_{0} & y_{0} & z_{0} & 1\\
+x_{1} & y_{1} & z_{1} & 1\\
+x_{2} & y_{2} & z_{2} & 1
+\end{vmatrix}=0
+\]
+
+\end_inset
+
+ניתן להפוך את זה לדטרמיננטה הקודמת על ידי חיסור השורה הראשונה מכל שורה אחרת:
+\begin_inset Formula 
+\[
+\begin{vmatrix}x & y & z & 1\\
+x_{0}-x & y_{0}-y & z_{0}-z & 0\\
+x_{1}-x & y_{1}-y & z_{1}-z & 0\\
+x_{2}-x & y_{2}-y & z_{2}-z & 0
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשב את הנפח של
+\begin_inset Formula 
+\[
+\left\{ \left(x,y,z\right)\in\mathbb{R}^{3}\middle|4-z^{2}\ge x^{2}+y^{2}\ge1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+y^{2}+z^{2}\le4$
+\end_inset
+
+ בתוך הכדור ברדיוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ מצד שני, 
+\begin_inset Formula $x^{2}+y^{2}\ge1$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+מחוץ לגליל ברדיוס אחד.
+\end_layout
+
+\begin_layout Standard
+נחשב הנפח בין שתי הכיפות הכדוריות מעל העיגול 
+\begin_inset Formula $x^{2}+y^{2}\le1$
+\end_inset
+
+)במישור 
+\begin_inset Formula $xy$
+\end_inset
+
+()כלומר החלק מהגליל שנגרע מהכדור( ונחסר אותו מנפח הכדור.
+\end_layout
+
+\begin_layout Standard
+הנפח הוא:
+\begin_inset Formula 
+\[
+z=\sqrt{4-x^{2}-y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iint\limits _{\left(x^{2}+y^{2}\le1\right)}\left[\sqrt{4-x^{2}-y^{2}}-\left(-\sqrt{\cdots}\right)\right]\mathrm{\, d}x\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור לקואורדינטות קוטביות:
+\begin_inset Formula 
+\[
+=2\int\limits _{\varphi=0}^{2\pi}\int\limits _{0}^{1}\sqrt{4-r^{2}}r\mathrm{\, d}r\mathrm{\, d}y\overset{\begin{array}{c}
+u=4-r^{2}\\
+du=-2udr
+\end{array}}{=}\int_{0}^{1}u^{\unitfrac{1}{2}}\mathrm{\, d}u=\left.2\pi u^{\unitfrac{3}{2}}\right|_{3}^{4}=2\pi\left(8-3^{\unitfrac{3}{2}}\right)
+\]
+
+\end_inset
+
+תשובה סופית:
+\begin_inset Formula 
+\[
+\boxed{\cfrac{4\pi}{3}2^{3}-2\pi\left(8-3^{\unitfrac{3}{2}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

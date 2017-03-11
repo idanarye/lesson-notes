@@ -1,0 +1,1112 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+חזרה
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A_{1}=\left\{ \left(x_{i}\right)_{i=1}^{\infty}\in X\middle|x_{1}=1\right\} $
+\end_inset
+
+, ואת 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ להיות ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה ה"נוצרת" ע"י 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ - ז"א 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ היא ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה הקטנה ביותר שבה 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ מדידה)נמצאת( 
+\begin_inset Formula $S_{1}=\left\{ \phi,A,A^{\complement},X\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נמשיך להגדיר 
+\begin_inset Formula $A_{2}=\left\{ \left(x_{i}\right)\in X\middle|x_{2}=1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ תהיה ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה ה
+\bar under
+נוצרת
+\bar default
+ ע"י כל הקבוצות ב
+\begin_inset Formula $A_{2}+S_{1}$
+\end_inset
+
+ - ז"א
+\begin_inset Formula 
+\[
+S_{2}=\left\{ \begin{array}{c}
+\emptyset,X,A,A^{\complement},A_{2},A_{2}^{\complement},A_{1}\cup A_{2},A_{1}\cup A_{2}^{\complement},A_{1}^{\complement}\cup A_{2},A_{1}^{\complement}\cup A_{2}^{\complement}\\
+A_{1}\cap A_{2},A_{1}^{\complement}\cap A_{2},A_{1}\cap A_{2}^{\complement},A_{1}^{\complement}\cap A_{2}^{\complement}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך באופן רקורסיבי: 
+\begin_inset Formula $S_{n+1}$
+\end_inset
+
+ תהיה ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה המינימלית שבה כל הקבוצות מ
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ וגם הקבוצה 
+\begin_inset Formula $A_{n+1}=\left\{ \left(x_{i}\right)\in X\middle|x_{n+1}=1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"פ הבנייה הסדרה עולה: 
+\begin_inset Formula $S_{1}\subseteq S_{2}\subseteq S_{3}\subseteq\cdots$
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $S:=\bigcup\limits _{n=1}^{\infty}S_{n}$
+\end_inset
+
+ אינה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+\end_layout
+
+\begin_layout Standard
+נראה כי 
+\begin_inset Formula $A:=\bigcap\limits _{n=1}^{\infty}A_{n}\notin S$
+\end_inset
+
+.
+ כל ה
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ים נמצאים ב
+\begin_inset Formula $S$
+\end_inset
+
+, ולכן אם 
+\begin_inset Formula $S$
+\end_inset
+
+ באמת 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה צריך להתקיים 
+\begin_inset Formula $A\in S$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $A=\left\{ \left(1,1,1,\dots\right)\right\} $
+\end_inset
+
+ והיא לא נמצאת בשום 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+)כי 
+\begin_inset Formula $A$
+\end_inset
+
+ אינה ריקה ואינה אינסופית(.
+ מכאן 
+\begin_inset Formula $S$
+\end_inset
+
+ אינה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם היה מדובר בסדרה עולה וסופית, 
+\begin_inset Formula $S_{1}\subseteq S_{2}\subseteq\cdots\subseteq S_{N}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\bigcup\limits _{n=1}^{N}S_{n}=S_{N}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+הוכח כי אם 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ הינו ממ"ח, 
+\begin_inset Formula $B\in S$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $\nu\left(A\right)=\mu\left(A\cap B\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $A\in S$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\nu$
+\end_inset
+
+ מידה על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\nu\left(\emptyset\right)=\mu\left(\emptyset\cap B\right)=\mu\left(\emptyset\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $A\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\nu\left(A\right)=\mu\left(A\cap B\right)\ge0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\nu:S\to\left[0,\infty\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sigma$
+\end_inset
+
+-חיבוריות: תהי 
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של קבוצות זרות בזוגות מתוך 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\nu\left(\biguplus_{n=1}^{\infty}E_{n}\right)=\mu\left(B\cap\biguplus_{n=1}^{\infty}E_{n}\right)=\mu\left(\biguplus_{n=1}^{\infty}\left(B\cap E_{n}\right)\right)=\sum_{n=1}^{\infty}\mu\left(B\cap E_{n}\right)=\sum_{n=1}^{\infty}\nu\left(E_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $\varepsilon\in\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ היא מידת לבג על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצאו קבוצה מדידה)לבג( 
+\begin_inset Formula $E$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $E\subseteq\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{E}=\left[0,1\right]$
+\end_inset
+
+, ו
+\begin_inset Formula $m\left(E\right)=\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\left[0,\varepsilon\right]\cup\left(\mathbb{Q}\cap\left[0,1\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $E\in\mathscr{L}\left(\mathbb{R}\right)$
+\end_inset
+
+ בתור חיתוך ואיחוד של קבוצות מדידות לבג.
+\begin_inset Formula 
+\[
+\left[0,\varepsilon\right]\subseteq E=\left[0,\varepsilon\right]\cup\left(\mathbb{Q}\cap\left[0,1\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon=m\left(\left[0,\varepsilon\right]\right)\le m\left(E\right)=m\left(\left[0,\varepsilon\right]\cup\left(\mathbb{Q}\cap\left[0,1\right]\right)\right)\le m\left(\left[0,\varepsilon\right]\right)+\xcancel{m\left(\mathbb{Q}\cap\left[0,1\right]\right)}=\varepsilon
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m\left(E\right)=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ מדידה לבג, הוכיחו כי קיימת פונקציה מדידה בורל, 
+\begin_inset Formula $g$
+\end_inset
+
+, כך ש
+\begin_inset Formula $g=f$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+משפט
+\series default
+)
+\lang english
+Lusin
+\lang hebrew
+(: תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה מדידה המוגדרת על קבוצה 
+\begin_inset Formula $E$
+\end_inset
+
+ שמידתה סופית.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת פונקציה רציפה 
+\begin_inset Formula $g$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, וקבוצה סגורה 
+\begin_inset Formula $F\subseteq E$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f=g$
+\end_inset
+
+ על 
+\begin_inset Formula $F$
+\end_inset
+
+ ו
+\begin_inset Formula $m\left(E\backslash F\right)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח)את התרגיל( קודם עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ המוגדרת על הקטע 
+\begin_inset Formula $E=\left[-L,L\right]$
+\end_inset
+
+ שהוא בעל מידה סופית)
+\begin_inset Formula $2L$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lusin
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיימת קבוצה סגורה 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+ כך שקיימת פונקציה רציפה 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $f=g$
+\end_inset
+
+ על 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+, וכן 
+\begin_inset Formula $m\left(E\backslash F_{n}\right)<\frac{1}{2^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\overline{m}=\frac{m}{2L}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\overline{m}$
+\end_inset
+
+ היא מידת הסתברות.
+ ע"פ הנתון, לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\overline{m}\left(\left\{ \left|g_{n}-f\right|>\varepsilon\right\} \right)=\sum_{n=1}^{\infty}\frac{1}{2L}m\left(\left\{ \left|g_{n}-f\right|>\varepsilon\right\} \right)<\sum_{n=1}^{\infty}\frac{1}{2L}\cdot\frac{1}{2^{n}}<\infty
+\]
+
+\end_inset
+
+לפי בורל-קנטלי 
+\begin_inset Formula $f=g_{n}$
+\end_inset
+
+ כב"מ בקטע 
+\begin_inset Formula $\left[-L,L\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למה
+\series default
+: תהי 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ סדרת פונקציות רציפות המתכנסות לפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ מדידה בורל.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נשים לב כי 
+\begin_inset Formula $\forall_{\alpha\in\mathbb{R}}\left\{ f\le\alpha\right\} =\bigcap\limits _{r=1}^{\infty}\bigcup\limits _{k=1}^{\infty}\bigcap\limits _{n=k}^{\infty}\left\{ f_{n}\le\alpha+\frac{1}{r}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפות, וכל הדבר הזה = 
+\begin_inset Formula $f_{n}^{-1}\left(\left(-\infty,\infty\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"פ הלמה לעיל נקבל כי 
+\begin_inset Formula $g\left(x\right):=\lim\limits _{n\to\infty}g_{n}\left(x\right)$
+\end_inset
+
+ מדידה בורל, וכבר ראינו כי 
+\begin_inset Formula $\lim\limits _{n\to\infty}g_{n}\left(x\right)=f\left(x\right)$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $E$
+\end_inset
+
+, פרט אולי לקבוצה ממידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מידה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ המוגדרת על 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברת בורל נקראת 
+\emph on
+רגולרית חיצונית
+\emph default
+ אם לכל קבוצת בורל 
+\begin_inset Formula $B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\mu\left(B\right)=\inf\left\{ \mu\left(U\right)\middle|\begin{array}{c}
+B\subseteq U\\
+U\textnormal{ is open}
+\end{array}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $\mu,\nu$
+\end_inset
+
+ הנן מידות חיוביות רגולריות חיצוניות המוגדרות על 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברת בורל בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\int_{\left[0,1\right]}f\mathrm{\, d}\mu=\int_{\left[0,1\right]}f\mathrm{\, d}\nu$
+\end_inset
+
+ לכל פונקציה רציפה 
+\begin_inset Formula $f$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+ הוכח כי 
+\begin_inset Formula $\mu=\nu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+הקטעים הפתוחים בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ הם מהאוסף
+\begin_inset Formula 
+\[
+\left\{ \left(a,b\right)\middle|0\le a\le b\le1\right\} \cup\left\{ \left[0,a\right)\middle|0<a<1\right\} \cup\left\{ \left(b,1\right]\middle|0<b<1\right\} 
+\]
+
+\end_inset
+
+והם יוצרים את 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברת בורל של הקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח שלכל 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Formula $\mu\left(\left[0,a\right)\right)=\nu\left(\left[0,a\right)\right)$
+\end_inset
+
+.
+ לצורך כך נגדיר סדרת פונקציות 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+בקטע 
+\begin_inset Formula $\left[0,a-\frac{1}{n}\right)$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ קבועה ושווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+בקטע 
+\begin_inset Formula $\left[a-\frac{1}{n},a\right]$
+\end_inset
+
+ הפונקציה יורדת לינארית מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+בקטע 
+\begin_inset Formula $\left[a,1\right]$
+\end_inset
+
+ הפונקציה עדיין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{n}\xrightarrow{n\to\infty}I_{\left[0,a\right)}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפות.
+ ע"פ משפט ההתכנסות הנשלטת
+\begin_inset Formula 
+\[
+\begin{array}{ccccccc}
+\lim_{n\to\infty}\int_{\left[0,1\right]}f_{n}\mathrm{\, d}\mu & = & \int_{\left[0,1\right]}\left(\lim_{n\to\infty}f_{n}\right)\mathrm{\, d}\mu & = & \int_{\left[0,1\right]}I_{\left[0,a\right]}\mathrm{\, d}\mu & = & \mu\left(\left[0,a\right)\right)\\
+|| &  &  &  &  &  & ||\\
+\lim_{n\to\infty}\int_{\left[0,1\right]}f_{n}\mathrm{\, d}\nu & = & \int_{\left[0,1\right]}\left(\lim_{n\to\infty}f_{n}\right)\mathrm{\, d}\nu & = & \int_{\left[0,1\right]}I_{\left[0,a\right]}\mathrm{\, d}\nu & = & \nu\left(\left[0,a\right)\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

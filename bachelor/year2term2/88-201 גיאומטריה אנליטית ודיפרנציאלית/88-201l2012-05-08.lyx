@@ -1,0 +1,1193 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+8.1
+\numeric off
+ מטריקות קונפורמיות למטריקה שטוחה סטנדרטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(g_{ij}\right)=\left(\delta_{ij}\right)=\begin{bmatrix}1 & 0\\
+0 & 1
+\end{bmatrix}$
+\end_inset
+
+ היא מטריקה שטוחה סטנדרטית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מטריקה 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+ היא 
+\bar under
+שקולה קונפורמית
+\bar default
+ למטריקה שטוחה סטנדרטית אם מתקיים
+\begin_inset Formula 
+\[
+g_{ij}=\lambda\left(u^{1},u^{2}\right)\delta_{ij}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+g_{11}\left(u^{1},u^{2}\right)=g_{22}\left(u^{1},u^{2}\right)=\lambda\left(u^{1},u^{2}\right)\qquad g_{12}\left(u^{1},u^{2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{bmatrix}\lambda\left(u^{1},u^{2}\right) & 0\\
+0 & \lambda\left(u^{1},u^{2}\right)
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משטח סיבוב
+\end_layout
+
+\begin_layout Standard
+המטריקה במשטח סיבוב אינה מטריקה שקולה קונפרומית:
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{bmatrix}\sin^{2}\varphi & 0\\
+0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+היא אמנם אלכסונית, אבל לא סקלרית.
+\end_layout
+
+\begin_layout Standard
+ניתן למצוא לספירה מטריקה שתהיה שקולה קונפורמית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{ij}=\cfrac{\partial^{2}x}{\partial u^{i}\partial u^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}\to\mathbb{R}^{2}\to\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{i}=\cfrac{\partial x}{\partial u^{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(\underline{x}_{1},\underline{x}_{2},n\right)$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+x_{ij}=\Gamma_{ij}^{k}x_{k}+L_{ij}n
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{k}=\cfrac{1}{2g_{11}}\left(g_{il;j}-g_{ij;l}+g_{jl;i}\right)g^{lk}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{g_{il}g^{lk}=\delta_{i}^{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda\left(u^{1},u^{2}\right)$
+\end_inset
+
+ נקראת גורם קונפורמי של המטריקה.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $g_{ij}=\lambda\delta_{ij}$
+\end_inset
+
+ אזי מתקיים
+\begin_inset Formula 
+\[
+\Gamma_{11}'=\cfrac{\lambda_{1}}{2\lambda}\qquad\Gamma_{22}'=\cfrac{-\lambda_{1}}{2\lambda}\qquad\Gamma'_{12}=\cfrac{\lambda_{2}}{2\lambda}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lambda_{i}=\cfrac{\partial\lambda}{\partial u^{i}}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|}
+\Gamma_{ij}^{1} & j=1 & j=2\\
+\hline i=1 & \cfrac{\lambda_{1}}{2\lambda} & \cfrac{\lambda_{2}}{2\lambda}\\
+\hline i=2 & \cfrac{\lambda_{2}}{2\lambda} & \cfrac{-\lambda_{1}}{2\lambda}
+\\\hline \end{array}\qquad\begin{array}{c|c|c|}
+\Gamma_{ij}^{2} & j=1 & j=2\\
+\hline i=1 & \cfrac{-\lambda_{2}}{2\lambda} & \cfrac{\lambda_{1}}{2\lambda}\\
+\hline i=2 & \cfrac{\lambda_{1}}{2\lambda} & \cfrac{\lambda_{2}}{2\lambda}
+\\\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והנוסחה הכללית היא
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{1}=\cfrac{1}{2\lambda}\left(g_{i1;j}-g_{ij;1}+g_{j1;i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{1}=\cfrac{1}{2\lambda}\left(\underbrace{g_{21;2}}_{0}-g_{22;1}+\underbrace{g_{21;2}}_{0}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{-1}{2\lambda}g_{22;1}=\cfrac{-1}{2\lambda}\cdot\cfrac{\partial}{\partial u^{1}}\left(g_{22}\right)=\cfrac{-1}{2\lambda}\cdot\cfrac{\partial}{\partial u'}\left(\lambda\right)=\cfrac{-\lambda_{1}}{2\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=-\cfrac{1}{2\lambda}\left(\cfrac{\partial^{2}}{\partial x^{2}}+\cfrac{\partial^{2}}{\partial y^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+8.3
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משוואת קו גאודזי על משטח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{R}^{2}\xrightarrow[\qquad]{\underline{x}}\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\circ\alpha=\beta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta\left(t\right)=x\left(\alpha\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל עקומה רגולרית 
+\begin_inset Formula $\beta$
+\end_inset
+
+ על 
+\begin_inset Formula $M$
+\end_inset
+
+ מקיימת זהות
+\begin_inset Formula 
+\[
+\beta''=\left(\alpha^{i'}\alpha^{j'}\Gamma_{ij}^{k}+\alpha^{k''}\right)x_{k}+\left(L_{ij}\alpha^{i'}\alpha^{j'}\right)n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta''=\cfrac{\mathrm{d}^{2}\beta}{\mathrm{d}t^{2}}\qquad\alpha^{i'}=\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הגדרה, 
+\begin_inset Formula $\beta=x\circ\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}\beta}{\mathrm{d}t}=\cfrac{\partial\underline{x}}{\partial u^{i}}\cdot\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+לפי נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Leibniz
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}^{2}\beta}{\mathrm{d}t^{2}}=\cfrac{\mathrm{d}}{\mathrm{d}t}\left(\cfrac{\partial x}{\partial u^{i}}\cdot\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}}{\mathrm{d}t}\left(\cfrac{\partial x\circ\alpha\left(t\right)}{\partial u^{i}}\right)\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}+\cfrac{\partial x}{\partial u^{1}}\cfrac{\mathrm{d}^{2}\alpha^{i}}{\mathrm{d}t^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial^{2}x}{\partial u^{i}\partial u^{j}}\cfrac{\mathrm{d}\alpha^{j}}{\mathrm{d}t}\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}+\cfrac{\partial x}{\partial u^{i}}\cfrac{\mathrm{d}^{2}\alpha^{i}}{\mathrm{d}t^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta''=x_{ij}d^{i'}\alpha^{j'}+x_{i}\alpha^{i''}=x_{ij}\alpha^{i'}\alpha^{j'}+x_{k}\alpha^{k''}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x_{ij}=\Gamma_{ij}^{k}x_{k}+L_{ij}n\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta''=\Gamma_{ij}^{k}x_{k}\alpha^{i'}\alpha^{j'}+L_{ij}n\alpha^{i'}\alpha^{j'}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\beta''=\left(\Gamma_{ij}^{k}\alpha^{i'}\alpha^{j'}+\alpha^{k''}\right)x_{k}+L_{ij}\alpha^{i'}\alpha^{j'}n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עקומה 
+\begin_inset Formula $\beta=\underline{x}\circ\alpha$
+\end_inset
+
+ נקראת קו גאודזי אם מתקיים אחד מן התנאים השקולים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $k=1,2$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\alpha^{k''}+\Gamma_{ij}^{k}\alpha^{i'}\alpha^{j'}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ווקטור 
+\begin_inset Formula $\beta''$
+\end_inset
+
+ מאונך למשטח ומקיים 
+\begin_inset Formula $\beta''=L_{ij}\alpha^{i'}\alpha^{j'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+במישור 
+\begin_inset Formula $\forall_{i,j,k}\Gamma_{ij}^{k}\equiv0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\forall_{k} &  & \alpha^{k''}=0\\
+\forall_{k} &  & \alpha^{k'}\left(t\right)=a^{k}\\
+\forall\left(t\right) &  & \alpha^{k}\left(t\right)=a^{k}t+b^{k}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\alpha^{1}\left(t\right)=a^{1}+b^{1}\\
+\alpha^{2}\left(t\right)=a^{2}t+b^{2}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה של שקילות
+\end_layout
+
+\begin_layout Standard
+אם מתקיימת )
+\numeric on
+1
+\numeric off
+( אזי לפי המשפט הקודם
+\begin_inset Formula 
+\[
+\beta''=L_{ij}\alpha^{i'}\alpha^{j'}n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למה
+\series default
+: עקומה 
+\begin_inset Formula $\beta\left(t\right)$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\alpha^{k''}+\Gamma_{ij}^{k}\alpha^{i'}\alpha^{j'}=0$
+\end_inset
+
+ היא בהכרח פרמטריזציה במהירות קבועה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: צריך להוכיח שמתקיים 
+\begin_inset Formula $\cfrac{\mathrm{d}}{\mathrm{d}t}\left\Vert \beta'\right\Vert =0$
+\end_inset
+
+.
+ באופן שקול, 
+\begin_inset Formula $\boxed{\cfrac{\mathrm{d}}{\mathrm{d}t}\left\Vert \beta'\right\Vert ^{2}=0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}}{\mathrm{d}t}\left(\left\Vert \beta'\right\Vert ^{2}\right)=\cfrac{\mathrm{d}}{\mathrm{d}t}\left\langle \beta'\left(t\right),\beta'\left(t\right)\right\rangle \stackrel{\textnormal{Leibniz}}{=}\left\langle \beta''\left(t\right),\beta'\left(t\right)\right\rangle +\left\langle \beta'\left(t\right),\beta''\left(t\right)\right\rangle =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\left\langle \beta''\left(t\right),\beta'\left(t\right)\right\rangle =2\left\langle \left(\Gamma_{ij}^{k}\alpha^{i'}\alpha^{j'}+\alpha^{k''}\right)x_{k}+L_{ij}\alpha^{i'}\alpha^{j'}n,x_{k}\alpha^{k'}\right\rangle =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\left\langle L_{ij}\alpha^{i'}\alpha^{j'}n,x_{k}\alpha^{k'}\right\rangle =2L_{ij}\alpha^{i'}\alpha^{j'}\alpha^{k'}\underbrace{\left\langle n,x_{k}\right\rangle }_{=0}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\cfrac{\mathrm{d}}{\mathrm{d}t}\left(\left\Vert \beta'\right\Vert ^{2}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+8.4
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קו גאודזי על משטח סיבוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(\varphi\right)>0\qquad\left(f\left(\varphi\right),g\left(\varphi\right)\right)
+\]
+
+\end_inset
+
+הסיבוב של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב ציר ה
+\begin_inset Formula $z$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+x\left(\theta,\varphi\right)=\left(f\left(\varphi\right)\cos\theta,f\left(\varphi\right)\sin\theta,g\left(\varphi\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\Gamma'_{12}=\cfrac{\cfrac{\mathrm{d}f}{\mathrm{d}\varphi}}{f}\qquad\Gamma'_{11}=\Gamma'_{22}=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{k''}+\Gamma_{ij}^{k}\alpha^{i'}\alpha^{j'}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{1''}+\Gamma_{ij}^{1}\alpha^{i'}\alpha^{j'}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{1''}+2\Gamma_{12}^{1}\alpha^{1'}\alpha^{2'}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{1}=\theta\qquad\alpha^{2}=\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\theta''+2\Gamma'_{12}\theta'\varphi'=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+2\Gamma'_{12}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}\cfrac{\mathrm{d}\varphi}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+2\cfrac{\cfrac{\mathrm{d}f}{\mathrm{d}\varphi}}{f}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}\cfrac{\mathrm{d}\varphi}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+\cfrac{2}{f}\boxed{\cfrac{\mathrm{d}f}{\mathrm{d}\varphi}\cfrac{\mathrm{d}\varphi}{\mathrm{d}t}}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+\cfrac{2}{f}\cfrac{\mathrm{d}f}{\mathrm{d}t}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+2\cfrac{\mathrm{d}f}{\mathrm{d}t}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{2}\cfrac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}+2f\cfrac{\mathrm{d}f}{\mathrm{d}t}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f^{2}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}\right)'=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{f^{2}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=\textnormal{Const}}
+\]
+
+\end_inset
+
+קיבלנו ש
+\begin_inset Formula $\boxed{f^{2}\left(\varphi\left(t\right)\right)\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=\textnormal{const}}$
+\end_inset
+
+ לאורך קו גאודזי 
+\begin_inset Formula $\beta\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+זוית 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ בין עקומה 
+\begin_inset Formula $\beta$
+\end_inset
+
+ לבין קו רוחב מקיימת
+\begin_inset Formula 
+\[
+\cos\gamma=r\theta'
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא מרחק לציר 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\gamma=\left\langle \cfrac{\beta'}{\left\Vert \beta'\right\Vert },\cfrac{x_{1}}{\left\Vert x_{1}\right\Vert }\right\rangle 
+\]
+
+\end_inset
+
+נניח 
+\begin_inset Formula $\beta\left(t\right)$
+\end_inset
+
+ במהירות יחידה: 
+\begin_inset Formula $\left\Vert \beta'\right\Vert =1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\gamma=\left\langle \beta',\cfrac{x_{1}}{\left\Vert x_{1}\right\Vert }\right\rangle =\cfrac{1}{\left\Vert x_{1}\right\Vert }\left\langle \beta',x_{1}\right\rangle =\cfrac{1}{\left(g_{11}\right)^{\unitfrac{1}{2}}}\left\langle \beta',x_{1}\right\rangle =\cfrac{1}{r}\left\langle \beta',x_{1}\right\rangle =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{r}\left\langle \beta',x_{1}\right\rangle =\cfrac{1}{r}\left\langle x_{i}\alpha^{i'},x_{1}\right\rangle =\cfrac{1}{r}\left\langle x_{1}\alpha^{1'},x_{1}\right\rangle =\cfrac{\alpha^{1'}}{r}g_{11}=\cfrac{\alpha^{1'}}{r}\cdot r^{2}=r\alpha^{1'}=r\theta'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\left(g_{ij}\right)=\begin{pmatrix}f^{2} & 0\\
+0
+\end{pmatrix}1}\qquad f=r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{2}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=\textnormal{Const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r^{2}\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=\textnormal{Const}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $r\theta'=\cos\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r\left(r\theta'\right)=\textnormal{Const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{r\cos\gamma=\textnormal{Const}}
+\]
+
+\end_inset
+
+זה נקרא "יחס של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Clairaut
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לאורך קו גאוזדי 
+\begin_inset Formula $\beta\left(t\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f^{2}\left(\varphi\left(t\right)\right)\cfrac{\mathrm{d}\theta}{\mathrm{d}t}=\textnormal{Const}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+8.5
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קואורדינטות פולריות וספיריות
+\end_layout
+
+\begin_layout Standard
+השטח של 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא אינטגרל כפול:
+\begin_inset Formula 
+\[
+\textnormal{area}\left(D\right)=\iint_{D}1\mathrm{\, d}x\mathrm{\, d}y=\iint_{D}r\mathrm{\, d}r\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסיבה לכך שבקואורדינטות פולריות יש 
+\begin_inset Formula $r$
+\end_inset
+
+ בתוך המעגל היא ששטח הוא אינטגרל של אורך, וככל שמרחקים מהראשית, אורך המעגל
+ גדל.
+\end_layout
+
+\begin_layout Section*
+קואורדינטות ספריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta,\varphi,\rho
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le\theta\le2\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi=\arccos\cfrac{z}{p}\qquad0\le\varphi\le\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\rho>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Vol}\left(D\right)=\iiint_{D}1\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\iiint_{D}\rho^{2}\sin\varphi\mathrm{\, d}\rho\mathrm{\, d}\theta\mathrm{\, d}\varphi
+\]
+
+\end_inset
+
+הפעם יש 
+\begin_inset Formula $\rho^{2}\sin\varphi$
+\end_inset
+
+ בתוך האינטגרל, שכן זה שטח הפנים גדל ככל שמתרחקים מהראשית.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+שטח של משטח 
+\begin_inset Formula $M$
+\end_inset
+
+ עם פרמטריזציה 
+\begin_inset Formula $x\left(u^{1},u^{2}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\underline{x}:U\to\mathbb{R}^{3}$
+\end_inset
+
+)עם 
+\begin_inset Formula $U\subseteq\mathbb{R}^{2}$
+\end_inset
+
+( הוא מתקבל ע"י אינטגרציה ביחס לאלמנט שטח:
+\begin_inset Formula 
+\[
+\sqrt{\det\left(g_{ij}\right)}\mathrm{\, d}u^{1}\mathrm{\, d}u^{2}=\sqrt{g_{11}g_{22}-g_{12}^{2}}\mathrm{\, d}u^{1}du^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+על 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+: 
+\begin_inset Formula $\underline{x}\left(\theta,\varphi\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{bmatrix}\sin^{2}\varphi & 0\\
+0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\det\left(g_{ij}\right)=\sin^{2}\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{\det\left(g_{ij}\right)}=\sin u^{2}\ge0
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\textnormal{area}\left(D\right)=\iint_{D}\sin u^{2}\mathrm{\, d}u^{1}\mathrm{\, d}u^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

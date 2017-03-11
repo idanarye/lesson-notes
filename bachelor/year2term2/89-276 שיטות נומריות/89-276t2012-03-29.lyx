@@ -1,0 +1,1077 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בתרגול הקודם:
+\end_layout
+
+\begin_layout Itemize
+דיברנו על שגיאת קלט ושגיאה מתפשטת.
+\end_layout
+
+\begin_layout Itemize
+דיברנו על מספר מצב - מדד לכמה הפונקציה רגישה לשינויים בקלט.
+\end_layout
+
+\begin_layout Itemize
+הכללנו את המושג אורך לנורמה
+\end_layout
+
+\begin_layout Part*
+פתרון של משוואות לא לינאריות
+\end_layout
+
+\begin_layout Standard
+נניח שיש פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, ורוצים למצוא את השורשים שלה - כלומר את ה
+\begin_inset Formula $x$
+\end_inset
+
+ים שעבורם 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור פונקציות כמו 
+\begin_inset Formula $f\left(x\right)=x^{2}-5x+6$
+\end_inset
+
+ זה קל - יש נוסחת שורשים.
+ אבל עבור פונקציות כמו 
+\begin_inset Formula $f\left(x\right)=e^{2x}-x\cdot\cos^{2}x$
+\end_inset
+
+ אין נוסחה מסודרת.
+ צריך לבצע חיפוש לפתרונות.
+\end_layout
+
+\begin_layout Section*
+משפט ערך הביניים
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונקציה רציפה בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם מתקיים 
+\begin_inset Formula $f\left(a\right)\cdot f\left(b\right)<1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת נקודה 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bisection
+\end_layout
+
+\begin_layout Enumerate
+בחר קטע 
+\begin_inset Formula $\left[x_{0},x_{1}\right]$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $f\left(x_{0}\right)\cdot f\left(x_{1}\right)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{2}=\cfrac{x_{0}+x_{1}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x_{2}\right)=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x_{2}\right)\cdot f\left(x_{0}\right)<0$
+\end_inset
+
+ אז נמשיך בקטע 
+\begin_inset Formula $\left[x_{0},x_{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אחרת נמשיך בקטע 
+\begin_inset Formula $\left[x_{2},x_{1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תנאי עצירה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|f\left(x_{2}\right)\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x_{1}-x_{0}\right|<\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $k>N$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k$
+\end_inset
+
+=מספר האיטרציות
+\end_layout
+
+\begin_layout Standard
+תמיד רצים עם שלושת התנאים.
+ ברגע שלפחות אחד מהם מתקיים - עוצרים.
+\end_layout
+
+\begin_layout Section*
+מהירות ההתכנסות
+\end_layout
+
+\begin_layout Standard
+בכל איטרציה החסם של המרחק מהשורש הוא חצי מהחסם על המרחק הקודם.
+\end_layout
+
+\begin_layout Standard
+באופן כללי, אם היחס בין החסם על הקירוב חסום על ידי קבוע, הקבוע הזה נקרא
+ "קצב התכנסות".
+ למשל במקרה של שיטת החציה: 
+\begin_inset Formula 
+\[
+\cfrac{\left|z-x_{k+1}\right|}{\left|z-x_{k}\right|}\le C=0.5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל לא תמיד זה קבוע.
+ נרצה מדד יותר טוב:
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור סדרת קירובים 
+\begin_inset Formula $x_{1},x_{2},\dots$
+\end_inset
+
+ המתכנסת לשורש 
+\begin_inset Formula $z$
+\end_inset
+
+, אם קיימים 
+\begin_inset Formula $p\ge0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $C\ge0$
+\end_inset
+
+ כך שמתקיים
+\begin_inset Formula 
+\[
+\lim_{k\to\infty}\cfrac{\left|z-x_{k+1}\right|}{\left|z-x_{k}\right|^{p}}\le C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אזי: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $C$
+\end_inset
+
+ - שיעור ההתכנסות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ - סדר ההתכנסות
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור 
+\begin_inset Formula $p=1$
+\end_inset
+
+ מקבלים התכנסות לינארית.
+ עבור 
+\begin_inset Formula $p=2$
+\end_inset
+
+ מקבלים התכנסות ריבועית.
+ עבור 
+\begin_inset Formula $1<p<2$
+\end_inset
+
+ מקבלים התכנסות סופר-לינארית.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נרצה לבצע חישוב של 
+\begin_inset Formula $\sqrt{7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נרצה למצוא פונקציה שאחד השורשים שלה הוא 
+\begin_inset Formula $\sqrt{7}$
+\end_inset
+
+.
+ אז נבצע חיפוש על הפונקציה, ונקבל את השורש הרצוי - 
+\begin_inset Formula $\sqrt{7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפונקציה 
+\begin_inset Formula $f\left(x\right)=x-\sqrt{7}$
+\end_inset
+
+ לא טובה, כי כדי לחשב אותה צריך לדעת מה הערך של 
+\begin_inset Formula $\sqrt{7}$
+\end_inset
+
+.
+ לכן נבחר את הפונקציה 
+\begin_inset Formula $f\left(x\right)=x^{2}-7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנחנו צריכים אינטרוול התחלתי.
+ שיהיה מספיק קטן.
+ נבחר 
+\begin_inset Formula $\left[2,3\right]=\left[\sqrt{4},\sqrt{9}\right]$
+\end_inset
+
+.
+ נבדוק שזה מתאים:
+\begin_inset Formula 
+\[
+f\left(2\right)=-3\qquad f\left(3\right)=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב:
+\begin_inset Formula 
+\begin{eqnarray*}
+\begin{array}{c}
+x_{0}=2\\
+x_{0}=3
+\end{array} & \Rightarrow & \begin{array}{c}
+x_{2}=\cfrac{2+3}{2}=2.5\\
+f\left(x_{2}\right)=-0.75
+\end{array}\\
+\begin{array}{c}
+x_{0}=2.5\\
+x_{1}=3
+\end{array} & \Rightarrow & \begin{array}{c}
+x_{2}=\cfrac{2.5+5}{2}=2.75\\
+f\left(x_{2}\right)=0.5625
+\end{array}\\
+\begin{array}{c}
+x_{0}=2.5\\
+x_{1}=2.75
+\end{array} & \Rightarrow & \begin{array}{c}
+x_{2}=2.625\\
+f\left(x_{2}\right)=-0.109
+\end{array}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן הלאה - תוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איטרציות מגיעים לקירוב הטוב 
+\begin_inset Formula $2.65$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Begula-Fals
+\end_layout
+
+\begin_layout Standard
+האלגוריתם דומה ל
+\lang english
+Bisection
+\lang hebrew
+, אבל בוחרים את 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ באופן שונה.
+ מעבירים מיתר בין 
+\begin_inset Formula $\begin{pmatrix}x_{0}\\
+f\left(x_{0}\right)
+\end{pmatrix}$
+\end_inset
+
+ ל
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+f\left(x_{1}\right)
+\end{pmatrix}$
+\end_inset
+
+, ונקודת החיתוך שלה עם ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ תהיה ה
+\begin_inset Formula $x_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשתמש במשוואת הישר כדי לחשב את 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y=mx+n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+mx+n=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=-\cfrac{n}{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{m=\cfrac{f\left(x_{1}\right)-f\left(x_{0}\right)}{x_{1}-x_{0}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x_{n}\right)=mx_{1}+n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{n=f\left(x_{1}\right)-mx_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=-\cfrac{n}{m}=-\cfrac{f\left(x_{1}\right)-mx_{1}}{m}=x_{1}-f\left(x_{1}\right)\cdot\cfrac{1}{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{x_{2}=x_{1}-f\left(x_{1}\right)\cdot\cfrac{x_{1}-x_{0}}{f\left(x_{1}\right)-f\left(x_{2}\right)}}
+\]
+
+\end_inset
+
+כל שאר האלגוריתם זהה לחלוטין.
+\end_layout
+
+\begin_layout Part*
+שיטת ה
+\lang english
+Secant
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-f\left(x_{0}\right)\cfrac{x_{n}-x_{n-1}}{f\left(x_{n}\right)-f\left(x_{n-1}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם בוחרים את 
+\begin_inset Formula $x_{0},x_{1}$
+\end_inset
+
+ בצורה חכמה, אפשר פשוט להפעיל את הנוסחה שוב ושוב.
+\end_layout
+
+\begin_layout Standard
+כדי לבחור את 
+\begin_inset Formula $x_{0},x_{1}$
+\end_inset
+
+, נרצה לדעת מי מהם יותר קרוב לשורש - על ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+, כי אנחנו לא יודעים איפה השורש נמצא על ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+ רוצים שיתקיים
+\begin_inset Formula 
+\[
+\left|f\left(x_{1}\right)\right|\overset{?}{\le}\left|f\left(x_{0}\right)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סדר ההתכנסות של שיטת ה
+\lang english
+Secant
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא סופר-לינארי
+\end_layout
+
+\begin_layout Part*
+שיטת ניוטון-רפסון
+\end_layout
+
+\begin_layout Standard
+הרעיון של ניוטון הוא לא להעביר מיתר, אלא להעביר משיק:
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לשיטה הזו מספר יתרונות:
+\end_layout
+
+\begin_layout Itemize
+בניגוד לשיטות הקודמות, כאן כדי לקבל את הנקודה הבאה מספיק לזכור נקודה אחת
+ אחורה.
+\end_layout
+
+\begin_layout Itemize
+השיטה הזו מאוד מהירה.
+\end_layout
+
+\begin_layout Itemize
+ניתן להכליל אותה למספר מימדים.
+\end_layout
+
+\begin_layout Standard
+לשיטה הזו יש גם חסרונות:
+\end_layout
+
+\begin_layout Itemize
+למחשב קשה מאוד לגזור
+\end_layout
+
+\begin_layout Itemize
+הנגזרת עלולה להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או קרובה ל
+\numeric on
+0
+\end_layout
+
+\begin_layout Section*
+מהירות ההתכנסות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{2}-7
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=2x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}=3-\cfrac{f\left(3\right)}{f'\left(3\right)}=3-\cfrac{2}{6}=2.6667
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=2.6667-\cfrac{f\left(2.6667\right)}{f'\left(2.6667\right)}\approx2.6458
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{3}=2.6458-\cfrac{f\left(2.6458\right)}{f'\left(2.6458\right)}\approx2.6457
+\]
+
+\end_inset
+
+קיבלנו התכנסות טובה מאוד מהר
+\end_layout
+
+\begin_layout Part*
+שיטות נקודות שבת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fixed Point
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ נרצה למצוא פונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $g\left(x\right)=x$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+ לאחר שמצאנו פונקציה כזו, נעשה שוב ושוב 
+\begin_inset Formula $x_{n+1}=g\left(x_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{5}-x\cdot e^{x}+\sin x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(x^{4}-e^{x}\right)=-\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n+1}=-\cfrac{\sin x_{n}}{x_{n}^{4}-e^{x_{n}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מי אמר שזה בכלל מתכנס?
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left|g'\left(x\right)\right|<1$
+\end_inset
+
+ בסביבת הפתרון, אז הפונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ תיתן התכנסות יציבה.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left|g'\left(x\right)\right|>1$
+\end_inset
+
+ בסביבת הפתרון, לא יודעים מה הולך לקרות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+עבור הפונקציה 
+\begin_inset Formula $f\left(X\right)=x+\ln x$
+\end_inset
+
+, 
+\begin_inset Formula $z\approx0.5$
+\end_inset
+
+, מוצעות מספר נוסחאות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{n+1}=-\ln x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{n+1}=e^{-x_{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{n+1}=\cfrac{x_{n}+e^{-x_{n}}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באיזה נוסחאות אפשר להשתמש)התכנסות וודאית?( ובאילו כדאי להשתמש)התכסנות וודאית
+ ומהירה(.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{1}'\left(x\right)=-\cfrac{1}{x},g'_{1}\left(z\right)\approx2>1
+\]
+
+\end_inset
+
+ולכן ההתכסנות לא וודאית.
+\begin_inset Formula 
+\[
+g'_{2}\left(x\right)=-e^{-x},\left|g'_{2}\left(z\right)\right|\approx0.6<1
+\]
+
+\end_inset
+
+ולכן ההתכנסות וודאית.
+\begin_inset Formula 
+\[
+g'_{3}\left(x\right)=\cfrac{1}{2}\left(1-e^{-x}\right)=\left|g'\left(z\right)\right|\approx0.2<1
+\]
+
+\end_inset
+
+ולכן גם כאן ההתכנסות וודאית.
+\end_layout
+
+\begin_layout Standard
+כדאי להשתמש ב
+\begin_inset Formula $g_{3}$
+\end_inset
+
+, כי שם השיפוע יותר קטן, ולכן נגיע יותר מהר לנקודת החיתוך.
+\end_layout
+
+\end_body
+\end_document

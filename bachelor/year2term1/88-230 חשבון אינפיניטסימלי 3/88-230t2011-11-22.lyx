@@ -1,0 +1,721 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)הגדרת הגבול(
+\end_layout
+
+\begin_layout Standard
+הוכח לפי ההגדרה האם קיים הגבול ל
+\begin_inset Formula $f\left(x,y\right)=\cfrac{xy}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, ואם כן חשב אותו.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ננסה לחשב את הגבול.
+ ניקח לדוגמה את הגבול 
+\begin_inset Formula $\lim\limits _{\begin{array}{c}
+x\to0\\
+y=0
+\end{array}}f\left(x,y\right)=0$
+\end_inset
+
+, ואז אם הגבול קיים אז הוא אפס!
+\end_layout
+
+\begin_layout Standard
+נוכיח לפי ההגדרה שהגבול אכן אפס.
+ יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, נניח 
+\begin_inset Formula $\|\left(x,y\right)-\left(0,0\right)\|<\delta$
+\end_inset
+
+.
+ נוכיח כי 
+\begin_inset Formula $\left|f\left(x,y\right)-0\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה
+\bar default
+:
+\begin_inset Formula 
+\[
+\left|\cfrac{xy}{\sqrt{x^{2}+y^{2}}}-0\right|=\left|\cfrac{xy}{\sqrt{x^{2}+y^{2}}}\right|=\cfrac{\left|x\right|\left|y\right|}{\sqrt{x^{2}+y^{2}}}=\cfrac{\sqrt{x^{2}}\sqrt{y^{2}}}{\sqrt{x^{2}+y^{2}}}\le\cfrac{\sqrt{x^{2}+y^{2}}\sqrt{x^{2}+y^{2}}}{\sqrt{x^{2}y^{2}}}=\sqrt{x^{2}+y^{2}}<\delta
+\]
+
+\end_inset
+
+ולכן מספיק לבחור 
+\begin_inset Formula $\epsilon=\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם בודקים לפי ההגדרה ניתן לדרוש 
+\begin_inset Formula $\|x-p\|<\delta$
+\end_inset
+
+ או 
+\begin_inset Formula $\left|x_{1}-p_{1}\right|<\delta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|x_{2}-p_{2}\right|<\delta$
+\end_inset
+
+)נגיד במקרה של נורמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+סיכום לנושא גבולות
+\end_layout
+
+\begin_layout Standard
+כדי להפריך קיום גבול נשתמש בשיטות הבאות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( אם סכום חזקות המשתנים של כל מחובר שוות)נגיד ויש לנו פונקציה רציונלית(
+ נשתמש בהצבה 
+\begin_inset Formula $x=ky$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+למשל
+\bar default
+: 
+\begin_inset Formula $\cfrac{x^{2}-y^{2}}{x^{2}+2xy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( בדרך כלל קל לחשב גבולות חוזרים.
+ אם מקבלים שהגבולות קיימים ושונים אז ראינו שהגבול הכפול לא קיים.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+למשל
+\bar default
+: 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(0,0\right)}\cfrac{x^{2}}{x^{2}+y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( כאשר אנו שואפים ל
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ודרגת החזקות במונה קטנה מאשר דרגת החזקות במכנה, אז הפונקציה שלנו בערך מוחלט
+ שואפת לאינסוף.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+למשל
+\bar default
+: 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(0,0\right)}\cfrac{x^{2}+y^{2}}{x^{4}+y^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח שקיים גבול:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( שימוש במשפט הסנדוויץ.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( שימוש בשיטת ההצבה, דרכה מגיעים בד"כ ל)במקום 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( לפי ההגדרה!
+\end_layout
+
+\begin_layout Part*
+רציפות
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $f:\Omega\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega\subseteq\mathbb{R}^{n}$
+\end_inset
+
+, תהיה רציפה בנקודה 
+\begin_inset Formula $p\in\Omega$
+\end_inset
+
+ אם 
+\begin_inset Formula $p\in\lim\Omega$
+\end_inset
+
+)
+\begin_inset Formula $p$
+\end_inset
+
+ נקודה מבודדת( או לחילופין נרשום 
+\begin_inset Formula $\boxed{\lim\limits _{x\to p}f\left(x\right)=f\left(p\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+האם הפונקציה 
+\begin_inset Formula $f\left(x,y,z\right)=\begin{cases}
+\cfrac{x^{3}+y^{3}+z^{3}}{x^{2}+y^{2}+z^{2}} & \left(x,y,z\right)\neq\left(0,0,0\right)\\
+0 & \left(x,y,z\right)=\left(0,0,0\right)
+\end{cases}$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ברור שפרט לנקודה 
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+ הפונקציה רציפה כהרכבה של פונקציות אלמנטריות רציפות.
+ נשתמש במשפט הסנדוויץ:
+\begin_inset Formula 
+\[
+0\le\left|\cfrac{x^{3}+y^{3}+z^{3}}{x^{2}+y^{2}+z^{2}}\right|=\cfrac{\left|x^{3}+y^{3}+z^{3}\right|}{x^{2}+y^{2}+z^{2}}\le\cfrac{\left|x^{3}\right|+\left|y^{3}\right|+\left|z^{3}\right|}{x^{2}+y^{2}+z}=\cfrac{\left|x\right|x^{2}+\left|y\right|y^{2}+\left|z\right|z^{2}}{x^{2}+y^{2}+z^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\cfrac{\left|x\right|\left(x^{2}+y^{2}+z^{2}\right)+\left|y\right|\left(x^{2}+y^{2}+z^{2}\right)+\left|z\right|\left(x^{2}+y^{2}+z^{2}\right)}{x^{2}+y^{2}+z^{2}}=\left|x\right|+\left|y\right|+\left|z\right|\xrightarrow[\left(x,y,z\right)\to\left(0,0,0\right)]{}0
+\]
+
+\end_inset
+
+ע"פ משפט הסנדוויץ ברור כי 
+\begin_inset Formula $\lim\limits _{\left(x,y,z\right)\to\left(0,0,0\right)}\left|f\left(x,y,z\right)\right|=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\lim\limits _{\left(x,y,z\right)\to\left(0,0,0\right)}f\left(x,y,z\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עד כה ברור כי 
+\begin_inset Formula $\lim\limits _{\left(x,y,z\right)\to\left(0,0,0\right)}=f\left(0,0,0\right)=0$
+\end_inset
+
+, משמע הפונקציה רציפה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+קבע האם הפונקציות רציפות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\begin{cases}
+\left(x^{2}+y^{2}\right)^{x^{2}+y^{2}} & \left(x,y\right)\ne\left(0,0\right)\\
+1 & \left(x,y\right)=\left(0,0\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+במקרה הנ"ל נציב 
+\begin_inset Formula $t=x^{2}+y^{2}$
+\end_inset
+
+.
+ נקבל 
+\begin_inset Formula $\left(x^{2}+y^{2}\right)^{x^{2}+y^{2}}=t^{t}$
+\end_inset
+
+ ולכן מספיק לחשב את הגבול
+\begin_inset Formula 
+\[
+\lim_{t\to0}t^{t}=\lim_{t\to0}e^{\ln t^{t}}=\lim_{t\to0}e^{t\ln t}
+\]
+
+\end_inset
+
+מספיק לחשב את הגבול 
+\begin_inset Formula $\lim\limits _{t\to0}t\ln t=\lim\limits _{t\to0}\cfrac{\ln t}{t^{-1}}$
+\end_inset
+
+.
+ נעשה לופיטל: 
+\begin_inset Formula $\lim\limits _{t\to0}\cfrac{\cfrac{1}{t}}{-\cfrac{1}{t^{2}}}=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(0,0\right)}\left(x^{2},y^{2}\right)^{x^{2}+y^{2}}=e^{0}=1$
+\end_inset
+
+, משמע הפונקציה הנתונה רציפה.
+\end_layout
+
+\begin_layout Section*
+דוגמה ב
+\end_layout
+
+\begin_layout Standard
+קבע רציפות 
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\cfrac{x^{2}+y^{2}}{x^{4}+y^{4}} & \left(x,y\right)\ne\left(0,0\right)\\
+0 & \left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נראה שהגבול הנ"ל הוא אינסוף.
+\begin_inset Formula 
+\[
+\cfrac{x^{2}+y^{2}}{x^{4}+y^{4}}=\cfrac{x^{2}+y^{2}}{\left(x^{2}\right)^{2}+\left(y^{2}\right)^{2}}\ge\cfrac{x^{2}+y^{2}}{\left(x^{2}\right)^{2}+2x^{2}y^{2}+\left(y^{2}\right)^{2}}=\cfrac{x^{2}+y^{2}}{\left(x^{2}+y^{2}\right)^{2}}=\cfrac{1}{x^{2}+y^{2}}\xrightarrow{\left(x,y\right)\to\left(0,0\right)}\infty
+\]
+
+\end_inset
+
+)כי 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(0,0\right)}=\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מצא את הגבול עבור 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\infty}\left(x^{2}+y^{2}\right)e^{-\left(x+y\right)}$
+\end_inset
+
+.
+ האם הפונקציה ההפיכה רציפה?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נראה שהגבול הוא אפס.
+ נשתמש במשפט הסנדוויץ
+\begin_inset Formula 
+\[
+0\le\left(x^{2}+y^{2}\right)e^{-\left(x+y\right)}=\cfrac{x^{2}+y^{2}}{e^{x+y}}\le\cfrac{x^{2}+2xy+y^{2}}{e^{\left(x+y\right)}}=\cfrac{\left(x+y\right)^{2}}{e^{\left(x+y\right)}}
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $t=x+y$
+\end_inset
+
+.
+ קל לראות ע"י לופיטל שהגבול הוא אפס, ולכן 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(\infty,\infty\right)}f\left(x,y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ברור כי 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ אינה רציפה כי 
+\begin_inset Formula $\infty\gets0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ב
+\end_layout
+
+\begin_layout Standard
+חשב את הגבול 
+\begin_inset Formula $\lim\limits _{\begin{array}{c}
+x\to\infty\\
+y\to\infty
+\end{array}}\cfrac{x+y}{x^{2}-xy+y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נראה ע"י משפט הסנדוויץ כי הגבול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ נשתמש בנוסחת כפל מקוצר.
+ ידוע שמתקיים 
+\begin_inset Formula $\left(x+y\right)^{2}\ge0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+2yx+y^{2}\ge0
+\]
+
+\end_inset
+
+באופן דומה מהנוסחה 
+\begin_inset Formula $\left(x-y\right)^{2}\ge0$
+\end_inset
+
+ קל לראות ש
+\begin_inset Formula $x^{2}+y^{2}\ge2xy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מהמשוואות הנ"ל נקבל כי 
+\begin_inset Formula $x^{2}+y^{2}\ge2\left(x-y\right)$
+\end_inset
+
+.
+ נסתכל על המונה:
+\begin_inset Formula 
+\[
+x^{2}-xy+y^{2}\ge x^{2}-\left|xy\right|+y^{2}\ge\left|xy\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{x^{2}-xy+y^{2}}\le\cfrac{1}{\left|xy\right|}
+\]
+
+\end_inset
+
+נכפול ב
+\begin_inset Formula $x+y$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le\cfrac{x+y}{x^{2}-xy+y^{2}}\le\cfrac{x+y}{\left|x-y\right|}=\cfrac{x}{\left|xy\right|}+\cfrac{y}{\left|xy\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{x}{\left|x\right|}\cfrac{1}{\left|y\right|}+\cfrac{y}{\left|y\right|}\cfrac{1}{\left|x\right|}=\cfrac{1}{\left|y\right|}+\cfrac{1}{\left|x\right|}\xrightarrow[\left(x,y\right)\to0]{}0
+\]
+
+\end_inset
+
+קיבלנו ע"פ משפט הסנדוויץ כי הגבול הוא אפס.
+\end_layout
+
+\end_body
+\end_document

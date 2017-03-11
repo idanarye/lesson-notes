@@ -1,0 +1,712 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+בעיות 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $SAT$
+\end_inset
+
+ - נתונה נוסחת 
+\begin_inset Formula $CNF$
+\end_inset
+
+, צריך לבדוק אם יש הצבה שמספקת אותה.
+ זו הבעיה היסודית, שהוכחה כ
+\begin_inset Formula $NPC$
+\end_inset
+
+ במשפט קוק
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $3SAT$
+\end_inset
+
+ - כמו 
+\begin_inset Formula $SAT$
+\end_inset
+
+, כאשר הנוסחה בנויה מרכיבים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איברים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Independent\, Set}$
+\end_inset
+
+)
+\begin_inset Formula $IS$
+\end_inset
+
+( - האם קיימת בגרף קבוצת קודקודים בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ שאין ביניהם קשתות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Vertex Cover}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Dominating Set}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Set Cover}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Set Packing}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{3-Colorablity}$
+\end_inset
+
+)
+\begin_inset Formula $3COL$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{Directed Hamiltonian Cycle}$
+\end_inset
+
+)
+\begin_inset Formula $DHC$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נסתכל בבעיית 
+\begin_inset Formula $4COL$
+\end_inset
+
+.
+ האם הבעיה ב
+\begin_inset Formula $P$
+\end_inset
+
+? 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+מובן שהבעייה ב
+\begin_inset Formula $NP$
+\end_inset
+
+)ננחש צביעה ונבדוק אם היא נכונה(
+\end_layout
+
+\begin_layout Standard
+ננסה להראות רדוקציה 
+\begin_inset Formula $3COL\le_{p}4COL$
+\end_inset
+
+.
+ כלומר בהינתן 
+\begin_inset Formula $G$
+\end_inset
+
+ קלט עבור 
+\begin_inset Formula $3COL$
+\end_inset
+
+ נרצה לבנות 
+\begin_inset Formula $G'$
+\end_inset
+
+ עבור 
+\begin_inset Formula $4COL$
+\end_inset
+
+ כך שיתקיים
+\begin_inset Formula 
+\[
+G\in3COL\Leftrightarrow G'\in4COL
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Standard
+ניקח את 
+\begin_inset Formula $G'$
+\end_inset
+
+ להיות 
+\begin_inset Formula $G$
+\end_inset
+
+ בתוספת קודקוד חדש 
+\begin_inset Formula $v_{new}$
+\end_inset
+
+ המחובר בקשת לכל קדקדי 
+\begin_inset Formula $G$
+\end_inset
+
+ המקוריים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+זמן
+\series default
+: לינארי.
+\end_layout
+
+\begin_layout Subsubsection*
+נכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Rightarrow\right)$
+\end_inset
+
+ נניח שיש צביעה חוקית עבור 
+\begin_inset Formula $G$
+\end_inset
+
+ בשלושה צבעים.
+ נשתמש באותה הצביעה עבור 
+\begin_inset Formula $G'$
+\end_inset
+
+ ואת 
+\begin_inset Formula $v_{new}$
+\end_inset
+
+ נצבע בצבע החדש)הרביעי(.
+ נקבל צביעה חוקית)כל קשת שהייתה ב
+\begin_inset Formula $G$
+\end_inset
+
+ מקיימת את הכלל בגלל הצביעה המקורית, ועבור כל קשת חדשה, אחד הקצוות שלה הוא
+ 
+\begin_inset Formula $v_{new}$
+\end_inset
+
+ שצבוע בצבע ייחודי(.
+ 
+\begin_inset Formula $G'\in4COL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ נניח שיש צביעה חוקית בארבעה צבעים.
+ עבור 
+\begin_inset Formula $G'$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $v_{new}$
+\end_inset
+
+ צבוע בצבע ייחודי)אם יש קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ שצבוע באותו צבע, הקשת 
+\begin_inset Formula $\left(u,v_{new}\right)$
+\end_inset
+
+ שבנינו מפירה את חוקיות הצביעה(.
+ מכאן שכל שאר קודקודים 
+\begin_inset Formula $G'$
+\end_inset
+
+)שהם קודקודי 
+\begin_inset Formula $G$
+\end_inset
+
+ המקורי( צבועים.
+ באופן חוקי ב
+\begin_inset Formula $3$
+\end_inset
+
+ צבעים לכל היותר.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+ניתן להפעיל את זה כדי להוכיח 
+\begin_inset Formula $nCOL\le_{p}\left(n+1\right)COL$
+\end_inset
+
+, ולהראות ברדוקציה שלכל 
+\begin_inset Formula $n\ge3$
+\end_inset
+
+, 
+\begin_inset Formula $nCOL\in NPC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן מתקיים 
+\begin_inset Formula $2COL\le_{p}3COL$
+\end_inset
+
+ - כי 
+\begin_inset Formula $2COL\in NP$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $2COL\notin NPC$
+\end_inset
+
+, ו
+\begin_inset Formula $3COL\not\le_{p}2COL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)הערה: לכל 
+\begin_inset Formula $A,B\in NPC$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $_{NP\ni}A\le_{p}B_{\in NPH}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתבונן בבעיית המסלול ההמילטוני המכוון)
+\begin_inset Formula $DHP$
+\end_inset
+
+(.
+ האם היא ב
+\begin_inset Formula $P$
+\end_inset
+
+? 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה?
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם יש מעגל יש בהכרח גם מסלול, ולכן 
+\begin_inset Formula $DHP\supset DHC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+בהעיה ב
+\begin_inset Formula $NP$
+\end_inset
+
+)ננחש מסלול ונבדוק אם הוא המילטוני(.
+ ננסה להראות ש
+\begin_inset Formula $DHP\in NPC$
+\end_inset
+
+ ע"י רדוקציה 
+\begin_inset Formula $DHC\le_{p}DHP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר בהינתן קלט 
+\begin_inset Formula $G$
+\end_inset
+
+ עבור 
+\begin_inset Formula $DHC$
+\end_inset
+
+, נרצה לבנות קלט 
+\begin_inset Formula $G'$
+\end_inset
+
+ עבור 
+\begin_inset Formula $DHP$
+\end_inset
+
+)המסלול( כך שיתקיים 
+\begin_inset Formula $G\in DHC\Leftrightarrow G'\in DHP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נסיון
+\begin_inset space ~
+\end_inset
+
+ראשון
+\series default
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להוסיף קודקוד שיש לו וממנו קשתות לכל הקודקודים האחרים.
+ זה לא עובד.
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\bigcirc\ar[dd] &  & \bigcirc\ar[ll]\ar[lldd]\\
+\\
+u\ar[rr] &  & \bigcirc\ar[uu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח קודקוד 
+\begin_inset Formula $u$
+\end_inset
+
+ שרירותי ב
+\begin_inset Formula $G$
+\end_inset
+
+ ונחליף אותו בקודקודים 
+\begin_inset Formula $u_{in},u_{out}$
+\end_inset
+
+.
+ ל
+\begin_inset Formula $u_{in}$
+\end_inset
+
+ יכנסו קשתות מכל הקודקודים שהיו מהם קשתות ל
+\begin_inset Formula $u$
+\end_inset
+
+.
+ מ
+\begin_inset Formula $u_{out}$
+\end_inset
+
+ יצאו קשתות לכל הקודקודים שהיו מהם קשתות ל
+\begin_inset Formula $u$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\xymatrix{ & \bigcirc\ar[ldd] &  & \bigcirc\ar[ll]\ar@/_{5pc}/[llldd]\\
+\\
+u_{in} & u_{out}\ar[rr] &  & \bigcirc\ar[uu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+זמן
+\series default
+: לינארי
+\end_layout
+
+\begin_layout Subsection*
+נכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Rightarrow\right)$
+\end_inset
+
+ נניח שיש מעגל המילטוני ב
+\begin_inset Formula $G$
+\end_inset
+
+, בה"כ נניח שהוא מתחיל מ
+\begin_inset Formula $u$
+\end_inset
+
+.
+ נסמן את קודקודי המעגל לפי הסדר 
+\begin_inset Formula $u,v_{1},v_{2},...v_{n-1},u$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כעת, ניתן לראות שהמסלול 
+\begin_inset Formula $u_{out},v_{1},v_{2},...v_{n-1},u_{in}$
+\end_inset
+
+ הוא מסלול המילטוני ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ נניח שיש מסלול המילטוני ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ מסלול זה 
+\bar under
+חייב
+\bar default
+ להתחיל ב
+\begin_inset Formula $u_{out}$
+\end_inset
+
+ ולהסתיים ב
+\begin_inset Formula $u_{in}$
+\end_inset
+
+.
+ נסמן את המסלול 
+\begin_inset Formula $u_{out},v_{1},...v_{n-1},u_{in}$
+\end_inset
+
+.
+ ניתן לראות ש
+\begin_inset Formula $u,v_{1},...v_{n-1},u$
+\end_inset
+
+ מהווה מעגל המילטוני ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

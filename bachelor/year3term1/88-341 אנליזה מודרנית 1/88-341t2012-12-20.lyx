@@ -1,0 +1,942 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ רציפה.
+ האם קיים קטע בו 
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+התשובה היא - לא בהכרח! יש פונקציות רציפות שאינן מונוטוניות בשום קטע.
+\end_layout
+
+\begin_layout Standard
+באינפי' בונים פונקציה רציפה 
+\begin_inset Formula $f$
+\end_inset
+
+ שאינה גזירה באף נקודה.
+ ניקח את 
+\begin_inset Formula $f$
+\end_inset
+
+ להיות כזו.
+\end_layout
+
+\begin_layout Standard
+אילו היה קטע 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+ שבו 
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית, משפט הגזירה של לבג היה אומר כי 
+\begin_inset Formula $f'$
+\end_inset
+
+ קיימת כב"מ ב
+\begin_inset Formula $I$
+\end_inset
+
+ - וזו סתירה.
+\end_layout
+
+\begin_layout Part*
+רציפות בהחלט
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+ קטע.
+ 
+\begin_inset Formula $f:I\to\mathbb{R}$
+\end_inset
+
+ נקראת 
+\emph on
+\bar under
+רציפה בהחלט ב
+\begin_inset Formula $I$
+\end_inset
+
+
+\emph default
+\bar default
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף של קטעים פתוחים וזרים שסכום אורכיהם קטן מ
+\begin_inset Formula $\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\sum\limits _{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\varepsilon$
+\end_inset
+
+)תנאי טכני: 
+\begin_inset Formula $\left[a_{k},b_{k}\right]\subseteq I$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $a_{k},b_{k}\in I$
+\end_inset
+
+((.
+\end_layout
+
+\begin_layout Standard
+מרחב כל הפונקציות הרציפות בהחלט בקטע 
+\begin_inset Formula $I$
+\end_inset
+
+ מסומן 
+\begin_inset Formula $\textnormal{AC}\left(I\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textnormal{AC}$
+\end_inset
+
+ בשביל
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size normal
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Absolutely Continuous
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $f,g:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ רציפות בהחלט)
+\begin_inset Formula $f,g\in\textnormal{AC}\left(\left[a,b\right]\right)$
+\end_inset
+
+(, 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ קבוע.
+ הוכיחו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $cf$
+\end_inset
+
+ רציפה בהחלט ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f+g\in\textnormal{AC}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $fg\in\textnormal{AC}\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ע"פ הגדרת הרציפות בהחלט של 
+\begin_inset Formula $f$
+\end_inset
+
+ עם 
+\begin_inset Formula $\varepsilon\mapsto\frac{\varepsilon}{\left|c\right|}$
+\end_inset
+
+ נקבל כי ישנו 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף של קטעים זרים עם 
+\begin_inset Formula $\sum\limits _{k=1}^{n}b_{k}-a_{k}<\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\sum\limits _{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\frac{\varepsilon}{\left|c\right|}$
+\end_inset
+
+.
+ עבור אותו 
+\begin_inset Formula $\delta$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף קטעים זרים שסכום אורכם קטן מ
+\begin_inset Formula $\delta$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|cf\left(b_{k}\right)-cf\left(a_{k}\right)\right|=\left|c\right|\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\left|c\right|\cdot\frac{\varepsilon}{\left|c\right|}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: ההוכחה עובדת רק עבור 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+.
+ להוכיח עבור 
+\begin_inset Formula $c=0$
+\end_inset
+
+ - תרגיל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ע"פ הגדרת הרציפות בהחלט של 
+\begin_inset Formula $f$
+\end_inset
+
+ ישנו 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף קטעים זרים עם סכום אורכים קטן מ
+\begin_inset Formula $\delta_{1}$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+וע"פ הגדרת הרציפות בהחלט של 
+\begin_inset Formula $g$
+\end_inset
+
+ ישנו 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף קטעים זרים עם סכום אורכים קטן מ
+\begin_inset Formula $\delta_{2}$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|g\left(b_{k}\right)-g\left(a_{k}\right)\right|<\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+עכשיו ניקח 
+\begin_inset Formula $\delta=\min\left\{ \delta_{1},\delta_{2}\right\} $
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ אוסף קטעים זרים שסכום אורכם קטן מ
+\begin_inset Formula $\delta$
+\end_inset
+
+)ולכן גם מ
+\begin_inset Formula $\delta_{1,2}$
+\end_inset
+
+( נקבל
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left(f+g\right)\left(b_{k}\right)-\left(f+g\right)\left(a_{k}\right)=\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)+g\left(b_{k}\right)-g\left(a_{k}\right)\right|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|+\sum_{k=1}^{n}\left|g\left(b_{k}\right)-g\left(a_{k}\right)\right|<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f,g$
+\end_inset
+
+ רציפות בקטע סגור ולכן 
+\bar under
+חסומות
+\bar default
+ שם)ישנו 
+\begin_inset Formula $M$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(x\right)\right|,\left|g\left(x\right)\right|\le M$
+\end_inset
+
+(.
+ ע"פ הגדרת הרציפות בהחלט)לשתי הפונקציות( ישנו 
+\begin_inset Formula $\min\left(\delta_{1},\delta_{2}\right)=\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ קטעים זרים שסכום אורכם קטן מ
+\begin_inset Formula $\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\sum\limits _{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\frac{\varepsilon}{2M}\\
+\sum\limits _{k=1}^{n}\left|g\left(b_{k}\right)-g\left(a_{k}\right)\right|<\frac{\varepsilon}{2M}
+\end{array}\right.$
+\end_inset
+
+.
+ עבור אותו ה
+\begin_inset Formula $\delta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|\left(fg\right)\left(b_{k}\right)-\left(fg\right)\left(a_{k}\right)\right|=\sum_{k=1}^{n}\left|f\left(b_{k}\right)g\left(b_{k}\right)-f\left(a_{k}\right)g\left(a_{k}\right)\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=1}^{n}\left|f\left(b_{k}\right)g\left(b_{k}\right)-f\left(b_{k}\right)g\left(a_{k}\right)+f\left(b_{k}\right)g\left(a_{k}\right)-f\left(a_{k}\right)g\left(a_{k}\right)\right|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sum_{k=1}^{n}\left|f\left(b_{k}\right)g\left(b_{k}\right)-f\left(b_{k}\right)g\left(a_{k}\right)\right|+\sum_{k=1}^{n}\left|f\left(b_{k}\right)g\left(a_{k}\right)-f\left(a_{k}\right)g\left(a_{k}\right)\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|f\left(b_{k}\right)\right|\sum_{k=1}^{n}\left|g\left(b_{k}\right)-g\left(a_{k}\right)\right|+\left|g\left(a_{k}\right)\right|\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le M\cdot\sum_{k=1}^{n}\left|g\left(b_{k}\right)-g\left(a_{k}\right)\right|+M\cdot\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+<M\cdot\frac{\varepsilon}{2M}+M\cdot\frac{\varepsilon}{2M}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+סעיפים א'+ב' אומרים שהמרחב 
+\begin_inset Formula $\textnormal{AC}\left(\left[a,b\right]\right)$
+\end_inset
+
+ הוא מרחב לינארי/וקטורי - כלומר סגור לצירוף לינארי.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ מקיימת את 
+\emph on
+תנאי ליפשיץ
+\emph default
+ אם אם ישנו קבוע 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x,y\in\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-f\left(y\right)\right|\le L\cdot\left|x-y\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תרגיל
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הוכיחו כי אם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ מקיימת את תנאי ליפשיץ אז היא רציפה בהחלט.
+\end_layout
+
+\begin_layout Enumerate
+הוכיחו כי אם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ היא ממחלקה 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+)=גזירה ברציפות( אזי היא מקיימת את תנאי ליפשיץ.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $\delta=\frac{\varepsilon}{L}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\left\{ \left(a_{k},b_{k}\right)\right\} _{k=1}^{n}$
+\end_inset
+
+ זרים וסכום אורכם קטן מ
+\begin_inset Formula $\delta=\frac{\varepsilon}{L}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|\underset{\textnormal{Lipschitz}}{\le}\sum_{k=1}^{n}L\cdot\left|b_{k}-a_{k}\right|=L\cdot\sum_{k=1}^{n}\left|b_{k}-a_{k}\right|<L\cdot\frac{\varepsilon}{L}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מהנתון 
+\begin_inset Formula $f'$
+\end_inset
+
+ רציפה בקטע הסגור 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ולכן חסומה שם)
+\begin_inset Formula $\left|f'\left(x\right)\right|\le M$
+\end_inset
+
+(.
+ יהיו 
+\begin_inset Formula $x,y\in\left[a,b\right]$
+\end_inset
+
+.
+ ע"פ משפט הערך הממוצע של לגראנז' קיימת 
+\begin_inset Formula $\xi$
+\end_inset
+
+ בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-f\left(y\right)\right|=\left|f'\left(\xi\right)\cdot\left(x-y\right)\right|=\left|f'\left(\xi\right)\right|\cdot\left|x-y\right|\le M\cdot\left|x-y\right|
+\]
+
+\end_inset
+
+וזה תנאי ליפשיץ.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+בעתיד נוכיח את ב' הרבה יותר בקלות(
+\end_layout
+
+\begin_layout Section*
+שאלה ממבחן)תשע"א, שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הגדירו פונקציה רציפה בהחלט על קטע ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+צטטו את הכללת לבג ל"משפט היסודי של החשבון האינטגרלי")שני חלקים(
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $E\subseteq\mathbb{R}$
+\end_inset
+
+ קבוצה מדידה לבג ותהי 
+\begin_inset Formula $I_{E}$
+\end_inset
+
+ האינדיקטור של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ הוכיחו שלכמעט כל 
+\begin_inset Formula $a\in E$
+\end_inset
+
+)ביחס למידת לבג(
+\begin_inset Formula 
+\[
+\lim_{h\to0^{+}}\frac{1}{2h}\int_{a-h}^{a+h}I_{E}\mathrm{\, d}m=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון)לסעיף ג(
+\end_layout
+
+\begin_layout Standard
+ברור כי 
+\begin_inset Formula $I_{E}$
+\end_inset
+
+ אינטגרבילית בכל קטע סגור)כי 
+\begin_inset Formula $\int_{a}^{b}I_{E}\le\int_{a}^{b}1=b-a<\infty$
+\end_inset
+
+(.
+ נגדיר 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}I_{E}\mathrm{\, d}m$
+\end_inset
+
+.
+ ע"פ הכללת לבג למשפט היסודי חלק א', 
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה כב"מ ו
+\begin_inset Formula $F'\left(x\right)=I_{E}\left(x\right)$
+\end_inset
+
+ כב"מ.
+ ניתן לרשום את הגבול כך:
+\begin_inset Formula 
+\[
+\lim_{h\to0^{+}}\frac{F\left(a+h\right)-F\left(a-h\right)}{2h}
+\]
+
+\end_inset
+
+הגבול הזה נקרא הנגזרת הסימטרית של 
+\begin_inset Formula $F$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+, וידוע שאם 
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה אזי הנגזרת הסימטרית קיימת ומתלכדת עם הנגזרת הרגילה כמעט לכל 
+\begin_inset Formula $a\in E$
+\end_inset
+
+ 
+\begin_inset Formula $F'\left(a\right)=I_{E}\left(a\right)=1$
+\end_inset
+
+, וכמעט לכל 
+\begin_inset Formula $a\in E$
+\end_inset
+
+ 
+\begin_inset Formula $\lim\limits _{h\to0^{+}}\frac{F\left(a+h\right)-F\left(a-h\right)}{2h}=F'\left(a\right)$
+\end_inset
+
+, וכמעט לכל 
+\begin_inset Formula $a\in E$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{h\to0^{+}}\left(\cdots\right)=F'\left(a\right)=I_{E}\left(a\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

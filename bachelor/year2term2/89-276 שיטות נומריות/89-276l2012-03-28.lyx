@@ -1,0 +1,1504 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: ראינו את שיטת החציה, שמבוססת על "אריה במדבר" - חיפוש בינארי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ראינו קריטריונים לעצירה:
+\end_layout
+
+\begin_layout Itemize
+גודל האינטרוול - עוצרים כאשר שטח החיפוש קטן מגודל מסויים קבוע מראש.
+\end_layout
+
+\begin_layout Itemize
+הערך המוחלט של הפונקציה - עוצרים כאשר הערך המוחלט של ערך הפונקציה מספיק
+ קטן.
+\begin_inset Newline newline
+\end_inset
+
+זה קריטריון מסוכן, כי לא בטוח שזה יתן לנו קירוב מספיק טוב.
+\end_layout
+
+\begin_layout Itemize
+הקריטריון האדמיניסטרטיבי - עוצרים לאחר מספר מסויים של איטרציות.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+קירוב לינארי - שיטת ה
+\lang english
+Secant
+\end_layout
+
+\begin_layout Standard
+פירוש המילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Secant
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- חותך.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש ערכים התחלתיים 
+\begin_inset Formula $x_{0},x_{1}$
+\end_inset
+
+, שצריכים להיות קרובים מספיק לשורש.
+\end_layout
+
+\begin_layout Itemize
+בשונה משיטת החצייה, כאן לא מניחים מראש שהשורש נמצא ביניהם - זו לא דרישה.
+\end_layout
+
+\begin_layout Itemize
+בכל שלב יהיו 
+\begin_inset Formula $x_{0},x_{1}$
+\end_inset
+
+ תורניים, ומניחים ש
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ קרוב יותר לשורש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בכל שלב, מעביר בין 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ קו ישר, ובודקים איפה הוא חותך את ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ - מסמנים 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+.
+ את הנקודה הזו בוחרים בתור נקודה חדשה - כלומר מבצעים
+\begin_inset Formula $\begin{array}{c}
+x_{0}\gets x_{1}\\
+x_{1}\gets x_{2}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מדמיון משולשים נקבל
+\begin_inset Formula 
+\[
+\cfrac{x_{1}-x_{2}}{f\left(x_{1}\right)}=\cfrac{x_{0}-x_{1}}{f\left(x_{0}\right)-f\left(x_{1}\right)}
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+x_{2}=x_{1}-f\left(x_{1}\right)\cdot\cfrac{x_{0}-x_{1}}{f\left(x_{0}\right)-f\left(x_{1}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאופן כללי:
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-f\left(x_{n}\right)\cfrac{x_{n-1}-x_{n}}{f\left(x_{n-1}\right)-f\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא שבקטע קטן בסביבת השורש, אפשר לעשות קירוב לינארי לפונקציה.
+\end_layout
+
+\begin_layout Standard
+השיטה דורשת ש
+\begin_inset Formula $\left|f\left(x_{1}\right)\right|<\left|f\left(x_{0}\right)\right|$
+\end_inset
+
+.
+ ניתן לבדוק את זה בקלות ולהחליף במידת השורש
+\end_layout
+
+\begin_layout Section*
+מימוש
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+if 
+\begin_inset Formula $\left|f\left(x_{0}\right)\right|<\left|f\left(x_{1}\right)\right|$
+\end_inset
+
+ then
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+swap(
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+\begin_inset Formula $x_{1}$
+\end_inset
+
+);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+repeat
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{2}$
+\end_inset
+
+=
+\begin_inset Formula $x_{1}-f\left(x_{1}\right)\cdot\cfrac{x_{0}-x_{1}}{f\left(x_{0}\right)-f\left(x_{1}\right)}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{0}$
+\end_inset
+
+=
+\begin_inset Formula $x_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{1}$
+\end_inset
+
+=
+\begin_inset Formula $x_{2}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+until 
+\begin_inset Formula $\left|f\left(x_{2}\right)\right|<\textnormal{Tol};$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו בשיטת החציה, גם כאן ניתן להשתמש בקריטריוני סיום חלופיים - למשל 
+\begin_inset Formula $\left|x_{1}-x_{0}\right|<\textnormal{Tol}$
+\end_inset
+
+ או מספר האיטרציות.
+\end_layout
+
+\begin_layout Section*
+יעילות
+\end_layout
+
+\begin_layout Standard
+למשל, לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+ איטרציות במקרה של הפונקציה 
+\begin_inset Formula $f\left(x\right)=3x+\sin x-e^{x}$
+\end_inset
+
+ מגיעים לתוצאה יותר מדוייקת מאשר עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איטרציות עם שיטת החציה.
+\end_layout
+
+\begin_layout Section*
+נקודת תורפה
+\end_layout
+
+\begin_layout Standard
+ייתכנו מקרים "פתולוגיים" שבהם ערכי 
+\begin_inset Formula $x$
+\end_inset
+
+ המתקבלים רחוקים יותר מהשורש בהשוואה לערכים הקודמים.
+ למשל - כאשר הפונקציה רחוקה מלהיות לינארית סביב השורש, או כאשר היא לא מונוטונית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נרצה לתחום את השורש מלכתחילה, כמו בשיטת החציה - כלומר לדרוש שהשורש יהיה
+ בתוך האינטרוול ההתחלתי: 
+\begin_inset Formula $f\left(x_{0}\right)\cdot f\left(x_{1}\right)<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ תמיד חיובי או שלילי)אם הוא אפס - אז סיימנו(, ניתן לשמור על התנאי הזה לכל
+ אורך החישוב:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+repeat
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{2}$
+\end_inset
+
+=
+\begin_inset Formula $x_{1}-f\left(x_{1}\right)\cdot\cfrac{x_{0}-x_{1}}{f\left(x_{0}\right)-f\left(x_{1}\right)}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $f\left(x_{0}\right)\cdot f\left(x_{2}\right)<0$
+\end_inset
+
+ then
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{1}$
+\end_inset
+
+=
+\begin_inset Formula $x_{2}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+=
+\begin_inset Formula $x_{2}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+until 
+\begin_inset Formula $\left|f\left(x_{2}\right)\right|<\textnormal{Tol}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\family typewriter
+הערות
+\end_layout
+
+\begin_layout Itemize
+ייתכנו מקרים שבהם שיטת ה
+\lang english
+Secant
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ פחות יעילה משיטת החציה.
+\end_layout
+
+\begin_layout Part*
+שיטת ניוטון-רפסון
+\end_layout
+
+\begin_layout Standard
+שיטה קלאסית)בת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+400
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שנה(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש ערך התחלתי 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בהנחה ש
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מספיק קרוב לשורש, השיטת תתכנסת בצורה יותר יעילה מכל השיטות שהזכרנו.
+\end_layout
+
+\begin_layout Itemize
+סדר ההתכנסות הוא ריבועי, בניגוד לשיטות הקודמות שהן בסדר התכנסות לינארי.
+ הכוונה היא שהאינטרוול קטן בקצב ריבועי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הרעיון הוא להסתכל על 
+\begin_inset Formula $f\left(x_{0}\right)$
+\end_inset
+
+, ולהעביר משיק דרך הנקודה הזו.
+ נקודת המפגש של המשיק הזה עם ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ תהיה ה
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ החדשה)כלומר 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+חישוב
+\begin_inset space ~
+\end_inset
+
+המשיק
+\series default
+: נזכור ששיפוע המשיק הוא בעצם נגזרת:
+\begin_inset Formula 
+\[
+\tan\theta=f'\left(x_{0}\right)=\cfrac{f\left(x_{0}\right)}{x_{0}-x_{1}}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+x_{1}=x_{0}-\cfrac{f\left(x_{0}\right)}{f'\left(x_{0}\right)}
+\]
+
+\end_inset
+
+ובאופן כללי
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מימוש
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+evaluate 
+\begin_inset Formula $f\left(x_{0}\right),f'\left(x_{0}\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $f\left(x_{0}\right)\neq0$
+\end_inset
+
+
+\begin_inset Formula $\wedge$
+\end_inset
+
+
+\begin_inset Formula $f'\left(x_{0}\right)\neq0$
+\end_inset
+
+) then
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+repeat
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{1}$
+\end_inset
+
+=
+\begin_inset Formula $x_{0}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $x_{0}$
+\end_inset
+
+=
+\begin_inset Formula $x_{0}-\cfrac{f\left(x_{0}\right)}{f'\left(x_{0}\right)}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+until 
+\begin_inset Formula $\left|x_{1}-x_{0}\right|<\textnormal{Tol}_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $\left|f\left(x_{0}\right)\right|<\textnormal{Tol}_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הערות
+\end_layout
+
+\begin_layout Itemize
+צריך לחשב את הנגזרת! זה לא פעולה טריוויאלית
+\end_layout
+
+\begin_layout Itemize
+אפשר גם למצוא שורשים מרוכבים
+\end_layout
+
+\begin_layout Itemize
+אפשר למצוא באמצעות השיטה שורשי פולינומים
+\end_layout
+
+\begin_layout Itemize
+יכול להיות מצב שהשיטה לא מתכנסת - למשל במקרה שנתקעים על נקודת קיצון
+\end_layout
+
+\begin_layout Section*
+הדמיון בין ניוטון-רפסון לשיטת ה
+\lang english
+Secant
+\end_layout
+
+\begin_layout Standard
+ניתן לכתוב את הנוסחה של שיטת ה
+\lang english
+Secant
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור:
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{\cfrac{f\left(x_{n}\right)-f\left(x_{n-1}\right)}{x_{n}-x_{n-1}}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left|x_{n}-x_{n-1}\right|\to0$
+\end_inset
+
+, הביטוי 
+\begin_inset Formula $\cfrac{f\left(x_{n}\right)-f\left(x_{n-1}\right)}{x_{n}-x_{n-1}}$
+\end_inset
+
+ הוא הנגזרת!
+\end_layout
+
+\begin_layout Section*
+יעילות
+\end_layout
+
+\begin_layout Standard
+עבור הפונקציה 
+\begin_inset Formula $f\left(x\right)=3x+\sin x-e^{x}$
+\end_inset
+
+, תוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איטרציות מקבלים דיוק עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ספרות!
+\end_layout
+
+\begin_layout Part*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Muller
+\lang hebrew
+)אפרוקסימציה ריבועית(
+\end_layout
+
+\begin_layout Standard
+במקום לבצע קירוב לינארי מבצעים קירוב ריבועי.
+\end_layout
+
+\begin_layout Standard
+במקום לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות 
+\begin_inset Formula $x_{0},x_{1}$
+\end_inset
+
+ ולהעביר ביניהן ישר, בוחרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות 
+\begin_inset Formula $x_{0},x_{1},x_{2}$
+\end_inset
+
+ ומעבירים ביניהן פרבולה.
+ ההנחה היא שהקירוב הריבועי יותר טוב מהקירוב הלינארי.
+\end_layout
+
+\begin_layout Standard
+ניתן למצוא פרבולה מ
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות באמצעות פתרון מערכת משוואות לינארית ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתנים, אבל כדי שזה יהיה קירוב מספיק טוב, בוחרים 
+\begin_inset Formula $c=f\left(x_{2}\right)$
+\end_inset
+
+, ורושמים את הפרבולה בתור 
+\begin_inset Formula $P\left(x\right)=a\left(x-x_{2}\right)^{2}+b\left(x-x_{2}\right)+c$
+\end_inset
+
+, ואז פותרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משוואות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+a\left(x_{0}-x_{2}\right)^{2}+b\left(x_{0}-x_{2}\right)+c=f\left(x_{0}\right)\\
+a\left(x_{1}-x_{2}\right)^{2}+b\left(x_{1}-x_{2}\right)+c=f\left(x_{1}\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+איטרציות נקודות שבת)
+\lang english
+Fixed Point
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+גם כאן רוצים למצוא שורש למשוואה 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש עניין ואפילו תועלת לדבר דווקא על המשוואה 
+\begin_inset Formula $x=g\left(x\right)$
+\end_inset
+
+, ששקולה למשוואה 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתנאים מסויימים, נקבל 
+\begin_inset Formula $x_{n+1}=g\left(x_{n}\right)$
+\end_inset
+
+, ונרצה שזה יתכנס.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{2}-2x-3=0
+\]
+
+\end_inset
+
+השורשים הם 
+\begin_inset Formula $-1,3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $x=g\left(x\right)=\sqrt{2x+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: 
+\begin_inset Formula $g\left(3\right)=\sqrt{6+3}=\sqrt{9}=3$
+\end_inset
+
+ וזה בסדר, אבל עבור השורש השני נקבל 
+\begin_inset Formula $g\left(-1\right)=\sqrt{-2+3}=\sqrt{1}=1$
+\end_inset
+
+ - וזה לא טוב.
+\end_layout
+
+\begin_layout Standard
+אם נתחיל מ
+\begin_inset Formula $x_{0}=4$
+\end_inset
+
+, אז נקבל:
+\begin_inset Formula 
+\[
+x_{1}=g\left(x_{0}\right)=\sqrt{8+3}=\sqrt{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=g\left(x_{1}\right)=\sqrt{2\sqrt{12}+3}=...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל שזה מתכנס.
+\end_layout
+
+\begin_layout Standard
+פונקציה אחרות יתנו סדרות ערכים אחרות, שיכולות להתכנס או להתבדר בנפרד לכל
+ אחד מהשורשים.
+\end_layout
+
+\begin_layout Section*
+המשמעות הגיאומטרית
+\end_layout
+
+\begin_layout Standard
+מסתכלים על 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ ביחס לקו ישר 
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+ בכל איטרציה מוצאים את 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, לפי זה מוצאים את 
+\begin_inset Formula $y$
+\end_inset
+
+, ולפי זה מוצאים את ה
+\begin_inset Formula $x$
+\end_inset
+
+ החדש.
+ זה אומר להתכנס לנקודת החיתוך של 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $y=x$
+\end_inset
+
+, שהיא נקודת השבת - אבל רק בהנחה שבוחרים פונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ מתאימה.
+ אם לא בוחרים פונקציה מתאימה - למשל 
+\begin_inset Formula $\cfrac{x^{2}-3}{2}$
+\end_inset
+
+ או 
+\begin_inset Formula $\cfrac{3}{x-2}$
+\end_inset
+
+ - זה מתבדר.
+\end_layout
+
+\begin_layout Standard
+זה תלוי בקצב הגדילה של הפונקציה ביחס ל
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+ כשקצב הגדילה מאוד גבוה יחסית אז יש התבדרות, וכשקצב השינוי ב
+\begin_inset Formula $g$
+\end_inset
+
+)הנגזרת( קטן מקצב השינוי של 
+\begin_inset Formula $y=x$
+\end_inset
+
+)תמיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( אז זה יכול להתכנס.
+\end_layout
+
+\end_body
+\end_document

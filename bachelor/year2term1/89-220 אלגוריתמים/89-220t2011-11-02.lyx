@@ -1,0 +1,1145 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{qtree}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+אתר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+www.cs.biu.ac.il/~89-220
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+מתרגלת: נטע ברקאי -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+algorithms1.biu@gmail.com
+\end_layout
+
+\begin_layout Title
+
+\lang hebrew
+הפרד ומשול
+\end_layout
+
+\begin_layout Section*
+
+\lang hebrew
+חיפוש בינארי
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+יש לנו מערך ממויין, ורוצים לחפש בו איבר.
+ מחפשים את האיבר באמצע, ולפי הערך בוחרים חצי שמאלי או ימני של המערך, ומבצעים
+ עליו חיפוש בינארי.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang hebrew
+אלגוריתם לחיפוש איבר 
+\begin_inset Formula $k$
+\end_inset
+
+ במערך ממויין 
+\begin_inset Formula $A$
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+ איברים:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+השווה את 
+\begin_inset Formula $k$
+\end_inset
+
+ עם האיבר האמצעי.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+אם 
+\begin_inset Formula $k$
+\end_inset
+
+ גדול ממנו, חפש רקורסיבית בצד של האיברים הגדולים.
+\begin_inset Newline newline
+\end_inset
+
+אחרת, חפש רקורסיבית בצד של האיברים הקטנים.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang hebrew
+זמן ריצה:
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\[
+T\left(n\right)=T\left(\cfrac{n}{2}\right)+\theta\left(1\right)\Rightarrow T\left(n\right)=\theta\left(\log n\right)\Leftrightarrow T\left(n\right)\in\theta\left(\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang hebrew
+מספרי פיבונאצ'י
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(n\right) & = & f\left(n-1\right)+f\left(n-2\right)\\
+ & f(0)=1\\
+ & f(1)=1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang hebrew
+אלגוריתם
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+חשב את 
+\begin_inset Formula $f\left(n-2\right)$
+\end_inset
+
+ רקורסיבית
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+חשב את 
+\begin_inset Formula $f\left(n-1\right)$
+\end_inset
+
+ רקורסיבית
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+החזר 
+\begin_inset Formula $f\left(n-1\right)+f\left(n-2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & T\left(n\right)=T\left(n-1\right)+T\left(n-2\right)+\theta\left(1\right)\\
+ &  & T\left(0\right)=1\\
+ &  & T\left(1\right)=1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang hebrew
+טענה
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\[
+\mbox{\Tree[.f(4) [.f(3) [.f(2) f(1) f(0) ] f(1) ] [.f(2) f(1) f(0) ] ]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+אם מחשבים את מספר פיבונאצ'י בעזרת עץ, מספר הקודקדים בעץ הוא באותו סדר גודל
+ של מספר העלים בעץ.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang hebrew
+הסבר
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+מתוך העובדה שהעץ שלם - לכל קודקוד יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang hebrew
+כמה עלים יש?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+טענה: מס' העלים עם 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\le$
+\end_inset
+
+ מס' העלים עם 
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+הוכחה
+\bar under
+ֹ
+\bar default
+: כל פעם שמופיע 
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+ בעץ, הוא הגיע מ
+\begin_inset Formula $f\left(2\right)$
+\end_inset
+
+.
+ וכל פעם שמופיע 
+\begin_inset Formula $f\left(2\right)$
+\end_inset
+
+, יש לו את 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+ כבן.
+ לכן על כל 
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+ לפחות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+מסקנה: מס' העלים בעץ 
+\begin_inset Formula $\ge$
+\end_inset
+
+ )מס' הפעמים ש
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+ בעץ(
+\begin_inset Formula $2\cdot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+אבחנה: מס' העלים עם 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+בעץ של 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+הסבר: 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+ זה מה שמוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $+1$
+\end_inset
+
+ בשביל לקבל את הערך 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+מקבלים: מס' העלים בעץ 
+\begin_inset Formula $\ge$
+\end_inset
+
+ 
+\begin_inset Formula $2\cdot f\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+מסקנה: מס' הקודקודים בעץ הוא 
+\begin_inset Formula $\theta\left(f\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+זמן הריצה הוא 
+\begin_inset Formula $T\left(n\right)=\theta\left(f\left(n\right)\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(n\right)=\cfrac{\left(\cfrac{1+\sqrt{5}}{2}\right)^{n}-\left(\cfrac{1-\sqrt{5}}{2}\right)^{n}}{\sqrt{5}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1+\sqrt{5}}{2}=1.61803,\cfrac{1-\sqrt{5}}{2}=-0.61803
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)=\theta\left(f\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(n\right)\in\theta\left(\left(\cfrac{1+\sqrt{5}}{2}\right)^{n}\right)\approx\theta\left(1.618\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang hebrew
+אלגוריתם איטרטיבי לחישוב 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+אם 
+\begin_inset Formula $n=0$
+\end_inset
+
+: החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+אם 
+\begin_inset Formula $n=1$
+\end_inset
+
+: החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+\begin_inset Formula $F_{n-2}\gets0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+\begin_inset Formula $F_{n-1}\gets1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ מ
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $n$
+\end_inset
+
+ בצע:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang hebrew
+\begin_inset Formula $F_{n}\gets F_{n-1}+F_{n-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+\begin_inset Formula $F_{n-2}=F_{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang hebrew
+\begin_inset Formula $F_{n-1}=F_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Section*
+
+\lang hebrew
+העלאת איבר בחזקה
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+קלט: איבר 
+\begin_inset Formula $a$
+\end_inset
+
+ ומס' טבעי 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+פלט: 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\[
+a^{n}=\begin{cases}
+a^{\frac{n}{2}}a^{\frac{n}{2}} & n\, is\, even\\
+a^{\frac{n-1}{2}}a^{\frac{n-1}{2}} & n\, is\, odd
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)\le T\left(\cfrac{n}{2}\right)+\theta\left(1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)\ge T\left(\cfrac{n-1}{2}\right)+\theta\left(1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow T\left(n\right)=\theta\left(\log n\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(n+1\right)=f\left(n\right)+f\left(n-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+
+\lang hebrew
+נחזור לפיבונאצ'י
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Formula 
+\[
+\begin{pmatrix}f\left(n+1\right)\\
+f\left(n\right)
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}f\left(n\right)\\
+f\left(n-1\right)
+\end{pmatrix}=\cdots=\begin{pmatrix}1 & 1\\
+1 & 0
+\end{pmatrix}^{n}\begin{pmatrix}f\left(1\right)\\
+f\left(0\right)
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+1 & 0
+\end{pmatrix}^{n}\begin{pmatrix}1\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+נסכם: הזמן לחישוב האיבר 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ בסדרת פיבונאצ'י הוא 
+\begin_inset Formula $T\left(n\right)=\theta\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+הסבר: נעשה העלאה בחזקה של מטריצה 
+\begin_inset Formula $2\times2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang hebrew
+שיכון של עץ בינארי ב
+\lang english
+VLSI
+\lang hebrew
+)
+\lang english
+Very Large Scale Integration
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+שיכון: הצבה של הקודקודים של העץ הבינארי בחיבורים של ה
+\lang english
+VLSI
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename pasted1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang hebrew
+ניתוח מימדים
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+VLSI
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+לגובה נוסף גודל קבוע בכל רמה, והרוחב מכפיל את עצמו בכל רמה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+גובה: 
+\begin_inset Formula $H\left(n\right)=H\left(\cfrac{n}{2}\right)+\theta(1)\Rightarrow\theta\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+רוחב: 
+\begin_inset Formula $W\left(n\right)=2W\left(\cfrac{n}{2}\right)+\theta\left(1\right)\Rightarrow\theta\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+שטח: 
+\begin_inset Formula $A\left(n\right)=H\left(n\right)W\left(n\right)=\theta\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang hebrew
+שיכון בצורת
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+H
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang hebrew
+ניתוח מימדים ב
+\lang english
+VLSI
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+כאן, גם הגובה וגם הרוחב מכפילים את עצמם כל רמה שניה - לסירוגין:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+גובה: 
+\begin_inset Formula $H\left(n\right)=2H\left(\cfrac{n}{4}\right)+\theta\left(1\right)\Rightarrow\theta\left(\sqrt{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+רוחב: 
+\begin_inset Formula $W\left(n\right)=2W\left(\cfrac{n}{4}\right)+\theta\left(1\right)\Rightarrow\theta\left(\sqrt{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang hebrew
+רוחב: 
+\begin_inset Formula $A\left(n\right)=H\left(n\right)W\left(n\right)\Rightarrow\theta\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+לא ניתן להשיג תוצאה יותר יעילה, שכן בסופו של דבר, כל קודקוד תופס מקום, כלומר
+ כל הוספה של קודקוד חייבת להגדיל את השטח בכמות מינימלית כלשהי, ולכן היעילות
+ הכי טובה שיכולה להיות היא 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

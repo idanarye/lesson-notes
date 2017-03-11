@@ -1,0 +1,940 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אפרוקסימציה - המשך
+\end_layout
+
+\begin_layout Section*
+שיטת ה
+\lang english
+Least Squares
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תזכורת+המשך
+\end_layout
+
+\begin_layout Standard
+נתונה פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+, וצריך לקרב אותה לפולינום מדרגה על 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(x\right)\approx p_{n}\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך שעבור אינטרוול נתון 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+F\left(a_{0},a_{1},\dots a_{n}\right)\equiv\int_{a}^{b}\left[f\left(x\right)-\sum_{j=0}^{1}a_{j}x^{j}\right]^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+יהיה מינימלי.
+ בשביל זה צריך שלכל 
+\begin_inset Formula $i=0,1,\dots n$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\partial F}{\partial a_{i}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקום לבצע אינטגרל ואז נגזרת, מחליפים את הסדר:
+\begin_inset Formula 
+\[
+0=\int_{a}^{b}\frac{\partial}{\partial a_{j}}\left[f\left(x\right)-\sum a_{j}x^{j}\right]^{2}\mathrm{\, d}x\qquad i=0,1,\dots n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\xcancel{2}\int_{a}^{b}\left(F\left(x\right)-\sum a_{j}x^{j}\right)\xcancel{\left(-1\right)}x^{i}\mathrm{\, d}x
+\]
+
+\end_inset
+
+ובסוף מקבלים
+\begin_inset Formula 
+\[
+\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{i+j}\mathrm{\, d}x=\int_{a}^{b}f\left(x\right)x^{i}\mathrm{\, d}x\qquad i=0,1,\dots n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו מערכת משוואות לינארית ב
+\begin_inset Formula $\left(n+1\right)$
+\end_inset
+
+ נעלמים - והבעיה היא שהמערכת לא יציבה)
+\lang english
+ill conditioned
+\lang hebrew
+(!
+\end_layout
+
+\begin_layout Standard
+למשל עבור אינטרוול 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ מקבלים
+\begin_inset Formula 
+\[
+\sum_{j=0}^{n}\frac{a_{j}}{i+j+1}=\int_{0}^{1}f\left(x\right)x^{j}\mathrm{\, d}x\qquad i=0,1,\dots n
+\]
+
+\end_inset
+
+ אגף ימין קבוע, המשתנים)=המקדמים 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+( נמצאים באגף שמאל, ומטריצת המערכת היא
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+i=0\\
+i=1\\
+\vdots\\
+i=n
+\end{array}\right]\begin{pmatrix}1 & \frac{1}{2} & \frac{1}{3} & \cdots & \frac{1}{n+1}\\
+\frac{1}{2} & \frac{1}{3} & \frac{1}{4} & \cdots & \frac{1}{n+2}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+\frac{1}{n+1} & \frac{1}{n+2} & \frac{1}{n+3} & \cdots & \frac{1}{2n}
+\end{pmatrix}\begin{pmatrix}a_{0}\\
+a_{1}\\
+\vdots\\
+a_{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הידועה לשמצה בשל ה
+\lang english
+conditional number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+27
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $2\times2$
+\end_inset
+
+, 
+\begin_inset Formula $748$
+\end_inset
+
+ עבור 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+גישה אלטרנטיבית - אפרוקסימציה המתבססת על פולינומים אורטוגונליים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הרעיון
+\series default
+: במקום לעבוד עם בסיס של חדי-איבר 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+)
+\begin_inset Formula $n\ge0$
+\end_inset
+
+()שקרובים לתלות לינארית(, נעבוד עם בסיס של פולינומים אורטוגונליים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מכפלה פנימית של שתי פונקציות רציפות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ נתונה ע"י
+\begin_inset Formula 
+\[
+\left\langle f,g\right\rangle \triangleq\int_{a}^{b}f\left(x\right)g\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הנורמה לפי המכפלה הפנימית הזו היא
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{2}=\left(\int_{a}^{b}f^{2}\left(x\right)\mathrm{\, d}x\right)^{\nicefrac{1}{2}}=\sqrt{\left\langle f,f\right\rangle }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+ יחשבו אורטוגונליים אם 
+\begin_inset Formula $\left\langle f,g\right\rangle =0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+פולינומי צ'ביצ'ב
+\end_layout
+
+\begin_layout Standard
+הפולינומים מתקבלים ע"י נוסחת הנסיגה
+\begin_inset Formula 
+\[
+T_{n+1}\left(x\right)=2xT_{n}\left(x\right)-T_{n-1}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{0}\left(x\right)\equiv1\qquad T_{1}\left(x\right)=x
+\]
+
+\end_inset
+
+כלומר:
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{0} & = & 1\\
+T_{1} & = & x\\
+T_{2} & = & 2x^{2}-1\\
+T_{3} & = & 4x^{3}-3x
+\end{eqnarray*}
+
+\end_inset
+
+וכו'
+\end_layout
+
+\begin_layout Section*
+תכונות של פולינומי צ'ביצ'ב
+\end_layout
+
+\begin_layout Itemize
+ניתן להראות ש
+\begin_inset Formula $T_{n}\left(x\right)=\cos n\theta$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\theta=\cos^{-1}x$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos^{-1}$
+\end_inset
+
+ זה בעצם 
+\begin_inset Formula $\arccos$
+\end_inset
+
+)ולא 
+\begin_inset Formula $\frac{1}{\cos}$
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+]
+\begin_inset Formula $\cos\theta=\cos\left(\arccos x\right)=x$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+באופן כללי:
+\begin_inset Formula 
+\[
+\cos\left(n+1\right)\theta+\cos\left(n-1\right)\theta=2\cos\theta\cos n\theta
+\]
+
+\end_inset
+
+נובע אכן
+\begin_inset Formula 
+\[
+T_{n+1}\left(x\right)+T_{n-1}\left(x\right)=2xT_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לפולינומי צ'ביצ'ב מקדם 
+\begin_inset Formula $2^{n-1}$
+\end_inset
+
+)עבור חד האיבר 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+פולינומי צ'ביצ'ב 
+\bar under
+אורטוגונליים
+\bar default
+! ספציפית,
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\frac{T_{m}\left(x\right)T_{n}\left(x\right)}{\sqrt{1-x^{n}}}\mathrm{\, d}x=\begin{cases}
+0 & m\neq n\\
+\pi & m=n=0\\
+\nicefrac{\pi}{2} & m=n\neq0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size giant
+סוף החומר של הקורס
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+על הבחינה
+\end_layout
+
+\begin_layout Itemize
+מועד א' מתקיים ב
+\numeric on
+2012-07-11
+\end_layout
+
+\begin_layout Itemize
+הבחינה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שעות
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות
+\end_layout
+
+\begin_layout Itemize
+להביא מחשבון - ש
+\bar under
+לא
+\bar default
+ יודע לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+plot
+\lang hebrew
+, להפוך מטריצות, לפתור משוואות וכו'.
+\end_layout
+
+\begin_layout Itemize
+מותר להכניס דף)=שני עמודים( אחד של נוסחאות.
+\end_layout
+
+\begin_layout Itemize
+חומר:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+סוגי שגיאות
+\end_layout
+
+\begin_layout Itemize
+ייצוג מספרים
+\end_layout
+
+\begin_layout Itemize
+שיטות למציאת שורשים
+\end_layout
+
+\begin_layout Itemize
+התכנסות - סדר התכנסות, שיעור התכנסות וכו'
+\end_layout
+
+\begin_layout Itemize
+אלימינציה לפי גאוס
+\end_layout
+
+\begin_layout Itemize
+סיכוביות של השיטות השונות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Pivoting
+\end_layout
+
+\begin_layout Itemize
+אינטרפולציה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הוספה, גריעה של נקודות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אפרוקסימציה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שיטת טור טיילור
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מציאת חסם עליון
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Least Squares
+\end_layout
+
+\begin_layout Itemize
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minimax
+\lang hebrew
+)רק ברמה שלמדנו(
+\end_layout
+
+\begin_layout Itemize
+שיטת פולינומי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צ'ביצ'ב
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אינטגרציה נומרית
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+שאלה על 
+\lang english
+Spline
+\lang hebrew
+ - מובטחת!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לא נידרש לכתוב קוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Matlab
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אבל אולי נידרש לכתוב פאסודו-קוד, לתאר אלגוריתם.
+\end_layout
+
+\begin_layout Itemize
+לעגל חישובי ביניים לפי הדיוק הנדרש)מספר הספרות המשמעותיות(
+\end_layout
+
+\begin_layout Itemize
+יהיו גם שאלות תיאורתיות וגם שאלות חישוב
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ניצול של משפטים תיאורתיים - צריך לדעת את המשפטים
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

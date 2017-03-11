@@ -1,0 +1,1352 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+\numeric on
+2008
+\numeric off
+, מועד א', שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נתונה הפונקציה 
+\begin_inset Formula $f\left(x,y\right)=\ln\left(x+3y^{2}+2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x,y>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+א.
+ למצוא את 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x=y=3$
+\end_inset
+
+ ו
+\begin_inset Formula $\Delta x=\Delta y=0.1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השגיאה המתפשטת ב
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה ע"י 
+\begin_inset Formula $\Delta f=\left|\frac{\partial f}{\partial x}\right|\Delta x+\left|\frac{\partial f}{\partial y}\right|\Delta y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}=\frac{1}{x+3y^{2}+2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}=\frac{6y}{x+3y^{2}+2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta f\left(x,y\right)=\left|\frac{1}{3+27+2}\right|0.1+\left|\frac{18}{3+27+2}\right|0.1\approx0.05937
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ 
+\begin_inset Formula $y=3$
+\end_inset
+
+)קבוע(.
+ חשב את 
+\begin_inset Formula $\Delta f\left(x\right)$
+\end_inset
+
+ ע"פ מספר המצב
+\end_layout
+
+\begin_layout Standard
+תזכורת: 
+\begin_inset Formula $C=\left|\frac{\delta f\left(x\right)}{\delta x}\right|=\dots=\left|\frac{f'\left(x\right)\cdot x}{f\left(x\right)}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{x}=\left|\frac{\frac{x}{x+3y^{2}+2}}{\ln\left(x+3y^{2}+2\right)}\right|\approx0.0271
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x}=\left|\frac{\delta f\left(x\right)}{\delta x}\right|=\left|\frac{\frac{\Delta f\left(x\right)}{f\left(x\right)}}{\frac{\Delta x}{x}}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta f\left(x\right)=C_{x}\cdot\left|\delta x\right|\cdot\left|f\left(x\right)\right|\approx3.151\cdot10^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ג.
+ אותו דבר, אבל הפעם 
+\begin_inset Formula $x=3$
+\end_inset
+
+ קבוע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta f\left(y\right)=0.05625
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ד.
+ מהו הקשר בין התוצאות?
+\end_layout
+
+\begin_layout Standard
+סכום השגיאות של כל משתנה הוא השגיאה המוחלטת של הפונקציה.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2009
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מועד ב', שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+צריך לחשב את 
+\begin_inset Formula $\sqrt{\frac{7}{8}}$
+\end_inset
+
+ עם הפונקציות
+\begin_inset Formula 
+\[
+f_{1}\left(x\right)=\sqrt{x}\qquad f_{2}\left(x\right)=\sqrt[4]{x}\qquad f_{3}\left(x\right)\sqrt{x-1}\qquad f_{4}\left(x\right)=\sqrt{\frac{x-1}{x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+א.
+ איך מחשבים עם כל פונקציה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{1}\left(\frac{7}{8}\right)\qquad f_{2}\left(\frac{49}{64}\right)\qquad f_{3}\left(\frac{15}{8}\right)\qquad f_{4}\left(8\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ בהתחשב בשגיאה בקלט בלבד, איזו פונקציה הכי מדוייקת? איזו הכי פחות מדוייקת?
+\end_layout
+
+\begin_layout Standard
+נחשב מספרי מצב:
+\begin_inset Formula 
+\[
+C_{1}=\left|\frac{\frac{x}{2\sqrt{x}}}{\sqrt{x}}\right|=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{2}=\left|\frac{\frac{x}{4\sqrt[4]{x^{3}}}}{\sqrt[4]{x}}\right|=\left|\frac{x}{4x}\right|=\frac{1}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{3}=\left|\frac{\frac{x}{2\sqrt{x-1}}}{\sqrt{x-1}}\right|=\left|\frac{x}{2\left(x-1\right)}\right|=\frac{15}{14}\approx1.072
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{4}=\left|\frac{\frac{\frac{1}{x^{2}}\cdot x}{2\sqrt{\frac{x-1}{x}}}}{\sqrt{\frac{x-1}{x}}}\right|=\left|\frac{1}{2\left(x-1\right)}\right|=\frac{1}{14}\approx0.07143
+\]
+
+\end_inset
+
+לכן הפונקציה הכי טובה היא הרביעית, והכי גרועה היא השלישית.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2008
+\numeric off
+, מועד א', שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{5}-6x^{4}+5x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+א.
+ מצאו באופן אנליטי את שורשי הפונקציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{3}\left(x^{2}-6x+5\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{3}\left(x-5\right)\left(x-1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=0,1,5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ מהי איטרציית ניוטון-רפסון לחישוב שורשי הפונקציה הנתונה באופן נומרי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\frac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)=x-\frac{x^{5}-6x^{4}+5x^{3}}{5x^{4}-24x^{3}}=\frac{4x^{3}-18x^{2}+10x}{5x^{2}-24x+15}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ג.
+ חשבו עד
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איטרציות עבור 
+\begin_inset Formula $x_{0}=0.8$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $x_{0}=0.7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+x_{0}=0.7 & \qquad & x_{0}=0.8\\
+-0.6892 &  & 1.472\\
+-0.4939 &  & 1.2138\\
+-0.3495 &  & 1.0686\\
+-0.2444 &  & 1.0102\\
+-0.1690 &  & 1\\
+-0.1158\\
+-0.0788
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצאנו שורשים שונים בגלל שיש נקודת קיצון ב
+\begin_inset Formula $\left[0.7,0.8\right]$
+\end_inset
+
+, מה שהופך את כיוון הירידה של המשיק.
+\end_layout
+
+\begin_layout Subsection*
+ד.
+ האם ההתכנסויות בסעיף הקודם מתכנסות באותו הקצב?
+\end_layout
+
+\begin_layout Standard
+לא - 
+\begin_inset Formula $x_{0}=0.8$
+\end_inset
+
+ מתכנס)ל
+\numeric on
+1
+\numeric off
+( יותר מהר מאשר 
+\begin_inset Formula $x_{0}=0.7$
+\end_inset
+
+)ל
+\numeric on
+0
+\numeric off
+(.
+ זה מתאים לכך שסדר ההתכנסות של ניוטון רפסון ריבועי עבור שורש פשוט)כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(, וגרוע עבור שורש מסדר יותר גבוה)כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, שהוא מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+מבחן
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2008
+\numeric off
+, מועד א' שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+6x_{1}+2x_{2}+2x_{3}=2\\
+2x_{1}+\frac{2}{3}x_{2}+\frac{1}{3}x_{3}=1\\
+x_{1}+2x_{2}-x_{3}=0
+\end{array}\right.\qquad\vec{x}=\begin{bmatrix}2.6\\
+-3.8\\
+-5.0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+א.
+ אלימינציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}6 & 2 & 2 & -2\\
+2 & 0.6667 & 0.3333 & 1\\
+1 & 2 & -1 & 0
+\end{bmatrix}\xrightarrow{\begin{subarray}{c}
+m_{21}=0.3333\\
+m_{31}=0.1667
+\end{subarray}}\begin{bmatrix}6 & 2 & 2 & -2\\
+0 & 0.0001 & -0.3333 & 1.667\\
+0 & 1.667 & -1.333 & 0.3334
+\end{bmatrix}\to
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xrightarrow{0.6667-0.3333\cdot2}\begin{bmatrix}6 & 2 & 2 & -2\\
+0 & 0.0001 & -0.3333 & 1.667\\
+0 & 0 & 5555 & -27,790
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{3}=-5.003\qquad x_{2}=0\qquad x_{1}=1.334
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ שחלוף שורות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}6 & 2 & 2 & -2\\
+2 & 0.6667 & 0.3333 & 1\\
+1 & 2 & -1 & 0
+\end{bmatrix}\xrightarrow{\begin{subarray}{c}
+m_{21}=0.3333\\
+m_{31}=0.1667
+\end{subarray}}\begin{bmatrix}6 & 2 & 2 & -2\\
+0 & 0.0001 & -0.3333 & 1.667\\
+0 & 1.667 & -1.333 & 0.3334
+\end{bmatrix}\to
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xrightarrow{r_{2}\leftrightarrow r_{3}}\begin{bmatrix}6 & 2 & 2 & -2\\
+0 & 1.667 & -1.333 & 0.3334\\
+0 & 0.0001 & -0.3333 & 1.667
+\end{bmatrix}\xrightarrow{m_{32}=5.999\cdot10^{-5}}\begin{bmatrix}6 & 2 & 2 & -2\\
+0 & 1.667 & -1.333 & 0.3334\\
+0 & 0 & -0.3332 & 1.667
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{3}=-5.003\qquad x_{2}=-3.801\qquad x_{1}=2.602
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2009
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מועד ב' שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+עבור נקודות 
+\begin_inset Formula $x_{0},x_{1},\dots x_{n}$
+\end_inset
+
+, יש אינטרפולציה 
+\begin_inset Formula $p_{n}\left(x\right)=\sum\limits _{j=0}^{n}c_{j}e^{jx}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ צריך להוכיח ש
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ יחידים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t=e^{x}\Rightarrow\sum_{j=0}^{n}c_{j}t^{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ לפתור עבור הנקודות 
+\begin_inset Formula $x_{0}=0,x_{1}=1,x_{2}=2$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & e^{x_{0}} & e^{2x_{0}}\\
+1 & e^{x_{1}} & e^{2x_{1}}\\
+1 & e^{x_{2}} & e^{2x_{2}}
+\end{bmatrix}\begin{bmatrix}c_{0}\\
+c_{1}\\
+c_{2}
+\end{bmatrix}=\begin{bmatrix}1\\
+e\\
+e^{2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+פותרים ומקבלים
+\begin_inset Formula 
+\[
+p\left(x\right)=e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2009
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מועד א' שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection*
+סעיף א
+\end_layout
+
+\begin_layout Itemize
+לגרנג':
+\begin_inset Formula 
+\[
+l_{i}\left(x\right)=\prod_{\begin{subarray}{c}
+j=0\\
+j\neq i
+\end{subarray}}^{i}\frac{x-x_{j}}{x_{i}-x_{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{n}\left(x\right)=\sum_{i=0}^{n}l_{i}\left(x\right)y_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ניוטון:
+\begin_inset Formula 
+\[
+\phi_{i}\left(x\right)=\prod_{j<i}x-x_{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{n}\left(x\right)=\sum_{i=0}^{n}a_{i}\phi\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{i}=f\left[x_{0},\dots x_{i}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב
+\end_layout
+
+\begin_layout Itemize
+לגרנג' - 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ניוטון:
+\begin_inset Formula 
+\[
+\left(n-1\right)+\left(n-2\right)+\dots+2+1=O\left(n^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג
+\end_layout
+
+\begin_layout Standard
+האבלואציה של ניוטון יותר מהירה, כי אפשר לחשב כל 
+\begin_inset Formula $\phi$
+\end_inset
+
+ בנוסחת נסיגה ע"י 
+\begin_inset Formula $\phi_{i+1}=\left(x-x_{i}\right)\phi_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2008
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מועד א' שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+, לבצע על 
+\begin_inset Formula $\left[0,\pi\right]$
+\end_inset
+
+ אפרוקסימציה ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection*
+א.
+ לפי טור טיילור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{2}\left(x\right)=f\left(x_{0}\right)+f'\left(x_{0}\right)\left(x-x_{0}\right)+f''\left(x_{0}\right)\frac{\left(x-x_{0}\right)^{2}}{2!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=-\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''\left(x\right)=-\cos x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'''\left(x\right)=\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{2}\left(x\right)=1-\frac{x^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: אמנם בשביל לחשב את השגיאה מספיק למצוא את השארית 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+, אבל מכיוון שהנגזרת השלישית בטור מתאפסת ב
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+, 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ יהיה תשובה יותר מדויקת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}\left(x\right)\le\left|f^{\left(3\right)}\left(\xi\right)\frac{x^{3}}{3!}\right|\qquad\xi\in\left[0,\pi\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xi=\frac{\pi}{2},x=\pi\Rightarrow R_{3}\left(x\right)\le\frac{\pi^{3}}{3!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ באמצעות מזעור הפרשים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}\int_{0}^{\pi}1\mathrm{\, d}x & \int_{0}^{\pi}x\mathrm{\, d}x & \int_{0}^{\pi}x^{2}\mathrm{\, d}x\\
+\int_{0}^{\pi}x\mathrm{\, d}x & \int_{0}^{\pi}x^{2}\mathrm{\, d}x & \int_{0}^{\pi}x^{3}\mathrm{\, d}x\\
+\int_{0}^{\pi}x^{2}\mathrm{\, d}x & \int_{0}^{\pi}x^{3}\mathrm{\, d}x & \int_{0}^{\pi}x^{4}
+\end{bmatrix}\begin{bmatrix}b_{0}\\
+b_{1}\\
+b_{2}
+\end{bmatrix}=\begin{bmatrix}\int_{0}^{\pi}\cos x\\
+\int_{0}^{\pi}x\cdot\cos x\mathrm{\, d}x\\
+\int_{0}^{\pi}x^{2}\cos x\mathrm{\, d}x
+\end{bmatrix}
+\]
+
+\end_inset
+
+והשגיאה היא
+\begin_inset Formula 
+\[
+E\left(0\right)=-0.216
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(x=0.8851\right)=0.1023
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(x=2.256\right)=-0.1027
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(\pi\right)=0.2156
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

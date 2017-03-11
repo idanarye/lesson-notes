@@ -1,0 +1,666 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגול חזרה
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+הצג דקדוק חופשי הקשר היוצר כל המילים מעל 
+\begin_inset Formula $\Sigma=\left[0,1,2,\dots9\right]$
+\end_inset
+
+ שבהן מספר הספרות הזוגיות שווה למספר הספרות האי זוגיות.
+\end_layout
+
+\begin_layout Enumerate
+בנה אוטומט מחסנית לשפה מסעיף א'.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $G$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+G=\left\langle V,T,S,P\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+S & \to & ESOS|OSES|\varepsilon\\
+O & \to & 1|3|5|7|9\\
+E & \to & 0|2|4|6|8
+\end{array}
+\]
+
+\end_inset
+
+ניתן דוגמת גזירה עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1221
+\numeric off
+:
+\begin_inset Formula 
+\[
+S\to OSES\to1\varepsilon2ESO\to122\varepsilon1=1221
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשתמש בשיטת ריקון המחסנית.
+ צריך לבחור א"ב למחסנית: 
+\begin_inset Formula $\Gamma=\left\{ \dashv,A,B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $o\in\left[1,3,\dots\right],e\in\left[0,2,\dots\right],o,e\in\Sigma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{}\ar@(ru,rd)^{\begin{subarray}{c}
+\varepsilon,\dashv/\varepsilon\\
+o,\dashv/A\dashv\\
+o,A/AA\\
+e,A/\varepsilon\\
+e,\dashv/B\dashv\\
+e,B/BB\\
+o,B/\varepsilon
+\end{subarray}}
+}
+\]
+
+\end_inset
+
+דוגמת הרצה עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1221
+\numeric off
+:
+\begin_inset Formula 
+\[
+\begin{array}{|c|}
+\\
+\\
+\\
+\dashv
+\\\hline \end{array}\xrightarrow[1]{}\begin{array}{|c|}
+\\
+\\
+A\\
+\dashv
+\\\hline \end{array}\xrightarrow[2]{}\begin{array}{|c|}
+\\
+\\
+\\
+\dashv
+\\\hline \end{array}\xrightarrow[2]{}\begin{array}{|c|}
+\\
+\\
+B\\
+\dashv
+\\\hline \end{array}\xrightarrow[1]{}\begin{array}{|c|}
+\\
+\\
+\\
+\dashv
+\\\hline \end{array}\xrightarrow[\varepsilon]{}\begin{array}{|c|}
+\\
+\\
+\\
+\\
+\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+הוכח 
+\begin_inset Formula $L$
+\end_inset
+
+ לא חופשית הקשר
+\begin_inset Formula 
+\[
+L=\left\{ a^{j^{2}}\middle|j\ge1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ חופשית הקשר.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $z=a^{n^{2}}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $z\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|\ge n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+יהי פירוק 
+\begin_inset Formula $z=uvwxy$
+\end_inset
+
+, 
+\begin_inset Formula $\left|uwx\right|\le n$
+\end_inset
+
+, 
+\begin_inset Formula $\left|vx\right|\ge1$
+\end_inset
+
+.
+ נסמן:
+\begin_inset Formula 
+\begin{eqnarray*}
+u & = & a^{k_{1}}\\
+v & = & a^{k_{2}}\\
+w & = & a^{k_{3}}\\
+x & = & a^{k_{4}}\\
+y & = & a^{n^{2}-k_{1}-k_{2}-k_{3}-k_{4}}
+\end{eqnarray*}
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+k_{2}+k_{3}+k_{4}\le n\qquad k_{2}+k_{4}\ge2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל ע"י הלמה
+\begin_inset Formula 
+\[
+z'=u\left(v\right)^{i}w\left(x\right)^{i}y\in L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=a^{n^{2}+k_{2}+k_{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נראה ש
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+.
+ נתבונן ב
+\begin_inset Formula 
+\[
+n^{2}<n^{2}+1\le n^{2}+k_{2}+k_{4}\le n^{2}+n<n^{2}+2n+1=\left(n+1\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow n^{2}<n^{2}+k_{2}+k_{4}<\left(n+1\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא קיים 
+\begin_inset Formula $l\in\mathbb{N}_{0}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $n^{2}+k_{2}+k_{4}=l^{2}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סתירה, 
+\begin_inset Formula $L$
+\end_inset
+
+ לא חופשית הקשר.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+הוכח 
+\begin_inset Formula $L$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+ לא רגולרית:
+\begin_inset Formula 
+\[
+L=\left\{ \left(aa\right)^{2k}\left(bbb\right)^{3k}\middle|k\ge0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ע"י סגירויות
+\end_layout
+
+\begin_layout Enumerate
+ע"י למת הניפוח
+\end_layout
+
+\begin_layout Enumerate
+ע"י נרוד
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית, ונפעיל עליה פעולות עבורן מתקיימת סגירות במטרה להעבירה לשפה 
+\begin_inset Formula $a^{n}b^{n}$
+\end_inset
+
+ הלא רגולרית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+לכאורה
+\bar default
+: 
+\begin_inset Formula $\left(a^{4}\right)^{k}\left(b^{9}\right)^{k}\to0^{n}1^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולארית.
+ נגדיר 
+\begin_inset Formula $h$
+\end_inset
+
+ הומומורפיזם 
+\begin_inset Formula $h:\left\{ 0,1\right\} \to\left\{ a,b\right\} ^{*}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\begin{array}{c}
+h\left(0\right)=a^{5}\\
+h\left(1\right)=b^{9}
+\end{array}$
+\end_inset
+
+.
+ מסגירות להומומורפיזם הפוך נקבל 
+\begin_inset Formula $h^{-1}\left(L\right)=0^{n}1^{n}$
+\end_inset
+
+ שפה רגולארית.
+ סתירה!
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+על רגל אחת: נבחר 
+\begin_inset Formula $z=a^{4n}b^{9n}$
+\end_inset
+
+, 
+\begin_inset Formula $i=0$
+\end_inset
+
+, 
+\begin_inset Formula $\#_{a}\left(z'\right)=4n-t\neq4n,t\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נראה אינסוף מחלקות שקילות שמשרה היחס 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתבונן באוסף המילים האינסופי 
+\begin_inset Formula $w_{i}=a^{4i}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $w_{i},w_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, קיים 
+\begin_inset Formula $z=b^{9i}$
+\end_inset
+
+ המפריד ביניהם, כלומר
+\begin_inset Formula 
+\[
+w_{1}z=a^{4i}b^{9i}\in L\qquad w_{2}z=a^{4j}b^{9i}\notin L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

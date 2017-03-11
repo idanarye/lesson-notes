@@ -1,0 +1,2245 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה שימושית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\subseteq\mathbb{C}$
+\end_inset
+
+ הוא תחום פשוט קשר אם לכל 
+\begin_inset Formula $z\in D^{c}$
+\end_inset
+
+ ולכל מסילה סגורה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\textnormal{Ind}_{\gamma}D=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subseteq\mathbb{C}$
+\end_inset
+
+ תחום פתוח, ותהי 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ שרשרת)של מסילות( בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אומרים ש
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ הומולוגית לאפס ב
+\begin_inset Formula $D$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $z\in D^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Ind}_{\Gamma}\left(z\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+)משפט ונוסחת קושי המוכללים(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subseteq\mathbb{C}$
+\end_inset
+
+ תחום פתוח, ותהי 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+.
+ עוד נניח ש
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ שרשרת הומולוגית לאפס ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $z\in D\backslash\Gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)\textnormal{Ind}_{\Gamma}\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\int_{\Gamma}f\left(w\right)\mathrm{\, d}w=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\left(z,w\right)\in D\times D$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+g\left(z,w\right)=\begin{cases}
+\cfrac{f\left(w\right)-f\left(z\right)}{w-z} & w\neq z\\
+f'\left(z\right) & w=z
+\end{cases}
+\]
+
+\end_inset
+
+נשים לב שלכל 
+\begin_inset Formula $w\in D$
+\end_inset
+
+ מסויים הפונקציה 
+\begin_inset Formula $z\to g\left(z,w\right)$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הסבר
+\series default
+: לכל 
+\begin_inset Formula $D\ni z\neq w$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z,w\right)$
+\end_inset
+
+ נתונה ע"י הנוסחה הראשונה, והיא בוודאי אנליטית.
+ יתר על כן
+\begin_inset Formula 
+\[
+\lim_{z\to w}g\left(z,w\right)=\lim_{z\to w}\cfrac{f\left(w\right)-f\left(z\right)}{w-z}=f'\left(z\right)=g\left(w,w\right)=g\left(z,z\right)
+\]
+
+\end_inset
+
+כיוון שיש גבול הסינגולריות ב
+\begin_inset Formula $z=w$
+\end_inset
+
+ סליקה, והוכחנו ש
+\begin_inset Formula $z\to g\left(z,w\right)$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בפרט, קיים 
+\begin_inset Formula $\cfrac{\partial}{\partial z}g\left(z,w\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left(z,w\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $D\times D$
+\end_inset
+
+.
+ כעת, עבור כל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+h\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}g\left(z,w\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+עצם זה שהגבול קיים אומר ש
+\begin_inset Formula $h\in H\left(D\right)$
+\end_inset
+
+.
+ כעת נגדיר
+\begin_inset Formula 
+\[
+D_{1}=\left\{ z\in\mathbb{Z}\middle|\textnormal{Ind}_{\Gamma}\left(z\right)=0\right\} 
+\]
+
+\end_inset
+
+לפי הנתון, 
+\begin_inset Formula $D'\subset D$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $z\in D_{1}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+h_{1}\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $h_{1}\in H\left(D_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+h_{1}'\left(z\right)=\lim_{\Delta z\to0}\cfrac{h_{1}\left(z+\Delta z\right)-h_{1}\left(z\right)}{\Delta z}=\lim_{\Delta z\to0}\cfrac{1}{\Delta z}\left[\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z-\Delta z}\mathrm{\, d}w-\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{\Delta z\to0}\cfrac{1}{2\pi i}\int_{\Gamma}f\left(w\right)\left[\cfrac{\cfrac{1}{2-z-\Delta z}-\cfrac{1}{w-z}}{\Delta z}\right]\mathrm{\, d}w=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{1}{\left(w-z\right)^{2}}\mathrm{\, d}w
+\]
+
+\end_inset
+
+עצם זה שהגבול קיים מראה ש
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לבסוף, נגדיר
+\begin_inset Formula 
+\[
+\varphi\left(z\right)=\begin{cases}
+h\left(z\right) & z\in D\\
+h_{1}\left(z\right) & z\in D_{1}
+\end{cases}
+\]
+
+\end_inset
+
+צריך לבדוק ש
+\begin_inset Formula $\varphi$
+\end_inset
+
+ מוגדרת היטב.
+ צריך להוכיח שאם 
+\begin_inset Formula $z\in D\cap D_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=h_{1}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ובכן: אם 
+\begin_inset Formula $z\in D\cap D_{1}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+h\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}g\left(z,w\right)\mathrm{\, d}w=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)-f\left(z\right)}{w-z}\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w-\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(z\right)}{w-z}\mathrm{\, d}w=h_{1}\left(z\right)-f\left(z\right)\textnormal{Ind}_{\Gamma}\left(z\right)
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $z\in D_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Ind}_{\Gamma}\left(z\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $h\left(z\right)=h_{1}\left(z\right)$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula $\varphi\left(z\right)$
+\end_inset
+
+ מוגדרת היטב, ולפי מה שהוכחנו עד כאן, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D\cup D_{1}$
+\end_inset
+
+, שמכיל את 
+\begin_inset Formula $\mathbb{C}=D\cup D^{c}$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פונקציה שלימה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{z\to\infty}\varphi\left(z\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: עבור 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+ "גדול" 
+\begin_inset Formula $z\in D_{1}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\varphi\left(z\right)=h_{1}\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w\xrightarrow[z\to\infty]{}0
+\]
+
+\end_inset
+
+)כי המכנה באינטגרל שואף ל
+\begin_inset Formula $\infty$
+\end_inset
+
+ והמונה לא משתנה(
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $\lim\limits _{z\to\infty}\varphi\left(z\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(z\right)$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+ לפי ליוביל 
+\begin_inset Formula $\varphi\left(z\right)\equiv c$
+\end_inset
+
+ וכיוון ש
+\begin_inset Formula $\lim\limits _{z\to\infty}\varphi\left(z\right)=0$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $c=0$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi\left(z\right)\equiv0$
+\end_inset
+
+.
+ בפרט, אם 
+\begin_inset Formula $z\in D\backslash\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+0=\varphi\left(z\right)=h\left(z\right)=\cfrac{1}{2\pi i}\int_{\Gamma}g\left(z,w\right)\mathrm{\, d}w=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)-f\left(z\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w=\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{f\left(z\right)}{w-z}\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=f\left(z\right)\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{1}{w-z}\mathrm{\, d}w=f\left(z\right)\textnormal{Ind}_{\Gamma}\left(z\right)
+\]
+
+\end_inset
+
+והוכחנו את )א(!
+\end_layout
+
+\begin_layout Standard
+בשביל להוכיח את )ב(, נבחר 
+\begin_inset Formula $z\in D\backslash\Gamma$
+\end_inset
+
+ כלשהו)מסוים(, ונגדיר
+\begin_inset Formula 
+\[
+k\left(w\right)=f\left(w\right)\left(w-z\right)
+\]
+
+\end_inset
+
+לפי )א(,
+\begin_inset Formula 
+\[
+\cfrac{1}{2\pi i}\int_{\Gamma}\cfrac{k\left(w\right)}{w-z}\mathrm{\, d}w=k\left(z\right)\textnormal{Ind}_{\Gamma}\left(z\right)
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+\cfrac{k\left(w\right)}{w-z}=f\left(w\right)
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula 
+\[
+k\left(z\right)=f\left(z\right)\left(z-z\right)=0
+\]
+
+\end_inset
+
+ולכן הנוסחה מ)א( אומרת
+\begin_inset Formula 
+\[
+\cfrac{1}{2\pi i}\int_{\Gamma}f\left(w\right)\mathrm{\, d}w=0
+\]
+
+\end_inset
+
+והוכחנו את )ב(!
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ נקרא תחום פשוט קשר אם 
+\begin_inset Formula $D$
+\end_inset
+
+ פתוח ולכל 
+\begin_inset Formula $z\notin D$
+\end_inset
+
+ ולכל מסילה סגורה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Ind}_{\gamma}\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)זו דרך מתמטית להגיד שאין חורים - כי אם היה חור היה אפשר להקיף אותו(
+\end_layout
+
+\begin_layout Standard
+ז.א., כל 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ סגורה ב
+\begin_inset Formula $D$
+\end_inset
+
+ הומולוגית לאפס ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום פשוט קשר ותהי 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה סגורה ב
+\begin_inset Formula $D$
+\end_inset
+
+ אז
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $z\in D\backslash\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)\textnormal{Ind}_{\gamma}\left(z\right)=\cfrac{1}{2\pi i}\int_{\gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(w\right)\mathrm{\, d}w=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $\gamma$
+\end_inset
+
+ הומולוגית לאפס ב
+\begin_inset Formula $D$
+\end_inset
+
+, המסקנה היא מקרה פרטי של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום ע"י מסילת ז'ורדן 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, ונניח ש
+\begin_inset Formula $f\in H\left(\overline{D}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(z\right)\mathrm{\, d}z=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{1}{2\pi i}\ointctrclockwise\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\textnormal{Ind}$
+\end_inset
+
+ לא מופיע כאן, כי זו מסילת ז'ורדן - האינדקס תמיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+!(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הנתון 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+ בעצם אומר שיש תחום 
+\begin_inset Formula $D_{1}\supset D$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\in H\left(D_{1}\right)$
+\end_inset
+
+ ולה"כ
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ללא הגבלת הכלליות
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ פשוט קשר.
+ כעת 
+\begin_inset Formula $f\in H\left(D_{1}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $D_{1}$
+\end_inset
+
+)שהוא פשוט קשר(.
+\end_layout
+
+\begin_layout Standard
+לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(z\right)\mathrm{\, d}z=0
+\]
+
+\end_inset
+
+יתר על כן נובע ממסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאם 
+\begin_inset Formula $z\in D$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\cfrac{1}{2\pi i}\ointctrclockwise_{\gamma}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w=f\left(z\right)\textnormal{Ind}_{\gamma}\left(z\right)=f\left(z\right)
+\]
+
+\end_inset
+
+כי היות ו
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילת ז'ורדן מכוונת נגד כיוון השעון לכל 
+\begin_inset Formula $z$
+\end_inset
+
+ "בתוך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+" - ז.א.
+ לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ - 
+\begin_inset Formula $\textnormal{Ind}_{\gamma}\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום ע"י מסילת ז'ורדן חיצונית 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ ומסילות ז'ורדן פנימיות 
+\begin_inset Formula $\gamma_{2},\gamma_{3},\dots\gamma_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\in H\left(\overline{D}\right)$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\ointctrclockwise_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z=\sum_{k=2}^{n}\ointctrclockwise_{\gamma_{k}}f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הנתון ש
+\begin_inset Formula $f\in H\left(\overline{D}\right)$
+\end_inset
+
+ אומר שקיים תחום 
+\begin_inset Formula $D_{1}\supset\overline{D}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma=\gamma_{1}-\gamma_{2}-\gamma_{3}-\dots-\gamma_{n}$
+\end_inset
+
+ שרשרת הומולוגית לאפס ב
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\in H\left(D_{1}\right)$
+\end_inset
+
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+
+\begin_inset Formula 
+\[
+0=\int_{\Gamma}f\left(z\right)\mathrm{\, d}z=\ointctrclockwise_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z-\sum_{k=2}^{n}\ointctrclockwise f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+נעביר אגף לקבל את התוצאה
+\begin_inset Formula 
+\[
+\ointctrclockwise_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z=\sum_{k=2}^{n}\ointctrclockwise_{\gamma_{k}}f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+טבעת)
+\lang english
+annulus
+\lang hebrew
+( היא השטח בין שני מעגלים בעלי אותו מרכז.
+\end_layout
+
+\begin_layout Standard
+בפרט נגדיר
+\begin_inset Formula 
+\[
+A\left(z_{0},r_{1},r_{2}\right)=\left\{ z\in\mathbb{C}\middle|r_{1}<\left|z-z_{0}\right|<r_{2}\right\} 
+\]
+
+\end_inset
+
+כאן
+\begin_inset Formula 
+\[
+0\le r_{1}<r_{2}\le\infty
+\]
+
+\end_inset
+
+)כלומר מרשים 
+\begin_inset Formula $r_{1}=0$
+\end_inset
+
+)עיגול מנוקב( ו
+\begin_inset Formula $r_{2}=\infty$
+\end_inset
+
+)הטבעת אינה חסומה מבחוץ(
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית בסגור של הטבעת 
+\begin_inset Formula 
+\[
+A\left(0,r_{1},r_{2}\right)=\left\{ z\in\mathbb{C}\middle|r_{1}<\left|z\right|<r_{2}\right\} \qquad0<r_{1}<r_{2}<\infty
+\]
+
+\end_inset
+
+אזי לכל 
+\begin_inset Formula $z\in A\left(0,r_{1},r_{2}\right)$
+\end_inset
+
+, "טור לורן" הוא
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=1}^{\infty}\cfrac{b_{n}}{z^{n}}+\sum_{n=0}^{\infty}a_{n}z^{n}
+\]
+
+\end_inset
+
+הטור יחיד ומתכנס ממש בתת טבעות 
+\begin_inset Formula $A\left(0,s_{1},s_{2}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r_{1}<s_{1}<s_{2}<r_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+רעיון ההוכחה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z\in A\left(0,r_{1},r_{2}\right)$
+\end_inset
+
+ נוכל להסתכל על נוסחת קושי)סעיף א' של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+( לומר
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{1}{2\pi i}\ointctrclockwise_{\left|w\right|=r_{2}}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w-\cfrac{1}{2\pi i}\ointctrclockwise_{\left|w\right|=r_{1}}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w=I_{1}-I_{2}
+\]
+
+\end_inset
+
+כעת, ב
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\left|w\right|=r_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|z\right|<r_{2}$
+\end_inset
+
+ כי 
+\begin_inset Formula $z\in A\left(0,r_{1},r_{2}\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left|\cfrac{z}{w}\right|<1$
+\end_inset
+
+.
+ נובע שב
+\begin_inset Formula $I_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{w-z}=\cfrac{1}{w}\cfrac{1}{1-\nicefrac{z}{w}}=\cfrac{1}{w}\sum_{n=0}^{\infty}\left(\cfrac{z}{w}\right)^{n}=\sum_{n=0}^{\infty}\cfrac{z^{n}}{w^{n+1}}
+\]
+
+\end_inset
+
+נובע ש
+\begin_inset Formula 
+\[
+I_{1}=\cfrac{1}{2\pi i}\ointctrclockwise_{\left|w\right|=r_{2}}f\left(w\right)\cfrac{1}{w-z}\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2\pi i}\ointctrclockwise_{\left|w\right|=r_{2}}\sum_{n=0}^{\infty}\cfrac{f\left(w\right)}{w^{n+1}}z^{n}\mathrm{\, d}w
+\]
+
+\end_inset
+
+בודקים שעבור 
+\begin_inset Formula $z\in A\left(0,r_{1},r_{2}\right)$
+\end_inset
+
+ קבוע הטור שבאינטגרל מתכנס במ"ש במעגל 
+\begin_inset Formula $\left|w\right|=r_{2}$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+I_{1}=\sum_{n=0}^{\infty}\left[\cfrac{1}{2\pi i}\int_{\left|w\right|=r_{2}}\cfrac{f\left(w\right)}{w^{n+1}}\mathrm{\, d}w\right]z^{n}=\sum_{n=0}^{\infty}a_{n}z^{n}
+\]
+
+\end_inset
+
+נעבור ל
+\begin_inset Formula $I_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I_{2}=-\ointctrclockwise_{\left|w\right|=r_{1}}\cfrac{f\left(w\right)}{w-z}\mathrm{\, d}w
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\left|w\right|=r_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|>r_{1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|\cfrac{w}{z}\right|<1$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula 
+\[
+\frac{1}{w-z}=\frac{1}{z}\frac{1}{\frac{w}{z}-1}=-\sum_{n=0}^{\infty}\frac{w^{n}}{z^{n+1}}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+2\pi iI_{2}=-\ointctrclockwise_{\left|w\right|=r_{1}}f\left(w\right)\frac{1}{w-z}\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=+\ointctrclockwise_{\left|w\right|=r_{1}}\sum_{n=0}^{\infty}\frac{f\left(w\right)w^{n}}{z^{n+1}}\mathrm{\, d}w=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{n=0}^{\infty}\left[\ointctrclockwise_{\left|w\right|=r_{1}}f\left(w\right)w^{n}\mathrm{\, d}w\right]\frac{1}{z^{n+1}}=\sum_{n=1}^{\infty}\frac{b_{n}}{z^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסיכום: אם
+\begin_inset Formula 
+\[
+f\in H\left(A\left(0,r_{1},r_{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=1}^{\infty}\frac{b_{n}}{z^{n}}+\sum_{n=0}^{\infty}a_{n}z^{n}
+\]
+
+\end_inset
+
+)וקיבלנו נוסחאות אינטגרליות ל
+\begin_inset Formula $"a_{n}"$
+\end_inset
+
+ ול
+\begin_inset Formula $"b_{n}"$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אנו משמיטים את שאר פרטי ההוכחה.
+\end_layout
+
+\begin_layout Section*
+מסקנה)הכללה של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית בטבעת 
+\begin_inset Formula $A\left(z_{0},r_{1},r_{2}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $0\le r_{1}<r_{2}\le\infty$
+\end_inset
+
+.
+ אזי ב
+\begin_inset Formula $A\left(z_{0},r_{1},r_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ מתפתחת לטור לורן יחיד
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=1}^{\infty}\frac{b_{n}}{\left(z-z_{0}\right)^{n}}+\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+הטור מתכנס במ"ש על כל תת-טבעת
+\begin_inset Formula 
+\[
+A\left(z_{0},s_{1},s_{2}\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+r_{1}<s_{1}<s_{2}<r_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות חישוב
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה 
+\begin_inset Formula $e^{\nicefrac{1}{z}}$
+\end_inset
+
+ אנליטית בטבעת 
+\begin_inset Formula $A\left(0,0,\infty\right)=\left\{ z\in\mathbb{C}\middle|z\neq0\right\} $
+\end_inset
+
+.
+ נחשב את טור לורן של 
+\begin_inset Formula $e^{\nicefrac{1}{z}}$
+\end_inset
+
+ בטבעת זו:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תשובה
+\series default
+: לכל 
+\begin_inset Formula $w\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{w}=\sum\limits _{n=0}^{\infty}\frac{w^{n}}{n!}$
+\end_inset
+
+.
+ כעת נוכל לרשום 
+\begin_inset Formula $w=\nicefrac{1}{z}$
+\end_inset
+
+.
+ אם כן
+\begin_inset Formula 
+\[
+e^{\nicefrac{1}{z}}=e^{w}=\sum_{n=1}^{\infty}\frac{w^{n}}{n!}=\sum_{n=0}^{\infty}\left(\frac{1}{z}\right)^{n}\frac{1}{n!}=\sum_{n=0}^{\infty}\frac{1}{n!}\frac{1}{z^{n}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1+\frac{1}{z}+\frac{1}{2z^{2}}+\frac{1}{3!z^{3}}+\dots
+\]
+
+\end_inset
+
+זה טור בסגנון של לורן שמציג את 
+\begin_inset Formula $e^{\nicefrac{1}{z}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+.
+ כיוון שטור לורן הוא יחיד, הטור שלנו בהכרח טור לורן של 
+\begin_inset Formula $e^{\nicefrac{1}{z}}$
+\end_inset
+
+ בטבעת 
+\begin_inset Formula $A\left(0,0,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הפונקציה 
+\begin_inset Formula $f\left(z\right)=\cfrac{\sin z}{z^{4}}$
+\end_inset
+
+ אנליטית בטבעת 
+\begin_inset Formula $A\left(0,0,\infty\right)=\left\{ z\middle|z\neq0\right\} $
+\end_inset
+
+.
+ מצאו את טור לורן שלה בטבעת הנ"ל.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תשובה
+\series default
+: לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sin z=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{z^{2n+1}}{\left(2n+1\right)!}=z-\frac{z^{3}}{3!}+\frac{z^{5}}{5!}-\frac{z^{7}}{7!}+\cdots
+\]
+
+\end_inset
+
+לכן אם 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\sin7}{z^{4}}=\frac{1}{z^{3}}-\frac{1}{3!}\frac{1}{z}+\frac{z}{5!}-\frac{z^{3}}{7!}+\cdots
+\]
+
+\end_inset
+
+וזה כבר טור לורן של 
+\begin_inset Formula $\cfrac{\sin z}{z^{4}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הכללה של דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: נניח שלפונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ יש קוטב מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ נפתח אותה לטור לורן בסביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תשובה
+\series default
+: כיוון שקיים ל
+\begin_inset Formula $f$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ יש פירוק
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{-n}g\left(z\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ אנליטית בסביבה שלימה של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, ו
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $g$
+\end_inset
+
+ מתפתחת לטור טיילור
+\begin_inset Formula 
+\[
+g\left(z\right)=\sum_{k=0}^{\infty}\frac{g^{\left(n\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k}
+\]
+
+\end_inset
+
+לכן בסביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{-n}g\left(z\right)=\left(z-z_{0}\right)^{-n}\sum_{k=0}^{\infty}\frac{g^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=0}^{\infty}\frac{g^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k-n}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{g\left(z_{0}\right)}{\left(z-z_{0}\right)^{n}}+\frac{g'\left(z_{0}\right)}{\left(z-z_{0}\right)^{n-1}}+\frac{g''\left(z_{0}\right)}{2!\left(z-z_{0}\right)^{n-2}}+\dots+\frac{g^{\left(n-1\right)}\left(z_{0}\right)}{\left(n-1\right)!\left(z-z_{0}\right)}+\frac{g^{\left(n\right)}\left(z_{0}\right)}{n!}+\frac{g^{\left(n+1\right)}\left(z_{0}\right)}{\left(n+1\right)!\left(z-z_{0}\right)}+\dots
+\]
+
+\end_inset
+
+וזהו טור לורן!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בין היתר מצאנו ש:
+\end_layout
+
+\begin_layout Itemize
+סביב קוטב מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ טור לורן תמיד מתחיל מחזקת 
+\begin_inset Formula $\left(-n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם הייתה סינגולריות סליקה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ אז לא הייתה ממש סינגולריות, ולא היו שום חזקות שליליות בטור לורן.
+\end_layout
+
+\begin_layout Itemize
+מה נותר? בסביבת סינגולריות עיקרית יש תמיד 
+\begin_inset Formula $\infty$
+\end_inset
+
+ חזרקות שליליות בטור לורן.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית בסביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left\{ z\in\mathbb{C}\middle|0<\left|z-z_{0}\right|<r\right\} 
+\]
+
+\end_inset
+
+ונניח שלכל 
+\begin_inset Formula $z\in S$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=1}^{\infty}\frac{b_{n}}{\left(z-z_{0}\right)^{n}}+\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+כעת אם 
+\begin_inset Formula $0<\rho<r$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ointctrclockwise_{C\left(z_{0},\rho\right)}f\left(t\right)\mathrm{\, d}t=2\pi ib
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+על 
+\begin_inset Formula $C\left(z_{0},\rho\right)$
+\end_inset
+
+ הטור מתכנס במ"ש ואפשר לעשות אינטגרציה איבר איבר:
+\begin_inset Formula 
+\[
+\ointctrclockwise_{C\left(z_{0},\rho\right)}f\left(z\right)\mathrm{\, d}z=\sum_{n=1}^{\infty}\ointctrclockwise_{C\left(z_{0},\rho\right)}\frac{b_{n}}{\left(z-z_{0}\right)^{n}}\mathrm{\, d}z+\sum_{n=0}^{\infty}\ointctrclockwise_{C\left(z_{0},\rho\right)}a_{n}\left(z-z_{0}\right)^{n}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסכום השני כל אינטגרל שווה לאפס ע"פ משפט קושי כי 
+\begin_inset Formula $\left(z-z_{0}\right)^{n}$
+\end_inset
+
+)
+\begin_inset Formula $n\ge-$
+\end_inset
+
+( פונקציה שלימה.
+\end_layout
+
+\begin_layout Standard
+בסכום הראשון לכל 
+\begin_inset Formula $n>1$
+\end_inset
+
+ לפונקציה
+\begin_inset Formula 
+\[
+\frac{b_{n}}{\left(z-z_{0}\right)^{n}}=b_{n}\left(z-z_{0}\right)^{-n}
+\]
+
+\end_inset
+
+יש פונקציה קדומה 
+\begin_inset Formula $b_{n}\cfrac{\left(z-z_{0}\right)^{-n+1}}{-n+1}$
+\end_inset
+
+, אנליטית ב
+\begin_inset Formula $C\left(z_{0},\rho\right)$
+\end_inset
+
+, ולכן האינטגרל מתאפס.
+\end_layout
+
+\begin_layout Standard
+מכל זה נובע:
+\begin_inset Formula 
+\[
+\ointctrclockwise_{C\left(z_{0},\rho\right)}f\left(z\right)\mathrm{\, d}z=\ointctrclockwise_{C\left(z_{0},\rho\right)}\frac{b_{1}}{z-z_{0}}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

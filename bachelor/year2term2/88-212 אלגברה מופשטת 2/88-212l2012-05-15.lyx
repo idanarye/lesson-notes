@@ -1,0 +1,1428 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+להלן 
+\begin_inset Formula $\mathbb{F}=q\left(R\right)$
+\end_inset
+
+ - שדה השברים מעל 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+קריטריון אייזנשטיין
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\in R\left[x\right]$
+\end_inset
+
+ פולינום על 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות כלשהו.
+ רוצים להוכיח ש
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: פירוק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ נקרא "לא אמיתי" אם אחד הגורמים הוא סקלר.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אם 
+\begin_inset Formula $f\in R\left[x\right]$
+\end_inset
+
+ פריק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+, אז:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+או שיש לו פירוק אמיתי - ואז הוא פריק גם מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+או שאין לו פירוק אמיתי - ואז הוא אי-פריק מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+קריטריון אייזנשטיין
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\lhd R$
+\end_inset
+
+ אידאל מקסימלי.
+ נניח ש
+\begin_inset Formula $f=a_{n}x^{n}+\dots+a_{0}\in R\left[x\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+a_{n-1},a_{n-2},\dots a_{1},a_{0}\in M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}\notin M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{0}\notin M^{2}
+\]
+
+\end_inset
+
+אזי אין ל
+\begin_inset Formula $f$
+\end_inset
+
+ פירוק אמיתי מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח שיש פירוק אמיתי 
+\begin_inset Formula 
+\[
+f=gh
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g=\dots+b_{0}\qquad h=\dots+c_{0}
+\]
+
+\end_inset
+
+נתבונן בפירוק מודולו 
+\begin_inset Formula $M$
+\end_inset
+
+, כלומר בחוג
+\begin_inset Formula 
+\[
+\unitfrac{R\left[x\right]}{M\cdot R\left[x\right]}=\unitfrac{R\left[x\right]}{M\left[x\right]}\cong\left(\underbrace{\unitfrac{R}{M}}_{\textnormal{field}}\right)\left[x\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בחוג המנה 
+\begin_inset Formula $\overline{f}=a_{n}x^{n}=\overline{g}\cdot\overline{h}$
+\end_inset
+
+ הפירוקים היחידים של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ מעל השדה 
+\begin_inset Formula $\unitfrac{R}{M}$
+\end_inset
+
+ הם 
+\begin_inset Formula $\begin{array}{c}
+\overline{g}\sim x^{i}\\
+\overline{h}\sim x^{n-i}
+\end{array}$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+g=b_{i}x^{i}+\dots+b_{0}\Rightarrow b_{0}\in M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h=c_{n-1}x^{i-i}+\dots+c_{0}\in M
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $a_{0}=b_{0}\cdot c_{0}\in M^{2}$
+\end_inset
+
+ - סתירה!
+\end_layout
+
+\begin_layout Section*
+מקרה פרטי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\mathbb{Z}$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני, 
+\begin_inset Formula $f=a_{n}x^{n}+\dots+a_{0}$
+\end_inset
+
+ ומתקיים
+\begin_inset Formula 
+\[
+p|a_{n-1},\dots a_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\nmid a_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p^{2}\nmid a_{0}
+\]
+
+\end_inset
+
+אז ל
+\begin_inset Formula $f$
+\end_inset
+
+ אין פירוק אמיתי מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=x^{5}-7x^{2}+70x-14$
+\end_inset
+
+ - לפי קריטריון אייזנשטיין עם 
+\begin_inset Formula $p=7$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+הקריטריון לא מדד ל
+\begin_inset Formula $f\left(x\right)=x^{5}-7x^{2}+70-49$
+\end_inset
+
+, או ל
+\begin_inset Formula $f\left(x\right)=-7x^{5}-7x^{2}+10x^{2}-14$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני
+\begin_inset Formula 
+\[
+x^{p}-1=\left(x-1\right)\left(x^{p-1}+x^{p-2}+\dots+1\right)
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $f\left(x\right)=\cfrac{x^{p}-1}{x-1}=x^{p-1}+x^{p-2}+\dots+1$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+f\left(x+1\right)=\cfrac{\left(x+1\right)^{p}-1}{\left(x+1\right)-1}=\sum_{i=0}^{p}\binom{p}{i}x^{i-1}=x^{p-1}+\binom{p}{p-1}x^{p-2}+\binom{p}{p-2}x^{p-3}+\dots+\binom{p}{1}x^{0}
+\]
+
+\end_inset
+
+למשל עבור 
+\begin_inset Formula $p=5$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(x+1\right)=x^{4}+5x^{3}+10x^{2}+10x+5
+\]
+
+\end_inset
+
+ידוע ש
+\begin_inset Formula $p|\binom{p}{k}=\cfrac{p!}{k!\left(p-k\right)!}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $0<k<p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ מחלק את כל המקדמים פרט לראשון.
+\end_layout
+
+\begin_layout Standard
+המקדם הראשון =
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+המקדם החופשי = 
+\begin_inset Formula $p$
+\end_inset
+
+ ולא מתחלק ב
+\begin_inset Formula $p^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+הפולינום 
+\begin_inset Formula $f\left(x+1\right)$
+\end_inset
+
+ אי פריק
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הפולינום 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אי פריק
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=\cos\cfrac{2\pi}{9}+i\sin\cfrac{2\pi}{9}
+\]
+
+\end_inset
+
+מאפס את הפולינום 
+\begin_inset Formula $\left(x^{3}-1\right)\left(x^{6}+x^{2}+1\right)=x^{9}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העזרו בקריטריון אייזנשטיין כדי להוכיח ש
+\begin_inset Formula $x^{6}+x^{3}+1$
+\end_inset
+
+ אי פריק.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dim_{\mathbb{Q}}\mathbb{Q}\left[p_{9}\right]=6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה ו
+\begin_inset Formula $f\in\mathbb{F}m[x$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\unitfrac{\mathbb{F}\left[x\right]}{\left\langle f\right\rangle }=\left\{ g+\left\langle f\right\rangle \middle|g\in\mathbb{F}\left[x\right]\right\} =\left\{ r+\left\langle f\right\rangle \middle|\begin{array}{c}
+r\in\mathbb{F}\left[x\right]\\
+\deg\left(r\right)<n
+\end{array}\right\} 
+\]
+
+\end_inset
+
+מתי 
+\begin_inset Formula $r+\left\langle f\right\rangle =0+\left\langle f\right\rangle $
+\end_inset
+
+? זה קורה אם ורק אם 
+\begin_inset Formula $f|r$
+\end_inset
+
+.
+ אבל אם 
+\begin_inset Formula $\deg r<\deg f$
+\end_inset
+
+, זה יכול לקרות רק אם 
+\begin_inset Formula $r=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר כל האיברים כאן שונים זה מזה, כי
+\begin_inset Formula 
+\[
+r_{1}+\left\langle f\right\rangle =r_{2}+\left\langle f\right\rangle \Rightarrow f|\left(r_{1}-r_{2}\right)\Rightarrow r_{1}-r_{2}=0\Rightarrow r_{1}=r_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{F}\left[x\right]=\textnormal{span}_{\mathbb{F}}\left\{ 1,x,\dots x^{n-1}\right\} 
+\]
+
+\end_inset
+
+זה בסיס!
+\end_layout
+
+\begin_layout Section*
+הוכחנו ש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dim_{\mathbb{F}}\left(\unitfrac{\mathbb{F}\left[x\right]}{\left\langle f\right\rangle }\right)=\deg f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\mathbb{F}\subseteq K$
+\end_inset
+
+ שדות, 
+\begin_inset Formula $a\in K$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+K\supseteq\mathbb{F}\left[a\right]=\textnormal{Im}\Phi_{a}\cong\unitfrac{\mathbb{F}\left[x\right]}{\ker\Phi_{a}}=\unitfrac{\mathbb{F}\left[x\right]}{\left\langle g_{a}\right\rangle }
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+\dim_{\mathbb{F}}\mathbb{F}\left[a\right]=\deg g_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dim_{\mathbb{Q}}\mathbb{Q}\left[\sqrt[3]{2}\right]=3$
+\end_inset
+
+ כי 
+\begin_inset Formula $x^{3}-2$
+\end_inset
+
+ הוא הפולינום המינימלי של 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{3}-2$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ לפי קריטריון אייזנשטיין)
+\begin_inset Formula $p=2$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xi=\cfrac{1+\sqrt{-5}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(3x+\left(1+2\xi\right)\right)\left(x+\cfrac{3-2\xi}{3}\right)=3x^{2}+4x+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אי פריק מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ומעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+פריק מעל 
+\begin_inset Formula $\mathbb{Q}\left[\xi\right]=\mathbb{Q}\left[\sqrt{-5}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אי פריק מעל 
+\begin_inset Formula $\mathbb{Z}\left[\xi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הלמה של גאוס
+\end_layout
+
+\begin_layout Standard
+מעכשיו נניח ש
+\begin_inset Formula $R$
+\end_inset
+
+ תחום פריקות יחידה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=a_{n}x^{n}+\dots+a_{0}\in R\left[x\right]
+\]
+
+\end_inset
+
+התכולה של 
+\begin_inset Formula $f$
+\end_inset
+
+ = 
+\begin_inset Formula $c\left(f\right)$
+\end_inset
+
+ = מכפלת הגורמים הראשוניים המשותפים של כל המקדמים.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c\left(3x^{2}+9x+12\right)=3$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c\left(a^{2}x^{5}+a^{2}bx^{3}+12a^{4}b^{5}\right)=a^{2}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{Q}\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ נקרא פרימיטיבי אם 
+\begin_inset Formula $c\left(f\right)=1$
+\end_inset
+
+.
+ שימו לב שלכל פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\hat{f}=\cfrac{1}{c\left(f\right)}f\left(x\right)\in R\left[x\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ תמיד פרימיטיבי.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\in R\left[x\right]$
+\end_inset
+
+, 
+\begin_inset Formula $a\in R$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+c\left(a\cdot f\right)=a\cdot c\left(f\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הלמה של גאוס)גירסה 
+\begin_inset Formula $I$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+המכפלה של פולינומים פרימיטיביים היא פרימיטיבית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f,g$
+\end_inset
+
+ פרימיטיביים, ונניח 
+\begin_inset Formula $p|c\left(fg\right)$
+\end_inset
+
+ עבור ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\cdot g\equiv0\pmod p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\cdot g=0\in\left(\unitfrac{R}{pR}\right)\left[x\right]
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $\unitfrac{R}{pR}$
+\end_inset
+
+ תחום שלמות, גם 
+\begin_inset Formula $\left(\unitfrac{R}{pR}\right)\left[x\right]$
+\end_inset
+
+ תחום שלמות, ולכן 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+ או 
+\begin_inset Formula $g\equiv0$
+\end_inset
+
+ - בסתירה לפרימיטיביות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה - הלמה של גאוס )גירסה 
+\begin_inset Formula $II$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c\left(f\cdot g\right)=c\left(f\right)\cdot c\left(g\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=c\left(f\right)\cdot\hat{f}\qquad g=c\left(g\right)\cdot\hat{g}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c\left(fg\right)=c\left(c\left(f\right)\cdot\hat{f}\cdot c\left(g\right)\cdot\hat{g}\right)=c\left(f\right)\cdot c\left(g\right)\cdot\underbrace{c\left(\hat{f}\hat{g}\right)}_{=1}=c\left(f\right)\cdot c\left(g\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הלמה של גאוס)גירסה 
+\begin_inset Formula $III$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\in R\left[x\right]$
+\end_inset
+
+ פרימיטיבי ואי פריק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f$
+\end_inset
+
+ מתפרק מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+.
+ אז יש פולינומים 
+\begin_inset Formula $g,h\in R\left[x\right]$
+\end_inset
+
+ וסקלר 
+\begin_inset Formula $a\in R$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f=\cfrac{1}{a}\cdot g\cdot h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: כל פולינום מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ אפשר לכתוב בצורה יחידה)עד כדי חברות(
+\begin_inset Formula 
+\[
+\cfrac{a}{b}\cdot f
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+ זרים, 
+\begin_inset Formula $f\in R\left[x\right]$
+\end_inset
+
+ פרימיטיבי.ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $b\cdot f=a\cdot gh$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=b\cdot c\left(f\right)=c\left(bf\right)=c\left(a\cdot gh\right)=a\cdot c\left(gh\right)=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $f=gh$
+\end_inset
+
+ פירוק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g\in R\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f|g$
+\end_inset
+
+ מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $c\left(f\right)|c\left(g\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\hat{f}|\hat{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=c\left(f\right)\cdot\hat{f}\qquad g=c\left(g\right)\cdot\hat{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ טריוויאלי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח ש
+\begin_inset Formula $f|g$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $g=f\cdot h,h\in R\left[x\right]$
+\end_inset
+
+, אז 
+\begin_inset Formula $c\left(g\right)=c\left(f\right)\cdot c\left(h\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $c\left(f\right)|c\left(g\right)$
+\end_inset
+
+, ו
+\begin_inset Formula 
+\[
+\hat{g}=\cfrac{1}{c\left(g\right)}\cdot g=\widehat{fh}=\cfrac{1}{c\left(fh\right)}\cdot fh=\left(\cfrac{1}{c\left(f\right)}\cdot f\right)\cdot\left(\cfrac{1}{c\left(h\right)}\cdot h\right)=\hat{f}\cdot\hat{h}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\hat{f}|\hat{h}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)הלמה של גאוס, 
+\begin_inset Formula $IV$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום פריקות יחידה.
+ אזי 
+\begin_inset Formula $R\left[x\right]$
+\end_inset
+
+ תחום פריקות יחידה.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+\mathbb{Z}\left[x_{1},\dots x_{n}\right]\\
+\mathbb{F}\left[x_{1},\dots x_{n}\right]
+\end{array}$
+\end_inset
+
+ כולם תחומי פריקות יחידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחת המשפט
+\end_layout
+
+\begin_layout Standard
+תחום פריקות יחידה = אטומי +כל אי פריק ראשוני.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ הוא פולינום של 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ ולכן יש לו פירוק לגורמים אי פריקים מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f=g_{1}\cdots g_{n}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $g_{i}\in\mathbb{F}\left[x\right]$
+\end_inset
+
+ אי פריקים.
+ כל 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ אפשר לכתוב כמכפלה
+\begin_inset Formula 
+\[
+g_{i}=\cfrac{a_{i}}{b_{i}}\cdot h_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $h_{i}\in R\left[x\right]$
+\end_inset
+
+ פרימיטיבי, 
+\begin_inset Formula $a_{i},b_{i}$
+\end_inset
+
+ זרים.
+\begin_inset Formula 
+\[
+f=\cfrac{a}{b}\cdot h_{1}\cdots h_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+bf=a\cdot h_{1}\cdots h_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\underbrace{\square}_{\textnormal{scalar}}\cdot h_{1}\cdots h_{n}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $h_{1},\dots h_{n}$
+\end_inset
+
+ פרימיטיבים + אי פריקים מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאר להוכיח שכל אי פריק בחוג 
+\begin_inset Formula $R\left[x\right]$
+\end_inset
+
+ הוא ראשוני.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי פריק בחוג 
+\begin_inset Formula $R\left[x\right]$
+\end_inset
+
+)בפרט 
+\begin_inset Formula $f$
+\end_inset
+
+ פרימיטיבי(.
+ נניח 
+\begin_inset Formula $f|gh$
+\end_inset
+
+ מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ ראשוני שם, לכן 
+\begin_inset Formula $f|g$
+\end_inset
+
+ או 
+\begin_inset Formula $f|h$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן לפי הטענה הקודמת, 
+\begin_inset Formula $f|g$
+\end_inset
+
+ או 
+\begin_inset Formula $f|h$
+\end_inset
+
+ מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

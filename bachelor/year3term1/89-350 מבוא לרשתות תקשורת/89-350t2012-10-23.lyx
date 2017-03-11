@@ -1,0 +1,865 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מתרגלת
+\series default
+: חיה שולמן
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוא"ל
+\series default
+: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+haya.shulman@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חישוב זמנים
+\end_layout
+
+\begin_layout Standard
+בשביל לבדוק את היעילות של פרוטוקולי תקשורת צריך לבדוק זמנים.
+\end_layout
+
+\begin_layout Standard
+אם רוצים להעביר קובץ בן 
+\begin_inset Formula $F$
+\end_inset
+
+ בתים ממחשב 
+\begin_inset Formula $A$
+\end_inset
+
+ למחשב 
+\begin_inset Formula $B$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar[rr]^{F_{\unit{Bytes}}} &  & *++[o][F]{B}}
+\]
+
+\end_inset
+
+ צריך להתחשב בפרמטרים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ - קצב השידור.
+ נמדד ב
+\begin_inset Formula $\textnormal{Bps}$
+\end_inset
+
+)
+\begin_inset Formula $\unitfrac{Byte}{sec}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ - מהירות ההתפשטות.
+ נמדד ב
+\begin_inset Formula $\unitfrac{m}{s}$
+\end_inset
+
+.
+ המהירות בה המידע עובר בערוץ.
+ בערך 
+\begin_inset Formula $2.5\cdot10^{8}\approx3\cdot10^{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D$
+\end_inset
+
+ - המרחק.
+ נמדד ב
+\begin_inset Formula $\unit{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי
+\begin_inset Formula $F$
+\end_inset
+
+ ו
+\begin_inset Formula $R$
+\end_inset
+
+ אפשר לחשב את הזמן שלוקח לשדר.
+ לפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $S$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+ אפשר לחשב את השעיית ההתפשטות - 
+\begin_inset Formula $\dfrac{D}{S}$
+\end_inset
+
+ - הזמן שעובר מתחילת השידור לתחילת הקבלה:
+\begin_inset Formula 
+\[
+\xymatrix{ & A\ar@<10pt>[rrrrdd]\ar@<-10pt>[rrrrdd] &  &  &  & B\ar@{-}@/^{10pt}/[dd]^{\frac{D}{S}}\\
+ &  &  & F\unit{bits} &  & \,\\
+ &  &  &  &  & \, & \textnormal{delay}=\frac{D}{S}+\frac{F}{R}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם מחשב 
+\begin_inset Formula $A$
+\end_inset
+
+ משדר 
+\begin_inset Formula $3\unit{bit}$
+\end_inset
+
+ למחשב 
+\begin_inset Formula $B$
+\end_inset
+
+, והוא משדר ביט ראשון, מחכה שהוא יקלט, ורק אז משדר את הביט השני - אז יקח
+ לו 
+\begin_inset Formula $3\left(\frac{D}{S}+\frac{1}{R}\right)$
+\end_inset
+
+ - אבל זה לא יעיל.
+ לכן המחשב ישדר את הביטים אחד אחרי השני בלי לחכות שהם יקלטו - וזה יקח 
+\begin_inset Formula $\frac{D}{S}+\frac{3}{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לראות איך צריך לחשב, מומלץ לצייר את ההעברה.
+\end_layout
+
+\begin_layout Section*
+כרטיס רשת)
+\lang english
+Network Interface Card(NIC)
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+כרטיס הרשת הוא השער שמחבר בין המחשב לרשת.
+ כרטיס הרשת הוא זה שיש לו כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+, לא המחשב.
+\end_layout
+
+\begin_layout Section*
+נתבים
+\end_layout
+
+\begin_layout Standard
+נתב מקבל מידע ממקום אחד ומעביר אותו למקום אחר.
+ לכן בד"כ יש לו לפחות שני כרטיסי רשת - כרטיס לכל ערוץ.
+ מסמנים עם עיגול עם 
+\begin_inset Formula $\times$
+\end_inset
+
+ עליו:
+\begin_inset Formula 
+\[
+\xymatrix{A & \bigotimes\ar@{-}[r]\ar@{-}[l] & B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנתב בד"כ מחכה עד שהוא מקבל את כל החבילה לפני שהוא מעביר אותה הלאה, ולכן
+ ההעברה מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+ דרך 
+\begin_inset Formula $\bigotimes$
+\end_inset
+
+ לוקחת 
+\begin_inset Formula $2\left(\frac{F}{R}+\frac{D}{S}\right)$
+\end_inset
+
+)בהנחה שהמרחקים וקצבי השידור שווים(
+\end_layout
+
+\begin_layout Section*
+חבילות
+\end_layout
+
+\begin_layout Standard
+מכיוון שצריך לחכות 
+\begin_inset Formula $\frac{F}{R}$
+\end_inset
+
+ בכל נתב שהמידע עובר דרכו, נעדיף להעביר את הקובץ בחלקים קטנים כדי לצמצם
+ את 
+\begin_inset Formula $\frac{F}{R}$
+\end_inset
+
+.
+ חבילות מחלקות קבצים לחלקים יותר קטנים לצורך העברה ברשת.
+ חבילה מחולקת לשני חלקים:
+\end_layout
+
+\begin_layout Itemize
+נתונים)
+\lang english
+Payload
+\lang hebrew
+( - המידע עצמו.
+ מסומן 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תחילית)
+\lang english
+Header
+\lang hebrew
+( - מידע על החבילה.
+ כולל:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כתובת ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של השולח והיעד.
+\end_layout
+
+\begin_layout Enumerate
+מיקום החבילה בקובץ.
+ לא מובטח לנו שהחבילות יגיעו ליעד באותו סדר שבו יצאו, ולכן צריך לדעת איך
+ לסדר אותה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נסמן:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\unit{bits}$
+\end_inset
+
+ גודל חבילה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N=\frac{F}{P}$
+\end_inset
+
+ מספר חבילות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $H\unit{bit}$
+\end_inset
+
+ גודל התחילית
+\end_layout
+
+\begin_layout Standard
+סה"כ גודל המידע שצריך לשלוח הוא 
+\begin_inset Formula $F+N\cdot H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה מספרית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+F & = & 5\unit{kb}\\
+P+H & = & 1\unit{kb}\\
+R & = & 5\unitfrac{MB}{sec}\\
+S & = & 3\cdot10^{8}\unitfrac{m}{s}\\
+D_{1} & = & 1\unit{m}\\
+D_{2} & = & 3\unit{m}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משדרים 
+\begin_inset Formula $\frac{F}{P}=\frac{5\unit{kb}}{1\unit{kb}}=5$
+\end_inset
+
+ חבילות.
+ נסמן ב
+\begin_inset Formula $d_{\textnormal{trans}}$
+\end_inset
+
+ את השהיית השידור לחבילה אחת.
+ 
+\begin_inset Formula $d_{\textnormal{trans}}=\frac{10^{3}}{5\cdot10^{6}}=\frac{1}{5\cdot10^{3}}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $A$
+\end_inset
+
+ מסיים את השידור בזמן 
+\begin_inset Formula $\frac{1}{10^{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הנתב מתחיל לקבל את החבילה הראשונה בזמן 
+\begin_inset Formula $\frac{1}{3\cdot10^{8}}$
+\end_inset
+
+, ולאחר 
+\begin_inset Formula $\frac{1}{5\cdot10^{3}}\unit{sec}$
+\end_inset
+
+ הוא מסיים לקבל אותה - כלומר בזמן 
+\begin_inset Formula $\frac{1}{3\cdot10^{8}}+\frac{1}{5\cdot10^{3}}$
+\end_inset
+
+ הוא יכול להתחיל לשדר אותה ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: 
+\begin_inset Formula $\frac{1}{3\cdot10^{8}}\ll\frac{1}{5\cdot10^{3}}$
+\end_inset
+
+ ולכן ניתן להזניח את השעיית ההתפשטות 
+\begin_inset Formula $\frac{1}{3\cdot10^{8}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ מתחיל לקבל את החבילה הראשונה 
+\begin_inset Formula $\frac{3}{3\cdot10^{8}}\unit{sec}=\frac{1}{10^{8}}\unit{sec}$
+\end_inset
+
+ לאחר שהנתב משדר אותה, ומשם הוא ממשיך לקבל ברצף את שאר החבילות עד הסוף -
+ סה"כ 
+\begin_inset Formula $\frac{1}{10^{3}}$
+\end_inset
+
+ לכל החבילות.
+ לכן סה"כ הזמן שעובר מאז ש
+\begin_inset Formula $A$
+\end_inset
+
+ מתחיל לשדר עד ש
+\begin_inset Formula $B$
+\end_inset
+
+ מסיים לקלוט הוא
+\begin_inset Formula 
+\[
+\frac{5\cdot10^{3}}{5\cdot10^{6}}+\frac{1}{5\cdot10^{3}}+\frac{1}{3\cdot10^{8}}+\frac{1}{10^{8}}
+\]
+
+\end_inset
+
+כאשר את שני המחוברים האחרונים 
+\begin_inset Formula $\frac{1}{3\cdot10^{8}}+\frac{1}{10^{8}}$
+\end_inset
+
+ אפשר להזניח.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לוקחים שתי השעיות התפשטות - אחת מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $\otimes$
+\end_inset
+
+ ואחת מ
+\begin_inset Formula $\otimes$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+הנתב שומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pipeline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של חבילות - ולכן העלות של המעבר בנתב)פרט למרחק שצריך לעבור עד שמגיעים אליו,
+ כמובן( היא ה
+\begin_inset Formula $d_{\textnormal{trans}}$
+\end_inset
+
+ של חבילה אחת.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+חומר למחשבה
+\end_layout
+
+\begin_layout Standard
+אם קצבי ההתפשטות שונים זה משפיע רק על הטווח.
+ אבל מה קורה אם קצבי השידור שונים?
+\end_layout
+
+\begin_layout Section*
+יעילות
+\end_layout
+
+\begin_layout Standard
+ככל שגודל החבילה יותר קטן, העלות של הנתב יותר קטנה)כי לוקח פחות זמן עד שמסיימים
+ להעביר את החבילה הראשונה(.
+ אבל חבילות יותר קטנות = יותר חבילות, מה שאומר שצריך לשלוח יותר תחיליות
+ וזה גורם לבזבוז.
+\end_layout
+
+\begin_layout Standard
+נניח רשת עם יותר מנתב אחד:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar[r] & \bigotimes\ar[r] & \bigotimes\ar[r] & \cdots\ar[r] & \bigotimes\ar[r] & \bigotimes\ar[r] & *++[o][F]{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N-1$
+\end_inset
+
+ נתבים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N$
+\end_inset
+
+ ערוצים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R\unitfrac{k}{s}$
+\end_inset
+
+ קצב שידור
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D\unit{m}$
+\end_inset
+
+ מרחק
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\unitfrac{m}{s}$
+\end_inset
+
+ קצב התפשטות
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F\unit{bits}$
+\end_inset
+
+ גודל קובץ
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $H\unit{bits}$
+\end_inset
+
+ גודל תחילית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\unit{bits}$
+\end_inset
+
+ גודל חבילה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C$
+\end_inset
+
+ מספר חבילות.
+ 
+\begin_inset Formula $C=\left\lceil \frac{F}{P}\right\rceil $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה זמן יקח להעביר את הקובץ?
+\end_layout
+
+\begin_layout Standard
+כמות המידע שצריך להעביר היא 
+\begin_inset Formula $C\cdot\left(P+H\right)$
+\end_inset
+
+ - זה יותר מגודל הקובץ, כי צריך להעביר גם תחיליות.
+ זמן השידור הוא:
+\begin_inset Formula 
+\[
+\frac{N\cdot D}{S}+\frac{\left(P+H\right)\left(N-1\right)}{R}+\frac{F+C\cdot H}{R}
+\]
+
+\end_inset
+
+זוהי בעיית אופטימיזציה - צריך לגזור לפי 
+\begin_inset Formula $P$
+\end_inset
+
+ או לפי 
+\begin_inset Formula $C$
+\end_inset
+
+)שקול, כי 
+\begin_inset Formula $P=\frac{1}{C}$
+\end_inset
+
+( ולמצוא מינימום.
+ כנראה שלא נקבל מספר שלם, ולכן צריך להציב בשני השלמים הקרובים ביותר ולראות
+ מה נותן תוצאה יותר טובה.
+ מ
+\begin_inset Formula $\frac{N\cdot D}{S}$
+\end_inset
+
+ אפשר להתעלם בגזירה, שכן הוא קבוע ביחס לחלוקה לחבילות.
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\mathrm{d}}{\mathrm{d}C} & : & \left(\left(\frac{F}{C}+H\right)\left(N-1\right)+F+CH\right)=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C^{2}=\frac{F\left(N-1\right)}{H}\Rightarrow C=\sqrt{\frac{F\left(N-1\right)}{H}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

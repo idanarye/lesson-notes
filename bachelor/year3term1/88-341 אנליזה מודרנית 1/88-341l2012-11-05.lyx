@@ -1,0 +1,3211 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+חזרה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: תהי 
+\begin_inset Formula $R\subset\mathbb{R}$
+\end_inset
+
+ תת קבוצה כלשהי.
+ אז המידה החיצונית של 
+\begin_inset Formula $E$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)=\inf_{E\subset\bigcup\limits _{n=1}^{\infty}I_{n}}\sum_{n=1}^{\infty}\left|I_{n}\right|
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ קטעים פתוחים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תכונות
+\begin_inset space ~
+\end_inset
+
+רצויות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $0\le m^{*}\left(E\right)\le\infty$
+\end_inset
+
+ מוגדרת היטב!
+\end_layout
+
+\begin_layout Enumerate
+לכל קטע 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $m^{*}\left(E\right)=\left|E\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m^{*}\left(x_{0}+E\right)=m^{*}\left(E\right)$
+\end_inset
+
+ שמורה תחת הזזה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ תת-חיבורית 
+\begin_inset Formula $\sigma$
+\end_inset
+
+: ז.א.
+ אם 
+\begin_inset Formula $E=\biguplus\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $m^{*}\left(E\right)\le\sum\limits _{n=1}^{\infty}m^{*}\left(E_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אבל 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ אינה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-חיבורית.
+ ז.א.
+ קיימת סדרת קבוצות זרות בזוגות 
+\begin_inset Formula $\left(E_{n}\right)^{\infty}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m^{*}\left(\bigcup\limits _{n=1}^{\infty}E_{n}\right)\subsetneqq\sum\limits _{n=1}^{\infty}m^{*}\left(E_{n}\right)$
+\end_inset
+
+, ולמעשה יש מספר סופי של קבוצות זרות בזוזות 
+\begin_inset Formula $E_{1},\dots E_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m^{*}\left(\bigcup\limits _{k=1}^{n}E_{k}\right)\subsetneqq\sum\limits _{k=1}^{n}m^{*}\left(E_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+רעיון
+\end_layout
+
+\begin_layout Standard
+נצמצם את 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ לאוסף די גדול של קבוצות, "
+\emph on
+הקבוצות המדידות של לבג
+\emph default
+", כך שעליהן 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-חיבורית.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מדידה)לבג( אם 
+\series bold
+לכל
+\series default
+ קבוצה 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}\supset E$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $E^{\complement}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}\supset E$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $m^{*}\left(A\right)\ge m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m^{*}\left(E\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מדידה אז לכל 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}+E$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+כל קטע מהסוג 
+\begin_inset Formula $\left(a,\infty\right)$
+\end_inset
+
+)
+\begin_inset Formula $\mathbb{R}\ni a$
+\end_inset
+
+( הוא קבוצה מדידה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $E_{1}\subset\mathbb{R}$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{2}\subset\mathbb{R}$
+\end_inset
+
+ מדידות.
+ אזי 
+\begin_inset Formula $E_{1}\cup E_{2}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח שלכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A\cap\left(E_{1}\cup E_{2}\right)\right)+m^{*}\left(A\cap\left(E_{1}\cup E_{2}\right)^{\complement}\right)
+\]
+
+\end_inset
+
+אבל לפי דה-מורגן
+\begin_inset Formula 
+\[
+A\cap\left(E_{1}\cup E_{2}\right)=\left(A\cap E_{1}\right)\cup\left(A\cap E_{2}\right)=\left(A\cap E_{1}\right)\cup\left(A\cap E_{1}^{\complement}\cap E_{2}\right)
+\]
+
+\end_inset
+
+כמו כן
+\begin_inset Formula 
+\[
+A\cap\left(E_{1}\cup E_{2}\right)^{\complement}=A\cap E_{1}^{\complement}\cap E_{2}^{\complement}
+\]
+
+\end_inset
+
+לפי זה
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap\left(E_{1}\cup E_{2}\right)\right)+m^{*}\left(A\cap\left(E_{1}\cup E_{2}\right)^{\complement}\right)\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le m^{*}\left(A\cap E_{1}\right)+m^{*}\left(A\cap E_{1}^{\complement}\cap E_{2}\right)+m^{*}\left(A\cap E_{1}^{\complement}\cap E_{2}^{\complement}\right)=\cdots
+\]
+
+\end_inset
+
+ובגלל ש
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ מדידה:
+\begin_inset Formula 
+\[
+\cdots=m^{*}\left(A\cap E_{1}\right)+m^{*}\left(A\cap E_{1}^{\complement}\right)=m^{*}\left(A\right)
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Standard
+בזה הוכחנו ש
+\begin_inset Formula $E_{1}\cup E_{2}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $E_{1},E_{2}\dots E_{n}$
+\end_inset
+
+ קבוצות מדידות.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\bigcup\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcap\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מיידי ע"י אינדוקציה.
+\end_layout
+
+\begin_layout Enumerate
+כיוון שכל 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ מדידה, משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומר שכל 
+\begin_inset Formula $E_{k}^{\complement}$
+\end_inset
+
+ מדידה.
+ לפי דה-מורגן
+\begin_inset Formula 
+\[
+\bigcap_{k=1}^{n}E_{k}=\left(\bigcup_{k=1}^{n}E_{k}^{\complement}\right)^{\complement}
+\]
+
+\end_inset
+
+לפי המסקנה הראשונה זאת קבוצה מדידה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סיכום ביניים
+\end_layout
+
+\begin_layout Standard
+הוכחנו שהקבוצות המדידות מהוות אלגברה)בוליאנית( של קבוצות.
+ ז.א.
+ הן אוסף של תת קבוצות של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ שסגור תחת איחוד סופי ומשלים, וממילא סגור תחת חיתוך סופי.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $E_{1},E_{2},\dots E_{n}$
+\end_inset
+
+ קבוצות מדידות זרות בזוגות, ונגדיר 
+\begin_inset Formula $E=\biguplus_{k=1}^{n}E_{k}$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap E\right)=\sum_{k=1}^{n}m^{*}\left(A\cap E_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה)באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ הטענה טריוויאלית.
+\end_layout
+
+\begin_layout Standard
+נניח שהמשפט כבר הוכח לכל אוסף של 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קבוצות ונוכיח אותו ל
+\begin_inset Formula $n$
+\end_inset
+
+ הקבוצות 
+\begin_inset Formula $E_{1},\dots E_{n}$
+\end_inset
+
+ כמו בציטוט המשפט.
+\end_layout
+
+\begin_layout Standard
+ובכן, 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ מדידה, ולכן
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap E\right)=m^{*}\left(\left(A\cap E\right)\cap E_{n}\right)+m^{*}\left(\left(A\cap E\right)\cap E_{n}^{\complement}\right)
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $E=\biguplus\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+ הרי 
+\begin_inset Formula $E\cap E_{n}=E_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $E\cap E_{n}^{\complement}=\biguplus\limits _{k=1}^{n-1}E_{k}$
+\end_inset
+
+.
+ לכן השוויון הנ"ל אומר
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap E\right)=m^{*}\left(A\cap E_{n}\right)+m^{*}\left(A\cap\biguplus_{k=1}^{n-1}E_{k}\right)=\cdots
+\]
+
+\end_inset
+
+וע"פ אינדוקציה
+\begin_inset Formula 
+\[
+\cdots=m^{*}\left(A\cap E_{n}\right)+\sum_{k=1}^{n-1}m^{*}\left(A\cap E_{k}\right)=\sum_{k=1}^{n}m^{*}\left(A\cap E_{k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+בתנאים של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+ 
+\begin_inset Formula $m^{*}\left(E\right)=\sum\limits _{k=1}^{n}m^{*}\left(E_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $A=\mathbb{R}$
+\end_inset
+
+ או 
+\begin_inset Formula $A=E$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה ו
+\begin_inset Formula $S$
+\end_inset
+
+ אלגברה של תת קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ שייכות ל
+\begin_inset Formula $S$
+\end_inset
+
+.
+ אזי קיימת סדרה 
+\begin_inset Formula $\left(F_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ של קבוצות ב
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $F_{n}\subset E_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+ה
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ זרות בזוגות.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\bigcup\limits _{k=1}^{n}E_{k}=\bigcup\limits _{k=1}^{n}F_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bigcup\limits _{k=1}^{\infty}E_{k}=\bigcup\limits _{k=1}^{\infty}F_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ תהיה הקבוצה המכילה כל מה שהתחדש ב
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+ ז.א.
+\begin_inset Formula 
+\[
+F_{n}=E_{n}\cap\left(\bigcup_{k=1}^{n-1}E_{k}\right)^{\complement}=E_{n}\cap E_{1}^{\complement}\cap E_{2}^{\complement}\cap\cdots\cap E_{n-1}^{\complement}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{1}=E_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת התכונות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F_{n}=E_{n}\cap\left(\cdots\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $F_{n}\subset E_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $n>m$
+\end_inset
+
+ הרי 
+\begin_inset Formula $F_{n}\subset E_{m}^{\complement}$
+\end_inset
+
+ כי 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+=חיתוך 
+\begin_inset Formula $E_{m}^{\complement}$
+\end_inset
+
+ עם עוד קבוצות, ואילו 
+\begin_inset Formula $F_{m}\subset E_{m}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\emptyset\neq F_{n}\cap E_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח באינדוקציה.
+ עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ הטענה היא 
+\begin_inset Formula $E_{1}=F_{1}$
+\end_inset
+
+, אבל זה נכון לפי הגדרה.
+ כעת נניח שכבר הוכחנו 
+\begin_inset Formula $\bigcup\limits _{k=1}^{n-1}E_{k}=\bigcup\limits _{k=1}^{n-1}F_{k}$
+\end_inset
+
+.
+ כעת:
+\begin_inset Formula 
+\[
+\bigcup_{k=1}^{n}F_{k}=\left(\bigcup_{k=1}^{n-1}F_{k}\right)\cup F_{n}=\bigcup_{k=1}^{n-1}F_{k}\cup\left(E_{n}\cap E_{1}^{\complement}\cap E_{2}^{\complement}\cap\cdots\cap E_{n-1}^{\complement}\right)=\cdots
+\]
+
+\end_inset
+
+ולפי הנחת האינדוקציה
+\begin_inset Formula 
+\[
+\cdots=\bigcup_{k=1}^{n-1}E_{k}\cup\left(E_{n}\cap E_{1}^{\complement}\cap E_{2}^{\complement}\cap\cdots\cap E_{n-1}^{\complement}\right)=\bigcup_{k=1}^{n}E_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+רוצים להוכיח 
+\begin_inset Formula $\bigcup\limits _{k=1}^{\infty}F_{k}=\bigcup\limits _{k=1}^{\infty}E_{k}$
+\end_inset
+
+.
+ כיוון שלכל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $F_{k}\subset E_{k}$
+\end_inset
+
+ אגף שמאל מוכל באגף ימין.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לצד השני: אם 
+\begin_inset Formula $x\in\bigcup\limits _{k=1}^{\infty}E_{k}$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $\mathbb{N}\ni n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in E_{n}$
+\end_inset
+
+.
+ ממילא
+\begin_inset Formula 
+\[
+x\in E_{n}\subset\bigcup_{k=1}^{n}E_{k}=\bigcup_{k=1}^{n}F_{k}\subset\bigcup_{k=1}^{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ קבוצות מדידות לבג.
+ נגדיר 
+\begin_inset Formula $E=\bigcup\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה לבג.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ללא הגבלת הכלליות ה
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ זרות בזוגות - כי אם לא נוכל להחליף אותן ע"י קבוצות זרות מדידות 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+)כמו במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+( ו
+\begin_inset Formula $E=\bigcup E_{n}=\bigcup F_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $G_{n}=\biguplus\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $G_{n}\subset E=\biguplus\limits _{k=1}^{\infty}E_{k}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $E^{\complement}\subset G_{n}^{\complement}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת ניקח קבוצה כלשהי 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ ונעיר שמכיוון שכל 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ מדידה )בתור איחוד 
+\series bold
+סופי
+\series default
+ של קבוצות מדידות( אז לכל 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A\cap G_{n}\right)+m^{*}\left(A\cap G_{n}^{\complement}\right)\ge m^{*}\left(A\cap G_{n}\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה שווה
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}m^{*}\left(A\cap E_{k}\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+נשאיף 
+\begin_inset Formula $\infty\gets n$
+\end_inset
+
+ להסיק
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\supseteq\sum_{k=1}^{\infty}\left(A\cap E_{k}\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $E=\bigcup\limits _{k=1}^{\infty}E_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $A\cap E=\bigcup\limits _{k=1}^{\infty}A\cap E_{k}$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $m^{*}\left(A\cap E\right)\subseteq\sum\limits _{k=1}^{\infty}m^{*}\left(A\cap E_{k}\right)$
+\end_inset
+
+.
+ נחזור ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להסיק
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+והוכחנו ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+במצב של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+ 
+\begin_inset Formula $m^{*}\left(E\right)=m^{*}\left(\biguplus\limits _{k=1}^{\infty}E_{k}\right)=\sum\limits _{k=1}^{\infty}m^{*}\left(E_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בנוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נציב 
+\begin_inset Formula $A=E$
+\end_inset
+
+ לומר
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)\supseteq\sum_{k=1}^{\infty}m^{*}\left(E\cap E_{k}\right)+m^{*}\left(\overbrace{E\cap E^{\complement}}^{=\emptyset}\right)
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)\ge\sum_{k=1}^{\infty}m^{*}\left(E_{k}\right)
+\]
+
+\end_inset
+
+ותמיד
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)\le\sum_{k=1}^{\infty}m^{*}\left(E_{k}\right)
+\]
+
+\end_inset
+
+ ולכן יש שוויון!
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ קבוצות מדידות לבג)ולאו דווקא זרות בזוגות!(.
+ אז 
+\begin_inset Formula $\bigcap\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bigcap_{n=1}^{\infty}E_{n}=\left(\bigcup_{n=1}^{\infty}E_{n}^{\complement}\right)^{\complement}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ תת קבוצה בת מנייה, אז 
+\begin_inset Formula $S$
+\end_inset
+
+ מדידה לבג ו
+\begin_inset Formula $m^{*}\left(S\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב 
+\begin_inset Formula $S=\biguplus\limits _{n=1}^{\infty}\left\{ x_{n}\right\} $
+\end_inset
+
+ כאשר ה
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ נקודות ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $m^{*}\left(\left\{ x_{n}\right\} \right)=0$
+\end_inset
+
+.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כל 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ מדידה)כי מידתה החיצוניתת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+ 
+\begin_inset Formula $S=\bigcup\limits _{n=1}^{\infty}x_{n}$
+\end_inset
+
+ מדידה.
+ ולפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+
+\begin_inset Formula 
+\[
+m^{*}\left(S\right)=\sum_{n=1}^{\infty}m^{*}\left\{ x_{n}\right\} =\sum_{n=1}^{\infty}0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+)או כל קטע ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+( לא בת מנייה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+הקבוצה "
+\begin_inset Formula $E$
+\end_inset
+
+" שבנינו בעזרת אסקיומת הבחירה היא 
+\series bold
+לא
+\series default
+ מדידה לבג.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הבנייה קיבלנו
+\begin_inset Formula 
+\[
+\left(0,1\right)\subset\biguplus_{r\in\mathbb{Q}\cap\left(-1,1\right)}E+r\subset\left(-1,2\right)
+\]
+
+\end_inset
+
+בדרך שלילה נניח ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+ ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כל 
+\begin_inset Formula $E+r$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+
+\begin_inset Formula 
+\[
+m^{*}\left(\left(0,1\right)\right)\le m^{*}\left(\biguplus_{r\in\mathbb{Q}\cap\left(-1,1\right)}E+r\right)\subseteq m^{*}\left(-1,2\right)
+\]
+
+\end_inset
+
+ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים
+\begin_inset Formula 
+\[
+1\le\sum_{r+\mathbb{Q}\cap\left(-1,1\right)}m^{*}\left(E+r\right)\le3
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+1\le\sum_{r\in\mathbb{Q}\cap\left(-1,1\right)}m^{*}\left(E\right)=3
+\]
+
+\end_inset
+
+וזה בלתי אפשרי.
+\end_layout
+
+\begin_layout Standard
+הסתירה מוכיחה ש
+\begin_inset Formula $E$
+\end_inset
+
+ לא מדידה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+הצמצום של 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ לקבוצות המדידות הוא מידת לבג על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+)מסומן לפעמים ב
+\begin_inset Formula $m$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה כלשהי.
+\end_layout
+
+\begin_layout Standard
+אוסף 
+\begin_inset Formula $S\subset P\left(X\right)$
+\end_inset
+
+ נקרא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $E^{\complement}\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ שייכים ל
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S\ni\bigcup\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+, וממילא גם 
+\begin_inset Formula $S\ni\bigcap\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\ni\emptyset$
+\end_inset
+
+)וגם 
+\begin_inset Formula $S\ni X$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Section*
+קבוצות מדידות לבג כ
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה
+\end_layout
+
+\begin_layout Standard
+מהמשפטים הקודמים נובע שהקבוצות המדידות לבג מהוות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה של תת קבוצות של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאפיין )חלק( מהקבוצות ב"אלגברת לבג" 
+\begin_inset Formula $L\subset P\left(\mathbb{R}\right)$
+\end_inset
+
+ של קבוצות מדידות.
+\end_layout
+
+\begin_layout Standard
+ובכן: במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוכחנו שכל קטע מהסוג 
+\begin_inset Formula $\left(a,\infty\right)$
+\end_inset
+
+ מדיד.
+ כמו כן כל קטע מהסוג 
+\begin_inset Formula $\left(-\infty,b\right)$
+\end_inset
+
+ מדיד, ולכן החיתוך שלהם 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ מדיד.
+\end_layout
+
+\begin_layout Standard
+מכאן שכל איחוד בן מנייה של קטעים פתוחים מדיד.
+ ז.א.
+ כל קבוצה פתוחה ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ מדידה.
+ ע"י משלים כל קבוצה סגורה מדידה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה כלשהי, ויהי 
+\begin_inset Formula $T$
+\end_inset
+
+ אוסף של תת קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה מינימלית 
+\begin_inset Formula $S\subset P\left(X\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $T\subset S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה)בקיצור(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה שמכילה את 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ קל להוכיח שחיתוך 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברות הוא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה, ולכן קיימת 
+\begin_inset Formula $S=\bigcap\limits _{\begin{array}{c}
+T\subset A_{\alpha}\\
+\sigma\textnormal{ algebra}
+\end{array}}A_{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב טופולוגי.
+\end_layout
+
+\begin_layout Standard
+אלגברת בורל 
+\begin_inset Formula $B\left(X\right)\subset P\left(X\right)$
+\end_inset
+
+ היא ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה המינימלית של תת קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+ שמכילה את כל הקבוצות הפתוחות ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+מכל הנ"ל נסיק ש
+\begin_inset Formula $B\left(\mathbb{R}\right)\subset L\left(\mathbb{R}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הרי אלגברת לבג 
+\begin_inset Formula $L\left(\mathbb{R}\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה המכילה את כל הקבוצות הפתוחות ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ לכן בהכרח היא מכילה את ה
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה המינימלית שיש בה כל הקבוצות הפתוחות 
+\begin_inset Formula $B\left(\mathbb{R}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות של קבוצות בורל
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+קבוצות 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+ שהן חיתוכים בני מנייה של קבוצות פתוחות.
+\end_layout
+
+\begin_layout Enumerate
+קבוצות 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+שהן איחודים בני מנייה של קבוצות סגורות.
+\end_layout
+
+\begin_layout Enumerate
+קבוצות 
+\begin_inset Formula $G_{\delta\sigma}$
+\end_inset
+
+ שהן איחודים בני מנייה של קבוצות 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+קבוצות 
+\begin_inset Formula $F_{\sigma\delta}$
+\end_inset
+
+ שהן חיתוכים בני מנייה של קבוצות 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+כמו כן יש קבוצות 
+\begin_inset Formula $G_{\delta\sigma\delta\sigma\delta\sigma\cdots}$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Section*
+עובדה
+\end_layout
+
+\begin_layout Standard
+כל פעם שמוסיפים 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ או 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מוסיפים קבוצות בורל חדשות, אבל כולן ביחד אינן מרכיבים את אלגברת בורל כולה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה מדידה לבג.
+ אזי קיימת קבוצה מדידה 
+\begin_inset Formula $F$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m\left(F\right)=0$
+\end_inset
+
+ וקבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+ מטיפוס 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $S=E\uplus F$
+\end_inset
+
+ או 
+\begin_inset Formula $E=S\backslash F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כאן נוכיח את המשפט במקרה 
+\begin_inset Formula $m\left(E\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה של 
+\begin_inset Formula $m$
+\end_inset
+
+)=
+\begin_inset Formula $m^{*}$
+\end_inset
+
+( עבור 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ קיים כיסוי פתוח 
+\begin_inset Formula $\left\{ I_{k}\right\} _{k=1}^{\infty}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $E\subset\bigcup\limits _{k=1}^{\infty}I_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula 
+\[
+m\left(E\right)\le\sum_{k=1}^{\infty}\left|I_{k}\right|\le m\left(E\right)+\nicefrac{1}{n}
+\]
+
+\end_inset
+
+נגדיר קבוצה פתוחה 
+\begin_inset Formula $\bigcup\limits _{k=1}^{\infty}I_{k}=S_{n}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נשים לב שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ יש 
+\begin_inset Formula $I_{k}$
+\end_inset
+
+ים שונים.
+\end_layout
+
+\end_inset
+
+ ולכן 
+\begin_inset Formula $E\subset S_{n}$
+\end_inset
+
+ ומתקיים
+\begin_inset Formula 
+\[
+m\left(E\right)\le m\left(S_{n}\right)\le m\left(E\right)+\nicefrac{1}{n}
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $G_{\delta}\ni S$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $S=\bigcap\limits _{n=1}^{\infty}S_{n}$
+\end_inset
+
+.
+ כיוון שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $E\subset S_{n}$
+\end_inset
+
+ גם מתקיים 
+\begin_inset Formula $E\subset S$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $S\subset S_{n}$
+\end_inset
+
+.
+ ממילא לכל 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m\left(E\right)\le m\left(S\right)\le m\left(S_{n}\right)\le m\left(E\right)+\nicefrac{1}{n}
+\]
+
+\end_inset
+
+נשאיף 
+\begin_inset Formula $\infty\gets n$
+\end_inset
+
+ להסיק ש
+\begin_inset Formula $m\left(E\right)=m\left(S\right)$
+\end_inset
+
+.
+ לבסוף נגדיר 
+\begin_inset Formula $F=S\backslash E$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S=E\uplus F$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $S,E,F$
+\end_inset
+
+ מדידות נקבל 
+\begin_inset Formula $m\left(S\right)=m\left(E\right)+m\left(F\right)$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $\infty>m\left(E\right)$
+\end_inset
+
+ נוכל להסיק ש
+\begin_inset Formula $m\left(F\right)=m\left(S\right)-m\left(E\right)=0$
+\end_inset
+
+ והגענו לפירוק הדרוש 
+\begin_inset Formula $S=E\uplus F$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $G_{\delta}\ni S$
+\end_inset
+
+ ו
+\begin_inset Formula $0=m\left(F\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אפשר להכליל את התוצאה למקרה 
+\begin_inset Formula $m\left(E\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+מידות כלליות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה כלשהי ותהי 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה של תת קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ הזוג 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ נקרא "
+\emph on
+מרחב מדיד
+\emph default
+".
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ מרחב מדיד.
+ מידה)חיובית( על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $\mu:S\to\left[0,\infty\right]$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mu\left(\emptyset\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ ב
+\begin_inset Formula $S$
+\end_inset
+
+ זרות בזוגות אז 
+\begin_inset Formula $\mu\left(\biguplus\limits _{n=1}^{\infty}E_{n}\right)=\sum\limits _{n=1}^{\infty}\mu\left(E_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפעמים קוראים ל
+\begin_inset Formula $S$
+\end_inset
+
+ "
+\emph on
+הקבוצות המדידות לפי 
+\begin_inset Formula $\mu$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+
+\emph default
+"
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+מידת לבג 
+\begin_inset Formula $m$
+\end_inset
+
+ על המרחב 
+\begin_inset Formula $\left(\mathbb{R},L\left(\mathbb{R}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מידת לבג 
+\begin_inset Formula $m$
+\end_inset
+
+ על המרחב 
+\begin_inset Formula $\left(\mathbb{R},B\left(\mathbb{R}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מידת לבג 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ על 
+\begin_inset Formula $\left(\mathbb{R}^{n},L\left(\mathbb{R}^{n}\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $L\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ היא אלגברת לבג על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לבנות את 
+\begin_inset Formula $m_{n}$
+\end_inset
+
+ נתחיל עם מידה חיצונית 
+\begin_inset Formula $m_{n}^{*}$
+\end_inset
+
+.
+ עבור כל קבוצה 
+\begin_inset Formula $E\subset\mathbb{R}^{n}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+m_{n}^{*}\left(E\right)=\inf_{E\subset\bigcup\limits _{m=1}^{\infty}I_{m}}\sum_{m=1}^{\infty}V\left(I_{m}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $I_{m}$
+\end_inset
+
+ תיבות פתוחות ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $V\left(I_{m}\right)$
+\end_inset
+
+=הנפח של 
+\begin_inset Formula $I_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ היא אלגברת כל הקבוצות המדידות 
+\begin_inset Formula $E\subset\mathbb{R}^{n}$
+\end_inset
+
+, ז.א.
+ כל 
+\begin_inset Formula $E$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $A\subset\mathbb{R}^{n}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+m_{n}^{*}\left(A\right)=m_{n}^{*}\left(A\cap E\right)+m_{n}^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

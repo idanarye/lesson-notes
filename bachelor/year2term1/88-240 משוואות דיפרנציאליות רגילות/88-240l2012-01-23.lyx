@@ -1,0 +1,1561 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פתרון מד"ר עם התמרת לפלס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size tiny
+\begin_inset Formula 
+\[
+f\left(t\right)\to F\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+\begin_inset Formula 
+\[
+f\left(t-c\right)H\left(t-c\right)\to F\left(s\right)e^{-sc}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(t\right)\to F\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(t\right)\to sF\left(s\right)-f\left(0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''\to s^{2}F\left(s\right)-sf\left(0\right)-f'\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-4y'+3y=\begin{cases}
+\sin t & 0\le t\le\pi\\
+0 & t>\pi
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(0\right)=y'\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''-4y'+3y=\sin t-\sin t\cdot H\left(t-\pi\right)=\sin t+\sin\left(t-\pi\right)H\left(t-\pi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s^{2}Y-4sY+3Y=\cfrac{1}{1+s^{2}}+\cfrac{1}{1+s^{2}}e^{-s\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s^{2}-4s+3\right)Y=\cfrac{1}{1+s^{2}}\left(1+e^{-s\pi}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=\cfrac{1}{\left(1+s^{2}\right)\left(s-1\right)\left(s-3\right)}\left(1+e^{-s\pi}\right)
+\]
+
+\end_inset
+
+צריך למצוא 
+\begin_inset Formula $A,B,C,D$
+\end_inset
+
+ כדי להפוך את השבר ל 
+\begin_inset Formula $\cfrac{A}{s-1}+\cfrac{B}{s-3}+\cfrac{Cs+D}{s^{2}+1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cfrac{A\left(s-3\right)\left(s^{2}+1\right)+B\left(s-1\right)\left(s^{2}+1\right)+\left(Cs+D\right)\left(s-1\right)\left(s-3\right)}{\left(1+s^{2}\right)\left(s-1\right)\left(s-3\right)}
+\]
+
+\end_inset
+
+המונה צריך להיות שווה ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לכל.
+ אם נציב 
+\begin_inset Formula $s=1$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $A=-\cfrac{1}{4}$
+\end_inset
+
+.
+ אם נציב 
+\begin_inset Formula $s=3$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $B=\cfrac{1}{20}$
+\end_inset
+
+.
+ מכיוון ש
+\begin_inset Formula $A+B+C=0$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $C=\cfrac{1}{5}$
+\end_inset
+
+.
+ נציב 
+\begin_inset Formula $s=0$
+\end_inset
+
+ונקבל
+\begin_inset Formula 
+\[
+-3A-B+3D=1\Rightarrow D=\cfrac{1}{10}
+\]
+
+\end_inset
+
+סה"כ זה יוצא)נוציא גורם משותף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\numeric off
+(
+\begin_inset Formula 
+\[
+=\cfrac{1}{20}\left(\cfrac{-5}{s-1}+\cfrac{1}{s-3}+\cfrac{4s}{s^{2}+1}+\cfrac{2}{s^{2}+1}\right)
+\]
+
+\end_inset
+
+לפי טבלת ההתמרות ההתמרה ההופכית של זה היא 
+\begin_inset Formula $\cfrac{1}{20}\left(-se^{t}+e^{3t}+4\cos t+2\sin t\right)$
+\end_inset
+
+, וסה"כ נקבל:
+\begin_inset Formula 
+\[
+y\left(t\right)=\cfrac{1}{20}\left(-se^{t}+e^{3t}+4\cos t+2\sin t\right)+\cfrac{H\left(t-\pi\right)}{20}\left(-se^{t-\pi}+e^{e\left(t-\pi\right)}-4\cos t-2\sin t\right)
+\]
+
+\end_inset
+
+אם נרצה להיפתר מה
+\begin_inset Formula $H$
+\end_inset
+
+)שהוא משהו שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתחת ל
+\begin_inset Formula $\pi$
+\end_inset
+
+ ו
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעל ל
+\begin_inset Formula $\pi$
+\end_inset
+
+( ניתן לכתוב
+\begin_inset Formula 
+\[
+y\left(t\right)=\begin{cases}
+\cfrac{1}{20}\left(-se^{t}+e^{3t}+4\cos t+2\sin t\right) & 0\le t<\pi\\
+\cfrac{1}{20}\left(-5e^{t}\left(1+e^{-\pi}\right)+e^{3t}\left(1+e^{-3\pi}\right)\right) & t>\pi
+\end{cases}
+\]
+
+\end_inset
+
+לפי נוסחה זו לא ברור ש
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ רציפה או גזירה ב
+\begin_inset Formula $t=\pi$
+\end_inset
+
+.
+ ניתן לבדוק שאכן:
+\begin_inset Formula 
+\[
+\lim_{t\to\pi^{-}}y\left(t\right)=\lim_{t\to\pi^{+}}y\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{t\to\pi^{-}}y'\left(t\right)=\lim_{t\to\pi^{+}}y'\left(t\right)
+\]
+
+\end_inset
+
+ובהכרח! כי 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ היא פתרון של מד"ר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ יש לפתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגזרות - ולכן הוא רציף, והנגזרת הראשונה רציפה.
+\end_layout
+
+\begin_layout Subsection*
+כדי לפתור בעיה זו ללא התמרת לפלס:
+\end_layout
+
+\begin_layout Itemize
+בקטע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $0\le t<\pi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y''-4y'+3y=\sin t,\hspace{1em}y\left(0\right)=y'\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(t\right)=C_{1}e^{t}+C_{2}e^{3t}+\cfrac{2\cos t+\sin t}{10}
+\]
+
+\end_inset
+
+תנאי התחלה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $C_{1}=-\cfrac{1}{4},C_{2}=\cfrac{1}{20}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בקטע 
+\begin_inset Formula $t>\pi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y''-4y'+3y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=D_{1}e^{t}+D_{2}e^{3t}
+\]
+
+\end_inset
+
+מוצאים 
+\begin_inset Formula $D_{1},D_{2}$
+\end_inset
+
+ על ידי הדרישה ש
+\begin_inset Formula $y\left(t\right),y'\left(t\right)$
+\end_inset
+
+ רציפות ב
+\begin_inset Formula $y=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שימושי מד"ר והקדמה למד"ח
+\end_layout
+
+\begin_layout Section*
+דוגמאות פשוטות לשימושי מד"ר
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הטמפרטורה 
+\begin_inset Formula $T$
+\end_inset
+
+ של מכונית היא ביחס יחד לאנרגיה שלה.
+ מכונית העומדת בשמש מקבלת אנרגיה בקצב קבוע 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ היא מאבדת אנרגיה בקצב 
+\begin_inset Formula $a\left(T-T_{c}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $T_{c}$
+\end_inset
+
+ היא טמפרטורת הסביבה.
+ )
+\begin_inset Formula $a$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Standard
+מצא את הטמפרטורה 
+\begin_inset Formula $T$
+\end_inset
+
+ כפונקציה של הזמן 
+\begin_inset Formula $t$
+\end_inset
+
+, ומצא 
+\begin_inset Formula $\lim\limits _{t\to\infty}T\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\alpha E$
+\end_inset
+
+ - )
+\begin_inset Formula $T$
+\end_inset
+
+ טמפרטורה, 
+\begin_inset Formula $E$
+\end_inset
+
+ אנרגיה, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קבוע(
+\begin_inset Formula 
+\[
+E'\left(t\right)=s-a\left(T-T_{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T'\left(t\right)=\alpha s-\alpha a\left(T-T_{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{T'\left(t\right)=c_{1}-c_{2}T}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{1}=\alpha s+\alpha aT_{c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{2}=\alpha a
+\]
+
+\end_inset
+
+מד"ר מסדר ראשון ליניארי.
+\end_layout
+
+\begin_layout Standard
+]החלק ההומוגני: 
+\begin_inset Formula $T'=-c_{2}T$
+\end_inset
+
+, 
+\begin_inset Formula $T=Ke^{-c_{2}t}$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+הצבה 
+\begin_inset Formula $T=K\left(t\right)e^{-c_{2}t}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K'e^{-c_{2}t}-c_{2}Ke^{-c_{2}t}=c_{1}-c_{2}Ke^{-c_{2}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K'=c_{1}e^{c_{2}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=\cfrac{c_{1}}{c_{2}}e^{c_{2}t}+p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(t\right)=\cfrac{c_{1}}{c_{2}}+pe^{-c_{2}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(t\right)=\left(\cfrac{s}{a}+T_{c}\right)+pe^{-c_{2}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\lim_{t\to\infty}T\left(t\right)=T_{c}+\cfrac{s}{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+ברצוני לשאול כמות כסף 
+\begin_inset Formula $D$
+\end_inset
+
+ מהבנק.
+ הבנק דורש ריבית בקצב 
+\begin_inset Formula $r$
+\end_inset
+
+, ואני משלם את החוב בקצב 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ תוך כמה זמן אפרע את החוב? )נניח 
+\begin_inset Formula $k<r$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(t\right)$
+\end_inset
+
+ - חוב בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D'\left(t\right)=rD\left(t\right)-k
+\]
+
+\end_inset
+
+פתרון: נציב 
+\begin_inset Formula $D\left(t\right)=z\left(t\right)e^{rt}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'e^{rt}+rze^{rt}=rze^{rt}-k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=-ke^{-rk}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=C+\cfrac{k}{r}e^{-rt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(t\right)=Ce^{rt}+\cfrac{k}{r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(0\right)=C+\cfrac{k}{r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=D\left(0\right)-\cfrac{k}{r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{D\left(t\right)=D\left(0\right)e^{rt}-\cfrac{k}{r}\left(e^{rt}-1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(t\right)=0\Rightarrow e^{rt}=\cfrac{-k}{rc}=\cfrac{-k}{rD\left(0\right)-k}=\cfrac{1}{1-\cfrac{rD\left(0\right)}{k}}
+\]
+
+\end_inset
+
+זמן הפרעון: 
+\begin_inset Formula $\boxed{t=\cfrac{-1}{r}\ln\left(1-\cfrac{rD\left(0\right)}{k}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- חוק ניוטון השני
+\end_layout
+
+\begin_layout Standard
+חוק ניוטון השני אומר ש"כוח=מסה
+\begin_inset Formula $\times$
+\end_inset
+
+תאוצה"
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חלקיק)חד
+\begin_inset space ~
+\end_inset
+
+מימדי(:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מיקום 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מהירות 
+\begin_inset Formula $x'\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תאוצה 
+\begin_inset Formula $x''\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+איזה מהירות יש לתת לחללית לצאת משדה הגרביטציה של כדור הארץ?
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $R$
+\end_inset
+
+ את רדיוס כדור הארץ.
+ יש לנו חלקיק במרחב 
+\begin_inset Formula $x$
+\end_inset
+
+ ממרכז כדור הארץ.
+\end_layout
+
+\begin_layout Standard
+הכוח על החלקיק הוא קבוע 
+\begin_inset Formula $\cfrac{Cm}{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חוק ניוטון השני:
+\begin_inset Formula 
+\[
+\cfrac{Cm}{x^{2}}=mx''
+\]
+
+\end_inset
+
+רוצים 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\boxed{x''=\cfrac{C}{x^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(0\right)=R
+\]
+
+\end_inset
+
+רוצים למצוא 
+\begin_inset Formula $x'\left(0\right)$
+\end_inset
+
+ הכי קטן אבל מספיק גדול
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+זה נקרא מהירות בריחה
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size normal
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+escape velocity
+\end_layout
+
+\end_inset
+
+ כך ש
+\begin_inset Formula $\lim\limits _{t\to\infty}x\left(t\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ מד"ר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בצורה נורמלית כללית 
+\begin_inset Formula $x''=f\left(x,x',t\right)$
+\end_inset
+
+ - אין שיטה כללית לפתור.
+\begin_inset Newline newline
+\end_inset
+
+מד"ר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+"בלי תלות על 
+\begin_inset Formula $t$
+\end_inset
+
+" - 
+\begin_inset Formula $x''=f\left(x,x'\right)$
+\end_inset
+
+ - ניתן להוריד משוואה זו לסדר ראשון:
+\begin_inset Newline newline
+\end_inset
+
+יש לנו שתי פונקציות - 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $x'\left(t\right)$
+\end_inset
+
+.
+ ניתן לציין גרף של 
+\begin_inset Formula $x$
+\end_inset
+
+על 
+\begin_inset Formula $x'$
+\end_inset
+
+ ולקבל עקומה - הצגה פרמטרית)
+\begin_inset Formula $t$
+\end_inset
+
+ הוא הפרמטר(.
+ לכן אפשר לחשוב על 
+\begin_inset Formula $x'$
+\end_inset
+
+ כעל פונקציה של 
+\begin_inset Formula $x$
+\end_inset
+
+: במקום לחשוב על 
+\begin_inset Formula $\left\{ \begin{array}{c}
+x\left(t\right)\\
+x'\left(t\right)
+\end{array}\right\} $
+\end_inset
+
+ כשתי פונקציות של 
+\begin_inset Formula $t$
+\end_inset
+
+ נחשוב על 
+\begin_inset Formula $x'$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula $x'=p\left(x\right)$
+\end_inset
+
+.
+ ואז:
+\begin_inset Formula 
+\[
+x''=p'\left(x\left(t\right)\right)x'\left(t\right)=p'\left(x\left(t\right)\right)p\left(x\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+pp'=f\left(x,p\right)
+\]
+
+\end_inset
+
+משוואה מסדר ראשון ל
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+.
+ פותרים, ואז פותרים 
+\begin_inset Formula $\cfrac{dx}{dt}=p\left(x\left(t\right)\right)$
+\end_inset
+
+ - עוד מד"ר מסדר ראשון.
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו, 
+\begin_inset Formula $x''=-\cfrac{C}{x^{2}}$
+\end_inset
+
+)כאן ' נגזרת ביחס ל
+\begin_inset Formula $t$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $pp'=-\cfrac{C}{x^{2}}$
+\end_inset
+
+)כאן ' נגזרת ביחס ל
+\begin_inset Formula $x$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left(\cfrac{1}{2}p^{2}\right)'=\left(\cfrac{C}{x}\right)'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{2}p^{2}=E+\cfrac{C}{x}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $E$
+\end_inset
+
+ קבוע(
+\begin_inset Formula 
+\[
+\boxed{\cfrac{1}{2}x'^{2}=E+\cfrac{C}{x\left(t\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\cfrac{dx}{\sqrt{E+\cfrac{C}{x}}}=\pm\int\sqrt{2}\mathrm{\, d}t=\pm\sqrt{2}t+\textnormal{const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+x\left(T\right)=\infty\\
+x'\left(T\right)=0
+\end{array}\middle|\begin{array}{c}
+x\left(0\right)=R\\
+x'\left(0\right)=?
+\end{array}\right.
+\]
+
+\end_inset
+
+מהמשוואה במסגרת, אם מגיעים ל
+\begin_inset Formula $x=\infty$
+\end_inset
+
+ עם מהירות 
+\begin_inset Formula $\left(x'\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהכרח 
+\begin_inset Formula $E=0$
+\end_inset
+
+.
+ ולכן כאשר 
+\begin_inset Formula $x=R$
+\end_inset
+
+ 
+\begin_inset Formula $\cfrac{1}{2}x'^{2}=\cfrac{C}{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\left|x'\right|=\sqrt{\cfrac{2C}{R}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כח = 
+\begin_inset Formula $-\cfrac{mC}{x^{2}}$
+\end_inset
+
+.
+ כח על פני כדור הארץ = 
+\begin_inset Formula $-\cfrac{mc}{R^{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\cfrac{C}{R^{2}}="g"$
+\end_inset
+
+ - התאוצה הגביטציונלית 
+\begin_inset Formula $9.8\,\unitfrac{\textnormal{m}}{\textnormal{s}^{2}}$
+\end_inset
+
+ לכן ניתן לכתוב
+\begin_inset Formula 
+\[
+\boxed{\left|x'\right|=\sqrt{2Rg}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

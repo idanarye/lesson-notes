@@ -1,0 +1,787 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+כמו שמדברים על אינטגרלים כפולים, אפשר לדבר גם על אינטגרלים משולשים וכו'.
+ במקום לדבר על שטח נדבר על תכולה)נפח(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תחום נורמלי מטיפוס 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V=\left\{ \left(x,y,z\right)\in\mathbb{R}^{3}\middle|\begin{array}{c}
+\varphi\left(x,y\right)\le z\le\psi\left(x,y\right)\\
+\left(x,y\right)\in\bar{D}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הכדור 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=R^{2}$
+\end_inset
+
+ הוא תחום נורמלי מטיפוס 
+\begin_inset Formula $x$
+\end_inset
+
+)וגם משאר הטיפוסים(:
+\begin_inset Formula 
+\[
+-\sqrt{R^{2}-\left(x^{2}+y^{2}\right)}\le z\le\sqrt{R^{2}-\left(x^{2}+y^{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בתחום 
+\begin_inset Formula $V$
+\end_inset
+
+ כנ"ל, ו
+\begin_inset Formula $\varphi,\psi$
+\end_inset
+
+ רציפות ב
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\iiint\limits _{V}f\mathrm{\, d}V=\iint\limits _{D}\left(\int_{\varphi\left(x,y\right)}^{\psi\left(x,y\right)}f\left(x,y,z\right)\mathrm{\, d}z\right)\mathrm{\, d}S
+\]
+
+\end_inset
+
+ואם גם 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ נורמלי מטיפוס 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}=\left\{ \left(x,y\right)\middle|\begin{array}{c}
+\alpha\left(x\right)\le y\le\beta\left(x\right)\\
+a\le x\le b
+\end{array}\right\} =\int_{a}^{b}\left[\int_{\alpha\left(x\right)}^{\beta\left(x\right)}\left(\int_{\varphi\left(x,y\right)}^{\psi\left(x,y\right)}f\left(x,y,z\right)\mathrm{\, d}z\right)\mathrm{\, d}y\right]\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+תיבה
+\begin_inset Formula 
+\[
+V=\prod_{i=1}^{3}\left[a_{i},b_{i}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f:V^{\subset\mathbb{R}^{3}}\to\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=\left\{ \left(x,y,z\right)\middle|\begin{array}{c}
+a_{3}\le z\le b_{3}\\
+\left(x,y\right)\in\left\{ \left(x,y\right)\middle|\begin{array}{c}
+a_{1}\le x\le b_{1}\\
+a_{2}\le y\le b_{2}
+\end{array}\right\} 
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\in C\left(V\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iiint\limits _{V}f\mathrm{\, d}v=\iint\limits _{\bar{D}}\left(\int_{a_{3}}^{b_{3}}f\left(x,y,z\right)\mathrm{\, d}z\right)=\int_{a_{1}}^{b_{1}}\left[\int_{a_{2}}^{b_{2}}\left(\int_{a_{3}}^{b_{3}}f\left(x,y,z\right)\mathrm{\, d}z\right)\mathrm{\, d}y\right]\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x_{1},...x_{k}\right)=\prod\limits _{i=1}^{k}g_{i}\left(x_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכח שאם 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ רציפות בקטעים 
+\begin_inset Formula $\left[a_{i},b_{i}\right]$
+\end_inset
+
+)
+\begin_inset Formula $i=1,...k$
+\end_inset
+
+( אזי 
+\begin_inset Formula 
+\[
+\int\cdots\int f\mathrm{\, d}V=\prod\limits _{i=1}^{k}\int_{a_{i}}^{b_{i}}g\left(x_{i}\right)\mathrm{\, d}x_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\Doteq\prod_{i=1}^{k}\left[a_{i},b_{i}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iiint\limits _{V}f\mathrm{\, d}V=\int_{a_{k}}^{b_{k}}\left[\int_{a_{k-1}}^{b_{k-1}}\left[\int\cdots\left(\int_{a_{1}}^{b_{1}}\prod_{i=1}^{k}g\left(x_{i}\right)\mathrm{\, d}x_{1}\right)\mathrm{\, d}x_{2}\right]\cdots\right]\mathrm{\, d}x_{k}
+\]
+
+\end_inset
+
+וגומרים באינדוקציה על מספר הגורמים.
+\end_layout
+
+\begin_layout Part*
+העתקות
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\bar{D},\bar{D}'$
+\end_inset
+
+ תחומים סגורים חסומים בעלי תכולה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $x\left(\cdot\right):\bar{D}'\to\bar{D}$
+\end_inset
+
+ פונקציה ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, חד חד ערכית ועל.
+\end_layout
+
+\begin_layout Standard
+)לכן קיימת ההעתקה ההפוכה 
+\begin_inset Formula $\begin{array}{c}
+x\to u\left(x\right)\\
+\bar{D}\to\bar{D}'
+\end{array}$
+\end_inset
+
+, גם היא בהכרח ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+בהכרח היעקוביאן 
+\begin_inset Formula $J$
+\end_inset
+
+ של ההעתקה 
+\begin_inset Formula $u\to x\left(u\right)$
+\end_inset
+
+ 
+\bar under
+שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $\bar{D}'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathop{\int\cdots\int}\limits _{\bar{D}}f\left(x\right)\mathrm{\, d}x=\mathop{\int\cdots\int}\limits _{\bar{D}}f\left(x\left(u\right)\right)\left|J\left(u\right)\mathrm{\, d}u\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Subsection*
+)
+\numeric on
+1
+\numeric off
+( ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העתקה מקואורדינטות פולריות לקואורדינטות קרטזיות.
+\begin_inset Formula 
+\[
+\left(x,y\right)=\left(r\cos\theta,r\sin\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(u=\right)\left(r,\theta\right)\in\left[0,\infty\right)\times\left[0,2\pi\right]\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+)הערה: אמנם הצגה פולרית אינה חח"ע כאשר 
+\begin_inset Formula $\theta\in\left[0,2\pi\right]$
+\end_inset
+
+ - אבל רק בנקודה אחת, ולכן זה לא מפריע לאינטגרל(
+\begin_inset Formula 
+\[
+J\left(r,\theta\right)=\begin{vmatrix}\cos\theta & \sin\theta\\
+-r\sin\theta & r\cos\theta
+\end{vmatrix}=r\left(\cos^{2}\theta+\sin^{2}\theta\right)=r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בעיגול 
+\begin_inset Formula $\bar{D}=\left\{ \left(x,y\right)\middle|x^{2}+y^{2}\le R^{2}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iint\limits _{\bar{D}}f\left(x,y\right)\mathrm{\, d}x\mathrm{\, d}y=\int\limits _{\bar{D}'}f\left(r\cos\theta,r\sin\theta\right)r\mathrm{\, d}r\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}'=\left[0,R\right]\times\left[0,2\pi\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\equiv1$
+\end_inset
+
+.
+ שטח העיגול הוא
+\begin_inset Formula 
+\[
+S\left(\bar{D}\right)=\iint r\mathrm{\, d}r\mathrm{\, d}\theta=\left(\int_{0}^{R}r\mathrm{\, d}r\right)\left(\int_{0}^{2\pi}1\mathrm{\, d}\theta\right)=\cfrac{R^{2}}{2}\cdot2\pi=\pi R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)=e^{-x^{2}-y^{2}}$
+\end_inset
+
+)
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ כנ"ל(
+\begin_inset Formula 
+\[
+\iint\limits _{\bar{D}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y=\iint e^{-r^{2}}r\mathrm{\, d}r\mathrm{\, d}\theta=\left(\int_{0}^{R}e^{-r^{2}}r\mathrm{\, d}r\right)\int_{0}^{2\pi}1\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\int_{0}^{R^{2}}e^{-u}\mathrm{\, d}u=\left.\cfrac{1}{2}e^{-u}\right|_{R^{2}}^{0}=\cfrac{1}{2}\left(1-e^{-R^{2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\iint\limits _{\bar{D}}e^{-x^{2}-y^{2}}\mathrm{\, d}x\mathrm{\, d}y=\prod\left[1-e^{-R^{2}}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העתקה מקואורדינטות כדוריות לקואורדינטות קרטזיות
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x=r\sin\theta\cos\varphi\\
+y=r\sin\theta\sin\varphi\\
+z=r\cos\theta
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(r,\varphi,\theta\right)\in\left[0,\infty\right)\times\left[0,2\pi\right]\times\left[0,\pi\right]\to\left(x,y,z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{J\left(r,\varphi,\theta\right)=r^{2}\sin\theta}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iiint\limits _{\bar{D}}f\left(x,y,z\right)\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\iiint\limits _{\bar{D}'}f\left(r\sin\theta\cos\varphi,r\sin\theta\sin\theta,r\cos\theta\right)r^{2}\sin\theta\mathrm{\, d}r\mathrm{\, d}\varphi\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ הוא כדור שמרכזו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ורדיוסו 
+\begin_inset Formula $R$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\bar{D}=\left\{ \left(x,y,z\right)\middle|x^{2}+y^{2}+z^{2}\le R^{2}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{D}'=\left\{ \left(r,\varphi,\theta\right)\middle|\begin{array}{c}
+0\le r\le R\\
+0\le\varphi\le2\pi\\
+0\le\theta\le\pi
+\end{array}\right\} =\left[0,R\right]\times\left[0,2\pi\right]\times\left[0,\pi\right]
+\]
+
+\end_inset
+
+קיבלנו תיבה.
+\end_layout
+
+\begin_layout Subsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f\equiv1$
+\end_inset
+
+.
+ הנפח של הכדור 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+V\left(\bar{D}\right)=\iiint\limits _{\bar{D}}f\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\iiint\limits _{\bar{D}'}r^{2}\sin\theta\mathrm{\, d}r\mathrm{\, d}\varphi\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\int_{0}^{2\pi}1\mathrm{\, d}\varphi\right)\left(\int_{0}^{R}r^{2}\mathrm{\, d}r\right)\left(\int_{0}^{\pi}\sin\theta\mathrm{\, d}\theta\right)=\cfrac{4\pi}{3}R^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+העתקה מקואורדינטות גליליות לקואורדינטות קרטזיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x=r\cos\varphi\\
+y=r\sin\varphi\\
+z=z
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(r,\varphi,z\right)\in\left[0,\infty\right)\times\left[0,2\pi\right]\times\mathbb{R}\to\left(x,y,z\right)\in\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(r,\varphi,z\right)=\begin{vmatrix}\cos\varphi & \sin\varphi & 0\\
+-r\sin\varphi & r\cos\varphi & 0\\
+0 & 0 & 1
+\end{vmatrix}=r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+כדור בקואורדינאות גליליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\sqrt{R^{2}-r^{2}}\le z\le\sqrt{R^{2}-r^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+0\le r\le R\\
+0\le\varphi\le2\pi\\
+-\sqrt{R^{2}-r^{2}}\le z\le\sqrt{R^{2}-r^{2}}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\left(\bar{D}\right)=\iiint\limits _{\bar{D}}\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\iiint\limits _{\bar{D}'}r\mathrm{\, d}r\mathrm{\, d}\varphi\mathrm{\, d}z=\iint\limits _{\left[0,R\right]\times\left[0,2\pi\right]}\left(\int_{\sqrt{R^{2}-r}}^{\sqrt{R^{2}-r}}\mathrm{\, d}z\right)r\mathrm{\, d}r\mathrm{\, d}\varphi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\left(\int_{0}^{R}2\sqrt{R^{2}-r^{2}}r\mathrm{\, d}r\right)\mathrm{\, d}\varphi=2\pi\int_{0}^{R^{2}}w^{\unitfrac{1}{2}}\mathrm{\, d}w=\left.2\pi\cfrac{2}{3}w^{\unitfrac{3}{2}}\right|_{0}^{R^{2}}=\cfrac{4\pi}{3}R^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

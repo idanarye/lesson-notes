@@ -1,0 +1,1447 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+פעולות של חבורות על קבוצות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהינתן פעולת חבורה 
+\begin_inset Formula $\varphi:G\to S\left(X\right)$
+\end_inset
+
+, מסלול של איבר 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta\left(x\right)=\left\{ \varphi\left(g\right)\left(x\right):g\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה 
+\numeric on
+3
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פעולת ההצמדה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה, 
+\begin_inset Formula $X=G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi\left(g\right)=\sigma_{g}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{g}\left(x\right)=gxg^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהו המסלול 
+\begin_inset Formula $\theta\left(x\right)$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\theta\left(x\right)=\left\{ \varphi\left(g\right)\left(x\right):g\in G\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\{ gxg^{-1}:g\in G\right\} =\textnormal{conj}\left(x\right)
+\]
+
+\end_inset
+
+כלומר המסלול של 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא מחלקת הצמידות שלו.
+\end_layout
+
+\begin_layout Section*
+הגדרה - נקודת שבת
+\end_layout
+
+\begin_layout Standard
+היא נקודה 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\theta\left(x\right)=\left\{ x\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Enumerate
+למשל אם 
+\begin_inset Formula $X=G$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+ זו פעולת ההצמדה אז 
+\begin_inset Formula $e$
+\end_inset
+
+ היא נקודת שבת.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X=G$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פעולת כפל משמאל 
+\begin_inset Formula $\theta\left(e\right)=G=X$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ לא נקודת שבת.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+היחס 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $y\in\theta\left(x\right)$
+\end_inset
+
+ הוא יחס שקילות, לכל פעולת חבורה על קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $X=\coprod\theta\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ נציגי מסלולים.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא איחוד זר של מסלולים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ 
+\begin_inset Formula $\left|X\right|=\left|\left\{ \davidsstar\right\} \right|+\sum\limits _{\left|\theta\left(x\right)\right|\ge2}\left|\theta\left(x\right)\right|$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\left\{ \davidsstar\right\} $
+\end_inset
+
+ קבוצת נקודות השבת(.
+\end_layout
+
+\begin_layout Section*
+הגדרה - המייצב של 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\supseteq\boxed{\textnormal{St}\left(x\right)}=C_{x}=\left\{ g\in G:\varphi\left(g\right)\left(x\right)=x\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+במסלול בוחרים את כל הנקודות שאפשר להגיע להן מ
+\begin_inset Formula $x$
+\end_inset
+
+ דרך העתקות.
+ במייצב לוקחים את 
+\bar under
+ההעתקות/התמורות
+\bar default
+)בעצם איברים ב
+\begin_inset Formula $G$
+\end_inset
+
+( שעוברות דרך הנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{St}\left(x\right)\le G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ נקודת שבת, מהו 
+\begin_inset Formula $\textnormal{St}\left(x\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ נק' שבת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g\right)\left(x\right)=x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{St}\left(x\right)=G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פעולת ההצמדה ו
+\begin_inset Formula $x\in X=G$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{St}\left(a\right)=\left\{ g\in G:\varphi\left(g\right)\left(a\right)=a\right\} =\left\{ g\in G:gag^{-1}=a\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\{ g\in G:ga=ag\right\} =Z_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\theta\left(x\right)\right|=\left[G:\textnormal{St}\left(x\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\theta\left(x\right)\right||\left|G\right|
+\]
+
+\end_inset
+
+]בתנאי ש
+\begin_inset Formula $\infty>\left|G\right|$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Subsection*
+תרגיל בית
+\end_layout
+
+\begin_layout Standard
+הביטו בדוגמאות הקודמות וראו כי אכן מתקיימת המסקנה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שבפעולות חבורה של 
+\begin_inset Formula $G$
+\end_inset
+
+ מגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+27
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ מגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+223
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש בהכרח נקודות שבת.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ידוע כי 
+\begin_inset Formula $X=\coprod\theta\left(x\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|X\right|=$
+\end_inset
+
+ ומכיוון ש
+\begin_inset Formula $\left|\theta\left(x\right)\right||\left|G\right|$
+\end_inset
+
+, מקבלים 
+\begin_inset Formula $\left|\theta\left(x\right)\right|\in\left\{ 1,3,9,27\right\} $
+\end_inset
+
+ לכל נציג מסלול 
+\begin_inset Formula $x$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left|X\right|=a\cdot1+b\cdot3+c\cdot9+d\cdot27
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $a=0$
+\end_inset
+
+, אז 
+\begin_inset Formula $223=b\cdot3+c\cdot9+d\cdot27$
+\end_inset
+
+.
+ צד ימין מתחלק ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, צד שמאל לא 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סתירה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ישנן נקודות שבת.
+\end_layout
+
+\begin_layout Section*
+תרגיל ממבחן תשס"ז, מועד ב'
+\end_layout
+
+\begin_layout Standard
+החבורה 
+\begin_inset Formula $S\left(\left\{ 1,2,3,4\right\} \right)=S_{4}$
+\end_inset
+
+ פועלת על הפולינומים בארבעה משתנים באופן הבא: לכל 
+\begin_inset Formula $\pi\in S_{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(\pi\right)\left(f\left(x_{1},x_{2},x_{3},x_{4}\right)\right)=f\left(x_{\pi\left(1\right)},x_{\pi\left(2\right)},x_{\pi\left(3\right)},x_{\pi\left(4\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצא את גודל המסלול והמייצב של 
+\begin_inset Formula $f\left(x_{1},x_{2},x_{3},x_{4}\right)=x_{1}x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נחשב את הסדר של 
+\begin_inset Formula $f$
+\end_inset
+
+, והמייצב יבוא בעצמו.
+\begin_inset Formula 
+\[
+f\left(x_{\pi1},x_{\pi2},x_{\pi3},x_{\pi4}\right)=x_{\pi1}x_{\pi2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta\left(f\right)=\left\{ x_{1}x_{2},x_{1}x_{3},x_{1}x_{4},...\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\theta\left(f\right)\right|=\binom{4}{2}=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\left(24=\right)\left|S_{4}\right|}{\left|\textnormal{St}\left(f\right)\right|}=\left[S_{4}:\textnormal{St}\left(f\right)\right]=\left|\theta\left(f\right)\right|=6\Rightarrow\left|\textnormal{St}\left(f\right)\right|=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משוואות מחלקות צמידות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\in X,X=G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{conj}\left(x\right)=\left\{ gxg^{-1}:g\in G\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z_{x}=\left\{ g\in G:x=gxg^{-1}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+משפט: 
+\begin_inset Formula $\left|\textnormal{conj}\left(x\right)\right|=\left[G:Z_{x}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in Z\left(G\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\textnormal{conj}\left(x\right)=\left\{ x\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $Z_{x}=G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פעולת הצמדה
+\begin_inset Formula 
+\[
+X=G=\coprod\textnormal{conj}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|X\right|=\left|G\right|=\left|Z\left(G\right)\right|+\sum_{conj\ge2}\left|\textnormal{conj}\left(x\right)\right|=\left|Z\left(G\right)\right|+\sum_{x\notin Z\left(G\right)}\left[G:Z_{x}\right]
+\]
+
+\end_inset
+
+)הסכום הראשון הוא של מחלקות צמידות גדולות שוות ל
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה.
+ הוכח כי אם 
+\begin_inset Formula $\unitfrac{G}{Z\left(G\right)}$
+\end_inset
+
+ ציקלית אזי 
+\begin_inset Formula $G$
+\end_inset
+
+ אבלית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ מכיוון ש
+\begin_inset Formula $\unitfrac{G}{Z\left(G\right)}$
+\end_inset
+
+ ציקלית קיים 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\unitfrac{G}{Z\left(G\right)}=\left\langle aZ\left(G\right)\right\rangle $
+\end_inset
+
+.
+ כעת 
+\begin_inset Formula $xZ\left(G\right)\in\unitfrac{G}{Zm(G}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $xZ\left(G\right)=a^{i}Z\left(G\right)$
+\end_inset
+
+ לאיזשהו 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ ובדומה 
+\begin_inset Formula $yZ\left(G\right)=a^{k}Z\left(G\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $xZ\left(G\right)=a^{i}Z\left(G\right)$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+קיים 
+\begin_inset Formula $z_{1}\in Z\left(G\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=a^{i}z_{1}$
+\end_inset
+
+ ובאופן דומה קיים 
+\begin_inset Formula $z_{2}\in Z\left(G\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=a^{k}z_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+xy=a^{i}z_{1}a^{k}z_{2}=a^{i}a^{k}z_{1}z_{2}=a^{k}a^{i}z_{2}z_{1}=a^{k}z_{2}a^{i}z_{1}=yx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ מגודל 
+\begin_inset Formula $p\cdot q$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ ו
+\begin_inset Formula $q$
+\end_inset
+
+ ראשוניים אזי 
+\begin_inset Formula $Z\left(G\right)=G$
+\end_inset
+
+ או 
+\begin_inset Formula $Z\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שחבורה מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא אבלית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש
+\begin_inset Formula $\left|Z\left(G\right)\right|<15$
+\end_inset
+
+, אז לפי התרגיל הקודם 
+\begin_inset Formula $\left|Z\left(G\right)\right|=1$
+\end_inset
+
+.
+ עכשיו, כל מחלקת צמידות צריכה להיות מגודל 
+\begin_inset Formula $1,3,5$
+\end_inset
+
+ ]מחלקת צמידות היא מסלול ולכן גודלה מחלק את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+...[
+\begin_inset Formula 
+\[
+15=1+a\cdot3+b\cdot5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו, 
+\begin_inset Formula $b\le2$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $b=0$
+\end_inset
+
+, 
+\begin_inset Formula $b=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $15=1+a\cdot3$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $14=a\cdot3$
+\end_inset
+
+ - סתירה כי 
+\begin_inset Formula $3\nmid14$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b=2$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $15=1+a\cdot3+10$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $4=a\cdot3$
+\end_inset
+
+ - שוב סתירה כי 
+\begin_inset Formula $3\nmid4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $b=1$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ישנה מחלקת צמידות אחת מגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+: 
+\begin_inset Formula $\left\{ x,y,z,t,w\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\theta\left(x\right)\right|=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הסדר של 
+\begin_inset Formula $x$
+\end_inset
+
+ יכול להיות? הרי כל החזקות של 
+\begin_inset Formula $x$
+\end_inset
+
+ נמצאות ב
+\begin_inset Formula $Z_{x}$
+\end_inset
+
+ ולכן הסדר של 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\not1$
+\end_inset
+
+ או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+ עכשיו, ישנה מחלקת צמידות נוספת והיא כוללת
+\begin_inset Formula 
+\[
+\left\{ x^{2},y^{2},z^{2},w^{2},t^{2},...\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+]נסביר למה הם שונים.[
+\end_layout
+
+\begin_layout Standard
+אז זו מחלקה שכוללת לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איברים, ולכן היא מגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושווה למח' הקודמת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\ne x^{2}$
+\end_inset
+
+, בה"כ 
+\begin_inset Formula $x=y^{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=t^{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $t=z^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w=w^{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $o\left(w\right)=1$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+סתירה
+\end_layout
+
+\end_body
+\end_document

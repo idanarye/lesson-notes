@@ -1,0 +1,1180 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מערכות של מד"ר
+\end_layout
+
+\begin_layout Standard
+לצורך הנוחות נעבור משתנה מ
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $y\left(x\right)\to y\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מד"ר אחד)מסדר ראשון( 
+\begin_inset Formula $y'=f\left(t,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+זוג של מד"רים מסדר ראשון:
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}'=f_{1}\left(t,y_{1},y_{2}\right)\\
+y_{2}'=f_{2}\left(t,y_{1},y_{2}\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מערכת של 
+\begin_inset Formula $n$
+\end_inset
+
+ מד"רים:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y'_{1}=f_{1}\left(t,y_{1},...y_{n}\right)\\
+\vdots\\
+y'_{n}=f_{n}\left(t,y_{1},...y_{n}\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\vec{y}'=\vec{f}\left(t,\vec{y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לכתוב מד"ר מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ בצורה נורמלית כמערכת של 
+\begin_inset Formula $n$
+\end_inset
+
+ מד"רים)מסדר ראשון(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+לדוגמה
+\series default
+ 
+\begin_inset Formula $y''=f\left(t,y,y'\right)\hspace{1em}\left(*\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $\begin{array}{c}
+y_{1}=y\\
+y_{2}=y'
+\end{array}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\left(**\right)\left\{ \begin{array}{c}
+y_{1}'=y_{2}\\
+y_{2}'=f\left(t,y,y_{2}\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה שהראנו שניתן לקחת פתרון 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ ולבנות פתרון 
+\begin_inset Formula $\left(y_{1},y_{2}\right)$
+\end_inset
+
+של 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה גם הפוך.
+ בהינתן פיתרון 
+\begin_inset Formula $\left(y_{1},y_{2}\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $y=y_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $y'=y_{1}'=y_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=y'_{2}=f\left(t,y,y_{2}\right)=f\left(t,y,y'\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $y$
+\end_inset
+
+ פותר את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשוואה מסדר שלישי 
+\begin_inset Formula $y'''=f\left(t,y,y',y''\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}=y\\
+y_{2}=y'\\
+y_{3}=y''
+\end{array}\right.$
+\end_inset
+
+ואז 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}'=y_{2}\\
+y_{2}'=y_{3}\\
+y_{3}'=f\left(t,y,y',y''\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ההפך לא נכון!!!
+\end_layout
+
+\begin_layout Standard
+יש מערכות של 
+\begin_inset Formula $n$
+\end_inset
+
+ מד"רים )מסדר ראשון( שלא ניתן לפתור במשוואה מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+בעיית קושי למערכת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{y}'=\vec{f}\left(t,\vec{y}\right)$
+\end_inset
+
+ + תנאי התחלה 
+\begin_inset Formula $\vec{y}\left(t_{0}\right)=\vec{y}_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט קיום ויחידות לבעיית קושי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{f}\left(t,\vec{y}\right)$
+\end_inset
+
+ מוגדרת על "מלבן"
+\begin_inset Formula 
+\[
+a,b_{1},..b_{n}>0\left\{ \begin{array}{c}
+\left|t-t_{0}\right|\le a\\
+\left|\left(\vec{y}-\vec{y}_{0}\right)_{1}\right|\le b_{1}\\
+\vdots\\
+\left|\left(\vec{y}-\vec{y}_{0}\right)_{n}\right|\le b_{n}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ רציפה על המלבן 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|f_{1}\right|\le M_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f_{2}\right|\le M_{2}$
+\end_inset
+
+,...
+ 
+\begin_inset Formula $\left|f_{n}\right|\le M_{n}$
+\end_inset
+
+ על 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תנאי ליפשיץ:
+\begin_inset Formula 
+\[
+\left|\vec{f}\left(t,\vec{y}\right)-\vec{f}\left(t,\vec{Y}\right)\right|\le k\left\Vert \vec{y}-\vec{Y}\right\Vert 
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\left(t,\vec{y}\right),\left(t,\vec{Y}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תחת תנאים אלה קיים פתרון אחד ויחיד לבעיית קושי והוא מוגדר בקטע 
+\begin_inset Formula $\left|t-t_{0}\right|\le\min\left\{ a,\cfrac{b_{1}}{M_{1}},...\cfrac{b_{n}}{M_{n}}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+דומה למשוואה אחת)הרצאה קודמת( - לא נוכיח.
+ הכל מבוסס על המשוואה האינטגרלית
+\begin_inset Formula 
+\[
+\vec{y}\left(t\right)=\vec{y}\left(t_{0}\right)+\int_{t_{0}}^{t}\vec{f}\left(s,\vec{y}\left(s\right)\right)ds
+\]
+
+\end_inset
+
+משפט הקיום והיחידות למשוואה מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נובע מהמשפט למערכות של המשוואות)מסדר ראשון(.
+\end_layout
+
+\begin_layout Part*
+מערכת לינארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{y}'=f\left(t,\vec{y}\right)$
+\end_inset
+
+ - מערכת כללית.
+ מערכת לינארית היא
+\begin_inset Formula 
+\[
+\vec{y}'=A\left(t\right)\vec{y}+\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $A\left(t\right)$
+\end_inset
+
+ מטריצה 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{b}\left(t\right)$
+\end_inset
+
+ קטע ממימד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\numeric off
+)סקלר(
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y_{1}'=a_{11}\left(t\right)y_{1}+a_{12}\left(t\right)y_{2}+...+a_{1n}\left(t\right)y_{n}+b_{1}\left(t\right)\\
+\vdots\\
+y_{n}'=a_{n1}\left(t\right)y_{1}+a_{n2}\left(t\right)y_{2}+...+a_{nn}\left(t\right)y_{n}+b_{1}\left(t\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+המערכת הומוגנית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\vec{b}\left(t\right)=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל מה שלמדנו למשוואה לינארית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+, יש לו אנלוג למערכות לינאריות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+1
+\numeric off
+( מרחב הפתרונות של מערכת הומוגנית הוא מרחב וקטורי, כלומר אם 
+\begin_inset Formula $\vec{y}^{\left(1\right)},\vec{y}^{\left(2\right)}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתרונות של המערכת ו
+\begin_inset Formula $\alpha_{1},\alpha_{2}\in\mathbb{R}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\vec{y}=\alpha_{1}\vec{y}^{\left(1\right)}+\alpha_{2}\vec{y}^{\left(2\right)}$
+\end_inset
+
+ הוא גם פתרון.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\vec{y}^{\left(1\right)\prime}=A\left(t\right)\vec{y}^{\left(1\right)}\\
+\vec{y}^{\left(2\right)\prime}=A\left(t\right)\vec{y}^{\left(2\right)}
+\end{array}\right.$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\alpha,\vec{y}^{\left(1\right)}+\alpha_{2}\vec{y}^{\left(2\right)}\right)'=A\left(\alpha_{1}\vec{y}^{\left(1\right)}+\alpha_{2}\vec{y}^{\left(2\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+2
+\numeric off
+( ניתן לכתוב את הפתרון הכללי של האי הומוגני בצורה 
+\begin_inset Formula $\vec{y}=\vec{y}_{p}+\vec{y}_{c}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\vec{y}_{p}$
+\end_inset
+
+ זה פתרון פרטי של האי הומוגני ו
+\begin_inset Formula $\vec{y}_{c}$
+\end_inset
+
+ זה פתרון כללי של ההומוגני.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+3
+\numeric off
+( האנלוג של הוורונסקיאן הוא
+\begin_inset Formula 
+\[
+W=\left(\vec{y}^{\left(1\right)},\vec{y}^{\left(2\right)},...\vec{y}^{\left(n\right)}\right)=\det\left|\begin{vmatrix}\vec{y}^{\left(11\right)} & ... & \vec{y}^{\left(1n\right)}\end{vmatrix}\right|
+\]
+
+\end_inset
+
+מטריצה עם עמודות.
+\end_layout
+
+\begin_layout Section*
+משפט ליוביל )אוסטרוגרדסקי(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\vec{y}^{\left(1\right)},...\vec{y}^{\left(n\right)}$
+\end_inset
+
+ פתרונות של 
+\begin_inset Formula $\vec{y}'=A\left(t\right)\vec{y}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\int_{t_{0}}^{t}\textnormal{Tr}\left(A\left(s\right)\right)ds$
+\end_inset
+
+ כאשר
+\begin_inset Formula $W\left(t\right)=W\left(t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W=\det\begin{pmatrix}\vec{y}^{\left(1\right)} & \vec{y}^{\left(2\right)} & ... & \vec{y}^{\left(n\right)}\end{pmatrix}
+\]
+
+\end_inset
+
+ניתן לגזור שורה שורה או עמודה עמודה)נגזור שורה שורה(:
+\end_layout
+
+\begin_layout Standard
+שורה 
+\begin_inset Formula $i$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{pmatrix}y_{i}^{\left(1\right)} & ... & y_{i}^{\left(n\right)}\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{i}^{\left(1\right)\prime} & ... & y_{i}^{\left(n\right)\prime}\end{pmatrix}=\begin{pmatrix}A_{i}\vec{y}^{\left(1\right)} & ... & A_{i}\vec{y}^{\left(n\right)}\end{pmatrix}=A_{i}\begin{pmatrix}\vec{y}^{\left(1\right)} & ... & \vec{y}^{\left(n\right)}\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו רוצים להסתכל על
+\begin_inset Formula 
+\[
+\det\begin{pmatrix}y_{1}^{\left(n\right)} & ... & y_{1}^{\left(2\right)} & ... & y_{n}^{\left(n\right)}\\
+y_{2} & ... & y_{2}^{\left(2\right)} & ... & y_{n}^{\left(2\right)}\\
+\vdots & \vdots & \vdots & \vdots & \vdots\\
+A_{i1}y_{1}^{\left(1\right)}+A_{i2}y_{2}^{\left(1\right)} & ... & A_{i1}y_{1}^{\left(2\right)}+A_{i2}y_{2}^{\left(2\right)} & ... & A_{i1}y_{1}^{\left(n\right)}+A_{i2}y_{2}^{\left(n\right)}\\
+\vdots & \vdots & \vdots & \vdots & \vdots
+\end{pmatrix}
+\]
+
+\end_inset
+
+כל דבר שבשורה שגזרנו ניתן להוריד ע"י צירוף עם שורה אחרת למעט 
+\begin_inset Formula $\begin{pmatrix}A_{ii}y_{i}^{\left(1\right)} & ... & A_{ii}y_{i}^{\left(n\right)}\end{pmatrix}$
+\end_inset
+
+, ולכן זה שווה 
+\begin_inset Formula $A_{ii}W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לעשות את הנגזרת של ה
+\begin_inset Formula $\det$
+\end_inset
+
+ גוזרים שורה שורה
+\begin_inset Formula 
+\[
+W'=A_{11}W+A_{22}W+...+A_{nn}W=\textnormal{Tr}\left(A\right)W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\ln W\right)'=\cfrac{W'}{W}=\textnormal{Tr}\left(A\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln W\left(t\right)-\ln W\left(t_{0}\right)=\int_{t_{0}}^{t}\textnormal{Tr}\left(A\left(s\right)\right)ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{W\left(t\right)=W\left(t_{0}\right)e^{\int_{t_{0}}^{t}\textnormal{Tr}\left(A\left(s\right)\right)ds}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{y}'=A\left(t\right)\vec{y}+\vec{b}\left(t\right)$
+\end_inset
+
+ - מ.
+ לינארית
+\end_layout
+
+\begin_layout Section*
+וריאציית מקדמים
+\end_layout
+
+\begin_layout Standard
+בהינתןו כל הפתרונות של ההומוגני, איך פותרים לא הומוגני?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+ - 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל 
+\begin_inset Formula $\vec{y}^{\left(1\right)},\vec{y}^{\left(2\right)},...\vec{y}^{\left(n\right)}$
+\end_inset
+
+.
+ הפתרון הכללי של ההומוגני
+\begin_inset Formula 
+\[
+\alpha_{1}\vec{y}^{\left(1\right)}+\alpha_{2}\vec{y}^{\left(2\right)}+...+\alpha_{n}\vec{y}^{\left(n\right)}=\begin{pmatrix}\vec{y}^{\left(1\right)} & ... & \vec{y}^{\left(n\right)}\end{pmatrix}\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}=Y
+\]
+
+\end_inset
+
+נקרא למטריצה זו 
+\begin_inset Formula $Y$
+\end_inset
+
+ - מטריצת פתרון יסודית.
+\end_layout
+
+\begin_layout Standard
+פתרון ההומוגני: 
+\begin_inset Formula $Y\vec{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קבוע.
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון של האי הומוגני בצורה 
+\begin_inset Formula $\vec{y}=Y\vec{\alpha}\left(t\right)$
+\end_inset
+
+.
+ רוצים 
+\begin_inset Formula $\vec{y}'=A\left(t\right)\vec{y}+b\left(t\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Y'\vec{\alpha}+Y\vec{\alpha}'=AY\vec{\alpha}+\vec{b}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל עמודה 
+\begin_inset Formula $Y_{k}$
+\end_inset
+
+ מקיימת את ההומוגני 
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Y'=AY$
+\end_inset
+
+.
+ יש לבחור 
+\begin_inset Formula $\vec{\alpha}'=Y^{-1}\vec{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\overset{A}{\overbrace{\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}}}\vec{y}+\overset{\vec{b}}{\overbrace{\begin{pmatrix}1\\
+t
+\end{pmatrix}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y'_{1}=-y_{2}+1\\
+y'_{2}=2y_{1}+3y_{2}+t
+\end{array}\right.
+\]
+
+\end_inset
+
+המערכת ההומוגנית היא:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y'_{1}=-y_{2}\\
+y'_{2}=2y_{1}+3y_{2}
+\end{array}\right.\Rightarrow-y_{1}''=2y_{1}-3y_{1}'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow y_{1}''-3y_{1}'+2y_{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{2}-3m+2=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(m-1\right)\left(m-2\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}=e^{t}\\
+y_{2}=e^{2t}
+\end{array}\right.$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - בת"ל.
+ לכן פתרונות בת"ל של המערכת הם:
+\begin_inset Formula 
+\[
+\vec{y}^{\left(1\right)}=\begin{pmatrix}e^{t}\\
+-e^{t}
+\end{pmatrix}\hspace{1em}\vec{y}^{\left(2\right)}=\begin{pmatrix}e^{2t}\\
+-2e^{2t}
+\end{pmatrix}
+\]
+
+\end_inset
+
+פתרון כללי של המערכת ההומוגנית:
+\begin_inset Formula 
+\[
+\alpha_{1}\begin{pmatrix}e^{t}\\
+-e^{t}
+\end{pmatrix}+\alpha_{2}\begin{pmatrix}e^{2t}\\
+-2e^{2t}
+\end{pmatrix}=\begin{pmatrix}e^{t} & e^{2t}\\
+-e^{t} & -2e^{2t}
+\end{pmatrix}\begin{pmatrix}\alpha_{1}\\
+\alpha_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למערכת האי הומוגנית הפתרון 
+\begin_inset Formula $Y\vec{\alpha}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\vec{\alpha}'=Y^{-1}b$
+\end_inset
+
+.
+ בשבילנו:
+\begin_inset Formula 
+\[
+\vec{\alpha}'=\cfrac{1}{-e^{3t}}\begin{pmatrix}-2e^{2t} & -e^{2t}\\
+e^{t} & e^{t}
+\end{pmatrix}\begin{pmatrix}1\\
+t
+\end{pmatrix}=\begin{pmatrix}\left(2+t\right)e^{-t}\\
+-\left(1+t\right)e^{-2t}
+\end{pmatrix}
+\]
+
+\end_inset
+
+נבצע אינטגרל:
+\begin_inset Formula 
+\[
+\vec{\alpha}-\begin{pmatrix}-\left(2+t\right)e^{-t}-e^{-t}\\
+\cfrac{1}{2}\left(1+t\right)e^{-2t}+\cfrac{1}{4}e^{-2t}
+\end{pmatrix}+\textnormal{const}=\begin{pmatrix}-\left(3+t\right)e^{-t}\\
+\cfrac{1}{4}\left(3+2t\right)e^{-2t}
+\end{pmatrix}+\textnormal{const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}=Y\vec{\alpha}=\begin{pmatrix}e^{t} & e^{2t}\\
+-e^{t} & -2e^{2t}
+\end{pmatrix}\begin{pmatrix}-\left(3+t\right)e^{-t}\\
+\cfrac{1}{4}\left(3+2t\right)e^{-2t}
+\end{pmatrix}+\left(*\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ פתרון כללי של ההומוגני.
+\end_layout
+
+\begin_layout Part*
+מערכות עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=A\vec{y}+\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ קבועה, לא תלויה ב
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+האקספוננציאל המטריציאלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ מטריצה 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\exp\left(M\right)=I+M+\cfrac{M^{2}}{2!}+\cfrac{M^{3}}{3!}+...
+\]
+
+\end_inset
+
+האם זה מתכנס?)
+\begin_inset Formula $n\times n$
+\end_inset
+
+ אינסופיים(
+\end_layout
+
+\begin_layout Standard
+ניתן לכתוב 
+\begin_inset Formula $M=UDU^{-1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא בצורה נורמלית של ז'ורדן
+\begin_inset Formula 
+\[
+M^{2}=UDU^{-1}UDU^{-1}=U\left(D^{2}\right)U^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exp\left(M\right)=UU^{-1}+UDU^{-1}+\cfrac{UD^{2}U^{-1}}{2!}+...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=U\left(I+D+\cfrac{D^{2}}{2!}+\cfrac{D^{3}}{3!}+...\right)U^{-1}
+\]
+
+\end_inset
+
+מספיק להוכיח התכנסות למטריצה בצורה נורמלית של ז'ורדן.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מטריצה עם בלוקים עושים חזקות לכל בלוק בנפרד.
+ לכן, בפועל מספיק להוכיח לבלוק אחד של ז'ורדן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\begin{pmatrix}\lambda & 1\\
+ & \lambda & 1\\
+ &  & \ddots & \ddots\\
+ &  &  & \ddots & 1\\
+ &  &  &  & \lambda
+\end{pmatrix},M^{2}=\begin{pmatrix}\lambda^{2} & 2\lambda & 1\\
+ & \lambda^{2} & 2\lambda & \ddots\\
+ &  & \ddots & \ddots & 1\\
+ &  &  & \ddots & 2\lambda\\
+ &  &  &  & \lambda^{2}
+\end{pmatrix},M^{3}=\begin{pmatrix}\lambda^{3} & 3\lambda^{2} & 3\lambda & 1\\
+ & \lambda^{3} & 3\lambda^{2} & 3\lambda & \ddots\\
+ &  & \ddots & \ddots & \ddots & 1\\
+ &  &  & \ddots & 3\lambda^{2} & 3\lambda\\
+ &  &  &  & \lambda^{3} & 3\lambda^{2}\\
+ &  &  &  &  & \lambda^{3}
+\end{pmatrix}
+\]
+
+\end_inset
+
+נסתכל על
+\begin_inset Formula 
+\[
+I+M+\cfrac{M^{2}}{2!}+...+\cfrac{M^{3}}{3!}
+\]
+
+\end_inset
+
+אלכסון ראשי:
+\begin_inset Formula 
+\[
+1+\lambda+\cfrac{\lambda^{2}}{2!}+\cfrac{\lambda^{3}}{3!}+...=e^{\lambda}
+\]
+
+\end_inset
+
+אלכסון מעל הראשי
+\begin_inset Formula 
+\[
+1+\cfrac{2\lambda}{2!}+\cfrac{3\lambda^{2}}{3!}+\cfrac{4\lambda^{3}}{4!}+...=e^{\lambda}
+\]
+
+\end_inset
+
+האלכסון הבא
+\begin_inset Formula 
+\[
+\cfrac{1}{2}+\cfrac{3\lambda}{3!}+\cfrac{6\lambda^{2}}{4!}+...=\cfrac{e^{\lambda}}{2}
+\]
+
+\end_inset
+
+ניתן לבדוק כך שהכל מתכנס.
+\end_layout
+
+\end_body
+\end_document

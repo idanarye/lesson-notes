@@ -1,0 +1,2065 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אתר הקורס -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://u.math.biu.ac.il/~katzmik/88-526.html
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1
+\numeric off
+.
+ גיאומטריה אנליטית
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ספירה, גיאומטריה פרואקטיבית
+\end_layout
+
+\begin_layout Standard
+ספירה מסומנת 
+\begin_inset Formula $S^{2}\subset\mathbb{R}^{3}$
+\end_inset
+
+, מוגדרת 
+\begin_inset Formula $S^{2}=\left\{ \left(x,y,z\right)\in\mathbb{R}^{3}\middle|\sqrt{x^{2}+y^{2}+z^{2}}=1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+מעגל ראשי על הספירה הוא חיתוך בינה לבין מישור העובר דרך 
+\bar under
+ראשית הצירים
+\bar default
+.
+\end_layout
+
+\begin_layout Paragraph
+מישור פרואקטיבי ממשי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}P^{2}=\unitfrac{S^{2}}{\left\{ \pm\textnormal{Id}\right\} }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעגל, אי שוויון איזופרימטרי
+\end_layout
+
+\begin_layout Standard
+מעגל)במישור( מסומן 
+\begin_inset Formula $S^{1}\subset\mathbb{R}^{2}$
+\end_inset
+
+, מוגדר 
+\begin_inset Formula $S^{1}=\left\{ \left(x,y\right)\middle|x^{2}+y^{2}=1\right\} $
+\end_inset
+
+.
+ זוהי עקומה במישור - סוג של עקומת ג'ורדן
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+עקומת ג'ורדן היא עקומה במישור שלא חותכת את עצמה והיא סגורה)כלומר מתסיימת
+ בנקודת ההתחלה שלה(.
+\end_layout
+
+\begin_layout Section*
+אי שוויון איזופרימטרי
+\end_layout
+
+\begin_layout Standard
+אם לוקחים עקומת ג'ורדן, יש לה שתי תכונות 
+\begin_inset Formula $L$
+\end_inset
+
+)אורך המסילה( ו
+\begin_inset Formula $A$
+\end_inset
+
+)השטח בפנים( שלא משתנות כשמזיזים אותה.
+ אי השוויון האיזופרימטרי אומר ש:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\cfrac{L}{2\pi}\right)^{2}-\cfrac{A}{\pi}\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+במקרה של שוויון - בהכרח מעגל
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תורת היחסות של
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Einstein
+\end_layout
+
+\begin_layout Standard
+כדי לפתח את תורת היחסות שלו, איינשטיין היה צריך לפתח את הגיאומרטריה הדיפרנציאלית
+, בעיקר את מושג העקמומיות.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אלגברה לינארית, סימון האינדקסים)
+\lang english
+index notation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+במרחב הוקטורי 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, ניקח שני וקטורים 
+\begin_inset Formula $v,w\in\mathbb{R}^{n}$
+\end_inset
+
+)וקטורי עמודה(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $B$
+\end_inset
+
+ מטריצה 
+\begin_inset Formula $m\times n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מטריצה בתור תבנית בי-לינארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B:\underset{\left(v,w\right)\mapsto B\left(v,w\right)}{\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(v,w\right)=v^{t}Bw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן יותר מפורט: נניח 
+\begin_inset Formula $B=\left(b_{ij}\right)_{\begin{array}{c}
+i=1,...n\\
+j=1,...n
+\end{array}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $n=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+v=\begin{pmatrix}v^{1}\\
+v^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=\begin{pmatrix}w^{1}\\
+w^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+)הקואורדינטות של הווקטורים למעלה - זה סימון שאיינשטיין פיתח(
+\begin_inset Formula 
+\[
+B=\begin{bmatrix}b_{11} & b_{12}\\
+b_{21} & b_{22}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Bw=\begin{bmatrix}b_{11} & b_{12}\\
+b_{21} & b_{22}
+\end{bmatrix}\begin{pmatrix}w^{1}\\
+w^{2}
+\end{pmatrix}=\begin{bmatrix}b_{11}w^{1}+b_{12}w^{2}\\
+b_{21}w^{1}+b_{ww}w^{2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v^{t}=\begin{bmatrix}v^{1} & v^{2}\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v^{t}Bw=\begin{bmatrix}v^{1} & v^{2}\end{bmatrix}\begin{bmatrix}b_{11}w^{1}+b_{12}w^{2}\\
+b_{21}w^{1}+b_{ww}w^{2}
+\end{bmatrix}=b_{11}v^{1}w^{1}+b_{12}v^{1}w^{2}+b_{21}v^{2}w^{1}+b_{22}v^{2}w^{2}
+\]
+
+\end_inset
+
+נקצר באמצעות כתיב סיגמה:
+\begin_inset Formula 
+\[
+v^{t}Bw=\sum_{i=1}^{2}\sum_{j=1}^{2}b_{ij}v^{i}w^{j}
+\]
+
+\end_inset
+
+איינשטיין קיצר והשמיט את הסיגמות:
+\begin_inset Formula 
+\[
+v^{t}Bw=\cancel{\sum_{i=1}^{n}}\cancel{\sum_{j=1}^{n}}b_{ij}v^{i}w^{j}=b_{ij}v^{i}w^{j}\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\emph on
+ההסכמה מאז אינשטיין היא שאם רואים כזה ביטוי, שבו יש אינדקסים גם למעלה וגם
+ למטה, הוא סכום ולא איבר בודד.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סימון של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Einstein
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\left(v,w\right)=b_{ij}v^{i}w^{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $B$
+\end_inset
+
+ מטריצה 
+\bar under
+סימטרית
+\bar default
+ 
+\begin_inset Formula $B=\begin{pmatrix}b_{11} & b_{12}\\
+b_{12} & b_{22}
+\end{pmatrix}$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $b_{21}=b_{12}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxed{B^{t}=B}$
+\end_inset
+
+ - ההגדרה של מטריצה סימטרית.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $B$
+\end_inset
+
+ מטריצה סימטרית.
+ היא מגדירה תבנית בילינארית 
+\begin_inset Formula $B\left(v,w\right):\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+תבנית ריבועית המתאימה 
+\begin_inset Formula $Q$
+\end_inset
+
+ היא התבנית 
+\begin_inset Formula $Q\left(v\right)=B\left(v,v\right)=b_{ij}v^{i}v^{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נוסחת פולריזציה
+\end_layout
+
+\begin_layout Standard
+הנוסחה מראה איך אפשר לבנות את 
+\begin_inset Formula $B$
+\end_inset
+
+ חזרה מתוך 
+\begin_inset Formula $Q$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{B\left(v,w\right)=\cfrac{1}{4}\left(Q\left(v+w\right)-Q\left(v-w\right)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצה בתור העתקה לינארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B:\underset{v\mapsto Bv}{\mathbb{R}^{n}\to\mathbb{R}^{n}}
+\]
+
+\end_inset
+
+מסמנים מקדמים של 
+\begin_inset Formula $B$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $B=\left(b_{\: j}^{i}\right)$
+\end_inset
+
+ - זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+staggering indices
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- השורה נמצאת למעלה, והעמודה נמצאת למטה בהזחה)יש ריבוע ריק מתחת למספר השורה(.
+\end_layout
+
+\begin_layout Standard
+עכשיר אפשר לכתוב:
+\begin_inset Formula 
+\[
+B:\mathbb{R}^{n}\to\mathbb{R}^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=Bv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\left(v^{j}\right)_{j=1,...n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=\left(w^{i}\right)_{i=1,...n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left(b_{\: j}^{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{w^{i}=\sum_{j=1}^{n}b_{\: j}^{i}v^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{w^{i}=b_{\: j}^{i}v^{j}}
+\]
+
+\end_inset
+
+עם חיבור על אינדקס 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+עקבה 
+\begin_inset Formula $\textnormal{Tr}\left(B\right)$
+\end_inset
+
+ של מטריצה 
+\begin_inset Formula $B$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\textnormal{Tr}\left(B\right)=b_{\:1}^{1}+b_{\:2}^{2}+...+b_{\: n}^{n}=\sum_{i=1}^{n}b_{\: j}^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Tr}\left(B\right)=b_{\: j}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.7
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סימטריזציה ואנטי סימטריזציה
+\end_layout
+
+\begin_layout Standard
+נחזור לסימונים 
+\begin_inset Formula $B=\left(b_{ij}\right)$
+\end_inset
+
+)כלומר של תבנית בי-לינארית(.
+\end_layout
+
+\begin_layout Standard
+סימטריזציה 
+\begin_inset Formula $S$
+\end_inset
+
+ של 
+\begin_inset Formula $B$
+\end_inset
+
+ היא מטריצה
+\begin_inset Formula 
+\[
+S=\cfrac{1}{2}\left(B+B^{t}\right)=\left(\cfrac{1}{2}\right)\left(b_{ij}+b_{ji}\right)
+\]
+
+\end_inset
+
+אנטי-סימטריזציה 
+\begin_inset Formula $A$
+\end_inset
+
+ של 
+\begin_inset Formula $B$
+\end_inset
+
+ היא מטריצה
+\begin_inset Formula 
+\[
+A=\cfrac{1}{2}\left(B-B^{t}\right)=\left(\cfrac{1}{2}\left(b_{ij}+b_{ji}\right)\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+B=S+A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סימונים נוספים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b_{\left[ij\right]}=\cfrac{1}{2}\left(b_{ij}-b_{ji}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{\left\{ i,j\right\} }=\cfrac{1}{2}\left(b_{ij}+b_{ji}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $B=\left(b_{ij}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+B=S+A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left(s_{ij}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left(a_{ij}\right)
+\]
+
+\end_inset
+
+אזי
+\begin_inset Formula 
+\[
+s_{ij}=b_{\left\{ ij\right\} }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{ij}=b_{\left[ij\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+מטריצה 
+\begin_inset Formula $B$
+\end_inset
+
+ היא סימטרית אם ורק אם לכל 
+\begin_inset Formula $i,j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b_{\left[ij\right]}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b_{\left[ij\right]}=\cfrac{1}{2}\left(b_{ij}-b_{ji}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.8
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כפל מטריצי בסימונים אינדקסיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(a_{ij}\right),B=\left(b_{ij}\right),C=\left(c_{ij}\right)$
+\end_inset
+
+ מטריצות שרירותיות המקיימות 
+\begin_inset Formula $\boxed{C=AB}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}}
+\]
+
+\end_inset
+
+כפל של סקלרים הוא קומוטטיבי, ולכן ניתן לכתוב את הנוסחה גם בתור
+\begin_inset Formula 
+\[
+\boxed{c_{ij}=\sum_{k=1}^{n}b_{kj}a_{ik}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו ניתן לכתוב
+\begin_inset Formula 
+\[
+\boxed{c_{\left[ij\right]}=\sum_{k=1}^{n}b_{k[j}a_{i]k}}
+\]
+
+\end_inset
+
+)הסוגריים המרובעות נפתחות באינדקס התחתון של 
+\begin_inset Formula $b$
+\end_inset
+
+, ונסגרות באינדקס התחתון של 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+b_{k[j}a_{i]k}=\cfrac{1}{2}\left(b_{ki}a_{ik}-b_{ki}a_{jk}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הרכבה
+\end_layout
+
+\begin_layout Standard
+אם מסתכלים על מטריצות בתור העתקות, ניתן לבצע הרכבה:
+\begin_inset Formula 
+\[
+\xymatrix{\mathbb{R}^{n}\ar^{B}[rr]\ar_{C}@/_{2pc}/[rrrr] &  & \mathbb{R}^{n}\ar^{A}[rr] &  & \mathbb{R}^{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=AB
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\left(c_{\: j}^{i}\right),B=\left(b_{\: j}^{i}\right),A=\left(a_{\: j}^{i}\right)
+\]
+
+\end_inset
+
+ בסימון אינשטיין ניתן לכתוב
+\begin_inset Formula 
+\[
+a_{\: j}^{i}=a_{\: k}^{i}b_{\: j}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצה הופכית, פונקציית דלטה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Kronecker
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B=\left(b_{ij}\right)$
+\end_inset
+
+, אזי מטריצה הופכית היא 
+\begin_inset Formula $B^{-1}$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+BB^{-1}=\textnormal{Id}_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B^{-1}B=\textnormal{Id}_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Id}_{n}=\begin{bmatrix}1 &  & 0\\
+ & \ddots\\
+0 &  & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B^{-1}=\left(b^{ij}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B^{-1}=\cfrac{1}{\det B}\begin{pmatrix}d & -b\\
+-c & a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det B=ad-bc
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}b_{11} & b_{12}\\
+b_{21} & b_{22}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B^{-1}=\cfrac{1}{b_{11}b_{22}-b_{12}b_{21}}\begin{bmatrix}b_{22} & -b_{12}\\
+-b_{21} & b_{11}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b^{11}=\cfrac{b_{22}}{b_{11}b_{22}-b_{12}b_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פונקציית דלטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\textnormal{Id}=\left(\delta_{\: j}^{i}\right)_{\begin{array}{c}
+i=1,...n\\
+j=1,...n
+\end{array}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta_{\: j}^{i}=\begin{cases}
+1 & i=j\\
+0 & i\neq j
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B^{-1}B=\textnormal{Id}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b^{ik}b_{kj}=\delta_{\: j}^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+BI=B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{k}^{i}\delta_{\: j}^{k}=b_{\: j}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מכפלה וקטורית ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v\cdot w=\sum_{i=0}^{3}v^{i}w^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\times w=\det\begin{vmatrix}\vec{e}_{1} & \vec{e}_{2} & \vec{e}_{3}\\
+v^{1} & v^{2} & v^{3}\\
+w^{1} & w^{2} & w^{3}
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i=e_{1}=\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}\qquad j=e_{2}=\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}\qquad k=e_{3}=\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\times w=\det\begin{pmatrix}v^{2} & v^{3}\\
+w^{2} & w^{3}
+\end{pmatrix}\vec{e}_{1}-\det\begin{pmatrix}v^{1} & v^{3}\\
+w^{1} & w^{3}
+\end{pmatrix}\vec{e}_{2}+\det\begin{pmatrix}v^{1} & v^{2}\\
+w^{1} & w^{2}
+\end{pmatrix}\vec{e}_{3}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(v^{2}w^{3}-v^{3}w^{2}\right)\vec{e}_{1}-\left(v^{1}w^{3}-v^{3}w^{1}\right)\vec{e}_{2}+\left(v^{1}w^{2}-v^{2}w^{1}\right)\vec{e}_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\times w$
+\end_inset
+
+ הוא מאונך גם ל
+\begin_inset Formula $v$
+\end_inset
+
+ וגם ל
+\begin_inset Formula $w$
+\end_inset
+
+, באורך 
+\begin_inset Formula $\left|v\times w\right|$
+\end_inset
+
+ שווה לשטח של המקבילית
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & \,\\
+ & w\ar@{-}[rru]\\
+ &  & v\ar@{-}[ruu]\\
+\,\ar[rru]\ar[ruu]
+}
+\]
+
+\end_inset
+
+ומקיים כלל של יד ימין.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(v_{1},v_{2},v\times w\right)$
+\end_inset
+
+ - בסיס "ישר"
+\begin_inset Formula 
+\[
+v\times w=-\left(w\times v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{a\times\left(b\times c\right)=\left(a\cdot c\right)b-\left(a\cdot b\right)c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ערכים עצמיים, סימטריה
+\end_layout
+
+\begin_layout Standard
+בדרך כלל, למטריצה ממשית יכול לא להיות שום ערך עצמי ממשי, למשל 
+\begin_inset Formula $\begin{bmatrix}0 & -1\\
+1 & 0
+\end{bmatrix}$
+\end_inset
+
+ - זוהי מטריצה שמסובבת ב
+\numeric on
+90
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות - ולכן אף ווקטור לא ישאר באותו כיוון אחרי כפל במטריצה הזו.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ הוא ערך עצמי של 
+\begin_inset Formula $B$
+\end_inset
+
+ אם 
+\begin_inset Formula $\det\left(B-\lambda I\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא ערך עצמי של 
+\begin_inset Formula $B$
+\end_inset
+
+, אזי קיים ווקטור 
+\begin_inset Formula $0\neq v\in\mathbb{R}^{n}$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $Bv=\lambda v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ כזה נקרא וקטור עצמי שייך ל
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מכפלה סקלרית ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle v,w\right\rangle =v'w'+...+v^{n}w^{n}=\sum_{i=0}^{n}v^{i}w^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\left\langle v,w\right\rangle =v^{t}w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+לכל מטריצות 
+\begin_inset Formula $A,B$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(AB\right)^{t}=B^{t}A^{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+מטריצה ממשית 
+\begin_inset Formula $B$
+\end_inset
+
+ היא סימטרית אם ורק אם מתקיים לכל וקטורים 
+\begin_inset Formula $v,w\in\mathbb{R}^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle Bv,w\right\rangle =\left\langle v,Bw\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle v,w\right\rangle =v^{t},w
+\]
+
+\end_inset
+
+תהי 
+\begin_inset Formula $B$
+\end_inset
+
+ מטריצה סימטרית 
+\begin_inset Formula $B=B^{t}$
+\end_inset
+
+.
+ נחשב:
+\begin_inset Formula 
+\[
+\left\langle Bv,w\right\rangle =\left(Bv\right)^{t}w=\left(v^{t}B^{t}\right)w=v^{t}\left(B^{t}w\right)=\left\langle v,B^{t}w\right\rangle =\left\langle v,Bw\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.11
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ערך עצמי של מטריצה סימטרית
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+לכל מטריצה ממשית סימטרית יש ערך עצמי ממשי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $M_{n,n}\left(\mathbb{R}\right)$
+\end_inset
+
+ אוסף של כל המטריצות בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\in M_{n,n}\left(\mathbb{R}\right)$
+\end_inset
+
+ מגדירה העתקה לינארית 
+\begin_inset Formula $B_{\mathbb{R}}:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצד שני, 
+\begin_inset Formula $R\subset\mathbb{C}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $B\in M_{n,n}\left(\mathbb{R}\right)\subset M_{n,n}\left(\mathbb{C}\right)$
+\end_inset
+
+, ולכן ניתן לראות את המטריצה גם בתור העתקה על השדה 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+: 
+\begin_inset Formula $B_{\mathbb{C}}:\mathbb{C}^{n}\to\mathbb{C}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפולינום האופייני שלה הוא בדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{B}\left(\lambda\right)=\det\left(B-\lambda I\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט יסודי של אלגברה
+\end_layout
+
+\begin_layout Standard
+לכל פולינום)לא קבוע( מעל 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ יש שורש ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $\lambda\in\mathbb{C}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P_{B}\left(\lambda\right)=0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא ערך עצמי של 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+מכפלה הרמיטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+, מכפלה הרמיטית)
+\lang english
+Hermitian
+\lang hebrew
+( ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle v,w\right\rangle =\sum_{j=1}^{n}\bar{v}^{j}w^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \lambda v,w\right\rangle =\bar{\lambda}\left\langle v,w\right\rangle \qquad\left\langle v,\lambda w\right\rangle =\lambda\left\langle v,w\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $v\in\mathbb{C}^{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $Bv=\lambda v$
+\end_inset
+
+.
+ נחשב:
+\begin_inset Formula 
+\[
+\left\langle Bv,v\right\rangle =\left\langle \lambda v,v\right\rangle =\bar{\lambda}\left\langle v,v\right\rangle =\bar{\lambda}\left\Vert v\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle Bv,v\right\rangle =\left\langle v,Bv\right\rangle =\left\langle v,\lambda v\right\rangle =\lambda\left\langle v,v\right\rangle =\lambda\left\Vert v\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{\lambda}\left\Vert v\right\Vert ^{2}=\lambda\left\Vert v\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{\lambda}=\lambda
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.12
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מרחב מכפלה פנימית, אופרטורים צמודים לעצמם)
+\lang english
+self-adjoint
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מרחב עם מכפלה פנימית ממשי.
+ אנדומורפיזם 
+\begin_inset Formula $B:V\to V$
+\end_inset
+
+ נקרא צמוד לעצמו אם לכל 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left\langle Bv,w\right\rangle =\left\langle v,Bw\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+לכל אופרטור צמוד לעצמו יש וקטור עצמי ממשי.
+\end_layout
+
+\end_body
+\end_document

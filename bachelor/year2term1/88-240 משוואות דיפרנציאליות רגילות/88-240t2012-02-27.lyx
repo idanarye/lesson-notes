@@ -1,0 +1,1702 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Section*
+משוואת בסל מסדר 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו ש
+\begin_inset Formula 
+\[
+x^{2}y''+xy'+\left(x^{2}-\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''+\cfrac{1}{x}y'+\left(1-\cfrac{\nu^{2}}{x^{2}}\right)y=0
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ גדול מאוד, 
+\begin_inset Formula $y''+y\approx0$
+\end_inset
+
+, ולכן אם 
+\begin_inset Formula $x\to0$
+\end_inset
+
+ אז 
+\begin_inset Formula $y=C_{1}\cos x+C_{2}\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ נקראת פונקציה מאיפוס מעריכי אם קיימים קבועים 
+\begin_inset Formula $M,\alpha\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|f\left(t\right)\right|\le Me^{\alpha t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שאלה
+\series default
+ האם קיימת התמרת לפלס 
+\begin_inset Formula $\mathcal{L}\left\{ J_{\infty}\left(t\right)\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Section*
+משוואת בסל מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula 
+\[
+x^{2}y''+xy'+x^{2}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+xy''+y'+xy=0
+\]
+
+\end_inset
+
+הפתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=C_{1}J_{0}\left(x\right)+C_{2}Y_{0}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה ממבחן
+\end_layout
+
+\begin_layout Standard
+אם הפונקציה 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ פותרת את המשוואה 
+\begin_inset Formula $tf''\left(t\right)+f'\left(t\right)+tf\left(t\right)=0$
+\end_inset
+
+, הוכח שהתמרתה, 
+\begin_inset Formula $F\left(s\right)$
+\end_inset
+
+, פותרת את המשוואה 
+\begin_inset Formula $\left(1+s^{2}\right)F'+sF=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t\cdot g\left(t\right)\right\} =-\cfrac{\mathrm{d}}{\mathrm{d}s}G\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ tf''\left(t\right)+f'\left(t\right)+tf\left(t\right)\right\} =\mathcal{L}\left\{ 0\right\} =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ tf''\left(t\right)\right\} +\mathcal{L}\left\{ f'\left(t\right)\right\} +\mathcal{L}\left\{ tf\left(t\right)\right\} =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\left(2sF+s^{2}F'-f\left(0\right)\right)+sF-f\left(0\right)-F'=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\left(1+s^{2}\right)F'-sF=0\Rightarrow\left(1+s^{2}\right)F+sF=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1+s^{2}\right)F'=-sF
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1+s^{2}\right)\cfrac{\mathrm{d}F}{\mathrm{d}s}=-sF
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\cfrac{\mathrm{d}F}{F}=\int\cfrac{-s}{1+s^{2}}\mathrm{\, d}s
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln F=-\cfrac{1}{2}\left(1+s^{2}\right)+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln F=\ln\left(1+sy^{-\frac{1}{8}}\right)+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\cfrac{1}{\sqrt{1+s^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ 
+\begin_inset Formula $Y_{0}\left(t\right)$
+\end_inset
+
+ אינה מוגדרת ב
+\begin_inset Formula $t=0$
+\end_inset
+
+ ולכן היא לא שורדת את התמרת לפלס.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה מהתרגיל
+\end_layout
+
+\begin_layout Itemize
+לפונקציות 
+\begin_inset Formula $J_{0},J_{1},...$
+\end_inset
+
+ אפשר לעשות לפלס.
+\end_layout
+
+\begin_layout Itemize
+הפונקציות 
+\begin_inset Formula $Y_{0},Y_{1},...$
+\end_inset
+
+ מסוכנות.
+\end_layout
+
+\begin_layout Section*
+הבהרות שונות
+\end_layout
+
+\begin_layout Standard
+המשפט היסודי של של האינפי קובע ש
+\begin_inset Formula $F\left(x\right)=\int_{x_{0}}^{x}f\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+ הוא פונקציה קדומה של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ קבוע)אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה(, כלומר
+\begin_inset Formula 
+\[
+F'\left(x\right)=\cfrac{d}{dx}\int_{x_{0}}^{x}f\left(t\right)\mathrm{\, d}t=f\left(x\right)
+\]
+
+\end_inset
+
+חשוב לציין שלא כל הפונקציות הקדומות של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ הן מהצורה הזו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: 
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+.
+ כל הפונקציות הקדומות של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ נתונות ע"י אינטגרל לא מסויים
+\begin_inset Formula 
+\[
+\int f\left(x\right)\mathrm{\, d}x=\int e^{x}\mathrm{\, d}x=e^{x}+c,\qquad c\in\mathbb{R}
+\]
+
+\end_inset
+
+בעוד ש
+\begin_inset Formula 
+\[
+\int_{x_{0}}^{x}f\left(t\right)\mathrm{\, d}t=\int_{x_{0}}^{x}e^{t}\mathrm{\, d}t=\left.e^{t}\right|_{t=x_{0}}^{t=x}=e^{x}-e^{x_{0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $e^{x_{0}}>0$
+\end_inset
+
+ ולכן אלו רק פונקציות קדומות מהצורה 
+\begin_inset Formula $e^{x}+C$
+\end_inset
+
+ עם 
+\begin_inset Formula $C$
+\end_inset
+
+ שלילי ולא כולן!
+\begin_inset Newline newline
+\end_inset
+
+כדי לקבל את כל הפונקציות הקדומות נוסיף קבוע ממשי חופשי
+\begin_inset Formula 
+\[
+\int f\left(x\right)\mathrm{\, d}x=\int_{x_{0}}^{x}f\left(t\right)\mathrm{\, d}t+K\qquad K\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט הפירוק לשברים חלקיים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מעל
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\series default
+: תהי 
+\begin_inset Formula $f\left(x\right)=\cfrac{P\left(x\right)}{Q\left(x\right)}$
+\end_inset
+
+ פוקנציה רציונלית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+פונקציה רציונלית היא פולינום חלקי פולינום
+\end_layout
+
+\end_inset
+
+ עם 
+\begin_inset Formula $\deg P<\deg Q$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $Q\left(X\right)$
+\end_inset
+
+ הוא פולינום מתוקן
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+פולינום מתוקן הוא פולינום שהמקדם של האיבר בעל החזקה הגדולה ביותר שלו היא
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+
+)תמיד אפשר לסדר את זה( ושהוא מהצורה 
+\begin_inset Formula 
+\[
+Q\left(x\right)=\left(x-a_{1}\right)^{j_{1}}\cdots\left(x-a_{m}\right)^{j_{m}}\cdot\left(x^{2}+b_{1}x+c_{1}\right)^{k_{1}}\cdots\left(x^{2}+b_{n}x+c_{n}\right)^{k_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a_{1},...a_{m},b_{1},...b_{n},c_{1},...c_{n}$
+\end_inset
+
+ קבועים ממשיים ו
+\begin_inset Formula $j_{1},...j_{m},k_{1},...k_{m}$
+\end_inset
+
+ הם מספרים טבעיים.
+\end_layout
+
+\begin_layout Itemize
+הגורמים 
+\begin_inset Formula $\left(x-a_{i}\right)$
+\end_inset
+
+ הם הגורמים הליניאריים של 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ שמתאימים לשורשים הממשיים שלו.
+\end_layout
+
+\begin_layout Itemize
+הגורמים 
+\begin_inset Formula $\left(x^{2}+b_{i}x+c_{i}\right)$
+\end_inset
+
+ הם גורמים ריבועיים אי-פריקים של 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ שמתאימים לשורשים מרוכבים צמודים.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אזי מתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)=\cfrac{P\left(x\right)}{Q\left(x\right)}=\sum_{i=1}^{m}\sum_{r=1}^{j_{i}}\cfrac{A_{ir}}{\left(x-a_{i}\right)^{r}}+\sum_{i=1}^{n}\sum_{r=1}^{k}\cfrac{B_{ir}x+C_{ir}}{\left(x^{2}+b_{i}x+c\right)^{r}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $A_{ir},B_{ir},C_{ir}$
+\end_inset
+
+ קבועים שיש למצוא.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מעל
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\series default
+: תהי 
+\begin_inset Formula $f\left(x\right)=\cfrac{P\left(x\right)}{Q\left(x\right)}$
+\end_inset
+
+ פ"ר עם 
+\begin_inset Formula $\deg P<\deg Q$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ הוא פולינום מתוקן ושהוא מהצורה 
+\begin_inset Formula $Q\left(x\right)=\left(x-\alpha_{i}\right)^{j_{i}}\cdots\left(x-\alpha_{m}\right)^{j_{m}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\alpha_{1},...\alpha_{m}$
+\end_inset
+
+ קבועים מרוכבים, אזי 
+\begin_inset Formula $f\left(x\right)=\sum\limits _{i=1}^{m}\sum\limits _{r=1}^{j_{i}}\cfrac{A_{ir}}{\left(x-\alpha_{i}\right)^{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בעייה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\deg P\ge\deg Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ע"י חילוק פולינומים עם שארית.
+ לדוגמה 
+\begin_inset Formula $\cfrac{x^{3}}{x^{2}-1}=x+\cfrac{x}{x^{2}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שאלות ממבחן - מועד ב' סמסטר א' תשע"א
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( מצא את הפתרון הכללי של המערכת 
+\begin_inset Formula $y'=\begin{pmatrix}-3 & 2\\
+-5 & 3
+\end{pmatrix}\vec{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( מצא פתרון פרטי של המערכת 
+\begin_inset Formula $\vec{y}'=\begin{pmatrix}-3 & 2\\
+-5 & 3
+\end{pmatrix}\vec{y}+g\left(t\right)\begin{pmatrix}2\sin t\\
+\cos t+3\sin t
+\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g\left(t\right)$
+\end_inset
+
+ היא פונקציה נתונה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון)א(
+\end_layout
+
+\begin_layout Standard
+נמצא ע"ע:
+\begin_inset Formula 
+\[
+\det\left(\lambda I-A\right)\overset{!}{=}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\begin{pmatrix}\lambda+3 & -2\\
+5 & \lambda-3
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+
+\numeric on
+
+\begin_inset Formula 
+\[
+\left(\lambda+3\right)\left(\lambda-3\right)+10=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\lambda_{1,2}=\pm i}
+\]
+
+\end_inset
+
+
+\numeric off
+נמצא ו"ע:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda_{1}=i$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda,I-A\right)\vec{v}_{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}3+i & -2\\
+5 & i-3
+\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=\begin{pmatrix}0\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(3+i\right)a-2b=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=\cfrac{3+i}{a}\cdot a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\vec{v}_{1}=\begin{pmatrix}a\\
+\cfrac{3+i}{2}a
+\end{pmatrix}=a\begin{pmatrix}1\\
+\cfrac{3+i}{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח לנוחיותינו 
+\begin_inset Formula $a=2$
+\end_inset
+
+, ונקבל ו"ע 
+\begin_inset Formula $\vec{v}_{1}=\begin{pmatrix}2\\
+3+i
+\end{pmatrix}$
+\end_inset
+
+., ומכאן פתרון
+\begin_inset Formula 
+\[
+\vec{v}_{1}e^{\lambda_{1}t}=\begin{pmatrix}2\\
+3+i
+\end{pmatrix}e^{i\cdot t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החלק הממשי והמדומה יתנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתרונות בת"ל:
+\begin_inset Formula 
+\[
+\begin{pmatrix}2\\
+3+i
+\end{pmatrix}e^{it}=\begin{pmatrix}2\\
+3+i
+\end{pmatrix}\left(\cos t+i\sin t\right)=\underbrace{\begin{pmatrix}2\cos t\\
+3\cos t-\sin t
+\end{pmatrix}}_{\vec{y}_{1}}+i\underbrace{\begin{pmatrix}2\sin t\\
+3\sin t-\cos t
+\end{pmatrix}}_{\vec{y}_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הסופי הוא
+\begin_inset Formula 
+\[
+\boxed{\vec{y}=C_{1}\begin{pmatrix}2\cos t\\
+3\cos t-\sin t
+\end{pmatrix}+C_{2}\begin{pmatrix}2\sin t\\
+3\sin t+\cos t
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון)ב(
+\end_layout
+
+\begin_layout Standard
+נבנה מטריצה יסודית
+\begin_inset Formula 
+\[
+Y=\begin{pmatrix}2\cos t & 2\sin t\\
+3\cos t-\sin t & 3\sin t+\cos t
+\end{pmatrix}
+\]
+
+\end_inset
+
+הנוסחה לפתרון מערכת אי הומוגנית היא 
+\begin_inset Formula $y=Y\alpha\left(t\right)=Y\int Y^{-1}b\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+, ובמקרה שלנו זה יוצא
+\begin_inset Formula 
+\[
+=\int\begin{pmatrix}2\cos t & 2\sin t\\
+3\cos t-\sin t & 3\sin t
+\end{pmatrix}\int_{0}^{t}\cfrac{1}{2}\begin{pmatrix}3\sin u+\cos u & -2\sin u\\
+\sin u-3\cos u & 2\cos u
+\end{pmatrix}g\left(u\right)\begin{pmatrix}2\sin u\\
+\cos u+3\sin u
+\end{pmatrix}\mathrm{\, d}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מצא את הפתרון הכללי של המשוואה
+\begin_inset Formula 
+\[
+y'-ay=xe^{bx}\qquad a\ne b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( ע"י ההצגה 
+\begin_inset Formula $y\left(x\right)=z\left(x\right)e^{ax}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( ע"י שיטת התמרת לפלס.
+\end_layout
+
+\begin_layout Subsection*
+פתרון)א(
+\end_layout
+
+\begin_layout Standard
+ע"פ ההצגה 
+\begin_inset Formula $y=ze^{ax}$
+\end_inset
+
+, 
+\begin_inset Formula $y'=z'e^{ax}+aze^{ax}$
+\end_inset
+
+.
+ נציב במד"ר
+\begin_inset Formula 
+\[
+z'e^{ax}+\cancel{aze^{ax}}-\cancel{aze^{ax}}=xe^{bx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'e^{ax}=xe^{bx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=xe^{\left(b-a\right)x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\int xe^{\left(b-a\right)x}\mathrm{\, d}x\overset{\begin{bmatrix}u=x & v=\cfrac{e^{\left(b-a\right)x}}{b-x}\\
+u'=1 & v'=e^{\left(b-a\right)x}
+\end{bmatrix}}{=}\cfrac{xe^{\left(b-a\right)x}}{b-a}=\int\cfrac{e^{\left(b-a\right)x}}{\left(b-a\right)}\mathrm{\, d}x=\cfrac{xe^{\left(b-a\right)x}}{b-a}-\cfrac{e^{\left(b-a\right)x}}{\left(b-a\right)^{2}}+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=z\cdot e^{ax}=\cfrac{xe^{bx}}{b-a}-\cfrac{e^{bx}}{\left(b-a\right)^{2}}-Ce^{ax}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון)ב(
+\end_layout
+
+\begin_layout Standard
+לפני שנפתור, נעשה הצבה טריוויאלית 
+\begin_inset Formula $\begin{array}{c}
+t=x\\
+\cfrac{d}{dt}=\cfrac{d}{dx}
+\end{array}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y'-ay=te^{bt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ y'-ay\right\} \left(s\right)=\mathcal{L}\left\{ te^{bt}\right\} \left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+sY-y\left(0\right)-aY=-\cfrac{\mathrm{d}}{\mathrm{d}s}\mathcal{L}\left\{ e^{bt}\right\} \left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s-a\right)Y-y\left(0\right)=-\cfrac{\mathrm{d}}{\mathrm{d}s}\mathcal{L}\left\{ e^{bt}\right\} \left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s-a\right)Y-y\left(0\right)=-\cfrac{\mathrm{d}}{\mathrm{d}s}\cfrac{1}{s-b}=\cfrac{1}{\left(s-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow y=ze^{ax}=\cfrac{xe^{bx}}{b-a}-\cfrac{e^{bx}}{\left(b-a\right)^{2}}+Ce^{ax}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s-a\right)Y=y\left(0\right)+\cfrac{1}{\left(s-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=\cfrac{y\left(0\right)}{s-a}+\cfrac{1}{\left(s-b^{2}\right)\left(s-a\right)}
+\]
+
+\end_inset
+
+נקרא ל
+\begin_inset Formula $y\left(0\right)$
+\end_inset
+
+ "
+\begin_inset Formula $C$
+\end_inset
+
+"
+\end_layout
+
+\begin_layout Standard
+ע"פ המשפט לפירוק לשברים חלקיים
+\begin_inset Formula 
+\[
+\cfrac{1}{\left(s-a\right)\left(s-b\right)^{2}}=\cfrac{A}{s-a}+\cfrac{B}{s-b}+\cfrac{C}{\left(s-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=A\left(s-b\right)^{2}+B\left(s-a\right)\left(s-b\right)+C\left(s-a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0s^{2}+0s+1=\left(A+B\right)s^{2}+\left(-2Ab-aB-bB+C\right)s+Ab^{2}+abB-ac
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A+B=0\Rightarrow B=-A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a-b\right)A+C=0\Rightarrow C=\left(b-a\right)A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ab^{2}-abA+a\left(a-b\right)A=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a-b\right)^{2}A=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\cfrac{1}{\left(a-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=-\cfrac{1}{\left(a-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\cfrac{1}{b-a}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{\left(s-a\right)\left(s-b\right)^{2}}=\cfrac{1}{\left(s-b\right)^{2}}\cfrac{1}{s-a}-\cfrac{1}{\left(s-b\right)^{2}}\cfrac{1}{s-b}+\cfrac{1}{b-a}\cdot\cfrac{1}{\left(s-b\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(a-b\right)^{2}}\cdot\cfrac{1}{s-a}\right\} =\cfrac{1}{\left(a-b\right)^{2}}e^{at}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(a-b\right)^{2}}\cdot\cfrac{1}{s-a}\right\} =\cfrac{1}{\left(a-b\right)^{2}}e^{bt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{1}{b-a}\cdot\cfrac{1}{\left(s-b\right)^{2}}\right\} =\cfrac{1}{b-a}\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(s-b\right)^{2}}\right\} =\cfrac{1}{b-a}te^{bt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\mathcal{L}^{-1}\left\{ Y\right\} =\mathcal{L}^{-1}\left\{ \cfrac{y\left(0\right)}{s-a}+\cfrac{1}{\left(a-b\right)^{2}}\cdot\cfrac{1}{s-b}-\cfrac{1}{\left(a-b\right)^{2}}\cdot\cfrac{1}{s-b}+\cfrac{1}{b-a}\cdot\cfrac{1}{\left(s-b\right)^{2}}\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=Ce^{at}+\cfrac{1}{\left(a-b\right)^{2}}e^{dt}-\cfrac{1}{\left(a-b\right)^{2}}e^{bt}+\cfrac{1}{b-a}te^{bt}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{Ae^{at}-\cfrac{1}{\left(a-b\right)^{2}}e^{bt}+\cfrac{1}{b-a}te^{bt}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+למשוואה 
+\begin_inset Formula $x^{2}y''-x\left(x+2\right)y'+\left(x+2\right)y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( בהנתן ש
+\begin_inset Formula $y=x$
+\end_inset
+
+ פתרון, מצא את הפתרון הכללי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( מצא את הפתרון הכללי ע"י שיטת פרוביניוס.
+\end_layout
+
+\begin_layout Subsection*
+פתרון)א(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=x\cdot z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=z+xz'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=xz''+2z'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}\cdot\left(xz''+2z'\right)-x\left(x+2\right)\left(z+xz'\right)+\left(x+2\right)xz=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{3}z''+\left(2x^{2}-x^{3}-2x^{2}\right)+\left(-x^{2}-2x+x^{2}+2x\right)z=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{3}z''-x^{3}z'=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z''=z'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w:=z'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w'=w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=ce^{x}=z'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=C_{1}e^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\int C_{1}e^{x}\mathrm{\, d}x=C_{1}e^{x}+C_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{y=x\cdot z=C_{1}xe^{x}+C_{2}x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון)ב(
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}x^{n+\lambda}$
+\end_inset
+
+)טור פרוביניוס(
+\begin_inset Formula 
+\[
+y'=\sum_{n=0}^{\infty}\left(n+\lambda\right)a_{n}x^{n-\lambda-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0}^{\infty}\left(n+\lambda\right)\left(n+\lambda-1\right)a_{n}x^{n+\lambda-2}
+\]
+
+\end_inset
+
+נציב:
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left(n+\lambda\right)\left(n+\lambda-1\right)a_{n}x^{n+\lambda}-\sum_{n=0}^{\infty}\left(n+\lambda\right)a_{n}x^{n+\lambda+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{-\sum_{n=0}^{\infty}2\left(n+\lambda\right)a_{n}x^{n+\lambda}}_{-2xy'}+\underbrace{\sum_{n=0}^{\infty}a_{n}x^{n+\lambda+1}}_{xy}+\underbrace{\sum_{n=0}^{\infty}2a_{n}x^{n+\lambda}}_{2y}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{n=0}^{\infty}\left[\left(n+\lambda\right)\left(n+\lambda-1\right)-2\left(n+\lambda\right)+2\right]a_{n}x^{n+\lambda}+\sum_{n=0}^{\infty}\left[1-\left(n+\lambda\right)\right]a_{n}x^{n+\lambda+1}=0
+\]
+
+\end_inset
+
+נוציא 
+\begin_inset Formula $n=0$
+\end_inset
+
+ מחוץ לסכימה:
+\begin_inset Formula 
+\[
+\left(\lambda\left(\lambda-1\right)-2\lambda+2\right)a_{0}x^{\lambda}+\sum_{n=1}^{\infty}\left[\left(n+\lambda\right)\left(n+\lambda-1\right)-2\left(n+\lambda\right)+2\right]a_{n}x^{n+\lambda}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++\sum_{n=0}^{\infty}\left[1-\left(n+\lambda\right)\right]a_{n}x^{n+1}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\lambda^{2}-2\lambda+2\right)a_{0}x^{\lambda}+\sum_{n=0}^{\infty}\left[\left(n+\lambda+1\right)\left(n+\lambda\right)-2\left(n+\lambda+1\right)+2\right]a_{n+1}x^{n+\lambda+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++\sum_{n=0}^{\infty}\left[1-\left(n+\lambda\right)\right]a_{n}x^{n+\lambda+1}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\lambda^{2}-3\lambda+2\right)a_{0}x^{\lambda}+\sum_{n=0}^{\infty}\left\{ \left[\left(n+\lambda+1\right)\left(n+\lambda\right)-2\left(n+\lambda+1\right)+2\right]a_{n+1}+\left[1-\left(n+\lambda\right)\right]a_{n}\right\} x^{n+\lambda+1}=0
+\]
+
+\end_inset
+
+כל המקדמים שווים אפס!
+\end_layout
+
+\begin_layout Standard
+המקדם של 
+\begin_inset Formula $x^{\lambda}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\lambda^{2}-3\lambda-2\right)a_{0}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}-3\lambda+2=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1,2}=\cfrac{3\pm\sqrt{1}}{2}=2,1
+\]
+
+\end_inset
+
+שאר המקדמים:
+\begin_inset Formula 
+\[
+\left[\left(n+\lambda+1\right)\left(n+\lambda\right)-2\left(n+\lambda+1\right)+2\right]a_{n+1}+\left[1-\left(n+\lambda\right)\right]a_{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\begin_inset Formula 
+\[
+a_{n+1}=\cfrac{a_{n}}{n+2},n=0,1,2,...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+n=0 &  & a_{1}=\cfrac{a_{0}}{2}\\
+n=1 &  & a_{2}=\cfrac{a_{1}}{3}=\cfrac{a_{0}}{2\cdot3}\\
+n=2 &  & a_{3}=\cfrac{a_{2}}{4}=\cfrac{a_{0}}{2\cdot3\cdot4}\\
+ & \vdots\\
+ & a_{n}=\cfrac{a_{0}}{\left(n+1\right)!}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל פתרון פרטי:
+\begin_inset Formula 
+\[
+y=\sum_{n=0}^{\infty}a_{n}x^{n+\lambda}=\sum_{n=0}^{\infty}\cfrac{a_{0}}{\left(n+1\right)!}x^{n+2}=x\sum_{n=0}^{\infty}a_{0}\cdot\cfrac{x^{n+1}}{\left(n+1\right)!}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=x\cdot a_{0}\left(e^{x}-1\right)=a_{0}xe^{x}-a_{0}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $a_{0}=1$
+\end_inset
+
+: 
+\begin_inset Formula $xe^{x}-x=y_{1}$
+\end_inset
+
+ - פתרון פרטי.
+ כדי להגיע לפתרון נוסף יש לעשות הורדת סדר ל 
+\begin_inset Formula $y=\left(xe^{x}-x\right)\cdot z$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

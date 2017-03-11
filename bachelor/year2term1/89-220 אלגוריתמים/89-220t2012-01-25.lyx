@@ -1,0 +1,1213 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\lang english
+Gomory-Hu Trees
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף לא מכוון עם פונקציית משקל 
+\begin_inset Formula $C:E\to\mathbb{R}^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+המטרה
+\series default
+: למצוא חתך מינימלי)=זרימה( בין כל זוג קודקודים בגרף.
+\end_layout
+
+\begin_layout Subsection*
+פתרון נאיבי
+\end_layout
+
+\begin_layout Standard
+נעבור על כל זוגות הקודקודים: 
+\begin_inset Formula $\binom{n}{2}$
+\end_inset
+
+ אפשרויות, 
+\begin_inset Formula $\left|V\right|=n$
+\end_inset
+
+.
+ על כל זוג נחשב חתך מינימלי.
+\end_layout
+
+\begin_layout Subsection*
+פתרון יותר טוב
+\end_layout
+
+\begin_layout Standard
+נרצה להפוך את הגרף לעץ 
+\begin_inset Formula $T$
+\end_inset
+
+, כך שיתקיים: החתך המינימלי בין שני קודקודים 
+\begin_inset Formula $u,v$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+=החתחת המינימלי בין שני הקודקודים 
+\begin_inset Formula $u,v$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gomory-Hu
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לגרף לא מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ופונקציית משקל 
+\begin_inset Formula $c:E\to\mathbb{R}^{+}$
+\end_inset
+
+ הינו עץ 
+\begin_inset Formula $T=\left(V,F\right)$
+\end_inset
+
+ כך שלכל קשת 
+\begin_inset Formula $\left(u,v\right)\in F$
+\end_inset
+
+ 
+\begin_inset Formula $\delta\left(U\right)$
+\end_inset
+
+ הינו חתך 
+\begin_inset Formula $u-v$
+\end_inset
+
+ מינימלי ב
+\begin_inset Formula $G$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא אחד מרכיבי הקשירות ב
+\begin_inset Formula $T-\left(u,v\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(U\right)=\left(U,V\backslash U\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+c\left(\delta\left(U\right)\right)=\sum_{\begin{array}{c}
+u\in U\\
+v\in V\backslash U\\
+\left(u,v\right)\in E
+\end{array}}c\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ לא בהכרח מוכל ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לדוגמה:
+\begin_inset Formula 
+\[
+\xymatrix{G: & x\ar@{-}^{3}[r] & y\ar@{-}^{1}[r] & z\ar@{-}^{2}[r] & w\\
+\\
+T: &  & x\ar@{-}^{1}[r] & w\ar@{-}^{2}[rd]\\
+ & y\ar@{-}^{3}[ru] &  &  & z
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x,w\right)\in T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x,w\right)\notin G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{G}\left(U,V\right)$
+\end_inset
+
+ - משקל החתך המינימלי בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\uuline on
+לכל 
+\begin_inset Formula $u,v,w\in V$
+\end_inset
+
+
+\bar default
+\uuline default
+
+\begin_inset Formula 
+\[
+\alpha_{G}\left(u,v\right)\ge\min\left\{ \alpha_{G}\left(u,w\right),\alpha_{G}\left(w,v\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה)תרגיל(
+\end_layout
+
+\begin_layout Standard
+בכל חתך מינימלי בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\begin_inset Formula $w$
+\end_inset
+
+ הוא או בצד של 
+\begin_inset Formula $u$
+\end_inset
+
+ או בצד של 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $v_{1},v_{2},...v_{k}\in V$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{G}\left(v_{1},v_{k}\right)\ge\min_{1\le i<k}\left\{ \alpha_{G}\left(v_{i},v_{i+1}\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: אינדוקציה
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $T=\left(V,F\right)$
+\end_inset
+
+ עץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GomoryHu
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור גרף לא מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ נגדיר שהקשת 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ על המסלול היחיד מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+ היא הקשת שעבורה 
+\begin_inset Formula $\alpha_{G}\left(x,y\right)$
+\end_inset
+
+ מינימלי.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $U$
+\end_inset
+
+ אחד מרכיבי הקשירות של 
+\begin_inset Formula $T-\left(x,y\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\alpha_{G}\left(u,v\right)=\alpha_{G}\left(x,y\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta\left(U\right)$
+\end_inset
+
+ הינו חתך מינימלי בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם משקל כל קשת 
+\begin_inset Formula $\left(x,y\right)\in T$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\alpha_{G}\left(x,y\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\alpha_{G}\left(u,v\right)=\alpha_{T}\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{T}\left(u,v\right)=c_{T}\left(x,y\right)=\alpha_{G}\left(x,y\right)=\alpha_{G}\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מטענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\begin_inset Formula $\alpha_{G}\left(u,v\right)\ge\alpha_{G}\left(x,y\right)$
+\end_inset
+
+ והמינימליות של 
+\begin_inset Formula $\alpha_{G}\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $v_{1},...v_{k}\in V$
+\end_inset
+
+
+\begin_inset Formula $\gets$
+\end_inset
+
+הקודקודים במסלול ל
+\begin_inset Formula $v$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+מצד שני, 
+\begin_inset Formula $\delta\left(U\right)$
+\end_inset
+
+ הוא חתך מינימלי בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+ לפי הגדרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gomory-Hu Tree
+\lang hebrew
+, וגם 
+\begin_inset Formula $\delta\left(U\right)$
+\end_inset
+
+ הוא חתך כלשהו בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{G}\left(u,v\right)\le\alpha_{G}\left(x,y\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $\alpha_{G}\left(u,v\right)$
+\end_inset
+
+ המינימלי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\alpha_{G}\left(u,v\right)=\alpha_{G}\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A,B\subseteq V$
+\end_inset
+
+, אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta\left(A\right)+\delta\left(B\right)\ge\delta\left(A\cup B\right)+\delta\left(A\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta\left(A\right)+\delta\left(B\right)\ge\delta\left(A\backslash B\right)+\delta\left(B\backslash A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חוסכים בסימון: 
+\begin_inset Formula $\delta\left(A\right)=c\left(\delta\left(A\right)\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(A\right)=\left(A,V\backslash A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+)תרגיל()להסתכל על הקשתות מ
+\begin_inset Formula $A$
+\end_inset
+
+ לשאר הקודקודים ומ
+\begin_inset Formula $B$
+\end_inset
+
+ לשאר הקודקודים, ואז להסתכל על האיחוד והחיתוך שלהם.(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\delta\left(A\right)+\delta\left(B\right)=\delta\left(V\backslash A\right)+\delta\left(B\right)\ge
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ge\delta\left(\left(V\backslash A\right)\cup B\right)+\delta\left(\left(V\backslash A\right)\cap B\right)=\delta\left(V\backslash\left(A\backslash B\right)\right)+\delta\left(B\backslash A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $s,t\in V$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $U$
+\end_inset
+
+ חתך מינימלי בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $u,v\in U$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u\ne v$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $W\subseteq U$
+\end_inset
+
+ כך ש
+\begin_inset Formula $W$
+\end_inset
+
+ הוא חתך מינימלי בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ חתך מינימלי של 
+\begin_inset Formula $u,v$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $X\subseteq U$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סיימנו.
+\end_layout
+
+\begin_layout Itemize
+בה"כ 
+\begin_inset Formula $s\in U$
+\end_inset
+
+)אחרת נחליף בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+בה"כ 
+\begin_inset Formula $s\in X$
+\end_inset
+
+)אחרת נחליף בין 
+\begin_inset Formula $X$
+\end_inset
+
+ ל
+\begin_inset Formula $V\backslash X$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+בה"כ 
+\begin_inset Formula $u\in X$
+\end_inset
+
+)אחרת נחליף בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $U,X$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\delta\left(U\cup X\right)+\delta\left(U\cap X\right)\le\delta\left(U\right)+\delta\left(x\right)
+\]
+
+\end_inset
+
+נסתכל על 
+\begin_inset Formula $U\cup X,U$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\delta\left(U\right)\le\delta\left(U\cup X\right)
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא חתך מינימלי בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Rightarrow\delta\left(U\cap X\right)\le\delta\left(X\right)
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $W=U\cap X$
+\end_inset
+
+ הוא חתך מינימלי בין 
+\begin_inset Formula $U$
+\end_inset
+
+ ל
+\begin_inset Formula $V$
+\end_inset
+
+ שכולו ב
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $t\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(U\backslash X\right)+d\left(X\backslash U\right)\le\delta\left(X\right)+\delta\left(U\right)
+\]
+
+\end_inset
+
+נסתכל על 
+\begin_inset Formula $U,X\backslash U$
+\end_inset
+
+ חתכים 
+\begin_inset Formula $s-t$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+W=\unitfrac{U}{X}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & b\ar@{-}^{4}[rr]\ar@{-}_{3}[dd]\ar@{-}^{2}[rrdd] &  & c\ar@{-}^{5}[rd]\ar@{-}^{4}[dd]\\
+a\ar@{-}^{10}[ru]\ar@{-}_{8}[rd] &  &  &  & d\\
+ & f\ar@{-}^{2}[rruu]\ar@{-}_{3}[rr]\ar@{-}^{2}[rrru] &  & e\ar@{-}_{7}[ru]
+}
+\]
+
+\end_inset
+
+בוחרים שני קודקודים:
+\begin_inset Formula $b,f$
+\end_inset
+
+.
+ מחשבים חתך מינימלי ב
+\begin_inset Formula $G$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ & b\ar@{-}^{9}[d] &  &  &  & c\ar@{-}^{5}[rd]\ar@{-}^{4}[dd]\\
+a\ar@{-}^{10}[ru]\ar@{-}_{8}[r] & \circ\ar@{=}_{17}[r] & \circ\ar@{-}^{4}[rrru]\ar@{-}^{2}[rrrd]\ar@{-}_{11}[rd] &  &  &  & d\\
+ &  &  & f\ar@{-}^{2}[rruu]\ar@{-}_{3}[rr]\ar@{-}^{2}[rrru] &  & e\ar@{-}_{7}[ru]
+}
+\]
+
+\end_inset
+
+בוחרים שני קודקודים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ומחשבים חתך מינימלי.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2273 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+מד"ר מסדר ראשון - 
+\begin_inset Formula $F\left(x,y,y'\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מד"ר מסדר ראשון בצורה נורמלית - 
+\begin_inset Formula $y'=f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=f\left(x\right)g\left(y\right)$
+\end_inset
+
+ - משוואה ניתנת לפרידה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=a\left(x\right)y+b\left(x\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מש.
+ לינארית)
+\begin_inset Formula $b=0$
+\end_inset
+
+ "הומוגנית", 
+\begin_inset Formula $b\ne0$
+\end_inset
+
+ "לא הומוגנית"(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=\left(\cfrac{y}{x}\right)$
+\end_inset
+
+ - מש.
+ הומוגנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מש.
+ ברנולי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bernoulli equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=a\left(x\right)y+b\left(x\right)y^{k+1}$
+\end_inset
+
+ ]
+\begin_inset Formula $k=-1$
+\end_inset
+
+ לא לינארי, 
+\begin_inset Formula $k=0$
+\end_inset
+
+ לינארי הומוגני[
+\end_layout
+
+\begin_layout Standard
+הצבה 
+\begin_inset Formula $z=\cfrac{1}{y^{k}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=\cfrac{-ky'}{y^{k+1}}=\cfrac{-k}{y^{k+1}}\left(a\left(x\right)y+b\left(x\right)y^{k}\right)=\overset{linear!!!}{\overbrace{-ka\left(x\right)z-kb\left(x\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מש.
+ ריקטי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Riccati Equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=a\left(x\right)y^{2}+b\left(x\right)y+c\left(x\right)$
+\end_inset
+
+ - באופן כללי לא ניתן לפתור ע"י פעולות סטנדרטיות)של חיבור, כפל, חזקה, אינטגרל...(
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\bar under
+פתרון פרטי
+\bar default
+ 
+\begin_inset Formula $y_{0}\left(x\right)$
+\end_inset
+
+ ניתן למצוא פתרון כללי.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+איך?
+\series default
+ 
+\bar under
+הצבה
+\bar default
+: 
+\begin_inset Formula $y\left(x\right)=y_{0}\left(x\right)+z\left(x\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y_{0}^{\prime}+z'=a\left(x\right)\left(y_{0}+z\right)^{2}+b\left(x\right)\left(y_{0}+z\right)+c\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a\left(x\right)y_{0}^{2}+b\left(x\right)y_{0}+c\left(x\right)+2a\left(x\right)y_{0}z+a\left(x\right)z^{2}+b\left(x\right)z
+\]
+
+\end_inset
+
+היות ו
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ הוא פתרון,
+\begin_inset Formula 
+\[
+z'=\left(2a\left(x\right)y_{0}\left(x\right)+b\left(x\right)\right)z+a\left(x\right)z^{2}
+\]
+
+\end_inset
+
+זה מש.
+ ברנולי עם 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ נציב 
+\begin_inset Formula $w=\cfrac{1}{z}$
+\end_inset
+
+ ונמשיך הלאה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=3+3x^{2}y-xy^{2}$
+\end_inset
+
+.
+ פתרון פרטי - 
+\begin_inset Formula $y=3x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הצבה ראשונה 
+\begin_inset Formula $y=3x+z$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3+z'=3+3x^{2}\left(3x+z\right)-x\left(3x+z\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=3x^{2}z-x\left(6xz+z^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=-xz^{2}-3x^{2}z
+\]
+
+\end_inset
+
+ זה ברנולי עם 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ הצבה שנייה 
+\begin_inset Formula $w=\cfrac{1}{z}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w'=\cfrac{-z'}{z^{2}}=\cfrac{xz^{2}+3x^{2}z}{z^{2}}=x+3x^{2}w
+\]
+
+\end_inset
+
+] המקרה ההומוגני: 
+\begin_inset Formula $w'=3x^{2}w$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{w'}{w}=3x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln w=x^{3}+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=ke^{x^{3}}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע, 
+\begin_inset Formula $k$
+\end_inset
+
+ קבוע אחר([
+\end_layout
+
+\begin_layout Standard
+הצבה שלישית 
+\begin_inset Formula $w=e^{x^{3}}k\left(x\right)$
+\end_inset
+
+)הפעם 
+\begin_inset Formula $k$
+\end_inset
+
+ זה פונקציה - אפשר היה גם לתת לה שם אחר, למשל 
+\begin_inset Formula $w=e^{x^{3}}v$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+e^{x^{3}}k'+3x^{2}e^{x^{3}}k=x+3x^{2}e^{x^{3}}k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k'=xe^{-x^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k=\int xe^{-x^{3}}dx+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=e^{x^{3}}\left(\int xe^{-x^{3}}dx+C\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\cfrac{1}{w},y=3x+z=3x+\cfrac{1}{w}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{y=3x+\cfrac{e^{-x^{3}}}{\int xe^{-x^{3}}dx+C}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מש.
+ קלרו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Clairaut's Equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=xy'+f\left(y'\right)$
+\end_inset
+
+)ל
+\begin_inset Formula $f$
+\end_inset
+
+ כללי לא בצורה נורמלית(
+\end_layout
+
+\begin_layout Standard
+נתחיל לחפש פתרונות פשוטים.
+ פתרון פרטי: 
+\begin_inset Formula $y=f\left(0\right)$
+\end_inset
+
+)קבוע()כי אז 
+\begin_inset Formula $y'=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון בצורה 
+\begin_inset Formula $y=\alpha x+\beta$
+\end_inset
+
+)
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ קבועים(.
+\begin_inset Formula 
+\[
+\alpha x+\beta=x\alpha+f\left(\alpha\right)
+\]
+
+\end_inset
+
+אכן פתרון אם 
+\begin_inset Formula $\beta=f\left(\alpha\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $y=\alpha x+f\left(\alpha\right)$
+\end_inset
+
+ פתרון לכל קבוע 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זה פתרון לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, אבל מתברר שיש 
+\bar under
+עוד פתרון נוסף
+\bar default
+)"פתרון סינגולרי"(.
+\end_layout
+
+\begin_layout Subsection*
+כדי לראות את זה, נלמד קצת על משפחות של ישרים.
+\end_layout
+
+\begin_layout Standard
+נסתכל על משפחת הישרים בעלי אורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המחברים בין ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ החיובי וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ החיובי.
+ אם הם נוגעים בציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(0,s\right)$
+\end_inset
+
+, הם יגעו בציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(\sqrt{1-s^{2}},0\right)$
+\end_inset
+
+.
+ כלומר משפחת הישרים 
+\begin_inset Formula $\left\{ y=s-\cfrac{sx}{\sqrt{1-s^{2}}},0\le s\le1\right\} $
+\end_inset
+
+.
+ המעטפת של הישרים האלה מייצרת עקומה.
+ מהי משוואת העקומה? כל נקודה של המעטפת היא חיתוך של שני ישרים עם 
+\begin_inset Formula $s$
+\end_inset
+
+ים קרובים במשפחה הזו.
+\end_layout
+
+\begin_layout Standard
+המעטפת היא קבוצת הנקודות שהן חיתוך של ישר עם פרמטר 
+\begin_inset Formula $s$
+\end_inset
+
+, וישר עם פרמטר 
+\begin_inset Formula $s+ds$
+\end_inset
+
+.
+ המעטפת של העקומות 
+\begin_inset Formula $F\left(x,y,s\right)=0$
+\end_inset
+
+ היא החיתוך של 
+\begin_inset Formula $\left\{ \begin{array}{c}
+F\left(x,y,s\right)=0\\
+\cfrac{\partial F}{\partial s}\left(x,y,s\right)=0
+\end{array}\right.$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y=s-\cfrac{sx}{\sqrt{1-s^{2}}}\\
+0=1-\cfrac{x}{\sqrt{1-s^{2}}}-\cfrac{s^{2}x}{\left(1-s^{2}\right)^{\unitfrac{3}{2}}}=1-\cfrac{x}{\left(1-s^{2}\right)^{\unitfrac{3}{2}}}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x=\left(1-s^{2}\right)^{\unitfrac{3}{2}}\\
+y=s^{3}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{x^{\unitfrac{2}{3}}+y^{\unitfrac{2}{3}}=1}
+\]
+
+\end_inset
+
+הצורה הזו נקראת "אסטרואיד", כי 
+\begin_inset Formula $\left|x\right|^{\unitfrac{2}{3}}+\left|y\right|^{\unitfrac{2}{3}}=1$
+\end_inset
+
+ נראה כך:
+\begin_inset Graphics
+	filename pasted2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נחזור למש.
+ קלרו
+\end_layout
+
+\begin_layout Standard
+יש פתרונות 
+\begin_inset Formula $y=\alpha x+f\left(\alpha\right)$
+\end_inset
+
+.
+ האם יש למשפחה זו של ישרים מעטפת? המעטפת היא העקומה 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y=\alpha x+f\left(\alpha\right)\\
+0=x+f'\left(\alpha\right)
+\end{array}\right.\Rightarrow\left\{ \begin{array}{c}
+x=-f'\left(\alpha\right)\\
+y=f\left(\alpha\right)-\alpha f'\left(\alpha\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $y=f\left(\alpha\right)-\alpha f'\left(\alpha\right)$
+\end_inset
+
+ זו עקומה פרמטרית - גם פתרון של קלרו.
+\end_layout
+
+\begin_layout Section*
+סוג אחד של מד"ר מסדר שניים
+\end_layout
+
+\begin_layout Standard
+מד"ר מסדר שניים: 
+\begin_inset Formula $F\left(x,y,y',y''\right)=0$
+\end_inset
+
+.
+ בצורה נורמלית: 
+\begin_inset Formula $y''=f\left(x,y,y'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על המקרה 
+\begin_inset Formula $y''=f\left(y,y'\right)$
+\end_inset
+
+ - אין תלות על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ ניתן להביא את המשוואה הזאת למד"ר מסדר ראשון.
+ במקום להתייחס ל
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $x$
+\end_inset
+
+, ו
+\begin_inset Formula $y'\left(x\right)$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $x$
+\end_inset
+
+, ו
+\begin_inset Formula $y''\left(x\right)$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $x$
+\end_inset
+
+, נסתכל על 
+\begin_inset Formula $y'$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ נכתוב 
+\begin_inset Formula $y'=p\left(y\right)$
+\end_inset
+
+.
+ לייתר דיוק 
+\begin_inset Formula $y'\left(x\right)=p\left(y\left(x\right)\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y''\left(x\right)=p'\left(y\left(x\right)\right)y'\left(x\right)=p'\left(y\left(x\right)\right)p\left(y\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=f\left(y,y'\right)\Rightarrow pp'=f\left(y,p\right)\Rightarrow p'=\cfrac{f\left(y,p\right)}{p}
+\]
+
+\end_inset
+
+קיבלנו מד"ר מסדר ראשון, אותו אולי ניתן לפתור.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''=-y
+\]
+
+\end_inset
+
+נכתוב:
+\begin_inset Formula 
+\[
+y'=p\left(y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=pp'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+pp'=-y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cfrac{1}{2}p^{2}\right)^{\prime}=-\left(\cfrac{1}{2}y^{2}\right)^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{2}p^{2}=-\cfrac{1}{2}y^{2}+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'^{2}=C-y^{2}
+\]
+
+\end_inset
+
+לא מצורה נורמלית - אבל פה קל לטפל
+\begin_inset Formula 
+\[
+y'=\pm\sqrt{C-y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{y'}{\sqrt{C-y^{2}}}=\pm1
+\]
+
+\end_inset
+
+נוציא אינטגרל
+\begin_inset Formula 
+\[
+\arcsin\left(\cfrac{y}{\sqrt{C}}\right)=\pm x+D
+\]
+
+\end_inset
+
+ )
+\begin_inset Formula $D$
+\end_inset
+
+ קבוע]שני[(
+\end_layout
+
+\begin_layout Part*
+מד"רים מסדר שני
+\end_layout
+
+\begin_layout Section*
+מילון
+\end_layout
+
+\begin_layout Standard
+מד"ר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: )*(
+\begin_inset Formula $F\left(x,y,y',y''\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $F:\mathbb{R}^{4}\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מד"ר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בצורה נורמלית: 
+\begin_inset Formula $y''=f\left(x,y,y'\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פתרון של )*( זה פונקציה 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ מוגדרת על קטע 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\left(x,y\left(x\right),y'\left(x\right),y''\left(x\right)\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש הכללה לסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3,4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'
+\end_layout
+
+\begin_layout Section*
+מושגים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פתרון
+\begin_inset space ~
+\end_inset
+
+כללי פתרון עם קבועים חופשיים שמהווה את כל הפתרונות של המד"ר.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיית
+\begin_inset space ~
+\end_inset
+
+ַקושי למד"ר מסדר שניים מצא פתרון של 
+\begin_inset Formula $y''=f\left(x,y,y'\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\{ \begin{array}{c}
+y\left(x_{0}\right)=y_{0}\\
+y'\left(x_{0}\right)=p_{0}
+\end{array}\right.$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0},y_{0},p_{0}$
+\end_inset
+
+ נתונים.
+\end_layout
+
+\begin_layout Standard
+]
+\begin_inset Formula $y''=0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $y'=C$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $y=Cx+D$
+\end_inset
+
+, 
+\begin_inset Formula $C,D$
+\end_inset
+
+ קבועים.
+ לסדר שניים יש בד"כ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קבועים חופשיים, לסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש בד"כ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קבועים חופשיים וכו'[
+\end_layout
+
+\begin_layout Subsubsection*
+בעיית קושי לסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מצא 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y'''=f\left(x,y,y',y''\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y\left(x_{0}\right)=y_{0}\\
+y'\left(x_{0}\right)=p_{0}\\
+y''\left(x_{0}\right)=q_{0}
+\end{array}\right.$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0},y_{0},p_{0},q_{0}$
+\end_inset
+
+ נתונים.
+\end_layout
+
+\begin_layout Standard
+וכן סדר יותר גבוה...
+\end_layout
+
+\begin_layout Section*
+מד"ר לינארי מסדר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מד"ר בצורה לינארית: 
+\begin_inset Formula $a_{2}\left(x\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y\left(x\right)=b\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}\left(x\right),a_{1}\left(x\right),a_{2}\left(x\right),b\left(x\right)$
+\end_inset
+
+ נתונים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $b\left(x\right)=0$
+\end_inset
+
+ - 
+\bar under
+הומוגני
+\bar default
+.
+ אחרת 
+\bar under
+אי-הומוגני
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נקודות 
+\begin_inset Formula $x$
+\end_inset
+
+ שבהן 
+\begin_inset Formula $a_{2}\left(x\right)=0$
+\end_inset
+
+ נקראות 
+\bar under
+נקודות סינגולריות
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נקודות אחרות הן נק' 
+\bar under
+לא-סינגולריות
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+אותו דבר לגבי סדר
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size normal
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+מד"ר בצורה לינארית: 
+\begin_inset Formula $a_{3}\left(x\right)y'''+a_{2}\left(x_{0}\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y\left(x\right)=b\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}\left(x\right),a_{1}\left(x\right),a_{2}\left(x\right),a_{3}\left(x\right),b\left(x\right)$
+\end_inset
+
+ נתונים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $b\left(x\right)=0$
+\end_inset
+
+ - 
+\bar under
+הומוגני
+\bar default
+.
+ אחרת 
+\bar under
+אי-הומוגני
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נקודות 
+\begin_inset Formula $x$
+\end_inset
+
+ שבהן 
+\begin_inset Formula $a_{3}\left(x\right)=0$
+\end_inset
+
+ נקראות 
+\bar under
+נקודות סינגולריות
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נקודות אחרות הן נק' 
+\bar under
+לא-סינגולריות
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+וכן הלאה
+\end_layout
+
+\begin_layout Section*
+משפט הקיום והיחידות לסדר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''=f\left(x,y,y'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(x_{0}\right)=y_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'\left(x_{0}\right)=p_{0}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $f\left(x,y,p\right)$
+\end_inset
+
+ היא רציפה על "תיבה" מהצורה 
+\begin_inset Formula $D=\left\{ \left(x,y,p\right)\middle|\left|x-x_{0}\right|\le\alpha,\left|y-y_{0}\right|\le\beta,\left|p-p_{0}\right|\le\gamma\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\alpha,\beta,\gamma\ge0$
+\end_inset
+
+ וגזירה עם נגזרת רציפה ביחס ל
+\begin_inset Formula $\left(y,p\right)$
+\end_inset
+
+ אזי קיים פתרון אחד ויחיד של בעיית קושי המוגדרת על קטע פתוח הכולל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+הוכחה בעתיד, נשתמש עכשיו!!
+\end_layout
+
+\begin_layout Part*
+פרק
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ מד"ר לינארי מסדר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומעלה
+\end_layout
+
+\begin_layout Subsection*
+משוואה לינארית מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+
+\begin_inset Formula 
+\[
+a_{2}\left(x\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משוואה לינארית מסדר
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y^{\left(n\right)}+...+a_{2}\left(x\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\left(x\right)=0$
+\end_inset
+
+ - הומוגנית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\left(x\right)\ne0$
+\end_inset
+
+ - אי הומוגנית.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+קבוצת הפתרונות של מד"ר לינארית הומוגנית היא מרחב וקטורי
+\end_layout
+
+\begin_layout Enumerate
+קבוצת הפתרונות של מד"ר לינארית אי-הומוגנית ניתן לכתוב בצורה 
+\begin_inset Formula $y_{p}\left(x\right)+y_{c}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $y_{p}\left(x\right)$
+\end_inset
+
+ הוא פתרון 
+\bar under
+פרטי
+\bar default
+ של האי-הומוגני, ו
+\begin_inset Formula $y_{c}\left(x\right)$
+\end_inset
+
+ זה פתרון 
+\bar under
+כללי
+\bar default
+ של ההומוגנית
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+הפתרון הפרטי מסומן ע"י
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+p
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+private
+\lang hebrew
+.
+ הפתרון הכללי מסומן ע"י
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+c
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+complementary
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- משלים.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נניח ש
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ הם פתרונות של המד"ר הלינארית ההומוגנית, ו
+\begin_inset Formula $\alpha_{1},\alpha_{2}\in\mathbb{R}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y_{1}^{\left(n\right)}+...+a_{1}\left(x\right)y_{1}^{\prime}+a_{0}\left(x\right)y_{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y_{2}^{\left(n\right)}+...+a_{1}\left(x\right)y_{2}^{\prime}+a_{0}\left(x\right)y_{2}=0
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)\left(\alpha_{1}y_{1}+\alpha_{2}y_{2}\right)^{\left(n\right)}+...+a_{1}\left(x\right)\left(\alpha_{1}y_{1}+\alpha_{2}y_{2}\right)^{\prime}+a_{0}\left(x\right)\left(\alpha_{1}y_{1}+\alpha_{2}y_{2}\right)=0
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\alpha_{1}y_{1}+\alpha_{2}y_{2}$
+\end_inset
+
+ הוא גם פתרון.
+ לכן הקבוצה של הפתרונות היא סגורה תחת חיבור של פונקציות וכפל ע"י סקלרים
+ ומהווה מרחב ווקטורי.
+\end_layout
+
+\begin_layout Enumerate
+יש לנו להראות שהפרש של שני פתרונות של המשוואה האי-הומוגנית פותר את המשוואה
+ ההומוגנית)
+\begin_inset Formula $y=y_{p}+y_{c}\Leftrightarrow y-y_{p}=y_{c}$
+\end_inset
+
+(.
+ אם
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y_{1}^{\left(n\right)}+...+a_{1}\left(x\right)y_{1}^{\prime}+a_{0}\left(x\right)y_{1}=b\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y_{2}^{\left(n\right)}+...+a_{1}\left(x\right)y_{2}^{\prime}+a_{0}\left(x\right)y_{2}=b\left(x\right)
+\]
+
+\end_inset
+
+אזי
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)\left(y_{1}-y_{2}\right)^{\left(n\right)}+...+a_{1}\left(x\right)\left(y_{1}-y_{2}\right)^{\prime}+a_{0}\left(x\right)\left(y_{1}-y_{2}\right)=b\left(x\right)
+\]
+
+\end_inset
+
+וגם הפוך, סכום של פתרון של ההומוג.
+ ופתרון של האי-הומוג.
+ הוא פתרון של האי-הומוג.
+\end_layout
+
+\begin_layout Subsection*
+ראינו שמרחב הפתרונות הוא מרחב ווקטורי.
+ מה המימד?
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a_{n}\left(x\right)=1$
+\end_inset
+
+, מימד המרחב של פתרונות של המש.
+ ההומוגנית היא 
+\begin_inset Formula $n$
+\end_inset
+
+.)תמיד נניח ש
+\begin_inset Formula $a_{0}\left(x\right),a_{1}\left(x\right),...a_{n}\left(x\right)$
+\end_inset
+
+ הם רציפים(.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ההוכחה מסתמכת על משפט הקיום והיחידות, שמתקיים במקרה ש
+\begin_inset Formula $a_{n}\left(x\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+במקרה ש
+\lang english
+n=2
+\end_layout
+
+\begin_layout Standard
+נבנה בסיס 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+ של מרחב הפתרונות.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ פתרון יחיד עם 
+\begin_inset Formula $y_{1}\left(x_{0}\right)=1,y_{1}^{\prime}\left(x_{0}\right)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ פתרון יחיד עם 
+\begin_inset Formula $y_{2}\left(x_{0}\right)=0,y_{2}^{\prime}\left(x_{0}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על הפתרון 
+\begin_inset Formula $\alpha y_{1}\left(x\right)+\beta y_{2}\left(x\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y\left(x_{0}\right)=\alpha,y'\left(x_{0}\right)=\beta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"י קיום ויחידות אין עוד פתרון עם תנאי התחלה אלה, לכן מצאנו כל פתרון כצירוף
+ לינארי של 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+ והם מהווים בסיס.
+\end_layout
+
+\end_body
+\end_document

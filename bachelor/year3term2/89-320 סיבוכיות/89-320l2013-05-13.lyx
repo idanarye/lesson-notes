@@ -1,0 +1,2441 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סיבוכיות מקום
+\end_layout
+
+\begin_layout Standard
+ראינו פעם שעברה את משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(\log n\right)\subseteq\textnormal{DSPACE}\left(\log^{2}n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוכלל
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $s\left(n\right)\ge\log n$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(O\left[\left(s\left(n\right)\right)^{2}\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $A\in\textnormal{NSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $A\in\textnormal{DSPACE}\left(s^{2}\left(n\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A'$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+A'=\left\{ \frac{x\cdot1\cdot0^{2^{s\left(\left|x\right|\right)}}}{n}\middle|x\in A\right\} 
+\]
+
+\end_inset
+
+נשים לב:
+\begin_inset Formula 
+\[
+A'\in\textnormal{NSPACE}\left(\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הסבר
+\series default
+: כדי להכריע את 
+\begin_inset Formula $A'$
+\end_inset
+
+ צריך לוודא שני דברים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+צריך לוודא שהמחרוזת בפורמט נכון.
+\end_layout
+
+\begin_layout Enumerate
+צריך לוודא ש
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=\left|x\right|+1+2^{s\left(\left|x\right|\right)}\qquad\log n\ge s\left(\left|x\right|\right)
+\]
+
+\end_inset
+
+כדי לממש את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לשמור בזיכרון העבודה מונה שיכול לספור עד 
+\begin_inset Formula $1+\left|x\right|+2^{s\left(\left|x\right|\right)}$
+\end_inset
+
+.
+ מונה כזה ניתן לממש ב
+\begin_inset Formula $\log n$
+\end_inset
+
+ ביטים ולכן גודל הזיכרון הנדרש
+\begin_inset Formula $\log n\ge$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+s\left(\left|x\right|\right)\le\log n=\log\left(1+\left|x\right|+2^{s\left(\left|x\right|\right)}\right)\le\log\left(2\cdot2^{s\left(\left|x\right|\right)}\right)=s\left(\left|x\right|\right)+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s\left(\left|x\right|\right)\ge\log\left|x\right|\qquad2^{s\left(\left|x\right|\right)}\ge\left|x\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לוודא ש
+\begin_inset Formula $x\in A$
+\end_inset
+
+, זאת ניתן בזיכרון 
+\begin_inset Formula $s\left(\left|x\right|\right)$
+\end_inset
+
+, שכן 
+\begin_inset Formula $A\in\textnormal{NSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+, ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניתן לחישוב ב
+\begin_inset Formula $s\left(\left|x\right|\right)\le\log n$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Standard
+ראינו שכדי לוודא את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נדרשים 
+\begin_inset Formula $\log n$
+\end_inset
+
+ ביטים של זיכרון, ולכן 
+\begin_inset Formula $A'\in\textnormal{NSPACE}\left(\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בעזרת משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+A'\in\textnormal{DSPACE}\left(\left(\log n\right)^{2}\right)
+\]
+
+\end_inset
+
+כדי להראות ש
+\begin_inset Formula $A\in\textnormal{DSPACE}\left(s^{2}\left(n\right)\right)$
+\end_inset
+
+ נראה את האלגוריתם הבא שמחשב את 
+\begin_inset Formula $A$
+\end_inset
+
+ בסיבוכיות זיכרון דטרמיניסטית 
+\begin_inset Formula $O\left(s^{2}\left(n\right)\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+בהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+צור קלט 
+\begin_inset Formula $y=x\cdot1\cdot0^{2^{s\left(\left|x\right|\right)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הכרע האם 
+\begin_inset Formula $y\in A'$
+\end_inset
+
+ והחזר את התשובה המתקבלת
+\end_layout
+
+\begin_layout Standard
+ברור מהגדרת 
+\begin_inset Formula $A'$
+\end_inset
+
+, שהאלגוריתם שתיארנו מכריע נכונה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נסביר כעת כי עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, האלגוריתם עובד בסיבוכיות מקום דטרמיניסטית 
+\begin_inset Formula $O\left(s^{2}\left(\left|x\right|\right)\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+אמנם יש ליצור קלט באורך 
+\begin_inset Formula $\left|x\right|+1+2^{s\left(\left|x\right|\right)}$
+\end_inset
+
+, אך אין צורך להחזיר יצוג מפורש של קלט זה, ולמעשה כאשר ידרש הביט ה
+\begin_inset Formula $i$
+\end_inset
+
+ של 
+\begin_inset Formula $y$
+\end_inset
+
+ נפעל באופן הבא:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $1\le i\le\left|x\right|$
+\end_inset
+
+ נחזיר את 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מתוך הקלט
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $i=\left|x\right|+1$
+\end_inset
+
+ נחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\left|x\right|+2\le i\le1+\left|x\right|+2$
+\end_inset
+
+ נחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Standard
+לצורך זה נדרש רק מונה בגודל 
+\begin_inset Formula $\log\left(1+\left|x\right|+2^{s\left(\left|x\right|\right)}\right)$
+\end_inset
+
+ שניתן לממש ב
+\begin_inset Formula $O\left(s\left(\left|x\right|\right)\right)$
+\end_inset
+
+ תאי זיכרון.
+\end_layout
+
+\begin_layout Standard
+את שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניתן לממש בסיבוכיות זיכרון דטרמיניסטית שהינה
+\begin_inset Formula 
+\[
+\left[\log\left(\left|x\right|\right)\right]^{2}\le\left[\log\left(2\cdot2^{s\left(\left|x\right|\right)}\right)\right]^{2}\cdot\log^{2}\left(\left|y\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP\neq CO-NP
+\]
+
+\end_inset
+
+ראינו כי אם
+\begin_inset Formula 
+\[
+NP=CO-NP
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+PH=\Sigma_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Immerman
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NL=CO-NL
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+NL=\bigcup_{c}\textnormal{NSPACE}\left(l_{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l_{c}=c\log n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CO-NL=\left\{ \left\{ 0,1\right\} ^{*}\backslash A\middle|A\in NL\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה 
+\begin_inset Formula $\odot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם קיימת רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $L_{2}\in NL$
+\end_inset
+
+ אזי 
+\begin_inset Formula $L_{1}\in NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כזכור רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה בסיבוכיות מקום לוגריתמית, כלומר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ניתן לחישוב במקום 
+\begin_inset Formula $\log\left(\left|x\right|\right)$
+\end_inset
+
+]ולכן ע"פ משפט משיעור שעבר בסיבוכיות 
+\series bold
+זמן
+\series default
+ פולינומית ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+[, כך שמתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)\in L_{2}\iff x\in L_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ - מחשבת את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ - מחשבת רדוקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ - מחשבת את 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|\le\left|x\right|^{c}
+\]
+
+\end_inset
+
+נשים לב שמכונה 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ צריכה לסמלץ בתורה את הפעלת מכונות 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $M_{2}$
+\end_inset
+
+.
+ הפלט 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+ גודלו חסום פולינומית ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ לא יכולה לשמור 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ בשטח העבודה שלה.
+ הדרך להתגבר על כך, היא להפעיל את 
+\begin_inset Formula $M$
+\end_inset
+
+ מחדש עבור כל ביט 
+\begin_inset Formula $i$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ שמכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ מבקשת.
+ כלומר, עבור 
+\series bold
+כל
+\series default
+ ביט)מתוך 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+( ש
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ דורשת נפעיל את 
+\begin_inset Formula $M$
+\end_inset
+
+ מחדש.
+\end_layout
+
+\begin_layout Standard
+על כן נוכל להסיק ש
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ עובדת בסיבוכיות זיכרון לוגריתמית, ולכן 
+\begin_inset Formula $L_{1}\in NL$
+\end_inset
+
+ כנדרש.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $NL$
+\end_inset
+
+-שלמה, וכן 
+\begin_inset Formula $A\in CO-NL$
+\end_inset
+
+, אזי 
+\begin_inset Formula $NL=CO-NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה ראשית שתחת ההנחות לעיל 
+\begin_inset Formula $NL\subseteq CO-NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in NL$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $L\in CO-NL$
+\end_inset
+
+.
+ מכיוון ש
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $NL$
+\end_inset
+
+- שלמה, קיימת רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מ
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה בזיכרון לוגריתמי, כך ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(x\right)\in A & \iff & x\in L\\
+f\left(x\right)\notin A & \iff & x\notin L\\
+f\left(x\right)\in\overline{A} & \iff & x\in\overline{A}
+\end{eqnarray*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $f$
+\end_inset
+
+ הינה גם רדוקציית 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"פ טענה 
+\begin_inset Formula $\odot$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{L}\in NL$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L\in CO-NL$
+\end_inset
+
+, ולכן קיבלנו 
+\begin_inset Formula $NL\subseteq CO-NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח כי קיימת 
+\begin_inset Formula $\tilde{L}\in CO-NL\backslash NL$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\overline{\tilde{L}}\in NL\subseteq CO-NL
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{L}\in NL
+\]
+
+\end_inset
+
+אבל זוהי סתירה שכן הנחנו ש
+\begin_inset Formula 
+\[
+\tilde{L}\in CO-NL\backslash NL
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+NL=CO-NL
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+לפיכך, כדי להוכיח את משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Immerman
+\lang hebrew
+, די למצוא שפה שהיא 
+\begin_inset Formula $NL$
+\end_inset
+
+-שלמה וגם משלימתה של אותה שפה שייכת ל
+\begin_inset Formula $NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+בשבוע שעבר ראינו שהשפה הבאה היא 
+\begin_inset Formula $NL$
+\end_inset
+
+-שלמה:
+\begin_inset Formula 
+\[
+St-Conn=\left\{ \left(G,s,t\right)\middle|\begin{array}{c}
+\textnormal{\ensuremath{G} is directed graph with}\\
+\textnormal{a path from \ensuremath{s} to \ensuremath{t}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+כדי להוכיח את המשפט, נראה שהשפה הבאה היא ב
+\begin_inset Formula $NL$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\overline{St-Conn}=\left\{ \left(G,s,t\right)\middle|\begin{array}{c}
+\textnormal{\ensuremath{G} is directed graph without}\\
+\textnormal{a path from \ensuremath{s} to \ensuremath{t}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+TR=\textnormal{Total Reachability}\left(G,s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+TR\left(G,s\right)=\begin{array}{c}
+\textnormal{\# of nodes in Graph \ensuremath{G} that there is}\\
+\textnormal{a directed path to them from node \ensuremath{s}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $TR\left(G,s\right)\in NL$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\overline{St-Conn}\left(G,s,t\right)\in NL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, נאמר כי מ"ט ל"ד מחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+ אם עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+המכונה תחזיר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ או סימן 
+\begin_inset Formula $\perp$
+\end_inset
+
+)"לא יודעת"(
+\end_layout
+
+\begin_layout Itemize
+קיים מסלול שיגרום למכונה להחזיר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת הטענה
+\end_layout
+
+\begin_layout Standard
+להלן מכונה ב
+\begin_inset Formula $NL$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $\overline{St-Conn}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+בהנתן מכונה ב
+\begin_inset Formula $NL$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $TR\left(G,s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{St-Conn}\left(G,s,t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{1}\gets TR\left(G,s\right)$
+\end_inset
+
+ אם נכשלנו נחזיר 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{2}\gets TR\left(G',s\right)$
+\end_inset
+
+ אם נכשלנו נחזיר 
+\begin_inset Formula $0$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $G'$
+\end_inset
+
+ הוא הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ בו הורדנו את קודקוד 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $C_{1}=C_{2}$
+\end_inset
+
+ נחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Standard
+כלומר, כדי להוכיח את משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Immerman
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נותר להראות 
+\begin_inset Formula $TR\left(G,s\right)\in NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אסטרטגיה
+\series default
+: ננחש את 
+\begin_inset Formula $TR\left(G,s\right)$
+\end_inset
+
+, נקרא לניחוש 
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נבדוק ש
+\begin_inset Formula $TR\left(G,s\right)\ge g$
+\end_inset
+
+ - 
+\bar under
+קל
+\end_layout
+
+\begin_layout Enumerate
+נבדוק ש
+\begin_inset Formula $TR\left(G,s\right)\le g$
+\end_inset
+
+ - 
+\bar under
+קשה
+\end_layout
+
+\begin_layout Standard
+אם נוכל לבצע את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בסיבוכיות זיכרון לוגריתמית, נוכל להראות 
+\begin_inset Formula $TR\in NL$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ וקודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+R_{i}=\begin{array}{c}
+\textnormal{Set of nodes that there is}\\
+\textnormal{a path to them from \ensuremath{v}}\\
+\textnormal{with length \ensuremath{\le i}}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{0}=\left\{ v\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{i}=R_{i-1}\cup\left\{ u\middle|w\in R_{i-1},\left(w,u\right)\in E\right\} 
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+TR\left(G,s\right)=\left|R_{n}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הרעיון
+\series default
+: ישנו אלגוריתם הרץ בסיבוכיות זיכרון לוגריתמית המכריע את 
+\begin_inset Formula $\left|R_{1}\right|$
+\end_inset
+
+ בהנתן 
+\begin_inset Formula $\left|R_{i-1}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי אם אפשר להכריע את 
+\begin_inset Formula $\left|R_{i}\right|$
+\end_inset
+
+ בהנתן 
+\begin_inset Formula $\left|R_{i-1}\right|$
+\end_inset
+
+ בסיבוכיות זיכרון לוגריתמית אזי 
+\begin_inset Formula $TR\left(G,s\right)\in NL$
+\end_inset
+
+, וההסבר הינו הבא:
+\end_layout
+
+\begin_layout Standard
+כדי לחשב את 
+\begin_inset Formula $TR$
+\end_inset
+
+ אנו נדרשים למצוא את 
+\begin_inset Formula $\left|R_{n}\right|$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|R_{0}\right|$
+\end_inset
+
+ ידוע לנו, וחישוב 
+\begin_inset Formula $\left|R_{i}\right|$
+\end_inset
+
+ בהנתן 
+\begin_inset Formula $\left|R_{i-1}\right|$
+\end_inset
+
+ יכול להעשות בסיבוכיות לוגריתמית וכן כל פעם ישמר 
+\series bold
+רק
+\series default
+ ה
+\begin_inset Formula $\left|R_{i}\right|$
+\end_inset
+
+ האחרון שחושב, ולחן סה"כ הזיכרון המנוצל הינו לוגריתמי.
+\end_layout
+
+\begin_layout Standard
+לכן נותר להראות אלגוריתם שרץ בסיבוכיות זיכרון לוגריתמית לחישוב 
+\begin_inset Formula $\left|R_{i}\right|$
+\end_inset
+
+ בהנתן ערך נכון עבור 
+\begin_inset Formula $\left|R_{i-1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+start=0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ננחש 
+\begin_inset Formula $\left|R_{i}\right|=g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נבדוק 
+\begin_inset Formula $\left|R_{i}\right|\ge g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נבדוק 
+\begin_inset Formula $\left|R_{i}\right|\le g$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\left|V-R_{i}\right|\ge n\cdot g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הצליחו נחזיר 
+\begin_inset Formula $g$
+\end_inset
+
+, אחרת נחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבוצע בזיכרון לוגריתמי, כי אפשר להגריל 
+\begin_inset Formula $g$
+\end_inset
+
+ קודקודים, ולבדוק לגבי כל אחד מהם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ שקיים מסלול באורך
+\begin_inset Formula $i\ge$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ אליו.
+\end_layout
+
+\begin_layout Itemize
+שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לבדוק ש
+\begin_inset Formula $\left|V-R_{i}\right|\ge n-g$
+\end_inset
+
+ נגרול 
+\begin_inset Formula $n-g$
+\end_inset
+
+ קודקודים.
+ לכל קודקוד שהוגרל, נגריל 
+\begin_inset Formula $\left|R_{i-1}\right|$
+\end_inset
+
+ קודקודים, ונבדוק לגבי כל אחד מהם ב
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהוא אכן ב
+\begin_inset Formula $R_{i-1}$
+\end_inset
+
+.
+ עבור כל קדקד 
+\begin_inset Formula $w$
+\end_inset
+
+ שוידינו שהוא ב
+\begin_inset Formula $R_{i-1}$
+\end_inset
+
+ נוודא ש
+\begin_inset Formula $u\neq w$
+\end_inset
+
+, וכן שאין קשת 
+\begin_inset Formula $\left(w,u\right)$
+\end_inset
+
+.
+ אם כל הבדיקות עברו בהצלחה נשתכנע כי 
+\begin_inset Formula $u\notin R_{i}$
+\end_inset
+
+, ולכן סה"כ שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבוצע בסיבוכיות זיכרון לוגריתמית.
+\end_layout
+
+\end_body
+\end_document

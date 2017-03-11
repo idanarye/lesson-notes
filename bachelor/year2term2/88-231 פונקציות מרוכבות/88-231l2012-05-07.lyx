@@ -1,0 +1,2333 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+טור מרוכב הוא סכום אינסופי
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}z_{n}\qquad\left(z_{n}\in\mathbb{C}\right)
+\]
+
+\end_inset
+
+נתאים לטור "סכומים חלקיים"
+\begin_inset Formula 
+\[
+S_{N}=\sum_{n=1}^{N}z_{n}
+\]
+
+\end_inset
+
+אם קיים 
+\begin_inset Formula $S=\lim\limits _{N\to\infty}S_{N}$
+\end_inset
+
+ אומרים שהטור מתכנסו וסכומו 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ ז"א 
+\begin_inset Formula 
+\[
+S=\sum_{n=1}^{\infty}z_{n}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\lim\limits _{N\to\infty}S_{N}$
+\end_inset
+
+ אינו קיים, אומרים שהטור מתבדר.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}z_{n}=\sum\limits _{n=1}^{\infty}x_{n}+iy_{n}$
+\end_inset
+
+ מתכנס 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\sum x_{n}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\sum y_{n}$
+\end_inset
+
+ מתכנסים, ואם כן, 
+\begin_inset Formula $\sum z_{n}=\sum x_{n}+i\sum y_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\sum z_{n}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\sum w_{n}$
+\end_inset
+
+ מתכנסים ואם 
+\begin_inset Formula $c\in\mathbb{C}$
+\end_inset
+
+ קבוע מרוכב אז 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}z_{n}+cw_{n}$
+\end_inset
+
+ מתכנס לסכום 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}z_{n}+c\sum\limits _{n=1}^{\infty}w_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+טור שמתכנס בהחלט מתכנס.
+ ז"א אם 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\left|z_{n}\right|$
+\end_inset
+
+ מתכנס אז גם 
+\begin_inset Formula $\sum\limits _{k=1}^{\infty}z_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נניח שלכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ מוגדרת פונקציה 
+\begin_inset Formula $f_{n}:S\to\mathbb{C}$
+\end_inset
+
+.
+ אז אפשר לבנות טור של פונקציות
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f_{n}\left(z\right)\qquad\left(z\in S\right)
+\]
+
+\end_inset
+
+בהתאם לטור זה יש סכומים חלקיים
+\begin_inset Formula 
+\[
+S_{N}\left(z\right)=\sum_{n=1}^{N}f_{n}\left(z\right)
+\]
+
+\end_inset
+
+תחום ההתכנסות של הטור הוא
+\begin_inset Formula 
+\[
+S\supset T=\left\{ z\in S\middle|\exists\lim_{N\to\infty}S_{N}\left(z\right)\right\} 
+\]
+
+\end_inset
+
+על 
+\begin_inset Formula $T$
+\end_inset
+
+ מוגדרת פונקציה גבולית
+\begin_inset Formula 
+\[
+f\left(z\right)=\lim_{N\to\infty}S_{N}\left(z\right)=\sum_{n=1}^{\infty}f_{n}\left(z\right)
+\]
+
+\end_inset
+
+אומרים שהטור מתכנס ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $T$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+S_{N}\left(z\right)\to f\left(z\right)
+\]
+
+\end_inset
+
+במ"ש על 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+'
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}u_{n}+iv_{n}=\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ טור פונציות על קבוצה 
+\begin_inset Formula $S\subset\mathbb{C}$
+\end_inset
+
+.
+ אזי התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+הטור מתכנס ל
+\begin_inset Formula $f\left(z\right)=\left(u+iv\right)\left(z\right)$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum u_{n}=u$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\sum v_{n}=v$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{N\to\infty}\sup\limits _{z\in S}\left|\sum\limits _{n=N}^{\infty}f_{n}\left(z\right)\right|=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה חשובה
+\end_layout
+
+\begin_layout Standard
+טור הנדסי
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}z^{n}=1+z+z^{2}+z^{3}+\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{N}\left(z\right)=1+z+z^{2}+\dots+z^{N}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+zS_{N}\left(z\right)=z+z^{2}+\dots+z^{N}+z^{N+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{N}\left(z\right)-zS_{N}\left(z\right)=1-z^{N+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{N}\left(z\right)=\cfrac{1-z^{N+1}}{1-z}\qquad\left(z\neq1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{N\to\infty}S_{N}\left(z\right)=\begin{cases}
+\cfrac{1}{1-z} & \left|z\right|<1\\
+\textnormal{does not exist} & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+מצאנו שהטור ההנדסי מתכנס בדיוק בעיגול היחידה 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+...
+\end_layout
+
+\begin_layout Standard
+יש התכנסות במ"ש על 
+\begin_inset Formula $B_{r}=\left\{ z\in\mathbb{C}\middle|\left|z\right|<r\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $0<r<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+'
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)=\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ עוד נניח שכל 
+\begin_inset Formula $f_{n}\left(z\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $S$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+'
+\end_layout
+
+\begin_layout Standard
+נניח שכל 
+\begin_inset Formula $f_{n}\left(z\right)$
+\end_inset
+
+ רציפה לאורך המסילה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, ונניח ש
+\begin_inset Formula $f\left(t\right)=\sum\limits _{n=1}^{\infty}f_{n}\left(t\right)$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(z\right)\mathrm{\, d}z=\int_{\gamma}\sum_{n=1}^{\infty}f_{n}\left(z\right)\mathrm{\, d}z=\sum_{n=1}^{\infty}\int_{\gamma}f_{n}\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+'
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ הוא טור של פונקציות בעלות נגזרת רציפה בתחום 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+.
+ עוד נניח שבנקודה אחת)לפחות( 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ הטור 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z_{0}\right)$
+\end_inset
+
+ מתכנס, וטור הנגזרות 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}'\left(z\right)$
+\end_inset
+
+ מתכנס במ"ש לפונקציה 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אזי הטור המקורי מתכנס ב
+\begin_inset Formula $D$
+\end_inset
+
+ לפונקציה גזירה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+)אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+( ומתקיים
+\begin_inset Formula 
+\[
+f'\left(z\right)=\cfrac{\mathrm{d}}{\mathrm{d}z}\sum_{n=1}^{\infty}f_{n}\left(z\right)=\sum_{n=1}^{\infty}\cfrac{\mathrm{d}}{\mathrm{d}z}f_{n}\left(z\right)=\sum_{n=1}^{\infty}f_{n}'\left(z\right)=g\left(z\right)
+\]
+
+\end_inset
+
+המסר הוא: כדי לגזור טור איבר איבר צריכים לבדוק שהטור הגזור מתכנס במ"ש.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+)מבחן ה
+\begin_inset Formula $m$
+\end_inset
+
+ של ווירשטרס(
+\end_layout
+
+\begin_layout Standard
+נניח שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $f_{n}\left(z\right)$
+\end_inset
+
+ מוגדרת בקבוצה 
+\begin_inset Formula $S\subset\mathbb{C}$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $\left|f_{n}\left(z\right)\right|\le m_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\in S$
+\end_inset
+
+.
+ עוד נניח ש
+\begin_inset Formula $\sum_{n=1}^{\infty}m_{n}$
+\end_inset
+
+ מתכנס.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $z\in S$
+\end_inset
+
+ הטור 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ מתכנס בהחלט.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ מתכנס במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+ניקח 
+\begin_inset Formula $z\in S$
+\end_inset
+
+ כלשהו.
+ לפי הנתון לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $0\le\left|f_{n}\left(z\right)\right|\le m_{n}$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $\sum m_{n}$
+\end_inset
+
+ מתכנס, מבחן ההשוואה לטורים חיוביים אומר ש
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\left|f_{n}\left(z\right)\right|$
+\end_inset
+
+מתכנס.
+ ז"א 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ מתכנס בהחלט.
+\end_layout
+
+\begin_layout Enumerate
+לפי חלק א' 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)$
+\end_inset
+
+ מתכנס לכל 
+\begin_inset Formula $z\in S$
+\end_inset
+
+ ומוגדרת פונקציה גבולית 
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum\limits _{n=1}^{\infty}f_{n}\left(z\right)\qquad\left(z\in S\right)
+\]
+
+\end_inset
+
+נותר להוכיח שהתכנסות זו היא במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ ובכן: יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון.
+ נתון שטור המספרים 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}m_{n}$
+\end_inset
+
+ מתכנס.
+ לכן קיים 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+ טבעי כך שאם 
+\begin_inset Formula $N>N_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\sum\limits _{n=N_{0}+1}^{\infty}m_{n}<\epsilon$
+\end_inset
+
+.
+ כעת אם 
+\begin_inset Formula $N>N_{0}$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $z\in S$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-S_{N}\left(z\right)\right|=\left|\sum_{n=N+1}^{\infty}f_{n}\left(z\right)\right|\le\sum_{n=N+1}^{\infty}\left|f_{n}\left(z\right)\right|\le\sum_{n=N+1}^{\infty}m_{n}<\epsilon
+\]
+
+\end_inset
+
+הדבר אפשרי לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $S_{N}\to f$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+, וזה אומר בדיוק שהטור 
+\begin_inset Formula $\sum f_{n}$
+\end_inset
+
+ מתכנס ל
+\begin_inset Formula $f$
+\end_inset
+
+ במ"ש על 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+ ו
+\begin_inset Formula $r>0$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+ את העיגול הפתוח 
+\begin_inset Formula $\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|<r\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נסמן ב
+\begin_inset Formula $\overline{B\left(z_{0},r\right)}$
+\end_inset
+
+ את העיגול הסגור 
+\begin_inset Formula $\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|\le r\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נסמן ב
+\begin_inset Formula $C\left(z_{0},r\right)$
+\end_inset
+
+ את המעגל 
+\begin_inset Formula $\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|=r\right\} $
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+\overline{B\left(z_{0},r\right)}=B\left(z_{0},r\right)\cup C\left(z_{0},r\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+עבור תחום 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ הסימון 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+ אומר שהפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ היא הולומורפית)=אנליטית( ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+טור חזקות הוא טור פונקציות מהסוג
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\dots
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+)מספר קבוע( והמקדמים 
+\begin_inset Formula $a_{n}\in\mathbb{C}$
+\end_inset
+
+)קבועים!(
+\end_layout
+
+\begin_layout Standard
+דוגמה פשוטה היא הטור ההנדסי 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}z^{n}$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+, וכל 
+\begin_inset Formula $1=a_{n}$
+\end_inset
+
+.
+ מצאנו שהטור ההנדסי מתכנס ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+ ומתבדר מחוץ לעיגול זה, והוא מתנכתס במ"ש בעיגולים 
+\begin_inset Formula $\overline{B\left(0,r\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $0<r<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ טור חזקות מרוכב כלשהו.
+ נגדיר
+\begin_inset Formula 
+\[
+R=\cfrac{1}{\lim\limits _{n\to\infty}\sqrt[n]{\left|a_{n}\right|}}\qquad\left(0\le R\le\infty\right)
+\]
+
+\end_inset
+
+אזי:
+\end_layout
+
+\begin_layout Enumerate
+עבור כל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+, טור החזקות מתכנס בהחלט בנקודה 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עבור כל 
+\begin_inset Formula $z$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|z-z_{0}\right|>R$
+\end_inset
+
+ הטור מתבדר בנקודה 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $r$
+\end_inset
+
+ כך ש
+\begin_inset Formula $0<r<R$
+\end_inset
+
+ טור החזקות מתכנס במ"ש בעיגול 
+\begin_inset Formula $\overline{B\left(z_{0},r\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $"R"$
+\end_inset
+
+ נקרא רדיוס ההתכנסות של הטורץ
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+העתק מילה במילה מאינפי.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+)מבחר ד'אלמבר(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ טור חזקות מרוכב כלשהו.
+ נניח שקיים 
+\begin_inset Formula $S=\lim\limits _{n\to\infty}\cfrac{\left|a_{n}\right|}{\left|a_{n+1}\right|}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $=R=S$
+\end_inset
+
+רדיוס ההתכנסות של הטור.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Standard
+נניח שלטור החזקות 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ יש רדיוס התכנסות 
+\begin_inset Formula $R>0$
+\end_inset
+
+.
+ אזי הטור מתכנס ב
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+ לפונקציה אנליטית:
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f'\left(z\right)=\cfrac{\mathrm{d}}{\mathrm{d}z}\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}=\sum_{n=0}^{\infty}\cfrac{\mathrm{d}}{\mathrm{d}t}\left[a_{n}\left(z-z_{0}\right)^{n}\right]=\sum_{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n-1}
+\]
+
+\end_inset
+
+המסר הוא שבתוך עיגול ההתכנסות 
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+ מותר לגזור את הטור איבר איבר.
+ לטור הגזור יש אותו רדיוס התכנסות 
+\begin_inset Formula $R$
+\end_inset
+
+ כמו לטור המקורי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה נוכיח את הטענה האחרונה שלטור הגזור 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n-1}$
+\end_inset
+
+ יש רדיוס התכנסות 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ בינתיים נסמן את רדיוס ההתכנסות של הטור הגזור ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נעיר שהטור הגזור מתכנס 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ הטור הבא מתכנס:
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)\sum_{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n-1}=\sum_{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\cfrac{1}{S}=\overline{\lim\limits _{n\to\infty}}\sqrt[n]{n\left|a_{n}\right|}=\overline{\lim_{n\to\infty}}\sqrt[n]{n}\sqrt[n]{\left|a_{n}\right|}=\lim_{n\to\infty}\sqrt[n]{n}\cdot\overline{\lim_{n\to\infty}}\sqrt[n]{\left|a_{n}\right|}=1\cdot\cfrac{1}{R}=\cfrac{1}{R}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $S=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת אם 
+\begin_inset Formula $0<r<R$
+\end_inset
+
+, משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מבטיח שהטור הגזור מתכנס במ"ש בעיגול 
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+, ולכן נוכל להסתמכך על משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+' לומר שלכל 
+\begin_inset Formula $z\in B\left(z_{0},r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\exists f'\left(z\right)=\sum_{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n-1}
+\]
+
+\end_inset
+
+עצם זה שהנגזרת קיימת אומר ש
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+, וקיבלנו נוסחה לנגזרת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+בנתונים של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+, לכל 
+\begin_inset Formula $\mathbb{N}\ni k$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f^{\left(k\right)}\left(z\right)=\sum_{n=k}^{\infty}n\left(n-1\right)\left(n-2\right)\dots\left(n-k+1\right)a_{n}\left(z-z_{0}\right)^{n-k}
+\]
+
+\end_inset
+
+נכון לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+גוזרים את הטור הגזור עוד 
+\begin_inset Formula $k-1$
+\end_inset
+
+ פעמים, ההוכחה הפורמלית באינדוקציה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+בנתונים של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+, לכל 
+\begin_inset Formula $0,1,2,\dots=k$
+\end_inset
+
+, 
+\begin_inset Formula $a_{k}=\cfrac{f^{\left(k\right)}\left(z_{0}\right)}{k!}$
+\end_inset
+
+ ]כאשר מוסכם 
+\begin_inset Formula $f^{\left(0\right)}\left(z\right)=f\left(z\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $0!=0$
+\end_inset
+
+[.
+ לכן הטור הוא טור טיילור של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+,
+\begin_inset Formula 
+\[
+f^{\left(k\right)}\left(z\right)=k\left(k-1\right)\left(k-2\right)\dots\left(k-k+1\right)a_{k}\left(z-z_{0}\right)^{k-k}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=k!a_{k}+\cfrac{\left(k+1\right)!}{2}a_{k+1}\left(z-z_{0}\right)^{1}+\cfrac{\left(k+2\right)!}{3!}a_{k+2}\left(z-z_{0}\right)^{2}+\dots
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ להסיק
+\begin_inset Formula 
+\[
+f^{\left(k\right)}\left(z_{0}\right)=k!a_{k}\Rightarrow a_{k}=\cfrac{f^{\left(k\right)}\left(z_{0}\right)}{k!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+)משפט היחידות לטורי חזקות(
+\end_layout
+
+\begin_layout Standard
+נניח שלכל 
+\begin_inset Formula $z$
+\end_inset
+
+ באיזו סביבה של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}=\sum_{n=0}^{\infty}b_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+אזי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}=b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}=\sum_{n=0}^{\infty}b_{n}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+לפי הנתון השוויון מתקיים באיזו סביבה 
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+, אבל לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $a_{n}=\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}=b_{n}$
+\end_inset
+
+, ולכן הם שווים!
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נמציא טור חזקות 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}z^{n}$
+\end_inset
+
+ שיתכנס ל
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+תחילה נוכיח למה: אם 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ פונקציה שלימה כך ש
+\begin_inset Formula $f'\left(z\right)=f\left(Z\right)$
+\end_inset
+
+, אז בהכרח 
+\begin_inset Formula $f\left(z\right)=ce^{z}$
+\end_inset
+
+)
+\begin_inset Formula $\mathbb{C}\ni c$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נתון 
+\begin_inset Formula $f'=f$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $g\left(z\right)=f\left(z\right)e^{-z}$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+g'\left(z\right)=f'\left(z\right)e^{-z}+\left(-f\left(z\right)e^{-z}\right)=e^{-z}\left[f'\left(z\right)-f\left(z\right)\right]=0
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $g'\left(z\right)=0$
+\end_inset
+
+, 
+\bar under
+לכל
+\bar default
+ 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)=c$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)e^{z}=ce^{z}$
+\end_inset
+
+, והוכחנו את הלמה.
+\end_layout
+
+\begin_layout Standard
+לכן כדי לבנות טור חזקות
+\begin_inset Formula 
+\[
+ce^{z}=\sum_{n=0}^{\infty}a_{n}z^{n}
+\]
+
+\end_inset
+
+מספיק שהטור יהיה שווה לנגזרת שלו.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הדרישה היא
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}z^{n}=\sum_{n=1}^{\infty}na_{n}z^{n-1}=\sum_{n=0}^{\infty}\left(n+1\right)a_{n+1}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+...........
+\end_layout
+
+\begin_layout Section*
+מצאנו
+\end_layout
+
+\begin_layout Standard
+אם לטור 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ יש רדיוס התכנסות חיובית 
+\begin_inset Formula $R>0$
+\end_inset
+
+ אז הטור מתכנס לפונקציה אנליטית
+\begin_inset Formula 
+\[
+f\in H\left(B\left(z_{0},R\right)\right)
+\]
+
+\end_inset
+
+כעת נלך בכיוון הפוך.
+ נתחיל עם פונקציה 
+\begin_inset Formula $f\in H\left(B\left(z_{0},R\right)\right)$
+\end_inset
+
+ ונוכיח שתמיד 
+\begin_inset Formula $f$
+\end_inset
+
+ שווה לטור טיילור שלה.
+ ז"א לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+תחילה נוכיח את זה שבמקרה פרטי 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+.
+ לצורך ההוכחה נזכיר: אם 
+\begin_inset Formula $f\in H\left(\overline{B\left(z_{0},R\right)}\right)$
+\end_inset
+
+ אז יש לנו נוסחת קושי לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(z\right)=\cfrac{n!}{2\pi i}\ointctrclockwise_{C\left(z_{0},R\right)}\cfrac{f\left(w\right)}{\left(w-z\right)^{n+1}}\mathrm{\, d}w
+\]
+
+\end_inset
+
+ובמקרה 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\boxed{f^{\left(n\right)}\left(0\right)=\cfrac{n!}{2\pi i}\ointctrclockwise_{C\left(0,R\right)}\cfrac{f\left(w\right)}{w^{w+1}}\mathrm{\, d}w}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\in H\left(\overline{B\left(0,R\right)}\right)$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $z\in B\left(0,R\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(z\right)}\left(0\right)}{n!}z^{n}
+\]
+
+\end_inset
+
+)ז"א 
+\begin_inset Formula $f$
+\end_inset
+
+ שווה לטור מקלורן שלה(
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נכון גם אם רק נניח ש
+\begin_inset Formula $f\in H\left(B\left(0,R\right)\right)$
+\end_inset
+
+ ]במקום 
+\begin_inset Formula $f\in H\left(\overline{B\left(0,R\right)}\right)$
+\end_inset
+
+[.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\in H\left(B\left(z_{0},R\right)\right)$
+\end_inset
+
+, אזי לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ שווה לטור טיילור שלה:
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $g\left(z\right)=f\left(z+z_{0}\right)$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $z\in B\left(0,R\right)$
+\end_inset
+
+, 
+\begin_inset Formula $z+z_{0}\in B\left(z_{0},R\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+f\in H\left(B\left(z_{0},R\right)\right)\Rightarrow g\in H\left(B\left(0,R\right)\right)
+\]
+
+\end_inset
+
+לכן ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+ 
+\begin_inset Formula 
+\[
+g\left(z\right)=\sum\limits _{n=0}^{\infty}\cfrac{g^{\left(n\right)}\left(0\right)}{n!}z^{n}\qquad\left(z\in B\left(0,R\right)\right)
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $g\left(z\right)=f\left(z+z_{0}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=g\left(z-z_{0}\right)$
+\end_inset
+
+ ולכן עבור כל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(z\right)=g\left(z-z_{0}\right)=\sum_{n=0}^{\infty}\cfrac{g^{\left(n\right)}\left(0\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+אבל לכל 
+\begin_inset Formula $n$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+g^{\left(n\right)}\left(z\right)=f^{\left(n\right)}\left(z+z_{0}\right)\Rightarrow g^{\left(n\right)}=f^{\left(n\right)}\left(z_{0}\right)
+\]
+
+\end_inset
+
+לבסוף, עבור כל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{g^{\left(n\right)}\left(0\right)}{n!}\left(z-z_{0}\right)^{n}=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

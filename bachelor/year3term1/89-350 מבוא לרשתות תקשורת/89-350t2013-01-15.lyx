@@ -1,0 +1,1491 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אלגוריתמי ניתוב
+\end_layout
+
+\begin_layout Standard
+יש כמה סוגים של אלגוריתמי ניתוב.
+ אחד מהם זה 
+\lang english
+Interdomain Routing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ניתוב בין הרשתות השונות שמרכיבות את האינטרנט.
+\end_layout
+
+\begin_layout Standard
+יש כמה פרוטוקולים בשביל זה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+OSPF
+\lang hebrew
+)
+\lang english
+Link State
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+כל צומת יודע מכיר את המפה של הרשת, ומריץ דייקסטרה כדי למצוא את המסלולים
+ הקצרים ביותר.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Link State Algorithm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & *++[o][F]{v}\ar@{-}[dd]_{2}\ar@{-}[rr]^{3} &  & *++[o][F]{w}\ar@{-}[dd]^{1}\ar@{-}[rd]^{5}\\
+*++[o][F]{u}\ar@{-}[ru]^{2}\ar@{-}[rd]_{1}\ar@{-}@/^{4pc}/[rrru]^{5} &  &  &  & *++[o][F]{z}\\
+ & *++[o][F]{x}\ar@{-}[rr]_{1}\ar@{-}[rruu]^{3} &  & *++[o][F]{y}\ar@{-}[ru]_{2}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסלול קצר ביותר מהמקור ליעד 
+\begin_inset Formula $v$
+\end_inset
+
+ - 
+\begin_inset Formula $D\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השכן הקודם של 
+\begin_inset Formula $v$
+\end_inset
+
+ - 
+\begin_inset Formula $p\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תת קבוצה של צמתים - 
+\begin_inset Formula $N^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחפשים 
+\begin_inset Formula $v\in N'$
+\end_inset
+
+ אשר המסלול הקצר ביותר מהמקור ליעד 
+\begin_inset Formula $v$
+\end_inset
+
+ ידוע.
+ בכל איטרציה מוסיפים את הקודקוד החדש:
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c|c|c|c}
+ & N' & D\left(v\right),p\left(v\right) & D\left(w\right),p\left(w\right) & D\left(x\right),p\left(x\right) & D\left(y\right),p\left(y\right) & D\left(z\right),p\left(z\right)\\
+\hline 0 & u & 2,u & 5,u & 1,u & \infty & \infty\\
+1 & u,x & 2,u & 4,x & 1,u & 2,x & \infty\\
+2 & u,x,y & 2,u & 3,y & 1,u & 2,x & 4,y\\
+3 & u,v,x,y & ,, & ,, & ,, & ,, & ,,\\
+4 & u,v,x,y,w & ,, & ,, & ,, & ,, & ,,\\
+5 & u,v,x,y,w,z & ,, & ,, & ,, & ,, & ,,
+\end{array}
+\]
+
+\end_inset
+
+באיטרציה השלישית והלאה זה כבר לא משתנה, ולכן טבלת הניתוב ב
+\begin_inset Formula $u$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|}
+\hline Dest & Link\\
+\hline v & \left(u,v\right)\\
+w & \left(u,x\right)\\
+z & \left(u,x\right)\\
+y & \left(u,x\right)\\
+x & \left(u,x\right)
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Distance Vector
+\end_layout
+
+\begin_layout Standard
+כל נתב יודע מה מה המרחקים מכל אחד מהשכנים שלו לכל נתב אחר)הוא מקבל את המידע
+ הזה מהשכנים(, ולפי זה הוא בוחר - וגם עונה לשאילתות של הנתבים השכנים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+RIP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כאשר כל קשת מקבלת את הערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Data Link
+\end_layout
+
+\begin_layout Standard
+אם יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hub
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכמה תחנות מחוברות אליו, אם שתיים מהן מנסות לשדר בו זמנית יכול להיות שיבוש.
+ שכבת ה
+\lang english
+Data Link
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתאמת את השידור בין התחנות.
+\end_layout
+
+\begin_layout Standard
+יש כאן כמה אלגוריתמים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Slotted Aloha
+\end_layout
+
+\begin_layout Standard
+התכנות מסונכרנות באמצעות מסגרות שידור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Frame
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בגודל 
+\begin_inset Formula $L$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\unitfrac{bit}{sec}$
+\end_inset
+
+ - קצב שידור.
+\end_layout
+
+\begin_layout Standard
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באורך 
+\begin_inset Formula $\frac{L}{R}$
+\end_inset
+
+ שניות.
+\end_layout
+
+\begin_layout Standard
+כל הצמתים משדרים בתחילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם הייתה התנגשות, משדרים מחדש ב
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבא בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סנכרון בין ה
+\lang english
+adapter
+\lang hebrew
+ים)כרטיסי רשת( דורש שכולם ידעו מהם ה
+\lang english
+slot
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+Slotted Aloha
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא מאזינים על הערוץ לפני שמשדרים - אבל יש להם יכולת לזהות התנגשות.
+\end_layout
+
+\begin_layout Standard
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא זמן שידור המסגרת.
+\end_layout
+
+\begin_layout Subsection*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צמתים: 
+\begin_inset Formula $A,B,C,D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל צומת יש 
+\begin_inset Formula $\infty$
+\end_inset
+
+ מסגרות, וכל אחד משדר בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מה ההסתברות ש
+\begin_inset Formula $A$
+\end_inset
+
+ יצליח לשדר בפעם הראשונה ב
+\lang english
+slot-4
+\lang hebrew
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+: צריך ש
+\begin_inset Formula $A$
+\end_inset
+
+ ישדר וכל השאר לא ישדרו, וזה קורה בהסתברות 
+\begin_inset Formula $\left(1-p\right)^{3}\cdot p$
+\end_inset
+
+.
+ אבל מכיוון שרוצים שזו תהיה הפעם הראשונה שלו, צריך שהוא לא יצליח לשדר בשלושת
+ הפעמים הקודמות, ולכן ההסתברות היא 
+\begin_inset Formula $p\left(1-p\right)^{3}\left(1-p\left(1-p\right)^{3}\right)^{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מה ההסתברות שצומת כלשהו מצליח לשדר ב
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלשהו?
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+: השידורים הם מאורעות זרים, ולכן: 
+\begin_inset Formula 
+\[
+P\left[\textnormal{anyone}\right]=P\left[A\right]+P\left[B\right]+P\left[C\right]+P\left[D\right]=4p\left(1-p\right)^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מה ההסתברות ששידור מוצלח ראשון של צומת כלשהו יהיה ב
+\lang english
+slot-4
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Subsection*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+שתי תחנות רוצות לשדר באותו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+slot
+\lang hebrew
+.
+ הרשת משתמשת ב
+\lang english
+Exponentiad Backoff
+\lang hebrew
+)כאשר יש התנגשות, בוחרים אם לשדר ישר ב
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבא או ב
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחריו.
+ אם גם אז יש התנגשות, אז בוחרים מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\lang english
+slot
+\lang hebrew
+ים הבאים וכן הלאה(.
+\end_layout
+
+\begin_layout Standard
+מה ההסתברות לשתי התנגשויות בדיוק לפני שידור מוצלח?
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נתון שהייתה התנגשות ראשונה.
+ בשביל שתהיה עוד התנגשות בשידור הבא, צריך ששתיהן יבחרו אותו דבר, והסיכוי
+ לכך הוא
+\begin_inset Formula 
+\[
+P\left(0\right)\cdot P\left(0\right)+P\left(1\right)\cdot P\left(1\right)=\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2}=\frac{1}{2}
+\]
+
+\end_inset
+
+הסיכוי שתהיה התנגשות ב
+\lang english
+slot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבא היא 
+\begin_inset Formula $\sum\limits _{i=0}^{3}P\left(\frac{1}{i}\right)\cdot P\left(\frac{1}{i}\right)=4\cdot\left(\frac{1}{4}\right)^{2}=\frac{1}{4}$
+\end_inset
+
+, ולכן הסיכוי להצלחה היא 
+\begin_inset Formula $1-\frac{1}{4}=\frac{3}{4}$
+\end_inset
+
+.
+ סה"כ הסיכוי הוא 
+\begin_inset Formula 
+\[
+\frac{1}{2}\cdot\frac{3}{4}=\boxed{\frac{3}{8}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Ethernet(CSMA/CD)
+\end_layout
+
+\begin_layout Standard
+הכרטיסים מאזינים על הרשת, ומשדרים רק אם אף אחד אחר לא משדר באותו זמן.
+\end_layout
+
+\begin_layout Standard
+כרטיס הרשת:
+\end_layout
+
+\begin_layout Enumerate
+מקבל מסגרת
+\end_layout
+
+\begin_layout Enumerate
+מאזין על הערוץ במשך 
+\begin_inset Formula $96\unit{bit\, time}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\unit{bit\, time}$
+\end_inset
+
+ זה משך הזמן לשידור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ בודד(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם הערוץ תפוס - מחכה, ואז שוב מאזין 
+\begin_inset Formula $96\unit{bit\, time}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+משדר - אם לא הייתה התנגשות - סיים.
+\end_layout
+
+\begin_layout Enumerate
+אם יש התנגשות - משדר 
+\begin_inset Formula $48\unit{bit}$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+jam signal
+\lang hebrew
+)כדי לסמן שהייתה התנגשות(
+\end_layout
+
+\begin_layout Enumerate
+נכנס ל
+\lang english
+Exponential Backoff
+\lang hebrew
+: בזמן שידור מסגרת לאחר התנגשות 
+\begin_inset Formula $n$
+\end_inset
+
+ לאותה מסגרת)ברצף(, בוחר באקראי 
+\begin_inset Formula $k\in\left\{ 0,1,\dots2^{m}-1\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m=\min\left\{ n,10\right\} $
+\end_inset
+
+ ומחכה 
+\begin_inset Formula $512\unit{Kbit\, time}$
+\end_inset
+
+ וחוזר ל
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ מחוברים ע"י אותו ערוץ, ו
+\begin_inset Formula $d_{p}=225\unit{bit\, time}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ משדרים מסגרות באותו זמן - ויש התנגשות.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ בוחרים ערכים שונים של 
+\begin_inset Formula $k$
+\end_inset
+
+: 
+\begin_inset Formula $k_{A}=0,k_{B}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האם יכולה להיות התנגשות בשידור מחדש של 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsubsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ מתחילים לשדר ב
+\begin_inset Formula $0$
+\end_inset
+
+ ומפסיקים ב
+\begin_inset Formula $225$
+\end_inset
+
+ - כי אז הם מזהים התנגשות.
+ לכן שניהם משדרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+jump signal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ומסיימים לשדר אותו ב
+\begin_inset Formula $225+48=273$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ בוחר 
+\begin_inset Formula $k=0$
+\end_inset
+
+, חוזר ישר ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומחכה 
+\begin_inset Formula $96$
+\end_inset
+
+ מהרגע שיש שקט.
+ יש שקט רק ב
+\begin_inset Formula $273+225=498$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $A$
+\end_inset
+
+ מתחיל לשדר בזמן 
+\begin_inset Formula $498+96=594$
+\end_inset
+
+, וזה מגיע ל
+\begin_inset Formula $B$
+\end_inset
+
+ ב
+\begin_inset Formula $594+225=819$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $B$
+\end_inset
+
+, שחיכה 
+\begin_inset Formula $512$
+\end_inset
+
+, מתחיל לחכות 
+\begin_inset Formula $96$
+\end_inset
+
+ רק ב
+\begin_inset Formula $273+512=785$
+\end_inset
+
+.
+ בנקודה הזו יש שקט, אבל הוא צריך לחכות 
+\begin_inset Formula $96$
+\end_inset
+
+ עד 
+\begin_inset Formula $785+96=881$
+\end_inset
+
+ - ובנקודה הזו כבר הוא קיבל את השידור של 
+\begin_inset Formula $A$
+\end_inset
+
+, ולכן הוא לא משדר ואין התנגשות.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1229 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חישוב לא יוניפורמי
+\end_layout
+
+\begin_layout Standard
+מודל יוניפורמי)עסקנו קודם( הוא מודל בו קיימת הנחה שישנו אלגוריתם אחד לכל
+ אורך קלט.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+היום
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מודלים לא יוניפורמיים: אלגוריתם שונה לכל אורך קלט.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+חישוב לא יוניפורמי נלמד כנסיון נוסף להבין את שאלת 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+להוכיח שקילות בין המודלים.
+\end_layout
+
+\begin_layout Itemize
+נסיק מסקנות לגבי שאלת 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+מודל לא יוניפורמי ראשון - מודל מעגלים
+\end_layout
+
+\begin_layout Section*
+הגדרה - מעגל בוליאני
+\end_layout
+
+\begin_layout Standard
+גרף מכוון בעל שלושה סוגי קודקודים:
+\end_layout
+
+\begin_layout Itemize
+קלט - קשתות יוצאות
+\end_layout
+
+\begin_layout Itemize
+שער - קשתות נכנסות/יוצאות
+\end_layout
+
+\begin_layout Itemize
+פלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - קשת אחת שנכנסת
+\end_layout
+
+\begin_layout Section*
+דוגמא
+\end_layout
+
+\begin_layout Standard
+מעגל שמחשב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+or
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שני משתנים:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{x_{1}}\ar[rd] &  & *++[o][F]{x_{2}}\ar[ld]\\
+ & *++[F]{or}\ar[d]\\
+ & *+++[o][F]{\textnormal{output}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מעגל מסויים יכול לטפל באורך קלט מסויים, ולכן נעסוק במשפחות של מעגלים.
+ במשפחה של מעגלים, יש מעגל לכל אורך קלט.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר שמשפחה של מעגלים 
+\begin_inset Formula $\left\{ C_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ 
+\emph on
+מחשבת פונקציה
+\emph default
+ 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} $
+\end_inset
+
+ אם לכל קלט 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)=1\iff C_{\left|x\right|}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+גודל של מעגל
+\emph default
+ - אמת מידה של הסיבוכיות שלו.
+ גודל המעגל 
+\begin_inset Formula $C$
+\end_inset
+
+ מסומן ב
+\begin_inset Formula $\left|C\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|C\right|$
+\end_inset
+
+ מייצג את מספר הקשתות במעגל.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+בהינתן מעגל 
+\begin_inset Formula $C_{\left|x\right|}$
+\end_inset
+
+ וקלט 
+\begin_inset Formula $x$
+\end_inset
+
+ נוכל לחשב את 
+\begin_inset Formula $C\left(x\right)$
+\end_inset
+
+ בזמן שתלוי פולינומית ב
+\begin_inset Formula $\left|C\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $A\subseteq\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ 
+\emph on
+ניתנת להכרעה ע"י משפחת מעגלים בגודל פולינומי
+\emph default
+ אם קיימת משפחה של מעגלים 
+\begin_inset Formula $\left\{ C_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ כך שלכל קלט 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך שלכל קלט 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in A\iff C_{\left|x\right|}\left(x\right)=1$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\left|C_{\left|x\right|}\right|\le P\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+מודל לא יוניפורמי שני - מכונת טיורינג שמקבלת עצה
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר שפונקציה 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} $
+\end_inset
+
+ שייכת למחלקה 
+\begin_inset Formula $P/l$
+\end_inset
+
+ עבור פונקציה 
+\begin_inset Formula $l:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ אם קיימת מ"ט 
+\begin_inset Formula $A$
+\end_inset
+
+ פולינומית וסדרה אינסופית של מחרוזות עצה 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ כך שמתקיימים התנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $A\left(a_{\left|x\right|},x\right)=f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x_{n}\right|=l\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P/poly=\bigcup_{\begin{array}{c}
+p=p\left(n\right)\\
+\textnormal{polynomial}
+\end{array}}P/p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P/poly$
+\end_inset
+
+ - בעיות הכרעה הניתנות להיות מוכרעות ע"י מ"ט הרצה בזמן פולינומי ומקבלת עצה
+ בעלת אורך פולינומי באורך הקלט.
+\end_layout
+
+\begin_layout Subsection*
+נשים 
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא להתבלבל בין העצה של 
+\begin_inset Formula $P/poly$
+\end_inset
+
+ לבין ה
+\emph on
+עד
+\emph default
+ של 
+\begin_inset Formula $NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+ננסה להבין את הכוח הטמון בעצה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\mathbb{N}\to\left\{ 0,1\right\} $
+\end_inset
+
+ פונקציה לא כריעה כלשהי)ראינו בחישוביות שפונקציות כאלו קיימות(.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f'\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} $
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f'\left(x\right):=f\left(\left|x\right|\right)$
+\end_inset
+
+.
+ נשים לב שאם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה כריעה אזי גם 
+\begin_inset Formula $f'$
+\end_inset
+
+ אינה כריעה.
+ לכן, ע"פ הנחתנו, 
+\begin_inset Formula $f'$
+\end_inset
+
+ אינה כריעה.
+ אבל 
+\begin_inset Formula $f'\in P/1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\notin P$
+\end_inset
+
+ כי 
+\begin_inset Formula $f'$
+\end_inset
+
+ אינה ב
+\begin_inset Formula $P$
+\end_inset
+
+.
+ ע"פ הגדרת 
+\begin_inset Formula $f'$
+\end_inset
+
+, 
+\begin_inset Formula $f'\left(x_{1}\right)=f'\left(x_{2}\right)$
+\end_inset
+
+ )נותן ערך זהה( לכל 
+\begin_inset Formula $x_{1},x_{2}\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ המקיימים 
+\begin_inset Formula $\left|x_{1}\right|=\left|x_{2}\right|$
+\end_inset
+
+.
+ לכן נגדיר את מכונת הטיורינג שמכריעה את 
+\begin_inset Formula $f'$
+\end_inset
+
+ ומשתמשת בעצה באורך 
+\begin_inset Formula $1$
+\end_inset
+
+ להיות מכונה המחזירה את ערך העצה - 
+\begin_inset Formula $f'\left(x\right)=f\left(\left|x\right|\right)=a_{\left|x\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=P/0\subsetneq P/1\subseteq P/poly
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שקילות בין המודלים
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ שייכת ל
+\begin_inset Formula $P/poly$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיימת משפחת מעגלים פולינומית המכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\implies$
+\end_inset
+
+ נניח שקיימת משפחת מעגלים 
+\begin_inset Formula $\left\{ C_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ פולינומית שמכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נראה ש
+\begin_inset Formula $P/poly\ni A$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבנה מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ המקבלת קלט 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ ועצה שהינה מעגל 
+\begin_inset Formula $C_{\left|x\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\left(x,C_{\left|x\right|}\right)$
+\end_inset
+
+ - מכונת הטיורינג 
+\begin_inset Formula $M$
+\end_inset
+
+ מריצה את המעגל 
+\begin_inset Formula $C_{\left|x\right|}$
+\end_inset
+
+)שהתקבל כעצה( עם הקלט 
+\begin_inset Formula $x$
+\end_inset
+
+ ומחזירה את התשובה.
+\end_layout
+
+\begin_layout Standard
+מכיוון שמשפחת המעגלים חסומה פולינומית, אזי העצה חסומה פולינומית ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A\in P/poly$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $A\in P/poly$
+\end_inset
+
+, כלומר קיימת מ"ט המקבלת עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ עצה בגודל חסום ע"י 
+\begin_inset Formula $P\left(\left|x\right|\right)$
+\end_inset
+
+ עבור פולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ ומכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+, כלומר מחזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם"ם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x\in A\iff M\left(x,a_{\left|x\right|}\right)=1
+\]
+
+\end_inset
+
+המכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ ניתנת להמרה לסדרת מעגלים 
+\begin_inset Formula $\left\{ C_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+, והיא חסומה פולינומית באופן הבא: עבור זוג של קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ ועצה 
+\begin_inset Formula $a_{\left|x\right|}$
+\end_inset
+
+ קיים מעגל 
+\begin_inset Formula $C_{\left|x\right|}^{*}$
+\end_inset
+
+ בוליאני המקבל כקלט את 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $a_{\left|x\right|}$
+\end_inset
+
+ שמחזיר ערך הזהה ל
+\begin_inset Formula $M\left(x,a_{\left|x\right|}\right)$
+\end_inset
+
+ וגודלו חסום פולינומית בזמן הריצה של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ כלומר חסום פולינומית ע"י 
+\begin_inset Formula $P\left(\left|x\right|\right)$
+\end_inset
+
+ עבור פולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבנה כעת מעגל 
+\begin_inset Formula $C_{\left|x\right|}$
+\end_inset
+
+ המקבל כקלט 
+\series bold
+את 
+\begin_inset Formula $x$
+\end_inset
+
+ בלבד
+\series default
+ כך שמתקיים 
+\begin_inset Formula $C_{\left|x\right|}\left(x\right)=C_{\left|x\right|}^{*}\left(x,a_{\left|x\right|}\right)$
+\end_inset
+
+.
+ נעשה זאת ע"י שנקבע במעגל 
+\begin_inset Formula $C_{\left|x\right|}^{*}$
+\end_inset
+
+ את המשתנים המתאימים לעצה לקבל את ערך העצה המתאים ל
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ ואח"כ נפשט לוגית את המעגל כך שמתקבל מעגל התלוי במשתני 
+\begin_inset Formula $x$
+\end_inset
+
+ בלבד, 
+\begin_inset Formula $C_{\left|x\right|}$
+\end_inset
+
+ הרצוי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $P=NP$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+ אזי 
+\begin_inset Formula $PH=\Sigma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה שאם 
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+, 
+\begin_inset Formula $\Pi_{2}\subseteq\Sigma_{2}$
+\end_inset
+
+)ע"פ משפט שראינו בשיעור שעבר אזי 
+\begin_inset Formula $PH=\Sigma_{2}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in\Pi_{2}$
+\end_inset
+
+ ונניח ש
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+.
+ נראה 
+\begin_inset Formula $A\in\Sigma_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\Pi_{2}\subseteq\Sigma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in\Pi_{2}$
+\end_inset
+
+, ז"א קיים פולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ ומוודא 
+\begin_inset Formula $V$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{y}\exists_{z}\left|y\right|,\left|z\right|<P\left(\left|x\right|\right),V\left(x,y,z\right)=1\iff x\in A
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $B$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+\left(x,y\right)\in B\iff\exists_{z}\left|z\right|\le P'\left(\left|\left(x,y\right)\right|\right),V'\left(\left(x,y\right),2\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V'\left(\left(x,y\right),2\right)=V'\left(x,y,z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P'\left(\left|\left(x,y\right)\right|\right)=P'\left(\left|x\right|+P\left(\left|x\right|\right)\right)=P'\left(\left|x\right|\right)+P'P\left(\left|x\right|\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $B\in NP$
+\end_inset
+
+, ועל פי הנחתנו 
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $B\in P/poly$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{y}\left|y\right|<P\left(\left|x\right|\right),\left(x,y\right)\in B\iff x\in A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists_{\textnormal{circle \ensuremath{C_{x}}}}\forall_{y}V'\left(C_{x},y,x\right)\iff x\in A???
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x}=\left(C_{1}^{x},\cdots C_{P\left(\left|x\right|\right)}^{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $B\in NP$
+\end_inset
+
+ לכן קיימת רדוקציית קארפ מ
+\begin_inset Formula $B$
+\end_inset
+
+ ל
+\begin_inset Formula $SAT$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $\left(x,y\right)\in B$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x,y\right)\in SAT$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f\left(x,y\right)\right|\le P\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מההנחה ש
+\begin_inset Formula $NP\subseteq P/poly$
+\end_inset
+
+ מסיקים שקיימת סדרת מעגלים 
+\begin_inset Formula $\left\{ C_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ המכריעים את 
+\begin_inset Formula $SAT$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ נקבע 
+\begin_inset Formula $C_{x}:=\left(C_{1},\dots C_{P\left(\left|x\right|\right)}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ הוא מעגל המכריע את 
+\begin_inset Formula $SAT$
+\end_inset
+
+ עבור קלט באורך 
+\begin_inset Formula $i$
+\end_inset
+
+..
+\end_layout
+
+\begin_layout Standard
+נראה כעת את תיאור 
+\begin_inset Formula $V'$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+חשב 
+\begin_inset Formula $\varphi=f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בדוק בעזרת 
+\begin_inset Formula $C_{x}$
+\end_inset
+
+ האם 
+\begin_inset Formula $\varphi\in SAT$
+\end_inset
+
+, אם לא דחה.
+\end_layout
+
+\begin_layout Enumerate
+אם כן, בצע רדוקציה עצמית ומצא השמה מספקת ל
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם ההשמה שמצאנו מספקת אכן את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ קבל, אחרת דחה.
+\end_layout
+
+\begin_layout Standard
+כעת ברור: אם 
+\begin_inset Formula $\exists_{y}\left(x,y\right)\notin B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $V'$
+\end_inset
+
+ ידחה, ולכן 
+\begin_inset Formula 
+\[
+\exists_{C_{x}}\forall_{y}V\left(C_{x},x,y\right)=1\iff\forall_{y}\left(x,y\right)\in B\iff x\in A
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\exists_{C_{x}}\forall_{y}V'\left(x,x,y\right)=1\iff x\in A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies A\in\Sigma_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

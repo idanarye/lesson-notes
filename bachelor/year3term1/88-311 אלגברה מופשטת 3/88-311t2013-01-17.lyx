@@ -1,0 +1,574 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בניית מצולע משוכלל בן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ צלעות.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+מצולע משוכלל בן 
+\begin_inset Formula $n$
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: משפט גאוס: מצולע משוכלל בן 
+\begin_inset Formula $n$
+\end_inset
+
+ צלעות ניתן לבנייה אם ורק אם 
+\begin_inset Formula $n=2^{t}\cdot p_{1}\cdots p_{k}$
+\end_inset
+
+ כאשר לכל 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+ 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ הוא ראשוני פרמה - כלומר 
+\begin_inset Formula $p_{i}=2^{2^{l}}+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בניית מצולע שקולה לבניית 
+\begin_inset Formula $\rho_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{Gal}\left(\mathbb{Q}\left(\rho_{n}\right)/\mathbb{Q}\right)=U_{n}$
+\end_inset
+
+, ואנחנו רוצים ש
+\begin_inset Formula $\left|U_{n}\right|=2^{m}$
+\end_inset
+
+, ובחירת 
+\begin_inset Formula $n$
+\end_inset
+
+ כנ"ל מבטיחה זאת.
+\begin_inset Formula 
+\[
+n=\underbrace{5}_{l=0}\cdot\underbrace{3}_{l=0}
+\]
+
+\end_inset
+
+צריך לבנות את 
+\begin_inset Formula $\rho_{15}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\rho_{15}\neq\rho_{5}\cdot\rho_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\rho_{15}=\rho_{5}^{2}+\rho_{3}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\rho_{3}$
+\end_inset
+
+ ניתן לבנייה: 
+\begin_inset Formula $\Phi_{3}\left(x\right)=x^{2}+x+1=0$
+\end_inset
+
+ והשורשים הם 
+\begin_inset Formula $-\frac{1}{2}\pm\frac{1}{2}\sqrt{3}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\rho_{3}=-\frac{1}{2}+\frac{1}{2}\sqrt{-3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לגבי 
+\begin_inset Formula $\rho_{5}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{E=\mathbb{Q}\left(\rho_{5}\right)\ar@{-}[dd]_{4}\ar@{-}[rd]\\
+ & K=\mathbb{Q}\left(\rho_{5}\right)^{\left\langle \sigma^{2}\right\rangle }\ar@{-}[ld]\\
+\mathbb{Q}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma:\rho_{5}\mapsto\rho_{5}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}_{E/\mathbb{Q}}\left(\rho_{5}\right)=\rho_{5}+\rho_{5}^{2}+\rho_{5}^{3}+\rho_{5}^{4}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{5}=x^{4}+x^{3}+x^{2}+x+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}_{E/K}\left(\rho_{5}\right)=\rho_{5}+\sigma^{2}\left(\rho_{5}\right)=\rho_{5}+\rho_{5}^{-1}\in K
+\]
+
+\end_inset
+
+נמצא פולינום מינימלי מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma\left(\rho_{5}+\rho_{5}^{-1}\right)=\rho_{5}^{2}+\rho_{5}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x-\left(\rho_{5}+\rho_{5}\right)^{-1}\right)\left(x-\left(\rho_{5}^{2}+\rho_{5}^{3}\right)\right)=x^{2}-\textnormal{tr}_{E/\mathbb{Q}}\left(\rho_{5}\right)x+\left(\rho_{5}+\rho_{5}^{-1}\right)\left(\rho_{5}^{2}+\rho_{5}^{3}\right)=x^{2}+x-1
+\]
+
+\end_inset
+
+השורשים הם 
+\begin_inset Formula $\frac{-1\pm\sqrt{5}}{2}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\rho_{5}+\rho_{5}^{-1}=\frac{-1+\sqrt{5}}{2}$
+\end_inset
+
+.
+ נמצא פולינום מינימלי של 
+\begin_inset Formula $\rho_{5}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $K=\mathbb{Q}\left(\sqrt{5}\right)$
+\end_inset
+
+: הצמוד של 
+\begin_inset Formula $\rho_{5}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $K$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\rho_{5}^{-1}=\sigma^{2}\left(\rho_{5}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\xymatrix{E\ar@{-}[dd]^{\textnormal{Gal}=\left\langle \sigma^{2}\right\rangle }\\
+\\
+K
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x-\rho_{5}\right)\left(x-\rho_{5}^{-1}\right)=x^{2}-\left(\rho_{5}+\rho_{5}^{-1}\right)x+1
+\]
+
+\end_inset
+
+השורשים הם: 
+\begin_inset Formula $\frac{-1+\sqrt{5}}{4}\pm\frac{1}{4}\sqrt{-12-2\sqrt{5}}$
+\end_inset
+
+, 
+\begin_inset Formula $\rho_{5}=\square+\square$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+כל שדה סגור אלגברית הוא אינסופי
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|F\right|=\rho^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(x-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\to F
+\]
+
+\end_inset
+
+לא על
+\begin_inset Formula 
+\[
+p\left(x\right)=x\left(x-1\right)-a
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $x^{\rho^{n}}-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפולינום 
+\begin_inset Formula $x^{p^{n+1}}-x$
+\end_inset
+
+ ספרבילי וכל שורשיו שונים.
+ אם הוא מתפצל מעל 
+\begin_inset Formula $F$
+\end_inset
+
+ היו ב
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+ איברים - וזו סתירה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בנו שרשרת אינסופית של שדות סופיים:
+\begin_inset Formula 
+\[
+F_{0}\subset F_{1}\subset F_{2}\subset\cdots
+\]
+
+\end_inset
+
+שדה הפיצול של 
+\begin_inset Formula $x^{p^{n}}-x$
+\end_inset
+
+ הוא תת שדה של שדה הפיצול של 
+\begin_inset Formula $x^{p^{m}}-x$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\mid m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו את כל שדות הביניים של 
+\begin_inset Formula $\mathbb{Q}\left(\rho_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Gal}\left(\mathbb{Q}\left(\rho_{12}\right)/\mathbb{Q}\right)=U_{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|U_{12}\right|=\phi\left(12\right)=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U_{12}=\left\{ 1,5,7,11\right\} \cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma:\rho_{12}\mapsto\rho_{12}^{5}\qquad\tau:\rho_{12}\mapsto\rho_{12}^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma\tau:\rho_{12}\mapsto\rho_{12}^{7}=\rho_{12}^{-5}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{ & E=\mathbb{Q}\left(\rho_{12}\right)\ar@{-}[ld]\ar@{-}[d]\ar@{-}[rd]\\
+K=E^{\left\langle \sigma\right\rangle }\ar@{-}[rd] & E^{\left\langle \sigma\tau\right\rangle }=M\ar@{-}[d] & E^{\left\langle \tau\right\rangle }=L\ar@{-}[ld]\\
+ & \mathbb{Q}
+}
+\]
+
+\end_inset
+
+צריך לחשב את 
+\begin_inset Formula $\Phi_{12}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Phi_{12}=\frac{x^{12}-1}{\cancel{\Phi_{1}\Phi_{2}\Phi_{3}}\Phi_{4}\cancel{\Phi_{6}}}\cdot\frac{\cancel{\Phi_{1}\Phi_{2}\Phi_{3}}}{x^{6}-1}=x^{4}-x^{2}+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}_{E/\mathbb{Q}}\left(\rho_{12}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}_{E/K}\left(\rho_{12}\right)=\rho_{12}+\rho_{12}^{5}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x-\left(\rho_{12}+\rho_{12}^{5}\right)\right)\left(x-\left(\rho_{12}^{-1}+\rho_{12}^{-5}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\square+\square
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

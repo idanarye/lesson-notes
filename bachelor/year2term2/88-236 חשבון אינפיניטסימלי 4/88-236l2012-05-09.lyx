@@ -1,0 +1,793 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משטח עם שפה
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+חצי מרחב העליון ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ מוגדר ע"י
+\begin_inset Formula 
+\[
+H^{k}=\left\{ \left(x_{1},\dots x_{k}\right)\in\mathbb{R}^{k}\middle|x_{k}\ge0\right\} 
+\]
+
+\end_inset
+
+לדוגמה, ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+H^{2}=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\middle|y\ge0\right\} 
+\]
+
+\end_inset
+
+השפה של 
+\begin_inset Formula $H^{k}$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\mathbb{R}^{k-1}=\partial H^{k}=\left\{ \left(x_{1},\dots x_{k}\right)\in\mathbb{R}^{k}\middle|x_{k}=0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קבוצה פתחוה ב
+\begin_inset Formula $H^{k}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\Omega=H^{k}\cap G$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $G$
+\end_inset
+
+ קבוצה פתוחה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קבוצה פתוחה ב
+\begin_inset Formula $H^{k}$
+\end_inset
+
+ מסוג ראשון אם 
+\begin_inset Formula $\Omega\cap\partial H^{k}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קבוצה פתוחה ב
+\begin_inset Formula $H^{k}$
+\end_inset
+
+ מסוג שני אם 
+\begin_inset Formula $\Omega\cap\partial H^{k}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U$
+\end_inset
+
+ קבוצה פתוחה ב
+\begin_inset Formula $H^{k}$
+\end_inset
+
+ מסוג שני.
+ תהי 
+\begin_inset Formula $f:U\to\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית ב
+\begin_inset Formula $U$
+\end_inset
+
+ אם קיימת פונקציה 
+\begin_inset Formula $F:\tilde{U}\to\mathbb{R}^{n}$
+\end_inset
+
+ דיפרנציאבילית, כאשר 
+\begin_inset Formula $\tilde{U}$
+\end_inset
+
+ קבוצה פתוחה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ המכילה את 
+\begin_inset Formula $U$
+\end_inset
+
+ ו
+\begin_inset Formula $f\equiv F$
+\end_inset
+
+ על 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+ נקראת משטח 
+\begin_inset Formula $k$
+\end_inset
+
+-ממדי עם שפה אם לכל נקודה 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ קיימת סביבה 
+\begin_inset Formula $M\cap U_{x}$
+\end_inset
+
+ וקיימת קבוצה פתוחה 
+\begin_inset Formula $\Omega\subset H^{k}$
+\end_inset
+
+ והומיאומורפיזם 
+\begin_inset Formula $F$
+\end_inset
+
+ כזה ש
+\begin_inset Formula 
+\[
+F\left(\Omega\right)=U_{x}\cap M
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $\textnormal{rank}F'\left(t\right)=k$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם בהגדרה הנ"ל קבוצה 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ מסוג שני אז נאמר שהקבוצה 
+\begin_inset Formula $F\left(\Omega\cap\partial H^{k}\right)$
+\end_inset
+
+ שייכת לשפה של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ את האוסף של כל נקודות השפה נסמן על ידי 
+\begin_inset Formula $\partial M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+ משטח 
+\begin_inset Formula $k$
+\end_inset
+
+-מימדי עם שפה 
+\begin_inset Formula $\partial M$
+\end_inset
+
+ לא ריקה.
+ אזי 
+\begin_inset Formula $\partial M$
+\end_inset
+
+ משטח 
+\begin_inset Formula $\left(k-1\right)$
+\end_inset
+
+ מימדי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אטלס של 
+\begin_inset Formula $M$
+\end_inset
+
+: 
+\begin_inset Formula $\left(\varphi_{i},\Omega_{i}^{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\psi_{i},\Omega_{j}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+\tilde{\psi}_{j}\left(t_{1},\dots t_{k-1}\right)=\psi_{j}\left(t_{1},\dots t_{k-1},0\right)
+\]
+
+\end_inset
+
+ואז אטלס של 
+\begin_inset Formula $\partial M$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\boxed{\left(\tilde{\psi},\Omega_{j}^{2}\cap\partial H^{k}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Omega_{j}^{2}\cap\partial H^{k}$
+\end_inset
+
+ קבוצות פתוחות ב
+\begin_inset Formula $\mathbb{R}^{k-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $t\in\Omega_{j}^{2}\cap\partial H^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{rank}\tilde{\psi}_{j}'\left(t\right)=k-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\partial\left(\partial M\right)=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ x^{2}+y^{2}\le1\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(t,u\right)=\left(\left(1-u\right)\cos t,\left(1-u\right)\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(t,u\right)\in\left(0,2\pi\right)\times\left[0,\cfrac{1}{2}\right)\qquad\left(t,u\right)\in\left(-\pi,\pi\right)\times\left[0,\cfrac{1}{2}\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+F:\left\{ x^{2}+y^{2}\middle|\cfrac{1}{2}+\epsilon\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M:\left\{ a\le x^{2}+y^{2}\le b\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\partial M:\left\{ x^{2}+y^{2}=b\right\} \cup\left\{ x^{2}+y^{2}=a\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M=\left\{ x^{2}+y^{2}<1\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\partial M=\left\{ x^{2}+y^{2}=1\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\partial M=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+משטח 
+\begin_inset Formula $M\subset\mathbb{R}^{3}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+-מימדי.
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+חצי ספירה: 
+\begin_inset Formula $\left\{ x^{2}+y^{2}+z^{2}=R^{2}\middle|z\ge0\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\partial M:\left\{ x^{2}+y^{2}=R^{2}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\left(R\cos u\cos v,R\sin u\cos v,R\sin v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(u,v\right)\in\left(-\overline{u},\overline{u}\right)\times\left[0,\cfrac{\pi}{2}\right),\left(u,v\right)\in\left(0,\pi\right)\times\left[0,\cfrac{\pi}{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r\left(u,0\right)=\left(R\cos u,R\sin u,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{R^{2}-\left(x^{2}+y^{2}\right)}\qquad x^{2}+y^{2}<R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+ משטח עם שפה.
+ תהי 
+\begin_inset Formula $\left(F,\Omega\right)$
+\end_inset
+
+ מפה, 
+\begin_inset Formula $x=F\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי מרחב משיק ל
+\begin_inset Formula $M$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ מוגדר על ידי
+\begin_inset Formula 
+\[
+T_{x}\left(M\right)=\left\{ F'\left(t\right)\xi,\xi\in\mathbb{R}^{k}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+ משטח 
+\begin_inset Formula $k$
+\end_inset
+
+-ממדי עם שפה ובעל אוריינטציה.
+ אזי 
+\begin_inset Formula $\partial M$
+\end_inset
+
+ גם משטח בעל אוריינטציה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\left(\psi_{j},\Omega_{j}^{2}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(\varphi_{i},\Omega_{i}^{1}\right)$
+\end_inset
+
+ אטלס המגדיר אוריינטציה ב
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אטלס של 
+\begin_inset Formula $\partial M$
+\end_inset
+
+: 
+\begin_inset Formula $\left(\tilde{\psi}_{j},\Omega_{j}^{2}\cap\partial H^{k}\right)$
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\[
+\tilde{\psi}_{j}\left(t_{1},\dots t_{k-1}\right)=\psi_{j}\left(t_{1},\dots t_{k-1},0\right)
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+T_{ij}=\psi_{i}^{-1}\left(\psi_{j}\left(u_{1},\dots u_{k}\right)\right)=\left(g_{1}\left(u_{1},\dots u_{k}\right),\dots g_{k}\left(u_{1},\dots u_{k}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{T}_{ij}=\tilde{\psi}_{i}^{-1}\circ\tilde{\psi}_{j}=\left(g_{1}\left(u_{1},\dots u_{k-1},-\right),g_{2}\left(u_{1},\dots u_{k-1},0\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{k}\left(u_{1},\dots u_{k-1},0\right)=0\Rightarrow\cfrac{\partial g_{k}}{\partial t_{e}}\left(u_{1},\dots u_{k-1},0\right)=0\qquad1\le e\le k-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T'_{ij}\left(u_{1},\dots u_{k-1},0\right)=\begin{pmatrix}\cfrac{\partial g_{1}}{\partial t_{1}}\left(u_{1},\dots u_{k-1},0\right) & \cdots & \cfrac{\partial g_{1}}{\partial t_{k}}\left(u_{1},\dots u_{n-1},0\right)\\
+\vdots & \ddots & \vdots\\
+0 & \cdots & \cfrac{\partial g_{k}}{\partial t_{k}}\left(u_{1},\dots u_{k-1},0\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det T_{ij}'\left(u_{1}\dots u_{k-1},0\right)=\cfrac{\partial g_{k}}{\partial t_{k}}\left(u_{1},\dots u_{k-1},0\right)\cdot\det\tilde{T}_{ij}'\left(u_{1},\dots u_{k-1}\right)>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $x=\psi\left(t\right),x\in\partial M$
+\end_inset
+
+, כאשר
+\begin_inset Formula 
+\[
+t=\left(t_{1},\dots t_{k-1},0\right)\in\partial H^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{x}\left(\partial M\right)=\left\{ \tilde{\psi}'\left(t_{1},\dots t_{k-1}\right)\tau\middle|\tau\in\mathbb{R}^{k-1}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{x}\left(M\right)=\left\{ \psi'\left(t_{1},\dots t_{k-1},0\right)\xi\middle|\xi\in\mathbb{R}^{k}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma_{i}=\tilde{\psi}'\left(t_{1},\dots t_{k-1}\right)e_{i}\qquad i=1,\dots k-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[\gamma_{1},\dots\gamma_{k-1}\right]$
+\end_inset
+
+ הבסיס של 
+\begin_inset Formula $T_{x}\left(\partial M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[\gamma_{1},\dots\gamma_{k-1},\psi'\left(t_{1},\dots t_{k-1},0\right)e_{k}\right]$
+\end_inset
+
+ הבסיס של 
+\begin_inset Formula $T_{x}\left(M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\begin{array}{c}
+T_{x}\left(\partial M\right)\subset T_{x}\left(M\right)\\
+\dim T_{x}\left(\partial M\right)=k-1\\
+\dim T_{x}\left(M\right)=k\\
+\dim\left\{ h\in T_{x}\left(M\right)\middle|h\perp T_{x}\left(\partial M\right)\right\} =1
+\end{array}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

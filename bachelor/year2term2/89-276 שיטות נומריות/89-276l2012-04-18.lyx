@@ -1,0 +1,969 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שיעור )סדר( התכנסות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $\left\{ x_{n}\middle|n\ge0\right\} $
+\end_inset
+
+ סדרת ערכים איטרטיביים.
+ הסדרה מתכנסת)מסדר 
+\begin_inset Formula $p\ge1$
+\end_inset
+
+( לנקודה 
+\begin_inset Formula $r$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+\left|r-x_{n+1}\right|\le c\cdot\left|r-x_{n}\right|^{p}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $c$
+\end_inset
+
+ כלשהו חיובי.
+ עבור 
+\begin_inset Formula $p=1$
+\end_inset
+
+ הסדרה מתכנסת באופן ליאנרי)במקרה זה הכרחי ש
+\begin_inset Formula $c\le1$
+\end_inset
+
+)למעשה 
+\begin_inset Formula $c<1$
+\end_inset
+
+((.
+ הקבוע 
+\begin_inset Formula $c$
+\end_inset
+
+ נקרא אז שיעור ההתכנסות הלינארית.
+\end_layout
+
+\begin_layout Standard
+התכנסות לינארית פירושה שהשגיאה בכל איטרציה שואפת ל
+\bar under
+חלק יחסי קבוע
+\bar default
+ של שגיאת האיטרציה הקודמת.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם יש התכנסות לינארית, אז 
+\begin_inset Formula $\cfrac{\left|r-x_{n+1}\right|}{\left|r-x_{n}\right|}\to c$
+\end_inset
+
+.
+ בד"כ 
+\begin_inset Formula $r$
+\end_inset
+
+ לא ידוע מראש, אבל אפשר למצוא קירוב לשיעור ההתכנסות באמצעות
+\begin_inset Formula 
+\[
+\cfrac{\left|r-x_{n+1}\right|}{\left|r-x_{n}\right|}\approx\cfrac{\left|x_{n+1}-x_{n}\right|}{\left|x_{n}-x_{n-1}\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+התכנסות עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fixed point
+\end_layout
+
+\begin_layout Section*
+הערה חשובה!!!
+\end_layout
+
+\begin_layout Standard
+לא להתבלבל בין 
+\begin_inset Formula $f$
+\end_inset
+
+ ל
+\begin_inset Formula $g$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $x_{n+1}=g\left(x\right)$
+\end_inset
+
+ נכתוב 
+\begin_inset Formula $r-x_{n}=r-g\left(x_{n}\right)=g\left(r\right)-g\left(x_{n}\right)$
+\end_inset
+
+ באשר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא השורש האמיתי, כלומר 
+\begin_inset Formula $r=g\left(r\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+r-x_{n+1}=\cfrac{g\left(r\right)-g\left(x_{n}\right)}{\left(r-x_{n}\right)}\cdot\left(2-x_{n}\right)
+\]
+
+\end_inset
+
+ולפי משפט ערך הביניים
+\begin_inset Formula 
+\[
+r-x_{n+1}=g'\left(\xi_{n}\right)\cdot\left(z-x_{n}\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\xi_{n}\in\left[r,x_{n}\right]$
+\end_inset
+
+ כלשהי.
+ ז"א
+\begin_inset Formula 
+\[
+\left|e_{n+1}\right|=g'\left(\xi_{n}\right)\cdot\left|e_{n}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אם 
+\begin_inset Formula $\left|g'\left(\xi_{n}\right)\right|\le k<1$
+\end_inset
+
+ עבור אינטרבל נתון בקרבת השומש, אזי עבור ערך התחלתי 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ באינטרבל שיטת נקודות השבת תתכנס בוודאות.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $p$
+\end_inset
+
+ פעמים לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ בסביבה כלשהי של 
+\begin_inset Formula $r$
+\end_inset
+
+, באשר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא שורש המשוואה 
+\begin_inset Formula $x=g\left(x\right)$
+\end_inset
+
+, )
+\begin_inset Formula $p\ge2$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $g'\left(r\right)=g''\left(r\right)=\dots=g^{\left(p-1\right)}\left(r\right)=0$
+\end_inset
+
+ אזי עבור 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מספיק קרוב ל
+\begin_inset Formula $r$
+\end_inset
+
+, שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תתכנס מסדר 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $g'\left(r\right)=0$
+\end_inset
+
+ אז ההתכנסות לינארית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+משתמשים בטור טיילור סביב השורש 
+\begin_inset Formula $r$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x_{n+1}=g\left(x_{n}\right)=g\left(r\right)+\left(x_{n}-r\right)g'\left(r\right)+\dots+\cfrac{\left(x_{n}-r\right)^{p-1}}{\left(p-1\right)!}g^{\left(p-1\right)}\left(2\right)+\cfrac{\left(x_{n}-r\right)^{p}}{p!}g^{\left(p\right)}\left(\xi_{n}\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\xi_{n}$
+\end_inset
+
+ בין 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $r$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $r=g\left(r\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $g^{\left(n\right)}\left(r\right)=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $1\le n<p$
+\end_inset
+
+, לכן:
+\begin_inset Formula 
+\[
+\cancel{g\left(x_{n}\right)}=\cancel{g\left(r\right)}+\xcancel{\left(x_{n}-r\right)g'\left(r\right)}+\dots+\xcancel{\cfrac{\left(x_{n}-r\right)^{p-1}}{\left(p-1\right)!}g^{\left(p-1\right)}\left(r\right)}+\cfrac{\left(x_{n}-r\right)^{p}}{p!}g^{\left(p\right)}\left(\xi_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r-x_{n+1}=\cfrac{\left(x_{n}-r\right)^{p}}{p!}g^{\left(p\right)}\left(\xi_{n}\right)
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\left(x_{n}-r\right)\to0$
+\end_inset
+
+ ולכן ההתכנסות מסדר 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+התכנסות עבור שיטת ניוטון
+\end_layout
+
+\begin_layout Standard
+תזכורת - 
+\begin_inset Formula $x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $x_{n+1}=x_{n}\Leftrightarrow f\left(x_{n}\right)=0$
+\end_inset
+
+ - ולכן זה שקול למקרה פרטי של שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FPI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם 
+\begin_inset Formula $g\left(x\right)\equiv x-\cfrac{f\left(x\right)}{f'\left(x\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון שזו שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FPI
+\lang hebrew
+, נרצה להראות 
+\begin_inset Formula $g'\left(r\right)=0$
+\end_inset
+
+, ואז לפי המשפט סדר ההתכנסות לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\begin_inset Formula 
+\[
+g'\left(x\right)=1-\cfrac{\left(f'\left(x\right)\right)^{2}-f\left(x\right)f''\left(x\right)}{\left(f'\left(x\right)\right)^{2}}=\cfrac{f\left(x\right)f''\left(x\right)}{\left(f'\left(x\right)\right)^{2}}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $f\left(r\right)=0$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+g'\left(r\right)=\cfrac{f\left(r\right)f''\left(r\right)}{\left(f'\left(r\right)\right)^{2}}=\cfrac{0\cdot f''\left(r\right)}{\left(f'\left(r\right)\right)^{2}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה קורה רק כשהפונקציה אכן מתכנסת - כלומר כאשר
+\begin_inset Formula 
+\[
+\left|\cfrac{f\left(x\right)f''\left(x\right)}{\left(f'\left(x\right)\right)^{2}}\right|<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחה אלטרנטיבית
+\end_layout
+
+\begin_layout Standard
+אפשר גם לפתח ישירות טור טיילור של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(X\right)=f\left(x_{n}\right)+\left(x-x_{n}\right)f'\left(x_{n}\right)+\cfrac{\left(x-x_{n}\right)^{2}}{2}f''\left(\xi\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\xi$
+\end_inset
+
+ מסויים בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $x_{n}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $x=r$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(r\right)=0=f\left(x_{n}\right)+\left(r-x_{n}\right)f'\left(x_{n}\right)+\cfrac{\left(r-x_{n}\right)^{2}}{2}f''\left(\xi_{n}\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\xi$
+\end_inset
+
+ בין 
+\begin_inset Formula $r$
+\end_inset
+
+ ו
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}+\left(r-x_{n}\right)+\cfrac{\left(r-x_{n}\right)^{2}}{2}\cfrac{f''\left(\xi_{n}\right)}{f'\left(x_{n}\right)}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}-\cfrac{\left(r-x_{n}\right)^{2}}{2}\cfrac{f''\left(\xi_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+r-x_{n}=-\cfrac{\left(r-x_{n}\right)^{2}}{2}\cdot\cfrac{f''\left(\xi_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+וההתכנסות ריבועית!
+\end_layout
+
+\begin_layout Standard
+עבור אינטרבל נתון 
+\begin_inset Formula $I$
+\end_inset
+
+ בקרבת השורש נגזור:
+\begin_inset Formula 
+\[
+M=\cfrac{\max_{x\in I}\left|f''\left(x\right)\right|}{\min_{x\in I}\left|f'\left(x\right)\right|}
+\]
+
+\end_inset
+
+]נשים לב: 
+\begin_inset Formula $g''\left(x\right)=\cfrac{f''\left(x\right)}{f'\left(x\right)}$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי למעשה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{n}$
+\end_inset
+
+ זה השגיאה בשלב ה
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|e_{n}\right|\le\cfrac{1}{M}\left(M\cdot\left|e_{0}\right|\right)^{2^{n}}
+\]
+
+\end_inset
+
+כך שלהבטחת ההתכנסות 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ צריך לקיים
+\begin_inset Formula 
+\[
+\left|r-x_{0}\right|<\cfrac{1}{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+ריבוי שורשים
+\end_layout
+
+\begin_layout Standard
+לפעמים לשורש יש ריבוי גדול מ
+\numeric on
+1
+\numeric off
+, למשל:
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x+1\right)^{3}\qquad f\left(x\right)=\left(x-r\right)^{2}
+\]
+
+\end_inset
+
+זה לא חייב להיות דווקא פולינום:
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x-1\right)\left(e^{x-1}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר יש ריבוי שורשים, הפונקציה נעשית שטוחה באזור השורש, וזה עושה בעיה בהתכנסות:
+\end_layout
+
+\begin_layout Subsection*
+אי ישימות
+\end_layout
+
+\begin_layout Standard
+חלק מהשיטות לא בהכרח ישימות בסביבת השורש.
+\end_layout
+
+\begin_layout Subsection*
+אובדן יעילות
+\end_layout
+
+\begin_layout Standard
+חלק מהשיטות פחות יעילות, כלומר ההתכנסות פחות מהירה.
+\end_layout
+
+\begin_layout Subsubsection*
+הסבר אנליטי
+\end_layout
+
+\begin_layout Standard
+עבור רושר בעל ריבוי 
+\begin_inset Formula $k>1$
+\end_inset
+
+, ניתן לכתוב
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x-r\right)^{k}\cdot h\left(x\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $h\left(r\right)\neq0$
+\end_inset
+
+ ו
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ רציף ב
+\begin_inset Formula $r$
+\end_inset
+
+.
+ קל לראות כי
+\begin_inset Formula 
+\[
+0=f\left(r\right)=f'\left(r\right)=f''\left(r\right)=\cdots=f^{\left(k-1\right)}\left(r\right)=0\qquad f^{\left(k\right)}\neq0
+\]
+
+\end_inset
+
+עבור שיטת ניוטון:
+\begin_inset Formula 
+\[
+g\left(x\right)=x-\cfrac{f\left(x\right)}{f'\left(x\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=k\left(x-r\right)^{k-1}h\left(x\right)+\left(x-r\right)^{k}h'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)=x-\cfrac{\left(x-r\right)\cdot h\left(x\right)}{kh\left(x\right)+\left(x-r\right)\cdot h'\left(x\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(x\right)=1-\cfrac{h\left(x\right)}{R\cdot h\left(x\right)+\left(x-r\right)h'\left(x\right)}-\left(x-r\right)\cfrac{\mathrm{d}}{\mathrm{d}x}\left[\cfrac{h\left(x\right)}{R\cdot h\left(x\right)+\left(x-r\right)\cdot h'\left(x\right)}\right]
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+g'\left(r\right)=1-\cfrac{\cancel{h\left(r\right)}}{R\cdot\cancel{h\left(r\right)}+\xcancel{\left(r-r\right)h'\left(r\right)}}-\xcancel{\left(r-r\right)\cfrac{\mathrm{d}}{\mathrm{d}x}\left[\cfrac{h\left(r\right)}{R\cdot h\left(r\right)+\left(r-r\right)\cdot h'\left(r\right)}\right]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(r\right)=1-\cfrac{1}{R}\neq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תיקון השיטה
+\end_layout
+
+\begin_layout Standard
+נרצה פונקציה 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+שעבור 
+\begin_inset Formula $g'\left(r\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה
+\begin_inset Formula 
+\[
+K\left(x\right)=\cfrac{f\left(x\right)}{f'\left(x\right)}=\cfrac{\left(x-r\right)h\left(x\right)}{k\cdot h\left(x\right)+\left(x-r\right)\cdot h'\left(x\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K'\left(r\right)=\cfrac{1}{R}m=0
+\]
+
+\end_inset
+
+וברור כי 
+\begin_inset Formula $K\left(2\right)=0$
+\end_inset
+
+ וכי 
+\begin_inset Formula $2$
+\end_inset
+
+ הוא 
+\bar under
+שורש פשוט
+\bar default
+ במקרה זה!
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+החסרון
+\series default
+: יש צורך בחישוב נגזרות מסדר גבוה יותר ב
+\numeric on
+1
+\numeric off
+)ביחס לשיטות המקוריות(
+\end_layout
+
+\end_body
+\end_document

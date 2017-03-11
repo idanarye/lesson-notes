@@ -1,0 +1,1593 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+NAT
+\lang hebrew
+)
+\lang english
+Network Address Translator
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+NAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ זה מנגנון שמטרתו לחסוך בכתובות 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאפשר לפצל כתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+, כך שבתוך הרשת לכל מחשב תהיה כתובת משלו, ומבחוץ יתיחסו לכולן כאל כתובת
+ אחת.
+\begin_inset Formula 
+\[
+\xymatrix{*++[F]{\overset{10.0.0.2}{\textnormal{client1}}}\ar@{-}[r] & *++++[o][F]{\overset{10.0.0.0/24}{\textnormal{Switch}}}\ar@{-}[rr]^{10.0.0.1} &  & *++[F]{\textnormal{NAT}}\ar@{-}[r]^{1.2.3.4} & *++++[o][F]{\textnormal{Internet}}\ar@{-}[r] & \overset{5.6.7.8:53}{\textnormal{DNS}}\\
+*++[F]{\overset{10.0.0.3}{\textnormal{client2}}}\ar@{-}[ru]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש
+\lang english
+client1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רוצה לשלוח חבילה ל
+\lang english
+DNS
+\lang hebrew
+, הוא שולח 
+\begin_inset Formula $\begin{tabular}{|rcl|}
+\hline SrcIP & : & 10.0.0.2\\
+SrcPort & : & 2222\\
+DestIP & : & 5.6.7.8\\
+DestPort & : & 53
+\\\hline \end{tabular}$
+\end_inset
+
+.
+ ה
+\lang english
+NAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פותח רשומת המרה - 
+\begin_inset Formula $\begin{tabular}{|ccccc|}
+\hline  & 10.0.0.2 & : & 2222 & \\
+SrcIP & SrcPort &  & DestIP & DestPort\\
+1.2.3.4 & 3333 &  & 5.6.7.8 & 53
+\\\hline \end{tabular}$
+\end_inset
+
+ - ושולח את החבילה המקורית בתור 
+\begin_inset Formula $\begin{tabular}{|rcl|}
+\hline SrcIP & : & 1.2.3.4\\
+SrcPort & : & 3333\\
+DestIP & : & 5.6.7.8\\
+DestPort & : & 53
+\\\hline \end{tabular}$
+\end_inset
+
+.
+ לכן שרת ה
+\lang english
+DNS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזיר תשובה עם 
+\begin_inset Formula $\begin{tabular}{|rcl|}
+\hline SrcIP & : & 5.6.7.8\\
+SrcPort & : & 53\\
+DestIP & : & 1.2.3.4\\
+DestPort & : & 3333
+\\\hline \end{tabular}$
+\end_inset
+
+, וה
+\lang english
+NAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ממיר את זה ל
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\begin{tabular}{|rcl|}
+\hline SrcIP & : & 5.6.7.8\\
+SrcPort & : & 53\\
+DestIP & : & 10.0.0.2\\
+DestPort & : & 2222
+\\\hline \end{tabular}$
+\end_inset
+
+ - וזה מגיע בחזרה ל
+\lang english
+client1
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+כל חבילה שמגיעה ואין לה רשומה ב
+\lang english
+NAT
+\lang hebrew
+, היא נזרקת.
+\end_layout
+
+\begin_layout Section*
+יש כמה סוגים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAT
+\lang hebrew
+ים:
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Full Cone NAT
+\end_layout
+
+\begin_layout Standard
+עובד ע"פ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DestIP:DestPort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלבד.
+\end_layout
+
+\begin_layout Standard
+אם יש מחשב אחר באינטרנט ששולח חבילה לאותו מקום: 
+\begin_inset Formula $\begin{tabular}{|rcl|}
+\hline SrcIP & : & 5.6.7.9\\
+SrcPort & : & 2456\\
+DestIP & : & 1.2.3.4\\
+DestPort & : & 3333
+\\\hline \end{tabular}$
+\end_inset
+
+ - אז למרות שזה משולח אחר, זה עדיין יגיע ל
+\lang english
+client1
+\lang hebrew
+, בגלל שיש את ה
+\lang english
+DestIP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואת ה
+\lang english
+DestPort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שרשומים ב
+\lang english
+NAT
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Port Restricted NAT
+\end_layout
+
+\begin_layout Standard
+מסתכל גם לפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SrcIP:SrcPort
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אם מחשב אחר שולח חבילה לאותו מקום, אז זה לא יגיע ל
+\lang english
+client1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כי זה מגיע מ
+\lang english
+SrcIP:DestIP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Peer to Peer
+\end_layout
+
+\begin_layout Standard
+בד"כ לשרתים יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משלהם, ולקוחות יוזמים פניות לשרתים)ולא להפך(, ולכן אין בעיה - אבל כן יכולה
+ להיות בעיה באפליקציות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Peer2Peer
+\lang hebrew
+, כי אז לקוח פונה ללקוח אחר - אבל ללקוח שפונים אליו אין כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משלו.
+\end_layout
+
+\begin_layout Standard
+בשביל זה משתמשים בשרת:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & *++[F]{S}\ar@{-}[d]\\
+ &  & *++++[o][F]{\textnormal{Internet}}\\
+ & *++[F]{\textnormal{NAT}}\ar@{-}[ru]\\
+\textnormal{client1}\ar@{-}[ru]\ar@{--}@/^{2pc}/[rruuu] &  &  & \textnormal{client2}\ar@{-}[luu]\ar@/_{2pc}/[luuu]
+}
+\]
+
+\end_inset
+
+ברגע שהלקוח הראשון מתחבר לשרת, השרת אומר לו שהלקוח השני רוצה לדבר איתו,
+ ואז הלקוח הראשון מתחבר ישירות ללקוח השני.
+ התהליך הזה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hole Punching
+\emph default
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אבל מה קורה אם שניהם מאחורי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAT
+\lang hebrew
+?
+\begin_inset Formula 
+\[
+\xymatrix{ &  & *++[F]{S}\\
+ &  & *++++[o][F]{\textnormal{Internet}}\\
+ & *++[F]{\textnormal{NAT}}\ar@{-}[ru] &  & *++[F]{\textnormal{NAT}}\ar@{-}[lu]\\
+\textnormal{client1}\ar@{-}[ru]\ar@{--}@/^{2pc}/[rruuu] &  &  &  & \textnormal{client2}\ar@{-}[lu]\ar@{--}@/_{2pc}/[lluuu]
+}
+\]
+
+\end_inset
+
+במקרה הזה, שני הלקוחות צריכים לשלוח חבילות אחד לשני.
+ החבילות אמנם נזרקות, אבל נוצרים מיפויים ב
+\lang english
+NAT
+\lang hebrew
+ים, וכשהם ישלחו בחזרה ה
+\lang english
+NAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ידע לנטב אותן.
+\end_layout
+
+\begin_layout Standard
+עדיין צריך שרת ששני הלקוחות יתחברו אליו בשביל שהוא יודיע להם מה ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה
+\lang english
+Port
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד של השני.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+RDT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Reliable Data Transfer
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם תמיכה ב
+\lang english
+Port
+\lang hebrew
+ים - הוא לא נותן לנו שום הבטחה לסדר או תקינות של חבילות.
+ אם רוצים את זה צריך להשתמש ב
+\lang english
+TCP
+\lang hebrew
+, אבל הוא יותר כבד.
+\end_layout
+
+\begin_layout Standard
+נסתכל על מנגנון יותר פשוט -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RDT
+\lang hebrew
+.
+ נסתכל על הדורות השונים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RDT
+\lang hebrew
+, ונראה מה כל דור מוסיף:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+RDT 1.0
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\series default
+: ערוץ אמין
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שולח
+\series default
+: שולח מידע
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקבל
+\series default
+: מקבל מידע
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+RDT 2.0
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\series default
+: יש שיבושים ב
+\lang english
+data
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שולח
+\series default
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+checksum, Retransmission
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקבל
+\series default
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ACK/NAK
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+RDT 2.1
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\series default
+: שיבושים ב
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובאישורים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שולח
+\series default
+: הוספת מספר סידורי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקבל
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+checksum
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הצעת שינוי
+\end_layout
+
+\begin_layout Standard
+אם המספר הסידורי בחבילה לא מתאים, המקבל לא מקבל ושולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAK
+\lang hebrew
+.
+ מה יקרה?
+\end_layout
+
+\begin_layout Standard
+נניח שאת החבילה הראשונה 
+\begin_inset Formula $\left(m_{0},0\right)$
+\end_inset
+
+ ויש שיבוש - אז שולחים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAK
+\lang hebrew
+.
+ אבל נניח שה
+\lang english
+NAK
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתבש והופך ל
+\lang english
+ACK
+\lang hebrew
+.
+ אז שולחים את החבילה השנייה - 
+\begin_inset Formula $\left(m_{1},1\right)$
+\end_inset
+
+.
+ אבל המחשב המקבל עדיין מצפה ל
+\begin_inset Formula $\left(*,0\right)$
+\end_inset
+
+, ושולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NAK
+\lang hebrew
+, ואז השולח שולח שוב את 
+\begin_inset Formula $\left(m_{1},1\right)$
+\end_inset
+
+ ונתקעים בלולאה אינסופית.
+\end_layout
+
+\end_body
+\end_document

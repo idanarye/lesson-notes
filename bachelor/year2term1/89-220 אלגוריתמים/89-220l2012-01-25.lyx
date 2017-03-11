@@ -1,0 +1,990 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+רשתות זרימה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: רשת זרימה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c,s,t$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $s$
+\end_inset
+
+קודקוד מקור, 
+\begin_inset Formula $t$
+\end_inset
+
+ קודקוד יעד, ו
+\begin_inset Formula $c$
+\end_inset
+
+ פונקציית קיבולות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ על 
+\begin_inset Formula $G$
+\end_inset
+
+כך ש
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ מקסימום.
+\end_layout
+
+\begin_layout Subsubsection*
+פורד-פלקרסון)בקיצור(
+\end_layout
+
+\begin_layout Enumerate
+אתחל בזרימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Enumerate
+כל עוד יש "מסלול שיפור" 
+\begin_inset Formula $p$
+\end_inset
+
+ הוסף זרימה לאורך 
+\begin_inset Formula $p$
+\end_inset
+
+)מוסיפים 
+\begin_inset Formula $c_{+}\left(p\right)=\min\left\{ c_{f}\left(u,v\right)\middle|\left(u,v\right)\in p\right\} $
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+זמן הריצה של פורד-פלקרסון
+\end_layout
+
+\begin_layout Standard
+קשה לדעת כמה זמן בדיוק לוקח למצוא מסלול שיפור, ולעבור על כולם וכו'.
+ אבל אם כל הקיבולות מספרים טבעיים, אז זמן הריצה של פורד-פלקרסון חסום ב
+\begin_inset Formula $O\left(\left(\left|V\right|+\left|E\right|\right)\left|f^{*}\right|\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ פתרון מכסימום.
+\end_layout
+
+\begin_layout Section*
+היוריסטיקה אדמונדס-קראפ
+\end_layout
+
+\begin_layout Standard
+הרץ פורד-פלקרסון עם 
+\begin_inset Formula $BFS$
+\end_inset
+
+)למציאת מסלול שיפור(
+\end_layout
+
+\begin_layout Section*
+איך זה משפר?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סימון
+\series default
+ עבור 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $\delta_{f}\left(u,v\right)$
+\end_inset
+
+ את המרחק הקצר ביותר מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+)רשת השיורית( )מרחק נמדד במספר הקשתות במסלול(.
+\end_layout
+
+\begin_layout Subsection*
+למה
+\end_layout
+
+\begin_layout Standard
+אם מריצים את אדמונדס-קארפ אז לכל 
+\begin_inset Formula $v\in V-\left\{ s,t\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{f}\left(s,v\right)$
+\end_inset
+
+ גדל מונוטונית)אינו קטן(
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הלמה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים 
+\begin_inset Formula $v\in V-\left\{ s,t\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $\delta_{f}\left(s,v\right)$
+\end_inset
+
+ מתקצר.
+ נסמן ב
+\begin_inset Formula $f$
+\end_inset
+
+ את הזרימה רגע לפני שהמרחק מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ התקצר וב
+\begin_inset Formula $f'$
+\end_inset
+
+ את הזרימה רגע אחרי, כלומר
+\begin_inset Formula 
+\[
+\delta_{f'}\left(s,v\right)<\delta_{f}\left(s,v\right)
+\]
+
+\end_inset
+
+נסמן ב
+\begin_inset Formula $X$
+\end_inset
+
+ את כל הקודקודים שהתקצרו בסיבוב הנ"ל.
+ כלומר 
+\begin_inset Formula $X=\left\{ v\middle|\delta_{f'}\left(s,v\right)<\delta_{f}\left(s,v\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ קודקוד 
+\begin_inset Formula $v_{0}\in X$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\forall_{v\in X}\delta_{f'}\left(s,v_{0}\right)\le\delta_{f'}\left(s,v\right)$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $p$
+\end_inset
+
+ את המסלול הקצר ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $G_{f'}$
+\end_inset
+
+ ונסמן ב
+\begin_inset Formula $u$
+\end_inset
+
+ את קודמו של 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ על המסלול.
+\begin_inset Formula 
+\[
+\delta_{f'}\left(s,u\right)=\delta_{f'}\left(s,v_{0}\right)-1
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\delta_{f'}\left(s,u\right)<\delta_{f'}\left(s,v_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $u\notin X$
+\end_inset
+
+)כלומר המרחק מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $u$
+\end_inset
+
+ לא התקצר במעבר מ
+\begin_inset Formula $f$
+\end_inset
+
+ ל
+\begin_inset Formula $f'$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $\delta_{f'}\left(s,u\right)\ge\delta_{f}\left(s,u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נתבונן ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(u,v_{0}\right)\in G_{f}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $c_{f}\left(u,v\right)=c\left(u,v\right)-f\left(u,v\right)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(u,v_{0}\right)\notin G_{f}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $c\left(u,v\right)=f\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: 
+\begin_inset Formula $\left(u,v_{0}\right)\in G_{f}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta_{f}\left(s,v_{0}\right)\le\delta_{f}\left(s,u\right)+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta_{f}\left(s,v_{0}\right)\le\delta_{f}\left(s,,u\right)+1\le\delta_{f'}\left(s,u\right)+1\le\delta_{f'}\left(s,v_{0}\right)
+\]
+
+\end_inset
+
+סתירה לכך ש
+\begin_inset Formula $v_{0}\in X$
+\end_inset
+
+)כלומר ש
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ התקצר(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\series default
+\numeric off
+: 
+\begin_inset Formula $\left(u,v_{0}\right)\notin G_{f}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, 
+\begin_inset Formula $\left(u,v_{0}\right)\in G_{f'}$
+\end_inset
+
+ לכן מסלול השיפור במעבר מ
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ל
+\begin_inset Formula $G_{f'}$
+\end_inset
+
+ עבר ב
+\begin_inset Formula $\left(v_{0},u\right)$
+\end_inset
+
+)כי קשת יכולה להתווסף רק כתוצאה מזרימה נגדית, מה שאומר שהוספנו ל
+\begin_inset Formula $\left(v_{0},u\right)$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+נסמן ב
+\begin_inset Formula $p$
+\end_inset
+
+ את מסלול השיפור בין 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ל
+\begin_inset Formula $G_{f'}$
+\end_inset
+
+.
+ כיוון שאדמונדס-קארפ בוחר מסלולים לפי 
+\begin_inset Formula $BFS$
+\end_inset
+
+ 
+\begin_inset Formula $\delta_{f}\left(s,v_{0}\right)=\delta_{f}\left(s,u\right)-1$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\delta_{f}\left(s,v_{0}\right)=\delta_{f}\left(s,u\right)-1\le\delta_{f'}\left(s,u\right)-1=\delta_{f'}\left(s,v_{0}\right)-2\left(<\delta_{f'}\left(s,v_{0}\right)\right)
+\]
+
+\end_inset
+
+סתירה לכך ש
+\begin_inset Formula $v_{0}\in X$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם מריצים את אדמונדס-קארפ על רשת זרימה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c,s,t$
+\end_inset
+
+ אז מספר הסיבובים=
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נתבונן ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ובמסלול השיפור על 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ שנסמנו 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קשת 
+\begin_inset Formula $\left(u,v\right)\in p$
+\end_inset
+
+ נקראת 
+\bar under
+קריטית
+\bar default
+ אם 
+\begin_inset Formula $c_{f}\left(u,v\right)=c_{f}\left(p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $f'$
+\end_inset
+
+ את הזרימה אחריו)לאו דווקא מיד אחריו( כך שאחרי 
+\begin_inset Formula $f'$
+\end_inset
+
+ 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ מופיע מחדש.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right)\hspace{1em}\delta_{f}\left(s,v\right)=\delta_{f}\left(s,u\right)+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצד שני 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ מופיעה מיד אחרי 
+\begin_inset Formula $f'$
+\end_inset
+
+ ולכן מסלול השיפור על 
+\begin_inset Formula $f'$
+\end_inset
+
+, שנסמנו 
+\begin_inset Formula $p'$
+\end_inset
+
+, עובר ב
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(2\right)\hspace{1em}\delta_{f'}\left(s,u\right)=\delta_{f'}\left(s,v\right)+1
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\delta_{f'}\left(s,u\right)=\delta_{f'}\left(s,v\right)+1\ge\delta_{f}\left(s,v\right)+1
+\]
+
+\end_inset
+
+לכן מספר הפעמים ש
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ קריטית > 
+\begin_inset Formula $\cfrac{\left|V\right|}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצד שני, בכל סיבוב יש קשת קריטית.
+\end_layout
+
+\begin_layout Standard
+כיוון שמס' הקשתות
+\begin_inset Formula $O\left(\left|E\right|\right)=$
+\end_inset
+
+ וקשת קריטית לכל היותר 
+\begin_inset Formula $\cfrac{\left|V\right|}{2}$
+\end_inset
+
+ פעמים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מס' הסיבובים 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+זמן הריצה של אדמונדס-קארפ=
+\begin_inset Formula $O\left(\left(\left|V\right|+\left|E\right|\right)\left(\left|V\right|\left|E\right|\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+זיווגים)התאמות(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Matching
+\end_layout
+
+\begin_layout Standard
+זיווג בגרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+)לא מכוון( הוא אוסף קשתות 
+\begin_inset Formula $M\subseteq E$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ יש לכל היותר קשת אחת 
+\begin_inset Formula $e\in M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $v\in e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\bigcirc\ar@{=}[rr]\ar@{-}[dd]\ar@{-}[rrdd] &  & \bigcirc\ar@{-}[rrrr]\ar@{-}[rrd]\ar@{-}[dd] &  &  &  & \bigcirc\ar@{=}[dd]\\
+ &  &  &  & \bigcirc\ar@{-}[rru]\ar@{-}[rrd]\ar@{-}[d]\\
+\bigcirc\ar@{-}[rr] &  & \bigcirc\ar@{=}[rr] &  & \bigcirc\ar@{-}[rr] &  & \bigcirc
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: התאמה 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|M\right|$
+\end_inset
+
+ מקסימום.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\left|V\right|}{2}\ge\left|M\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ הוא דו-חלקי אם ניתן לחלק את 
+\begin_inset Formula $V$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $V=V_{1}\uplus V_{2}$
+\end_inset
+
+, כך שלכל 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+ 
+\begin_inset Formula $u\in V_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $v\in V_{2}$
+\end_inset
+
+ 
+\bar under
+או
+\bar default
+ 
+\begin_inset Formula $u\in V_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $v\in V_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ הגרף הדו חלקי, 
+\begin_inset Formula $G\left(B\right)$
+\end_inset
+
+ רשת זרימה)מוסיפים ל
+\begin_inset Formula $B$
+\end_inset
+
+ את 
+\begin_inset Formula $s,t$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{G\left(B\right) &  &  &  &  & B\\
+ &  & \ocircle\ar[rrrrr]\ar[rrrrrd]\ar[rrrrrdddd] &  &  &  &  & \ocircle\ar[rrdd]\\
+ &  & \ocircle\ar[rrrrr]\ar[rrrrrddd] &  &  &  &  & \ocircle\ar[rrd]\\
+s\ar[rruu]\ar[rru]\ar[rr]\ar[rrd]\ar[rrdd]\ar[rrddd] &  & \ocircle\ar[rrrrr]\ar[rrrrrd]\ar[rrrrrdd] &  &  &  &  & \ocircle\ar[rr] &  & t\\
+ &  & \ocircle\ar[rrrrr]\ar[rrrrrdd] &  &  &  &  & \ocircle\ar[rru]\\
+ &  & \ocircle\ar[rrrrruuuu] &  &  &  &  & \ocircle\ar[rruu]\\
+ &  & \ocircle\ar[rrrrru] &  &  &  &  & \ocircle\ar[rruuu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $G\left(B\right)$
+\end_inset
+
+ יש זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|f\right|=k$
+\end_inset
+
+ אם"ם ב
+\begin_inset Formula $B$
+\end_inset
+
+ יש התאמה 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|M\right|=k$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

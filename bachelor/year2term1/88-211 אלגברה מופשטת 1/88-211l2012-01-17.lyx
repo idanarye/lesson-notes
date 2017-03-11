@@ -1,0 +1,1215 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+סדרות נורמליות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה.
+\end_layout
+
+\begin_layout Itemize
+סדרה נורמלית של 
+\begin_inset Formula $G$
+\end_inset
+
+ היא סדרה של תתי חבורות 
+\begin_inset Formula $G=G_{0}\rhd G_{1}\rhd G_{2}\rhd...\rhd G_{k}=\left\{ e\right\} $
+\end_inset
+
+ כאשר לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $G_{i+1}\ne G_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אורך הסדרה הוא 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הגורמים של הסדרה: 
+\begin_inset Formula $\unitfrac{G_{i}}{G_{i+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $0\le i<k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( לכל חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $G\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית מאורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ הגורם היחיד הוא 
+\begin_inset Formula $\unitfrac{G}{\left\{ e\right\} }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $G=A\times B$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{A}=\left\{ \left(a,e\right):a\in A\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\bar{B}=\left\{ \left(e,b\right):b\in B\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $G\rhd\bar{A}\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית מאורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, וגם 
+\begin_inset Formula $G\rhd\bar{B}\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית מאורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הגורמים של הסדרה הראשונה הם 
+\begin_inset Formula $\unitfrac{G}{\bar{A}}=\unitfrac{A\times B}{\bar{A}}\cong B$
+\end_inset
+
+ ו
+\begin_inset Formula $\unitfrac{\bar{A}}{\left\{ e\right\} }\cong A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הגורמים של הסדרה השנייה הם 
+\begin_inset Formula $\unitfrac{G}{\bar{B}}\cong A,\unitfrac{\bar{B}}{\left\{ e\right\} }\cong B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( 
+\begin_inset Formula $G=\mathbb{Z}_{2p}$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני.
+ 
+\begin_inset Formula $\mathbb{Z}_{2p}\rhd\left\langle 2\right\rangle \rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ הגורמים: 
+\begin_inset Formula $\unitfrac{\mathbb{Z}_{2p}}{\left\langle 2\right\rangle }\cong\mathbb{Z}_{2}$
+\end_inset
+
+)מדוע?( ו
+\begin_inset Formula $\unitfrac{\left\langle 2\right\rangle }{\left\{ e\right\} }\cong\left\langle 2\right\rangle \cong\mathbb{Z}_{p}$
+\end_inset
+
+)הערה: 
+\begin_inset Formula $\mathbb{Z}_{2p}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{p}$
+\end_inset
+
+.
+ מדוע?(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד( 
+\begin_inset Formula $G=S_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{3}\rhd A_{3}\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה מאורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ גורמים: 
+\begin_inset Formula $\unitfrac{S_{3}}{A_{3}}\cong\mathbb{Z}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{A_{3}}{\left\{ e\right\} }\cong\mathbb{Z}_{3}$
+\end_inset
+
+ - אותם גורמים כמו בדוגמה הקודמת)אם ניקח 
+\begin_inset Formula $p=3$
+\end_inset
+
+( - כלומר הגורמים לא נותנים לנו מידע מלא על החבורה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $G=G_{0}\rhd G_{1}\rhd...\rhd G_{k}$
+\end_inset
+
+ סדרה נורמלית.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+עידון ממש אלמנטרי
+\bar default
+ של הסדרה הנ"ל היא הוספת תח"נ 
+\begin_inset Formula $L$
+\end_inset
+
+ בין 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ ל
+\begin_inset Formula $G_{i+1}$
+\end_inset
+
+.
+ כלומר סדרה חדשה שהיא
+\begin_inset Formula 
+\[
+G=G_{0}\rhd G_{1}\rhd...\rhd G_{i}\rhd L\rhd G_{i+1}\rhd...\rhd G_{k}=\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+עידון ממש
+\bar default
+ מתקבל מסדרה של עידונים אלמנטרים.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+עידון
+\bar default
+ של סדרה נורמלית הוא הסדרה המקורית או עידון ממש שלה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G=S_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{3}\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית.
+\end_layout
+
+\begin_layout Standard
+עידונים שלה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{3}\rhd\left\{ e\right\} $
+\end_inset
+
+ עידון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{3}\rhd A_{3}\rhd\left\{ e\right\} $
+\end_inset
+
+ עידון ממש
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G=\mathbb{Z}_{16}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}_{16}\rhd\left\langle 8\right\rangle \rhd\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}_{16}\rhd\left\langle 4\right\rangle \rhd\left\langle 8\right\rangle \rhd\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}_{16}\rhd\left\langle 2\right\rangle \rhd\left\langle 4\right\rangle \rhd\left\langle 8\right\rangle \rhd\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+סדרת הרכב של 
+\begin_inset Formula $G$
+\end_inset
+
+ היא סדרה נורמלית של 
+\begin_inset Formula $G$
+\end_inset
+
+ שאין לה עידון ממש.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+סדרה נורמלית של חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+ היא סדרת הרכב אם"ם הגורמים חבורות פשוטות.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+ט.ע.
+
+\bar default
+ נניח 
+\begin_inset Formula $N\lhd G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\unitfrac{G}{N}$
+\end_inset
+
+ פשוטה אם"ם לא קיימת תח"נ 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחת
+\begin_inset space ~
+\end_inset
+
+ט.ע.
+
+\bar default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+כיוון
+\begin_inset space ~
+\end_inset
+
+א
+\bar default
+ אם 
+\begin_inset Formula $G\rhd L\rhd N$
+\end_inset
+
+ אז 
+\begin_inset Formula $\unitfrac{L}{N}<\unitfrac{G}{N}$
+\end_inset
+
+.
+ יתר על כן, לפי משפט איז' 
+\begin_inset Formula $III$
+\end_inset
+
+ 
+\begin_inset Formula $\unitfrac{L}{N}\lhd\unitfrac{G}{N}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\unitfrac{G}{N}$
+\end_inset
+
+ אינה 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+כיוון
+\begin_inset space ~
+\end_inset
+
+ב
+\bar default
+ אם 
+\begin_inset Formula $\unitfrac{G}{N}$
+\end_inset
+
+ אינה פשוטה, אז קיימת תח"נ לא טריוויאלית 
+\begin_inset Formula $\left\{ e\right\} \lhd K\lhd\unitfrac{G}{N}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תזכורת
+\bar default
+ האפימורפיזם הקנוני 
+\begin_inset Formula $\psi:G\to\unitfrac{G}{N}$
+\end_inset
+
+ מוגדר ע"י 
+\begin_inset Formula $\psi\left(g\right)=gN$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן ב
+\begin_inset Formula $\psi^{-1}\left(K\right)$
+\end_inset
+
+ במקרה הנ"ל, כלומר בכל האיברים במחלקות של 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תרגיל 
+\bar default
+
+\begin_inset Formula $\psi^{-1}\left(K\right)$
+\end_inset
+
+, ז.א.
+ המקור תחת האפימורפיזם הקנוני של 
+\begin_inset Formula $K$
+\end_inset
+
+ = כל האיברים מחלקות של 
+\begin_inset Formula $K$
+\end_inset
+
+ הוא תח"נ של 
+\begin_inset Formula $G$
+\end_inset
+
+ שמכילה ממש את 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו 
+\begin_inset Formula $N\lhd\psi^{-1}\left(K\right)\lhd G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות לסדרות הרכב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( 
+\begin_inset Formula $S_{3}\rhd A_{3}\rhd\left\{ e\right\} $
+\end_inset
+
+.
+ הגורמים: 
+\begin_inset Formula $\unitfrac{S_{3}}{A_{3}}\cong\mathbb{Z}_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\unitfrac{A_{3}}{\left\{ e\right\} }\cong\mathbb{Z}_{3}$
+\end_inset
+
+ הם חבורות פשוטות.
+ לכן זו סדרת הרכב.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( עבור 
+\begin_inset Formula $5\le n$
+\end_inset
+
+, 
+\begin_inset Formula $S_{n}\rhd A_{n}\rhd\left\{ e\right\} $
+\end_inset
+
+ סדרה נורמלית.
+ הגורמים הם:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\unitfrac{S_{n}}{A_{n}}\cong\mathbb{Z}_{2}$
+\end_inset
+
+ חבורה פשוטה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\unitfrac{A_{n}}{\left\{ e\right\} }\cong A_{n}$
+\end_inset
+
+ - עבור 
+\begin_inset Formula $5\le n$
+\end_inset
+
+ זו חבורה פשוטה.
+\end_layout
+
+\begin_layout Standard
+לכן הסדרה הזו סדרת הרכב.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( 
+\begin_inset Formula $G=S_{4}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{4}\rhd A_{4}\rhd V_{4}\rhd\left\langle \left(1,2\right)\left(3,4\right)\right\rangle \rhd\left\{ e\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V_{4}$
+\end_inset
+
+ חבורת קליין היא 
+\begin_inset Formula 
+\[
+V_{4}=\left\{ e,\left(1,2\right)\left(3,4\right),\left(1,3\right)\left(2,4\right),\left(1,4\right)\left(2,3\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+טענה
+\bar default
+: הסדרה הנ"ל היא סדרת הרכב של 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+ט.ע.
+\numeric on
+1
+\numeric off
+\bar default
+ 
+\begin_inset Formula $V_{4}$
+\end_inset
+
+ ת"ח של 
+\begin_inset Formula $A_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+ט.ע.
+\numeric on
+2
+\numeric off
+\bar default
+ 
+\begin_inset Formula $V_{4}\trianglelefteq A_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+ 
+\begin_inset Formula $V_{4}$
+\end_inset
+
+ היא איחוד של מחלקות צמידות ב
+\begin_inset Formula $S_{4}$
+\end_inset
+
+)כי מכילה את כל האיברים שמבנה המחזורים שלהם 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(1,1,1,1\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+עובדה
+\bar default
+ ת"ח היא נורמלית אם"ם היא איחוד של מחלקות צמידות.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+ט.ע.
+\numeric on
+3
+\numeric off
+\bar default
+ 
+\begin_inset Formula $\left\langle \left(1,2\right)\left(3,4\right)\right\rangle \lhd V_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+ האינדקס של 
+\begin_inset Formula $\left\langle \left(1,2\right)\left(3,4\right)\right\rangle $
+\end_inset
+
+בתוך 
+\begin_inset Formula $V_{4}$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן)השלם(.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הערה
+\bar default
+ 
+\begin_inset Formula $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+עובדה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+4
+\numeric off
+\bar default
+ 
+\begin_inset Formula $A_{4}\lhd S_{4}$
+\end_inset
+
+)הוכחנו בעבר(
+\end_layout
+
+\begin_layout Standard
+מסקנה מט.ע.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1-4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שזו סדרה נורמלית.
+ כדי להראות שזו סדרת הרכב של 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+ מ"ל שכל הגורמים פשוטים.
+\end_layout
+
+\begin_layout Standard
+אכן, 
+\begin_inset Formula $\unitfrac{S_{4}}{A_{4}}\cong\mathbb{Z}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{A_{4}}{V_{4}}\cong\mathbb{Z}_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{V_{4}}{\left\langle \left(1,2\right)\left(3,4\right)\right\rangle }\cong\mathbb{Z}_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\unitfrac{\left\langle \left(1,2\right)\left(3,4\right)\right\rangle }{\left\{ e\right\} }\cong\mathbb{Z}_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+עוד דוגמה מעניינת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G=\mathbb{Z}_{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}_{6}\rhd\left\langle 3\right\rangle \rhd\left\{ 0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}_{6}\rhd\left\langle 2\right\rangle \rhd\left\{ 0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+גורמי הסדרה הראשונה: 
+\begin_inset Formula $\unitfrac{\mathbb{Z}_{6}}{\left\langle 3\right\rangle }\cong\mathbb{Z}_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{\left\langle 3\right\rangle }{\left\{ e\right\} }\cong\mathbb{Z}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+גורמי הסדרה השנייה: 
+\begin_inset Formula $\unitfrac{\mathbb{Z}_{6}}{\left\langle 2\right\rangle }\cong\mathbb{Z}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{\left\langle 2\right\rangle }{\left\{ 0\right\} }\cong\mathbb{Z}_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סדרות הרכב עם אותם גורמים.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,971 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)פונקציה לא רציפה שהנגזרות החלקיות שלה קיימות(
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\cfrac{xy}{x^{2}+y^{2}} & \left(x,y\right)\ne\left(0,0\right)\\
+0 & \left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( בדוק האם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( מצא נגזרות חלקיות באם קיימות.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( ברור 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה כי.
+ נבחר בהצבה 
+\begin_inset Formula $y=kx$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+\lim_{x\to0}\cfrac{x\left(kx\right)}{x^{2}+k^{2}x^{2}}=\cfrac{k}{1+k^{2}}
+\]
+
+\end_inset
+
+הקבול אינו קיים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא רציפה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( נגזור בסביבת הנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ לפי ההגדרה.
+\begin_inset Formula 
+\[
+f'_{x}\left(0,0\right)=\lim_{h\to0}\cfrac{f\left(0+h,0\right)-f\left(0,0\right)}{h}=\lim_{h\to0}\cfrac{\cfrac{h\cdot0}{h^{2}+0^{2}}-0}{h}=0
+\]
+
+\end_inset
+
+בדיוק אותו דבר
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+לא נוכל להסיק דבר על הנגזרות החלקיות אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה רציפה.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+דיפרנציאביליות 
+\begin_inset Formula $f\left(\vec{p}+\vec{h}\right)-f\left(\vec{p}\right)=L\left(\vec{h}\right)+o\left(\|\vec{h}\|\right)$
+\end_inset
+
+.
+ ראינו שמספיק להסתכל על הגבול
+\begin_inset Formula 
+\[
+\lim_{\vec{h}\to0}\cfrac{f\left(\vec{p}+\vec{h}\right)-f\left(\vec{p}\right)-L\left(\vec{h}\right)}{\|\vec{h}\|}=0
+\]
+
+\end_inset
+
+דיפרנציאבילית.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+קבע האם הפונקציות הבאות דיפרנציאביליות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $f\left(x,y\right)=\begin{cases}
+\cfrac{xy}{\sqrt{x^{2}+y^{2}}} & \left(x,y\right)\ne\left(0,0\right)\\
+0 & \left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: אם 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית אז היא בהכרח רציפה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\le\left|\cfrac{xy}{\sqrt{x^{2}+y^{2}}}\right|=\cfrac{\left|xy\right|}{\sqrt{x^{2}+y^{2}}}=\cfrac{\left|x\right|\left|y\right|}{\sqrt{x^{2}+y^{2}}}=\cfrac{\sqrt{x^{2}}\sqrt{y^{2}}}{\sqrt{x^{2}+y^{2}}}\le\cfrac{\sqrt{x^{2}+y^{2}}\sqrt{x^{2}+y^{2}}}{\sqrt{x^{2}+y^{2}}}\to0
+\]
+
+\end_inset
+
+במקרה שלנו 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+ כדי לבנות את 
+\begin_inset Formula $L\left(\vec{h}\right)$
+\end_inset
+
+ נמצא נגזרות חלקיות.
+ הנקודה היחידה שמעניינת אותנו היא 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+ נשים לב ש
+\begin_inset Formula $f\left(x,0\right)=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $f'_{x}\left(0,0\right)=0$
+\end_inset
+
+.
+ באופן דומה נקבל 
+\begin_inset Formula $f'_{y}\left(0,0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה את 
+\begin_inset Formula $df\left(0,0\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+df_{\left(0,0\right)}\left(\begin{pmatrix}h\\
+j
+\end{pmatrix}\right)=\begin{pmatrix}0 & 0\end{pmatrix}\begin{pmatrix}h\\
+k
+\end{pmatrix}=0\cdot h+0\cdot k=0
+\]
+
+\end_inset
+
+נשאר לחשב את הגבול הבא:
+\begin_inset Formula 
+\[
+\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{f\left(h,k\right)-f\left(0,0\right)-L\left(h,k\right)}{\sqrt{h^{2}+k^{2}}}=\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{f\left(h,k\right)-0-0}{\sqrt{h^{2}+k^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{\cfrac{hk}{\sqrt{h^{2}+k^{2}}}}{\sqrt{h^{2}+k^{2}}}=\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{hk}{h^{2}+k^{2}}=\cfrac{m}{1+m^{2}}
+\]
+
+\end_inset
+
+ברור שהגבול הוא לא ייקים.
+ לדוגמה ע"י הצבה 
+\begin_inset Formula $k=mh$
+\end_inset
+
+.)זוהי דוגמה לפונקציה רציפה שאינה דיפרנציאבילית(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( נתונה 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+\left(x^{2}+y^{2}\right)\sin\cfrac{1}{\sqrt{x^{2}+y^{2}}} & \left(x,y\right)\ne\left(0,0\right)\\
+0 & \left(x,y\right)=\left(0,0\right)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(I\right)$
+\end_inset
+
+ קבע האם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה קל לראות שרציפה לכל 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ע"י הרכבה של פונקציות רציפות ובנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ע"י הצבה 
+\begin_inset Formula $t=x^{2}+y^{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\lim_{\left(x,y\right)\to\left(0,0\right)}\left(x^{2}+y^{2}\right)\sin\cfrac{1}{\sqrt{x^{2}+y^{2}}}=\lim_{t\to0}t\sin\cfrac{1}{\sqrt{t}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(II\right)$
+\end_inset
+
+ מצא נגזרות חלקיות לפונקציה בכל נקודה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה פרט לנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ נגזור לפי נוסחאות:
+\begin_inset Formula 
+\[
+f'_{x}=2x\sin\cfrac{1}{\sqrt{x^{2}+y^{2}}}+\cos\cfrac{1}{\sqrt{x^{2}+y^{2}}}\left(-\cfrac{1}{2}\left(x^{2}+y\right)^{-\frac{3}{2}}\right)\left(x^{2}+y^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'_{y}=2y\sin\cfrac{1}{\sqrt{x^{2}+y^{2}}}+\cos\cfrac{1}{\sqrt{x^{2}+y^{2}}}\left(-\cfrac{1}{2\sqrt{x^{2}+y^{2}}}\right)
+\]
+
+\end_inset
+
+נשאר לחשב את הנגזרת בנקודת 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ לפי ההגדרה.
+\begin_inset Formula 
+\[
+f'_{x}\left(0,0\right)=\lim_{t\to0}\cfrac{f\left(t,0\right)-f\left(0,0\right)}{t}=\lim_{t\to0}\cfrac{t^{2}\sin\cfrac{1}{\sqrt{t^{2}}}-0}{t}=\lim_{t\to0}t\sin\cfrac{1}{\left|t\right|}=0
+\]
+
+\end_inset
+
+באופן דומה נקבל 
+\begin_inset Formula $f'_{y}\left(0,0\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מסקנה
+\bar default
+: הנגזרות החלקיות קיימות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(III\right)$
+\end_inset
+
+ קבע האם הנגזרות החלקיות רציפות.
+ נבדוק את הגבול של 
+\begin_inset Formula $f'_{x}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ שואפים לאפס: 
+\begin_inset Formula 
+\[
+\lim_{\left(x,y\right)\to\left(0,0\right)}f'_{x}\left(x,y\right)=\lim_{\left(x,y\right)\to\left(0,0\right)}2x\sin\cfrac{1}{\sqrt{x^{2}+y^{2}}}-\cfrac{1}{2}\cfrac{1}{\sqrt{x^{2}+y^{2}}}
+\]
+
+\end_inset
+
+נשאר לבדוק את הגבול 
+\begin_inset Formula $\lim\limits _{\left(x,y\right)\to\left(0,0\right)}\cfrac{1}{\sqrt{x^{2}+y^{2}}}\cos\cfrac{1}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $t=x^{2}+y^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{t\to0}\cfrac{1}{\sqrt{t}}\cos\cfrac{1}{\sqrt{t}}
+\]
+
+\end_inset
+
+נבחר שתי סדרות ששואפות לאפס:
+\begin_inset Formula 
+\[
+x_{n}=\cfrac{1}{\left(\pi+\pi n\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{n}\cfrac{1}{\left(\left(\cfrac{\pi}{2}\right)+\pi n\right)^{2}}
+\]
+
+\end_inset
+
+נקבל פעם אחת גבול 
+\begin_inset Formula $\infty$
+\end_inset
+
+ ופעם שנייה גבול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפס! ז"א הנגזרות החלקיות קיימות אך לא רציפות.
+\end_layout
+
+\begin_layout Subsection*
+שימו ךב
+\end_layout
+
+\begin_layout Standard
+ניתן היה להראות שהגבול לא קיים בדרך הבאה:
+\begin_inset Formula 
+\[
+\lim_{\left(x,y\right)\to\left(0,0\right)}\cfrac{1}{\sqrt{x^{2}+y^{2}}}\cos\cfrac{1}{\sqrt{x^{2}+y^{2}}}
+\]
+
+\end_inset
+
+נחפש מסלול שאיפה שלא נותן לנו גבול אפס:
+\begin_inset Formula 
+\[
+\lim_{\begin{array}{c}
+x\to0\\
+y=x
+\end{array}}\cfrac{1}{\sqrt{2x^{2}}}\cos\cfrac{1}{\sqrt{2x^{2}}}=\lim_{x\to0}\cfrac{1}{\sqrt{2}\left|x\right|}\cos\cfrac{1}{\sqrt{2}\left|x\right|}
+\]
+
+\end_inset
+
+שוב נבחר סדרות בקלות לפי היינה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(IV\right)$
+\end_inset
+
+ ראינו בסעיף 
+\begin_inset Formula $\left(III\right)$
+\end_inset
+
+ של
+\begin_inset Formula $f$
+\end_inset
+
+ קיימות נגזרות חלקיות אך לא רציפות.
+ קבע האם 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית.
+ אם כן, הראה זאת מפורשות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פתרון ייתכן מקרה כי הנגזרות החלקיות קיימות אך לא רציפות ובכל זאת 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית.
+ זאת אומרת חייבים לבדוק דיפרנציאביליות! נבדוק את הדיפרנציאל:
+\begin_inset Formula 
+\[
+\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{f\left(h,k\right)-f\left(0,0\right)-df_{\left(0,0\right)}\left(\begin{pmatrix}h\\
+k
+\end{pmatrix}\right)}{\sqrt{h^{2}+k^{2}}}=\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{\left(h^{2}+k^{2}\right)\sin\cfrac{1}{\sqrt{h^{2}+k^{2}}}-0-\left(f'_{x}\left(0,0\right)h+f'_{y}\left(0,0\right)k\right)}{\sqrt{h^{2}+k^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{\left(h,k\right)\to\left(0,0\right)}\cfrac{\left(h^{2}+k^{2}\right)\sin\cfrac{1}{\sqrt{h^{2}+k^{2}}}}{\sqrt{h^{2}+k^{2}}}=\lim_{\left(h,k\right)\to\left(0,0\right)}\sqrt{h^{2}+k^{2}}\sin\left(\cfrac{1}{\sqrt{h^{2}+k^{2}}}\right)=0
+\]
+
+\end_inset
+
+ע"כ הפונקציה הנ"ל דיפרנציאבילית.
+\end_layout
+
+\begin_layout Section*
+לסיכום
+\end_layout
+
+\begin_layout Itemize
+אם הנגזרות החלקיות קיימות ורציפות 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ דיפרנציאביליות.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא דיפרנציאבילי
+\end_layout
+
+\begin_layout Itemize
+אם הנגזרות החלקיות קיימות אך לא רציפות לא ניתן להסיק דבר.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+כל פולינום דיפרנציאבילי.
+ למעשה כל הפונקציות האלמנטריות דיפרנציאביליות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $f\left(x,y\right)=\begin{pmatrix}\sin x\\
+xy\\
+\cos y
+\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( חשב את 
+\begin_inset Formula $d_{a}f\left(\vec{h}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a=\left(\pi,\cfrac{\pi}{2}\right)$
+\end_inset
+
+ ן
+\begin_inset Formula $\vec{h}\in\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( בהסתמך על סעיף )א( חשב את 
+\begin_inset Formula $f\left(\pi-0.01,\cfrac{\pi}{2}+0.02\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( נמצא נגזרות חלקיות לוקטור:
+\begin_inset Formula 
+\[
+f'_{x}\left(x,y\right)=\begin{pmatrix}\cos x\\
+y\\
+\\
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'_{y}\left(x,y\right)=\begin{pmatrix}0\\
+x\\
+-\sin y
+\end{pmatrix}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $\vec{h}=\left(h_{1},h_{2}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+d_{a}f\left(\vec{h}\right)=f'_{x}\left(a\right)\cdot h_{1}+f'_{y}\left(a\right)\cdot h_{2}=f'_{x}\left(\pi,\cfrac{\pi}{2}\right)\cdot h_{1}+f'_{y}\left(\pi,\cfrac{\pi}{2}\right)\cdot h_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}-1\\
+\cfrac{\pi}{2}\\
+0
+\end{pmatrix}h_{1}+\begin{pmatrix}0\\
+\pi\\
+-1
+\end{pmatrix}h_{2}=\begin{pmatrix}-h_{1}+0\\
+\cfrac{\pi}{2}h_{1}+\pi h_{2}\\
+0-h_{1}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( נשתמש בהגדרת הדיפרנציאל )ביקשו קירוב לביטוי( 
+\begin_inset Formula 
+\[
+f\left(a+h\right)=f\left(a\right)-df_{a}\left(h\right)+o\left(\|h\|\right)
+\]
+
+\end_inset
+
+ביקשו 
+\begin_inset Formula $f\left(\pi-0.01,\cfrac{\pi}{2}+0.02\right)$
+\end_inset
+
+.
+ נבחר את 
+\begin_inset Formula $h$
+\end_inset
+
+ להיות 
+\begin_inset Formula $h=\left(h_{1},h_{2}\right)=\left(-0.01,0.02\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\pi-0.01,\cfrac{\pi}{2}+0.02\right)=f\left(\pi,\cfrac{\pi}{2}\right)+d_{\left(\pi,\frac{\pi}{2}\right)}f\left(-0.01,0.02\right)+o\left(\sqrt{\left(0.01\right)^{2}+\left(0.02\right)^{2}}\right)
+\]
+
+\end_inset
+
+כדי לחשב את צד שמאל ניתן הערכה לצד ימין.
+\begin_inset Formula 
+\[
+f\left(\pi,\cfrac{\pi}{2}\right)+df_{\left(\pi,\frac{\pi}{2}\right)}\left(-0.01,0.02\right)=\begin{pmatrix}\sin\pi\\
+\cfrac{\pi^{2}}{2}\\
+\cos\cfrac{\pi}{2}
+\end{pmatrix}+\begin{pmatrix}0.01\\
+\cfrac{\pi}{2}\left(-0.01\right)+\pi\left(0.02\right)\\
+-0.02
+\end{pmatrix}
+\]
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\[
+f\left(\pi-0.01,\cfrac{\pi}{2}+0.02\right)\approx\begin{pmatrix}0.01\\
+\cfrac{\pi^{2}}{2}-0.01\cfrac{\pi}{2}+\pi\left(0.02\right)\\
+-0.02
+\end{pmatrix}
+\]
+
+\end_inset
+
+זהו הקירוב הדרוש!!
+\end_layout
+
+\begin_layout Part*
+נגזרת לפי וקטור ולפי כיוון
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\Omega\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ תחום, ותהי 
+\begin_inset Formula $f:\Omega\to\mathbb{R}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $p\in\textnormal{int}\Omega$
+\end_inset
+
+.
+ בנוסף יהי 
+\begin_inset Formula $0\ne\vec{h}\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ נגדיר את הנגזרת של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ לפי הוקטור 
+\begin_inset Formula $h$
+\end_inset
+
+ להיות
+\begin_inset Formula 
+\[
+\partial_{h}f\left(p\right):=\lim_{t\to0}\cfrac{f\left(p+t\cdot h\right)-f\left(p\right)}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $h$
+\end_inset
+
+ וקטור מנורמל ז"א 
+\begin_inset Formula $\|h\|=1$
+\end_inset
+
+, אז הנגזרת 
+\begin_inset Formula $\partial_{h}f$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ לפי ווקטור 
+\begin_inset Formula $h$
+\end_inset
+
+ נקראת נגזרת כיוונית)נגזרת בכיוון 
+\begin_inset Formula $h$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מצא את הנגזרת של 
+\begin_inset Formula $f\left(x,y\right)=xy^{2}$
+\end_inset
+
+ לפי הכיוון של הוקטור 
+\begin_inset Formula $h=\left(1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ביקשו נגזרת כיוונית.
+ נתון וקטור 
+\begin_inset Formula $h$
+\end_inset
+
+ ננרמל אותו:
+\begin_inset Formula 
+\[
+h'=\cfrac{h}{\|h\|}=\cfrac{\left(1,1\right)}{\sqrt{1^{2}+1^{2}}}=\left(\cfrac{1}{\sqrt{2}},\cfrac{1}{\sqrt{2}}\right)
+\]
+
+\end_inset
+
+נחשב 
+\begin_inset Formula $\partial_{h}f\left(x,y\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\partial_{h}f\left(x,y\right)=\lim_{t\to0}\cfrac{f\left(\left(x,y\right)+th'\right)-f\left(x,y\right)}{t}=\lim_{t\to0}\cfrac{f\left(x+\cfrac{t}{\sqrt{2}},y+\cfrac{t}{\sqrt{2}}\right)-f\left(x,y\right)}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{t\to0}\cfrac{\left(x+\cfrac{t}{\sqrt{2}}\right)\left(y+\cfrac{t}{\sqrt{2}}\right)^{2}-xy^{2}}{t}=\cfrac{\left(x+\cfrac{t}{\sqrt{2}}\right)\left(y^{2}+2y\cfrac{t}{\sqrt{2}}+\cfrac{t^{2}}{2}\right)-xy^{2}}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sqrt{2}\cdot xy+\cfrac{1}{\sqrt{2}}y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

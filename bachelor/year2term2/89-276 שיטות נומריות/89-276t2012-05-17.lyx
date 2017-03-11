@@ -1,0 +1,682 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בשביל למצוא את מקדמי הפולינום ממעלה עד 
+\begin_inset Formula $n$
+\end_inset
+
+ שעובר דרך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות, צריך לפתור
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & x_{0} & x_{0}^{2} & \cdots & x_{0}^{n}\\
+1 & x_{1} & x_{1}^{2} & \cdots & x_{1}^{n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & x_{n} & x_{n}^{2} & \cdots & x_{n}^{n}
+\end{bmatrix}\vec{a}=\begin{bmatrix}y_{0}\\
+\vdots\\
+y_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתי יש לזה פתרון? כאשר הדטרמיננטה שונה מאפס.
+ צ"ל 
+\begin_inset Formula $v_{n}=\prod\limits _{0\le j<i\le n}\left(x_{i}-x_{j}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{n}=\begin{vmatrix}1 & x_{0} & x_{0}^{2} & \cdots & x_{0}^{n}\\
+1 & x_{1} & x_{1}^{2} & \cdots & x_{1}^{n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & x_{n-1} & x_{n-1}^{2} & \cdots & x_{n-1}^{n}\\
+1 & x_{n} & x_{n}^{2} & \cdots & x_{n}^{n}
+\end{vmatrix}=\begin{vmatrix}0 & x_{0}-x_{n} & x_{0}^{2}-x_{n}^{2} & \cdots & x_{0}^{n}-x_{n}^{n}\\
+0 & x_{1}-x_{n} & x_{1}^{2}-x_{1}^{2} & \cdots & x_{1}^{n}-x_{n}^{n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+0 & x_{n-1}-x_{n} & x_{n-1}^{2}-x_{n-1}^{2}-x_{n}^{2} & \cdots & x_{n-1}^{n}-x_{n}^{n}\\
+1 & x_{n} & x_{n}^{2} & \cdots & x_{n}^{n}
+\end{vmatrix}=\dots
+\]
+
+\end_inset
+
+נפתח לפי מינור, וישאר לנו המינור)כל השאר מתאפסים(
+\begin_inset Formula 
+\[
+\dots=\left(-1\right)^{n+2}\begin{vmatrix}x_{0}-x_{n} & x_{0}^{2}-x_{n}^{2} & \cdots & x_{0}^{n}-x_{n}^{n}\\
+x_{1}-x_{n} & x_{1}^{2}-x_{1}^{2} & \cdots & x_{1}^{n}-x_{n}^{n}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{n-1}-x_{n} & x_{n-1}^{2}-x_{n-1}^{2}-x_{n}^{2} & \cdots & x_{n-1}^{n}-x_{n}^{n}
+\end{vmatrix}=\dots
+\]
+
+\end_inset
+
+נמשיך לפתח מינורים.
+ נשתמש בזהות 
+\begin_inset Formula $a^{n}-b^{n}=\left(a-b\right)\sum\limits _{i=0}^{n-1}\left(a^{i}b^{n-1-i}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+=\left(-1\right)^{n+2}\prod_{i=0}^{n-1}\left(x_{i}-x_{n}\right)\begin{vmatrix}1 & x_{0}+x_{n} & \cdots & \sum\limits _{i=0}^{n-1}\left(x_{0}^{i}x_{n}^{n-i-1}\right)\\
+1 & x_{1}+x_{n} & \cdots & \sum\limits _{i=0}^{n-1}\left(x_{1}^{i}x_{n}^{n-i-1}\right)\\
+\vdots & \vdots & \ddots & \vdots\\
+1 & x_{n-1}+x_{n} & \cdots & \sum\limits _{i=0}^{n-1}\left(x_{n-1}^{i}x_{n}^{n-i-1}\right)
+\end{vmatrix}=\dots
+\]
+
+\end_inset
+
+נרוץ על העמודות מהשנייה על הסוף ולכל איבר נבצע 
+\begin_inset Formula $a_{ki}\gets a_{kj}-x_{n}\cdot a_{k,j-1}$
+\end_inset
+
+, כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{ki}\gets\sum_{i=0}^{j-1}\left(x_{k}^{i}x_{n}^{j-1-i}\right)-x_{n}\sum_{i=0}^{j-2}\left(x_{k}^{i}x_{n}^{j-2-i}\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\cancel{\sum_{i=0}^{j-2}\left(x_{k}^{i}x_{n}^{j-1-i}\right)}+x_{k}^{j-1}-\cancel{\sum_{i=0}^{j-2}\left(x_{k}^{i}x_{n}^{j-1-i}\right)}
+\]
+
+\end_inset
+
+ולכן נקבל ש
+\begin_inset Formula 
+\[
+v_{n}=\left(-1\right)^{n+2}\prod_{i=0}^{n-1}\left(x_{i}-x_{n}\right)\begin{vmatrix}1 & x_{0} & x_{0}^{2} & \cdots & x_{0}^{n-1}\\
+1 & x_{1} & x_{1}^{2} & \cdots & x_{1}^{n-1}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & x_{n-1} & x_{n-1}^{2} & \cdots & x_{n-1}^{n-1}
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת, נוכיח באינדוקציה שזה לא מתאפס:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בסיס: 
+\begin_inset Formula $n=1$
+\end_inset
+
+, 
+\begin_inset Formula $v_{1}=\begin{vmatrix}1 & x_{0}\\
+1 & x_{1}
+\end{vmatrix}=x_{1}-x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הנחה: נניח נכונות הטענה עבור 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+צעד: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{n}=\prod_{i=0}^{n-1}\left(x_{n}-x_{i}\right)\cdot\prod_{0\le j<i\le n-1}\left(x_{i}-x_{j}\right)=\prod_{0\le j<i\le n}\left(x_{i}-x_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lagrange
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=J
+\]
+
+\end_inset
+
+
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות דגימה, 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פונקציות: 
+\begin_inset Formula $f_{0}\left(x\right),f_{1}\left(x\right),\dots f_{n}\left(x\right)$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+l_{i}\left(x\right)\prod_{\begin{array}{c}
+i=0\\
+j\neq i
+\end{array}}^{n}\cfrac{x-x_{j}}{x_{i}-x_{j}}\qquad P_{n}\left(x\right)=\sum_{i=0}^{n}y_{i}l_{i}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+עבור הנקודות 
+\begin_inset Formula $\left(0,1\right),\left(1,1\right),\left(2,4\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(0,1\right) &  & l_{0}\left(x\right)=\cfrac{\left(x-1\right)\left(x-2\right)}{\left(0-1\right)\left(0-2\right)}\\
+\left(1,1\right) &  & l_{1}\left(x\right)=\cfrac{\left(x-0\right)\left(x-2\right)}{\left(1-0\right)\left(1-2\right)}\\
+\left(2,4\right) &  & l_{2}\left(x\right)=\cfrac{\left(x-0\right)\left(x-1\right)}{\left(2-0\right)\left(2-1\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}\left(x\right)=1\cdot\cfrac{\left(x-1\right)\left(x-2\right)}{2}+1\cdot\cfrac{x\left(x-2\right)}{-1}+4\cdot\cfrac{x\left(x-1\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}\left(x\right)=\cfrac{3}{2}x^{2}-\cfrac{3}{2}x+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו 
+\begin_inset Formula $\sum\limits _{i=0}^{n}l'_{i}\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=0}^{n}l'_{i}\left(x\right)=\left(\sum_{i=0}^{n}1\cdot l_{i}\left(x\right)\right)'=\dots
+\]
+
+\end_inset
+
+אבל 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\sum_{i=0}^{n}1\cdot l_{i}\left(x\right)$
+\end_inset
+
+, לפי הנוסחה, עובר דרך הנקודות 
+\begin_inset Formula $\left(x_{0},1\right),\left(x_{1},1\right),\dots$
+\end_inset
+
+ - ולכן הוא שווה זהותית לאחד, ו
+\begin_inset Formula 
+\[
+\dots=\left(\textnormal{const}\right)'=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הבעיה בשיטת לגרנז'
+\end_layout
+
+\begin_layout Standard
+אם מוסיפים לנו עוד דגימות - אי אפשר להוסיף את זה לחישוב קיים.
+ נראה שיטה שמטפלת בזה.
+\end_layout
+
+\begin_layout Part*
+שיטת ההפרשים המחולקים של ניוטור
+\end_layout
+
+\begin_layout Standard
+נתונות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות דגימה.
+\begin_inset Formula 
+\[
+\Phi_{i}\left(x\right)=\prod_{j<i}\left(x-x_{j}\right)\qquad P_{n}\left(x\right)=\sum_{i=0}^{n}a_{i}\Phi_{i}\left(x\right)
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+\Phi_{j}\left(x_{i}\right)=\begin{cases}
+0 & i<j\\
+c_{ij}\neq0 & i\ge j
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - הפרש מחולק
+\end_layout
+
+\begin_layout Itemize
+עבור נקודה 
+\begin_inset Formula $1$
+\end_inset
+
+: 
+\begin_inset Formula $f\left[x_{i}\right]=f\left(x_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות: 
+\begin_inset Formula $f\left[x_{i},x_{i+1}\right]=\cfrac{f\left[x_{i+1}\right]-f\left[x_{i}\right]}{x_{i+1}-x_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+ נקודות:
+\begin_inset Formula 
+\[
+f\left[x_{i},x_{i+1},\dots x_{i+k-1},x_{i+k}\right]=\cfrac{f\left[x_{i+1},\dots x_{i+k}\right]-f\left[x_{i},\dots x_{i+k-1}\right]}{x_{i+k}-x_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{i}=f\left[x_{0},\dots x_{i}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+עבור הנקודות 
+\begin_inset Formula $\left(-1,6\right),\left(0,5\right),\left(2,27\right),\left(3,62\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|}
+-1 & 6\\
+\hline 0 & 5\\
+\hline 2 & 27\\
+\hline 3 & 62
+\end{array}\begin{array}{c|}
+\frac{5-6}{0+1}=-1\\
+\hline \frac{27-5}{2-0}=11\\
+\hline \frac{62-27}{3-2}=35
+\end{array}\begin{array}{c|}
+\frac{11+1}{2+1}=4\\
+\hline \frac{35-11}{3-0}=8
+\end{array}\cfrac{8-4}{3+1}=1
+\]
+
+\end_inset
+
+נשים לב שמשתמשים כאן בתכנות דינאמי - כל חישוב מבוסס על הקודמים.
+\begin_inset Formula 
+\[
+\Phi_{0}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{1}\left(x\right)=\left(x+1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{2}\left(x\right)=\left(x+1\right)\left(x-0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{3}\left(x\right)=\left(x+1\right)\left(x-0\right)\left(x-2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(0,0\right),\left(1,1\right),\left(2,4\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c|c|}
+0 & 0\\
+\hline 1 & 1\\
+\hline 2 & 4
+\end{array}\begin{array}{c|}
+\frac{1-0}{1-0}=1\\
+\hline \frac{4-1}{2-1}=3
+\end{array}\cfrac{3-1}{2-0}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{1}\left(x\right)=x\qquad\Phi_{2}\left(x\right)=x\cdot\left(x-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}\left(x\right)=x+x\left(x-1\right)=x+2^{2}-x=x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שנותנים לנו נקודה נוספת: 
+\begin_inset Formula $\left(5,145\right)$
+\end_inset
+
+.
+ אז אפשר לעשות:
+\begin_inset Formula 
+\[
+\begin{array}{c|c|}
+0 & 0\\
+\hline 1 & 1\\
+\hline 2 & 4\\
+\hline 5 & 145
+\end{array}\begin{array}{c|}
+\frac{1-0}{1-0}=1\\
+\hline \frac{4-1}{2-1}=3\\
+\hline \frac{145-4}{5-2}=47
+\end{array}\begin{array}{c|}
+\frac{3-1}{2-0}=1\\
+\hline \frac{47-3}{5-1}=11
+\end{array}\frac{11-1}{5-0}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi_{3}\left(x\right)=x^{2}+2x\left(x-1\right)\left(x-2\right)=2x^{3}-5x^{2}+4x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

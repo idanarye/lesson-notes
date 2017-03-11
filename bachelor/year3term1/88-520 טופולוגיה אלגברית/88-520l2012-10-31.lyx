@@ -1,0 +1,1474 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ שקילות הומוטופית אם יש 
+\begin_inset Formula $g:Y\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+g\circ f\sim Id_{X}\\
+f\circ g\sim Id_{Y}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ תת מרחב.
+ נסמן 
+\begin_inset Formula $i:A\to X$
+\end_inset
+
+ את העתקת ההכלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקרא 
+\emph on
+\bar under
+נסג
+\emph default
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $r:X\to A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $r\circ i=Id_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במילים אחרות זוהי העתקה 
+\begin_inset Formula $r:X\to A$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $r\left(a\right)=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\begin_inset Formula $A\subset X$
+\end_inset
+
+ תת מרחב של אחד העיגולים של ה
+\numeric on
+8
+\numeric off
+, 
+\begin_inset Formula $r$
+\end_inset
+
+ "מקפלת" את אחד העיגולים על העיגול השני.
+\end_layout
+
+\begin_layout Subsection*
+שפה איננה נסג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+X=I\left(=\left[0,1\right]\right)\\
+A=\partial I\left(=\left\{ 0,1\right\} \right)
+\end{array}$
+\end_inset
+
+ - השפה איננה נסג.
+ אי אפשר להעתיק את הקטע לקצוות בצורה רציפה ולהשאיר את הקצוות במקומן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D^{n}=\left\{ \left(x_{1},\dots x_{n}\right)\in\mathbb{R}^{n}\middle|\left\Vert \left(x_{1},\dots x_{n}\right)\right\Vert \le1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+X=D^{2}\\
+A=\partial D^{2}
+\end{array}$
+\end_inset
+
+ - גם כאן - המעגל איננו נסג של העיגול.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ תת מרחב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקרא 
+\emph on
+נסג עיוותי
+\emph default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ אם קיימת הומוטופיה 
+\begin_inset Formula $H:X\times I\to1$
+\end_inset
+
+ כך ש
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H\left(x,0\right)=x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H\left(a,t\right)=a$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H\left(x,1\right)\in A$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+ההעתקה 
+\begin_inset Formula $r\left(x\right)=H\left(x,1\right)$
+\end_inset
+
+ היא בפרט נסיגה מ
+\begin_inset Formula $X$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+עיגול של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינו נסג עיוותי של כל מרחב ה
+\numeric on
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- למרות שהוא כן נסג.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ נסג עיוותי אז העתקת ההכלה 
+\begin_inset Formula $i:A\to X$
+\end_inset
+
+ היא שקילות הומוטופית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $H:X\times I\to X$
+\end_inset
+
+ הומוטופיה כפי שמופיע בהגדרת נסג עיוותי.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $r:X\to A$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $r\left(x\right):=H\left(x,1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $r\circ i=Id_{A}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $i\circ r\sim Id_{X}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $H$
+\end_inset
+
+ היא הומוטופיה מ
+\begin_inset Formula $Id_{X}$
+\end_inset
+
+ ל
+\begin_inset Formula $i\circ r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=\mathbb{R}^{n}-\left\{ 0\right\} \qquad A=S^{n-1}
+\]
+
+\end_inset
+
+איך נגדיר נסג עיוותי מ
+\begin_inset Formula $X$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הרעיון
+\series default
+: לכל נקודה 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, מותחים קרן מראשית הצירים ל
+\begin_inset Formula $x$
+\end_inset
+
+, וההומוטופיה תזיז בצורה רציפה את הנקודה על הקרן עד שמרחקה מהראשית יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $H:\left(\mathbb{R}^{n}-\left\{ 0\right\} \right)\times I\to\mathbb{R}^{n}-\left\{ 0\right\} $
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+H\left(x,t\right):=\left(1-t\right)x+t\cdot\frac{x}{\left\Vert x\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מ"ט 
+\begin_inset Formula $X$
+\end_inset
+
+ יקרא 
+\emph on
+\bar under
+כויץ
+\emph default
+\bar default
+ אם 
+\begin_inset Formula $Id_{X}$
+\end_inset
+
+ הומוטופית להעתקה קבועה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ כוויץ אם"ם 
+\begin_inset Formula $X$
+\end_inset
+
+ שקול הומוטופית למרחב של נקודה אחת.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ כוויץ.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $H\cdot\mathbb{R}^{n}\times I\to\mathbb{R}^{n}$
+\end_inset
+
+ כך: 
+\begin_inset Formula $H\left(x,t\right):=\left(1-t\right)x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+לא כל מרחב קשיר מסילתית הוא כוויץ - לא מספיק שאפשר לתאר מסלול מכל נקודה
+ לנקודה הסופית, צריך שכל המסלולים של כל הנקודות יהוו פונקציה רציפה אחת.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אותה הוכחה)על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+( תראה שכל קבוצה קמורה ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ היא מרחב כויץ.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset Formula $A\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ נקראת 
+\bar under
+קמורה
+\bar default
+ אם לכל 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ גם 
+\begin_inset Formula $\left(1-t\right)x+ty\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $H:A\times I\to A$
+\end_inset
+
+ כך: 
+\begin_inset Formula $H\left(x,t\right):=\left(1-t\right)+ta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g:X\to Y$
+\end_inset
+
+, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\emph on
+הומוטוהומוטופית ל
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $A$
+\end_inset
+
+פית ל
+\begin_inset Formula $g$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $A$
+\end_inset
+
+
+\emph default
+ ונסמן 
+\begin_inset Formula $f\underset{A}{\sim}g$
+\end_inset
+
+ אם קיימת הומוטופיה 
+\begin_inset Formula $H:X\times I\to Y$
+\end_inset
+
+ מ
+\begin_inset Formula $f$
+\end_inset
+
+ ל
+\begin_inset Formula $g$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $\begin{array}{c}
+H\left(x,0\right)=f\left(x\right)\\
+H\left(x,1\right)=g\left(x\right)
+\end{array}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+( כך ש
+\begin_inset Formula $H\left(a,t\right)=H\left(a,0\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בלשום זו ניתן לומר ש
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ נסג עיוותי אם יש 
+\begin_inset Formula $r:X\to A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $r\circ i=Id_{A}$
+\end_inset
+
+ ו
+\begin_inset Formula $i\circ r\underset{A}{\sim}Id_{X}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\underset{A}{\sim}g$
+\end_inset
+
+ הוא יחס שקילות על ההעתקה 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+זוג מרחבים הוא מ"ט 
+\begin_inset Formula $X$
+\end_inset
+
+ ותת מרחב 
+\begin_inset Formula $A$
+\end_inset
+
+, זה מסומן כך: 
+\begin_inset Formula $\left(X,A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+העתקה של זוגיות
+\emph default
+:
+\begin_inset Formula $f:\left(X,A\right)\to\left(Y,B\right)$
+\end_inset
+
+ היא העתקה)רציפה( 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(A\right)\subseteq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\begin{array}{c}
+f,f':\left(X,A\right)\to\left(Y,B\right)\\
+g,g':\left(Y,B\right)\to\left(Z,C\right)
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\underset{A}{\sim}f'$
+\end_inset
+
+ ו
+\begin_inset Formula $g\underset{B}{\sim}g'$
+\end_inset
+
+ אז 
+\begin_inset Formula $g\circ f\underset{A}{\sim}g'\circ f'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ תקרא 
+\emph on
+נול-הומוטופית
+\emph default
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ הומוטופית להעתקה קבועה.
+\end_layout
+
+\begin_layout Standard
+)בלשון זו ניתן לומר: 
+\begin_inset Formula $X$
+\end_inset
+
+ כוויץ אם 
+\begin_inset Formula $Id_{X}$
+\end_inset
+
+ היא נול-הומוטופית(
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $f:S^{1}\to X$
+\end_inset
+
+.
+ אזי התנאים הבאים על 
+\begin_inset Formula $f$
+\end_inset
+
+ שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ נול-הומוטופית.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ נול-הומוטופית ביחס לנקודה כלשהי 
+\begin_inset Formula $a\in S^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ ניתנת להרחבה ל
+\begin_inset Formula $D^{2}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ זה העיגול, 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ זה המעגל.
+ 
+\begin_inset Formula $S^{1}=\partial D^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+)כלומר יש 
+\begin_inset Formula $F:D^{2}\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\mid_{S^{1}}=f$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: זה נכון גם עבור 
+\begin_inset Formula $S^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $D^{n+1}$
+\end_inset
+
+.
+ הוכחה זהה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+א ברור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ג נתון שקיימת 
+\begin_inset Formula $H:S^{n}\times I\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $H\left(x,0\right)=f\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X^{1}$
+\end_inset
+
+ ויש 
+\begin_inset Formula $p\in X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $H\left(x,1\right)=P$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in S^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\rho:S^{1}\times I\to D^{2}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\rho\left(x,t\right):=\left(1-t\right)x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\rho$
+\end_inset
+
+ היא העתקת מנה, כי 
+\begin_inset Formula $S^{1}\times I$
+\end_inset
+
+ קומפקטי ו
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ האוסדורף
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כל שתי נקודות אפשר להפריד ע"י שתי קבוצות פתוחות זרות.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\left(x_{1},t_{1}\right),\left(x_{2},t_{2}\right)\in S^{1}\times I$
+\end_inset
+
+ המקיימות 
+\begin_inset Formula $\rho\left(x_{1},t_{1}\right)=\rho\left(x_{2},t_{2}\right)$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $H\left(x_{1},t_{1}\right)=H\left(x_{2},t_{2}\right)$
+\end_inset
+
+)אכן הנקודות השונות היחידות שמקיימות שוויון עבור 
+\begin_inset Formula $\rho$
+\end_inset
+
+ הן מהצורה 
+\begin_inset Formula $\left(x,1\right),\left(y,1\right)$
+\end_inset
+
+ ועוברן אכן מתקיים 
+\begin_inset Formula $H\left(x,1\right)=H\left(y,1\right)$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $H$
+\end_inset
+
+ משרה העתקה מוגדרת היטב 
+\begin_inset Formula $F:D^{2}\rightharpoondown X$
+\end_inset
+
+.
+ וכיוון ש
+\begin_inset Formula $\rho$
+\end_inset
+
+ העתקת מנה, 
+\begin_inset Formula $F$
+\end_inset
+
+ הזאת רציפה.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ב נתונה 
+\begin_inset Formula $F:D^{2}\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\mid_{S^{1}}=f$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $a\in S^{1}$
+\end_inset
+
+.
+ נבנה נול הומוטופיה של 
+\begin_inset Formula $f$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\eta:S^{1}\times I\to D^{2}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\eta\left(x,t\right):=\left(1-t\right)x+ta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $t$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\eta\left(a,t\right)=a$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $x\in S^{1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\eta\left(x,1\right)=a$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $F\circ\eta:S^{1}\times I\to X$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $F\circ\eta\left(a,t\right)=F\left(a\right)=f\left(a\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ כלומר זוהי הומוטופיה ביחס ל
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+, וגם מתקיים 
+\begin_inset Formula $F\circ\eta\left(x,1\right)=F\left(a\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in S^{1}$
+\end_inset
+
+.
+ כלומר זוהי הומוטופיה ביחס ל
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מ"ט 
+\begin_inset Formula $X$
+\end_inset
+
+ יקרא 
+\emph on
+\bar under
+פשוט קשר
+\emph default
+\bar default
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X$
+\end_inset
+
+ קשיר מסילתית.)שקול לכך שכל העתקה 
+\begin_inset Formula $S^{0}\to X$
+\end_inset
+
+ היא נול-הומוטופית(
+\end_layout
+
+\begin_layout Enumerate
+כל העתקה 
+\begin_inset Formula $S^{1}\to X$
+\end_inset
+
+ היא נול-הומוטופית.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $x,b\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\Gamma_{ab}$
+\end_inset
+
+ את כל קבוצת המסילות 
+\begin_inset Formula $\gamma:I\to X$
+\end_inset
+
+ מ
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $b$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\begin{array}{c}
+\gamma\left(0\right)=a\\
+\gamma\left(1\right)=b
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma\in\Gamma_{ab}$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta\in\Gamma_{bc}$
+\end_inset
+
+ אז ניתן לשרשר את 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ עם 
+\begin_inset Formula $\delta$
+\end_inset
+
+, כלומר קיימת המסילה 
+\begin_inset Formula $\gamma\delta=\gamma\cdot\delta=\gamma*\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+על 
+\begin_inset Formula $\Gamma_{ab}$
+\end_inset
+
+ נביט ביחס השקילות 
+\begin_inset Formula $\gamma\underset{\partial I}{\sim}\delta$
+\end_inset
+
+)כזכור 
+\begin_inset Formula $\partial I=\left\{ 0,1\right\} $
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma,\gamma'\in\Gamma_{ab}$
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma\underset{\partial I}{\sim}\gamma'$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta,\delta'\in\Gamma_{bc}$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta\underset{\partial I}{\sim}\delta'$
+\end_inset
+
+ אז 
+\begin_inset Formula $\gamma*\delta\underset{\partial I}{\sim}\gamma'*\delta'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+כלומר
+\end_layout
+
+\begin_layout Standard
+ראינו שניתן להגדיר כפל בין איבר 
+\begin_inset Formula $\left[\gamma\right]\in\hat{\Gamma}_{ab}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left[\delta\right]\in\hat{\Gamma}_{bc}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\left[\gamma\right]\left[\delta\right]:=\left[\gamma*\delta\right]$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

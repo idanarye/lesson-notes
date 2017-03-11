@@ -1,0 +1,1486 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+בפעם שעברה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול של פולינום 
+\begin_inset Formula $f\in F\left[\lambda\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|\textnormal{Gal}\left(E/F\right)\right|\le\left[E:F\right]$
+\end_inset
+
+ ויש שוויון כאשר אין ל
+\begin_inset Formula $f$
+\end_inset
+
+ שורש כפול ב
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחנו עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק ש
+\begin_inset Formula $\deg f\mid\left[E:F\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\in F\left[\lambda\right]$
+\end_inset
+
+ פולינום 
+\emph on
+\bar under
+ספרבילי
+\emph default
+\bar default
+ אם אין ל
+\begin_inset Formula $f$
+\end_inset
+
+ שורש כפול בשדה הפיצול.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתון
+\begin_inset Formula 
+\[
+\sum_{i=0}^{t}\alpha_{i}\lambda^{i}=f\in F\left[\lambda\right]
+\]
+
+\end_inset
+
+נגדיר
+\begin_inset Formula 
+\[
+f'=\sum_{i=1}^{t}i\alpha_{i}\lambda^{i-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ אין ל
+\begin_inset Formula $f,f'$
+\end_inset
+
+ שורש משותף.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Longleftarrow\right)$
+\end_inset
+
+ נניח בדרך השלילה שיש ל
+\begin_inset Formula $f,f'$
+\end_inset
+
+ שורש משותף 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f=\left(\lambda-a\right)g
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'=g+\left(\lambda-a\right)g'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda-a\right)\mid f'
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\lambda-a\right)\mid g$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left(\lambda-a\right)^{2}\mid\left(\lambda-a\right)g=f$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\implies\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $f=\left(\lambda-a\right)^{2}h$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+f'=2\left(\lambda-a\right)h+\left(\lambda-a\right)^{2}h'=\left(\lambda-a\right)\left(2h+h'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\left(\lambda-a\right)\mid f'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f,f'$
+\end_inset
+
+ זרים ב
+\begin_inset Formula $E\left[\lambda\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $K\subseteq L$
+\end_inset
+
+ שדות כלשהם, ו
+\begin_inset Formula $f,g\in K\left[\lambda\right]$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $f,g$
+\end_inset
+
+ זרים ב
+\begin_inset Formula $K\left[\lambda\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f,g$
+\end_inset
+
+ זרים ב
+\begin_inset Formula $L\left[\lambda\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\implies\right)$
+\end_inset
+
+ קל וחומר
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Longleftarrow\right)$
+\end_inset
+
+ 
+\begin_inset Formula $f,g$
+\end_inset
+
+ זרים ב
+\begin_inset Formula $K\left[\lambda\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists p,q\in K\left[\lambda\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $fp+gq=1$
+\end_inset
+
+.
+ קל וחומר 
+\begin_inset Formula $p,q\in L\left[\lambda\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ זרים ב
+\begin_inset Formula $L\left[\lambda\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f,f'$
+\end_inset
+
+ זרים.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ אי-פריק הוא לא ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f'=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ לא ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f,f'$
+\end_inset
+
+ אינם זרים.
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $g=\left(f,f'\right)$
+\end_inset
+
+ לא קבוע.
+ 
+\begin_inset Formula $g\mid f$
+\end_inset
+
+ אבל 
+\begin_inset Formula $1\le\deg g\le\deg f'<\deg f$
+\end_inset
+
+ - בסתירה לכך ש
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק!
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\textnormal{char}\left(F\right)=0$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק)עם 
+\begin_inset Formula $\deg f\ge1$
+\end_inset
+
+( אז 
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי.
+\end_layout
+
+\begin_layout Standard
+באופן כללי:
+\begin_inset Formula 
+\[
+f=\sum\alpha_{i}\lambda^{i}\qquad f'=\sum i\alpha_{i}\lambda^{i-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i\ge1}i\alpha_{i}=0\iff f'=0
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\textnormal{char}\left(F\right)\neq0$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha_{i}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $i\cdot1=0$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $p\mid i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f$
+\end_inset
+
+ אי פריק.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+אי ספרבילי 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\boxed{f=\sum\alpha_{i}\lambda^{pi}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל)כן או לא?(
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f=f_{1}\cdots f_{t}\in F\left[\lambda\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ שדה פיצול של 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{i}\in F\left[\lambda\right]$
+\end_inset
+
+ אי פריקים שונים וספרבילים
+\begin_inset Formula 
+\[
+G=\textnormal{Gal}\left(E/F\right)\qquad G_{i}=\textnormal{Gal}\left(E_{i}/F\right)
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $G\cong G_{1}\times\cdots\times G_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f=f_{1},\dots f_{t}\in F\left[\lambda\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי אז כל 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ ספרבילי.
+\end_layout
+
+\begin_layout Enumerate
+נניח שה
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ הם אי פריקים ושונים.
+ אם 
+\begin_inset Formula $f_{1},\dots f_{t}$
+\end_inset
+
+ ספרבילים אז 
+\begin_inset Formula $f$
+\end_inset
+
+ ספרבילי.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחת
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $ii$
+\end_inset
+
+: נניח 
+\begin_inset Formula $f$
+\end_inset
+
+ אינו ספרבילי, כלומר 
+\begin_inset Formula $a$
+\end_inset
+
+ שורש כפול.
+ לכן 
+\begin_inset Formula $a$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $f_{i},f_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f_{i},f_{j}$
+\end_inset
+
+ אינם זרים.
+ ניקח 
+\begin_inset Formula $g=\left(f_{i},f_{j}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{i},f_{j}$
+\end_inset
+
+ אי פריקים.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ הרחבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Galua
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $F$
+\end_inset
+
+ אם 
+\begin_inset Formula $E$
+\end_inset
+
+ פיצול של פולינום ספרבילי 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כותבים 
+\begin_inset Formula $E/F$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Galua
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+הוכחנו שאם 
+\begin_inset Formula $E/F$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Galua
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז 
+\begin_inset Formula $\left|\textnormal{Gal}\left(E/F\right)\right|=\left[E:F\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+שדה 
+\emph on
+\bar under
+ביניים
+\emph default
+\bar default
+ בין 
+\begin_inset Formula $E$
+\end_inset
+
+ ו
+\begin_inset Formula $F$
+\end_inset
+
+ הוא שדה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\subseteq L\subseteq E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F\subseteq L\subseteq E$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Gal}\left(E/L\right)\le\textnormal{Gal}\left(E/F\right)$
+\end_inset
+
+.
+ קל וחומר
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=\lambda^{4}-2$
+\end_inset
+
+, 
+\begin_inset Formula $E$
+\end_inset
+
+=שדה.
+\end_layout
+
+\begin_layout Standard
+הפיצול של 
+\begin_inset Formula $F$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+=
+\begin_inset Formula $\mathbb{Q}\left[\sqrt[4]{2},i\right]$
+\end_inset
+
+, ו
+\begin_inset Formula $\left[E:\mathbb{Q}\right]=8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ 1,\tau\right\} =\textnormal{Gal}\left(E/\mathbb{Q}\left[\sqrt[4]{2}\right]\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\tau$
+\end_inset
+
+=צמוד מרוכב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\left[i\right]\right)$
+\end_inset
+
+ )ת"ל 
+\begin_inset Formula $\lambda^{4}-2$
+\end_inset
+
+ אי פריק מעל 
+\begin_inset Formula $\mathbb{Q}\left[i\right]$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורשים 
+\begin_inset Formula $i^{4}\sqrt[4]{2}$
+\end_inset
+
+, 
+\begin_inset Formula $0\le4\le3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\left[i\right]\right)=4$
+\end_inset
+
+ נתון על ידי 
+\begin_inset Formula $\left\langle \sigma\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula 
+\[
+\sigma\left(\sqrt[4]{2}\right)=i\sqrt[4]{2}
+\]
+
+\end_inset
+
+הוכחנו: 
+\begin_inset Formula $\sigma,\sigma^{2},\sigma^{3},\sigma^{4}=1$
+\end_inset
+
+ - שונים! לכן
+\begin_inset Formula 
+\[
+G=\left\langle \sigma,\tau\right\rangle =\left\{ \sigma^{i}\tau^{j}\middle|\begin{array}{c}
+0\le i\le3\\
+0\le j\le1
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tau\circ\tau^{-1}=\tau\circ\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\series default
+: 
+\begin_inset Formula $\frac{G}{\left\langle \sigma\right\rangle }=2$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle \sigma\right\rangle \lhd G$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $\tau\sigma\tau^{-1}\in\left\langle \sigma\right\rangle $
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $\tau\sigma\tau^{-1}=\sigma^{j}$
+\end_inset
+
+ לאיזשהו 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן:
+\begin_inset Formula 
+\[
+\tau\sigma\tau^{-1}\left(\sqrt[4]{2}\right)=\tau\sigma\left(\sqrt[4]{2}\right)=\tau\left(i\sqrt[4]{2}\right)=\tau\left(i\right)\tau\left(\sqrt[4]{2}\right)=-i\sqrt[4]{2}=\sigma^{3}\left(\sqrt[4]{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tau\sigma\tau^{-1}=\sigma^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\begin_inset Formula 
+\[
+G\cong D_{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איך לבדוק אם פולינום אי פריק?
+\end_layout
+
+\begin_layout Standard
+האם 
+\begin_inset Formula $x^{4}+7$
+\end_inset
+
+ פריק מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+? לא! מה עם 
+\begin_inset Formula $x^{4}+6$
+\end_inset
+
+? גם לא!
+\end_layout
+
+\begin_layout Standard
+אבל מה לגבי 
+\begin_inset Formula $x^{4}+4$
+\end_inset
+
+? לכאורה נראה שגם הוא אי פריק מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, אבל:
+\begin_inset Formula 
+\[
+x^{4}+4=\left(x^{2}-2i\right)\left(x^{2}+2i\right)=\left(x-\left(1+i\right)\right)\left(x+\left(1+i\right)\right)\left(x-\left(1-i\right)\right)\left(x+\left(1-i\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(x^{2}-2x+2\right)\left(x^{2}+2x+2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת זאת, עבור 
+\begin_inset Formula $x^{4}+9$
+\end_inset
+
+ נקבל פירוק ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ - אבל לא ב
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+! למעשה יש משפט ש
+\begin_inset Formula $x^{4}+p^{2}$
+\end_inset
+
+ פריק אם"ם 
+\begin_inset Formula $p=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעצם, השיטה היא קודם כל לפרק אותו מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ואז לראות אם אפשר להפוך את זה לפירוק מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $H<\textnormal{Gal}\left(E/F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $E^{H}=\left\{ a\in E\middle|\sigma\left(a\right)=a\forall\sigma\in H\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E^{H}$
+\end_inset
+
+ שדה ביניים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: אם 
+\begin_inset Formula $\sigma\left(a\right)=a$
+\end_inset
+
+ ו
+\begin_inset Formula $\sigma\left(b\right)=b$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{array}{c}
+\sigma\left(a+b\right)=\sigma\left(a\right)+\sigma\left(b\right)=a+b\\
+\sigma\left(ab\right)=\sigma\left(a\right)\sigma\left(b\right)=ab\\
+\sigma\left(a^{-1}\right)=\sigma\left(a\right)^{-1}=a^{-1}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $E/F$
+\end_inset
+
+ הרחבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Galua
+\lang hebrew
+, אזי 
+\begin_inset Formula $E^{\textnormal{Gal}\left(E/F\right)}=F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יודעים ש
+\begin_inset Formula $\left[E:F\right]=\left|\textnormal{Gal}\left(E/F\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $L=E^{\textnormal{Gal}\left(E/F\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E/L$
+\end_inset
+
+ הרחבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Galua
+\lang hebrew
+)שדה פיצול של אותו פולינום ספרבילי(
+\begin_inset Formula 
+\[
+\left[E:L\right]=\left|\textnormal{Gal}\left(E/L\right)\right|
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $\textnormal{Gal}\left(E/L\right)=\textnormal{Gal}\left(EF\right)$
+\end_inset
+
+ לפי הגדרת 
+\begin_inset Formula $L$
+\end_inset
+
+!!! לכן 
+\begin_inset Formula $\left[E:L\right]=\left[E:F\right]$
+\end_inset
+
+, אבל 
+\begin_inset Formula $F\subseteq L\subseteq E$
+\end_inset
+
+ - לכן 
+\begin_inset Formula $L=F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שדות סופיים
+\end_layout
+
+\begin_layout Standard
+רוצים לדעת מה השדות הסופיים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{F}_{p}\cong\nicefrac{\mathbb{Z}}{p\mathbb{Z}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+באופן כללי
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F\le E$
+\end_inset
+
+ שדות, אז 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה וקטורי מעל 
+\begin_inset Formula $E$
+\end_inset
+
+ עם בסיס 
+\begin_inset Formula $l_{1},\dots l_{t}$
+\end_inset
+
+.
+ אם שניהם סופיים, 
+\begin_inset Formula $\mathbb{F}_{p}\cong F$
+\end_inset
+
+ - 
+\begin_inset Formula $F$
+\end_inset
+
+ הוא שדה המאפיין.
+\end_layout
+
+\begin_layout Standard
+כל איבר כותבים באופן יחיד:
+\begin_inset Formula 
+\[
+\sum_{i=1}^{t}\alpha_{i}l_{i}
+\]
+
+\end_inset
+
+מספר הבחירות הוא 
+\begin_inset Formula $p\cdots p=p^{t}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\left|E\right|=p^{t}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $t=\left[E:\mathbb{F}_{p}\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

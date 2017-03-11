@@ -1,0 +1,1855 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+)משפט השארית(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום ע"י מסילת ז'ורדן 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית ב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ פרט לנקודות סינגולריות 
+\begin_inset Formula $z_{1},z_{2},\dots z_{n}\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי
+\begin_inset Formula 
+\[
+\ointctrclockwise_{\gamma}f\left(z\right)\mathrm{\, d}z=2\pi i\sum_{k=1}^{n}\textnormal{Res}\left(f,z_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $1\le k\le n$
+\end_inset
+
+ נבחר עיגול קטן 
+\begin_inset Formula $B\left(z_{x},r_{k}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\overline{B\left(z_{k},r_{k}\right)}\subset D$
+\end_inset
+
+ ו
+\begin_inset Formula $B\left(z_{k},r_{k}\right)$
+\end_inset
+
+ מכיל רק נקודה סינגולרית אחת 
+\begin_inset Formula $z_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השפה של עיגול זה היא 
+\begin_inset Formula $C_{k}\equiv C\left(z_{k},r_{k}\right)$
+\end_inset
+
+)מעגל קטן סביב 
+\begin_inset Formula $z_{k}$
+\end_inset
+
+(.
+ כעת 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ יחד עם 
+\begin_inset Formula $C_{1},C_{2},\dots C_{n}$
+\end_inset
+
+ מהווים שפה של תחום 
+\begin_inset Formula $D_{1}\subset D$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\in H\left(\overline{D}_{1}\right)$
+\end_inset
+
+.
+ לפי משפט קושי המוכלל
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\gamma}f\left(z\right)\mathrm{\, d}z=\sum_{k=1}^{n}\varointctrclockwise_{C_{k}}f\left(z\right)\mathrm{\, d}z=\sum_{k=1}^{n}2\pi i\textnormal{Res}\left(f,z_{k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula $\varointctrclockwise_{\left|z\right|=2}z^{4}e^{\nicefrac{1}{z}}\mathrm{\, d}z$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\pi i\textnormal{Res}\left(z^{4}e^{\nicefrac{1}{z}},0\right)
+\]
+
+\end_inset
+
+כדי לחשב את השארית נקבע את טור לורן של 
+\begin_inset Formula $z^{4}e^{\nicefrac{1}{z}}$
+\end_inset
+
+ בסביבה מנוקבת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+ובכן: לכל 
+\begin_inset Formula $w\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{w}=\sum\limits _{n=0}^{\infty}\frac{w^{n}}{n!}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ נציב 
+\begin_inset Formula $w=\nicefrac{1}{z}$
+\end_inset
+
+ לקבל
+\begin_inset Formula 
+\[
+e^{\nicefrac{1}{z}}=e^{w}=\sum_{n=0}^{\infty}\frac{w^{n}}{n!}=\sum_{n=0}^{\infty}\frac{1}{n!}\frac{1}{z^{n}}
+\]
+
+\end_inset
+
+כיוון שטור לורן יחיד קיבלנו טור לורן של 
+\begin_inset Formula $e^{\nicefrac{1}{z}}$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נובע: לכל 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{4}e^{\nicefrac{1}{z}}=z^{4}\sum_{n=0}^{\infty}\frac{1}{n!}z^{-n}=\sum_{n=0}^{\infty}\frac{1}{n!}z^{4-n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\textnormal{Res}\left(z^{4}e^{\nicefrac{1}{z}}\right)$
+\end_inset
+
+ = המקדם של 
+\begin_inset Formula $\frac{1}{z}$
+\end_inset
+
+ בטור לורן = במקרה שלנו 
+\begin_inset Formula $\frac{1}{5!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תשובה סופית לתרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\left|z\right|=2}z^{4}e^{\nicefrac{1}{z}}\mathrm{\, d}z=2\pi i\textnormal{Res}\left(z^{4}e^{\nicefrac{1}{z}},0\right)=\left(2\pi i\right)\frac{1}{5!}=\frac{2\pi i}{5!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דרך קצרה לחשב 
+\begin_inset Formula $\textnormal{Res}\left(f,z_{0}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ היא קוטב של 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ "קוטב פשוט", ז"א קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אז סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{b_{1}}{z-z_{0}}+a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\dots
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)f\left(z\right)=b_{1}+a_{0}\left(z-z_{0}\right)+a_{1}\left(z-z_{0}\right)^{2}+a_{2}\left(z-z_{0}\right)^{3}+\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{z\to z_{0}}\left(z-z_{0}\right)f\left(z\right)=b_{1}=\textnormal{Res}\left(f,z_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $n>1$
+\end_inset
+
+ אז סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{b_{n}}{\left(z-z_{0}\right)}+\frac{b_{n-1}}{\left(z-z_{0}\right)^{n-1}}+\frac{b_{n-2}}{\left(z-z_{0}\right)^{n-2}}+\dots+\frac{b_{1}}{z-z_{0}}+a_{0}+a_{1}\left(z-z_{0}\right)+\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)^{n}f\left(z\right)=b_{n}+b_{n-1}\left(z-z_{0}\right)+\dots+b_{1}\left(z-z_{0}\right)^{n-1}+a_{0}\left(z-z_{0}\right)^{n}+a_{1}\left(z-z_{0}\right)^{n+1}+\dots
+\]
+
+\end_inset
+
+הטור האחרון הוא טור טיילור)בלי חזקות שליליות( עבור הפונקציה 
+\begin_inset Formula $\varphi\left(z\right)=\left(z-z_{0}\right)^{n}f\left(z\right)$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ בטור הזה 
+\begin_inset Formula $"b_{1}"$
+\end_inset
+
+ הוא המקדם של 
+\begin_inset Formula $\left(z-z_{0}\right)^{n-1}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula 
+\[
+b_{1}=\dfrac{\varphi^{\left(n-1\right)}\left(z_{0}\right)}{\left(n-1\right)!}=\overbrace{\lim_{z\to z_{0}}}^{\begin{tabular}{c}
+many\\
+times
+\end{tabular}}\frac{\varphi^{\left(n-1\right)}\left(z\right)}{\left(n-1\right)!}
+\]
+
+\end_inset
+
+וזאת השארית.
+\end_layout
+
+\begin_layout Section*
+בסיכום
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ קוטב פשוט ל
+\begin_inset Formula $f$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,z_{0}\right)=\lim_{z\to z_{0}}\left(z-z_{0}\right)f\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $n>1$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אז נגדיר 
+\begin_inset Formula $\varphi\left(z\right)=\left(z-z_{0}\right)^{n}f\left(z\right)$
+\end_inset
+
+ ואז
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,z_{0}\right)=\frac{\varphi^{\left(n-1\right)}\left(z_{0}\right)}{\left(n-1\right)!}=\lim_{z\to z_{0}}\frac{\varphi^{\left(n-1\right)}\left(z\right)}{\left(n-1\right)!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות חישוב
+\end_layout
+
+\begin_layout Enumerate
+נחשב
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\left|z\right|=2}\frac{1}{z^{3}\left(z+4\right)}\mathrm{\, d}z
+\]
+
+\end_inset
+
+ובכן: לפונקציה 
+\begin_inset Formula $f\left(z\right)=\dfrac{1}{z^{3}\left(z+4\right)}$
+\end_inset
+
+ יש שני קטבים, ב
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ ו
+\begin_inset Formula $z_{1}=-4$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $z_{1}=-4$
+\end_inset
+
+ הוא מחוץ למעגל 
+\begin_inset Formula $\left|z\right|=2$
+\end_inset
+
+ ולכן לא משפיע על האינטגרל.
+ נסיק:
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\left|z\right|=2}\frac{1}{z^{3}\left(z+4\right)}=2\pi i\textnormal{Res}\left(f,0\right)
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ קיים ל
+\begin_inset Formula $f$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $3$
+\end_inset
+
+, ולכן יש להגדיר
+\begin_inset Formula 
+\[
+\varphi\left(z\right)=z^{3}f\left(z\right)=z^{3}\frac{1}{z^{3}\left(z+4\right)}=\frac{1}{z+4}=\left(z+4\right)^{-1}
+\]
+
+\end_inset
+
+לפי הנוסחה המקוצרת
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,0\right)=\frac{\varphi''\left(0\right)}{2!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(z\right)=\left(z+4\right)^{-1}\qquad\varphi'\left(z\right)=-\left(z+4\right)^{-2}\qquad\varphi''\left(z\right)=2\left(z+4\right)^{-3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi''\left(0\right)=2\left(4\right)^{-4}=\frac{1}{32}
+\]
+
+\end_inset
+
+תשובה סופית:
+\begin_inset Formula 
+\[
+2\pi i\textnormal{Res}\left(f,0\right)=2\pi i\left[\frac{\varphi''\left(0\right)}{2!}\right]=2\pi i\frac{1}{64}=\frac{\pi i}{32}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ריבוע
+\begin_inset Formula 
+\[
+\xymatrix{\ar[dd] & \,\hphantom{5i}\bullet5i\, & \ar[ll]\\
+\,\hphantom{-5}\bullet-5\, & \,\hphantom{0}\bullet0\, & \,\hphantom{5}\bullet5\,\\
+\ar[rr] & \,\hphantom{-5i}\bullet-5i\, & \ar[uu]
+}
+\]
+
+\end_inset
+
+נחשב
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\gamma}\frac{1}{z^{3}\left(z+4\right)\mathrm{\, d}z}
+\]
+
+\end_inset
+
+תשובה: 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מקיפה שתי נקודות סינגולריות של 
+\begin_inset Formula $f\left(z\right)=\frac{1}{z^{3}\left(z+4\right)}$
+\end_inset
+
+, ולכן ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\gamma}f\left(z\right)\mathrm{\, d}z=2\pi i\left[\textnormal{Res}\left(f,0\right)+\textnormal{Res}\left(f,-4\right)\right]
+\]
+
+\end_inset
+
+כבר חישבנו 
+\begin_inset Formula $\textnormal{Res}\left(f,0\right)=\dfrac{1}{64}$
+\end_inset
+
+.
+ לגבי 
+\begin_inset Formula $z_{1}=-4$
+\end_inset
+
+ קיים שם קוטב פשוט של 
+\begin_inset Formula $f$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,-4\right)=\lim_{z\to-4}\left(z+4\right)f\left(z\right)=\lim_{z\to-4}\frac{1}{z^{3}}=\frac{-1}{64}
+\]
+
+\end_inset
+
+לכן לסיכום
+\begin_inset Formula 
+\[
+\varointctrclockwise_{\gamma}\frac{1}{z^{3}\left(z+4\right)}\mathrm{\, d}z=\varointctrclockwise_{\gamma}f\left(z\right)\mathrm{\, d}z=2\pi i\left(\textnormal{Res}\left(f,0\right)+\textnormal{Res}\left(f,-4\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\pi i\left[+\frac{1}{64}-\frac{1}{64}\right]=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחשב 
+\begin_inset Formula $\int_{0}^{\infty}\dfrac{2x^{2}-1}{x^{4}+5x^{2}+4}\mathrm{\, d}x$
+\end_inset
+
+.
+ זה אינטגרל ממשי לא אמיתי.
+ האינטגרל מתכנס כי המכנה שונה מאפס לכל 
+\begin_inset Formula $x\in\left[0,\infty\right)$
+\end_inset
+
+, ועוד שהמכנה בעל מעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והמונה בעל מעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ לכן עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ גדול הפונקציה 
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{2x^{2}-1}{x^{4}+5x^{2}+4}\approx\frac{2}{x^{2}}
+\]
+
+\end_inset
+
+וידוע ש 
+\begin_inset Formula $\int_{1}^{\infty}\dfrac{2}{x^{2}}\mathrm{\, d}x$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+גם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ זוגית ולכן
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}f\left(x\right)\mathrm{\, d}x=\frac{1}{2}\int_{-\infty}^{\infty}f\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+וכיוון שהאינטגרל מתכנס הוא שווה
+\begin_inset Formula 
+\[
+\frac{1}{2}\lim_{R\to\infty}\int_{-R}^{R}f\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $L_{R}+C_{R}$
+\end_inset
+
+ חצי מעגל כאשר 
+\begin_inset Formula $L_{R}$
+\end_inset
+
+ החלק הישר ו
+\begin_inset Formula $C_{R}$
+\end_inset
+
+ החלק העגול:
+\begin_inset Formula 
+\[
+\xymatrix{\\
+\,\hphantom{-R}\bullet-R\,\ar[rr]_{L_{R}} &  & \,\hphantom{R}\bullet R\,\ar@/_{3pc}/[ll]_{C_{R}}
+}
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $z=x$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}z=\mathrm{d}x$
+\end_inset
+
+ לרשום ש
+\begin_inset Formula 
+\[
+\frac{1}{2}\int_{-\infty}^{\infty}f\left(x\right)\mathrm{\, d}x=\frac{1}{2}\lim_{R\to\infty}\int_{L_{R}}f\left(z\right)\mathrm{\, d}z=\frac{1}{2}\lim_{R\to\infty}\int_{L_{R}}\frac{2z^{2}-1}{z^{4}+5z^{2}+4}\mathrm{\, d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2}\lim_{R\to\infty}\left[\int_{L_{R}+C_{R}}f\left(z\right)\mathrm{\, d}z-\int_{C_{R}}f\left(z\right)\mathrm{\, d}z\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\lim\limits _{R\to\infty}\int_{C_{R}}f\left(z\right)\mathrm{\, d}z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: על 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|=R$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|=\left|\frac{2z^{2}-1}{z^{4}+5z^{2}+4}\right|\le\frac{\left|2z^{2}\right|+\left|-1\right|}{\left|z^{4}\right|-\left|5z^{2}\right|-\left|4\right|}
+\]
+
+\end_inset
+
+על 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+ זה שווה 
+\begin_inset Formula $\dfrac{2R^{2}+1}{R^{4}-5R^{2}-4}$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\left|f_{C_{R}}f\left(z\right)\mathrm{\, d}z\right|\le ML=M_{R}\cdot\pi R=\frac{2R^{2}+1}{R^{4}-5R^{2}-4}\cdot\pi R\xrightarrow[R\to\infty]{}0
+\]
+
+\end_inset
+
+מ.ש.ל טענה.
+\end_layout
+
+\begin_layout Standard
+מכל זה נובע:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}f\left(x\right)\mathrm{\, d}x=\frac{1}{2}\lim_{R\to\infty}\int_{L_{R}+C_{R}}f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $L_{R}+C_{R}$
+\end_inset
+
+ מסילה סגורה ו
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית בתוכה פרט לקטבים, אפשר לחשב 
+\begin_inset Formula $\int_{L_{R}+C_{R}}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+ ע"פ משפט השארית.
+ כזכור,
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{2z^{2}-1}{\left(z^{2}+4\right)\left(z^{2}+1\right)}
+\]
+
+\end_inset
+
+יש קטבים ב
+\begin_inset Formula $\pm i$
+\end_inset
+
+ ו
+\begin_inset Formula $\pm2i$
+\end_inset
+
+.
+ ברגע ש
+\begin_inset Formula $R>2$
+\end_inset
+
+, 
+\begin_inset Formula $L_{R}+C_{R}$
+\end_inset
+
+ מקיף את הקטבים 
+\begin_inset Formula $i$
+\end_inset
+
+ ו
+\begin_inset Formula $2i$
+\end_inset
+
+, לכן עבור כל 
+\begin_inset Formula $R>2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{L_{R}+C_{R}}f\left(z\right)\mathrm{\, d}z=2\pi i\left[\textnormal{Res}\left(f,i\right)+\textnormal{Res}\left(f,2i\right)\right]
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $z=i$
+\end_inset
+
+ יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ קוטב פשוט, לכן
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,i\right)=\lim_{z\to i}\left(z-i\right)f\left(z\right)=\lim_{z\to i}\cancel{\left(z-i\right)}\frac{2z^{2}-1}{\left(z^{2}+4\right)\left(z+i\right)\cancel{\left(z-i\right)}}=\frac{-3}{3\left(2i\right)}=\frac{i}{2}
+\]
+
+\end_inset
+
+באופן דומה נחשב
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,2i\right)=\lim_{z\to2i}\left(z-2i\right)f\left(z\right)=\lim_{z\to2i}\cancel{\left(z-2i\right)}\frac{2z^{2}-1}{\left(z+2i\right)\cancel{\left(z-2i\right)}\left(z^{2}+1\right)}=\frac{-9}{\left(4i\right)\left(-3\right)}=\frac{-3}{4}i
+\]
+
+\end_inset
+
+תשובה סופית לתרגיל:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{2x^{2}-1}{x^{4}+5x^{2}+4}\mathrm{\, d}x=\frac{1}{2}2\pi i\left[\textnormal{Res}\left(f,i\right)+\textnormal{Res}\left(f,2i\right)\right]=\pi i\left[\frac{i}{2}-\frac{3}{4}i\right]=\nicefrac{\pi}{4}
+\]
+
+\end_inset
+
+הערה: מכיוון שזוהי פונקציה ממשית, היה חייב לצאת לנו מספר ממשי! אם היה יוצא
+ מספר מרוכב זה סימן שעשינו טעות!
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הכללה
+\end_layout
+
+\begin_layout Standard
+השיטה הנ"ל יפה לכל אינטגרל מהסוג 
+\begin_inset Formula $\int_{-\infty}^{\infty}\dfrac{p\left(x\right)}{q\left(x\right)}\mathrm{\, d}x$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q\left(x\right)\neq0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ ו
+\begin_inset Formula $\deg q\ge\left(\deg p\right)+2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ואם כן, האינטגרל שווה 
+\begin_inset Formula $2\pi i$
+\end_inset
+
+ כפול סכום השאריות של 
+\begin_inset Formula $\dfrac{p}{q}$
+\end_inset
+
+ בחצי המישור העליון.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula $\int_{-\infty}^{\infty}\dfrac{\cos x}{x^{2}+1}\mathrm{\, d}x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+1\neq0$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|\cos x\right|<1$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\dfrac{\cos x}{x^{2}+1}\approx\dfrac{1}{x^{2}}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ גדול והאינטגרל מתכנס.
+ לכן הוא שווה
+\begin_inset Formula 
+\[
+\lim_{R\to\infty}\int_{-R}^{R}\frac{\cos x}{x^{2}+1}\mathrm{\, d}x
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $z=x$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}z=\mathrm{d}x$
+\end_inset
+
+ לקבל
+\begin_inset Formula 
+\[
+\lim_{R\to\infty}\int_{L_{R}}\frac{\cos z}{z^{2}+1}\mathrm{\, d}z=\lim_{R\to\infty}\left[\int_{L_{R}+C_{R}}\frac{\cos z}{z^{2}+1}\mathrm{\, d}z-\int\frac{\cos z}{z^{2}+1}\mathrm{\, d}z\right]
+\]
+
+\end_inset
+
+בניגוד לדוגמה הקודמת, השיטה הזו לא מועילה כאן כי לא נוכל להוכיח 
+\begin_inset Formula $\lim\limits _{R\to\infty}\int_{C_{R}}\dfrac{\cos z}{z^{2}+1}\mathrm{\, d}z=0$
+\end_inset
+
+.
+ הסיבה היא ש
+\begin_inset Formula $\cos z=\dfrac{e^{iz}+e^{-iz}}{2}$
+\end_inset
+
+.
+ אם למשל 
+\begin_inset Formula $z=iR+C_{R}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\cos z=\cos\left(iR\right)=\frac{e^{i\left(iR\right)}+e^{-i\left(iR\right)}}{2}=\frac{e^{-R}+e^{R}}{2}\approx\frac{e^{R}}{2}
+\]
+
+\end_inset
+
+זה הרבה יותר גדול מהמכנה שבסדר גודל 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן זה אינו ברור)ובדרך כלל לא נכון( ש
+\begin_inset Formula 
+\[
+\lim_{R\to\infty}\int_{C_{R}}\frac{\cos z}{z^{2}+1}\mathrm{\, d}z=0
+\]
+
+\end_inset
+
+והשיטה נכשלת.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נתחיל מחדש לחשב
+\series default
+ 
+\begin_inset Formula $\int_{-\infty}^{\infty}\dfrac{\cos x}{x^{2}+1}\mathrm{\, d}x$
+\end_inset
+
+ שהוא 
+\begin_inset Formula 
+\[
+\lim\limits _{R\to\infty}\int_{-R}^{R}\dfrac{\cos x}{x^{2}+1}\mathrm{\, d}x=\lim_{R\to\infty}\int_{-R}^{R}\frac{\textnormal{Re }e^{ix}}{x^{2}+1}\mathrm{\, d}x=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{R\to\infty}\int_{-R}^{R}\textnormal{Re}\frac{\cos x+i\sin x}{x^{2}+1}\mathrm{\, d}x=\lim_{R\to\infty}\textnormal{Re}\int_{-R}^{R}\frac{e^{ix}}{x^{2}+1}\mathrm{\, d}x
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $x=z$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}x=\mathrm{d}z$
+\end_inset
+
+ לקבל 
+\begin_inset Formula 
+\[
+\lim\limits _{R\to\infty}\textnormal{Re}\int_{L_{R}}\dfrac{e^{iz}}{z^{2}+1}\mathrm{\, d}z=\lim_{R\to\infty}\textnormal{Re}\left[\int_{L_{R}+C_{R}}\frac{e^{iz}}{z^{2}+1}\mathrm{\, d}z-\int_{C_{R}}\frac{e^{iz}}{z^{2}+1}\mathrm{\, d}z\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\lim\limits _{R\to\infty}\int_{C_{R}}\dfrac{e^{iz}}{z^{2}+1}\mathrm{\, d}z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נתחיל עם הערה פשוטה: אם 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|e^{z}\right|=\left|e^{x+iy}\right|=\left|e^{x}\right|\left|e^{iy}\right|=e^{x}=e^{\textnormal{Re }z}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\left|e^{iz}\right|=e^{\textnormal{Re}\left(iz\right)}=e^{\textnormal{Re}\left[i\left(x+iy\right)\right]}=e^{-y}
+\]
+
+\end_inset
+
+על 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+ 
+\begin_inset Formula $y=\textnormal{Im }z\ge0$
+\end_inset
+
+ לכן 
+\begin_inset Formula $-y\le0$
+\end_inset
+
+ לכן 
+\begin_inset Formula $e^{-y}\le e^{0}=1$
+\end_inset
+
+.
+ נובע שלכל 
+\begin_inset Formula $z\in C_{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|e^{iz}\right|=e^{-\textnormal{Im }z}\le1
+\]
+
+\end_inset
+
+לכן על 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\frac{e^{iz}}{z^{2}+1}\right|=\frac{\left|e^{iz}\right|}{\left|z^{2}+1\right|}\le\frac{1}{R^{2}-1}=M_{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\int_{C_{R}}\frac{e^{iz}}{z^{2}+1}\mathrm{\, d}z\right|\le ML=M_{R}\cdot\pi R\le\frac{\pi R}{R^{2}-1}\xrightarrow[R\to\infty]{}0
+\]
+
+\end_inset
+
+והוכחנו את הטענה.
+\end_layout
+
+\begin_layout Standard
+מכל הנ"ל יוצא ש
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\frac{\cos x}{x^{2}+1}\mathrm{\, d}x=\lim_{R\to\infty}\textnormal{Re}\int_{L_{R}+C_{R}}\frac{e^{iz}}{z^{2}+1}\mathrm{\, d}z
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $R>1$
+\end_inset
+
+, 
+\begin_inset Formula $L_{R}+C_{R}$
+\end_inset
+
+ מקיף נקודת סינגולריות אחת 
+\begin_inset Formula $z=i$
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $R>1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Re}\int_{L_{R}+C_{R}}\frac{e^{iz}}{z^{2}+1}\mathrm{\, d}z=\textnormal{Re }2\pi i\textnormal{Res}\left(\frac{e^{iz}}{z^{2}+1},i\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\textnormal{Re }2\pi i\lim_{z\to i}\frac{\cancel{\left(z-i\right)}e^{iz}}{\cancel{\left(z-i\right)}\left(z+i\right)}=\textnormal{Re}\frac{2\pi ie^{-1}}{2i}=\nicefrac{\pi}{e}
+\]
+
+\end_inset
+
+השיטה הנ"ל ישפה לכל אינטגרל מהסוג 
+\begin_inset Formula $\int_{-\infty}^{\infty}\dfrac{p\left(x\right)}{q\left(x\right)}\cos ax\mathrm{\, d}x$
+\end_inset
+
+ או 
+\begin_inset Formula $\int_{-\infty}^{\infty}\dfrac{p\left(x\right)}{q\left(x\right)}\sin ax\mathrm{\, d}x$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ ו
+\begin_inset Formula $q$
+\end_inset
+
+ פולינומים, 
+\begin_inset Formula $q\left(x\right)\neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+, ו
+\begin_inset Formula $\deg\left(p\right)\ge\left(\deg p\right)+2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש גם "למת זורדן" שאומרת שאם 
+\begin_inset Formula $\deg q\ge\left(\deg p\right)+1$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{C_{R}}\to0$
+\end_inset
+
+ ולכן השיטה עובדת גם במקרה זה.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula $\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{\, d}x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+הפונציה זוגית ולכן יש כאן 
+\begin_inset Formula $\dfrac{1}{2}\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{\, d}x$
+\end_inset
+
+.
+ האינטגרל מתכנס ע"פ מבחן דריכלה, ולכן שווה
+\begin_inset Formula 
+\[
+\frac{1}{2}\lim_{R\to\infty}\int_{-R}^{R}\frac{\sin x}{x}\mathrm{\, d}x=\frac{1}{2}\lim_{R\to\infty}\textnormal{Im}\int_{-R}^{R}\frac{e^{ix}}{x}\mathrm{\, d}x
+\]
+
+\end_inset
+
+השוויון האחרון 
+\bar under
+לא נכון
+\bar default
+! כי לפונקציה 
+\begin_inset Formula $\dfrac{e^{ix}}{x}$
+\end_inset
+
+ יש סינגולריות באפס ולכן 
+\begin_inset Formula $\int_{-R}^{R}\dfrac{e^{ix}}{x}\mathrm{\, d}x$
+\end_inset
+
+ מתבדר, ואילו 
+\begin_inset Formula $\int_{-R}^{R}\dfrac{\sin x}{x}\mathrm{\, d}x$
+\end_inset
+
+ מתכנס, כי כאן הסינגולריות באפס סליקה.
+\end_layout
+
+\begin_layout Standard
+אלא
+\begin_inset Formula 
+\[
+\xymatrix{\\
+-R\ar[rr]_{L_{1}} &  & -\varepsilon\ar@/^{2pc}/[rr]^{C_{\varepsilon}} & 0 & \varepsilon\ar[rr]_{L_{2}} &  & R\ar@/_{5pc}/[llllll]_{C_{R}}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\frac{\sin x}{x}\mathrm{\, d}x=\lim_{\begin{array}{c}
+R\to\infty\\
+\varepsilon\to0
+\end{array}}\int_{L_{1}+L_{2}}\frac{\sin x}{x}\mathrm{\, d}x=
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $z=0$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+=\int\lim_{\begin{array}{c}
+R\to\infty\\
+\varepsilon\to0
+\end{array}}\textnormal{Im}\int_{L_{1}+L_{2}}\int\frac{e^{iz}}{z}\mathrm{\, d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{\begin{array}{c}
+R\to\infty\\
+\varepsilon\to9
+\end{array}}\textnormal{Im}\left[\int_{L_{1}+C_{\varepsilon}+L_{2}+C_{R}}\frac{e^{iz}}{z}\mathrm{\, d}z-\int_{C_{\varepsilon}}\frac{e^{iz}}{z}\mathrm{\, d}z-\int_{C_{R}}\frac{e^{iz}}{z}\mathrm{\, d}z\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת, 
+\begin_inset Formula $L_{1}+C_{\varepsilon}+L_{2}+C_{R}$
+\end_inset
+
+ מסילה סגורה.
+ הפונקציה 
+\begin_inset Formula $\dfrac{e^{iz}}{z}$
+\end_inset
+
+ אנליטית בה ובתוכה.
+\end_layout
+
+\begin_layout Standard
+לפי משפט קושי
+\begin_inset Formula 
+\[
+\int_{L_{1}+C_{\varepsilon}+L_{2}+C_{R}}\frac{e^{iz}}{z}\mathrm{\, d}z=0
+\]
+
+\end_inset
+
+לפי למת ז'ורדן
+\begin_inset Formula 
+\[
+\lim_{R\to\infty}\int_{C_{R}}\frac{e^{iz}}{z}\mathrm{\, d}z...
+\]
+
+\end_inset
+
+נסיק
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{\sin x}{x}\mathrm{\, d}x=\frac{1}{2}\lim_{\varepsilon\to0}\textnormal{Im}\int_{-C_{\varepsilon}}\frac{e^{iz}}{z}\mathrm{\, d}z
+\]
+
+\end_inset
+
+כעת עבור 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כלשהו
+\begin_inset Formula 
+\[
+\int_{-C_{\varepsilon}}\frac{e^{iz}}{z}\mathrm{\, d}z=\int_{-C_{\varepsilon}}\frac{e^{iz}}{z}\mathrm{\, d}z=\int_{-C_{\varepsilon}}\frac{e^{iz}-1}{z}\mathrm{\, d}z+\int_{-C_{\varepsilon}}\frac{1}{z}\mathrm{\, d}z=I_{1}+I_{2}
+\]
+
+\end_inset
+
+נעיר שב
+\begin_inset Formula $I_{1}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\lim_{z\to0}\frac{e^{iz}-1}{z}=\xcancel{\frac{0}{0}}=\lim_{z\to0}\frac{ie^{iz}}{1}=i
+\]
+
+\end_inset
+
+לכן אם 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ מספיק קטן, 
+\begin_inset Formula $\left|\dfrac{e^{iz}-1}{z}\right|$
+\end_inset
+
+ על המסילה 
+\begin_inset Formula $-C_{\varepsilon}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left|I_{1}\right|\le\underbrace{M}_{=2}\underbrace{L}_{=\varepsilon\pi}\xrightarrow[\varepsilon\to0]{}0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכל הנ"ל נסיק ש
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{\sin x}{x}\mathrm{\, d}x=\lim_{\varepsilon\to0}\frac{1}{2}\textnormal{Im}\int_{-C_{\varepsilon}}\frac{1}{z}\mathrm{\, d}z
+\]
+
+\end_inset
+
+כעת עבור 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כלשהו
+\end_layout
+
+\begin_layout Standard
+......
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה ל
+\begin_inset Formula $-C_{\varepsilon}$
+\end_inset
+
+ נתונה ע"י
+\begin_inset Formula 
+\[
+z=\varepsilon e^{i\theta}\qquad0\le\theta\le\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}z=i\varepsilon e^{i\theta}\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{2}=\int_{-C_{\varepsilon}}\frac{1}{z}\mathrm{\, d}z=\int_{0}^{\pi}\frac{1}{\cancel{\varepsilon}\cancel{e^{i\theta}}}i\cancel{\varepsilon}\cancel{e^{i\theta}}\mathrm{\, d}\theta=\pi i
+\]
+
+\end_inset
+
+בלתי תלוי ב
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תשובה סופית:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{\sin x}{x}\mathrm{\, d}x=\lim_{\varepsilon\to0}\frac{1}{2}\textnormal{Im}\int_{-C_{\varepsilon}}\frac{1}{z}\mathrm{\, d}z=\lim_{\varepsilon\to0}\frac{1}{2}\textnormal{Im}\left(\pi i\right)=\nicefrac{\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

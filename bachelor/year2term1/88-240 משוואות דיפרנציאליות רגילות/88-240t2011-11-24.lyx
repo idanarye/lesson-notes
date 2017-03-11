@@ -1,0 +1,976 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+4.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וריאציית המקדמים)
+\lang english
+Revisited
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נביא תחילה את כלל קרמר מאלגברה לינארית
+\end_layout
+
+\begin_layout Section*
+משפט קרמר)
+\lang english
+Cramer's rule
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נתבונן במערכת המשוואות 
+\begin_inset Formula $A\vec{x}=\vec{b}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ היא מטריצה ריבועית
+\begin_inset Formula $\left(n\times n\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $b$
+\end_inset
+
+ הוא וקטור עמודה 
+\begin_inset Formula $\left(n\times1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כידוע, למערכת קיים פתרון יחיד אם ורק אם 
+\begin_inset Formula $\det A\ne0$
+\end_inset
+
+.
+ אם קיים פתרון יחיד ניתן למצוא כל רכיב בו ע"י
+\begin_inset Formula 
+\[
+x_{i}=\cfrac{\det\left(A_{i}\right)}{\det\left(A\right)}=\cfrac{\left|A_{i}\right|}{\left|A\right|}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ היא המטריצה המתקבלת ע"י החלפת העמודה ה
+\begin_inset Formula $i$
+\end_inset
+
+ שבמטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ בווקטור 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+A_{i}=\begin{pmatrix}a_{11} & \cdots & a_{1,i-1} & b_{1} & a_{1,i+1} & \cdots & a_{1,n}\\
+\vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{n1} & \cdots & a_{n,i-1} & b_{n} & a_{n,i+1} & \cdots & a_{n,n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+בשיטה זו לא חייבים לפתור את כל המערכת כדי למצוא רכיב מסויים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+פתור את המערכת הבאה בעזרת כלל קרמר: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+4x-y+z=-5\\
+2x+2y+3z=10\\
+5x-2y+6z=1
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נכתוב את המערכת בצורה מטריציונית: 
+\begin_inset Formula $\begin{pmatrix}4 & -1 & 1\\
+2 & 2 & 3\\
+5 & -2 & 6
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=\begin{pmatrix}-5\\
+10\\
+1
+\end{pmatrix}$
+\end_inset
+
+.
+ נחשב את הדטרמיננטות:
+\begin_inset Formula 
+\[
+\left|A\right|=\left|\begin{matrix}4 & -1 & 1\\
+2 & 2 & 3\\
+5 & -2 & 6
+\end{matrix}\right|=4\left(18\right)-\left(-1\right)\left(-3\right)+1\left(-14\right)=55
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|A_{1}\right|=\left|\begin{matrix}-5 & -1 & 1\\
+10 & 2 & 3\\
+1 & -2 & 6
+\end{matrix}\right|=...=-55
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|A_{2}\right|=\left|\begin{matrix}4 & -5 & 1\\
+2 & 10 & 3\\
+5 & 1 & 6
+\end{matrix}\right|=165
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|A_{3}\right|=\left|\begin{matrix}4 & -1 & -5\\
+2 & 2 & 10\\
+5 & -2 & 1
+\end{matrix}\right|=110
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\cfrac{\left|A_{1}\right|}{\left|A\right|}=-1,y=\cfrac{165}{55}=3,z=\cfrac{110}{55}=2
+\]
+
+\end_inset
+
+ולסיכום פתרון המערכת הוא 
+\begin_inset Formula $\boxed{\vec{x}=\begin{pmatrix}-1\\
+3\\
+2
+\end{pmatrix}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נחזור חזרה למד"ר
+\end_layout
+
+\begin_layout Standard
+נחזור חזרה למד"ר 
+\begin_inset Formula $y^{\left(n\right)}+\sum\limits _{k=0}^{n-1}a_{k}\left(x\right)y^{\left(k\right)}=b\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ראינו שאם נתונים לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ של המשוואות ההומוגנית הקשורה 
+\begin_inset Formula $y^{\left(n\right)}+\sum\limits _{k=0}^{n-1}a_{k}\left(x\right)y^{\left(k\right)}=0$
+\end_inset
+
+ אזי הפתרון הכללי של המד"ר האי הומוגנית הוא 
+\begin_inset Formula $y=C_{1}\left(x\right)y_{1}\left(x\right)+...+C_{n}\left(x\right)y_{n}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $C_{1},...C_{n}$
+\end_inset
+
+ מקיימים:
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)} & \cdots & y_{n}^{\left(n-1\right)}
+\end{pmatrix}\begin{pmatrix}C_{1}\\
+\vdots\\
+C_{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\vdots\\
+0\\
+b\left(x\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכל להפעיל כאן את כלל קרמר ולהסיק שלכל 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{i}'\left(x\right)=\cfrac{\left|\begin{matrix}y_{1} & \cdots & y_{i-1} & 0 & y_{i+1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)} & \cdots & y_{i-1}^{\left(n-1\right)} & b\left(x\right) & y_{i+1}^{\left(n-1\right)} & \cdots & y_{n}^{\left(n-1\right)}
+\end{matrix}\right|}{\left|\begin{matrix}y_{1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)} & \cdots & y_{n}^{\left(n-1\right)}
+\end{matrix}\right|}=\cfrac{W_{i}\left(x\right)}{W\left(x\right)}
+\]
+
+\end_inset
+
+המכנה הוא כמובן הוורונסקיאן, ואת המונה נהוג לסמן ע"י 
+\begin_inset Formula $W_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נוציא אינטגרל נקבל 
+\begin_inset Formula $C_{i}\left(x\right)=\int^{x}\cfrac{W_{i}\left(x\right)}{W\left(x\right)}dx+K_{i}$
+\end_inset
+
+.
+ בנינו את הפתרון הכללי של המד"ר:
+\begin_inset Formula 
+\[
+y\left(x\right)=\sum_{i=1}^{n}y_{i}\left(x\right)\left(\int^{x}\cfrac{W_{i}\left(x\right)}{W\left(x\right)}dx+K_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את הגבול התחתון באינטגרלים מוחרים בהתאם לצרכי השאלה.
+\end_layout
+
+\begin_layout Standard
+ניתן גם לפתוח סוגריים:
+\begin_inset Formula 
+\[
+y\left(x\right)=\sum_{i=1}^{n}y_{i}\left(x\right)\int^{x}\cfrac{W_{i}\left(x\right)}{W\left(x\right)}dx+\sum_{i=1}^{n}y_{i}\left(x\right)K_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{n}y_{i}\left(x\right)\int^{x}\cfrac{W_{i}\left(x\right)}{W\left(x\right)}dx$
+\end_inset
+
+ - 
+\begin_inset Formula $y_{c}-y_{h}$
+\end_inset
+
+ הפתרון למשוואה ההומוגנית הקשורה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{n}y_{i}\left(x\right)K_{i}$
+\end_inset
+
+ - פתרון פרטי למשוואה האי הומוגנית.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+חשוב מאוד שהמד"ר תהיה בצורה נורמלית)
+\begin_inset Formula $a_{n}\left(x\right)=1$
+\end_inset
+
+( אחרת ה"פתרון" 
+\bar under
+אינו נכון
+\bar default
+!
+\end_layout
+
+\begin_layout Section*
+תרגילים
+\end_layout
+
+\begin_layout Standard
+למשוואות הבאות נתונים שני פתרונות בת"ל של המשוואה ההומוגנית הקשורה.
+ פתור אותן!
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $\begin{matrix}y''-2y'-3y=2\sin x, & e^{-x},e^{3x}\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ 
+\begin_inset Formula $\begin{matrix}y''-2y'=x+2e^{x}, & 1,e^{2x}\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ נחשב את הוורונסקיאן: 
+\begin_inset Formula $W\left(e^{-x},e^{3x}\right)=\left|\begin{matrix}e^{-x} & e^{3x}\\
+-e^{-x} & 3e^{3x}
+\end{matrix}\right|=4e^{2x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כמו כן נחשב את 
+\begin_inset Formula $W_{1},W_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+W_{1}=\left|\begin{matrix}0 & e^{3x}\\
+2\sin x & 3e^{3x}
+\end{matrix}\right|=-2e^{3x}\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{2}=\left|\begin{matrix}e^{-x} & 0\\
+-e^{-x} & 2\sin x
+\end{matrix}\right|=2e^{-x}\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\cfrac{W_{1}}{W}=\cfrac{-3e^{3x}\sin x}{4e^{2x}}=-\cfrac{1}{2}e^{3x-2x}\sin x=-\cfrac{1}{2}e^{x}\sin x
+\]
+
+\end_inset
+
+נחשב את האינטגרל 
+\begin_inset Formula $C_{1}=\int\cfrac{W_{1}}{W}dx$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+C_{1}=\int\cfrac{-1}{2}e^{x}\sin xdx=-\cfrac{1}{2}e^{x}\sin x-\int-\cfrac{1}{2}e^{x}\cos dx=\left[\begin{matrix}u=\sin x & v=-\cfrac{1}{2}e^{x}\\
+u'=\cos x & v'=-\cfrac{1}{2}e^{x}
+\end{matrix}\right]uv-\int u'vdx
+\]
+
+\end_inset
+
+
+\numeric on
+
+\begin_inset Formula 
+\[
+=-\cfrac{1}{2}e^{x}\sin x+\int\cfrac{1}{2}e^{x}\cos xdx=\left[\begin{matrix}u=\cos x & v=\cfrac{1}{2}e^{x}\\
+u'=-\sin x & v=\cfrac{1}{2}e^{x}
+\end{matrix}\right]=...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{1}=\cfrac{e^{x}}{4}\left(\cos x-\sin x\right)+K_{1}
+\]
+
+\end_inset
+
+
+\numeric off
+באופן דומה 
+\begin_inset Formula $C_{2}=-\cfrac{1}{20}e^{-3x}\left(\cos x+3\sin x\right)+K_{2}$
+\end_inset
+
+.
+ הפתרון הכללי הוא
+\begin_inset Formula 
+\[
+y=e^{-x}\left(\cfrac{e^{x}}{4}\left(\cos x-\sin x\right)+K_{1}\right)+e^{3x}\left(-\cfrac{e^{-3x}}{20}\left(\cos x+3\sin x\right)+K_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=...=K_{1}e^{-x}+K_{2}e^{3x}+\cfrac{\cos x-2\sin x}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ נחשב את הוורונסקיאן 
+\begin_inset Formula $W\left(1,e^{2x}\right)=\left|\begin{matrix}1 & e^{2x}\\
+0 & 2e^{2x}
+\end{matrix}\right|=2e^{2x}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{1}=\left|\begin{matrix}0 & e^{2x}\\
+x+2e^{x} & 2e^{2x}
+\end{matrix}\right|=-xe^{2x}-2e^{3x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{2}=\left|\begin{matrix}1 & 0\\
+0 & x+2e^{x}
+\end{matrix}\right|=x+2e^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{1}=\int\cfrac{W_{1}}{W}dx=...=\cfrac{-x^{2}}{4}-e^{x}+K_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{2}=\int\cfrac{W_{2}}{W}=...=\cfrac{-e^{2x}}{4}\left(x+1\right)-e^{-x}+K_{2}
+\]
+
+\end_inset
+
+הפתרון הוא:
+\begin_inset Formula 
+\[
+y=K_{1}-1+K_{2}e^{2x}-\cfrac{x^{2}}{4}-2e^{x}-\cfrac{x}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+פתור את המד"ר 
+\begin_inset Formula $x^{3}y''+xy'=x^{3}$
+\end_inset
+
+.
+ העזר בכך ש
+\begin_inset Formula $y_{1}=1$
+\end_inset
+
+ ו
+\begin_inset Formula $y_{2}=\ln\left|x\right|$
+\end_inset
+
+ פתרונות של המד"ר ההומוגנית הקשורה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נביא את המשוואה לצורה נורמלית 
+\begin_inset Formula $y''+\cfrac{1}{x}y'=x$
+\end_inset
+
+.
+ נחשב את הוורונסקיאן:
+\begin_inset Formula 
+\[
+W=\left|\begin{matrix}1 & \ln\left|x\right|\\
+0 & \cfrac{1}{x}
+\end{matrix}\right|=\cfrac{1}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{1}=\left|\begin{matrix}0 & \ln\left(x\right)\\
+x & \cfrac{1}{x}
+\end{matrix}\right|=-x\ln\left|x\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{2}=\left|\begin{matrix}1 & 0\\
+0 & x
+\end{matrix}\right|=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\cfrac{W_{1}}{W}dx=\int\cfrac{-x\ln\left|x\right|}{\unitfrac{1}{x}}dx=\int-x^{2}\ln\left|x\right|dx=\cfrac{-x^{3}}{3}\ln\left|x\right|-\int\cfrac{1}{x}\left(\cfrac{-x^{3}}{3}\right)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{-x^{3}}{3}\ln\left|x\right|+\cfrac{x^{3}}{9}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\int\cfrac{W_{2}}{W}dx=\int x^{2}dx=\cfrac{x^{3}}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הכללי הוא
+\begin_inset Formula 
+\[
+y=1\left(-\cfrac{x^{3}}{3}\ln\left|x\right|+\cfrac{x^{3}}{9}+K_{1}\right)+\ln\left|x\right|\left(\cfrac{x^{3}}{3}+K_{2}\right)=K_{1}+K_{2}\ln\left|x\right|+\cfrac{x^{3}}{9}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+4.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פונקציית גרין
+\end_layout
+
+\begin_layout Section*
+חזרה מהירה
+\end_layout
+
+\begin_layout Standard
+נניח שנתונה לנו בעיית קושי)מד"ר + תנאי התחלה(: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)\\
+y\left(x_{0}\right)=0\\
+y'\left(x_{0}\right)=0
+\end{array}\right.$
+\end_inset
+
+ ושני פתרונות בת"ל 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+ למשוואה ההומוגנית הקשורה, הפתרון הוא
+\begin_inset Formula 
+\[
+y\left(x\right)=\int_{x_{0}}^{x}\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)-y_{1}\left(x\right)y_{2}\left(t\right)}{y_{1}\left(t\right)y_{2}'\left(t\right)-y_{2}\left(t\right)y_{1}'\left(t\right)}b\left(t\right)dt
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $G\left(x,y\right)=\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)-y_{1}\left(x\right)y_{2}\left(t\right)}{y_{1}\left(t\right)y_{2}'\left(t\right)-y_{2}\left(t\right)y_{1}'\left(t\right)}$
+\end_inset
+
+ פונקציית גרין
+\end_layout
+
+\begin_layout Section*
+שאלה ממבחן)מועד ב' תשע"א, שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( מצא את הפתרון הכללי של המשוואה 
+\begin_inset Formula $y''-2y'+y=\cfrac{e^{x}}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( מצא נוסחה לפתרון הבעיה 
+\begin_inset Formula $y\left(0\right)=y'\left(0\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $y''-2y'+y=L\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( האם ניתן למצוא פתרון פרטי של המשוואה בסעיף )א( ע"י שימוש בנוסחה מסעיף
+ ב.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( נתבונן במשוואה ההומוגנית הקשורה 
+\begin_inset Formula $y''-2y'+y=0$
+\end_inset
+
+.
+ "אפשר לראות" ש
+\begin_inset Formula $y_{1}=e^{x}$
+\end_inset
+
+ פתרון שלה)נראה כיצד למצוא אותו בהמשך(.
+ נמצא את הפתרון הכללי של המשוואה בעזרת הורדת סדר.
+ נציב 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y=e^{x}z\\
+y'=e^{x}z'+e^{x}z\\
+y''=e^{x}z''+2e^{x}z'+e^{x}z
+\end{array}\right.$
+\end_inset
+
+.
+ מקבלים
+\begin_inset Formula 
+\[
+e^{x}z''+2e^{x}z'+e^{x}z-2e^{x}z'-2e^{k}+e^{x}z=\cfrac{e^{x}}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}z''=\cfrac{e^{x}}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z''=\cfrac{1}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=\ln\left|x\right|+C_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=x\ln\left|x\right|-x+C_{1}x+C_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{y=e^{x}-z=xe^{x}\ln\left|x\right|-xe^{x}+C_{1}xe^{x}+C_{2}e^{x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( מהסעיף הקודם ניתן לראות ש
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}=e^{x}\\
+y_{2}=xe^{x}
+\end{array}\right.$
+\end_inset
+
+ פתרונות עבור המד"ר ההמומוגנית הקשורה הוורונסקיאן הוא
+\begin_inset Formula 
+\[
+W\left(y_{1},y_{2}\right)=...=e^{2x}\left(\ne0\right)
+\]
+
+\end_inset
+
+פונקציית גרין של הבעיה היא:
+\begin_inset Formula 
+\[
+G\left(x,t\right)=\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)-y_{1}\left(x\right)y_{2}\left(t\right)}{W\left(t\right)}=\cfrac{e^{t}xe^{x}-e^{x}te^{t}}{e^{2t}}\Rightarrow G\left(x,t\right)=e^{x-t}\left(x-t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\int_{0}^{x}\left(x-t\right)e^{x-t}f\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( נבדוק האם זה אפשרי:
+\begin_inset Formula 
+\[
+y=\int_{0}^{x}e^{x-t}\left(x-t\right)\cfrac{e^{t}}{t}dt=\int_{0}^{x}\cfrac{e^{x}\left(x-t\right)}{t}dt
+\]
+
+\end_inset
+
+זה מתבדר, לכן התשובה היא לא!
+\end_layout
+
+\end_body
+\end_document

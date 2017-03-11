@@ -1,0 +1,2096 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+למכונות טיורינג יש שני סוגי זיכרון.
+ הזיכרון הפנימי שהוא מקום אחד שעומד לרשות ה
+\lang english
+CPU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לזכור דברים, ושם נשמר המצב, והסרט.
+ הפקודות של המכונה הן פונקציה שלוקחת את מה שכתוב בזיכרון הפנימי ומה שכתוב
+ בסרט, ולפי זה מבצעת פעולות על הזיכרון הפנימי)לעבור למצב חדש( ועל הזיכרון
+ החיצוני)לכתוב או לזוז שמאלה/ימינה(.
+\begin_inset Formula 
+\[
+M=\left(Q,\Sigma,\Gamma,\delta,q_{0},q_{ac},q_{rej}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M=\left(Q,\Sigma,\Gamma,\delta,q_{0},q_{ac},q_{rej}\right)$
+\end_inset
+
+ מכונת טיורינג.
+ קונפיגורציה של 
+\begin_inset Formula $M$
+\end_inset
+
+ הינה רביעיה 
+\begin_inset Formula $\left(q,l,x,r\right)\in Q\times\Gamma^{*}\times\Gamma\times\Gamma^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נייצג את הקונפיגורציה גם ע"י המחרוזת 
+\begin_inset Formula $lqxr\in(\Gamma\cup Q)^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מכונת טיורינג ו
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ קונפיגורציות של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ גוררת בצעד אחד את 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $M$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $C_{1}\vdash_{M}C_{2}$
+\end_inset
+
+ אם כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ נמצאת בקונפיגורציה 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ אזי בצעד הבא 
+\begin_inset Formula $M$
+\end_inset
+
+ תהיה ב
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+selectlanguage{hebrew}
+\backslash
+inputencoding{cp1255}קלט
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב חדש
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פעולה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+L
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במכונה הזו מתקיים:
+\begin_inset Formula 
+\[
+abq_{0}ab\vdash_{M}abq_{1}bb\vdash_{M}abq_{1}ab\vdash_{M}abaq_{0}b\vdash_{M}abq_{ac}ab
+\]
+
+\end_inset
+
+היחס הזה בעצם מושרה באופן ישיר מ
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+המשך הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור קונפיגורציות 
+\begin_inset Formula $C,C'$
+\end_inset
+
+ נאמר כי 
+\begin_inset Formula $C$
+\end_inset
+
+ גוררת את 
+\begin_inset Formula $C'$
+\end_inset
+
+)או 
+\begin_inset Formula $C'$
+\end_inset
+
+ נובעת מ
+\begin_inset Formula $C$
+\end_inset
+
+( אם כשמתחילים בקונפיגורציה 
+\begin_inset Formula $C$
+\end_inset
+
+ מגיעים על ידי 
+\begin_inset Formula $M$
+\end_inset
+
+ ל
+\begin_inset Formula $C'$
+\end_inset
+
+ ב
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים או יותר, מספר סופי.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C\vdash_{M}^{*}C'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M=\left(Q,\Sigma,\Gamma,\delta,q_{0},q_{ac},q_{rej}\right)$
+\end_inset
+
+ מ"ט ותהי 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+ מחרוזת.
+ נאמר כי 
+\bar under
+
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+
+\bar default
+ אם 
+\begin_inset Formula $q_{0}w\vdash_{M}^{*}uq_{ac}v$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\Gamma^{*}\ni u,v$
+\end_inset
+
+ כלשהם
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\bar under
+
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+
+\bar default
+ אם 
+\begin_inset Formula $q_{0}w\vdash_{M}^{*}uq_{rej}v$
+\end_inset
+
+ עבור 
+\begin_inset Formula $u,v\in\Gamma^{*}$
+\end_inset
+
+.
+ נאמר כי 
+\bar under
+
+\begin_inset Formula $M$
+\end_inset
+
+ עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+
+\bar default
+ ונסמן 
+\begin_inset Formula $M\downarrow w$
+\end_inset
+
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת או דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\bar under
+
+\begin_inset Formula $M$
+\end_inset
+
+ לא עוצרת על 
+\begin_inset Formula $w$
+\end_inset
+
+
+\bar default
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ לא דוחה ולא מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $M\uparrow w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M=\left(Q,\Sigma,\Gamma,\delta,q_{0},q_{ac},q_{rej}\right)$
+\end_inset
+
+ מכונת טיורינג, ותהי 
+\begin_inset Formula $L\subseteq\Sigma$
+\end_inset
+
+ שפה.
+ נאמר כי 
+\bar under
+
+\begin_inset Formula $M$
+\end_inset
+
+ מכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+
+\bar default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+אין כזה דבר להכריע מילה בודדת - מילה או שמאשרים או שדוחים או שלא מאשרים
+ ולא דוחים.
+ להכריע זה לגבי שפה שלמה
+\end_layout
+
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+, ואם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+ אז 
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\bar under
+מזהה
+\bar default
+ את 
+\begin_inset Formula $L$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+אם המכונה 
+\series bold
+מכריעה
+\series default
+ שפה, מובטח שהיא תעצור לכל קלט.
+ אם היא 
+\series bold
+מזהה
+\series default
+ שפה, אז עבור קלט שכן בשפה היא אומרת כן, ועבור קלט שאינו בשפה או שהיא אומרת
+ לא, או שהיא לא עוצרת.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור שפה 
+\begin_inset Formula $L$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\bar under
+ניתנת להכרעה)כריעה(
+\bar default
+ אם יש מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\bar under
+ניתנת לזיהוי
+\bar default
+ אם יש מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+האם ישנן שפות שאינן ניתנות להכרעה?
+\end_layout
+
+\begin_layout Standard
+האם ישנן שפות שאינן ניתנות לזיהוי?
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ אם 
+\begin_inset Formula $L$
+\end_inset
+
+ כריעה אזי 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ כריעה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת מ"ט שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ ואם 
+\begin_inset Formula $w\notin L$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ לא מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Section*
+ומה לגבי הכיוון השני?
+\end_layout
+
+\begin_layout Standard
+אנחנו לא יודעים איך להוכיח את הכיוון השני, אבל זה לא אומר שהוא לא נכון.
+ כדי להוכיח שאי אפשר, לא מספיק להראות שהדרך בה חשבנו להוכיח שאפשר לא נכונה
+ - צריך להוכיח שאי אפשר למצוא דרך שעובדת.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\Sigma_{1}^{*}\to\Sigma_{2}^{*}$
+\end_inset
+
+ ו
+\begin_inset Formula $M=\left(Q,\Sigma,\Gamma,\delta,q_{0},q_{ac},q_{rej}\right)$
+\end_inset
+
+ מ"ט.
+ נאמר כי 
+\begin_inset Formula $M$
+\end_inset
+
+ מחשבת את 
+\begin_inset Formula $f$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $w\in\Sigma_{1}^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $q_{0}w\vdash_{M}^{*}q_{ac}f\left(w\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שקילות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+ מכונות שמקבלות כקלט מחרוזות מתוך 
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+.
+ ונניח שהמושגים דחיה ואישור מוגדרים עבור 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+ שקולות אם לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $N$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+, ו
+\begin_inset Formula $M$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $W$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $N$
+\end_inset
+
+ דוחה את 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ מודלים של מכונות.
+ כלומר 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+)כל אחת( קבוצה של מכונות.
+ נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ לא חלש מ
+\begin_inset Formula $B$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $M\in B$
+\end_inset
+
+ קיימת מכונה 
+\begin_inset Formula $N\in A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+ שקולות.
+ נאמר ש
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ שקולות אם 
+\begin_inset Formula $A$
+\end_inset
+
+ לא חלש מ
+\begin_inset Formula $B$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ לא חלש מ
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+עוד מודלים
+\end_layout
+
+\begin_layout Section*
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+T
+\end_layout
+
+\begin_layout Standard
+זה המודל הסטנדרטי - כאשר לקלט יש נקודת התחלה שמאלית, שאי אפשר להגיע שמאלה
+ ממנה.
+\end_layout
+
+\begin_layout Section*
+מודל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+B
+\end_layout
+
+\begin_layout Standard
+יש לסרט המשך בצד שמאל, שבתחילת הפעולה מלא ברווחים.
+\end_layout
+
+\begin_layout Standard
+אם מפעילים את אותן פעולות על מודלים שונים ייתכן שנקבל תוצאה שונה, בגלל שיש
+ פעולות שונות.
+\end_layout
+
+\begin_layout Section*
+אבל האם המודלים שקולים?
+\end_layout
+
+\begin_layout Standard
+אם נותנים לי מכונה במודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+B
+\lang hebrew
+, האם יש מכונה אחרת במודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+T
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שעושה אותו דבר?
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+המודלים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+T
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+B
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שקולים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\textnormal{B}$
+\end_inset
+
+ לא חלש יותר מ
+\lang english
+T
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M_{T}=\left(Q_{T},\Sigma_{T},\Gamma_{T},\delta_{T},q_{0}^{T},q_{ac}^{T},q_{rej}^{T}\right)$
+\end_inset
+
+
+\series medium
+ מ"ט במודל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $M_{B}=\left(Q_{B},\Sigma_{B},\Gamma_{B},\delta_{B},q_{0}^{B},q_{ac}^{B},q_{rej}^{B}\right)$
+\end_inset
+
+ במודל
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+B
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שקולה ל
+\begin_inset Formula $M_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בה"כ 
+\begin_inset Formula $\$\notin\Gamma_{T}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma_{B}=\Gamma_{T}\cup\left\{ \$\right\} $
+\end_inset
+
+.
+ נוסיף את המצבים הבאים)השורה הראשונה משתכפלת עבור כל קלט אפשרי, והאחרונה
+ עבור כל מצב אפשרי(
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+selectlanguage{hebrew}
+\backslash
+inputencoding{cp1255}קלט
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב חדש
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פעולה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}^{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}^{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+L
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}^{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}^{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}^{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}^{T}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כך, 
+\begin_inset Formula $Q_{B}=Q_{T}\cup\left\{ q_{0}^{B},q_{1}^{B}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $q_{acc}^{B}=q_{ac}^{T}$
+\end_inset
+
+, ו
+\begin_inset Formula $q_{rej}^{B}=a_{rej}^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\textnormal{T}$
+\end_inset
+
+ לא חלש יותר מ
+\lang english
+B
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+כאן יש לנו בעיה - צריך איכשהו לבטא את הסרט האינסופי לשני הכיוונים בתוך סרט
+ אינסופי לכיוון אחד.
+ נקפל את הסרט, כך שכל משבצת תכיל שתי אותיות - של המכונה המקורית.
+ כל אות של המכונה החדשה תהיה שתי אותיות של המכונה המקורית.
+ נוסיף סימן דולר לנקודת ההתחלה כדי לזכור את נקודת הקיפול.
+\end_layout
+
+\begin_layout Standard
+יהיו לנו שתי טבלאות, אחת תסמן פעולות כאשר אנו משמאל לסרט המקורי, והשניה
+ כאשר אנו מימין)למרות שבשתיהן נפעל בצד הימני של הסרט, כי זה הצד היחיד שיש(
+ והן יהיו שיקוף אחת של השניה.
+ נצטרך גם לעבור בין שתי הטבלאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{T}=\Sigma_{G}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{\$}=\Gamma_{B}\cup\left\{ \$\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma_{T}=\left(\Gamma_{B}\times\Gamma_{\$}\right)\cup\Sigma_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+פעולות של 
+\begin_inset Formula $M_{T}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אתחול:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+במיקום הראש, אם מופיעה האות 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ להחליף ב
+\begin_inset Formula $\begin{array}{c}
+\alpha\\
+\$
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לזוז ימינה עד קצה הקלט, וכל תו 
+\begin_inset Formula $\beta$
+\end_inset
+
+ להחליף ב
+\begin_inset Formula $\begin{array}{c}
+\beta\\
+\_
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לחזור חזרה שמאלה עד סימון $.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המצבים של 
+\begin_inset Formula $M_{T}$
+\end_inset
+
+יכילו שני עותקים מכל מצב של 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+.
+ כלומר לכל מצב 
+\begin_inset Formula $a\in Q_{B}$
+\end_inset
+
+יהיה מצב 
+\begin_inset Formula $q\uparrow$
+\end_inset
+
+ ו
+\begin_inset Formula $q\downarrow$
+\end_inset
+
+ ב
+\begin_inset Formula $Q_{T}$
+\end_inset
+
+.
+ כשגומרים את האיתחול עוברים למצב 
+\begin_inset Formula $q_{0}\uparrow$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסתכל במעברים של 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $\delta_{B}\left(q,\alpha\right)=\left(p,\beta\right)$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $\Gamma_{\$}\ni x$
+\end_inset
+
+ 
+\begin_inset Formula $\delta_{T}\left(q\uparrow,\begin{array}{c}
+\alpha\\
+x
+\end{array}\right)=\left(p\uparrow,\begin{array}{c}
+\beta\\
+x
+\end{array}\right)$
+\end_inset
+
+, ו
+\begin_inset Formula $\delta_{T}\left(q\downarrow,\begin{array}{c}
+x\\
+\alpha
+\end{array}\right)=\left(p\downarrow,\begin{array}{c}
+x\\
+\beta
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\delta_{B}\left(q,\alpha\right)=\left(p,\textnormal{R}\right)$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x\in\Gamma_{\$}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{T}\left(q\uparrow,\begin{array}{c}
+\alpha\\
+x
+\end{array}\right)=\left(p\uparrow,\textnormal{R}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{T}\left(q\downarrow,\begin{array}{c}
+x\\
+\alpha
+\end{array}\right)=\left(p\downarrow,\textnormal{L}\right)$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $\delta_{T}\left(q\downarrow,\begin{array}{c}
+\alpha\\
+\$
+\end{array}\right)=\left(q\uparrow,\begin{array}{c}
+\alpha\\
+\$
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\delta_{B}\left(q,\alpha\right)=\left(p,\textnormal{L}\right)$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x\in\Gamma_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{T}\left(q\downarrow,\begin{array}{c}
+x\\
+\alpha
+\end{array}\right)=\left(p\downarrow,\textnormal{R}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{T}\left(q\uparrow,\begin{array}{c}
+\alpha\\
+x
+\end{array}\right)=\left(p\uparrow,\textnormal{L}\right)$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $\delta_{T}\left(q\uparrow,\begin{array}{c}
+\alpha\\
+\$
+\end{array}\right)=\left(p\downarrow,\textnormal{R}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+לשים לב
+\bar default
+: אנו מפרשים את זה בתור סרט מקופל, אבל מבחינה פורמלית זה סרט חד צדדי אחד.
+\end_layout
+
+\begin_layout Standard
+מכיוון שיש לנו שני מצבי אישור ושני מצבי דחייה, נבנה עוד מצב אישור שכל אחד
+ ממצבי האישור הקודמים יעביר אליו, ואותו דבר עם מעברי הדחיה.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1100 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R$
+\end_inset
+
+ חוג
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R\left[\lambda\right]$
+\end_inset
+
+ חוג הפולינומים
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ חוג)עם יחידה(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R\left(\left(x\right)\right)=\left\{ \sum\limits _{i=-n}^{\infty}a_{i}x^{i}\middle|a_{i}\in R\right\} $
+\end_inset
+
+ - טורי לורן מעל חוג 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R\left[\left[x\right]\right]=\left\{ \sum\limits _{i=0}^{\infty}a_{i}x^{i}\middle|a_{i}\in R\right\} $
+\end_inset
+
+ - טורי חזקות פורמליים מעל 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חיבור - ברור.
+ כפל:
+\begin_inset Formula 
+\[
+\left(\sum_{i=-n}^{\infty}a_{i}x^{i}\right)\left(\sum_{j=-m}^{\infty}b_{j}x^{j}\right)=\sum_{i,j}a_{i}b_{j}x^{i+j}=\sum_{k}\left(\underbrace{\sum_{i+j=k}a_{i}b_{j}}_{\textnormal{finite}}\right)x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $k$
+\end_inset
+
+, מכיוון ש
+\begin_inset Formula $i,j$
+\end_inset
+
+ חסומים מלמטה, יש מספר סופי של צירופים של 
+\begin_inset Formula $i,j$
+\end_inset
+
+ כך ש
+\begin_inset Formula $i+j=k$
+\end_inset
+
+, ולכן המקדמים של 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ סופיים.
+ לו היינו מנסים להגדיר את הטורים 
+\begin_inset Formula $\sum\limits _{i=-\infty}^{\infty}a_{i}x^{i}$
+\end_inset
+
+, לא היינו יכולים להכפיל אותם, כי היינו מקבלים סכומים אינסופיים במקדמים.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $R$
+\end_inset
+
+ תחום.
+ כל איבר הפיך ב
+\begin_inset Formula $R\left[x\right]$
+\end_inset
+
+ הוא סקלר הפיך.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nu:R\left(\left(x\right)\right)\to\mathbb{Z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nu\left(\sum a_{i}x^{i}\right)=\min_{i}\left\{ a_{i}\neq0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nu\left(2x+4x^{2}+\sum_{i=3}^{\infty}i!\cdot x^{i}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nu\left(x^{-2}+x^{-1}+x^{7}\right)=-2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ f\in R\left(\left(x\right)\right)\middle|\nu\left(f\right)\ge0\right\} =R\left[\left[x\right]\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nu\left(fg\right)=\nu\left(f\right)+\nu\left(g\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\nu\left(f+g\right)\ge\min\left(\nu\left(t\right),\nu\left(g\right)\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום, גם 
+\begin_inset Formula $R\left(\left(x\right)\right)$
+\end_inset
+
+ תחום, ולכן גם 
+\begin_inset Formula $R\left[\left[x\right]\right]$
+\end_inset
+
+ תחום.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $g_{0},g_{1},g_{2},...\in R\left[\left[x\right]\right]$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\sum\limits _{i=0}^{\infty}x^{i}g_{i}$
+\end_inset
+
+ מוגדר היטב, משום שהמקדם של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ בביטוי הנ"ל שווה למקדם של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ בביטוי 
+\begin_inset Formula $\sum\limits _{i=0}^{n}x^{i}g_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $f\in R\left[\left[x\right]\right]$
+\end_inset
+
+, 
+\begin_inset Formula $1-xf$
+\end_inset
+
+ הפיך.
+\begin_inset Formula 
+\[
+\left[\left(1-xf\right)^{-1}=\sum_{i=0}^{\infty}\left(xf\right)^{i}=\sum_{i=0}^{\infty}x^{i}f^{i}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\sum_{i=0}^{\infty}x^{i}f^{i}\right)\left(1-xf\right)=\sum_{i=0}^{\infty}x^{i}f^{i}-\sum_{i=0}^{\infty}x^{i+1}f^{i+1}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $D$
+\end_inset
+
+ חוג עם חילוק)כל האיברים חוץ מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הפיכים(.
+ אז גם 
+\begin_inset Formula $D\left(\left(x\right)\right)$
+\end_inset
+
+ חוג עם חילוק.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נוכיח שכל איבר 
+\begin_inset Formula $f$
+\end_inset
+
+ של 
+\begin_inset Formula $D\left[\left[x\right]\right]$
+\end_inset
+
+ עם 
+\begin_inset Formula $\nu\left(f\right)=0$
+\end_inset
+
+ הוא הפיך.
+\begin_inset Formula 
+\[
+f=\overbrace{a_{0}}^{\neq0}+a_{1}x+a_{2}x^{2}+...=a_{0}\left(1+a_{0}^{-1}a_{1}x+a_{0}^{-1}a_{2}x^{2}+...\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ הפיך ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ לפי הטענה, גם 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left(1+a_{0}^{-1}a_{1}x+a_{0}^{-1}a_{2}x^{2}+...\right)$
+\end_inset
+
+ הפיך.
+ לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ הפיך.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+האיבר הכללי בחוג 
+\begin_inset Formula $D\left[\left[x\right]\right]$
+\end_inset
+
+ נראה כך:
+\begin_inset Formula 
+\[
+f=a_{n}x^{n}+a_{n+1}x^{n+1}+...=a_{n}x^{n}\left(1+x\left(...\right)\right)
+\]
+
+\end_inset
+
+זה לא הפיך כי 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(1+x\left(...\right)\right)$
+\end_inset
+
+ הפיכים, אבל 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ לא הפיך.
+\end_layout
+
+\begin_layout Standard
+באופן דומה, לאיבר הכללי של 
+\begin_inset Formula $D\left(\left(\right)\right)$
+\end_inset
+
+יש אותה צורה בדיוק, פרט לזה ש
+\begin_inset Formula $n$
+\end_inset
+
+ עשוי להיות שלילי.
+ אבל - 
+\begin_inset Formula $x^{-1}\in D\left(\left(x\right)\right)$
+\end_inset
+
+ לפי הההגדרה ולכן כל איבר של 
+\begin_inset Formula $D\left(\left(x\right)\right)$
+\end_inset
+
+ הפיך.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה, אז גם 
+\begin_inset Formula $\mathbb{F}\left(\left(x\right)\right)$
+\end_inset
+
+ שדה.
+ )כי אם 
+\begin_inset Formula $R$
+\end_inset
+
+ קומוטטיבי אז גם 
+\begin_inset Formula $R\left(\left(x\right)\right)$
+\end_inset
+
+ קומוטטיביות(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נסתכל על שתי הבניות של פולינומים כפולים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbb{Q}\left[\left[x\right]\right]\left(\left(y\right)\right)\\
+||\\
+\left\{ \sum\limits _{j=-n}^{\infty}\left(\sum\limits _{i=0}^{\infty}a_{ij}x^{i}\right)y^{j}\right\} 
+\end{array}\qquad\subseteq\qquad\begin{array}{c}
+\mathbb{Q}\left(\left(y\right)\right)\left[\left[x\right]\right]\\
+||\\
+\left\{ \sum\limits _{i=0}^{\infty}\left(\sum\limits _{j=-n_{i}}^{\infty}a_{ij}y^{j}\right)x^{i}\right\} 
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החוגים שונים כי, למשל 
+\begin_inset Formula $\sum\limits _{i=0}^{\infty}y^{-i}x^{i}=\sum\limits _{i=-\infty}^{0}x^{-i}y^{i}$
+\end_inset
+
+ נמצא באגף ימין אבל לא באגף שמאל
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+1.1.113
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ מכפלה ישרה של חוגים
+\end_layout
+
+\begin_layout Standard
+נתונה משפחה של חוגים 
+\begin_inset Formula $\left\{ R_{\lambda}\middle|\lambda\in\Lambda\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המכפלה הישרה היא החוג
+\begin_inset Formula 
+\[
+\prod R_{\lambda}=\left\{ f:\Lambda\to\bigcup R_{\lambda}\middle|\forall_{\lambda\in\Lambda}f\left(\lambda\right)\in R_{\lambda}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה הסופי מקבלים וקטורים.
+\end_layout
+
+\begin_layout Section*
+הגדרת הפעולות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f+g\right)\left(\lambda\right)=f\left(\lambda\right)+g\left(\lambda\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f\cdot g\right)\left(\lambda\right)=f\left(\lambda\right)\cdot g\left(\lambda\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0_{\prod R_{\lambda}}\right)\left(\lambda\right)=0_{R_{\lambda}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1_{\prod R_{\lambda}}\right)\left(\lambda\right)=1_{R_{\lambda}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}\times\mathbb{Z}$
+\end_inset
+
+ - זוגות מ
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\prod_{\mathbb{N}}\mathbb{Z}$
+\end_inset
+
+ - סדרות עם מקדמים ב
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}\times\mathbb{Z}_{6}\times M_{2}\left(\left(\mathbb{R}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ 1,2,3\right\} \to\cup R_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\{ \left(f\left(1\right),f\left(2\right),f\left(3\right)\right)\middle|f\left(\lambda\right)\in R_{\lambda}\right\} 
+\]
+
+\end_inset
+
+דוגמה פרטית:
+\begin_inset Formula 
+\[
+\prod R_{2}=\left\{ f:\left\{ 1,2\right\} \to\bigcup R_{\lambda}\middle|\forall_{\lambda\in\Lambda}f\left(\lambda\right)\in R_{\lambda}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אידאלים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ חוג.
+\end_layout
+
+\begin_layout Itemize
+אידאל שמאלי הוא תת חבורה 
+\begin_inset Formula $L\le\left(R,+\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall_{a\in L}\forall_{x\in R}xa\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+איך לזכור: 
+\begin_inset Formula $\boxed{RL\subseteq L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אידאל ימני: 
+\begin_inset Formula $A\le\left(R,+\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall_{a\in A}\forall_{x\in R}ax\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $I$
+\end_inset
+
+ אידאל שמאלי וימני הוא נקרא אידאל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \textnormal{Ideal}\ar@{-}[ld]\ar@{-}[rd]\\
+\textnormal{Left Ideal}\ar@{-}[rd] &  & \textnormal{Right Ideal}\ar@{-}[ld]\\
+ & \textnormal{Subring}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\left\{ \begin{pmatrix}a & b\\
+0 & c
+\end{pmatrix}\middle|a,b,c\in\mathbb{C}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\begin{pmatrix}* & *\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\\
+0 & z
+\end{pmatrix}\begin{pmatrix}a & b\\
+0 & 0
+\end{pmatrix}=\begin{pmatrix}xa & xb\\
+0 & 0
+\end{pmatrix}\in L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כנ"ל מימין - לכן 
+\begin_inset Formula $L$
+\end_inset
+
+ אידאל.
+ לעומת זאת:
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}* & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 0\\
+0 & 0
+\end{pmatrix}\begin{pmatrix}x & y\\
+0 & z
+\end{pmatrix}=\begin{pmatrix}ax & ay\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $A$
+\end_inset
+
+ אינו אידאל
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\le R$
+\end_inset
+
+ - תת חוג
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L\le_{L}R$
+\end_inset
+
+ - אידאל שמאלי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L\le_{R}R$
+\end_inset
+
+ - אידאל ימני
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I\lhd R$
+\end_inset
+
+ - אידאל
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ 0\right\} =0\lhd R
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R$
+\end_inset
+
+ חוג כלשהו, 
+\begin_inset Formula $a\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ra=\left\{ xa\middle|x\in R\right\} $
+\end_inset
+
+ "אידיאל ראשי"
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ עצמו מקיים את האקסיומות של אידיאלים אבל בד"כ אינו נחשב לאידיאל.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $L$
+\end_inset
+
+ אידיאל שמאלי.
+ אם 
+\begin_inset Formula $1\in L$
+\end_inset
+
+, 
+\begin_inset Formula $L=R$
+\end_inset
+
+)כי 
+\begin_inset Formula $\forall_{x}x\cdot1\in L$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $L\neq R$
+\end_inset
+
+ אידיאל שמאלי, אז אין ב
+\begin_inset Formula $L$
+\end_inset
+
+ אף איבר הפיך משמאל.
+\begin_inset Formula 
+\[
+\forall_{\begin{array}{c}
+a\in L\\
+a\in R
+\end{array}}xa\in L
+\]
+
+\end_inset
+
+בפרט אפשר לבחור 
+\begin_inset Formula $a=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $1\in L$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{x\in R}x=x\cdot1\in L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פעולות
+\end_layout
+
+\begin_layout Standard
+ראינו שהחיתוך של משפחה של תת-חוגים הוא תת-חוג.
+\end_layout
+
+\begin_layout Itemize
+חיתוך משפחה של אידיאלים שמאליים הוא אידיאל שמאלי:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה 
+\series default
+
+\begin_inset Formula 
+\[
+R=M_{2}\left(\mathbb{C}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\begin{pmatrix}* & 0\\
+* & 0
+\end{pmatrix}\le_{R}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}* & *\\
+0 & 0
+\end{pmatrix}\le_{L}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\cap A=\begin{pmatrix}* & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+לא אידאל דו צדדי! כי ביצענו חיתוך של אידאל שמאלי עם אידאל ימני.
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $I_{1}\subset I_{2}\subset\cdots$
+\end_inset
+
+ שרשרת בת מניה של אידאלים.
+ אז 
+\begin_inset Formula $\bigcup I_{n}\lhd R$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+איחוד זה לא בהכרח תת חוג.
+ אם זה מוכל - אז כן
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{a\in\bigcup I_{n}}\exists_{m}a\in I_{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{x}xa,ax\in I_{m}\subseteq\bigcup I_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חיבור אידאלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{1}+I_{2}=\left\{ a_{1}+a_{2}\middle|\begin{array}{c}
+a_{1}\in I_{1}\\
+a_{2}\in I_{2}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,977 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $a\in M$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $1\gets k\gets n$
+\end_inset
+
+, 
+\begin_inset Formula $p\in\mathbb{N}$
+\end_inset
+
+.
+ התכונות הבאות שקולות:
+\end_layout
+
+\begin_layout Enumerate
+קיימת סביבה 
+\begin_inset Formula $U_{a}$
+\end_inset
+
+ וקיימת 
+\begin_inset Formula $g:U_{a}\to,\mathbb{R}^{n-k}$
+\end_inset
+
+ כזאת ש
+\begin_inset Formula $g\in C^{p}\left(U_{a}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{rank}g'=n-k$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in U_{a}$
+\end_inset
+
+ ו
+\begin_inset Formula $M\cap U_{a}=\left\{ x\in U_{a}\middle|g\left(x\right)=0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיימת סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ ב
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $M\cap V_{a}$
+\end_inset
+
+, כזאת שהיא הגרף של הפונציה 
+\begin_inset Formula $f:W\to\mathbb{R}^{n-k}$
+\end_inset
+
+, 
+\begin_inset Formula $W\subset\mathbb{R}^{k}$
+\end_inset
+
+ קבוצה פתוחה ו
+\begin_inset Formula $f\in C^{p}\left(W\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M\cap V_{a}=\left\{ \left(w,f\left(w\right)\right)\middle|w\in W\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיימת סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ ב
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $M\cap G_{a}$
+\end_inset
+
+, קבוצה פתוחה ב
+\begin_inset Formula $\Omega\subset\mathbb{R}^{k}$
+\end_inset
+
+ והומיאומוריזם 
+\begin_inset Formula $F\left(\Omega\right)=M\cap G_{a}$
+\end_inset
+
+ כזה ש
+\begin_inset Formula $F\in C^{p}\left(\Omega\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{rank}F'\left(t\right)=k$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(2\right)\Rightarrow\begin{array}{c}
+\left(1\right)\\
+\left(3\right)
+\end{array}$
+\end_inset
+
+ קל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(1\right)\Rightarrow\left(2\right)$
+\end_inset
+
+ משפט הפונקציה הסתומה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(3\right)\Rightarrow\left(2\right)$
+\end_inset
+
+ תהי 
+\begin_inset Formula $a\in M$
+\end_inset
+
+.
+ קיימת 
+\begin_inset Formula $F\left(t_{0}\right)=a:t_{0}\in\Omega$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+a=\left(a_{1},\dots a_{n}\right)\qquad F=\left(F_{1},\dots F_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Phi\left(t_{1},\dots t_{k}\right)=\left(F_{1}\left(t_{1}\dots t_{k}\right),\dots F_{k}\left(t_{1},\dots t_{k}\right)\right):\Omega\to\mathbb{R}^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\textnormal{rank}F'\left(t_{0}\right)=k$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $J_{\Phi}\left(t_{0}\right)\neq0$
+\end_inset
+
+.
+ לפי משפט הפונקציה ההפוכה, קיימת 
+\begin_inset Formula $U_{t_{0}}\subset\Omega$
+\end_inset
+
+ ו
+\begin_inset Formula $H\left(a_{1},\dots a_{k}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\Phi:U_{t_{0}}\to H\left(a_{1},\dots a_{k}\right)$
+\end_inset
+
+ דיפאומורפיזם.
+ נגדיר:
+\begin_inset Formula 
+\[
+F\left(\Phi^{-1}\left(w\right)\right),\qquad w\in H\left(a_{1},\dots a_{k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left(\Phi,F_{k+1},F_{k+2},\dots F_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(\Phi^{-1}\left(w\right)\right)=\left(w,\underbrace{F_{k+1}\left(\Phi^{-1}\left(w\right)\right),\dots F_{n}\left(\Phi^{-1}\left(w\right)\right)}_{f\left(w\right)}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(w,f\left(w\right)\right)\qquad w\in H\left(a_{1},\dots a_{k}\right)\equiv W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(\Phi^{-1}\left(\underbrace{H\left(a_{1},\dots a_{k}\right)}_{W\subset\mathbb{R}^{k}}\right)\right)=\boxed{F\left(U_{t_{0}}\right)}=M\cap V_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+בסביבת הנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ ב
+\begin_inset Formula $M$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+F^{-1}\left(x_{1},\dots x_{n}\right)=\Phi^{-1}\left(x_{1},\dots x_{k}\right)\in C^{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(F_{\alpha},\Omega_{\alpha}\right):M=\bigcup_{\alpha}F_{\alpha}\left(\Omega_{\alpha}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $F_{\alpha}$
+\end_inset
+
+ הן מפות של המשטח.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא אטלס
+\end_layout
+
+\begin_layout Section*
+העתקות מעבר
+\end_layout
+
+\begin_layout Standard
+יהיו שתי מפות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(F_{i},\Omega_{i}\right),\left(F_{j},\Omega_{j}\right)
+\]
+
+\end_inset
+
+כך שהחיתוך לא ריק
+\begin_inset Formula 
+\[
+E=F_{i}\left(\Omega_{i}\right)\cap F_{j}\left(\Omega_{j}\right)\neq\emptyset
+\]
+
+\end_inset
+
+כלומר הן מתארות חלק משותף 
+\begin_inset Formula $E$
+\end_inset
+
+ במשטח.
+\end_layout
+
+\begin_layout Standard
+נגדיר העתקות מעבר:
+\begin_inset Formula 
+\[
+T_{ji}=F_{j}^{-1}\circ F_{i}:F_{i}^{-1}\left(E\right)\to F_{j}^{-1}\left(E\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{ij}=T_{ji}^{-1}=F_{i}^{-1}\circ F_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(F_{i},\Omega_{i}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(F_{j},\Omega_{j}\right)$
+\end_inset
+
+ שתי מפות ונניח ש
+\begin_inset Formula $E=F_{i}\left(\Omega_{i}\right)\cap F_{j}\left(\Omega_{j}\right)\neq\emptyset$
+\end_inset
+
+.
+ אזי ההעתקה 
+\begin_inset Formula $T_{ji}=F_{j}^{-1}\circ F_{i}$
+\end_inset
+
+ היא 
+\begin_inset Formula $C^{p}$
+\end_inset
+
+ דיפאומורפיזם.
+\end_layout
+
+\begin_layout Standard
+]
+\begin_inset Formula $T_{ji}$
+\end_inset
+
+, 
+\begin_inset Formula $\det T'_{ji}\neq0$
+\end_inset
+
+ שכן 
+\begin_inset Formula $T_{ji}$
+\end_inset
+
+ דיפאומורפיזם[
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $t\in F_{i}^{-1}\left(E\right)$
+\end_inset
+
+, 
+\begin_inset Formula $F_{i}\left(t\right)=x$
+\end_inset
+
+, 
+\begin_inset Formula $F_{j}\left(u\right)=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיימת סביבה 
+\begin_inset Formula $M\cap V_{x}$
+\end_inset
+
+: 
+\begin_inset Formula $F_{j}^{-1}\in C^{p}\left(M\cap V_{x}\right)$
+\end_inset
+
+.
+ לפי רציפות, קיימת סביבה 
+\begin_inset Formula $B_{t}$
+\end_inset
+
+: 
+\begin_inset Formula $F_{i}\left(B_{t}\right)\subset M\cap V_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+במקום סביבה 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, תמיד ניתן לבחור כדור יחידה, ואז 
+\begin_inset Formula $M=\bigcup\limits _{\alpha}F_{\alpha}\left(B\left(0,1\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מרחב משיק
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma:\gamma\left(t\right)=\left(\gamma_{1}\left(t\right),\dots\gamma_{n}\left(t\right)\right)\qquad t\in I\subset R
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\textnormal{rank}\gamma'\left(t\right)=1$
+\end_inset
+
+: לכל 
+\begin_inset Formula $t\in I$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma'\left(t\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+וקטור 
+\begin_inset Formula $\gamma'\left(t\right)=\left(\gamma'_{1}\left(t\right),\dots\gamma'_{n}\left(t\right)\right)$
+\end_inset
+
+ נקרא וקטור משיק לעקום 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $M\subset\mathbb{R}^{n}$
+\end_inset
+
+ משטח 
+\begin_inset Formula $k$
+\end_inset
+
+-ממדי מ
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $x\in M$
+\end_inset
+
+.
+ וקטור 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+ נקרא וקטור משיק ל
+\begin_inset Formula $M$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ אם קיים עקום 
+\begin_inset Formula $\gamma:I\to\mathbb{R}^{n}$
+\end_inset
+
+ וקיימת 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\gamma\left(t\right)\in M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in I$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\left(t_{0}\right)=x$
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma'\left(t_{0}\right)=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אוסף של כל וקטורי משיק ל
+\begin_inset Formula $M$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ נקרא מרחב משיק ל
+\begin_inset Formula $M$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ ומסמנים אותו על ידי 
+\begin_inset Formula $T_{x}\left(M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר קבוצות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+g: &  & M\cap U_{x_{0}}=\left\{ g\left(x\right)=0\right\} ,\textnormal{rank}g'=n-k\\
+\left(w_{0},f\left(w_{0}\right)\right)=x_{0} &  & M\cap V_{x_{0}}=\left\{ \left(w,f\left(w\right)\right)\right\} \\
+F\left(t_{0}\right)=x_{0} &  & M\cap G_{x_{0}}=F\left(\Omega\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Im}\left(F'\left(t_{0}\right)\right)=\left\{ F'\left(t_{0}\right)y\middle|y\in\mathbb{R}^{k}\right\} \qquad\ker\left(g'\left(x_{0}\right)\right)=\left\{ h\in\mathbb{R}^{n}\middle|g'\left(x_{0}\right)h=0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{graph}\left(f'\left(x_{0}\right)\right)=\left\{ \xi,f'\left(w_{0}\right)\xi\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F'\left(t_{0}\right)e_{1},\dots F'\left(t_{0}\right)e_{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Im}F'\left(t_{0}\right)=\textnormal{span}\left(F'\left(t_{0}\right)e_{1},\dots F'\left(t_{0}\right)e_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\begin_inset Formula 
+\[
+Tx_{0}\left(M\right)=\textnormal{graph}\left(f'\left(w_{0}\right)\right)=\textnormal{Im}F'\left(t_{0}\right)=\ker\left(g'\left(x_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{j}\left(u\right)=F_{i}\left(T_{ij}\left(u\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F'_{j}\left(u_{0}\right)=F'_{i}\left(T_{ij}\left(u_{0}\right)\right)T'_{ij}\left(u_{0}\right)=F_{i}'\left(t_{0}\right)T'_{ij}\left(u_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח:
+\begin_inset Formula 
+\[
+T_{x_{0}}\left(M\right)\subset\ker\left(g'\left(x_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{graph}f'\left(w_{0}\right)\subset Tx_{0}\left(M\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Im}F'\left(t_{0}\right)\subset T_{x_{0}}\left(M\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $h\in T_{x_{0}}\left(M\right)$
+\end_inset
+
+.
+ קיים עקום 
+\begin_inset Formula $\gamma:I\to\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{0}\in I$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\gamma'\left(t_{0}\right)=h\qquad\gamma\left(t_{0}\right)=x_{0}
+\]
+
+\end_inset
+
+ברציפות, קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כזה שלכל 
+\begin_inset Formula $t\in\left(t_{0}-\delta,t_{0}+\delta\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ מוכל בסביבה של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $M$
+\end_inset
+
+ המתאורת על ידי 
+\begin_inset Formula $g\left(x\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(\gamma\left(t\right)\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left(t_{0}-\delta,t_{0}+\delta\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $g'\left(\gamma\left(t_{0}\right)\right)\gamma'\left(t_{0}\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $g'\left(x_{0}\right)h=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ כזה ש
+\begin_inset Formula $w_{0}+t\xi\in W$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left(-\epsilon,\epsilon\right)$
+\end_inset
+
+.
+ נגדיר
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(w_{0}+t\xi,f\left(w_{0}+t\xi\right)\right)\qquad t\in\left(-\epsilon,\epsilon\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma'\left(0\right)=\boxed{\left(\xi,f'\left(w_{0}\right)\xi\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(0\right)=\left(w_{0},f\left(w_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\subset\mathbb{R}^{k}$
+\end_inset
+
+ קבוצה פתוחה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{T_{x}\left(M\right)=\mathbb{R}^{k}}\qquad\boxed{T_{x}\left(\mathbb{R}^{k}\right)=\mathbb{R}^{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\left(\varphi\left(u,v\right),\psi\left(u,v\right),\chi\left(u,v\right),\left(u,v\right)\right)\in D
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r'_{u}\left(u,v\right)=\left(\varphi'_{u}\left(u,v\right),\psi'_{u}\left(u,v\right),\chi'_{u}\left(u,v\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r'_{v}\left(u,v\right)=\left(\varphi'_{v}\left(u,v\right),\psi'_{v}\left(u,v\right),\chi'_{v}\left(u,v\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{0}=r\left(u_{0},v_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{x_{0}}\left(M\right)=\textnormal{span}\left(r'_{u}\left(u_{0},v_{0}\right),r'_{v}\left(u_{0},v_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

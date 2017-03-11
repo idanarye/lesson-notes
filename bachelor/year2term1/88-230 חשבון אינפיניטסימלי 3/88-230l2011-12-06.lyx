@@ -1,0 +1,1059 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+פונקציונל לינארי על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ הוא פונקציה רציפה
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L$
+\end_inset
+
+ פ"ל על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+, צורתו היא 
+\begin_inset Formula $Lh=h\cdot a$
+\end_inset
+
+)עבור 
+\begin_inset Formula $a\in\mathbb{R}^{k}$
+\end_inset
+
+ יחיד(.
+\begin_inset Formula 
+\[
+h,h'\in\mathbb{R}^{k},\|\cdot\|=\|\cdot\|_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|Lh-Lh'\right|=\left|L\left(h-h'\right)\right|=\left|\left(h-h'\right)a\right|
+\]
+
+\end_inset
+
+לפי א"ש קושי שוורץ:
+\begin_inset Formula 
+\[
+\le\|h-h'\|\|a\|\xrightarrow[h'\to h]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+רציפות בכל נקודה 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפיינו רציפות במ"ש על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון, ו
+\begin_inset Formula $a\ne0$
+\end_inset
+
+)אם 
+\begin_inset Formula $a=0$
+\end_inset
+
+, 
+\begin_inset Formula $L=0$
+\end_inset
+
+ והכל טריוויאלי( נבחר 
+\begin_inset Formula $\delta=\cfrac{\epsilon}{\|a\|}$
+\end_inset
+
+ ואז, כאשר 
+\begin_inset Formula $\|h'-h\|<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $\left|Lh-Lh'\right|<\delta\|a\|=\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+פונקציה ממשית 
+\begin_inset Formula $f$
+\end_inset
+
+ המוגדרת בסביבת הנק' הנתונה 
+\begin_inset Formula $x\in\mathbb{R}^{k}$
+\end_inset
+
+ היא דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+ אם קיים פ"ל 
+\begin_inset Formula $L$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)=Lh+o\left(\|h\|\right)$
+\end_inset
+
+ פונקציהשל 
+\begin_inset Formula $h$
+\end_inset
+
+, 
+\begin_inset Formula $h\to\varphi\left(h\right)$
+\end_inset
+
+, המקיימת 
+\begin_inset Formula $\varphi\left(0\right)=0,\cfrac{\varphi\left(h\right)}{\|h\|}\xrightarrow[h\to0]{}0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+ראינו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $\left.\nabla f\right|_{x}$
+\end_inset
+
+ קיים, ומתקיימת הנוסחה 
+\begin_inset Formula $\boxed{\left.df\right|_{x}h=h\cdot\left.\nabla f\right|_{0}}=\sum\limits _{i=1}^{k}\left.\cfrac{\partial f}{\partial x_{i}}\right|_{x}h_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=\left.df\right|_{x}=\cdots=df\left(x\right)$
+\end_inset
+
+ נקבע באופן יחיד, ונקרא הדיפרנציאל של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תנאי מספיק לדיפרנציאביליות
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה ממשית המוגדרת בסביבה של נק' 
+\begin_inset Formula $x$
+\end_inset
+
+ נתונה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+, ו
+\bar under
+נניח
+\bar default
+ ש
+\begin_inset Formula $\nabla f$
+\end_inset
+
+ קיימת בסביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+ ורציפה בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+דיפרנציאבילית בנק'
+\bar default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ )ו
+\begin_inset Formula $\left.df\right|_{x}h=h\cdot\left.\nabla f\right|_{x}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבה 
+\begin_inset Formula $B\left(x,r\right)$
+\end_inset
+
+)
+\begin_inset Formula $r>0$
+\end_inset
+
+(.
+ ניקח 
+\begin_inset Formula $h\in\mathbb{R}^{k}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\|h\|<r$
+\end_inset
+
+)על כן 
+\begin_inset Formula $x+h\in B\left(x,r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\|\left(x+h\right)-x\|=\|h\|<r$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)$
+\end_inset
+
+ מוגדר היטב.
+ נגדיר:
+\begin_inset Formula 
+\[
+h^{0}=0,h^{i}=\left(h_{1},...h_{i},0,...0\right)\hspace{1em}i<k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h^{k}=\left(h_{1},...h_{k}\right)=h
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\|h^{i}\|=\left(\sum_{j=1}^{i}\left|h_{j}\right|^{2}\right)^{\unitfrac{1}{2}}\le\left(\sum_{j=1}^{k}\left|h_{j}\right|^{2}\right)^{\unitfrac{1}{2}}\doteqdot\|h\|<r
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $x+h\in B\left(x,r\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(x+h\right)-f\left(x\right)=f\left(x+h^{k}\right)-f\left(x+h^{0}\right)=\sum_{i=1}^{k}\left[f\left(x+h^{i}\right)-f\left(x+h^{i-1}\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i=1}^{k}\left[f\left(x+h^{i-1}+h_{i}e^{i}\right)-f\left(x+h^{i-1}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נגדיר
+\bar default
+:
+\begin_inset Formula 
+\[
+F\left(t\right)=f\left(x+h^{i-1}+te^{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $t$
+\end_inset
+
+ ממשי, 
+\begin_inset Formula $t$
+\end_inset
+
+ בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $h$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\|\left(x+h^{i-1}+te^{i}\right)-x\|=\|h^{i-1}+te^{i}\|=\left(\sum_{j=1}^{i-1}\left|h_{j}\right|^{2}+t^{2}\right)^{\unitfrac{1}{2}}\le\left(\sum_{j=1}^{i}\left|h_{j}\right|^{2}\right)^{\unitfrac{1}{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t^{2}\le h_{i}^{2},\hspace{1em}h^{i}=\left(h_{1},...h_{i-1},0,...0)\right)+\underset{=h_{i}e^{i}}{\underbrace{\left(0,...0,h_{i},0,...0\right)}}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ מוגדרת היטב עבור 
+\begin_inset Formula $t$
+\end_inset
+
+ בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $h_{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F_{i}'$
+\end_inset
+
+ קיימת עבור 
+\begin_inset Formula $t$
+\end_inset
+
+ים בסביבת 
+\begin_inset Formula $t=0$
+\end_inset
+
+)לפי הנחת המשפט ש
+\begin_inset Formula $\cfrac{\partial f}{\partial x_{i}}$
+\end_inset
+
+ קיימת בסביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+(.
+ על פי משפט הערך הממוצע לפונקציות במשתנה אחד, קיימת נקודה בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $h_{i}$
+\end_inset
+
+)
+\begin_inset Formula $\theta_{i}h_{i}$
+\end_inset
+
+ עם 
+\begin_inset Formula $0\le\theta_{i}\le1$
+\end_inset
+
+ מתאים( כך ש
+\begin_inset Formula $\boxed{F_{i}\left(h_{i}\right)-F_{i}\left(0\right)=h_{i}F'\left(\theta_{i}h_{i}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{i}'\left(t\right)=\left.\cfrac{\partial f}{\partial x_{i}}\right|_{x+h^{i-1}+t}\hspace{1em}F_{i}'\left(\theta_{i}h_{i}\right)=\cfrac{\partial f}{\partial x_{i}}\left(x+h^{i-1}+\theta_{i}h_{i}\right)=\cfrac{\partial f}{\partial x_{i}}\left(x\right)+q_{i}\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q_{i}\left(h\right)\doteqdot\cfrac{\partial f}{\partial x_{i}}\left(x+h^{i-1}+\theta_{j}h_{i}\right)-\cfrac{\partial f}{\partial x_{i}}\left(x\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+f\left(x+h\right)=\sum_{i=1}^{k}\left[F_{i}\left(h_{i}\right)-F_{i}\left(0\right)\right]=\sum_{i=1}^{k}h_{i}F_{i}'\left(\theta_{i}h_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i=1}^{k}h_{i}\cfrac{\partial f}{\partial x_{i}}\left(x\right)+\sum_{i=1}^{k}h_{i}q_{i}\left(h\right)=h\cdot\left.\nabla f\right|_{x}+h\cdot q\left(h\right)=Lh+\varphi\left(h\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לגמור את הוכחת הדיפרנציאביליות של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, נשאר להוכיח ש
+\begin_inset Formula $\varphi\left(h\right)=o\left(\|h\|\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi\left(0\right)=0$
+\end_inset
+
+ טריוויאלי עבור 
+\begin_inset Formula $h\ne0$
+\end_inset
+
+ עם נורמה קטנה.
+\begin_inset Formula 
+\[
+\cfrac{\left|\varphi\left(h\right)\right|}{\|h\|}=\cfrac{\left|h\cdot q\left(h\right)\right|}{\|h\|}\le\cfrac{\|h\|\|q\left(h\right)\|}{\|h\|}=i\le k
+\]
+
+\end_inset
+
+בגלל רציפות , 
+\begin_inset Formula $q_{i}\left(h\right)\xrightarrow[h\to0]{}0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\|q\left(h\right)\|\xrightarrow[h\to0]{}0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\cfrac{\varphi\left(h\right)}{\|h\|}\xrightarrow[h\to0]{}0$
+\end_inset
+
+.
+ מש"ל.
+\end_layout
+
+\begin_layout Part*
+תכונות בסיסיות של דיפרנציאביליות
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות ממשיות המוגדרות בסביבה של נק' נתונה 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ נניח ששתיהן דיפרנציאביליות בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( 
+\begin_inset Formula $f+\lambda g$
+\end_inset
+
+)
+\begin_inset Formula $\lambda$
+\end_inset
+
+ קבוע( דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left.d\left(f+\lambda g\right)\right|_{x}=\left.df\right|_{x}+\lambda\left.dg\right|_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $fg$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $\left.d\left(fg\right)\right|_{x}=f\left(x\right)\left.dg\right|_{x}+g\left(x\right)\left.df\right|_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( אם 
+\begin_inset Formula $g\left(0\right)\ne0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\cfrac{f}{g}$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, ו
+\begin_inset Formula $\left.d\left(\cfrac{f}{g}\right)\right|_{x}=\cfrac{1}{g\left(x\right)^{2}}\left[g\left(x\right)\left.df\right|_{x}-f\left(x\right)\left.dg\right|_{x}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F\left(x,y\right)=\cfrac{\arctan\left(\cfrac{y}{x}\right)}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+dF=\cfrac{1}{\left(x^{2}+y^{2}\right)^{2}}\left[\left(x^{2}+y^{2}\right)d\arctan\left(\cfrac{y}{x}\right)-\arctan\left(\cfrac{y}{x}\right)d\left(x^{2}+y^{2}\right)\right]h
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\left(x^{2}+y^{2}\right)^{2}}\left[\left(x^{2}+y^{2}\right)h\nabla\arctan\left(\cfrac{y}{x}\right)h\cdot\nabla\left(x^{2}+y^{2}\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\left(x^{2}+y^{2}\right)^{2}}\left\{ \left(x^{2}+y^{2}\left[h_{1}\cfrac{-\cfrac{y}{x^{2}}}{1+\left(\cfrac{y}{x}\right)^{2}}+h_{2}\cfrac{\cfrac{1}{x}}{1+\left(\cfrac{y}{x}\right)^{2}}\right]-\arctan\left(\cfrac{y}{x}\right)\left[h_{1}2x+h_{2}2y\right]\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+כלל השרשרת
+\end_layout
+
+\begin_layout Standard
+נתונה פונקציה ממשית 
+\begin_inset Formula $f$
+\end_inset
+
+, דיפרנציאבילית בנק' נתונה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ נתונה פונקציה וקטורית 
+\begin_inset Formula $x\left(\cdot\right):\left(t_{0}-\delta,t_{0}+\delta\right)$
+\end_inset
+
+)של המשתנה היחיד 
+\begin_inset Formula $t$
+\end_inset
+
+ הממשי( עם טווח מוכל ב
+\begin_inset Formula $B\left(x^{0},r\right)$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $x'\left(t_{0}\right)$
+\end_inset
+
+ קיימתץ
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אזי
+\bar default
+: 
+\begin_inset Formula $f\circ x\doteqdot f\left(x\left(\cdot\right)\right)$
+\end_inset
+
+ גזירה בנק' 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, ונכונה הנוסחה: 
+\begin_inset Formula $\left(f\circ x\right)'\left(t_{0}\right)=\left.df\right|_{x}x'\left(t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ 
+\begin_inset Formula $x'\left(t_{0}\right)$
+\end_inset
+
+ מוגדר כרגיל ע"י 
+\begin_inset Formula $x'\left(t_{0}\right)=\lim\limits _{t\to t_{0}}\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}$
+\end_inset
+
+)כאשר הגבול קיים(..
+ קיום הנגזרת 
+\begin_inset Formula $x'\left(t_{0}\right)$
+\end_inset
+
+ שקול לקיום כל הנגזרות של הרכיבים בנק' 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, ז"א 
+\begin_inset Formula 
+\[
+x_{t}\left(t_{0}\right)=\lim_{t\to t_{0}}\cfrac{x_{i}\left(t\right)-x_{i}\left(t_{0}\right)}{t-t_{0}}\forall i=1,...k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f\circ x\right)'\left(t_{0}\right)=\left.df\right|_{x}x'\left(t_{0}\right)=x'\left(t_{0}\right)\cdot\left.\nabla f\right|_{x^{0}}=\sum_{i=1}^{k}\cfrac{\partial f}{\partial x_{i}}\left(x_{=x\left(t_{0}\right)}^{0}\right)x_{i}'\left(t_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\arctan\left(\cfrac{y}{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=\left(x,y\right)\left(t\right)=\left(R\cos t,R\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f\circ x\right)\left(t\right)=\arctan\left(\cfrac{R\sin t}{R\cos t}\right)=\arctan\left(\tan t\right)=t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f\circ x\right)'\left(t\right)=1
+\]
+
+\end_inset
+
+מאידך, לפי כלל השרשרת
+\begin_inset Formula 
+\[
+\left(f\circ x\right)'\left(t\right)=\left.\cfrac{-y}{x^{2}+y^{2}}\right|_{\left(R\cos t,R\sin t\right)'}\left(-R\sin t\right)+\cfrac{x}{x^{2}+y^{2}}\left(R\cos t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\left(-R\sin t\right)\left(-R\sin t\right)}{R^{2}}+\cfrac{\left(R\cos t\right)\left(R\cos t\right)}{R^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1249 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תכנות דינמי
+\end_layout
+
+\begin_layout Section*
+מכפלת מטריצות
+\end_layout
+
+\begin_layout Standard
+מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ - גודל 
+\begin_inset Formula $p\times q$
+\end_inset
+
+.
+ מטריצה 
+\begin_inset Formula $B$
+\end_inset
+
+ - גודל 
+\begin_inset Formula $q\times r$
+\end_inset
+
+.
+ מס' הפעולות להכפלה: 
+\begin_inset Formula $O\left(pqr\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+3
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{p_{0}\times p_{1}}{M_{1}}\cdot\underset{p_{1}\times p_{2}}{M_{2}}\cdot\underset{p_{2}\times p_{3}}{M_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+כמה פעולות דרושות?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{0}p_{1}p_{2}+p_{1}p_{2}p_{3}
+\]
+
+\end_inset
+
+מכפלת מטריצות היא אסוציאטיבית, אז אפשר לשנות את הסדר:
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{100\times3}{M_{1}}\cdot\underset{3\times100}{M_{2}}\cdot\underset{100\times2}{M_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נעשה 
+\begin_inset Formula $\left(M_{1}M_{2}\right)M_{3}$
+\end_inset
+
+ מספר הפעולות יהיה
+\begin_inset Formula 
+\[
+100\cdot3\cdot100+100\cdot100\cdot2=50000
+\]
+
+\end_inset
+
+אבל אם נעשה 
+\begin_inset Formula $M_{1}\left(M_{2}M_{3}\right)$
+\end_inset
+
+ מספר הפעולות יהיה
+\begin_inset Formula 
+\[
+3\cdot100\cdot2+100\cdot3\cdot2=1200
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בעיית מכפלת שרשרת מטריצות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+קלט 
+\begin_inset Formula $\underset{p_{0}\times p_{1}}{M_{1}},\underset{p_{1}\times p_{2}}{M_{2}},...\underset{p_{n-1}\times p_{n}}{M_{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פלט )מס' הפעולות הדרושות ב(סידור הסוגריים האופטימלי להפכלת מטריצות 
+\begin_inset Formula $M_{1}\cdot...\cdot M_{n}$
+\end_inset
+
+)אופטימלי = מינימום פעולות(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נעבור על כל סידור סוגריים חוקי ונבדוק את מס' הפעולות הדרושות עם הסידור.
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות.
+ האפשרויות להכפלה הן: 
+\begin_inset Formula 
+\[
+\left(\left(M_{1}M_{2}\right)\left(M_{3}M_{4}\right)\right),\left(\left(\left(M_{1},M_{2}\right)M_{3}\right)M_{4}\right),\left(\left(M_{1}\left(M_{2}M_{3}\right)\right)M_{4}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(M_{1}\left(\left(M_{2}M_{3}\right)M_{4}\right)\right),\left(M_{1}\left(M_{2}\left(M_{3}M_{4}\right)\right)\right)
+\]
+
+\end_inset
+
+נניח שנרצה להכפיל את הסידור הראשון.
+ נבנה עץ:
+\begin_inset Formula 
+\[
+\underset{p_{0}p_{2}p_{4}}{\underbrace{\left(\underset{p_{0}p_{1}p_{2}}{\underbrace{\left(M_{1}M_{2}\right)}}\underset{p_{2}p_{3}p_{4}}{\underbrace{\left(M_{3}M_{4}\right)}}\right)}}
+\]
+
+\end_inset
+
+וכן הלאה - לכל סידור יש עץ.
+\end_layout
+
+\begin_layout Subsubsection*
+כמה סידורים יש?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הערה
+\bar default
+: לכל עץ בינרי שלם עם 
+\begin_inset Formula $n$
+\end_inset
+
+ עלים יש סידור סוגריים)עבור 
+\begin_inset Formula $M_{i},...M_{n}$
+\end_inset
+
+( חוקי.
+\end_layout
+
+\begin_layout Standard
+לכן, מס' סידורי הסוגריים = מס' העצים השלמים עם 
+\begin_inset Formula $n$
+\end_inset
+
+ עלים = מס' קטלן ה
+\begin_inset Formula $n$
+\end_inset
+
+י 
+\begin_inset Formula $\approx$
+\end_inset
+
+ 
+\begin_inset Formula $4^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מדובר על סדר גודל אקפוננציאל - נרצה פתרון יותר יעיל.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נסתכל על הבעיה הפוך - מההכפלה האחרונה להכפלות הקטנות.
+ הפעולה האחרונה שאנו עושים היא הכפלה של שתי מטריצות - 
+\begin_inset Formula $\left(\left(M_{1}...M_{k}\right)\left(M_{k+1}...M_{n}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפעולה האחרונה שאנו מבצעים היא הכפלה שעלותה 
+\begin_inset Formula $p_{0}p_{k}p_{n}$
+\end_inset
+
+.
+ איזה 
+\begin_inset Formula $k$
+\end_inset
+
+ עלינו לבחור?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+סימון
+\bar default
+: 
+\begin_inset Formula $m\left(1,n\right)$
+\end_inset
+
+ - מס' הפעולות הדרושות להכפלת 
+\begin_inset Formula $M_{1},...M_{n}$
+\end_inset
+
+ בסידור הסוגריים האופטימלי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+נסמן
+\bar default
+: 
+\begin_inset Formula $M_{1}M_{2}...\left(M_{i}...M_{j}\right)M_{j+1}...M_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $m\left(i,j\right)$
+\end_inset
+
+=מספר הפעולות הדרושות להכפלת 
+\begin_inset Formula $M_{i}...M_{j}$
+\end_inset
+
+ בסידור סוגריים אופטימלי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m\left(i,j\right)=\begin{cases}
+0 & i=j\\
+\min_{i\le k\le j-1}\left\{ m\left(i,k\right)+m\left(k+1,j\right)+p_{i-1}p_{k}p_{j}\right\}  & j>i
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את הפונקציה 
+\begin_inset Formula $m\left(i,j\right)$
+\end_inset
+
+ כדי לחשב את הנוסחה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Mul(i,j)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if i=j return 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x
+\begin_inset Formula $\gets\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for k=i to j-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y
+\begin_inset Formula $\gets$
+\end_inset
+
+Mul(i,k)+Mul(k+1,j)+
+\begin_inset Formula $p_{i-1}p_{k}p_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if y<x
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x
+\begin_inset Formula $\gets$
+\end_inset
+
+y
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return(x)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+התשובה לבעיה - 
+\begin_inset Formula $Mul\left(1,n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+זמן ריצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+ = זמן הריצה של 
+\begin_inset Formula $Mul$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור קלט.
+ 
+\begin_inset Formula $n=j-i+1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)=\begin{cases}
+1 & n=1\\
+\sum_{k=1}^{n-1}\left[T\left(k\right)+T\left(n-k\right)+1\right] & n>1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(n\right)=\sum_{k=1}^{n-1}\left(T\left(k\right)+T\left(n-1\right)+1\right)=\sum_{k=1}^{n-1}T\left(k\right)+\sum_{k=1}^{n-1}T\left(n-k\right)+\left(n-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)=2\sum_{k=1}^{n-1}T\left(n\right)+\left(n-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n-1\right)=2\sum_{k=1}^{n-2}T\left(k\right)+\left(n-2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)-T\left(n-1\right)=2T\left(n-1\right)+1\Rightarrow T\left(n\right)=3T\left(n-1\right)+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)\ge3T\left(n-1\right)\ge3^{2}T\left(n-2\right)>...>3^{i}T\left(n-i\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(n\right)>3^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עדין קיבלנו זמן ריצה אקספוננציאלי!
+\end_layout
+
+\begin_layout Subsection*
+אז מה הבעיה?
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שאנחנו עדיין מחשבים את הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mul
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור אותם ערכים יותר מפעם אחת, כשבסופו של דבר מספר האיברים שרוצים לחשב הוא
+ 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מטרה
+\end_layout
+
+\begin_layout Standard
+לחשב את 
+\begin_inset Formula $m\left(1,n\right)$
+\end_inset
+
+ ונעזר בחישובי 
+\begin_inset Formula $m\left(i,j\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\le i\le j\le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון - תכנות דינאמי
+\end_layout
+
+\begin_layout Standard
+נשתמש במטריצה 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ האלכסון הוא אפס, והמשולש התחתון)שבו 
+\begin_inset Formula $j<i$
+\end_inset
+
+( לא מעניין אותנו.
+ הפתרון יהיה בפינה 
+\begin_inset Formula $1n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתכנות דינאמי, נרצה שכאשר נבוא לחשב ערך, כל הערכים שהוא תלוי בהם כבר יהיו
+ מחושבים.
+ כל איבר אצלנו תלוי באיברים שנמצאים משמאלו ומתחתיו, לכן נרצה לחשב אותם קודם.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Mul
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i=1 to n m(i,i)
+\begin_inset Formula $\gets$
+\end_inset
+
+0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for diff=1 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i=1 to n-diff
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+j
+\begin_inset Formula $\gets$
+\end_inset
+
+i+diff
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+x
+\begin_inset Formula $\gets\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for k=i to j-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y
+\begin_inset Formula $\gets$
+\end_inset
+
+m(i,k)+m(k+1,j)+
+\begin_inset Formula $p_{i-1}p_{k}p_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if y<x
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+x
+\begin_inset Formula $\gets$
+\end_inset
+
+y
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+s(i,j)
+\begin_inset Formula $\gets$
+\end_inset
+
+k
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+m(i,j)
+\begin_inset Formula $\gets$
+\end_inset
+
+x
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+זמן ריצה
+\end_layout
+
+\begin_layout Standard
+זמן הריצה הוא 
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+, שכן יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לולאות שכל אחת רצה עד 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים, ו
+\begin_inset Formula $\Omega\left(n^{2}\right)$
+\end_inset
+
+, שכן חייבים לרוץ על כל המשולש העליון של המטריצה.
+\end_layout
+
+\begin_layout Standard
+עבור איבר בתחום החישוב זמן החישוב הוא לפחות 
+\begin_inset Formula $\cfrac{2}{3}n$
+\end_inset
+
+.
+ כל האלכסונים אורכם לפחות 
+\begin_inset Formula $\cfrac{1}{3}n$
+\end_inset
+
+.
+ מספר האלכסונים בתחום החישוב=
+\begin_inset Formula $\cfrac{1}{3}n$
+\end_inset
+
+.
+ לכן סה"כ יש לנו 
+\begin_inset Formula $\cfrac{2}{27}n^{3}\in\theta\left(n^{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+מציאת סידור הסוגריים
+\end_layout
+
+\begin_layout Standard
+מכיוון שכל תא במטריצה מייצג חלוקה של סוגריים, ניתן להשתמש במיקום שבוחרים
+ כדי למצוא את הסידור עצמו.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{1}:3\times100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{2}:100\times2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{3}:2\times100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+20000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

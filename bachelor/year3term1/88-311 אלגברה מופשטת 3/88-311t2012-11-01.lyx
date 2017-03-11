@@ -1,0 +1,863 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $p\left(x\right)\in\mathbb{F}\left[x\right]$
+\end_inset
+
+ מדרגה 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ הראו ש
+\begin_inset Formula $\nicefrac{\mathbb{F}\left[x\right]}{\left\langle p\left(x\right)\right\rangle }$
+\end_inset
+
+ הוא מ"ו ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\left\{ \bar{1},\bar{x},\bar{x}^{2},\dots\bar{x}^{n-1}\right\} 
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\bar{x}=x\mod p\left(x\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נוכיח שאברי 
+\begin_inset Formula $B$
+\end_inset
+
+ בת"ל:
+\begin_inset Formula 
+\[
+\alpha_{0}\cdot\bar{1}+\alpha_{1}\cdot\bar{x}+\cdots+\alpha_{n-1}\cdot\bar{x}^{n-1}=0
+\]
+
+\end_inset
+
+כאשר לא כל 
+\begin_inset Formula $\alpha_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f=\alpha_{0}+\alpha_{1}x+\cdots+\alpha_{n-1}x^{n-1}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f\equiv0\mod p\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $p\mid f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ מדרגה קטנה מ
+\begin_inset Formula $n$
+\end_inset
+
+ - סתירה!
+\end_layout
+
+\begin_layout Standard
+צ"ל ש
+\begin_inset Formula $B$
+\end_inset
+
+ פורש את 
+\begin_inset Formula $V=\nicefrac{\mathbb{F}\left[x\right]}{\left\langle p\left(x\right)\right\rangle }$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\bar{f}\in V\qquad f\left(x\right)=\alpha_{0}+\alpha_{1}x+\cdots+\alpha_{k}x^{k}\in\mathbb{F}\left[x\right]
+\]
+
+\end_inset
+
+נחלק את 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $p$
+\end_inset
+
+ עם שארית:
+\begin_inset Formula 
+\[
+f\left(x\right)=p\left(x\right)q\left(x\right)+r\left(x\right)\qquad\deg r\left(x\right)<\deg p\left(x\right)=n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\bar{f}=\bar{r}=\beta_{0}\cdot\bar{1}+\beta_{1}\cdot\bar{x}+\cdots+\beta_{k}\cdot\bar{x}^{k}\qquad k<n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מספרים ניתנים לבנייה
+\end_layout
+
+\begin_layout Section*
+החוקים
+\end_layout
+
+\begin_layout Enumerate
+ניתן להעביר ישר 
+\begin_inset Formula $L\left(P,Q\right)$
+\end_inset
+
+ בין כל שתי נקודות ניתנות לבניה 
+\begin_inset Formula $P,Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+ניתן לבנות מעגל מעגל 
+\begin_inset Formula $C\left(P,Q\right)$
+\end_inset
+
+ שמרכזו 
+\begin_inset Formula $P$
+\end_inset
+
+ ועובר דרך 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: 
+\begin_inset Formula $L\left(P,Q\right)=L\left(Q,P\right)$
+\end_inset
+
+ אבל 
+\begin_inset Formula $C\left(P,Q\right)\neq C\left(Q,P\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפטי עזר
+\end_layout
+
+\begin_layout Enumerate
+בהנתן נקודה וישר ניתן להעביר ישר מקביל העובר דרך הנקודה.
+\end_layout
+
+\begin_layout Enumerate
+בהנתן נקודה וישר ניתן לבנות ישר אנכי העובר דרך הנקודה.
+\end_layout
+
+\begin_layout Enumerate
+בהנתן זוית ניתן לבנות חצי זוית.
+\end_layout
+
+\begin_layout Enumerate
+ניתן לבנות מעגל 
+\begin_inset Formula $C\left(P,\left|QR\right|\right)$
+\end_inset
+
+ שמרכזו 
+\begin_inset Formula $P$
+\end_inset
+
+ ורדיוסו 
+\begin_inset Formula $\left|QR\right|$
+\end_inset
+
+ - אורך של קטע אחר.
+\end_layout
+
+\begin_layout Enumerate
+בהינתן קטעים באורכים ניתנים לבניה 
+\begin_inset Formula $1,x,y$
+\end_inset
+
+ ניתן לבנות קטעים באורכים 
+\begin_inset Formula $\sqrt{x},x+y,xy,x^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $a\in\mathbb{C}$
+\end_inset
+
+ שניתן לבניה מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left[\mathbb{Q}\left[a\right]:\mathbb{Q}\right]$
+\end_inset
+
+ הוא חזקה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בהנתן שני מספרים 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ ניתנים לבניה, הראו שניתן לבנות מהם את 
+\begin_inset Formula $\frac{b}{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\left(1,0\right)\qquad B=\left(0,a\right)\qquad C=\left(0,b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+להעביר ישר דרך 
+\begin_inset Formula $AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+להעביר ישר מקביל ל
+\begin_inset Formula $L\left(A,B\right)$
+\end_inset
+
+ דרך 
+\begin_inset Formula $C$
+\end_inset
+
+ ונקרא לו 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיבלנו את 
+\begin_inset Formula $X$
+\end_inset
+
+ כחיתוך של 
+\begin_inset Formula $M$
+\end_inset
+
+ עם ציר 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל שהמשולשים 
+\begin_inset Formula $C0X$
+\end_inset
+
+ ו
+\begin_inset Formula $B0A$
+\end_inset
+
+ הם דומים, נקבל
+\begin_inset Formula 
+\[
+\frac{b}{a}=\frac{\left|C0\right|}{\left|B0\right|}=\frac{\left|0X\right|}{\left|0A\right|}=\frac{u}{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=\frac{b}{a}
+\]
+
+\end_inset
+
+וקיבלנו ש
+\begin_inset Formula $\frac{b}{a}$
+\end_inset
+
+ ניתן לבניה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ ניתן לבניה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ניתנים לבניה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\deg\left(f\right)=\left[F\left(a\right):\mathbb{F}\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f$
+\end_inset
+
+ אי-פריק וגם 
+\begin_inset Formula $f\left(a\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ מתוקן אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ נקרא 
+\emph on
+\bar under
+פולינום מינימלי
+\emph default
+\bar default
+.
+\begin_inset Formula 
+\[
+x^{n}+a_{n-1}x^{n-1}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שלא ניתן לחלק זוית ב
+\numeric on
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+)צריך להראות זוית ספציפית שלא ניתן לחלק ב
+\numeric on
+7
+\numeric off
+(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נראה תחילה שהמספר 
+\begin_inset Formula $\textnormal{cis}\frac{2\pi}{7}=\cos\frac{2\pi}{7}+i\sin\frac{2\pi}{7}=e^{i\frac{2\pi}{7}}$
+\end_inset
+
+ לא ניתן לבנייה.
+\begin_inset Formula 
+\[
+\left(\textnormal{cis}\frac{2\pi}{7}\right)^{7}=\textnormal{cis}\frac{2\pi}{7}\cdot7=\textnormal{cis }2\pi=1
+\]
+
+\end_inset
+
+רואים ש
+\begin_inset Formula $\textnormal{cis }\frac{2\pi}{7}$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $x^{7}-1$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Phi_{7}=\frac{x^{7}-1}{x-1}=x^{6}+x^{5}+\cdots+1
+\]
+
+\end_inset
+
+הוא פולינום אי-פריק, וגם 
+\begin_inset Formula $\textnormal{cis}\frac{2\pi}{7}$
+\end_inset
+
+ הוא שורש שלו.
+ לכן 
+\begin_inset Formula $\left[\mathbb{Q}\left(\textnormal{cis}\frac{2\pi}{7}\right):\mathbb{Q}\right]=6$
+\end_inset
+
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא חזקה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ולכן 
+\begin_inset Formula $\textnormal{cis}\frac{2\pi}{7}$
+\end_inset
+
+ לא ניתן לבניה.
+\end_layout
+
+\begin_layout Standard
+)תזכורת: 
+\begin_inset Formula $\mathbb{F}\left(a\right)\cong\nicefrac{\mathbb{F}\left[x\right]}{\left\langle f\left(x\right)\right\rangle }$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ הפולינום המינימלי(
+\end_layout
+
+\begin_layout Standard
+הזוית 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ניתנת לבניה)זוית ישרה(.
+ נניח בשלילה שניתן לחלק ב
+\numeric on
+7
+\numeric off
+: 
+\begin_inset Formula $\frac{\nicefrac{\Pi}{2}}{7}$
+\end_inset
+
+.
+ אם ניתן לבנות את הזוית 
+\begin_inset Formula $\frac{\pi}{14}$
+\end_inset
+
+ אזי ניתן לבנות את המספר 
+\begin_inset Formula $\textnormal{cis}\frac{\pi}{14}$
+\end_inset
+
+.
+ ניתן לקחת חזקה רביעית ולקבל 
+\begin_inset Formula $\left(\textnormal{cis}\frac{\pi}{14}\right)^{4}=\textnormal{cis}\frac{2\pi}{7}$
+\end_inset
+
+ ומספר זה לא ניתן לבנייה.
+ סתירה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה.
+ הראו שאם 
+\begin_inset Formula $G\le\mathbb{F}^{*}$
+\end_inset
+
+ תת-חבורה סופית אזי היא ציקלית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ היא חבורה אבלית.
+ 
+\begin_inset Formula $G=\mathbb{Z}_{p_{1}^{k_{1}}}\times\cdots\times\mathbb{Z}_{p_{r}^{k_{r}}}$
+\end_inset
+
+.
+ לפי המשפט היסודי של חבורות אבליות סופיות
+\begin_inset Formula 
+\[
+m=\exp G=\textnormal{lcm}\left(p_{1}^{k_{1}},\dots p_{r}^{k_{r}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m\le\left|G\right|=n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g^{m}=1\qquad g\in M
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ כל האיברים בחבורה הם שורשים של 
+\begin_inset Formula $x^{m}-1=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מספר שורשים של פולינום בשדה 
+\begin_inset Formula $\ge$
+\end_inset
+
+ לדרגה של הפולינום.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $\left|G\right|\le m$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|G\right|=m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לא ייתכן ש
+\begin_inset Formula $p_{i}=p_{j}$
+\end_inset
+
+ אחרת 
+\begin_inset Formula $m<n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\textnormal{lcm}\left(p_{1}^{k_{1}},\dots p_{r}^{k_{r}}\right)=p_{1}^{k_{1}}\cdots p_{r}^{k_{r}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו מכפלה של חבורות ציקליות מסדרים זרים וזה ציקלי.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

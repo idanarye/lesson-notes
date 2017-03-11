@@ -1,0 +1,849 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\textnormal{Alice}\ar@{-}[rr]^{d_{\textnormal{prop}}=10^{-3}} &  & \bigotimes\ar@{-}[rr]^{10^{-3}} &  & \textnormal{Bob}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אליס מורידה קובץ 
+\begin_inset Formula $F=7\unit{kb}$
+\end_inset
+
+ מבוב.
+\begin_inset Formula 
+\[
+d_{\textnormal{prop}}=10^{-3}\qquad\textnormal{MTU}=1\unit{KB}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\textnormal{From Alice}\right)\textnormal{Buffer}=4\unit{KB}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\textnormal{In Alice}\right)R_{\textnormal{app}}=\frac{1}{2}\unit{MBps}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=10^{6}\unit{Bps}
+\]
+
+\end_inset
+
+כמה זמן יעבור עד שבוב יודע בוודאות כי הקובץ התקבל אצל אליס במלואו?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+השעיית ההתפשטות הכוללת היא 
+\begin_inset Formula $2\unit{ms}$
+\end_inset
+
+, ולכן פתיחת הערוץ תיקח 
+\begin_inset Formula $4\unit{ms}$
+\end_inset
+
+, ועוד 
+\begin_inset Formula $2\unit{ms}$
+\end_inset
+
+ לבקשה של אליס מבוב.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוב מתחיל לאט עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חבילה אחת של 
+\begin_inset Formula $1\unit{KB}$
+\end_inset
+
+ בקצב 
+\begin_inset Formula $1\unit{MBps}$
+\end_inset
+
+.
+ הנתב מוסיף השהייה של 
+\begin_inset Formula $1\unit{ms}$
+\end_inset
+
+, ולכן ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $9\unit{ms}$
+\end_inset
+
+ אליס מתחילה לקבל אותה, וב
+\begin_inset Formula $11\unit{ms}$
+\end_inset
+
+ היא שולחת עליה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ack
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמתקבל בבוב ב
+\begin_inset Formula $13\unit{ms}$
+\end_inset
+
+.
+ בוב שולח שתי חבילות, שאליס מתחילה לקבל ב
+\begin_inset Formula $16\unit{ms}$
+\end_inset
+
+, מסיימת את הראשונה ב
+\begin_inset Formula $18\unit{ms}$
+\end_inset
+
+ ואת השניה ב
+\begin_inset Formula $20\unit{ms}$
+\end_inset
+
+, מה שאומר שה
+\lang english
+ack
+\lang hebrew
+ים מתקבלים ב
+\begin_inset Formula $20,22$
+\end_inset
+
+.
+ אבל ב
+\lang english
+ack
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השני בוב יודע שיש בבאפר מקום לרק עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $2.5\unit{KB}$
+\end_inset
+
+, ולכן בוב לא שולח את כל ארבעת החבילות שנותרו לו, אלא רק 
+\begin_inset Formula $2.5$
+\end_inset
+
+.
+ את החבילה וחצי הנותרות הוא ישלח רק לאחר שיקבל עוד 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ack
+\lang hebrew
+ים, וידע שלאליס יש מקום ב
+\lang english
+buffer
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+סה"כ, אם סוכמים את הכל נקבל 
+\begin_inset Formula 
+\[
+6\cdot10^{-3}+4\cdot6\cdot10^{-3}+\frac{1}{2}\cdot10^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שכבת האפליקציה - פרוטוקול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DNS
+\end_layout
+
+\begin_layout Standard
+פרוטוקול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DNS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מורכב מקליינטים ושרתים.
+ הקליינטים הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Resolver
+\lang hebrew
+ים - יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Stub Resolver
+\lang hebrew
+, שנמצא בד"ך על מערכת ההפעלה של מחשב הלקוח הפשוט, ויש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Recursive Resolver
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ שבד"כ הוא חלק מהרשת, ויושב למשל על הנתב.
+ ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Resolver
+\lang hebrew
+ים אחראים לשלוח שאילתות ולקבל תשובות.
+\end_layout
+
+\begin_layout Standard
+השרת הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Authorative Name Server
+\lang hebrew
+, והוא מקבל את השאילתות מה
+\lang english
+Resolver
+\lang hebrew
+ים ושולח להם תשובות.
+ הם בנויים בצורה הירהרכית - יש שרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Root
+\lang hebrew
+, שמכיר שרתים אחרים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Top Level Domain
+\lang hebrew
+)למשל שרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+.com
+\lang hebrew
+(, שהם בתורם מכירים עוד שרתים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Domain
+\lang hebrew
+ים יותר ספציפיים)למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+google.com
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+stub resolver
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא מחפש עד הסוף - הוא יודע רק לשלוח ל
+\lang english
+Recursive Resolver
+\lang hebrew
+, שזה שולח לשרתים עד שהוא מקבל את התשובה הסופית, כשכל שרת או שהוא נותן לו
+ את התשובה או שהוא מפנה אותו לשרת אחר, יותר ספציפי.
+ הוא גם שומר אותם ב
+\lang english
+cache
+\lang hebrew
+, כדי שבפעם הבאה שמישהו מבקש כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא ידע מאיפה לקחת ולא יצטרך לעבור מחדש את כל התהליך.
+\end_layout
+
+\end_body
+\end_document

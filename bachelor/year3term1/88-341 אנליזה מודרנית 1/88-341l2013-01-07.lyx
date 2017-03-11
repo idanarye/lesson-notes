@@ -1,0 +1,2324 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+חזרה
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב וקטורי מעל 
+\begin_inset Formula $K$
+\end_inset
+
+)=
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+(.
+ נורמה על 
+\begin_inset Formula $X$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $\left\Vert \cdot\right\Vert :X\to\left[0,\infty\right)$
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\Vert x\right\Vert \ge0$
+\end_inset
+
+ עם שוויון 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert \alpha x\right\Vert =\left|\alpha\right|\left\Vert x\right\Vert $
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha\in K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert x+y\right\Vert \le\left\Vert x\right\Vert +\left\Vert y\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הזוג 
+\begin_inset Formula $\left(x,\left\Vert \cdot\right\Vert \right)$
+\end_inset
+
+ נקרא "
+\emph on
+מרחב נורמי
+\emph default
+")מעל 
+\begin_inset Formula $K$
+\end_inset
+
+(.
+ ברגע שיש נורמה יש מטריקה 
+\begin_inset Formula $d\left(x,y\right)=\left\Vert x-y\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,\left\Vert \cdot\right\Vert \right)$
+\end_inset
+
+ מרחב נורמי.
+ אומרים שהוא 
+\emph on
+שלם
+\emph default
+ אם כל סדרת קושי מ
+\begin_inset Formula $X$
+\end_inset
+
+ מתכנסת לאיבר ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מרחב נורמי שלם נקרא 
+\emph on
+מרחב בנך
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+ עם הנורמה האוקלידית, וגם עם עוד נורמה 
+\begin_inset Formula $\left\Vert \left(x_{1},\dots x_{n}\right)\right\Vert =\sum\limits _{k=1}^{n}\left|x_{k}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\left(K\right)$
+\end_inset
+
+=פונקציות רציפות 
+\begin_inset Formula $f:K\to\mathbb{R},\mathbb{C}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\Vert f\right\Vert =\max\limits _{x\in K}\left|f\left(x\right)\right|$
+\end_inset
+
+)
+\begin_inset Formula $K$
+\end_inset
+
+ קומפקטי(.
+ הוכחנו שזה מרחב בנך.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate-Resume
+מרחבי 
+\begin_inset Formula $L^{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח.
+ עבור 
+\begin_inset Formula $1\le p\le\infty$
+\end_inset
+
+ מגירים 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ להיות אוסף כל הפונקציות המדידות 
+\begin_inset Formula $f:X\to\mathbb{R}^{*}$
+\end_inset
+
+)או 
+\begin_inset Formula $f:X\to\mathbb{C}^{*}$
+\end_inset
+
+( כך ש
+\begin_inset Formula $\left\Vert f\right\Vert _{p}=\left(\int_{X}\left|f\right|^{p}\mathrm{\, d}\mu\right)^{\nicefrac{1}{p}}<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: עבור 
+\begin_inset Formula $f:X\to\mathbb{C}^{*}$
+\end_inset
+
+ נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ מדידה-
+\begin_inset Formula $S$
+\end_inset
+
+ אם 
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+, 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+ מדידות 
+\begin_inset Formula $S$
+\end_inset
+
+ ו
+\begin_inset Formula $\int_{X}f\mathrm{\, d}\mu=\int_{X}u\mathrm{\, d}\mu+i\int_{X}v\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נעיר שאם 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ כב"מ 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\Vert f\right\Vert _{p}=\left(\int_{X}\left|f\right|^{p}\mathrm{\, d}\mu\right)^{\nicefrac{1}{p}}=0$
+\end_inset
+
+, אף על פי ש
+\begin_inset Formula $f\neq0$
+\end_inset
+
+ - בסתירה לדרישה 
+\begin_inset Formula $I$
+\end_inset
+
+ לנורמה.
+ הפתרון לבעיה זו הוא לומר ששתי פונקציות 
+\begin_inset Formula $L^{p}\ni f,g$
+\end_inset
+
+ שקולות אם 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+ כב"מ.
+ ז.א.
+ "פונקציות" ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+ הן באמת מחלקות שקילות של פונקציות.
+\end_layout
+
+\begin_layout Standard
+נבדוק שאמנם 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ מרחב וקטורי מעל 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ ובכן, אם 
+\begin_inset Formula $f,g\in L^{p}$
+\end_inset
+
+ צ"ל ש
+\begin_inset Formula $f+g\in L^{p}$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $\int_{X}\left|f+g\right|^{p}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+.
+ ובכן: לכל 
+\begin_inset Formula $X\ni x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(x\right)+g\left(x\right)\right|\le2\max\left(\left|f\left(x\right)\right|,\left|g\left(x\right)\right|\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\left|f\left(x\right)+g\left(x\right)\right|^{p}\le2^{p}\left[\max\left(\left|f\left(x\right)\right|^{p},\left|g\left(x\right)\right|^{p}\right)\right]
+\]
+
+\end_inset
+
+הדבר נכון לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\int_{X}\left|f+g\right|^{p}\le2^{p}\int_{X}\left(\left|f\right|^{p}+\left|g\right|^{p}\right)\mathrm{\, d}\mu<\infty
+\]
+
+\end_inset
+
+כי נתון ש
+\begin_inset Formula $f,g\in L^{p}$
+\end_inset
+
+.
+ נותר להוכיח שאם 
+\begin_inset Formula $\alpha\in K$
+\end_inset
+
+ ו
+\begin_inset Formula $f\in L^{p}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\alpha f\in L^{p}$
+\end_inset
+
+.
+ אבל
+\begin_inset Formula 
+\[
+\int_{X}\left|\alpha f\left(x\right)\right|^{p}\mathrm{\, d}\mu=\int_{X}\left|\alpha\right|^{p}\left|f\left(x\right)\right|^{p}\mathrm{\, d}\mu=\left|\alpha\right|^{p}\int_{X}\left|f\right|^{p}\mathrm{\, d}\mu<\infty
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $\alpha f\in L^{p}$
+\end_inset
+
+.
+ יתר על כן
+\begin_inset Formula 
+\[
+\left\Vert \alpha f\right\Vert _{p}=\left(\int_{X}\left|\alpha f\left(x\right)\right|^{p}\mathrm{\, d}\mu\right)^{\nicefrac{1}{p}}=\left|\alpha\right|\left(\int_{X}\left|f\right|^{p}\right)^{\nicefrac{1}{p}}=\left|\alpha\right|\left\Vert f\right\Vert 
+\]
+
+\end_inset
+
+והוכחנו תכונה 
+\begin_inset Formula $II$
+\end_inset
+
+ של נורמה.
+ תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $III$
+\end_inset
+
+ של נורמה לא טריביאלית ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+, ונצטרך הכנות לזה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למה
+\series default
+: יהיו 
+\begin_inset Formula $a,b\ge0$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $0<\lambda<1$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $a^{\lambda}b^{1-\lambda}\le\lambda a+\left(1-\lambda\right)b$
+\end_inset
+
+ עם שוויון רק עבור 
+\begin_inset Formula $a=b$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\series bold
+הערה
+\series default
+: עבור 
+\begin_inset Formula $\lambda=\nicefrac{1}{2}$
+\end_inset
+
+ הלמה אומרת 
+\begin_inset Formula $\sqrt{ab}\le\frac{a+b}{2}$
+\end_inset
+
+ וזה דבר ידוע(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: אם 
+\begin_inset Formula $b=0$
+\end_inset
+
+ הלמה טריוויאלית, ואם לאו אפשר לחלק ב
+\begin_inset Formula $b$
+\end_inset
+
+ לקבל טענה שקולה.
+ ז.א.
+ שקול:
+\begin_inset Formula 
+\[
+a^{\lambda}b^{-\lambda}\le\frac{a}{b}\lambda+\left(1-\lambda\right)
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $t=\frac{a}{b}$
+\end_inset
+
+ והטענה היא לכל 
+\begin_inset Formula $t\ge0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t^{\lambda}\le t\lambda+\left(1-\lambda\right)
+\]
+
+\end_inset
+
+כדי להוכיח אי שוויון זה נגדיר 
+\begin_inset Formula $\varphi\left(t\right)=t\lambda+\left(1-\lambda\right)-t\lambda$
+\end_inset
+
+.
+ צ"ל: לכל 
+\begin_inset Formula $t\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)\ge0$
+\end_inset
+
+.
+ אבל
+\begin_inset Formula 
+\[
+\varphi'\left(t\right)=\lambda-\lambda t^{\lambda-1}=\lambda\left(1-t^{\lambda-1}\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+t=1\iff\varphi'\left(t\right)=0
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $0<\lambda<1$
+\end_inset
+
+ אם 
+\begin_inset Formula $0<t<1$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi'\left(t\right)<0$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $t>1$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi'\left(t\right)>0$
+\end_inset
+
+.
+ יתר על כן,
+\begin_inset Formula 
+\[
+\varphi\left(0\right)=1-\lambda>0\qquad\varphi\left(1\right)=0
+\]
+
+\end_inset
+
+וממילא הגרף של 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ אינו שלילי כאשר 
+\begin_inset Formula $t$
+\end_inset
+
+ חיובי והוכחנו ש
+\begin_inset Formula $\varphi\left(t\right)\ge0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\ge0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)אי שוויון הולדר(
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $1<p<\infty$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $q$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\frac{1}{p}+\frac{1}{q}=1$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $pq=p+q$
+\end_inset
+
+ או 
+\begin_inset Formula $q=\frac{p}{p-1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $1<q<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת אם 
+\begin_inset Formula $f\in L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $g\in L^{q}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $fg\in L^{1}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ ומתקיים
+\begin_inset Formula 
+\[
+\left\Vert fg\right\Vert _{1}=\int_{X}\left|fg\right|\le\left\Vert f\right\Vert _{p}\left\Vert g\right\Vert _{q}
+\]
+
+\end_inset
+
+יש שוויון 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיימים קבועים 
+\begin_inset Formula $\alpha,\beta\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha\left|f\left(x\right)\right|^{p}=\beta\left|g\left(x\right)\right|^{q}$
+\end_inset
+
+ כב"מ.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כמקרה ראשון נניח ש
+\begin_inset Formula $\left\Vert f\right\Vert _{p}=\left\Vert g\right\Vert _{q}=1$
+\end_inset
+
+.
+ נפעיל את הלמה עבור 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כלשהו כאשר
+\begin_inset Formula 
+\[
+a=\left|f\left(x\right)\right|^{p}\qquad b=\left|g\left(x\right)\right|^{q}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-\lambda\right)=\nicefrac{1}{q}\qquad\lambda=\nicefrac{1}{p}
+\]
+
+\end_inset
+
+לפי הלמה 
+\begin_inset Formula 
+\[
+a^{\lambda}b^{1-\lambda}\le\lambda a+\left(1-\lambda\right)b
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+\left|f\left(x\right)g\left(x\right)\right|\le\lambda\left|f\left(x\right)\right|^{p}+\left(1-\lambda\right)\left|g\left(x\right)\right|^{q}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\int\left|fg\right|\mathrm{\, d}\mu\le\lambda\int\left|f\right|^{p}\mathrm{\, d}\mu+\left(1-\lambda\right)\int\left|g\right|^{q}\mathrm{\, d}\mu=\lambda+\left(1-\lambda\right)=1=\left\Vert f\right\Vert _{p}\left\Vert g\right\Vert _{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה כללי
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+ או 
+\begin_inset Formula $g\equiv0$
+\end_inset
+
+ אי שוויון הולדר טריוויאלי, ואם לא אפשר לנרמל.
+ נגדיר:
+\begin_inset Formula 
+\[
+F\left(x\right)=\frac{f\left(x\right)}{\left\Vert f\right\Vert _{p}}\qquad G\left(x\right)=\frac{g\left(x\right)}{\left\Vert g\right\Vert _{q}}
+\]
+
+\end_inset
+
+לפי זה
+\begin_inset Formula 
+\[
+\left\Vert F\right\Vert _{p}=\left\Vert \frac{f}{\left\Vert f\right\Vert _{p}}\right\Vert _{p}=\frac{1}{\left\Vert f\right\Vert _{p}}\left\Vert f\right\Vert _{p}=1
+\]
+
+\end_inset
+
+כמו כן 
+\begin_inset Formula $\left\Vert G\right\Vert _{q}=1$
+\end_inset
+
+.
+ לפי המקרה הראשון
+\begin_inset Formula 
+\[
+\int_{X}\left|FG\right|\mathrm{\, d}\mu\le\left\Vert F\right\Vert _{p}\left\Vert G\right\Vert _{q}=1
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+\int_{X}\left|\frac{f}{\left\Vert f\right\Vert _{p}}\cdot\frac{g}{\left\Vert g\right\Vert _{q}}\right|\mathrm{\, d}\mu\le1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{X}\left|fg\right|\mathrm{\, d}\mu\le\left\Vert f\right\Vert _{p}\cdot\left\Vert g\right\Vert _{q}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $1<p,q<\infty$
+\end_inset
+
+ אומרים ש
+\begin_inset Formula $p$
+\end_inset
+
+ ו
+\begin_inset Formula $q$
+\end_inset
+
+ "
+\emph on
+חזקות צמודות
+\emph default
+" אם 
+\begin_inset Formula $\frac{1}{p}+\frac{1}{q}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מקרה פרטי 
+\begin_inset Formula $p=q=2$
+\end_inset
+
+.
+ במקרה זה אי שוויון הולדר הוא אי שוויון קושי שוורץ.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)אי שוויון מינקובסקי = אי שוויון המשולש ב
+\begin_inset Formula $\mathscr{L}^{p}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g\in\mathscr{L}^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\left\Vert f+g\right\Vert _{p}\le\left\Vert f\right\Vert _{p}+\left\Vert g\right\Vert _{p}
+\]
+
+\end_inset
+
+עם שוויון 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)=cg\left(x\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $g\left(x\right)=cf\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert f+g\right\Vert _{p}^{p}=\int_{X}\left|f+g\right|^{p}\mathrm{\, d}\mu\le\int_{X}\left|f+g\right|^{p-1}\left(\left|f\right|+\left|g\right|\right)\mathrm{\, d}\mu=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{X}\left|f+g\right|^{p-1}\left|f\right|\mathrm{\, d}\mu+\int_{X}\left|f+g\right|^{p-1}\left|g\right|\mathrm{\, d}\mu=I_{1}+I_{2}
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ נשים לב ש
+\begin_inset Formula $f\in L^{p}$
+\end_inset
+
+)נתון( וגם 
+\begin_inset Formula $L^{p}\ni\left|f+g\right|$
+\end_inset
+
+, אבל 
+\begin_inset Formula $p=\left(p-1\right)q$
+\end_inset
+
+)
+\begin_inset Formula $q$
+\end_inset
+
+ צמוד ל
+\begin_inset Formula $p$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $\left|f+g\right|^{p-1}\in L^{q}$
+\end_inset
+
+.
+ נפעיל את אי-שוויון הולדר ל
+\begin_inset Formula $I_{1}$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+\int_{X}\left|f+g\right|^{p-1}\left|f\right|\mathrm{\, d}\mu\le\left[\int_{X}\left(\left|f+g\right|^{p-1}\right)^{q}\mathrm{\, d}\mu\right]^{\nicefrac{1}{q}}\left(\int_{X}\left|f\right|^{p}\mathrm{\, d}\mu\right)^{\nicefrac{1}{p}}=\left\Vert f+g\right\Vert _{p}^{\nicefrac{p}{q}}\left\Vert f\right\Vert _{p}
+\]
+
+\end_inset
+
+כמו כן
+\begin_inset Formula 
+\[
+I_{2}\le\left\Vert f+g\right\Vert _{p}^{\nicefrac{p}{q}}\left\Vert g\right\Vert _{p}
+\]
+
+\end_inset
+
+נסכם:
+\begin_inset Formula 
+\[
+\left\Vert f+g\right\Vert _{p}^{p}\le\left\Vert f+g\right\Vert _{p}^{\nicefrac{p}{q}}\left(\left\Vert f\right\Vert _{p}+\left\Vert g\right\Vert _{q}\right)
+\]
+
+\end_inset
+
+רוצים להעביר 
+\begin_inset Formula $\left\Vert f+g\right\Vert _{p}^{\nicefrac{p}{q}}$
+\end_inset
+
+ לצד שמאל, אז נקבל חזרה 
+\begin_inset Formula $p-\nicefrac{p}{q}=1$
+\end_inset
+
+, ולכן קיבלנו
+\begin_inset Formula 
+\[
+\left\Vert f+g\right\Vert _{p}\le\left\Vert f\right\Vert _{p}+\left\Vert g\right\Vert _{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נחבר את כל החלקים: הוכחנו שעבור 
+\begin_inset Formula $1<p<\infty$
+\end_inset
+
+ 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ מרחב נורמי.
+ לגבי 
+\begin_inset Formula $L^{1}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ אי שוויון המשולש טריוויאלי, לכן גם 
+\begin_inset Formula $L^{1}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ מרחב נורמי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אפשר להגדיר 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ גם עבור 
+\begin_inset Formula $0<p<1$
+\end_inset
+
+, אבל אז הביטוי 
+\begin_inset Formula $\left(\int\left|f\right|^{p}\mathrm{\, d}\mu\right)$
+\end_inset
+
+ אינו נורמה.
+\end_layout
+
+\begin_layout Standard
+גם מגדירים את 
+\begin_inset Formula $L^{\infty}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ להיות )מחלקות שקילות של( פונקציות וחסומות בעיקר)
+\lang english
+essentially bounded functions
+\lang hebrew
+(.
+ הנורמה היא
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{\infty}\inf\left\{ \lambda\ge0\middle|\mu\left\{ x\in X\middle|\left|f\left(x\right)>\lambda\right|\right\} =0\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sup\left\{ \lambda\ge0\middle|\mu\left\{ x\in X\middle|\left|f\left(x\right)>\lambda\right|\right\} >0\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\inf_{g\sim f}\sup\left\{ \left|g\left(x\right)\right|\middle|x\in X\right\} 
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $g\sim f$
+\end_inset
+
+ אומר 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+ כב"מ)
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+תרגיל קל להוכיח ש
+\begin_inset Formula $L^{\infty}$
+\end_inset
+
+ אמנם מרחב נורמי.
+\end_layout
+
+\begin_layout Section*
+מקרה פרטי חשוב
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $u$
+\end_inset
+
+=מידת הספירה על 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+ במקרה זה 
+\begin_inset Formula $L^{p}\left(\mathrm{d}u\right)$
+\end_inset
+
+ הוא מרחב של סדרות, שקרוי 
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $1\le p\le\infty$
+\end_inset
+
+ וסדרה 
+\begin_inset Formula $x=\left(x_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert _{\ell^{p}}=\left(\sum_{n=1}^{\infty}\left|x_{n}\right|^{p}\right)^{\nicefrac{1}{p}}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $p=\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert _{\infty}=\sup_{n}\left|x_{n}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תמיד
+\end_layout
+
+\begin_layout Standard
+סדרה שייכת למרחב 
+\begin_inset Formula $\iff$
+\end_inset
+
+ הנורמה שלה סופית.
+\end_layout
+
+\begin_layout Standard
+אי שוויון הולדר לסדרות אומר:
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\left|a_{n}b_{n}\right|\le\left(\sum_{n=1}^{\infty}\left|a_{n}\right|^{p}\right)^{\nicefrac{1}{p}}\left(\sum_{n=1}^{\infty}\left|b_{n}\right|^{q}\right)^{\nicefrac{1}{q}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\frac{1}{p}+\frac{1}{q}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אי שוויון מינקובסקי לסדרות אומר עבור 
+\begin_inset Formula $1\le p\le\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum_{n=1}^{\infty}\left|a_{n}+b_{n}\right|^{p}\right)^{\nicefrac{1}{p}}\le\left(\sum_{n=1}^{\infty}\left|a_{n}\right|^{p}\right)^{\nicefrac{1}{p}}+\left(\sum_{n=1}^{\infty}\left|b_{n}\right|^{p}\right)^{\nicefrac{1}{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשימה הבאה היא להוכיח שמרחבי 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+ שלמים.
+ נצטרך הכנה לזה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מרחב נורמי 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם 
+\begin_inset Formula $\iff$
+\end_inset
+
+ כל טור ב
+\begin_inset Formula $X$
+\end_inset
+
+ שמתכנס בהחלט מתכנס.
+\end_layout
+
+\begin_layout Standard
+)ז.א.
+ טור 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}x_{n}$
+\end_inset
+
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ מתכנס בהחלט אם 
+\begin_inset Formula $\infty>\sum\limits _{n=1}^{\infty}\left\Vert x_{n}\right\Vert $
+\end_inset
+
+, ונוכיח שזה גורר התכנסות הטור עצמו בנורמה של 
+\begin_inset Formula $X$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה נניח ש
+\begin_inset Formula $X$
+\end_inset
+
+ שלם, ונניח ש
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\left\Vert x_{n}\right\Vert <\infty$
+\end_inset
+
+.
+ רוצים להוכיח 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}x_{n}$
+\end_inset
+
+ מתכנס, ז.א.
+ רוצים להוכיח שהסכומים החלקיים 
+\begin_inset Formula $S_{n}=\sum\limits _{k=1}^{n}x_{k}$
+\end_inset
+
+ מתכנסים בנורמה של 
+\begin_inset Formula $X$
+\end_inset
+
+ לאיזה וקטור 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+, אבל כיוון ש
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב שלם מספיק להוכיח ש
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ סדרת קושי.
+ לצורך זה, יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ כיוון שטור המספרים 
+\begin_inset Formula $\sum\limits _{k=1}^{\infty}\left\Vert x_{k}\right\Vert $
+\end_inset
+
+ מתכנס הוא טור קושי, וקיים 
+\begin_inset Formula $k_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $n>m>k_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum\limits _{k=m+1}^{n}\left\Vert x_{k}\right\Vert <\varepsilon$
+\end_inset
+
+.
+ נובע שאם 
+\begin_inset Formula $n>m>k_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert S_{n}-S_{m}\right\Vert =\left\Vert \sum_{k=m+1}^{n}x_{k}\right\Vert \le\sum_{k=m+1}^{n}\left\Vert x_{k}\right\Vert <\varepsilon
+\]
+
+\end_inset
+
+בזה הוכחנו ש
+\begin_inset Formula $\left\{ S_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרת קושי ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם ולכן קיים גבול
+\begin_inset Formula 
+\[
+x_{0}=\lim_{n\to\infty}S_{n}=\lim_{n\to\infty}\sum_{k=1}^{n}x_{k}=\sum_{k=1}^{\infty}x_{k}
+\]
+
+\end_inset
+
+בפרט הטור מתכנס.
+\end_layout
+
+\begin_layout Standard
+לצד השני: נוכיח שכל טור ב
+\begin_inset Formula $X$
+\end_inset
+
+ שמתכנס בהחלט מתכנס, ונקח איזו סדרת קושי 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ צ"ל שהיא מתכנסת.
+ אבל לפי תנאי קושי קיים 
+\begin_inset Formula $x_{n_{1}}$
+\end_inset
+
+ בסדרה כך שלכל 
+\begin_inset Formula $n>n_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert x_{n}-x_{n_{1}}\right\Vert <\nicefrac{1}{2}$
+\end_inset
+
+.
+ כמו כן קיים 
+\begin_inset Formula $n_{2}>n_{1}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert x_{n}-x_{n_{2}}\right\Vert <\nicefrac{1}{4}$
+\end_inset
+
+.
+ אפשר להמשיך בכך, ולבנות תת סדרה 
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\mathbb{N}\ni k$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert x_{n_{k+1}}-x_{n_{k}}\right\Vert <\frac{1}{2^{k}}$
+\end_inset
+
+.
+ כעת נבנה טור 
+\begin_inset Formula 
+\[
+x_{n_{1}}+\left(x_{n_{2}}-x_{n_{1}}\right)+\left(x_{n_{3}}-x_{n_{2}}\right)+\cdots=x_{n_{1}}+\sum_{k=1}^{\infty}\left(x_{n_{k+1}}-x_{n_{k}}\right)
+\]
+
+\end_inset
+
+לפי הבנייה טור זה מתכנס בהחלט, ולפי הנתון שלנו הוא מתכנס לאיזה 
+\begin_inset Formula $x\ni x_{0}$
+\end_inset
+
+.
+ הטור טלסקופי והסכומים החלקיים שלו בדיוק 
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+, לכן הוכחנו 
+\begin_inset Formula $x_{0}=\lim\limits _{k\to\infty}x_{n_{k}}$
+\end_inset
+
+, ובזה מצאנו תת סדרה של 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ שמתכנסת ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $x_{0}=\lim_{n\to\infty}x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ כיוון ש
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרת קושי, קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $m,n>N$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\Vert x_{m}-x_{n}\right\Vert <\nicefrac{\varepsilon}{2}$
+\end_inset
+
+.
+ כעת נקבע 
+\begin_inset Formula $n>N$
+\end_inset
+
+ ונשים לב שקיים 
+\begin_inset Formula $k_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $k>k_{0}$
+\end_inset
+
+ האינדקס 
+\begin_inset Formula $n_{k}>N$
+\end_inset
+
+, בפרט עבור כל 
+\begin_inset Formula $k>k_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert x_{n_{k}}-x_{n}\right\Vert <\nicefrac{\varepsilon}{2}$
+\end_inset
+
+.
+ נשאיף 
+\begin_inset Formula $k\to\infty$
+\end_inset
+
+ ונסתמך על רציפות הנומרה)תרגיל קל!(, לומר ש
+\begin_inset Formula 
+\[
+\left\Vert x_{0}-x_{n}\right\Vert =\lim_{k\to\infty}\left\Vert x_{n_{k}}-x_{n}\right\Vert \le\nicefrac{\varepsilon}{2}<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסיכום: לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert x_{0}-x_{n}\right\Vert <\varepsilon$
+\end_inset
+
+ ונובע: 
+\begin_inset Formula $x_{n}\to x_{0}$
+\end_inset
+
+, בפרט יש גבול לסדרת קושי כלשהי 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+ לכן המרחב 
+\begin_inset Formula $X$
+\end_inset
+
+ שלם.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+מה זאת אומרת "הנורמה רציפה"? ואיך מוכיחים זאת?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+הכוונה שאם 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $\left\Vert x_{n}\right\Vert \to\left\Vert x\right\Vert $
+\end_inset
+
+, וזה נכון כי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $0\le\left|\left\Vert x_{n}\right\Vert -\left\Vert x\right\Vert \right|\le\left\Vert x_{n}-x\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $1\le p\le\infty$
+\end_inset
+
+ המרחבים 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ שלמים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כאן ניתן הוכחה עבור 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $p=\infty$
+\end_inset
+
+ ההוכחה יותר קלה, ונשאר לתרגיל.
+\end_layout
+
+\begin_layout Standard
+ובכן, נקבע 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+, וניקח טור ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+ שמתכנס בהחלט.
+ ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש רק להוכיח שהוא מתכנס ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ובכן, הנתון הוא שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}\in L^{p}$
+\end_inset
+
+ ו
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\left\Vert f_{n}\right\Vert _{p}<\infty$
+\end_inset
+
+.
+ כעת, עבור כל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+g_{n}\left(x\right)=\sum_{k=1}^{n}\left|f_{k}\left(x\right)\right|
+\]
+
+\end_inset
+
+לפי אי שוויון המשולש,
+\begin_inset Formula 
+\[
+\left\Vert g_{n}\right\Vert _{p}\le\sum_{k=1}^{n}\left\Vert \left|f_{k}\right|\right\Vert _{p}=\sum_{k=1}^{\infty}\left\Vert f_{k}\right\Vert _{p}\le\sum_{k=1}^{\infty}\left\Vert f_{k}\right\Vert _{p}\underset{\textnormal{def}}{\equiv}M<\infty
+\]
+
+\end_inset
+
+ה
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ עולים עם 
+\begin_inset Formula $n$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $X\ni x$
+\end_inset
+
+ מוגדר 
+\begin_inset Formula $g\left(x\right)=\lim\limits _{n\to\infty}g_{n}\left(x\right)\in\left[0,\infty\right]$
+\end_inset
+
+.
+ לפי התכנסות מונוטונית
+\begin_inset Formula 
+\[
+\left\Vert g\right\Vert _{p}^{p}=\int_{X}g^{p}\mathrm{\, d}\mu=\lim_{n\to\infty}\int_{X}g_{n}^{p}\mathrm{\, d}\mu=\lim_{n\to\infty}\left\Vert g_{n}\right\Vert _{p}^{p}\le M^{p}<\infty
+\]
+
+\end_inset
+
+בפרט 
+\begin_inset Formula $\int g^{p}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $g\left(x\right)<\infty$
+\end_inset
+
+ כב"מ)
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+(.
+ לפי הגדרה
+\begin_inset Formula 
+\[
+\infty>g\left(x\right)=\lim_{n\to\infty}g_{n}\left(x\right)=\sum_{n=1}^{\infty}\left|f_{n}\left(x\right)\right|
+\]
+
+\end_inset
+
+ז.א.
+ לכמעט כל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(x\right)$
+\end_inset
+
+ מתכנס בהחלט ומוגדר היטב 
+\begin_inset Formula $f\left(x\right)=\sum\limits _{n=1}^{\infty}f_{n}\left(x\right)$
+\end_inset
+
+ כב"מ, ובנקודות היוצאות מן הכלל נגדיר 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: הטור 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f_{n}\left(x\right)$
+\end_inset
+
+ מתכנס ל
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ במובן של 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נגדיר סכום חלקי 
+\begin_inset Formula $S_{n}\left(x\right)=\sum\limits _{k=1}^{n}f_{k}\left(x\right)$
+\end_inset
+
+.
+ לפי הבנייה שלנו 
+\begin_inset Formula $S_{n}\left(x\right)\to f\left(x\right)$
+\end_inset
+
+ כב"מ.
+ יתר על כן,
+\begin_inset Formula 
+\[
+\left|S_{n}\left(x\right)\right|\le\sum_{k=1}^{n}\left|f_{k}\left(x\right)\right|=g_{n}\left(x\right)
+\]
+
+\end_inset
+
+וגם
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|\le\sum_{k=1}^{\infty}\left|f_{n}\left(x\right)\right|=g\left(x\right)
+\]
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $S_{n}-f\to0$
+\end_inset
+
+ כב"מ, ואנחנו צריכים להוכיח ש
+\begin_inset Formula $\lim\limits _{n\to\infty}\int_{X}\left|S_{n}-f\right|^{p}\mathrm{\, d}m=0$
+\end_inset
+
+.
+ אבל לפי השלבים לעיל לכמעט כל 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f_{n}\left(x\right)-f\left(x\right)\right|^{p}\le\left|2g\left(x\right)\right|^{p}
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula 
+\[
+\int g^{p}\mathrm{\, d}\mu\le m^{p}
+\]
+
+\end_inset
+
+כפי שהוכחנו לעיל.
+ יוצא ש
+\begin_inset Formula $\left|S_{n}-f\right|^{p}\to0$
+\end_inset
+
+ בצורה נשלטת, ונוכל להסיק ממשפט ההתכנסות הנשלטת
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{X}\left|S_{n}-f\right|^{p}\mathrm{\, d}\mu=\int_{X}0^{p}\mathrm{\, d}\mu=0
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $S_{n}\to f$
+\end_inset
+
+ ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+, או במילים אחרות, 
+\begin_inset Formula $f\left(x\right)=\sum f_{n}\left(x\right)$
+\end_inset
+
+ במובן של 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נובע ש
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ שלם, 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה)מתוך ההוכחות(
+\end_layout
+
+\begin_layout Standard
+אם אם 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+, אז יש תת סדרה 
+\begin_inset Formula $f_{n_{k}}\to f$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+נשתמש במידת לבג 
+\begin_inset Formula $\mathrm{d}m$
+\end_inset
+
+ על 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+ נבנה סדרה 
+\begin_inset Formula $f_{n}\in L^{p}\left(\mathrm{d}m\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f_{n}\to0$
+\end_inset
+
+ במובן של 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+ אינו קיים באף נקודה של 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ובכן: עבור 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נרשום 
+\begin_inset Formula $n=2^{k}+L$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ ו
+\begin_inset Formula $0\le L<2^{k}$
+\end_inset
+
+ טבעי, ונגדיר 
+\begin_inset Formula $f_{n}\left(x\right)=I_{\left[\frac{L}{2^{k}},\frac{L+1}{2^{k}}\right]}\left(x\right)$
+\end_inset
+
+.
+ יוצא ש
+\bar under
+לכל
+\bar default
+ 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ f_{n}\left(x\right)\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרה המכילה 
+\begin_inset Formula $\infty$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $\infty$
+\end_inset
+
+ אחדים.
+ לכן 
+\begin_inset Formula $\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+ אינו קיים.
+ אבל, אם 
+\begin_inset Formula $n=2^{k}+L$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\left\Vert f_{n}-0\right\Vert _{\mathscr{L}^{p}}^{p}=\int_{\left[0,1\right]}\left|f_{n}\right|^{p}\mathrm{\, d}m=\frac{1}{2^{k}}\xrightarrow[n\to\infty]{}0
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $f_{n}\to0$
+\end_inset
+
+ ב
+\begin_inset Formula $L^{p}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le p<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: ב
+\begin_inset Formula $L^{\infty}$
+\end_inset
+
+ הסדרה 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ מתבדרת כי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert f_{n}-0\right\Vert _{\infty}=\textnormal{ess}\sup f_{n}=1\nrightarrow0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}=\begin{cases}
+0 & x=0\\
+n & x=\nicefrac{1}{n}\\
+0 & x=\nicefrac{2}{n}
+\end{cases}$
+\end_inset
+
+ ולינארית במעברים.
+ לכל 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{n\to\infty}f_{n}\left(x\right)=0$
+\end_inset
+
+, אבל עבור 
+\begin_inset Formula $L^{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert f_{n}-0\right\Vert _{\mathscr{L}^{1}}=\int_{0}^{1}\left|f-0\right|\mathrm{\, d}m=\int_{0}^{1}f\left(x\right)\mathrm{\, d}x=1\nrightarrow0
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $f_{n}\to0$
+\end_inset
+
+ נקודתית אבל לא במובן של 
+\begin_inset Formula $L^{1}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

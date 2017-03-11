@@ -1,0 +1,2678 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת לזיהוי אמ"ם 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת למניה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ניתנת למניה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ניתנת לזיהוי: בשיעור הקודם.
+\end_layout
+
+\begin_layout Standard
+כיוון שני: תהי 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מכונה שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+)המכונה האדומה(.
+ נבנה 
+\begin_inset Formula $M_{E}$
+\end_inset
+
+ שמונה את 
+\begin_inset Formula $L$
+\end_inset
+
+)המכונה השחורה(.
+\end_layout
+
+\begin_layout Standard
+נרצה לעבור על כל האפשרויות של הא"ב, ולבדוק מילה מילה בעזרת 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+.
+ אם היא מהשפה - להדפיס אותה.
+ אם נעבור לפי סדר לקסיקוגרפי לא נגיע לכל המילים - למשל אם 
+\begin_inset Formula $\Sigma=\left\{ a,b\right\} $
+\end_inset
+
+, אז הסדר הלקסיגורפי יהיה 
+\begin_inset Formula $a,aa,aaa,aaaa,...$
+\end_inset
+
+ ו לעולם לא נגיע ל
+\begin_inset Formula $b$
+\end_inset
+
+, כי יש אינסוף רצפים של 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ לכן נשתמש בסדר אחר:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+סדר המנייה על 
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+
+\series default
+ - סדר לפי אורך המילה, ובכל אורך נתון, לפי סדר לקסיקוגרפי.
+\end_layout
+
+\begin_layout Standard
+לכן נריץ מילה מילה מהשפה בסדר המניה.
+ כל מילה סרט המילים נעתיק לסרט הסימולציה, נריץ את המכונה האדומה על המילה,
+ ואם התשובה היא כן - נפלוט אותה לסרט הפלט, ובכל אופן נמשיך למילה הבאה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+בעיה
+\series default
+\bar default
+ - מה אם ניתקע על מילה מסויימת? במקרה הזה לעולם לא נגיע למילה הבאה.
+ אם המכונה האדומה הייתה מכונה להכרעה לא הייתה הבעיה הזו, אבל היא לא - ולכן
+ אנחנו צריכים למצוא דרך לדעת מתי המכונה נתקעת.
+\end_layout
+
+\begin_layout Standard
+היינו רוצים ליצור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+TimeOut
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שברגע שנעבור אותו - המכונה האדומה תפסיק ותעבור למילה הבאה.
+ אבל אנחנו לא יכולים לעשות את זה, כי בהגדרה מספר הצעדים הדרושים למכונה כדי
+ לקבל מילה אינו מוגבל.
+\end_layout
+
+\begin_layout Standard
+לכן מה שנעשה זה להוסיף סרט נוסף - סרט מונה.
+ בכל פעם שבמונה יש 
+\begin_inset Formula $x$
+\end_inset
+
+, נבדוק את כל המילים של עד 
+\begin_inset Formula $x$
+\end_inset
+
+ תווים ועד 
+\begin_inset Formula $x$
+\end_inset
+
+ צעדים - זה יתבצע במספר סופי של צעדים, ולכן מובטח לנו שזה יסתיים ונוכל לקדם
+ את המונה.
+ כמו כן, לכל מילה הניתנת לזיהוי יש מספר סופי של אותיות ואפשר לזהות אותה
+ במספר סופי של צעדים, ולכן בשלב מסויים המונה יעבור את שני המספרים האלה ונוכל
+ לזהות אותה.
+\end_layout
+
+\begin_layout Subsection*
+פעולות 
+\begin_inset Formula $M_{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למכונה 
+\begin_inset Formula $M_{E}$
+\end_inset
+
+ ארבעה סרטים:
+\end_layout
+
+\begin_layout Enumerate
+סרט פלט
+\end_layout
+
+\begin_layout Enumerate
+סרט סימולציה
+\end_layout
+
+\begin_layout Enumerate
+סרט מילים
+\end_layout
+
+\begin_layout Enumerate
+סרט מונה
+\end_layout
+
+\begin_layout Standard
+המכונה תרוץ בצורה הבאה:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ כתוב 
+\begin_inset Formula $\$1$
+\end_inset
+
+ בסרט מונה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ בצע סימולציה )הרץ( את המכונה 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ על תוכן הסרט "סימולציה", מספר צעדים כפי שמופיע בסרט "מונה"
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ אם באיזהו שלב בריצה המכונה 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ הגיעה למצב מקבל אז העתק תוכן סרט מילים לסרט פלט והוסף #.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג.
+ כתוב לסרט "מילים" את המילה הבאה לפי סדר המניה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד.
+ בדוק האם אורך המילה בסרט מילים גדול מהמונה בסרט "מונה".
+ אם כן עבור לשלב )
+\numeric on
+3
+\numeric off
+( אחרת מחק תוכן סרט סימולציה, העתק תוכן סרט מילים לסרט סימולציה וחזור לשלב
+ )
+\numeric on
+2
+\numeric off
+(א
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ הגדל מונה שבסרט "מונה" ב"
+\numeric on
+1
+\numeric off
+".
+ מחק תוכן סרט סימולציה ותוכן סרט "מילים" וחזור ל)
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Subsection*
+מתקיים
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w$
+\end_inset
+
+ בפלט ש
+\begin_inset Formula $M_{E}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $w$
+\end_inset
+
+ נפלט)ונכתב( בשלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.ב, בגלל שהמכונה 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ הגיעה למצב מקבל על 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $w\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ ב
+\begin_inset Formula $m$
+\end_inset
+
+ צעדים.
+ נסמן 
+\begin_inset Formula $K=\max\left\{ m,\left|w\right|\right\} $
+\end_inset
+
+.
+ אזי כשהמונה בסרט "מונה" 
+\begin_inset Formula $K\le$
+\end_inset
+
+ הקלט 
+\begin_inset Formula $w$
+\end_inset
+
+ ניתן למכונה 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ בסימולציה ו
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ רצה על 
+\begin_inset Formula $w$
+\end_inset
+
+ עד למצב קבלה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $w$
+\end_inset
+
+ נפלט בפלט של 
+\begin_inset Formula $M_{E}$
+\end_inset
+
+ כנדרש 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מכונת טיורינג לא דטרמיניסטית
+\end_layout
+
+\begin_layout Standard
+מ"ט לא דטרמיניסטית היא מודל אבסטרקטי - לא יכול להיות דבר כזה, כי זו מכונה
+ ש"בוחרת" מה לעשות במקרים מסויימים.
+ זה מודל תיאורטי.
+\end_layout
+
+\begin_layout Standard
+מכונת טיורינג לא דטרמיניסטית זו מכונה שלא תמיד נקבע אחד לאחד מה היא צריכה
+ לעשות בכל צעד.
+ לפי מה היא בוחרת מה לעשות? יש לה סוג של "בחירה חופשית", ואנחנו לא יכולים
+ לצפות מה היא תעשה.
+\end_layout
+
+\begin_layout Standard
+למכונת טיורינג לא דטרמיניסטית יש בכל שלב מספר אפשרויות, והיא בוחרת אחת מהן,
+ ובסופו של דבר היא אומרת כן או לא.
+\end_layout
+
+\begin_layout Standard
+בסופו של דבר, גם אם המכונה אומרת לא, יכול להיות שיש חישוב אחר להגיע לכן.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\left\{ w^{k}\middle|k\ge2,w\in\left\{ a,b\right\} ^{*}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+aabb\notin L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ababab\in L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+aaaaa\in L
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+abaabaab\notin L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך תראה מכונה לא דטרמיניסטית שמבצעת את הפעולה הזו? נרצה לנחש את האורך של
+ המילה, ולבדוק אם היא חוזרת על עצמה.
+\end_layout
+
+\begin_layout Standard
+המכונה תשתמש בשני סרטים - סרט הקלט, וסרט נוסף שבו נכתוב את המילה)
+\begin_inset Formula $\alpha,\beta\in\left\{ a,b\right\} $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תוכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תוכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מצב חדש
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+כתיבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+כתיבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תזוזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+תזוזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\size tiny
+ו
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{rej}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המילה נמצאת בשפה אמ"ם קיים חישוב שיוביל לתוצאה 
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - מ"ט לא דטרמיניסטית
+\end_layout
+
+\begin_layout Standard
+מ"ט לא דטרמיניסטית הינה שביעיה 
+\begin_inset Formula $N=\left(Q,\Sigma,\Gamma,\Delta,q_{0},q_{ac},q_{rej}\right)$
+\end_inset
+
+ כאשר
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Q$
+\end_inset
+
+ קבוצת מצבים סופית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ א"ב קלט
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ א"ב מכונה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $q_{0},q_{ac},q_{rej}$
+\end_inset
+
+ כמו במ"ט רגילה.
+\end_layout
+
+\begin_layout Standard
+ו
+\begin_inset Formula $\Delta\subseteq\left(\left(Q\setminus\left\{ q_{ac},q_{rej}\right\} \right)\times\Gamma\right)\times\left(Q\times\left(\Gamma\cup\left\{ L,R\right\} \right)\right)$
+\end_inset
+
+ - כלומר במקום פונקציה כמו במ"ט דטרמיניסטית, כאן זהו יחס.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $N$
+\end_inset
+
+ מ"ט ל"ד ותהי 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $N$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אם 
+\series bold
+\bar under
+קיים
+\series default
+\bar default
+ חישוב של 
+\begin_inset Formula $N$
+\end_inset
+
+ על 
+\begin_inset Formula $w$
+\end_inset
+
+ שמגיע למצב 
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ נאמר כי 
+\begin_inset Formula $N$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $w\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $N$
+\end_inset
+
+ מאשרת את 
+\begin_inset Formula $w$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $w\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+האם הוספנו כוח?
+\end_layout
+
+\begin_layout Standard
+האם מכונה לא דטרמיניסטית חזקה יותר ממכונה דטרמיניסטית? האם ישנן שפות שניתן
+ לזהות עם מכונה לא דטרמיניסטית, אבל לא עם מכונה דטרמיניסטית?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+התשובה היא לא!
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת לזיהוי ע"י מ"ט דט' אמ"ם 
+\begin_inset Formula $L$
+\end_inset
+
+ ניתנת לזיהוי ע"י מ"ט ל"ד.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+דט'
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+לא דט' - כי מכונה דט' הינה בפרט גם מכונה לא דט'.
+\end_layout
+
+\begin_layout Standard
+לא דט'
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+דט':
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $N$
+\end_inset
+
+ מ"ט לא דט' שמזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+)מכונה אדומה(
+\end_layout
+
+\begin_layout Standard
+יהיו לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סרטים - סרט קלט, סרט סימולציה וסרט בחירה.
+ בסרט הבחירה ניצור את כל המחרוזות של כל סדרות הבחירות האפשריות.
+ כל פעם נבצע את כל הבחירות לפי מה שכתוב בסרט הבחירה, ואז נעבור לאפשרות הבאה
+ בסרט הבחירה לפי סדר מניה.
+\end_layout
+
+\begin_layout Subsection*
+מבנה 
+\begin_inset Formula $M_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $M_{L}$
+\end_inset
+
+ שלושה סרטים: "קלט", "סימולציה" ו"בחירה".
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $K$
+\end_inset
+
+ מספר השורות המקסימלי בטבלת המעברים 
+\begin_inset Formula $\Delta$
+\end_inset
+
+)של 
+\begin_inset Formula $N$
+\end_inset
+
+( עם "מצב" ו"תוכן" זהים.
+\end_layout
+
+\begin_layout Subsubsection*
+פעילות 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ כתוב 
+\begin_inset Formula $\$1$
+\end_inset
+
+ על סרט "בחירה"
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ העתק קלט מסרט "קלט" לסרט סימולציה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ הרץ את 
+\begin_inset Formula $N$
+\end_inset
+
+ על סרט "סימולציה", צעד צעד.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $i$
+\end_inset
+
+ המספר שבמשבצת שבמיקום הראש בסרט "בחירה".
+ בסימולציה של 
+\begin_inset Formula $N$
+\end_inset
+
+ על הסרט שלה, בחר את האפשרות ה
+\begin_inset Formula $i$
+\end_inset
+
+ית מתוך האפשרויות)אם יש כזו.
+ אם לא, עבור לשלב )
+\numeric on
+3
+\numeric off
+(( וקדם את הראש בסרט "בחירה" משבצת אחת ימינה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג.
+ אם בסימולציה הגיע ל
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+ של 
+\begin_inset Formula $N$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M$
+\end_inset
+
+ ג"כ עוברת ל
+\begin_inset Formula $q_{ac}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד.
+ אם הראש בסרט "בחירה" רואה "." אז עבור לשלב )
+\numeric on
+3
+\numeric off
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ כתוב בסרט "בחירה" את המחרוזת הבאה לפי סדר המניה מעל הא"ב 
+\begin_inset Formula $\left\{ 1,...k\right\} $
+\end_inset
+
+.
+ מחק סרט סימולציה וחזור לשלב )
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+נשים לב שבכל ריצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( המכונה מבצעת את הבחירות לפי הסרט - גם אם זה אומר שהיא עוצרת באמצע.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $N$
+\end_inset
+
+ מ"ט ל"ד ו
+\begin_inset Formula $L\subseteq\Sigma^{*}$
+\end_inset
+
+ שפה.
+ נאמר כי 
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\bar under
+מכריעה
+\bar default
+ את 
+\begin_inset Formula $L$
+\end_inset
+
+ אם 
+\begin_inset Formula $N$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+ עוצרת לכל קלט - כלומר אין ל
+\begin_inset Formula $N$
+\end_inset
+
+ חישובים שלא עוצרים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל שפה שניתנת להכרעה ע"י מכונה ל"ד, ניתנת להכרעה ע"יח מכונה דט'
+\end_layout
+
+\end_body
+\end_document

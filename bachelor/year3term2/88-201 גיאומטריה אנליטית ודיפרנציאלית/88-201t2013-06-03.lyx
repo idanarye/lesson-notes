@@ -1,0 +1,687 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו את כל הקוים הגאודזיים על הגליל 
+\begin_inset Formula $M=\left\{ x^{2}+y^{2}=R^{2}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצאו גם את התבנית היסודית הראשונה, השנייה, אופרטור הצורה, ערכי העקמומיות
+ הראשיים, עקמומיות גאוס ועקמומיות ממוצעת.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יש פרמטריזציה: 
+\begin_inset Formula $r\left(u,v\right)=\left(R\cos u,R\sin u,v\right)\qquad\begin{array}{c}
+0\le u\le2\pi\\
+-\infty<v<\infty
+\end{array}$
+\end_inset
+
+.
+ נגזרותיה הראשונות:
+\begin_inset Formula 
+\[
+r_{\prime1}=\left(-R\sin u,R\cos u,0\right)\qquad r_{\prime2}=\left(0,0,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\left(g_{ij}\right)=\begin{pmatrix}R^{2} & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+נורמל:
+\begin_inset Formula 
+\[
+\vec{n}=r_{\prime1}\times r_{\prime2}=\det\begin{pmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+-R\sin u & R\cos u & 0\\
+0 & 0 & 1
+\end{pmatrix}=\left(R\cos u,R\sin u,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{n}=\frac{r_{\prime1}\times r_{\prime2}}{\left\Vert r_{\prime1}\times r_{\prime2}\right\Vert }=\frac{1}{R}\cdot\vec{n}=\left(\cos u,\sin u,0\right)
+\]
+
+\end_inset
+
+נגזרות שניות:
+\begin_inset Formula 
+\[
+r_{\prime11}=\left(-R\cos u,-R\sin u,0\right)\qquad r_{\prime12}=\left(0,0,0\right)=r_{\prime21}\qquad r_{\prime22}=\left(0,0,0\right)
+\]
+
+\end_inset
+
+תבנית יסודית שנייה:
+\begin_inset Formula 
+\[
+b_{11}=\left\langle r_{\prime11},\hat{n}\right\rangle =-R\cos^{2}u-R\sin^{2}u=-R\qquad b_{21}=\left\langle 0,\hat{n}\right\rangle =0=b_{21}\qquad b_{22}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left(b_{ij}\right)=\begin{pmatrix}-R & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+המטריצה ההפוכה למטריקה:
+\begin_inset Formula 
+\[
+G^{-1}=\left(g^{ij}\right)=\begin{pmatrix}\frac{1}{R^{2}} & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+אופרטור הצורה:
+\begin_inset Formula 
+\[
+s=G^{-1}\cdot B=\begin{pmatrix}\frac{1}{R^{2}} & 0\\
+0 & 1
+\end{pmatrix}\begin{pmatrix}-R & 0\\
+0 & 0
+\end{pmatrix}=\begin{pmatrix}-\frac{1}{R} & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+ערכי העקמומיות הראשיים:
+\begin_inset Formula 
+\[
+\left\{ \kappa_{1},\kappa_{2}\right\} =\left\{ 0,-\frac{1}{R}\right\} 
+\]
+
+\end_inset
+
+עקמומיות גאוס:
+\begin_inset Formula 
+\[
+K=\kappa_{1}\cdot\kappa_{2}\left(=\det S\right)=0
+\]
+
+\end_inset
+
+עקמומיות ממוצעת:
+\begin_inset Formula 
+\[
+H=\frac{\kappa_{1}+\kappa_{2}}{2}=-\frac{1}{2R}
+\]
+
+\end_inset
+
+סימני כריסטופל:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{k}=\frac{1}{2}g^{km}\left(g_{mi\prime j}+g_{m,\in}-g_{ij\prime m}\right)
+\]
+
+\end_inset
+
+ניתן לחשב חלק בלי הנוסחה, למשל
+\begin_inset Formula 
+\[
+\vec{0}=r_{\prime12}=\overbrace{\Gamma_{12}^{1}}^{=0}r_{\prime1}+\overbrace{\Gamma_{12}^{2}}^{=0}r_{\prime2}+\overbrace{b_{12}}^{=0}\hat{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{0}=r_{\prime21}=\overbrace{\Gamma_{21}^{1}}^{=0}r_{\prime1}+\overbrace{\Gamma_{21}^{2}}^{=0}r_{\prime2}+\overbrace{b_{21}}^{=0}\hat{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{1}=\Gamma_{22}^{2}=0
+\]
+
+\end_inset
+
+כדי למצוא את 
+\begin_inset Formula $\Gamma_{11}^{k}$
+\end_inset
+
+ נשתמש בנוסחה:
+\begin_inset Formula 
+\[
+\Gamma_{11}^{k}=\frac{1}{2}g^{km}\cdot\left(g_{m1\prime1}+g_{m1\prime1}-g_{11\prime m}\right)
+\]
+
+\end_inset
+
+נתחיל עם 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=\frac{1}{2}g^{1m}\left(2g_{m1\prime1}-g_{11\prime m}\right)=\frac{1}{2}g^{11}\left(2g_{11\prime1}-g_{11\prime1}\right)+\xcancel{\frac{1}{2}\underbrace{g^{12}}_{=0}\left(2g_{21\prime1}-g_{11\prime2}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=\frac{1}{2}\cdot\frac{1}{R^{2}}\cdot\left(g_{11\prime1}\right)=\frac{1}{2R^{2}}\cdot\underbrace{\frac{\partial R^{2}}{\partial u}}_{=0}=0
+\]
+
+\end_inset
+
+גם 
+\begin_inset Formula $\Gamma_{11}^{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בסה"כ 
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{1}=\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\qquad\Gamma_{ij}^{1}=\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+המשוואות הגאודזיות:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}+\xcancel{\overbrace{\Gamma_{ij}^{1}\dot{\gamma}^{i}\dot{\gamma}^{j}}^{=0}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{2}+\xcancel{\overbrace{\Gamma_{ij}^{2}\dot{\gamma}^{i}\dot{\gamma}^{j}}^{=0}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{\gamma}^{1}=0\\
+\ddot{\gamma}^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+לקואורדינטות שלנו קראנו 
+\begin_inset Formula $\begin{array}{c}
+\gamma^{1}=u\\
+\gamma^{2}=v
+\end{array}$
+\end_inset
+
+, ולכן המשוואות הגאודזיות הן 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\ddot{u}=0\\
+\ddot{v}=0
+\end{array}\right.$
+\end_inset
+
+.
+ אם פותרים את זה מקבלים שהקווים הגאודזים מתקבלים ע"י קווים ישרים במישור
+ 
+\begin_inset Formula $\left[uv\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו את המשוואות הגאודזיות עבור הטורוס 
+\begin_inset Formula $M$
+\end_inset
+
+, שהוא משטח הסיבוב של המעגל 
+\begin_inset Formula $C=\left\{ \left(x-a\right)^{2}+z^{2}=b^{2}\right\} $
+\end_inset
+
+ במישור 
+\begin_inset Formula $\left[xz\right]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $a>b$
+\end_inset
+
+)אין צורך לפתור אותן(.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה עבור 
+\begin_inset Formula $C$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+C:\begin{array}{rcccc}
+x & = & a+b\cos\phi & = & f\left(\phi\right)\\
+z & = & b\cdot\sin\phi & = & g\left(\phi\right)
+\end{array}\qquad0\le\phi\le2\pi
+\]
+
+\end_inset
+
+פרמטריזציה עבור הטורוס 
+\begin_inset Formula $M$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+M:\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}=\begin{pmatrix}\left(a+b\cos\phi\right)\cos\theta\\
+\left(a+b\cos\phi\right)\sin\theta\\
+b\sin\phi
+\end{pmatrix}=r\left(\theta,\phi\right)\qquad\begin{array}{c}
+0\le\theta\le2\pi\\
+0\le\phi\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+נגזרות ראשונות:
+\begin_inset Formula 
+\[
+r_{\prime1}=\left(-\left(a+b\cos\phi\right)\sin\theta,\left(a+b\cos\phi\right)\cos\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{\prime2}=\left(-b\sin\phi\cos\theta,-b\sin\phi\sin\theta,b\cos\phi\right)
+\]
+
+\end_inset
+
+תבנית יסודית ראשונה:
+\begin_inset Formula 
+\[
+g_{11}=\left\langle r_{\prime1},r_{\prime1}\right\rangle =\left(a+b\cos\phi\right)^{2}\qquad g_{11}=0=g_{21}\qquad g_{22}=b^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}\left(a+b\cos\phi\right)^{2} & 0\\
+0 & b^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g^{km}\right)=\begin{pmatrix}\frac{1}{\left(a+b\cos\phi\right)^{2}} & 0\\
+0 & \frac{1}{b^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+סימני כריסטופל:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{k}=\frac{1}{2}g^{km}\cdot\left(g_{mi\prime j}+g_{mj\prime i}-g_{ij\prime m}\right)
+\]
+
+\end_inset
+
+נתחיל עם 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{1}=\frac{1}{2}g^{1m}\left(g_{mi\prime j}+g_{mj\prime i}-g_{ij\prime m}\right)=\frac{1}{2}g^{11}\left(g_{1i\prime j}+g_{1j\prime i}+g_{ij\prime1}\right)+\xcancel{\frac{1}{2}\left(g^{12}\right)\left(\cdots\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2}\cdot\frac{1}{\left(a+b\cos\phi\right)^{2}}\cdot\left(g_{1i\prime j}+g_{1j\prime i}-g_{ij\prime1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=\frac{1}{2\left(a+b\cos\phi\right)^{2}}\left(g_{11\prime1}+g_{11\prime1}-g_{11\prime1}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{12}^{1}=\frac{1}{2\left(a+b\cos\phi\right)^{2}}\cdot\left(g_{11\prime2}+\cancel{g_{12\prime1}}-\cancel{g_{12\prime1}}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\cancel{2}\left(a+b\cos\phi\right)^{\cancel{2}}}\left(-\cancel{2}b\cancel{\left(a+b\cos\phi\right)}\sin\phi\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\frac{b\sin\phi}{a+b\cos\phi}=\Gamma_{21}^{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{1}=\frac{1}{2\left(a+b\cos\phi\right)^{2}}\cdot\left(\underbrace{g_{12\prime2}}_{0}+\underbrace{g_{12\prime2}}_{0}-\underbrace{g_{22\prime1}}_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\Gamma_{ij}^{1}\right)=\begin{pmatrix}0 & -\frac{b\sin\phi}{a+b\cos\phi}\\
+-\frac{b\sin\phi}{a+b\cos\phi} & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+נעבור ל
+\begin_inset Formula $k=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{2}=\frac{1}{2}g^{2m}\left(g_{mi\prime j}+g_{mj\prime i}-g_{ij\prime m}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\xcancel{\frac{1}{2}g^{21}\left(\cdots\right)}+\frac{1}{2}g^{22}\cdot\left(g_{2i\prime j}+g_{2j\prime i}-g_{ij\prime2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2}\cdot\frac{1}{b^{2}}\cdot\left(g_{2i\prime j}+g_{2j\prime i}-g_{ij\prime2}\right)
+\]
+
+\end_inset
+
+וכן הלאה, עד שמקבלים:
+\begin_inset Formula 
+\[
+\left(\Gamma_{ij}^{2}\right)=\begin{pmatrix}\frac{\left(a+b\cos\phi\right)\sin\phi}{b} & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+המשוואות הגאוזדיות הקואורדינטות שלנו 
+\begin_inset Formula $\begin{array}{c}
+\gamma^{1}=\theta\\
+\gamma^{2}=\phi
+\end{array}$
+\end_inset
+
+ הן:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{\gamma}^{1}+\Gamma_{ij}^{1}\dot{\gamma}^{i}\dot{\gamma}^{j}=0\\
+\ddot{\gamma}^{2}+\Gamma_{ij}^{2}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+המשוואה הראשונה:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}+\cancel{\Gamma_{11}^{1}\dot{\gamma}^{1}\dot{\gamma}^{1}}+\Gamma_{12}^{1}\dot{\gamma}^{1}\dot{\gamma}^{2}+\Gamma_{21}^{1}\dot{\gamma}^{2}\dot{\gamma}^{1}+\cancel{\Gamma_{22}^{1}\dot{\gamma}^{2}\dot{\gamma}^{2}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}-\frac{b\sin\phi}{a+b\cos\phi}\dot{\gamma}^{1}\dot{\gamma}^{2}-\frac{b\sin\phi}{a+b\cos\phi}\dot{\gamma}^{2}\dot{\gamma}^{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}-\frac{2b\sin\phi}{a+b\cos\phi}\dot{\gamma}^{1}\dot{\gamma}^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\ddot{\theta}-\frac{2b\sin\phi}{a+b\cos\phi}\dot{\theta}\dot{\phi}=0}
+\]
+
+\end_inset
+
+המשוואה השנייה:
+\begin_inset Formula 
+\[
+\boxed{\ddot{\phi}+\frac{\left(a+b\cos\phi\right)\sin\phi}{b}\left(\dot{\phi}\right)^{2}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משטחים מינימליים
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $M$
+\end_inset
+
+ נקרא 
+\emph on
+מינימלי
+\emph default
+ אם העקמומיות הממוצעת שלו זהותית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אפס:
+\begin_inset Formula 
+\[
+H\equiv0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה שקולה
+\end_layout
+
+\begin_layout Standard
+לכל נקודה 
+\begin_inset Formula $p\in M$
+\end_inset
+
+ יש סביבה שהיא בעלת שטח הפנים הקטן ביותר עם אותה השפה.
+\end_layout
+
+\end_body
+\end_document

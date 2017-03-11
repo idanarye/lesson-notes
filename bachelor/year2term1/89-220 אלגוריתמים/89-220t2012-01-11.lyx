@@ -1,0 +1,1387 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מסלולים קלים ביותר
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ מכוון.
+ 
+\begin_inset Formula $w:E\to\mathbb{R}$
+\end_inset
+
+ פונקציית משקלים.
+\end_layout
+
+\begin_layout Standard
+נתחיל מקודקוד 
+\begin_inset Formula $s$
+\end_inset
+
+, ונרצה למצוא את המרחקים)משקלים( של כל הקודקודים מהקודקוד 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ נסמן:
+\begin_inset Formula 
+\[
+\delta\left(s,v\right)=\begin{cases}
+\min_{p}w\left(p\right) & \exists p=\left\langle s,...v\right\rangle \in E\\
+\infty & \nexists p=\left\langle s,...v\right\rangle \in E
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w\left(p\right)=\sum_{i=0}^{k-1}w\left(v_{i},v_{i+1}\right)$
+\end_inset
+
+ בהינתן מסלול 
+\begin_inset Formula $p=\left\langle v_{0},...v_{k}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש בגרף מעגל בעל מקשל שלילי, שניתן להגיע אליו מ
+\begin_inset Formula $s$
+\end_inset
+
+, אז המרחקים הקצרים ביותר לא מוגדרים היטב.
+\end_layout
+
+\begin_layout Section*
+תכונת תת המבנה האופטימלי
+\end_layout
+
+\begin_layout Standard
+תת מסלולים של מסלולים קצרים ביותר הם מסלולים קצרים ביותר.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $p=\left\langle v_{1},...v_{k}\right\rangle $
+\end_inset
+
+ קצר ביותר, אז 
+\begin_inset Formula $p_{ij}=\left\langle v_{i},...v_{j}\right\rangle $
+\end_inset
+
+ הוא מסלול קצר ביותר.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שיש מסלול 
+\begin_inset Formula $p_{ij}'$
+\end_inset
+
+ מ
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $w\left(p_{ij}'\right)<w\left(p_{ij}\right)$
+\end_inset
+
+.
+ נבנה מסלול 
+\begin_inset Formula $p':v_{1}\xrightarrow{p_{1i}}v_{i}\xrightarrow{p'_{ij}}v_{j}\xrightarrow{p_{jk}}v_{k}$
+\end_inset
+
+.
+ מתקיים:
+\begin_inset Formula 
+\[
+w\left(p'\right)=w\left(p_{1i}\right)+w\left(p_{ij}'\right)+w\left(p_{jk}\right)<w\left(p\right)
+\]
+
+\end_inset
+
+בסתירה לכך ש
+\begin_inset Formula $p$
+\end_inset
+
+ קצר ביותר.
+\end_layout
+
+\begin_layout Section*
+אי שוויון המשולש
+\end_layout
+
+\begin_layout Standard
+בהנתן קשת 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\delta\left(s,v\right)\le\delta\left(s,u\right)+w\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טכניקת ההקלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underline{Relax}\left(u,v,w\right)$
+\end_inset
+
+)
+\begin_inset Formula $w$
+\end_inset
+
+ פונקציית משקלים(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ אם 
+\begin_inset Formula $\delta\left[v\right]>\delta\left[u\right]+w\left(u,v\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1.1
+\numeric off
+ 
+\begin_inset Formula $d\left[v\right]\gets d\left[u\right]+w\left[u,v\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1.2
+\numeric off
+ 
+\begin_inset Formula $\pi\left[v\right]\gets u$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כלומר לכל קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+, נשמור 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+)"הערכה" ל
+\begin_inset Formula $\delta\left(s,v\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+לאחר הקלת הקשת 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $d\left[v\right]\le d\left[u\right]+w\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נאתחל לכל 
+\begin_inset Formula $v\in V-\left\{ s\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $d\left[v\right]=\infty$
+\end_inset
+
+, 
+\begin_inset Formula $d\left[s\right]=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $V\ni v$
+\end_inset
+
+ 
+\begin_inset Formula $\pi\left[v\right]=NULL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים: 
+\begin_inset Formula $\forall v\in V:d\left[v\right]\ge\delta\left(s,v\right)$
+\end_inset
+
+ לכל סדרת צעדי הקלה על הקשתות.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על צעדי ההקלה:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בסיס
+\bar default
+: 
+\begin_inset Formula $\forall_{v-\left\{ s\right\} }\infty=d\left[v\right]\ge\delta\left(s,v\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $0=d\left[s\right]\ge\delta\left(s,s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מתקיים ל
+\begin_inset Formula $k$
+\end_inset
+
+ צעדים הראשונים.
+ בצעד ה
+\begin_inset Formula $k+1$
+\end_inset
+
+ מבצעים הקלה על הקשת 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+ היחיד שיכול להשתנות ולכן לכל 
+\begin_inset Formula $t\in V-\left\{ v\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מתקיים.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+ לא מתעדכן מההקלה, אז גם 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+ מתעדכן:
+\begin_inset Formula 
+\[
+d\left[v\right]=d\left[u\right]+w\left(u,v\right)\ge\delta\left(s,u\right)+w\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם באיזשהו שלב 
+\begin_inset Formula $d\left[v\right]=\delta\left(s,v\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+ לא משתנה יותר בעקבות פעולות הקלה.
+\end_layout
+
+\begin_layout Itemize
+אם אין מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ אז 
+\begin_inset Formula $d\left[v\right]=\delta\left(s,v\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+ הגרף שכולל קודקודים ש
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+ לשהם סופי, ואת הקשתות 
+\begin_inset Formula $\left(\pi\left(v\right),v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף מכוון ממושקל ללא מעגלים שליליים, ו
+\begin_inset Formula $s$
+\end_inset
+
+ קודקוד המקור, אז לאחר 
+\bar under
+אתחול הגרף
+\bar default
+)כמו בטענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( תת הגרף 
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+ יוצר עץ מושרש ששורשו 
+\begin_inset Formula $s$
+\end_inset
+
+ וכל סדרת צעדי הקלה משמרת את התכונה הזו.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שיש ב
+\begin_inset Formula $G$
+\end_inset
+
+ מעגל 
+\begin_inset Formula $C=\left\langle v_{0},...v_{k}=v_{0}\right\rangle $
+\end_inset
+
+.
+ מתקיים: 
+\begin_inset Formula $\pi\left[v_{i}\right]=v_{i-1}$
+\end_inset
+
+.
+ נניח בה"כ שהקשת 
+\begin_inset Formula $\left(v_{k-1},v_{k}\right)$
+\end_inset
+
+ יצרה את המעגל.
+\begin_inset Formula 
+\[
+\forall_{i}d\left[v_{I}\right]\ge d\left[v_{i-1}\right]+w\left(v_{i-1},v_{i}\right)
+\]
+
+\end_inset
+
+ומתקיים 
+\begin_inset Formula $d\left[v_{k}\right]>d\left[v_{k-1}\right]+w\left(v_{k-1},v_{k}\right)$
+\end_inset
+
+ לפני הוספת 
+\begin_inset Formula $\left(v_{k-1},v_{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו גרף מכוון ללא מעגלים.
+ נשאר להוכיח שיש מסלול יחיד מ
+\begin_inset Formula $s$
+\end_inset
+
+ לכל קודקוד ב
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היה צריך להוכיח שלכל קודקוד ב
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+ יש מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ אליו)תרגיל(
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף מכוון ממושקל ללא מעגלים שליליים, ו
+\begin_inset Formula $s$
+\end_inset
+
+ קודקוד מקור, ואתחול כמו בטענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, וסדרה של הקלות המביאות ל
+\begin_inset Formula $d\left[v\right]=\delta\left(s,v\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v$
+\end_inset
+
+, אז 
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+ הוא עץ מסלולים קצרים מ
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי מסלול 
+\begin_inset Formula $p=\left\langle v_{0}=s,...v_{k}\right\rangle $
+\end_inset
+
+ ב
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $d\left[v_{i}\right]=\delta\left(s,v_{i}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left[v_{i}\right]\ge d\left[v_{i-1}\right]+w\left(v_{i-1},v_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\delta\left(s,v_{i}\right)\ge\delta\left(s,v_{i-1}\right)+w\left(v_{i-1},v_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w\left(p\right)=\sum_{i=1}^{k}w\left(v_{i-1},v_{i}\right)\le\sum_{i=1}^{k}\left(\delta\left(s,v_{i}\right)-\delta\left(s,v_{i-1}\right)\right)=\delta\left(s,v_{k}\right)-\delta\left(s,v_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow w\left(p\right)\le\delta\left(s,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בלמן-פורד
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ אתחול של 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\pi\left[v\right]$
+\end_inset
+
+ כמו בטענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $\left|v-1\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל קשת 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.1.1
+\numeric off
+ 
+\begin_inset Formula $Relax\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ עבור כל קשת 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אם 
+\begin_inset Formula $d\left[v\right]>d\left[u\right]+w\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3.1.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החזר "לא"
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+4
+\numeric off
+.
+ החזר "כן"
+\end_layout
+
+\begin_layout Standard
+סה"כ זמן ריצה - 
+\begin_inset Formula $O\left(\left|V\right|\cdot\left|E\right|\right)$
+\end_inset
+
+, והאלג' מזהה אם יש מעגלים שליליים.
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+בזמן עצית האלג' 
+\begin_inset Formula $\forall_{v}d\left[v\right]=\delta\left(s,v\right)$
+\end_inset
+
+.
+ נוכיח באינדוקציה על המעברים:
+\end_layout
+
+\begin_layout Enumerate
+נניח שיש מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+ נסתכל על המסלול הקל ביותר 
+\begin_inset Formula $p=\left\langle v_{0}=s,...v_{k}=v\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $k\le\left|V\right|-1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נראה שאחרי המעבר ה
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $d\left[v_{i}\right]=\delta\left(s,v_{i}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בסיס 
+\begin_inset Formula $\surd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $d\left[v_{i}\right]=\delta\left(s,v_{i}\right)$
+\end_inset
+
+ לאחר המעבר ה
+\begin_inset Formula $i$
+\end_inset
+
+ ונסתכל על המעבר ה
+\begin_inset Formula $i+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+במעבר ה
+\begin_inset Formula $i+1$
+\end_inset
+
+ עוברים על כל הקשתות, ובפרט על 
+\begin_inset Formula $\left(v_{i},v_{i+1}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+d\left[v_{i+1}\right]\le d\left[v_{i}\right]+w\left(v_{i},v_{i+1}\right)=\delta\left(s,v_{i}\right)+w\left(v_{i},v_{i+1}\right)=\delta\left(s,v_{i+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left[v_{i+1}\right]\le\delta\left(s,v_{i+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left[v_{i+1}\right]=\delta\left(s,v_{i+1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח שאין מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $d\left[v\right]=\delta\left(s,v\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת נכונות האלגוריתם
+\end_layout
+
+\begin_layout Standard
+צ"ל ש
+\end_layout
+
+\begin_layout Itemize
+אם אין מעגלים שליליים האלג' מחזיר "כן" ומחשב 
+\begin_inset Formula $d\left[v\right]=\delta\left(s,v\right)$
+\end_inset
+
+, ו
+\begin_inset Formula $G_{\pi}$
+\end_inset
+
+ הוא עץ המסלולים הקצרים ביותר.
+\end_layout
+
+\begin_layout Itemize
+ואם יש מעגלים שליליים האלגוריתם יחזיר "לא".
+\end_layout
+
+\begin_layout Standard
+אם אין מעגל שלילי:
+\begin_inset Formula 
+\[
+d\left[v\right]=\delta\left(s,v\right)\le\left(s,u\right)+w\left(u,v\right)=d\left[u\right]+w\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש מעגל 
+\begin_inset Formula $C$
+\end_inset
+
+ שלילי: אז 
+\begin_inset Formula $0>\sum\limits _{c}w\left(v_{i-1},v_{i}\right)$
+\end_inset
+
+.
+ נניח בשלילה שהאלג' החזיר "כן".
+\begin_inset Formula 
+\[
+\forall_{i}d\left[v_{i}\right]\le d\left[v_{i-1}\right]+w\left(v_{i-1},v_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum d\left[v_{i}\right]\subseteq\sum\left(d\left[v_{i-1}\right]+w\left(v_{i-1},v_{i}\right)\right)=\sum d\left[v_{i}\right]+\sum w\left(v_{i-1},v_{i}\right)
+\]
+
+\end_inset
+
+בסתירה למעגל 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $DAG$
+\end_inset
+
+
+\begin_inset Formula $\left(G\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ מיון טופולוגי 
+\begin_inset Formula $G$
+\end_inset
+
+)עלות - 
+\begin_inset Formula $O\left(\left|V\right|+\left|E\right|\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ אתחול של 
+\begin_inset Formula $\pi\left[v\right]$
+\end_inset
+
+, 
+\begin_inset Formula $d\left[v\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ לכל קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ לפי סדר המיון הטופולוגי:)עלות - 
+\begin_inset Formula $O\left(\left|E\right|\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל שכן 
+\begin_inset Formula $u$
+\end_inset
+
+ של 
+\begin_inset Formula $v$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Relax\left(v,u,w\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+סה"כ - עלות 
+\begin_inset Formula $O\left(\left|V\right|+\left|E\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

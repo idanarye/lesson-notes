@@ -1,0 +1,998 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+שיעור חזרה
+\end_layout
+
+\begin_layout Section*
+חתכי חרוט
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פרבולות 
+\begin_inset Formula $x=ay^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+היפרבולות 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אליפסות 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מעגלים 
+\begin_inset Formula $x^{2}+y^{2}=R^{2}$
+\end_inset
+
+ - מקרה פרטי של אליפסות.
+\end_layout
+
+\begin_layout Standard
+הם נקראים 
+\emph on
+חתכי חרוט
+\emph default
+ כי כולם חתכים של מישור עם החרוט)הכפול( 
+\begin_inset Formula $z^{2}=x^{2}+y^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה הכללי של תבנית ריבועית:
+\begin_inset Formula 
+\[
+ax^{2}+by^{2}+cxy+dx+ey+f=0
+\]
+
+\end_inset
+
+אפשר לשנות קואורדינטות כדי לקבל חתך חרוט:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & \frac{c}{2}\\
+\frac{c}{2} & b
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באמצעות ליכסון אפשר להגיע לצורה:
+\begin_inset Formula 
+\[
+\alpha\left(x-x_{0}\right)^{2}+\beta\left(y-y_{0}\right)^{2}=1
+\]
+
+\end_inset
+
+ולפי הערכים של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ו
+\begin_inset Formula $\beta$
+\end_inset
+
+ יודעים אם מדובר בהיפרבולה או באליפסה.
+\end_layout
+
+\begin_layout Section*
+הסכם הסיכום של איינשטיין
+\end_layout
+
+\begin_layout Standard
+אם כותבים
+\begin_inset Formula 
+\[
+w_{kl}=x_{ij}y_{k}^{\hspace{4bp}j}z_{\hspace{4bp}l}^{i}
+\]
+
+\end_inset
+
+זה כאילו רושמים
+\begin_inset Formula 
+\[
+w_{kl}=\sum_{i}\sum_{j}x_{ij}y_{k}^{\hspace{4bp}j}z_{\hspace{4bp}l}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם אינדקס מופיע גם למטה וגם למעלה - אז מבצעים סכימה על האינדקס הזה.
+\end_layout
+
+\begin_layout Section*
+עקומות דו-מימדיות
+\end_layout
+
+\begin_layout Standard
+פונקציות מ"השעון" ל
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}\gamma^{2}\left(t\right)\\
+\gamma^{2}\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר למצוא את האורך כפונקציה של הזמן:
+\begin_inset Formula 
+\[
+s\left(t\right)=\int_{0}^{t}\left|\dot{\gamma}\left(t\right)\right|\mathrm{\, d}t
+\]
+
+\end_inset
+
+אפשר להפוך את 
+\begin_inset Formula $s$
+\end_inset
+
+ כדי לקבל את הזמן כפונקציה של המרחק 
+\begin_inset Formula $t\left(s\right)$
+\end_inset
+
+, ולפי זה למצוא פרמטריזציה טבעית)=במהירות יחידה(:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\gamma\left(t\left(s\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}2t\\
+3t
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\gamma}\left(t\right)=\begin{pmatrix}2\\
+3
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s\left(t\right)=\int_{0}^{t}\sqrt{2^{2}+3^{2}}\mathrm{\, d}t=\int_{0}^{t}\sqrt{13}\mathrm{\, d}t=\sqrt{13}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\frac{s}{\sqrt{13}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(s\right)=\begin{pmatrix}\frac{2s}{\sqrt{13}}\\
+\frac{3s}{\sqrt{13}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אנחנו בעצם מאבדים את המהירות ומקבלים ווקטור כיוון: 
+\begin_inset Formula $\hat{T}\left(s\right)=\gamma'\left(s\right)$
+\end_inset
+
+.
+ הנורמל הוא האנך לווקטור המהירות:
+\begin_inset Formula 
+\[
+\hat{n}\left(s\right)=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\hat{T}\left(s\right)
+\]
+
+\end_inset
+
+העקמומיות 
+\begin_inset Formula $k$
+\end_inset
+
+ קובעת את כיוון ומהירות הסיבוב של ווקטור הכיוון:
+\begin_inset Formula 
+\[
+T'\left(s\right)=kn\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עקומות תלת-מימדיות
+\end_layout
+
+\begin_layout Standard
+הפעם הפרמטריזציה היא מהשעון ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}\gamma^{1}\left(t\right)\\
+\gamma^{2}\left(t\right)\\
+\gamma^{3}\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+גם כאן אפשר לדבר על מרחק ולמצוא פרמטריזציה טבעית:
+\begin_inset Formula 
+\[
+s=\int_{0}^{t}\left\Vert \dot{\gamma}\left(t\right)\right\Vert \mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(s\right)=\gamma\left(t\left(s\right)\right)
+\]
+
+\end_inset
+
+וגם כאן אפשר למצוא וקטור כיוון, נורמל ועקמומיות:
+\begin_inset Formula 
+\[
+\hat{T}=\gamma'\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{T}'\left(s\right)=k\hat{n}\left(s\right)
+\]
+
+\end_inset
+
+אבל כאן יש גם וקטור בי-נורמלי, שמאונך גם לעקומה וגם לנורמל - כלומר גם לעקומה
+ וגם למישור בו העקומה נמצאת באותה נקודה:
+\begin_inset Formula 
+\[
+\hat{b}=\hat{T}\times\hat{n}
+\]
+
+\end_inset
+
+הקשר בין הכיוון, הנורמל והבי-נורמל הוא:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+T'\left(s\right)=k\hat{n}\left(s\right)\\
+n'\left(s\right)=-kT\left(s\right)+\tau\hat{b}\left(s\right)\\
+b'\left(s\right)=-\tau\hat{n}\left(s\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משטחים
+\end_layout
+
+\begin_layout Standard
+יש מיפוי 
+\begin_inset Formula $r:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $r\left(u,v\right)\in\mathbb{R}^{3}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $u,v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנוסף דורשים תנאי 
+\emph on
+נורמליות
+\emph default
+ - שלוקלית כל נקודה תגדיר משהו דו-מימדי - כלומר שדרגת 
+\begin_inset Formula $\mathrm{d}r$
+\end_inset
+
+ תהיה מקסימלית בכל נקודה - כלומר 
+\begin_inset Formula $\textnormal{rank }\mathrm{d}r=2$
+\end_inset
+
+.
+ כי למשל 
+\begin_inset Formula $r\left(u,v\right)=\begin{pmatrix}u+v\\
+u+v\\
+0
+\end{pmatrix}$
+\end_inset
+
+ לא מגדיר משטח, אלא קו.
+\end_layout
+
+\begin_layout Standard
+הדיפרנציאל של המיפוי הוא 
+\begin_inset Formula $\mathrm{d}r=\begin{pmatrix}\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v}\\
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\\
+\frac{\partial z}{\partial u} & \frac{\partial z}{\partial v}
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}\begin{pmatrix}u+v\\
+u+v\\
+0
+\end{pmatrix}=\xcancel{\begin{pmatrix}1 & 1\\
+1 & 1\\
+0 & 0
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}\begin{pmatrix}u+v\\
+u-v\\
+0
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+1 & -1\\
+0 & 0
+\end{pmatrix}\qquad\surd
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עקומות על משטח
+\end_layout
+
+\begin_layout Standard
+אם יש לנו עקומה 
+\begin_inset Formula $\gamma:\mathbb{R}\to\mathbb{R}^{2}$
+\end_inset
+
+ ומשטח 
+\begin_inset Formula $r:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+, אז אפשר למפות דרך המשטח את העקומה למרחב.
+\end_layout
+
+\begin_layout Section*
+מישור משיק
+\end_layout
+
+\begin_layout Standard
+הדיפרנציאל של המשטח:
+\begin_inset Formula 
+\[
+\mathrm{d}r:\mathbb{R}^{2}\to\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוא בעצם מפה מסביבה של הנקודה אל המישור המשיק:
+\begin_inset Formula 
+\[
+\mathrm{d}\gamma:T_{a}U\to T_{A}M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v}\\
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\\
+\frac{\partial z}{\partial u} & \frac{\partial z}{\partial v}
+\end{pmatrix}\begin{pmatrix}T_{1}\\
+T_{2}
+\end{pmatrix}=\begin{pmatrix}c_{1}\\
+c_{2}\\
+c_{3}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה בעצם אומר שכל הוקטורים על המפה היוצאים מנקודה מסויימת ממופים למישור המשיק
+ לאותה נקודה.
+ לכן הכפלה שלהם תתבצע לפי הוקטורים ב
+\begin_inset Formula $T_{A}M$
+\end_inset
+
+, לא לפי הוקטורים ב
+\begin_inset Formula $T_{a}U$
+\end_inset
+
+.
+ זה בעצם משרה לנו 
+\emph on
+מכפלה פנימית
+\emph default
+:
+\begin_inset Formula 
+\[
+w,p\in U
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle w,p\right\rangle =w^{t}\cdot\underbrace{\mathrm{d}r^{t}\mathrm{d}r}_{G}\cdot p=\begin{pmatrix}w_{1} & w_{2}\end{pmatrix}\begin{pmatrix}g_{11} & g_{12}\\
+g_{21} & g_{22}
+\end{pmatrix}\begin{pmatrix}p_{1}\\
+p_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימני כריסטופל
+\end_layout
+
+\begin_layout Standard
+סימני כריסטופל מוגדרים ע"י הנגזרות הראשונה והשנייה של המשטח, התבנית היסודית
+ השניה, והנורמל:
+\begin_inset Formula 
+\[
+r_{\prime ij}=\Gamma_{ij}^{k}r_{\prime k}+b_{ij}\hat{n}
+\]
+
+\end_inset
+
+אבל למעשה ניתן לחשב אותם לפי התבנית היסודית הראשונה בלבד:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{l}=\frac{1}{2}g^{kl}\left(g_{ki\prime j}+g_{jk\prime i}-g_{ij\prime k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אופרטור הצורה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=G^{-1}b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+קווים גיאודזיים
+\end_layout
+
+\begin_layout Standard
+מקיימים את המשוואות:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{i}+\Gamma_{jk}^{i}\dot{\gamma}^{j}\dot{\gamma}^{k}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: חצי עליון של כדור: 
+\begin_inset Formula $r=\left(u,v,\sqrt{1-u^{2}-v^{2}}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=\sin t\qquad v=\cos t\qquad\gamma=\begin{pmatrix}\sin t\\
+\cos t
+\end{pmatrix}
+\]
+
+\end_inset
+
+זוהי פרמטריזציה טבעית, שכן:
+\begin_inset Formula 
+\[
+\dot{\gamma}^{t}G\dot{\gamma}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משוואת אויילר-לגרנג'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\min\int_{t_{1}}^{t_{2}}\mathscr{L}\left(u,v,\dot{u},\dot{v},t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+מתקיים כאשר
+\begin_inset Formula 
+\[
+\frac{\partial L}{\partial u}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{u}}\qquad\frac{\partial\mathscr{L}}{\partial v}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+למצוא את הקווים הגיאודזיים על הטורוס
+\begin_inset Formula 
+\[
+x\left(\theta,\varphi\right)=\begin{pmatrix}\left(R+r\cos\theta\right)\cos\varphi\\
+\left(R+r\cos\theta\right)\sin\varphi\\
+r\sin\theta
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}x=\begin{pmatrix}-r\sin\theta\cos\varphi & -\left(R+r\cos\theta\right)\sin\varphi\\
+-r\sin\theta\sin\varphi & \left(R+r\cos\theta\right)\cos\varphi\\
+r\cos\theta & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\begin{pmatrix}r^{2} & 0\\
+0 & \left(R+r\cos\theta\right)^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s=\int\sqrt{g_{\theta\theta}\dot{\theta}^{2}+g_{\varphi\varphi}\dot{\varphi}^{2}+2g_{\theta\varphi}\dot{\theta}\dot{\varphi}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G^{-1}=\begin{pmatrix}\frac{1}{r^{2}} & 0\\
+0 & \frac{1}{\left(R+r\cos\theta\right)^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=\frac{1}{2}g^{11}\left(g_{11\prime1}+g_{11\prime1}-g_{11\prime1}\right)+\frac{1}{2}g^{12}\left(g_{12\prime1}+g_{12\prime1}-g_{11\prime2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{12}^{1}=\frac{1}{2}g^{11}\left(g_{11\prime2}+g_{12\prime1}-g_{12\prime1}\right)+\frac{1}{2}g^{12}\left(g_{21\prime2}+g_{22\prime1}-g_{12\prime2}=0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{1}=\frac{1}{2}g^{11}\left(g_{21\prime2}+g_{21\prime2}-g_{22\prime1}\right)+\frac{1}{2}g^{12}\left(g_{22\prime2}+g_{22}\cdots\right)=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=\frac{1}{2}\left(-\frac{1}{r^{2}}-2r\sin\theta\left(R+r\cos\theta\right)\right)=\frac{\sin\theta\left(R+r\cos\theta\right)}{r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{11}^{2}=\frac{1}{2}g^{21}\left(\cdots\right)+\frac{1}{2}g^{22}\left(g_{12\prime1}+g_{12\prime1}-g_{11\prime2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{12}^{2}=\frac{1}{2}g^{21}\left(\cdots\right)+\frac{1}{2}g^{22}\left(g_{22\prime1}+g_{21\prime2}-g_{21\prime2}\right)=\frac{r\sin\theta}{R+r\cos\theta}=\Gamma_{21}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{2}=\frac{1}{2}g^{21}\left(\cdots\right)+\frac{1}{2}g^{22}\left(g_{22\prime2}+g_{22\prime2}-g_{22\prime2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{i}+\Gamma_{jk}^{i}\dot{\gamma}^{j}\dot{\gamma}^{k}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\ddot{\gamma}^{1}+\xcancel{\Gamma_{11}^{1}\dot{\gamma}^{1}\dot{\gamma}^{1}}+\xcancel{2\Gamma_{12}^{1}\dot{\gamma}^{1}\dot{\gamma}^{2}}+\Gamma_{22}^{1}\dot{\gamma}^{2}\dot{\gamma}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{0=\ddot{\gamma}^{1}+\frac{\sin\theta\left(R+\cos\theta\right)}{r}\left(\dot{\gamma}^{2}\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\ddot{\gamma}^{2}+2\Gamma_{12}^{2}\dot{\gamma}^{1}\dot{\gamma}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{0=\ddot{\gamma}^{2}+2\frac{r\sin\theta}{R+r\cos\theta}\dot{\gamma}^{1}\dot{\gamma}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שהמשוואות הגיאודזיות נותנות עקומות בפרמטריזציה טבעית, אפשר להחליף
+ את אחת המשוואות במשוואה
+\begin_inset Formula 
+\[
+g_{11}\left(\dot{\gamma}^{1}\right)^{2}+g_{22}\left(\dot{\gamma}^{2}\right)^{2}=1
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+r^{2}\left(\dot{\gamma}^{1}\right)^{2}+\left(R+r\cos\theta\right)^{2}\left(\dot{\gamma}^{2}\right)^{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\dot{\gamma}^{2}\right)^{2}=\frac{1-r^{2}\left(\dot{\gamma}^{1}\right)^{2}}{\left(R+r\cos\theta\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\ddot{\gamma}^{1}+\frac{\sin\theta\left(R+r\cos\theta\right)}{r}\cdot\frac{1-r^{2}\left(\dot{\gamma}^{1}\right)^{2}}{\left(R+r\cos\theta\right)^{2}}
+\]
+
+\end_inset
+
+ואפשר לנסות ולהמשיך לפתור...
+\end_layout
+
+\begin_layout Subsection*
+פתרון לפי משוואות אויילר לגרנג'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s=\int\sqrt{g_{\theta\theta}\dot{\theta}^{2}+g_{\varphi\varphi}\dot{\varphi}^{2}+2g_{\theta\varphi}\dot{\theta}\dot{\varphi}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}=\gamma^{2}\dot{\theta}^{2}+\left(R+r\cos\theta\right)^{2}\dot{\varphi}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathcal{L}}{\partial\dot{\theta}}=\frac{\partial L}{\partial\theta}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\left(2r^{2}\dot{\theta}\right)=-2\left(R+r\cos\theta\right)r\sin\theta\dot{\varphi}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cancel{2}r^{2}\ddot{\theta}=-\cancel{2}\left(R+r\cos\theta\right)r\sin\theta\dot{\varphi}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathcal{L}}{\partial\dot{\varphi}}=\frac{\partial\mathcal{L}}{\partial\varphi}=0\qquad\frac{\partial\mathcal{L}}{\partial\dot{\varphi}}=\textnormal{const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\left(R+r\cos\theta\right)^{2}\dot{\varphi}=\textnormal{const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\varphi}=\frac{c_{1}}{\left(R+r\cos\theta\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r^{2}\ddot{\theta}=\left(R+r\cos\theta\right)r\sin\theta\frac{c_{1}^{2}}{\left(R+r\cos\theta\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

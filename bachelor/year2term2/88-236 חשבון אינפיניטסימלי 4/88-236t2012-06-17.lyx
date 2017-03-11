@@ -1,0 +1,632 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+משפט סקוטס
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ התחום החסום בין שני גלילים ברדיוסים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\numeric off
+)שמרכזם בציר 
+\begin_inset Formula $z$
+\end_inset
+
+( הנמצא באוקטן החיובי, ומתחת למישור 
+\begin_inset Formula $z=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\omega=-y^{3}\mathrm{\, d}x\wedge\mathrm{d}z+x^{3}\mathrm{\, d}y\wedge\mathrm{d}z$
+\end_inset
+
+.
+ חשב את 
+\begin_inset Formula $\int_{\partial V}\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+)כשלא אומרים האוריינטציה חיובית(
+\end_layout
+
+\begin_layout Standard
+פתרון ישיר ידרוש פרמטריזציה של 
+\begin_inset Formula $\partial V$
+\end_inset
+
+ המורכבת משישה משטחים)!(, ולכן נעדיף להפעיל את משפט סטוקס:
+\begin_inset Formula 
+\[
+\int_{\partial V}\omega=\int_{V}\mathrm{d}\omega
+\]
+
+\end_inset
+
+נחשב את אגף ימין
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=-3y^{2}\mathrm{\, d}y\wedge\mathrm{d}x\wedge\mathrm{d}z+3x^{2}\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z=3\left(x^{2}+y^{2}\right)\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z
+\]
+
+\end_inset
+
+נמצא פרמטריזציה עבור 
+\begin_inset Formula $V$
+\end_inset
+
+ באמצעות קואורדינטות גליליות:
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+\varphi: & \Omega & \to & V\\
+ & \left(r,\theta,z\right) & \mapsto & \left(r\cos\theta,r\sin\theta,z\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Omega=\left\{ \left(r,\theta,z\right)\middle|\begin{array}{c}
+1\le r\le2\\
+0\le\theta\le\frac{\pi}{2}\\
+0\le z\le2
+\end{array}\right\} 
+\]
+
+\end_inset
+
+נחשב את ה
+\lang english
+Pullback
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\varphi_{r}=\left(\cos\theta,\sin\theta,0\right)\qquad\varphi_{\theta}=\left(-r\sin\theta,r\cos\theta,0\right)\qquad\varphi_{z}=\left(0,0,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi^{*}\mathrm{d}\omega=3\left(\left(r\cos\theta\right)^{2}+\left(r\sin\theta\right)^{2}\right)\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z\begin{pmatrix}\cos\theta & \sin\theta & 0\\
+-r\sin\theta & r\cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\mathrm{\, d}r\wedge\mathrm{d}\theta\wedge\mathrm{d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=3r^{2}\begin{vmatrix}\cos\theta & \sin\theta & 0\\
+-r\sin\theta & r\cos\theta & 0\\
+0 & 0 & 1
+\end{vmatrix}\mathrm{\, d}r\wedge\mathrm{d}\theta\wedge\mathrm{d}z=3r^{3}\mathrm{\, d}r\wedge\mathrm{d}\theta\wedge\mathrm{d}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\int_{V}\mathrm{d}\omega=\int_{0}^{2}\int_{0}^{\frac{\pi}{2}}\int_{1}^{2}3r^{2}\mathrm{\, d}r\mathrm{\, d}\theta\mathrm{\, d}z=\frac{\pi}{\cancel{2}}\cdot\cancel{2}\cdot\int_{1}^{2}3r^{2}\mathrm{\, d}r=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left.\pi\cdot\frac{3}{4}r^{4}\right|_{r=1}^{r=2}=\boxed{\frac{45\pi}{4}}=\int_{\partial V}\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+המשך תרגיל
+\end_layout
+
+\begin_layout Standard
+חשב את האינטגרל 
+\begin_inset Formula $\int_{S}\omega$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא המשטח שמהווה את כל 
+\begin_inset Formula $\partial V$
+\end_inset
+
+ פרט לבסיס התחתון.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $B$
+\end_inset
+
+ את הבסיס התחתון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ כבר לא כולא תחום תלת מימדי - ומשפט סטוקס לא ישים כמו מקודם.
+ בכדי לחשב את 
+\begin_inset Formula $\int_{S}\omega$
+\end_inset
+
+ צריכים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטריזציות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+"טריק": 
+\begin_inset Formula $\int_{S}\omega+\int_{B}\omega=\int_{\partial V}\omega=\dfrac{45\pi}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ נתון באוריאנטציה המתאימה.
+ נמצא פרמטריזציה עבור 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\psi\left(\theta,r\right)=\left(r\cos\theta,r\sin\theta,0\right)\qquad\begin{array}{c}
+1\le r\le2\\
+0\le\theta\le\frac{\pi}{2}
+\end{array}
+\]
+
+\end_inset
+
+נגזרות חלקיות:
+\begin_inset Formula 
+\[
+\psi_{\theta}=\left(-r\sin\theta,r\cos\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{r}=\left(\cos\theta,\sin\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi^{*}\omega=\left[-\left(r\sin\theta\right)^{3}\mathrm{\, d}x\wedge\mathrm{d}z\begin{pmatrix}\psi_{\theta}\\
+\psi_{r}
+\end{pmatrix}+\left(r\cos\theta\right)^{3}\mathrm{\, d}y\wedge\mathrm{d}z\begin{pmatrix}\psi_{\theta}\\
+\psi_{r}
+\end{pmatrix}\right]\mathrm{\, d}\theta\wedge\mathrm{d}r=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\int_{B}\omega=\iint_{\left[1,2\right]\times\left[0,\frac{\pi}{2}\right]}\psi^{*}\omega=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\int_{S}\omega=\frac{45}{4}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+במישור נתון מרובע שקודקודיו 
+\begin_inset Formula $\left(-1,0\right),\left(1,1\right),\left(2,3\right),\left(0,4\right)$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $D$
+\end_inset
+
+ את התחום שבתוך המרובע.
+\end_layout
+
+\begin_layout Standard
+נתונה התבנית
+\begin_inset Formula 
+\[
+\omega=2xy^{3}\mathrm{\, d}x+3x^{2}y^{2}\mathrm{\, d}y\qquad\left(=\mathrm{d}\left(x^{2}y^{3}\right)\right)
+\]
+
+\end_inset
+
+חשב את 
+\begin_inset Formula $\int_{\partial D}\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נעזר במשפט סטוקס:
+\begin_inset Formula 
+\[
+\int_{\partial D}\omega=\int_{D}\mathrm{d}\omega=\int_{D}0
+\]
+
+\end_inset
+
+נניח שלא שמנו לב:
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\left(\xcancel{2y^{3}\mathrm{\, d}x}+6xy^{2}\mathrm{\, d}y\right)\wedge\mathrm{d}x+\left(6xy^{2}\mathrm{\, d}x+\xcancel{6x^{2}y\mathrm{\, d}y}\right)\wedge\mathrm{d}y=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=6xy^{2}\mathrm{\, d}y\wedge\mathrm{d}x+6xy^{2}\mathrm{\, d}x\wedge\mathrm{d}y=0
+\]
+
+\end_inset
+
+מסקנה: 
+\begin_inset Formula $\int_{\partial D}\omega=0$
+\end_inset
+
+ לא תלוי ב
+\begin_inset Formula $D$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Subsection*
+המשך
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ את העקומה הנמצאת על החלק העליון של הריבוע המחבר בין 
+\begin_inset Formula $\left(-1,0\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ בכיוון תנועה זה.
+ חשב 
+\begin_inset Formula $\int_{\gamma_{1}}\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+ את הצלע התחתונה בכיוון ההפוך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\gamma_{1}}+\int_{-\gamma_{2}}=\int_{\partial D}\omega=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\gamma_{1}}\omega=\int_{\gamma_{2}}\omega
+\]
+
+\end_inset
+
+פרמטריזציה:
+\begin_inset Formula 
+\[
+\gamma_{2}\left(t\right)=\left(-1,0\right)+t\cdot\left(2,1\right)=\left(2t-1,t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma_{2}'\left(t\right)=\left(2,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma_{2}^{*}\omega=\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דרך אחרת - משפט סטוקס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\partial\gamma_{1}=\left\{ \underbrace{\left(-1,0\right)}_{-},\underbrace{\left(1,1\right)}_{+}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{\gamma_{1}}\omega=\int_{\gamma_{1}}\mathrm{d}\left(x^{2}y^{3}\right)=\int_{\partial\gamma_{1}}x^{2}y^{3}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=f\left(1,1\right)-f\left(-1,0\right)=1^{2}\cdot1^{3}-\left(-1\right)^{2}\cdot0^{2}=\boxed{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

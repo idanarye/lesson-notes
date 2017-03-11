@@ -1,0 +1,1582 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+סיבוכיות
+\end_layout
+
+\begin_layout Standard
+סיבוכיות היא תחום העוסק בבעיות בעלות פתרון 
+\bar under
+יעיל
+\bar default
+.
+ אלגוריתם יקרא 
+\emph on
+יעיל
+\emph default
+ אם הוא עובד בזמן פולינומי באורך הקלט שלו.
+\end_layout
+
+\begin_layout Standard
+הנושא שנעסוק בו היום הוא שאלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+P
+\lang hebrew
+ מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP
+\lang hebrew
+.
+ נעסוק ב
+\emph on
+גרסת החיפוש
+\emph default
+ וב
+\emph on
+גרסת ההכרעה
+\emph default
+ של השאלה.
+\end_layout
+
+\begin_layout Part*
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגירסת החיפוש
+\end_layout
+
+\begin_layout Standard
+בעיית חיפוש ניתנת להתאמה ליחס 
+\begin_inset Formula $R\subseteq\left\{ 0,1\right\} ^{*}\times\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+)שקול ל
+\begin_inset Formula $R=\left\{ \left(x,y\right)\middle|\left(x,y\right)\in R\right\} $
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+בעיית החיפוש המתאימה ליחס 
+\begin_inset Formula $R$
+\end_inset
+
+ היא: בהנתן 
+\begin_inset Formula $x$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+.
+ אין אין 
+\begin_inset Formula $y$
+\end_inset
+
+ כנדרש, צריך להחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+)סימון מיוחד(.
+\end_layout
+
+\begin_layout Standard
+היחס 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא 
+\emph on
+חסום פולינומיאלית
+\emph default
+ אם קיים פולינום 
+\begin_inset Formula $p$
+\end_inset
+
+ כך שעבור כל 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|y\right|\le p\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מחלקת 
+\emph on
+בעיות החיפוש
+\emph default
+ הניתנות לפתרון בזמן פולינומיאלי תוגדר בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $PF$
+\end_inset
+
+)
+\lang english
+Polinomail Find
+\lang hebrew
+(:
+\begin_inset Formula 
+\[
+PF=\left\{ R\middle|\begin{array}{c}
+\textnormal{Exists polinomial algorithm }A\\
+\textnormal{that solves the search problem}\\
+\textnormal{that is represented by }R
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ פותר את בעיית החיפוש של 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $x$
+\end_inset
+
+, אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ העובד בזמן פולינומיאלי ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+ צריך להחזיר 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $y$
+\end_inset
+
+ כזה קיים, ו
+\begin_inset Formula $\perp$
+\end_inset
+
+ אחרת.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $R\left(x\right)=\left\{ y\middle|\left(x,y\right)\in R\right\} $
+\end_inset
+
+, אזי 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ מחזיר 
+\begin_inset Formula $y\in R\left(x\right)$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\emptyset\neq R\left(x\right)$
+\end_inset
+
+, אחרת מחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הבעיה של מציאת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+-צביעה חוקית של גרף שייכת ל
+\begin_inset Formula $PF$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל הבעיה של מציאת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+-צביעה חוקית של גרף לא שייכת ל
+\begin_inset Formula $PF$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+להלן נתאר 
+\emph on
+מחלקה טבעית
+\emph default
+ של בעיות ש
+\series bold
+לא
+\series default
+ ידועות להיות שייכות ל
+\begin_inset Formula $PF$
+\end_inset
+
+ - 
+\begin_inset Formula $PC$
+\end_inset
+
+)
+\lang english
+Polinomial Check
+\lang hebrew
+(:
+\begin_inset Formula 
+\[
+PC=\left\{ R\middle|\begin{array}{c}
+R\textnormal{ is polinomially bounded relation.}\\
+\textnormal{Exists polinomial algorithm that given}\\
+\textnormal{a pair }\left(x,y\right)\textnormal{ determines if }\left(x,y\right)\in R\textnormal{,}\\
+\textnormal{otherwise returns }\perp
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלת 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגרסת החיפוש
+\end_layout
+
+\begin_layout Standard
+שאלת 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגרסת החיפוש מתאימה לשאלה 
+\begin_inset Formula $PC\subseteq PF$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+במילים אחרות: האם כאשר ניתן להכריע בזמן יעיל האם פתרון לבעיית חיפוש הוא
+ פתרון חוקי, האם במקרה זה ניתן גם למצוא פתרון בזמן יעיל?
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PF\subsetneq PC
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ שעבורו מתקיים 
+\begin_inset Formula $R\in PF,R\notin PC$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+R=\underbrace{\left\{ \left(x,1\right)\middle|x\in\left\{ 0,1\right\} ^{*}\right\} }_{R_{1}}\cup\underbrace{\left\{ \left(x,0\right)\middle|x\in S\right\} }_{R_{2}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ תהיה קבוצה ש
+\emph on
+אינה כריעה
+\emph default
+, כלומר לא קיימת מכונת טיורינג שיכולה להכריע האם 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\in PF$
+\end_inset
+
+ כי עבור כל 
+\begin_inset Formula $x\in\left\{ 0,1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $"1"$
+\end_inset
+
+ הוא פתרון חוקי וניתן למצוא אותו, אבל 
+\begin_inset Formula $R\notin PC$
+\end_inset
+
+ כי בהנתן זוג 
+\begin_inset Formula $\left(x,0\right)$
+\end_inset
+
+ כדי להכריע אם 
+\begin_inset Formula $\left(x,0\right)\in R$
+\end_inset
+
+ צריך להכריע אם 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ וזו בעיה לא כריעה.
+\end_layout
+
+\begin_layout Part*
+בעיית 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגרסת ההכרעה
+\end_layout
+
+\begin_layout Standard
+בעיות הכרעה ניתנות לתיאור בעזרת 
+\series bold
+קבוצות
+\series default
+:
+\begin_inset Formula 
+\[
+S=\left\{ x\middle|x\textnormal{ fulfills condition }\pi\right\} 
+\]
+
+\end_inset
+
+בעיית ההכרעה המתאימה לקבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+: בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+ נחזיר "כן" אם 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, אחרת נחזיר "לא".
+\end_layout
+
+\begin_layout Standard
+קבוצת הבעיות הניתנות להכרעה בזמן פולינומיאלי היא 
+\begin_inset Formula $P$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P=\left\{ S\middle|\textnormal{Exists polinomial algorithm that determines }S\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+קבוצת הגרפים ה
+\numeric on
+2
+\numeric off
+-צביעים שייכת ל
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+קבוצת הגרפים ה
+\numeric on
+3
+\numeric off
+-צביעים 
+\series bold
+לא ידועה
+\series default
+ להיות שייכת ל
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קבוצה טבעית של בעיות שלא ידועה להיות שייכת ל
+\begin_inset Formula $P$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+NP=\left\{ S\middle|S\textnormal{ has a solving system of type }NP\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מערכת הוכחה מסוג 
+\begin_inset Formula $NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוג 
+\begin_inset Formula $V$
+\end_inset
+
+-מוודא ו
+\begin_inset Formula $P$
+\end_inset
+
+-פולינום המקיים:
+\end_layout
+
+\begin_layout Enumerate
+שלמות - 
+\series bold
+טענות נכונות ניתנות להוכחה
+\series default
+:
+\begin_inset Formula 
+\[
+\exists_{y}\left|y\right|<P\left(\left|x\right|\right),V\left(x,y\right)\iff x\in S
+\]
+
+\end_inset
+
+מוודא הנו אלגוריתם פולינומיאלי ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נאותות - טענות לא נכונות לא ניתנות להוכחה:
+\begin_inset Formula 
+\[
+\forall_{y}V\left(x,y\right)=0\iff x\notin S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השאלה של 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגרסת ההכרעה
+\end_layout
+
+\begin_layout Standard
+השאלה של 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ בגרסת ההכרעה היא האם 
+\begin_inset Formula $P=NP$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים, בשונה מגרסת החיפוש, ש
+\begin_inset Formula $P\subseteq NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאלת 
+\begin_inset Formula $P$
+\end_inset
+
+ מול 
+\begin_inset Formula $NP$
+\end_inset
+
+ היא למעשה השאלה "האם להוכחות יש כוח או שלמצוא הוכחה זו משימה לא הרבה יותר
+ קשה מלוודא אותה?"
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PC\subseteq PF\iff P=NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\implies$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $PC\subseteq PF$
+\end_inset
+
+ ונראה כי 
+\begin_inset Formula $P=NP$
+\end_inset
+
+)למעשה, נראה ש
+\begin_inset Formula $NP\subseteq P$
+\end_inset
+
+, הרי ידוע ש
+\begin_inset Formula $P\subseteq NP$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $S\in NP$
+\end_inset
+
+]ונראה כי 
+\begin_inset Formula $S\in P$
+\end_inset
+
+[.
+ אזי 
+\begin_inset Formula $\exists_{y}\left|y\right|<P\left(\left|x\right|\right),V\left(x,y\right)=1\iff x\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula $R=\left\{ \left(x,y\right)\middle|V\left(x,y\right)=1\right\} $
+\end_inset
+
+.
+ מכיוון ש
+\begin_inset Formula $S\in NP$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ פועל בזמן פולינומיאלי ולכן 
+\begin_inset Formula $R\in PC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נשתמש בהנחה 
+\begin_inset Formula $PC\subseteq PF$
+\end_inset
+
+, ונקבל 
+\begin_inset Formula $R\in PF$
+\end_inset
+
+ - ז"א קיים אלגוריתם פולינומיאלי 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ שבהנתן 
+\begin_inset Formula $x$
+\end_inset
+
+ מחזיר 
+\begin_inset Formula $y\in R\left(x\right)$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $R\left(x\right)\neq\emptyset$
+\end_inset
+
+, אחרת מחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+, ולכן נגדיבר בעזרת 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ אלגוריתם פולינומיאלי שמכריע את 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ האלגוריתם יפעל באופן הבא: בהנתן 
+\begin_inset Formula $x$
+\end_inset
+
+ יחזיר "כן" אם"ם 
+\begin_inset Formula $\perp\neq A\left(x\right)$
+\end_inset
+
+, אחרת יחזיר "לא".
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ נניח 
+\begin_inset Formula $P=NP$
+\end_inset
+
+ ונראה כי 
+\begin_inset Formula $PC\subseteq PF$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עבור 
+\begin_inset Formula $R\in PC$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $R\in PF$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $S_{R}=\left\{ x\middle|R\left(x\right)\neq\emptyset\right\} $
+\end_inset
+
+.
+ נגדיר כמו כן את הקבוצה הבאה:
+\begin_inset Formula 
+\[
+S_{R}'=\left\{ \left(x,y'\right)\middle|\exists_{y''}\left(x,y'y''\right)\in R\right\} 
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $S_{R}'\ni\left(x,""\right)$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $x\in S_{R}$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $\left(x,y'\right)\in S_{R}'$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $y'$
+\end_inset
+
+ הוא תחילית של פתרון ל
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S'_{R}\in NP$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\exists_{y'}\left|y'\right|<P\left(\left|xy'\right|\right),V\left(\left(x,y'\right),y''\right)=1\iff\left(x,y'\right)\in S'_{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(x,y'y''\right)\iff V\left(\left(x,y'\right),y''\right)=1$
+\end_inset
+
+, ואת הבדיקה ש
+\begin_inset Formula $\left(x,y'y''\right)\in R$
+\end_inset
+
+ ניתן לעשות בזמן פולינומי כי 
+\begin_inset Formula $R\in PC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נשתמש בהנחה 
+\begin_inset Formula $NP\subseteq P$
+\end_inset
+
+ ונקבל ש
+\begin_inset Formula $S_{R}'\in P$
+\end_inset
+
+.
+ מטרתנו היא להראות 
+\begin_inset Formula $R\in PF$
+\end_inset
+
+.
+ נראה אלגוריתם פולינומיאלי שבהנתן 
+\begin_inset Formula $x$
+\end_inset
+
+ מחזיר 
+\begin_inset Formula $y\in R\left(x\right)$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $R\left(x\right)\neq0$
+\end_inset
+
+, אחרת מחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x,""\right)\notin S_{R}'$
+\end_inset
+
+ מחזיר 
+\begin_inset Formula $\perp$
+\end_inset
+
+)אין פתרון(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'\gets""$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כל עוד 
+\begin_inset Formula $\left(x,y'\right)\notin R$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left(x,y'0\right)\in S_{R}'$
+\end_inset
+
+ 
+\begin_inset Formula $y'\gets y'0$
+\end_inset
+
+, אחרת 
+\begin_inset Formula $y'\gets y'1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחזיר את 
+\begin_inset Formula $y'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן קיבלנו כי 
+\begin_inset Formula $R\in PF$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+למה שעשינו כאן קוראים 
+\emph on
+רדוקציה
+\emph default
+.
+ רצינו לפתור את בעיית החיפוש 
+\begin_inset Formula $R$
+\end_inset
+
+, ופתרנו אותה ע"י זה שהשתמשנו באלגוריתם שפותר את בעיית ההכרעה 
+\begin_inset Formula $S_{R}'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+רדוקציה
+\end_layout
+
+\begin_layout Section*
+רדוקציה)קוק( מבעיה 
+\begin_inset Formula $B$
+\end_inset
+
+ לבעיה 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלגוריתם 
+\series bold
+יעיל
+\series default
+ הפותר את בעיה 
+\begin_inset Formula $B$
+\end_inset
+
+ תוך שימוש ב"
+\emph on
+קופסה שחורה
+\emph default
+" הפותרת את בעיה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הראנו בטענה רדוקציה מ
+\begin_inset Formula $R$
+\end_inset
+
+ ל
+\begin_inset Formula $S'_{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מקובל לתאר רדוקציית קוק כמכונת טיורינג בעלת גישת אורקל:
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר כי למכונת טיורינג 
+\begin_inset Formula $M$
+\end_inset
+
+ יש גישרת אורקל 
+\begin_inset Formula $f$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $M^{f}$
+\end_inset
+
+ אם 
+\begin_inset Formula $M$
+\end_inset
+
+ יכולה להפעיל שאילתות של 
+\begin_inset Formula $f$
+\end_inset
+
+ בעלות של פועלה בודדת.
+\end_layout
+
+\begin_layout Section*
+הגדרה - רדוקציית קוק מ
+\begin_inset Formula $B$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכונת אורקל פולינומיאלית 
+\begin_inset Formula $M^{A}$
+\end_inset
+
+ הפותרת את 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+רדוקציית)קארפ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Karp
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+רדוקציית קארפ היא רדוקציה בין שתי בעיות הכרעה.
+ היא מקרה פרטי של רדוקציית קוק.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $S_{1},S_{2}\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, רדוקציית קארפ מ
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+x\in S_{1}\iff f\left(x\right)\in S_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ צריכה להיות פונקציה חשיבה פולינומיאלית.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{\textnormal{Clique}}=\left\{ \left(\left\langle G,K\right\rangle ,C\right)\middle|\begin{array}{c}
+C\textnormal{ is a Clique}\\
+\left|C\right|\ge K
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{\textnormal{Clique}}=\left\{ \left\langle G,K\right\rangle \middle|\exists_{C\subseteq G}C\textnormal{ is Clique},\left|C\right|\ge K\right\} 
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula $G$
+\end_inset
+
+ גרף, 
+\begin_inset Formula $K$
+\end_inset
+
+ מספר, ו
+\begin_inset Formula $C$
+\end_inset
+
+ הוא קליק - כלומר אוסף קודקודים שבין כל שניים יש קשת.
+\begin_inset Formula 
+\[
+R_{IS}=\left\{ \left(\left\langle G,K\right\rangle ,IS\right)\middle|\begin{array}{c}
+IS\textnormal{ is independent set}\\
+\left|IS\right|\ge K
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{IS}=\left\{ \left\langle G,K\right\rangle \middle|\exists_{IS\subseteq G}IS\textnormal{ is independent set},\left|IS\right|\ge K\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula $IS$
+\end_inset
+
+ הוא קבוצה בלתי תלויה - אוסף קודקודים שבין כל שניים אין קשת.
+\end_layout
+
+\begin_layout Standard
+רדוקציית קארפ מ
+\begin_inset Formula $S_{IS}$
+\end_inset
+
+ ל
+\begin_inset Formula $S_{\textnormal{Clique}}$
+\end_inset
+
+: 
+\begin_inset Formula $f:\left\langle G,K\right\rangle \mapsto\left\langle \overline{G},K\right\rangle $
+\end_inset
+
+ - כלומר הופכים את 
+\begin_inset Formula $G$
+\end_inset
+
+ לגרף המשלים.
+ אם בגרף המשלים יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Clique
+\lang hebrew
+, אז בגרף המקורי יש קבוצה בלתי תלויה.
+\end_layout
+
+\begin_layout Section*
+רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Levin
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- רדוקציה בין שתי בעיות חיפוש
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $R_{1},R_{2}\subseteq\left\{ 0,1\right\} ^{*}\times\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, רדוקציית לוין מ
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ היא זוג פונקציות
+\begin_inset Formula 
+\[
+f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}\qquad g:\left\{ 0,1\right\} ^{*}\times\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}
+\]
+
+\end_inset
+
+כך שמתקיימים שני הדברים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R_{1}\left(x\right)\neq\emptyset\iff R_{2}\left(f\left(x\right)\right)\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x,y\right)\in R_{1}\left(x\right)\iff y\in R_{2}\left(f\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - רדוקציית לוין מ
+\begin_inset Formula $R_{IS}$
+\end_inset
+
+ ל
+\begin_inset Formula $R_{\textnormal{Clique}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+]לפתור את 
+\begin_inset Formula $R_{IS}$
+\end_inset
+
+ - בהנתן 
+\begin_inset Formula $\left\langle G,K\right\rangle $
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $IS$
+\end_inset
+
+ בגודל לפחות 
+\begin_inset Formula $K$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+[
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f:\left\langle G,K\right\rangle \mapsto\left\langle \overline{G},K\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g:\left(\left\langle G,K\right\rangle ,C\right)\mapsto C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

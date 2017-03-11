@@ -1,0 +1,1315 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+רכיבים קשירים בחזקה
+\end_layout
+
+\begin_layout Standard
+בגרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ מכוון, קבוצה 
+\begin_inset Formula $C\subseteq V$
+\end_inset
+
+ היא רכיב קשיר בחזקה אם לכל זוג קודקודים 
+\begin_inset Formula $u,v\in C$
+\end_inset
+
+ יש מסלול בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ ו
+\begin_inset Formula $C$
+\end_inset
+
+ היא קבוצה מקסימלית.
+\end_layout
+
+\begin_layout Standard
+בהנתן גרף 
+\begin_inset Formula $G=\left(G,E\right)$
+\end_inset
+
+, גרף רכיבים הקשירות 
+\begin_inset Formula $G^{SCC}=\left(V^{SCC},E^{SCC}\right)$
+\end_inset
+
+ יהיה הגרף בו:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V^{SCC}$
+\end_inset
+
+ - לכל רכיב קשירות חזק 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+ יהיה קודקוד 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $V^{SEC}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E^{SCC}$
+\end_inset
+
+ - תהיה קשת 
+\begin_inset Formula $\left(V_{i},V_{j}\right)$
+\end_inset
+
+ אם יש קשת מקודקוד ברכיב 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ לקודקוד ברכיב 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+אלגוריתם
+\end_layout
+
+\begin_layout Enumerate
+נריץ 
+\begin_inset Formula $DFS$
+\end_inset
+
+ על הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+, ונקבל את זמני הסיום 
+\begin_inset Formula $f\left[v\right]$
+\end_inset
+
+ של הקודקודים.
+\end_layout
+
+\begin_layout Enumerate
+נחשב את 
+\begin_inset Formula $G^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נריץ 
+\begin_inset Formula $DFS$
+\end_inset
+
+ על 
+\begin_inset Formula $G^{T}$
+\end_inset
+
+ כשמתחילים מהקודקודים לפי סדר 
+\begin_inset Formula $f\left[v\right]$
+\end_inset
+
+ יורד.
+\end_layout
+
+\begin_layout Enumerate
+נחזיר את העצים שהתקבלו בסריקת 
+\begin_inset Formula $DFS$
+\end_inset
+
+ האחרונה.
+ הקודקודים בכל עץ הם רכיב קשירות חזק.
+\end_layout
+
+\begin_layout Standard
+נגדיר: 
+\begin_inset Formula $G^{T}=\left(V^{T},E^{T}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V^{T}=V$
+\end_inset
+
+ ו
+\begin_inset Formula $E^{T}=\left\{ \left(u,v\right)\middle|\left(v,u\right)\in E\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+תמיד מסתכלים על זמני הסיום של הרצת ה
+\begin_inset Formula $DFS$
+\end_inset
+
+ הראשונה.
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+רכיב הוא קשיר חזק ב
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ רכיב הוא קשיר חזק ב
+\begin_inset Formula $G^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+בהינתן שני רכיבים קשירים חזק 
+\begin_inset Formula $C,C'$
+\end_inset
+
+ ו
+\begin_inset Formula $u,v\in C$
+\end_inset
+
+ ו
+\begin_inset Formula $u',v'\in C'$
+\end_inset
+
+ אם יש מסלול 
+\begin_inset Formula $u\to u'$
+\end_inset
+
+, אז אין מסלול 
+\begin_inset Formula $v'\to v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G^{SCC}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $DAG$
+\end_inset
+
+ - גרף מכוון ללא מעגלים)כי אם יש קשת, לא יכולה להיות הקשת ההפוכה(
+\end_layout
+
+\begin_layout Section*
+הסבר לאלגוריתם
+\end_layout
+
+\begin_layout Standard
+ניקח לדוגמה את הגרף)לאחר 
+\begin_inset Formula $G^{SCC}$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\xymatrix{ae\ar[r]\ar[rd] & bd\ar[rd]\\
+ & cf\ar[r] & gh
+}
+\]
+
+\end_inset
+
+רואים שזמן הסיום הגבוה ביותר יהיה ב
+\begin_inset Formula $a$
+\end_inset
+
+ או 
+\begin_inset Formula $e$
+\end_inset
+
+ - כי יש מהם מסלולים לשאר הקודקודים, ולשאר הקודקודים אין מסלולים אליהם)אחרת
+ הם היו באותו רכיב קשירות חזק(.
+ נסתכל על הגרף ההפוך:
+\begin_inset Formula 
+\[
+\xymatrix{ae & \ar[l]bd\\
+ & \ar[lu]cf & \ar[l]\ar[lu]gh
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נתחיל את הסריקה מ
+\begin_inset Formula $a$
+\end_inset
+
+ או 
+\begin_inset Formula $e$
+\end_inset
+
+, אז נקבל רק את 
+\begin_inset Formula $ae$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ובצורה פורמלית
+\end_layout
+
+\begin_layout Standard
+נגדיר עבור תת קבוצה 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+זמן גילוי של הקבוצה 
+\begin_inset Formula $U$
+\end_inset
+
+: 
+\begin_inset Formula $d\left[U\right]=\min\limits _{u\in U}\left\{ d\left[u\right]\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+זמן סיום של הקבוצה 
+\begin_inset Formula $U$
+\end_inset
+
+: 
+\begin_inset Formula $f\left[U\right]=\max\limits _{u\in U}\left\{ f\left[u\right]\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בהינתן שני רכיבים קשירים חזק 
+\begin_inset Formula $C,C'$
+\end_inset
+
+, 
+\begin_inset Formula $u\in C$
+\end_inset
+
+ ו
+\begin_inset Formula $u'\in C'$
+\end_inset
+
+, אז אם יש קשת 
+\begin_inset Formula $\left(u,u'\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(C\right)>f\left(C'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Itemize
+נניח שהקודקוד הראשון מ
+\begin_inset Formula $C$
+\end_inset
+
+ ל
+\begin_inset Formula $C'$
+\end_inset
+
+ שהתגלה הוא מ
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $d\left[C\right]<d\left[C'\right]$
+\end_inset
+
+.
+ נסמן אותו ב
+\begin_inset Formula $x$
+\end_inset
+
+ - 
+\begin_inset Formula $d\left[x\right]=d\left[C\right]$
+\end_inset
+
+.
+ כל שאר הקודקודים מ
+\begin_inset Formula $C$
+\end_inset
+
+ ו
+\begin_inset Formula $C'$
+\end_inset
+
+ עוד לא התגלו - הם לבנים - ויש לנו מסלול מ
+\begin_inset Formula $x$
+\end_inset
+
+ לכל אחד מהם.
+ לפי משפט המסלול הלבן, הקודקודים מ
+\begin_inset Formula $C$
+\end_inset
+
+ ו
+\begin_inset Formula $C'$
+\end_inset
+
+ הם צאצאים של 
+\begin_inset Formula $x$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $f\left[x\right]=f\left[C\right]>f\left[C'\right]$
+\end_inset
+
+)לכל הקודקודים 
+\begin_inset Formula $w\ne x$
+\end_inset
+
+ ב
+\begin_inset Formula $C,C'$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left[x\right]>f\left[w\right]$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Itemize
+נניח שהקודקוד הראשון שמתגלה הוא מ
+\begin_inset Formula $C'$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $y$
+\end_inset
+
+.
+ מ
+\begin_inset Formula $y$
+\end_inset
+
+ אפשר להגיע לכל קודקודי 
+\begin_inset Formula $C'$
+\end_inset
+
+ כי 
+\begin_inset Formula $C'$
+\end_inset
+
+ רכיב קשיר חזק.
+ לקודקודי 
+\begin_inset Formula $C$
+\end_inset
+
+ אי אפשר להגיע מ
+\begin_inset Formula $y$
+\end_inset
+
+ לפי טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ ז"א שנסיים עם 
+\begin_inset Formula $y$
+\end_inset
+
+, לפני שבכלל נגלה את קודקודי 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left[y\right]=f\left(C'\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left[y\right]<f\left(C\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(C'\right)<f\left(C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+בגרף 
+\begin_inset Formula $G^{T}$
+\end_inset
+
+ בהנתן שני רכיבים קשירים חזק 
+\begin_inset Formula $C,C'$
+\end_inset
+
+ ויש קשת 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $u\in C$
+\end_inset
+
+ ו
+\begin_inset Formula $v\in C'$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f\left(C\right)<f\left(C'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)הרכיבים הקשירים חזק ב
+\begin_inset Formula $G$
+\end_inset
+
+ ו
+\begin_inset Formula $G^{T}$
+\end_inset
+
+ הם זהים(
+\end_layout
+
+\begin_layout Standard
+בהינתן הקשת 
+\begin_inset Formula $\left(u,v\right)\in E^{T}$
+\end_inset
+
+ אז יש קשת 
+\begin_inset Formula $\left(v,u\right)\in E$
+\end_inset
+
+ ומכיוון שרכיבי הקשירות חזק זהים אז לפי טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ 
+\begin_inset Formula $v\in C'$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u\in C$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(C\right)<f\left(C'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+האלגוריתם מזהה נכון רכיבים קשירים חזק
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על העצים שמתקבלים מהרצת 
+\begin_inset Formula $DFS$
+\end_inset
+
+ השניה
+\end_layout
+
+\begin_layout Part*
+עץ פורש מינימלי - 
+\lang english
+MST
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+, 
+\begin_inset Formula $w:E\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $e\in E:w\left(e\right)$
+\end_inset
+
+ - פונקציית שנותנת משקל לכל קשת בגרף.
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Standard
+תת קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ של 
+\begin_inset Formula $E$
+\end_inset
+
+ תקרא 
+\bar under
+קבוצה מבטיחה
+\bar default
+ אם קיים 
+\begin_inset Formula $MST$
+\end_inset
+
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ המכיל את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה מבטיחה ו
+\begin_inset Formula $e\notin A$
+\end_inset
+
+, 
+\begin_inset Formula $e$
+\end_inset
+
+ היא 
+\bar under
+קשת בטוחה
+\bar default
+ אם 
+\begin_inset Formula $A\cup\left\{ e\right\} $
+\end_inset
+
+ היא קבוצה מבטיחה
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Formula $A\gets\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ כל עוד 
+\begin_inset Formula $A$
+\end_inset
+
+ היא לא עץ פורש:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוציאים קשת בטוחה 
+\begin_inset Formula $e$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2.2
+\numeric off
+ 
+\begin_inset Formula $A\gets A\cup\left\{ e\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ החזר 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+האלגוריתם נותן קבוצה מבטיחה.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה - באינדוקציה על 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה מבטיחה, ומצאנו קשת 
+\begin_inset Formula $e$
+\end_inset
+
+ בטוחה.
+ אז 
+\begin_inset Formula $A\cup\left\{ e\right\} $
+\end_inset
+
+ מבטיחה לפי הגדרה.
+\end_layout
+
+\begin_layout Standard
+תמיד)עד שנקבל עץ פורש( נוכל למצוא קשת בטוחה, כי יש 
+\begin_inset Formula $MST$
+\end_inset
+
+ המכיל את 
+\begin_inset Formula $A$
+\end_inset
+
+, וקשתות ב
+\begin_inset Formula $MST$
+\end_inset
+
+ הזה 
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+חתך
+\bar default
+
+\begin_inset Formula $\left(V_{1},V_{2}\right)$
+\end_inset
+
+בגרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ היא חלוקה של הקודקודים ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קבוצות זרות ולא ריקות, 
+\begin_inset Formula $V_{1}\cup V_{2}=V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+קשת 
+\begin_inset Formula $e$
+\end_inset
+
+ תקרא 
+\bar under
+חוצה
+\bar default
+ את החתך אם היא מחברת קודקוד ב
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ לקודקוד ב
+\begin_inset Formula $V_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+החתך 
+\bar under
+מכבד
+\bar default
+ קבוצת קשתות 
+\begin_inset Formula $A$
+\end_inset
+
+, אם אין ב
+\begin_inset Formula $A$
+\end_inset
+
+ קשת החוצה את החתך.
+\end_layout
+
+\begin_layout Itemize
+קשת 
+\begin_inset Formula $e$
+\end_inset
+
+ תקרא 
+\bar under
+חוצה קלה
+\bar default
+ אם משקלה מינימאלי מבין הקשתות החוצות.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \ar@{--}[ddddr]\\
+\bigcirc\ar@{=}[r]\ar@{=}[dd] & \bigcirc\ar@{==}[rr]\ar@{-}[rdd] &  & \bigcirc\ar@{-}[d]\\
+ &  &  & \bigcirc\\
+\bigcirc\ar@{-}[ruu]\ar@{-}[r] & \bigcirc\ar@{=}[r] & \bigcirc\ar@{==}[r]\ar@{==}[ru] & \bigcirc\ar@{=}[u]\\
+ &  &  & {}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקו המקוקו)--( הוא החתך.
+ הקשתות הכפולות-מקוקות)==( הן חוצות.
+ הקשתות הכפולות-רציפות)=( הן קבוצת קשתות שהחתך מכבד
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה מבטיחה ויהי 
+\begin_inset Formula $\left(V_{1},V_{2}\right)$
+\end_inset
+
+חתך המכבד אותה.
+ נניח ש
+\begin_inset Formula $e=\left(u,v\right)$
+\end_inset
+
+ היא קשת קלה החוצה את החתך.
+ אז 
+\begin_inset Formula $e$
+\end_inset
+
+ הויא קשת בטוחה עבור 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ היא קבוצה מבטיחה, אז קיים 
+\begin_inset Formula $MST$
+\end_inset
+
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ המכיל אותה.
+ אם 
+\begin_inset Formula $e\in T$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+סיימנו.
+\end_layout
+
+\begin_layout Standard
+)נשים לב ש
+\begin_inset Formula $e\notin A$
+\end_inset
+
+ כי 
+\begin_inset Formula $e$
+\end_inset
+
+ חוצה את החתך והחתך מכבד את 
+\begin_inset Formula $A$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $e\notin T$
+\end_inset
+
+.
+ נוסיף אותה ל
+\begin_inset Formula $T$
+\end_inset
+
+: 
+\begin_inset Formula $T\cup\left\{ e\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שב
+\begin_inset Formula $T\cup\left\{ e\right\} $
+\end_inset
+
+ יש מעגל.
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+ יש קשת 
+\begin_inset Formula $e'$
+\end_inset
+
+ שחוצה את החתך.
+ נסתכל ב
+\begin_inset Formula $T'=T-\left\{ e'\right\} \cup\left\{ e\right\} $
+\end_inset
+
+.
+ מקבלים ש
+\begin_inset Formula $T'$
+\end_inset
+
+ הוא עץ פורש, כי הוא עץ ויש בו 
+\begin_inset Formula $\left|V\right|-1$
+\end_inset
+
+ קשתות.
+ ידוע ש
+\begin_inset Formula $w\left(e\right)\le w\left(e'\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $e$
+\end_inset
+
+ חוצה קלה.
+\begin_inset Formula 
+\[
+w\left(T'\right)=w\left(T\right)-w\left(e'\right)+w\left(e\right)\le w\left(T\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יצרנו עץ פורש מינימלי חדש.
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ היא קשת בטוחה כי 
+\begin_inset Formula $T'$
+\end_inset
+
+ מכיל אותה ומכיל את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

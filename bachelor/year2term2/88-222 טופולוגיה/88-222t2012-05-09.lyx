@@ -1,0 +1,1382 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $d\in\mathbb{N}$
+\end_inset
+
+, סדרה חשבונית דו צדדית היא קבוצה 
+\begin_inset Formula $S=a+d\mathbb{Z}=\left\{ a+dk\middle|k\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר את הטופולוגיה הפרו-סופית 
+\begin_inset Formula $\tau_{\textnormal{pro}}$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in O$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $S\in x+d\mathbb{Z}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in x+d\mathbb{Z}\subseteq O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר בצורה שקולה באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in O$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $x\in S=a+d\mathbb{Z}\subseteq O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הסיבה שההגדרות שקולות: אם 
+\begin_inset Formula $x\in a+d\mathbb{Z}$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $t\in\mathbb{Z}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=a+dt$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a=x-dt$
+\end_inset
+
+.
+ נקבל:
+\begin_inset Formula 
+\[
+a+d\mathbb{Z}=\left(x-dt\right)+d\mathbb{Z}=x+d\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{\textnormal{pro}}$
+\end_inset
+
+ טופולוגיה על 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Z}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ כי לכל 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in x+1\cdot\mathbb{Z}\subseteq\mathbb{Z}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\emptyset\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ באופן ריק.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\forall_{i\in I}O_{i}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $\bigcup\limits _{i\in I}O_{i}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $x\in\bigcup\limits _{i\in I}O_{i}$
+\end_inset
+
+, אזי קיים 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in O_{i_{0}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x\in O_{i_{0}}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ ולכן נקבל שקיימת 
+\begin_inset Formula $x\in S=x+d\mathbb{Z}\subseteq O_{i_{0}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $O_{i_{0}}\subseteq\bigcup\limits _{i\in I}O_{i}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in S\subseteq\bigcup\limits _{i\in I}O_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bigcup\limits _{i\in I}O_{i}\in I_{\textnormal{pro}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $O_{1},O_{2}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+, ונוכיח 
+\begin_inset Formula $O_{1}\cap O_{2}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $x\in O_{1}\cap O_{2}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $x\in O_{1}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+ ולכן קיימת 
+\begin_inset Formula $x\in S_{1}=x+d_{1}\mathbb{Z}\subseteq O_{1}$
+\end_inset
+
+.
+ באופן דומה קיימת 
+\begin_inset Formula $S_{2}=x+Z_{2}\mathbb{Z}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in S_{2}=x+d_{2}\mathbb{Z}\subseteq O_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $S_{3}=x+d_{1}d_{2}\mathbb{Z}$
+\end_inset
+
+.
+ נראה ש
+\begin_inset Formula $S_{3}\subseteq S_{1}\cap S_{2}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $\left(\mathbb{Z}\ni k\right)\qquad t=x+d_{1}d_{2}k\in S_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $t=x+d_{1}\left(d_{2}k\right)\in S_{1}$
+\end_inset
+
+.
+ באופן דומה מראים ש
+\begin_inset Formula $t\in S_{2}$
+\end_inset
+
+.
+ נקבל 
+\begin_inset Formula $x\in S_{3}\subseteq S_{1}\cap S_{2}\subseteq O_{1}\cap O_{2}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $O_{1}\cap O_{2}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a+d\mathbb{Z}$
+\end_inset
+
+ סגוחה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+סגוחה=סגורה ופתוחה
+\end_layout
+
+\end_inset
+
+ לכל 
+\begin_inset Formula $a,d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a+d\mathbb{Z}$
+\end_inset
+
+ פתוחה כי לכל 
+\begin_inset Formula $x\in a+d\mathbb{Z}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in x+d\mathbb{Z}+a+d\mathbb{Z}\subseteq a+d\mathbb{Z}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $a+d\mathbb{Z}\in\tau_{\textnormal{pro}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח ש
+\begin_inset Formula $a+d\mathbb{Z}$
+\end_inset
+
+ סגורה.
+ נראה ש
+\begin_inset Formula $\left(a+d\mathbb{Z}\right)^{c}$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: ניתן להגדיר יחס שקילות מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+: 
+\begin_inset Formula $a\sim b\Leftrightarrow a\equiv b\pmod d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $0\le k\le d-1$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\equiv k\pmod d$
+\end_inset
+
+.
+ מתקיים
+\begin_inset Formula 
+\[
+\left(a+d\mathbb{Z}\right)^{c}=\biguplus_{b\in\left\{ 1,2,\dots d-1\right\} }\left(b+d\mathbb{Z}\right)
+\]
+
+\end_inset
+
+נקבל ש
+\begin_inset Formula $\left(a+d\mathbb{Z}\right)^{c}$
+\end_inset
+
+ פתוחה כאיחוד פתוחות.
+ לכן 
+\begin_inset Formula $a+d\mathbb{Z}$
+\end_inset
+
+ סגוחה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ כעת נוכל להוכיח בש"ב שקיימים אינסוף ראשוניים.
+\end_layout
+
+\begin_layout Section*
+הגדרה)התכנסות במרחב טופולוגי(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,\tau\right)$
+\end_inset
+
+ מ"ט.
+ נאמר שהסדרה 
+\begin_inset Formula $\left\{ x_{n}\right\} \subseteq X$
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $x\in X$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+)
+\begin_inset Formula $x\in U\in t$
+\end_inset
+
+( קיים 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה)טופולוגיית קו-מניה(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה.
+ נגדיר את הטופולוגיה
+\begin_inset Formula 
+\[
+\tau_{\textnormal{co}-\aleph_{0}}=\left\{ O\subseteq X\middle|O=\emptyset\vee\left|O\right|^{c}\le\aleph_{0}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $\left(X,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+ אכן מרחב טופולוגי
+\end_layout
+
+\begin_layout Standard
+נאפיין את הסדרות המתכנסות במרחב.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X\ni x\gets\left\{ x_{n}\right\} \subseteq X$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $U=\left(X\backslash\left\{ x_{n}\right\} _{n\in\mathbb{N}}\right)\cup\left\{ x\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ סדרה של 
+\begin_inset Formula $X$
+\end_inset
+
+ שכן 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ וגם 
+\begin_inset Formula $u\in\tau$
+\end_inset
+
+)
+\begin_inset Formula $\left|U^{c}\right|\le\aleph_{0}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+ וגם 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכן מהגדרת התכנסות, קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n}\in U=\left(X\backslash\left\{ x_{n}\right\} _{n\in\mathbb{N}}\right)\cup\left\{ x\right\} 
+\]
+
+\end_inset
+
+לכן בהכרח 
+\begin_inset Formula $\forall_{n\ge n_{0}}x_{n}=x$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ קבועה לבסוף.
+\end_layout
+
+\begin_layout Standard
+בכל מ"ט סדרה הקבועה לבסוף)כלומר 
+\begin_inset Formula $\forall_{n\ge n_{0}}x_{n}=x$
+\end_inset
+
+( מקיימת 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+)בדקו!(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סיכום
+\begin_inset space ~
+\end_inset
+
+ביניים
+\series default
+: סדרה מתכנסת ב
+\begin_inset Formula $\left(x,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ היא קבועה לבסוף.
+\end_layout
+
+\begin_layout Section*
+תרגיל המשך
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה כך ש
+\begin_inset Formula $\left|x\right|>\aleph_{0}$
+\end_inset
+
+.
+ נתבונן ב
+\begin_inset Formula $\left(X,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+האם הוא מושרה ע"י המטריקה הדיסקרטית?
+\end_layout
+
+\begin_layout Enumerate
+האם הוא מטריזבילי?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\{ x\right\} \in\tau_{\textnormal{disc}}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\left|\left\{ x\right\} ^{c}\right|=\left|X\backslash\left\{ x\right\} \right|>\aleph_{0}$
+\end_inset
+
+.
+ מכאן 
+\begin_inset Formula $\left\{ x\right\} \notin\tau_{\textnormal{co}-\aleph_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נראה ש
+\begin_inset Formula $\left(X,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+ אינו מטריזבילי.
+ נניח בשלילה שהמרחב הנ"ל מטריזבילי.
+ אזי קיימת מטריקה 
+\begin_inset Formula $d$
+\end_inset
+
+ המשרה אותו.
+ הוכחנו בעבר, שסדרה מתכנסת במ"מ דיסקרטי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ היא קבועה לבסוף.
+ הוכחנו קודם שסדרה מתכנסת ב
+\begin_inset Formula $\left(X,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+היא קבועה לבסוף.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המטריקה הדיסקרטית 
+\begin_inset Formula $d_{\textnormal{disc}}$
+\end_inset
+
+ משרה טופולוגיה דיסקרטית.
+ נקבל
+\begin_inset Formula 
+\[
+\underbrace{x_{n}=x}_{\textnormal{at the end}}\Leftrightarrow x_{n}\xrightarrow{\tau_{\textnormal{co}-\aleph_{0}}}x\Leftrightarrow x_{n}\xrightarrow{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n}\xrightarrow{\tau_{\textnormal{disc}}}x\Leftrightarrow x_{n}\xrightarrow{d_{\textnormal{disc}}}x\Leftrightarrow x_{n}=x
+\]
+
+\end_inset
+
+נקבל שהמטריקות 
+\begin_inset Formula $d,d_{\textnormal{disc}}$
+\end_inset
+
+ שקולות)התכנסות זהה(.
+ מטריקות שקולות מגדירותו אותו אוסף של קבוצות פתוחות)=טופולוגיה(, לכן 
+\begin_inset Formula $\tau_{\textnormal{co}-\aleph_{0}}=\tau_{\textnormal{disc}}$
+\end_inset
+
+ בסתירה ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נוכיח בדרך אחרת ש
+\begin_inset Formula $\left(X,\tau_{\textnormal{co}-\aleph_{0}}\right)$
+\end_inset
+
+ אינו מטריזבילי)כאשר 
+\begin_inset Formula $\left|x\right|>\aleph_{0}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+טענה)ללא הוכחה(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\sigma\subseteq\tau$
+\end_inset
+
+ טופולוגיות על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x_{n}\xrightarrow{\tau}x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x_{n}\xrightarrow{\sigma}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה)הישר של סורגנפריי(
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\mathbb{R}_{l}$
+\end_inset
+
+ את המספרים הממשיים עם הטופולוגיה 
+\begin_inset Formula $\tau$
+\end_inset
+
+ הבאה: קבוצה היא פתוחה אם היא איחוד כלשהו)כולל איחוד ריק( של קטעים מהצורה
+ 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+בש"ב נוכיח שזוהי טופולוגיה על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ המכילה את הטופולוגיה הסטנדרטית על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שהסדרה 
+\begin_inset Formula $\left\{ -\cfrac{1}{n}\right\} _{n\in\mathbb{N}}$
+\end_inset
+
+ לא מתכנסת בישר של סורגנפריי.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש
+\begin_inset Formula $-\cfrac{1}{n}$
+\end_inset
+
+ מתכנס ל
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+)לפי סורגנפריי(.
+ לפי ההערה והטענה נקבל ש
+\begin_inset Formula $-\cfrac{1}{n}$
+\end_inset
+
+ מתכנס ל
+\begin_inset Formula $x$
+\end_inset
+
+)לפי הטופולוגיה הסטנדרטית(.
+ ידוע ש
+\begin_inset Formula $-\cfrac{1}{n}$
+\end_inset
+
+ מתכנס ל
+\numeric on
+0
+\numeric off
+)ורק לאפס(.
+ לכן 
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+ לפי סורגנפריי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[0,1\right)$
+\end_inset
+
+ סביבה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+)בסורגנפריי(, אבל 
+\begin_inset Formula $\forall_{n}-\cfrac{1}{n}\notin\left[0,1\right)$
+\end_inset
+
+ בסתירה להגדרת התכנסת.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ פונקציה.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $a\in X$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ קיימת סביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $a$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(V\right)\subseteq U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+על 
+\begin_inset Formula $X=\left\{ a,b\right\} $
+\end_inset
+
+ו
+\begin_inset Formula $Y=\left\{ a,b,c\right\} $
+\end_inset
+
+ נגדיר שתי טופולוגיות:
+\begin_inset Formula 
+\[
+\tau_{X}=\left\{ \emptyset,x\right\} \qquad\tau_{Y}=\left\{ \emptyset,Y,\left\{ c\right\} \right\} 
+\]
+
+\end_inset
+
+תהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ מוגדרת ע"י 
+\begin_inset Formula $\begin{array}{c}
+f\left(a\right)=c\\
+f\left(b\right)=a
+\end{array}$
+\end_inset
+
+.
+ הוכיחו כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $b$
+\end_inset
+
+ ולא רציפה ב
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+רציפות ב
+\begin_inset Formula $b$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $f\left(b\right)=a$
+\end_inset
+
+.
+ הסביבה 
+\bar under
+היחידה
+\bar default
+ של 
+\begin_inset Formula $a$
+\end_inset
+
+)ב
+\begin_inset Formula $\tau_{Y}$
+\end_inset
+
+( היא 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $X$
+\end_inset
+
+ בתפקיד סביבה של 
+\begin_inset Formula $b$
+\end_inset
+
+
+\begin_inset Formula $\left(\tau_{X}\right)$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $f\left(X\right)\subseteq Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+אי רציפות ב
+\begin_inset Formula $a$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $f\left(a\right)=c$
+\end_inset
+
+.
+ ניקח את הסביבה של 
+\begin_inset Formula $c$
+\end_inset
+
+)ב
+\begin_inset Formula $\tau_{Y}$
+\end_inset
+
+( שהיא 
+\begin_inset Formula $\left\{ c\right\} $
+\end_inset
+
+.
+ הסביבה היחידה של 
+\begin_inset Formula $a$
+\end_inset
+
+ ב
+\begin_inset Formula $\tau_{X}$
+\end_inset
+
+ היא 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $f\left(X\right)=\left\{ a,c\right\} \nsubseteq\left\{ c\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה ב
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט)רציפות גלובלית(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט.
+ 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+)כלומר רציפה בכל נקודה( אם ורק אם מתקיים אחד מהתנאים השקולים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+ לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ סגורה ב
+\begin_inset Formula $X$
+\end_inset
+
+ לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ סגורה ב
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט ויהי 
+\begin_inset Formula $\left\{ U_{i}\right\} $
+\end_inset
+
+ כיסוי פתוח של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f_{i}:U_{i}\to Y$
+\end_inset
+
+ רציפה לכל 
+\begin_inset Formula $i\in I$
+\end_inset
+
+, ונניח שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\in U_{i}\cap U_{j}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f_{i}\left(x\right)=f_{j}\left(x\right)$
+\end_inset
+
+.
+ אזי הפונקציה 
+\begin_inset Formula $F:X\to Y$
+\end_inset
+
+ המוגדרת ע"י האוסף 
+\begin_inset Formula $\left\{ f_{i}\right\} $
+\end_inset
+
+ רציפה)כלומר 
+\begin_inset Formula $F\left(x\right)=f_{i}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\in U_{i}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+קיים משפט דומה עבור כיסוי 
+\bar under
+סופי
+\bar default
+ ע"י קבוצות סגורות.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתבונן בפונקציה 
+\begin_inset Formula $f:\left[0,2\right]\to\mathbb{R}$
+\end_inset
+
+ המוגדרת ע"י
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x & x\in\left[0,1\right]\\
+2-x & x\in\left[1,2\right]
+\end{cases}
+\]
+
+\end_inset
+
+פונקציה זו רציפה)משפט, סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\end_body
+\end_document

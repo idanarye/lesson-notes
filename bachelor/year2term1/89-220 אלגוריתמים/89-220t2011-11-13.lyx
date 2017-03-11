@@ -1,0 +1,449 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים עם 
+\begin_inset Formula $b$
+\end_inset
+
+ ביטים ומס' 
+\begin_inset Formula $r\le b$
+\end_inset
+
+, מיון בסיס יקח 
+\begin_inset Formula $\theta\left(\cfrac{b}{r}\left(n+2^{r}\right)\right)$
+\end_inset
+
+ זמן.
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $r$
+\end_inset
+
+ - מספר הספרות בקבוצה.
+ 
+\begin_inset Formula $d=\left\lceil \cfrac{b}{r}\right\rceil $
+\end_inset
+
+ מספר הקבוצות(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מסתכלים על כל מס' כמס' עם 
+\begin_inset Formula $d=\left\lceil \cfrac{b}{r}\right\rceil $
+\end_inset
+
+ ספרות של 
+\begin_inset Formula $r$
+\end_inset
+
+ ביטים כל אחת.
+ כלומר כל ספרה בטווח 
+\begin_inset Formula $\left[0..2^{r}-1\right]$
+\end_inset
+
+.
+ לכן מיון כל ספרה יקח 
+\begin_inset Formula $\theta\left(n+2^{r}\right)$
+\end_inset
+
+ זמן, ומבצעים 
+\begin_inset Formula $d$
+\end_inset
+
+ פעמים ולכן 
+\begin_inset Formula $\theta\left(\cfrac{b}{r}\left(n+2^{r}\right)\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+r\approx\log n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta\left(\cfrac{b}{\log n}n\right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $b=O\left(\log n\right)$
+\end_inset
+
+ אז המיון 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+מיון דליים
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bucket Sort
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+קלט: 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים המתפלגים אחיד בקטע 
+\begin_inset Formula $[0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים את הקלט ב
+\lang english
+Hash Table
+\lang hebrew
+, ונמיין כל תא.
+\end_layout
+
+\begin_layout Subsection*
+האלגוריתם:
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+Bucket Sort(A,B)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+1.
+ n
+\begin_inset Formula $\gets$
+\end_inset
+
+length(A)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+2.
+ for i
+\begin_inset Formula $\gets$
+\end_inset
+
+1 to n
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+2.1 B
+\begin_inset Formula $\left[\left\lfloor nA\left[i\right]\right\rfloor \right]\gets$
+\end_inset
+
+A[i]
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+3.
+ for i
+\begin_inset Formula $\gets0$
+\end_inset
+
+ to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+3.1 sort list B[i] with insertion sort
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+4.
+ concatenate the lists B[0],B[1],...B[n-1] in order
+\end_layout
+
+\begin_layout Subsection*
+הסיבוכיות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(n\right)=\theta\left(n\right)+\sum_{i=0}^{n-1}O\left(n_{i}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ - מספר האיברים בתא בסוף שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ נחשב את התוחלת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\left[T\left(n\right)\right]=E\left[\theta\left(n\right)\sum_{i=0}^{n-1}O\left(n_{i}^{2}\right)\right]=\theta\left(n\right)+E\left[\sum_{i=0}^{n-1}O\left(n_{i}^{2}\right)\right]=
+\]
+
+\end_inset
+
+לינאריות התוחלת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\left[X+Y\right]=E\left[X\right]+E\left[Y\right]=\theta\left(n\right)+\sum_{i=0}^{n-1}E\left(O\left(n_{i}^{2}\right)\right)=\theta\left(n\right)+\sum_{i=0}^{n-1}O\left(E\left[n_{i}^{2}\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[n_{i}^{2}\right]=?
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{i}\sim B\left(n,p\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+- מספר הניסויים.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ - סיכוי הצלחה.
+\begin_inset Formula 
+\[
+X\sim B\left(n,p\right):Pr\left(X=k\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\cfrac{1}{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[n_{i}\right]=np=n\cdot\cfrac{1}{n}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Var\left[n_{i}\right]=npq=np\left(1-p\right)=n\cdot\cfrac{1}{n}\left(1-\cfrac{1}{n}\right)=1-\cfrac{1}{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Var\left[x\right]=E\left[x^{2}\right]-\left(E\left[X\right]\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Var\left[n_{i}\right]=E\left[n_{i}^{2}\right]-\left(E\left[n_{i}\right]\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[n_{i}^{2}\right]=Var\left[n_{i}\right]+\left(E\left[n_{i}\right]\right)^{2}=1-\cfrac{1}{n}+1^{2}=2-\cfrac{1}{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[T\left(n\right)\right]=\theta\left(n\right)+\sum_{i=0}^{n-1}O\left(E\left[n_{i}^{2}\right]\right)=\theta\left(n\right)+\sum_{i=0}^{n-1}O\left(2-\cfrac{1}{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\theta\left(n\right)+n\cdot O\left(2-\cfrac{1}{n}\right)=\theta\left(n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

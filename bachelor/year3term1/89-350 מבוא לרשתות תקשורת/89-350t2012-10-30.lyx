@@ -1,0 +1,504 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+שידור בקצבים שונים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar[r] & \bigotimes\ar[r] & *++[o][F]{B}}
+\]
+
+\end_inset
+
+נניח שהשידור הוא בקצבים שונים:
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{A} & = & 1\unitfrac{Mb}{s}\\
+R_{N} & = & 2\unitfrac{Mb}{s}\\
+d_{prop} & = & 10^{-3}\unit{sec}
+\end{eqnarray*}
+
+\end_inset
+
+)
+\begin_inset Formula $R_{N}$
+\end_inset
+
+ - קצב השידור של הנתב(
+\end_layout
+
+\begin_layout Standard
+נניח שרוצים להעביר קובץ בגודל 
+\begin_inset Formula $F=5\unit{Kb}$
+\end_inset
+
+ עם גודל חבילה 
+\begin_inset Formula $P=1\unit{Kb}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמה זמן לוקח להעביר את כל החבילות?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ מסיים להעביר את הקובץ לנתב לאחר 
+\begin_inset Formula $\frac{F}{R_{A}}+d_{prop}=\frac{5}{1000}+10^{-3}=0.006$
+\end_inset
+
+ שניות.
+ בנקודה הזאת, הנתב כבר סיים לשדר את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החבילות הראשונות)שכן קצב השידור שלו גבוה מזה של 
+\begin_inset Formula $A$
+\end_inset
+
+(, ונשאר לו רק להעביר את החבילה האחרונה ב
+\begin_inset Formula $\frac{P}{R_{N}}+d_{prop}=\frac{1}{2000}+10^{-3}=0.0015$
+\end_inset
+
+ שניות.
+ סה"כ הזמן שלוקח להעביר את הקובץ הוא
+\begin_inset Formula 
+\[
+\frac{F}{R_{A}}+2\cdot d_{prop}+\frac{P}{R_{N}}=\frac{5}{1000}+2\cdot10^{-3}+\frac{1}{2000}=0.0075\unit{sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בכיוון ההפוך
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $R_{A}=2\unitfrac{Mb}{s},R_{N}=1\unitfrac{Mb}{s}$
+\end_inset
+
+, אז לאחר שידור החבילה הראשונה ב
+\begin_inset Formula $\frac{P}{R_{A}}+d_{prop}=\frac{1}{2000}+10^{-3}=0.0015$
+\end_inset
+
+ שניות, הנתב יכול לשדר ברציפות את הקובץ ב
+\begin_inset Formula $\frac{F}{R_{N}}+d_{prop}=\frac{5}{1000}+10^{-3}=0.006$
+\end_inset
+
+ שניות - ושוב מקבלים 
+\begin_inset Formula $0.0075\unit{sec}$
+\end_inset
+
+ - למרות שהחישוב קצת שונה.
+\end_layout
+
+\begin_layout Subsection*
+מה קורה אם הקובץ גדול מדי?
+\end_layout
+
+\begin_layout Standard
+הנתב צריך לשמור את חלקי הקובץ שהוא עדיין לא הספיק לשדר בזיכרון שלו - במקום
+ שנקרא חוצץ)
+\lang english
+Buffer
+\lang hebrew
+(.
+ אם הנתב מקבל בקצב יותר גבוה ממה שהוא משדר, הוא החוצץ כל הזמן מתמלא.
+ אם הקובץ גדול מדי, יכול להיות שהחוצץ לא יוכל להכיל את כל המידע שעדיין לא
+ נקלט, וחבילות ילכו לאיבוד.
+\end_layout
+
+\begin_layout Part*
+השעיות תורים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Queuing Delay
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar[r] & \bigotimes\ar[r] & *++[o][F]{B}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ מעביר שתי חבילות ל
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{A} & = & 1\unitfrac{Mb}{s}\\
+R_{B} & = & 1\unitfrac{Mb}{s}\\
+d_{prop} & = & 10^{-2}\unit{s}\\
+P & = & 1\unit{Kb}
+\end{eqnarray*}
+
+\end_inset
+
+אבל מה אם גורם שלישי, 
+\begin_inset Formula $C$
+\end_inset
+
+, כבר התחיל לשדר חבילות ל
+\begin_inset Formula $B$
+\end_inset
+
+ דרך הנתב?
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{C}\ar[rd]\\
+*++[o][F]{A}\ar[r] & \bigotimes\ar[r] & *++[o][F]{B}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שקצב השידור של 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא 
+\begin_inset Formula $R_{C}=10\unitfrac{Mb}{s}$
+\end_inset
+
+, והוא משדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חבילות.
+\end_layout
+
+\begin_layout Standard
+נניח שהנתב כבר שידר חצי מהחבילה הראשונה של 
+\begin_inset Formula $C$
+\end_inset
+
+)הוא כבר קיבל את כולן( כשהוא מתחיל לקבל את החבילה הראשונה של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ כמה זמן יקח לו עד שיתחיל לשדר את החבילות של 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+הנתב צריך לסיים לשדר את חצי החבילה של 
+\begin_inset Formula $C$
+\end_inset
+
+ - 
+\begin_inset Formula $\frac{\nicefrac{10^{3}}{2}}{10^{6}}=\frac{1}{2}10^{-3}\unit{sec}$
+\end_inset
+
+ - ואז הוא צריך לשדר את שאר החבילות של 
+\begin_inset Formula $C$
+\end_inset
+
+ - 
+\begin_inset Formula $\frac{3\cdot10^{3}}{10^{6}}=3\cdot10^{-3}$
+\end_inset
+
+.
+ סה"כ
+\begin_inset Formula 
+\[
+\frac{\nicefrac{P}{2}}{R_{B}}+\frac{3\cdot P}{R_{B}}=\frac{\nicefrac{10^{3}}{2}}{10^{6}}+\frac{3\cdot10^{3}}{10^{6}}=3.5\cdot10^{-3}\unit{sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+על הפרוייקט
+\end_layout
+
+\begin_layout Standard
+יש לכל כרטיס רשת גודל מקסימלי של חבילה שהוא יכול להעביר)
+\lang english
+MTU - Maximal Transmission Unit
+\lang hebrew
+(.
+ אם שולחים חבילות יותר גדולות יש פרגמנטציה.
+\end_layout
+
+\begin_layout Standard
+המטרה בפרוייקט היא לגלות את ה
+\lang english
+MTU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לשלוח את החבילות ב
+\lang english
+UDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלי שיעברו פרגמנטציה בדרך, ולאחד מחדש את החבילות במקור.
+\end_layout
+
+\begin_layout Standard
+בנתב תהיה השהייה כדי לסמלץ מצב שיש רשת שלמה באמצע, ואז יהיה הבדל מהותי בין
+ פרוטוקולים יעילים ללא יעילים.
+\end_layout
+
+\end_body
+\end_document

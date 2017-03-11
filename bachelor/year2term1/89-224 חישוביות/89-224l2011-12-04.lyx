@@ -1,0 +1,1853 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בשבוע שעבר התחלנו לדבר על שפות לא כריעות.
+ הגדרנו:
+\begin_inset Formula 
+\[
+A_{TM}=\left\{ \left(P,w\right)\middle|P\left(w\right)=1\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=\left\{ \left(P,w\right)\middle|P\downarrow w\right\} 
+\]
+
+\end_inset
+
+ השפות האלו לא ניתנות להכרעה, אבל ניתנות לזיהוי.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\left\{ P\middle|L\left(P\right)=\emptyset\right\} 
+\]
+
+\end_inset
+
+כלומר שפה המורכבת מתוכניות שלא מאשרות אף מילה.
+ דוגמאות:
+\begin_inset Formula 
+\[
+P\left(x\right)\left\{ while\left(1\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ לא כריעה
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בשלילה, נניח 
+\begin_inset Formula $E$
+\end_inset
+
+ כריעה.
+ תהי 
+\begin_inset Formula $D_{E}$
+\end_inset
+
+ תוכנית שמכריעה את 
+\begin_inset Formula $E$
+\end_inset
+
+)
+\begin_inset Formula $D$
+\end_inset
+
+ מהמילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Decide
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+נבנה )בעזרת 
+\begin_inset Formula $D_{E}$
+\end_inset
+
+( תוכנית 
+\begin_inset Formula $D_{\overline{A_{TM}}}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\begin_inset Formula $D_{\overline{A_{TM}}}\left(P,w\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ כתוב את הקוד של התוכנית הבאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+"
+\bar under
+
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ הרץ את התוכנית 
+\begin_inset Formula $P$
+\end_inset
+
+ על הקלט 
+\begin_inset Formula $w$
+\end_inset
+
+ והחזר את התשובה שמתקבלת."
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+return
+\begin_inset Formula $\left(D_{E}\left(Q\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+P=
+\begin_inset Quotes erd
+\end_inset
+
+P(y){if y==
+\begin_inset Quotes erd
+\end_inset
+
+gila
+\begin_inset Quotes erd
+\end_inset
+
+ then return(1);while(1)}
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+w=
+\begin_inset Quotes erd
+\end_inset
+
+yossi
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{\overline{A_{TM}}}$
+\end_inset
+
+ תיצור את מחרוזת הבאה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q(x)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return(P(
+\begin_inset Quotes eld
+\end_inset
+
+yossi
+\begin_inset Quotes erd
+\end_inset
+
+));
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+P(y){if y==
+\begin_inset Quotes erd
+\end_inset
+
+gila
+\begin_inset Quotes erd
+\end_inset
+
+ than return(1);while(1);}
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז תשלח את המחרוזת ל
+\begin_inset Formula $D_{E}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+מתקיים
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $P\left(w\right)=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q$
+\end_inset
+
+ מאשרת כל מילה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q\right)=\Sigma^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q\notin E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(P,w\right)\in\overline{A_{TM}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(w\right)\ne1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q$
+\end_inset
+
+ לא מאשרת שום מילה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q\right)=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q\in\overline{A_{TM}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו
+\begin_inset Formula 
+\[
+\left(P,w\right)\in\overline{A_{TM}}\Leftrightarrow Q\in E
+\]
+
+\end_inset
+
+כלומר יצרנו מכונה שמכריעה את 
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+, אבל כבר הוכחנו ש
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+ לא כריעה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $D_{E}$
+\end_inset
+
+ לא קיימת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו ש
+\begin_inset Formula $E$
+\end_inset
+
+ לא כריעה, אבל ההוכחה לא הייתה עובדת אם היינו משתמשים במכונה שמזהה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ האם 
+\begin_inset Formula $E$
+\end_inset
+
+ ניתנת לזיהוי?
+\end_layout
+
+\begin_layout Section*
+הוכחנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{L}\wedge L$
+\end_inset
+
+ ניתנות לזיהוי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ כריעה.
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L$
+\end_inset
+
+ לא כריעה ו
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ ניתנת לזיהוי, אזי 
+\begin_inset Formula $L$
+\end_inset
+
+ לא ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E$
+\end_inset
+
+ לא ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+ ניתנת לזיהוי.
+ נבנה 
+\begin_inset Formula $A_{\overline{E}}$
+\end_inset
+
+שמזהה את 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\overline{E}=\left\{ P\middle|L\left(P\right)\ne\emptyset\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $A_{\overline{E}}$
+\end_inset
+
+ לא דט':
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{\overline{E}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ בחר באופן ל"ד מילה 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+return
+\begin_inset Formula $\left(P\left(w\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(P\right)=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A_{\overline{E}}\left(P\right)$
+\end_inset
+
+ לעולם לא תחזיר "
+\numeric on
+1
+\numeric off
+".
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(P\right)\ne\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיימת בחירה של 
+\begin_inset Formula $w$
+\end_inset
+
+ שתגרום לתוכנית 
+\begin_inset Formula $A_{\overline{E}}\left(P\right)$
+\end_inset
+
+ להחזיר "
+\numeric on
+1
+\numeric off
+" 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים חישוב שמחזיר "
+\numeric on
+1
+\numeric off
+" 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{\overline{E}}$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+, אבל לא מכריעה אותה, שכן אם היא לא תגיע ל
+\begin_inset Formula $P\left(w\right)=1$
+\end_inset
+
+ היא תמשיך לחפש עד אינסוף.
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+EQ=\left\{ \left(P_{1},P_{2}\right)\middle|L\left(P_{1}\right)=L\left(P_{2}\right)\right\} 
+\]
+
+\end_inset
+
+כלומר שפת התוכניות שמאשרות את אותן מילים)כלומר מזהות את אותן שפות(
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)\left\{ while(i);\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)\left\{ if\, x=="yossi"\, return\left(0\right);else\, return\left(0\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EQ$
+\end_inset
+
+ לא ניתן לזיהוי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בשלילה נניח 
+\begin_inset Formula $EQ$
+\end_inset
+
+ ניתנת לזיהוי.
+ תהי 
+\begin_inset Formula $A_{EQ}$
+\end_inset
+
+ תוכנית שמזהה את 
+\begin_inset Formula $EQ$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $A_{E}$
+\end_inset
+
+ שמזהה את 
+\begin_inset Formula $E$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\begin_inset Formula $A_{E}\left(Q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ ייצר את התוכנית 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+"P_{2}\left(x\right)\left\{ return\left(0\right);\right\} "
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+return
+\begin_inset Formula $\left(A_{EQ}\left(Q,P_{2}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $L\left(P_{2}\right)=\emptyset$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L\left(Q\right)=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q\right)=L\left(P_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A_{EQ}\left(Q,P_{2}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A_{E}$
+\end_inset
+
+ מזהה את 
+\begin_inset Formula $E$
+\end_inset
+
+ בסתירה!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A_{EQ}$
+\end_inset
+
+ לא קיימת.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+רדוקציה
+\end_layout
+
+\begin_layout Standard
+יש שתי עולמות - בעולם אחד יש את כל התוכניות 
+\begin_inset Formula $\left\{ Q\right\} $
+\end_inset
+
+.
+ בעולם אחרת יש את כל הזוגות של תוכניות - 
+\begin_inset Formula $\left\{ \left(P_{1},P_{2}\right)\right\} $
+\end_inset
+
+.
+ יש שתי תת קבוצות: 
+\begin_inset Formula $E\subseteq\left\{ Q\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $EQ\subseteq\left\{ \left(P_{1},P_{2}\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח שיש פונקציה 
+\begin_inset Formula $R:\left\{ Q\right\} \to\left\{ \left(P_{1},P_{2}\right)\right\} $
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $Q\in E\Leftrightarrow R\left(Q\right)\in EQ$
+\end_inset
+
+ - כלומר הפונקציה שומרת על שייכות לקבוצה.
+\end_layout
+
+\begin_layout Standard
+נניח שאנחנו יודעים למצוא את 
+\begin_inset Formula $EQ$
+\end_inset
+
+ - 
+\begin_inset Formula $D_{EQ}$
+\end_inset
+
+.
+ אם יש לנו תוכנית ב
+\begin_inset Formula $\left\{ Q\right\} $
+\end_inset
+
+, אנחנו יכולים להפעיל את הפונקציה 
+\begin_inset Formula $R\left(Q\right)$
+\end_inset
+
+, כדי להעביר את הפונקציה ל
+\begin_inset Formula $\left\{ \left(P_{1},P_{2}\right)\right\} $
+\end_inset
+
+, ושם נוכל לבדוק אם 
+\begin_inset Formula $R\left(Q\right)\in EQ$
+\end_inset
+
+, ולפי זה לדעת אם 
+\begin_inset Formula $Q\in E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $B\subseteq Y$
+\end_inset
+
+ שפות.
+ 
+\bar under
+רדוקציה מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+
+\bar default
+ הינה פונקציה 
+\begin_inset Formula $R:X\to Y$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{R\left(x\right)\in B\Leftrightarrow x\in A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה)לא נכונה(
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $B\subseteq Y$
+\end_inset
+
+ שפות.
+ נניח ש
+\begin_inset Formula $B$
+\end_inset
+
+ כריעה ושישנה רדוקציה מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ כריעה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $D_{B}$
+\end_inset
+
+ תוכנית שמכריעה את 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+\begin_inset Formula $D_{A}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+1.
+ y
+\begin_inset Formula $\gets R\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+2.
+ return
+\begin_inset Formula $\left(D_{B}\left(y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Section*
+
+\bar under
+בעיה!!!
+\end_layout
+
+\begin_layout Standard
+יש לנו פונקציה, אבל זה לא מספיק - כי לא בטוח שאפשר לחשב אותה.
+\end_layout
+
+\begin_layout Standard
+כלומר, לא מספיק שישנה רדוקציה, צריך 
+\series bold
+\bar under
+רדוקציה ניתנת לחישוב
+\series default
+\bar default
+, ואז ההוכחה נכונה:
+\end_layout
+
+\begin_layout Section*
+טענה)הפעם נכונה(
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $B\subseteq Y$
+\end_inset
+
+ שפות.
+ נניח ש
+\begin_inset Formula $B$
+\end_inset
+
+ כריעה ושישנה רדוקציה 
+\series bold
+\bar under
+ניתנת לחישוב
+\series default
+\bar default
+ מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ כריעה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ לא כריעה וישנה רדוקציה ניתנת לחישוב מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+, אזי 
+\begin_inset Formula $B$
+\end_inset
+
+ לא כריעה.
+\end_layout
+
+\begin_layout Standard
+)/ניתנת לזיהוי(
+\end_layout
+
+\begin_layout Standard
+זה נותן לנו:
+\end_layout
+
+\begin_layout Section*
+מתכון להוכחה ששפה 
+\begin_inset Formula $B$
+\end_inset
+
+ לא ניתנת להכרעה)/זיהוי(
+\end_layout
+
+\begin_layout Enumerate
+בחר שפה 
+\begin_inset Formula $A$
+\end_inset
+
+ לא ניתנת להכרעה)/זיהוי(
+\end_layout
+
+\begin_layout Enumerate
+מצא רדוקציה חישובית מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{1}=\left\{ Q\middle|\left|L\left(Q\right)\right|=1\right\} 
+\]
+
+\end_inset
+
+ז"א 
+\begin_inset Formula $Q$
+\end_inset
+
+ מאשרת מילה אחת ויחידה.
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ לא ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נסתכל ב
+\begin_inset Formula $\overline{H}$
+\end_inset
+
+, לא ניתנת לזיהוי.
+ נבנה רדוקציה ניתנת לחישוב מ
+\begin_inset Formula $\overline{H}$
+\end_inset
+
+ ל
+\begin_inset Formula $S_{1}$
+\end_inset
+
+.
+ רוצים: 
+\begin_inset Formula $R:\left\{ \left(P,w\right)\right\} \to\left\{ Q\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\uparrow w$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\left|L\left(Q\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Q
+\begin_inset Formula $\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+1.
+ if x==
+\begin_inset Quotes erd
+\end_inset
+
+dana
+\begin_inset Quotes erd
+\end_inset
+
+ return(1);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+2.
+ 
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+3.
+ return(1);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+P(...)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(P,w\right)\in\overline{H}$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $P\uparrow w$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $Q$
+\end_inset
+
+ מאשרת את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+"dana
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|L\left(Q\right)\right|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(P,w\right)\notin\overline{H}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P\downarrow w$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q$
+\end_inset
+
+ מאשרת כל מילה )או בשורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או בשורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q\right)=\Sigma^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Q\in S_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+לב
+\series default
+: אנחנו לא מריצים את 
+\begin_inset Formula $Q$
+\end_inset
+
+, אנחנו רק כותבים אותה.
+\end_layout
+
+\begin_layout Standard
+יצרנו רדוקציה ניתנת לחישוב מ
+\lang english
+
+\begin_inset Formula $\overline{H}$
+\end_inset
+
+
+\family typewriter
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $S_{1}$
+\end_inset
+
+
+\family default
+, ולכן מכיוון שאנחנו לא יכולים לזהות את 
+\begin_inset Formula $\overline{H}$
+\end_inset
+
+, אנחנו גם לא יכולים לזהות את 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SUB=\left\{ \left(Q_{1},Q_{2}\right)\middle|L\left(Q_{1}\right)\subsetneq L\left(Q_{2}\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $SUB$
+\end_inset
+
+ לא ניתנת לזיהוי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ברדוקציה מ
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+ משלים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+ לא ניתנת לזיהוי.
+ נראה רדוקציה חישובית מ
+\begin_inset Formula $\overline{A_{TM}}$
+\end_inset
+
+ ל
+\begin_inset Formula $SUB$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר נרצה 
+\begin_inset Formula $R:\left\{ \left(P,w\right)\right\} \to\left\{ \left(Q_{1},Q_{2}\right)\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\left(w\right)\ne1$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $L\left(Q_{1}\right)\subsetneq L\left(Q_{2}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q_{1}="Q_{1}\left(x\right)\left\{ return\left(P\left(w\right)\right);\right\} "
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q_{2}="Q_{2}\left(x\right)\left\{ return\left(1\right);\right\} "
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $L\left(Q_{2}\right)=\Sigma^{*}$
+\end_inset
+
+.
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(P,w\right)\in\overline{A_{TM}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(w\right)\ne1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q_{1}\right)=\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q_{1}\right)\subsetneq L\left(Q_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(Q_{1},Q_{2}\right)\in SUB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצד שני, אם 
+\begin_inset Formula $\left(P,w\right)\notin\overline{A_{TM}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(w\right)=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q_{1}\right)=\Sigma^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L\left(Q_{1}\right)=L\left(Q_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(Q_{1},Q_{2}\right)\notin SUM$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כנדרש.
+\end_layout
+
+\end_body
+\end_document

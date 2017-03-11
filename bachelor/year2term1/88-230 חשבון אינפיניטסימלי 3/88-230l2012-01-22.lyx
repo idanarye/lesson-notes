@@ -1,0 +1,1349 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכולה: שטח ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נפח ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מושג כללי ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bar{D}=D\cup\partial D$
+\end_inset
+
+ תחום סגור וחסום.
+\end_layout
+
+\begin_layout Standard
+שריג)
+\lang english
+mesh
+\lang hebrew
+( עם קבוע שריג 
+\begin_inset Formula $r>0$
+\end_inset
+
+: 
+\begin_inset Formula $\left[\left(i-1\right)r,ir\right]\times\left[\left(j-1\right)r,jr\right]$
+\end_inset
+
+, 
+\begin_inset Formula $i,j\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A_{r}$
+\end_inset
+
+: אוסף כל הריבועים)סגורים( בשריג המוכלים ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C_{r}$
+\end_inset
+
+: אוסף כל הריבועים בשריג הפוגשים את 
+\begin_inset Formula $\partial D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B_{r}=A_{r}\cup C_{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלו הם אוספים סופיים, שכן 
+\begin_inset Formula $D$
+\end_inset
+
+ תחום חסום.
+\end_layout
+
+\begin_layout Standard
+)מס' הריבועים ב
+\begin_inset Formula $A_{r}$
+\end_inset
+
+(
+\begin_inset Formula $S\left(A_{r}\right)=r^{2}\times$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)מס' הריבועים ב
+\begin_inset Formula $B_{r}$
+\end_inset
+
+(
+\begin_inset Formula $S\left(B_{R}\right)=r^{2}\times$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: אומרים ש
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ הוא 
+\bar under
+בעל שטח
+\bar default
+ אם 
+\begin_inset Formula $\exists\lim\limits _{r\to0}S\left(A_{r}\right)=\exists\lim\limits _{r\to0}S\left(B_{r}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+המס' המשותף נקרא אז השטח של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, מסומן 
+\begin_inset Formula $S\left(\bar{D}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $S\left(C_{r}\right)=S\left(B_{r}\right)-S\left(A_{r}\right)$
+\end_inset
+
+, תנאי הכרחי לכך ש
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ הוא 
+\bar under
+בעל שטח
+\bar default
+ הוא 
+\begin_inset Formula $\lim\limits _{r\to0}S\left(C_{r}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זה גם תנאי מספיק)משמיט הוכחה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן כללי, אם 
+\begin_inset Formula $K$
+\end_inset
+
+ קבוצה חסומה כלשהי ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ אפשר להגדיר 
+\begin_inset Formula $C_{r}$
+\end_inset
+
+ כמו קודם, כ
+\bar under
+אוסף
+\bar default
+ כל קבועי השריג 
+\begin_inset Formula $r$
+\end_inset
+
+ הפוגשים את 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\lim\limits _{r\to0}S\left(C_{r}\right)$
+\end_inset
+
+ קיים ושווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, נאמר ש
+\begin_inset Formula $K$
+\end_inset
+
+ הוא 
+\bar under
+בעל שטח 
+\numeric on
+0
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ כנ"ל)תחום סגור חסום בעל שטח(.
+ "חלוקה: של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+: היא:
+\end_layout
+
+\begin_layout Standard
+}
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+ תחום חלקיים של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ מאותו טיפוס
+\begin_inset Formula $T=\{\bar{D}_{j}\big|$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,...n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{S\left(\bar{D}\right)=\sum_{j=1}^{n}S\left(\bar{D}_{j}\right)}
+\]
+
+\end_inset
+
+)הוכחה מושמטת(
+\end_layout
+
+\begin_layout Section*
+חזרה על הגדרת האינטגרל)לפי רימן(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ כנ"ל, 
+\begin_inset Formula $T$
+\end_inset
+
+ חלוקה כלשהי של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל 
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+, נבחר נק' שרירותית 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה נתונה כלשהי על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma\left(f,T\right)=\sum\limits _{j=1}^{n}f\left(p_{j}\right)S\left(\bar{D}_{j}\right)$
+\end_inset
+
+ נקרא 
+\bar under
+סכום רימן
+\bar default
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ לגבי החלוקה 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ קבוצה.
+ הקוטר של 
+\begin_inset Formula $K$
+\end_inset
+
+ הוא 
+\begin_inset Formula $d\left(K\right)=\sup\limits _{p,q\in K}d\left(p,q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T$
+\end_inset
+
+ חלוקה, נקרא ל
+\begin_inset Formula $\lambda\left(T\right)=\max\limits _{1\le j\le n}d\left(\bar{D}_{j}\right)$
+\end_inset
+
+ ה
+\bar under
+פרמטר
+\bar default
+ של החלוקה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $?\exists\lim\limits _{\lambda\left(T\right)\to0}\sigma\left(f,T\right)\Doteq J$
+\end_inset
+
+)כלומר זה מוגדר כאשר הוא קיים(
+\end_layout
+
+\begin_layout Standard
+אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון, קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|\sigma\left(f,T\right)-J\right|<\epsilon$
+\end_inset
+
+ 
+\bar under
+לכל
+\bar default
+ חלוקה 
+\begin_inset Formula $T$
+\end_inset
+
+ של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ עם פרמטר 
+\begin_inset Formula $\lambda\left(T\right)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם תנאי זה מתקיים, 
+\begin_inset Formula $J$
+\end_inset
+
+ נקבע באופן יחיד ונקרא הגבול של 
+\begin_inset Formula $\sigma\left(f,T\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda\left(T\right)\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגבול הנ"ל)כאשר הוא קיים( נקרא 
+\uuline on
+האינטגרל
+\uuline default
+ )הכפול( של 
+\begin_inset Formula $f$
+\end_inset
+
+ מעל התחום 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, ומסמנים אותו ב
+\begin_inset Formula $\iint\limits _{\bar{D}}f\mathrm{\, d}s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר הגבול הנ"ל קיים, אומרים ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית)רימן( מעל 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קבוצת כל הפונקצות האינטגרביליות)רימן( מעל 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ תסומן ב
+\begin_inset Formula $R\left(\bar{D}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+גישת דרבו)
+\lang english
+Darboux
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ חלוקה כנ"ל של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ כנ"ל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, ולכן גם על 
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\xymatrix{M_{j}\Doteq\sup\limits _{\bar{D}_{j}}f & M\Doteq\sup\limits _{\bar{D}}f\\
+m_{j}\Doteq\inf\limits _{\bar{D}_{j}}f & m\Doteq\inf\limits _{\overline{D}}f
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m\le m_{j}\le M_{j}\le M\hspace{1em}\forall j=1,...n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+mS\left(\bar{D}_{j}\right)\le m_{j}S\left(\bar{D}_{j}\right)\le M_{j}S\left(\bar{D}_{j}\right)\le MS\left(\bar{D}_{j}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+mS\left(\bar{D}\right)=m\sum_{j=1}^{n}S\left(\bar{D}_{j}\right)\le\sum_{j=1}^{n}m_{j}S\left(\bar{D}_{j}\right)\le\sum_{j=1}^{n}M_{j}S\left(\bar{D}_{j}\right)\le M\sum_{j=1}^{n}S\left(\bar{D}_{j}\right)=MS\left(\bar{D}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underline{\sigma}\left(f,T\right)\Doteq\sum\limits _{j=1}^{n}m_{j}S\left(\bar{D}_{j}\right)$
+\end_inset
+
+ - סכום תחתון של דרבו.
+ 
+\begin_inset Formula $\overline{\int}_{\overline{D}}f\mathrm{\, d}S\Doteq\inf\limits _{T}\overline{\sigma}\left(f,T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{\sigma}\left(f,T\right)\Doteq\sum\limits _{j=1}^{n}M_{j}S\left(\bar{D}_{j}\right)$
+\end_inset
+
+ - סכום עליון של דרבו.
+ 
+\begin_inset Formula $\underline{\int}_{\bar{D}}f\mathrm{\, d}S\Doteq\sup\limits _{T}\underline{\sigma}\left(f,T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת אינטגרבילית)לפי דרבו( אם 
+\begin_inset Formula $\boxed{\underline{\int}_{\bar{D}}f\mathrm{\, d}S=\overline{\int}_{\bar{D}}f\mathrm{\, d}S}$
+\end_inset
+
+.
+ במקרה זה, 
+\bar under
+הערך המשותף
+\bar default
+ נקרא האינטגרל )דרבו( של 
+\begin_inset Formula $f$
+\end_inset
+
+ על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט דרבו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית)רימן( על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ אם"ם היא אינטגרבילית)דרבו( על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, ובמקרה זה 
+\bar under
+האינטגרל
+\bar default
+ לפי רימן מתלכד עם האינטגרל לפי דרבו.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כמו במשתנה אחד, בשינוי סימונים.
+\end_layout
+
+\begin_layout Section*
+תוצאה)תנאי רימן לאינטגרביליות(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ כנ"ל, ו
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+אינטגרבילית
+\bar default
+ על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\boxed{\lim\limits _{\lambda\left(T\right)\to0}\left[\overline{\sigma}\left(f,T\right)-\underline{\sigma}\left(f,T\right)\right]=0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+כתיבת תנאי רימן)עם 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left(*\right)\hspace{1em}\overline{\sigma}\left(f,T\right)-\underline{\sigma}\left(f,T\right)<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל חלוקה 
+\begin_inset Formula $T$
+\end_inset
+
+ של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\lambda\left(T\right)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הביטוי משמאל ל
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\boxed{\sum\limits _{j=1}^{n}\left(M_{j}-m_{j}\right)S\left(\bar{D}_{j}\right)}$
+\end_inset
+
+ התנודה של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תכונות יסודיות של 
+\begin_inset Formula $R\left(\bar{D}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R\left(\bar{D}\right)$
+\end_inset
+
+ הוא מרחב וקטורי מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+האינטגרל 
+\begin_inset Formula $f^{\in R\left(\bar{D}\right)}\to\iint\limits _{\bar{D}}f\mathrm{\, d}S$
+\end_inset
+
+ הוא פונקציונל לינארי על 
+\begin_inset Formula $R\left(\bar{D}\right)$
+\end_inset
+
+ השולח את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $S\left(\bar{D}\right)$
+\end_inset
+
+)
+\begin_inset Formula $\iint\limits _{\bar{D}}1\mathrm{\, d}S=S\left(\bar{D}\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $mS\left(\bar{D}\right)\le\iint\limits _{\bar{D}}f\mathrm{\, d}S\le MS\left(\bar{D}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $f\in R\left(\bar{D}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\left(\bar{D}\right)\subseteq R\left(\bar{D}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\in C\left(\bar{D}\right)$
+\end_inset
+
+, אזי קיים 
+\begin_inset Formula $p\in\bar{D}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\iint\limits _{\bar{D}}f\mathrm{\, d}S=f\left(p\right)S\left(\bar{D}\right)$
+\end_inset
+
+)משפט הערך הממוצע לאינטגרלים כפולים(
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $T=\left\{ \bar{D}_{j}\middle|j=1,...n\right\} $
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\in R\left(\bar{D}\right)$
+\end_inset
+
+, 
+\bar under
+אזי
+\bar default
+ 
+\begin_inset Formula $\forall_{j}f\in R\left(\bar{D}_{j}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\iint\limits _{\bar{D}}f\mathrm{\, d}S=\sum\limits _{j=1}^{n}\iint\limits _{\bar{D}}f\mathrm{\, d}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f,g\in R\left(\bar{D}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f=g$
+\end_inset
+
+ על 
+\begin_inset Formula $D$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\iint\limits _{\bar{D}}f\mathrm{\, d}S=\iint\limits _{\bar{D}}g\mathrm{\, d}s$
+\end_inset
+
+.
+ כלומר השפה לא משפיעה - קבוצה חלקית בעלת שטח אפס אינה משפיעה על האינטגרל.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\in R\left(\bar{D}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g\in C\left(\left[m,M\right]\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\circ f\in R\left(\bar{D}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f,g\in R\left(\bar{D}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $fg\in R\left(\bar{D}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\in R\left(\bar{D}\right)$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ אינטגרבילית ו
+\begin_inset Formula $\left|\iint\limits _{\bar{D}}f\mathrm{\, d}S\right|\le\iint\limits _{\bar{D}}\left|f\right|\mathrm{\, d}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1,2
+\numeric off
+ 
+\begin_inset Formula $T=\left\{ \bar{D}_{j}\right\} _{j=1}^{n}$
+\end_inset
+
+ חלוקה כלשהי של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f,g\in R\left(\bar{D}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a,b\in\mathbb{R},\sigma\left(af+bg,T\right)=\sum_{j=1}^{n}\left(af+bg\right)\left(p_{j}\right)S\left(\bar{D}_{j}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a\sum_{j}f\left(p_{j}\right)S\left(D_{j}\right)+b\sum_{j}g\left(p_{j}\right)S\left(\bar{D}_{j}\right)\Doteq
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Doteq a\sigma\left(f,T\right)+b\sigma\left(g,T\right)\xrightarrow[\lambda\left(T\right)\to0]{}a\iint\limits _{\bar{D}}f\mathrm{\, d}S+b\iint\limits _{\bar{D}}g\mathrm{\, d}s
+\]
+
+\end_inset
+
+זה מוכיך ש
+\begin_inset Formula $\boxed{af+bg\in R\left(\bar{D}\right)}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\iint\limits _{\bar{D}}\left(af+bg\right)\mathrm{\, d}S=a\iint\limits _{\bar{D}}f\mathrm{\, d}S+b\iint\limits _{\bar{D}}f\mathrm{\, d}S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)נובע מההגדרה עם סכומי רימן(
+\begin_inset Formula 
+\[
+m\le f\le M
+\]
+
+\end_inset
+
+מונוטוניות האינטגרל:
+\begin_inset Formula 
+\[
+mS\left(\bar{D}\right)=\iint\limits _{\bar{D}}m\mathrm{\, d}S\le\iint\limits _{\bar{D}}f\mathrm{\, d}S\le\iint\limits _{\bar{D}}M\mathrm{\, d}S=MS\left(\bar{D}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נראה שתנאי רימן מתקיים עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בתחום הסגור והחסום 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, שהיא קב' קומפקטית)!(.
+ לכן, לפי משפט, 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה במידה שווה על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+.
+ ז"א קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|f\left(p\right)-f\left(p'\right)\right|<\cfrac{\epsilon}{S\left(\bar{D}\right)}$
+\end_inset
+
+ לכל שתי נקודות 
+\begin_inset Formula $p,p'\in\bar{D}$
+\end_inset
+
+ שעבורן 
+\begin_inset Formula $d\left(p,p'\right)<\delta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $T=\left\{ \bar{D}_{j}\right\} $
+\end_inset
+
+ חלוקה כלשהי של 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\lambda\left(T\right)<\delta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M_{j}$
+\end_inset
+
+ הוא הסופרימום של 
+\begin_inset Formula $f$
+\end_inset
+
+ על 
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+, שהוא 
+\bar under
+קומפקטי
+\bar default
+, כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+ על הקבוצה הקומפקטית 
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+, הסופרימום הנ"ל מתקבל בנק' 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ ב
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+, וכן 
+\begin_inset Formula $m_{j}$
+\end_inset
+
+ מתקבל בנק' 
+\begin_inset Formula $p'_{j}$
+\end_inset
+
+ של 
+\begin_inset Formula $\bar{D}_{j}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}\left(M_{j}-m_{j}\right)S\left(\bar{D}_{j}\right)=\sum_{j=1}^{n}\left[f\left(p_{j}\right)-f\left(p'_{j}\right)\right]S\left(\bar{D}\right)\le...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(d\left(p_{j},p'_{j}\right)\le d\left(\bar{D_{j}}\right)\right)\le\lambda\left(T\right)<\delta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...\le\sum_{j=1}^{n}\cfrac{\epsilon}{S\left(\bar{D}\right)}S\left(\bar{D}_{j}\right)=\cfrac{\epsilon}{S\left(\bar{D}\right)}\overbrace{\sum_{j=1}^{n}S\left(\bar{D}_{j}\right)}^{=S\left(\bar{D}\right)}
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת את תנאי רימן לאינטגרביליות על 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $f\in R\left(\bar{D}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

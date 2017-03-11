@@ -1,0 +1,1444 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אנו מסתכלים על נקודות סינגולריות מבודדות - כלומר שקיימת סביבה שלהן שאין
+ בה אף נקודה סינגולרית אחרת.
+\end_layout
+
+\begin_layout Standard
+למשל נקודת הצטברות של נקודות סינגולריות היא לא מבודדת - למרות שהנקודות הסינגולרי
+ות בסביבה שלה יכולות להיות מבודדות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נקודה סינגולרית סליקה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ של פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת את התכונות:
+\end_layout
+
+\begin_layout Enumerate
+הגבול 
+\begin_inset Formula $\lim\limits _{z\to\alpha}f\left(z\right)$
+\end_inset
+
+ קיים וסופי.
+\end_layout
+
+\begin_layout Enumerate
+פונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ חסומה בסביבה של 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{z\to\alpha}\left[f\left(z\right)\left(z-\alpha\right)\right]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+טור לורן סביב נקודה סינגולרית סליקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}\left(z-\alpha\right)^{n}
+\]
+
+\end_inset
+
+למעשה, טור לורן הוא טור טיילור
+\end_layout
+
+\begin_layout Section*
+הגדרה - קוטב
+\end_layout
+
+\begin_layout Standard
+קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ מקיים את התכונות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\cfrac{g\left(z\right)}{\left(z-\alpha\right)^{m}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ אנליטית ושונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{z\to\alpha}f\left(z\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{z\to\alpha}f\left(z\right)\left(z-\alpha\right)^{m}$
+\end_inset
+
+ קיםם וסופי ושונה מאפס.
+\end_layout
+
+\begin_layout Subsection*
+טור לורן סביב קוטב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=-m}^{\infty}a_{n}\left(z-\alpha\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - נקודה סינגולרית עיקרית
+\end_layout
+
+\begin_layout Standard
+נקודה סינגולרית עיקרית מקיימת את התכונות:
+\end_layout
+
+\begin_layout Standard
+הגבול 
+\begin_inset Formula $\lim\limits _{z\to\alpha}f\left(z\right)$
+\end_inset
+
+ 
+\bar under
+לא קיים
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+טור לורן סביב נקודה סינגולרית עיקרית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=-\infty}^{\infty}a_{n}\left(z-\alpha\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משפט וירשטראס קסוראטי
+\end_layout
+
+\begin_layout Standard
+עבור נקודה סינגולרית עיקרית 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, לכל מספר 
+\begin_inset Formula $\omega\in\mathbb{C}$
+\end_inset
+
+ קיימת סדרת נקודות 
+\begin_inset Formula $\left\{ z_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $z_{n}\to\alpha$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $f\left(z_{n}\right)\to\omega$
+\end_inset
+
+ לכל סביבה של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא אפס מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של פונקציה אנליטית 
+\begin_inset Formula $f$
+\end_inset
+
+, אז 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של פונקציה 
+\begin_inset Formula 
+\[
+g\left(z\right)=\nicefrac{1}{f\left(z\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצא וסווג נקודות סינגולריות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{z\sin z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(z\right)=\cfrac{1}{\sin\frac{1}{z}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h\left(z\right)=\left(z-3\right)\sin\cfrac{1}{z+2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+הנקודות הסינגולריות הן 
+\begin_inset Formula $z_{n}=\pi n,n\in\mathbb{N}$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $g\left(z\right)=z\sin z$
+\end_inset
+
+.
+ נקודות 
+\begin_inset Formula $z_{n}=\pi n,\begin{array}{c}
+n\in\mathbb{Z}\\
+n\neq0
+\end{array}$
+\end_inset
+
+ הן אפסים פשוטים של 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+g'\left(z\right)=\sin z+z\cos z\Rightarrow g'\left(\pi n\right)=0+\left(\pi n\right)\left(-1\right)^{n}\neq0
+\]
+
+\end_inset
+
+אבל נק' 
+\begin_inset Formula $z=0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+g'\left(0\right)=0+0=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g''\left(z\right)=\cos z+\cos z-z\sin z\Rightarrow g''\left(0\right)=2\neq0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אפס מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לפי המשפט:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $z=\pi n,n\in\mathbb{Z},n\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)פשוט(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נקודות סינגולריות הן
+\begin_inset Formula 
+\[
+z=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{z_{n}}=\pi n\Rightarrow z_{n}=\frac{1}{\pi n},n\in\mathbb{Z},n\neq0
+\]
+
+\end_inset
+
+נסתכל על
+\begin_inset Formula 
+\[
+\lim_{z\to\frac{1}{\pi n}}\left(z-\frac{1}{\pi n}\right)g\left(z\right)=\lim n_{z\to\frac{1}{\pi n}}\frac{\left(z-\frac{1}{\pi}\right)}{\sin\frac{1}{z}}=\frac{"0"}{0}=
+\]
+
+\end_inset
+
+לפי לופיטל
+\begin_inset Formula 
+\[
+=\lim_{z\to\frac{1}{\pi n}}\frac{1}{\cos\frac{1}{z}\cdot\left(-\frac{1}{z^{2}}\right)}=\frac{\left(\pi n\right)^{2}}{\cos\left(\pi n\right)}\neq0
+\]
+
+\end_inset
+
+קיים וסופי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נתון 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\cfrac{1}{\pi n},\begin{array}{c}
+n\neq0\\
+n\in\mathbb{Z}
+\end{array}$
+\end_inset
+
+ - נקודות סינגולריות, קוטב פשוט.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $z=0$
+\end_inset
+
+ - נקודת הצבטרות של קטבים פשוטים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(z-3\right)\sin\left(\cfrac{1}{z+2}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(z+2-5\right)\cdot\sin\left(\frac{1}{z+2}\right)
+\]
+
+\end_inset
+
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ בתרגול הקודם - עשינו פיתוח לטור לורן סביב נקודה 
+\begin_inset Formula $z=-2$
+\end_inset
+
+ וקיבלנו טור 
+\begin_inset Formula $\sum\limits _{n=-\infty}^{\infty}\cdots$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $z=-2$
+\end_inset
+
+ נקודה סינגולרית עיקרית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית בעיגול מנוקב 
+\begin_inset Formula $\left\{ z\middle|0<\left|z-\alpha\right|<R\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z$
+\end_inset
+
+ בעיגול מנוקב.
+\end_layout
+
+\begin_layout Standard
+יש לחשב את 
+\begin_inset Formula $\textnormal{Res}\left(g,\alpha\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $g\left(z\right)=\cfrac{f'\left(z\right)}{f\left(z\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא אפס מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\left(z\right)=\left(z-\alpha\right)^{m}\cdot\tilde{f}\left(z\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\tilde{f}\left(z\right)$
+\end_inset
+
+ אנליטית ושונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f'\left(z\right)=m\left(z-\alpha\right)^{m-1}\cdot\tilde{f}\left(z\right)+\left(z-\alpha\right)^{m}\cdot\tilde{f}'\left(z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(z\right)=\frac{f'\left(z\right)}{f\left(z\right)}=\frac{m}{\left(z-\alpha\right)}+\frac{\tilde{f}'\left(z\right)}{\tilde{f}\left(z\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\tilde{f}\left(z\right)$
+\end_inset
+
+ אנליטית ולא מתאפסת ב
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\cfrac{\tilde{f}'\left(z\right)}{\tilde{f}\left(z\right)}$
+\end_inset
+
+ פונקצי אנליטית בעיגול הלא מנוקב, ולכן טור לורן שלה הוא טור טיילור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a_{-1}=\textnormal{Res}\left(g,\alpha\right)=m$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{\tilde{f}\left(z\right)}{\left(z-\alpha\right)^{m}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(z\right)=\frac{\tilde{f}'\left(z\right)}{\left(z-\alpha\right)^{m}}-\frac{m\tilde{f}\left(z\right)}{\left(z-\alpha\right)^{m+1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(z\right)=\frac{f'\left(z\right)}{f\left(z\right)}=\frac{\tilde{f}'\left(z\right)}{\tilde{f}\left(z\right)}-\frac{m}{\left(z-\alpha\right)}
+\]
+
+\end_inset
+
+השארית
+\begin_inset Formula 
+\[
+a_{-1}=\textnormal{Res}\left(g,\alpha\right)=-m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ שלימה ומקיימת 
+\begin_inset Formula $\left|f\left(z\right)\right|\le\left|e^{2}-1\right|$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל: 
+\begin_inset Formula $f\left(z\right)=c\left(e^{z}-1\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\left|c\right|\le1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $g\left(z\right)=\cfrac{f\left(z\right)}{e^{z}-1}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $\mathbb{C}\backslash\left\{ 2\pi ik\middle|k\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ נשים לב שבסביבה של כל נקודה 
+\begin_inset Formula $z=2\pi k,k\in\mathbb{Z}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|\frac{f\left(z\right)}{e^{z}-1}\right|\le1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נקודות 
+\begin_inset Formula $z_{k}=2\pi ik$
+\end_inset
+
+ הן סינגולריות מסוג סליקה.
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר
+\begin_inset Formula 
+\[
+\tilde{g}\left(z\right)=\begin{cases}
+g\left(z\right) & z\neq2\pi ik,k\in\mathbb{Z}\\
+w_{k} & z=2\pi ik,k\in\mathbb{Z}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\tilde{g}\left(z\right)$
+\end_inset
+
+ פונקציה שלמהו, וכיוון שהיא רציפה בסיבה של 
+\begin_inset Formula $z=2\pi ik$
+\end_inset
+
+ היא גם חסומה ע"י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|w_{k}\right|\le1$
+\end_inset
+
+, ולכן, לפי משפט ליוביל, 
+\begin_inset Formula $\tilde{g}\left(z\right)$
+\end_inset
+
+ קבועה.
+ כלומר 
+\begin_inset Formula $\tilde{g}\left(z\right)=c=\textnormal{const}$
+\end_inset
+
+)ו
+\begin_inset Formula $\left|c\right|\le1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $c=\tilde{g}\left(z\right)=g\left(z\right)=\cfrac{f\left(z\right)}{e^{z}-1}$
+\end_inset
+
+)עבור כל 
+\begin_inset Formula $z\neq2\pi ik$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)=c\cdot\left(e^{z}-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $z=2\pi ik$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|\le\left|e^{z}-1\right|=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow f\left(z\right)=0
+\]
+
+\end_inset
+
+כלומר, פונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת גם בנקודות 
+\begin_inset Formula $z=2\pi ik$
+\end_inset
+
+, 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מעגל השארית
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ קונטור סגור ו
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית על ובתוך 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ פרט לנקודות 
+\begin_inset Formula $a_{1},a_{2},\dots a_{n}$
+\end_inset
+
+ שנמצאות בפנים של 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\int_{\Gamma}f\left(z\right)=2\pi i\sum_{k=1}^{n}\textnormal{Res}\left(f,a_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חישוב שאריות
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+נקודה סינגולרית ריקה
+\bar default
+: השארית שווה לאפס
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+נקודה סינגולרית עיקרית
+\bar default
+: בד"כ אין ברירה חוץ מלחשב דרך טור לורן.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+קטבים
+\bar default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ זה קוטב פשוט:
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\alpha\right)=\lim_{z\to\alpha}\left[\left(z-\alpha\right)\cdot f\left(z\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\alpha\right)=\frac{1}{\left(m-1\right)!}\lim_{z\to\alpha}\frac{\mathrm{d}^{m-1}}{\mathrm{d}z^{m-1}}\left[f\left(z\right)\left(z-\alpha\right)\right]^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(z\right)=\cfrac{g\left(z\right)}{h\left(z\right)}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g,h$
+\end_inset
+
+ אנליטיות ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+ כך ש
+\begin_inset Formula $h\left(\alpha\right)=0,h'\left(\alpha\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל: 
+\begin_inset Formula $\textnormal{Res}\left(f,\alpha\right)=\cfrac{g\left(\alpha\right)}{h'\left(\alpha\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח תחילה ש
+\begin_inset Formula $g\left(\alpha\right)\neq0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא אפס פשוט של 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא קוטב פשוט של 
+\begin_inset Formula $\cfrac{1}{h\left(z\right)}$
+\end_inset
+
+ וגם קוטב פשוט של 
+\begin_inset Formula $\cfrac{g\left(z\right)}{h\left(z\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\alpha\right)=\lim_{z\to\alpha}\left(z-\alpha\right)\cdot f'\left(z\right)=\lim_{z\to\alpha}\left(z-\alpha\right)\frac{g\left(z\right)}{h\left(z\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{z\to\alpha}\frac{g\left(z\right)}{\frac{h\left(z\right)-h\left(\alpha\right)}{\left(z-\alpha\right)}}=\frac{g\left(\alpha\right)}{h'\left(\alpha\right)}\qquad\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו, נניח כי 
+\begin_inset Formula $g\left(\alpha\right)=0$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא אפס מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+g\left(z\right)=\left(z-\alpha\right)^{m}\tilde{g}\left(z\right)\\
+h\left(z\right)=\left(z-\alpha\right)\tilde{h}\left(z\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\tilde{g},\tilde{h}$
+\end_inset
+
+ אנליטיות ולא מתאפסות ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $z\neq\alpha$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{\left(z-\alpha\right)^{m}\cdot\tilde{g}\left(z\right)}{\left(z-\alpha\right)\cdot\tilde{h}\left(z\right)}=\left(z-\alpha\right)^{m-1}\frac{\tilde{g}\left(z\right)}{\tilde{h}\left(z\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר, קיבלנו שבסביבה של הנקודה 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+, פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מתלכדת עם פונקציה אנליטית ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+ היא נקודה סינגולרית 
+\bar under
+סליקה
+\bar default
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Res}\left(f,\alpha\right)=0=\cfrac{g\left(\alpha\right)}{h'\left(\alpha\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

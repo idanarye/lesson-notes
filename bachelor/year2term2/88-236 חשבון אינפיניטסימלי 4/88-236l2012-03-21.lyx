@@ -1,0 +1,1792 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תבניות דיפרנציאליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ דיפרנציאלית, 
+\begin_inset Formula $0\le k\le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תבנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציה 
+\begin_inset Formula $f:\Omega\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ העתקה
+\begin_inset Formula 
+\[
+\omega:\Omega\to\Lambda\left(\mathbb{R}^{n}\right)
+\]
+
+\end_inset
+
+נקראת תכנית-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ דיפרנציאלית.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פונקציה לינארית על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ היא פונקציה מהצורה
+\begin_inset Formula 
+\[
+\varphi\left(\xi_{1},...\xi_{n}\right)=c_{1}\xi_{1}+...+c_{n}\xi_{n},\qquad c_{i}\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi_{i}\left(\xi_{1},...\xi_{n}\right)=\xi_{i},\qquad i=1,...n
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Lambda\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ אוסף של כל הפונקציות הלינאריות על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(x\right)$
+\end_inset
+
+ פונקציה לינארית
+\begin_inset Formula 
+\[
+\omega\left(x\right)=\omega_{1}\left(x\right)\pi_{1}+...+\omega_{n}\left(x\right)\pi_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega_{i}:\Omega\to\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית על 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ הדיפרנציאל של 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathrm{d}f\left(x,\xi\right)=\cfrac{\partial f}{\partial x_{1}}\left(x\right)\xi_{1}+...+\cfrac{\partial f}{\partial x_{n}}\left(x\right)\xi_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i}\left(x\right)=\pi_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\omega\left(x\right)=\omega_{1}\mathrm{d}x_{1}+...+\omega_{n}\mathrm{d}x_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עבור 
+\begin_inset Formula $2\le k\le n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi:\left(\mathbb{R}^{n}\right)^{k}\to\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\mathbb{R}^{n}\right)^{k}=\mathbb{R}^{n}\times...\times\mathbb{R}^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+זוהי פונקציה מווקטור של ווקטורים - ב
+\begin_inset Formula $\varphi\left(a_{1},...a_{k}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1},...a_{k}$
+\end_inset
+
+ הם ווקטורים ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $\varphi:\left(\mathbb{R}^{n}\right)^{k}\to\mathbb{R}$
+\end_inset
+
+ נקראת 
+\begin_inset Formula $k$
+\end_inset
+
+-מולטילינארית אם היא לינארית לפי כל משתנה שלה.
+\end_layout
+
+\begin_layout Standard
+ז"א:
+\begin_inset Formula 
+\[
+\varphi\left(a_{1},...\alpha a+\beta b\right)=\alpha\varphi\left(a_{1},...a,...a_{k}\right)+\beta\varphi\left(a_{1},...b,...a_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $\varphi\left(\mathbb{R}^{n}\right)^{k}\to\mathbb{R}$
+\end_inset
+
+ נקראת חילופית אם מתקיים:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\left(a_{1},...a_{k}\right)$
+\end_inset
+
+ אם יש 
+\begin_inset Formula $r\neq s$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a_{r}=a_{s}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\varphi\left(a_{1},...a_{k}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+-מולטילינארית, אז היא חילופית אם ורק אם לכל 
+\begin_inset Formula $r\neq s$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\varphi\left(a_{1},...a_{r},...a_{s},...a_{k}\right)=-\varphi\left(a_{1},...a_{s},...a_{r},...a_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a_{r}=a_{s}$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+0=\varphi\left(a_{1},...a_{r}+a_{s},...a_{r}+a_{s},...a_{k}\right)=2\left(\varphi\left(a_{1},...a_{r},...a_{s},...a_{k}\right)+\varphi\left(a_{1},...a_{s},...a_{r},...a_{k}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פונקציה 
+\begin_inset Formula $k$
+\end_inset
+
+ מולטילינארית.
+ אזי
+\begin_inset Formula 
+\[
+\varphi\left(a_{1},...a_{k}\right)=\sum_{i_{1},...i_{k}=1}^{n}\varphi\left(e_{i_{1}},...e_{i_{k}}\right)a_{i_{1}}^{1}a_{i_{2}}^{2}...a_{i_{k}}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ 
+\begin_inset Formula $a_{1}=\left(a_{1}^{1},a_{2}^{1},...a_{n}^{1}\right)$
+\end_inset
+
+, וכו'
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1\le i_{1}<i_{2}<...<i_{k}\le n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi_{i_{1}...i_{k}}:\left(\mathbb{R}^{n}\right)^{k}\to\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi_{i_{1}...i_{k}}\left(a_{1},...a_{k}\right)=\begin{vmatrix}a_{i_{1}}^{1} & \cdots & a_{i_{1}}^{k}\\
+\vdots & \ddots & \vdots\\
+a_{i_{k}}^{1} & \cdots & a_{i_{k}}^{k}
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתכונות של דטרמיננטות נובע מיד שפונצקציה כזו היא פונקציה חילופית.
+\end_layout
+
+\begin_layout Standard
+נרצה להוכיח שפונקציה כזו היא בסיס במרחב.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\varphi:\left(\mathbb{R}^{n}\right)^{k}\to\mathbb{R}$
+\end_inset
+
+ פונקציה 
+\begin_inset Formula $k$
+\end_inset
+
+-מולטילינארית וחילופית.
+ אזי 
+\begin_inset Formula 
+\[
+\varphi\left(a_{1},...a_{k}\right)=\underbrace{\sum_{1\le i_{1}<...<i_{k}\le n}\varphi\left(e_{i_{1}},...e_{i_{k}}\right)\pi_{i_{1}...i_{k}}\left(a_{1},...a_{k}\right)}_{\tilde{\varphi}\left(a_{1},...a_{k}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נשתמש בלמה.
+\begin_inset Formula 
+\[
+\left(\varphi-\tilde{\varphi}\right)\left(a_{1},...a_{k}\right)=\sum_{i_{1},...i_{k}=1}^{n}\left(\varphi-\tilde{\varphi}\right)\left(e_{i_{1}},...e_{i_{k}}\right)a_{i_{1}}^{1},...a_{i_{k}}^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{1\le j_{1}<...<j_{k}\le n}\left(\varphi-\tilde{\varphi}\right)\left(e_{i_{1}},...e_{i_{k}}\right)a_{j_{1}}^{1},...a_{j_{k}}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1\le j_{1}<j_{2}<...<j_{k}\le n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{\varphi}\left(e_{j_{1}},...e_{j_{k}}\right)=\varphi\left(e_{j_{1}},...e_{j_{k}}\right)
+\]
+
+\end_inset
+
+כלומר, הלמה נתנה לנו שבמקום לבדוק את השוויון לעל ווקטור, מספיק לבדוק עבור
+ ווקטורי היחידה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+j=\left(j_{1},...j_{k}\right),\qquad i=\left(i_{1},...i_{k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi_{i}\left(e_{j_{1}},...e_{j_{k}}\right)=\begin{cases}
+1 & i=j\\
+0 & i\neq j
+\end{cases}
+\]
+
+\end_inset
+
+זה נכון כי קל לראות שאם 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, נקבל שורת אפסים במטריצה של הפונקציה 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי הגדרה:
+\begin_inset Formula 
+\[
+\tilde{\varphi}\left(e_{j_{1}},...e_{j_{k}}\right)=\sum_{i}\varphi\left(e_{i_{1}},...e_{i_{k}}\right)\pi_{i}\left(e_{j_{1}},...e_{j_{k}}\right)=\varphi\left(e_{j_{1}},...e_{j_{k}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset Formula $\Lambda\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ אוסף של כל הפונקציות הלינאריות מ
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $2\le k\le n$
+\end_inset
+
+, נגדיר את 
+\begin_inset Formula $\Lambda^{k}\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ כאוסף של כל הפונקציות ה
+\begin_inset Formula $k$
+\end_inset
+
+-מולטילינארית מ
+\begin_inset Formula $\left(\mathbb{R}^{n}\right)^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ העתקה 
+\begin_inset Formula $\omega:\Omega\to\Lambda^{k}\left(\mathbb{R}^{n}\right)$
+\end_inset
+
+ נקראת תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ דיפרנציאלית.
+\begin_inset Formula 
+\[
+\omega\left(x\right)=\sum_{1\le i_{1}<...<i_{k}\le n}\omega_{i_{1}...i_{k}}\left(x\right)\pi_{i_{1}...i_{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בסימון 
+\begin_inset Formula $\wedge$
+\end_inset
+
+ בתור מכפלה חיצונית)ניתן גם להשמיט אותו, אבל ככה זה יותר ברור(, ונרשום:
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i_{1}}\wedge\mathrm{d}x_{i_{2}}\wedge...\wedge\mathrm{d}x_{i_{k}}\left(x\right)=\pi_{i_{1},...i_{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\omega\left(x\right)=\sum_{1\le i_{1}<...<i_{k}\le n}\omega_{i_{1}...i_{k}}\left(x\right)\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+איך זה נראה ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+תבנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציה רגילה.
+\end_layout
+
+\begin_layout Itemize
+תבנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $\omega_{1}\mathrm{d}x+\omega_{2}\mathrm{d}y+\omega_{3}\mathrm{d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תבנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $\omega_{1}\mathrm{d}x\wedge\mathrm{d}y+\omega_{2}\mathrm{d}y\wedge\mathrm{d}z+\omega_{3}\mathrm{d}x\wedge\mathrm{d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תבנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $\omega\mathrm{d}x\wedge\mathrm{d}y\wedge\mathrm{d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תבנית-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega=\sum_{1\le i<j\le n}\omega_{ij}\left(x\right)\mathrm{d}x_{i}\wedge\mathrm{d}x_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות של 
+\begin_inset Formula $\wedge$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם בקבוצה 
+\begin_inset Formula $\left\{ i_{1},...i_{k}\right\} $
+\end_inset
+
+ יש שני אינדקסים שווים 
+\begin_inset Formula $r\neq s,i_{r}=i_{s}$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i_{1}}\wedge\mathrm{d}x_{i_{k}}\wedge...\wedge\mathrm{d}x_{i_{k}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i}\wedge\mathrm{d}x_{j}=-\mathrm{d}x_{j}\wedge\mathrm{d}x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימונים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=\left(i_{1},...i_{k}\right)\qquad j=\left(j_{1},...j_{l}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i}=\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}x_{j}=\mathrm{d}x_{j_{1}}\wedge...\wedge\mathrm{d}x_{j_{l}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\mathrm{d}x_{i}\wedge\mathrm{d}x_{j}$
+\end_inset
+
+ על ידי
+\begin_inset Formula 
+\[
+\mathrm{d}x_{i}\wedge\mathrm{d}x_{j}=\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}\wedge\mathrm{d}x_{j_{1}}\wedge...\wedge\mathrm{d}x_{j_{l}}
+\]
+
+\end_inset
+
+זוהי תבנית-
+\begin_inset Formula $\left(k+l\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha=\sum\limits _{i}a_{i}\mathrm{d}x_{i}$
+\end_inset
+
+ תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ ו
+\begin_inset Formula $\beta=\sum\limits _{j}b_{j}\mathrm{d}x_{j}$
+\end_inset
+
+ תכנית-
+\begin_inset Formula $l$
+\end_inset
+
+ אזי המכפלה של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ו
+\begin_inset Formula $\beta$
+\end_inset
+
+ היא תבנית 
+\begin_inset Formula $k+l$
+\end_inset
+
+ המוגדרת על ידי
+\begin_inset Formula 
+\[
+\alpha\wedge\beta=\sum_{i,j}a_{i}b_{j}\mathrm{d}x_{i}\wedge\mathrm{d}x_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ תבנית-
+\numeric on
+0
+\numeric off
+.
+ מגדירים
+\begin_inset Formula 
+\[
+\mathrm{d}f=\cfrac{\partial f}{\partial x_{1}}\mathrm{d}x_{1}+...+\cfrac{\partial f}{\partial x_{n}}\mathrm{d}x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\omega=\sum\limits _{1\le i_{1}<...<i_{k}\le n}\omega_{i_{1}...i_{k}}\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\omega_{i_{1}...i_{k}}$
+\end_inset
+
+ פונקציות דיפרנציאביליות, אז הדיפרנציאל של 
+\begin_inset Formula $\omega$
+\end_inset
+
+ מוגדר על ידי
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\sum_{1\le i_{1}<...<i_{k}\le n}\left(\mathrm{d}\omega_{i_{1}...i_{k}}\right)\wedge\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\omega$
+\end_inset
+
+ תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathrm{d}\omega$
+\end_inset
+
+ תבנית-
+\begin_inset Formula $\left(k+1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הקשר לשדות
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+תבנית-
+\numeric on
+0
+\numeric off
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שדה סקלרי
+\end_layout
+
+\begin_layout Itemize
+תבנית-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שדה ווקטורי 
+\begin_inset Formula $\Omega\to\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תבנית-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שדה ווקטורי 
+\begin_inset Formula $\Omega\to\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תבנית-
+\numeric on
+3
+\numeric off
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שדה סקלרי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{grad}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ )תבנית-
+\numeric on
+0
+\numeric off
+(
+\begin_inset Formula $\mathrm{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להראות ש
+\begin_inset Formula $\textnormal{curl}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ )תבנית-
+\numeric on
+1
+\numeric off
+(
+\begin_inset Formula $\mathrm{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula 
+\[
+\omega=P\mathrm{d}x+Q\mathrm{d}y+R\mathrm{d}z
+\]
+
+\end_inset
+
+)כאשר 
+\begin_inset Formula $P,Q,R$
+\end_inset
+
+ פונקציות ממשיות(
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\left(\mathrm{d}P\right)\wedge\mathrm{d}x+\left(\mathrm{d}Q\right)\wedge\mathrm{d}y+\left(\mathrm{d}R\right)\wedge\mathrm{d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\cfrac{\partial P}{\partial x}\mathrm{d}x+\cfrac{\partial P}{\partial y}\mathrm{d}y+\cfrac{\partial P}{\partial z}\mathrm{d}z\right)\wedge\mathrm{d}x+\left(\cfrac{\partial Q}{\partial x}\mathrm{d}x+\cfrac{\partial Q}{\partial y}\mathrm{d}y+\cfrac{\partial Q}{\partial z}\mathrm{d}z\right)\wedge\mathrm{d}y+\left(\cfrac{\partial R}{\partial x}\mathrm{d}x+\cfrac{\partial R}{\partial y}\mathrm{d}y+\cfrac{\partial R}{\partial z}\mathrm{d}z\right)\wedge\mathrm{d}z=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\cfrac{\partial R}{\partial y}-\cfrac{\partial Q}{\partial z}\right)\mathrm{d}y\wedge\mathrm{d}z+\left(\cfrac{\partial P}{\partial z}-\cfrac{\partial R}{\partial x}\right)\mathrm{d}z\wedge\mathrm{d}x+\left(\cfrac{\partial Q}{\partial x}-\cfrac{\partial P}{\partial y}\right)\mathrm{d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נרצה להראות ש
+\begin_inset Formula $\textnormal{div}$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+)תבנית-
+\numeric on
+2
+\numeric off
+(
+\begin_inset Formula $\mathrm{d}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha=A\mathrm{d}y\wedge\mathrm{d}z+B\mathrm{d}z\wedge\mathrm{d}x+C\mathrm{d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}\alpha=\left(\cfrac{\partial A}{\partial x}+\cfrac{\partial B}{\partial y}+\cfrac{\partial C}{\partial z}\right)\mathrm{d}x\wedge\mathrm{d}y\wedge\mathrm{d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט סטוקס הכללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{M}\mathrm{d}\omega=\int_{\partial M}\omega
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח
+\begin_inset Formula $\left(k+1\right)$
+\end_inset
+
+ מימדי, ו
+\begin_inset Formula $\partial M$
+\end_inset
+
+ ממימד 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סטוקס ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ אומר שיש התאמה בין 
+\begin_inset Formula $\textnormal{curl}$
+\end_inset
+
+ ל)תבנית-
+\numeric on
+1
+\numeric off
+(
+\begin_inset Formula $\mathrm{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ראינו ש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{curl}\left(\textnormal{grad}\varphi\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{div}\left(\textnormal{curl}\varphi\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל זה נובע מלמה:
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ מ
+\begin_inset Formula $C^{2}\left(\Omega\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\mathrm{d}\left(\mathrm{d}\alpha\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מספיק להוכיח במקרה ש
+\begin_inset Formula $\alpha=f\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}$
+\end_inset
+
+ - כלומר לקחת רכיב אחד, ולהוכיח שהוא שווה לאפס.
+\begin_inset Formula 
+\[
+\mathrm{d}\alpha=\sum_{r=1}^{n}\left(\cfrac{\partial f}{\partial x_{r}}\mathrm{d}x_{r}\right)\wedge\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}\left(\mathrm{d}\alpha\right)=\sum_{r,s=1}^{n}\cfrac{\partial^{2}f}{\partial x_{s}\partial x_{r}}\mathrm{d}x_{s}\wedge\mathrm{d}x_{r}\wedge\left(\mathrm{d}x_{i_{1}}\wedge...\wedge\mathrm{d}x_{i_{k}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\cfrac{\partial^{2}f}{\partial x_{s}\partial x_{r}}\mathrm{d}x_{s}\wedge\mathrm{d}x_{r}+\cfrac{\partial^{2}f}{\partial x_{r}\partial x_{s}}\mathrm{d}x_{r}\wedge\mathrm{d}x_{s}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\cfrac{\partial^{2}f}{\partial x_{s}\partial x_{r}}-\cfrac{\partial^{2}f}{\partial x_{r}\partial x_{s}}\right)\mathrm{d}x_{s}\wedge\mathrm{d}x_{r}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תבנית דיפרנציאלית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ נקראת מדוייקת אם קיימת תבנית דיפרנציאלית 
+\begin_inset Formula $\eta$
+\end_inset
+
+ כזאת ש
+\begin_inset Formula 
+\[
+\mathrm{d}\eta=\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תבנית דיפרנציאלית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ כזאת ש
+\begin_inset Formula $\mathrm{d}w=0$
+\end_inset
+
+ נקראת תבנית סגורה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+כל תבנית 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ מדוייקת היא תבנית סגורה:
+\begin_inset Formula 
+\[
+\omega=\mathrm{d}\eta\Rightarrow\mathrm{d}\omega=\mathrm{d}\left(\mathrm{d}\eta\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההפך לא נכון!
+\end_layout
+
+\begin_layout Section*
+דוגמה לכך שההפך לא נכון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega=-\cfrac{y}{x^{2}+y^{2}}\mathrm{d}x+\cfrac{x}{x^{2}+y^{2}}\mathrm{d}y,\qquad\left(x,y\right)\in\mathbb{R}^{2}\backslash\left\{ \left(0,0\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ סגורה:
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\cfrac{y^{2}-x^{2}}{\left(y^{2}+y^{2}\right)^{2}}\mathrm{d}y\wedge\mathrm{d}x+\cfrac{y^{2}-x^{2}}{\left(x^{2}+y^{2}\right)^{2}}\mathrm{d}x\wedge\mathrm{d}y=0
+\]
+
+\end_inset
+
+נגדיר פונקציה 
+\begin_inset Formula $\theta:\mathbb{R}^{2}\backslash\left(\left[0,\infty\right)\right)\to\mathbb{R}$
+\end_inset
+
+ על ידי
+\begin_inset Formula 
+\[
+\theta\left(x,y\right)=\begin{cases}
+\arctan\cfrac{y}{x} & x,y>0\\
+\hbar+\arctan\cfrac{y}{x} & x<0,y\in\mathbb{R}\\
+2\hbar+\arctan\cfrac{y}{x} & x>0,y<0\\
+\unitfrac{\hbar}{2} & x=0,y>0\\
+\unitfrac{3\hbar}{2} & x=0,y<0
+\end{cases}
+\]
+
+\end_inset
+
+מתקיים:
+\begin_inset Formula 
+\[
+\mathrm{d}\theta=\omega
+\]
+
+\end_inset
+
+אבל אם 
+\begin_inset Formula $\mathrm{d}f=\omega$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\mathrm{d}\left(f-\theta\right)=0\Rightarrow f=\theta+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

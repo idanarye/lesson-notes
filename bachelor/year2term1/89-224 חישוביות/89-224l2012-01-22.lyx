@@ -1,0 +1,1414 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IS\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IS$
+\end_inset
+
+ - בעיית הקבוצה הבלתי תלויה:
+\end_layout
+
+\begin_layout Standard
+}ב
+\begin_inset Formula $G$
+\end_inset
+
+ יש קבוצה בלתי תלויה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Formula $IS=\{\left(G,k\right)\big|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קבוצה בלתי תלויה היא קבוצה שאין קשתות בין קודקודיה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחת המשפט
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $IS\in NP$
+\end_inset
+
+: בהנתן פתרון, ניתן לבדוק בזמן פולינומי שהוא אכן קבוצה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ שהינה ב"ת.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $IS\in NPH$
+\end_inset
+
+: ברדוקציה מ
+\begin_inset Formula $SAT$
+\end_inset
+
+.
+ אבל נשתמש ב
+\begin_inset Formula $3-SAT$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+}
+\begin_inset Formula $\psi$
+\end_inset
+
+ בצורת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $3-CNF$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\begin_inset Formula $\psi$
+\end_inset
+
+ ספיקה
+\begin_inset Formula $3-SAT=\{\psi\big|$
+\end_inset
+
+.
+ לדוגמה
+\begin_inset Formula 
+\[
+\underbrace{\left(x_{1}\vee\overline{x}_{2}\vee x_{3}\right)}_{C_{1}}\wedge\underbrace{\left(\overline{x}_{1}\vee x_{3}\vee\overline{x}_{4}\right)}_{C_{2}}\wedge\underbrace{\left(\overline{x}_{1}\vee\overline{x}_{2}\vee\overline{x}_{3}\right)}_{C_{3}}\wedge\underbrace{\left(x_{3}\vee\overline{x}_{4}\vee x_{2}\right)}_{C_{4}}
+\]
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $x_{1},...x_{n}$
+\end_inset
+
+ המשתנים ב
+\begin_inset Formula $\psi$
+\end_inset
+
+ ו
+\begin_inset Formula $C_{1},...C_{m}$
+\end_inset
+
+ הפסוקיות ב
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ נבנה את הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קודקודי
+\begin_inset space ~
+\end_inset
+
+הגרף
+\series default
+: לכל פסוקית 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ ולכל ליטרל 
+\begin_inset Formula $k_{ij}$
+\end_inset
+
+ ב
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ יהיה קודקוד מתאים ל
+\begin_inset Formula $k_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הקשתות
+\series default
+: שני סוגי קשתות:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קשתות
+\begin_inset space ~
+\end_inset
+
+פסוקיות
+\series default
+: )קשתות כחולות( נחבר את שלושת הליטרלים של פסקיות במשולש.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קשתות
+\begin_inset space ~
+\end_inset
+
+משתנים
+\series default
+: )קשתות אדומות( לכל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ולכל מופעים 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ נשים קשת בין 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{x_{i}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נראה של
+\begin_inset Formula $\psi$
+\end_inset
+
+ הצבה מספק אם"ם ב
+\begin_inset Formula $G$
+\end_inset
+
+ קבוצה ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $S:\left\{ x_{1},...x_{n}\right\} \to\left\{ T,F\right\} $
+\end_inset
+
+ הצבה מספקת ל
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ נבנה קבוצה ב"ת 
+\begin_inset Formula $A$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S$
+\end_inset
+
+ הצבה מספק ל
+\begin_inset Formula $\psi$
+\end_inset
+
+, כלומר לכל 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ ישנו ליטרל 
+\begin_inset Formula $C_{i}\ni l_{ij}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $S\left(l_{ij}\right)=T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נבחר את 
+\begin_inset Formula $l_{ij}$
+\end_inset
+
+ לקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ ע"פ בנייה 
+\begin_inset Formula $\left|A\right|=k$
+\end_inset
+
+)כי לקחנו משתנה לכל פסוקית ו
+\begin_inset Formula $k=m$
+\end_inset
+
+( נותר להראות ש
+\begin_inset Formula $A$
+\end_inset
+
+ ב"ת.
+ ואכן ב
+\begin_inset Formula $A$
+\end_inset
+
+ אין קשתות כחולות - כי לקחנו קודקוד בודד מכל משולש כחול)=פסוקית(.
+\end_layout
+
+\begin_layout Subsubsection*
+אין קשתות אדומות
+\end_layout
+
+\begin_layout Standard
+נסתכל ב
+\begin_inset Formula $A\ni l_{ij}$
+\end_inset
+
+, 
+\begin_inset Formula $A\in l_{i'j'}$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $S\left(l_{ij}\right)=T$
+\end_inset
+
+ ו
+\begin_inset Formula $S\left(l_{i'j'}\right)=T$
+\end_inset
+
+ לא ייתכן ש
+\begin_inset Formula $l_{ij}$
+\end_inset
+
+ הינו שלילת 
+\begin_inset Formula $l_{i'j'}$
+\end_inset
+
+.
+ לכן אין קשת אדומה ביניהם
+\end_layout
+
+\begin_layout Subsubsection*
+מצד שני
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $S$
+\end_inset
+
+ הצבה מספקת ל
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $l_{ij}\in A$
+\end_inset
+
+)ליטרל של 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l_{ij}=x_{t}$
+\end_inset
+
+ אז נקבע 
+\begin_inset Formula $S\left(x_{t}\right)=T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $l_{ij}=\overline{x}_{t}$
+\end_inset
+
+ אז נקבע 
+\begin_inset Formula $S\left(x_{t}\right)=F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ומשתנים שלא נקבעו בצורה זו יקבלו ערך כלשהו)נניח 
+\begin_inset Formula $T$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $S$
+\end_inset
+
+ מוגדרת היטב, כיוון שב
+\begin_inset Formula $A$
+\end_inset
+
+ אין ליטרלים שמתאימים למשתנה ושלילתו.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ מספקת כי בכל פסוקית 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ הליטרל 
+\begin_inset Formula $l_{ij}$
+\end_inset
+
+ מקבל ערך 
+\begin_inset Formula $T$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ מקבל ערך 
+\begin_inset Formula $T$
+\end_inset
+
+ ולכן גם כל 
+\begin_inset Formula $\psi$
+\end_inset
+
+ מסופק.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+צביעת גרף
+\end_layout
+
+\begin_layout Standard
+צביעה חוקית של גרף היא צביעה שבה אין קודקודים באותו צבע שיש קשת ביניהם.
+\end_layout
+
+\begin_layout Standard
+}יש צביעה של 
+\begin_inset Formula $G$
+\end_inset
+
+ ב
+\begin_inset Formula $k$
+\end_inset
+
+ צבעים
+\begin_inset Formula $Color=\{\left(G,k\right)\big|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שכל צבע מהווה קבוצה בלתי תלויה - לכן בעיית הצביעה בעצם שואלת אם
+ ניתן לכסות את הגרף ב
+\begin_inset Formula $k$
+\end_inset
+
+ קבוצות בלתי תלויות.
+\end_layout
+
+\begin_layout Standard
+}יש צביעה של 
+\begin_inset Formula $G$
+\end_inset
+
+ ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צבעים
+\begin_inset Formula $3-Color=\{G\big|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לבנות בקלות רדוקציה פולינומית מ
+\begin_inset Formula $Color$
+\end_inset
+
+ ל
+\begin_inset Formula $3-Color$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+3-Color\le^{p}Color
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(G,3\right)\in Color\Rightarrow G\in3-Color
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NPC\ni3-Color
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $NP\ni3-Color$
+\end_inset
+
+: ננחש
+\backslash
+נקבל צביעה ונקבדו שאכן תקינה.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NPH\ni3-Color$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ברדוקציה מ
+\begin_inset Formula $3-SAT$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+רוצים: בהינתן נוסחא 
+\begin_inset Formula $\psi$
+\end_inset
+
+)בצורת 
+\begin_inset Formula $3-CNF$
+\end_inset
+
+( לבנות גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\psi$
+\end_inset
+
+ ספיקה אם"ם ל
+\begin_inset Formula $G$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+-צביעה.
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x_{1},...x_{n}$
+\end_inset
+
+ המשתנים ו
+\begin_inset Formula $C_{1},...C_{m}$
+\end_inset
+
+ הפסוקיות ב
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ לכל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ושלילתו 
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ יהיה קודקוד ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ בנוסף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים מיוחדים 
+\begin_inset Formula $B,F,T$
+\end_inset
+
+ מחוברים במשולש.
+\end_layout
+
+\begin_layout Standard
+כמו כן לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ מחוברים במשולש.
+\end_layout
+
+\begin_layout Standard
+נבנה חפיץ)
+\lang english
+Gadget
+\lang hebrew
+( שהינו גרף עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+"כניסות" ו"יציאה" אחת, כך שהיציאה יכולה להיצבע בצבע 
+\begin_inset Formula $T$
+\end_inset
+
+ אם"ם לפחות אחת מהכניסות אינה קבוצע ב
+\begin_inset Formula $F$
+\end_inset
+
+)כלומר צבועה ב
+\begin_inset Formula $T$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+החפיץ נותן לנו שיציאה יכולה להיצבע בירוק אם ורק אם לפחות אחת הכניסות ירוקה)+(.
+ אם כל היציאות אדומות)-(, היציאה חייבת להציבע באדום:
+\begin_inset Formula 
+\[
+\xymatrix{+\ar@{-}[r] & -\ar@{-}[rd]\ar@{-}[dd]\\
+ &  & +\ar@{-}[r] & \ocircle\ar@{-}[rd]\ar@{-}[dd]\\
++\ar@{-}[r] & +\ar@{-}[ru] &  &  & \bigcirc\ar@{-}[ld]\\
+\ocircle &  &  & \bigcirc\ar@{-}[lll]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מתקיים
+\end_layout
+
+\begin_layout Standard
+אם ל
+\begin_inset Formula $\psi$
+\end_inset
+
+ הצבה מספקת 
+\begin_inset Formula $S$
+\end_inset
+
+ נבנה צביעה ל
+\begin_inset Formula $G$
+\end_inset
+
+ ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צבעים.
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $F,T,B$
+\end_inset
+
+ ניתן את הצבעים 
+\begin_inset Formula $F,T,B$
+\end_inset
+
+ בהתאמה.
+ לכל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ניתן לקודקוד 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ את הצבע 
+\begin_inset Formula $S\left(x_{i}\right)$
+\end_inset
+
+ ולקודקוד 
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $S\left(\overline{x}_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $S$
+\end_inset
+
+ הצבה מספקת בכל פסוקית לפחות אחד הליטרלים מקבל ערך 
+\begin_inset Formula $T$
+\end_inset
+
+, ולכן גם בכל חפיץ לפחות אחת מהכניסות צבועה בצבע 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ניתן לצבוע את החפיץ כולו כך שהיציאה תהיה בצבע 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ זוהי צביעה תקינה לגרף כולו)כי היציאות לא מחוברות ל
+\begin_inset Formula $T$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בכיוון השני
+\end_layout
+
+\begin_layout Standard
+נניח צביעה של 
+\begin_inset Formula $G$
+\end_inset
+
+ בשלושה צבעים.
+ נראה הצבה מספקת 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ההצבה
+\end_layout
+
+\begin_layout Standard
+בה"כ הצבעים של 
+\begin_inset Formula $F,T,B$
+\end_inset
+
+ הינם 
+\begin_inset Formula $F,T,B$
+\end_inset
+
+ בהתאמה.
+ לכל 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ צבוע 
+\begin_inset Formula $T$
+\end_inset
+
+ אזי 
+\begin_inset Formula $S\left(x_{i}\right)=T$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ צבוע 
+\begin_inset Formula $T$
+\end_inset
+
+ אזי 
+\begin_inset Formula $S\left(x_{i}\right)=F$
+\end_inset
+
+.
+ לא ייתכן ש
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ צבוע 
+\begin_inset Formula $B$
+\end_inset
+
+)כי מחובר ל
+\begin_inset Formula $B$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נשים לב שבהכרח לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ הצבע של 
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ הינו הערך של 
+\begin_inset Formula $\overline{x}_{i}$
+\end_inset
+
+ לפי ההשמה.
+\end_layout
+
+\begin_layout Standard
+נסתכל בפסוקית 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ ונראה ש
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ מסופקת.
+ כלומר ישנו ליטרל ב
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ שמקבל ערך 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ נסתכל בחפיץ שמתאים 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+.
+ הכניסות לחפיץ הינם הליטרלים של 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+.
+ כיוון שהצביעה חוקית בהכרח היציאה של החפיץ צבועה ב
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לפחות אחת הכניסות צבועה ב
+\begin_inset Formula $T$
+\end_inset
+
+, כנדרש.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+}ב
+\begin_inset Formula $G$
+\end_inset
+
+ קבוצה ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Formula $IS=\{\left(G,k\right)\big|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3-IS\le^{p}IS$
+\end_inset
+
+, ואת 
+\begin_inset Formula $3-IS$
+\end_inset
+
+ ניתן לפתור בזמן פולינומי:
+\begin_inset Formula 
+\[
+\begin{pmatrix}n\\
+3
+\end{pmatrix}<n^{3}\le O\left(\left|G\right|^{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+}ב
+\begin_inset Formula $G$
+\end_inset
+
+ ישנו 
+\begin_inset Formula $VC$
+\end_inset
+
+ בגודל
+\begin_inset Formula $58\ge$
+\end_inset
+
+
+\begin_inset Formula $58-VC=\{G\big|$
+\end_inset
+
+ גם פולינומית:
+\begin_inset Formula 
+\[
+n^{58}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מעגל המילטוני
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+בעיית המעגל ההמילטוני בגרף מכוון הינה 
+\begin_inset Formula $NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NP\ni D-HAM$
+\end_inset
+
+: ננחש מעגל ונבדוק.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NPH\ni D-HAM$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ברדוקציה מ
+\begin_inset Formula $3-SAT$
+\end_inset
+
+.
+ כלומר רוצים בהנתן נוסחא 
+\begin_inset Formula $\psi$
+\end_inset
+
+ לבנות גרף מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\psi$
+\end_inset
+
+ ספיקה אם"ם ב
+\begin_inset Formula $G$
+\end_inset
+
+ מעגל מכוון.
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x_{1},...x_{n}$
+\end_inset
+
+ המשתנים ב
+\begin_inset Formula $\psi$
+\end_inset
+
+ ו
+\begin_inset Formula $C_{1},...C_{n}$
+\end_inset
+
+ הפסוקיות ב
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל שורה של קודקודים ניצור שורה של קודקודים באורך 
+\begin_inset Formula $3m$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{C_{2}\ar[rrrd]\ar[rrrdddd]\ar]rrddd] &  &  & S\ar[rrrd]\ar[lld] &  &  &  & C_{1}\\
+ & \bigcirc\ar@{<->}[r]\ar[d]\ar[rrrrrd] & \bigcirc\ar@{<->}[r]\ar[llu] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r]\ar@{<-}[rru] & \bigcirc\ar[d]\ar[llllld]\ar[ur]\\
+ & \bigcirc\ar@{<->}[r]\ar[d]\ar[rrrrrd] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r]\ar[rruu] & \bigcirc\ar[d]\ar[llllld]\ar@{<-}[ruu]\\
+ & \bigcirc\ar@{<->}[r]\ar[d]\ar[rrrrrd] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r]\ar[llluuu] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r]\ar@{<-}[rruuu] & \bigcirc\ar[d]\ar[llllld]\ar[uuur]\\
+ & \bigcirc\ar@{<->}[r]\ar[rrd] & \bigcirc\ar@{<->}[r]\ar[lluuuu] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r] & \bigcirc\ar@{<->}[r] & \bigcirc\ar[llld]\\
+ &  &  & T\ar@/^{13pc}/[uuuuu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש הצבה מספקת יש מעגל המילטוני)מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $T$
+\end_inset
+
+(, ואם יש מעגל המילטוני נסתכל באיזה כיוונים אנו מכסים את כל הקודקודים, וזה
+ נותן הצבה מספקת.
+\end_layout
+
+\end_body
+\end_document

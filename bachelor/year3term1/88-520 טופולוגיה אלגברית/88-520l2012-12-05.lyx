@@ -1,0 +1,1372 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט ון-קפמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $U,V\subseteq X$
+\end_inset
+
+ פתוחות, 
+\begin_inset Formula $U\cup V=X$
+\end_inset
+
+, 
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ לא ריק וקשיר מסילתית.
+\end_layout
+
+\begin_layout Standard
+מבחר 
+\begin_inset Formula $a\in U\cup V$
+\end_inset
+
+.
+ הדיאגרמה של ההכלות
+\begin_inset Formula 
+\[
+\xymatrix{ & \left(U,a\right)\ar[rd]^{k}\\
+\left(U\cap V,a\right)\ar[ru]^{i}\ar[rd]_{j} &  & \left(X,a\right)\\
+ & \left(V,a\right)\ar[ru]_{l}
+}
+\]
+
+\end_inset
+
+משרה דיאגרמה של חבורות
+\begin_inset Formula 
+\[
+\xymatrix{ & \pi_{1}\left(U,a\right)\ar[rd]\ar[rrrd]^{k_{*}}\\
+\pi_{1}\left(U\cap V,a\right)\ar[ru]^{i_{*}}\ar[rd]_{j_{*}} &  & \pi_{1}\left(U,a\right)*\pi_{1}\left(V,a\right)\ar[rr]|{L} &  & \pi_{1}\left(X,a\right)\\
+ & \pi_{1}\left(V,a\right)\ar[ru]\ar[rrru]_{l_{*}}
+}
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא איזומורפיזם.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\varphi:I\to X$
+\end_inset
+
+, נביט בכיסוי הפתוח 
+\begin_inset Formula $\varphi^{-1}\left(U\right),\varphi^{-1}\left(V\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I$
+\end_inset
+
+ מרחב מטרי קומפקטי, לכן יש 
+\begin_inset Formula $N$
+\end_inset
+
+ מספיק גדול כך שאם נחלק את 
+\begin_inset Formula $I$
+\end_inset
+
+ לקטעים שווים 
+\begin_inset Formula $I_{1}=\left[0,\frac{1}{N}\right],I_{2}=\left[\frac{1}{N},\frac{2}{N}\right],\dots I_{N}=\left[\frac{N-1}{N},1\right]$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $1\le i\le N$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $I_{i}\subseteq\varphi^{-1}\left(U\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $I_{i}\subseteq\varphi^{-1}\left(V\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\varphi\left(I_{i}\right)\subseteq U$
+\end_inset
+
+ או 
+\begin_inset Formula $\varphi\left(I_{i}\right)\subseteq V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בחירת מסילות שתשרת אותנו גם בהוכחת 
+\bar under
+החח"ע
+\bar default
+: לכל 
+\begin_inset Formula $p\in X$
+\end_inset
+
+ נבחר אחת ולתמיד מסילה 
+\begin_inset Formula $\gamma_{p}$
+\end_inset
+
+ מ
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $p$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $p\in U$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{p}$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $p\in V$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{p}$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $p\in U\cap V$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{p}$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $U\cap V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $p=a$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{p}=k_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו מניחים בה"כ שגם 
+\begin_inset Formula $U,V$
+\end_inset
+
+ קשירים מסילתית.
+ )נקבל תרגיל שיפרש את "בה"כ"(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סימון
+\series default
+: אם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $X$
+\end_inset
+
+ מנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ לנקודה 
+\begin_inset Formula $q$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $\hat{\gamma}=\gamma_{p}\cdot\gamma\cdot\overline{\gamma}_{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחזור להוכחת 
+\bar under
+על
+\bar default
+: יש לנו מסילות )פתוחות - כלומר לא לולאות( 
+\begin_inset Formula $\left.\varphi\right|_{I_{1}},\left.\varphi\right|_{I_{2}},\dots\left.\varphi\right|_{I_{N}}$
+\end_inset
+
+ שהשרשור שלהן הוא 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ נסמן אותן ב
+\begin_inset Formula $\varphi_{1},\varphi_{2},\dots\varphi_{N}$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $\hat{\varphi}_{i}$
+\end_inset
+
+ הוא איבר ב
+\begin_inset Formula $\pi_{1}\left(U,a\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\pi_{1}\left(V,a\right)$
+\end_inset
+
+, וגם מתקיים 
+\begin_inset Formula $\hat{\varphi}_{1}\cdot\hat{\varphi}_{2}\cdots\hat{\varphi}_{N}=\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאר להוכיח 
+\bar under
+חח"ע
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נבחר הומוטופיה 
+\begin_inset Formula $H:I\times I\to X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $H^{-1}\left(U\right),H^{-1}\left(V\right)$
+\end_inset
+
+ כיסוי פתוח של 
+\begin_inset Formula $I\times I$
+\end_inset
+
+ שהוא מרחב מטרי קומפקטי.
+ לכן יש 
+\begin_inset Formula $N$
+\end_inset
+
+ מספיק גדול כך שאם נחלק את 
+\begin_inset Formula $I\times I$
+\end_inset
+
+ לריבועים בגודל 
+\begin_inset Formula $\frac{1}{N}\times\frac{1}{N}$
+\end_inset
+
+ כך שלכל ריבוע קטן 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $H\left(\blacksquare\right)\subseteq U$
+\end_inset
+
+ או 
+\begin_inset Formula $H\left(\blacksquare\right)\subseteq V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"י לקיחת 
+\begin_inset Formula $N$
+\end_inset
+
+ גדול יותר שמתחל במספר האותיות במילה שלנו, אפשר להניח)בה"כ( שמספר האותיות
+ שווה ל
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כשעוברים בין קוביות ששתיהן מ
+\begin_inset Formula $U$
+\end_inset
+
+, 
+\begin_inset Formula $k_{a}\cdot\gamma_{1}=\hat{\alpha}\cdot\hat{\beta}$
+\end_inset
+
+ שוויון ב
+\begin_inset Formula $\pi_{1}\left(U\right)$
+\end_inset
+
+.
+ כשעוברים מ
+\begin_inset Formula $U$
+\end_inset
+
+ ל
+\begin_inset Formula $V$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{ & \pi_{1}\left(U\right)\ar[rd]^{k}\\
+\pi_{1}\left(U\cap V\right)\ar[ru]^{i_{*}}\ar[rd]_{j_{*}} &  & U\\
+ & \pi_{1}\left(V\right)\ar[ru]_{j}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\pi_{1}\left(U\cap V\right)=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\pi_{1}\left(X\right)=\pi_{1}\left(U\right)*\pi_{1}\left(V\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מרחב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+, ו
+\begin_inset Formula $U,V$
+\end_inset
+
+ הן שתי העיגולים, כאשר לכל עיגול נספח קשת מהעיגול השני שנקודת החיבור נמצאת
+ עליה)אבל לא באחד הקצוות(, אז 
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ כוויץ ולכן 
+\begin_inset Formula $\pi_{1}\left(\infty\right)=\pi_{1}\left(\bigcirc\right)*\pi_{1}\left(\bigcirc\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+ הוא מרחב השמונה, ו
+\begin_inset Formula $\bigcirc$
+\end_inset
+
+ הם העיגולים
+\end_layout
+
+\end_inset
+
+ וזה שווה ל
+\begin_inset Formula 
+\[
+=F_{1}*F_{1}=F_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{2}=\left\langle x,y\middle|\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+xy\neq yx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection*
+הוכחה שניה ש
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ לא אבלית
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $G$
+\end_inset
+
+ כלשהי שאינה אבלית, ונניח 
+\begin_inset Formula $g,h\in G$
+\end_inset
+
+ מקיימים 
+\begin_inset Formula $gh\neq hg$
+\end_inset
+
+.
+ קיים הומומורפיזם 
+\begin_inset Formula $\varphi:F_{2}\to G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+\varphi\left(x\right)=g\\
+\varphi\left(y\right)=h
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ הוא מעגל, ומדביקים אותו בנקודה ל
+\begin_inset Formula $S^{2}$
+\end_inset
+
+ - מה החבורה היסודית של זה?
+\end_layout
+
+\begin_layout Part*
+פתרון תרגילי בית
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קשיר מסילתית, 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הראו ש
+\begin_inset Formula $\pi_{1}\left(X,a\right)$
+\end_inset
+
+ אבלית 
+\begin_inset Formula $\iff$
+\end_inset
+
+ לכל שתי מסילות 
+\begin_inset Formula $\gamma,\delta$
+\end_inset
+
+ מ
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\begin_inset Formula $F_{\gamma}=F_{\delta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\xymatrix{\alpha\ar@/^{1pc}/[rr]^{\gamma}\ar@/_{1pc}/[rr]_{\delta}\ar@(d,l)^{\alpha} &  & b}
+$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $\gamma,\delta:I\to X$
+\end_inset
+
+ מ
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left[\beta\right]:=\left[\gamma*\overline{\delta}\right]$
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left[\beta\right]\in\pi_{1}\left(X,a\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\left[\alpha\right]\in\pi_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\gamma\right]\cdot\left[\overline{\delta}\right]\left[\alpha\right]=\left[\beta\right]\left[\alpha\right]=\left[\alpha\right]\left[\beta\right]=\left[\alpha\right]\left[\gamma\right]\left[\overline{\delta}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{\gamma}\left(\left[\alpha\right]\right)=\left[\overline{\delta}\right]\left[\alpha\right]\left[\delta\right]=\left[\overline{\gamma}\right]\left[\alpha\right]\left[\gamma\right]=F_{\gamma}\left(\left[\alpha\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\xymatrix{a\ar[rr]^{l}\ar@(rd,ld)^{\psi}\ar@(ru,lu)_{\varphi} &  & b}
+$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $\left[\varphi\right],\left[\psi\right]\in\pi_{1}\left(X,a\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ קשיר מסילתית 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\exists_{l:I\to X}l\left(0\right)=a,l\left(1\right)=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\varphi*l,\psi*l$
+\end_inset
+
+ מ
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $b$
+\end_inset
+
+, ומהנתון 
+\begin_inset Formula $F_{\psi*l}=F_{\varphi*l}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+F_{\psi*l}\left[\psi\right]=F_{\varphi*l}\left[\psi\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\overline{\psi*l}\right]\left[\psi\right]\left[\psi*l\right]=\left[\overline{\varphi*l}\right]\left[\psi\right]\left[\varphi*l\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cancel{\left[\overline{l}\right]}\left[\overline{\psi}\right]\left[\psi\right]\left[\psi\right]\cancel{\left[l\right]}=\cancel{\left[\overline{l}\right]}\left[\overline{\varphi}\right]\left[\psi\right]\left[\varphi\right]\cancel{\left[l\right]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\psi\right]=\left[\overline{\varphi}\right]\left[\psi\right]\left[\varphi\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\varphi\right]\left[\psi\right]=\left[\psi\right]\left[\varphi\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+צריך למצוא את החבורה היסודית של הדיסק בלי נקודה, פעם אחת כשהנקודה בפנים
+ של הדיסק ופעם אחת כשהיא בשפה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+כאשר הנקודה שמוציאים בשפה, הדיסק בלי הנקודה הוא כוויץ, ולכן החבורה היסודית
+ שלו טריוויאלית.
+\end_layout
+
+\begin_layout Standard
+כאשר הנקודה שמוציאים היא בפנים הדיסק, אז המרחב לא כוויץ, אבל אפשר להראות
+ שהמעגל הוא נסג עיוותי של המרחב הזה, ולכן החבורה היסודית של המרחב הזה שווה
+ לחבורה היסודית של המעגל - שהיא 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+להראות שאם יש הומאומורפיזם בין שני דיסקים אז הוא מעביר את השפה של דיסק אחד
+ לשפה של הדיסק השני.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+אם אותו הומאומורפיזם היה מעתיק שפה לפנים, אז אם היינו מוציעים נקודה על השפה
+ מהדיסק הראשון היינו מקבלים הומאומורפיזם 
+\begin_inset Formula $f:D^{2}\backslash\left\{ x\right\} \to D^{2}\backslash\left\{ f\left(x\right)\right\} $
+\end_inset
+
+ היינו מקבלים שהחבורות היסודיות אמורות להיות שוות - אבל לפי שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ זה לא יכול להיות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח ש
+\begin_inset Formula $\textnormal{Ab}\left(G*H\right)\cong\textnormal{Ab}\left(G\right)\times\textnormal{Ab}\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \textnormal{Ab}\left(G\right)\\
+K\ar[r]|L\ar[rru]^{\alpha}\ar[rrd]_{\beta} & U\ar[ru]_{\psi}\ar[rd]^{\varphi}\\
+ &  & \textnormal{Ab}\left(H\right)
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $G\to G*H\to\textnormal{Ab}\left(G*H\right)$
+\end_inset
+
+, אבל 
+\begin_inset Formula $G\to\textnormal{Ab}\left(G\right)$
+\end_inset
+
+, ולכן קיים גם הומומורפיזם 
+\begin_inset Formula $\textnormal{Ab}\left(G\right)\to\textnormal{Ab}\left(G*H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: בעצם הראנו שהאבליזציה היא פנקטור:
+\begin_inset Formula $\xymatrix{G\ar[r]^{\varphi}\ar[d] & H\ar[d]\\
+\textnormal{Ab}\left(G\right)\ar[r]_{\hat{\varphi}} & \textnormal{Ab}\left(H\right)
+}
+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו שקיימים 
+\begin_inset Formula $\begin{array}{c}
+g:\textnormal{Ab}\left(G\right)\to\textnormal{Ab}\left(G*H\right)\\
+h:\textnormal{Ab}\left(H\right)\to\textnormal{Ab}\left(G*H\right)
+\end{array}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $L\left(k\right)=g\left(k\right)*h\left(k\right)$
+\end_inset
+
+.
+ נוכיח שזה הומומורפיזם: צ"ל 
+\begin_inset Formula $L\left(k_{1}k_{2}\right)=L\left(k_{1}\right)L\left(k_{2}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L\left(k_{1}k_{2}\right)=g\left(\alpha\left(k_{1}k_{2}\right)\right)h\left(\beta\left(k_{1}k_{2}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=g\left(\alpha\left(k_{1}\right)\alpha\left(k_{2}\right)\right)h\left(\left(\beta\left(k_{1}\right)\beta\left(k_{2}\right)\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=g\left(\alpha\left(k_{1}\right)\right)g\left(\varphi\left(k_{2}\right)\right)h\left(\beta\left(k_{1}\right)\right)h\left(\beta\left(k_{2}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=g\left(\alpha\left(k_{1}\right)\right)h\left(\beta\left(k_{1}\right)\right)g\left(\varphi\left(k_{2}\right)\right)h\left(\beta\left(k_{2}\right)\right)=L\left(k_{1}\right)L\left(k_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההומומורפיזם 
+\begin_inset Formula $G*H\to G$
+\end_inset
+
+ מוגדר ע"י מכפלה בין הומומורפיזם הזהות מ
+\begin_inset Formula $G$
+\end_inset
+
+ והומומורפיזם הטריוויאלי מ
+\begin_inset Formula $H$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & G\\
+G\ar[r]\ar@/^{2pc}/[rru]^{\textnormal{Id}_{G}} & G*H\ar[ru]_{L}\\
+ & H\ar[u]\ar@/_{2pc}/[ruu]_{1}
+}
+\]
+
+\end_inset
+
+עכשיו, נוכיח שזה יחיד:
+\begin_inset Formula 
+\[
+\xymatrix{G\ar[rd]\ar[rr]^{\alpha_{1}} &  & \textnormal{Ab}\left(G\right)\ar[rd]\\
+ & G*H\ar[ru]_{\varphi_{1}}\ar[rd]^{\varphi_{2}} &  & \textnormal{Ab}\left(G\right)\times\textnormal{Ab}\left(H\right)\\
+H\ar[ru]\ar[rr]_{\alpha_{2}} &  & \textnormal{Ab}\left(H\right)\ar[ru]
+}
+\]
+
+\end_inset
+
+וצריך לסיים את זה...
+\end_layout
+
+\begin_layout Subsection*
+פתרון אחר)של המרצה(
+\end_layout
+
+\begin_layout Standard
+לפי התכונות האוניברסליות מקבלים:
+\begin_inset Formula 
+\[
+\xymatrix{\textnormal{Ab}\left(G*H\right)\ar[rr] &  & \textnormal{Ab}\left(G\right)\times\textnormal{Ab}\left(H\right)}
+\]
+
+\end_inset
+
+אבל יש הומומורפיזמים טבעיים 
+\begin_inset Formula $\begin{array}{c}
+\alpha:\textnormal{Ab}\left(G\right)\to\textnormal{Ab}\left(G*H\right)\\
+\beta:\textnormal{Ab}\left(H\right)\to\textnormal{Ab}\left(G*H\right)
+\end{array}$
+\end_inset
+
+.
+ לכן נבחר 
+\begin_inset Formula $\varphi\left(xy\right)=\alpha\left(x\right)\beta\left(y\right)$
+\end_inset
+
+ - שבד"כ זה לא הומומורפיזם, אבל הפעם זה כן בגלל שהדיאגרמה מתחלפת.
+\end_layout
+
+\end_body
+\end_document

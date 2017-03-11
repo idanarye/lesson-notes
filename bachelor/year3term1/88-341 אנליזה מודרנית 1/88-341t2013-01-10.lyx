@@ -1,0 +1,746 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section*
+תרגיל)*(
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ גזירה ברציפות ובעלת "תנאי שפה הומוגניים" - כלומר 
+\begin_inset Formula $f\left(a\right)=f\left(b\right)=0$
+\end_inset
+
+ - ומקיימת 
+\begin_inset Formula $\int_{a}^{b}f^{2}\mathrm{\, d}m=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכיחו כי מתקיים 
+\begin_inset Formula 
+\[
+\int_{a}^{b}xff'\mathrm{\, d}m\left(x\right)=-\frac{1}{2}
+\]
+
+\end_inset
+
+ וגם 
+\begin_inset Formula 
+\[
+\left[\int_{a}^{b}\left(f'\left(x\right)\right)^{2}\mathrm{\, d}m\left(x\right)\right]\left[\int_{a}^{b}x^{2}f^{2}\mathrm{\, d}m\left(x\right)\right]>\frac{1}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+בגלל שהכל רציף נעבוד עם אינטגרל רימן.
+ נשתמש באינטגרציה לפי חלקים:
+\begin_inset Formula 
+\[
+1=\int_{a}^{b}1\cdot f^{2}\left(x\right)\mathrm{\, d}\left(x\right)=\left.x\cancel{f^{2}\left(x\right)}\right|_{a}^{b}-\int_{a}^{b}2xf\left(x\right)f'\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+מחלקים ב
+\begin_inset Formula $\left(-2\right)$
+\end_inset
+
+ לקבל:
+\begin_inset Formula 
+\[
+\begin{bmatrix}u=f^{2} & v=x\\
+u'=2ff' & v'=1
+\end{bmatrix}\qquad\left|\int_{a}^{b}xf\left(x\right)f'\left(x\right)\mathrm{\, d}x\right|=\left|-\frac{1}{2}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{2}=\left|\int_{a}^{b}xf\left(x\right)f'\left(x\right)\mathrm{\, d}x\right|\le\int_{a}^{b}\left|xf\left(x\right)f'\left(x\right)\right|^{1}\mathrm{\, d}x=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\Vert x\cdot f\cdot f'\right\Vert _{1}\stackrel{{\scriptscriptstyle \textnormal{Holder}}}{\le}\left\Vert f'\right\Vert _{2}\cdot\left\Vert xf\right\Vert _{2}=\left(\int_{a}^{b}\left(f'\left(x\right)^{2}\right)\mathrm{\, d}x\right)^{\frac{1}{2}}\left(\int_{a}^{b}x^{2}f^{2}\left(x\right)\mathrm{\, d}x\right)^{\frac{1}{2}}
+\]
+
+\end_inset
+
+אם נעלה בריבוע נקבל 
+\begin_inset Formula $\frac{1}{4}\le\left[\int_{a}^{b}\left(f'\left(x\right)\right)^{2}\mathrm{\, d}x\right]\cdot\left[\int_{a}^{b}x^{2}f^{2}\left(x\right)\mathrm{\, d}x\right]$
+\end_inset
+
+ - אבל רוצים אי שוויון 
+\series bold
+\bar under
+חזק
+\series default
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+שוויון מתקבל באי שוויון אויילר אם"ם יש קבועים 
+\begin_inset Formula $\alpha,\beta\in\mathbb{R}$
+\end_inset
+
+, )לא שניהם אפס(, כך ש
+\begin_inset Formula $\alpha\cdot\left(f'\left(x\right)\right)^{2}=\beta\left(x^{2}f^{2}\left(x\right)\right)$
+\end_inset
+
+ כב"מ)במקרה שלנו בכל מקום, בגלל שהפונקציה רציפה(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha=0,\beta\neq0$
+\end_inset
+
+ אז 
+\begin_inset Formula $x^{2}\cdot f^{2}\left(x\right)=0$
+\end_inset
+
+, וזאת סתירה לכך ש
+\begin_inset Formula $\int_{a}^{b}f^{2}\left(x\right)\mathrm{\, d}x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ואם 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(f'\left(x\right)\right)^{2}=\frac{\beta}{\alpha}\cdot x^{2}f^{2}\left(x\right)
+\]
+
+\end_inset
+
+נוציא שורש
+\begin_inset Formula 
+\[
+f'\left(x\right)=\pm\sqrt{\frac{\beta}{\alpha}}\cdot xf\left(x\right)=c\cdot xf\left(x\right)
+\]
+
+\end_inset
+
+עושים מד"ר על 
+\begin_inset Formula $f$
+\end_inset
+
+: נפריד משתנים:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}f}{f}=c\cdot x\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\frac{\mathrm{d}f}{f}=\int c\cdot x\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\nicefrac{n}{f}\right|=c\cdot\frac{x^{2}}{2}+K
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=A\cdot e^{c\frac{x^{2}}{2}}
+\]
+
+\end_inset
+
+האקספוננט אינו מתאפס לעולם, ולכן תנאי השפה 
+\begin_inset Formula $f\left(x\right)=f\left(b\right)=0$
+\end_inset
+
+ מכריחים 
+\begin_inset Formula $A=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{a}^{b}f^{2}\mathrm{\, d}x=0\neq1$
+\end_inset
+
+.
+ בסה"כ שוויון לא ייתכן.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח ממידה סופית)
+\begin_inset Formula $\mu\left(x\right)<\mu$
+\end_inset
+
+(, ויהיו 
+\begin_inset Formula $1\le r<p<\infty$
+\end_inset
+
+.
+ הוכיחו כי 
+\begin_inset Formula $L^{p}\left(X,S,\mu\right)\subseteq L^{r}\left(X,S,\mu\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\in\mathscr{L}^{p}$
+\end_inset
+
+.
+ המספרים 
+\begin_inset Formula $t=\frac{p}{r},S=\frac{p}{p-r}$
+\end_inset
+
+ הם "מעריכים צמודים" - כלומר 
+\begin_inset Formula $\frac{1}{t}+\frac{1}{s}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"פ א"ש הולדר
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{r}^{r}=\int_{X}1\cdot\left|f\right|^{r}\mathrm{\, d}\mu=\left\Vert \left|f\right|^{r}\cdot1\right\Vert _{1}\stackrel{{\scriptscriptstyle \textnormal{Holder}}}{\le}\left\Vert f^{n}\right\Vert _{t}\cdot\left\Vert 1\right\Vert _{s}\le\left\Vert f^{n}\right\Vert _{t}\cdot\left\Vert 1\right\Vert _{s}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\int_{X}\left(\left\Vert f\right\Vert ^{r}\right)^{t}\mathrm{\, d}\mu\right)^{\nicefrac{1}{t}}\cdot\left(\int_{X}1^{\cancel{s}}\mathrm{\, d}\mu\right)^{\nicefrac{1}{s}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\int_{X}\left|f\right|^{\cancelto{p}{r\cdot t}}\mathrm{\, d}\mu\right)^{\frac{1}{t}}\cdot\left(\mu\left(X\right)\right)^{\frac{1}{s}}<\infty
+\]
+
+\end_inset
+
+נוציא שורש 
+\begin_inset Formula $r$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $\left\Vert f\right\Vert _{r}<\infty$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\in L^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הממ"ח 
+\begin_inset Formula $\left(\left[0,1\right],\mathscr{L},m\right)$
+\end_inset
+
+ סופי.
+\end_layout
+
+\begin_layout Standard
+ידוע כי 
+\begin_inset Formula $x^{-\frac{1}{4}}\in L^{2}\left(\left[0,1\right]\right)$
+\end_inset
+
+, כי
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|x^{-\frac{1}{4}}\right|^{2}\mathrm{\, d}x=\int_{0}^{1}x^{-\frac{1}{2}}\mathrm{\, d}x=\left.2\sqrt{x}\right|_{0}^{1}=2<\infty
+\]
+
+\end_inset
+
+וע"פ התרגיל גם
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|x^{-\frac{1}{4}}\right|\mathrm{\, d}x<\infty\implies x^{-\frac{1}{4}}\in L^{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם הממ"ח ממידה 
+\begin_inset Formula $\infty$
+\end_inset
+
+, אין הכלה)ש"ב(
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתבונן בממ"ח 
+\begin_inset Formula $\left(\left[0,1\right],\mathscr{L},m\right)$
+\end_inset
+
+ ונגדיר סדרת פונקציות ע"י
+\begin_inset Formula 
+\[
+g_{n}\left(x\right)=n\cdot I_{\left[0,n^{-3}\right]}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הוכיחי כי לכל 
+\begin_inset Formula $f\in L^{2}\left(\left[0,1\right]\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\int_{0}^{1}f\cdot g_{n}\mathrm{\, d}m\xrightarrow{n\to\infty}0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הראו שיש 
+\begin_inset Formula $f\in L^{1}\left(\left[0,1\right]\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\int_{0}^{1}fg_{n}\mathrm{\, d}m\overset{n\to\infty}{\nrightarrow}0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left(\int_{0}^{1}f\cdot g_{n}\mathrm{\, d}m,0\right)=\left|\int_{0}^{1}f\cdot g_{n}\mathrm{\, d}m-0\right|=\left|\int_{0}^{1}f\cdot g_{n}\mathrm{\, d}m\right|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\int_{0}^{1}\underbrace{\left|f\cdot g_{n}\right|}_{=\left\Vert f\cdot g_{n}\right\Vert _{1}}\mathrm{\, d}m\stackrel{{\scriptscriptstyle \textnormal{Holder}}}{\le}\left\Vert \underbrace{f}_{<\infty}\right\Vert _{2}\cdot\left\Vert g_{n}\right\Vert _{2}\xrightarrow{n\to\infty}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert g_{n}\right\Vert _{2}=\left(\int_{0}^{1}\left|g_{n}\right|^{2}\mathrm{\, d}m\right)=\left(\int_{0}^{1}n^{2}\cdot I_{\left[0,n^{-3}\right]}^{2}\mathrm{\, d}m\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\int_{0}^{n^{-3}}n^{2}\mathrm{\, d}m\left(x\right)\right)^{\frac{1}{2}}=\left(n^{-3}\cdot n^{2}\right)^{\frac{1}{2}}=n^{-\frac{1}{2}}=\frac{1}{\sqrt{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{2}\cdot\left\Vert g_{n}\right\Vert _{2}=\frac{\left\Vert f\right\Vert _{2}}{\sqrt{n}}\xrightarrow{n\to\infty}0
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: ע"פ התרגיל הקודם זה היה נכון גם אם 
+\begin_inset Formula $f\in L^{p>2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ניקח לדוגמא נגדית 
+\begin_inset Formula $x^{-\frac{2}{3}}\in L^{1}\left(\left[0,1\right]\right)$
+\end_inset
+
+.
+ )
+\begin_inset Formula $f$
+\end_inset
+
+ אינטרגבילית לבג כי היא אינטרגבילית רימן בהחלט(.
+ נחשב:
+\begin_inset Formula 
+\[
+\int_{0}^{1}f\left(x\right)g_{n}\left(x\right)\mathrm{\, d}m\left(x\right)=\int_{0}^{n^{-3}}f\left(x\right)\cdot n\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=n\int_{0}^{n^{-3}}x^{-\frac{2}{3}}\mathrm{\, d}x=\left.n\cdot\frac{x^{\frac{1}{3}}}{\frac{1}{3}}\right|_{\xcancel{x=0}}^{x=n^{-3}}=3\nrightarrow0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(X,\left\Vert \cdot\right\Vert _{X}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(Y,\left\Vert \cdot\right\Vert _{Y}\right)$
+\end_inset
+
+ שני מרחבי בנך.
+ ניתן למכפלה הקרטזית 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+ מבנה לינארי ע"י
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha\cdot\left(x,y\right) & := & \left(\alpha x,\alpha y\right)\\
+\left(x_{1},y_{1}\right)+\left(x_{2},y_{2}\right) & := & \left(x_{1}+x_{2},y_{1}+y_{2}\right)\\
+\left\Vert \left(x,y\right)\right\Vert  & := & \left\Vert x\right\Vert _{X}+\left\Vert y\right\Vert _{Y}
+\end{eqnarray*}
+
+\end_inset
+
+)הנורמה שהגדרנו היא באמת נורמה(
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח ש
+\begin_inset Formula $\left(X\times Y,\left\Vert \cdot\right\Vert \right)$
+\end_inset
+
+ הוא בנך.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ \left(x_{n},y_{n}\right)\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרת קושי ב
+\begin_inset Formula $X\times Y$
+\end_inset
+
+, ויש להוכיח שיש לה גבול שם.
+\end_layout
+
+\begin_layout Standard
+ביתר פירוט, לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ ישנו 
+\begin_inset Formula $N$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $m,n\ge N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \left(x_{n}-x_{m},y_{n}-y_{m}\right)\right\Vert =\left\Vert \left(x_{n},y_{n}\right)-\left(x_{m},y_{m}\right)\right\Vert <\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ז.א.
+\begin_inset Formula 
+\[
+\left\Vert x_{n}-x_{m}\right\Vert _{X}+\left\Vert y_{n}-y_{m}\right\Vert _{Y}<\varepsilon
+\]
+
+\end_inset
+
+מכאן שלכל 
+\begin_inset Formula $m,n\ge N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert x_{n}-x_{m}\right\Vert <\varepsilon
+\]
+
+\end_inset
+
+וגם
+\begin_inset Formula 
+\[
+\left\Vert y_{n}-y_{m}\right\Vert <\varepsilon
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}\subseteq X$
+\end_inset
+
+ ו
+\begin_inset Formula $\left\{ y_{n}\right\} _{n=1}^{\infty}\subseteq Y$
+\end_inset
+
+ הן קושי ומתכנסות)כי 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בנך( בהתאמה אל 
+\begin_inset Formula $\begin{array}{c}
+x_{n}\to x_{0}\in X\\
+y_{n}\to y_{0}\in Y
+\end{array}$
+\end_inset
+
+.
+ נטען כי 
+\begin_inset Formula $\left(x_{n},y_{n}\right)\xrightarrow{n\to\infty}\left(x_{0},y_{0}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\Vert \left(x_{n},y_{n}\right)-\left(x_{0},y_{0}\right)\right\Vert =\left\Vert \left(x_{n}-x_{0},y_{n}-y_{0}\right)\right\Vert =\left\Vert x_{n}-x_{0}\right\Vert _{X}+\left\Vert y_{n}-y_{0}\right\Vert _{Y}\xrightarrow{n\to\infty}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

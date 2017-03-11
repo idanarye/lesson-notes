@@ -1,0 +1,815 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+ספירת פולינומים אי-פריקים מעל שדה סופי
+\end_layout
+
+\begin_layout Section*
+מרגיל מנחה
+\end_layout
+
+\begin_layout Standard
+כמה גורמים אי-פריקים יש ל
+\begin_inset Formula $x^{64}-x$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $n_{q}\left(k\right)$
+\end_inset
+
+ את מספר הפולינומים האי-פריקים ממעלה 
+\begin_inset Formula $k$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי-פריק ממעלה 
+\begin_inset Formula $k$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+ אזי הוא מחלק את 
+\begin_inset Formula $x^{q^{k}}-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוספת שורש של 
+\begin_inset Formula $f$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{F}_{q}$
+\end_inset
+
+: 
+\begin_inset Formula $\mathbb{F}_{q}\left(\alpha\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left[\mathbb{F}_{q}\left(\alpha\right):\mathbb{F}_{q}\right]=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השדה 
+\begin_inset Formula $\mathbb{F}_{q}\left(\alpha\right)$
+\end_inset
+
+ הוא שדה מפצל של 
+\begin_inset Formula $f$
+\end_inset
+
+)כל שאר השורשים של 
+\begin_inset Formula $f$
+\end_inset
+
+ הם 
+\begin_inset Formula $\alpha,\alpha^{q},\dots,\alpha^{q^{k-1}}$
+\end_inset
+
+(.
+ זהו שדה עם עצמה 
+\begin_inset Formula $q^{k}$
+\end_inset
+
+ ולכן כל איבריו הם שורשים של 
+\begin_inset Formula $x^{q^{k}}-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בצורה דומה עבור כל 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+, כל פולינום אי-פריק מדרגה 
+\begin_inset Formula $d$
+\end_inset
+
+ מחלק גם את 
+\begin_inset Formula $x^{q^{k}}-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $q^{k}=\sum\limits _{d\mid k}d\cdot n_{q}\left(d\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נכון לפי סכימת הדרגות של הפולינומים האי-פריקים.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+מספר הגורמים האי-פריקים של 
+\begin_inset Formula $x^{q^{k}}-x$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\sum\limits _{d\mid k}n_{q}\left(d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נחזור לתרגיל המנחה
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו 
+\begin_inset Formula $k=6$
+\end_inset
+
+)כי 
+\begin_inset Formula $2^{6}=64$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{2}\left(1\right)=2\qquad n_{2}\left(2\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{2}\left(1\right)+2\cdot n_{2}\left(2\right)+4\cdot n_{2}\left(4\right)=2^{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2+2\cdot1+4n_{2}\left(4\right)=2^{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{2}\left(4\right)=3
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $n_{2}\left(4\right)$
+\end_inset
+
+ מיותר, שכן 
+\begin_inset Formula $4\nmid6$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+1\cdot n_{2}\left(1\right)+3\cdot n_{2}\left(3\right)=2^{3}=8\implies n_{2}\left(3\right)=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1\cdot\underbrace{n_{2}\left(1\right)}_{=2}+\underbrace{2\cdot n_{2}\left(2\right)}_{=2}+\underbrace{3\cdot n_{2}\left(3\right)}_{6}+6\cdot n_{2}\left(6\right)=64
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{2}\left(6\right)=9
+\]
+
+\end_inset
+
+מספר הגורמים האי-פריקים של 
+\begin_inset Formula $x^{64}-x$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\sum_{d\mid k}n_{2}\left(d\right)=14
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נוסחת ההיפוך של מביוס
+\end_layout
+
+\begin_layout Standard
+פונקציית מביוס היא 
+\begin_inset Formula $\mu\left(n\right)=\begin{cases}
+1 & n=1\\
+0 & a^{2}\mid n,a>1\\
+\left(-1\right)^{k} & n=p_{1}\cdots p_{k},p_{i}\neq p_{j}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $g\left(n\right)=\sum\limits _{d\mid n}f\left(d\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(n\right)=\sum\limits _{d\mid n}\mu\left(\frac{n}{d}\right)g\left(d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{q}\left(n\right)=\frac{\sum\limits _{d\mid n}\mu\left(\frac{n}{d}\right)q^{d}}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)שטייניץ(
+\end_layout
+
+\begin_layout Standard
+הרחבה סופית 
+\begin_inset Formula $E/F$
+\end_inset
+
+ היא פשוטה אם ורק אם יש לה מספר סופי של שדות ביניים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם ההרחבה 
+\begin_inset Formula $E/F$
+\end_inset
+
+ פשוטה, אזי 
+\begin_inset Formula $E=F\left(a\right)$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $B$
+\end_inset
+
+ שדה ביניים.
+ אזי 
+\begin_inset Formula $B\left(a\right)=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)\in F\left[x\right]$
+\end_inset
+
+ הפולינום המינימלי של 
+\begin_inset Formula $a$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $g\left(x\right)\in B\left[x\right]$
+\end_inset
+
+ את הפולינום המינימלי של 
+\begin_inset Formula $a$
+\end_inset
+
+ מעל 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(x\right)\mid f\left(x\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $b_{1},\dots b_{k}$
+\end_inset
+
+ את המקדמים של 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B'=F\left(b_{1},\dots b_{k}\right)\subseteq B$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{E\ar@{-}[d]\\
+B\ar@{-}[d]\\
+B'\ar@{-}[d]\\
+F
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $g\left(x\right)\in B'\left[x\right]$
+\end_inset
+
+ והוא אי-פריק שם.
+\begin_inset Formula 
+\[
+B'\left(a\right)=E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[E:B'\right]=\deg g\left(x\right)=\left[E:B\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies B=B'
+\]
+
+\end_inset
+
+הפולינום 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ קובע את השדה.
+ יש מספר סופי של פולינומים מתוקנים שמחלקים את 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, ולכן יש מספר סופי של שדות ביניים.
+\end_layout
+
+\begin_layout Standard
+בכיוון השני: נניח שיש מספר סופי של שדות ביניים בין 
+\begin_inset Formula $E$
+\end_inset
+
+ ל
+\begin_inset Formula $F$
+\end_inset
+
+.
+ אפשר להניח ש
+\begin_inset Formula $F$
+\end_inset
+
+ שדה אינסופי)כי ראינו שהרחבה סופית של שדה סופי היא פשוטה(.
+ ההרחבה 
+\begin_inset Formula $E/F$
+\end_inset
+
+ סופית)לפי הנתון(.
+\begin_inset Formula 
+\[
+E=F\left(a_{1},\dots a_{n}\right)
+\]
+
+\end_inset
+
+נוכיח באינדוקציה: מספיק להוכיח עבור 
+\begin_inset Formula $E=F\left(a_{1},a_{2}\right)$
+\end_inset
+
+.
+ נסתכל על צירופים 
+\begin_inset Formula $a_{1}+ta_{2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $t\in F$
+\end_inset
+
+: 
+\begin_inset Formula $F$
+\end_inset
+
+ אינסופי ויש מספר סופי של שדות ביניים ולכן 
+\begin_inset Formula $F\left(a_{1}+t_{1}a_{2}\right)=F\left(a_{1}+t_{2}a_{2}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t_{1}\neq t_{2}$
+\end_inset
+
+.
+ השדה מכיל 
+\begin_inset Formula $\begin{array}{c}
+a_{1}+t_{1}a_{2}\\
+a_{1}+t_{2}a_{2}
+\end{array}$
+\end_inset
+
+ וניתן להחליף את 
+\begin_inset Formula $a_{1},a_{2}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $F\left(a_{1}+t_{1}a_{2}\right)=F\left(a_{1},a_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט האיבר הפרימיטיבי
+\end_layout
+
+\begin_layout Standard
+כל הרחבה סופית ספרבילית היא פשוטה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E/F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E=F\left(a_{1},\dots a_{n}\right)
+\]
+
+\end_inset
+
+לוקחים את שדה הפיצול של 
+\begin_inset Formula $f\left(x\right)=m_{a_{1}}\left(x\right)\cdots m_{a_{n}}\left(x\right)$
+\end_inset
+
+, וזאת הרחבת גלואה של 
+\begin_inset Formula $F$
+\end_inset
+
+)ניתן להחליף את 
+\begin_inset Formula $f$
+\end_inset
+
+ בפולינום ספרבילי(.
+\end_layout
+
+\begin_layout Standard
+יש ל
+\begin_inset Formula $E'/F$
+\end_inset
+
+ מספר סופי של שדות ביניים)לפי התאמת גלואה(.
+ לפי שטייניץ ההרחבה 
+\begin_inset Formula $E'/F$
+\end_inset
+
+ פשוטה.
+\end_layout
+
+\begin_layout Part*
+בניית הרחבת גלואה עם חבורת גלואה סופית כלשהי
+\end_layout
+
+\begin_layout Section*
+שלב א: מימוש החבורה 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ כחבורת גלואה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $F$
+\end_inset
+
+ שדה כלשהו.
+ שדה שברים של 
+\begin_inset Formula $F\left[x_{1},\dots x_{n}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\gets$
+\end_inset
+
+ 
+\begin_inset Formula $K=F\left(x_{1},\dots x_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש פעולה של 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ על 
+\begin_inset Formula $K$
+\end_inset
+
+ - מפעילים את התמורה של האינדקסים של ה
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ בנוסף כל תמורה היא אוטומורפיזם של 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $S=K^{S_{n}}$
+\end_inset
+
+ שדה הפונקציות הסימטריות.
+ לדוגמה: 
+\begin_inset Formula $x_{1}+\cdots+x_{n}\in S$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left[K:S\right]=\left[K:S^{S_{n}}\right]=\left|S_{n}\right|=n!
+\]
+
+\end_inset
+
+בנוסף 
+\begin_inset Formula $\textnormal{Gal}\left(K/S\right)=S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כל חבורה סופית איזומורפית לתת חבורה של 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+)לפי קיילי(.
+ לכן אם יש לנו 
+\begin_inset Formula $H\le S_{n}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\textnormal{Gal}\left(K/K^{H}\right)=H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ הוא שדה מפצל של איזה פולינום מעל 
+\begin_inset Formula $S$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(\lambda\right)=\prod\left(\lambda-x_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $S$
+\end_inset
+
+ פועלת טריווילית על 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(\lambda\right)\in S\left[x\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $K/S$
+\end_inset
+
+ היא הרחבת גלואה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ נוצר ע"י המקדמים של 
+\begin_inset Formula $f\left(\lambda\right)$
+\end_inset
+
+ שהם 
+\bar under
+הפונקציות הסימטריות האלמנטריות
+\bar default
+.
+\end_layout
+
+\end_body
+\end_document

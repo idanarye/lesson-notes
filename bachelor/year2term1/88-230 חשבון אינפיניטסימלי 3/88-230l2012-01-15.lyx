@@ -1,0 +1,1070 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+יישומים גיאומטריים ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\begin_inset Formula 
+\[
+\mathbb{R}^{3}=\left\{ \left(x,y,z\right)\middle|x,y,z\in\mathbb{R}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+קו
+\bar default
+ ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ הוא הטווח של פונקציה רציפה 
+\begin_inset Formula $f:\left[a,\beta\right]\to\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+, הקו נקרא "חלק".
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $t_{0}\in\left[\alpha,\beta\right]$
+\end_inset
+
+, 
+\begin_inset Formula $p^{0}=f\left(t_{0}\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\exists\lim\limits _{t\to t_{0}}\cfrac{f\left(t\right)-f\left(t_{0}\right)}{t-t_{0}}\Doteq f'\left(t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\uuline on
+מגדירים
+\uuline default
+ את 
+\begin_inset Formula $f^{'}\left(t_{0}\right)$
+\end_inset
+
+ כ
+\uuline on
+ווקטור משיק
+\uuline default
+ לקו הנתון בנק' 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה טוב לכל מימד, לאו דווקא ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+משטח או יריעה)
+\lang english
+manifold
+\lang hebrew
+( הוא הטווח של 
+\bar under
+פונקציה רציפה
+\bar default
+ 
+\begin_inset Formula $f:\bar{D}^{\subseteq\mathbb{R}^{2}}\to\mathbb{R}^{3}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ 
+\bar under
+תחום סגור
+\bar default
+.
+\begin_inset Formula 
+\[
+M\Doteq\left\{ f\left(s,t\right)\middle|\left(s,t\right)\in\bar{D}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s,t$
+\end_inset
+
+: פרמטרים של המשטח
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תחום ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ הוא קבוצה פתוחה וקשירה ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ נק' 
+\begin_inset Formula $p$
+\end_inset
+
+ של 
+\begin_inset Formula $D$
+\end_inset
+
+ נקראת 
+\bar under
+נקודת שפה של 
+\begin_inset Formula $D$
+\end_inset
+
+
+\bar default
+ אם 
+\bar under
+כל סביבה של 
+\begin_inset Formula $p$
+\end_inset
+
+
+\bar default
+ מכילה נקודות של 
+\begin_inset Formula $D$
+\end_inset
+
+ ונקודות של 
+\begin_inset Formula $D^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial D$
+\end_inset
+
+=
+\bar under
+השפה של 
+\begin_inset Formula $D$
+\end_inset
+
+
+\bar default
+=אוסף כל נקודות השפה של 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bar{D}=D\cup\partial D$
+\end_inset
+
+ קב' סגורה וקשירה.
+ קוראים ל
+\begin_inset Formula $\bar{D}$
+\end_inset
+
+ 
+\bar under
+תחום סגור
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+פני כדור.
+\end_layout
+
+\begin_layout Subsection*
+פרמטריזציה של המשטח
+\end_layout
+
+\begin_layout Standard
+נשתמש בפרמטרים 
+\begin_inset Formula $\varphi,\theta$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(\varphi,\theta\right)=\left(R\cos\varphi\sin\theta,R\sin\varphi\cos\theta,R\cos\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\left\{ f\left(\varphi,\theta\right)\middle|\left(\varphi,\theta\right)\in\left[0,2\pi\right]\times\left[0,\pi\right]\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+)ז"א: יש לו פרמטריזציה בעזרת 
+\begin_inset Formula $f$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+( ותהי 
+\begin_inset Formula $f\left(s_{0},t_{0}\right)=p^{0}\in M$
+\end_inset
+
+.
+ הטווח 
+\begin_inset Formula $f\left(s,t_{0}\right)$
+\end_inset
+
+ הוא 
+\uuline on
+קו על המשטח
+\uuline default
+, 
+\begin_inset Formula $\left(s,t_{0}\right)\in\bar{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הטווח של 
+\begin_inset Formula $f\left(s_{0},t\right)$
+\end_inset
+
+)עם 
+\begin_inset Formula $\left(s_{0},t\right)\in\bar{D}$
+\end_inset
+
+( הוא גם כן קו על המשטח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.f_{s}\left(\cdot,t_{0}\right)\right|_{s_{0}}$
+\end_inset
+
+ ווקטור משיק לקו הראשון בנק' 
+\begin_inset Formula $\left(s_{0},t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.f_{t}\left(s_{0},\cdot\right)\right|_{t_{0}}$
+\end_inset
+
+ ווקטור משיק לקו השני בנק' 
+\begin_inset Formula $\left(s_{0},t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+כמה מילים על 
+\bar under
+אנליזה וקטורית
+\end_layout
+
+\begin_layout Section*
+הגדרה)גיאומטרית(
+\end_layout
+
+\begin_layout Standard
+קטע 
+\bar under
+מכוון
+\bar default
+ 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\ne B,A,B\in\mathbb{R}\right)$
+\end_inset
+
+ הוא קטע המחבר את הנקודות 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+, מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overrightarrow{AB},\overrightarrow{CD}$
+\end_inset
+
+ נקראים 
+\bar under
+שקולים
+\bar default
+
+\begin_inset Formula $\left(\sim\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $ABDC$
+\end_inset
+
+ הוא מקבילית
+\begin_inset Formula 
+\[
+\xymatrix{ & B\\
+A\ar[ur] &  & D\\
+ & C\ar[ur]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחלקת שקילות של היחס הזה נקראת וקטור 
+\begin_inset Formula $u$
+\end_inset
+
+)כל קטע מכוון במח' השקילות 
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\uuline on
+מייצג את 
+\begin_inset Formula $u$
+\end_inset
+
+
+\uuline default
+(
+\end_layout
+
+\begin_layout Standard
+לכל וקטור 
+\begin_inset Formula $u$
+\end_inset
+
+ יש נציג המתחיל בראשית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ 
+\begin_inset Formula $\overrightarrow{0X}$
+\end_inset
+
+ נציג של 
+\begin_inset Formula $u$
+\end_inset
+
+.
+ קוראים ל
+\begin_inset Formula $\overrightarrow{0X}$
+\end_inset
+
+ 
+\bar under
+וקטור המקום
+\bar default
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  & B\ar[dddr]^{\textnormal{representive of }v}\\
+\\
+A\ar[uurr]^{\textnormal{representive of }u}\ar[drrr]^{u+v}\\
+ &  &  & C
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $u+v$
+\end_inset
+
+ הוא מחלקת השקילות של 
+\begin_inset Formula $\overrightarrow{AC}$
+\end_inset
+
+)"משולש הכוחות"( הווקטורים מהווים חבורה)חלופית( לגבי החיבור(
+\end_layout
+
+\begin_layout Standard
+וקטור ה
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מיוצג ע"י כל קטע מנוון 
+\begin_inset Formula $\overrightarrow{AA}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u$
+\end_inset
+
+ מיוצג ע"י 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v$
+\end_inset
+
+ מיוצג ע"י 
+\begin_inset Formula $\overrightarrow{BA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u+\left(-u\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t>0$
+\end_inset
+
+: 
+\begin_inset Formula $tu$
+\end_inset
+
+ מיוצג ע"י וקטור על הישר הנקבע ע"י 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+ כך שאורכו הוא 
+\begin_inset Formula $t$
+\end_inset
+
+ כפול האורך של 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+)עם אותו כיוון(.
+\begin_inset Formula 
+\[
+\left\Vert \overrightarrow{AB'}\right\Vert =t\left\Vert \overrightarrow{AB}\right\Vert 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $t<0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+tu\Doteq\left(-t\right)\left(-u\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0u\Doteq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האקסיומות של מרחב וקטורי מתקיימות עבור מרכב כל ה"וקטורים" ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, עם הפעולות הנ"ל של + וכפל בסקלר ממשי.
+\end_layout
+
+\begin_layout Part*
+מכפלה פנימית של 
+\begin_inset Formula $u,v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח נציגים עם אותה נקודת התחלה
+\begin_inset Formula 
+\[
+\xymatrix{ & B\\
+\,\ar@{-}@/^{5pt}/[ddrr]\\
+ & \theta &  & \ar[uull]_{w}C\\
+A\ar[uuur]^{v}\ar[urrr]_{u} &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\cdot v\Doteq\left\Vert u\right\Vert \left\Vert v\right\Vert \cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי משפט הקוסינוסים במשולש 
+\begin_inset Formula $ABC$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\boxed{\left\Vert \overrightarrow{BC}\right\Vert ^{2}=\left\Vert u\right\Vert ^{2}+\left\Vert v\right\Vert ^{2}-2\left\Vert u\right\Vert \left\Vert v\right\Vert \cos\theta}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=v-u
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \overrightarrow{BC}\right\Vert ^{2}\left\Vert w\right\Vert ^{2}=\left\Vert v-u\right\Vert ^{2}=\left(v-u\right)\left(v-u\right)=\left\Vert v\right\Vert ^{2}+\left\Vert u\right\Vert ^{2}-2u\cdot v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההגדרה הגיאומטרית: 
+\begin_inset Formula $u\cdot v=\left\Vert u\right\Vert \left\Vert v\right\Vert \cos\theta$
+\end_inset
+
+ - אותוההגדרה האלגברית.
+\end_layout
+
+\begin_layout Part*
+מכפלה וקטורית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u,v$
+\end_inset
+
+ נתונים.
+\begin_inset Formula 
+\[
+u\times v\Doteq\begin{vmatrix}i & j & k\\
+u_{1} & u_{2} & u_{3}\\
+v_{1} & v_{2} & v_{3}
+\end{vmatrix}
+\]
+
+\end_inset
+
+זוהי דטרמיננטה "סימלית", כאשר
+\begin_inset Formula 
+\[
+\begin{array}{c}
+i=\left(1,0,0\right)\Doteq e^{1}\\
+j=\left(0,1,0\right)\Doteq e^{2}\\
+k=\left(0,0,1\right)\Doteq e^{3}
+\end{array}
+\]
+
+\end_inset
+
+והיא נקראת המכפלה הוקטורית של 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(2,4,-2\right)\times\left(5,1,6\right)=\begin{vmatrix}i & j & k\\
+2 & 4 & -2\\
+5 & 1 & 6
+\end{vmatrix}=26i-22j-18k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Standard
+מתכונות הדטרמיננטה כפונקציה של 
+\bar under
+שורותיה
+\bar default
+, מקבלים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\times v$
+\end_inset
+
+ 
+\bar under
+פונקציה בילינארית
+\bar default
+ של 
+\begin_inset Formula $u$
+\end_inset
+
+ ב
+\begin_inset Formula $v$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(u+u'\right)\times\left(v\right)=u\times v+u'\times v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\times v=-v\times u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u\times u=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+i\times j=k\\
+j\times k=i\\
+k\times i=j
+\end{array}\right.
+\]
+
+\end_inset
+
+לדוגמה
+\begin_inset Formula 
+\[
+i\times j=\begin{vmatrix}i & j & k\\
+1 & 0 & 0\\
+0 & 1 & 0
+\end{vmatrix}=k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+w\cdot\left(u\times v\right)=\begin{vmatrix}w_{1} & w_{2} & w_{3}\\
+u_{1} & u_{2} & u_{3}\\
+v_{1} & v_{2} & v_{3}
+\end{vmatrix}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+u\cdot\left(u\times v\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\cdot\left(u\times v\right)=0
+\]
+
+\end_inset
+
+לכן: אם 
+\begin_inset Formula $0\ne u\times v$
+\end_inset
+
+, הווקטור 
+\begin_inset Formula $u\times v$
+\end_inset
+
+ 
+\bar under
+ניצב למרכיביו
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+כלומר
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $u,v$
+\end_inset
+
+ אינם על ישר אחד, אזי 
+\begin_inset Formula $u\times v$
+\end_inset
+
+ 
+\bar under
+ניצב
+\bar default
+ למישור הנקבע ע"י 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+.
+ ז"א 
+\begin_inset Formula $u\times v$
+\end_inset
+
+ הוא "נורמל" למישור.
+\end_layout
+
+\begin_layout Section*
+שטח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\left\Vert u\right\Vert \left(\left\Vert v\right\Vert \sin\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{2}=\left\Vert u\right\Vert ^{2}\left\Vert v\right\Vert ^{2}\sin^{2}\theta=\left\Vert u\right\Vert ^{2}\left\Vert v\right\Vert ^{2}\left(1-\cos^{2}\theta\right)=\left\Vert u\right\Vert ^{2}\left\Vert v\right\Vert ^{2}-\left[\underbrace{\left\Vert u\right\Vert \left\Vert v\right\Vert \cos\theta}_{u\cdot v}\right]^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{S^{2}=\left\Vert u\right\Vert ^{2}\left\Vert v\right\Vert ^{2}-\left(u\cdot v\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(u_{1}^{2}+u_{2}^{2}+u_{3}^{2}\right)\left(v_{1}^{2}+v_{2}^{2}+v_{3}^{2}\right)-\left(u_{1}v_{1}+u_{2}v_{2}+u_{3}v_{3}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=...=\left\Vert u\times v\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left\Vert u\times v\right\Vert 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

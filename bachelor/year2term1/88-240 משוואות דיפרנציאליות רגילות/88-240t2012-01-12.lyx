@@ -1,0 +1,945 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פרוביניוס מכה שנית
+\end_layout
+
+\begin_layout Section*
+משוואת בסל "המותאמת" )
+\lang english
+modified Bessel equation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+משוואת בסל המותאמת מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\nu$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא:
+\begin_inset Formula 
+\[
+x^{2}y''+xy'-\left(x^{2}+\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\nu$
+\end_inset
+
+ קבוע(.
+ ננסה לפתור:
+\end_layout
+
+\begin_layout Standard
+קודם כל נביא לצורה נורמלית:
+\begin_inset Formula 
+\[
+y''+\cfrac{1}{x}y'-\left(1+\cfrac{\nu^{2}}{x^{2}}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ נקודה סינגולרית.
+ נתבונן בגבולות:
+\begin_inset Formula 
+\[
+\lim_{x\to0}x\cdot\cfrac{1}{x}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0}x^{2}\cdot\left[-\left(1+\cfrac{\nu^{2}}{x^{2}}\right)\right]=-\nu^{2}
+\]
+
+\end_inset
+
+הגבולות קיימים ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודה 
+\bar under
+רגולרית סינגולרית
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נבדוק מה המצב ב
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ נחליף משתנה:
+\begin_inset Formula 
+\[
+z:=\cfrac{1}{x}\Rightarrow\cfrac{d}{dx}=\cfrac{dz}{dx}\cdot\cfrac{d}{dz}=-\cfrac{1}{x^{2}}\cfrac{d}{dz}=-z^{2}\cfrac{d}{dz}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x=\cfrac{1}{z}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{d^{2}}{dx^{2}}=\left(\cfrac{d}{dx}\right)^{2}=-z^{2}\cfrac{d}{dz}\left(-z^{2}\cfrac{d}{dz}\right)=-z^{2}\left(2z\cfrac{d}{dz}-z^{2}\cfrac{d^{2}}{dz^{2}}\right)=z^{4}\cfrac{d^{2}}{dz^{2}}+2z^{2}\cfrac{d}{dz}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המד"ר היא:
+\begin_inset Formula 
+\[
+\left(\cfrac{1}{z}\right)^{2}\left[z^{4}\cfrac{d^{2}}{dz^{2}}+2z^{3}\cfrac{d}{dz}\right]y+\cfrac{1}{z}\left(-z^{2}\cfrac{d}{dz}\right)y-\left(\cfrac{1}{z^{2}}+\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{2}\cfrac{d^{2}y}{dz^{2}}+z\cdot\cfrac{dy}{dz}-\left(\cfrac{1}{z^{2}}+\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+נשים לב ש
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $z\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק התנהגות כאשר 
+\begin_inset Formula $z\to0$
+\end_inset
+
+ בצורה הנורמלית:
+\begin_inset Formula 
+\[
+\cfrac{d^{2}y}{dz^{2}}+\cfrac{1}{z}\cfrac{dy}{dz}-\left(\cfrac{1}{z^{4}}+\cfrac{\nu^{2}}{z^{2}}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{z\to0}z\cdot\cfrac{1}{z}=1\hspace{1em}\surd
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{z\to0}z^{2}\cdot\left[-\left(\cfrac{1}{z^{4}}+\cfrac{\nu^{2}}{z^{2}}\right)\right]=\textnormal{NaN}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\infty$
+\end_inset
+
+ נקודה לא רגולרית סינגולרית.
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון בשיטת פרוביניוס סביב הנקודה הרגולרית סינגולרית ב
+\numeric on
+0
+\begin_inset Formula 
+\[
+\Rightarrow y=\sum_{n=0}^{\infty}a_{n}x^{n+\alpha};a_{0}\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0}^{\infty}\left(n+\alpha-1\right)\left(n+\alpha\right)a_{n}x^{n+\alpha-2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left(n+\alpha-1\right)\left(n+\alpha\right)a_{n}x^{n+\alpha}+\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha}-\sum_{n=0}^{\infty}a_{n}x^{n+\alpha+2}-\sum_{n=0}^{\infty}\nu^{2}a_{n}x^{n+\alpha}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החזקה המשותפת המינימלית לכל הטורים היא 
+\begin_inset Formula $\alpha+2$
+\end_inset
+
+, ולכן נסדר קצת:
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\left(\alpha-1\right)\alpha a_{0}x^{\alpha}+\alpha\left(\alpha+1\right)a_{1}x^{\alpha+1}\\
++\\
+\sum\limits _{n=2}^{\infty}\left(n+\alpha-1\right)\left(n+\alpha\right)a_{n}x^{n+\alpha}\\
++\\
+\alpha a_{0}x^{\alpha}+\left(\alpha+1\right)a_{1}x^{\alpha+1}+\sum\limits _{n=2}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha}\\
+-\\
+\sum\limits _{n=0}^{\infty}a_{n}x^{n+\alpha+2}-\nu^{2}a_{0}x^{\alpha}-\nu^{2}a_{1}x^{\alpha+1}-\sum\limits _{n=2}^{\infty}\nu^{2}a_{n}x^{n+\alpha}
+\end{array}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\left[\left(\alpha-1\right)\alpha+\alpha-\nu^{2}\right]a_{0}x^{\alpha}\\
++\\
+\left[\alpha\left(\alpha+1\right)+\left(\alpha+1\right)-\nu^{2}\right]a_{1}x^{\alpha+1}\\
++\\
+\sum\limits _{n=0}^{\infty}\left(n+\alpha+2\right)a_{n+2}x^{n+\alpha+2}\\
+-\\
+\sum\limits _{n=0}^{\infty}a_{n}x^{n+\alpha+2}\\
+-\\
+\sum\limits _{n=0}^{\infty}\nu^{2}a_{n+2}x^{n+\alpha+2}
+\end{array}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\left(\alpha^{2}-\nu^{2}\right)a_{0}x^{\alpha}+\left(\alpha^{2}+2\alpha+1-\nu^{2}\right)a_{1}x^{\alpha+1}\\
++\\
+\sum_{n=0}^{\infty}\left\{ \left[\left(n+\alpha+1\right)\left(n+\alpha+2\right)+\left(n+\alpha+2\right)-\nu^{2}\right]a_{n+2}-a_{n}\right\} x^{n+\alpha+2}
+\end{array}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+: לאחר חילוק ב
+\begin_inset Formula $a_{0}\ne0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha^{2}-\nu^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1,2}=\pm\nu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{\alpha+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\alpha^{2}-\nu^{2}+2\alpha+1\right)a_{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2\alpha+1\right)a_{1}=0
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\alpha\ne-\cfrac{1}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאר המקדמים:
+\begin_inset Formula 
+\[
+\left(n+\alpha+2+\nu\right)\left(n+\alpha+2-\nu\right)a_{n+2}-a_{n}=0,\hspace{1em}n=0,1,2,...
+\]
+
+\end_inset
+
+לאחר פישוט ב
+\lang english
+Mupad
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+a_{n+2}=\cfrac{a_{n}}{\left(n+\alpha+2+\nu\right)\left(n+\alpha+2-\nu\right)}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\alpha=\nu$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a_{n+2}=\cfrac{a_{n}}{\left(n+2\right)\left(n+2+2\nu\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $n$
+\end_inset
+
+ים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+n=0 & \hspace{1em} & a_{2}=\cfrac{a_{0}}{2\left(2+2\nu\right)}=\cfrac{a_{0}}{2^{2}\left(1+\nu\right)}\\
+n=1 &  & a_{3}=\cfrac{a_{1}}{???}=0\\
+n=2 &  & a_{4}=\cfrac{a_{2}}{4\left(4+2\nu\right)}=\cfrac{a_{2}}{2^{3}\left(2+v\right)}=\cfrac{a_{0}}{2^{4}\cdot2!\left(1+\nu\right)\left(2+\nu\right)}\\
+n=3 &  & a_{5}=\cfrac{a_{3}}{???}=0\\
+ & \vdots\\
+n=2p &  & a_{2p}=\cfrac{a_{0}}{2^{2p}\cdot p!\prod_{j=1}^{p}\left(\nu+j\right)}=\cfrac{a_{0}}{2^{2p}\cdot p!\cfrac{\Gamma\left(p+1+\nu\right)}{\Gamma\left(1+\nu\right)}}\\
+ &  & =\underbrace{2^{\nu}\cdot\Gamma\left(1+\nu\right)\cdot a_{0}}_{A_{0}}\cdot\cfrac{1}{2^{2p+\nu}\cdot p!\Gamma\left(1+p+\nu\right)}=A_{0}\cfrac{1}{2^{2p+\nu}\cdot p!\Gamma\left(1+p+\nu\right)}\\
+n=2p+1 &  & a_{2p+1}=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו פתרון:
+\begin_inset Formula 
+\[
+y_{1}=\sum_{n=0}^{\infty}a_{n}x^{n+\alpha}=\sum_{n=0}^{\infty}a_{n}x^{n+\nu}=\sum_{p=0}^{\infty}a_{2p}x^{2p+\nu}=A_{0}\cdot\sum_{p=0}^{\infty}\cfrac{1}{p!\Gamma\left(p+\nu+1\right)}\cdot\left(\cfrac{x}{2}\right)^{2p+\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם ניקח את הקבוע החופשי 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+ להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, נקבל את פונקציית בסל המותאמת)
+\lang english
+modified
+\lang hebrew
+( מהסוג הראשון מסדר 
+\begin_inset Formula $\nu$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{\nu}\left(x\right):=\sum_{p=0}^{\infty}\cfrac{1}{p!\Gamma\left(p+\nu+1\right)}\left(\cfrac{x}{2}\right)^{2p+\nu}
+\]
+
+\end_inset
+
+)נקראת גם פונקציית בסל ההיפרבולית(
+\end_layout
+
+\begin_layout Standard
+ניתן לעשות חשבות דומה ולקבל שגם 
+\begin_inset Formula $I_{-\nu}\left(x\right)$
+\end_inset
+
+ פתרון.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ אינו שלם 
+\begin_inset Formula $I_{\nu},I_{-\nu}$
+\end_inset
+
+ שני פתרונות בת"ל של משוואת בסל המותאמת ולכן פתרונה הכללי:
+\begin_inset Formula 
+\[
+y=C_{1}I_{\nu}\left(x\right)+C_{2}I_{-\nu}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אך אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלםפ, 
+\begin_inset Formula $I_{-\nu}=I_{\nu}$
+\end_inset
+
+)תרגיל( ולכן הם ת"ל וחסר פתרון שני.
+ כדי לטפל בבעיה זו מגדירים את פונקציית בסל המותאמת מהסוג השני:
+\begin_inset Formula 
+\[
+K_{\nu}\left(x\right):=\cfrac{\pi}{2}\cfrac{I_{-\nu}\left(x\right)-I_{\nu}\left(x\right)}{\sin\left(\nu\pi\right)}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\nu=m$
+\end_inset
+
+ שלם יש לפרש את ההגדרה כגבול כאשר 
+\begin_inset Formula $\nu\to m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{\nu},K_{\nu}$
+\end_inset
+
+ שני פתרונות בת"ל של משוואת בסל המותאמת מסדר 
+\begin_inset Formula $\nu$
+\end_inset
+
+, כך שפתרונה הכללי הוא:
+\begin_inset Formula 
+\[
+y=C_{1}I_{\nu}\left(x\right)+C_{2}K_{2}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תת תרגיל
+\end_layout
+
+\begin_layout Standard
+פתור את המשוואה
+\begin_inset Formula 
+\[
+x^{2}y''+xy'-\left(x^{2}-\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+מצא את הפתרון הממשי הכללי
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+זוהי משוואת בסל המותאמת מסדר 
+\begin_inset Formula $i\nu$
+\end_inset
+
+ ולכן פתרונה הכללי הוא:
+\begin_inset Formula 
+\[
+y=C_{1}I_{i\nu}\left(x\right)+C_{2}I_{-i\nu}\left(x\right)
+\]
+
+\end_inset
+
+אין חשש ש
+\begin_inset Formula $i\nu$
+\end_inset
+
+ שלם כי 
+\begin_inset Formula $\nu>0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $I_{\pm i\nu}$
+\end_inset
+
+ בת"ל.
+\end_layout
+
+\begin_layout Standard
+נרצה פתרון ממשי:)
+\begin_inset Formula $\overline{y}=y$
+\end_inset
+
+( 
+\begin_inset Formula 
+\[
+\overline{y}=\overline{C_{1}I_{i\nu}\left(x\right)+C_{2}I_{-i\nu}\left(x\right)}=\overline{C_{1}}\cdot\overline{I_{i\nu}\left(x\right)}+\overline{C_{2}}\cdot\overline{I_{-i\nu}\left(x\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\overline{C_{1}}I_{-i\nu}\left(x\right)+\overline{C_{2}}I_{i\nu}\left(x\right)\overset{!}{=}C_{2}I_{-i\nu}\left(x\right)+C_{1}I_{i\nu}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריכים)ע"י השוואה מקדמים( 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ צמודים זה לזה.
+ ניקח 
+\begin_inset Formula $C_{1}=A+Bi$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $C_{2}=A-Bi$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow y=\left(A+Bi\right)I_{i\nu}\left(x\right)+\left(A-Bi\right)I_{-i\nu}\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=A\left(I_{i\nu}\left(x\right)+I_{-i\nu}\left(x\right)\right)+Bi\left(I_{i\nu}\left(x\right)-I_{-i\nu}\left(x\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=A\cdot2\textnormal{Re}\left(I_{i\nu}\left(x\right)\right)+Bi\left(2i\textnormal{Im}\left(I_{i\nu}\left(x\right)\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\boxed{D_{1}\textnormal{Re}\left(I_{i\nu}\left(x\right)\right)+D_{2}\textnormal{Im}\left(I_{i\nu}\left(x\right)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+למשוואה הבאה העזר בשיטת פרוביניוס למצוא פתרון אחד ותאר את הצורה של הפתרון
+ הכללי:
+\begin_inset Formula 
+\[
+x^{2}y''+3xy'+\left(1-x\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=0$
+\end_inset
+
+ נקודה רגולרית סינגולרית)בדקו!(
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}x^{n+\alpha}\hspace{1em}a_{0}\ne0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0}^{\infty}\left(n+\alpha-1\right)\left(n+\alpha\right)x^{n+\alpha-2}
+\]
+
+\end_inset
+
+נציב במד"ר
+\begin_inset Formula 
+\[
+...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\alpha^{2}+2\alpha+1\right)a_{0}x^{\alpha}+\sum_{n=0}^{\infty}\left\{ \left[\left(n+\alpha\right)\left(n+\alpha+1\right)+3\left(n+\alpha+1\right)+1\right]a_{n+1}-a_{n}\right\} x^{n+\alpha+1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאר המקדמים:
+\begin_inset Formula 
+\[
+\left[\left(n+\alpha\right)\left(n+\alpha+1\right)+3\left(n+\alpha+1\right)+1\right]a_{n+1}-a_{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $\alpha=-1$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+a_{n+1}=\cfrac{a_{n}}{\left(n+1\right)^{2}}\hspace{1em}n=0,1,2,...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1} & = & \cfrac{a_{0}}{1^{2}}\\
+a_{2} & = & \cfrac{a_{1}}{2^{2}}=\cfrac{a_{0}}{1^{2}\cdot2^{2}}\\
+a_{3} & = & \cfrac{a_{2}}{3^{2}}=\cfrac{a_{0}}{1^{2}2^{2}3^{2}}=\cfrac{a_{0}}{\left(1\cdot2\cdot3\right)^{2}}\\
+ & \vdots\\
+a_{n} & = & \cfrac{a_{0}}{n!^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $a_{0}=1$
+\end_inset
+
+ בה"כ כדי לקבל פתרון פרטי
+\begin_inset Formula 
+\[
+y_{1}=\sum_{n=0}^{\infty}a_{n}x^{n+\alpha}=\boxed{\sum_{n=0}^{\infty}\cfrac{1}{n!^{2}}x^{n-1}}
+\]
+
+\end_inset
+
+לא חובה, אבל במקרה הזה אפשר למצוא פתרון ישיר:
+\begin_inset Formula 
+\[
+=\cfrac{1}{x}\sum_{n=0}^{\infty}\cfrac{x^{n}}{n!^{2}}=\cfrac{1}{x}\sum_{n=0}^{\infty}\cfrac{1}{n!^{2}}\left(\cfrac{2\sqrt{x}}{2}\right)^{2n}=\cfrac{1}{x}I_{0}\left(2\sqrt{x}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורשים של המשוואה זהים ולכן כפי שנלמד בהרצאה הפתרון השני מקבל צורה:
+\begin_inset Formula 
+\[
+\boxed{y_{2}\left(x\right)=y_{1}\left(x\right)\cdot\log\left(x\right)+x^{-1}\sum_{n=0}^{\infty}b_{n}x^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

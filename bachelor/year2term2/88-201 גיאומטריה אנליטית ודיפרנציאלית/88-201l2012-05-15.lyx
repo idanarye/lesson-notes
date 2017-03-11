@@ -1,0 +1,2072 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\usepackage{pst-node}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+9
+\numeric off
+.
+ העתקות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגזרת כיוונית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n=2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+, ועקומה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(0\right)=p,\alpha'\left(0\right)=v
+\]
+
+\end_inset
+
+
+\begin_inset Formula $v$
+\end_inset
+
+ הוא ווקטור המהירות של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+v=\left.\cfrac{\mathrm{d}\alpha}{\mathrm{d}t}\right|_{t=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה מ
+\begin_inset Formula $n$
+\end_inset
+
+ משתנים.
+ אזי הנגזרת הכיוונית של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ בכיוון ווקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\nabla_{v}f=\left.\cfrac{\mathrm{d}\left(f\circ\alpha\left(t\right)\right)}{\mathrm{d}t}\right|_{t=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+ערך של נגזרת כיוונית בלתי תלוי בבחירת העקומה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ המייצגת ווקטור 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\alpha\left(0\right)=p\\
+\left.\cfrac{\mathrm{d}\alpha}{\mathrm{d}t}\right|_{t=0}=v
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הרחבת שדה ווקטורי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underline{x}:\mathbb{R}^{2}\to\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\underline{x}\left(u^{1},u^{2}\right)$
+\end_inset
+
+ היא פרמטריזציה של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{i}=\cfrac{\partial x}{\partial u^{i}}\qquad i=1,2
+\]
+
+\end_inset
+
+מישור המשיר 
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+ נפרש ע"י שני הווקטורים 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל 
+\begin_inset Formula $p\in M$
+\end_inset
+
+ יש בסיס)שהוא תלוי ב
+\begin_inset Formula $p$
+\end_inset
+
+( ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x_{1},x_{2},n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז ניתן להגדיר את העקומה לפי הבסיס החדש:
+\begin_inset Formula 
+\[
+\underline{x}\circ\alpha=\beta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[a,b\right)\xrightarrow{\alpha}\mathbb{R}^{2}\xrightarrow{\underline{x}\left(u^{1},u^{2}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(t\right),a\le t\le b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta=\underline{x}\circ\alpha\left(t\right)
+\]
+
+\end_inset
+
+לפי כלל השרשרת
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}\beta}{\mathrm{d}t}=\cfrac{\partial\underline{x}}{\partial u^{i}}\cdot\cfrac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}\beta}{\mathrm{d}t}=\alpha^{1\prime}\underline{x}_{1}+\alpha^{2\prime}\underline{x}_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנקודה 
+\begin_inset Formula $\beta=x\left(\alpha\left(t\right)\right)$
+\end_inset
+
+ יש וקטור נורמלי
+\begin_inset Formula 
+\[
+n\left(u^{1},u^{2}\right)=\cfrac{\underline{x}_{1}\times\underline{x}_{2}}{\left\Vert x_{1}+x_{2}\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ מוגדר רק במשטח 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ זו בעיה, שכן אם נרצה למצוא לו נגזרת כיוונית, נצטרך שהוא יהיה מוגדר בסביבה
+ פתוחה של הנקודה.
+ אנו צריכים דרך להרחיב את השדה הווקטורי.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח עם פרמטריזציה רגולרית 
+\begin_inset Formula $\underline{x}\left(u^{1},u^{2}\right)$
+\end_inset
+
+.
+ ניתן להרחיב את השדה הווקטורי 
+\begin_inset Formula $n\left(u^{1},u^{2}\right)$
+\end_inset
+
+ לשדה ווקטורי 
+\begin_inset Formula $N\left(x,y,z\right)$
+\end_inset
+
+ מוגדר בסביבה של 
+\begin_inset Formula $p$
+\end_inset
+
+, כאשר
+\begin_inset Formula 
+\[
+n\left(u^{1},u^{2}\right)=N\left(\underline{x}\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ע"פ משפט הפונקציה הסתומה, 
+\begin_inset Formula $M$
+\end_inset
+
+ מוגדר)באופן מקומי( ע"י משוואה
+\begin_inset Formula 
+\[
+F\left(x,y,z\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $M$
+\end_inset
+
+ ספירה: 
+\begin_inset Formula $F\left(x,y,z\right)=x^{2}+y^{2}+z^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן נבחר:
+\begin_inset Formula 
+\[
+N\left(x,y,z\right)=\cfrac{\nabla F}{\left\Vert \nabla F\right\Vert }\left(x,y,z\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\nabla F$
+\end_inset
+
+ אנכית למשטח
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מעגל:
+\begin_inset Formula 
+\[
+F\left(x,y\right)=x^{2}+y^{2}-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla F=\begin{pmatrix}2x\\
+2y
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $p\in M$
+\end_inset
+
+, 
+\begin_inset Formula $v\in T_{p}M$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $v=\beta'\left(0\right)$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $N\left(x,y,z\right)$
+\end_inset
+
+ שדה ווקטורי המרחיב 
+\begin_inset Formula $n\left(u^{1},u^{2}\right)$
+\end_inset
+
+ לסביבה של 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ אזי נגזרת כיוונית 
+\begin_inset Formula $\nabla_{v}N$
+\end_inset
+
+ מקיימת
+\begin_inset Formula 
+\[
+\nabla_{v}N=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}\qquad\left(n=\alpha\left(t\right)\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\beta\left(t\right)=\underline{x}\circ\alpha\left(t\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\underline{x}_{1}\alpha^{1\prime}+\underline{x}_{2}\alpha^{2\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{T_{p}M=\textnormal{span}_{\mathbb{R}}\left(\underline{x}_{1},\underline{x}_{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla_{v}N=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}N\left(\beta\left(t\right)\right)=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}N\left(\underline{x}-\alpha\left(t\right)\right)=\left.\cfrac{\mathrm{d}n\left(\alpha\left(t\right)\right)}{\mathrm{d}t}\right|_{t=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.3
+\numeric off
+ 
+\lang english
+Hessian
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של פונקציה בנקודה קריטית
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ פונקציה גזירה בסביבה של נקודה קריטית)כאשר 
+\begin_inset Formula $\nabla f\left(p\right)=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+נבנה גרף של 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\underline{x}\left(u^{1},u^{2}\right)=\left(u^{1},u^{2},f\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{1}=\left(1,0,f'_{x}\right)\qquad\underline{x}_{2}=\left(0,1,f'_{y}\right)
+\]
+
+\end_inset
+
+אזי המישור המשיק של הגרף בנקודה קריטית 
+\begin_inset Formula $\nabla f=0$
+\end_inset
+
+ הוא מישור 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{pmatrix}f_{x}\\
+f_{y}
+\end{pmatrix}=\begin{pmatrix}0\\
+0
+\end{pmatrix}\Rightarrow\begin{array}{c}
+\underline{x}_{1}=\left(1,0,0\right)\\
+\underline{x}_{2}=\left(0,1,0\right)
+\end{array}\Rightarrow\begin{array}{c}
+\boxed{\underline{x}_{1}=e_{1}}\\
+\boxed{\underline{x}_{2}=e_{2}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההסיאן של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+H_{f}=\begin{bmatrix}f_{xx} & f_{xy}\\
+f_{yz} & f_{yy}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+בנקודה קריטית של 
+\begin_inset Formula $f$
+\end_inset
+
+, נניח שערכים עצמיים 
+\begin_inset Formula $\lambda_{1},\lambda_{2}$
+\end_inset
+
+ של 
+\begin_inset Formula $H_{f}$
+\end_inset
+
+ הם שונים מאפס.
+\end_layout
+
+\begin_layout Standard
+אם יש אותו סימן ל
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ אז נקודה קריטית היא מינימום או מקסימום.
+ אם סימנים של 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ הם שונים אזי נקודה קריטית היא נקודת אוכף.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\lang english
+Hessian
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להעתקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $p\in M$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+ המישור המשיק ל
+\begin_inset Formula $M$
+\end_inset
+
+.
+ העתקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\lang hebrew
+)בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+( 
+\begin_inset Formula $W_{p}$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+W_{p}:T_{p}M\to T_{p}M
+\]
+
+\end_inset
+
+אנדומורפיזם
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+העתקה לעצמו
+\end_layout
+
+\end_inset
+
+ של מישור המשיק, מוגדר ע"י נגזרת כיוונית: לכל 
+\begin_inset Formula $v\in T_{p}M$
+\end_inset
+
+, נגדיר
+\begin_inset Formula 
+\[
+W_{p}\left(v\right)=\nabla_{v}N=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}n\circ\alpha\left(t\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\boxed{v=\beta'\left(0\right)}$
+\end_inset
+
+ ואילו 
+\begin_inset Formula $\beta\left(t\right)=x\circ\alpha\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\boxed{\beta\left(0\right)=p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תמונה של 
+\begin_inset Formula $W_{p}$
+\end_inset
+
+ נמצאת בתוך המשיק
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{R}^{3}=T_{p}M+\mathbb{R}n
+\]
+
+\end_inset
+
+צריך להוכיח ש
+\begin_inset Formula $W_{p}\left(v\right)$
+\end_inset
+
+ מאונך לנורמל.
+\begin_inset Formula 
+\[
+\left\langle W_{p}\left(v\right),n\right\rangle \overset{??}{=}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle W_{p}\left(v\right),n\left(u^{1},u^{2}\right)\right\rangle =\left\langle \nabla_{v}N,n\circ\alpha\left(t\right)\right\rangle =\left.\left\langle \cfrac{\mathrm{d}}{\mathrm{d}t}n\circ\alpha\left(t\right),n\circ\alpha\left(t\right)\right\rangle \right|_{t=0}=\cdots
+\]
+
+\end_inset
+
+לפי כלל ליבניץ זה שוה
+\begin_inset Formula 
+\[
+\cdots=\cfrac{1}{2}\cdot\cfrac{\mathrm{d}}{\mathrm{d}t}\left\langle n\circ\alpha\left(t\right),n\circ\alpha\left(t\right)\right\rangle =\cfrac{1}{2}\cdot\cfrac{\mathrm{d}}{\mathrm{d}t}\left(\left\Vert n\right\Vert ^{2}\right)=\cfrac{1}{2}\cdot\cfrac{\mathrm{d}}{\mathrm{d}t}\left(1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{p}\left(v\right)\perp n
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $W_{p}\left(v\right)\in T_{p}\left(m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+העתקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $W_{p}$
+\end_inset
+
+ היא אנדומורפיזם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צמוד לעצמו
+\bar default
+ של מישור 
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+, ומקיים
+\begin_inset Formula 
+\[
+\left\langle W\left(x_{i}\right),x_{j}\right\rangle =-\left\langle n,\cfrac{\partial^{2}\underline{x}}{\partial u^{i}\partial u^{j}}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\forall_{u,v}\left\langle W\left(u\right),v\right\rangle =\left\langle u,W\left(v\right)\right\rangle }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W_{p}$
+\end_inset
+
+ היא 
+\bar under
+לינארית
+\bar default
+:
+\begin_inset Formula 
+\[
+W_{p}\left(u+\lambda v\right)=\nabla_{u+\lambda v}N=\nabla_{u}N+\lambda\nabla_{v}N=W\left(u\right)+\lambda W\left(v\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\left\langle W\left(x_{i}\right),x_{j}\right\rangle =\left\langle \nabla_{x_{i}}N,x_{j}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial x}{\partial u^{1}}=\cfrac{\partial}{\partial u^{1}}\left(\underline{x}\left(u^{1},u^{2}\right)\right)=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}\underline{x}\left(u^{1}+t,u^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\alpha\left(t\right)=\underline{x}\left(u^{1}+t,u^{2}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial x_{1}}{\partial u^{1}}=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}\underbrace{x\circ\alpha\left(t\right)}_{\beta\left(t\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla_{x_{1}}N=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}N\left(\beta\left(t\right)\right)=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}n\circ\alpha\left(t\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}n\left(u^{1}+t,u^{2}\right)=\cfrac{\partial}{\partial u^{1}}n\left(u^{1},u^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla_{\underline{x}_{i}}N=\cfrac{\partial n}{\partial u^{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle W\left(x_{i}\right),x_{j}\right\rangle =\left\langle \cfrac{\partial n}{\partial u^{i}},\cfrac{\partial\underline{x}}{\partial u^{j}}\right\rangle =\xcancel{\left\langle n,\cfrac{\partial\underline{x}}{\partial u^{j}}\right\rangle }-\left\langle n,\cfrac{\partial^{2}\underline{x}}{\partial u^{j}\partial u^{i}}\right\rangle =\left\langle n,\underline{x}_{ij}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\cfrac{\partial}{\partial u^{i}}\left\langle n,x_{j}\right\rangle =\left\langle \cfrac{\partial n}{\partial u^{i}},x_{j}\right\rangle +\left\langle n,x_{ij}\right\rangle }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+ערכים עצמיים של 
+\begin_inset Formula $W_{p}$
+\end_inset
+
+ הם ממשיים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עקמומימות ראשיות 
+\begin_inset Formula $k_{1}\left(u^{1},u^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ של המשטח הן ערכים עצמיים של 
+\begin_inset Formula $W_{p}:T_{p}\to T_{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתבונן במשטח 
+\begin_inset Formula $\underline{x}\left(u^{1},u^{2}\right)=\left(u^{1},u^{2},0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}=e_{1}\qquad x_{2}=e_{2}\qquad n=x_{1}\times x_{2}=e_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\nabla_{v}N=0$
+\end_inset
+
+ בכל נקודה.
+ 
+\begin_inset Formula $W_{p}\equiv0$
+\end_inset
+
+ 
+\bar under
+בכל נקודה
+\bar default
+.
+\begin_inset Formula 
+\[
+k_{1}=k_{2}\equiv0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\left(u^{1},u^{2}\right)=\left(u^{1},u^{2},f\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}=\left(1,0,f_{x}\right)\qquad x_{2}=\left(0,1,f_{y}\right)
+\]
+
+\end_inset
+
+בנקודה קריטית:
+\begin_inset Formula 
+\[
+x_{1}=e_{1}\qquad x_{2}=e_{2}\qquad n=e_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle W\left(x_{i}\right),x_{j}\right\rangle =-\left\langle n,x_{ij}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{11}=\left(0,0,f_{xx}\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{22}=\left(0,0,f_{yy}\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{12}=\left(0,0,f_{xy}\left(u^{1},u^{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{ij}=\left(0,0\right)\cfrac{\partial^{2}f\left(u^{1},u^{2}\right)}{\partial u^{i}\partial u^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle x_{ij},n\right\rangle =\cfrac{\partial^{2}f}{\partial u^{i}\partial u^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle W\left(x_{i}\right),x_{j}\right\rangle =-\cfrac{\partial^{2}f}{\partial u^{i}\partial u^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\left\langle W\left(x_{i}\right),x_{j}\right\rangle \right)_{\begin{array}{c}
+i=1,2\\
+j=1,2
+\end{array}}=-H_{f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.5
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+העתקת
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ספירה וגליל
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+העתקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הספירה ברדיוס 
+\begin_inset Formula $r>0$
+\end_inset
+
+ היא העתקה סקלרית 
+\begin_inset Formula $T_{p}\to T_{p}$
+\end_inset
+
+, מוגדרת ע"י 
+\begin_inset Formula 
+\[
+\cfrac{1}{r}\textnormal{Id}=\cfrac{1}{r}\rnode{A}{\textnormal{Id}_{T_{p}}}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rnode{B}{}
+\end_layout
+
+\end_inset
+
+)העתקת זהות של מישור משיק 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nccurve{->}{B}{A}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+y^{2}+z^{2}=r^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(x,y,z\right)=x^{2}+y^{2}+z^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla F=\begin{pmatrix}2x\\
+2y\\
+2z
+\end{pmatrix}=2\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta\left(t\right)=\underline{x}\circ\alpha\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\left(\alpha\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\left(\alpha\left(t\right)\right)=\cfrac{1}{r}\beta\left(t\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+W_{p}\left(v\right)=\nabla_{v}N=\left.\cfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}N\left(\beta\left(t\right)\right)=...
+\]
+
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Section*
+דוגמה - גליל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\left(u^{1},u^{2}\right)=\left(\cos u^{1},\sin u^{1},u^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\left(u^{1},u^{2}\right)=\left(\cos u^{1},\sin u^{1},0\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+W_{p}\left(\underline{x}_{1}\right)\nabla_{\underline{x}_{1}}N=\cfrac{\partial}{\partial u^{1}}\left(n\left(u^{1},u^{2}\right)\right)=\left(-\sin u^{1},\cos u^{1},0\right)=\underline{x}_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{p}\left(\underline{x}_{2}\right)=\cfrac{\partial}{\partial u^{2}}\left(n\left(u^{1},u^{2}\right)\right)=\cfrac{\partial}{\partial u^{2}}\left(\cos u^{1},\sin u^{1},0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{p}\left(\underline{x}_{2}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{rank}\left(W_{p}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0\\
+0 & 0
+\end{bmatrix}\qquad\left(\underline{x}_{1},\underline{x}_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקדמים 
+\begin_inset Formula $L_{\,\, j}^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W_{p}\left(\underline{x}_{j}\right)=L_{j}^{1}\underline{x}_{1}+L_{j}^{2}\underline{x}_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{p}\left(\underline{x}_{j}\right)=L_{j}^{i}\underline{x}_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+]
+\end_layout
+
+\begin_layout Section*
+דוגמה - ספירה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(L_{j}^{i}\right)=\begin{pmatrix}\cfrac{1}{r} & 0\\
+0 & \cfrac{1}{r}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - גליל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(L_{j}^{i}\right)=\begin{pmatrix}1 & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{1}^{1}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{\,\,2}^{1}=L_{1}^{2}=L_{2}^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{ij}=\Gamma_{ij}^{k}x_{k}+L_{ij}n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)תזכורת: 
+\begin_inset Formula $\Gamma_{ij}^{k}x_{k}=\sum\limits _{k}\Gamma_{ji}^{k}x_{k}$
+\end_inset
+
+ לפי סימוני איינשטיין(
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+9.7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עקמומיון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $K=K\left(u^{1},u^{2}\right)$
+\end_inset
+
+ של משטח 
+\begin_inset Formula $\underline{x}\left(u^{1},u^{2}\right)$
+\end_inset
+
+ היא דטרמיננטה של העתקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weingarten
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+K\left(u^{1},u^{2}\right)=\det W_{p}=L_{1}^{1}L_{2}^{2}-L_{2}^{1}L_{1}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=2L_{[1}^{1}L_{2]}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+ספירה ברדיוס 
+\begin_inset Formula $r>0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K=\det\begin{bmatrix}\cfrac{1}{r} & 0\\
+0 & \cfrac{1}{r}
+\end{bmatrix}=\cfrac{1}{r^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=\cfrac{1}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+גליל:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=\det\begin{bmatrix}1 & 0\\
+0 & 0
+\end{bmatrix}\equiv0
+\]
+
+\end_inset
+
+בגלל זה ניתן לקפל דף לגליל, אבל לא לכדור
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

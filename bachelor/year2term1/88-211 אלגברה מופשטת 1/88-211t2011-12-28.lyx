@@ -1,0 +1,949 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+כל תמורה ב
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ ניתן לכתוב כמכפלת חילופים.
+\begin_inset Formula 
+\[
+\left(a_{1},a_{2},...a_{n}\right)=\left(a_{1},a_{n}\right)\left(a_{1},a_{n-1}\right)...\left(a_{1},a_{2}\right)
+\]
+
+\end_inset
+
+דוגמה: 
+\begin_inset Formula $\left(1,5,4,3,2\right)=\left(1,2\right)\left(1,3\right)\left(1,4\right)\left(1,5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n}=\left\langle a_{i},a_{j}:0\le i<j\le n\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהינתן תמורה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ "היפוך" הו זוג 
+\begin_inset Formula $i<j$
+\end_inset
+
+ שעבורו מתקיים 
+\begin_inset Formula $\sigma\left(i\right)>\sigma\left(j\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 2 & 3 & 4 & 5 & 6\\
+1 & 3 & 2 & 6 & 4 & 5
+\end{pmatrix}
+\]
+
+\end_inset
+
+מצאו את ההיפוכים
+\end_layout
+
+\begin_layout Subsection*
+דרך א
+\end_layout
+
+\begin_layout Standard
+לצייר חץ ממקור לתמונה, ולספור את מספר ההצטלבויות
+\end_layout
+
+\begin_layout Subsection*
+דרך ב
+\end_layout
+
+\begin_layout Standard
+עוברים על השורה השניה.
+ אם יש מס' בשורה השניה 
+\begin_inset Formula $a$
+\end_inset
+
+ שגדול ממספר הנמצא מימינו 
+\begin_inset Formula $b$
+\end_inset
+
+, אז מתקבל היפוך 
+\begin_inset Formula $\left(\sigma^{-1}\left(a\right),\sigma^{-1}\left(b\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+מס' ההיפוכים בתמורה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ מסומן 
+\begin_inset Formula $\textnormal{Inv}\left(\sigma\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+סימן של תמורה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\textnormal{sign}\sigma=\left(-1\right)^{\textnormal{Inv}\left(\sigma\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{sign}\sigma=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ נקראת זוגית.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{sign}\sigma=-1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ נקראת אי-זוגית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תרגיל
+\begin_inset space ~
+\end_inset
+
+בית
+\series default
+ 
+\begin_inset Formula $\textnormal{sign}\sigma=\prod\limits _{j<i}\cfrac{\sigma\left(i\right)-\sigma\left(j\right)}{i-j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{sign}:S_{n}\to\left\{ -1,1\right\} \cong\mathbb{Z}_{2}
+\]
+
+\end_inset
+
+אפימורפיזם)עבור 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+()עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ זה הומומורפיזם(
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+)תמורה זוגית(*)תמורה זוגית(=)תמורה זוגית(
+\begin_inset Formula 
+\[
+\textnormal{sign}\left(\sigma\circ\tau\right)=\textnormal{sign}\left(\sigma\right)\cdot\textnormal{sign}\left(\tau\right)
+\]
+
+\end_inset
+
+)אי זוגית(*)זוגית(=)אי זוגית(
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+קבוצת התמורות הזוגיות מסומנת 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{n}\triangleleft S_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+רמז לדרך הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{sign}\left(\tau^{-1}\circ\sigma\circ\tau\right)=\textnormal{sign}\left(\tau^{-1}\right)\textnormal{sign}\left(\sigma\right)\textnormal{sign}\left(\tau\right)=\textnormal{sign}\left(\sigma\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+מחצית מהתמורות ב
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ הן זוגיות)אם 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+( ומחצית הן אי זוגיות.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\unitfrac{S_{n}}{\underset{\begin{array}{c}
+\Vert\\
+\ker S_{n}
+\end{array}}{\underbrace{A_{n}}}}\cong\left\{ -1,1\right\} 
+\]
+
+\end_inset
+
+ישנן שתי מחלקות שמאליות של 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ ב
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, הן 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ו
+\begin_inset Formula $A_{n}\sigma$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ היא איזושהי תמורה אי זוגית(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ זו קבוצת התמורות הזוגיות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A_{n}\sigma=S_{n}\backslash A_{n}$
+\end_inset
+
+ זו קבוצת התמורות האי זוגיות
+\end_layout
+
+\begin_layout Standard
+ועכשיו 
+\begin_inset Formula $\left|A_{n}\right|=\left|A_{n}\sigma\right|$
+\end_inset
+
+ ומאידך 
+\begin_inset Formula $A_{n}\amalg A_{n}\sigma=S_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|A_{n}\right|+\left|A_{n}\sigma\right|=\left|S_{n}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $2\left|A_{n}\right|=\left|S_{n}\right|$
+\end_inset
+
+ ובאופן דומה 
+\begin_inset Formula $2\left|A_{n}\sigma\right|=\left|S_{n}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ נוצרת ע"י מחזורים מאורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מבנה מחזורים של תמורה הוא רשימה הכוללת את אורכי המחזורים המסודרת מהגדול
+ לקטן כאשר מציגים את התמורה כמכפלת מחזורים זרים.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\begin{pmatrix}2 & 3\end{pmatrix}\begin{pmatrix}4 & 6 & 5\end{pmatrix}
+\]
+
+\end_inset
+
+מבנה המחזורים שלה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3,2
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראה כי לתמורה ולהופכית שלה יש אותו מבנה מחזורים
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\begin{pmatrix}a_{11} & ... & a_{1n_{1}}\end{pmatrix}\begin{pmatrix}a_{21} & ... & a_{2n_{2}}\end{pmatrix}\cdots\begin{pmatrix}a_{k1} & ... & a_{kn_{k}}\end{pmatrix}
+\]
+
+\end_inset
+
+מבנה המחזורים הוא 
+\begin_inset Formula $n_{1},n_{2},...n_{k}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma^{-1}=\begin{pmatrix}a_{1n_{1}} & ... & a_{11}\end{pmatrix}\begin{pmatrix}a_{2n_{2}} & ... & a_{21}\end{pmatrix}\cdots\begin{pmatrix}a_{kn_{k}} & ... & a_{k1}\end{pmatrix}
+\]
+
+\end_inset
+
+וגם פה מבנה המחזורים הוא 
+\begin_inset Formula $n_{1},n_{2},...n_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה.
+ 
+\begin_inset Formula $g_{1},g_{2}\in G$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ צמוד ל
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ אם קיים 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $xg_{1}x^{-1}=g_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+היחס 
+\begin_inset Formula $g_{1}\sim g_{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ צמוד ל
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ הוא יחס שקילות.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+ראינו את ההצמדות משחקות בתת חבורות נורמליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H\lhd G$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $H\le G$
+\end_inset
+
+ וגם 
+\begin_inset Formula $H$
+\end_inset
+
+ סגורה להצמדה בכל איבר ב
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהינתן איבר אפשר להסתכל על מחלקת השקילות שלו לפי הצמדה)כלומר קבוצת כל האיברים
+ הצמודים לו(.
+ קבוצה זו נקראת מחלקת צמידות.
+\end_layout
+
+\begin_layout Subsection*
+סימון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\in G$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\textnormal{conj}\left(x\right)=\left\{ gxg^{-1}:g\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל תת חבורה נורמלית היא איחוד זר של מחלקות צמידות
+\end_layout
+
+\begin_layout Subsection*
+"הוכחה"
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\lhd G
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $h\in H$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{conj}\left(h\right)\subseteq H
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{conj}\left(h_{1}\right)\cup,...\cup\textnormal{conj}\left(h_{k}\right)=H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה להצמדה
+\end_layout
+
+\begin_layout Standard
+רוצה להצמיד את 
+\begin_inset Formula $\begin{pmatrix}1 & 2 & 3\end{pmatrix}$
+\end_inset
+
+ עם 
+\begin_inset Formula $\begin{pmatrix}1 & 2\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 2\end{pmatrix}\begin{pmatrix}1 & 2 & 3\end{pmatrix}\overset{\begin{array}{c}
+\begin{pmatrix}1 & 2\end{pmatrix}^{-1}\\
+\Vert
+\end{array}}{\overbrace{\begin{pmatrix}1 & 2\end{pmatrix}}}=\begin{pmatrix}1 & 2 & 3\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\sigma=\begin{pmatrix}a_{1} & a_{2} & ... & a_{k}\end{pmatrix}$
+\end_inset
+
+ וישנה תמורה 
+\begin_inset Formula $\pi$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\pi\sigma\pi^{-1}=\begin{pmatrix}\pi\left(a_{1}\right) & \pi\left(a_{2}\right) & ... & \pi\left(a_{k}\right)\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\pi\circ\sigma\circ\pi^{-1}\left(\pi\left(a_{i}\right)\right)=\pi\circ\sigma\left(a_{i}\right)=h\pi\left(a_{i+1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\sigma=\left(\right)\left(\right)....$
+\end_inset
+
+ אז 
+\begin_inset Formula $\pi\sigma\pi^{-1}=\pi\left(\right)\pi^{-1}\pi\left(\right)\pi^{-1}...\pi\left(\right)\pi^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+שני מחזורים הם מאותו אורך 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ הם צמודים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{1}=\begin{pmatrix}a_{1} & ... & a_{k}\end{pmatrix}\hspace{1em}\sigma_{2}=\begin{pmatrix}b_{1} & ... & b_{k}\end{pmatrix}
+\]
+
+\end_inset
+
+ניקח את התמורה 
+\begin_inset Formula $\pi$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula 
+\[
+\xymatrix{a_{1}\ar[r] & b_{1}\\
+\vdots & \vdots\\
+a_{k}\ar[r] & b_{k}
+}
+\]
+
+\end_inset
+
+וכמו כן 
+\begin_inset Formula $n-k$
+\end_inset
+
+ האיברים הנותרים בקבוצה 
+\begin_inset Formula $\left\{ 1,...n\right\} \backslash\left\{ a_{i}\right\} $
+\end_inset
+
+ ממופים ל
+\begin_inset Formula $n-k$
+\end_inset
+
+ האיברים הנותרים בקבוצה 
+\begin_inset Formula $\left\{ 1,...n\right\} \backslash\left\{ b_{i}\right\} $
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\pi\sigma_{1}\pi^{-1}=\sigma_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi\sigma_{1}\pi^{-1}=\pi\begin{pmatrix}a_{1} & ... & a_{k}\end{pmatrix}\pi^{-1}=\begin{pmatrix}\pi\left(a_{1}\right) & ... & \pi\left(a_{k}\right)\end{pmatrix}=\begin{pmatrix}b_{1} & ... & b_{k}\end{pmatrix}=\sigma_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+שתי תמורות הן צמודות 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש להן את אותו מבנה המחזורים
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+כל תמורה צמודה להופכית שלה.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם מתקיים 
+\begin_inset Formula $\pi\sigma_{1}\pi^{-1}=\sigma_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\pi$
+\end_inset
+
+ הוא לאו דווקא יחיד.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתונות 
+\begin_inset Formula $\begin{array}{c}
+b=\begin{pmatrix}1 & 5 & 2 & 9\end{pmatrix}\\
+a=\begin{pmatrix}1 & 3 & 5\end{pmatrix}\begin{pmatrix}1 & 2\end{pmatrix}
+\end{array}$
+\end_inset
+
+.
+ מצאו את 
+\begin_inset Formula $a^{-1}ba$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\pi^{-1}=a=\begin{pmatrix}1 & 2 & 3 & 5\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi=a^{-1}=\begin{pmatrix}5 & 3 & 2 & 1\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{-1}ba=\pi b\pi^{-1}=\begin{pmatrix}\pi\left(1\right) & \pi\left(5\right) & \pi\left(7\right) & \pi\left(9\right)\end{pmatrix}=\begin{pmatrix}5 & 3 & 7 & 9\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

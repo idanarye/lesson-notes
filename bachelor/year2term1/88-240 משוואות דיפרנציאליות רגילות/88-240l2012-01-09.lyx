@@ -1,0 +1,1596 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סיכום של פתרון בטורי חזקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+P\left(x\right)y'+Q\left(x\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחלק לכמה מקרים:
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נק' אורדינרית
+\bar default
+: 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0},a_{1}$
+\end_inset
+
+ מקדמים חופשיים.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נק' רג' סינג'
+\bar default
+: 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}\left(x-x_{0}\right)^{n+\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}\ne0$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מוצאים ממשוואה ריבועית "המשוואה המציינת".
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\alpha_{1},\alpha_{2}$
+\end_inset
+
+ שורשים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\alpha_{1}-\alpha_{2}$
+\end_inset
+
+ אינו שלם - שני פתרונות בת"ל.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\alpha_{1}-\alpha_{2}$
+\end_inset
+
+ שלם - ניקח 
+\begin_inset Formula $\alpha_{1}\ge\alpha_{2}$
+\end_inset
+
+.
+ יש פתרון אחד - 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}\left(x-x_{0}\right)^{n+\alpha_{1}}$
+\end_inset
+
+.
+ את הפתרון השני מקבלים ע"י הורדת סדר:
+\begin_inset Formula 
+\[
+y_{2}=k\log\left(x-x_{0}\right)y_{1}\left(x\right)+\left(x-x_{0}\right)^{\alpha_{2}}
+\]
+
+\end_inset
+
+זוהי פונקציה אנליטית, ו
+\begin_inset Formula $k$
+\end_inset
+
+ יכול להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+!!)לא בהכרח מקבלים 
+\begin_inset Formula $\log$
+\end_inset
+
+ בפתרון השני(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שתי משוואות שחקרנו:
+\end_layout
+
+\begin_layout Section*
+משוואת לז'נדר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)y''-2xy'+cy=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודה אורדינרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\pm1$
+\end_inset
+
+ - נקודות רגולריות סינגולריות - גם 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $c=n\left(n+1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ שלם, יש פתרון פולינומי מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ עוד פרטים - בשיעור היום.
+\end_layout
+
+\begin_layout Section*
+משוואת בסל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}y''+xy'+\left(x^{2}-\nu^{2}\right)y=0\hspace{1em}\nu\ge0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודה רג.
+ סינג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\infty$
+\end_inset
+
+ נקודה לא רג.
+ סינג.
+\end_layout
+
+\begin_layout Standard
+פתרונות המשוואה המציינת - 
+\begin_inset Formula $\pm\nu$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+\nu}}{2^{2p}p!\left(1+\nu\right)\left(2+\nu\right)\cdots\left(p+\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{2}\left(x\right)=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p-\nu}}{2^{2p}p!\left(1-\nu\right)\left(2-\nu\right)\cdots\left(p-\nu\right)}
+\]
+
+\end_inset
+
+)המשך עוד מעט(.
+\end_layout
+
+\begin_layout Part*
+פונקציית גמה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gamma Function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+ מגדירים 
+\begin_inset Formula 
+\[
+\Gamma\left(x\right)=\int_{0}^{\infty}t^{x-1}e^{-t}dt
+\]
+
+\end_inset
+
+)מוגדר היטב(
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma\left(x+1\right)=x\Gamma\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma\left(x+1\right)-x\Gamma\left(x\right)=\int_{0}^{\infty}t^{x}e^{-t}dt-x\int_{0}^{\infty}t^{x-1}e^{-t}dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}\left(t^{x}e^{-t}-xt^{x-1}e^{-t}\right)dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}-\cfrac{d}{dt}\left(t^{x}e^{-t}\right)dt=-\left[t^{x}e^{-t}\right]_{0}^{\infty}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma\left(1\right)=\int_{0}^{\infty}e^{-t}dt=\left[-e^{-t}\right]_{0}^{\infty}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הטענה:
+\begin_inset Formula 
+\[
+\Gamma\left(2\right)=1\Gamma\left(1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma\left(3\right)=2\Gamma\left(2\right)=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma\left(4\right)=3\Gamma\left(3\right)=2\cdot3=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma\left(5\right)=4\Gamma\left(4\right)=2\cdot3\cdot4=24
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ שלם:
+\begin_inset Formula 
+\[
+\Gamma\left(n\right)=\left(n-1\right)!
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח 
+\begin_inset Formula $\Gamma\left(\cfrac{1}{2}\right)=\sqrt{\pi}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma\left(\cfrac{3}{2}\right)=\cfrac{\sqrt{\pi}}{2}$
+\end_inset
+
+ וכו'
+\end_layout
+
+\begin_layout Standard
+דרך הטענה גם ניתן להגדיר 
+\begin_inset Formula $\Gamma\left(x\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x<0$
+\end_inset
+
+, 
+\bar under
+למעט
+\bar default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ שלם שלילי.
+\begin_inset Formula 
+\[
+\Gamma\left(-\cfrac{1}{2}\right)=\cfrac{\Gamma\left(\cfrac{1}{2}\right)}{-\cfrac{1}{2}}=-2\sqrt{\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma\left(-\cfrac{3}{2}\right)=\cfrac{\Gamma\left(-\cfrac{1}{2}\right)}{-\cfrac{3}{2}}=\cfrac{4\sqrt{\pi}}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+חזרה למש.
+ בסל
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\nu$
+\end_inset
+
+ מגדירים פונקצית בסל מסדר 
+\begin_inset Formula $\nu$
+\end_inset
+
+ ע"י 
+\begin_inset Formula 
+\[
+J_{\nu}\left(x\right)=\sum\limits _{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p}+\nu}{2^{2p}\Gamma\left(p+1\right)\Gamma\left(p+\nu+1\right)}
+\]
+
+\end_inset
+
+כאשר אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם שלילי, מתחילים את הסכום מ
+\begin_inset Formula $p=-\nu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma\left(p+1\right)=p!
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma\left(p+\nu+1\right)=\left(p+\nu\right)\Gamma\left(p+\nu\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(p+\nu\right)\left(g-1+\nu\right)\Gamma\left(p+\nu-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(p+\nu\right)\left(p-1+\nu\right)\cdots\left(1+\nu\right)\Gamma\left(1+\nu\right)
+\]
+
+\end_inset
+
+רואים שאם 
+\begin_inset Formula $\nu\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $J_{\nu}\left(x\right)$
+\end_inset
+
+ הוא פתרון של משוואת בסל.
+\end_layout
+
+\begin_layout Subsubsection*
+ניתן לבדוק
+\end_layout
+
+\begin_layout Itemize
+שאם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ אינו שלם, 
+\begin_inset Formula $J_{\nu}\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $J_{-\nu}\left(x\right)$
+\end_inset
+
+ הם שני פתרונות בת"ל של משוואת בסל.
+\end_layout
+
+\begin_layout Itemize
+שאם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם, 
+\begin_inset Formula $J_{\nu}\left(x\right)=\left(-1\right)^{\nu}J_{-\nu}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+בדיקה
+\end_layout
+
+\begin_layout Standard
+ללא הגבלת כלליות ניקח 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם חיובי.
+ )
+\begin_inset Formula $\nu=0$
+\end_inset
+
+ זה טריביאלי(.
+\begin_inset Formula 
+\[
+J_{\nu}\left(x\right)=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+\nu}}{2^{2p+\nu}\Gamma\left(p+1\right)\Gamma\left(p+1+\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J_{-\nu}\left(x\right)=\sum_{p=\nu}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p-\nu}}{2^{2p-\nu}\Gamma\left(p+1\right)\Gamma\left(p-\nu+1\right)}=...
+\]
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $p=\nu+p'$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+...=\sum_{p'=0}^{\infty}\cfrac{\left(-1\right)^{p'+\nu}x^{2p'+\nu}}{2^{2p'+\nu}\Gamma\left(p'+\nu+1\right)\Gamma\left(p'+1\right)}=\left(-1\right)^{\nu}J_{\nu}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סיכום ביניים
+\end_layout
+
+\begin_layout Itemize
+פונקציית בסל: 
+\begin_inset Formula 
+\[
+J_{\nu}\left(x\right)=\sum\limits _{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p}+\nu}{2^{2p}\Gamma\left(p+1\right)\Gamma\left(p+\nu+1\right)}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם שלילי הסכום מתחיל מ
+\begin_inset Formula $p=-\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ אינו שלם, 
+\begin_inset Formula $J_{\nu},J_{-\nu}$
+\end_inset
+
+ שני פתרונות בת"ל של מש' בסל 
+\begin_inset Formula $x^{2}y''+xy'+\left(\nu^{2}-x^{2}\right)y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם, אזי עדיין 
+\begin_inset Formula $J_{\nu},J_{-\nu}$
+\end_inset
+
+ פותרים את משוואת בסל, אבל 
+\begin_inset Formula $J_{-\nu}\left(x\right)=\left(-1\right)^{\nu}J_{\nu}\left(x\right)$
+\end_inset
+
+ תלויים!!!
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=-\infty}^{\infty}J_{n}\left(x\right)t^{n}=e^{\frac{x}{2}\left(t-\frac{1}{t}\right)}
+\]
+
+\end_inset
+
+)"פונקציה יוצרת"(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{\frac{xt}{2}}=\sum_{m=0}^{\infty}\cfrac{1}{m!}\left(\cfrac{xt}{2}\right)^{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{\frac{-x}{2t}}=\sum_{p=0}^{\infty}\cfrac{1}{p!}\left(\cfrac{-x}{2t}\right)^{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{\frac{x}{2}\left(t-\frac{1}{t}\right)}=\sum_{n=0}^{\infty}\sum_{n=p}^{\infty}\cfrac{1}{m!p!}\left(\cfrac{xt}{2}\right)^{m}\left(\cfrac{-x}{2t}\right)^{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המקדם של 
+\begin_inset Formula $t^{n}$
+\end_inset
+
+ הוא מתקבל מכל איבר שבו 
+\begin_inset Formula $m-p=n$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $m=p+n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המקדם הוא:
+\begin_inset Formula 
+\[
+\sum_{p=\max\left(0,-n\right)}^{\infty}\cfrac{1}{p!\left(p+n\right)!}\left(\cfrac{x}{2}\right)^{p+n}\left(\cfrac{-x}{2}\right)^{p}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{p=\max\left(0,-n\right)}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+n}}{2^{2p+n}\Gamma\left(p+1\right)\Gamma\left(p+n+1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=J_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=-\infty}^{\infty}J_{n}\left(x\right)t^{n}=e^{\frac{x}{2}\left(t-\frac{1}{t}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+1
+\numeric off
+( אם גוזרים את הפונקציה היוצרת ביחס ל
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=-\infty}^{\infty}J'_{n}\left(x\right)t^{n}=\cfrac{1}{2}\left(t-\cfrac{1}{t}\right)e^{\frac{x}{2}\left(t-\frac{1}{t}\right)}=\cfrac{1}{2}\left(t-\cfrac{1}{t}\right)\sum_{m=-\infty}^{\infty}J_{m}\left(x\right)t^{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\left(\sum_{m=-\infty}^{\infty}J_{m}\left(x\right)t^{m+1}-\sum_{m=-8}^{\infty}J_{m}\left(x\right)t^{m-1}\right)
+\]
+
+\end_inset
+
+נסתכל על המקדם של 
+\begin_inset Formula $t^{n}$
+\end_inset
+
+ בשני הצדדים.
+\begin_inset Formula 
+\[
+J_{n}'\left(x\right)=\cfrac{1}{2}\left(J_{n-1}\left(x\right)-J_{n+1}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J_{0}'\left(x\right)=\cfrac{1}{2}\left(J_{-1}\left(x\right)-J_{1}\left(x\right)\right)=-J_{1}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{J_{0}'\left(x\right)=-J_{1}\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+2
+\numeric off
+( אם גוזרים את פונקציה היוצרת ביחס ל
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=-\infty}^{\infty}J_{n}\left(x\right)nt^{n-1}=\cfrac{x}{2}\left(1+\cfrac{1}{t^{2}}\right)e^{\frac{x}{2}\left(t-\frac{1}{t}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{x}{2}\left(1+\cfrac{1}{t^{2}}\right)\sum_{n=-\infty}^{\infty}J_{n}\left(x\right)t^{n}
+\]
+
+\end_inset
+
+מקדם של 
+\begin_inset Formula $t^{m}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(m+1\right)J_{m+1}\left(x\right)=\cfrac{x}{2}\left(J_{m}\left(x\right)+J_{m+2}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\cfrac{n}{x}J_{n+1}=\cfrac{1}{2}\left(J_{n-1}\left(x\right)+J_{n+1}\left(x\right)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+ייצוג אינטגרלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J_{n}\left(x\right)=\cfrac{1}{\pi}\int_{0}^{\pi}\cos\left(n\theta-x\sin\theta\right)\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $n$
+\end_inset
+
+ שלם(.
+\end_layout
+
+\begin_layout Part*
+הפתרון השני של מש.
+ בסל
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פונקציות בסל מהסוג השני)פונקציות נוימן( מוגדרות ע"י
+\begin_inset Formula 
+\[
+Y_{\nu}\left(x\right)=\begin{cases}
+\cfrac{J_{\nu}\left(x\right)\cos\left(\nu\pi\right)-J_{-\nu}\left(x\right)}{\sin\left(\nu\pi\right)} & \nu\notin\mathbb{Z}\\
+\cfrac{1}{\pi}\left(\cfrac{\partial J_{\nu}\left(x\right)}{\partial\nu}-\left(-1\right)^{\nu}\cfrac{\partial J_{-\nu}\left(x\right)}{\partial\nu}\right) & \nu\in\mathbb{Z}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)ניתן להראות שמקבלים שורה שנייה ע"י גבול של שורה ראשונה כאשר 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שואף לשלם.(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y_{\nu}\left(x\right)$
+\end_inset
+
+ הוא פתרון של משוואת בסל.
+ )
+\begin_inset Formula $Y_{n}\left(x\right)$
+\end_inset
+
+ מתבדר כאשר 
+\begin_inset Formula $x\to0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Part*
+פולינומי לז'נדר
+\end_layout
+
+\begin_layout Standard
+ראינו שלמש'
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)y''-2xy'+n\left(n+1\right)y=0
+\]
+
+\end_inset
+
+יש פתרון פולינומי מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יוצא שיש דרך יותר ישרה להגדיר פולינומים אלה:
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{P_{n}\left(x\right)=\cfrac{1}{2^{n}n!}\left(\cfrac{d}{dx}\right)^{n}\left(x^{2}-1\right)^{n}}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $P_{n}\left(x\right)$
+\end_inset
+
+ פולינום לז'נדר מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+זוהי נוסחת רודריגס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Rodrigues Formula
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{n}\left(x\right)$
+\end_inset
+
+ מקיים את מש' לז'נדר
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{d}{dx}\left(x^{2}-1\right)^{n}=2nx\left(x^{2}-1\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור את זה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.
+ תזכורת: 
+\begin_inset Formula $\cfrac{d^{n}}{dx^{n}}\left(ab\right)=a^{\left(n+1\right)}b+\left(n+1\right)a^{\left(n\right)}b'+\cfrac{n\left(n+1\right)}{2}a^{\left(n+1\right)}b''+...$
+\end_inset
+
+.
+ במקרה שלנו:
+\begin_inset Formula 
+\[
+\left(x^{2}-1\right)\cfrac{d^{n+2}}{dx^{n+2}}\left(x^{2}-1\right)^{n}+\left(n+1\right)2x\cfrac{d^{n+1}}{dx^{n+1}}\left(x^{2}-1\right)^{n}+\cfrac{n\left(n+1\right)}{2}2\cfrac{d^{n}}{dx^{n}}\left(x^{2}-1\right)^{n}=...
+\]
+
+\end_inset
+
+)כל שאר הנגזרות שוות לאפס(
+\begin_inset Formula 
+\[
+...=2n\left[x\cfrac{d^{n+1}}{dx^{n+1}}\left(x^{2}-1\right)^{n}+\left(n+1\right)\cfrac{d^{n}}{dx^{n}}\left(x^{2}-1\right)^{n}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחלק ע"י 
+\begin_inset Formula $2^{n}n!$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x^{2}-1\right)P_{n}''\left(x\right)+2x\left(n+1\right)P'_{n}\left(x\right)+n\left(n+1\right)P_{n}\left(x\right)=2n\left[xP'_{n}\left(x\right)+\left(n+1\right)P_{n}\left(x\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)P_{n}''\left(x\right)-2xP'_{n}\left(x\right)+n\left(n+1\right)P_{n}\left(x\right)=0
+\]
+
+\end_inset
+
+
+\numeric on
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להשתמש בנוסחא כדי למצוא בקלות את הפולינומים:
+\begin_inset Formula 
+\[
+P_{0}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{1}\left(x\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}\left(x\right)=\cfrac{3}{2}x^{2}-\cfrac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{3}\left(x\right)=\cfrac{5}{2}x^{3}-\cfrac{3}{2}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{n}\left(1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{n}\left(-1\right)=\left(-1\right)^{n}
+\]
+
+\end_inset
+
+יש ל
+\begin_inset Formula $P_{n}\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ שורשים בין 
+\begin_inset Formula $-1$
+\end_inset
+
+ ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Part*
+פונקציה יוצרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}P_{n}\left(x\right)t^{n}=\cfrac{1}{\sqrt{1-2xt+t^{2}}}
+\]
+
+\end_inset
+
+)לא נוכיח בינתיים(.
+ נגזור ביחס ל
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}P'_{n}\left(x\right)t^{n}=\cfrac{t}{\left(\sqrt{1-2xt+t^{2}}\right)^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-2xt+t^{2}\right)\sum_{n=0}^{\infty}P'_{n}\left(x\right)t^{n}=t\sum_{n=0}^{\infty}P_{n}\left(x\right)t^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדם של 
+\begin_inset Formula $t^{n+1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P_{0}\left(x\right)=P'_{n-1}\left(x\right)-2xP'_{n}\left(x\right)+P'_{n+1}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוזרים ביחס ל
+\begin_inset Formula $t$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{\left(n+1\right)P_{n+1}\left(x\right)=\left(2n+1\right)xP_{n}\left(x\right)-nP_{n-1}\left(x\right)}
+\]
+
+\end_inset
+
+זוהי רקורסיה לפולינום לז'נדר.
+\end_layout
+
+\begin_layout Standard
+אם מחברים מקבלים:
+\begin_inset Formula 
+\[
+\boxed{\cfrac{x^{2}-1}{n}P'_{n}\left(x\right)=xP_{n}\left(x\right)-P_{n-1}\left(x\right)}
+\]
+
+\end_inset
+
+זוהי נוסחה לנגזרות.
+\end_layout
+
+\begin_layout Part*
+הפתרון השני של מש' לז'נדר
+\end_layout
+
+\begin_layout Standard
+ע"י הורדת סדר מוצאים שיש פתרון שני בצורה 
+\begin_inset Formula $Q_{n}\left(x\right)=\cfrac{1}{2}\log\left(\cfrac{1+x}{1-x}\right)P_{n}\left(x\right)+R_{n}\left(x\right)$
+\end_inset
+
+ - פולינום מדרגה 
+\begin_inset Formula $n-1$
+\end_inset
+
+)
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $n=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מציגים 
+\begin_inset Formula 
+\[
+y=zP_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=zP'_{n}+z'P_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=zP''_{n}+2z'P'_{n}+z''P_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)\left(zP''_{n}+2z'P'_{n}+z''P_{n}\right)-2x\left(zP'_{n}+z'P_{n}\right)+n\left(n+1\right)zP_{n}=0
+\]
+
+\end_inset
+
+אנו יודעים שכל מה שיש בו 
+\begin_inset Formula $z$
+\end_inset
+
+ יצטמצם)כי 
+\begin_inset Formula $zP_{n}\left(x\right)$
+\end_inset
+
+ מקיים את המשוואה(.
+ נחלק ב
+\begin_inset Formula $1-x^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+z''P_{n}+2z'P'_{n}-\cfrac{2x}{1-x^{2}}z'P_{n}=0
+\]
+
+\end_inset
+
+נחלק ב
+\begin_inset Formula $P_{n}z'$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cfrac{z''}{z'}+\cfrac{2P'_{n}}{P_{n}}-\cfrac{2x}{1-x^{2}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln z'+2\ln P_{n}+\ln\left(1-x^{2}\right)=C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'P_{n}^{2}\left(1-x^{2}\right)=C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=\cfrac{C}{P_{n}^{2}\left(1-x^{2}\right)}=C\left[\cfrac{\alpha}{1+x}+\cfrac{\alpha_{2}}{1-x}+...\right]
+\]
+
+\end_inset
+
+)ממשיכים לקבל את הצורה הנדרשת
+\end_layout
+
+\end_body
+\end_document

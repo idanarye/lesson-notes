@@ -1,0 +1,610 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אפרוקסימציה)קירוב( של פונקציות
+\end_layout
+
+\begin_layout Standard
+להבדיל מאינטרפולציה, שבה מקבלים סט של נקודות ומוצאים פונקציה, כאן נתונה
+ פונקציה וצריך לקרב אותה.
+\end_layout
+
+\begin_layout Standard
+אפרוקסימציה לא בהכרח עוברת דרך סט של נקודות.
+\end_layout
+
+\begin_layout Part*
+פיתוח באמצעות טור טיילור
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(X\right)$
+\end_inset
+
+ פונקציה בעלת 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נגזרות רציפות באינטרבל נתון עבור 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ מסויים.
+ אזי עבור 
+\begin_inset Formula $x,x_{0}\in\left[a,b\right]$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)=P_{n}\left(x\right)+R_{n+1}\left(x\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+P_{n}\left(x\right)=f\left(x_{0}\right)+\frac{\left(x-x_{0}\right)}{1!}f\left(x_{0}\right)+\dots+\frac{\left(x-x_{0}\right)^{n}}{n!}f^{\left(x\right)}\left(x_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{n+1}\left(x\right)=\frac{1}{n!}\int_{x_{0}}^{x}\left(x-t\right)^{n}f^{\left(n+1\right)}\left(t\right)\mathrm{\, d}t=\frac{\left(x-x_{0}\right)^{n+1}}{\left(n+1\right)!}f^{\left(n+1\right)}\left(\xi\right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\xi$
+\end_inset
+
+ מסויים בין 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+)
+\begin_inset Formula $\xi$
+\end_inset
+
+ תלוי ב
+\begin_inset Formula $x$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Part*
+קירוב לפי קריטריון ה
+\lang english
+minimax
+\end_layout
+
+\begin_layout Section*
+שגיאת ה
+\lang english
+minimax
+\end_layout
+
+\begin_layout Standard
+נתונה הפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+, ורוצים לקרב אותה באמצעות פולינום 
+\begin_inset Formula $q$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\deg q\le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+\rho_{n}\left(f\right)\triangleq\inf_{\deg q\le n}\left\Vert f-q\right\Vert _{\infty}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{\infty}\triangleq\max_{a\le x\le b}\left|f\left(x\right)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר מכל הפולינומים ממעלה עד 
+\begin_inset Formula $n$
+\end_inset
+
+, בוחרים את זה ההפרש המקסימלי שלו מ
+\begin_inset Formula $f$
+\end_inset
+
+ הוא מינימלי.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $q_{n}^{*}\left(x\right)$
+\end_inset
+
+ את הפולונום האופטימלי, והוא מקיים
+\begin_inset Formula 
+\[
+\rho_{n}\left(f\right)=\left\Vert f-q_{n}^{*}\right\Vert _{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אבחנות במקרה של 
+\begin_inset Formula $f=e^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $n=1$
+\end_inset
+
+ ו
+\begin_inset Formula $a=-1,b=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q_{1}^{*}\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ חייבות להחתך בשתי נקודות באינטרבל: 
+\begin_inset Formula $-1<x_{1}<x_{2}<1$
+\end_inset
+
+.
+ אחרת אפשר לשפר את האפרוקסימציה באמצעות הזזה.
+\end_layout
+
+\begin_layout Enumerate
+השגיאה המקסימלית מתקבלת ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות בדיוק)בקצוות ובאמצע(, שכן במקרה הזה חייב להיות איזון בשגיאה בין הקצוות.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+קירוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minimax
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נותר תוצאה הרבה יותר טובה מאשר קירוב לפי טור טיילור.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם כללי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Remes
+\end_layout
+
+\begin_layout Standard
+אפשר למצוא באטקינסון, סעיפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4.7,4.9
+\end_layout
+
+\begin_layout Part*
+אפרוקסימציה ע"פ קריטריון ה
+\lang english
+least squres
+\end_layout
+
+\begin_layout Standard
+קשה לחשב את 
+\begin_inset Formula $q_{n}^{*}$
+\end_inset
+
+.
+ יותר נוח לבצע מינימיזציה על סכום ריבועי הסטיות: אם 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ הם השגיאות בכל נקודה, רוצים
+\begin_inset Formula 
+\[
+\sum r_{i}^{2}\to\min
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+\left\Vert q\right\Vert _{2}=\left(\int_{a}^{b}\left|g\left(x\right)\right|^{2}\mathrm{\, d}x\right)^{\nicefrac{1}{2}}\qquad g\in C\left[a,b\right]
+\]
+
+\end_inset
+
+עבור פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+רציפה באנטרבל 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $n\ge0$
+\end_inset
+
+, נגדיר
+\begin_inset Formula 
+\[
+M_{n}=\inf_{\deg\left(r\right)\le n}\left\Vert f-r\right\Vert _{2}
+\]
+
+\end_inset
+
+ועבור 
+\begin_inset Formula $r_{1}^{*}$
+\end_inset
+
+ שלגביו מתקבלת השגיאה הריבועית המינימלית
+\begin_inset Formula 
+\[
+M_{n}=\left\Vert f-r_{1}^{*}\right\Vert _{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+מכיוון שהשורש מחוץ לאינטגרל, ומחפשים את המינימום, אפשר לוותר על השורש בחישוב,
+ ולמצוא מינימום ל
+\begin_inset Formula $\left\Vert f-r_{1}\right\Vert _{2}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+פתרון לפונקציה כללית לפי עקרון
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Least Squares
+\end_layout
+
+\begin_layout Standard
+נרצה למצוא פולינום אפרוקסימיזציה 
+\begin_inset Formula 
+\[
+r_{n}^{*}\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}
+\]
+
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ כך שעבור אינטרבל נתון 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ יתקיים
+\begin_inset Formula 
+\[
+F\left(a_{0},a_{1},\dots a_{n}\right)\equiv\int_{a}^{b}\left[f\left(x\right)-\sum_{j=0}^{n}a_{j}x^{j}\right]^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+יהיה מינימלי.
+\end_layout
+
+\begin_layout Standard
+נדרוש אפוא ש
+\begin_inset Formula 
+\[
+\frac{\partial F}{\partial a_{i}}=0\qquad i=0,1,\dots n
+\]
+
+\end_inset
+
+ביצוע הגזירה)בתוך האינטגרל( לפי כל אחד מהמשתנים 
+\begin_inset Formula $a_{0},\dots a_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+i=0,1,\dots n\qquad\int_{a}^{b}\frac{\partial}{\partial a_{i}}\left[f\left(x\right)-\sum_{j=0}^{n}a_{j}x^{j}\right]^{2}\mathrm{\, d}x=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\int_{a}^{b}\left[f\left(x\right)-\sum_{j=0}^{n}a_{j}x^{j}\right]\left(x^{i}\right)\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x\right)x^{2}\mathrm{\, d}x=\int_{a}^{b}\left(\sum_{j=0}^{n}a_{j}b^{j}\right)x^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשילוב התנאים הנ"ל זה נותן
+\begin_inset Formula 
+\[
+\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{i+j}\mathrm{\, d}x=\int_{a}^{b}f\left(x\right)x^{i}\mathrm{\, d}x\qquad i=0,1,\dots n
+\]
+
+\end_inset
+
+זו מערכת משוואות לינאריות ב
+\begin_inset Formula $\left(n+1\right)$
+\end_inset
+
+ נעלמים
+\end_layout
+
+\end_body
+\end_document

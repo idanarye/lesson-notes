@@ -1,0 +1,2329 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+חזרה
+\end_layout
+
+\begin_layout Standard
+הנחה קבועה: 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח.
+ אם 
+\begin_inset Formula $f:X\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציה מדידה אז נגדיר 
+\begin_inset Formula $\begin{array}{c}
+f^{+}\left(x\right)=\max\left(f\left(x\right),0\right)\\
+f^{-}\left(x\right)=\max\left(-f\left(x\right),0\right)
+\end{array}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $f^{+},f^{-}\ge0$
+\end_inset
+
+ ומדידות, ומתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)=f^{+}\left(x\right)-f^{-}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|=f^{+}\left(x\right)+f^{-}\left(x\right)
+\]
+
+\end_inset
+
+אומרים ש
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+ אם 
+\begin_inset Formula $\int_{X}f^{+}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\int_{X}f^{-}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+, ואם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית נגדיר
+\begin_inset Formula 
+\[
+\int_{X}f\mathrm{\, d}\mu=\int_{X}f^{+}\mathrm{\, d}\mu-\int_{X}f^{-}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+משפט
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+10
+\series default
+\numeric off
+: תהי 
+\begin_inset Formula $f:X\to\mathbb{R}^{*}$
+\end_inset
+
+ מדידה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+)ז.א.
+ 
+\begin_inset Formula $\int_{X}\left|f\right|\mathrm{\, d}\mu<\infty$
+\end_inset
+
+( ואז מתקיים 
+\begin_inset Formula $\left|\int_{X}f\mathrm{\, d}\mu\right|\le\int_{X}\left|f\right|\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ מדידה אפשר להגדיר 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\int_{E}f^{+}\mathrm{\, d}\mu-\int_{E}f^{-}\mathrm{\, d}\mu$
+\end_inset
+
+, או באופן שקול ע"י 
+\begin_inset Formula $\int_{X}fI_{E}\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f,g:X\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציות אינטגרביליות ו
+\begin_inset Formula $\mathbb{R}\ni c$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $h:X\to\mathbb{R}^{*}$
+\end_inset
+
+ מדידה ואם 
+\begin_inset Formula $\left|h\left(x\right)\right|\le\left|f\left(x\right)\right|$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, אז 
+\begin_inset Formula $h$
+\end_inset
+
+ אינטגרבילית.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית על כל תת קבוצה מדידה 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+, ואם 
+\begin_inset Formula $E=A\uplus B$
+\end_inset
+
+)
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ מדידות וזרות( אז 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=\int_{A}f\mathrm{\, d}\mu+\int_{B}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu\left\{ x\in X\middle|\left|f\left(x\right)\right|=\infty\right\} =0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה ואם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $cf$
+\end_inset
+
+ אינטגרבילית ו
+\begin_inset Formula $\int_{X}cf\mathrm{\, d}\mu=c\int_{X}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f+g$
+\end_inset
+
+ אינטגרבילית ומתקיים 
+\begin_inset Formula $\int_{X}\left(f+g\right)\mathrm{\, d}\mu=\int_{X}f\mathrm{\, d}\mu+\int_{X}g\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f_{1},\dots f_{n}$
+\end_inset
+
+ אינטגרביליות ואם 
+\begin_inset Formula $c_{1},\dots c_{n}$
+\end_inset
+
+ קבועים אז 
+\begin_inset Formula $\sum\limits _{k=1}^{n}c_{k}f_{k}$
+\end_inset
+
+ אינטגרבילית ומתקיים
+\begin_inset Formula 
+\[
+\int_{X}\left(\sum_{k=1}^{n}c_{k}f_{k}\right)\mathrm{\, d}\mu=\sum_{k=1}^{n}c_{k}\int_{X}f_{k}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם לכל 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\le g\left(x\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{X}f\mathrm{\, d}\mu\le\int_{X}g\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|h\right|$
+\end_inset
+
+ פונקציות לא שליליות, ועבורן ידוע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כי
+\begin_inset Formula 
+\[
+\int_{X}\left|h\right|\mathrm{\, d}\mu\le\int_{X}\left|f\right|\mathrm{\, d}\mu<\infty
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית.
+ לפי משפט 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ אינטגרבילית.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ מדידה אז מדידה אז לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(x\right)I_{E}\left(x\right)\right|\le\left|f\left(x\right)\right|$
+\end_inset
+
+.
+ לפי סעיף א' 
+\begin_inset Formula $fI_{E}$
+\end_inset
+
+ אינטגרבילית.
+ ז.א.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית על 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ יתר על כן, אם 
+\begin_inset Formula $E=A\uplus B$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $A$
+\end_inset
+
+ וב
+\begin_inset Formula $B$
+\end_inset
+
+ כנ"ל, ולפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+
+\begin_inset Formula 
+\[
+\int_{E}f^{+}\mathrm{\, d}\mu=\int_{A}f^{+}\mathrm{\, d}\mu+\int_{B}f^{+}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+כמו כן
+\begin_inset Formula 
+\[
+\int_{E}f^{-}\mathrm{\, d}\mu=\int_{A}f^{-}\mathrm{\, d}\mu+\int_{B}f^{-}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית כל האינטגרלים האלה סופיים, ואפשר להחסיר נוסחאות להסיק
+\begin_inset Formula 
+\[
+\int_{E}f=\int_{E}f^{+}-\int_{E}f^{-}=\int_{A}f^{+}-\int_{A}f^{-}+\int_{B}f^{+}-\int_{B}f^{-}=\int_{A}f+\int_{B}f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית, בפרט 
+\begin_inset Formula $\int_{X}f^{+}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+, נובע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ש
+\begin_inset Formula $\mu\left\{ x\in X\middle|f^{+}\left(x\right)=\infty\right\} =0$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $\mu\left\{ x\in X\middle|f\left(x\right)=+\infty\right\} =0$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $\int_{X}f^{-}\mathrm{\, d}\mu<\infty$
+\end_inset
+
+ ונובע כנ"ל ש
+\begin_inset Formula $\mu\left\{ x\in X\middle|f\left(x\right)=-\infty\right\} =0$
+\end_inset
+
+.
+ מכל זה נובע 
+\begin_inset Formula $\mu\left\{ x\in X\middle|\left|f\left(x\right)\right|=\infty\right\} =0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ נובע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ש
+\begin_inset Formula $\int_{E}f^{+}\mathrm{\, d}\mu=\int_{E}f^{-}\mathrm{\, d}\mu=0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=\int_{E}f^{+}\mathrm{\, d}\mu-\int_{E}f^{-}\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $cf$
+\end_inset
+
+ אינטגרבילית כי היא מדידה, ומתקיים 
+\begin_inset Formula $\overbrace{\int_{X}\left|cf\right|\mathrm{\, d}\mu=\left|c\right|\int_{X}\left|f\right|\mathrm{\, d}\mu}^{\textnormal{positive}}<\infty$
+\end_inset
+
+, לכן ע"פ סעיף א' 
+\begin_inset Formula $cf$
+\end_inset
+
+ אינטגרבילית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת, אם 
+\begin_inset Formula $c>0$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{array}{c}
+\left(cf\right)^{+}=cf^{+}\\
+\left(cf\right)^{-}=cf^{-}
+\end{array}$
+\end_inset
+
+.
+ לכן ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+)לפונקציות
+\begin_inset Formula $0\le$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\int_{X}cf\mathrm{\, d}\mu=\int_{X}\left(cf\right)^{+}\mathrm{\, d}\mu-\int_{X}\left(cf\right)^{-}\mathrm{\, d}\mu=\int_{X}cf^{+}\mathrm{\, d}\mu-\int_{X}cf^{-}\mathrm{\, d}\mu=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=c\int_{X}f^{+}\mathrm{\, d}\mu-c\int_{X}f^{-}\mathrm{\, d}\mu=c\left[\int_{X}f^{+}\mathrm{\, d}\mu-\int_{X}f^{-}\mathrm{\, d}\mu\right]=c\int_{X}f\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $c<0$
+\end_inset
+
+ הרי 
+\begin_inset Formula $-c>0$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\begin{array}{c}
+\left(cf\right)^{+}=-cf^{-}\\
+\left(cf\right)^{-}=-cf^{+}
+\end{array}$
+\end_inset
+
+, ושוב ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+בדיקה
+\begin_inset space ~
+\end_inset
+
+במעבדה
+\series default
+: אם 
+\begin_inset Formula $f\left(x\right)>0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\begin{array}{c}
+f^{+}\left(x\right)=f\left(x\right)\\
+f^{-}\left(x\right)=0
+\end{array}$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $c<0$
+\end_inset
+
+, 
+\begin_inset Formula $cf\left(x\right)<0$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left(cf\right)^{+}\left(x\right)=0=-cf^{-}\left(x\right)\qquad\left(cf\right)^{-}\left(x\right)=-cf\left(x\right)=-cf^{+}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי זה,
+\begin_inset Formula 
+\[
+\int cf=\int\left(cf\right)^{+}-\int\left(cf\right)^{-}=\int-cf^{-}-\int-cf^{+}
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $-c>0$
+\end_inset
+
+, משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומר שזה שווה
+\begin_inset Formula 
+\[
+-c\int f^{-}+cf^{+}=c\left[\int f^{+}-\int f^{-}\right]=c\int f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f+g$
+\end_inset
+
+ אינטגרבילית כי
+\begin_inset Formula 
+\[
+\int_{X}\left|f+g\right|\mathrm{\, d}\mu\le\int_{X}\left|f\right|\mathrm{\, d}\mu+\int_{X}\left|g\right|\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+אמנם 
+\begin_inset Formula $f+g$
+\end_inset
+
+ לא מוגדרת היטב במצב של 
+\begin_inset Formula $\infty-\infty$
+\end_inset
+
+ או 
+\begin_inset Formula $-\infty+\infty$
+\end_inset
+
+, אבל לפי סעיף ג' הנקודות האלה מהוות קבוצה בעלת מידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ אז נוכל לכתוב 
+\begin_inset Formula $X=E\uplus E^{\complement}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E^{\complement}=\left\{ x\in X\middle|\left|f\left(x\right)\right|+\left|g\left(x\right)\right|=\infty\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $\mu\left(E^{\complement}\right)=0$
+\end_inset
+
+, ועל 
+\begin_inset Formula $E$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ מקבלות ערכים סופיים.
+ כעת, לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(f+g\right)^{+}-\left(f+g\right)^{-}=f+g=\left(f^{+}-f^{-}\right)+\left(g^{+}-g^{-}\right)
+\]
+
+\end_inset
+
+וכולם מספרים סופיים, ולכן אפשר להעביר אגף לומר
+\begin_inset Formula 
+\[
+\left(f+g\right)^{+}+f^{-}+g^{-}=f^{+}+g^{+}+\left(f+g\right)^{-}
+\]
+
+\end_inset
+
+כל הפונקציות הנ"ל לא שליליות, ונובע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ש
+\begin_inset Formula 
+\[
+\int_{E}\left(f+g\right)^{+}+\int_{E}f^{-}+\int_{E}g^{-}=\int_{E}f^{+}+\int_{E}g^{+}+\int_{E}\left(f+g\right)^{-}
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $f,g,f+g$
+\end_inset
+
+ כולן אינטגרביליות, כל האינטגרלים כאן מספרים סופיים ואפשר להעביר אגף:
+\begin_inset Formula 
+\[
+\int_{E}\left(f+g\right)^{+}-\int_{E}\left(f+g\right)^{-}=\int_{E}f^{+}-\int_{E}f^{-}+\int_{E}g^{+}-\int_{E}g^{-}
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $\int_{E}f+g=\int_{E}f+\int_{E}g$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $\mu\left(E^{\complement}\right)=0$
+\end_inset
+
+ בעצם הוכחנו 
+\begin_inset Formula $\int_{X}f+g=\int_{X}f+\int_{X}g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נובע מה' וו' באינדוקציה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\le g$
+\end_inset
+
+ הרי 
+\begin_inset Formula $g=\underbrace{\left(f-g\right)}_{\ge0}+f$
+\end_inset
+
+.
+ לפי סעיף ו' 
+\begin_inset Formula $\int g=\underbrace{\int\left(g-f\right)}_{\ge0}+\int f$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $\int g\ge\int f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הכללות
+\end_layout
+
+\begin_layout Enumerate
+בסעיף ב' אפשר להכליל בכך: אם 
+\begin_inset Formula $E=\biguplus\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+ כאשר כל 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ מדידה, אזי 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=\sum\limits _{n=1}^{\infty}\int_{E_{n}}f\mathrm{\, d}\mu$
+\end_inset
+
+ כי לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+ 
+\begin_inset Formula $\int_{E}f^{+}\mathrm{\, d}\mu=\sum\limits _{n=1}^{\infty}\int_{E_{n}}f^{+}\mathrm{\, d}\mu$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\int_{E}f^{-}=\sum\limits _{n=1}^{\infty}\int_{E_{n}}f^{-}\mathrm{\, d}\mu$
+\end_inset
+
+.
+ נחסיר נוחסאות לקבל את התוצאה.
+\end_layout
+
+\begin_layout Enumerate
+בכל הסעיפים מספיק שהתנאים יתקיימו כב"מ)
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+( אם ידוע שהפונקציות מדידות.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+)משפט ההתכנסות הנשלטת של לבג(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f_{n}:X\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציות מדידות, ונניח שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ קיים גבול 
+\begin_inset Formula $f\left(x\right)=\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+.
+ עוד נניח שקיימת פונקציה אינטגרבילית 
+\begin_inset Formula $g:X\to\left[0,\infty\right]$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f_{n}\left(x\right)\right|\le g\left(x\right)$
+\end_inset
+
+.
+ אזי כל 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית, ומתקיים 
+\begin_inset Formula $\lim\limits _{n\to\infty}\int_{X}f_{n}\mathrm{\, d}\mu=\int_{X}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f_{n}\left(x\right)\right|\le g\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+ אינטגרבילית, סעיף א' של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נותן שכל 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ אינטגרבילית.
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)=\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+ ולכן גם מתקיים 
+\begin_inset Formula $\left|f\left(x\right)\right|=\lim\limits _{n\to\infty}\left|f_{n}\left(x\right)\right|\le g\left(x\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית.
+\end_layout
+
+\begin_layout Standard
+הנתון 
+\begin_inset Formula $\left|f_{n}\left(x\right)\right|\le g\left(x\right)$
+\end_inset
+
+ אומר שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $-g\left(x\right)\le f_{n}\left(x\right)\le g\left(x\right)$
+\end_inset
+
+.
+ מכאן שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $f_{n}\left(x\right)+g\left(x\right)\ge0$
+\end_inset
+
+ ושואף ל
+\begin_inset Formula $f\left(x\right)+g\left(x\right)$
+\end_inset
+
+.
+ לפי למת פאטו:
+\begin_inset Formula 
+\[
+\int_{X}\left(f+g\right)\mathrm{\, d}\mu\le\underline{\lim}\int_{X}\left(f_{n}+g\right)\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+זה שקול ל
+\begin_inset Formula 
+\[
+\int_{X}f+\int_{X}g\le\underline{\lim}\int_{X}f_{n}+\int_{X}g
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $g$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\int_{X}g<\infty$
+\end_inset
+
+ ומותר להעביר אגף לומר 
+\begin_inset Formula $\int_{X}f\le\underline{\lim}\int_{X}f_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהמשך ההוכחה נסתמך על העובדה שאם 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ סדרה ממשית אז 
+\begin_inset Formula $\underline{\lim}\left(-a_{n}\right)=-\overline{\lim}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ובכן: לפי הנתון לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $f_{n}\left(x\right)\le g\left(x\right)$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $g\left(x\right)-f_{n}\left(x\right)\ge0$
+\end_inset
+
+ ושואף ל
+\begin_inset Formula $g\left(x\right)-f\left(x\right)$
+\end_inset
+
+.
+ שוב לפי פאטו:
+\begin_inset Formula 
+\[
+\int_{X}\left(g-f\right)\mathrm{\, d}\mu\le\underline{\lim}\int_{X}\left(g-f_{n}\right)\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ אינטגרביליות, נובע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סעיף ז':
+\begin_inset Formula 
+\[
+\int_{X}g\mathrm{\, d}\mu-\int_{X}f\mathrm{\, d}\mu\le\underline{\lim}\left(\int_{X}g-\int_{X}f_{n}\right)
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+\cancel{\int_{X}g\mathrm{\, d}\mu}-\int_{X}f\mathrm{\, d}\mu\le\int_{X}g\mathrm{\, d}\mu+\underline{\lim}-\int_{X}f\mathrm{\, d}\mu=\cancel{\int_{X}g\mathrm{\, d}\mu}-\overline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu\le\int_{X}f\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+בסיכום הוכחנו:
+\begin_inset Formula 
+\[
+\int_{X}f\mathrm{\, d}\mu\le\underline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu\underset{\textnormal{always}}{\le}\overline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu\le\int_{X}f\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+הדבר ייתכן רק אם כל אי שוויון בעצם שוויון.
+ לכן 
+\begin_inset Formula $\underline{\lim}\int f_{n}=\overline{\lim}\int f_{n}$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $\lim\limits _{n\to\infty}\int f_{n}$
+\end_inset
+
+ והוא שווה 
+\begin_inset Formula $\int_{X}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+)משפט ההתכנסות החסומה(
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ מדידה ו
+\begin_inset Formula $\mu\left(E\right)<\infty$
+\end_inset
+
+.
+ עוד נניח שלכל 
+\begin_inset Formula $\mathbb{N}\ni n$
+\end_inset
+
+ מוגדרת פונקציה מדידה 
+\begin_inset Formula $f_{n}:E\to\mathbb{R}$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $M>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f_{n}\left(x\right)\right|\le M$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ קיים 
+\begin_inset Formula $f\left(x\right)=\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\int_{E}f\mathrm{\, d}\mu=\lim_{n\to\infty}\int_{E}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $g\left(x\right)=M$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $g\left(x\right)\ge0$
+\end_inset
+
+ מדידה והיא גם אינטגרבילית כי 
+\begin_inset Formula $\int_{E}g\mathrm{\, d}\mu=\int_{E}M\mathrm{\, d}\mu=M\mu\left(E\right)<\infty$
+\end_inset
+
+.
+ כיוון שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f_{n}\left(x\right)\right|\le M=g\left(x\right)$
+\end_inset
+
+, יש כאן כל התנאים של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונוכל להסיק ש
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=\lim\limits _{n\to\infty}\int_{E}f_{n}\mathrm{\, d}\mu$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שיפור למשפטים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+13
+\end_layout
+
+\begin_layout Standard
+מספיק להניח שכל התנאים מתקיימים כב"מ אם ידוע שהפונקציות כולן מדידות.
+\end_layout
+
+\begin_layout Part*
+הכללות לבג לתורת רימן
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\begin_inset space ~
+\end_inset
+
+קבועה
+\series default
+: 
+\begin_inset Formula $m$
+\end_inset
+
+ = מידת לבג על 
+\begin_inset Formula $\mathscr{L}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+ הרבה פעמים נכתוב 
+\begin_inset Formula $\int_{a}^{b}f\mathrm{\, d}m$
+\end_inset
+
+ במקום 
+\begin_inset Formula $\int_{\left[a,b\right]}f\mathrm{\, d}m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המשפט הראשון בפרק הוא משפט הגזירה של לבג, האומר בין היתר שאם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ מונוטונית אזי 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ קיימת כב"מ)
+\begin_inset Formula $\mathrm{d}m$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אחד המכשירים להוכחת משפט זה הוא "למת ויטלי", שהיא למה קומבינטורית.
+\end_layout
+
+\begin_layout Standard
+כמוטיבציה ללמה נביא תרגיל:
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $m^{*}\left(E\right)=S<\infty$
+\end_inset
+
+ ו
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ אזי קיימים קטעים פתוחים זרים בזוגות 
+\begin_inset Formula $I_{1},\dots I_{n}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $S=\bigcup\limits _{m=1}^{n}I_{m}$
+\end_inset
+
+ אז 
+\begin_inset Formula $m\left(S\right)<s+\varepsilon$
+\end_inset
+
+ ו
+\begin_inset Formula $m^{*}\left(E-S\right)<\varepsilon$
+\end_inset
+
+)ז.א.
+ 
+\begin_inset Formula $\bigcup\limits _{m=1}^{n}I_{m}=S$
+\end_inset
+
+ כמעט מכסה את 
+\begin_inset Formula $E$
+\end_inset
+
+!(.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הגדרת 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ יש קבוצה פתוחה 
+\begin_inset Formula $O\supset E$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m\left(O\right)<s+\varepsilon$
+\end_inset
+
+.
+ נוכל לכתוב 
+\begin_inset Formula $O=\biguplus\limits _{m=1}^{\infty}I_{m}$
+\end_inset
+
+ כאשר ה
+\begin_inset Formula $I_{m}$
+\end_inset
+
+ קטעים זרים בזוגות.
+ נבחר 
+\begin_inset Formula $n$
+\end_inset
+
+ טבעי כך ש
+\begin_inset Formula $\sum\limits _{m=1}^{n}\left|I_{m}\right|>s$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $\sum\limits _{m=n+1}^{\infty}\left|I_{m}\right|<\varepsilon$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $S=\biguplus\limits _{m=1}^{n}I_{m}$
+\end_inset
+
+.
+ כעת 
+\begin_inset Formula $E\subset O=S\cup\bigcup\limits _{m=n+1}^{\infty}I_{m}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $E-S\subset\bigcup\limits _{n=m+1}^{\infty}I_{m}$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula 
+\[
+m^{*}\left(E-S\right)\le m^{*}\left[\bigcup_{n=m+1}^{\infty}I_{m}\right]<\varepsilon
+\]
+
+\end_inset
+
+כעת
+\begin_inset Formula 
+\[
+E=\left(E-S\right)\cup\left(E\cap S\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה כלשהי, ותהי 
+\begin_inset Formula $F$
+\end_inset
+
+ משפחה של קטעים.
+ נאמר ש
+\begin_inset Formula $F$
+\end_inset
+
+ מכסה את 
+\begin_inset Formula $E$
+\end_inset
+
+ במובן של ויטלי אם לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים קטע 
+\begin_inset Formula $I\in F$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in I$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|I\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+במילים
+\series default
+: 
+\begin_inset Formula $F$
+\end_inset
+
+ מכילה קטעים קטנים כרצוננו סביב כל נקודה.
+\end_layout
+
+\begin_layout Section*
+למת ויטלי
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה המקיימת 
+\begin_inset Formula $m^{*}\left(E\right)<\infty$
+\end_inset
+
+, ונניח ש
+\begin_inset Formula $F$
+\end_inset
+
+ משפחה של קטעים שמכסה את 
+\begin_inset Formula $E$
+\end_inset
+
+ במובן של ויטלי.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים מספר סופי של קטעים זרים בזוגות מ
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\begin_inset Formula $I_{1},I_{2},\dots I_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m^{*}\left(E-\biguplus\limits _{k=1}^{n}I_{k}\right)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ז.א., 
+\begin_inset Formula $E$
+\end_inset
+
+ "כמעט" שווה לאיחוד זר של קטעים מ
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדרך להוכיח את משפט הגזירה של לבג היא להראות שלכמעט כל 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underset{h\to0}{\underline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}=\underset{h\to0}{\overline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: אם 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ פונקציה מוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אז מגדירים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\underset{x\to x_{0}}{\underline{\lim}}g\left(x\right)=\sup\limits _{\delta>0}\inf\limits _{0<\left|x-x_{0}\right|<\delta}g\left(x\right)$
+\end_inset
+
+=המינימום של גבולות 
+\begin_inset Formula $\lim\limits _{n\to\infty}g\left(x_{n}\right)$
+\end_inset
+
+ עבוד סדרות 
+\begin_inset Formula $x_{0}\gets x_{n}\neq x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\underset{x\to x_{0}}{\overline{\lim}}g\left(x\right)=\inf\limits _{\delta>0}\sup\limits _{0<\left|x-x_{0}\right|}g\left(x\right)$
+\end_inset
+
+=המקסימום של גבולות 
+\begin_inset Formula $\lim\limits _{n\to\infty}g\left(x_{n}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x_{0}\neq x_{n}\to x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\limits _{x\to x_{0}}g\left(x\right)$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{x\to x_{0}}{\underline{\lim}}g\left(x\right)\underset{x\to x_{0}}{\overline{\lim}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $g\left(x\right)=\sin\left(\frac{1}{x}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\lim\limits _{x\to0}g\left(x\right)$
+\end_inset
+
+ אינו קיים, אבל 
+\begin_inset Formula $\begin{array}{c}
+\underset{x\to0}{\overline{\lim}}g\left(x\right)=1\\
+\underset{x\to0}{\underline{\lim}}g\left(x\right)=-1
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

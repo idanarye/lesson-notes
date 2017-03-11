@@ -1,0 +1,822 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+עוד קצת על התמרת לפלס
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+פתור את הבעייה
+\begin_inset Formula 
+\[
+y''\left(t\right)=\begin{cases}
+t\left(t-1\right) & 0\le t<1\\
+0 & t\ge1
+\end{cases}=:f\left(t\right)\qquad y\left(0\right)=y'\left(0\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+H
+\backslash
+left(t
+\backslash
+right)f
+\backslash
+left(t
+\backslash
+right)
+\end_layout
+
+\begin_layout Standard
+ניתן לרשום את 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ בעזרת פונקיית הביסייד עם שני אינדקסים:
+\begin_inset Formula 
+\[
+f\left(t\right)=t\left(t-1\right)H_{0,1}\left(t\right)=t\left(t-1\right)\left[H_{0}\left(t\right)-H_{1}\left(t\right)\right]=t\left(t-1\right)\left[H\left(t-0\right)-H\left(t-1\right)\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=t\left(t-1\right)H\left(t\right)-t\left(t-1\right)H\left(t-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: 
+\begin_inset Formula $\mathcal{L}\left\{ f\left(t\right)\right\} =\mathcal{L}\left\{ H\left(t\right)f\left(t\right)\right\} $
+\end_inset
+
+ שכן 
+\begin_inset Formula $t<0$
+\end_inset
+
+ לא מעניין את התמרת לפלס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ f\left(t\right)\right\} =\mathcal{L}\left\{ t\left(t-1\right)H\left(t\right)\right\} -\mathcal{L}\left\{ t\left(t-1\right)H\left(t-1\right)\right\} =...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[t^{k}\xrightarrow{\mathcal{L}}\cfrac{\Gamma\left(k+1\right)}{s^{k+1}}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...=\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}-\mathcal{L}\left\{ t\cdot\left(\left(t-1\right)H\left(t-1\right)\right)\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}-\left(-\cfrac{d}{ds}\mathcal{L}\left\{ \left(t-1\right)H\left(t-1\right)\right\} \right)=...
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $g\left(t\right)=t$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+G\left(s\right)\equiv\mathcal{L}\left\{ g\left(t\right)\right\} =\cfrac{1}{s^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\mathcal{L}\left\{ \left(t-1\right)H\left(t-1\right)\right\} =\mathcal{L}\left\{ g\left(t-1\right)\cdot H\left(t-1\right)\right\} =e^{-1\cdot s}\cdot G\left(s\right)=e^{-s}\cdot\cfrac{1}{s^{2}}
+\]
+
+\end_inset
+
+נחזור להתמרה:
+\begin_inset Formula 
+\[
+...=\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}+\cfrac{d}{ds}\left(e^{-s}\cfrac{1}{s^{2}}\right)=\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}-e^{-s}\cdot\cfrac{1}{s^{2}}+e^{-s}\cdot\cfrac{-2}{s^{3}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\boxed{\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}-e^{-s}\cdot\cfrac{1}{s^{2}}+2e^{-s}\cfrac{1}{s^{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפעיל התמרת לפלס על המד"ר המקורית:
+\begin_inset Formula 
+\[
+y''\left(t\right)=f\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ y''\right\} =\mathcal{L}\left\{ f\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s^{2}Y\left(s\right)-s\cancel{y\left(0\right)}-\cancel{y'\left(0\right)}=F\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s^{2}Y\left(s\right)=\cfrac{2}{s^{3}}-\cfrac{1}{s^{2}}-e^{-s}\cdot\cfrac{1}{s^{2}}-2\cdot e^{-s}\cdot\cfrac{1}{s^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ y\left(t\right)\right\} =Y\left(s\right)=\cfrac{2}{s^{2}}-\cfrac{1}{s^{4}}-e^{-s}\cdot\cfrac{1}{s^{4}}-2e^{-s}\cdot\cfrac{1}{s^{5}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(t\right)=\mathcal{L}^{-1}\left\{ \cfrac{2}{s^{2}}-\cfrac{1}{s^{4}}-e^{-s}\cdot\cfrac{1}{s^{4}}-2e^{-s}\cdot\cfrac{1}{s^{5}}\right\} 
+\]
+
+\end_inset
+
+ראינו מקודם ש
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t^{k}\right\} =\cfrac{k!}{s^{k+1}}\Rightarrow\mathcal{L}\left\{ \cfrac{t^{k}}{k!}\right\} =\cfrac{1}{s^{k+1}}\Rightarrow\mathcal{L}^{-1}\left\{ \cfrac{1}{s^{k+1}}\right\} =\cfrac{t^{k}}{k!}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+y\left(t\right)=2\cfrac{t^{4}}{4!}-\cfrac{t^{3}}{3!}-\cfrac{\left(t-1\right)^{3}}{3!}H\left(t-1\right)-2\cfrac{\left(t-1\right)^{4}}{4!}H\left(t-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כן,
+\begin_inset Formula 
+\[
+y\left(t\right)=\begin{cases}
+\cfrac{1}{12}t^{4}-\cfrac{1}{6}t^{3} & 0\le t<1\\
+\cfrac{1}{12}t^{4}-\cfrac{1}{6}-t^{3}-\cfrac{\left(t-1\right)^{3}}{6}-\cfrac{\left(t-1\right)^{4}}{12} & t>1
+\end{cases}
+\]
+
+\end_inset
+
+יש חשש שאין רציפות בנקודת ה"תפר" 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ אבל:
+\begin_inset Formula 
+\[
+\lim_{t\to1^{-1}}y\left(t\right)=\lim_{t\to1^{-1}}\cfrac{1}{12}t^{4}-\cfrac{1}{6}t^{3}=\cfrac{1}{12}-\cfrac{1}{6}=-\cfrac{1}{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{t\to1^{+}}y\left(t\right)=\lim_{t\to1^{+}}\cfrac{1}{12}t^{4}-\cfrac{1}{6}t^{3}-\cfrac{\left(t-1\right)^{3}}{t}-\cfrac{\left(t-1\right)^{4}}{12}=-\cfrac{1}{12}
+\]
+
+\end_inset
+
+ניתן גם לבדוק ש
+\begin_inset Formula $y'\left(t\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $t=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y'\left(t\right)=\begin{cases}
+\cfrac{t^{3}}{3}-\cfrac{1}{2}t^{2} & 0\le t<1\\
+\cfrac{t^{3}}{3}-\cfrac{1}{2}t^{2}-\cfrac{1}{2}\left(t-1\right)^{2}-\cfrac{1}{3}\left(t-1\right)^{3} & t\ge3
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+כאן נגמר החומר!!!
+\end_layout
+
+\begin_layout Part*
+שיעור חזרה
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+קצב הילוד באוכלוסיה מסויימת פרופורציונאלי למספר התושבים, עם קבוע פרופורציה
+ 
+\begin_inset Formula $a$
+\end_inset
+
+)
+\begin_inset Formula $a>0$
+\end_inset
+
+( וקצב התמותה הוא קבוע, 
+\begin_inset Formula $b$
+\end_inset
+
+ אנשים מתים בכל יום.
+ אם 
+\begin_inset Formula $P\left(t\right)$
+\end_inset
+
+ הוא מספר האנשים באוכלוסיה בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+)שנמדד בימים(:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( מצא מד"ר עבור 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( פתור אותה בהנתן תנאי התחלה כלשהו, 
+\begin_inset Formula $P\left(0\right)=P_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( קצב 
+\bar under
+השינוי
+\bar default
+ באוכלוציה הוא הנגזרת 
+\begin_inset Formula $P'\left(t\right)$
+\end_inset
+
+.
+ השינוי בגודל האוכלוסיה הוא מספר האנשים שנולדים פחות מספר האנשים שמתים.
+\begin_inset Formula 
+\[
+P'\left(t\right)=a\cdot P\left(t\right)-b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{P'=aP-b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( נתחיל בפתרון המד"ר ההומוגנית
+\begin_inset Formula 
+\[
+P'=aP
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P'-aP=0
+\]
+
+\end_inset
+
+הפולינום האופייני הוא
+\begin_inset Formula 
+\[
+\lambda-a=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left(P_{h}=\right)P_{C}=C_{1}e^{at}=C\cdot e^{at}
+\]
+
+\end_inset
+
+כדי לפתור את המד"ר המקורית נשתמש בוריאציית המקדמים:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+P\left(t\right)=C\left(t\right)e^{at}\\
+P'\left(t\right)=C'\left(t\right)e^{at}+aC\left(t\right)e^{at}
+\end{array}\right.
+\]
+
+\end_inset
+
+נציב במד"ר:
+\begin_inset Formula 
+\[
+P'=aP-b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C'\left(t\right)e^{at}+\cancel{aC\left(t\right)e^{at}}=\cancel{aC\left(t\right)e^{at}-b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C'\left(t\right)=-be^{at}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C\left(t\right)=\int-be^{-at}\mathrm{\, d}t=\cfrac{-be^{-at}}{-a}+K=\cfrac{b}{a}e^{-at}+K
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow P=C\left(t\right)e^{at}=\left(\cfrac{b}{a}e^{-at}+K\right)e^{at}=\cfrac{b}{a}+Ke^{at}
+\]
+
+\end_inset
+
+נציב תנאי התחלה:
+\begin_inset Formula 
+\[
+P\left(0\right)=\cfrac{b}{a}+K\overset{!}{=}P_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=P_{0}-\cfrac{b}{a}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{P\left(t\right)=\cfrac{b}{a}+\left(P_{0}-\cfrac{b}{a}\right)e^{at}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: זה לא מה שקורה "באמת"
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- משוואת אוכלוסיה אמיתית היא הרבה יותר מסובכת, ובכלל לא לינארית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+המחלקה למתמטיקה ב
+\lang english
+MIT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניתחה את המחזה של שייקספיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Romeo&Juliet
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והגיע למסקנה שאם 
+\begin_inset Formula $R\left(t\right)$
+\end_inset
+
+ הוא כמות האהבה של רומיאו ליוליה, ו
+\begin_inset Formula $J\left(t\right)$
+\end_inset
+
+ הוא כמות האהבה של יוליה לרומיאו, אזי
+\begin_inset Formula 
+\[
+R'=J
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J'=-\cfrac{17}{16}R+\cfrac{1}{2}J
+\]
+
+\end_inset
+
+מפה אנחנו רואים שלרומיאו אין ממש מודעות עצמית.
+ השינוי באהבה שלו ליוליה)הנגזרת( תלויה רק בכמה שיוליה אוהבת אותו.
+ אצל יוליה המצב מורכב יותר.
+ יש לה מודעות עצמית "בריאה".
+ אם היא אוהבת אותו, עצם כך גורם לה לאהוב אותו יותר.
+ מצד שני, אם הוא מפגין אהבה כלפיה היא נבהלת, ומתחילה לאהוב אותו פחות.
+\end_layout
+
+\begin_layout Standard
+נניח שנתון תנאי התחלה 
+\begin_inset Formula $\begin{pmatrix}R\left(0\right)\\
+J\left(0\right)
+\end{pmatrix}=\begin{pmatrix}1\\
+0
+\end{pmatrix}$
+\end_inset
+
+.
+ כלומר, בזמן 
+\begin_inset Formula $t=0$
+\end_inset
+
+, רומיאו מחבב את יוליה, אבל היא ניטרלית כלפיו.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות ש:
+\begin_inset Formula 
+\[
+R'\left(0\right)=J\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J'\left(0\right)=-\cfrac{17}{16}R\left(0\right)+\cfrac{1}{2}J\left(0\right)=-\cfrac{17}{16}<0
+\]
+
+\end_inset
+
+כלומר, ברגע שיוליה מבחינה שרומיאו אוהב אותה, היא נהיית 
+\bar under
+עויינת
+\bar default
+ כלפיו)הנגזרת 
+\bar under
+שלילית
+\bar default
+(
+\begin_inset Formula 
+\[
+R'=J
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J'=-\cfrac{17}{16}R+\cfrac{1}{2}J
+\]
+
+\end_inset
+
+אם כך, גם האהבה של רומיאו מתחילה לרדת עד לאפס.
+ האבהות ממשיכות לצנוח עד שרומיאו שונא אותה כל כך עד שהיא רוצה אותו.
+\end_layout
+
+\begin_layout Standard
+כל "סיבוב" נהיה יותר ויותר אינטנסיבי, עד שמגיעים לסוף המר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}R\\
+J
+\end{pmatrix}'=\begin{pmatrix}0 & 1\\
+-\cfrac{17}{16} & \cfrac{1}{2}
+\end{pmatrix}\begin{pmatrix}R\\
+J
+\end{pmatrix}
+\]
+
+\end_inset
+
+אפשר לפתור עם ע"ע וו"ע.
+ הפתרון שיתקבל הוא
+\begin_inset Formula 
+\[
+R\left(t\right)=\cfrac{1}{4}e^{\unitfrac{t}{4}}\left(4\cos t-\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(t\right)=-\cfrac{17}{16}e^{\unitfrac{t}{4}}\sin t
+\]
+
+\end_inset
+
+ אפשר לרשום ב
+\lang english
+Mupad
+\lang hebrew
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+plot(Plot::Curve2d(1/4*exp(t/4)*(4*cos(t)-sin(t)),17/16*...)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Graphics
+	filename pasted1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2446 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+חזרה
+\end_layout
+
+\begin_layout Subsection*
+אינטגרלים סוג ראשון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z\left(t\right)=x\left(t\right)+iy\left(t\right)\qquad a\le t\le b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}z\left(t\right)\mathrm{\, d}t=\int_{a}^{b}x\left(t\right)\mathrm{\, d}t+i\int_{a}^{b}y\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{a}^{b}\left[z\left(t\right)\pm w\left(t\right)\right]\mathrm{\, d}t=\int_{a}^{b}z\left(t\right)\mathrm{\, d}t\pm\int_{a}^{b}w\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $c\in\mathbb{C}$
+\end_inset
+
+ קבוע, 
+\begin_inset Formula $\int_{a}^{b}cz\left(t\right)\mathrm{\, d}t=c\int_{a}^{b}z\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x'\left(t\right)+iy'\left(t\right)=z'\left(t\right)$
+\end_inset
+
+ מוגדרת ורציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{a}^{b}z'\left(t\right)\mathrm{\, d}t=z\left(b\right)-z\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $z'\left(t\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{a}^{b}\left|z'\left(t\right)\right|\mathrm{\, d}t$
+\end_inset
+
+ = אורך המסילה המוגדרת ע"י 
+\begin_inset Formula 
+\[
+t\mapsto z\left(t\right)\qquad a\le t\le b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אינטגרל סוג שני
+\end_layout
+
+\begin_layout Standard
+הם אינטגרלים מהסוג 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ פונקציה מרוכבת מוגדרת ורציפה למקוטעין על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האינטגרל מוגדר כגבול של סכומי רימן: בפרט אם 
+\begin_inset Formula $z_{0},z_{1},\dots z_{n}$
+\end_inset
+
+ מהווה חלוקה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ אז בונים סכום רימן 
+\begin_inset Formula $\sum\limits _{k=1}^{n}f\left(z'_{k}\right)\left(z_{k}-z_{k-1}\right)$
+\end_inset
+
+ כאשר לכל 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $z_{k}'$
+\end_inset
+
+ נקודה ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+ בין 
+\begin_inset Formula $z_{k-1}$
+\end_inset
+
+ ל
+\begin_inset Formula $z_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר החלוקה נעשית עדינה ביותר, סכומים אלה שואפים לגבול)מספר מרוכב( שהוא
+ לפי הגדרה 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשביל חישוב אנליטי של האינטגרל עושים פרמטריזציה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ע"י 
+\begin_inset Formula 
+\[
+z=z\left(t\right)\qquad a\le t\le b
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $z'\left(t\right)$
+\end_inset
+
+ קיימת ורציפה למקוטעין ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ואז מוכיחים ש
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(z\right)\mathrm{\, d}z=\int_{a}^{b}f\left(z\left(t\right)\right)z'\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{\gamma}\left[f\left(z\right)\pm g\left(z\right)\right]\mathrm{\, d}z=\int_{\gamma}f\left(z\right)\mathrm{\, d}z\pm\int_{\gamma}g\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{\gamma}cf\left(z\right)\mathrm{\, d}z=c\int_{\gamma}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+)
+\begin_inset Formula $c\in\mathbb{C}$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\int_{\gamma}f\left(z\right)\mathrm{\, d}z\right|\le ML$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M=\sup\left\{ \left|f\left(z\right)\right|\middle|z\in\gamma\right\} $
+\end_inset
+
+ ואורך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+=
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{-\gamma}f\left(z\right)\mathrm{\, d}z=-\int_{\gamma}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $"-\gamma"$
+\end_inset
+
+ שווה ל
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מתוארת בכיוון ההפוך
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\gamma=\gamma_{1}\cup\gamma_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)\mathrm{\, d}z=\int_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z+\int_{\gamma_{2}}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+, ו
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ובעלת נגזרת רציפה 
+\begin_inset Formula $f'\left(z\right)$
+\end_inset
+
+ לאורך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\int_{\gamma}f'\left(z\right)\mathrm{\, d}z=f\left(z_{2}\right)-f\left(z_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ = הנקודה הראשונה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ו
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ = הנקודה האחרונה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר פרמטריזציה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $z=z\left(t\right)\qquad a\le t\le b$
+\end_inset
+
+, כאן 
+\begin_inset Formula $\begin{array}{c}
+z\left(z\right)=z_{1}\\
+z\left(b\right)=z_{2}
+\end{array}$
+\end_inset
+
+.
+ כעת:
+\begin_inset Formula 
+\[
+\int_{\gamma}f'\left(z\right)\mathrm{\, d}z=\int_{a}^{b}f'\left(z\left(t\right)\right)z'\left(t\right)\mathrm{\, d}t=\int_{a}^{b}\cfrac{\mathrm{d}}{\mathrm{d}t}f\left(z\left(t\right)\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה שווה
+\begin_inset Formula 
+\[
+\left.f\left(z\left(t\right)\right)\right|_{a}^{b}=f\left(z\left(b\right)\right)-f\left(z\left(a\right)\right)=f\left(z_{2}\right)-f\left(z_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה שהולכת מ
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $z_{2}$
+\end_inset
+
+, ו
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ רציפה לאורך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ויש לה פונקציה קדומה 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ גזירה כך ש
+\begin_inset Formula $F'\left(z\right)=f\left(z\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z$
+\end_inset
+
+ ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(t\right)\mathrm{\, d}z=F\left(z_{2}\right)-F\left(z_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $S\subset\mathbb{C}\left(=\mathbb{R}^{2}\right)$
+\end_inset
+
+ נקראת "פתוחה" אם לכל 
+\begin_inset Formula $z_{0}\in S$
+\end_inset
+
+ קיימת סביבה 
+\begin_inset Formula $N_{z_{0}}=\left\{ z\in\mathbb{C}\middle|\left|z-z_{0}\right|<r\right\} $
+\end_inset
+
+ שכולה ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בלשון בני אדם: קבוצה פתוחה היא שטח ללא שפה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קבוצה פתוחה 
+\begin_inset Formula $S\subset\mathbb{C}$
+\end_inset
+
+ "קשירה" 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ לכל שתי נקודות 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ ב
+\begin_inset Formula $S$
+\end_inset
+
+ קיימת מסילה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מ
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ שנשארת כולה בתוך 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום פתוח וקשיר, ותהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ורציפה ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אזי התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+לכל מסילה סגורה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)\mathrm{\, d}z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אינטגרלים של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ על מסילות ב
+\begin_inset Formula $D$
+\end_inset
+
+ תלויים רק בקצוות, ולא במסילה.
+\end_layout
+
+\begin_layout Enumerate
+קיימת ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ פונקציה קדומה: ז.א.
+ קיימת פונקציה 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+, 
+\begin_inset Formula $F'\left(z\right)=f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2\Leftarrow3$
+\end_inset
+
+ נובע מידית ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $1\Leftarrow3$
+\end_inset
+
+ נוכיח באופן דומה.
+ אם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה סגורה ב
+\begin_inset Formula $D$
+\end_inset
+
+, ואם 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ נקודה כלשהי ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+, אפשר להסתכל על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ כמסילה מ
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ עד 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+!
+\begin_inset Newline newline
+\end_inset
+
+נתון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(, ז.א.
+ יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה קדומה 
+\begin_inset Formula $F$
+\end_inset
+
+ לאורך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ לפי המסקנה למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+
+\begin_inset Formula 
+\[
+\int_{\gamma}f\left(z\right)\mathrm{\, d}z=F\left(z_{1}\right)-F\left(z_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2\Leftarrow1$
+\end_inset
+
+ ניקח שתי נקודות כלשהן 
+\begin_inset Formula $z_{1},z_{2}\in D$
+\end_inset
+
+ ושתי מסילות 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+ שהולכות מ
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ עד 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)\mathrm{\, d}\left(z\right)=\int_{\gamma_{2}}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+.
+ אבל המסילה 
+\begin_inset Formula $\gamma_{1}+\left(-\gamma_{2}\right)$
+\end_inset
+
+ היא מסילה סגורה בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ לפי הנתון)
+\numeric on
+1
+\numeric off
+(
+\begin_inset Formula 
+\[
+0=\int_{\gamma_{1}+\left(-\gamma_{2}\right)}f\left(z\right)\mathrm{\, d}z=\int_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z+\int_{-\gamma_{2}}f\left(z\right)\mathrm{\, d}z=\int_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z-\int_{\gamma_{2}}f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+נעביר אגף להסיק: 
+\begin_inset Formula $\int_{\gamma_{1}}f\left(z\right)\mathrm{\, d}z=\int_{\gamma_{2}}f\left(z\right)\mathrm{\, d}z$
+\end_inset
+
+, ז"א 
+\begin_inset Formula $2\Leftarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $3\Leftarrow2$
+\end_inset
+
+ לצורך זה נבחר 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ מסויים ולכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F\left(z\right)=\int_{\gamma}f\left(w\right)\mathrm{\, d}w$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה כלשהי ב
+\begin_inset Formula $D$
+\end_inset
+
+ שהולכת מ
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ עד 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $D$
+\end_inset
+
+ קשיר יש מסילות 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+ שהולכות מ
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ עד ל
+\begin_inset Formula $z$
+\end_inset
+
+, וכיוון שנתון )
+\numeric on
+2
+\numeric off
+( 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ מוגדרת באופן חד-משמעי, כי האינטגרל בלתי תלוי במסילה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $z$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $F'\left(z\right)=f\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נבחר 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ מסויים ונוכיח 
+\begin_inset Formula $F'\left(z\right)=f\left(z\right)$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $z\in D$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+ פתוח יש סביבה 
+\begin_inset Formula $S$
+\end_inset
+
+ של 
+\begin_inset Formula $z$
+\end_inset
+
+ שנשארת כולה ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $\Delta z$
+\end_inset
+
+ קטן כך ש
+\begin_inset Formula $z+\Delta z$
+\end_inset
+
+ נשאר ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+ אנחנו צריכים לחשב
+\begin_inset Formula 
+\[
+\lim_{\Delta z\to0}\cfrac{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}
+\]
+
+\end_inset
+
+כידוע, 
+\begin_inset Formula $F\left(z\right)=\int_{\gamma}f\left(w\right)\mathrm{\, d}w$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ הולכת מ
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ עד 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $\left[z,z+\Delta z\right]$
+\end_inset
+
+ את הקטע הישר מ
+\begin_inset Formula $z$
+\end_inset
+
+ עד 
+\begin_inset Formula $z+\Delta z$
+\end_inset
+
+)שכולו ב
+\begin_inset Formula $D$
+\end_inset
+
+(.
+ נמצא ש
+\begin_inset Formula $\gamma+\left[z,z+\Delta z\right]$
+\end_inset
+
+ מסילה בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+ שהולכת מ
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ עד 
+\begin_inset Formula $z+\Delta z$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+F\left(z+\Delta z\right)=\int_{\gamma+\left[z,z+\Delta z\right]}f\left(w\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+כזכור 
+\begin_inset Formula $F\left(z\right)=\int_{\gamma}f\left(w\right)\mathrm{\, d}w$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+F\left(z+\Delta z\right)-F\left(Z\right)=\int_{\left[z,z+\Delta z\right]}f\left(w\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}=\cfrac{1}{\Delta z}\int_{\left[z,z+\Delta z\right]}f\left(w\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+כעת נעיר ש
+\begin_inset Formula 
+\[
+\int_{\left[z,z+\Delta z\right]}\underbrace{f\left(z\right)\mathrm{\, d}w}_{\textnormal{const}}=\left.f\left(z\right)w\right|_{w=z}^{w=z+\Delta z}=f\left(z\right)\Delta z
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{\Delta z}\int_{\left[z,z+\Delta z\right]}f\left(z\right)\mathrm{\, d}w$
+\end_inset
+
+.
+ נובע:
+\begin_inset Formula 
+\[
+\cfrac{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}-f\left(z\right)=\cfrac{1}{\Delta z}\int_{\left[z,z+\Delta z\right]}\left[f\left(w\right)-f\left(z\right)\right]\mathrm{\, d}w
+\]
+
+\end_inset
+
+כעת נראה שכאשר 
+\begin_inset Formula $\Delta z\to0$
+\end_inset
+
+ אגף ימין)ולכן גם אגף שמאל( שואף לאפס.
+ לצורך זה יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $D$
+\end_inset
+
+ היא רציפה בנקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ ולכן קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left|w-z\right|<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(w\right)-f\left(z\right)\right|<\epsilon$
+\end_inset
+
+.
+ כעת אם 
+\begin_inset Formula $\left|\Delta z\right|<\delta$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $w$
+\end_inset
+
+ בקטע הישר 
+\begin_inset Formula $\left[z,z+\Delta z\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left|w-z\right|<\delta$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $\left|f\left(w\right)-f\left(z\right)\right|<\epsilon$
+\end_inset
+
+.
+ נובע שאם 
+\begin_inset Formula $\left|\Delta z\right|<\delta$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\cfrac{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}-f\left(z\right)\right|=\left|\cfrac{1}{\Delta z}\int_{\left[z,z+\Delta z\right]}\left[f\left(w\right)-f\left(z\right)\right]\mathrm{\, d}w\right|\le\cfrac{1}{\left|\Delta z\right|}ML<\cfrac{1}{\left|\Delta z\right|}\epsilon\qquad\left|\Delta z\right|=\epsilon
+\]
+
+\end_inset
+
+מכאן ש
+\begin_inset Formula 
+\[
+\lim_{\Delta z\to0}\cfrac{F\left(z+\Delta z\right)-F\left(z\right)}{\Delta z}-f\left(z\right)
+\]
+
+\end_inset
+
+קיים ושווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+במילים אחרות, 
+\begin_inset Formula $F'\left(z\right)$
+\end_inset
+
+ קיימת ושווה ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ כיוון שהדבר נכון 
+\bar under
+לכל
+\bar default
+ 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ הוכחנו את הטענה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הוכחנו את הטענה, וגם הוכחנו ש
+\begin_inset Formula $3\Leftarrow2$
+\end_inset
+
+ כי יצרנו פונקציה קדומה 
+\begin_inset Formula $F$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה חשובה
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+ כלשהו ו
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ ונחשב 
+\begin_inset Formula $\oint_{\left|z-z_{0}\right|=r}\cfrac{1}{\left(z-z_{0}\right)^{n}}\mathrm{\, d}z$
+\end_inset
+
+ )
+\begin_inset Formula $r>0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+פתרון ראשון)בלי חכמות(
+\end_layout
+
+\begin_layout Standard
+נעשה פרמטריזציה של המסילה.
+ ובכן אם 
+\begin_inset Formula $\left|z-z_{0}\right|=r$
+\end_inset
+
+ אז 
+\begin_inset Formula $z-z_{0}=re^{i\theta}$
+\end_inset
+
+, וכאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ נתאר את המעגל פעם אחת נגד כיוון השעון.
+ ז.א.
+ הפרמטריזציה הסטנדרטית של המעגל הנתון היא
+\begin_inset Formula 
+\[
+z=z\left(t\right)=z_{0}+re^{it}\qquad0\le t\le2\pi
+\]
+
+\end_inset
+
+לפי זה
+\begin_inset Formula 
+\[
+\mathrm{d}z=ire^{it}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)^{n}=r^{int}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\oint_{\left|z-z_{0}\right|=r}\cfrac{1}{\left(z-z_{0}\right)^{n}}\mathrm{\, d}z=\int_{0}^{2\pi}\cfrac{1}{r^{n}e^{int}}ire^{it}\mathrm{\, d}t
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ קיבלנו
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\cfrac{1}{\cancel{r}\cancel{e^{it}}}i\cancel{r}\cancel{e^{it}}\mathrm{\, d}t=\int_{0}^{2\pi}i\mathrm{\, d}t=2\pi i
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\mathbb{N}\ni n>1$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}ir^{1-n}e^{\left(1-n\right)it}\mathrm{\, d}t=\left.\cancel{i}r^{1-n}\cfrac{e^{\left(1-n\right)it}}{\cancel{i}\left(1-n\right)}\right|_{0=t}^{2\pi=t}=\cfrac{r^{1-n}}{1-n}e^{\left(1-n\right)2\pi i}-\cfrac{r^{1-n}}{1-n}
+\]
+
+\end_inset
+
+וכיוון ש
+\begin_inset Formula $1-n$
+\end_inset
+
+ מספר שלם, 
+\begin_inset Formula $e^{\left(1-n\right)2\pi i}=e^{0}=1$
+\end_inset
+
+, לכן האינטגרל שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון שני
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\cfrac{1}{\left(z-z_{0}\right)^{n}}=\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ היא בעלת פונקציה קדומה 
+\begin_inset Formula $\cfrac{\left(z-z_{0}\right)^{-n+1}}{-n+1}$
+\end_inset
+
+, לכן יכולנו לדעת מראש ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה סגורה כלשהי במישור שאינה מכילה את הנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\int_{\gamma}\cfrac{1}{\left(z-z_{0}\right)^{n}}\mathrm{\, d}z=0\qquad\mathbb{N}\ni n>1
+\]
+
+\end_inset
+
+מצאנו:
+\begin_inset Formula 
+\[
+\oint_{\left|z-z_{0}\right|=r}\cfrac{1}{z-z_{0}}\mathrm{\, d}z=2\pi i
+\]
+
+\end_inset
+
+האינטגרל לא שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כי "הפונקציה הקדומה" היא 
+\begin_inset Formula $\log\left(z-z_{0}\right)$
+\end_inset
+
+ וידוע שזו פונקציה בעייתית.
+\end_layout
+
+\begin_layout Standard
+במקרה פרטי ניקח 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+, 
+\begin_inset Formula $r=1$
+\end_inset
+
+ ונעיין באינטגרל
+\begin_inset Formula 
+\[
+\oint_{\left|z\right|=1}\cfrac{1}{z}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\oint_{\left|z\right|=1}\cfrac{1}{z}\mathrm{\, d}z=\lim_{z_{1},z_{2}\to-1}\int_{z_{1}}^{z_{2}}\cfrac{1}{z}\mathrm{\, d}z
+\]
+
+\end_inset
+
+כאן
+\begin_inset Formula 
+\[
+z_{1}=e^{-i\left(\pi-\epsilon\right)}\qquad z_{2}=e^{i\left(\pi-\epsilon\right)}
+\]
+
+\end_inset
+
+על הקשת מ
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ קיימת ל
+\begin_inset Formula $\left(\cfrac{1}{z}\right)$
+\end_inset
+
+ פונקציה קדומה 
+\begin_inset Formula $\log z$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\int_{z_{1}}^{z_{2}}\cfrac{1}{z}\mathrm{\, d}z=\log z_{2}=\log z_{1}=i\left(\pi-\epsilon\right)-\left(-i\pi+i\epsilon\right)=2\pi i-2i\epsilon
+\]
+
+\end_inset
+
+נשאיף 
+\begin_inset Formula $\epsilon\to0$
+\end_inset
+
+ להסיק 
+\begin_inset Formula $\oint_{\left|z\right|=1}\cfrac{1}{z}\mathrm{\, d}z=2\pi i$
+\end_inset
+
+.
+ קיימנו בצורה מחודשת את נוסחת ניוטון ליבניץ.
+ 
+\begin_inset Formula $\int_{\gamma}\cfrac{1}{z}\mathrm{\, d}z$
+\end_inset
+
+ זה השינוי בפונקציה הקדומה לאורך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הכללה גדולה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה סגורה במישור שאינה מכילה את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ אזי מספר ההקפות של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגד כיוון השעון = 
+\begin_inset Formula $\cfrac{1}{2\pi i}\int_{\gamma}\cfrac{1}{z}\mathrm{\, d}z$
+\end_inset
+
+ =)לפי הגדרה( 
+\begin_inset Formula $\textnormal{Ind}_{\gamma}\left(0\right)$
+\end_inset
+
+)אינדקס של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+כמו כן 
+\begin_inset Formula $\cfrac{1}{2\pi i}\int_{\gamma}\cfrac{1}{z-z_{0}}\mathrm{\, d}z$
+\end_inset
+
+ = מספר ההקפות של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ נגד כיוון השעון =)לפי הגדרה( 
+\begin_inset Formula $\textnormal{Ind}_{\gamma}\left(z_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המטרה הבאה שלנו תהיה להוכיח ש
+\bar under
+בתנאים מסויימים
+\bar default
+ אם נתון ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית ו
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מסילה סגורה אפשר להסיק 
+\begin_inset Formula $\int f\left(z\right)\mathrm{\, d}z=0$
+\end_inset
+
+ מבלי להכיר פונקציה קדומה ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+ המשפט נקרא "משפט קושי" והוא יסוד של כל המשך הקורס.
+\end_layout
+
+\begin_layout Part*
+רקע למשפט קושי
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת בסביבת הנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ וגזירה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $z$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=f\left(z_{0}\right)+f'\left(z_{0}\right)\left(z-z_{0}\right)+\epsilon\left(z\right)\left(z-z_{0}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lim\limits _{z\to z_{0}}\epsilon\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+הנתון אומר 
+\begin_inset Formula $\lim\limits _{z\to z_{0}}\cfrac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=f'\left(z_{0}\right)$
+\end_inset
+
+.
+ לכן אם נגדיר
+\begin_inset Formula 
+\[
+\epsilon\left(z\right)=\cfrac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}-f'\left(z_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+	\lim_{z\to z_{0}}\epsilon\left(z\right)=0
+\]
+
+\end_inset
+
+כעת:
+\begin_inset Formula 
+\[
+\epsilon\left(z\right)\left(z-z_{0}\right)=f\left(z\right)-f\left(z_{0}\right)-f'\left(z_{0}\right)\left(z-z_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=f\left(z_{0}\right)+f'\left(z_{0}\right)\left(z-z_{0}\right)+\epsilon\left(z\right)\left(z-z_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור תחום 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $\partial D$
+\end_inset
+
+ השפה של 
+\begin_inset Formula $D$
+\end_inset
+
+ וב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ הסגור של 
+\begin_inset Formula $D$
+\end_inset
+
+ שהוא 
+\begin_inset Formula $D\cup\partial D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)עקרון החלוקה(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $T$
+\end_inset
+
+ משולש ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ הנתון ע"י הנקודות האמצעיות של הצלעות.
+ נחלק את 
+\begin_inset Formula $T$
+\end_inset
+
+ ל
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משולשים:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  &  & \ar@{-}[lldd]\ar@{-}[rrdd]\\
+ &  &  &  & T_{2}\\
+ &  & \bullet\ar@{-}[rrrr] &  &  &  & \bullet\\
+ &  & T_{3} &  & T_{4} &  & T_{1}\\
+\ar@{-}[rruu]\ar@{-}[rrrr] &  &  &  & \bullet\ar@{-}[lluu]\ar@{-}[rruu] &  &  &  & \ar@{-}[lluu]\ar@{-}[llll]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ורציפה ב
+\begin_inset Formula $\overline{T}$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\oint_{\partial T}f\left(z\right)\mathrm{\, d}z=\sum_{k=1}^{4}\oint_{\partial T_{k}}f\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+זה נכון לכל חלוקה של תחום
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הציור - כל קטע שהוא שפה לשני תחומים, הם בכיוונים הפוכים כאשר מקיפים
+ כל תחום נגד כיוון השעון, ולכן מתבטלים.
+\end_layout
+
+\begin_layout Standard
+יש גם הסבר לדבר - כאשר מקיפים תחום כלשהו "נגד כיוון השעון" רואים את התחום
+ בצד שמאל.
+ כל קטע של 
+\begin_inset Formula $\partial T_{4}$
+\end_inset
+
+ שפה של שני משולשים ועוברים אותו פעמיים, פעם לראות את 
+\begin_inset Formula $T_{4}$
+\end_inset
+
+ בצד שמאל, ופעם לראות משולש אחר 
+\begin_inset Formula $T_{k}$
+\end_inset
+
+ בצד שמאל.
+ בהכרח עוברים אותו בכיוונים הפוכים, והאינטגרל עליו מתבטל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+)משפט קושי במשולש(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $T$
+\end_inset
+
+ משולש במישור.
+ נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית ב
+\begin_inset Formula $\overline{T}$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\int_{\partial T}f\left(z\right)\mathrm{\, d}z=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\partial T}\cfrac{1}{z}\mathrm{\, d}z=2\pi i\neq0
+\]
+
+\end_inset
+
+זה לא סותר את משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כי אף על פי ש
+\begin_inset Formula $\cfrac{1}{z}$
+\end_inset
+
+ אנליטית על 
+\begin_inset Formula $\partial T$
+\end_inset
+
+ היא לא אנליטית ב
+\begin_inset Formula $T$
+\end_inset
+
+ שמכיל את הנקודה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\end_body
+\end_document

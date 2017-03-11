@@ -1,0 +1,860 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מכונת טיורינג לא דטרמיניסטית העוצרת לכל קלט ולכל בחירה ל"ד.
+ סיבוכיות המקום של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא 
+\begin_inset Formula $s:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ הוא האינדקס הגדול ביותר ש
+\begin_inset Formula $M$
+\end_inset
+
+ מגיעה אליו על סרט העבודה שלה לכל קלט מאורך 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל בחירה ל"ד.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור פונקציה 
+\begin_inset Formula $s$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)=\left\{ L\middle|\begin{array}{c}
+\textnormal{There exists a non-deterministice}\\
+\textnormal{turing machine that determines \ensuremath{L}}\\
+\textnormal{in space complexity \ensuremath{s\left(n\right)}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימונים
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L=\bigcup\limits _{c}\textnormal{DSPACE}\left(c\cdot\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $NL=\bigcup\limits _{c}\textnormal{NSPACE}\left(c\cdot\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{PSPACE}=\bigcup\limits _{c}\textnormal{DSPACE}\left(n^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{NPSPACE}=\bigcup\limits _{c}\textnormal{NSPACE}\left(n^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $s\left(n\right)\ge\log n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(s^{2}\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט:
+\begin_inset Formula 
+\[
+\textnormal{PSPACE}=\textnormal{NSPACE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט אימרמן
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $s\left(n\right)\ge\log n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)=\textnormal{coNSPACE}\left(s\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט:
+\begin_inset Formula 
+\[
+\textnormal{NPSPACE}=\textnormal{coNPSPACE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+בעולם של סיבוכיות זמן, יש שתי הגדרות שקולות של 
+\begin_inset Formula $NP$
+\end_inset
+
+.
+ בעולם של סיבוכיות מקום הן לא שקולות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ שתי שפות.
+\end_layout
+
+\begin_layout Standard
+קיימת רדוקציית 
+\begin_inset Formula $s\left(\cdot\right)\textnormal{SPACE}$
+\end_inset
+
+ מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ אם קיימת פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ הניתנת לחישוב בסיבוכיות מקום 
+\begin_inset Formula $s\left(\cdot\right)$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x\in L_{1}\iff f\left(x\right)\in L_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ שפות.
+ הראו שאם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+קיימת רדוקציית 
+\begin_inset Formula $s_{1}\textnormal{SPACE}$
+\end_inset
+
+ מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L_{2}\in\textnormal{\left(N\right)DSPACE}\left(s_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\begin_inset Formula 
+\[
+L_{1}\in\textnormal{\left(N\right)DSPACE}\left(s_{1}+s_{2}'\right)
+\]
+
+\end_inset
+
+עבור
+\begin_inset Formula 
+\[
+s_{2}'=s_{2}\left(2^{s_{1}\left(n\right)+\log s_{1}\left(n\right)}\cdot n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{2}\in\textnormal{DSPACE}\left(s_{2}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת מכונת טיורינג דטרמיניסטית 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ בסיבוכיות מקום 
+\begin_inset Formula $s_{2}\left(\cdot\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל 
+\begin_inset Formula $L_{1}\in\textnormal{DSPACE}\left(s_{1}+s_{2}'\right)$
+\end_inset
+
+, כלומר נבנה מכונט טיורינג דטרמיניסטית 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ בסיבוכיות מקום 
+\begin_inset Formula $s_{1}+s_{2}'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המכונה 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ בהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+חשב את 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+החזר את 
+\begin_inset Formula $M_{2}\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכונות נובעת מהגדרת הרדוקציה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סיבוכיות
+\begin_inset space ~
+\end_inset
+
+מקום
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+צעד
+\begin_inset space ~
+\end_inset
+
+א
+\series default
+: 
+\begin_inset Formula $s_{1}\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+צעד
+\begin_inset space ~
+\end_inset
+
+ב
+\series default
+: 
+\begin_inset Formula $s_{2}\left(\left|y\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\left|y\right|\le2^{s_{1}\left(n\right)+\log s_{1}\left(n\right)}\cdot n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: קיימת רדוקציית 
+\begin_inset Formula $s_{1}\textnormal{SPACE}$
+\end_inset
+
+ מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת מכונת טיורינג שבהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+ מחשבת את 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ תוך שימוש בסיבוכיות מקום 
+\begin_inset Formula $s_{1}\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|f\left(x\right)\right|$
+\end_inset
+
+
+\begin_inset Formula $\ge$
+\end_inset
+
+סיבוכיות הזמן של 
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset Formula $\ge$
+\end_inset
+
+מספר הקונפיגורציות
+\begin_inset Formula $\ge$
+\end_inset
+
+
+\begin_inset Formula $2^{s_{1}\left(n\right)+\log s_{1}\left(n\right)}\cdot n$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לכן, בצעד ב: 
+\begin_inset Formula $s_{2}\left(\left|y\right|\right)\le s_{2}\left(2^{s_{1}\left(n\right)+\log s_{2}\left(n\right)}\cdot n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה"כ: 
+\begin_inset Formula $s_{1}\left(n\right)+s_{2}\left(2^{s_{1}\left(n\right)+\log s_{1}\left(n\right)}\cdot n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו, לכאורה סיימנו, אבל נשים לב שבצעד א' חישבנו את 
+\begin_inset Formula $y$
+\end_inset
+
+ - אבל לא התחשבנו במקום על סרט העבודה שצריך בשביל לרשום את 
+\begin_inset Formula $y$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא שלא באמת כותבים את 
+\begin_inset Formula $y$
+\end_inset
+
+ על סרט העבודה.
+ כשמחשבים את 
+\begin_inset Formula $M_{2}\left(y\right)$
+\end_inset
+
+, אין לנו את 
+\begin_inset Formula $y$
+\end_inset
+
+ בידיים, אלא החישוב מבוצע ביט-ביט.
+ 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ מסתכלת על 
+\begin_inset Formula $y$
+\end_inset
+
+ ביט ביט, ולכן כאשר 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ רוצה לקרוא ביט מסויים, מריצים את 
+\begin_inset Formula $f$
+\end_inset
+
+ עד הנקודה שבה מגיעים לאותו ביט ומפסיקים.
+ ברגע שרוצים את הביט הבא, מריצים את 
+\begin_inset Formula $f$
+\end_inset
+
+ שוב מההתחלה עד שמגיעים אליו.
+\end_layout
+
+\begin_layout Part*
+אלגוריתמים הסתברותיים
+\end_layout
+
+\begin_layout Subsection*
+דוגמה - בדיקת ראשוניות
+\end_layout
+
+\begin_layout Standard
+בהינתן קלט 
+\begin_inset Formula $N$
+\end_inset
+
+, האם 
+\begin_inset Formula $N$
+\end_inset
+
+ ראשוני או לא?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+עובדות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכל מספר ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left\{ 1,\dots p-1\right\} $
+\end_inset
+
+, למשוואה 
+\begin_inset Formula $x^{2}=r^{2}\pmod p$
+\end_inset
+
+ יש בדיוק שני פתרונות:
+\begin_inset Formula $r,-r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל מספר פריק אי-זוגי ולא חזקה של ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left\{ 1,\dots p-1\right\} $
+\end_inset
+
+, למשוואה 
+\begin_inset Formula $x^{2}=r^{2}\pmod p$
+\end_inset
+
+ יש לפחות ארבעה פתרונות
+\begin_inset Formula $\pmod p$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נניח שנתון לנו אלגוריתם 
+\begin_inset Formula $\textnormal{sqrt}$
+\end_inset
+
+: בהינתן קלט מספר ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+ ומספר 
+\begin_inset Formula $s=r^{2}\pmod p$
+\end_inset
+
+, האלגוריתם מחזיר איזשהו פתרון ל
+\begin_inset Formula $x^{2}=s\pmod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה אלגוריתם שמקבל כקלט מספר 
+\begin_inset Formula $N$
+\end_inset
+
+ ומחזיר אם הוא ראשוני או לא:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $N$
+\end_inset
+
+ הוא זוגי או חזקה של ראשוני, החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+בחר בצורה רנדומית 
+\begin_inset Formula $r\in\left\{ 1,\dots N-1\right\} $
+\end_inset
+
+ וחשב 
+\begin_inset Formula $s=r^{2}\pmod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $r'=\textnormal{sqrt}\left(N,s\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

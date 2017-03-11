@@ -1,0 +1,1328 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אלגברה לינארית של מודולים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מודול מעל חוג 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $T\subseteq M$
+\end_inset
+
+ 
+\bar under
+פורשת
+\bar default
+ את 
+\begin_inset Formula $M$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $y\in M$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $x_{1},\dots x_{n}\in T$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha_{1},\dots\alpha_{n}\in R$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=\alpha_{1}x_{1}+\dots+\alpha_{n}x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: 
+\begin_inset Formula $T$
+\end_inset
+
+ יכולה להיות קבוצה אינסופית, אבל חייבים לבחור בכל פעם מספר סופי של 
+\begin_inset Formula $x$
+\end_inset
+
+ים ו
+\begin_inset Formula $\alpha$
+\end_inset
+
+ות.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $R$
+\end_inset
+
+ שדה, שחזרנו את ההגדרה המוכרת.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מודול שיש לו קבוצה פורשת סופית נקרא "מודול סופי")"מודול נוצר סופית"(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $x_{1},\dots x_{n}\in M$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $y\in M$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $\alpha_{1},\dots\alpha_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=\alpha_{1}x_{1}+\dots\alpha_{n}x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $x_{1},\dots x_{n}\in M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $M=Rx_{1}+\dots+Rx_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מודול מעל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x\in M$
+\end_inset
+
+, 
+\begin_inset Formula $Rx=\left\{ \alpha x\middle|\alpha\in R\right\} $
+\end_inset
+
+ הוא תת-מודול.
+ נקרא תת-מודול 
+\bar under
+ציקלי
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ נקרא 
+\bar under
+מודול ציקלי
+\bar default
+ אם קיים 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש
+\begin_inset Formula $M=Rx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+]כאשר 
+\begin_inset Formula $R=\mathbb{Z}$
+\end_inset
+
+, מודול ציקלי=חבורה ציקלית[
+\end_layout
+
+\begin_layout Subsection*
+לכן
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x_{1},\dots x_{n}\in M$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Rx_{1}+Rx_{2}+\dots+Rx_{n}\subseteq M$
+\end_inset
+
+ = תת המודול הנפרש ע"י 
+\begin_inset Formula $x_{1},\dots x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתבונן ב
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ כמודול מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $x_{1},\dots x_{n}\in\mathbb{Q}$
+\end_inset
+
+: לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+x_{i}=\cfrac{a_{i}}{b_{i}}\qquad a_{i},\underbrace{b_{i}}_{\neq0}\in\mathbb{Z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\mathbb{Z}x=\sum\mathbb{Z}\cfrac{a_{i}}{b_{i}}\subseteq\sum\mathbb{Z}\cfrac{1}{b_{i}}\subseteq\mathbb{Z}\cdot\cfrac{1}{b_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ובצורה יותר מדויקת:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $b$
+\end_inset
+
+ מכנה משותף מקסימלי)=כפולה משותפת מינימלית( של המכנים 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+.
+ אפשר לכתוב 
+\begin_inset Formula $x_{i}=\cfrac{a_{i}}{b_{i}}=\cfrac{a_{i}'}{b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $a$
+\end_inset
+
+ את המחלק המשותף המקסימלי של ה
+\begin_inset Formula $a_{i}'$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\underbrace{\sum\mathbb{Z}x_{i}}_{\begin{array}{c}
+\textnormal{the module}\\
+\textnormal{spanned by}\\
+\textnormal{the }x\textnormal{es}
+\end{array}}=\sum\mathbb{Z}\cfrac{a_{i}'}{b}=\cfrac{1}{b}\left(\sum\mathbb{Z}a_{i}'\right)=\cfrac{1}{b}\mathbb{Z}a=\mathbb{Z}\cdot\cfrac{a}{b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הוכחנו שכל תת-מודול נוצר סופית של 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ הוא ציקלי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $\mathbb{Z}\cfrac{3}{8}+\mathbb{Z}\cfrac{1}{6}=\mathbb{Z}\cfrac{9}{24}+\mathbb{Z}\cfrac{4}{24}=\mathbb{Z}\cfrac{1}{24}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ אינו ציקלי, כי לכל 
+\begin_inset Formula $\cfrac{a}{b}\in\mathbb{Q}$
+\end_inset
+
+, 
+\begin_inset Formula $\cfrac{1}{2b}\notin\mathbb{Z}\cdot\cfrac{a}{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ לא נוצר סופית.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ נפרש על ידי המספרים
+\begin_inset Formula 
+\[
+1,\cfrac{1}{2},\cfrac{1}{6},\cfrac{1}{24},\cfrac{1}{120},\dots\cfrac{1}{n!},\dots
+\]
+
+\end_inset
+
+שכן
+\begin_inset Formula 
+\[
+\cfrac{a}{b}=\cfrac{a\left(b-1\right)!}{b!}
+\]
+
+\end_inset
+
+למעשה, בכל שלב 
+\begin_inset Formula $\cfrac{1}{n!}$
+\end_inset
+
+ פורש את כל הקודמים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\subseteq M$
+\end_inset
+
+ בלתי תלויה אם לכל 
+\begin_inset Formula $x_{1},\dots x_{n}\in T$
+\end_inset
+
+ שונים, אם 
+\begin_inset Formula $\sum\alpha_{i}x_{i}=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\forall_{i}\alpha_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בפרט, 
+\begin_inset Formula $T\left\{ x_{1},\dots x_{n}\right\} $
+\end_inset
+
+ב"ת אם 
+\begin_inset Formula $\sum\alpha_{i}x_{i}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{i}\alpha_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ כמודול מעל עצמה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+ פורשת ב"ת
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ 2\right\} $
+\end_inset
+
+ לא פורשת ב"ת
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ 2,3\right\} $
+\end_inset
+
+ פורשת תלויה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ 4,6\right\} $
+\end_inset
+
+ לא פורשת תלויה
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ חוג קומוטטיבי כלשהו, 
+\begin_inset Formula $R$
+\end_inset
+
+ מודול מעל עצמו.
+\end_layout
+
+\begin_layout Standard
+בכל קבוצה ב"ת יש לכל היותר איבר אחד:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a,b\in T$
+\end_inset
+
+, 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(-b\right)a+a\cdot b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\bar under
+מודול מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\bar default
+ כך ש
+\begin_inset Formula $nA=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_layout Standard
+)כלומר 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\bar under
+חבורה אבלית
+\bar default
+ עם 
+\begin_inset Formula $\textnormal{exp}A\mid0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $n\cdot a=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ תלויה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בסיס של מודול 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא קבוצה פורשת וב"ת.
+\end_layout
+
+\begin_layout Standard
+מודול שיש לו בסיס נקרא 
+\bar under
+מודול חופשי
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+לדוגמה, מעל שדה, כל מודול הוא חופשי.
+\end_layout
+
+\begin_layout Standard
+מעל 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $\unitfrac{\mathbb{Z}}{8\mathbb{Z}}$
+\end_inset
+
+ אינו חופשי)אין קבוצה
+\begin_inset Formula $\emptyset\neq$
+\end_inset
+
+ ב"ת(.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ חוג.
+ 
+\begin_inset Formula $R^{n}=\left\{ \begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}\middle|x_{i}\in R\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר להפוך את 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ למודול מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ על ידי חיבור רכיבים והכפל 
+\begin_inset Formula $\alpha\cdot\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}=\begin{pmatrix}\alpha x_{1}\\
+\vdots\\
+\alpha x_{n}
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתוך 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $e_{i}=\begin{pmatrix}0\\
+\vdots\\
+0\\
+1\\
+0\\
+\vdots\\
+0
+\end{pmatrix}\gets i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\left\{ e_{1},\dots e_{n}\right\} $
+\end_inset
+
+ הוא בסיס של 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: יהי 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}\in R^{n}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\sum x_{i}e_{i}=\sum x_{i}\begin{pmatrix}0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{pmatrix}=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+מדוע הקבוצה ב"ת? אם 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}\in\sum x_{i}e_{i}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{i}x_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר, 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ הוא מודול חופשי.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל מודול בעל בסיס בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ איזומורפי ל
+\begin_inset Formula $\boxed{R^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מודול עם בסיס 
+\begin_inset Formula $\left\{ b_{1},\dots b_{n}\right\} $
+\end_inset
+
+.
+ נוכיח 
+\begin_inset Formula $M\cong R^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה איזומורפיזם 
+\begin_inset Formula $R^{n}\to M$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{pmatrix}\mapsto\sum x_{i}b_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ההעתקה שומרת חיבור וכפל בסקלר:
+\begin_inset Formula 
+\[
+\varphi\left(\alpha\cdot\vec{x}\right)=\varphi\begin{pmatrix}\alpha x_{1}\\
+\vdots\\
+\alpha x_{n}
+\end{pmatrix}=\sum\left(\alpha x_{i}\right)b_{i}=\sum\alpha\left(x_{i}b_{i}\right)=\alpha\cdot\sum x_{i}b_{i}=\alpha\cdot\varphi\left(\vec{x}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varphi$
+\end_inset
+
+ חח"ע כי 
+\begin_inset Formula $\left\{ b_{1},\dots b_{n}\right\} $
+\end_inset
+
+ב"ת.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varphi$
+\end_inset
+
+ על כי 
+\begin_inset Formula $\left\{ b_{1},\dots b_{n}\right\} $
+\end_inset
+
+ פורשת.
+\end_layout
+
+\begin_layout Section*
+דוגמה למודול חופשי שגודל הבסיס שלו אינו מוגדר היטב
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה, ויהי 
+\begin_inset Formula $V$
+\end_inset
+
+ המ רחב הוקטורי של סדרות ב
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V=\left\{ \left(\alpha_{1},\alpha_{2},\dots\right)\right\} 
+\]
+
+\end_inset
+
+}העתקה לינארית 
+\begin_inset Formula $R=\textnormal{End}\left(V\right)=\{T:V\to V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמודול מעל עצמו, 
+\begin_inset Formula $R\cong R^{1}$
+\end_inset
+
+, כלומר יש ל
+\begin_inset Formula $R$
+\end_inset
+
+ בסיס: 
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+H\left(\alpha_{0},\alpha_{1},\alpha_{2},\dots\right)=\left(\alpha_{0},\alpha_{2},\alpha_{4},\dots\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S\left(\alpha_{0},\alpha_{1},\dots\right)=\left(0,\alpha_{0},\alpha_{1},\dots\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S'\left(\alpha_{0},\alpha_{1},\dots\right)=\left(\alpha_{1},\alpha_{2},\dots\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D\left(\alpha_{0},\alpha_{1},\alpha_{2},\dots\right)=\left(\alpha_{0},0,\alpha_{1},0,\alpha_{2},0,\dots\right)
+\]
+
+\end_inset
+
+מתקיים:
+\begin_inset Formula 
+\[
+HD=S'S=1
+\]
+
+\end_inset
+
+נגדיר איזומורפיזם של מודולים 
+\begin_inset Formula $R^{2}\to R$
+\end_inset
+
+ ע"י 
+\begin_inset Formula 
+\[
+\psi:\begin{pmatrix}T_{1}\\
+T_{2}
+\end{pmatrix}\mapsto T_{1}D+T_{2}DS
+\]
+
+\end_inset
+
+ברור שזה הומומורפיזם:
+\begin_inset Formula 
+\[
+\psi\left(T'\begin{pmatrix}T_{1}\\
+T_{2}
+\end{pmatrix}\right)=\psi\begin{pmatrix}T'T_{1}\\
+T'T_{2}
+\end{pmatrix}=T'T_{1}D+T'T_{2}DS=T'\psi\begin{pmatrix}T_{1}\\
+T_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+וכנ"ל עבור חיבור.
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $\psi$
+\end_inset
+
+ חח"ע ועל.
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\psi\begin{pmatrix}T_{1}\\
+T_{2}
+\end{pmatrix}=0$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\left(\alpha_{1},\dots\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(T_{1}H+T_{2}HS\right)\left(\vec{\alpha}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(T_{1}H+T_{2}HS\right)=T_{1}\left(\alpha_{0},\alpha_{2},\alpha_{4},\dots\right)+T_{2}\left(\alpha_{1},\alpha_{3},\alpha_{5},\dots=0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $T_{1}=T_{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת יהי 
+\begin_inset Formula $T\in R$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+T_{1}H+T_{2}HS'=T
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $\begin{array}{c}
+T_{1}=TD\\
+T_{2}=TSD
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\psi\begin{pmatrix}TD\\
+TSD
+\end{pmatrix}=TDH+TSDHS'=T\left(DH+SDHS'\right)=T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ למודול 
+\begin_inset Formula $R$
+\end_inset
+
+ יש:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בסיס בין איבר בודד, 
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בסיס בן שני איברים, 
+\begin_inset Formula $\left\{ H,HS'\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כביכול 
+\begin_inset Formula $R$
+\end_inset
+
+ גם ממימד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וגם ממימד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $M\cong R^{n}$
+\end_inset
+
+ כמודולים מעל 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $I\lhd R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula 
+\[
+\unitfrac{M}{IM}\cong\left(\unitfrac{R}{I}\right)^{n}
+\]
+
+\end_inset
+
+כמודולים מעל 
+\begin_inset Formula $\unitfrac{R}{I}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\varphi:M\to R^{n}$
+\end_inset
+
+ האיזומורפיזם הנתון.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $M\to\left(\unitfrac{R}{I}\right)^{n}$
+\end_inset
+
+ על ידי 
+\begin_inset Formula $v\mapsto\varphi\left(v\right)\mod I^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ חוג 
+\bar under
+קומוטטיבי
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+אז לכל מודול חופשי)עם בסיס סופי( יש מימד מוגדר היטב.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P\lhd R$
+\end_inset
+
+ אידיאל מקסימלי.
+ מכיוון ש
+\begin_inset Formula $R$
+\end_inset
+
+ קומוטטיבי, 
+\begin_inset Formula $\unitfrac{R}{P}$
+\end_inset
+
+ 
+\bar under
+שדה
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $M^{n}\cong R^{n}$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+\unitfrac{M}{PM}\cong\left(\unitfrac{R}{P}\right)^{n}
+\]
+
+\end_inset
+
+כמרחב וקטורי, שם המימד, 
+\begin_inset Formula $n$
+\end_inset
+
+, מוגדר היטב.
+\end_layout
+
+\end_body
+\end_document

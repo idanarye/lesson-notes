@@ -1,0 +1,845 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+דקדוקים
+\end_layout
+
+\begin_layout Section*
+הגדרה של דקדוק רגולארי
+\end_layout
+
+\begin_layout Itemize
+לינארי ימני - 
+\begin_inset Formula $A\to aB|a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לינארי שמאלי: 
+\begin_inset Formula $A\to Ba|a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אך לא שילוב של השניים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L$
+\end_inset
+
+ מתקבלת ע"י דקדוק רגולארי, אז קיים אוטומט 
+\begin_inset Formula $A$
+\end_inset
+
+ שמקבל אותה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L$
+\end_inset
+
+ מתקבלת ע"י אוטומט, אז קיים דקדוק רגולארי שמקבל אותה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נתון
+\series default
+: 
+\begin_inset Formula $A=\left(Q,\Sigma,q_{0},\delta,F\right)$
+\end_inset
+
+ אוטומט סופי דטרמיניסטי מלא
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נבנה
+\series default
+: 
+\begin_inset Formula $G=\left(V,T,S,P\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\left\{ v_{i}\middle|q_{i}\in Q\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\Sigma
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=v_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\delta\left(q,\sigma\right)=p$
+\end_inset
+
+ נגדיר כלל גזירה מתאים ל
+\begin_inset Formula $P$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\delta\left(q_{i},\sigma\right)=q_{j}\Rightarrow v_{i}\to\sigma v_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $q\in F$
+\end_inset
+
+ אז נוסיף את הכלל
+\begin_inset Formula 
+\[
+v_{i}\to\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varepsilon\in L\left(A\right)$
+\end_inset
+
+ אז נוסיף 
+\begin_inset Formula 
+\[
+v_{0}\to\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+סגירות
+\end_layout
+
+\begin_layout Section*
+הוכח/הפרך
+\end_layout
+
+\begin_layout Standard
+שפת המילים המינימלית של 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולארית בהינתן 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולארית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: שפת המילים המינימלית מכילה את כל ה
+\begin_inset Formula $w\in L$
+\end_inset
+
+ כך שלא קיימת רישא אמיתית שלהן שגם נמצאת ב
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נשנה את המצבים המקבלים כך שלא יהיה אפשר לצאת מהם.
+\end_layout
+
+\begin_layout Section*
+הוכח/הפרך
+\end_layout
+
+\begin_layout Standard
+שפת המילים המקסימליות של 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולארי בהינתן 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולארית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: שפת המילים המקסימליות היא כל 
+\begin_inset Formula $w$
+\end_inset
+
+ כך שלא קיימת 
+\begin_inset Formula $x\in\Sigma^{+}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w\cdot x\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $A$
+\end_inset
+
+ המקבל את 
+\begin_inset Formula $L$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left\langle Q,\Sigma,q_{0},\delta,F\right\rangle 
+\]
+
+\end_inset
+
+נשנה את 
+\begin_inset Formula $F$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+F'=\left\{ q\middle|q\in F,\nexists_{x\in\Sigma^{+}}\delta\left(q,x\right)\in F\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אוטומט מחסנית
+\end_layout
+
+\begin_layout Itemize
+לאוטומט יש לוגיקה, והוא יכול לזכור)באמצעות המצבים(.
+ הזיכרון שלו סופי.
+\end_layout
+
+\begin_layout Itemize
+מחסנית יכולה רק לזכור.
+ הזיכרון שלה אינסופי, אבל בכל פעם אפשר לגשת רק לאיבר אחד - זה שבראש המחסנית.
+\end_layout
+
+\begin_layout Standard
+באמצעות שילוב שלהם - אוטומט מחסנית - ניתן לקבל דקדוקים חסרי הקשר.
+\end_layout
+
+\begin_layout Section*
+דוגמה לקבלת שפה 
+\begin_inset Formula $a^{n}b^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(ld,lu)^{\begin{array}{c}
+a\\
+\textnormal{push }A
+\end{array}}\ar[rr]^{\begin{array}{c}
+\textnormal{pop }A\\
+b
+\end{array}}\ar[rdd]_{\varepsilon\wedge\textnormal{stack empty}} &  & *++[o][F]{q_{1}}\ar@(ru,rd)^{\begin{array}{c}
+b\\
+\textnormal{pop }A
+\end{array}}\ar[ldd]^{\varepsilon\wedge\textnormal{stack empty}}\\
+\\
+ &  & *++[o][F=]{q_{2}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה פורמלית
+\end_layout
+
+\begin_layout Standard
+אוטומט מחסנית הוא שביעיה
+\begin_inset Formula 
+\[
+M=\left\langle Q,\Sigma,\mu,q_{0},\dashv,\delta,F\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Q$
+\end_inset
+
+ קבוצת המצבים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ הא"ב של הקלט
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu$
+\end_inset
+
+ אותיות א"ב של המחסנית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dashv$
+\end_inset
+
+ תו פתיחה שנמצא בראש המחסנית לפני תחילת הקריאה.
+ 
+\begin_inset Formula $\dashv\in\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אפשר לחשוב על 
+\begin_inset Formula $\dashv$
+\end_inset
+
+ כעל הקפיץ של המחסנית - אם מוציאים אותו, המחסנית נתקעת ואי אפשר להשתמש בה
+ יותר.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\delta$
+\end_inset
+
+ פונקציית מצבים 
+\begin_inset Formula $\delta:Q\times\sum\cup\left\{ \epsilon\right\} \times\mu\to P\left(Q\times\mu^{*}\right)$
+\end_inset
+
+)הערה: זה אומר שאפשר להכניס הרבה דברים למחסנית בבת אחת, אבל להוציא - אפשר
+ רק את הראש(.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ מצבים מקבלים
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+שפת אוטומט המחסנית
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר שני אופני קבלה:
+\end_layout
+
+\begin_layout Enumerate
+בשיטת מצבים מקבלים:
+\begin_inset Formula 
+\[
+L_{F}=\left\{ w\middle|\begin{array}{c}
+\delta\left(q_{0},w,\dashv\right)=\left(q_{F},\alpha\right)\\
+q_{F}\in F,\alpha\in\mu^{*}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אם במהלך קריאת המילה המחסנית התרוקנה לחלוטין)כולל 
+\begin_inset Formula $\dashv$
+\end_inset
+
+( אז אנו נתקעים והמילה לא תתקבל.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שיטת ריקון מחסנית:
+\begin_inset Formula 
+\[
+L_{C}=\left\{ w\middle|\delta\left(q_{0},w,\dashv\right)=\left(q,\varepsilon\right)\right\} 
+\]
+
+\end_inset
+
+)כלומר מגיעים למצב ומחסנית ריקה(
+\end_layout
+
+\begin_layout Section*
+פעולות על מחסנית
+\end_layout
+
+\begin_layout Subsection*
+הוצאה)
+\lang english
+pop
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(q,a,A\right)=\left(p,\varepsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מתחילים במצב 
+\begin_inset Formula $q$
+\end_inset
+
+, קוראים 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\bar under
+והוצאנו
+\bar default
+ את ראש המחנית שהיה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מגיעים למצב 
+\begin_inset Formula $p$
+\end_inset
+
+, ודוחפים 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ לראש המחסנית
+\end_layout
+
+\begin_layout Subsection*
+ללא שינוי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(q,a,A\right)=\left(p,A\right)
+\]
+
+\end_inset
+
+כאן אנו דוחפים את 
+\begin_inset Formula $A$
+\end_inset
+
+ בחזרה למחסנית.
+\end_layout
+
+\begin_layout Subsection*
+הכנסה)
+\lang english
+push
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(q,a,A\right)=\left(p,\underleftarrow{BA}\right)
+\]
+
+\end_inset
+
+דוחפים את 
+\begin_inset Formula $A$
+\end_inset
+
+ למחסנית, ואחריו דוחפים את 
+\begin_inset Formula $B$
+\end_inset
+
+ - כך ש
+\begin_inset Formula $B$
+\end_inset
+
+ הוא ראש המחסנית החדש.
+\end_layout
+
+\begin_layout Standard
+אפשר גם להכניס יותר מאיבר אחד:
+\begin_inset Formula 
+\[
+\delta\left(q,a,A\right)=\left(p,\underleftarrow{DCBA}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+החלפה של ראש מחסנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(q,a,A\right)=\left(p,B\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נחזור לדוגמה 
+\begin_inset Formula $a^{n}b^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב את האוטומט בשיטת מצבים מקבלים, לפי ההגדרה והסימנים החדשים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=\left\{ \dashv,A\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(ld,lu)^{\begin{array}{c}
+a,\dashv|A\dashv\\
+a,A|AA
+\end{array}}\ar[rr]^{b,A|\varepsilon}\ar[rdd]_{\varepsilon,\dashv|\dashv} &  & *++[o][F]{q_{1}}\ar@(ru,rd)^{b,A|\varepsilon}\ar[ldd]^{\varepsilon,\dashv|\dashv}\\
+\\
+ &  & *++[o][F=]{q_{2}}
+}
+\]
+
+\end_inset
+
+נכתוב את האוטומט בשיטת ריקון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(rd,ld)^{\begin{array}{c}
+a,\dashv|A\\
+a,A|AA
+\end{array}}\ar[r]^{b,A|\varepsilon} & *++[o][F]{\,}\ar@(rd,ld)^{b,A|\varepsilon}
+}
+\]
+
+\end_inset
+
+נשים לב שאנחנו לא דוחפים את 
+\begin_inset Formula $\dashv$
+\end_inset
+
+ בחזרה - כי המחסנית חייבת להיות ריקה לגמרי בשביל לקבל.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בנו אוטומט מחסנית לקבלת
+\begin_inset Formula 
+\[
+L=\left\{ a^{n}b^{m}c^{n+m}\right\} 
+\]
+
+\end_inset
+
+בשיטת ריקון
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(ld,lu)^{\begin{array}{c}
+a,\dashv|A\\
+a,A|AA
+\end{array}}\ar[rr]^{\begin{array}{c}
+b,\dashv|A\\
+b,A|A
+\end{array}}\ar[rd]_{c,A|A} &  & *++[o][F]{q_{1}}\ar@(ru,rd)^{\begin{array}{c}
+b,\dashv|A\\
+b,A|AA
+\end{array}}\ar[ld]^{c,A|\varepsilon}\\
+ &  & *++[o][F]{q_{2}}\ar@(rd,ld)^{c,A|\varepsilon}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לכתוב את האוטמט בצורה קצת שונה, ע"י הגדרת הא"ב של המחסנית - ובתמורה
+ נקבל הקטנה במספר המצבים:
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(ld,lu)^{\begin{array}{c}
+\varepsilon,\dashv|\varepsilon\\
+a,\dashv|A\\
+a,A|AA\\
+b,\dashv|B\\
+b,A|BA\\
+b,B|BB
+\end{array}}\ar[rr]_{c,B|\varepsilon}^{c,A|\varepsilon} &  & *++[o][F]{}\ar@(ru,rd)^{\begin{array}{c}
+c,A|\varepsilon\\
+c,B|\varepsilon
+\end{array}}
+}
+\]
+
+\end_inset
+
+השתמשנו במחסנית בשביל לזכור מצבים, במקום במצבים עצמם.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\left\{ w\middle|\begin{array}{c}
+\#_{a}\left(w\right)=\#_{b}\left(w\right)\\
+\forall_{x\textnormal{ prefix of }w}\#_{a}\left(x\right)\ge\#_{b}\left(x\right)
+\end{array}\right\} 
+\]
+
+\end_inset
+
+בנו אוטומט מחסנית המקבל את 
+\begin_inset Formula $L$
+\end_inset
+
+ באמצעות אוטומט עם 
+\bar under
+מצב אחד בלבד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@(ru,rd)
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

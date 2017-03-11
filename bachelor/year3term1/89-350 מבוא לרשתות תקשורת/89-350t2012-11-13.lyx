@@ -1,0 +1,1946 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+לספק ניתנו כתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+ 
+\begin_inset Formula $128.20.224.0/20$
+\end_inset
+
+.
+ יש להקצות ל
+\numeric on
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לקוחות:
+\begin_inset Formula 
+\[
+\begin{array}{c|c}
+a & 500\\
+b & 250\\
+c & 1000\\
+d & 250\\
+e & 500\\
+f & 1000\\
+g & 250
+\end{array}
+\]
+
+\end_inset
+
+עם מספק מינימלי של נתבים, לכל נתב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממשקים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  & Internet\ar@{-}[d]\\
+c &  & \bigotimes\ar@{-}[ll]_{128.20.224.0/22}\ar@{-}[rr]^{128.20.232.0/22}\ar@{-}[dd]^{128.20.240.0/21} &  & f\\
+\\
+a &  & \bigotimes\ar@{-}[ll]_{128.20.240.0/23}\ar@{-}[rr]^{128.20.244.0/23}\ar@{-}[dd]^{128.20.248.0/22} &  & e\\
+\\
+b &  & \bigotimes\ar@{-}[ll]_{128.20.248.0/24}\ar@{-}[dd]^{128.20.250.0/24}\ar@{-}[rr]^{128.20.252.0/24} &  & g\\
+\\
+ &  & d
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Wireshark
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Wireshark
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא תוכנה שמאפשרת להאזין לחבילות.
+ היא מאפשרת להציג רשימה של כל חבילה שנשלחת מכרטיס הרשת או מתקבלת דרכו.
+\end_layout
+
+\begin_layout Standard
+דרך התוכנה הזו ניתן לראות שרשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Wireless
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתפקדת כ
+\lang english
+Hub
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כולם משדרים לכולם, וכל אחד יכול לקלוט לכל מה שהאחרים משדרים.
+ זה אומר גם שאפשר לראות סיסמאות שאחרים שולחים כדי להתחבר לאתרי אינטרנט -
+ אלא אם כן הם שולחים אותם בצורה מוצפנת)למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+https
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+DHCP
+\end_layout
+
+\begin_layout Standard
+אפשר לראות שם גם את החבילות שנשלחות לשרת ה
+\lang english
+DHCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר בקשות לקבלת כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+ החבילות האלו נשלחות לכתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+ 
+\begin_inset Formula $255.255.255.255$
+\end_inset
+
+ - כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Broadcast
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שזה אומר לשלוח לכל הרשת.
+ אמנם כל המחשבים רואים את כל החבילות, אבל מחשבים בד"כ מתעלמים מחבילות שלא
+ מיועדות אליהם.
+\end_layout
+
+\begin_layout Standard
+חבילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DHCP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא תמיד באותו מבנה.
+ ההודעה הראשונה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Discover
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מחשב הלקוח מחפש את שרת ה
+\lang english
+DHCP
+\lang hebrew
+.
+ מחשב ששולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Discover
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולח מ
+\lang english
+IP
+\lang hebrew
+ 
+\begin_inset Formula $0.0.0.0$
+\end_inset
+
+ - כי עדיין אין לו כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+ לכן הוא גם שולח את כתובת ה
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו, כדי שיהיה אפשר להבחין בין מחשבים חדשים שונים הרוצים להתחבר לרשת.
+ השרת שולח בחזרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Offer
+\lang hebrew
+, ואז המחשב שולח לו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Request
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לבקש כתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+ השרת שולח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ack
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Address Resolution Protocol(ARP)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מטרה
+\series default
+: תרגום בין כתובות פיזיות לכתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+בשביל לשלוח באותה רשת, מחשבים צריכים לדעת מה הכתובת הפיסית של מחשב היעד.
+ לכן נרצה לתרגם בין כתובות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכתובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+.
+ ב
+\lang english
+ARP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולחים את כתובת ה
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואת כתובת ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלי, ואת כתובת ה
+\lang english
+MAC
+\lang hebrew
+ ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של המחשב המבוקש.
+ אם לא יודעים את כתובת ה
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של המחשב המבוקש - אז שולחים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAC
+\lang hebrew
+ 
+\begin_inset Formula $00:00:00:00:00:00$
+\end_inset
+
+, ואם לא יודעים את כתובת ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שולחים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+IP
+\lang hebrew
+ 
+\begin_inset Formula $0.0.0.0$
+\end_inset
+
+.
+ המחשב שמתאים לכתובת שנשלחה שולח בחזרה את התשובה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+יש לנו רשת:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar@{-}[r] & *++[F]{\textnormal{Switch}}\ar@{-}[r]\ar@{-}[d] & \bigotimes\ar@{-}[r] & *++[o][F]{C}\\
+ & *++[o][F]{B}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנתונים של מחשב 
+\begin_inset Formula $A$
+\end_inset
+
+ הם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c}
+Device & MAC\, Address & IP & Network\, Address\\
+\hline A & AA:AA:AA:AA:AA:AA & 1.2.3.4 & 1.2.3.16/28
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המחשב 
+\begin_inset Formula $A$
+\end_inset
+
+ לא ברשת! כי כתובת הרשת היא 
+\begin_inset Formula $\textnormal{AND}\left\{ \begin{array}{c}
+00010000\\
+11111100
+\end{array}\right.=00010000=16$
+\end_inset
+
+ ואילו כתובת הרשת של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\textnormal{AND}\left\{ \begin{array}{c}
+00000100\\
+11111100
+\end{array}\right.=00000100=4$
+\end_inset
+
+.
+ כדי שהמחשב יהיה ברשת, צריך או לשנות את כתובת המחשב או להקטין את ה
+\lang english
+Subnet Mask
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - למשל ל
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+24
+\numeric off
+, ואז 
+\begin_inset Formula $\textnormal{AND}\left\{ \begin{array}{c}
+00000100\\
+11000000
+\end{array}\right.=0=\textnormal{AND}\left\{ \begin{array}{c}
+00010000\\
+11000000
+\end{array}\right.$
+\end_inset
+
+.
+ נבחר את האופציה השנייה, וניתן כתובות גם לשאר המכשירים:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c}
+Device & MAC\, Address & IP & Network\, Address\\
+\hline A & AA:AA:AA:AA:AA:AA & 1.2.3.4 & 1.2.3.0/24\\
+B & BB:BB:BB:BB:BB:BB & 1.2.3.16 & 1.2.3.0/24\\
+\bigotimes(With\, A\, and\, B) & DD:DD:DD:DD:DD:DD & 1.2.3.1\\
+\bigotimes(With\, C) & DD:DD:DD:DD:DD:DD & 7.6.128.33\\
+C & CC:CC:CC:CC:CC:CC & 7.6.128.35 & 7.6.128.32/30
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה כאשר מחשב 
+\begin_inset Formula $A$
+\end_inset
+
+ רוצה לשלוח חבילה ל
+\begin_inset Formula $C$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+בעזרת בדיקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Subnet Mask
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מגלים שכתובת ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $C$
+\end_inset
+
+ לא ברשת של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $A$
+\end_inset
+
+ מחפש את ה
+\lang english
+Gateway
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר את הנתב.
+ הוא יודע את כתובת ה
+\lang english
+IP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הנתב, אבל הוא צריך לדעת מה הכתובות הפיסית שלו, ולכן הוא שולח חבילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ARP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\lang english
+Broadcast
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי למצוא את הכתובת הפיסית של 
+\begin_inset Formula $1.2.3.1$
+\end_inset
+
+ - זה בכלל לא קשור ל
+\begin_inset Formula $C$
+\end_inset
+
+! אבל צריך לעבור דרך ה
+\lang english
+Gateway
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשביל להגיע ל
+\begin_inset Formula $C$
+\end_inset
+
+.
+ הבקשה מגיעה לכל המכשירים ברשת)כלומר 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\lang english
+Switch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והנתב(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל רק הנתב מחזיר לו תשובה: 
+\begin_inset Formula $DD:DD:DD:DD:DD:DD$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $A$
+\end_inset
+
+ שולח ל
+\begin_inset Formula $\bigotimes$
+\end_inset
+
+ חבילה שמיועדת ל
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\bigoplus$
+\end_inset
+
+ בודק אם החבילה איתו ברשת - את הבדיקה הוא מבצע לפי כרטיס הרשת שקיבל את החבילה,
+ כלומר זה שמחובר לרשת 
+\begin_inset Formula $1.2.3.0/24$
+\end_inset
+
+.
+ הוא רואה שהיא לא שם, ולכן הוא בודק בכרטיסי הרשת האחרים שלו לאן לשלוח.
+\end_layout
+
+\begin_layout Section*
+מה קורה אם יש הבדלים ב
+\lang english
+Subnet Mask
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Standard
+אם מחשב ונתב משתמשים ב
+\lang english
+Subnet Mask
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר, אז יכולות להיות בעיות.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ חושב ש
+\begin_inset Formula $C$
+\end_inset
+
+ איתו ברשת ו
+\begin_inset Formula $\bigotimes$
+\end_inset
+
+ חושב שלא, יכולות להיזרק חבילות - כי 
+\begin_inset Formula $A$
+\end_inset
+
+ ינסה למצוא את כתובת ה
+\lang english
+MAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $C$
+\end_inset
+
+ באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ARP
+\lang hebrew
+ ולא יצליח.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ חושב ש
+\begin_inset Formula $C$
+\end_inset
+
+ לא איתו ברשת, ו
+\begin_inset Formula $\bigotimes$
+\end_inset
+
+ חושב שכן, אז 
+\begin_inset Formula $\bigotimes$
+\end_inset
+
+ ישלח את החבילה למקום הנכון - אבל זה בזבוז של זמן, כי 
+\begin_inset Formula $A$
+\end_inset
+
+ היה יכול לשלוח ישירות ל
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

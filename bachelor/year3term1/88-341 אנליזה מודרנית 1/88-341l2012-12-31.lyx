@@ -1,0 +1,2619 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מידות מכפלה ומשפט פוביני
+\end_layout
+
+\begin_layout Standard
+נתחיל עם שני מרחבי מידה חיובית 
+\begin_inset Formula $\left(X,S,u\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(Y,T,v\right)$
+\end_inset
+
+.
+ נבנה בצורה קנונית "
+\emph on
+מידת מכפלה
+\emph default
+" 
+\begin_inset Formula $w=u\times v$
+\end_inset
+
+ על 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה 
+\begin_inset Formula $U$
+\end_inset
+
+ של תת קבוצות של 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ ו
+\begin_inset Formula $F\in T$
+\end_inset
+
+ קבוצות)מדידות( כלשהן.
+ המכפלה הקרטזית 
+\begin_inset Formula $X\times Y\supset E\times F$
+\end_inset
+
+ נקראת 
+\emph on
+מלבן מדיד
+\emph default
+.
+ נגדיר את נפחו ע"י
+\begin_inset Formula 
+\[
+\left|E\times F\right|=u\left(E\right)\cdot v\left(F\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+לכל
+\series default
+ 
+\begin_inset Formula $E\subset X\times Y$
+\end_inset
+
+ נגדיר מידה חיצונית 
+\begin_inset Formula $w^{*}\left(E\right)=\inf\limits _{E\subset\bigcup\limits _{n=1}^{\infty}R_{n}}\sum\limits _{n=1}^{\infty}\left|R_{n}\right|$
+\end_inset
+
+ כאשר ה
+\begin_inset Formula $R_{n}$
+\end_inset
+
+ מלבנים מדידים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $E\subset X\times Y$
+\end_inset
+
+ נאמר ש
+\begin_inset Formula $E$
+\end_inset
+
+ "
+\emph on
+מדידה
+\emph default
+" אם לכל תת קבוצה 
+\begin_inset Formula $S\subset X\times Y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w^{*}\left(S\right)=w^{*}\left(S\cap E\right)+w^{*}\left(S\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+ונגדיר 
+\begin_inset Formula $U$
+\end_inset
+
+ להיות אוסף כל הקבוצות המדידות.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ היא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה של תת
+\numeric on
+-
+\numeric off
+קבוצות של 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ מכילה כל קבוצה 
+\begin_inset Formula $E\subset X\times Y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w^{*}\left(E\right)=0$
+\end_inset
+
+ וכל מלבן מדיד)נמצא ב
+\begin_inset Formula $U$
+\end_inset
+
+(.
+ יתר על כן הצמצמום של 
+\begin_inset Formula $w^{*}$
+\end_inset
+
+ ל
+\begin_inset Formula $U$
+\end_inset
+
+ הוא מידה המכונה 
+\begin_inset Formula $w=u\times v$
+\end_inset
+
+, ולכן מלבן מדיד 
+\begin_inset Formula $R$
+\end_inset
+
+ 
+\begin_inset Formula $w\left(R\right)=\left|R\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קבוצה 
+\begin_inset Formula $E\subset X\times Y$
+\end_inset
+
+ היא מטיפוס 
+\begin_inset Formula $R_{\sigma}$
+\end_inset
+
+ אם היא איחוד בן מניה של מלבנים מדידים, ו
+\begin_inset Formula $E$
+\end_inset
+
+ מטיפוס 
+\begin_inset Formula $R_{\sigma\delta}$
+\end_inset
+
+ אם היא חיתוך בן מניה של קבוצות ב
+\begin_inset Formula $R_{\sigma}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אוטומטית, כל קבוצה 
+\begin_inset Formula $R_{\sigma}$
+\end_inset
+
+ או 
+\begin_inset Formula $R_{\sigma\delta}$
+\end_inset
+
+ נמצאת ב
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E\in R_{\sigma}$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+=
+\series bold
+איחוד
+\series default
+ בן מניה של מלבנים מדידים.
+ ואם 
+\begin_inset Formula $E\in R_{\sigma\delta}$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+=
+\series bold
+חיתוך יורד
+\series default
+ בן מניה של קבוצות ב
+\begin_inset Formula $R_{\sigma}$
+\end_inset
+
+)
+\begin_inset Formula $E=\bigcap\limits _{n=1}^{\infty}R_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{1}\supset R_{2}\supset\cdots$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $E\in U$
+\end_inset
+
+ ו
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $F\in R_{\sigma\delta}$
+\end_inset
+
+ ו
+\begin_inset Formula $G\in U$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w\left(G\right)=0$
+\end_inset
+
+ ו
+\begin_inset Formula $F=E\uplus G$
+\end_inset
+
+)או 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.......
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s\le w\left(R_{n}\right)<S+\nicefrac{1}{n}$
+\end_inset
+
+.
+ לבסוף נגדיר 
+\begin_inset Formula $R=\bigcap\limits _{k=1}^{\infty}R_{n}\in R_{\sigma\delta}$
+\end_inset
+
+, ולפי הבנייה לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $E\subset R_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ז.א.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $E\subset R\subset R_{n}$
+\end_inset
+
+.
+ יוצא שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+w\left(E\right)\le w\left(R\right)\le w\left(R_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s\le w\left(R\right)<S+\nicefrac{1}{n}
+\]
+
+\end_inset
+
+משפט הסנדוויץ נותן 
+\begin_inset Formula $w\left(R\right)=s=w\left(E\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $R=E\uplus R\backslash E$
+\end_inset
+
+.
+ אם רק נגדיר 
+\begin_inset Formula $F=R$
+\end_inset
+
+, 
+\begin_inset Formula $G=R\backslash E$
+\end_inset
+
+ אז 
+\begin_inset Formula $R_{\sigma}\ni F$
+\end_inset
+
+, 
+\begin_inset Formula $0=w\left(G\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\boxed{F=E\uplus G}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+)משפט פוביני(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(X,S,u\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(Y,T,v\right)$
+\end_inset
+
+ שני ממ"ח, 
+\begin_inset Formula $u,v$
+\end_inset
+
+ שלמות.
+ נבנה כנ"ל 
+\begin_inset Formula $\left(X\times Y,U,w\right)$
+\end_inset
+
+, ונניח ש
+\begin_inset Formula $f:X\times Y\to\mathbb{R}^{*}$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}w$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכמעט כל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, הפונקציה 
+\begin_inset Formula $f_{x}\left(y\right)=f\left(x,y\right)$
+\end_inset
+
+ אינטרגבילית 
+\begin_inset Formula $\mathrm{d}v$
+\end_inset
+
+ על 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכמעט כל 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+, הפונקציה 
+\begin_inset Formula $f_{y}\left(x\right)=f\left(x,y\right)$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}u$
+\end_inset
+
+ על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה 
+\begin_inset Formula $g\left(x\right)=\int_{Y}f\left(x,y\right)\mathrm{\, d}v\left(y\right)$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}u$
+\end_inset
+
+ על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה 
+\begin_inset Formula $h\left(y\right)=\int_{X}f\left(x,y\right)\mathrm{\, d}u\left(x\right)$
+\end_inset
+
+ אינטרבילית 
+\begin_inset Formula $\mathrm{d}v$
+\end_inset
+
+ על 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{X}\left[\int_{Y}f\mathrm{\, d}v\right]\mathrm{\, d}u=\int_{X\times Y}f\mathrm{\, d}w=\int_{Y}\left[\int_{X}f\mathrm{\, d}u\right]\mathrm{\, d}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תקציר ההוכחה
+\end_layout
+
+\begin_layout Standard
+כאן נוכיח בעיקר רק טענה )ה(, ולזה מספיק להראות ש
+\begin_inset Formula $\int_{X}\left[\int_{Y}f\mathrm{\, d}v\right]\mathrm{\, d}u=\int_{X\times Y}f\mathrm{\, d}w$
+\end_inset
+
+, כי השוויון השני שקול לזה ע"י סימטריה.
+\end_layout
+
+\begin_layout Standard
+ההוכחה בכמה שלבים:
+\end_layout
+
+\begin_layout Subsubsection*
+שלב א'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=I_{E}$
+\end_inset
+
+; 
+\begin_inset Formula $E=A\times B$
+\end_inset
+
+ מלבן מדיד.
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית, בהכרח 
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $u\left(A\right)<\infty$
+\end_inset
+
+ וגם 
+\begin_inset Formula $v\left(B\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תחילה נעיר ש
+\begin_inset Formula $E=A\times B$
+\end_inset
+
+ אומר 
+\begin_inset Formula $I_{E}\left(x,y\right)=I_{A}\left(x\right)I_{B}\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נובע:
+\begin_inset Formula 
+\[
+\int_{X}\mathrm{d}u\int_{Y}I_{E}\left(x,y\right)\mathrm{\, d}v\left(y\right)=\int_{X}\mathrm{\, d}u\int_{Y}I_{A}\left(x\right)I_{B}\left(y\right)\mathrm{\, d}v\left(y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{X}I_{A}\left(x\right)\mathrm{\, d}u\int_{Y}I_{B}\left(y\right)\mathrm{\, d}v=u\left(A\right)v\left(B\right)=w\left(E\right)=\int_{X\times Y}I_{E}\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ב'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=I_{E}$
+\end_inset
+
+, 
+\begin_inset Formula $E\in R_{\sigma}$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\begin_inset Formula $E=\biguplus\limits _{n=1}^{\infty}R_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+ מלבנים מדידים.
+ כיוון שהאיחוד זר
+\begin_inset Formula 
+\[
+I_{E}\left(x,y\right)=\sum_{n=1}^{\infty}I_{R_{n}}\left(x,y\right)
+\]
+
+\end_inset
+
+נובע:
+\begin_inset Formula 
+\[
+\int_{X}\mathrm{\, d}u\int_{Y}I_{E}\left(x,y\right)\mathrm{\, d}v=\int_{X}\mathrm{\, d}u\int_{Y}\left[\sum_{n=1}^{\infty}I_{R_{n}}\left(x,y\right)\right]\mathrm{\, d}v=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{monotony}}}{=}\int_{X}\mathrm{\, d}u\sum_{n=1}^{\infty}\int_{Y}I_{R_{n}}\left(x,y\right)\mathrm{\, d}v=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{monotony}}}{=}\sum_{n=1}^{\infty}\int_{X}\mathrm{\, d}u\int_{Y}I_{R_{n}}\left(x,y\right)\mathrm{\, d}v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{stage }\aleph\textnormal{, }R_{n}\textnormal{ measurable rectangle}}}{=}\sum_{n=1}^{\infty}\int_{X\times Y}I_{R_{n}}\left(x,y\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{monotony}}}{=}\int_{X\times Y}\sum_{n=1}^{\infty}R_{R_{n}}\left(x,y\right)\mathrm{\, d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ג'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=I_{E}$
+\end_inset
+
+, 
+\begin_inset Formula $E\in R_{\sigma\delta}$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאן 
+\begin_inset Formula $E=\bigcap\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+, כל 
+\begin_inset Formula $E_{n}\in R_{\sigma}$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{1}\supset E_{2}\supset E_{3}\supset\cdots$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+ בה"כ 
+\begin_inset Formula $w\left(E_{1}\right)<\infty$
+\end_inset
+
+.
+ נובע ש:
+\begin_inset Formula 
+\[
+I_{E_{1}}\left(x,y\right)\ge I_{E_{2}}\left(x,y\right)\ge\cdots\ge E_{E}\left(x,y\right)=\lim_{n\to\infty}I_{E_{n}}\left(x,y\right)
+\]
+
+\end_inset
+
+כעת נעיר שע"פ תרגיל
+\begin_inset Formula 
+\[
+\int_{X\times Y}I_{E}\mathrm{\, d}w=w\left(E\right)\stackrel{{\scriptscriptstyle \textnormal{ex}}}{=}\lim_{n\to\infty}w\left(E_{n}\right)=\lim_{n\to\infty}\int_{X\times Y}I_{E_{n}}\mathrm{\, d}w\stackrel{{\scriptscriptstyle \textnormal{stage }\beth}}{=}\lim_{n\to\infty}\int_{X}\mathrm{d}u\int_{Y}I_{E_{n}}\left(x,y\right)\mathrm{\, d}v
+\]
+
+\end_inset
+
+באינטגרל הפנימי יש לנו פונקציות 
+\begin_inset Formula $I_{E_{n}}\left(x,y\right)$
+\end_inset
+
+)עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ קבוע(.
+ לפי הבנייה לכל 
+\begin_inset Formula $X\ni x$
+\end_inset
+
+ 
+\begin_inset Formula $0\le I_{E_{n}}\left(x,y\right)\le I_{E_{1}}\left(x,y\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $I_{E_{n}}\left(x,y\right)\to I_{E}\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מוכיחים שעבור כמעט כל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $I_{E_{1}}\left(x,y\right)$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}v$
+\end_inset
+
+ ולכן אפשר להפעיל את התכנסות נשלטת לומר
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{X}\mathrm{d}u\int_{Y}I_{E_{n}}\left(x,y\right)\mathrm{\, d}v=\int_{X}\mathrm{d}u\int_{Y}I_{E}\left(x,y\right)\mathrm{\, d}v
+\]
+
+\end_inset
+
+שווחה לכתחילה 
+\begin_inset Formula $\int_{X\times Y}I_{E}\mathrm{\, d}w$
+\end_inset
+
+, וזה שלב ג'.
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ד'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=I_{E}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w\left(E\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ה'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f=I_{E}$
+\end_inset
+
+, 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה ו
+\begin_inset Formula $w\left(E\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ידוע: קיים 
+\begin_inset Formula $f\in R_{\sigma\delta}$
+\end_inset
+
+ ו
+\begin_inset Formula $G\in U$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(G\right)=0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F=E\uplus G$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $I_{F}=I_{E}+I_{G}$
+\end_inset
+
+.
+ לגבי 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ המשפט הוכח בשלב ג' ולגבי 
+\begin_inset Formula $I_{G}$
+\end_inset
+
+ המשפט הוכח בשלב 
+\begin_inset Formula $sw$
+\end_inset
+
+.
+ לכן שלב ה' נובע מלינאריות האינטגרלים.
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ו'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+=פונקציה פשוטה אינטגרבילית.
+ ז.א.
+ 
+\begin_inset Formula $f=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית כל 
+\begin_inset Formula $w\left(E_{k}\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המשפט כבר הוכח לכל 
+\begin_inset Formula $I_{E_{k}}$
+\end_inset
+
+ בלב ה', ולכן שלב ו' נובע מלינאריות האינטגרל.
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ז'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y\right)\ge0$
+\end_inset
+
+ ואינטגרבילית 
+\begin_inset Formula $\mathrm{d}w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כידוע יש סדרה 
+\begin_inset Formula $0\le\varphi_{1}\le\varphi_{2}\le\varphi_{3}\le\cdots$
+\end_inset
+
+ של פונקציות פשוטות ששואפות נקודתית ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+ כיוון שכל 
+\begin_inset Formula $\varphi_{n}\le f$
+\end_inset
+
+, כל 
+\begin_inset Formula $\varphi_{n}$
+\end_inset
+
+ אינטגרבילית, וע"פ מונוטוניות נוכל לומר 
+\begin_inset Formula 
+\[
+\int_{X\times Y}f\mathrm{\, d}w=\lim_{n\to\infty}\int_{X\times Y}\varphi_{n}\mathrm{\, d}w=\lim_{n\to\infty}\int_{X}\mathrm{d}u\int_{Y}\varphi_{n}\mathrm{\, d}v=\int_{X}\mathrm{d}u\int_{Y}f\mathrm{\, d}v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+שלב ח'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית כלשהי.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f=f^{+}-f^{-}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f^{+}$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{-}$
+\end_inset
+
+ לא שליליות ואינטגרביליות.
+ בשלב ז' המשפט הוכח ל
+\begin_inset Formula $f^{+}$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{-}$
+\end_inset
+
+, ולכן שלב ח' נובע מלינאריות האינטגרל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Enumerate
+אפשר להראות שאם 
+\begin_inset Formula $=u=v$
+\end_inset
+
+ מידת לבג על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ אז 
+\begin_inset Formula $=w=u\times v$
+\end_inset
+
+ מידת לבג על 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, ובאינדוקציה אפשר לבנות מידת לבג לכל 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אף על פי שהמשפט נוסח לפונקציות על 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+ כולו, אפשר להפעיל אולו עבור 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ מוגדרת באיזו 
+\begin_inset Formula $E\in U$
+\end_inset
+
+ ע"י זה שנמשיך את 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ להיות 
+\begin_inset Formula $0$
+\end_inset
+
+ ב
+\begin_inset Formula $E^{\complement}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+כבר הוכיחו בתרגיל שאם 
+\begin_inset Formula $=u$
+\end_inset
+
+ מידת הספירה על 
+\begin_inset Formula $\mathcal{P}\left(\mathbb{N}\right)$
+\end_inset
+
+ אז בעצם לפונקציה כלשהי 
+\begin_inset Formula $f:\mathbb{N}\to\left[0,\infty\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{\mathbb{N}}f\mathrm{\, d}u=\sum\limits _{n=1}^{\infty}f\left(n\right)$
+\end_inset
+
+, ואם 
+\begin_inset Formula $f:\mathbb{N}\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציה כלשהי היא אינטגרבילית 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}f\left(n\right)$
+\end_inset
+
+ מתכנס בהחלט, ואם כן 
+\begin_inset Formula $\int_{\mathbb{N}}f\mathrm{\, d}u=\sum\limits _{n=1}^{\infty}f\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם נפעיל את פוביני ל
+\begin_inset Formula $u\times u$
+\end_inset
+
+ על על 
+\begin_inset Formula $\mathbb{N}\times\mathbb{N}$
+\end_inset
+
+ נקבל תוצאה על טורים כפולים: אם 
+\begin_inset Formula $\sum\limits _{m,n=1}^{\infty}\left|a_{mn}\right|<\infty$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}a_{mn}=\sum_{m,n=1}^{\infty}a_{mn}=\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}a_{mn}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יש הכללה של משפט פוביני לפונקציות 
+\begin_inset Formula $f:X\times Y\to\left[0,\infty\right]$
+\end_inset
+
+ שבה אין צורך להניח מראש ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}w$
+\end_inset
+
+.
+ אבל משפט זה נכון רק בהנחה נוספת: שהמידות 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+ "סופיות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+".
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(X,S,u\right)$
+\end_inset
+
+ ממ"ח.
+ אומרים ש
+\begin_inset Formula $u$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופית אם יש קבוצות 
+\begin_inset Formula $\left(E_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ ב
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש
+\begin_inset Formula $X=\bigcup\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $u\left(E_{n}\right)<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+מידת לבג על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ לא מידה סופית כי 
+\begin_inset Formula $m\left(\mathbb{R}\right)=\infty$
+\end_inset
+
+, אבל היא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופית כי 
+\begin_inset Formula $\mathbb{R}=\bigcup\limits _{n=1}^{\infty}\left(-n,n\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $m\left(-n,n\right)=2n<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+)משפט טונלי(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(X,S,u\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(Y,T,v\right)$
+\end_inset
+
+ ממ"ח עבור מידות שלמות ו
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופיות 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $f:X\times Y\to\left[0,\infty\right]$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $\mathrm{d}w$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכמעט כל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $f_{x}\left(y\right)=f\left(x,y\right)$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכמעט כל 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $f_{y}\left(x\right)=f\left(x,y\right)$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x\right)=\int_{Y}f\left(x,y\right)\mathrm{\, d}v\left(y\right)$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h\left(y\right)=\int_{X}f\left(x,y\right)\mathrm{\, d}u\left(x\right)$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{X}\left[\int_{Y}f\mathrm{\, d}v\right]\mathrm{\, d}u=\int_{X\times Y}f\mathrm{\, d}w=\int_{Y}\left[\int_{X}f\mathrm{\, d}u\right]\mathrm{\, d}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ההוכחה בדיוק כמו זו של משפט פוביני בשלבים )א(
+\begin_inset Formula $\gets$
+\end_inset
+
+)ו(, ודוקא לפונקציות פשוטות ואינטגרביליות)כמו בפוביני(.
+ רק בשלב ז' יש שינוי קטן:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:X\times Y\to\left[0,\infty\right]$
+\end_inset
+
+ מדידה, אז היא גבול של סדרה עולה של פונקציות פשוטות ו
+\bar under
+אינטגרביליות
+\bar default
+.
+ אפילו אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לא אינטגרבילית)בגלל 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופיות המידות( שלב ח' איננו!
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+מבוא לאנליזה פונקציונלית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב וקטורי מעל שדה 
+\begin_inset Formula $K$
+\end_inset
+
+ = 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+ "
+\emph on
+נורמה
+\emph default
+" על 
+\begin_inset Formula $X$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $\left\Vert \;\right\Vert :X\to\left[0,\infty\right]$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha\in K$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\Vert x\right\Vert \ge0$
+\end_inset
+
+ עם שוויון רק עבור 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert \alpha x\right\Vert =\left|\alpha\right|\left\Vert x\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert x+y\right\Vert \le\left\Vert x\right\Vert +\left\Vert y\right\Vert $
+\end_inset
+
+)אי שוויון המשולש(
+\end_layout
+
+\begin_layout Standard
+הזוג 
+\begin_inset Formula $\left(X,\left\Vert \;\right\Vert \right)$
+\end_inset
+
+ נקרא 
+\emph on
+מרחב נורמי
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות פשוטות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+ עם הנורמה האוקלידית 
+\begin_inset Formula $\left\Vert x\right\Vert =\left\Vert \left(x_{1},\dots x_{n}\right)\right\Vert =\left(\sum\limits _{k=1}^{n}\left|x_{k}\right|^{2}\right)^{\nicefrac{1}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+ יש עוד נורמות, למשל 
+\begin_inset Formula $\left\Vert x\right\Vert =\sum\limits _{k=1}^{n}\left|x_{k}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל נורמה על 
+\begin_inset Formula $X$
+\end_inset
+
+ משרה מטריקה ע"י 
+\begin_inset Formula $d\left(x,y\right)=\left\Vert x-y\right\Vert $
+\end_inset
+
+, ובודקים את הדרישות של מטריקה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $d\left(x,y\right)\ge0$
+\end_inset
+
+ עם שוויון רק עבור 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(x,y\right)=d\left(y,x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(x,z\right)\le d\left(x,y\right)+d\left(y,z\right)$
+\end_inset
+
+ - אי שוויון המשולש.
+\end_layout
+
+\begin_layout Section*
+הערות פשוטות
+\end_layout
+
+\begin_layout Enumerate
+במרחב נורמי 
+\begin_inset Formula $\left\Vert x\right\Vert =\left\Vert x-0\right\Vert =\textnormal{dist}\left(x,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+המטריקה במרחב נורמי שמורה תחת הזזה.
+ ז.א.
+ אם 
+\begin_inset Formula $x,y,z\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{dist}\left(x+z,y+z\right)=\left\Vert \left(x+z\right)-\left(y+z\right)\right\Vert =\left\Vert x-y\right\Vert =\textnormal{dist}\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ברגע שיש מטריקה, יש מושג של התכנסות של סדרות, גבולות וכו'.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,\left\Vert \,\,\right\Vert \right)$
+\end_inset
+
+ מרחב נורמי, ותהי 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרה של נקודות ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim\limits _{n\to\infty}x_{n}=x_{0}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert x_{n}-x_{0}\right\Vert =d\left(x_{n},x_{0}\right)<
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סדרת 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ נקראת 
+\emph on
+סדרת קושי
+\emph default
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $m,n>n_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\Vert x_{m}-x_{n}\right\Vert <\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קל להוכיח שכל סדרה שמתכנסת היא סדרת קושי.
+ ההפך לא תמיד נכון.
+ אם 
+\begin_inset Formula $\left(X,\left\Vert \,\,\right\Vert \right)$
+\end_inset
+
+ מרחב נורמי שבו כל סדרת קושי מתכנסת לאיבר ב
+\begin_inset Formula $X$
+\end_inset
+
+, אז אומרים ש
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב שלם.
+ מרחב נורמי שלם נקרא 
+\emph on
+מרחב בנך
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+ניקח קטע סגור 
+\begin_inset Formula $\left[a,b\right]\subset\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ הוא אוסף כל הפונקציות 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ פשוט ש
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ מרחב וקטורי מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ מקובל להגדיר נורמה על 
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\left\Vert f\right\Vert =\max\limits _{x\in\left[a,b\right]}\left|f\left(x\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבדוק שזו נורמה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $f\in C\left(\left[a,b\right]\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left\Vert f\right\Vert =\max\limits _{x\in\left[a,b\right]}\left|f\left(x\right)\right|\ge0$
+\end_inset
+
+, ואם 
+\begin_inset Formula $\left\Vert f\right\Vert =0$
+\end_inset
+
+ הרי המקסימום של 
+\begin_inset Formula $\left|f\left(x\right)\right|$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, לכן 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\in C\left(\left[a,b\right]\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left\Vert \alpha f\right\Vert =\max\left|\alpha f\left(x\right)\right|=\max\left|\alpha\right|\left|f\left(x\right)\right|=\left|\alpha\right|\max\left|f\left(x\right)\right|=\left|\alpha\right|\left\Vert f\right\Vert 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f,g\in C\left(\left[a,b\right]\right)$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left(f+g\right)\left(x\right)\right|=\left|f\left(x\right)+g\left(x\right)\right|\le\left|f\left(x\right)\right|+\left|g\left(x\right)\right|\le\left\Vert f\right\Vert +\left\Vert g\right\Vert 
+\]
+
+\end_inset
+
+הדבר נכון לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\left\Vert f+g\right\Vert =\max_{x\in\left[a,b\right]}\left|\left(f+g\right)\left(x\right)\right|\le\left\Vert f\right\Vert +\left\Vert g\right\Vert 
+\]
+
+\end_inset
+
+וזה אי שוויון המשולש.
+\end_layout
+
+\begin_layout Standard
+לגבי סדרה 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim\limits _{n\to\infty}f_{n}=f$
+\end_inset
+
+ אם 
+\begin_inset Formula $\lim\limits _{n\to\infty}\left\Vert f_{n}-f\right\Vert =0$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\lim\limits _{n\to\infty}\max\limits _{x\in\left[a,b\right]}\left|f_{n}\left(x\right)-f\left(x\right)\right|=0$
+\end_inset
+
+, וזה אומר בדיוק ש
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ במ"ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סדרת קושי 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ היא סדרה כזאת שלכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $m,n>n_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon>\left\Vert f_{m}-f_{n}\right\Vert =\max_{x\in\left[a,b\right]}\left|f_{m}\left(x\right)-f_{n}\left(x\right)\right|
+\]
+
+\end_inset
+
+במונחים של אינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התנאי הנ"ל אומר ש
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ קושי במ"ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ מוכיחים שם שבתנאי זה קיים גבול 
+\begin_inset Formula $f\left(x\right)=\lim\limits _{n\to\infty}f_{n}\left(x\right)$
+\end_inset
+
+ במ"ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, וע"פ משפט נוסף באינפי נסיק ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $f\in C\left(\left[a,b\right]\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ במ"ש.
+ ז.א.
+ בנורמה של 
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ מרחב שלם.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $K$
+\end_inset
+
+ מרחב האוסדורף קומפקטי מגדירים 
+\begin_inset Formula $C\left(k\right)$
+\end_inset
+
+)ממשי( להיות כל הפונקציות הרציפות 
+\begin_inset Formula $f:K\to\mathbb{R}$
+\end_inset
+
+)ומרוכב ע"י פונקציות 
+\begin_inset Formula $f:K\to\mathbb{C}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פשוט ש
+\begin_inset Formula $C\left(k\right)$
+\end_inset
+
+ מרחב וקטורי, והוא הופך להיות מרחב בנך ע"י הנורמה 
+\begin_inset Formula $\left\Vert f\right\Vert =\max\limits _{x\in K}\left|f\left(x\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $P\subset C\left(\left[a,b\right]\right)$
+\end_inset
+
+ להיות אוסף כל הפולינומים הממשיים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פשוט ש
+\begin_inset Formula $P$
+\end_inset
+
+ תת מרחב של 
+\begin_inset Formula $C\left(\left[a,b\right]\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(P,\left\Vert \,\,\right\Vert _{C\left(\left[a,b\right]\right)}\right)$
+\end_inset
+
+ מרחב נורמי מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ אבל מרחב זה לא שלם כי קל לבנות סדרת פולינומים 
+\begin_inset Formula $\left\{ p_{n}\right\} $
+\end_inset
+
+ שמתכנסת במ"ש על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ לפונקציה שהיא לא פולינום.
+ למשל אם 
+\begin_inset Formula $p_{n}\left(x\right)=\sum\limits _{k=0}^{n}\frac{x^{k}}{k!}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{n}\left(x\right)\to e^{x}$
+\end_inset
+
+ במ"ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ לא פולינום.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ניקח ממ"ח 
+\begin_inset Formula $\left(X,S,u\right)$
+\end_inset
+
+ המרחב 
+\begin_inset Formula $L^{p}\left(\mathrm{d}u\right)$
+\end_inset
+
+, 
+\begin_inset Formula $1\le p\le\infty$
+\end_inset
+
+, הוא מרחב כל הפונקציות 
+\begin_inset Formula $f:X\to\mathbb{R}^{*}$
+\end_inset
+
+ מדידות 
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert f\right\Vert _{p}=\left(\int_{X}\left|f\right|^{p}\mathrm{\, d}m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Section*
+נסיים בהערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\Vert f\right\Vert _{p}$
+\end_inset
+
+ שהגדרנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא לא נורמה! כי אם 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $\left\Vert f\right\Vert _{p}=0$
+\end_inset
+
+ אף על פי ש
+\begin_inset Formula $f\left(x\right)\not\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אלא שחייבים להגדיר 
+\begin_inset Formula $L^{p}\left(\mathrm{d}u\right)$
+\end_inset
+
+ כמרחב של מחלקות שקילות עם התנאי 
+\begin_inset Formula $f\sim g$
+\end_inset
+
+ אם 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+ כב"מ)
+\begin_inset Formula $\mathrm{d}u$
+\end_inset
+
+(.
+ נוכיח שאם כן, 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+ מרחב בנך.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

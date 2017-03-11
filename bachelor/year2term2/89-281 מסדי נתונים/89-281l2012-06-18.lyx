@@ -1,0 +1,2997 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Enforcing Serializability
+\end_layout
+
+\begin_layout Standard
+יש שיטות פסימיסטיות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+2PL - Two phase locking
+\end_layout
+
+\begin_layout Standard
+שמניחות שהסריאליזציה הולכת להשתבש, ובהתאם לכך לא מאפשרת דברים מסויימים.
+\end_layout
+
+\begin_layout Standard
+מצד שני, יש שיטות אופטימיסטיות:
+\end_layout
+
+\begin_layout Enumerate-Resume
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+TS - Timestamps
+\end_layout
+
+\begin_layout Enumerate-Resume
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Validation
+\end_layout
+
+\begin_layout Standard
+שמאפשרות יותר דברים - ואם משהו משתבש אז מתקנים.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+(
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+2PL - Two Phase Locaking
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\end_layout
+
+\begin_layout Itemize
+נעילה)
+\lang english
+lock
+\lang hebrew
+( - 
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שחרור)
+\lang english
+unlock
+\lang hebrew
+( - 
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פעולה)
+\lang english
+action
+\lang hebrew
+( - 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכללים הם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Consistency of 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+
+\lang hebrew
+ - כל טרנזקציה נועלת, מבצעת פעולה, ואז משחררת:
+\begin_inset Formula 
+\[
+l_{i}\left(X\right),A_{i}\left(X\right),u_{i}\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Legality of 
+\begin_inset Formula $S$
+\end_inset
+
+
+\lang hebrew
+ - לפני שטרנזציה נועלת, הטרנזקציה הקודמת חייבת לשחרר את הנעילה שלה:
+\begin_inset Formula 
+\[
+l_{i}\left(X\right),u_{i}\left(X\right),l_{j}\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c}
+T_{1} & T_{2} & A & B\\
+\hline  &  & 25 & 25\\
+\hline l_{1}\left(A\right),r_{1}\left(A\right) &  & \\
+A=A+100 &  & \\
+w_{1}\left(A\right),u_{1}\left(A\right) &  & 125\\
+\hline  & l_{2}\left(A\right),r_{2}\left(A\right) & \\
+ & A=A*2 & \\
+ & w_{2}\left(A\right),u_{2}\left(A\right) & 250\\
+\hline  & l_{2}\left(B\right),r_{2}\left(B\right) & \\
+ & B=B*2 & \\
+ & w_{2}\left(B\right),u_{2}\left(B\right) &  & 50\\
+\hline l_{1}\left(B\right),r_{1}\left(B\right) &  & \\
+B=B+100 &  & \\
+w_{1}\left(B\right),u_{1}\left(B\right) &  &  & 150
+\end{array}
+\]
+
+\end_inset
+
+למרות שנעלנו, הסריאליזציה לא נכונה!
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שלא התייחסנו לחלק של ה
+\lang english
+Two-Phase
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הנעילה והשחרור צריכים להתבצע בשני שלבים - נועלים הכל)שלב ראשון(, מבצעים
+ את הפעולות, ואז משחררים הכל)שלב שני(.
+\end_layout
+
+\begin_layout Standard
+נבצע את הסריאליזציה בשני שלבים:
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c}
+T_{1} & T_{2} & A & B\\
+\hline  &  & 25 & 25\\
+\hline l_{1}\left(A\right),r_{1}\left(A\right) &  & \\
+A=A+100 &  & \\
+w_{1}\left(A\right),l_{1}\left(B\right) &  & \\
+u_{1}\left(A\right) &  & 125\\
+\hline  & l_{2}\left(A\right),r_{2}\left(A\right) & \\
+ & A=A*2 & \\
+ & w_{2}\left(A\right) & 250\\
+ & l_{2}\left(B\right)\textnormal{-Denied!} & \\
+\hline r_{1}\left(B\right),B=B+100 &  &  & 125\\
+w_{1}\left(B\right),u_{1}\left(B\right) &  & \\
+\hline  & l_{2}\left(B\right),w_{2}\left(A\right),r_{2}\left(B\right) & \\
+ & B=B*2,w_{2}\left(B\right),u_{2}\left(B\right) &  & 250
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - בעיה!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T1:l_{1}\left(A\right),l_{2}\left(B\right),u_{1}\left(A\right),u_{1}\left(B\right)\qquad\textnormal{2-phase}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{2}:l_{2}\left(B\right),l_{2}\left(A\right),u_{2}\left(B\right),u_{2}\left(A\right)\qquad\textnormal{2-phase}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c|c}
+T_{1} & T_{2}\\
+\hline l_{1}\left(A\right)\\
+ & l_{2}\left(B\right)\\
+l_{1}\left(B\right)\textnormal{-Denied!}\\
+ & l_{2}\left(A\right)\textnormal{-Denied}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Deadlock!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Deadlock
+\end_layout
+
+\begin_layout Standard
+נוצר כאשר יש כמה טרנזקציות, שכל אחת מחכה לאחרת שתשתחר נתון, ונועלת בעצמה
+ נתון אחר, ונוצר מעגל:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{1}\ar[rr] &  & *++[o][F]{2}\ar[ldd]\\
+\\
+ & *++[o][F]{3}\ar[luu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Livelock
+\lang hebrew
+)
+\lang english
+Starvation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נוצר כאשר טרנזקציה 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ נועלת את 
+\begin_inset Formula $A$
+\end_inset
+
+, ו
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ מחכה ל
+\begin_inset Formula $A$
+\end_inset
+
+.
+ בזמן ש
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ מחכה, 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ מצטרפת ומבקשת את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ ברגע ש
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ משחררת את 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ מקבלת אותו במקום 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, וכן הלאה - עוד ועוד טרנזקציות גונבות ל
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+פתרון ל
+\lang english
+Livelock
+\end_layout
+
+\begin_layout Enumerate
+במקום לבחור באופן שרירותי איזו טרנזקציה תהיה הבאה לקבל את הנתון, נבנה תור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FIFO
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+עדיפות - נשתמש בתור עדיפויות, וככל שעובר הזמן, העדיפות של טרנזקציה תעלה.
+\end_layout
+
+\begin_layout Section*
+פתרון ל
+\lang english
+Deadlock
+\end_layout
+
+\begin_layout Standard
+נבצע תמיד את הנעילה בסדר קבוע - למשל לפי הא"ב.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+T_{1}: & l_{1}\left(A\right),r_{1}\left(A\right),l_{1}\left(B\right),w_{1}\left(B\right),u_{1}\left(A\right),u_{1}\left(B\right)\\
+T_{2}: & l_{2}\left(A\right),l_{2}\left(C\right),r_{2}\left(C\right),w_{2}\left(A\right),u_{2}\left(C\right),u_{2}\left(A\right)\\
+T_{3}: & l_{3}\left(B\right),r_{3}\left(B\right),l_{3}\left(C\right),w_{3}\left(C\right),u_{3}\left(B\right),u_{3}\left(C\right)\\
+T_{4}: & l_{4}\left(A\right),l_{4}\left(D\right),r_{4}\left(D\right),w_{4}\left(A\right),u_{4}\left(D\right),u_{4}\left(A\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c}
+T_{1} & T_{2} & T_{3} & T_{4}\\
+\hline l_{1}\left(A\right),r_{1}\left(A\right) &  & \\
+ & l_{2}\left(A\right)\textnormal{-Denied!} & \\
+ &  & l_{3}\left(B\right),r_{3}\left(B\right)\\
+ &  &  & l_{4}\left(A\right)\textnormal{-Denied!}\\
+\hline  &  & l_{3}\left(C\right),w_{3}\left(C\right)\\
+ &  & u_{3}\left(C\right),u_{3}\left(D\right)\\
+\hline l_{1}\left(B\right),w_{1}\left(B\right) &  & \\
+u_{1}\left(A\right) &  & \\
+\hline  & l_{2}\left(A\right),l_{2}\left(C\right) & \\
+ & r_{2}\left(C\right),w_{2}\left(A\right) & \\
+ & u_{2}\left(C\right),u_{2}\left(A\right) & \\
+\hline u_{1}\left(B\right) &  & \\
+ &  &  & l_{4}\left(A\right),\dots u_{4}\left(A\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אלגוריתם לבדיקה אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deadlock
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+DG - directed graph
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+nodes:T
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+edges:
+\begin_inset Formula $T_{i}\to T_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+DAG
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+no deadlock
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+loop
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+deadlock
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c}
+T_{1} & T_{2} & T_{3} & T_{4}\\
+\hline l_{1}\left(A\right),r_{1}\left(A\right) &  & \\
+ & l_{2}\left(C\right),r_{2}\left(C\right) & \\
+ &  & l_{3}\left(B\right),r_{3}\left(B\right)\\
+ &  &  & l_{4}\left(D\right),r_{4}\left(D\right)\\
+\hline  & l_{2}\left(A\right)\textnormal{-Denied!} & \\
+ &  & l_{3}\left(C\right)\textnormal{-Denied!}\\
+ &  &  & l_{4}\left(A\right)\textnormal{-Denied}
+\end{array}
+\]
+
+\end_inset
+
+כדי לבדוק אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deadlock
+\lang hebrew
+, נצייר גרף:
+\begin_inset Formula 
+\[
+\xymatrix{\\
+*++[o][F]{T_{1}}\ar@/^{1pc}/[rr] & *++[o][F]{T_{2}}\ar[l] & *++[o][F]{T_{3}}\ar[l] & *++[o][F]{T_{4}}\ar@/_{2pc}/[lll]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לצאת מה
+\lang english
+Deadlock
+\lang hebrew
+, נוציא את 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{\\
+*++[o][F]{T_{2}} & *++[o][F]{T_{3}}\ar[l] & *++[o][F]{T_{4}}
+}
+\]
+
+\end_inset
+
+ואין מעגלים.
+ חשוב לזכור שלהוציא טרנזקציה זה לא פעולה טריוויאלית, כי צריך לבטל את כל
+ מה שהיא עשתה.
+\end_layout
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Locking Systems with Several Lock Modes
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+(
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared(read)/eXclusive(write) Lock
+\end_layout
+
+\begin_layout Standard
+אם לטרנזקציה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared Lock
+\lang hebrew
+)
+\begin_inset Formula $sl$
+\end_inset
+
+(, אז גם טרנזקציות אחרות יכולות לקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared Lock
+\lang hebrew
+.
+ אבל רק טרנזקציה אחת יכולה להחזיק ב
+\lang english
+Exclusive Lock
+\lang hebrew
+)
+\begin_inset Formula $xl$
+\end_inset
+
+( בכל רגע נתון - ובתנאי שאין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared Lock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הנתון.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{T_{1} & T_{2}\\
+\hline sl_{1}\left(A\right),r_{1}\left(A\right)\\
+ & sl_{2}\left(A\right),r_{2}\left(A\right)\\
+ & sl_{2}\left(B\right),r_{2}\left(B\right)\\
+xl_{1}\left(B\right)\textnormal{-Denied!}\\
+ & u_{2}\left(A\right),u_{2}\left(B\right)\\
+xl_{1}\left(B\right),r_{1}\left(B\right),w_{1}\left(B\right)\\
+u_{1}\left(A\right),u_{1}\left(B\right)
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+\begin_inset space ~
+\end_inset
+
+
+\numeric off
+\lang english
+Upgrading Locks
+\end_layout
+
+\begin_layout Standard
+במקום להשאיר את הנתון נעול הרבה זמן, קודם מבקשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared Lock
+\lang hebrew
+, ורק כשרוצים לכתוב מבקשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Exclusive Lock
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+יכול להיות שהטרנזקציה תצטרך לחכות ל
+\lang english
+Exclusive Lock
+\lang hebrew
+)כי טרנזקציות אחרות מחזיקות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shared Lock
+\lang hebrew
+( - אבל זה עדיף מאשר לבקש מוקדם, לחכות מוקדם, ולעכב את כולם.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c}
+T_{1} & T_{2}\\
+\hline sl_{1}\left(A\right),r_{1}\left(A\right)\\
+ & sl_{2}\left(A\right),r_{2}\left(A\right)\\
+ & sl_{2}\left(B\right),r_{2}\left(B\right)\\
+sl_{1}\left(B\right),r_{1}\left(B\right)\\
+xl_{1}\left(B\right)\textnormal{-Denied!}\\
+ & u_{2}\left(A\right),u_{2}\left(B\right)\\
+xl_{1}\left(B\right),w_{1}\left(B\right)\\
+u_{1}\left(A\right),u_{1}\left(B\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deadlock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בגלל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Upgrade
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c}
+T_{1} & T_{2}\\
+\hline sl_{1}\left(A\right)\\
+ & sl_{2}\left(A\right)\\
+xl_{1}\left(A\right)\textnormal{-Denied!}\\
+ & xl_{2}\left(A\right)\textnormal{-Denied}
+\end{array}
+\]
+
+\end_inset
+
+וקיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deadlock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- על אותו נתון!
+\end_layout
+
+\begin_layout Standard
+לכן נשתמש בסוג חדש של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lock
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Update Lock
+\lang hebrew
+)
+\begin_inset Formula $ul$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Update Lock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכול להיות במקביל ל
+\lang english
+Shared Lock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אבל לא במקביל ל
+\lang english
+Update Lock
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר! וכמובן שלא במקביל ל
+\lang english
+Exclusive Lock
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Increment Lock
+\end_layout
+
+\begin_layout Standard
+מכיוון שאפשר לבצע מספר פעולות חיבור ללא תלות בסדר, נגדיר פעולה "אטומית"
+ להוספה:
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+\textnormal{inc}_{i}\left(X,c\right) & = & r_{i}\left(X\right),X=X+c,w_{i}\left(X\right)\end{array}
+\]
+
+\end_inset
+
+כמו כן נגדיר 
+\begin_inset Formula $il_{i}\left(X\right)$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Increment Lock
+\lang hebrew
+.
+ לא ניתן לקבל 
+\begin_inset Formula $il$
+\end_inset
+
+ כאשר יש 
+\begin_inset Formula $sl$
+\end_inset
+
+ או 
+\begin_inset Formula $cl$
+\end_inset
+
+ - אבל אפשר לקבל כאשר יש 
+\begin_inset Formula $il$
+\end_inset
+
+ אחר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|ccc}
+ & sl & xl & il\\
+\hline sl & y & n & n\\
+xl & n & n & n\\
+il & n & n & y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c}
+T_{1} & T_{2}\\
+\hline sl_{1}\left(A\right),r_{1}\left(A\right)\\
+ & sl_{2}\left(A\right),r_{2}\left(A\right)\\
+ & il_{2}\left(B\right),inc_{2}\left(B\right)\\
+il_{1}\left(B\right),inc_{1}\left(B\right)\\
+ & u_{2}\left(A\right),u_{2}\left(B\right)\\
+u_{1}\left(A\right),u_{1}\left(B\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Timestamping
+\end_layout
+
+\begin_layout Standard
+יש אלגוריתם שעובד לפי השוואות של מספרים.
+ לכל טרנזקציה יש מסדר שנקרא 
+\lang english
+
+\begin_inset Formula $Ts$
+\end_inset
+
+ - timestamp
+\lang hebrew
+.
+ זה נקבע לפי השעון של המחשב או לפי מספור פנימי - מה שחשוב לנו זה שהמספר
+ יהיה קבוע.
+\end_layout
+
+\begin_layout Standard
+כמו כן לכל נתון יהיה 
+\lang english
+
+\begin_inset Formula $RT$
+\end_inset
+
+ - Read Time
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+
+\begin_inset Formula $WT$
+\end_inset
+
+ - Write Time
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אלו משתנים, שאומרים מתי הנתון נקרא ונכתב לאחרונה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c|c}
+T_{1} & T_{2} & T_{3} & A-RT & A-WT\\
+\hline 100 & 200 & 150 & 0 & 0\\
+\hline r_{1}\left(A\right) &  &  & 100\\
+ & r_{2}\left(A\right) &  & 200\\
+ &  & r_{3}\left(A\right) & \\
+ &  & w_{3}\left(A\right) &  & 150\\
+w_{1}\left(A\right) &  &  & \\
+ & w_{2}\left(A\right) &  &  & 200
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדוגמה הזו מראה איך המספרים משתנים - היא לא מראה את האלגוריתם.
+\end_layout
+
+\begin_layout Section*
+האלגוריתם
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+switch(request)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+case 
+\begin_inset Formula $r_{T}\left(X\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $TS\left(T\right)\ge WT\left(X\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $r_{T}\left(X\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $TS\left(T\right)>RT\left(X\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $RT\left(X\right)$
+\end_inset
+
+=
+\begin_inset Formula $TS\left(T\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else rollback 
+\begin_inset Formula $T$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+case 
+\begin_inset Formula $w_{T}\left(X\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $TS\left(T\right)\ge RT\left(X\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $TS\left(T\right)\ge WT\left(X\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+write 
+\begin_inset Formula $X$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $WT\left(X\right)$
+\end_inset
+
+=
+\begin_inset Formula $TS\left(T\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else{}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else rollback 
+\begin_inset Formula $T$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout Standard
+.......]צריך להשלים[
+\end_layout
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+DB Recovery
+\end_layout
+
+\begin_layout Standard
+בעיות אפשריות:
+\end_layout
+
+\begin_layout Itemize
+במקרה שנקלענו ל
+\lang english
+Deadlock
+\lang hebrew
+, ונאלצנו להוציא טרנזקציה, אז צריך להחזיר את ה
+\lang english
+DB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למצב שלפני הטרנזקציה.
+\end_layout
+
+\begin_layout Itemize
+אותו דבר במקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Timestamping
+\end_layout
+
+\begin_layout Itemize
+וגם במקרה של חישוב לא חוקי - למשל חילוק באפס.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ נתונים ב
+\lang english
+DB
+\lang hebrew
+.
+ 
+\begin_inset Formula $t$
+\end_inset
+
+ משתנה לוקלי לצורכי חישובים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=8\qquad B=8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c|c|c|c}
+\textnormal{Action} & t & \textnormal{Mem A} & \textnormal{Mem B} & \textnormal{Disk A} & \textnormal{Disk B}\\
+\hline r\left(A,t\right) & 8 & 8 &  & 8 & 8\\
+t=t*2 & 16 & 8 &  & 8 & 8\\
+w\left(A,t\right) & 16 & 16 &  & 8 & 8\\
+\hline r\left(B,t\right) & 8 & 16 & 8 & 8 & 8\\
+t=t*2 & 16 & 16 & 8 & 8 & 8\\
+w\left(B,t\right) & 16 & 16 & 16 & 8 & 8\\
+\hline \textnormal{output}\left(A\right) & 16 & 16 & 16 & 16 & 8\\
+\textnormal{output}\left(B\right) & 16 & 16 & 16 & 16 & 16
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם צריך לבטל את זה?
+\end_layout
+
+\begin_layout Standard
+נתבונן בכמה מנגנונים
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Undo Recovery
+\end_layout
+
+\begin_layout Standard
+כדי להתאושש, אנו צריכים גיבוי)
+\lang english
+copy
+\lang hebrew
+( של בסיס הנתונים, ו
+\lang english
+log
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שבו רשומים הפעולות שביצענו.
+\end_layout
+
+\begin_layout Itemize
+כשטרנזקציה מתחילה, נכתב בלוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+<start T>
+\end_layout
+
+\begin_layout Itemize
+כשהטרנזציה מגיעה לנקודה שאחרי כל החישובים, ממש לפני שהשינויים נכתבים, נכתב
+ בלוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+<commit T>
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+commit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא פקודה בתוך התוכנית, ובאחריות המתכנת לכתוב אותה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+במידה והטרנזקציה נכשלת, נכתב בלוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+<abort T>
+\end_layout
+
+\begin_layout Itemize
+בכל כתיבה, נכתב בלוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+<T,X,v>
+\lang hebrew
+, כאשר 
+\begin_inset Formula $T$
+\end_inset
+
+ - הטרנזצקציה, 
+\begin_inset Formula $X$
+\end_inset
+
+ - הנתון שנכתב, ו
+\begin_inset Formula $v$
+\end_inset
+
+ - הערך הישן.
+\end_layout
+
+\begin_layout Section*
+כדי לעבוד עם שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Undo
+\lang hebrew
+, צריכים לשמור על כללים:
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+( סדר כתיבה
+\end_layout
+
+\begin_layout Enumerate
+מכינים את הכתיבה ללוג
+\end_layout
+
+\begin_layout Enumerate
+כותבים ל
+\begin_inset Formula $DB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מבצעים את הכתיבה ללוג
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc|c|c|c|c|c|c}
+ & \textnormal{Action} & t & \textnormal{Mem A} & \textnormal{Mem B} & \textnormal{Disk A} & \textnormal{Disk B} & \textnormal{LOG(UNDOO)}\\
+\hline 1 &  &  &  &  &  & \\
+2 & r\left(A,t\right) & 8 & 8 &  & 8 & 8 & \left\langle \textnormal{start }T\right\rangle \\
+3 & t=t*2 & 16 & 8 &  & 8 & 8\\
+4 & w\left(A,t\right) & 16 & 16 &  & 8 & 8 & \left\langle T,A,8\right\rangle \\
+\hline 5 & r\left(B,t\right) & 8 & 16 & 8 & 8 & 8\\
+6 & t=t*2 & 16 & 16 & 8 & 8 & 8\\
+7 & w\left(B,t\right) & 16 & 16 & 16 & 8 & 8 & \left\langle T,B,8\right\rangle \\
+\hline 8 & \textnormal{flush log} &  &  &  &  & \\
+9 & \textnormal{output}\left(A\right) & 16 & 16 & 16 & 16 & 8\\
+10 & \textnormal{output}\left(B\right) & 16 & 16 & 16 & 16 & 16\\
+12 & \textnormal{flush log} &  &  &  &  &  & \left\langle \textnormal{commit}\right\rangle 
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UNDOO
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\family roman
+\lang english
+1)
+\begin_inset Formula $\downarrow$
+\end_inset
+
+ committed T
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+active T
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+2)
+\begin_inset Formula $\uparrow$
+\end_inset
+
+ incomplete - UNDO
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+3) incomplete 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ abort
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+4) flush log
+\end_layout
+
+\begin_layout Itemize
+את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( מבצעים במידה ונכשלים אחרי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- במידה וכבר ביצענו את הטרנזקציה אז לא צריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+recovery
+\end_layout
+
+\begin_layout Itemize
+את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( מבצעים במידה ונכשלים ב
+\numeric on
+10-11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מבצעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+undo
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מחזירים את 
+\begin_inset Formula $A,B$
+\end_inset
+
+ לערכים המקוריים שלהם.
+\end_layout
+
+\begin_layout Itemize
+את 
+\numeric on
+3
+\numeric off
+( מבצעים במידה ונכשלים ב
+\numeric on
+8-10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מבצעים כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Itemize
+את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+( מבצעים במידה ונכשלים ב
+\numeric on
+1-8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מבצעים כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+REDO
+\end_layout
+
+\begin_layout Standard
+כאן הסדר של הכתיבה בלוג הוא
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+start
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+commit
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+abort
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula $\left\langle T,X,v\right\rangle $
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כאשר הפעם 
+\begin_inset Formula $v$
+\end_inset
+
+ הוא הערך החדש
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc|c|c|c|c|c|c}
+ & \textnormal{T} & \textnormal{t} & \textnormal{M.A} & \textnormal{M.B} & \textnormal{D.A} & \textnormal{D.B} & \textnormal{Log\left(REDO\right)}\\
+\hline 1 &  &  &  &  &  &  & \left\langle \textnormal{start }T\right\rangle \\
+2 & r\left(A,t\right) & 8 & 8 &  & 8 & 8\\
+3 & t=t*2 & 16 &  &  &  & \\
+4 & w\left(A,t\right) &  & 16 &  &  &  & \left\langle T,A,16\right\rangle \\
+\hline 5 & r\left(B,t\right) & 8 &  & 8 &  & \\
+6 & t=t*2 & 16 &  &  &  & \\
+7 & w\left(B,t\right) & 16 &  & 16 &  &  & \left\langle T,B,16\right\rangle \\
+\hline 8 &  &  &  &  &  &  & \left\langle \textnormal{commit}\right\rangle \\
+9 & \textnormal{flush log} &  &  &  &  & \\
+\hline 10 & \textnormal{output}\left(A\right) &  &  &  & 16 & \\
+11 & \textnormal{output}\left(B\right) &  &  &  &  & 16
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מה צריך לעשות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+1)
+\begin_inset Formula $\downarrow$
+\end_inset
+
+log: commit
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+action
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+2)
+\begin_inset Formula $\downarrow$
+\end_inset
+
+ imcopmlete - nothing
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+committed - REDO
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+3) incomplete 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ abort
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+4) flush log
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Dirty Data
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|c|c}
+T_{1} & T_{2} & T_{3}\\
+\hline \vdots & \\
+w_{1}\left(A\right) & \\
+\vdots & r_{2}\left(A\right)\\
+\vdots & \vdots\\
+\vdots & w_{2}\left(A\right)\\
+\vdots & \textnormal{commit}\\
+\vdots & \vdots & r_{3}\left(A\right)\\
+\textnormal{abort} & \vdots & \vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ עשתה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+abort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפני שהיא סיימה - אבל אחרי שהיא שהיא כתבה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ זה גורם לכך ש
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ כבר השתמשו ב
+\begin_inset Formula $A$
+\end_inset
+
+ - בערך לא נכון שלא!
+\end_layout
+
+\begin_layout Standard
+המצב הזה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dirty Data
+\lang hebrew
+, וצריך לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cascading rollback
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+צריך לרשום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+check point
+\lang hebrew
+, כדי שיהיה אפשר לעשות את זה.
+\end_layout
+
+\end_body
+\end_document

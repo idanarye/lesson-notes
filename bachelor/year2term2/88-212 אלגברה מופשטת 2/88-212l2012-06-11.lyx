@@ -1,0 +1,1076 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ - תחום ראשי)
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+כל מודול נוצר סופית הוא מנה של 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+כל תת-מודול של 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ נוצר על ידי לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ וקטורים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אפשר להציג בצורה 
+\begin_inset Formula $A\cdot R^{n}$
+\end_inset
+
+ )
+\begin_inset Formula $A\in M_{n}\left(R\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+כל מודול נוצר סופית איזומורפי ל
+\begin_inset Formula $M_{A}=\nicefrac{R^{n}}{A\cdot R^{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $A\sim B$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש מטריצות הפיכות 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ כך ש
+\begin_inset Formula $B=PAQ$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $A\sim B$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M_{A}\cong M_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+משפט
+\series default
+:)
+\begin_inset Formula $R$
+\end_inset
+
+ ראשית( כל מטריצה דומה למטריצה קנונית
+\begin_inset Formula 
+\[
+\begin{pmatrix}d_{1} &  & 0\\
+ & \ddots\\
+0 &  & d_{n}
+\end{pmatrix}\qquad d_{1}\mid\dots\mid d_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{A\oplus B}\cong M_{A}\oplus M_{B}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+M_{\begin{pmatrix}d_{1}\\
+ & \ddots\\
+ &  & d_{n}
+\end{pmatrix}}\cong\bigoplus M_{\left(d_{i}\right)}=\bigoplus\nicefrac{R}{Rd_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל 
+\bar under
+מודול
+\bar default
+ נוצר סופית מעל תחום ראשי הוא סכום ישר של מודולים ציקליים
+\begin_inset Formula 
+\[
+\nicefrac{\mathbb{Z}}{\mathbb{Z}d}=\mathbb{Z}_{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(R=\mathbb{Z}\right)\qquad A=\begin{pmatrix}1\\
+ & 6\\
+ &  & 0\\
+ &  &  & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{A}=\underbrace{\nicefrac{R}{R\cdot1}}_{=0}\oplus\underbrace{\nicefrac{R}{R\cdot6}}_{=\nicefrac{\mathbb{Z}}{6\mathbb{Z}}}\oplus\underbrace{\nicefrac{R}{R\cdot0}}_{=\mathbb{Z}}\oplus\underbrace{\nicefrac{R}{R\cdot0}}_{=\mathbb{Z}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנות לגבי מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\mathbb{F}\left[x\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: מודול מעל 
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+ = מ"ו מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ +
+\begin_inset Formula $T:V\to V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מהו מודול ציקלי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=R\cdot w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=V=\mathbb{F}\left[x\right]\cdot w=\left\{ f\left(x\right)\cdot w\middle|f\in\mathbb{F}\left[x\right]\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\{ \left(f\left(T\right)\right)\left(w\right)\right\} =\textnormal{span}\left\{ w,Tw,T^{2}w,\dots\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $V$
+\end_inset
+
+ ציקלי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $w\in V$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+V=\textnormal{span}\left\{ w,Tw,T^{2}w,\dots\right\} =\textnormal{span}\left\{ w\right\} =\mathbb{F}\cdot w
+\]
+
+\end_inset
+
+כנ"ל אם 
+\begin_inset Formula $T=I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+אם 
+\begin_inset Formula $V=\mathbb{F}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $T\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}=\begin{pmatrix}c\\
+a\\
+b
+\end{pmatrix}$
+\end_inset
+
+, אז
+\end_layout
+
+\begin_layout Itemize
+תת המודול הציקלי הנפרש על ידי 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\mathbb{F}\cdot\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תת המודול הציקלי הנפרש על ידי 
+\begin_inset Formula $\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}$
+\end_inset
+
+ הוא כל 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\mathbb{F}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $T:\begin{pmatrix}a_{1}\\
+\vdots\\
+a_{n}
+\end{pmatrix}\mapsto\begin{pmatrix}0\\
+a_{1}\\
+\vdots\\
+a_{n-1}
+\end{pmatrix}$
+\end_inset
+
+ )לכן 
+\begin_inset Formula $T^{n}=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+מהם כל תת המודולים של 
+\begin_inset Formula $V$
+\end_inset
+
+? 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ תת מרחב הגדור לפעולה של 
+\begin_inset Formula $T$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=4$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\subset\begin{pmatrix}0\\
+0\\
+0\\
+*
+\end{pmatrix}\subset\begin{pmatrix}0\\
+0\\
+*\\
+*
+\end{pmatrix}\subset\begin{pmatrix}0\\
+*\\
+*\\
+*
+\end{pmatrix}\subset V=\begin{pmatrix}*\\
+*\\
+*\\
+*
+\end{pmatrix}
+\]
+
+\end_inset
+
+כל אלו תת מודולים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אין אחרים:יהי 
+\begin_inset Formula $U$
+\end_inset
+
+ תת-מודול.
+ יש 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\bar under
+מקסימלי
+\bar default
+ כך ש
+\begin_inset Formula $U\subseteq T^{i}V$
+\end_inset
+
+.
+ לכן יש 
+\begin_inset Formula $w\in U$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w\notin T^{i+1}V$
+\end_inset
+
+.
+ תרגיל: 
+\begin_inset Formula $U=T^{i}V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+לכל אופרטור יש מטריצה מייצגת לפי בסיס
+\begin_inset Formula 
+\[
+B=\left\{ b_{1},\dots b_{n}\right\} \qquad A\in M_{n}\left(\mathbb{F}\right)\qquad T:V\to V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left[T\right]_{B}\Leftrightarrow\forall_{j}T\left(b_{j}\right)=\sum_{i}A_{ij}b_{i}
+\]
+
+\end_inset
+
+בסופו של דבר
+\begin_inset Formula 
+\[
+\forall_{v}\left[T\left(v\right)\right]_{B}=\left[T\right]_{B}\left[v\right]_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מודול ציקלי, 
+\begin_inset Formula $T:V\to V$
+\end_inset
+
+ נתון.
+ כלומר 
+\begin_inset Formula $V=\mathbb{F}\left[x\right]\cdot w=\textnormal{span}\left\{ T^{i}w\right\} $
+\end_inset
+
+ עבור 
+\begin_inset Formula $w$
+\end_inset
+
+ קבוע.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $g$
+\end_inset
+
+ הפולינום המינימלי של 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(T\right)\cdot w=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i}f\left(T\right)T^{i}w=T^{i}f\left(T\right)w=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f\left(T\right)=0$
+\end_inset
+
+ בתור אופרטור על 
+\begin_inset Formula $V$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\mid f
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\cong\nicefrac{\mathbb{F}\left[x\right]}{\left\{ f\middle|f\left(x\right)\cdot w=0\right\} }=\nicefrac{\mathbb{F}\left[x\right]}{\mathbb{F}\left[x\right]-g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+להיפך: יהי 
+\begin_inset Formula $g$
+\end_inset
+
+ פולינום ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נתבונן במודול 
+\begin_inset Formula $\nicefrac{\mathbb{F}\left[x\right]}{\mathbb{F}\left[x\right]\cdot g}$
+\end_inset
+
+.
+ נתבונן ב
+\begin_inset Formula $\overline{1},\overline{x},\dots\overline{x^{n-1}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\overline{x^{i}}=x^{i}+\mathbb{F}\left[x\right]\cdot g$
+\end_inset
+
+.
+ זה בסיס ל
+\begin_inset Formula $\nicefrac{\mathbb{F}\left[x\right]}{\mathbb{F}\left[x\right]\cdot g}$
+\end_inset
+
+.
+ נכתוב 
+\begin_inset Formula $g=x^{n}+a_{n-1}x^{n-1}+\dots+a_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האופרטור 
+\begin_inset Formula $T$
+\end_inset
+
+ על 
+\begin_inset Formula $V$
+\end_inset
+
+ מתאים לכפל ב
+\begin_inset Formula $x$
+\end_inset
+
+ באגף ימין, שהמטריצה המייצגת היא
+\begin_inset Formula 
+\[
+\left[x\right]_{G}=\begin{pmatrix}0 & 0 & \cdots & 0 & -a_{0}\\
+1 & 0 & \cdots & \cdots & \vdots\\
+0 & 1 & \ddots & \ddots & \vdots\\
+\vdots & \ddots & \ddots & \ddots & \vdots\\
+0 & \cdots & \cdots & 1 & a_{n-1}
+\end{pmatrix}=c\left(g\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $c\left(g\right)$
+\end_inset
+
+ נקראת המטריצה המלווה של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחנו
+\end_layout
+
+\begin_layout Standard
+המודול הציקלי 
+\begin_inset Formula $\nicefrac{\mathbb{F}\left[x\right]}{\mathbb{F}\left[x\right]\cdot g}$
+\end_inset
+
+ איזומורפי למ"ו 
+\begin_inset Formula $V=\mathbb{F}^{n}$
+\end_inset
+
+ עם הפעולה 
+\begin_inset Formula $T\left(v\right)=c\left(g\right)\cdot v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ מ"ו ממימד סופי עם אופרטור 
+\begin_inset Formula $T:V\to V$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $V_{T}$
+\end_inset
+
+ את המודול 
+\begin_inset Formula $V$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+ ביחס לפעולה 
+\begin_inset Formula $f\left(x\right)\cdot v=f\left(T\right)v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\in M_{n}\left(\mathbb{F}\right)$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $V_{n}$
+\end_inset
+
+ את המ"ו 
+\begin_inset Formula $\mathbb{F}^{n}$
+\end_inset
+
+ עם פעולת הכפל בסקלר 
+\begin_inset Formula $x\cdot v=Av$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל - 
+\begin_inset Formula $V_{T}\cong V_{\left[T\right]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ הוא מודול נוצר סופית מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ ולכן גם מעל 
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $V_{T}$
+\end_inset
+
+ איזומורפיזם למודול מהצורה 
+\begin_inset Formula $\nicefrac{\mathbb{F}\left[x\right]^{n}}{\begin{pmatrix}\,\end{pmatrix}\mathbb{F}\left[x\right]^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in M_{n}\left(\mathbb{F}\right)$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+V_{A}\cong\nicefrac{\mathbb{F}\left[x\right]^{n}}{\underbrace{\left(x\cdot I-A\right)\mathbb{F}\left[x\right]^{n}}_{k}}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\mathbb{F}^{n}\cong V_{A}$
+\end_inset
+
+ כמודול ביחס לפעולה 
+\begin_inset Formula $xV=Av$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\overline{e}_{i}$
+\end_inset
+
+ וקטורי הבסיס הסטנדרטי של 
+\begin_inset Formula $\mathbb{F}\left[x\right]^{n}$
+\end_inset
+
+ כמודול חופשי מעל 
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ את וקטורי הבסיס הסטנדרטי של 
+\begin_inset Formula $\mathbb{F}^{n}$
+\end_inset
+
+ כמ"ו מעל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\varphi:\mathbb{F}\left[x\right]^{n}\to V_{A}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\varphi:\overline{e}_{i}\mapsto e_{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\begin{pmatrix}g_{1}\left(x\right)\\
+\vdots\\
+g_{n}\left(x\right)
+\end{pmatrix}=\varphi\left(\sum g_{i}\left(x\right)\overline{e}_{i}\right)\stackrel{{\scriptscriptstyle g_{i}\left(x\right)\in\mathbb{F}\left[x\right]}}{=}\sum g_{i}\left(x\right)\varphi\left(\overline{e}_{i}\right)=\sum g_{i}\left(x\right)e_{i}=\sum g_{i}\left(A\right)e_{i}\in\mathbb{F}^{n}
+\]
+
+\end_inset
+
+לפי משפט האיזומורפיזם הראשון 
+\begin_inset Formula $V_{A}\cong\nicefrac{\mathbb{F}\left[x\right]^{n}}{\ker\varphi}$
+\end_inset
+
+.
+ שימו לב ש
+\begin_inset Formula $\mathbb{F}\left[x\right]^{n}=\sum\mathbb{F}\left[x\right]\overline{e}_{i}$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\overline{V}=\sum\mathbb{F}\overline{e}_{i}$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $w_{j}=x\overline{e}_{j}-\sum A_{ij}\overline{e}_{i}$
+\end_inset
+
+.
+ אלו העמודות של 
+\begin_inset Formula $xI-A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח ש
+\begin_inset Formula $w_{j}\in\ker\varphi$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi\left(w_{j}\right)=xe_{j}-\sum A_{ij}e_{i}=Ae_{j}-\sum A_{ij}e_{j}=0
+\]
+
+\end_inset
+
+ראינו ש 
+\begin_inset Formula $x\overline{e}_{j}=w_{j}+\sum a_{ij}\overline{e}_{i}\in K+\overline{V}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\cdot\overline{V}=K+\overline{V}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x^{l}\overline{v}\le K+\overline{V}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\mathbb{F}\left[x\right]^{n}=\sum\mathbb{F}\left[x\right]\overline{e}_{i}=\mathbb{F}\left[x\right]\cdot\overline{V}\subseteq K+\overline{V}
+\]
+
+\end_inset
+
+כמובן 
+\begin_inset Formula $\ker\varphi\cap\overline{v}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ker\varphi=\ker\varphi\cap\mathbb{F}\left[x\right]^{n}=\ker\varphi\cap\left(\overline{V}+K\right)=\left(\ker\varphi\cap\overline{V}\right)+K=0+K=K
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nicefrac{\mathbb{F}\left[x\right]^{n}}{K}\cong V_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

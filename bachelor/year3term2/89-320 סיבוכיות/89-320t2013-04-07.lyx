@@ -1,0 +1,538 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+ההיררכיה הפולינומית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\in L\iff\exists_{y\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}V\left(x,y\right)=1
+\]
+
+\end_inset
+
+מגדירים 
+\begin_inset Formula $CONP=\left\{ L\middle|\overline{L}\in NP\right\} $
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\in L\iff\forall_{y\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}V\left(x,y\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ששפות 
+\begin_inset Formula $NP$
+\end_inset
+
+ אפשר להגדיר עם הכמת 
+\emph on
+קיים
+\emph default
+, ושפות 
+\begin_inset Formula $CONP$
+\end_inset
+
+ אפשר להגדיר עם הכמת 
+\emph on
+לכל
+\emph default
+.
+ למשל:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $SAT$
+\end_inset
+
+ - כל הביטויים הבוליאנים עבורם 
+\series bold
+קיימת
+\series default
+ הצבה מספקת.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $CO-SAT$
+\end_inset
+
+ - כל הביטויים הבוליאנים עבורם 
+\series bold
+כל
+\series default
+ הצבה אינה מספקת.
+\end_layout
+
+\begin_layout Standard
+לכאורה נראה שכיסינו את כל המחלקות)כי יש לנו רק שני כמתים(, אבל מה עם למשל
+ שפת כל הביטויים הבוליאנים עבורם 
+\series bold
+קיימת
+\series default
+ הצבה מספקת 
+\series bold
+יחידה
+\series default
+? בשביל זה צריך לשלב את שני הכמתים: כל הביטויים הבוליאנים עבורם 
+\series bold
+קיימת
+\series default
+ הצבה מספקת ו
+\series bold
+כל
+\series default
+ הצבה מספקת אחרת אינה מספקת.
+\end_layout
+
+\begin_layout Section*
+הגדרה - 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $\Pi_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L\in\Sigma_{k}$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\in L\iff\exists_{y_{1}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}\forall_{y_{2}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}\dots Q_{y_{k}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \exists,\forall\right\} \ni Q\qquad y_{i}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}\qquad V\left(x,y_{1},y_{2},\dots y_{k}\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L\in\Pi_{k}$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\in L\iff\forall_{y_{1}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}\exists_{y_{2}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}\forall_{y_{3}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}\dots Q_{y_{k}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \exists,\forall\right\} \ni Q\qquad y_{i}\in\left\{ 0,1\right\} ^{P\left(\left|x\right|\right)}\qquad V\left(x,y_{1},y_{2},\dots y_{k}\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ההיררכיה הפולונומית מוגדרת: 
+\begin_inset Formula 
+\[
+PG:=\bigcup\limits _{i=1}^{\infty}\Sigma_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\Pi_{k}=CO-\Sigma_{k}=\left\{ L\middle|\overline{L}\in\Sigma_{k}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\in\Pi_{k}\iff\overline{L}\in\Sigma_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\Sigma_{k}\subseteq\Pi_{k+1}\qquad\Pi_{k}\subseteq\Sigma_{k+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ כלשהו 
+\begin_inset Formula $\Sigma_{k}=\Pi_{k}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $PH=\Sigma_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משמעות
+\end_layout
+
+\begin_layout Standard
+בכל שלב מוסיפים עוד כמתים שנותנים עוד כוח, כאשר 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $\Pi_{k}$
+\end_inset
+
+ נפגשות אבל לא מתלכדות.
+ ההשערה אומרת שההיררכיה היא אינסופית.
+ תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אומרת שאם ברמה מסויימת 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ ו
+\begin_inset Formula $\Pi$
+\end_inset
+
+ מתלכדות, אז ההיררכיה נעצרת - כי עוד כמתים לא יוסיפו עוד כוח.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+MAX-Clique=\left\{ \left(G,k\right)\middle|\textnormal{The maximal Clique in \ensuremath{G} contains exactly k nodes}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הראו
+\series default
+: 
+\begin_inset Formula $MAX-Clique\in\Sigma_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(G,k\right)\in MAX-Clique\iff\exists_{S\subseteq V\left(G\right)}\forall_{S'\subseteq V\left(G\right)}V\left(\left(G,k\right),S,S'\right)=1
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $V\left(\left(G,k\right),S,S'\right)=1$
+\end_inset
+
+ אם"ם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|S\right|=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ מהווה קליק: לכל 
+\begin_inset Formula $u,v\in S$
+\end_inset
+
+ יש קשת בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left|S'\right|>k$
+\end_inset
+
+ אזי 
+\begin_inset Formula $S'$
+\end_inset
+
+ לא מהווה קליק: קיימים זוג קודקודים 
+\begin_inset Formula $u,v\in S'$
+\end_inset
+
+ כך שאין ביניהם קשת.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $MIN-CNF=\left\{ \varphi\middle|\textnormal{\ensuremath{\varphi} is CNF and there is no shorter form equivalent to \ensuremath{\varphi}}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הראו
+\series default
+: 
+\begin_inset Formula $MIN-CNF\in\Pi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi\in MIN-CNF\iff\forall_{\varphi'}\exists_{v}V\left(\varphi,\varphi',v\right)=1
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $V\left(\varphi,\varphi',v\right)=1$
+\end_inset
+
+ אם"ם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ בצורת 
+\begin_inset Formula $CNF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left|\varphi'\right|<\left|\varphi\right|$
+\end_inset
+
+ אז 
+\begin_inset Formula $\varphi\left(v\right)\neq\varphi'\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

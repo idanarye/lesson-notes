@@ -1,0 +1,807 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משטחים מינימליים
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $M\subseteq\mathbb{R}^{3}$
+\end_inset
+
+ נקרא 
+\emph on
+מינימלי
+\emph default
+ אם העקמומיות הממוצעת שלו מתאפסת זהותית.
+ כלומר לכל 
+\begin_inset Formula $P\in M$
+\end_inset
+
+, 
+\begin_inset Formula $H\left(P\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הגדרה שקולה
+\end_layout
+
+\begin_layout Standard
+לכל נקודה 
+\begin_inset Formula $P\in M$
+\end_inset
+
+ יש סביבה 
+\begin_inset Formula $D_{P}$
+\end_inset
+
+ שהיא התוצאה של טבילת שפתה 
+\begin_inset Formula $\partial D_{P}$
+\end_inset
+
+ במי סבון אידאליים.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+מישור הוא משטח מינימלי
+\end_layout
+
+\begin_layout Itemize
+ספירה היא לא משטח מינימלי
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שה
+\emph on
+קטנואיד
+\emph default
+)
+\lang english
+Catenoid
+\lang hebrew
+( שהוא משטח הסיבוב של העקומה 
+\begin_inset Formula $x=\cosh z$
+\end_inset
+
+ הוא משטח מינימלי.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה עבור העקומה 
+\begin_inset Formula $x=\cosh z$
+\end_inset
+
+ היא 
+\begin_inset Formula $\begin{array}{c}
+x=\cosh\phi=f\left(\phi\right)\\
+z=\phi=g\left(\phi\right)
+\end{array}\qquad-\infty<\phi<\infty$
+\end_inset
+
+.
+ פרמטריזציה עבור הקטנואיד:
+\begin_inset Formula 
+\[
+r\left(\theta,\phi\right)=\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}=\begin{pmatrix}\cosh\phi\cos\theta\\
+\cosh\phi\sin\theta\\
+\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להראות 
+\begin_inset Formula $H=\frac{1}{2}\textnormal{tr }S=0$
+\end_inset
+
+.
+ נחשב נגזרות ראשונות:
+\begin_inset Formula 
+\[
+r_{\theta}=r_{\prime1}=\begin{pmatrix}-\cosh\phi\sin\theta\\
+\cosh\phi\cos\theta\\
+0
+\end{pmatrix}\qquad r_{\phi}=r_{\prime2}=\begin{pmatrix}\sinh\phi\cos\theta\\
+\sinh\phi\sin\theta\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+התבנית היסודית הראשונה:
+\begin_inset Formula 
+\[
+g_{11}=\left\langle r_{\prime1},r_{\prime2}\right\rangle =\cosh^{2}\phi\qquad g_{12}=0=g_{21}\qquad g_{22}=\sinh^{2}\phi+1=\cosh^{2}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)לפי הזהות 
+\begin_inset Formula $\cosh^{2}-\sinh^{2}=1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\left(g_{ij}\right)=\begin{pmatrix}\cosh^{2}\phi & 0\\
+0 & \cosh^{2}\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G^{-1}=\left(g^{ij}\right)=\begin{pmatrix}\frac{1}{\cosh^{2}\phi} & 0\\
+0 & \frac{1}{\cosh^{2}\phi}
+\end{pmatrix}=\begin{pmatrix}\textnormal{sech}^{2}\phi & 0\\
+0 & \textnormal{sech}^{2}\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+)כמו ש
+\begin_inset Formula $\sec\theta=\frac{1}{\cos\theta}$
+\end_inset
+
+, כך גם 
+\begin_inset Formula $\textnormal{sech}\theta=\frac{1}{\cosh\theta}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+הנורמל:
+\begin_inset Formula 
+\[
+\vec{n}=r_{\prime1}\times r_{\prime2}=\det\begin{pmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+-\cosh\phi\sin\theta & \cosh\phi\cos\theta & 0\\
+\sinh\phi\cos\theta & \sinh\phi\sin\theta & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+...>חישוב משעמם<...
+\begin_inset Formula 
+\[
+\hat{n}=\left(\textnormal{sech}\phi\cos\theta,\textnormal{sech}\phi\sin\theta,-\tanh\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזרות שניות:
+\begin_inset Formula 
+\[
+r_{\theta\theta}=r_{\prime11}=\left(-\cosh\phi\cos\theta,-\cosh\phi\sin\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{\theta\phi}=r_{\prime12}=\left(-\sinh\phi\sin\theta,\sinh\phi\cos\theta,0\right)=r_{\prime21}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{\prime22}=\left(\cosh\phi\cos\theta,\cosh\phi\sin\theta,0\right)
+\]
+
+\end_inset
+
+תבנית יסודית שנייה:
+\begin_inset Formula 
+\[
+b_{11}=\left\langle r_{\prime11},\hat{n}\right\rangle =-1\qquad b_{12}=0=b_{21}\qquad b_{22}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+אופרטור הצורה:
+\begin_inset Formula 
+\[
+S=G^{-1}\cdot B=\begin{pmatrix}\textnormal{sech}^{2}\phi & 0\\
+0 & \textnormal{sech}^{2}\phi
+\end{pmatrix}\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix}=\begin{pmatrix}-\textnormal{sech}^{2}\phi & 0\\
+0 & \textnormal{sech}^{2}\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=\frac{1}{2}\textnormal{tr }S=0\qquad\surd
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שדות וקטוריים
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח רגולרי.
+ 
+\emph on
+שדה וקטורי
+\emph default
+ בקבוצה פתוחה 
+\begin_inset Formula $U\subseteq M$
+\end_inset
+
+ הוא פונקציה 
+\begin_inset Formula $v$
+\end_inset
+
+ השולחת כל נקודה 
+\begin_inset Formula $p\in U$
+\end_inset
+
+ אל וקטור משיק 
+\begin_inset Formula $v\left(P\right)\in T_{P}M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אומרים שהשדה 
+\begin_inset Formula $v$
+\end_inset
+
+ גזיר בנקודה 
+\begin_inset Formula $P\in U$
+\end_inset
+
+ אם ישנה פרמטריזציה 
+\begin_inset Formula $r\left(u,v\right)$
+\end_inset
+
+ כל שבסביבת 
+\begin_inset Formula $P$
+\end_inset
+
+, הפונקציות 
+\begin_inset Formula $a\left(u,v\right),b\left(u,v\right)$
+\end_inset
+
+ המוגדרות ע"י
+\begin_inset Formula 
+\[
+v\left(P\right)=a\left(u,v\right)r_{\prime1}+b\left(u,v\right)r_{\prime2}
+\]
+
+\end_inset
+
+הן גזירות.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתחיל עם המעגל 
+\begin_inset Formula $\left(x-2\right)^{2}+z^{2}=1$
+\end_inset
+
+ במישור 
+\begin_inset Formula $\left[xz\right]$
+\end_inset
+
+.
+ יש לו פרמטריזציה 
+\begin_inset Formula $\left\{ \begin{array}{c}
+x=2+\cos\phi\\
+z=\sin\phi
+\end{array}\right.$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\gamma\left(\phi\right)=\begin{pmatrix}2+\cos\phi\\
+\sin\phi
+\end{pmatrix}\qquad0\le\phi\le2\pi$
+\end_inset
+
+.
+ וקטור הנגזרת 
+\begin_inset Formula $\gamma'\left(\phi\right)=\begin{pmatrix}-\sin\phi\\
+\cos\phi
+\end{pmatrix}$
+\end_inset
+
+ נותן משיק למעגל בכל נקודה.
+ ע"י סיבוב סביב ציר ה
+\begin_inset Formula $z$
+\end_inset
+
+, המעגל הופך לטורוס, והוקטורים האדומים נותנים שדה משיק על הטורוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted10.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ביתר פירוט, פרמטריזציה של הטורוס
+\begin_inset Formula 
+\[
+r\left(\theta,\phi\right)=\begin{pmatrix}\left(2+\cos\phi\right)\cos\theta\\
+\left(2+\cos\phi\right)\sin\theta\\
+\sin\phi
+\end{pmatrix}\qquad\begin{array}{c}
+0\le\phi\le2\pi\\
+0\le\theta\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+הוקטורים המשיקים למעגיל הם 
+\begin_inset Formula $\begin{pmatrix}-\sin\phi\\
+\cos\phi
+\end{pmatrix}$
+\end_inset
+
+, והמשטח שלנו הוא משטח סיבוב עם מטריצת הסיבוב 
+\begin_inset Formula $R_{z}\left(\theta\right)=\begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}$
+\end_inset
+
+, ולכן השדה הוקוטורי הוא
+\begin_inset Formula 
+\[
+v\left(\theta,\phi\right)=R_{z}\left(\theta\right)\cdot\begin{pmatrix}-\sin\phi\\
+0\\
+\cos\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\left(\theta,\phi\right)=\begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}-\sin\phi\\
+0\\
+\cos\phi
+\end{pmatrix}=\begin{pmatrix}-\sin\phi\\
+0\\
+\cos\phi
+\end{pmatrix}=\begin{pmatrix}-\sin\phi\cos\theta\\
+-\sin\phi\sin\theta\\
+\cos\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ה
+\begin_inset Formula $v$
+\end_inset
+
+ הזה הוא שדה שמשיק לטורוס בכל נקודה.
+\end_layout
+
+\begin_layout Standard
+נראה מהן הפונקציות 
+\begin_inset Formula $a,b$
+\end_inset
+
+.
+ נחשב נגזרות חלקיות:
+\begin_inset Formula 
+\[
+r_{\theta}=r_{\prime1}=\begin{pmatrix}-\left(2+\cos\phi\right)\sin\theta\\
+\left(2+\cos\phi\right)\cos\theta\\
+0
+\end{pmatrix}\qquad r_{\phi}=r_{\prime2}=\begin{pmatrix}-\sin\phi\cos\theta\\
+-\sin\phi\sin\theta\\
+\cos\phi
+\end{pmatrix}
+\]
+
+\end_inset
+
+דורשים 
+\begin_inset Formula $v=a\left(\theta,\phi\right)r_{\prime1}+b\left(\theta,\phi\right)_{\prime2}$
+\end_inset
+
+, ובשביל זה צריך לקחת:
+\begin_inset Formula 
+\[
+a\left(\theta,\phi\right)\equiv0\qquad b\left(\theta,\phi\right)\equiv1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a,b$
+\end_inset
+
+ פונקציות גזירות)אפילו 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+(, ולכן השדה 
+\begin_inset Formula $v$
+\end_inset
+
+ גזיר)ואפילו 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+באמת, היינו צריכים לקחת אי שוויונות חזקים 
+\begin_inset Formula $\begin{array}{c}
+0<\theta<2\pi\\
+0<\phi<2\pi
+\end{array}$
+\end_inset
+
+ ויוצא שלא מכסים את כל הטורוס.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+העקומה 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ נקראת 
+\emph on
+קו אינטגרלי
+\emph default
+ של שדה וקטורי 
+\begin_inset Formula $v$
+\end_inset
+
+, אם 
+\begin_inset Formula $\dot{\gamma}\left(t\right)=v\left(\gamma\left(t\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במילים אחרות, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ "זורמת" לפי כיוון השדה 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M=\mathbb{R}^{2}$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $v$
+\end_inset
+
+ השדה הקבוע 
+\begin_inset Formula $v\left(P\right)\equiv\left(1,2\right)$
+\end_inset
+
+.
+ מצא את העקומות האינטגרליות.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+כדי ש 
+\begin_inset Formula $\gamma\left(t\right)=\left(\gamma^{1}\left(t\right),\gamma^{2}\left(t\right)\right)$
+\end_inset
+
+ תהיה עקומה אינטגרלית, צריכים:
+\begin_inset Formula 
+\[
+\dot{\gamma}\left(t\right)=v\left(\gamma\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\dot{\gamma}^{1}\\
+\dot{\gamma}^{2}
+\end{pmatrix}=v\begin{pmatrix}\gamma^{1}\\
+\gamma^{2}
+\end{pmatrix}\qquad\begin{pmatrix}\dot{\gamma}^{1}\\
+\dot{\gamma}^{2}
+\end{pmatrix}=\begin{pmatrix}1\\
+2
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\gamma^{1}=t+a\\
+\gamma^{2}=t+b
+\end{array}\qquad\gamma=\begin{pmatrix}a\\
+b
+\end{pmatrix}+t\cdot\begin{pmatrix}1\\
+2
+\end{pmatrix}
+\]
+
+\end_inset
+
+אלו קוים ישרים ששוחים בכיוון 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו את כל העקומות האינטגרליות עבור השדה הוקטורי)שדה משיק( 
+\begin_inset Formula $v$
+\end_inset
+
+ על האורוס מהדוגמה הקודמת.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+עקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ על הטורוס יכולה להיכתב בצורה:
+\begin_inset Formula 
+\[
+r\left(\theta\left(t\right),\phi\left(t\right)\right)=\gamma\left(t\right)=\begin{pmatrix}\left(2+\cos\phi\left(t\right)\right)\cos\theta\left(t\right)\\
+\left(2+\cos\phi\left(t\right)\right)\sin\theta\left(t\right)\\
+\sin\phi\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצוא 
+\begin_inset Formula $\begin{array}{c}
+\theta\left(t\right)=?\\
+\phi\left(t\right)=?
+\end{array}$
+\end_inset
+
+.
+ באגף ימין:
+\begin_inset Formula 
+\[
+v\left(\gamma\left(t\right)\right)=\begin{pmatrix}-\sin\phi\left(t\right)\cos\theta\left(t\right)\\
+-\sin\phi\left(t\right)\sin\theta\left(t\right)\\
+\cos\phi\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+באגף שמאל יש את 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\dot{\gamma}\left(t\right)=\begin{pmatrix}-\sin\phi\left(t\right)\dot{\phi}\left(t\right)\cos\theta\left(t\right)-\left(2+\cos\phi\left(t\right)\right)\sin\theta\left(t\right)\dot{\theta}\left(t\right)\\
+-\sin\phi\left(t\right)\dot{\phi}\left(t\right)\sin\theta\left(t\right)+\left(2+\cos\phi\left(t\right)\right)\cos\theta\left(t\right)\dot{\theta}\left(t\right)\\
+\cos\phi\left(t\right)\dot{\phi}\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

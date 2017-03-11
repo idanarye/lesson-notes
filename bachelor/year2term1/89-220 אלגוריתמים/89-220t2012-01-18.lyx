@@ -1,0 +1,1352 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מסלולים קלים ביותר בין כל זוגות הקודקודים
+\end_layout
+
+\begin_layout Standard
+מקודקוד אחד אנו יודעים לעשות: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Dijkstra$
+\end_inset
+
+ ב
+\begin_inset Formula $O\left(\left|E\right|+\left|V\right|\log\left|V\right|\right)$
+\end_inset
+
+)או ב
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+ אם משתמשים במערך(.
+ לכן אם נריץ מכל הקודקודים זה יקח 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|+\left|V\right|^{2}\log\left|V\right|\right)$
+\end_inset
+
+)או 
+\begin_inset Formula $O\left(\left|V\right|^{3}\right)$
+\end_inset
+
+ במערך(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Belman-Ford$
+\end_inset
+
+ ב
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+ - לכן אם נריץ מכל הקודקודים זה יקח 
+\begin_inset Formula $O\left(\left|V\right|^{2}\left|E\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+איך נעשה את זה יותר יעיל?
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\end_layout
+
+\begin_layout Itemize
+בגרף דחוס מספר הקשתות הוא 
+\begin_inset Formula $\left|E\right|=\theta\left(\left|V\right|^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בגרף דליל מספר הקשתות הוא 
+\begin_inset Formula $\left|E\right|=O\left(\cfrac{\left|V\right|^{2}}{\log\left|V\right|}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פתרון תכנות דינאמי
+\end_layout
+
+\begin_layout Standard
+ממספרים את הקודקודים 
+\begin_inset Formula $\left\{ 1,...n\right\} $
+\end_inset
+
+.
+ הגרף מיוצג כמטריצת שכנויות: 
+\begin_inset Formula $W_{ij}=\begin{cases}
+0 & i=j\\
+w\left(i,j\right) & \left(i,j\right)\in E\\
+\infty & \left(i,j\right)\notin E
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפלט: מטריצה 
+\begin_inset Formula $D=\left\{ d_{ij}\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $d_{ij}=\delta\left(i,j\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה אלגוריתם תכנות דינאמי:
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $d_{ij}^{\left(m\right)}$
+\end_inset
+
+ את המסלול הקל ביותר בין 
+\begin_inset Formula $i$
+\end_inset
+
+ ל
+\begin_inset Formula $j$
+\end_inset
+
+ המשתמש ב
+\begin_inset Formula $m$
+\end_inset
+
+ קשתות לכל היותר.
+ 
+\begin_inset Formula $D^{\left(m\right)}=\left\{ d_{ij}^{\left(m\right)}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $D^{\left(n-1\right)}$
+\end_inset
+
+ יתן לנו את התשובה הסופית.
+\begin_inset Formula 
+\[
+d_{ij}^{\left(m\right)}=\min\left\{ d_{ij}^{\left(m-1\right)},\min_{1\le k\le n}\left\{ d_{ij}^{\left(m-1\right)}+w\left(k,j\right)\right\} \right\} =...
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $w\left(i,i\right)=0$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+...=\min_{1\le k\le n}\left\{ d_{ij}^{\left(m-1\right)}+w\left(k,j\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטריצה התחלתית: 
+\begin_inset Formula $D^{\left(0\right)}$
+\end_inset
+
+: 
+\begin_inset Formula $d_{ij}^{\left(0\right)}=\begin{cases}
+0 & i=j\\
+\infty & i\ne j
+\end{cases}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+D^{\left(0\right)}=\begin{pmatrix}\\
+\\
+\end{pmatrix},D^{\left(1\right)}=\begin{pmatrix}\\
+\\
+\end{pmatrix},...D^{\left(n-1\right)}=\begin{pmatrix}\\
+\\
+\end{pmatrix}
+\]
+
+\end_inset
+
+זמן הריצה - 
+\begin_inset Formula $O\left(n^{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שיפור באמצעות כפל מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{ij}^{\left(m\right)}=\min_{1\le k\le n}\left\{ d_{ik}^{\left(m-1\right)}+\overbrace{D_{kj}^{\left(1\right)}}^{=w\left(k,j\right)}\right\} 
+\]
+
+\end_inset
+
+כלומר מ
+\begin_inset Formula $D^{\left(m-1\right)},D^{\left(1\right)}$
+\end_inset
+
+ ניתן להגיע ל
+\begin_inset Formula $D^{\left(m\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתונה הבעיה: להעלות מטריצה בחזקה 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+)כש
+\begin_inset Formula $A$
+\end_inset
+
+ מט' 
+\begin_inset Formula $n\times n$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+A,A^{2},A^{4},A^{8},...
+\]
+
+\end_inset
+
+אם מעלים מטריצה בחזקה זה יעלה לנו 
+\begin_inset Formula $O\left(n^{3}\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן נשתמש ב:
+\begin_inset Formula 
+\[
+d_{ij}^{\left(m\right)}=\sum_{k=1}^{n}d_{ik}^{\left(m-1\right)}d_{kj}^{\left(1\right)}
+\]
+
+\end_inset
+
+זמן הריצה: 
+\begin_inset Formula $O\left(n^{3}\log n\right)$
+\end_inset
+
+, בצורה דומה להעלאת מט' בחזקה.
+\end_layout
+
+\begin_layout Part*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Floyd-Warshall
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+זה גם אלגוריתם תכנות דינמי, כאשר בשלב ה
+\begin_inset Formula $k$
+\end_inset
+
+ נשתמש רק בקודקודים 
+\begin_inset Formula $\left\{ 1,...k\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Itemize
+בהינתן מסלול 
+\begin_inset Formula $p=\left\{ v_{1},...v_{k}\right\} $
+\end_inset
+
+ הקודקודים 
+\begin_inset Formula $\left\{ v_{2},...v_{k-1}\right\} $
+\end_inset
+
+ הם הקודקודים הפנימיים במסלול.
+\end_layout
+
+\begin_layout Itemize
+מסלול 
+\begin_inset Formula $k$
+\end_inset
+
+ פנימי הוא מסלול שהקודקודים הפנימיים בו הם מתוך הקבוצה 
+\begin_inset Formula $\left\{ 1,...k\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מסלול 
+\begin_inset Formula $k$
+\end_inset
+
+ פנימי 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מסלול 
+\begin_inset Formula $k+1$
+\end_inset
+
+ פנימי
+\end_layout
+
+\begin_layout Itemize
+מסלול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פנימי 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מסלול ללא קודקודים פנימיים.
+\end_layout
+
+\begin_layout Section*
+נגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{ij}^{\left(k\right)}$
+\end_inset
+
+=המסלול הקל ביותר מ
+\begin_inset Formula $i$
+\end_inset
+
+ ל
+\begin_inset Formula $j$
+\end_inset
+
+ שקודקודיו הפנימיים הם מ
+\begin_inset Formula $\left\{ 1,...k\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אתחול
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{ij}^{\left(0\right)}=\begin{cases}
+0 & i=j\\
+w\left(i,j\right) & \left(i,j\right)\in E\\
+\infty & \left(i,j\right)\notin E
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+צעד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{ij}^{\left(k\right)}=\min\left\{ d_{ij}^{\left(k-1\right)},d_{ik}^{\left(k-1\right)}+d_{kj}^{\left(k-1\right)}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל שלב מוסיפים עוד קודקוד לאפשרות הבחירה, ולכן בבחירת 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i,j$
+\end_inset
+
+ יש לנו שתי אפשרויות - להשאיר את המסלול הקודם, או להשתמש במסלול שבוחר גם
+ את 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ זה עולה 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ לכל זוג קודקודים.
+\end_layout
+
+\begin_layout Section*
+האלגוריתם
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\bar under
+\lang english
+Floyd-Warshall
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $D^{\left(0\right)}\gets W$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for k from 1 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for i from 1 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for j from 1 to n-1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $d_{ij}^{\left(k\right)}\gets\min\left\{ d_{ij}^{\left(k-1\right)},d_{ik}^{\left(k-1\right)}+d_{ik}^{\left(k-1\right)}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return 
+\begin_inset Formula $D^{\left(n\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שב
+\begin_inset Formula $D^{\left(n\right)}$
+\end_inset
+
+ כל הקודקודים יכולים להיות פנימיים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+זמן
+\begin_inset space ~
+\end_inset
+
+ריצה: 
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שחזור הפתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר מטריצה 
+\begin_inset Formula $\Pi^{\left(k\right)}=\left\{ \pi_{ij}^{\left(k\right)}\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\pi_{ij}^{\left(k\right)}$
+\end_inset
+
+=הקודקוד לפני 
+\begin_inset Formula $j$
+\end_inset
+
+ במסלול הקל ביותר מ
+\begin_inset Formula $i$
+\end_inset
+
+ ל
+\begin_inset Formula $j$
+\end_inset
+
+ עם קודקודים פנימיים 
+\begin_inset Formula $\left\{ 1,...k\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל עדכון של 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+, אם בחרנו 
+\begin_inset Formula $d_{ij}^{\left(k\right)}=d_{ij}^{\left(k-1\right)}$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\pi_{ij}^{\left(k\right)}=\pi_{ij}^{\left(k-1\right)}$
+\end_inset
+
+, ואם בחרנו 
+\begin_inset Formula $d_{ij}^{\left(k\right)}=d_{ik}^{\left(k-1\right)}+d_{kj}^{\left(k-1\right)}$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\pi_{ij}^{\left(k\right)}=\pi_{kj}^{m(k-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סגור טרנזיטיבי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G^{*}=\left(V,E^{*}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+}קיים מסלול מ
+\begin_inset Formula $i$
+\end_inset
+
+ ל
+\begin_inset Formula $j$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+
+\begin_inset Formula $E^{*}=\{\left(i,j\right)\big|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נגדיר: 
+\begin_inset Formula $t_{ij}^{\left(k\right)}$
+\end_inset
+
+=
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם יש מסלול 
+\begin_inset Formula $k$
+\end_inset
+
+-פנימי מ
+\begin_inset Formula $i$
+\end_inset
+
+ ל
+\begin_inset Formula $j$
+\end_inset
+
+, אחרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נרצה לדעת את 
+\begin_inset Formula $t_{ij}^{\left(n\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{ij}^{\left(0\right)}=\begin{cases}
+1 & i=j\vee\left(i,j\right)\in E\\
+0 & \left(i,j\right)\notin E
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t_{ij}^{\left(k\right)}\gets t_{ij}^{\left(k-1\right)}\vee\left(t_{ik}^{\left(k-1\right)}\wedge t_{kj}^{\left(k-1\right)}\right)
+\]
+
+\end_inset
+
+זה גם 
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+, אבל מחשבים יודעים לעשות פעולות לוגיות יותר מהר מפעולות אריתמטיות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{ij}^{\left(t\right)}\gets\min\left\{ d_{ij}^{\left(k-1\right)},d_{ik}^{\left(k-1\right)}+d_{kj}^{\left(k-1\right)}\right\} 
+\]
+
+\end_inset
+
+אפשר להחליף ב
+\begin_inset Formula 
+\[
+d_{ij}\gets\min\left\{ d_{ij},d_{ik}+d_{kj}\right\} 
+\]
+
+\end_inset
+
+כי
+\begin_inset Formula 
+\[
+d_{ik}^{\left(k\right)}=d_{ik}^{\left(k-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $BF$
+\end_inset
+
+ עובד ב
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Dijkstra$
+\end_inset
+
+ עובד ב
+\begin_inset Formula $O\left(\left|E\right|+\left|V\right|\log\left|V\right|\right)$
+\end_inset
+
+, אבל רק אם אין קשתות שליליות.
+ נרצה להתגב על ההגבלה הזו.
+\end_layout
+
+\begin_layout Part*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Johnson
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ עם פונקציית משקלים 
+\begin_inset Formula $w:E\to\mathbb{R}$
+\end_inset
+
+.
+ נרצה למצוא פונקציית משקלים אחרת 
+\begin_inset Formula $w':E\to\mathbb{R}$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $G'=\left(V,E\right)$
+\end_inset
+
+ עם 
+\begin_inset Formula $w'$
+\end_inset
+
+ - כך שיתקיימו התנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{\left(u,v\right)\in E}w'\left(u,v\right)\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צריכים להישמר המסלולים הקלים ביותר:
+\begin_inset Newline newline
+\end_inset
+
+מסלול 
+\begin_inset Formula $p$
+\end_inset
+
+ בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ הוא קל ביותר ב
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ הוא קל ביותר ב
+\begin_inset Formula $G'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יש מעגל בעל משקל שלילי ב
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש מעגל בעל משקל שלילי ב
+\begin_inset Formula $G'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נשתמש בפונקציה 
+\begin_inset Formula $h:V\to\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\left(u,v\right)\in E:\hspace{1em}w'\left(u,v\right)=w\left(u,v\right)+h\left(u\right)-h\left(v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+בהינתן מסלול 
+\begin_inset Formula $p:\left(v_{1},...v_{k}\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w\left(p\right)=\sum\limits _{i=1}^{k-1}w\left(v_{i},v_{i+1}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w'\left(p\right)=\sum\limits _{i=1}^{k-1}w\left(u,v\right)+h\left(v_{1}\right)-h\left(v_{k}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $G'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בהנתן מעגל 
+\begin_inset Formula $C=\left(v_{1},...v_{k}=v_{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+G':w'\left(C\right)=w\left(C\right)+h\left(v_{1}\right)-h\left(h_{1}\right)=w\left(C\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w'\left(u,v\right)=w\left(u,v\right)+\delta\left(s,u\right)-\delta\left(s,v\right)
+\]
+
+\end_inset
+
+נרצה 
+\begin_inset Formula $w'\left(u,v\right)\ge0$
+\end_inset
+
+.
+ לאי שוויון המשולש:
+\begin_inset Formula 
+\[
+\delta\left(s,v\right)\le\delta\left(s,u\right)+w\left(u,v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow w\left(u,v\right)+\delta\left(s,u\right)-\delta\left(s,v\right)\ge0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+האלגוריתם
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+( מוסיפים קודקוד 
+\begin_inset Formula $s$
+\end_inset
+
+ עם הקשתות כפי שתיארנו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+( נריץ 
+\begin_inset Formula $BF$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\delta\left(s,v\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall v$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\gets$
+\end_inset
+
+נותן לנו גם מעגלים שליליים.
+ עולה 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+( 
+\begin_inset Formula $\forall v\hspace{1em}h\left(v\right)\gets\delta\left(s,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+4
+\numeric off
+( 
+\begin_inset Formula $w'\left(u,v\right)\gets w\left(u,v\right)+h\left(u\right)-h\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+5
+\numeric off
+( נריץ את 
+\begin_inset Formula $dijkstra$
+\end_inset
+
+ מכל הקודקודים 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ נמצא את 
+\begin_inset Formula $\delta\left(v,w\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall w$
+\end_inset
+
+.
+ עולה 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|+\left|V\right|^{2}\log\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+6
+\numeric off
+( 
+\begin_inset Formula $\delta\left(u,v\right)\gets\delta\left(u,v\right)-h\left(u\right)+h\left(v\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סה"כ: 
+\begin_inset Formula $O\left(\left|V\right|\left|E\right|+\left|V\right|^{2}\log\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,578 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+סוגי תחומים:
+\end_layout
+
+\begin_layout Itemize
+ראשי
+\end_layout
+
+\begin_layout Itemize
+תחום נותר
+\end_layout
+
+\begin_layout Itemize
+תחום בזו
+\end_layout
+
+\begin_layout Itemize
+תחום פרידות יחידה
+\end_layout
+
+\begin_layout Itemize
+תחום אטומי
+\end_layout
+
+\begin_layout Itemize
+מקיים את תנאי השרשרת על מחלקים
+\end_layout
+
+\begin_layout Itemize
+כל איבר הפיך הוא ראשוני
+\end_layout
+
+\begin_layout Section*
+דוגמאות לתחומי שלמות ראשיים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות לתחומים לא ראשיים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{F}\left[x,y\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תחום שלמות 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא 
+\bar under
+אוקלידי
+\bar default
+ אם יש פונקציה 
+\begin_inset Formula $d:R\to\mathbb{N}_{0}\cup\left\{ -\infty\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall_{x\neq0}d\left(0\right)<d\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $d\left(a\right)\le d\left(b\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $a|b$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{b\neq0}\forall_{a}\exists_{q,r}a=q\cdot b+r\qquad d\left(r\right)<d\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ אוקלידי בגלל 
+\begin_inset Formula $d\left(n\right)=\left|n\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: לכל 
+\begin_inset Formula $b$
+\end_inset
+
+, עבור 
+\begin_inset Formula $0\le a$
+\end_inset
+
+ באינדוקציה על 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $-a\dots a\le0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{F}\left[x\right]$
+\end_inset
+
+ אוקלידי בגלל 
+\begin_inset Formula $d\left(f\right)=\deg f$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=a_{n}x^{n}+\dots\qquad b=b_{m}x^{m}+\dots
+\]
+
+\end_inset
+
+בוחרים 
+\begin_inset Formula $q=\cfrac{a_{n}}{b_{m}}x^{n-m}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $q\cdot b=a_{n}x^{n}+\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל תחום אוקלידי הוא ראשי
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום אוקלידי, 
+\begin_inset Formula $I\lhd R$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $0\neq\underbrace{b\in I}_{\begin{array}{c}
+\Downarrow\\
+Rb\subseteq I
+\end{array}}$
+\end_inset
+
+ עם 
+\begin_inset Formula $d\left(-\right)$
+\end_inset
+
+ מינימלי.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $a\in I$
+\end_inset
+
+.
+ נכתוב:
+\begin_inset Formula 
+\[
+\overbrace{a}^{\in I}=\overbrace{q\cdot b}^{\in I}+r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left(r\right)<d\left(b\right)
+\]
+
+\end_inset
+
+סתירה אלא אם 
+\begin_inset Formula $r=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a=qb\in Rb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+איזה חוגים מהצורה 
+\begin_inset Formula $O_{D}$
+\end_inset
+
+ הם אוקלידיים?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D<0$
+\end_inset
+
+: 
+\begin_inset Formula $O_{D}$
+\end_inset
+
+ אוקלידי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ אוקלידי ביחס ל
+\begin_inset Formula $\left|N\left(x\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $D=-1,-2,-3,-7,-11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D>0$
+\end_inset
+
+: 
+\begin_inset Formula $O_{D}$
+\end_inset
+
+ אוקלידי ביחס ל
+\begin_inset Formula $\left|N\left(\cdot\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D=2,3,5,6,7,11,13,17,19,21,29,33,37,41,57,73
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא ידוע האם מספר סופי של חוגים אוקלידיים מהצורה 
+\begin_inset Formula $O_{D}$
+\end_inset
+
+, למשל 
+\begin_inset Formula $\mathbb{Z}\left[\sqrt{14}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ נתון ללא גורמים ריבועיים.
+ רוצים להוכיח ש
+\begin_inset Formula $O_{D}$
+\end_inset
+
+ אוקלידי ביחס ל
+\begin_inset Formula 
+\[
+d\left(x\right)=\left|N\left(x\right)\right|=\left|\alpha^{2}-D\beta^{2}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+d\left(0\right)<d\left(x\right) &  & \surd\\
+a|b\Rightarrow d\left(a\right)|d\left(b\right) &  & \surd
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{a,\underbrace{b}_{\neq0}}\exists_{q,r}a=q\cdot b+r,\left|N\left(r\right)\right|<\left|N\left(b\right)\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\forall_{\underbrace{a}_{\in R},\underbrace{b}_{\in R}}\exists_{\underbrace{q}_{\in R}}\left|N\left(a-bq\right)\right|<\left|N\left(b\right)\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+O_{D}=\begin{cases}
+Z\left(\sqrt{D}\right) & D\equiv2,3\pmod4\\
+Z\left(\cfrac{1+\sqrt{D}}{z}\right) & D\equiv1\pmod4
+\end{cases}\subseteq\mathbb{Q}\left[\sqrt{D}\right]
+\]
+
+\end_inset
+
+שדה השברים
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונה נורמה כפלית 
+\begin_inset Formula $N:O_{D}\to\mathbb{Z}$
+\end_inset
+
+.
+ הפונקציה 
+\begin_inset Formula $N\left(\cfrac{x}{y}\right)=\cfrac{N\left(x\right)}{N\left(y\right)}$
+\end_inset
+
+ מוגדרת היטב ככפונציה 
+\begin_inset Formula $\mathbb{F}\to\mathbb{Q}$
+\end_inset
+
+, והיא כפלית שם
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall a\in R\forall0\neq b\in R\exists q\in R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|N\left(\cfrac{a}{b}-q\right)\right|=\left|\cfrac{N\left(a-qb\right)}{N\left(b\right)}\right|<1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Updownarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\forall_{\theta\in\mathbb{F}}\exists_{q\in R}\left|N\left(\theta-q\right)\right|<1}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $B_{1}\left(q\right)=\left\{ x\in\mathbb{F}\middle|N\left(x-q\right)<1\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\mathbb{F}\subseteq\bigcup_{q\in R}B_{1}\left(a\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סיכום
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח ש
+\begin_inset Formula $O_{D}$
+\end_inset
+
+ אוקלידי ביחס לנורמה, צריך להוכיח ששדה השברים 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ מכוסה על ידי הכדור 
+\begin_inset Formula $B_{1}\left(q\right)$
+\end_inset
+
+, 
+\begin_inset Formula $q\in R$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1073 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו נוסחה עבור שטח פני גליל בלי המכסים שרדיוסו 
+\begin_inset Formula $R$
+\end_inset
+
+ וגובהו 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יש פרמטריזציה 
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\left(R\cos u,R\sin u,v\right)\qquad\begin{array}{c}
+0<u<2\pi\\
+0<v<h
+\end{array}
+\]
+
+\end_inset
+
+הפרמטריזציה הזו לא מכסה את כל הגליל, אבל זה לא משנה לצרכי שטח.
+\end_layout
+
+\begin_layout Standard
+נגזרות חלקיות:
+\begin_inset Formula 
+\[
+r_{u}=\begin{pmatrix}-R\sin u\\
+R\cos u\\
+0
+\end{pmatrix}\qquad r_{v}=\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=\left\langle r_{u},r_{u}\right\rangle =R^{2}\qquad g_{12}=\left\langle r_{u},r_{v}\right\rangle =0=g_{21}\qquad g_{22}=\left\langle r_{v},r_{v}\right\rangle =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies G=\left(g_{ij}\right)=\begin{pmatrix}R^{2} & 0\\
+0 & 1
+\end{pmatrix}\implies\det\left(g_{ij}\right)=R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: מטריקה של מיקור היא 
+\begin_inset Formula $\left(g_{ij}\right)=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+, ולכן אם 
+\begin_inset Formula $R=1$
+\end_inset
+
+ הגליל "דומה" למישור.
+\end_layout
+
+\begin_layout Standard
+שטח הגליל הוא 
+\begin_inset Formula 
+\[
+A=\iint\limits _{\left\{ \begin{array}{c}
+0<u<2\pi\\
+0<v<h
+\end{array}\right\} }\sqrt{\det\left(g_{ij}\right)}\mathrm{\, d}u\mathrm{\, d}v=\int_{0}^{h}\int_{0}^{2\pi}R=R\cdot2\pi\cdot h=\left(2\pi R\right)\cdot h
+\]
+
+\end_inset
+
+זו בעצם הוכחה לכך ששטח המעטפת של הגליל הוא ההיקף כפול הגובה)כי 
+\begin_inset Formula $2\pi R$
+\end_inset
+
+ הוא ההיקף(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+)
+\begin_inset Formula $M,N$
+\end_inset
+
+ משטחים( נקראת 
+\emph on
+אימרסיה
+\emph default
+)
+\lang english
+immersion
+\lang hebrew
+( אם בכל נקודה 
+\begin_inset Formula $p\in M$
+\end_inset
+
+ הדיפרנציאל 
+\begin_inset Formula $\mathrm{d}_{P}f:T_{P}M\to T_{f\left(P\right)}N$
+\end_inset
+
+ הוא חח"ע.
+\end_layout
+
+\begin_layout Standard
+באופן שקול 
+\begin_inset Formula $f$
+\end_inset
+
+ אי אימרסיה אם 
+\begin_inset Formula $\textnormal{rank }\mathrm{d}_{p}f=\dim M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $p\in M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההגדרה נכונה באופן כללי, אך במקרה של משטחים המימד הוא 
+\begin_inset Formula $\dim M=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+האם קיימת אימרסיה 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>m$
+\end_inset
+
+? נמקו.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיימת אימרסיה 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+.
+ ניתן לייצג את הדיפרנציאל 
+\begin_inset Formula $\mathrm{d}_{p}f$
+\end_inset
+
+ ע"י מטריצת יעקובי 
+\begin_inset Formula $J_{f}:T_{P}\mathbb{R}^{n}\to T_{f\left(P\right)}\mathbb{R}^{m}$
+\end_inset
+
+.
+ ממדי המטריצה הם 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+ 
+\series bold
+אבל
+\series default
+, 
+\begin_inset Formula $\textnormal{rank }J_{f}\le\min\left(m,n\right)=m<n$
+\end_inset
+
+, ולכן אי אפשר 
+\begin_inset Formula $\textnormal{rank }J_{f}=n$
+\end_inset
+
+ - והגענו לסתירה, כי הדרישה ש
+\begin_inset Formula $f$
+\end_inset
+
+ תהיה אימרסיה היא 
+\begin_inset Formula $\textnormal{rank }J_{f}=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו נורמל ומרחב משיק עבור האליפסואיד 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}=1$
+\end_inset
+
+ בכל נקודה 
+\begin_inset Formula $P=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ שעליו.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+המשטח נתון בצורה סתומה ע"י המשוואה 
+\begin_inset Formula $F\left(x,y,z\right)=\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}-1=0$
+\end_inset
+
+.
+ הגראדיאנט של 
+\begin_inset Formula $F$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+\nabla F=\left(\frac{2x}{a^{2}},\frac{2y}{b^{2}},\frac{2z}{c^{2}}\right)
+\]
+
+\end_inset
+
+ובנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla F\left(P\right)=\left(\frac{2x_{0}}{a^{2}},\frac{2y_{0}}{b^{2}},\frac{2z_{0}}{c^{2}}\right)
+\]
+
+\end_inset
+
+וזה בדיוק הנורמל 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+לא בטוח שבאורך
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size normal
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בגלל זה סימנו 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ ולא 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המרחב המשיק 
+\begin_inset Formula $T_{P}M$
+\end_inset
+
+ מכיל בדיוק את כל הנקודות שמאונכות ל
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+.
+ ז"א 
+\begin_inset Formula $\left\langle \vec{n},\left(x,y,z\right)\right\rangle =0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boxed{\frac{2x_{0}}{a^{2}}\cdot x+\frac{2y_{0}}{b^{2}}\cdot y+\frac{2z_{0}}{c^{2}}z=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+נשים לב שמה שמצאנו זה לא מישור משיק אלא מרחב משיק)זה בעצם מה שביקשו(
+\end_layout
+
+\begin_layout Standard
+המישור המשיק עובר דרך הנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+, המרחב המשיק עובר דרך ראשית הצירים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהנתן משטח פרמטרי 
+\begin_inset Formula $r\left(u,v\right)$
+\end_inset
+
+, 
+\emph on
+התבנית היסודית השנייה
+\emph default
+ בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $II_{a}$
+\end_inset
+
+, היא העתקה בילינארית 
+\begin_inset Formula $T_{P}M\times T_{P}M\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נבחר לייצג את 
+\begin_inset Formula $II_{a}$
+\end_inset
+
+ בבסיס 
+\begin_inset Formula $\left\{ r_{u},r_{v}\right\} $
+\end_inset
+
+ וקטורי הנגזרות החלקיות, נוכל להציג את 
+\begin_inset Formula $II_{a}$
+\end_inset
+
+ ע"י מטריצה
+\begin_inset Formula 
+\[
+II_{a}\left(x,y\right)=x^{T}By
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $B$
+\end_inset
+
+ היא המטריצה המייצרת את 
+\begin_inset Formula $II_{a}$
+\end_inset
+
+ עם הבסיס 
+\begin_inset Formula $\left\{ r_{u},r_{v}\right\} $
+\end_inset
+
+( כאשר
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}\left\langle r_{uu},\hat{n}\right\rangle  & \left\langle r_{uv},\hat{n}\right\rangle \\
+\left\langle r_{vu},\hat{n}\right\rangle  & \left\langle r_{vv},\hat{n}\right\rangle 
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{uu}=\frac{\partial^{2}r}{\partial u^{2}}\qquad r_{uv}=\frac{\partial^{2}r}{\partial u\partial v}\qquad r_{vu}=\frac{\partial^{2}r}{\partial v\partial u}\qquad r_{vv}=\frac{\partial^{2}r}{\partial v^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{n}=r_{u}\times r_{v}\qquad\hat{n}=\frac{r_{u}\times r_{v}}{\left\Vert r_{u}\times r_{v}\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+אופרטור הצורה 
+\begin_inset Formula $S$
+\end_inset
+
+
+\emph default
+ מוגדר בצורה סתומה ע"י
+\begin_inset Formula 
+\[
+II_{a}\left(x,y\right)=\left\langle Sx,y\right\rangle =\left\langle x,Sy\right\rangle 
+\]
+
+\end_inset
+
+הגדרה מפורשת היא
+\begin_inset Formula 
+\[
+S=G^{-1}\cdot B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+המשטחים הבאים נתונים באמצעות פרמטריזציה.
+ ציירו את המשטחים ומצאו את מטריקת )רימן(, אופרטור הצורה ואת התבנית היסודית
+ השנייה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+חרוט 
+\begin_inset Formula $r\left(u,v\right)=\begin{pmatrix}u\cos v\\
+u\sin v\\
+ku
+\end{pmatrix},\begin{array}{c}
+0<u<\infty\\
+0<v<2\pi
+\end{array}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הליקואיד 
+\begin_inset Formula $r\left(u,v\right)=\begin{pmatrix}u\cos v\\
+u\sin v\\
+k\cdot v
+\end{pmatrix}\begin{array}{c}
+0<u<\infty\\
+-\infty<v<\infty
+\end{array}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+נחשב נגזרות חלקיות:
+\begin_inset Formula 
+\[
+r_{u}=\begin{pmatrix}\cos v\\
+\sin v\\
+k
+\end{pmatrix}\qquad r_{v}=\begin{pmatrix}-u\sin v\\
+u\cos v\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+רכיבי מטריקת רימן הם:
+\begin_inset Formula 
+\[
+g_{11}=\left\langle r_{u},r_{v}\right\rangle =1+k^{2}\qquad g_{12}=\left\langle r_{u},r_{v}\right\rangle =0=\left\langle r_{v},r_{u}\right\rangle =g_{21}\qquad g_{22}=\left\langle r_{v},r_{v}\right\rangle =u^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\boxed{G=\left(g_{ij}\right)=\begin{pmatrix}1+k^{2} & 0\\
+0 & u^{2}
+\end{pmatrix}}
+\]
+
+\end_inset
+
+נעבור לחישוב התבנית היסודית 
+\bar under
+השניה
+\bar default
+.
+ לצורך כך, נחשב נגזרות שניות:
+\begin_inset Formula 
+\[
+r_{uu}=\begin{pmatrix}0\\
+0\\
+0
+\end{pmatrix}\qquad r_{uv}=\begin{pmatrix}-\sin v\\
+\cos v\\
+0
+\end{pmatrix}=r_{vu}\qquad r_{vv}=\begin{pmatrix}-u\cos v\\
+-u\sin v\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+רוצים גם את 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\vec{n}=r_{u}\times r_{v}=\det\begin{pmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+\cos v & \sin v & k\\
+-u\sin v & u\cos v & 0
+\end{pmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-ku\cos v\cdot\hat{\imath}-ku\sin v\hat{\jmath}+u\hat{\kappa}=u\left(-k\cos v,-k\sin v,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \vec{n}\right\Vert =\left|u\right|\sqrt{k^{2}\cos^{2}v+k^{2}\sin^{2}v+1}=\left|u\right|\sqrt{1+k^{2}}=u\sqrt{1+k^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{n}=\frac{\vec{n}}{\left\Vert \vec{n}\right\Vert }=\frac{1}{\sqrt{1+k^{2}}}\begin{pmatrix}-k\cos v\\
+-k\sin v\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+רכיבי התבנית היסודית השנייה:
+\begin_inset Formula 
+\[
+b_{11}=\left\langle r_{uu},\hat{n}\right\rangle =0\qquad b_{12}=\left\langle r_{uv},\hat{n}\right\rangle =0=\left\langle r_{vu},\hat{n}\right\rangle =b_{21}\qquad b_{22}=\left\langle r_{vv},\hat{n}\right\rangle =\frac{ku}{\sqrt{1+k^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{B=\begin{pmatrix}0 & 0\\
+0 & \frac{ku}{\sqrt{1+k^{2}}}
+\end{pmatrix}}
+\]
+
+\end_inset
+
+לבסוף:
+\begin_inset Formula 
+\[
+G^{-1}=\begin{pmatrix}\frac{1}{1+k^{2}} & 0\\
+0 & \frac{1}{u^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+אופרטור הצורה הוא
+\begin_inset Formula 
+\[
+S=G^{-1}\cdot B=\begin{pmatrix}\frac{1}{1+k^{2}} & 0\\
+0 & \frac{1}{u^{2}}
+\end{pmatrix}\cdot\begin{pmatrix}0 & 0\\
+0 & \frac{ku}{\sqrt{1+k^{2}}}
+\end{pmatrix}=\boxed{\begin{pmatrix}0 & 0\\
+0 & \frac{k}{u\sqrt{1+k^{2}}}
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+וקטורי הנגזרות החלקיות:
+\begin_inset Formula 
+\[
+r_{u}=\begin{pmatrix}\cos v\\
+\sin v\\
+0
+\end{pmatrix}\qquad r_{v}=\begin{pmatrix}-u\sin v\\
+u\cos v\\
+k
+\end{pmatrix}
+\]
+
+\end_inset
+
+לכן רכיבי המטריקה הם
+\begin_inset Formula 
+\[
+\begin{array}{c}
+g_{11}=1\\
+g_{12}=0=g_{21}\\
+g_{22}=u^{2}+k^{2}
+\end{array}\implies G=\begin{pmatrix}1 & 0\\
+0 & u^{2}+k^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כעת, נחשב את הנורמל:
+\begin_inset Formula 
+\[
+\vec{n}=r_{u}\times r_{v}=\det\begin{pmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+\cos v & \sin v & 0\\
+-u\sin v & u\cos v & k
+\end{pmatrix}=\begin{pmatrix}k\sin v\\
+-k\cos v\\
+u
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{n}=\frac{1}{\sqrt{k^{2}+u^{2}}}\cdot\begin{pmatrix}k\sin v\\
+-k\cos v\\
+u
+\end{pmatrix}
+\]
+
+\end_inset
+
+נגזרות שניות:
+\begin_inset Formula 
+\[
+r_{uu}=\begin{pmatrix}0\\
+0\\
+0
+\end{pmatrix}\qquad r_{uv}=\begin{pmatrix}-\sin v\\
+\cos v\\
+0
+\end{pmatrix}=r_{vu}\qquad r_{vv}=\begin{pmatrix}-u\cos v\\
+-u\sin v\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+רכיבי התבנית היסודית השנייה:
+\begin_inset Formula 
+\[
+b_{11}=0\qquad b_{12}=b_{21}=\frac{-k}{\sqrt{k^{2}+u^{2}}}\qquad b_{22}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}0 & -\frac{k}{\sqrt{k^{2}+u^{2}}}\\
+-\frac{k}{\sqrt{k^{2}+u^{2}}} & 0
+\end{pmatrix}=-\frac{k}{\sqrt{k^{2}+u^{2}}}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+לבסוף
+\begin_inset Formula 
+\[
+G^{-1}=\begin{pmatrix}1 & 0\\
+0 & \frac{1}{u^{2}+k^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+ולכן אופרטור הצורה הוא
+\begin_inset Formula 
+\[
+S=G^{-1}\cdot B=\begin{pmatrix}0 & -\frac{k}{\sqrt{u^{2}+k^{2}}}\\
+-\frac{k}{\sqrt{u^{2}+k^{2}}^{3}} & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהנתן משטח 
+\begin_inset Formula $M$
+\end_inset
+
+, הערכים העצמיים של אופרטור הצורה 
+\begin_inset Formula $S$
+\end_inset
+
+ נקראים 
+\emph on
+ערכי העקמומיות הראשיים
+\emph default
+ ומסומנים 
+\begin_inset Formula $\kappa_{1},\kappa_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+עקמומיות גאוס
+\emph default
+ מוגדרת ע"י 
+\begin_inset Formula 
+\[
+K=\det S=\frac{\det B}{\det G}=\kappa_{1}\cdot\kappa_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+העקמומיות הממוצעת
+\emph default
+ היא
+\begin_inset Formula 
+\[
+H=\frac{\kappa_{1}+\kappa_{2}}{2}=\frac{1}{2}\textnormal{tr }S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+עבור המשטחים הקודמים מצאו את עקמומיות גאוס ואת העקמומיות הממוצעת.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+)חרוט( מצאנו 
+\begin_inset Formula $S=\begin{pmatrix}0 & 0\\
+0 & \frac{k}{u\sqrt{k^{2}+1}}
+\end{pmatrix}$
+\end_inset
+
+.
+ עקמומיות גאוס היא 
+\begin_inset Formula $K=\det S\equiv0$
+\end_inset
+
+ והממוצעת 
+\begin_inset Formula $H=\frac{k}{2u\sqrt{k^{1}+1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+)ניתן אפילו את ערכי העקמומיות הראשיים:
+\begin_inset Formula 
+\[
+"\lambda_{1}"=\kappa_{1}=0\qquad"\lambda_{2}"=\kappa_{2}=\frac{k}{u\sqrt{k^{2}+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+)הליקואיד( מצאנו 
+\begin_inset Formula $S=\begin{pmatrix}0 & -\frac{k}{\sqrt{k^{2}+u^{2}}}\\
+-\frac{k}{\sqrt{k^{2}+u^{2}}^{3}} & 0
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=\det S=-\frac{k^{2}}{\left(k^{2}+u^{2}\right)^{2}}\qquad H=\frac{1}{2}\textnormal{tr }S=\frac{1}{2}\cdot0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

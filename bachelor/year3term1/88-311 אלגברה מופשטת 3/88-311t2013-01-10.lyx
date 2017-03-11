@@ -1,0 +1,1419 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+ניזכר בהגדרה של דיסקרימיננטה:
+\begin_inset Formula 
+\[
+\Delta=\prod_{i<j}\left(r_{i}-r_{j}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $r_{1},\dots r_{n}$
+\end_inset
+
+ הם שורשים של פולינום 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D=\Delta^{2}$
+\end_inset
+
+ היא הדיסקרימיננטה.
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $\Delta$
+\end_inset
+
+ תלוי בסדר בחירת השורשים, אבל 
+\begin_inset Formula $D$
+\end_inset
+
+ לא בהכרח.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(x\right)\in F\left[x\right]$
+\end_inset
+
+, ראינו בתרגיל בית ש
+\begin_inset Formula $D\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ מתוקן מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, 
+\begin_inset Formula $u,v,w$
+\end_inset
+
+ הם שרשי 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+ דיסקרימיננטה.
+ הראו ש
+\begin_inset Formula 
+\[
+\mathbb{Q}\left(u,v,w\right)=\mathbb{Q}\left(u,\sqrt{D}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\begin{array}{c}
+E=\mathbb{Q}\left(u,v,w\right)\\
+K=\mathbb{Q}\left(u,\sqrt{D}\right)
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K\subseteq E$
+\end_inset
+
+)
+\begin_inset Formula $\Delta\in E$
+\end_inset
+
+ לפי הגדרתה(.
+ נוכיח 
+\begin_inset Formula $E\subseteq K$
+\end_inset
+
+.
+ מספיק להראות ש
+\begin_inset Formula $v,w\in K$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+g\left(x\right)=\frac{f\left(x\right)}{x-u}=\left(x-v\right)\left(x-w\right)\in K\left[x\right]\implies vw,v+w\in K\left[x\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(u\right)=\left(u-v\right)\left(u-w\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\sqrt{D}}{g\left(u\right)}=\pm\left(v-w\right)\in K
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+v+w\\
+v-w
+\end{array}\right.\implies v,w\in K
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, אי-פריק, 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה הפיצול שלו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{D}\in\mathbb{Q}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\right)=\mathbb{Z}_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\sqrt{D}\in\mathbb{Q}\implies E=\mathbb{Q}\left(u\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[E:\mathbb{Q}\right]=3\implies\textnormal{Gal}\left(E/\mathbb{Q}\right)\cong\mathbb{Z}_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\mathbb{Q}\left(u,\sqrt{D}\right):\mathbb{Q}\right]=3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\left[\mathbb{Q}\left(\sqrt{D}\right):\mathbb{Q}\right]}_{\textnormal{divides }2}\mid\left[\mathbb{Q}\left(u,\sqrt{D}\right):\mathbb{Q}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\mathbb{Q}\left(\sqrt{D}\right)=\mathbb{Q}\implies\sqrt{D}\in\mathbb{Q}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Gal}\left(E\left(\mathbb{Q}\right)\right)\cong S_{3}\iff\sqrt{D}\notin\mathbb{Q}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $D<0$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים שורש מרוכב 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\right)\simeq S_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+הדיסקרימיננטה של 
+\begin_inset Formula $f\left(x\right)=x^{3}+qx+r$
+\end_inset
+
+ היא 
+\begin_inset Formula $D=-4q^{3}-27r^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\textnormal{Res}\left(f,f'\right)$
+\end_inset
+
+)כאשר הרזיטנטה היא 
+\begin_inset Formula $\textnormal{Res}\left(f,g\right)=\prod\left(r_{i}-s_{j}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r_{i},s_{j}$
+\end_inset
+
+ הם שרשי 
+\begin_inset Formula $f,g$
+\end_inset
+
+ בהתאמה(.
+ יש משפט שאומר 
+\begin_inset Formula $\textnormal{Res}\left(f,g\right)=\det S\left(f,g\right)$
+\end_inset
+
+)
+\begin_inset Formula $S$
+\end_inset
+
+ היא מטריצת סילבסטר(.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=x^{3}-9x+9\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ מצאו את חבורת גלואה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אי-פריק)בדקו!(.
+ הדיסקרימיננטה היא 
+\begin_inset Formula $D=3^{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{D}\in\mathbb{Q}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\right)\simeq\mathbb{Z}_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם הפולינום 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לא מהצורה 
+\begin_inset Formula $f\left(x\right)=x^{3}+qx+r$
+\end_inset
+
+, אפשר להגיע לצורה הזו ע"י
+\begin_inset Formula $\tilde{f}\left(x\right)=f\left(x-\frac{a}{5}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא המקדם של 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\tilde{f}$
+\end_inset
+
+ הוא מהצורה הרצויה.
+ הדיסקרימיננטה וחבורת גלואה של 
+\begin_inset Formula $f,\tilde{f}$
+\end_inset
+
+ זהות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו או הפריכו:
+\end_layout
+
+\begin_layout Standard
+כל הרחבת גלואה עם חבורת גלואה פתירה היא הרחבה רדיקלית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נפריך ע"י דוגמה נגדית.
+\end_layout
+
+\begin_layout Standard
+ניקח פולינום 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם חבורת גלואה 
+\begin_inset Formula $\mathbb{Z}_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ הוא שדה הפיצול.
+ נניח בשלילה שההרחבה 
+\begin_inset Formula $\nicefrac{E}{\mathbb{Q}}$
+\end_inset
+
+ רדיקלית 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ שרשית 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $E=\mathbb{Q}\left(r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $r^{n}\in\mathbb{Q}$
+\end_inset
+
+, 
+\begin_inset Formula $r$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $g\left(x\right)=x^{n}-r^{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m_{r}\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m_{r}\left(x\right)$
+\end_inset
+
+ מתפצל ב
+\begin_inset Formula $E$
+\end_inset
+
+ כי 
+\begin_inset Formula $E$
+\end_inset
+
+ הרחבת גלואה ו
+\begin_inset Formula $r\in E$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\deg m_{r}\left(x\right)=3$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה ממשי.
+ ל
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ יש לכל היותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורשים ממשיים, כי השורשים הם 
+\begin_inset Formula $r,r\rho_{n}^{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ ממשי, 
+\begin_inset Formula $\rho_{n}^{i}$
+\end_inset
+
+ מקבל ערכים ממשיים רק אם 
+\begin_inset Formula $\rho_{n}^{i}=\rho_{2}=-1$
+\end_inset
+
+ או 
+\begin_inset Formula $i=0$
+\end_inset
+
+ - וזו סתירה, כי השורשים של 
+\begin_inset Formula $m_{r}\left(x\right)$
+\end_inset
+
+ כולם ממשיים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F$
+\end_inset
+
+ שדה, 
+\begin_inset Formula $\textnormal{char }F=0$
+\end_inset
+
+.
+ אם יש הרחבה מדרגה 
+\begin_inset Formula $p$
+\end_inset
+
+ של 
+\begin_inset Formula $F$
+\end_inset
+
+, ו
+\begin_inset Formula $F$
+\end_inset
+
+ מכיל שורש 
+\begin_inset Formula $\rho_{p}$
+\end_inset
+
+, אזי ההרחבה היא שרשית.
+\end_layout
+
+\begin_layout Section*
+פולינום מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+, אי-פריק, 
+\begin_inset Formula $E$
+\end_inset
+
+ שדה הפיצול, 
+\begin_inset Formula $G=\textnormal{Gal}\left(E/\mathbb{Q}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רוצים למצוא שדה ביניים
+\begin_inset Formula 
+\[
+\xymatrix{E\ar@{-}[d]\\
+K\ar@{-}[d]\\
+\mathbb{Q}
+}
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula $K$
+\end_inset
+
+ שדה פיצול של פולינום מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K/\mathbb{Q}$
+\end_inset
+
+ גלואה, צריך למצוא 
+\begin_inset Formula $H\lhd G$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+G\hookrightarrow S_{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\lhd S_{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies V\cap G\lhd G
+\]
+
+\end_inset
+
+)תזכורת: 
+\begin_inset Formula $V\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$
+\end_inset
+
+ חבורת קליין(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V\lhd G$
+\end_inset
+
+ היא מסדר שמחלק את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+.
+\begin_inset Formula 
+\[
+k=\left|V\cap G\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=E^{V\cap G}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[K:\mathbb{Q}\right]=\left[G:V\cap G\right]=\left[GV:V\right]\mid\left[S_{4}:V\right]=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m=\left[G:V\cap G\right]\implies m\mid6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|G\right|=m\cdot k
+\]
+
+\end_inset
+
+אם יודעים מהו 
+\begin_inset Formula $m$
+\end_inset
+
+, כמעט תמיד יודעים מהו 
+\begin_inset Formula $\left|G\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G\hookrightarrow S_{4}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $4\mid\left|G\right|$
+\end_inset
+
+.
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ פועלת טרנזיטיבית על 
+\begin_inset Formula $\left\{ 1,2,3,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $m=6$
+\end_inset
+
+ אזי 
+\begin_inset Formula $G\cong S_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m=3$
+\end_inset
+
+ אזי 
+\begin_inset Formula $G\cong A_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $G\cong V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m=2$
+\end_inset
+
+ אזי 
+\begin_inset Formula $G\cong D_{4}$
+\end_inset
+
+ או 
+\begin_inset Formula $G\cong\mathbb{Z}_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נראה א'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=6$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k=1,2,4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k\neq1$
+\end_inset
+
+ כי 
+\begin_inset Formula $4\nmid6$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k\neq2$
+\end_inset
+
+ כי אז 
+\begin_inset Formula $\left|G\right|=12$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $G\simeq A_{4}$
+\end_inset
+
+, 
+\begin_inset Formula $V\subseteq A_{4}\subseteq G$
+\end_inset
+
+, 
+\begin_inset Formula $\left|V\cap G\right|=4$
+\end_inset
+
+ - וזו סתירה.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $k=4$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|G\right|=24$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $G\cong S_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $r_{1},\dots r_{4}$
+\end_inset
+
+ את שרשי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\nicefrac{K}{\mathbb{Q}}$
+\end_inset
+
+ הוא שדה פיצול של הפולינום 
+\begin_inset Formula $g\left(x\right)=\left(x-u\right)\left(x-v\right)\left(x-w\right)$
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\begin{eqnarray*}
+u & = & \left(r_{1}+r_{2}\right)\left(r_{3}+r_{4}\right)\\
+v & = & \left(r_{1}+r_{3}\right)\left(r_{2}+r_{4}\right)\\
+w & = & \left(r_{1}+r_{4}\right)\left(r_{2}+r_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+לפולינום 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ קוראים 
+\emph on
+הרזולנט הקובי
+\emph default
+ של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(x\right)=x^{4}+gx^{2}+rx+s$
+\end_inset
+
+ אזי 
+\begin_inset Formula 
+\[
+g\left(x\right)=x^{3}-2qx^{2}+\left(q^{2}-4s\right)x-r^{2}
+\]
+
+\end_inset
+
+אם קיים ל
+\begin_inset Formula $f$
+\end_inset
+
+ מקדם 
+\begin_inset Formula $a$
+\end_inset
+
+ ל
+\begin_inset Formula $x^{3}$
+\end_inset
+
+, אזי מגדירים
+\begin_inset Formula 
+\[
+\tilde{f}\left(x\right)=f\left(x-\frac{a}{4}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=x^{4}-4x+2\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ מצאו את חבורת גלואה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אי-פריק.
+\begin_inset Formula 
+\[
+g\left(x\right)=x^{3}-8x+16
+\]
+
+\end_inset
+
+
+\begin_inset Formula $g$
+\end_inset
+
+ אי-פריק.
+ 
+\begin_inset Formula $D\left(g\right)<0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ חבורת גלואה של 
+\begin_inset Formula $g$
+\end_inset
+
+ היא 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gal}\left(E/\mathbb{Q}\right)\cong S_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{4}-10x^{2}+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{2}+\sqrt{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Gal}\left(E/\mathbb{Q}\right)\simeq V
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)=x^{3}+20x^{2}+96x=x\left(x+8\right)\left(x+12\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies m=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\textnormal{Gal}\simeq V
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

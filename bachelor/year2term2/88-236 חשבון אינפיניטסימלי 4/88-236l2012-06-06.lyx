@@ -1,0 +1,933 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\int_{M}\mathrm{\, d}\omega=\int_{\partial M}\omega
+\]
+
+\end_inset
+
+
+\begin_inset Formula $M$
+\end_inset
+
+ משטח 
+\begin_inset Formula $k$
+\end_inset
+
+ ממדי ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega$
+\end_inset
+
+ תבנית 
+\begin_inset Formula $\left(k-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k=2,n=2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega=P\mathrm{\, d}x+Q\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}\omega=\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathrm{\, d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)גרין(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $P$
+\end_inset
+
+ ו
+\begin_inset Formula $Q$
+\end_inset
+
+ פונקציות גזירות ברציפות על קבוצה פתוחה 
+\begin_inset Formula $G\subset\mathbb{R}^{2}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $M\subset G$
+\end_inset
+
+ קומפקטית)פשוט קשר או רב-קישרי(.
+ אזי
+\begin_inset Formula 
+\[
+\iint_{M}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathrm{\, d}x\mathrm{\, d}y=\int_{\partial M}P\mathrm{\, d}x+Q\mathrm{\, d}y
+\]
+
+\end_inset
+
+עם אוריינטציה מורשית על 
+\begin_inset Formula $\partial M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M:x^{\nicefrac{2}{3}}+y^{\nicefrac{2}{3}}=a^{\nicefrac{2}{3}}\qquad a>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(a\cos^{3}t,a\sin^{3}t\right)\qquad t\in\left[0,2\pi\right]
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\left|M\right|$
+\end_inset
+
+ - השטח של 
+\begin_inset Formula $M$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|M\right|=\frac{1}{2}\int_{0}^{2\pi}\left[\left(-a\sin^{3}t\right)\left(-3a\cos^{3}t\sin t\right)+\left(a\cos^{3}t\right)\left(3a\sin^{2}t\cos t\right)\right]\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{3a^{2}}{2}\int_{0}^{2\pi}\left(\left(\cos^{2}t\right)\sin^{4}t+\sin^{2}t\cos^{4}t\right)\mathrm{\, d}t=\frac{3a^{2}}{2}\int_{0}^{2\pi}\cos^{2}t\sin^{2}t\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{3a^{2}}{8}\int_{0}^{2\pi}\sin^{2}2t\mathrm{\, d}t=\frac{3a^{2}}{8}\int_{0}^{2\pi}\frac{1-\cos4t}{2}\mathrm{\, d}t=\frac{3a^{2}}{8}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)גאוס(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $P,Q,R$
+\end_inset
+
+ פונקציות גזירות ברציפות על קבוצה פתוחה 
+\begin_inset Formula $G\subset\mathbb{R}^{3}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $M\subset G$
+\end_inset
+
+ קבוצה קומפקטית)פשוט קשר או רב קישרי(.
+ אזי
+\begin_inset Formula 
+\[
+\iiint_{M}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right)\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=\int_{\partial M}P\mathrm{\, d}y\wedge\mathrm{d}z+Q\mathrm{\, d}z\wedge\mathrm{d}x+R\mathrm{\, d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+עם אוריינטציה מושרית על 
+\begin_inset Formula $\partial M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\int_{S}x^{2}\mathrm{\, d}y\wedge\mathrm{d}z+y^{3}\wedge\mathrm{d}z\wedge\mathrm{d}x+z^{3}\wedge\mathrm{d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left\{ x^{2}+y^{2}+z^{2}=a^{2}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=B_{a}=\left\{ x^{2}+y^{2}+z^{2}\le a^{2}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2M=S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=3\iiint\left(x^{2}+y^{2}+z^{2}\right)\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z=3\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{a}\left(\sin\varphi\right)\rho^{4}\mathrm{\, d}\rho\mathrm{\, d}\varphi\mathrm{\, d}\theta=\frac{12}{5}\pi a^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)סטוקס(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\subset\mathbb{R}^{3}$
+\end_inset
+
+ משטח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+-ממדי.
+ יהיו 
+\begin_inset Formula $P,Q,R$
+\end_inset
+
+ פונקציות גזירות ברציפות עם תומך קומפרטיבי ב
+\begin_inset Formula $M$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\int_{M}\left(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z}\right)\mathrm{\, d}y\wedge\mathrm{d}z+\left(\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x}\right)\mathrm{\, d}z\wedge\mathrm{d}x+\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathrm{\, d}x\wedge\mathrm{d}y=\int P\mathrm{\, d}x+Q\mathrm{\, d}y+R\mathrm{\, d}z
+\]
+
+\end_inset
+
+עם אוריינטציה מושרית על 
+\begin_inset Formula $\partial M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=x^{2}z+\sqrt{x^{3}+x^{2}+2}\qquad Q=xy\qquad R=xy+\sqrt{z^{3}+z^{2}+2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{\Gamma}P\mathrm{\, d}x+Q\mathrm{\, d}y+R\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma=\left\{ x^{2}+z^{2}=1,y=0\right\} 
+\]
+
+\end_inset
+
+עם האוריינטציה נגד כיוון השעון, אם מסתכלים בכיוון החיובי של ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\left(\overbrace{u\cos\left(2\pi-v\right)}^{\varphi},\overbrace{0}^{\psi},\overbrace{u\sin\left(2\pi-v\right)}^{\chi}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r'_{u}\times r'_{v}=\begin{vmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+\cos\left(2\pi-v\right) & 0 & \sin\left(2\pi-v\right)\\
+u\sin\left(2\pi-v\right) & 0 & -u\cos\left(2\pi-v\right)
+\end{vmatrix}=\left(0,u,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x}=x^{2}-y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=-\int_{0}^{1}\int_{0}^{2\pi}u^{3}\cos^{2}\left(2\pi-v\right)\mathrm{\, d}v\mathrm{\, d}u=\frac{\pi}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M=B\left(a,R\right)$
+\end_inset
+
+, כזכור 
+\begin_inset Formula $\partial M=S\left(a,R\right)$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $F=\left(P,Q,R\right)$
+\end_inset
+
+, אזי:
+\begin_inset Formula 
+\[
+\textnormal{div }F\left(a\right)=\lim_{R\to0}\frac{1}{V\left(B\left(a,R\right)\right)}\int_{S\left(a,R\right)}P\mathrm{\, d}y\wedge\mathrm{d}z+Q\mathrm{\, d}z\wedge\mathrm{d}x+R\mathrm{\, d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משמעות בפיסיקה
+\end_layout
+
+\begin_layout Itemize
+האינטגרל
+\begin_inset Formula 
+\[
+\int_{S}P\mathrm{\, d}y\wedge\mathrm{d}z+Q\mathrm{\, d}z\wedge\mathrm{d}x+R\mathrm{\, d}x\wedge\mathrm{d}y
+\]
+
+\end_inset
+
+נקרא שטף של 
+\begin_inset Formula $F$
+\end_inset
+
+ דרך 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{div }F\left(a\right)=0$
+\end_inset
+
+ אומרים שב
+\begin_inset Formula $a$
+\end_inset
+
+ אין מקור.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{div }F=0$
+\end_inset
+
+ בכל התחום אומרים שהתחום חסר מקורות.
+\end_layout
+
+\begin_layout Itemize
+האינטגרל 
+\begin_inset Formula $\int_{\Gamma}P\mathrm{\, d}x+Q\mathrm{\, d}y+R\mathrm{\, d}z$
+\end_inset
+
+ נקרא הסירקולציה של הזרימה.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ תבנית-
+\begin_inset Formula $k$
+\end_inset
+
+ על 
+\begin_inset Formula $G\subset\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\omega$
+\end_inset
+
+ סגורה אם 
+\begin_inset Formula $\mathrm{d}\omega=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\omega$
+\end_inset
+
+ מדוייקת אם קיימת תבנית 
+\begin_inset Formula $\eta$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\mathrm{d}\eta=\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\omega$
+\end_inset
+
+ מדוייקת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{d}\omega=\mathrm{d}^{2}\eta=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\omega$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega=-\frac{y}{x^{2}+y^{2}}\mathrm{\, d}x+\frac{x}{x^{2}+y^{2}}\mathrm{\, d}y\qquad\left(x,y\right)\in\mathbb{R}^{2}\backslash\left\{ \left(0,0\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\omega$
+\end_inset
+
+ תבנית-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מדוייקת על קבוצה פתוחה 
+\begin_inset Formula $G\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ ז"א 
+\begin_inset Formula $\omega=\mathrm{d}f$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה דיפרנציאבילית על 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\Gamma=\left\{ \gamma:\left[a,b\right]\to G\right\} $
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כלומר 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ המסילה המוגדרת ע"י הפרמטריזציה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, כאשר המקור הוא הקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\int_{\Gamma}=f\left(\gamma\left(b\right)\right)-f\left(\gamma\left(a\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Gamma}{\scriptscriptstyle \begin{tabular}{c}
+by\\
+definition
+\end{tabular}}\int_{a}^{b}\sum_{i=1}^{n}\omega_{i}\left(\gamma\left(t\right)\right)\gamma'_{i}\left(t\right)\mathrm{\, d}t\stackrel{{\scriptscriptstyle \omega=\mathrm{d}t}}{=}\int_{a}^{b}\sum_{i=1}^{n}\frac{\partial f}{\partial x_{i}}\left(\gamma\left(t\right)\right)\gamma'_{i}\left(t\right)\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \begin{tabular}{c}
+chain\\
+rule
+\end{tabular}}}{=}\int_{a}^{b}f\left(\gamma\left(t\right)\right)'\mathrm{\, d}t\stackrel{{\scriptscriptstyle \begin{tabular}{c}
+Newton\\
+Leibniz
+\end{tabular}}}{=}f\left(\gamma\left(b\right)\right)-f\left(\gamma\left(a\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\omega$
+\end_inset
+
+ תבנית-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רציפה על קבוצה פתוחה 
+\begin_inset Formula $G\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ אזי התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\omega$
+\end_inset
+
+ מדוייקת.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{\Gamma}\omega=0$
+\end_inset
+
+ לכל עקום סגור 
+\begin_inset Formula $\Gamma\subset G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\Gamma_{1}=\left\{ \gamma_{1}:\left[a,b\right]\to G\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $\Gamma_{2}=\left\{ \gamma_{2}:\left[c,d\right]\to G\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma_{1}\left(a\right)=\gamma_{2}\left(c\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{1}\left(b\right)=\gamma_{2}\left(d\right)$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\int_{\Gamma_{1}}\omega=\int_{\Gamma_{2}}\omega
+\]
+
+\end_inset
+
+)בהקשר של פיסיקה - הפוטנציאל לא תלוי במסלול(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(1\right)\Rightarrow\left(2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\gamma\left(a\right)=\gamma\left(b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{\Gamma}\omega=0$
+\end_inset
+
+ לפי משפט קודם.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(2\right)\Rightarrow\left(3\right)$
+\end_inset
+
+ 
+\begin_inset Formula $0=\int_{\Gamma_{1}}\omega+\int_{\left(\Gamma_{2}\right)^{-}}\omega=\int_{\Gamma_{1}}\omega-\int_{\Gamma_{2}}\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(3\right)\Rightarrow\left(1\right)$
+\end_inset
+
+ יהי 
+\begin_inset Formula $x_{0}\in$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f\left(x\right)=\int_{\Gamma\left(x_{0},x\right)}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\Gamma\left(x_{0},x\right)$
+\end_inset
+
+ עקום כלשהו מ
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+(.
+ צריך להוכיח 
+\begin_inset Formula $\boxed{\frac{\partial f}{\partial x_{i}}=\omega_{i}}$
+\end_inset
+
+ ואז נקבל 
+\begin_inset Formula $\mathrm{d}f=\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $t\in\mathbb{R}^{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left[x,x+te_{i}\right]\in G$
+\end_inset
+
+.
+ נשתמש ב
+\begin_inset Formula $t$
+\end_inset
+
+ כדי לחשב נגזרות חלקיות:
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x_{i}}=\lim_{t\to0}\frac{f\left(x+te_{i}\right)-f\left(x\right)}{t}=\lim_{t\to0}\frac{\left[x,x+te_{i}\right]}{t}=\dots
+\]
+
+\end_inset
+
+הצגה פרמטרית של הקטע 
+\begin_inset Formula $\left[x,x+te_{i}\right]$
+\end_inset
+
+ היא 
+\begin_inset Formula $\gamma\left(s\right)=x+se_{i}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $s\in\left[0,t\right]$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\dots=\lim_{t\to0}\frac{1}{t}\int_{0}^{t}\omega\left(\gamma\left(s\right)\right)\gamma'\left(s\right)\mathrm{\, d}s\stackrel{{\scriptscriptstyle \gamma'=e_{i}}}{=}\lim_{t\to0}\frac{1}{t}\int\omega_{i}\left(x+se_{i}\right)\mathrm{\, d}s=\omega_{i}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,636 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אינטגרציה של תבנית דיפרנציאלית
+\end_layout
+
+\begin_layout Standard
+חישוב אינטגרל על תחום 
+\begin_inset Formula $k$
+\end_inset
+
+ ממדי ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ מוגדר ע"י שבירת התחום למקבילונים המוגדרים ע"י 
+\begin_inset Formula $k$
+\end_inset
+
+ וקטורים, חלוקת משקל לכל מקבילון וסכימת התוצאות.
+\end_layout
+
+\begin_layout Standard
+הגבול של סכומים אלו הוא האינטגרל)כאשר גודלם
+\begin_inset Formula $\gets$
+\end_inset
+
+
+\numeric on
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+"חלוקת המשקל" למקבילון הנתון ע"י 
+\begin_inset Formula $k$
+\end_inset
+
+ וקטורים מוגדרת באמצעות תבנית דיפרנציאלית.
+\end_layout
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ פועלת באופן לינארי על 
+\begin_inset Formula $k$
+\end_inset
+
+ וקטורים, כלומר
+\begin_inset Formula 
+\[
+\omega_{p}\left(v_{1},v_{2},\dots v_{k}\right)=\textnormal{number}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+ה
+\numeric on
+2
+\numeric off
+-תבנית 
+\begin_inset Formula $\omega=xy\mathrm{\, d}y\wedge\mathrm{d}z-x^{2}\mathrm{\, d}x\wedge\mathrm{d}z$
+\end_inset
+
+ מגדירה חוקיות שונה של חלוקת משקל לזוג וקטורים בהתאם לנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל - אם 
+\begin_inset Formula $p=\left(1,2,3\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\omega_{p}=2\mathrm{\, d}y\wedge\mathrm{d}z-\mathrm{d}x\wedge\mathrm{d}z
+\]
+
+\end_inset
+
+כיצד 
+\begin_inset Formula $\omega_{p}$
+\end_inset
+
+ מחלקת לזוג הוקטורים 
+\begin_inset Formula $\begin{array}{c}
+v_{1}=\left(4,0,-1\right)\\
+v_{2}=\left(2,1,3\right)
+\end{array}$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\omega_{p}\left(v_{1},v_{2}\right)=2\mathrm{\, d}y\wedge\mathrm{d}z\begin{pmatrix}4 & 0 & -1\\
+2 & 1 & 3
+\end{pmatrix}-\mathrm{d}x\wedge\mathrm{d}z\begin{pmatrix}4 & 0 & -1\\
+2 & 1 & 3
+\end{pmatrix}=\dots
+\]
+
+\end_inset
+
+לפי המשתנים בכל תת תבנית נבחר את העמודות, ונעשה דטרמיננטה.
+ למשל עבור 
+\begin_inset Formula $\mathrm{d}y\wedge\mathrm{d}z$
+\end_inset
+
+, 
+\begin_inset Formula $y,z$
+\end_inset
+
+ הם המשתנים השני והשלישי, ולכן נבחר את העמודות השניה והשלישית:
+\begin_inset Formula 
+\[
+\dots=2\begin{vmatrix}0 & -1\\
+1 & 3
+\end{vmatrix}-\begin{vmatrix}4 & -1\\
+2 & 3
+\end{vmatrix}=2\cdot1-14=\boxed{-12}\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\omega_{p}=g\left(t_{1},\dots t_{k}\right)\mathrm{\, d}t\wedge\dots\wedge\mathrm{d}t$
+\end_inset
+
+ היא 
+\begin_inset Formula $k$
+\end_inset
+
+-תבנית דיפרנציאלית ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+ תחום ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\int_{D}\omega\equiv\int_{D}g\mathrm{\, d}t_{1}\wedge\dots\wedge\mathrm{d}t_{k}:=\begin{cases}
+\int_{D}g\mathrm{\, d}t_{1}\mathrm{\, d}t_{2}\cdots\mathrm{d}t_{k} & D\textnormal{ in oritentation }\equiv\left(t_{1},\dots t_{k}\right)\\
+-\int_{D}g\mathrm{\, d}t_{1}\cdots\mathrm{d}t_{k} & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: יש כאן 
+\begin_inset Formula $k$
+\end_inset
+
+ אינטגרלים - 
+\begin_inset Formula $\underbrace{\int\dots\int}_{k\textnormal{ times}}$
+\end_inset
+
+ - אבל רושמים רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\int$
+\end_inset
+
+ אחד.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את 
+\begin_inset Formula $\int_{D}\omega$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\omega=x^{2}y\mathrm{\, d}x\wedge\mathrm{d}y$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+ הוא המלבן 
+\begin_inset Formula $\left\{ \begin{subarray}{c}
+0\le x\le2\\
+0\le y\le1
+\end{subarray}\right\} $
+\end_inset
+
+ הנתון באוריינטציה 
+\bar under
+סטנדרטית
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+האוריינטציה של 
+\begin_inset Formula $D$
+\end_inset
+
+ תואמת את הסדר 
+\begin_inset Formula $\mathrm{d}x\wedge\mathrm{d}y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{D}\omega=\int_{D}x^{2}y\mathrm{\, d}x\wedge\mathrm{d}y=\int_{0}^{1}\int_{0}^{2}x^{2}y\mathrm{\, d}x\mathrm{\, d}y=\dots=\boxed{\frac{4}{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אינטגרל על יריעה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ יריעה 
+\begin_inset Formula $k$
+\end_inset
+
+-ממדית, וקיימת מפה 
+\begin_inset Formula $\varphi:\underbrace{U}_{\ni\left(t_{1},t_{2},\dots t_{k}\right)}\to M$
+\end_inset
+
+.
+ נתונה תבנית דיפרנציאלית 
+\begin_inset Formula $\omega$
+\end_inset
+
+ ונרצה לחשב 
+\begin_inset Formula $\int_{M}\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האינטגרל הזה מסתמך על אינטגרציה על 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ נעשה זאת בעזרת ה
+\lang english
+pullback
+\lang hebrew
+: 
+\begin_inset Formula $\varphi^{*}\omega$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{M}\omega:=\int_{U}\varphi^{*}\omega=\int_{U}\omega_{\varphi\left(t_{1},\dots t_{k}\right)}\left(\frac{\partial\varphi}{\partial t_{1}},\dots\frac{\partial\varphi}{\partial t_{k}}\right)\mathrm{\, d}t_{1}\wedge\dots\wedge\mathrm{d}t_{k}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\pm\int_{U}\omega_{\varphi\left(t_{1},\dots t_{k}\right)}\left(\frac{\partial\varphi}{\partial t_{1}},\dots\frac{\partial\varphi}{\partial t_{k}}\right)\mathrm{\, d}t_{1}\wedge\dots\wedge\mathrm{d}t_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסימן נקבע ע"פ ההתאמה בין 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ובין האוריינטציה של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $S$
+\end_inset
+
+ נתון ע"י פרמטריזציה
+\begin_inset Formula 
+\[
+\varphi\left(r,\theta\right)=\left(r\cos\theta,r\sin\theta,\sqrt{1-r^{2}}\right)\qquad\begin{array}{c}
+0\le\theta\le2\pi\\
+0\le r\le1
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=r^{2}=1-z^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+y^{2}+z^{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $S$
+\end_inset
+
+ הוא חצי ספירה צפונית.
+ חשב את האינטגרל 
+\begin_inset Formula $\int_{S}\omega$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\omega=z^{2}\mathrm{\, d}x\wedge\mathrm{d}y$
+\end_inset
+
+ וב
+\begin_inset Formula $S$
+\end_inset
+
+ האוריינטציה המושרית מ
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{S}\omega=\int_{U}\varphi^{*}\omega
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $U=\left\{ \left(r,\theta\right)\middle|\begin{array}{c}
+0\le r\le1\\
+0\le\theta\le2\pi
+\end{array}\right\} =\left[0,1\right]\times\left[0,2\pi\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לחשב את 
+\begin_inset Formula $\varphi^{*}\omega$
+\end_inset
+
+ נמצא
+\begin_inset Formula 
+\[
+\frac{\partial\varphi}{\partial r}\equiv\varphi_{r}=\left(\cos\theta,\sin\theta,\frac{-r}{\sqrt{1-4^{2}}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial\varphi}{\partial\theta}\equiv\varphi_{\theta}=\left(-r\sin\theta,r\cos\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\varphi^{*}\omega=\sqrt{1-r^{2}}^{2}\mathrm{\, d}x\wedge\mathrm{d}y\left(\varphi_{r},\varphi_{\theta}\right)\mathrm{\, d}r\wedge\mathrm{d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(1-r^{2}\right)\mathrm{\, d}x\wedge\mathrm{d}y\begin{pmatrix}\cos\theta & \sin\theta & \dfrac{-r}{\sqrt{1-r^{2}}}\\
+-r\sin\theta & r\cos\theta & 0
+\end{pmatrix}\mathrm{\, d}r\wedge\mathrm{d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(1-r^{2}\right)\begin{vmatrix}\cos\theta & \sin\theta\\
+-r\sin\theta & r\cos\theta
+\end{vmatrix}\mathrm{\, d}r\wedge\mathrm{d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(r-r^{3}\right)\mathrm{\, d}r\wedge\mathrm{d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{S}\omega=\int_{U}\varphi^{*}\omega=\int_{0}^{2\pi}\int_{0}^{1}\left(r-r^{3}\right)\mathrm{\, d}r\wedge\mathrm{d}\theta=\dots=\boxed{\nicefrac{\pi}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתונה העקומה 
+\begin_inset Formula $C$
+\end_inset
+
+ המוגדרת כחלק הגרף 
+\begin_inset Formula $x=y^{2}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $0\le x\le1,y\ge0$
+\end_inset
+
+ עם אוריינטציה המוגדרת ע"י תנועה אל ראשית הצירים.
+\end_layout
+
+\begin_layout Standard
+חשב את 
+\begin_inset Formula $\int_{C}\omega$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\omega=xy\mathrm{\, d}x-y^{2}\mathrm{\, d}y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה של העקומה 
+\begin_inset Formula $C$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(t^{2},t\right)\qquad0\le t\le1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{C}\omega=\pm\int_{0}^{1}\gamma^{*}\omega=\pm\int_{0}^{1}\left(t^{2}\cdot t\underbrace{\mathrm{\, d}x\left(2t,1\right)}_{=2t}-t^{4}\underbrace{\mathrm{\, d}y\left(2t,1\right)}_{=1}\right)\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\int_{0}^{1}\left(2t^{4}-t^{4}\right)\mathrm{\, d}t=-\int_{0}^{1}t^{4}\mathrm{\, d}t=\left.-\frac{t^{5}}{5}\right|_{t=0}^{t=1}=\boxed{-\frac{1}{5}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

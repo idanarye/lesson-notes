@@ -1,0 +1,1340 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+המשך מערכות מד"ר
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+לא תמיד ניתן לעבור ממערכת של 
+\begin_inset Formula $n$
+\end_inset
+
+ משוואות למד"ר אחת מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+סיכום פתרון מערכת מד"ר הומוגנית
+\end_layout
+
+\begin_layout Standard
+בהינתן מערכת 
+\begin_inset Formula $\vec{y}'\left(t\right)=A\left(t\right)\vec{y}\left(t\right)$
+\end_inset
+
+ עלינו למצוא 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל 
+\begin_inset Formula $\vec{y}_{1}',...\vec{y}_{n}'$
+\end_inset
+
+, והפתרון הכללי יהיה צירוף לינארי של הפתרונות האלו.
+ 
+\begin_inset Formula $\vec{y}=C_{1}\vec{y}_{1}+C_{2}\vec{y}_{2}+...+C_{n}\vec{y}_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{y}_{1},...\vec{y}_{n}$
+\end_inset
+
+ בת"ל אם 
+\begin_inset Formula $\det\left[\begin{matrix}\uparrow\\
+\vec{y}_{1}\\
+\downarrow
+\end{matrix},\begin{matrix}\uparrow\\
+\vec{y}_{2}\\
+\downarrow
+\end{matrix},...\begin{matrix}\uparrow\\
+\vec{y}_{n}\\
+\downarrow
+\end{matrix}\right]=\det\left(Y\right)=W\ne0$
+\end_inset
+
+)
+\begin_inset Formula $Y$
+\end_inset
+
+ מטריצה יסודית(.
+\end_layout
+
+\begin_layout Standard
+דרך נוספת לכתוב את הפתרון הכללי הוא 
+\begin_inset Formula $\boxed{\vec{y}=Y\vec{C}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\vec{C}\begin{pmatrix}C_{1}\\
+C_{2}\\
+\vdots\\
+C_{n}
+\end{pmatrix}$
+\end_inset
+
+ וקטור עמודה של 
+\begin_inset Formula $n$
+\end_inset
+
+ קבועים חופשיים.
+\end_layout
+
+\begin_layout Standard
+במקרה האי הומוגני מחפשים פתרון מהצורה 
+\begin_inset Formula $\vec{y}_{1}=A\vec{y}+b$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\vec{y}=Y\left(t\right)\vec{C}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}'=\underset{=A\left(t\right)}{\underbrace{Y'\left(t\right)}}\vec{C}\left(t\right)+Y\left(t\right)\vec{C}'\left(t\right)=AY\vec{C}+Y\vec{C}'
+\]
+
+\end_inset
+
+מצד שני
+\begin_inset Formula 
+\[
+A\vec{y}+\vec{b}=\boxed{A\left(t\right)Y\left(t\right)\vec{C}+\vec{b}\left(t\right)}
+\]
+
+\end_inset
+
+כדי לפתור נצטרך
+\begin_inset Formula 
+\[
+Y\left(t\right)\vec{C}\left(t\right)=\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+נכפיל ב
+\begin_inset Formula $Y^{-1}$
+\end_inset
+
+ משמאל:
+\begin_inset Formula 
+\[
+\vec{C}'\left(t\right)=Y^{-1}\left(t\right)\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C\left(t\right)=\int Y^{-1}\left(t\right)b\left(t\right)dt+\vec{K}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\vec{K}$
+\end_inset
+
+ הוא ווקטור של 
+\begin_inset Formula $n$
+\end_inset
+
+ קבועים 
+\begin_inset Formula $\begin{pmatrix}K_{1}\\
+\vdots\\
+K_{n}
+\end{pmatrix}$
+\end_inset
+
+.
+ הפתרון הוא
+\begin_inset Formula 
+\[
+\vec{y}=Y\left(t\right)\vec{C}\left(t\right)=Y\left(t\right)\left(\vec{K}+\int Y^{-1}\left(t\right)b\left(t\right)dt\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\underset{y_{c}}{\underbrace{Y\left(t\right)}}\vec{K}+\underset{y_{p}}{\underbrace{Y\left(t\right)\int Y^{-1}\left(t\right)b\left(t\right)dt}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מערכת של מד"ר עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+נניח מערכת הומוגנית כנ"ל)
+\begin_inset Formula $A$
+\end_inset
+
+לא תלויה ב
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ קבועה(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=A\vec{y}
+\]
+
+\end_inset
+
+ננחש 
+\begin_inset Formula $\vec{y}=\vec{v}e^{\lambda t}$
+\end_inset
+
+)
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ וקטור קבוע( 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\vec{y}'=\lambda\vec{v}e^{\lambda t}$
+\end_inset
+
+.
+ מצד שני: 
+\begin_inset Formula $A\vec{y}=A\vec{v}e^{\lambda t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתי 
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+A\vec{v}e^{\lambda t}=\lambda\vec{v}e^{\lambda t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\vec{v}=\lambda\vec{v}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ וקטור עצמי של 
+\begin_inset Formula $A$
+\end_inset
+
+ עם ע"ע 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ מצאנו פתרון!
+\end_layout
+
+\begin_layout Section*
+אלגוריתם לפתירת מערכת מד"ר במקדמים קבועים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ מצא את כל הע"ע של 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula $\lambda_{1},\lambda_{2},...\lambda_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ עבור כל ע"ע 
+\uuline on
+שונה
+\uuline default
+ 
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ ישנם מספר מקרים:
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ ע"ע ממשי 
+\bar under
+פשוט
+\bar default
+)מופיע בחזקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במשוואה = ריבוי אלגברי אחד(.
+\begin_inset Newline newline
+\end_inset
+
+נמצא ו"ע 
+\begin_inset Formula $\vec{v}_{j}$
+\end_inset
+
+ ששייך לו ונבנה פתרון 
+\begin_inset Formula $\vec{v}_{j}=\vec{v}_{j}-e^{\lambda_{j}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+המשוואה המאפיינת היא 
+\begin_inset Formula $\det\left(\lambda I-A\right)=0$
+\end_inset
+
+)
+\begin_inset Formula $\det\left(\lambda I-A\right)$
+\end_inset
+
+ זה הפולינום האופייני/המאפיין(
+\begin_inset Formula 
+\[
+\det\left[\begin{pmatrix}\lambda & 0\\
+0 & \lambda
+\end{pmatrix}-\begin{pmatrix}4 & -3\\
+8 & -6
+\end{pmatrix}\right]=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\begin{pmatrix}\lambda-4 & 3\\
+-8 & \lambda+6
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}+2\lambda=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda'\left(\lambda+2\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1,2}=0,-2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נחפש ו"ע עבור 
+\begin_inset Formula $\lambda_{1}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\vec{v}=\lambda_{1}\vec{v}\hspace{1em}\vec{v}=\begin{pmatrix}a\\
+b
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda_{1}I-A\right)\vec{v}=\vec{C}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}-4 & 3\\
+-8 & 6
+\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+-4a+3b=0\\
+-8a+6b=0
+\end{array}\right.\Rightarrow a=\cfrac{3}{4}b\Rightarrow\vec{v}=\begin{pmatrix}\cfrac{3}{4}b\\
+b
+\end{pmatrix}
+\]
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $b=4$
+\end_inset
+
+ ונקבל ו"ע 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}3\\
+4
+\end{pmatrix}$
+\end_inset
+
+ ולכן פתרון מהצורה:
+\begin_inset Formula 
+\[
+\begin{pmatrix}3\\
+4
+\end{pmatrix}e^{0\cdot t}=\boxed{\begin{pmatrix}3\\
+4
+\end{pmatrix}}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\lambda_{2}=-2$
+\end_inset
+
+ מקבלים ו"ע 
+\begin_inset Formula $\begin{pmatrix}1\\
+2
+\end{pmatrix}$
+\end_inset
+
+ ולכן פתרון 
+\begin_inset Formula $\boxed{\begin{pmatrix}1\\
+2
+\end{pmatrix}e^{-2t}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הכללי הוא
+\begin_inset Formula 
+\[
+\boxed{\vec{y}=C_{1}\begin{pmatrix}3\\
+4
+\end{pmatrix}+C_{2}\begin{pmatrix}1\\
+2
+\end{pmatrix}e^{-2t}}=\underset{Y}{\underbrace{\begin{pmatrix}3 & e^{-2t}\\
+4 & 2e^{-2t}
+\end{pmatrix}}}\cdot\underset{\vec{C}}{\underbrace{\begin{pmatrix}C_{1}\\
+C_{2}
+\end{pmatrix}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $II$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ ו
+\begin_inset Formula $\lambda_{j+1}$
+\end_inset
+
+ הם זוג ע"ע מרוכבים צמודים 
+\bar under
+פשוטים
+\bar default
+.
+ נמצא להם ו"ע מרוכבים צמודים 
+\begin_inset Formula $\vec{v}_{j}$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{v}_{j+1}=\overline{\vec{v}_{j}}$
+\end_inset
+
+)בהתאמה(.
+\end_layout
+
+\begin_layout Standard
+יש לנו שני פתרונות 
+\bar under
+מרוכבים
+\bar default
+:
+\begin_inset Formula 
+\[
+\tilde{\vec{y}}_{j}=\vec{v}_{j}e^{\lambda_{j}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{\vec{v}}_{j+1}=\vec{v}_{j+1}e^{\lambda_{j+1}t}=\overline{\vec{v}_{j}}e^{\overline{\lambda_{j}}t}=\overline{\vec{v}_{j}e^{\lambda_{j}t}}=\overline{\tilde{\vec{y}}_{j}}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\tilde{\vec{y}}_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $\tilde{\vec{y}}_{j+1}$
+\end_inset
+
+ מרוכבים! לכן ניקח צ"ל "חכמים" שלהם:
+\begin_inset Formula 
+\[
+\vec{y}_{j}=\cfrac{1}{2}\tilde{\vec{y}}_{j}+\cfrac{1}{2}\tilde{\vec{y}}_{j+1}=\cfrac{1}{2}\tilde{\vec{y}}_{j}+\cfrac{1}{2}\overline{\tilde{\vec{y}}_{j}}=\cfrac{1}{2}\left(\tilde{\vec{y}}_{j}+\overline{\tilde{\vec{y}}_{j}}\right)=\boxed{\textnormal{Re}\left(\tilde{\vec{y}}_{j}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}_{j+1}=\cfrac{1}{2i}\tilde{\vec{y}}_{j}-\cfrac{1}{2i}\tilde{\vec{y}}_{j+1}=\cfrac{\tilde{\vec{y}}_{j}-\overline{\tilde{\vec{y}}}_{j}}{2i}=\boxed{\textnormal{Im}\left(\tilde{\vec{y_{j}}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+פתור 
+\begin_inset Formula $\vec{y}'=\begin{pmatrix}1 & 0 & 0\\
+2 & 1 & -2\\
+3 & 2 & 1
+\end{pmatrix}\vec{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה המאפיינת היא 
+\begin_inset Formula $\det\left(\lambda I-A=0\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\det\begin{pmatrix}\lambda-1 & 0 & 0\\
+-2 & \lambda-1 & 2\\
+-3 & -2 & \lambda-1
+\end{pmatrix}=
+\]
+
+\end_inset
+
+נפתח לפי שורה ראשונה
+\begin_inset Formula 
+\[
+=\left(\lambda-1\right)\left|\begin{matrix}\lambda-1 & 2\\
+-2 & \lambda-1
+\end{matrix}\right|+0+0=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda-1\right)\left[\left(\lambda-1\right)^{2}+4\right]=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda-1\right)\left(\lambda^{2}-2\lambda+5\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\lambda_{1}=1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\lambda_{2,3}=\cfrac{2\pm\sqrt{4-20}}{2}=\cfrac{2\pm\sqrt{-16}}{2}=\cfrac{2\pm4i}{2}=1\pm2i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\lambda_{2,3}$
+\end_inset
+
+ הם מרוכבים צמודים
+\end_layout
+
+\begin_layout Subsubsection*
+עבור 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחפש וקטור עצמי 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A\vec{v}=1\vec{v}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(I-A\right)\vec{v}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & 0 & 0\\
+-2 & 0 & 2\\
+-3 & -2 & 0
+\end{pmatrix}\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}=\begin{pmatrix}0\\
+0\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-2a+2c=0\Rightarrow c=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-3a-2b=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2b=-3a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=-\cfrac{3}{2}a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\vec{v}=\begin{pmatrix}a\\
+-\cfrac{3}{2}a\\
+a
+\end{pmatrix}
+\]
+
+\end_inset
+
+ניקח לנוחיותינו 
+\begin_inset Formula $a=2$
+\end_inset
+
+ ונקבל ו"ע 
+\begin_inset Formula $\vec{v}_{1}=\begin{pmatrix}2\\
+-3\\
+2
+\end{pmatrix}$
+\end_inset
+
+.
+ יש לנו פתרון פרטי 
+\begin_inset Formula $\begin{pmatrix}2\\
+-3\\
+2
+\end{pmatrix}e^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+עבור 
+\begin_inset Formula $\lambda=1+2i$
+\end_inset
+
+)אין טעם לטפל גם בצמוד שלו(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\lambda I-A\right)\vec{v}=\vec{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}2i & 0 & 0\\
+-2 & 2i & 2\\
+-3 & -2 & 2i
+\end{pmatrix}\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}=\begin{pmatrix}0\\
+0\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+2ia=0\Rightarrow a=0\\
+2ib+2c=0\\
+-2b+2ic=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2b=2ic
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=ic
+\]
+
+\end_inset
+
+נקבל 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}0\\
+ic\\
+c
+\end{pmatrix}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $c=1$
+\end_inset
+
+ ונקבל ו"ע 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}0\\
+i\\
+1
+\end{pmatrix}$
+\end_inset
+
+ ולכן פתרון הוא
+\begin_inset Formula 
+\[
+\begin{pmatrix}0\\
+i\\
+1
+\end{pmatrix}e^{\left(1+2i\right)t}=\begin{pmatrix}0\\
+i\\
+1
+\end{pmatrix}e^{t}e^{2it}=\begin{pmatrix}0\\
+i\\
+1
+\end{pmatrix}e^{t}\textnormal{cis}\left(2t\right)=\begin{pmatrix}0\\
+i\\
+1
+\end{pmatrix}e^{t}\left(\cos2t+i\sin2t\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}0\\
+ie^{t}\cos2t-e^{t}\sin2t\\
+e^{t}\cos2t+ie^{t}\sin2t
+\end{pmatrix}=\begin{pmatrix}0\\
+-e^{t}\sin2t\\
+e^{t}\cos2t
+\end{pmatrix}+i\begin{pmatrix}0\\
+e^{t}\cos2t\\
+e^{t}\sin2t
+\end{pmatrix}
+\]
+
+\end_inset
+
+הפתרון הוא:
+\begin_inset Formula 
+\[
+\vec{y}=C_{1}\begin{pmatrix}2\\
+-3\\
+2
+\end{pmatrix}e^{t}+C_{2}\begin{pmatrix}0\\
+-e^{t}\sin\left(2t\right)\\
+e^{t}\cos\left(2t\right)
+\end{pmatrix}+C_{3}\begin{pmatrix}0\\
+e^{t}\cos\left(2t\right)\\
+e^{t}\sin\left(2t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+המטריצה היסודית היא
+\begin_inset Formula 
+\[
+Y=\left[\begin{matrix}2e^{t} & 0 & 0\\
+-3e^{t} & -e^{t}\sin2t & e^{t}\cos2t\\
+2e^{t} & e^{t}\cos2t & e^{t}\sin t
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $III$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ ע"ע 
+\bar under
+לא פשוט
+\bar default
+)מופיע יותר מפעם אחת( 
+\uuline on
+אבל
+\uuline default
+ ניתן להוציא ממנו מספיק ו"ע 
+\series bold
+\bar under
+בת"ל
+\series default
+\bar default
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+יש רק ע"ע אחד ויחיד 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+.
+ מהם הו"ע?
+\begin_inset Formula 
+\[
+A\vec{v}\overset{?}{=}1\vec{v}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\vec{v}=\vec{v}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I\vec{v}=\vec{v}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ ובפרט נוכל לקחת שני ו"ע:
+\end_layout
+
+\begin_layout Itemize
+פתרון 
+\begin_inset Formula $\vec{v}_{1}=\begin{pmatrix}1\\
+0
+\end{pmatrix}\Rightarrow\begin{pmatrix}1\\
+0
+\end{pmatrix}e^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פתרון 
+\begin_inset Formula $\vec{v}_{2}=\begin{pmatrix}0\\
+1
+\end{pmatrix}\Rightarrow\begin{pmatrix}0\\
+1
+\end{pmatrix}e^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $IV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ ריבוי אלגברי 
+\begin_inset Formula $m>1$
+\end_inset
+
+ אבל יש לו פחות מ
+\begin_inset Formula $m$
+\end_inset
+
+ ו"ע)ריבוי גאומטרי
+\begin_inset Formula $m\ge$
+\end_inset
+
+(.
+ צריכים לחפש פתרון מהצורה
+\begin_inset Formula 
+\[
+e^{\lambda t}\left(\vec{v}_{0}+\vec{v}_{1}t+...+\vec{v}_{m}t^{m-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}2 & 1\\
+0 & 2
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+ע"ע 
+\begin_inset Formula $\lambda=2$
+\end_inset
+
+ בלבד!
+\end_layout
+
+\begin_layout Standard
+ו"ע 
+\begin_inset Formula $\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}\vec{v}=\begin{pmatrix}0\\
+0
+\end{pmatrix}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\vec{v}=\begin{pmatrix}a\\
+b
+\end{pmatrix}$
+\end_inset
+
+.
+ מקבלים 
+\begin_inset Formula $b=0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}a\\
+0
+\end{pmatrix}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $a=1$
+\end_inset
+
+ ונקבל ו"ע 
+\begin_inset Formula $\vec{v}=\begin{pmatrix}1\\
+0
+\end{pmatrix}$
+\end_inset
+
+ 
+\bar under
+וזהו
+\bar default
+!
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון מהצורה
+\begin_inset Formula 
+\[
+\vec{y}=e^{2t}\left(\begin{pmatrix}a\\
+b
+\end{pmatrix}t+\begin{pmatrix}c\\
+d
+\end{pmatrix}\right)=e^{2t}\begin{pmatrix}at+c\\
+bt+d
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}'=e^{2t}\begin{pmatrix}2at+2c+a\\
+2bt+2d+b
+\end{pmatrix}=e^{2t}\begin{pmatrix}2at+2c+bt+d\\
+2bt+2d
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=0,a=d
+\]
+
+\end_inset
+
+מקבלים פתרון נוסף 
+\begin_inset Formula $e^{2t}\begin{pmatrix}at\\
+a
+\end{pmatrix}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $a=1$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $e^{2t}\begin{pmatrix}t\\
+1
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\vec{y}=C_{1}\begin{pmatrix}1\\
+0
+\end{pmatrix}e^{2t}+C_{2}\begin{pmatrix}t\\
+1
+\end{pmatrix}e^{2t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

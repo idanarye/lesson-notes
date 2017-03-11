@@ -1,0 +1,989 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סיבוכיות מקום פולינומית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{PSPACE}=\bigcup_{k=1}^{\infty}\textnormal{DSPACE}\left(n^{k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{NPSPACE}=\bigcup_{k=1}^{\infty}\textnormal{NSPACE}\left(n^{k}\right)
+\]
+
+\end_inset
+
+ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(n^{k}\right)\subseteq\textnormal{PSPACE}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(n^{k}\right)\subseteq\textnormal{DSPACE}\left(n^{2k}\right)\subseteq\textnormal{PSPACE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\textnormal{PSPACE}}=\textnormal{NPSPACE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\textnormal{EXP}}=\bigcup_{c}\textnormal{DTIME}\left(2^{p_{c}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{c}\left(n\right)=n^{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ראינו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{\ensuremath{\nicefrac{N}{D}}SPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s\left(n\right)>\log n
+\]
+
+\end_inset
+
+באופן כללי:
+\begin_inset Formula 
+\[
+\textnormal{\ensuremath{\nicefrac{N}{D}}SPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(n\cdot2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{PSPACE}\subseteq\textnormal{EXP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in PH$
+\end_inset
+
+ אם קיים 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $A\in\Sigma_{k}$
+\end_inset
+
+, קיים מוודא פולינומי 
+\begin_inset Formula $v$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\exists_{y_{1}}\forall_{y_{2}}\cdots Q_{ky_{k}}v\left(x,y_{1},\dots y_{k}\right)=1\iff x\in A\qquad\left|y_{i}\right|<p\left(\left|x\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+PH\subseteq\textnormal{PSPACE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה כעת בעיה 
+\begin_inset Formula $A$
+\end_inset
+
+ שהיא שלמה ב
+\begin_inset Formula $\textnormal{PSPACE}$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $A$
+\end_inset
+
+ שייכת ל
+\begin_inset Formula $\textnormal{PSPACE}$
+\end_inset
+
+, וכן עבור כל 
+\begin_inset Formula $B\in\textnormal{PSPACE}$
+\end_inset
+
+ קיימת רדוקציית קארפ מ
+\begin_inset Formula $B$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר את הבעיה הבאה:
+\begin_inset Formula 
+\[
+QBF=\left\{ \varphi\middle|\begin{array}{c}
+\textnormal{\ensuremath{\varphi}is a boolean formula that has}\\
+\textnormal{a quantifier for each variable}\\
+\textnormal{and has the value \ensuremath{T}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+QBF\ni\varphi=\exists_{x_{1}}\forall x_{2}\left(x_{1}\vee x_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+QBF\not\ni\psi=\forall_{x_{1}}\forall_{x_{2}}\exists_{x_{3}}\left(x_{1}\vee x_{3}\right)\wedge\left(x_{2}\vee\neg x_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $QBF$
+\end_inset
+
+ היא 
+\begin_inset Formula $\textnormal{PSPACE}$
+\end_inset
+
+-שלמה
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $QBF\in\textnormal{PSPACE}$
+\end_inset
+
+ - עבור קלט ל
+\begin_inset Formula $QBF$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר המשתנים בנוסחא האמורה חסום ע"י 
+\begin_inset Formula $n$
+\end_inset
+
+, צריך לעבור על פני כל ההשמות האפשריות למשתנים ולבדוק שהנוסחא מסתפקת עבורן.
+ לכן כמות הזיכרון הפנימי בשימוש חסומה ע"י 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת, עבור כל 
+\begin_inset Formula $B\in\textnormal{PSPACE}$
+\end_inset
+
+ קיימת רדוקציית קארפ 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+f\left(x\right)\in QBF\iff x\in B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\in\textnormal{PSPACE}$
+\end_inset
+
+, לכן קיימת מ"ט 
+\begin_inset Formula $M_{B}$
+\end_inset
+
+ המכריעה את 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיבוכיות מקום פולינומית - כלומר עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $M_{B}\left(x\right)$
+\end_inset
+
+ משתמשת בזיכרון עבודה
+\begin_inset Formula $\left|x\right|^{c}\ge$
+\end_inset
+
+ עבור קבוע 
+\begin_inset Formula $c$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_layout Standard
+גרף הקונפיגורציות 
+\begin_inset Formula $G_{B,x}$
+\end_inset
+
+ של ריצת 
+\begin_inset Formula $M_{B}\left(x\right)$
+\end_inset
+
+ מכיל לכל היותר 
+\begin_inset Formula $2^{O\left(\left|x\right|^{c}\right)}$
+\end_inset
+
+ קונפיגורציות.
+\end_layout
+
+\begin_layout Standard
+)נניח בלי הגבלת הכלליות כי קיימת קונפיגורציה מקבלת אחת(
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $M_{B}\left(x\right)$
+\end_inset
+
+ מקבלת אם"ם קיים מסלול מכוון ב
+\begin_inset Formula $G_{B,x}$
+\end_inset
+
+ מקונפיגורציה התחלתית לקונפיגורציה מקבלת)
+\begin_inset Formula $S_{acc}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+כזכור, הגדרנו פונקציה 
+\begin_inset Formula $\Phi\left(u,v,k\right)$
+\end_inset
+
+ המקבלת כאשר 
+\begin_inset Formula $u,v$
+\end_inset
+
+ הם קודקודים בגרף ו
+\begin_inset Formula $k$
+\end_inset
+
+ הינו מספר כלשהו.
+ 
+\begin_inset Formula $\Phi\left(u,v,k\right)=1$
+\end_inset
+
+ אם קיים בגרף מסלול מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ באורך
+\begin_inset Formula $k\ge$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $M_{B}\left(x\right)$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\Phi_{G_{B,x}}\left(S_{init},t_{acc},2^{m}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(*\right)\qquad\Phi\left(s,t,2^{m}\right)=\exists_{w}\Phi\left(s,w,2^{m-1}\right)\wedge\Phi\left(w,t,2^{m-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את 
+\begin_inset Formula $\Phi\left(s,t,2^{m}\right)$
+\end_inset
+
+ ניתן לתרגם לנוסחא בוליאנית עם כמתים באורך 
+\begin_inset Formula $O\left(2^{m}\right)$
+\end_inset
+
+.
+ זאת נעשה ע"י הפעלה חוזרת ונשנית של שוויון 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+, ונשים 
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ שבנוסחא הסופית הנוצרת ישנם 
+\begin_inset Formula $2^{m}$
+\end_inset
+
+ ביטויים מהצורה 
+\begin_inset Formula $\Phi\left(\cdot,\cdot,1\right)$
+\end_inset
+
+, ולכן סה"כ קיבלנו נוסחא באורך אקספוננציאלי - וזו בעיה!
+\end_layout
+
+\begin_layout Standard
+כדי להתגבר על הבעייה הזו נשתמש ברעיון הבא:
+\begin_inset Formula 
+\[
+\Phi\left(s,t,2^{m}\right)=\exists_{w\in\left\{ 0,1\right\} ^{m}}\forall_{\left(x,y\right)\in\left\{ \left(u,w\right),\left(w,v\right)\right\} }\Phi\left(x,y,2^{m-1}\right)
+\]
+
+\end_inset
+
+נשים לב ש
+\begin_inset Formula 
+\[
+\forall_{\left(x,y\right)\in\left\{ \left(u,w\right),\left(w,v\right)\right\} }\Phi\left(x,y,2^{m-1}\right)\equiv\Phi\left(s,w,2^{m-1}\right)\wedge\Phi\left(w,t,2^{m-1}\right)
+\]
+
+\end_inset
+
+אז מצד אחד הצלחנו להתגבר על ההכפלה - אבל מצד שני הנוסחא החדשה היא לא לפי
+ החוקים!
+\end_layout
+
+\begin_layout Standard
+ניתן לתקן את הנוסחא לעיל ולהפוך אותה לבוליאנית באופן הבא:
+\begin_inset Formula 
+\[
+\odot\qquad\exists_{w\in\left\{ 0,1\right\} ^{m}}\forall_{b\in\left\{ 0,1\right\} }\exists_{x\in\left\{ 0,1\right\} ^{m}}\exists_{y\in\left\{ 0,1\right\} ^{m}}\left(\begin{array}{c}
+\left[\left(b=0\right)\to\left(x=s\wedge y=w\right)\right]\wedge\\
+\left[\left(b=1\right)\to\left(x=w\wedge y=t\right)\right]\wedge\\
+\Phi\left(x,y,2^{m+1}\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שאם מפתחים את 
+\begin_inset Formula $\Phi\left(s,t,2^{m}\right)$
+\end_inset
+
+ ע"פ הכלל החדש, אזי הנוסחא המתקבלת לאחר סיום הפיתוח מכילה 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+ משתנים עם כמתים וכן היא מכילה 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+ ביטויים מהצורה 
+\begin_inset Formula $\odot$
+\end_inset
+
+ וביטוי אחד מהצורה 
+\begin_inset Formula $\Phi\left(\cdot,\cdot,1\right)$
+\end_inset
+
+.
+ את הביטויים מהצורה 
+\begin_inset Formula $\odot$
+\end_inset
+
+ וגם את הביטוי 
+\begin_inset Formula $\Phi\left(\cdot,\cdot,1\right)$
+\end_inset
+
+ ניתן לבדוק באופן ברור ע"י פונקציה בוליאנית באורך 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+, ולכן סה"כ מקבלים נוסחא שאורכה 
+\begin_inset Formula $O\left(m^{3}\right)$
+\end_inset
+
+ שמכילה 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+ משתנים)כזכור, 
+\begin_inset Formula $m=\left|x\right|^{c}$
+\end_inset
+
+ כלומר פולינום באורך הקלט(, ולכן סה"כ בהנתן 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\textnormal{PSPACE}\ni B$
+\end_inset
+
+ הראינו פונקציה 
+\begin_inset Formula $\delta\left(x\right)$
+\end_inset
+
+ המחזירה נוסחא באורך
+\begin_inset Formula $\left|x\right|^{c}\ge$
+\end_inset
+
+ עם כמתים כך שמתקיים
+\begin_inset Formula 
+\[
+\delta\left(x\right)\in QBF\iff x\in B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אלגוריתמים הסתברותיים
+\end_layout
+
+\begin_layout Section*
+מכונת טיורינג הסתברותית
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מכונת טיורינג הסתברותית
+\emph default
+ היא מכונה המוגדרת באופן דומה למכונת טיורינג לא דטרמיניסטית, כאשר ההבדל
+ הוא שעבור מעבר של המכונה שאינו מוגדר באופן יחיד)בה"כ בכל מעבר שאינו יחיד
+ ישנו שתי אפשרויות( המכונה מטילה מטבע שבהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, וע"פ הרך ההטלה המכונה מחליטה איזה מעבר לבצע.
+\end_layout
+
+\begin_layout Standard
+כזכור, מ"ט לא דטרמיניסטית ניתן לתאר בשני מודלים שקולים:
+\end_layout
+
+\begin_layout Itemize
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+on-line
+\lang hebrew
+, מכונה לא דטרמיניסטית המבצעת את החלטותיה בזמן אמת.
+ במודל זה מכונה מקבלת את הקלט אם קיים מסלול מקבל.
+\end_layout
+
+\begin_layout Itemize
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+off-line
+\lang hebrew
+, מכונה 
+\series bold
+דטרמיניסטית
+\series default
+ המקבלת שני קלטים, קלט מקורי ו
+\emph on
+עד
+\emph default
+, ובמקרה זה מכונה מקבלת את הקלט אם קיים עד הגורם למכונה לקבל.
+\end_layout
+
+\begin_layout Standard
+גם על מכונת טיורינג הסתברותית אפשר לחשוב באחד משני המודלים השקולים.
+ מודל ה
+\lang english
+on-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומודל ה
+\lang english
+off-line
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב כי במודל ה
+\lang english
+on-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ רצה על 
+\begin_inset Formula $x$
+\end_inset
+
+ התושבה 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ היא 
+\series bold
+משתנה מקרי
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+כאשר המכונה רצה במודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+off-line
+\lang hebrew
+, עם סדרת בחירות אקראיות 
+\begin_inset Formula $r$
+\end_inset
+
+ המתפלגות באופן אחיד, 
+\begin_inset Formula $M\left(x,r\right)$
+\end_inset
+
+ אינו משתנה מקרי המתפלג כמו 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

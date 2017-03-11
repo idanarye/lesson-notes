@@ -1,0 +1,1673 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+בסיס
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ מרחב טופולוגי.
+\end_layout
+
+\begin_layout Standard
+אוסף 
+\begin_inset Formula $B$
+\end_inset
+
+ של תתי קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+ נקרא 
+\bar under
+בסיס
+\bar default
+ עבור 
+\begin_inset Formula $T$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $B\subseteq T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $U\in T$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $a\in U$
+\end_inset
+
+ יש 
+\begin_inset Formula $V\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in V\subseteq U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+)ב'(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+ניסוח שקול ל)ב( באמצעות ל"ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל קבוצה פתוחה היא איחוד של קבוצות מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הקבוצות ב
+\begin_inset Formula $B$
+\end_inset
+
+ נקראות קבוצות בסיס.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+הכדורים הפתוחים ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $B\left(q,r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $q\in\mathbb{Q}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $r\in\mathbb{Q}^{+}$
+\end_inset
+
+ הם בסיס לטופולוגיה של 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ פתוחה, 
+\begin_inset Formula $p\in U$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ולכן קיים 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $B\left(p,\varepsilon\right)\subseteq U$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $a\in\mathbb{Q}^{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d\left(p,q\right)<\cfrac{\varepsilon}{2}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d\left(p,a\right)<r<\cfrac{\varepsilon}{2}$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+p\in B\left(a,r\right)\subseteq B\left(p,\varepsilon\right)\subseteq U
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יש לנו פונקציה 
+\begin_inset Formula $P\left(B\right)\to T$
+\end_inset
+
+)לקיחת איחוד( שהיא על, ולכן 
+\begin_inset Formula $\left|T\right|\le P\left(\aleph_{0}\right)=\aleph$
+\end_inset
+
+.
+ מצד שני, 
+\begin_inset Formula $\left|T\right|\ge\aleph$
+\end_inset
+
+ - רק הכדורים הפתוחים סביב הראשית הם בעצמה 
+\begin_inset Formula $\aleph$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left|T\right|=\aleph$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+ עוד מ"ט.
+\end_layout
+
+\begin_layout Standard
+אזי לכל פונקציה 
+\begin_inset Formula $f:Y\to X$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה אם"ם לכל קבוצת בסיס 
+\begin_inset Formula $V\in B$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $f^{-1}\left(V\right)$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ברור כי 
+\begin_inset Formula $B\subseteq T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נניח שהתנאי מתקיים לכל 
+\begin_inset Formula $V\in B$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ קבוצה פתוחה כלשהי.
+ אזי 
+\begin_inset Formula $U=\bigcup\limits _{\alpha\in I}V_{\alpha}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V_{\alpha}\in B$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f^{-1}\left(U\right)=f^{-1}\left(\bigcup_{\alpha}V_{\alpha}\right)=\bigcup_{\alpha}f^{-1}\left(V_{\alpha}\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ מ"ט ו
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ אזי אוסף הקבוצות 
+\begin_inset Formula $\left\{ V\cap A\middle|\right\} $
+\end_inset
+
+ הוא בסיס לטופולוגיה של 
+\begin_inset Formula $A$
+\end_inset
+
+)הטופולוגיה המושרה על 
+\begin_inset Formula $A$
+\end_inset
+
+ מ
+\begin_inset Formula $X$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן אוסף של קבוצות, נרצה לדעת אם הוא בסיס - כלומר אם אוסף האיחודים שלו
+ מהווה טופולוגיה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: בסיסים לא סגורים תחת איחוד ולא תחת חיתוך.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה, 
+\begin_inset Formula $B\subseteq P\left(X\right)$
+\end_inset
+
+ אוסף של תתי קבוצות.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $B$
+\end_inset
+
+ היא בסיס לטופולוגיה על 
+\begin_inset Formula $X$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $B$
+\end_inset
+
+ מקיימת את שני התנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\bigcup\limits _{V\in B}V=X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $U,V\in B$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $a\in U\cap V$
+\end_inset
+
+ קיים 
+\begin_inset Formula $W\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in W\subseteq U\cap V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+)ב'(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+ניסוח שקול ל)ב( באמצעות ל"ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל 
+\begin_inset Formula $U,V\in B$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ הוא איחוד של קבוצות מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ התנאי הכרחי: אם 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס לטופולוגיה 
+\begin_inset Formula $T$
+\end_inset
+
+, אזי כיוון ש
+\begin_inset Formula $X\in T$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T$
+\end_inset
+
+ אזי 
+\begin_inset Formula $X$
+\end_inset
+
+ איחוד של קבוצות מ
+\begin_inset Formula $B$
+\end_inset
+
+ ולכן וודאי איחוד של כל קבוצות 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ וכן אם 
+\begin_inset Formula $U,V\in B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $U,V\in T$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $U\cap V\in T$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ היא איחוד של קבוצות מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ בהינתן אוסף 
+\begin_inset Formula $B$
+\end_inset
+
+ של תתי קבוצות המקיים את )א( ו)ב(, נגדיר אוסף תתי קבוצות 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ נראה ש
+\begin_inset Formula $T$
+\end_inset
+
+ היא טופולוגיה וש
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס עבור 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ נבנה את 
+\begin_inset Formula $T$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בניה
+\bar default
+: 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ יהיה שייך ל
+\begin_inset Formula $T$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $a\in U$
+\end_inset
+
+ יש 
+\begin_inset Formula $V\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in V\subseteq U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בניה'
+\bar default
+: )שקול לבניה(
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ יהיה שייך ל
+\begin_inset Formula $T$
+\end_inset
+
+ אם הוא איחוד של קבוצות מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ברור מהגדרת בסיס ש
+\bar under
+אם
+\bar default
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ היא טופולוגיה אז 
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס עבורה, לכן נותר רק להראות ש
+\begin_inset Formula $T$
+\end_inset
+
+ טופולוגיה.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה ש
+\begin_inset Formula $T$
+\end_inset
+
+ שהגדרנו בבניה היא טופולוגיה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X\in T$
+\end_inset
+
+, 
+\begin_inset Formula $\emptyset\in T$
+\end_inset
+
+ - 
+\begin_inset Formula $\surd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $\left\{ U_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ אוסף קבוצות כך ש
+\begin_inset Formula $U_{\alpha}\in T$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ צריך להוכיח ש
+\begin_inset Formula $\bigcup\limits _{\alpha\in I}U_{\alpha}\in T$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $a\in\bigcup\limits _{\alpha\in I}U_{\alpha}$
+\end_inset
+
+, אזי יש 
+\begin_inset Formula $\alpha\in I$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in U_{\alpha_{0}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U_{\alpha_{0}}\in T$
+\end_inset
+
+ פירושו שיש 
+\begin_inset Formula $V\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in V\subseteq U_{\alpha_{0}}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $a\in V\subseteq\bigcup\limits _{\alpha\in I}U_{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם נוכיח שסגור תחת חיתוכים של שתי קבוצות באינדוקציה ינבע שסגור תחת איחודים
+ 
+\bar under
+סופיים
+\bar default
+ כלשהם.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $U,V\in T$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $U\cap V\in T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $a\in U\cap V$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U\in T$
+\end_inset
+
+ לכן יש 
+\begin_inset Formula $U_{0}\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in U_{0}\subseteq U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V\in T$
+\end_inset
+
+ לכן יש 
+\begin_inset Formula $V_{0}\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in V_{0}\subseteq V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{0},V_{0}\in B$
+\end_inset
+
+, 
+\begin_inset Formula $a\in U_{0}\cap V_{0}$
+\end_inset
+
+.
+ מהתנאי על האוסף 
+\begin_inset Formula $B$
+\end_inset
+
+ יש 
+\begin_inset Formula $W\in B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\in W\subseteq U_{0}\cap V_{0}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $a\in W\subseteq U\cap V$
+\end_inset
+
+, וזה לכל 
+\begin_inset Formula $a\in U\cap V$
+\end_inset
+
+ - לכן 
+\begin_inset Formula $T\ni U\cap V$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+התנאי הבא על 
+\begin_inset Formula $B$
+\end_inset
+
+ הוא תנאי מספיק )אך לא הכרחי( לכך ש
+\begin_inset Formula $B$
+\end_inset
+
+ בסיס לטופולוגיה על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ מתקבל כאיחוד הקבוצות ב
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $U,V\in B$
+\end_inset
+
+ אז 
+\begin_inset Formula $U\cap V\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+טופולוגיית מכפלה
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A_{1},A_{2},\dots A_{n}$
+\end_inset
+
+ קבוצות.
+ אזי
+\begin_inset Formula 
+\[
+A_{1}\times A_{2}\times\dots\times A_{n}=\left\{ \left(a_{1},a_{2},\dots a_{n}\right)\middle|a_{1}\in A_{1},a_{2}\in A_{2},\dots a_{n}\in A_{n}\right\} 
+\]
+
+\end_inset
+
+אבל אם יש לקבוצות האלו טופולוגיה - איזו טופולוגיה נשים למכפלה?
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(X_{1},T_{1}\right),\left(X_{2},T_{2}\right),\dots\left(X_{n},T_{n}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ מרחבים טופולוגיים.
+\end_layout
+
+\begin_layout Standard
+אנו רוצים להגדיר טופולוגיה על הקבוצה 
+\begin_inset Formula $X_{1}\times X_{2}\times\dots\times X_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\begin_inset Formula 
+\[
+B=\left\{ U_{1}\times U_{2}\times\dots\times U_{n}\middle|U_{1}\in T_{1},U_{2}\in T_{2},\dots U_{n}\in T_{n}\right\} 
+\]
+
+\end_inset
+
+)כלומר 
+\begin_inset Formula $B=T_{1}\times T_{2}\times\dots\times T_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ אוסף של תתי קבוצות של 
+\begin_inset Formula $X_{1}\times\dots\times X_{n}$
+\end_inset
+
+ קשמיים את התנאי המספיק לכך שהוא בסיס לטופולוגיה על 
+\begin_inset Formula $X_{1}\times\dots\times X_{n}$
+\end_inset
+
+..
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+האיחוד הוא הכל, כי 
+\begin_inset Formula $X_{1}\times X_{2}\times\dots\times X_{n}\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $U_{1}\times\dots\times U_{n},V_{1}\times\dots\times V_{n}\in B$
+\end_inset
+
+, כלומר
+\begin_inset Formula $\begin{array}{c}
+U_{1}\in T_{1},\dots U_{n}\in T_{n}\\
+V_{1}\in T_{1},\dots V_{n}\in T_{n}
+\end{array}$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\left(U_{1}\times\dots\times U_{n}\right)\cap\left(V_{1}\times\dots\times V_{n}\right)=\left(U_{1}\cap V_{1}\right)\times\left(U_{2}\cap V_{2}\right)\times\dots\times\left(U_{n}\cap V_{n}\right)\in B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטופולוגיה 
+\begin_inset Formula $T$
+\end_inset
+
+ ש
+\begin_inset Formula $B$
+\end_inset
+
+ הוא בסיס עבורה נקראת טופולוגיית המכפלה, והיא הטופולוגיה שתמיד ניקח על מכפלה
+ כנ"ל.
+\end_layout
+
+\begin_layout Section*
+תרגילים
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\left(X_{1},T_{1}\right),\dots\left(X_{n},T_{n}\right)$
+\end_inset
+
+ מ"ט, ויהי 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T_{2}$
+\end_inset
+
+,...
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $T_{n}$
+\end_inset
+
+.
+ אזי אוסף הקבוצות 
+\begin_inset Formula $\left\{ V_{1}\times V_{2}\times\dots\times V_{n}\middle|V_{i}\in B_{i}\right\} $
+\end_inset
+
+ הוא בסיס לטופולוגיה של 
+\begin_inset Formula $X_{1}\times\dots\times X_{n}$
+\end_inset
+
+)כלומר לטופולוגיית המכפלה על 
+\begin_inset Formula $X_{1}\times\dots\times X_{n}$
+\end_inset
+
+ שהגדרנו כעת(.
+\end_layout
+
+\begin_layout Enumerate
+הטופולוגיה על 
+\begin_inset Formula $\underbrace{\mathbb{R}\times\mathbb{R}\times\dots\times\mathbb{R}}_{n\textnormal{ times}}$
+\end_inset
+
+ מתלכדת עם הטופולוגיה הרגילה)המטרית( על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X_{1},\dots X_{n},Y_{1},\dots Y_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $n+m$
+\end_inset
+
+ מרחבים טופולוגיים.
+\begin_inset Formula 
+\[
+\left(X_{1}\times\dots\times X_{n}\right)\times\left(Y_{1}\times\dots\times Y_{n}\right)\qquad X_{1}\times X_{2}\times\dots\times X_{n}\times Y_{1}\times Y_{2}\times\dots\times Y_{n}
+\]
+
+\end_inset
+
+הראו ששתי הטופולוגיות הללו מתלכדות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהנתן קבוצות 
+\begin_inset Formula $A_{1},\dots A_{n}$
+\end_inset
+
+ ישנן 
+\begin_inset Formula $n$
+\end_inset
+
+ העתקות טבעיות
+\begin_inset Formula 
+\[
+P_{i}:A_{1}\times\dots\times A_{n}\to A_{i}
+\]
+
+\end_inset
+
+המוגדר כך: 
+\begin_inset Formula 
+\[
+P_{i}\left(\left(a_{1},\dots a_{i},\dots a_{n}\right)\right):=a_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ נקראת ההטלה על הרכיב ה
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X_{1},\dots X_{n}$
+\end_inset
+
+ מ"ט.
+ אזי העתקות ההטלה 
+\begin_inset Formula $P_{i}:X_{1}\times\dots\times X_{n}\to X_{i}$
+\end_inset
+
+ הן רציפות ופתוחות.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq X_{i}$
+\end_inset
+
+ פתוחה.
+\begin_inset Formula 
+\[
+P_{i}^{-1}\left(U\right)=X_{1}\times X_{2}\times\dots\times U\times\dots\times X_{n}
+\]
+
+\end_inset
+
+וכל קבוצה בבסיס בפרט קבוצה פתוחה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X_{1},\dots X_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ מרחבים טופולוגיים.
+ תהי 
+\begin_inset Formula $f:Y\to X_{1}\times\dots\times X_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה אם"ם 
+\begin_inset Formula $P_{i}\circ f$
+\end_inset
+
+ רציפה לכל 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה אז לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $P_{i}\circ f$
+\end_inset
+
+ רציפה כי 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ מטענה קודמת, מספיק לבדוק שתמונה הפוכה של 
+\bar under
+קבוצת בסיס
+\bar default
+ היא קבוצה פתוחה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U_{1}\times\dots\times U_{n}$
+\end_inset
+
+ קבוצת בסיס לטופולוגיה של 
+\begin_inset Formula $X_{1}\times\dots\times X_{n}$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $U_{1}$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ וכו'(.
+\begin_inset Formula 
+\[
+f^{-1}\left(U_{1}\times U_{2}\times\dots\times U_{n}\right)=\left\{ g\in Y\middle|f\left(y\right)\in U_{1}\times\dots\times U_{n}\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\{ y\in Y\middle|P_{1}\circ f\left(y\right)\in U_{1},P_{2}\circ f\left(y\right)\in U_{2},\dots P_{n}\circ f\left(y\right)\in U_{n}\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\bigcap_{1\le i\le n}\left\{ y\in Y\middle|P_{i}\circ f\left(y\right)\in U_{i}\right\} =\bigcap_{1\le i\le n}\underbrace{\left(P_{i}\circ f\right)^{-1}\left(U_{i}\right)}_{\textnormal{open}}
+\]
+
+\end_inset
+
+ולכן החיתוך פתוח.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X_{1},\dots X_{n}$
+\end_inset
+
+ מ"ט ו
+\begin_inset Formula $Y$
+\end_inset
+
+ עוד מ"ט, ונניח נתונות 
+\begin_inset Formula $n$
+\end_inset
+
+ פונקציות רציפות
+\begin_inset Formula 
+\[
+1\le i\le n\qquad f_{i}:Y\to X_{i}
+\]
+
+\end_inset
+
+אזי הן מגדירות ביחד פונקציה
+\begin_inset Formula 
+\[
+\left(f_{i}\right)_{1\le i\le n}:Y\to X_{1}\times\dots\times X_{n}
+\]
+
+\end_inset
+
+)סימון אחר - 
+\begin_inset Formula $\left(f_{1},f_{2},\dots f_{n}\right)$
+\end_inset
+
+( 
+\begin_inset Formula 
+\[
+\left(f_{i}\right)_{1\le i\le n}\left(y\right):=\left(f_{1}\left(y\right),f_{2}\left(y\right),\dots f_{n}\left(y\right)\right)
+\]
+
+\end_inset
+
+אזי אם כל ה
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ רציפות גם הפונקציה 
+\begin_inset Formula $\left(f_{i}\right)_{1\le i\le y}$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Standard
+היא רציפה בזכות המשפט הקודם: 
+\begin_inset Formula $P_{j}\circ\left(f_{i}\right)_{1\le i\le n}=f_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פרק במתמטיקה בדידה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left\{ A_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ אוסף)לאו דווקא סופי( של קבוצות.
+ נרצה להגדיר את קבוצת המכפלה שתסומן
+\begin_inset Formula 
+\[
+\prod_{\alpha\in I}A_{\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נשים לב
+\end_layout
+
+\begin_layout Standard
+ניתן לחשוב על המכפלה 
+\begin_inset Formula $A_{1}\times\dots\times A_{n}$
+\end_inset
+
+ כאוסף כל הפונקציות
+\begin_inset Formula 
+\[
+\left\{ f:\left\{ 1,2,\dots n\right\} \to A_{1}\cup\dots\cup A_{n}\middle|\begin{array}{c}
+f\left(1\right)\in A_{1}\\
+f\left(2\right)\in A_{2}\\
+\vdots\\
+f\left(n\right)\in A_{n}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+נשים לב שזה דומה להגדרת סדרה)סופית(:
+\begin_inset Formula 
+\[
+\left(f\left(1\right),f\left(2\right),f\left(3\right),\dots f\left(n\right)\right)=\left(a_{1},a_{2},\dots a_{n}\right)
+\]
+
+\end_inset
+
+למרות שכאן, בניגוד לסדרה, אין חשיבות לסדר.
+\end_layout
+
+\begin_layout Standard
+נכליל לאוסף אינסופי: אם 
+\begin_inset Formula $\left\{ A_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ אוסף כלשהו של קבוצות, נגדיר
+\begin_inset Formula 
+\[
+\prod_{\alpha\in I}A_{\alpha}:=\left\{ f:I\to\bigcup_{\alpha\in I}A_{i}\middle|\forall_{\alpha\in I}f\left(\alpha\right)\in A_{\alpha}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Itemize
+זוהי קבוצה של פונקציות, לא של קבוצות.
+ למשל
+\begin_inset Formula 
+\[
+f\left(1\right)=1\qquad f\left(2\right)=2\qquad f\left(3\right)=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(1\right)=4\qquad g\left(2\right)=2\qquad g\left(3\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f\neq g$
+\end_inset
+
+ למרות ש
+\begin_inset Formula $f\left(\left\{ 1,2,3\right\} \right)=g\left(\left\{ 1,2,3\right\} \right)$
+\end_inset
+
+, ולכן כל אחד מהם יחשב בנפרד בקבוצת הפונקציות.
+\end_layout
+
+\begin_layout Itemize
+אין צורך בסדר מסויים בתוך הקבוצה - רק הכתיבה על הנייר דורשת סדר.
+ הקבוצה 
+\begin_inset Formula $I$
+\end_inset
+
+ איננה קבוצה סדורה.
+\end_layout
+
+\end_body
+\end_document

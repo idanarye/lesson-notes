@@ -1,0 +1,1830 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+3
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hessian
+\lang hebrew
+, עקומות, עקמומיות
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.1
+\numeric off
+.
+ משטחים ריבועיים
+\end_layout
+
+\begin_layout Standard
+ניתן להצטמצם לצורה)בלי איברים מעורבים 
+\begin_inset Formula $xy$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+ax^{2}+by^{2}+cz^{2}+dx+ey+fz+g=0\qquad\left(*\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Lambda=\begin{bmatrix}a & 0 & 0\\
+0 & b & 0\\
+0 & 0 & c
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+משטח נקרא 
+\bar under
+אליפסואיד
+\bar default
+ אם 
+\begin_inset Formula $a,b,c>0$
+\end_inset
+
+ או 
+\begin_inset Formula $a,b,c<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - פרבולויד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=ax^{2}+by^{2}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+)פרבולויד אליפטי(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted6.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - פרבולויד היפרבולי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=y^{2}-x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנקודה באמצע 
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+ נקראת 
+\bar under
+נקודת אוכף
+\end_layout
+
+\begin_layout Section*
+דוגמה - היפרפרבולויד של מפה אחת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{2}=x^{2}+y^{2}-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted8.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק את האסימפטוטות
+\begin_inset Formula 
+\[
+y=0\Rightarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{x^{2}-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(x\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z-h\left(x\right)=\sqrt{x^{2}-1}-x=\cfrac{\left(\sqrt{x^{2}-1}-x\right)\left(\sqrt{x^{2}-1}+x\right)}{\sqrt{x^{2}-1}+x}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=z-h\left(x\right)=\cfrac{\left(\sqrt{x^{2}-1}\right)^{2}-x^{2}}{\sqrt{x^{2}-1}+x}=\cfrac{x^{2}-1-x^{2}}{\sqrt{x^{2}-1}+x}=\cfrac{-1}{\sqrt{x^{2}-1}+x}\xrightarrow[x\to\infty]{}0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - היפרברבולואיד דו מימדי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{2}=x^{2}+y^{2}+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו איחוד של שני משטחים: 
+\begin_inset Formula $\begin{array}{c}
+z=+\sqrt{x^{2}+y^{2}+1}\\
+z=-\sqrt{x^{2}+y^{2}+1}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קריטריון של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Jacobi
+\end_layout
+
+\begin_layout Standard
+)משטחים ריבועיים(: אם 
+\begin_inset Formula $S$
+\end_inset
+
+ מטריצה סימטרית 
+\begin_inset Formula $3\times3$
+\end_inset
+
+, ויש משטח ריבועי
+\begin_inset Formula 
+\[
+X^{t}SX+DX+k=0\qquad X=\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}
+\]
+
+\end_inset
+
+נרצה, בלי לחשב את כל הערכים העצמיים, לדעת איך המשטח אמור להראות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $A\in M_{n,n}$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $k=1,2,...n$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $\Delta_{k}$
+\end_inset
+
+ את הבלוק 
+\begin_inset Formula $k\times k$
+\end_inset
+
+ העליון.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=3,k=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\]
+
+\end_inset
+
+אזי
+\begin_inset Formula 
+\[
+\Delta_{2}=\begin{bmatrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)
+\lang english
+Jacobi
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\in M_{n,n}\left(\mathbb{F}\right)$
+\end_inset
+
+ מטריצה סימטרית, נניח 
+\begin_inset Formula $\det\left(\Delta_{k}\right)\neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k=1,2,...n$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ שקולה)חופפת( למטריצה אלכסונית
+\begin_inset Formula 
+\[
+\textnormal{diag}\left(\cfrac{1}{\Delta_{1}},\cfrac{\Delta_{1}}{\det\left(\Delta_{2}\right)},\cfrac{\det\left(\Delta_{2}\right)}{\det\left(\Delta_{3}\right)},...\cfrac{\det\left(\Delta_{n-1}\right)}{\det\left(\Delta_{n}\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אם קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\det\left(\Delta_{k}\right)=0$
+\end_inset
+
+ אז אי אפשר ליישר את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Jacobi
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה סימטרית.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ חיובית לחלוטין אם"ם 
+\begin_inset Formula $\det\left(\Delta_{k}\right)>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה - מינור
+\end_layout
+
+\begin_layout Standard
+בוחרים אינדקסים 
+\begin_inset Formula $i_{1},...i_{k}$
+\end_inset
+
+.
+ שומרים את כל השורות והעמודות עם אינדקסים אלה.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה סימטרית חיובית לחלוטין.
+ אזי כל המינורים חיוביים לחלוטין.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+zy+y^{2}+xz+z^{2}+yz+x+y+z+1=0
+\]
+
+\end_inset
+
+האם המשטח הוא אליפסויד:
+\begin_inset Formula 
+\[
+S=\begin{bmatrix}1 & \unitfrac{1}{2} & \unitfrac{1}{2}\\
+\unitfrac{1}{2} & 1 & \unitfrac{1}{2}\\
+\unitfrac{1}{2} & \unitfrac{1}{2} & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}1 & 1\\
+1 & 1
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}=x^{2}+2xy+y^{2}
+\]
+
+\end_inset
+
+על פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Jacobi
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\Delta_{1}=1>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(\Delta_{2}\right)=\det\begin{bmatrix}1 & \unitfrac{1}{2}\\
+\unitfrac{1}{2} & 1
+\end{bmatrix}=1-\cfrac{1}{4}=\cfrac{3}{4}>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(\Delta_{3}\right)=\det\left(A\right)=\det\begin{bmatrix}1 & \unitfrac{1}{2} & \unitfrac{1}{2}\\
+\unitfrac{1}{2} & 1 & \unitfrac{1}{2}\\
+\unitfrac{1}{2} & \unitfrac{1}{2} & 1
+\end{bmatrix}=1+\cfrac{1}{8}+\cfrac{1}{8}-\cfrac{1}{4}-\cfrac{1}{4}-\cfrac{1}{4}=\cfrac{3}{4}>0
+\]
+
+\end_inset
+
+לכן המשטח הוא אליפסויד.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.3
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hessian
+\lang hebrew
+, נקודות אוכף, וכו'
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+ במספר 
+\begin_inset Formula $n$
+\end_inset
+
+ של משתנים 
+\begin_inset Formula $f\left(u^{1},u^{2},...u^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{Hessian}$
+\end_inset
+
+ 
+\begin_inset Formula $H_{f}$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא מטריצה של נגזרות שניות
+\begin_inset Formula 
+\[
+H_{f}=\left(\cfrac{\partial^{2}f}{\partial u^{i}\partial u^{j}}\right)_{\begin{array}{c}
+i=1,...n\\
+j=1,...n
+\end{array}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+שוויון של נגזרות מעורבות לגבי 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial^{2}f}{\partial x\partial y}=\cfrac{\partial^{2}f}{\partial y\partial x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{f}$
+\end_inset
+
+ מטריצה סימטרית
+\end_layout
+
+\begin_layout Section*
+סימונים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{ij}=\cfrac{\partial^{2}f}{\partial u^{i}\partial u^{j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{ij}=f_{ji}\qquad f_{\left[ij\right]}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{\left[ij\right]}=\cfrac{1}{2}\left(f_{ij}-f_{ji}\right)=\cfrac{1}{2}\left(\cfrac{\partial^{2}f}{\partial u^{i}\partial u^{j}}-\cfrac{\partial^{2}f}{\partial u^{j}\partial u^{i}}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ היא נקודה קריטית של 
+\begin_inset Formula $f$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+\nabla f\left(p\right)=0
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\nabla f=\begin{pmatrix}\cfrac{\partial f}{\partial u^{1}}\\
+\vdots\\
+\cfrac{\partial f}{\partial u^{n}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{f}=\begin{bmatrix}a & b\\
+c & d
+\end{bmatrix}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $ad-bc>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא מינימום מקומי או מקסימום מקומי.
+ אם 
+\begin_inset Formula $ad-bc<0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p$
+\end_inset
+
+ נקודת אוכף.
+\end_layout
+
+\begin_layout Section*
+משפט)עתידי(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $p\in\mathbb{R}^{2}$
+\end_inset
+
+ היא נקודה קריטית של 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ אזי ערך של 
+\begin_inset Formula $H_{f}\left(p\right)$
+\end_inset
+
+ הוא בדיוק עקמומיות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של גרף של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.4
+\numeric off
+.
+ הצגה פרמטרית של עקומות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: לפעמים נסמן את הצירים בתור 
+\begin_inset Formula $x,y$
+\end_inset
+
+, לפעמים נסמן אותם 
+\begin_inset Formula $u^{1},u^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה של עקומה היא העתקה מישר למישור 
+\begin_inset Formula 
+\[
+\alpha:\mathbb{R}\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\alpha:\left[a,b\right]\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כותבים
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $t\in\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שינוי של פרמטריזציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t=t\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים פרמטריזציה חדשה
+\begin_inset Formula 
+\[
+\beta\left(s\right)=\alpha\left(t\left(s\right)\right)
+\]
+
+\end_inset
+
+היא פרמטריצזיה אחרת של עקומה גאומטרית 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.5
+\numeric off
+.
+ הצגה סתומה של עקומה
+\end_layout
+
+\begin_layout Standard
+ע"י פונקציה 
+\begin_inset Formula $F\left(x,y\right)$
+\end_inset
+
+ כשרושמים
+\begin_inset Formula 
+\[
+F\left(x,y\right)=0
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $F\in C^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $F\left(x,y\right)=x^{2}+y^{2}-r^{2}$
+\end_inset
+
+ אזי נקבל מעגל ברדיוס 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $F\left(x,y\right)=y-x^{2}$
+\end_inset
+
+ אזי נקבל פרבולה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $F\left(x,y\right)=x^{2}-y^{2}-1$
+\end_inset
+
+ נקבל היפרבולה.
+\end_layout
+
+\begin_layout Section*
+מעבר לפרמטריזציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=r^{2}
+\]
+
+\end_inset
+
+אם נניח 
+\begin_inset Formula $\begin{array}{c}
+\alpha^{1}\left(t\right)=t\\
+\alpha^{2}\left(t\right)=\sqrt{r^{2}-t^{2}}
+\end{array}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)$
+\end_inset
+
+ נותן פרמטריזציה של חצי מעגל עליון.
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה אחרת:
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(r\cos t,r\sin t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.6
+\numeric off
+.
+ משפט הפונקציה הסתומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F\left(x,y\right)=x^{2}+y^{2}-r^{2}\qquad C_{F}=\left\{ \left(x,y\right)\middle|F\left(x,y\right)=0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\nabla F\left(p\right)\neq0$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $p\in C_{F}$
+\end_inset
+
+.
+ אזי קיימת פרמטריזציה 
+\begin_inset Formula $\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)$
+\end_inset
+
+ של עקומה 
+\begin_inset Formula $C_{F}$
+\end_inset
+
+ בסביבה של נקודה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $F\left(x,y\right)$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\cfrac{\partial F}{\partial y}\left(p\right)\neq0$
+\end_inset
+
+.
+ אזי קיימת פרמטריזציה 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+.
+ במילים אחרות: 
+\begin_inset Formula $\alpha\left(t\right)=\left(t,\alpha^{2}\left(t\right)\right)$
+\end_inset
+
+ של עקומה 
+\begin_inset Formula $C_{F}$
+\end_inset
+
+ בסביבה של 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+במקרה של מעגל 
+\begin_inset Formula $x^{2}+y^{2}=r^{2}$
+\end_inset
+
+, אם 
+\begin_inset Formula $p=\left(r,0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f\left(p\right)=\begin{pmatrix}2x\\
+2y
+\end{pmatrix}=\begin{pmatrix}2r\\
+0
+\end{pmatrix}\Rightarrow\cfrac{\partial F}{\partial y}=0
+\]
+
+\end_inset
+
+לא מקיים תנאי של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.7
+\numeric off
+.
+ פרמטריזציה במהירות יחידה
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה 
+\begin_inset Formula $\alpha\left(t\right)$
+\end_inset
+
+ של עקומה 
+\begin_inset Formula $C$
+\end_inset
+
+ נקראת 
+\bar under
+רגולרית
+\bar default
+ אם היא מקיימת 
+\begin_inset Formula $\left\Vert \alpha'\left(t\right)\right\Vert \neq0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה במהירות יחידה היא פרמטריזציה המקיימת 
+\begin_inset Formula $\left\Vert \alpha'\left(t\right)\right\Vert =1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במילים אחרות,
+\begin_inset Formula 
+\[
+\left(\cfrac{\mathrm{d}\alpha^{1}}{\mathrm{d}t}\right)^{2}+\left(\cfrac{\mathrm{d}\alpha^{2}}{\mathrm{d}}\right)^{2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - מעגל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=r^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(s\right)=\left(r\cos\cfrac{s}{r},r\sin\cfrac{s}{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha'\left(s\right)=\left(r\cdot\cfrac{1}{r}\left(-\sin\cfrac{s}{r}\right),r\cdot\cfrac{1}{r}\cos\cfrac{s}{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \alpha'\left(s\right)\right\Vert \sqrt{\sin^{2}\cfrac{s}{r}+\cos^{2}\cfrac{s}{r}}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.8
+\numeric off
+.
+ עקמומיות גאודזית של עקומה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\alpha\left(s\right)$
+\end_inset
+
+ היא פרמטריזציה במהירות יחידה של עקומה גיאומטרית 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עקמומיות 
+\begin_inset Formula $k_{\alpha}\left(s\right)$
+\end_inset
+
+ של עקומה היא פונקציה
+\begin_inset Formula 
+\[
+k_{\alpha}\left(s\right)=\left\Vert \cfrac{\mathrm{d}^{2}\alpha}{\mathrm{d}s^{2}}\right\Vert =\left\Vert \alpha''\left(s\right)\right\Vert =\sqrt{\left(\cfrac{\mathrm{d}^{2}\alpha^{1}}{\mathrm{d}s^{2}}\right)^{2}+\left(\cfrac{\mathrm{d}^{2}\alpha^{2}}{\mathrm{d}s^{2}}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מעגל 
+\begin_inset Formula $x^{2}+y^{2}=r^{2}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\alpha\left(s\right)=\left(r\cos\cfrac{s}{r},r\sin\cfrac{s}{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha'\left(s\right)=\left(-\sin\cfrac{s}{r},\cos\cfrac{s}{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k_{\alpha}\left(s\right)=\left\Vert \alpha''\left(s\right)\right\Vert =\sqrt{\left(\cfrac{1}{r}\cos\cfrac{s}{r}\right)^{2}+\left(\cfrac{1}{r}\sin\cfrac{s}{r}\right)^{2}}=\cfrac{1}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מסקנה
+\series default
+: 
+\begin_inset Formula $\boxed{k_{\alpha}=\cfrac{1}{r}}$
+\end_inset
+
+ במקרה של מעגל.
+ במקרה של מעגל זוהי פונקציה קבועה, שקטנה כשמגדילים את הרדיוס)כי ככל שמגדילים
+ מעגל, הוא נהייה קרוב יותר לישר(.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.9
+\numeric off
+.
+ מעגל אוסקולוטרופי)
+\lang english
+Osculating
+\lang hebrew
+( של עקומה
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+ניתן לבטא נגזרת שנייה של פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+ ע"י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות: 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x+h\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x+h\right)$
+\end_inset
+
+ קרובות, ע"י נוסחא:
+\begin_inset Formula 
+\[
+f''\left(x\right)=\lim_{h\to0}\cfrac{f\left(x+h\right)+f\left(x-h\right)-2f\left(x\right)}{h^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נפתח טור טיילור:
+\begin_inset Formula 
+\[
+f\left(x+h\right)=a+bh+\cfrac{c}{2}h^{2}+o\left(h^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{f\left(x+h\right)+f\left(x-h\right)-2f\left(x\right)}{h^{2}}=\cfrac{a+bh+\cfrac{c}{2}h^{2}+o\left(h^{2}\right)+a-bh+\cfrac{c}{2}h^{2}+o\left(h^{2}\right)}{}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\cfrac{c}{2}h^{2}+\cfrac{c}{2}h^{2}+o\left(h^{2}\right)}{h^{2}}\xrightarrow[h\to0]{}f''\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מעגל אוסקולוטרופי של עקומה בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ הוא מעגל דרך שלושה נקודות קרובות במידה אינסופית ל
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+עקמומיות של עקומה בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ שווה לעקמומיות של מעגל אוסקולוטרופי שלה ב
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3.10
+\numeric off
+.
+ רדיוס של עקמומיות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+רדיוס עקמומיות בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ של עקומה הוא רדיוס של מעגל אוסקולוטרופי ב
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $C$
+\end_inset
+
+ היא גרף של של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, אז בנקודה קריטית 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $k=\left|f''\left(x_{0}\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ נקודה קריטית.
+ 
+\begin_inset Formula $f''\left(0\right)=2$
+\end_inset
+
+, לכן 
+\begin_inset Formula $k=2$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

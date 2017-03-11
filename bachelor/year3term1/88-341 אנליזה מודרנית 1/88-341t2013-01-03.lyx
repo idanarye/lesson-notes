@@ -1,0 +1,961 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section*
+תרגיל)"כשלון חרוץ" של משפטי פוביני וטונלי(
+\end_layout
+
+\begin_layout Standard
+יהיו הממ"חים
+\begin_inset Formula 
+\[
+\left(\left[0,1\right],\mathscr{L}\left(\left[0,1\right]\right),u\right)\qquad\left(\left[0,1\right],\mathcal{P}\left(\left[0,1\right]\right),u\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $u=m$
+\end_inset
+
+ היא מידת לבג ו
+\begin_inset Formula $v=\#$
+\end_inset
+
+ היא מידת הספירה.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $w=u\times v=m\times\#$
+\end_inset
+
+ מידת המכפלה.
+ נגדיר את האלכסון
+\begin_inset Formula 
+\[
+D=\left\{ \left(x,y\right)\middle|0\le x=y\le1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הוכיחו כי האלכסון 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא מדיד במרחב המכפלה.
+\end_layout
+
+\begin_layout Enumerate
+הוכיחו כי המספרים
+\begin_inset Formula 
+\[
+\int_{\left[0,1\right]\times\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}w\qquad\int_{\left[0,1\right]}\left[\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}m\left(x\right)\right]\mathrm{\, d}\#\left(y\right)\qquad\int_{\left[0,1\right]}\left[\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}\#\left(y\right)\right]\mathrm{\, d}m\left(x\right)
+\]
+
+\end_inset
+
+כולם שונים זה מזה)!(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+קודם כל, יש להבין מהו מלבן מדיד במרחב המדובר.
+ התשובה היא שקבוצה מהצורה 
+\begin_inset Formula $R=E\times F$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E\subseteq\left[0,1\right]$
+\end_inset
+
+ מדידה לבג ו
+\begin_inset Formula $F\subseteq\left[0,1\right]$
+\end_inset
+
+ כלשהי.
+ למשל 
+\begin_inset Formula $R=\left[0,\frac{1}{4}\right]\times\left\{ \frac{1}{\pi},\frac{1}{2},\frac{9}{10}\right\} $
+\end_inset
+
+ הוא מלבן מדיד ונפחו 
+\begin_inset Formula $\left|R\right|=m\left(\left[0,\frac{1}{4}\right]\right)\cdot\#\left(\left\{ \frac{1}{\pi},\frac{1}{2},\frac{9}{10}\right\} \right)=\frac{1}{4}\cdot3=\frac{3}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\series default
+: לא מדובר כאן במלבנים כמו שאנחנו מכירים מגיאומטריה)מכפלה קרטזית של קטעים(
+ - אלא כל מכפלה קרטזית של קבוצות מדידות היא מלבן.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\begin{array}{c}
+n=0,1,2,\dots\\
+k=1,2,\dots2^{n}
+\end{array}$
+\end_inset
+
+ נגדיר קטעים 
+\begin_inset Formula $I_{n,k}=\left[\frac{k-1}{2^{n}},\frac{k}{2^{n}}\right]$
+\end_inset
+
+ - הם כולם קטעים ולכן מדידים לבג.
+ נגדיר בנוסף 
+\begin_inset Formula $B_{n}=\bigcup\limits _{k=1}^{2^{n}}I_{n,k}\times I_{n,k}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+B_{0}=\bigcup_{k=1}^{1}I_{0,k}\times I_{0,k}=\left[0,1\right]\times\left[0,1\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B_{1}=\bigcup_{k=1}^{2}I_{1,k}\times I_{1,k}=\left[0,\frac{1}{2}\right]\times\left[0,\frac{1}{2}\right]\cup\left[\frac{1}{2},1\right]\times\left[\frac{1}{2},1\right]
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ הוא איחוד בן מנייה של מלבנים מדידים - כלומר ב
+\begin_inset Formula $R_{\sigma}$
+\end_inset
+
+ - ופשוט לראות כי 
+\begin_inset Formula $D=\bigcap\limits _{n=0}^{\infty}B_{n}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $D$
+\end_inset
+
+ מטיפוס 
+\begin_inset Formula $R_{\sigma\delta}$
+\end_inset
+
+.
+ בהרצאוה ראינו שקבוצות מטיפוס 
+\begin_inset Formula $R_{\sigma\delta}$
+\end_inset
+
+ מדידות.
+\end_layout
+
+\begin_layout Enumerate
+כדי לחשב את המידה 
+\begin_inset Formula $w\left(D\right)$
+\end_inset
+
+ נזכר במידה החיצונית
+\begin_inset Formula 
+\[
+w^{*}\left(D\right)=\inf\left\{ \sum_{n=1}^{\infty}\left|R_{n}\right|\middle|D\subseteq\bigcup_{n=1}^{\infty}R_{n},R_{n}\textnormal{ are measurable rectangles}\right\} 
+\]
+
+\end_inset
+
+יהי 
+\begin_inset Formula $\left\{ R_{n}=E_{n}\times F_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ כיסוי של 
+\begin_inset Formula $D$
+\end_inset
+
+ ע"י מלבנים מדידים, ז"א 
+\begin_inset Formula $D\subseteq\bigcup\limits _{n=1}^{\infty}R_{n}$
+\end_inset
+
+.
+ נזרוק מהאוסף 
+\begin_inset Formula $\left\{ R_{1}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ את כל המלבנים המדידים עבורם 
+\begin_inset Formula $m\left(E_{n}\right)=0$
+\end_inset
+
+.
+ נותר לנו חלק 
+\bar under
+לא בן מנייה
+\bar default
+ של האלכסון.
+\begin_inset Formula 
+\[
+D^{1}\subseteq\bigcup_{\begin{array}{c}
+n=1\\
+m\left(E_{n}\right)>0
+\end{array}}^{\infty}E_{n}\times F_{n}
+\]
+
+\end_inset
+
+בהכרח ישנו מלבן 
+\begin_inset Formula $R_{n_{0}}=E_{n_{0}}\times F_{n_{0}}$
+\end_inset
+
+ באוסף הנותר, עבורו 
+\begin_inset Formula $F_{n_{0}}$
+\end_inset
+
+ אינסופית! )אחרת, המלבנים שנותרו לא יכולים לכסות את 
+\begin_inset Formula $D^{1}$
+\end_inset
+
+, שקובצת שיעור שלה לא בתמונה(.
+ עבור אותו המלבן
+\begin_inset Formula 
+\[
+\left|R_{n_{0}}\right|=\overbrace{m\left(E_{n_{0}}\right)}^{\gneq0}\cdot\overbrace{\#\left(F_{n_{0}}\right)}^{+\infty}=\infty
+\]
+
+\end_inset
+
+מכאן
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\left|R_{n}\right|\ge\left|R_{n_{0}}\right|=\infty\implies\sum_{n=1}^{\infty}\left|R_{n}\right|=+\infty
+\]
+
+\end_inset
+
+כלומר, כל האיברים בקבוצה 
+\begin_inset Formula $\left\{ \sum\limits _{n=1}^{\infty}\left|R_{n}\right|\middle|D\subseteq\bigcup\limits _{n=1}^{\infty}R_{n},R_{n}\textnormal{ are measurable rectangles}\right\} $
+\end_inset
+
+ הם 
+\begin_inset Formula $\infty$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $w^{*}\left(D\right)$
+\end_inset
+
+ שהיא ה
+\begin_inset Formula $\inf$
+\end_inset
+
+ של קבוצה זו שווה לאינסוף: 
+\begin_inset Formula $w^{*}\left(D\right)=\inf\left\{ \infty\right\} =\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ניתן לחשב את האינטגרל הראשון:
+\begin_inset Formula 
+\[
+\int_{\left[0,1\right]\times\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}w=w\left(D\right)=\infty
+\]
+
+\end_inset
+
+לגבי האינטגרלים הנשנים: לכל 
+\begin_inset Formula $y\in\left[0,1\right]$
+\end_inset
+
+ קבוע,
+\begin_inset Formula $\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}m=0$
+\end_inset
+
+ כי 
+\begin_inset Formula $I_{D}\left(x,y\right)$
+\end_inset
+
+ שווה לאפס כב"מ 
+\begin_inset Formula $\mathrm{d}m\left(x\right)$
+\end_inset
+
+, ומכאן
+\begin_inset Formula 
+\[
+\int_{\left[0,1\right]}\left[\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}m\left(x\right)\right]\mathrm{\, d}\#\left(y\right)=\int_{\left[0,1\right]}0\mathrm{\, d}\#\left(y\right)=0
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+ קבוע 
+\begin_inset Formula 
+\[
+\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}\#\left(y\right)=\int_{\left\{ x\right\} }\overbrace{I_{D}\left(x,y\right)}^{=1}\mathrm{\, d}\#\left(y\right)+\int_{\left[0,1\right]\backslash\left\{ x\right\} }\overbrace{I_{D}\left(x,y\right)}^{=0}\mathrm{\, d}\#\left(y\right)=\#\left(\left\{ x\right\} \right)+0=1
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\int_{\left[0,1\right]}\left[\int_{\left[0,1\right]}I_{D}\left(x,y\right)\mathrm{\, d}\#\left(y\right)\right]\mathrm{\, d}m\left(x\right)=\int_{\left[0,1\right]}1\mathrm{\, d}m\left(x\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\cdot\left(\mathbb{R},\mathscr{L}\left(\mathbb{R}\right)\right)+\mathbb{R}^{*}$
+\end_inset
+
+ מדידה.
+ הוכיחו את השוויון:
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\left|f\left(x\right)\right|\mathrm{\, d}m\left(x\right)=\int_{0}^{\infty}m\left(\left\{ x\middle|\left|f\left(x\right)\right|\ge t\right\} \right)\mathrm{\, d}m\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\left|f\left(x\right)\right|\mathrm{\, d}m\left(x\right)=\int_{-\infty}^{\infty}\left[\int_{0}^{\left|f\left(x\right)\right|}1\mathrm{\, d}m\left(t\right)\right]\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-\infty}^{\infty}\left[\int_{0}^{\infty}I_{\left\{ \left(x,t\right)\middle|\left|f\left(x\right)\right|\ge t\right\} }\mathrm{\, d}m\left(t\right)\right]\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{Tomelli}}}{=}\int_{0}^{\infty}\left[\int_{-\infty}^{\infty}I_{\left\{ \left(x,t\right)\middle|\left|f\left(x\right)\ge t\right|\right\} }\mathrm{\, d}m\left(x\right)\right]\mathrm{\, d}m\left(t\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}m\left(\left|f\left(x\right)\right|\ge t\right)\mathrm{\, d}m\left(t\right)
+\]
+
+\end_inset
+
+הסיבה שמשפט טונלי תרף היא כי מדובר במידות לבג 
+\begin_inset Formula $\mathrm{d}m\left(x\right),\mathrm{d}m\left(t\right)$
+\end_inset
+
+ שהן שלמות ו
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופיות
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+מידה נקראת 
+\emph on
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+-סופית
+\emph default
+ אם ניתן "לשבור" את המרחב 
+\begin_inset Formula $X$
+\end_inset
+
+ למספר בן מניה של חתיכות שמידת כל אחת מהן סופית.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנוסף, יש לבדוק כי הפונקציה 
+\begin_inset Formula $I_{\left\{ \left(x,t\right)\middle|\left|f\left(x\right)\right|\ge t\right\} }$
+\end_inset
+
+ מדידה.
+ ע"פ אחד מהתרגילים הכרחי ומספיק להראות כי 
+\series bold
+הקבוצה
+\series default
+ 
+\begin_inset Formula $\left\{ \left(x,t\right)\middle|\left|f\left(x\right)\right|\ge t\right\} $
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\mu$
+\end_inset
+
+ מידה סופית על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $\alpha\left(x\right)=\mu\left(\left(-\infty,x\right]\right)$
+\end_inset
+
+.
+ הוכיחו כי
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\left[\alpha\left(x+c\right)-\alpha\left(x\right)\right]\mathrm{\, d}m\left(x\right)=c\cdot\mu\left(\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\left[\alpha\left(x+c\right)-\alpha\left(x\right)\right]\mathrm{\, d}m\left(x\right)=\int_{-\infty}^{\infty}\left[\mu\left(-\infty,x+c\right]-\mu\left(\left(-\infty,x\right]\right)\right]\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-\infty}^{\infty}\mu\left(\left(x,x+c\right]\right)\mathrm{\, d}m\left(x\right)=\int_{-\infty}^{\infty}\left[\int_{\left(x,x+c\right]}1\mathrm{\, d}\mu\left(t\right)\right]\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty}I_{\left\{ \left(x,t\right)\middle|x<t\le x+c\right\} }\mathrm{\, d}\mu\left(t\right)\right]\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{Tonelli}}}{=}\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty}I_{\left\{ \left(x,t\right)\middle|x<t\le x+c\right\} }\mathrm{\, d}m\left(x\right)\right]\mathrm{\, d}\mu\left(t\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty}I_{\left\{ \left(x,t\right)\middle|t>x\ge t-c\right\} }\mathrm{\, d}m\left(x\right)\right]\mathrm{\, d}\mu\left(t\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-\infty}^{\infty}m\left(\left[t-c,t\right)\right)\mathrm{\, d}\mu\left(t\right)=\int_{-\infty}^{\infty}c\mathrm{\, d}\mu=c\int_{-\infty}^{\infty}1\mathrm{\, d}\mu=c\mu\left(\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אנליזה פונקציונלית
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+האם הפונקציות הבאות הן נורמה במרחב 
+\begin_inset Formula $X$
+\end_inset
+
+ המצורף?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\Vert f\right\Vert :=T_{a}^{b}\left[f\right]$
+\end_inset
+
+, 
+\begin_inset Formula $X=\textnormal{BV}\left(\left[a,b\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert f\right\Vert =T_{a}^{b}\left[f\right]+\left|f\left(a\right)\right|$
+\end_inset
+
+, 
+\begin_inset Formula $X=\textnormal{BV}\left(\left[a,b\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לא! האקסיומה הראשונה של הנורמה 
+\begin_inset Formula $\left\Vert f\right\Vert =0\iff f=0$
+\end_inset
+
+ נכשלת, וזאת משום שלכל פונקציה קבועה 
+\begin_inset Formula $f\equiv c$
+\end_inset
+
+ יש השתנות אפס, ולא רק לפונקציית האפס.)שאר התנאים מתקיימים, ולמרחב עם התכונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2,3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קוראים 
+\emph on
+מרחב סמי-נורמי
+\emph default
+(.
+\end_layout
+
+\begin_layout Enumerate
+כן!
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+arabic{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\Vert f\right\Vert \ge0$
+\end_inset
+
+ ויש שווין אם ורק אם 
+\begin_inset Formula $f=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\Vert cf\right\Vert =\left|c\right|\left\Vert f\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert f+g\right\Vert \le\left\Vert f\right\Vert +\left\Vert g\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+arabic{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ברור כי 
+\begin_inset Formula $\left\Vert f\right\Vert \ge0$
+\end_inset
+
+, ויש שווין אם"ם 
+\begin_inset Formula $T_{a}^{b}\left[f\right]=\left|f\left(a\right)\right|=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T_{a}^{b}\left[f\right]=0$
+\end_inset
+
+ אומר כי 
+\begin_inset Formula $f\equiv c$
+\end_inset
+
+ קבועה, ו
+\begin_inset Formula $\left|f\left(a\right)\right|=0$
+\end_inset
+
+ אומר כי הקבוע הזה 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert cf\right\Vert =T_{a}^{b}\left[cf\right]+\left|c\cdot f\left(a\right)\right|=\left|c\right|\cdot T_{a}^{b}\left[f\right]+\left|c\right|\cdot\left|f\left(a\right)\right|=\left|c\right|\cdot\left\Vert f\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert f+g\right\Vert =T_{a}^{b}\left[f+g\right]+\left|\left(f+g\right)\left(a\right)\right|\le T_{a}^{b}\left[f\right]+T_{a}^{b}\left[g\right]+\left|f\left(a\right)\right|+\left|g\left(a\right)\right|=\left\Vert f\right\Vert +\left\Vert g\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

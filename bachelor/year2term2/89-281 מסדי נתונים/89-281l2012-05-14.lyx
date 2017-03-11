@@ -1,0 +1,2042 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+נניח שיש לנו יחס עם סכימה 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+, ואוסף של תלויות פונקציונאליות 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לנרמל את 
+\begin_inset Formula $R$
+\end_inset
+
+, פירקנו אותו:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & R\ar[ld]\ar[rd]\\
+ & R1\left(S1\right)\ar[ld]\ar[rd] &  & R2\left(S2\right)\\
+R3\left(S3\right) &  & R4\left(S4\right)
+}
+\]
+
+\end_inset
+
+אבל האם ניתן לחזור מזה ליחס המקורי?
+\end_layout
+
+\begin_layout Standard
+ישנן כמה תכונות של פירוק נכון:
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Decomposition Properties
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+(
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Elimination of anomalies
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $\surd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם חיסלנו את האנומליות כשפירקנו את 
+\begin_inset Formula $R$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+( 
+\lang english
+Recoverrablity of info
+\lang hebrew
+ 
+\begin_inset Formula $\surd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם ניתן לשחזר את המידע מהפירוק?
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+3
+\numeric off
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Preservation of dependencies
+\lang hebrew
+ 
+\begin_inset Formula $\chi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא מתקיים ב
+\begin_inset Formula $BCNF$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח את התכונות:
+\end_layout
+
+\begin_layout Enumerate
+למה אם יחס הוא ב
+\begin_inset Formula $BCNF$
+\end_inset
+
+ אז אין אנומליות ואין כפילות?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נחזור להגדרה של 
+\begin_inset Formula $BCNF$
+\end_inset
+
+: יחס הוא ב
+\begin_inset Formula $BCNF$
+\end_inset
+
+ אם כל תלות לא טריוויאלית 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ היא חלק ממפתח על.
+ זה אומר שכל ה
+\lang english
+tuple
+\lang hebrew
+ים שונים על 
+\begin_inset Formula $X$
+\end_inset
+
+ - ולכן אין אנומליות ואין כפילות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+למה ניתן לשחזר את המידע מהפירוק?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כשמצרפים את כל היחסים בפירוק, מקבלים איזהו יחס.
+ יש גם פירוק של 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $k$
+\end_inset
+
+ סכימות:
+\begin_inset Formula 
+\[
+S=S_{1}\cup S_{2}\cup\dots\cup S_{k}
+\]
+
+\end_inset
+
+ניקח הטלות של 
+\begin_inset Formula $R$
+\end_inset
+
+ על הסכימות שמרכיבות את הפירוק הזה:
+\begin_inset Formula 
+\[
+\pi_{S_{1}}R,\pi_{S_{2}}R,\dots\pi_{S_{k}}R
+\]
+
+\end_inset
+
+איך אנחנו יכולים לחזור ל
+\begin_inset Formula $R$
+\end_inset
+
+? נצרף אותם! אם מצרפים את ההטלות האלה, מקבלים יחס 
+\begin_inset Formula $R'$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+R'=\pi_{S_{1}}R\bowtie\pi_{S_{2}}R\bowtie\dots\bowtie\pi_{S_{k}}R
+\]
+
+\end_inset
+
+האם 
+\begin_inset Formula $R'\overset{?}{=}R$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $R'=R$
+\end_inset
+
+, אז הפירוק נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loseless-join decomposition
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $R'\neq R$
+\end_inset
+
+, אז הפירוק נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+lossy-join decomposition
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+נתון יחס עם סכימה 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+, 
+\begin_inset Formula $S=X\cup Y\cup Z$
+\end_inset
+
+, וקבוצת תלויות פונקציונאליות 
+\begin_inset Formula $F=\left\{ Y\to Z\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי הפירוק
+\begin_inset Formula 
+\[
+\pi_{X\cup Y}R\bowtie\pi_{y\cup Z}R=R
+\]
+
+\end_inset
+
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loseless
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+X & Y & Z\\
+\hline x_{1} & y & z\\
+x_{2} & y & z
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+X & Y\\
+\hline x_{1} & y\\
+x_{2} & y
+\end{tabular}\qquad\begin{tabular}{c|c}
+Y & Z\\
+\hline y & z
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+X & Y & Z\\
+\hline x_{1} & y & z\\
+x_{2} & y & z
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת זאת, אם ניקח פירוק שלא מקיים את התנאי:
+\begin_inset Formula 
+\[
+R\left(X,Y,Z\right),Y\nrightarrow X,Y\nrightarrow Z
+\]
+
+\end_inset
+
+ומפרקים אותו
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+X & Y & Z\\
+\hline x_{1} & y & z_{1}\\
+x_{2} & y & z_{2}
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+X & Y\\
+\hline x_{1} & y\\
+x_{2} & y
+\end{tabular}\qquad\begin{tabular}{c|c}
+Y & Z\\
+\hline y & z_{1}\\
+y & z_{2}
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+X & Y & Z\\
+\hline x_{1} & y & z\\
+x_{2} & y & z
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש לנו פירוק 
+\begin_inset Formula $BCNF$
+\end_inset
+
+, אנחנו יודעים לפי המשפט שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loseless
+\lang hebrew
+.
+ אבל מה עושים אם נונתים לנו סתם פירוק?
+\end_layout
+
+\begin_layout Part*
+בדיקה אם פירוק הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loseless
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Chase test
+\end_layout
+
+\begin_layout Standard
+טענות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bowtie$
+\end_inset
+
+)צירוף טבעי(הוא אסוציאטיבית וקומוטטיבית.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אסוציאטיבית:
+\begin_inset Formula 
+\[
+\left(\left(\left(\left(R1\bowtie R2\right)\bowtie R3\right)\dots\right)\bowtie Rn\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קומוטטיבית:
+\begin_inset Formula 
+\[
+R1\bowtie R2=R2\bowtie R1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R\subseteq R'$
+\end_inset
+
+ - תמיד נכון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R'\subseteq R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מה שצריך לבדוק את זה תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שאם 
+\begin_inset Formula $t\in R'$
+\end_inset
+
+ אז 
+\begin_inset Formula $t\in R$
+\end_inset
+
+.
+ זהו ה
+\lang english
+Chase test
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+
+\lang english
+Tableau
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Chase test
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובד בעזרת מבנה שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Tableau
+\lang hebrew
+".
+\end_layout
+
+\begin_layout Standard
+נתון יחס עם סכימה 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+ ופירוק 
+\begin_inset Formula $S=S1\cup\dots\cup Sk$
+\end_inset
+
+.
+ נבנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Tableau
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $Si$
+\end_inset
+
+ בונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\lang hebrew
+ 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+, כך שהשדות המופיעים בסכימה יופיעו בלי אינדקס, ואלו שלא בסכימה מופיעים בלי
+ אינדקס:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|}
+\hline R\left(A,B,C,D\right) & A & B & C & D\\
+\hline S1=\left(A,D\right) & a & b_{1} & c_{1} & d\\
+S2=\left(A,B\right) & a & b_{2} & c & d_{2}\\
+S3=\left(B,C,D\right) & a_{3} & b & c & d
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+זהו ה
+\lang english
+Tableau
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשביל הפירוק - כל איבר עם אינדקס מופיע רק פעם אחת)שכן בשורות אחרות יהיה
+ אינדקס אחר(
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא לקחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $R'$
+\end_inset
+
+, 
+\begin_inset Formula $t\in R'$
+\end_inset
+
+ ולבדוק האם 
+\begin_inset Formula $t\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+
+\lang english
+Chase Test
+\end_layout
+
+\begin_layout Standard
+מסתמכים על תלויות פונקציונליות: 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X\to Y\\
+t_{1}\left(X\right)=t_{2}\left(X\right)
+\end{array}\Rightarrow t_{1}\left(Y\right)=t_{2}\left(Y\right)
+\]
+
+\end_inset
+
+בכל פעם לוקחים שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\lang hebrew
+ים שבהם יש לנו ערכים שווים:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $t_{1}\left(x\right)=t_{2}\left(x\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x\textnormal{-unsubscribed}\Rightarrow y\textnormal{-unsubscribed}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $t_{1}\left(x\right)=t_{2}\left(x\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x\textnormal{-subscribed}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y\textnormal{-subscribed}\Rightarrow\textnormal{one of indexes}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=\left\{ A\to B,B\to C,CD\to A\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|}
+\hline R\left(A,B,C,D\right) & A & B & C & D\\
+\hline S1=\left(A,D\right) & a & b_{1} & c_{1} & d\\
+S2=\left(A,B\right) & a & b_{2} & c & d_{2}\\
+S3=\left(B,C,D\right) & a_{3} & b & c & d
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון
+\begin_inset Formula $A\to B$
+\end_inset
+
+, ויש לנו שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\lang hebrew
+ים, 
+\begin_inset Formula $\left(a,b_{1},\dots\right),\left(a,b_{2},\dots\right)$
+\end_inset
+
+ - לכן זהו אותו 
+\begin_inset Formula $b$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|}
+\hline R\left(A,B,C,D\right) & A & B & C & D\\
+S1=\left(A,D\right) & a & b_{1} & c_{1} & d\\
+S2=\left(A,B\right) & a & b_{1} & c & d_{2}\\
+S3=\left(B,C,D\right) & a_{3} & b & c & d
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו, נתון 
+\begin_inset Formula $B\to C$
+\end_inset
+
+, ויש לנו שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\lang hebrew
+ים עם 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+, אחד עם 
+\begin_inset Formula $c$
+\end_inset
+
+ ואחד עם 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ - לכן נוריד את האינדקס מ
+\begin_inset Formula $c_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|}
+\hline R\left(A,B,C,D\right) & A & B & C & D\\
+\hline S1=\left(A,D\right) & a & b_{1} & c & d\\
+S2=\left(A,B\right) & a & b_{1} & c & d_{2}\\
+S3=\left(B,C,D\right) & a_{3} & b & c & d
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן 
+\begin_inset Formula $CD\to A$
+\end_inset
+
+, לכן נשנה את 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+ ל
+\begin_inset Formula $a$
+\end_inset
+
+)שכן בשורה הראשונה והשלישית 
+\begin_inset Formula $c,d$
+\end_inset
+
+ זהים(:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|}
+\hline R\left(A,B,C,D\right) & A & B & C & D\\
+\hline S1=\left(A,D\right) & a & b_{1} & c & d\\
+S2=\left(A,B\right) & a & b_{1} & c & d_{2}\\
+S3=\left(B,C,D\right) & a & b & c & d
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+קיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\lang hebrew
+ 
+\begin_inset Formula $\left(a,b,c,d\right)$
+\end_inset
+
+ - וקיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tuple
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ששייך למקור, לכן עברנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Chase test
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה לפירוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loosy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+R\left(X,Y,Z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{1}=\left(X,Y\right)\qquad S_{2}=\left(Y,Z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|}
+\hline R\left(X,Y,Z\right) & X & Y & Z\\
+\hline S1=\left(X,Y\right) & x & y & z_{1}\\
+S2=\left(Y,Z\right) & x_{2} & y & z
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ X\to Y,Z\to Y\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התלות הראשונה היא 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+, אבל אין שתי שורות עם 
+\begin_inset Formula $X$
+\end_inset
+
+ זהה, לכן זה לא עוזר לנו.
+\end_layout
+
+\begin_layout Standard
+התלות השנייה היא 
+\begin_inset Formula $Z\to Y$
+\end_inset
+
+, אבל אין שתי שורות עם 
+\begin_inset Formula $Z$
+\end_inset
+
+ זהה, לכן זה לא עוזר לנו.
+\end_layout
+
+\begin_layout Standard
+מכיוון שנתקענו בלי למצוא 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+, לא עברנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Chase Test
+\lang hebrew
+, והפירוק הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loosy-join decomposition
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+3) Dependency Preservation 
+\begin_inset Formula $\chi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון יחס עם סכימה
+\begin_inset Formula 
+\[
+R\left(\textnormal{stud,course,lect}\right)
+\]
+
+\end_inset
+
+ותלויות פונקציונליות
+\begin_inset Formula 
+\[
+F=\left\{ \begin{array}{c}
+\textnormal{stud,course}\to\textnormal{lect}\\
+\textnormal{lect}\to\textnormal{course}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפרק לפי התלות 
+\begin_inset Formula $\textnormal{lect}\to\textnormal{course}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S1=\left(\textnormal{lect,course}\right)\qquad S2=\left(\textnormal{lect,stud}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F1=\left\{ \textnormal{lect}\to\textnormal{course}\right\} \qquad S2=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיצוב המקורי היו לנו שני תלויות, אבל נשארנו עם תלות אחת.
+\end_layout
+
+\begin_layout Standard
+פירוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BCNF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא
+\series default
+\bar default
+ שומר על תלויות פונקציונאליות!!! בעיצוב לעיל, המצב הבא הוא חוקי:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+lect & course\\
+\hline Lahol & DB\\
+Lavan & DB
+\end{tabular}\qquad\bowtie\qquad\begin{tabular}{c|c}
+lect & stud\\
+\hline Kahol & Avi\\
+Lavan & Avi
+\end{tabular}\qquad=\qquad\begin{tabular}{c|c|c}
+lect & course & stud\\
+\hline Kahol & DB & Avi\\
+Lavan & DB & Avi
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tradeoff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אנחנו מחסלים אנומליות, אבל מאבדים תלויות פונקציונאליות.
+\end_layout
+
+\begin_layout Standard
+אפשר קצת להחליש את התנאים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BCNF
+\lang hebrew
+, כדי לשמור על תלויות פונקציונאליות - על חשבון השארת כפילויות.
+ כך מגיעים לצורה נורמלית שלישית
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+3NF - Third Normal Form
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אומרים שיחס הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+3NF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם לכל תלות לא טריוויאלית 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+, או ש
+\begin_inset Formula $X$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+superkey
+\lang hebrew
+, או שלכל 
+\begin_inset Formula $y_{i}\in Y\backslash X$
+\end_inset
+
+, 
+\begin_inset Formula $y_{i}\in\textnormal{some key}$
+\end_inset
+
+)לאו בהכרח כולם באותו מפתח(.
+\end_layout
+
+\begin_layout Standard
+במקרה השני אומרים ש
+\begin_inset Formula $y_{i}\in\textnormal{key}$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+prime
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+לכן ניתן לכתוב את התנאי ל
+\lang english
+3NF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור
+\lang english
+ 
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\forall_{X\to Y\textnormal{ non-trivial}}\bigvee\begin{array}{c}
+X\textnormal{ is superkey}\\
+\forall_{y_{i}\in X\backslash X}y_{i}\textnormal{ is prime}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,923 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סיבוכיות מקום
+\end_layout
+
+\begin_layout Standard
+כשאנו מדברים על סיבוכיות מקום, לא מעניין אותנו כמה מקום הקלט והפלט תופסים
+ - אלא רק בכמה מקום משתמשים בשביל לפתור את הבעיה.
+ לכן צריך להפריד בין הסרטים של הקלט, הפלט והעבודה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מכונת טיורינג דטרמיניסטית העוצרת לכל קלט.
+ סיבוכיות המקום של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא 
+\begin_inset Formula $s:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ הוא האינדקס הגדול ביותר אליו 
+\begin_inset Formula $M$
+\end_inset
+
+ מגיעה בסרט העבודה שלה לכל קלט באורך 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{DSPACE}\left(s\left(n\right)\right)=\left\{ L\middle|\begin{array}{c}
+\textnormal{There exists a deterministic turing machine \ensuremath{L}}\\
+\textnormal{that determines \ensuremath{L} in space complexity \ensuremath{s\left(n\right)}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הקשר בין זמן ומקום
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{DTIME}\left(t\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+ כי מכונה שעושה 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+ צעדים לא יכולה להשתמש ביותר מאשר 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ תאים על סרט העבודה שלה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{DSPACE}\left(s\left(n\right)\right)\left(n\cdot2^{O\left(s\left(n\right)\right)}\right)$
+\end_inset
+
+.
+ למה?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אנו מדברים על מכונות שעוצרות לכל קלט, ומתברר שברגע שהמכונה עוצרת, אי אפשר
+ להשתמש בכל תא "יותר מדי" פעמים.
+\end_layout
+
+\begin_layout Subsubsection*
+הגדרה - קונפיגורציה
+\end_layout
+
+\begin_layout Itemize
+מיקום ראש סרט קלט
+\end_layout
+
+\begin_layout Itemize
+מיקום ראש סרט עבודה
+\end_layout
+
+\begin_layout Itemize
+תוכן סרט העבודה
+\end_layout
+
+\begin_layout Itemize
+המצב הפנימי של המכונה
+\end_layout
+
+\begin_layout Standard
+המידע הזה קובע לנו בצורה ברורה את המצב של המכונה.
+ אם המכונה מגיעה שוב לאותו מצב, בעצם נכנסים ללולאה אינסופית, ולכן מספר הצעדים
+ חסום ע"י מספר הקונפיגורציות.
+ כמה קונפיגורציות יש?
+\end_layout
+
+\begin_layout Itemize
+מיקום ראש סרט קלט - 
+\begin_inset Formula $\log n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מיקום ראש סרט עבודה - 
+\begin_inset Formula $\log s\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תוכן סרט העבודה - 
+\begin_inset Formula $s\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+המצב הפנימי של המכונה - 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in\textnormal{DSPACE}\left(O\left(1\right)\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ היא רגולרית
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם כל עליה נותנת לנו כוח משמעותי מעבר לשפות רגולריות?
+\end_layout
+
+\begin_layout Standard
+האינטואיציה הראשונית אומרת שעם פחות מ
+\begin_inset Formula $\log n$
+\end_inset
+
+ ביטים אנחנו לא יודעים בכלל מה אורך הקלט ולכן אי אפשר לעשות דברים משמעותיים.
+ אבל זה לא נכון - מתברר שהפונקציה המינימלית הנדרשת לדברים משמעותיים היא
+ 
+\begin_inset Formula $\log\log n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{DSPACE}\left(O\left(1\right)\right)\subsetneq\textnormal{DSPACE}\left(O\left(\log\log n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{DSPACE}\left(o\left(\log\log n\right)\right)=\textnormal{DSPACE}\left(O\left(1\right)\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+תזכורת: 
+\begin_inset Formula $O$
+\end_inset
+
+ אומר 
+\emph on
+קטן או שווה אסימפטוטית
+\emph default
+ ו
+\begin_inset Formula $o$
+\end_inset
+
+ אומר 
+\emph on
+קטן ממש אסימפטוטית
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הוכחת טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נראה שקיימת שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\notin\textnormal{DSPACE}\left(O\left(1\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in\textnormal{DSPACE}\left(\log\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ טבעי:
+\begin_inset Formula 
+\[
+w_{k}=0^{k}*0^{k-1}1*0^{k-2}10\cdots*1^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\left\{ w_{k}\middle|\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כלומר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $k=2$
+\end_inset
+
+ 
+\begin_inset Formula $w_{2}=00*01*10*11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $k=3$
+\end_inset
+
+ 
+\begin_inset Formula $w_{3}=000*001*010*011*100*101*110*111$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $L\notin\textnormal{DSPACE}\left(O\left(1\right)\right)$
+\end_inset
+
+ - 
+\begin_inset Formula $L$
+\end_inset
+
+ היא לא דטרמיניסטית)למת הניפוח(.
+ נשאר להוכיח 
+\begin_inset Formula $L\in\textnormal{DSPACE}\left(O\left(\log\log n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, נרצה לדעת האם 
+\begin_inset Formula $x=w_{k}$
+\end_inset
+
+ עבור איזשהו 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נבדוק שהבלוק הראשון מורכב כולו מאפסים)עד ה* הראשונה(
+\end_layout
+
+\begin_layout Enumerate
+נבדוק שהבלוק האחרון מורכב כולו מאחדות)עד ה* הראשונה מהסוף(
+\end_layout
+
+\begin_layout Enumerate
+נבדוק שכל בלוק הוא קידום ב
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הבלוק הקודם
+\end_layout
+
+\begin_layout Standard
+עבור צעדים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך מקום קבוע.
+\end_layout
+
+\begin_layout Standard
+בהינתן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלוקים בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+, איך נבדוק שבלוק אחד הוא קידום ב
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הבלוק השני?
+\begin_inset Formula 
+\[
+\begin{array}{cccccc}
+1 & 0 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 0 & 0 & 0
+\end{array}
+\]
+
+\end_inset
+
+בשביל זה צריך 
+\begin_inset Formula $\log k$
+\end_inset
+
+ ביטים, אבל 
+\begin_inset Formula $x\in L$
+\end_inset
+
+, מובטח ש
+\begin_inset Formula $\left|x\right|=n\approx2^{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $k=O\left(\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אבל 
+\series default
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+, לא מובטח לנו שהבלוקים הם בגודל 
+\begin_inset Formula $\log n$
+\end_inset
+
+! ולכן סיבוכיות המקום לא בהכרח 
+\begin_inset Formula $O\left(\log\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הרעיון הוא:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $i=1,2,3,\dots$
+\end_inset
+
+ נסתכל על 
+\begin_inset Formula $i$
+\end_inset
+
+ הביטים האחרונים בכל בלוק, ונעשה את הבדיקות של האלגוריתם הקודם על 
+\begin_inset Formula $i$
+\end_inset
+
+ הביטים הללו.
+ נעצור אם בשלב כלשהו נגדלה שהבלוקים לא באותו אורך)בבלוק מתאים יש פחות מ
+\begin_inset Formula $i$
+\end_inset
+
+ ביטים(.
+ אם כל הבלוקים בגודל 
+\begin_inset Formula $i$
+\end_inset
+
+ והבדיקות הצליחו - נחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: יהי 
+\begin_inset Formula $i'$
+\end_inset
+
+ ה
+\begin_inset Formula $i$
+\end_inset
+
+ עבורו האלגוריתם עוצר.
+ אזי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+סיבוכיות המקום של האלגוריתםפ היא 
+\begin_inset Formula $O\left(\log i'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i'\le O\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+כמו האלגוריתם הראשון עבור 
+\begin_inset Formula $k=i'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $i'-1$
+\end_inset
+
+ האלגוריתם לא נכשל.
+ כלומר היו לנו 
+\begin_inset Formula $2^{i'-1}$
+\end_inset
+
+ בלוקים בגודל 
+\begin_inset Formula $i'-1$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+n\ge\left(i'-1\right)\cdot2^{i'-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies i'\le O\left(\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

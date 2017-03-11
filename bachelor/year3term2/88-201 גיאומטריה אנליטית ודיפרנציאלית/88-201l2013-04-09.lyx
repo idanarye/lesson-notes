@@ -1,0 +1,995 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+חזרה
+\end_layout
+
+\begin_layout Standard
+עקומה: 
+\begin_inset Formula $\gamma:\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+ מסמנים גם 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ - 
+\begin_inset Formula $t$
+\end_inset
+
+ הוא פרמטר העקומה.
+ 
+\begin_inset Formula $\gamma'$
+\end_inset
+
+ הוא וקטור הכיוון+מהירות של העקומה - 
+\begin_inset Formula $\left\Vert \gamma'\right\Vert $
+\end_inset
+
+ זה המהירות עצמה.
+\end_layout
+
+\begin_layout Standard
+אורך העקומה הוא 
+\begin_inset Formula $s=\int_{0}^{t}\left\Vert \gamma'\left(u\right)\right\Vert \mathrm{\, d}u$
+\end_inset
+
+.
+ בעצם האורך הוא פונקציה של הפרמטר - 
+\begin_inset Formula $s\left(t\right)$
+\end_inset
+
+.
+ אם הפרמטריזציה היא טבעית)כלומר 
+\begin_inset Formula $\forall_{t}\gamma'\left(t\right)\neq0$
+\end_inset
+
+( אפשר להפוך את זה ולקבל 
+\begin_inset Formula $t\left(s\right)$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\gamma\left(s\right)=\gamma\left(t\left(s\right)\right)$
+\end_inset
+
+ היא פרמטריזציה במהירות יחידה, ואז וקטור המהירות הוא 
+\begin_inset Formula $\hat{T}=\frac{\mathrm{d}\gamma\left(s\right)}{\mathrm{d}s}=\frac{\gamma'\left(t\right)}{\left\Vert \gamma'\left(t\right)\right\Vert }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וקטור הנורמל 
+\begin_inset Formula $\hat{N}$
+\end_inset
+
+ מאונך ל
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+.
+ במישור, 
+\begin_inset Formula $\begin{pmatrix}\hat{T}'\\
+\hat{N}'
+\end{pmatrix}=\begin{pmatrix}0 & \kappa\\
+-\kappa & 0
+\end{pmatrix}\begin{pmatrix}\hat{T}\\
+\hat{N}
+\end{pmatrix}$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+\hat{T}'=\kappa\hat{N}\qquad\hat{N}'=-\kappa\hat{T}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\kappa$
+\end_inset
+
+ היא העקמומיות.
+ במישור אפשר להגדיר בצורה עקבית כיוון לעקמומיות - עקמומיות חיובית היא נגד
+ כיוון השעון, ושלילית היא עם כיוון השעון.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $N,T$
+\end_inset
+
+ הם וקטורי יחידה, אז
+\begin_inset Formula 
+\[
+\hat{N}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\hat{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לחשב את הגודל של 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\hat{T}'=\frac{\mathrm{d}^{2}\gamma}{\mathrm{d}s^{2}}=\kappa\hat{N}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{T}'\cdot\hat{N}=\frac{\mathrm{d}^{2}\gamma}{\mathrm{d}s^{2}}\cdot\hat{N}=\kappa
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \hat{T}',\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}T\right\rangle =\kappa
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במרחב:
+\begin_inset Formula 
+\[
+T'=\kappa N\qquad\kappa\ge0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובוחרים וקטור נוסף, 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\left(\hat{T},\hat{N},\hat{B}\right)$
+\end_inset
+
+ זה מערכת צירים ימנית.
+ 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+ צריך להיות ניצב ל
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+ ול
+\begin_inset Formula $\hat{N}$
+\end_inset
+
+ - הוא יוצר יחד עם 
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+ "מישור" שבו העקומה נמצאת בסביבה מספיק קטנה של הנקודה.
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\hat{T}'\\
+\hat{N}'\\
+\hat{B}'
+\end{pmatrix}=\begin{pmatrix}0 & \kappa & 0\\
+-\kappa & 0 & \tau\\
+0 & -\tau & 0
+\end{pmatrix}\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ היא העקמומיות, ו
+\begin_inset Formula $\tau$
+\end_inset
+
+ מסמל עד כמה מהר משתנה המישור שבו העקומה נמצאת בסביבה מספיק קטנה של הנקודה.
+\end_layout
+
+\begin_layout Standard
+נשים לב שגם במישור וגם במרחב קיבלנו מטריצה אנטי סימטרית - כי המטריצה שמעבירה
+ כין 
+\begin_inset Formula $\hat{T},\hat{N},\hat{B}$
+\end_inset
+
+ היא אורטוגונלית, והנגזרת של טרנספורמציה אורטוגונלית היא אנטיסימטרית, כי:
+\begin_inset Formula 
+\[
+O^{T}\left(t\right)O\left(t\right)=I\implies\frac{\mathrm{d}O}{\mathrm{d}t}=-\left(\frac{\mathrm{d}O}{\mathrm{d}t}\right)^{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}\begin{pmatrix}\hat{T} & \hat{N} & \hat{B}\end{pmatrix}=\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+נגזור
+\begin_inset Formula 
+\[
+\begin{pmatrix}T'\\
+N'\\
+B'
+\end{pmatrix}\begin{pmatrix}\hat{T} & \hat{N} & \hat{B}\end{pmatrix}+\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}\begin{pmatrix}T' & N' & B'\end{pmatrix}=\begin{pmatrix}0 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+)הערה: את וקטורי הנגזרת עשינו בלי כובע)
+\begin_inset Formula $\hat{}$
+\end_inset
+
+( כי בשלב הזה לא בטוח שהם בכלל וקטורי יחידה!(
+\begin_inset Formula 
+\[
+\begin{pmatrix}T'\\
+N'\\
+B'
+\end{pmatrix}=A\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\cancel{\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}\begin{pmatrix}\hat{T} & \hat{N} & \hat{B}\end{pmatrix}}+\cancel{\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}\begin{pmatrix}\hat{T} & \hat{N} & \hat{B}\end{pmatrix}}A^{T}=\begin{pmatrix}0 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A+A^{T}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=-A^{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+אם מערכת אורתוגונלית מקיימת מד"ר לינארית, אזי המטריצה חייבת להיות אנטי-סימטרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משטחים
+\end_layout
+
+\begin_layout Standard
+עד כה דיברנו על עקומות ותכונותיהן.
+ עקומות הן יצורים מאוד פשוטים - יכולנו לראות את התכונות של הקו כאשר משכנים
+ אותו בתוך מישור, אבל אין הרבה מה לעשות מעבר לזה, כי התכונות של הקו שאפשר
+ לראות בלי לצאת מהקו לא משתנות יותר מדי.
+\end_layout
+
+\begin_layout Standard
+עכשיו נדבר על משטחים.
+ משטחים ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ זה לא כל כך מעניין - אבל משטחים ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ דווקא כן, כי משטחים עקומים מתנהגים שונה ממשטחים ישרים, גם אם מסתכלים רק
+ על טיול במשטח עצמו - למשל משולש שכל זויותיו ישרות.
+\end_layout
+
+\begin_layout Standard
+אנחנו נגביל את עצמנו בקורס הזה למשטחים שמשוכנים בתוך 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, אבל אפשר לדבר על תכונות אינטרינזיות - תכונות פנימיות של משטחים שלא תלויות
+ בשיכון שלהם במרחב גבוה יותר.
+\end_layout
+
+\begin_layout Section*
+נדגים באמצעות כדור
+\end_layout
+
+\begin_layout Standard
+כדור)
+\lang english
+Sphere
+\lang hebrew
+( הוא אוסף כל הפתרונות של המשוואה
+\begin_inset Formula 
+\[
+S^{2}:x^{2}+y^{2}+z^{2}=1
+\]
+
+\end_inset
+
+)אם רוצים לדבר על הכדור כולו, משתמשים ב
+\lang english
+Ball
+\lang hebrew
+: 
+\begin_inset Formula $B^{3}:x^{2}+y^{2}+z^{2}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לעשות פרמטריזציה, אבל מבחינה טופולוגית הכדור לא שקול לא ל
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ ולא לאף קבוצה של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+לכן נאלץ לדבר כל פעם על חלקים מהכדור.
+ מגדירים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chart
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מפה: מתת קבוצה של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+: 
+\begin_inset Formula $\mathbb{R}^{2}\supseteq U\to\mathbb{R}^{3}$
+\end_inset
+
+.
+ לדוגמה:
+\begin_inset Formula 
+\[
+x,y\in B^{2}\left(1\right)\qquad\left(x^{2}+y^{2}<1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(x,y\right)=\left(x,y,\sqrt{1-x^{2}-y^{2}}\right)
+\]
+
+\end_inset
+
+הבעיה היא שכל מפה כזו מכסה רק חלק - לכן אנו צריכים 
+\emph on
+אטלס
+\emph default
+ - אוסף של מפות שיכסה את כל הכדור:
+\begin_inset Formula 
+\begin{eqnarray*}
+\varphi_{1}\left(x,y\right) & = & \left(x,y,\sqrt{1-x^{2}-y^{2}}\right)\\
+\varphi_{2}\left(x,y\right) & = & \left(x,y,-\sqrt{1-x^{2}-y^{2}}\right)\\
+\varphi_{3}\left(x,y\right) & = & \left(x,\sqrt{1-x^{2}-y^{2}},y\right)\\
+\varphi_{4}\left(x,y\right) & = & \left(x,-\sqrt{1-x^{2}-y^{2}},y\right)\\
+\varphi_{5}\left(x,y\right) & = & \left(\sqrt{1-x^{2}-y^{2}},x,y\right)\\
+\varphi_{6}\left(x,y\right) & = & \left(-\sqrt{1-x^{2}-y^{2}},x,y\right)
+\end{eqnarray*}
+
+\end_inset
+
+אין בעיה שיש חפיפה בין המפות - אבל יש דרישה שהיעקוביאן לא יתאפס.
+\end_layout
+
+\begin_layout Standard
+רוצים גם שהמפות תהיינה חלקות - ואז אפשר להפוך אותן 
+\begin_inset Formula $\varphi_{i}^{-1}\left(\varphi_{j}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+היטלים
+\end_layout
+
+\begin_layout Standard
+גישה אחרת היא לעשות מיפוי מהספירה 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, שנקרא 
+\emph on
+היטל
+\emph default
+: נעמיד את הקוטב הדרומי על 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, ולכל נקודה נעביר קו מהקוטב הצפוני דרך אותה נקודה עד למישור, ולשם נמפה
+ אותה.
+ כך מכסים את כל הנקודות פרט לקוטב הצפוני - בשביל לכסות גם אותו נעשה מפה
+ נוספת, כשהפעם הוא יהיה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+עקומות בתוך משטחים
+\end_layout
+
+\begin_layout Standard
+נסתכל על עקומה - 
+\begin_inset Formula $\gamma\left(t\right):\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+ לעקומה יש ווקטור כיוון+מהירות: 
+\begin_inset Formula $\gamma'\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם המרחב הוא 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, אז אוסף כל הנקודות שעוברות בנקודה 
+\begin_inset Formula $P\in\mathbb{R}^{n}$
+\end_inset
+
+ מגדירות מרחב וקטורי של כל הוקטורים המשיקים לעקומות האלה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה: אם 
+\begin_inset Formula $P\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\gamma\left(0\right)=P$
+\end_inset
+
+, אז 
+\begin_inset Formula $\gamma'\left(0\right)=\left(a,b,c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אפשר לפרק את העקומה ל
+\numeric on
+3
+\numeric off
+ פונקציות:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(f\left(t\right),g\left(t\right),h\left(t\right)\right)
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+f\left(0\right)=x_{0}\qquad g\left(0\right)=y_{0}\qquad h\left(0\right)=z_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(0\right)=P
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma'\left(0\right)=\left(f'\left(0\right),g'\left(0\right),h'\left(0\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מישור משיק
+\end_layout
+
+\begin_layout Standard
+לכל נקודה במשטח אפשר להגדיר מישור משיק.
+ במקרה של המרחב:
+\begin_inset Formula 
+\[
+\forall_{P}T_{P}\mathbb{R}^{3}\cong\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ העתקה חלקה, אז לכל 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+ הדיפרנציאל של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא העתקה לינארית 
+\begin_inset Formula 
+\[
+\mathrm{d}_{x}f:T_{x}\mathbb{R}^{n}\to T_{f\left(x\right)}\mathbb{R}^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{x}f\left(\gamma'\left(0\right)\right)=\left(f\circ\gamma\right)'\left(0\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\gamma\left(0\right)=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+איך מחשבים?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f\circ\gamma\right)_{i}'=\left(f\left(\gamma\left(t\right)\right)\right)_{i}'=\sum_{j}\frac{\partial f^{i}}{\partial\gamma^{j}}\frac{\mathrm{d}\gamma^{j}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\gamma\left(t\right)\right)_{i}=f_{i}\left(\gamma_{1}\left(t\right),\gamma_{2}\left(t\right),\dots\gamma_{n}\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}_{x}f\gamma'=J\gamma'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J=\begin{pmatrix}\frac{\partial f^{1}}{\partial x^{1}} & \frac{\partial f^{1}}{\partial x^{2}} & \cdots\\
+\frac{\partial f^{2}}{\partial x_{1}} & \frac{\partial f^{2}}{\partial x^{2}} & \cdots\\
+\vdots & \vdots & \ddots
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $J$
+\end_inset
+
+ נקרא ה
+\emph on
+יעקוביאן
+\emph default
+ של ההעתקה בנקודה.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה מספרית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f:\left(x,y,z\right)\to\left(x,x+y,z^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J=\begin{pmatrix}1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 2z
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם לדוגמה ניקח את 
+\begin_inset Formula $P\left(1,1,1\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $\begin{pmatrix}2\\
+1\\
+3
+\end{pmatrix}\in T_{P}\mathbb{R}^{3}$
+\end_inset
+
+, אז נפעיל עליו את הדיפרנציאל
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 2
+\end{pmatrix}\begin{pmatrix}2\\
+1\\
+3
+\end{pmatrix}=\begin{pmatrix}2\\
+3\\
+6
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח את הקו הישר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}1+2t\\
+1+t\\
+1+3t
+\end{pmatrix}
+\]
+
+\end_inset
+
+ונפעיל עליו את המיפוי:
+\begin_inset Formula 
+\[
+f\left(\gamma\left(t\right)\right)=\begin{pmatrix}1+2t\\
+2+3t\\
+\left(1+3t\right)^{2}
+\end{pmatrix}=\begin{pmatrix}1+2t\\
+2+3t\\
+1+6t+9t^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+זה לא נשאר קו ישר!
+\end_layout
+
+\begin_layout Standard
+המשיק בנקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\left(f\left(\gamma\left(0\right)\right)\right)'=\begin{pmatrix}2\\
+3\\
+\left.6+18t\right|_{t=0}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סיכום
+\end_layout
+
+\begin_layout Standard
+אם יש נקודה מסויימת ביריעה מסויימת ומיפוי שלה ליריעה אחרת, אז הדיפרנציאל
+ ממפה את המרחב המשיק לנקודה במרחב המקור למרחב המשיק לתמונה של הנקודה במרחב
+ התמונה.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,882 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+התמרת לפלס
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+פונק' המוגדרת בתחום 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+.
+ נגדיר פורמאלית:
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ f\left(t\right)\right\} \left(s\right):=\int_{0}^{\infty}f\left(t\right)e^{-st}\mathrm{\, d}t
+\]
+
+\end_inset
+
+סימונים נוספים הם 
+\begin_inset Formula $F\left(s\right),\mathcal{L}\left\{ f\left(t\right)\right\} ,\mathcal{L}\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה עבור הפונק 
+\begin_inset Formula $f\left(t\right)=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ 1\right\} \left(s\right)=\int_{0}^{\infty}1\cdot e^{-st}\mathrm{\, d}t=\left.\cfrac{e^{-st}}{-s}\right|_{t=0}^{t=a}=\cfrac{e^{-s\infty}}{-s}-\cfrac{e^{0}}{-s}=0-\cfrac{1}{-s}=\cfrac{1}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימון מקוצר להתמרת לפלס של פונקציה מסויימת 
+\begin_inset Formula $f\left(t\right),g\left(t\right),x\left(t\right),y\left(t\right)$
+\end_inset
+
+ הוא אותה האות, רק גדולה)במילים אחרות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CAPS-LOCK
+\lang hebrew
+(
+\begin_inset Formula 
+\[
+{\cal L}\left\{ f\left(t\right)\right\} \left(s\right)=F\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+{\cal L}\left\{ g\left(t\right)\right\} \left(s\right)=G\left(s\right)
+\]
+
+\end_inset
+
+וכו'.
+\end_layout
+
+\begin_layout Standard
+למשתנה 
+\begin_inset Formula $t$
+\end_inset
+
+ נהוג לקרוא משתנה הזמן )"
+\lang english
+time
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+( ולמשתנה 
+\begin_inset Formula $s$
+\end_inset
+
+ נהוג לקראו משתנה התדר )"
+\lang english
+frequency
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+(.
+ התמרת לפלס נותנת לנו לקפץ בין שני העולמות האלה.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+הנוסחה התמרת לפלס הפוכה נראית ככה:
+\begin_inset Formula 
+\[
+{\cal L}^{-1}\left\{ F\left(s\right)\right\} \left(t\right)=\cfrac{1}{2\pi i}\int_{c-\infty i}^{c+\infty i}F\left(s\right)e^{st}\mathrm{\, d}s
+\]
+
+\end_inset
+
+זה מסובך מאוד, ובקורס הזה לא נלמד את זה, ונבצע התמרות הפוכות לפי התמרות
+ ידועות.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+האם לכל פונקציה יש התמרת לפלס?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+לא! נתבונן בפונקציה 
+\begin_inset Formula $f\left(t\right)=e^{t^{2}}$
+\end_inset
+
+ ונרשום פורמאלית
+\begin_inset Formula 
+\[
+F\left(s\right)=\int_{0}^{\infty}f\left(t\right)e^{-st}\mathrm{\, d}t=\int_{0}^{\infty}e^{t^{2}}e^{-st}\mathrm{\, d}t=\int_{0}^{\infty}e^{t^{2}-st}\mathrm{\, d}t
+\]
+
+\end_inset
+
+האם קיים 
+\begin_inset Formula $s$
+\end_inset
+
+ שעבורו זה מתכנס? ננסה למשל 
+\begin_inset Formula $s=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+F\left(0\right)=\int_{0}^{\infty}e^{t^{2}}\mathrm{\, d}t=\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להראות התבדרות לכל 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ כדי להראות זאת נביא תזכורת מאינפי:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למה
+\series default
+: אם 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ הינה פונקציה חיובית)למשל 
+\begin_inset Formula $e^{t^{2}-st}$
+\end_inset
+
+( ו
+\begin_inset Formula $a,b$
+\end_inset
+
+ מספרים ממשיים כך ש
+\begin_inset Formula $a\le b$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\int_{a}^{\infty}\varphi\left(t\right)\mathrm{\, d}t\ge\int_{b}^{\infty}\varphi\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}e^{t^{2}-st}\mathrm{\, d}t\ge\int\limits _{\max\left(0,s\right)\ge0}^{\infty}e^{t^{2}-st}\overset{\left(*\right)}{\ge}\int\limits _{\max\left(0,s\right)}^{\infty}e^{0}\mathrm{\, d}t=\int\limits _{\max\left(0,s\right)}^{\infty}=\infty
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+מתי 
+\begin_inset Formula $t\left(t-s\right)=t^{2}-st>0$
+\end_inset
+
+? זאת פרבולה שחותכת את ציר 
+\begin_inset Formula $t$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t_{1,2}=0,s$
+\end_inset
+
+.
+ בכל מקרה אם 
+\begin_inset Formula $t>\max\left(0,s\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $t^{2}-st\ge0$
+\end_inset
+
+ והאי שוויון מוצדק.
+\end_layout
+
+\begin_layout Standard
+קיבלנו שלא קיימת התמרת לפלס בשום נקודה.
+\end_layout
+
+\begin_layout Section*
+מספר תכונות של התמרת לפלס
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $\mathcal{L}\left\{ \alpha f\left(t\right)+\beta g\left(t\right)\right\} \left(s\right)=\alpha\mathcal{L}\left\{ f\left(t\right)\right\} \left(s\right)+\beta\mathcal{L}\left\{ g\left(t\right)\right\} \left(s\right)=\alpha F\left(s\right)+\beta G\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( 
+\begin_inset Formula $\mathcal{L}\left\{ tf\left(t\right)\right\} \left(s\right)=-\cfrac{d}{ds}\mathcal{L}\left\{ f\left(t\right)\right\} \left(s\right)=-F'\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( 
+\begin_inset Formula $\mathcal{L}\left\{ t^{n}f\left(t\right)\right\} \left(s\right)=\left(-1\right)^{n}F^{\left(n\right)}\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה: 
+\begin_inset Formula $n=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ t^{2}f\left(t\right)\right\} =\mathcal{L}\left\{ t\left(tf\left(t\right)\right)\right\} =-\cfrac{d}{ds}\mathcal{L}\left\{ tf\left(t\right)\right\} =-\cfrac{d}{ds}\left[-\cfrac{d}{ds}F\left(s\right)\right]=\left(-1\right)^{2}\cfrac{d^{2}}{ds^{2}}F\left(s\right)=\left(-1\right)^{2}F^{\left(2\right)}\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ד( 
+\begin_inset Formula $\mathcal{L}\left\{ f'\left(t\right)\right\} \left(s\right)=sF\left(s\right)-f\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ה( 
+\begin_inset Formula $\mathcal{L}\left\{ f''\left(t\right)\right\} \left(s\right)=s^{2}F\left(s\right)-sf\left(0\right)-f'\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ו( 
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ f^{\left(n\right)}\left(t\right)\right\} \left(s\right)=s^{n}F\left(s\right)-s^{n-1}f\left(0\right)-...-f^{\left(n-1\right)}\left(-\right)=s^{n}F\left(s\right)-\sum\limits _{k=0}^{n-1}s^{n-1-k}f^{\left(k\right)}\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ז( 
+\begin_inset Formula $\mathcal{L}\left\{ e^{at}f\left(t\right)\right\} \left(s\right)=F\left(s-a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ח( 
+\begin_inset Formula $\mathcal{L}\left\{ f\left(t-c\right)H\left(t-c\right)\right\} \left(s\right)=e^{-cs}F\left(s\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כזכור, פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heaviside
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדרת ע"י 
+\begin_inset Formula $H\left(t\right):=\begin{cases}
+1 & t>0\\
+0 & t<0
+\end{cases}$
+\end_inset
+
+.
+ הפונקציה הזו "מתה" עבור ערכים שליליים.
+\begin_inset Newline newline
+\end_inset
+
+פונקציית הביסייד המוזזת היא
+\begin_inset Formula 
+\[
+H_{c}\left(t\right):=H\left(t-c\right)=\begin{cases}
+1 & t-c>0\\
+0 & t-c<0
+\end{cases}=\begin{cases}
+1 & t>c\\
+0 & t<c
+\end{cases}
+\]
+
+\end_inset
+
+פונקציית הביסייד עםפ שני אינדקסים 
+\begin_inset Formula $a,b$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+H_{a,b}\left(t\right):=\begin{cases}
+1 & a<t<b\\
+0 & t<a\vee t>b
+\end{cases}=H_{a}\left(t\right)-H_{b}\left(t\right)=H\left(t-a\right)-H\left(t-b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שימוש
+\end_layout
+
+\begin_layout Standard
+אם הפונקציה 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ מוגדרת למקוטעין:
+\begin_inset Formula 
+\[
+f\left(t\right)=\begin{cases}
+f_{1}\left(t\right) & a_{1}<t<b_{1}\\
+f_{2}\left(t\right) & a_{2}<t<b_{2}\\
+\vdots\\
+f_{n}\left(t\right) & a_{n}<t<b_{n}\\
+0 & otherwise
+\end{cases}
+\]
+
+\end_inset
+
+)קטעים זרים - 
+\begin_inset Formula $\forall_{i\ne j}\left(a_{i},b_{i}\right)\cap\left(a_{j},b_{j}\right)=\emptyset$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+נוכל לרשום אותה בצורה
+\begin_inset Formula 
+\[
+f\left(t\right)=f_{1}\left(t\right)H_{a_{1},b_{1}}\left(t\right)+f_{2}\left(t\right)H_{a_{2},b_{2}}\left(t\right)+...+f_{n}\left(t\right)H_{a_{n},b_{n}}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה חשובה
+\end_layout
+
+\begin_layout Standard
+גם התמרת לפלס ההפוכה 
+\begin_inset Formula $\mathcal{L}^{-1}$
+\end_inset
+
+ היא לינארית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ניקח את )א(
+\begin_inset Formula 
+\[
+\alpha F\left(s\right)+\beta G\left(s\right)=\mathcal{L}\left\{ \alpha f\left(t\right)+\beta g\left(t\right)\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \alpha F\left(s\right)+\beta G\left(s\right)\right\} =\alpha f\left(t\right)+\beta g\left(t\right)=\alpha\mathcal{L}^{-1}\left\{ F\left(s\right)\right\} +\beta\mathcal{L}^{-1}\left\{ G\left(s\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+פתור ע"י שיטת התמרת לפלס את הבעיות הבאות)המשתנה הבלתי תלוי הוא 
+\begin_inset Formula $t$
+\end_inset
+
+ ולא 
+\begin_inset Formula $x$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+)א(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y''-4y'+8y=e^{2t}\\
+y\left(0\right)=-2\\
+y'\left(0\right)=s
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נפעיל התמרת לפלס
+\begin_inset Formula 
+\[
+y''-4y'+8y=e^{2t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ y''-4y'+8y\right\} \left(s\right)=\mathcal{L}\left\{ e^{2t}\right\} \left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ y''\right\} -4\mathcal{L}\left\{ y'\right\} +8\mathcal{L}\left\{ y\right\} =\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[s^{2}Y\left(s\right)-sy\left(0\right)-y'\left(0\right)\right]-4\left[sY\left(s\right)-y\left(0\right)\right]+8\left[Y\left(s\right)\right]=\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[s^{2}Y\left(s\right)+2s-5\right]-4\left[sY\left(s\right)+2\right]+8Y\left(s\right)=\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(s^{2}-4s+8\right)Y\left(s\right)+2s-13=\cfrac{1}{s-2}
+\]
+
+\end_inset
+
+זאת אפילךו לא משוואה דיפרנציאלית!
+\begin_inset Formula 
+\[
+Y\left(s\right)=\cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}-\cfrac{2s}{s^{2}-4s+8}+\cfrac{13}{s^{2}-4s+8}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(y\left(t\right)=\right)y=\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}-\cfrac{2s}{s^{2}-4s+8}+\cfrac{13}{s^{2}-4s+8}\right\} \left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\underbrace{\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}\right\} }_{I}-2\underbrace{\mathcal{L}^{-1}\left\{ \cfrac{s}{s^{2}-4s+8}\right\} }_{II}+13\underbrace{\mathcal{L}^{-1}\left\{ \cfrac{1}{s^{2}-4s+8}\right\} }_{III}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נתחיל בחישוב 
+\begin_inset Formula $III$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cfrac{1}{s^{2}-4s+8}=\cfrac{1}{\left(s-2\right)^{2}+4}=\cfrac{1}{\left(s-2\right)^{2}+2^{2}}=\mathcal{L}\left\{ \sin\left(2t\right)\right\} \left(s-2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ \sin\left(2t\right)\right\} \left(s-2\right)=\cfrac{2}{\left(s-2\right)^{2}+2^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{1}{s^{2}-4s+8}\right\} =e^{2t}\cdot\cfrac{1}{2}\sin\left(2t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חישוב 
+\begin_inset Formula $II$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cfrac{s}{s^{2}-4s+8}=\cfrac{s}{\left(s-2\right)^{2}+2^{2}}=\cfrac{s-2+2}{\left(s-2\right)^{2}+2^{2}}=\cfrac{s-2}{\left(s-2\right)^{2}+2^{2}}+\cfrac{2}{\left(s-2\right)^{2}+2^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\mathcal{L}\left\{ \cos\left(at\right)\right\} \left(s\right)=\cfrac{s}{s^{2}+a^{2}}$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{s}{s^{2}-4s+8}\right\} =e^{2t}\cos\left(2t\right)+e^{2t}\sin\left(2t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חישוב 
+\begin_inset Formula $I$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+נפרק לגורמים חלקיים:
+\begin_inset Formula 
+\[
+\cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}=\cfrac{A}{s-2}+\cfrac{Bs+c}{s^{2}-4s+8}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0s^{2}+0s+1=A\left(s^{2}-4s+8\right)+\left(bs+C\right)\left(s-2\right)=\left(A+B\right)s^{2}+\left(-4A-2B+C\right)s+\left(8A-2C\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+A+B=0\\
+-4A-2B+C=0\\
+8A-2C=1
+\end{array}\right.\begin{array}{cc}
+\Rightarrow & B=-A\\
+\Rightarrow & -2A+C=0\\
+\Rightarrow & 8A-2C=1
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left.\begin{array}{c}
+-4A+2C=0\\
+8A-2C=1
+\end{array}\right\} +
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+4A=1\Rightarrow A=\cfrac{1}{4}\Rightarrow B=-\cfrac{1}{4}\Rightarrow C=\cfrac{1}{2}
+\]
+
+\end_inset
+
+לכן:
+\begin_inset Formula 
+\[
+\cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}=\cfrac{1}{4}\cdot\cfrac{1}{s-2}-\cfrac{1}{4}\cdot\cfrac{s-2}{s^{2}-4s}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}^{-1}\left\{ \cfrac{1}{\left(s-2\right)\left(s^{2}-4s+8\right)}\right\} =\cfrac{1}{4}\mathcal{L}^{-1}\left\{ \cfrac{1}{s-2}\right\} -\cfrac{1}{4}\mathcal{L}^{-1}\left\{ \cfrac{s-2}{\left(s-2\right)^{2}+2^{2}}\right\} =\cfrac{1}{4}e^{2t}-\cfrac{1}{4}e^{2t}\cos2t
+\]
+
+\end_inset
+
+לסיכום: מפשטים את
+\begin_inset Formula 
+\[
+y=I-2II+13III=...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

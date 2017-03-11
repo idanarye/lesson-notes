@@ -1,0 +1,1360 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\alpha\right)=\dfrac{g\left(\alpha\right)}{h'\left(\alpha\right)}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $f=\dfrac{g\left(\alpha\right)}{h\left(\alpha\right)}$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha$
+\end_inset
+
+ הוא קוטב פשוט של 
+\begin_inset Formula $h\left(\alpha\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו 
+\begin_inset Formula $I=\int_{\Gamma}\dfrac{\mathrm{d}t}{1+z^{4}}$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ מסילה סביב 
+\begin_inset Formula $\left[\frac{1}{2},2\right]\times\left[-i,i\right]$
+\end_inset
+
+ נגד כיוון השעון.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נקודות סינוגלריות של 
+\begin_inset Formula $f\left(z\right)=\dfrac{1}{1+z^{4}}$
+\end_inset
+
+ הן 
+\begin_inset Formula 
+\[
+z_{k}=e^{\frac{\pi+2\pi k}{4}i}\qquad k=0,1,2,3
+\]
+
+\end_inset
+
+לכן לפי משפט השארית
+\begin_inset Formula 
+\[
+I=2\pi i\left(\textnormal{Res}\left(f,e^{\frac{\pi}{4}i}\right)+\textnormal{Res}\left(f,e^{-\frac{\pi}{4}i}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,e^{\frac{\pi}{4}i}\right)=\left.\frac{1}{\left(1+z^{4}\right)'}\right|_{z=e^{\frac{\pi}{4}i}}=\frac{1}{4e^{\frac{3\pi}{4}i}}=\frac{e^{-\frac{3\pi}{4}i}}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,e^{-\frac{\pi}{4}i}\right)=\dots=\frac{e^{\frac{3\pi}{4}i}}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=\frac{\pi i}{2}\left(e^{\frac{3\pi}{4}i}+e^{-\frac{3\pi}{4}i}\right)=\pi i\cos\frac{3\pi}{4}=-\frac{\pi i\sqrt{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\int_{\left|z\right|=2}\frac{z\cdot e^{\frac{1}{z-1}}}{\left(1-z\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=1$
+\end_inset
+
+ היא נקודה סינגולרית עיקרית שנמצאת בתוך 
+\begin_inset Formula $\left|z\right|\le2$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=2\pi i\textnormal{Res}\left(f,1\right)\qquad f=\frac{z\cdot e^{\nicefrac{1}{z-1}}}{\left(z-1\right)^{2}}
+\]
+
+\end_inset
+
+חייבים לפתח טור לורן.
+\begin_inset Formula 
+\[
+e^{\frac{1}{z-1}}=\sum_{n=0}^{\infty}\frac{\left(z-1\right)^{-n}}{n!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\left(z-1\right)+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\frac{\left(z-1\right)}{\left(z-1\right)^{2}}\sum_{n=0}^{\infty}\frac{\left(z-1\right)^{-n}}{n!}+\frac{1}{\left(z-1\right)^{2}}\sum_{n=0}^{\infty}\frac{\left(z-1\right)^{-n}}{n!}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{n=0}^{\infty}\frac{\left(z-1\right)^{-n-1}}{n!}+\sum_{n=0}^{\infty}\frac{\left(z-1\right)^{-n-2}}{n!}
+\]
+
+\end_inset
+
+החלק 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}\frac{\left(z-1\right)^{-n-2}}{n!}$
+\end_inset
+
+ לא תורם לשארית)שכן החזקה 
+\begin_inset Formula $-1$
+\end_inset
+
+ לא מופיעה בטור(.
+ לכן 
+\begin_inset Formula 
+\[
+a_{-1}=\frac{1}{0!}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{I=2\pi i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\int_{\Gamma}\dfrac{\sin z}{\left(z+1\right)^{3}}\mathrm{\, d}z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ עקומה נגד כיוון השעון סביב 
+\begin_inset Formula $\left[-2,2\right]\times\left[-2i,2i\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נקודה 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ היא היא קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+)כי 
+\begin_inset Formula $-1$
+\end_inset
+
+ הוא לא אפס של 
+\begin_inset Formula $\sin\left(z\right)$
+\end_inset
+
+(.
+ נשתמש בנוסחה כללית לחישוב השארית.
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\alpha\right)=\frac{1}{\left(m-1\right)!}\lim_{z\to\alpha}\left[\frac{\mathrm{d}^{m-1}}{\mathrm{d}z^{m-1}}\left(f\left(z\right)-\left(z-\alpha\right)^{m}\right)\right]
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא סדר של הקוטב.
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,-1\right)=\frac{1}{2!}\lim_{z\to-1}\left[\left(\sin z\right)''\right]=\frac{-\sin\left(-1\right)}{2}=\frac{\sin\left(1\right)}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=\pi i\sin\left(1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\int_{\left|z\right|=2}\dfrac{\sin z}{z\left(z-\frac{\pi}{2}\right)^{2}}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{1}=0$
+\end_inset
+
+ סליקה, 
+\begin_inset Formula $z_{2}=\frac{\pi}{2}$
+\end_inset
+
+ קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\begin_inset Formula 
+\[
+\lim_{z\to z_{1}}\frac{\sin z}{z\left(z-\dfrac{\pi}{2}\right)^{2}}=\frac{4}{\pi^{2}}\lim_{z\to0}\frac{\sin z}{z}=\underbrace{\frac{4}{\pi^{2}}}_{\textnormal{finite}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+סליקה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Res}\left(f,z_{1}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{2}=\dfrac{\pi}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קוטב מסדר שני, ולכן לפי אותה השיטה כמו בתרגיל הקודם:
+\begin_inset Formula 
+\[
+\textnormal{Res}\left(f,\frac{\pi}{2}\right)=1\cdot\lim_{z\to\frac{\pi}{2}}\left[\left(\frac{\sin z}{z}\right)'\right]=\lim_{z\to\frac{\pi}{2}}\frac{z\cos z-\sin z}{z^{2}}=-\frac{4}{\pi^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=2\pi i\left[\textnormal{Res}\left(f,z_{1}\right)+\textnormal{Res}\left(f,z_{2}\right)\right]=2\pi i\left[0-\frac{4}{\pi^{2}}\right]=-\frac{8i}{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+עקרון הארגומנט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ ו
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ מסלול סגור המוכל יחד עם הפנים שלו ב
+\begin_inset Formula $D$
+\end_inset
+
+ כך שמתקיים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ואין לה אפסים 
+\bar under
+על
+\bar default
+ 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+ל
+\begin_inset Formula $f$
+\end_inset
+
+ מספר סופי של נקודות סינגולריות 
+\bar under
+בתוך
+\bar default
+ 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, כך שכולן 
+\bar under
+קטבים
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+אזי מתקיים:
+\begin_inset Formula 
+\[
+\frac{1}{2\pi i}\int\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z=N-P
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $N$
+\end_inset
+
+ מספר האפסים של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+)כאשר אפס מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ נספר 
+\begin_inset Formula $m$
+\end_inset
+
+ פעמים( ו
+\begin_inset Formula $P$
+\end_inset
+
+ מספר הקטבים של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ כאשר קוטב מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ נספר 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.
+\end_layout
+
+\begin_layout Standard
+הערך 
+\begin_inset Formula $\dfrac{1}{2\pi i}\int_{\Gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ נקרא 
+\bar under
+אינדקס
+\bar default
+ של 
+\begin_inset Formula $f\left(\Gamma\right)$
+\end_inset
+
+ והוא מספר פעמים שהמסלול 
+\begin_inset Formula $f\left(\Gamma\right)$
+\end_inset
+
+ מקיף את הראשית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו 
+\begin_inset Formula $I=\int_{\left|z\right|=2}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f\left(z\right)=\dfrac{\left(z+3\right)\left(z+1\right)}{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \begin{array}{c}
+z=-3\\
+z=-1
+\end{array}\right.$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אפסים פשוטים של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ z=0\right.$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קוטב מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $N=2i\qquad P=2$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+I=2\pi i\left(N-P\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\left(z-2\right)^{m}g\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula 
+\[
+I=\int_{\left|z\right|=1}\frac{\sin2z}{\sin^{2}z-\frac{1}{2}}\mathrm{\, d}z
+\]
+
+\end_inset
+
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+f\left(z\right)=\sin^{2}z-\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(z\right)=2\sin z\cdot\cos z=\sin\left(2z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=\int_{\left|z\right|=1}\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin^{2}z-\frac{1}{2}=0\Rightarrow\sin z=\pm\frac{\sqrt{2}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\pm\frac{\pi}{4}+\pi k\qquad k\in\mathbb{Z}
+\]
+
+\end_inset
+
+בתוך 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ יש ל
+\begin_inset Formula $f\left(Z\right)$
+\end_inset
+
+ שני אפסים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $N=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'\left(z\right)=\sin2z$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f'\left(\pm\frac{\pi}{4}\right)=\pm\sin\dfrac{\pi}{2}=\pm1\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אפסים הם פשוטים.
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ היא פונקציה אנליטית ולכן אין לה נקודות סינגולריות)ובפרט קטבים(
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $P=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=2\pi i\left(N-P\right)=2\pi i\cdot2=4\pi i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משפט רושה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ אנליטיות בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ קנטור סגור המוכל יחד עם הפנים שלו ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם לכל 
+\begin_inset Formula $z\in G$
+\end_inset
+
+ו: 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|f\left(z\right)\right|$
+\end_inset
+
+ אזי ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ול
+\begin_inset Formula $\left(f+g\right)\left(Z\right)$
+\end_inset
+
+ יש אותו 
+\bar under
+מספר שורשים
+\bar default
+ בפנים של 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, כאשר שורש מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ נספר 
+\begin_inset Formula $m$
+\end_inset
+
+ פעמים.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\left|a\right|<e^{-1}$
+\end_inset
+
+.
+ צ"ל שלא קיים מספר 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $e^{z}=az^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $g\left(z\right)=-az^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=e^{z}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma=\left\{ z\middle|\left|z\right|=1\right\} $
+\end_inset
+
+.
+ כעת:
+\begin_inset Formula 
+\[
+\left.\left|g\left(z\right)\right|\right|_{\Gamma}=\left.\left|at^{2}\right|\right|_{\Gamma}=\left|a\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|=\left|e^{z}\right|=\left|e^{x}\cdot e^{iy}\right|=\left.e^{x}\right|_{\Gamma}\ge e^{-1}>\left|a\right|=\left|g\left(z\right)\right|
+\]
+
+\end_inset
+
+לכן, לפי משפט רושה, ל
+\begin_inset Formula $f\left(z\right)=e^{z}$
+\end_inset
+
+ ול
+\begin_inset Formula $\left(f+g\right)\left(z\right)=e^{z}-az^{3}$
+\end_inset
+
+ יש אותו מספר שורשים.
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אין שורשים בתוך 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ גם ל
+\begin_inset Formula $e^{z}=az^{3}$
+\end_inset
+
+ אין שורשים כאשר 
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+כמה פתרונות יש ל
+\begin_inset Formula $z^{3}+5z+1=0$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+בעיגול: 
+\begin_inset Formula $D_{1}=\left\{ z\middle|\left|z\right|<1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בטבעת: 
+\begin_inset Formula $D_{2}=\left\{ z\middle|1<\left|z\right|<2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $f\left(z\right)=5z\qquad g\left(z\right)=z^{4}+1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|=\left|5z\right|\stackrel{{\scriptscriptstyle \left|z\right|=1}}{=}5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|z^{4}+1\right|\le\left|z^{4}\right|+\left|1\right|=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|f\left(z\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ל
+\begin_inset Formula $5z=f\left(z\right)$
+\end_inset
+
+ יש אותו מספר שורשים כמו ל
+\begin_inset Formula $z^{4}+5z+1=\left(f+g\right)\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ יש אפס פשוט 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ גם לפונקציה המקורית יש רק אפס אחד בתוך 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+משפט רושה לא מוגדר עבור טבעותוו, ולכן נצטרך למצוא מספר שורשים בעיגול החיצוני
+ ולהפחית ממנו את מספר השורשים בעיגול הפנימי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נגדיר: 
+\begin_inset Formula $f\left(z\right)=z^{4}\qquad g\left(z\right)=5z+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על המעגל 
+\begin_inset Formula $\left|z\right|=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|=\left|z^{4}\right|=16
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|5z+1\right|\le\left|5z\right|+1=11
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\left(z\right)\right|>\left|g\left(z\right)\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ולפונקציה המקורית יש אותו מספר אפסים.ל
+\begin_inset Formula $z^{2}=f\left(z\right)=0$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורשים)
+\begin_inset Formula $z=0$
+\end_inset
+
+ מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+(.
+ מסעיף א' יודעים שבתוך 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ יש אפס אחד בלבד.
+\end_layout
+
+\begin_layout Standard
+נוודא שעל המעגל 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ אין שורשים.
+ לפי סעיף א', על מעגל היחידה מתקיים
+\begin_inset Formula 
+\[
+\left|5z\right|>\left|z^{4}+1\right|
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\left|z^{4}+5z+1\right|=\left|\left(5z\right)+\left(z^{4}+1\right)\right|\ge\left|\left|5z\right|-\left|z^{4}+1\right|\right|>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+אין שורשים על מעגל היחידה, ולכן יש בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים בטבעת.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

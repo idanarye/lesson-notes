@@ -1,0 +1,1054 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אוטומט מחסנית
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בנו אוטומט המקבל את
+\begin_inset Formula 
+\[
+L=\left\{ w\middle|\begin{array}{c}
+\#_{a}\left(w\right)=\#_{b}\left(w\right)\\
+\forall_{xy=w}\#_{a}\left(x\right)\ge\#_{b}\left(x\right)
+\end{array}\right\} 
+\]
+
+\end_inset
+
+ע"י מצב אחד בלבד.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+לכאורה, נראה שצריך לעשות את זה באמצעות אוטומט שמקבל בריקון מחסנית - אבל
+ ניתן לפתור את זה גם בשיטת המצבים המקבלים, שכן אפשר לתקוע את האוטומט אם
+ מרוקנים לגמרי את המחסנית, או "נופלים" מהמצב)אוטומט לא דטרמיניסטי(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{}\ar@(lu,ld)_{\begin{array}{c}
+\varepsilon,\dashv/\varepsilon\\
+a,\dashv/A\\
+a,A/AA\\
+b,A/\varepsilon
+\end{array}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמת הרצה: עבור 
+\begin_inset Formula $aabb\in L$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{array}{|c|}
+\\
+\\
+\\
+\dashv
+\\\hline \end{array}\xrightarrow[a]{}\begin{array}{|c|}
+\\
+\\
+\\
+A
+\\\hline \end{array}\xrightarrow[a]{}\begin{array}{|c|}
+\\
+\\
+A\\
+A
+\\\hline \end{array}\xrightarrow[b]{}\begin{array}{|c|}
+\\
+\\
+\\
+A
+\\\hline \end{array}\xrightarrow[b]{}\begin{array}{|c|}
+\\
+\\
+\\
+\\
+\hline \end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל הפתרון הזה לא טוב, שכן הוא "דופק" את המחסנית כשהוא מסיר את תו הפתיחה.
+ לכן נשנה אותו:
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{}\ar@(lu,ld)_{\begin{array}{c}
+\varepsilon,\dashv/\varepsilon\\
+a,\dashv/A\dashv\\
+a,A/AA\\
+b,A/\varepsilon
+\end{array}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הקשר בין שיטת ריקון לשיטת מצבים מקבלים
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+שיטת ריקון 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ שיטת מצבים מקבלים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נרצה להפוך אוטומט בשיטת מצבים מקבלים לאוטומט בשיטת ריקון.
+\end_layout
+
+\begin_layout Standard
+נוסיף מצב 
+\begin_inset Formula $q_{E}$
+\end_inset
+
+)ריקון( ומעברים הבאים:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $q\in F,\gamma\in\Gamma$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\delta\left(q,\varepsilon,\gamma\right)=\left(q_{E},\gamma\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(q_{E},\varepsilon,\gamma\right)=\left(q_{E},\varepsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+שיטת ריקון 
+\begin_inset Formula $\supseteq$
+\end_inset
+
+ שיאת מצבים מקבלים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נרצה להפוך אוטומט בשיטת ריקון לאוטומט בשיטת מצבים מקבלים.
+\end_layout
+
+\begin_layout Standard
+נוסיף מצב מקבל 
+\begin_inset Formula $q_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוסיף תו פתיחה חדש # ל
+\begin_inset Formula $\Gamma$
+\end_inset
+
+)א"ב מחסנית(
+\end_layout
+
+\begin_layout Standard
+נאתחל במחסנית עם # ונוסיף מעליו 
+\begin_inset Formula $\dashv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובכל מצב 
+\begin_inset Formula $q$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\delta\left(q,\varepsilon,\#\right)=\left(q_{F},\#\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+תנו אוטומט מחסנית ל
+\begin_inset Formula $L$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\left\{ w\middle|w\notin\left(a^{n}b\right)^{n}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+מהי השפה? אילו מילים לא בשפה:
+\begin_inset Formula 
+\[
+\underbrace{a^{n}ba^{n}b\cdots a^{n}b}_{n\textnormal{ times}}
+\]
+
+\end_inset
+
+כלומר בשפה נמצאות מילים מהצורה:
+\end_layout
+
+\begin_layout Enumerate
+מתחילות ב
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מילים מהצורה 
+\begin_inset Formula $a^{n}ba^{m_{1}}ba^{m_{2}}b\cdots$
+\end_inset
+
+ כך שקיים 
+\begin_inset Formula $m_{i}\neq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a^{n}b\right)^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $n\neq m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מסתיימת ב
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה אוטומט מחסנית בשיטת מצבים מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[rrr]^{b,\dashv/t}\ar[rrd]^{\varepsilon,\dashv/\dashv}\ar[rrddd]^{\varepsilon,\dashv/\dashv}\ar[rrdddddd]_{\varepsilon,\dashv/\dashv} &  &  & *++[o][F=]{}\ar@(ru,rd)^{\begin{subarray}{c}
+a,\dashv/\dashv\\
+b,\dashv/\dashv
+\end{subarray}} &  &  &  & :1\\
+ &  &  & *++[o][F]{}\ar@(rd,ld)^{\begin{subarray}{c}
+a,\dashv/\dashv\\
+b,\dashv/\dashv
+\end{subarray}}\ar[r]^{a,\dashv/\dashv} & *++[o][F=]{} &  &  &  & :4\\
+ &  &  &  &  &  & *++[o][F=]{}\ar@(ru,rd)^{\begin{subarray}{c}
+a,A/A\\
+b,A/A
+\end{subarray}}\\
+ &  &  & *++[o][F]{}\ar@(rd,ld)^{\begin{subarray}{c}
+a,\dashv/\dashv\\
+b,\dashv/\dashv
+\end{subarray}}\ar[r]^{b,A/A}\ar@/_{2pc}/[rr]^{b,A/A} & *++[o][F]{}\ar@(lu,ru)^{\begin{subarray}{c}
+a,A/A\\
+b,A/A
+\end{subarray}}\ar[r]^{b,A/A} & *++[o][F]{}\ar@(rd,ld)^{a,A/\varepsilon}\ar[ru]^{b,A/A}\ar[r]^{a,\dashv/\dashv} & *++[o][F=]{}\ar@(ru,rd)^{\begin{subarray}{c}
+a,\dashv/\dashv\\
+b,\dashv/\dashv
+\end{subarray}} &  & :2\\
+\\
+\\
+ &  &  & *++[o][F]{}\ar@(rd,ld)^{\begin{subarray}{c}
+a,\dashv/A\dashv\\
+a,A/AA
+\end{subarray}}\ar[r]^{b,A/\varepsilon} & *++[o][F]{}\ar@(lu,ru)^{\begin{subarray}{c}
+a,A/A\\
+b,A/\varepsilon\\
+a,\dashv/\dashv
+\end{subarray}}\ar[dd]_{\varepsilon,A/A}\ar[rdd]^{b,\dashv/\dashv} &  &  &  & :4\\
+\\
+ &  &  &  & *++[o][F=]{} & *++[o][F=]{}\ar@(rd,ld)^{\begin{subarray}{c}
+a,\dashv/\dashv\\
+b,\dashv/\dashv
+\end{subarray}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אוטומט מחסנית דטרמיניסטי
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אוטומט מחסנית דטרמיניסטי מקיים את התנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $q\in Q$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\in\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $a\in\Sigma\cup\left\{ \varepsilon\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula $\left|\delta\left(q,a,\gamma\right)\right|\le1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $q\in Q$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma\in\Gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $\delta\left(q,\varepsilon,\gamma\right)\neq\emptyset$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+ 
+\begin_inset Formula $\delta\left(q,\sigma,\gamma\right)=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+בפשטות, האוטומט דטרמיניסטי אם בכל סיטואציה יש המשך 
+\series bold
+\bar under
+יחיד
+\series default
+\bar default
+ לכל היותר.
+\end_layout
+
+\begin_layout Part*
+שקילויות
+\end_layout
+
+\begin_layout Itemize
+אוטומט סופי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ דקדוק רגולרי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ ביטוי רגולרי
+\end_layout
+
+\begin_layout Itemize
+אוטומט מחסנית בשיטת ריקון 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שיטת מצבים מקבלים
+\end_layout
+
+\begin_layout Itemize
+אוטומט מחסנית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ דקדוק חסר הקשר
+\end_layout
+
+\begin_layout Part*
+שפות חופשיות)חסרות( הקשר
+\end_layout
+
+\begin_layout Section*
+למת הניפוח לשפות חופשיות הקשר
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $n$
+\end_inset
+
+, כך שלכל 
+\begin_inset Formula $z\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|\ge n$
+\end_inset
+
+, קיים פרוק 
+\begin_inset Formula $z=uvwxy$
+\end_inset
+
+, 
+\begin_inset Formula $\left|vwx\right|\le n$
+\end_inset
+
+, 
+\begin_inset Formula $1\le\left|vx\right|$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=u\left(v\right)^{i}w\left(x\right)^{i}y\in L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+הוכח 
+\begin_inset Formula $a^{n}b^{n}c^{n}$
+\end_inset
+
+ לא חופשית הקשר.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נוכיח ע"י למת הניפוח.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש
+\begin_inset Formula $L$
+\end_inset
+
+ חופשית הקשר.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+, נבחר 
+\begin_inset Formula $z=a^{n}b^{n}c^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי פירוק
+\begin_inset Formula 
+\[
+z=uvwxy\qquad\left|vwx\right|\le n\qquad\left|vx\right|\ge1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\left(v\right)w\left(x\right)\right|\le n$
+\end_inset
+
+, אי לך הפירוק מקיים אחת מהאופציות הבאות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $vx=a^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $vx=b^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $vx=c^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $vx=a^{t}b^{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $vx=b^{t}c^{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל פירוק נראה סתירה:
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $i=0$
+\end_inset
+
+, ונקבל 
+\begin_inset Formula $z'=a^{n-t}b^{n}c^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $1\le t=\left|vx\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $n-t\neq n$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $z'\in L$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אותו דבר כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+אותו דבר כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula 
+\[
+z'=uv^{2}wx^{2}y=uvvwxxy=a^{n-t}a^{t}a^{t}b^{n-s}b^{s}b^{s}c^{n}
+\]
+
+\end_inset
+
+
+\size largest
+זה לא נכון!
+\size default
+ כי אנחנו לא יודעים ש
+\begin_inset Formula $v\in a^{*},x\in b^{*}$
+\end_inset
+
+ - יכול להיות 
+\begin_inset Formula $v\in a^{*}b^{*}$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in a^{*}b^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן, נבחר 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל עבור 
+\begin_inset Formula $z'$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\#_{a}\left(z'\right)=n+t\qquad\#_{b}\left(z'\right)=n+s\qquad\#_{c}\left(z'\right)=n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1\le s+t
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $n\neq n+T$
+\end_inset
+
+ 
+\bar under
+או
+\bar default
+ 
+\begin_inset Formula $n\neq n+s$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אותו דבר כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סתירה, 
+\begin_inset Formula $L$
+\end_inset
+
+ לא חופשית הקשר.
+\end_layout
+
+\begin_layout Part*
+אינטואיציה מתי שפה לא חופשית הקשר
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ספירה מרובה - ספירה כפולה או יותר מכך.
+
+\bar under
+ 
+\bar default
+למשל 
+\begin_inset Formula $a^{n}b^{n}c^{n}$
+\end_inset
+
+.
+\backslash
+
+\end_layout
+
+\begin_layout Enumerate
+קיום נוסחה - למשל 
+\begin_inset Formula $a^{p}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני, או 
+\begin_inset Formula $a^{n!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הוכח/הפרך 
+\begin_inset Formula $L$
+\end_inset
+
+ אינה חופשית הקשר
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ חופשית הקשר ע"י למה.
+ יהי 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $z=a^{n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=uvwxy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=a^{k_{1}}a^{k_{2}}a^{k_{3}}a^{k_{4}}a^{n^{2}-k_{1}-k_{2}-k_{3}-k_{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k_{2}+k_{3}+k_{4}\le n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k_{2}+k_{4}\ge1
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $z'=a^{n^{2}+k_{2}+k_{4}}$
+\end_inset
+
+.
+ נראה שלא קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש
+\begin_inset Formula $k^{2}+k_{2}+k_{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n^{2}<n^{2}+k_{2}+k_{4}\le n^{2}+n<n^{2}+2n+1=\left(n+1\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

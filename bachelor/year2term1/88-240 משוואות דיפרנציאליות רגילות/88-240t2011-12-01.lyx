@@ -1,0 +1,1506 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+5.1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המספרים המרוכבים 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למספר מרוכב כללי שנהוג לסמן ע"י האות 
+\begin_inset Formula $z$
+\end_inset
+
+ יש חלק ממשי 
+\begin_inset Formula $Re\left(z\right)$
+\end_inset
+
+ וחלק וחלק מדומה 
+\begin_inset Formula $Im\left(z\right)$
+\end_inset
+
+)שניהם ממשיים(.
+ 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+.
+ למשל 
+\begin_inset Formula $a=2+3i$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{array}{c}
+Re\left(z\right)=2\\
+Im\left(z\right)=3
+\end{array}$
+\end_inset
+
+)לא נכון להגיד 
+\begin_inset Formula $Im\left(z\right)=3i$
+\end_inset
+
+!(
+\end_layout
+
+\begin_layout Standard
+שדה המספרים המרוכבים 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ מוגדר ע"י 
+\begin_inset Formula $\mathbb{C}=\left\{ a+bi:a,b\in\mathbb{R}\right\} $
+\end_inset
+
+ והוא מהווה תוספת שימושית במיוחד.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $z=a+bi\in\mathbb{C}$
+\end_inset
+
+ 
+\bar under
+הצמוד המרוכב
+\bar default
+ שלו הוא 
+\begin_inset Formula $\overline{z}=a-bi$
+\end_inset
+
+)עושים מינוס לחלק המדומה(
+\begin_inset Formula 
+\[
+\overline{1-2i}=1+2i
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{5}=\overline{5+0i}=5-0i=5
+\]
+
+\end_inset
+
+למעשה 
+\begin_inset Formula $\overline{x}=x\Leftrightarrow x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+הערך המחולט של 
+\begin_inset Formula $z=a+bi\in\mathbb{C}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $z_{1},z_{2}\in\mathbb{C}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $\overline{z_{1}+z_{2}}=\overline{z_{1}}+\overline{z_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ 
+\begin_inset Formula $\overline{z_{1}z_{2}}=\overline{z_{1}}\cdot\overline{z_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג.
+ 
+\begin_inset Formula $\left|z_{1}\cdot z_{2}\right|=\left|z_{1}\right|\cdot\left|z_{2}\right|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אי שוויון המשולש: 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z_{1}\right|+\left|z_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נרשום 
+\begin_inset Formula $\left\{ \begin{array}{c}
+z_{1}=a_{1}+b_{1}i\\
+z_{2}=a_{2}+b_{2}i
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $\overline{z_{1}+z_{2}}=\overline{\left(a_{1}+b_{i}i\right)+\left(a_{1}+b_{2}i\right)}=\overline{a_{1}+a_{2}+\left(b_{1}+b_{2}\right)i}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=a_{1}+a_{2}-\left(b_{1}+b_{2}\right)i=\left(a_{1}-b_{1}i\right)+\left(a_{2}-b_{2}i\right)=\overline{z_{1}}+\overline{z_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור ב' וג' ההוכחה דומה
+\end_layout
+
+\begin_layout Subsection*
+ניתן להכליל
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $z_{1},z_{2},...z_{n}\in\mathbb{C}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{\sum_{k=1}^{n}z_{k}}=\overline{z_{1}+...+z_{k}}=\overline{z_{1}}+...+\overline{z_{k}}=\sum_{k=1}^{n}\overline{z_{k}}
+\]
+
+\end_inset
+
+)במילים: הצמוד של סכום הוא סכום הצמודים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{\prod_{k=1}^{n}z_{k}}=\overline{z_{1}\cdot...\cdot z_{k}}=\overline{z_{1}}\cdot...\cdot\overline{z_{k}}=\prod_{k=1}^{n}\overline{z_{k}}
+\]
+
+\end_inset
+
+)במילים: הצמוד 
+\begin_inset Formula $a$
+\end_inset
+
+ של מכפלה הוא מכפלת הצמודים(
+\begin_inset Formula 
+\[
+\left|\prod_{k=1}^{n}z_{k}\right|=\left|z_{1}\cdot...\cdot z_{k}\right|=\left|z_{1}\right|\cdot...\cdot\left|z_{k}\right|=\prod_{k=1}^{n}\left|z_{k}\right|
+\]
+
+\end_inset
+
+)במילים: הערך המוחלט של מכפלה הוא מכפלת הערכים המוחלטים(.
+\end_layout
+
+\begin_layout Section*
+משפט)השורש הצמוד(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P\left(x\right)=a_{n}x^{n}+...+a_{1}x+a_{0}$
+\end_inset
+
+ פולינום 
+\bar under
+ממשי
+\bar default
+)כלומר 
+\begin_inset Formula $a_{0},a_{1},...a_{n}\in\mathbb{R}$
+\end_inset
+
+(.
+ אזי אם 
+\begin_inset Formula $z_{0}=\alpha+i\beta$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $P\left(z_{0}\right)=0$
+\end_inset
+
+, גם 
+\begin_inset Formula $\overline{z_{0}}=\alpha-i\beta$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ שורש של 
+\begin_inset Formula $P$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+P\left(z_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}a_{k}z_{0}^{k}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{\sum_{k=0}^{n}a_{k}z_{0}^{k}}=\overline{0}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}\overline{a_{k}z_{0}^{k}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}\overline{a_{k}}\cdot\overline{z_{0}^{k}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=0}^{1}\overline{a_{k}}\cdot\overline{z_{0}}^{k}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=0}^{1}a_{k}\cdot\overline{z_{0}}^{k}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(\overline{z_{0}}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הפולינום 
+\begin_inset Formula $P\left(x\right)=x^{2}+1$
+\end_inset
+
+ הוא פולינום ממשי.
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ שורש שלו וגם 
+\begin_inset Formula $\overline{i}=-i$
+\end_inset
+
+ שורש שלו, אבל 
+\begin_inset Formula $\overline{2i}=-2i$
+\end_inset
+
+ לא.
+\end_layout
+
+\begin_layout Subsection*
+אנטי דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(x\right)=x-2i$
+\end_inset
+
+ 
+\bar under
+אינו
+\bar default
+ פולינום ממשי.
+ 
+\begin_inset Formula $2i$
+\end_inset
+
+ שורש שלו אבל 
+\begin_inset Formula $\overline{2i}=-2i$
+\end_inset
+
+ לא.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+בפולינומים ממשיים השורשים המרוכבים מגיעים בזוגות צמודים בלבד 
+\begin_inset Formula $\alpha\pm i\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ייצוג קוטבי של מספרים מרוכבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=a+b_{i}=r\cos\theta+ir\sin\theta=r\left(\cos\theta+\sin\theta\right)=r\textnormal{cis}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט אוילר)ז"ל(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\theta\in\mathbb{R}\hspace{1em}e^{i\theta}=\cos\theta+i\sin\theta\left(=\textnormal{cis}\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $f\left(\theta\right)=\cfrac{\cos\theta+i\sin\theta}{e^{i\theta}}=e^{-i\theta}\left(\cos\theta+i\sin\theta\right)$
+\end_inset
+
+.
+ נגזור:
+\begin_inset Formula 
+\[
+f'\left(\theta\right)=-ie^{-ie\theta}\left(\cos\theta+i\sin\theta\right)+e^{-i\theta}\left(-\sin\theta+i\cos\theta\right)=e^{-i\theta}\left(-i\cos\theta+\sin\theta-\sin\theta+i\cos\theta\right)
+\]
+
+\end_inset
+
+קיבלנו 
+\begin_inset Formula $f'\left(\theta\right)\equiv0$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $f\left(\theta\right)\equiv C=f\left(0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(0\right)=e^{-0}\left(\cos0+i\sin0\right)=1=f\left(\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{e^{i\theta}=\cos\theta+i\sin\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אם נבחר 
+\begin_inset Formula $\theta=\pi$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{i\pi}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\boxed{e^{i\pi}+1=0}$
+\end_inset
+
+ - זהות אוילר.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+זוהי זהות מאוד יפה, שכן היא מכילה את הקבועים החשובים: 
+\begin_inset Formula $i,e,\pi,1,0$
+\end_inset
+
+ ואת הפעולות העיקריות חיבור, כפל וחזקה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+זהויות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{-i\theta}=e^{i\left(-\theta\right)}=\cos\left(-\theta\right)+i\sin\left(-\theta\right)=\cos\left(\theta\right)-i\sin\left(\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\cfrac{e^{i\theta}+e^{-i\theta}}{2}=\cos\theta\\
+\cfrac{e^{i\theta}-e^{-i\theta}}{2o}=\sin\theta
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+5.2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מד"ר לינאריות עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}a_{k}\cdot y^{\left(k\right)}=\begin{cases}
+0 & homogeous\\
+b\left(x\right) & non-homogenous
+\end{cases}
+\]
+
+\end_inset
+
+)הפעם 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+קבועים ממשיים(.
+ נתחים מהמקרה ההומוגני:
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-y=0\hspace{1em}y''=y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מה עושים?
+\end_layout
+
+\begin_layout Standard
+אוילר אמר לחפש פתרון מהצורה 
+\begin_inset Formula $y=e^{\lambda x}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $y'=\lambda e^{\lambda x}$
+\end_inset
+
+, 
+\begin_inset Formula $y''=\lambda^{2}e^{\lambda x}$
+\end_inset
+
+ וכך הלאה...
+\end_layout
+
+\begin_layout Standard
+נציב במשוואה ונקבל
+\begin_inset Formula 
+\[
+\lambda^{2}e^{\lambda x}-e^{\lambda x}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{\lambda x}\left(\lambda^{2}-1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\lambda_{1,2}=\pm1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+"ניחשנו" 
+\begin_inset Formula $y=e^{\lambda x}$
+\end_inset
+
+ וקיבלנו 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ או 
+\begin_inset Formula $\lambda=-1$
+\end_inset
+
+ ולכן יש לנו שני פתרונות 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}=e^{+1x}=e^{x}\\
+y_{2}=e^{-1x}=e^{-x}
+\end{array}\right.$
+\end_inset
+
+.
+ הם בת"ל כמובן ולכן הפתרון הכללי הוא צירוף לינארי שלהם: 
+\begin_inset Formula $\boxed{y=C_{1}e^{x}+C_{2}e^{-x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+במקרה הכללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}y^{\left(n\right)}+...+a_{1}y'+a_{0}y=0
+\]
+
+\end_inset
+
+"ננחש" 
+\begin_inset Formula $y=e^{\lambda x},y'=\lambda e^{\lambda x},...y^{\left(k\right)}=\lambda^{k}e^{\lambda x}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}\lambda^{n}e^{\lambda x}+...+a_{1}\lambda e^{\lambda x}+a_{0}e^{\lambda x}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}\lambda^{n}+...+a_{1}\lambda+a_{0}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sum\limits _{k=0}^{n}a_{k}\lambda^{k}$
+\end_inset
+
+ נקרא הפולינום האופייני או הפולינום המאפיין, והמשוואה נקראת המשוואה האופיינית
+ או המשוואה המאפיינת.
+\end_layout
+
+\begin_layout Standard
+צריך למצוא את שורשי המשוואה ולהציבם בניחוש.
+\end_layout
+
+\begin_layout Section*
+בעייה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)שורשים מרוכבים(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+y^{\left(0\right)}=0
+\]
+
+\end_inset
+
+ המשוואה האופיינית: 
+\begin_inset Formula $\lambda^{2}+1=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\lambda_{1,2}=\pm i$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{c}
+y_{1}=e^{ix}\\
+y_{2}=e^{-ix}
+\end{array}$
+\end_inset
+
+.
+ אבל אנחנו לא רוצים להשתמש ב
+\begin_inset Formula $i$
+\end_inset
+
+ בפתרון...
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+ ניקח צירופים לינאריים אחרים: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+Y_{1}=\cfrac{1}{2}y_{1}+\cfrac{1}{2}y_{2}=\cfrac{e^{ix}+e^{-ix}}{2}=\cos\left(x\right)\\
+Y_{2}=\cfrac{1}{2i}y_{1}-\cfrac{1}{2i}y_{2}=\cfrac{e^{ix}-e^{-ix}}{2i}=\sin x
+\end{array}\right.$
+\end_inset
+
+ - בת"ל.
+\begin_inset Formula 
+\[
+\boxed{y=C_{1}Y_{1}+C_{2}Y_{2}=C_{1}\cos x+C_{2}\sin x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם השורשים היו 
+\begin_inset Formula $\lambda_{1,2}=\alpha\pm i\beta$
+\end_inset
+
+ היינו מקבלים
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y_{1}=e^{\left(\alpha+i\beta\right)x}\\
+y_{2}=e^{\left(\alpha-i\beta\right)x}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+Y_{1}=\cfrac{1}{2}y_{1}+\cfrac{1}{2}y_{2}=\cfrac{1}{2}e^{\alpha x+i\beta x}+\cfrac{1}{2}e^{\alpha x-i\beta x}=e^{\alpha x}\cfrac{e^{i\left(\beta x\right)}+e^{-i\left(\beta x\right)}}{2}=e^{\alpha x}\cos\beta x\\
+Y_{2}=\cfrac{1}{xi}y_{1}-\cfrac{1}{2_{i}}y_{2}=e^{\alpha x}\sin\beta x
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{y=C_{1}e^{\alpha x}\cos\beta x+C_{2}e^{\alpha x}\sin\beta x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)שורש מרובה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-2y'+y=0
+\]
+
+\end_inset
+
+מ.
+ אופיינית:
+\begin_inset Formula 
+\[
+\lambda^{2}-2\lambda+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda-1\right)\left(\lambda-1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1,2}=1,1
+\]
+
+\end_inset
+
+ יש רק שורש אחד 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ אך הוא מופיע בחזקה שנייה)שורש כפול(.
+ ברור ש
+\begin_inset Formula $y_{1}=e^{1\cdot x}=e^{x}$
+\end_inset
+
+.
+ נשתמש בהורדת סדר:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y=e^{x}z\\
+y'=e^{x}z+e^{x}z'\\
+y''=e^{x}z+2e^{x}z'+e^{x}z''
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}z''+2e^{x}z'+e^{x}z--2e^{x}z-2e^{x}z'+e^{x}z=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}z''=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z''=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=C_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z=C_{1}x+C_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{y=e^{x}\left(C_{1}x+C_{2}\right)=C_{1}xe^{x}+C_{2}x}
+\]
+
+\end_inset
+
+אם השורש 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ היה מופיע בחזקת 
+\begin_inset Formula $m$
+\end_inset
+
+ הסדרה 
+\begin_inset Formula $x^{0}e^{\lambda x},x^{1}e^{\lambda x},...x^{m-1}e^{\lambda x}$
+\end_inset
+
+ נותנת 
+\begin_inset Formula $m$
+\end_inset
+
+ פתרונות בת"ל.
+ כלומר 
+\begin_inset Formula $\boxed{\left\{ x^{k}e^{\lambda x}\right\} _{k=0}^{m-1}}$
+\end_inset
+
+.
+ אם מדובר בזוג שורשים מרוכבים)צמודים!( 
+\begin_inset Formula $\alpha\pm i\beta$
+\end_inset
+
+ הסדרה:
+\begin_inset Formula 
+\[
+e^{\alpha x}\cos\beta x,e^{\alpha x}\sin\beta x,xe^{\alpha x}\cos\beta x,xe^{\alpha x}\sin\beta x,...x^{m-1}e^{\alpha x}\cos\beta x,x^{m-1}e^{\alpha x}\sin\beta x
+\]
+
+\end_inset
+
+נותנת 
+\begin_inset Formula $2m$
+\end_inset
+
+ פתרונות בת"ל 
+\begin_inset Formula $\left\{ x^{k}e^{\alpha x}\cos\beta x\right\} _{k=0}^{m-1}\cup\left\{ x^{k}e^{\alpha x}\sin\beta x\right\} _{k=0}^{m-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תנאי התחלה
+\end_layout
+
+\begin_layout Standard
+כמובן שניתן לצרף למשוואה תנאי התחלה, למשל 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y''+y=0\\
+y\left(1\right)=1\\
+y'\left(1\right)=0
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+הפתרון הכללי הוא 
+\begin_inset Formula $y=C_{1}\cos x+C_{2}\sin x$
+\end_inset
+
+.
+ נציב את תנאי ההתחלה: 
+\begin_inset Formula $1=y\left(1\right)=C_{1}\cos\left(1\right)+C_{2}\sin\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=y'\left(1\right)=y'\left(x\right)|_{x=1}=-C_{1}\sin\left(x\right)+C_{2}\cos x|_{x=1}=-C_{1}\sin\left(1\right)+C_{2}\cos\left(1\right)
+\]
+
+\end_inset
+
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}\cos\left(1\right) & \sin\left(1\right)\\
+-\sin\left(1\right) & \cos\left(1\right)
+\end{pmatrix}\begin{pmatrix}C_{1}\\
+C_{2}
+\end{pmatrix}=\begin{pmatrix}1\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+C_{1}=\cos\left(1\right)\\
+C_{2}=\sin\left(1\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\boxed{y=\cos\left(1\right)\cos\left(x\right)+\sin\left(1\right)\sin\left(x\right)\approx0.54\cos\left(x\right)+0.84\sin\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+חשוב להדגיש
+\end_layout
+
+\begin_layout Standard
+בפתרון הכללי מופיעים כל הקבועים החופשיים ובפתרון פרטי אין קובעים חופשיים
+ בכלל.
+\end_layout
+
+\begin_layout Part*
+המקרה האי הומוגני
+\end_layout
+
+\begin_layout Section*
+אופרטורים דיפרנציאלים לינאריים
+\end_layout
+
+\begin_layout Standard
+אם נסמן 
+\begin_inset Formula $L=\sum\limits _{k=0}^{n}a_{k}D^{k}$
+\end_inset
+
+ נוכל לרשום את המד"ר הלינארית הכללית בצורה 
+\begin_inset Formula $Ly=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך אחת לפתור 
+\begin_inset Formula $Ly=b$
+\end_inset
+
+ היא:
+\end_layout
+
+\begin_layout Section*
+שיטת המשמיד
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Annihilator method
+\end_layout
+
+\begin_layout Standard
+צריכים למצוא אד"ל)אופרטור דיפרנציאלי לינארי( 
+\begin_inset Formula $A$
+\end_inset
+
+ )מהמילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Annihilator
+\lang hebrew
+( "המשמיד" שמשמיד את 
+\begin_inset Formula $b$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $Ab=0$
+\end_inset
+
+.
+ כופלים את המשוואה ב
+\begin_inset Formula $A$
+\end_inset
+
+ משמאל:
+\begin_inset Formula 
+\[
+ALy=Ab=0
+\]
+
+\end_inset
+
+וזו משוואה הומוגנית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+זהירות
+\series default
+ "הקבועים החופשיים" שבאו מ
+\begin_inset Formula $A$
+\end_inset
+
+ לא חופשיים.
+ צריך למצוא אותם.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+3y'+2y=x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{L}{\underbrace{\left(D^{2}+3D+2\right)}}y=x^{2}
+\]
+
+\end_inset
+
+המשמיד של 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $A=D^{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow D^{3}\left(D^{2}+3D+2\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(D-0\right)^{3}\left(D+1\right)\left(D+2\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}e^{-x}+C_{5}e^{-2x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $C_{1},C_{2},C_{3}$
+\end_inset
+
+ הגיעו מהפתרון האי הומוגני)ההכפלה ב
+\begin_inset Formula $D^{3}$
+\end_inset
+
+ - 
+\begin_inset Formula $y_{p}=C_{1}+C_{2}x+C_{2}x^{2}$
+\end_inset
+
+( ולכן הם לא קבועים חופשיים - צריך לחשב אותם:
+\begin_inset Formula 
+\[
+y'_{p}=C_{2}+2C_{3}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''_{p}=2C_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{p}''+3y_{p}'+2y_{p}=x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2C_{3}+3C_{2}+6C_{3}x+2C_{1}+2C_{2}x+2C_{3}x^{2}=x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2C_{3}\right)x^{2}+\left(6C_{3}+2C_{2}\right)x^{1}+\left(2C_{3}+3C_{2}+2C_{1}\right)=1x^{2}+0x+0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\begin{array}{c}
+C_{3}=\cfrac{1}{2}\\
+C_{2}=-\cfrac{3}{2}\\
+C_{1}=\cfrac{7}{4}
+\end{array}}\Rightarrow\boxed{y=\cfrac{7}{4}-\cfrac{3}{2}x+\cfrac{1}{2}x^{2}+C_{4}e^{-x}+C_{5}e^{-2x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

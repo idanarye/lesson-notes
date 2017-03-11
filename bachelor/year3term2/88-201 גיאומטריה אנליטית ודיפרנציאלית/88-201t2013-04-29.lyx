@@ -1,0 +1,897 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $\phi:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ פונקציה חלקה)גזירה 
+\begin_inset Formula $\infty$
+\end_inset
+
+ פעמים( ותהי 
+\begin_inset Formula $\gamma:I\to\mathbb{R}^{2}$
+\end_inset
+
+ עקומה, המוגדרת ע"י
+\begin_inset Formula 
+\[
+\gamma\left(s\right)=\left(\int_{0}^{s}\cos\left[\phi\left(u\right)\right]\mathrm{\, d}u,\int_{0}^{s}\sin\left[\phi\left(u\right)\right]\mathrm{\, d}u\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הוכיחו כי העקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ נתונה בפרמטריזציה טבעית)כלומר, השימוש באות 
+\begin_inset Formula $"s"$
+\end_inset
+
+ מוצדק(
+\end_layout
+
+\begin_layout Enumerate
+חשבו את עקמומיות העקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מצאו עקומה 
+\begin_inset Formula $\alpha:\mathbb{R}\to\mathbb{R}^{2}$
+\end_inset
+
+ בפרמטריזציה טבעית המקיימת 
+\begin_inset Formula $\alpha\left(0\right)=0$
+\end_inset
+
+ ועקמומיותה היא 
+\begin_inset Formula $\kappa\left(s\right)=s$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+נגזור:
+\begin_inset Formula 
+\[
+\gamma'\left(s\right)=\left(\cos\left[\phi\left(s\right)\right],\sin\left[\phi\left(s\right)\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \gamma'\left(s\right)\right\Vert =\sqrt{\cos^{2}\left[\phi\left(s\right)\right]+\sin^{2}\left[\phi\left(s\right)\right]}\equiv1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשתמש במשוואת פרנה הראשונה 
+\begin_inset Formula $\frac{\mathrm{d}\hat{T}}{\mathrm{d}s}=\kappa\cdot\hat{N}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+המשוואה השנייה היא 
+\begin_inset Formula $\frac{\mathrm{d}\hat{N}}{\mathrm{d}s}=-\kappa\cdot\hat{T}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\hat{T}\left(s\right)=\gamma'\left(s\right)=\left(\cos\left[\phi\left(s\right)\right],\sin\left[\phi\left(s\right)\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\hat{T}}{\mathrm{d}s}\equiv\hat{T}'\left(s\right)\equiv\gamma''\left(s\right)=\left(-\phi'\left(s\right)\sin\left[\phi\left(s\right)\right],\phi'\left(s\right)\cos\left[\phi\left(s\right)\right]\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{N}\left(s\right)=R_{90^{\circ}}\hat{T}\left(s\right)=\begin{bmatrix}0 & -1\\
+1 & 0
+\end{bmatrix}\cdot\begin{bmatrix}\cos\left[\phi\left(s\right)\right]\\
+\sin\left[\phi\left(s\right)\right]
+\end{bmatrix}=\begin{bmatrix}-\sin\left[\phi\left(s\right)\right]\\
+\cos\left[\phi\left(s\right)\right]
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)תזכורת: 
+\begin_inset Formula $R_{\theta}=\begin{bmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{bmatrix}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\hat{T}}{\mathrm{d}s}\left(s\right)=\kappa\cdot\hat{N}\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}-\phi'\left(s\right)\sin\left[\phi\left(s\right)\right]\\
+\phi'\left(s\right)\cos\left(\phi\left(s\right)\right)
+\end{bmatrix}=\kappa\cdot\begin{bmatrix}-\sin\left[\phi\left(s\right)\right]\\
+\cos\left[\phi\left(s\right)\right]
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\kappa\left(s\right)=\phi'\left(s\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+רוצים עקומה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, עם עקמומיות 
+\begin_inset Formula $\kappa\left(s\right)=s$
+\end_inset
+
+.
+ ע"פ הסעיפים הקודמים:
+\begin_inset Formula 
+\[
+\kappa\left(s\right)=\phi'\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s=\phi'\left(s\right)
+\]
+
+\end_inset
+
+נוציא 
+\begin_inset Formula $\int\mathrm{\, d}s$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\phi\left(s\right)=\frac{s^{2}}{2}
+\]
+
+\end_inset
+
+נטען ש:
+\begin_inset Formula 
+\[
+\alpha\left(s\right)=\left(\int_{0}^{s}\cos\left[\frac{u^{2}}{2}\right]\mathrm{\, d}u,\int_{0}^{s}\sin\left[\frac{u^{2}}{2}\right]\mathrm{\, d}u\right)
+\]
+
+\end_inset
+
+קל לראות כי 
+\begin_inset Formula $\alpha\left(0\right)=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha\left(0\right)=\left(0,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{T}\left(s\right)=\alpha'\left(s\right)=\left(\cos\left(\frac{s^{2}}{2}\right),\sin\left(\frac{s^{2}}{2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{T}\left(0\right)=\left(1,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\gamma:\left[a,b\right]\to\mathbb{R}^{2}$
+\end_inset
+
+ עקומה, 
+\begin_inset Formula $F:\mathbb{R}^{2}\to\mathbb{R}^{2}$
+\end_inset
+
+ איזומטריה של המישור.
+ נגדיר עקומה חדשה 
+\begin_inset Formula $\tilde{\gamma}:\left[a,b\right]\to\mathbb{R}^{2}$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+\tilde{\gamma}\left(t\right)=F\left(\gamma\left(t\right)\right)
+\]
+
+\end_inset
+
+מצאו קשר בין העקמומיות של 
+\begin_inset Formula $\tilde{\gamma}$
+\end_inset
+
+לבין זו של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ידוע ש
+\begin_inset Formula $F$
+\end_inset
+
+ היא מהצורה 
+\begin_inset Formula $F\left(x\right)=A\cdot\vec{x}+\vec{b}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ אורתוגונלית, ולכן
+\begin_inset Formula 
+\[
+\tilde{\gamma}\left(t\right)=F\left(\gamma\left(t\right)\right)=A\cdot\gamma\left(t\right)+b
+\]
+
+\end_inset
+
+נגזור:
+\begin_inset Formula 
+\[
+\tilde{\gamma}'\left(t\right)=A\cdot\gamma'\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{\gamma}''\left(t\right)=A\cdot\gamma''\left(t\right)
+\]
+
+\end_inset
+
+נקרא לעקמומיות של 
+\begin_inset Formula $\tilde{\gamma}$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{\kappa}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\tilde{\kappa}\left(t\right)=\frac{\det\left[\begin{array}{c|c}
+| & |\\
+\tilde{\gamma}'\left(t\right) & \tilde{\gamma}''\left(t\right)\\
+| & |
+\end{array}\right]}{\left\Vert \tilde{\gamma}'\left(t\right)\right\Vert ^{3}}=\frac{\det\left[\begin{array}{c|c}
+| & |\\
+A\cdot\gamma'\left(t\right) & A\cdot\gamma''\left(t\right)\\
+| & |
+\end{array}\right]}{\left\Vert A\cdot\gamma'\left(t\right)\right\Vert ^{3}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\det\left[A\cdot\left[\begin{array}{c|c}
+| & |\\
+\gamma'\left(t\right) & \gamma''\left(t\right)\\
+| & |
+\end{array}\right]\right]\cdot\frac{1}{\left\Vert A\cdot\gamma'\left(t\right)\right\Vert ^{3}}=\frac{\det A\cdot\det\left[\begin{array}{c|c}
+| & |\\
+\gamma'\left(t\right) & \gamma''\left(t\right)\\
+| & |
+\end{array}\right]}{\left\Vert A\cdot\gamma'\left(t\right)\right\Vert ^{3}}=\cdots
+\]
+
+\end_inset
+
+נזכור ש
+\begin_inset Formula $A$
+\end_inset
+
+ אורתוגונלית, כלומר 
+\begin_inset Formula $A^{T}A=I=A\cdot A^{T}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\[
+\cdots=\det A\cdot\frac{\det\left[\begin{array}{c|c}
+| & |\\
+\gamma'\left(t\right) & \gamma''\left(t\right)\\
+| & |
+\end{array}\right]}{\left[\gamma'\left(t\right)\right]^{3}}=\det A\cdot\kappa\left(t\right)=\pm1\cdot\kappa\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לסיכום
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\tilde{\kappa}=\kappa$
+\end_inset
+
+ אם 
+\begin_inset Formula $\det A=1$
+\end_inset
+
+ - 
+\begin_inset Formula $A$
+\end_inset
+
+ שומרת אוריינטציה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\tilde{\kappa}=-\kappa$
+\end_inset
+
+ אם 
+\begin_inset Formula $\det A=-1$
+\end_inset
+
+ - 
+\begin_inset Formula $A$
+\end_inset
+
+ לא שומרת אוריינטציה.
+\end_layout
+
+\begin_layout Part*
+עקומות מרחביות
+\end_layout
+
+\begin_layout Standard
+הפעם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטורים חשובים: יש לנו את 
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+ ואת 
+\begin_inset Formula $\hat{N}$
+\end_inset
+
+, אבל גם את 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+ שמאונך לשניהם.
+\end_layout
+
+\begin_layout Standard
+משוואות פרנה אומרות:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\hat{T}'\\
+\hat{N}'\\
+\hat{B}'
+\end{pmatrix}=\begin{bmatrix}0 & \kappa & 0\\
+-\kappa & 0 & \tau\\
+0 & -\tau & 0
+\end{bmatrix}\begin{pmatrix}\hat{T}\\
+\hat{N}\\
+\hat{B}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\kappa$
+\end_inset
+
+ זה 
+\emph on
+העקמומיות
+\emph default
+ - מודדת כמה העקומה עקומה.
+\end_layout
+
+\begin_layout Itemize
+ו
+\begin_inset Formula $\tau$
+\end_inset
+
+ זה 
+\emph on
+הפיתול
+\emph default
+ - מודד כמה העקומה אינה מישורית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שאם פונקציית הפיתול 
+\begin_inset Formula $\tau$
+\end_inset
+
+ מתאפסת זהותית אזי 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ היא מישורית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\tau\left(s\right)\equiv0$
+\end_inset
+
+.
+ לפי משוואת פרנה השלישית:
+\begin_inset Formula 
+\[
+\hat{B}'=0\implies\hat{B}\equiv\overrightarrow{\textnormal{const}}
+\]
+
+\end_inset
+
+נגדיר פונקציה:
+\begin_inset Formula 
+\[
+f\left(s\right)=\left\langle \gamma\left(s\right)-\gamma\left(0\right),\hat{B}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(0\right)=\left\langle \gamma\left(0\right)-\gamma\left(0\right),\hat{B}\right\rangle =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(s\right)=\left\langle \gamma'\left(s\right),\hat{B}\right\rangle +\underbrace{\xcancel{\left\langle \gamma\left(s\right)-\gamma\left(0\right),\hat{B}\right\rangle }}_{=0}=\left\langle \hat{T}\left(s\right),\hat{B}\left(s\right)\right\rangle \stackrel{{\scriptscriptstyle \hat{T}\perp\hat{B}}}{=}0
+\]
+
+\end_inset
+
+קיבלנו:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+f'\equiv0\implies f=\textnormal{const}\\
+f\left(0\right)=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(s\right)\equiv0\implies\left\langle \gamma\left(s\right)-\gamma\left(0\right),\hat{B}\right\rangle \equiv0\to\gamma\left(s\right)-\gamma\left(0\right)\perp\hat{B}
+\]
+
+\end_inset
+
+כל זה אומר ש
+\begin_inset Formula $\gamma$
+\end_inset
+
+ נמצאת כולה במישור שמאונך ל
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משטחים
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+משטח
+\emph default
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא תת-קבוצה של 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ שנראית, מקומית, כמו מישור.
+ הכוונה היא שניתן לכסות את כולו ע"י "
+\emph on
+מפות
+\emph default
+".
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מפה
+\emph default
+ היא פונקציה 
+\begin_inset Formula $\varphi:U\to M$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u$
+\end_inset
+
+ תת-קבוצה פתוחה של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ צריכה להיות חח"ע ו
+\series bold
+חלקה
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+אוסף מפות 
+\begin_inset Formula $\left\{ \varphi_{i}\right\} _{i}$
+\end_inset
+
+ המכסה את כל 
+\begin_inset Formula $M$
+\end_inset
+
+ נקרא 
+\emph on
+אטלס
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו אטלס עבור הגליל:
+\begin_inset Formula 
+\[
+M=\left\{ \left(x,y,z\right)\in\mathbb{R}^{3}\middle|x^{2}+y^{2}=1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{1}:\left(0,2\pi\right)\times\left(-\infty,\infty\right)\to M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{1}\left(u,v\right)=\left(\cos u,\sin u,v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{2}:\left(0,2\pi\right)\times\left(-\infty,\infty\right)\to M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{2}\left(u,v\right)=\left(\cos\left(u+\pi\right),\sin\left(u+\pi\right),v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ \varphi_{1},\varphi_{2}\right\} $
+\end_inset
+
+ הם אטלס עבור הגליל.
+\end_layout
+
+\end_body
+\end_document

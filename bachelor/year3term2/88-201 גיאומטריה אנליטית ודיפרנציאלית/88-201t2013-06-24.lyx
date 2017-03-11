@@ -1,0 +1,1916 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+]לחפש בגוגל "ברק שושני" - יש שם דף נוסחאות[
+\end_layout
+
+\begin_layout Part*
+מבחן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2011
+\end_layout
+
+\begin_layout Section*
+שאלה ?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+התבנית היסודית הראשונה:
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}f^{2}\left(x,y\right) & 0\\
+0 & f^{2}\left(x,y\right)
+\end{pmatrix}=\begin{pmatrix}\frac{81}{y^{2}} & 0\\
+0 & \frac{81}{y^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g^{ij}\right)=\begin{pmatrix}\frac{y^{2}}{81} & 0\\
+0 & \frac{y^{2}}{81}
+\end{pmatrix}
+\]
+
+\end_inset
+
+נשתמש ב
+\begin_inset Formula 
+\[
+\boxed{\Gamma_{ij}^{k}=\frac{1}{2}g^{km}\cdot\left(g_{mi\prime j}+g_{mj\prime i}-g_{ij\prime m}\right)}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{1}=\frac{1}{2}g^{1m}\left(g_{mi\prime j}+g_{mj\prime i}-g_{ij\prime m}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2}g^{11}\left(g_{1i\prime j}+g_{1j\prime i}-g_{ij\prime1}\right)+\xcancel{\frac{1}{2}g^{12}\left(\cdots\right)}=\frac{1}{2}\frac{y^{2}}{81}\left(g_{1i\prime j}+g_{1j\prime i}-g_{ij\prime1}\right)
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $i,j$
+\end_inset
+
+ השונים:
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=\frac{y^{2}}{162}\cdot\left(g_{11\prime1}+\cancel{g_{11\prime1}}-\cancel{g_{11\prime1}}\right)=\frac{y^{2}}{162}\cdot\left(\frac{-162}{y^{3}}\right)=\boxed{-\frac{1}{y}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{1}=\frac{y^{2}}{162}\cdot\left(g_{12\prime2}+g_{12\prime2}-g_{22\prime1}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ד.]
+\end_layout
+
+\end_inset
+
+נשתמש במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Egregium
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+K=\frac{1}{g_{11}}\left(\Gamma_{11\prime2}^{2}-\Gamma_{12\prime1}^{2}+\xcancel{\Gamma_{11}^{1}\cdot\Gamma_{21}^{2}}-\Gamma_{12}^{1}\Gamma_{11}^{2}+\Gamma_{11}^{2}\cdot\Gamma_{22}^{2}-\Gamma_{12}^{2}\Gamma_{12}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{2}=\frac{1}{2}g^{22}\left(g_{2i\prime j}+g_{2i}-g_{ij\prime2}\right)=\frac{y^{2}}{162}\left(g_{2i\prime j}+g_{2j\prime i}-g_{ij\prime2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{11}^{2}=\frac{y^{2}}{162}\left(\xcancel{g_{21\prime1}}+\xcancel{g_{21\prime1}}-g_{11\prime2}\right)=\boxed{\frac{1}{y}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{12}^{2}=\Gamma_{21}^{2}=\frac{y^{2}}{162}\left(\cancel{g_{21\prime2}}+\xcancel{g_{22\prime1}}-\cancel{g_{12\prime2}}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{22}^{2}=\frac{y^{2}}{162}\left(g_{22\prime2}+\cancel{g_{22\prime2}}-\cancel{g_{22\prime2}}\right)=\boxed{-\frac{1}{y}}
+\]
+
+\end_inset
+
+וקיבלנו
+\begin_inset Formula 
+\[
+\left(\Gamma_{ij}^{1}\right)=\begin{pmatrix}0 & -\frac{1}{y}\\
+-\frac{1}{y} & 0
+\end{pmatrix}\qquad\left(\Gamma_{ij}^{2}\right)=\begin{pmatrix}\frac{1}{y} & 0\\
+0 & -\frac{1}{y}
+\end{pmatrix}
+\]
+
+\end_inset
+
+נציב בנוסחה:
+\begin_inset Formula 
+\[
+K=\frac{1}{\frac{81}{\cancel{y^{2}}}}\left(-\frac{1}{\cancel{y^{2}}}-0+0+\cancel{\frac{1}{y^{2}}}-\cancel{\frac{1}{y^{2}}}-0\right)=\boxed{-\frac{1}{81}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+הוכח שהביטוי 
+\begin_inset Formula $\frac{\partial}{\partial u^{k}}\left(\Gamma_{ij}^{l}r_{\prime l}+b_{ij}\hat{n}\right)$
+\end_inset
+
+ הוא סימטרי ב
+\begin_inset Formula $i$
+\end_inset
+
+ ו
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial u^{k}}\left(\underbrace{\Gamma_{ij}^{1}r_{\prime1}+\Gamma_{ij}^{2}r_{\prime2}+b_{ij}\hat{n}}_{=r_{\prime ij}}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\partial}{\partial u^{k}}\left(r_{\prime ij}\right)=r_{\prime ijk}=\frac{\partial^{3}r}{\partial u^{i}\partial u^{j}\partial u^{k}}
+\]
+
+\end_inset
+
+אם הפונקציה 
+\begin_inset Formula $r$
+\end_inset
+
+ היא 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ אז 
+\begin_inset Formula $r_{\prime ijk}=r_{\prime ikj}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+כתוב את הביטויים הבאים באמצעות 
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{\hspace{4bp}l}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\langle r_{\prime ij},r_{\prime k}\right\rangle g^{ik}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ד.]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\langle \hat{n},r_{\prime pq}\right\rangle g^{qs}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle r_{\prime ij},r_{\prime k}\right\rangle g^{ik}=\left\langle \Gamma_{ij}^{p}r_{\prime p}+g_{ij}\hat{n},r_{\prime k}\right\rangle g^{ik}=\left\langle \Gamma_{ij}^{1}r_{\prime1}+\Gamma_{ij}^{2}r_{\prime2}+b_{ij}\hat{n},r_{\prime k}\right\rangle g^{ik}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\Gamma_{ij}^{1}\left\langle r_{\prime1},r_{\prime k}\right\rangle +\Gamma_{ij}^{2}\left\langle r_{\prime2},r_{\prime k}\right\rangle +b_{ij}\left\langle \hat{n},r_{\prime k}\right\rangle \right)g^{ik}=\cdots
+\]
+
+\end_inset
+
+)נזכור ש
+\begin_inset Formula $g_{ij}=\left\langle r_{\prime i},r_{\prime j}\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left\langle \hat{n},r_{\prime k}\right\rangle =0$
+\end_inset
+
+ שכן 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+ מאונך לווקטורים הנגזרת(
+\begin_inset Formula 
+\[
+\cdots=\left(\Gamma_{ij}^{1}g_{1k}+\Gamma_{ij}^{2}g_{2k}\right)=\left(\Gamma_{ij}^{p}g_{pk}\right)g^{ik}=\Gamma_{ij}^{p}\left(g_{pk}g^{ik}\right)=\cdots
+\]
+
+\end_inset
+
+נשים לב שיש לנו כאן כפל מטריצות 
+\begin_inset Formula $\left(G\cdot G^{-1}\right)_{p}^{\hspace{4bp}i}=g_{pk}g^{ik}$
+\end_inset
+
+!
+\begin_inset Formula 
+\[
+\cdots\Gamma_{ij}^{p}\left(g_{p1}g^{1i}+g_{p1}g^{2i}\right)=\Gamma_{ij}^{p}\left(I\right)_{p}^{\hspace{4bp}i}=\Gamma_{ij}^{p}\cdot\left(I\right)_{p}^{\hspace{4bp}i}=\Gamma_{ij}^{p}\delta_{p}^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ד.]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \hat{n},r_{\prime pq}\right\rangle g^{qs}=\left\langle \hat{n},\Gamma_{pq}^{k}r_{\prime k}+b_{pq}\cdot\hat{n}\right\rangle g^{qs}=\left(\left\langle \hat{n},\Gamma_{pq}^{k}r_{\prime k}\right\rangle +\left\langle \hat{n},b_{pq}\hat{n}\right\rangle \right)g^{qs}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\xcancel{\Gamma_{pq}^{k}\left\langle \hat{n},r_{\prime k}\right\rangle }+b_{pq}\overbrace{\left\langle \hat{n},\hat{n}\right\rangle }^{=1}\right)g^{qs}=b_{pq}\cdot g^{qs}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מבחן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2009-04-05
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הבעיה הזו עוסקת בעקומות במרחב אוקלידי.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ב.]
+\backslash
+setcounter{enumi}{2}
+\end_layout
+
+\end_inset
+
+התבונן בעקומה 
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(8\cos t,10-10\sin t,-6\cos t\right)
+\]
+
+\end_inset
+
+ מצא פרמטר במהירות יחידה, 
+\begin_inset Formula $s$
+\end_inset
+
+, של העקומה.
+\end_layout
+
+\begin_layout Enumerate
+חשב את העקמומיות של העקומה בחלק ב'.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ב.]
+\backslash
+setcounter{enumi}{2}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha'\left(t\right)=\left(-8\sin t,-10\cos t,6\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \alpha'\left(t\right)\right\Vert =\sqrt{64\sin^{2}t+100\cos^{2}t+36\sin^{2}t}=\sqrt{100}=10\neq1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s=\int_{0}^{t}\left\Vert \alpha'\left(u\right)\right\Vert \mathrm{\, d}u=10\cdot t\implies\boxed{t=\frac{s}{10}}
+\]
+
+\end_inset
+
+נציב ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha\left(s\right)=\left(8\cos\frac{s}{10},10-10\sin\frac{s}{10},-6\cos\frac{s}{10}\right)
+\]
+
+\end_inset
+
+עכשיו 
+\begin_inset Formula $\left\Vert \alpha'\left(s\right)\right\Vert \equiv1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+במקרה של פרמטר טבעי, 
+\begin_inset Formula $\kappa=\left\Vert \alpha''\left(s\right)\right\Vert $
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+במקרה של עקומות ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\kappa\ge0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left|\kappa\right|=\kappa$
+\end_inset
+
+.
+ ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ יכולה להיות שלילית - כלומר יכול להיות 
+\begin_inset Formula $\left|\kappa\right|\neq\kappa$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha'\left(s\right)=\left(-\frac{8}{10}\sin\frac{s}{10},-\cos\frac{s}{10},\frac{6}{10}\sin\frac{s}{10}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha''\left(s\right)=\left(-\frac{8}{100}\cos\frac{s}{10},\frac{1}{100}\sin\frac{s}{10},\frac{6}{100}\cos\frac{s}{10}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \alpha''\left(s\right)\right\Vert =\sqrt{\frac{64}{10000}\cos^{2}\frac{s}{10}+\frac{1}{100}\sin^{2}\frac{s}{10}+\frac{36}{10000}\cos^{2}\frac{s}{10}}=\frac{1}{10}=\kappa
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מבחן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2008-02-28
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נתון המשטח הבא ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+M=\left\{ \left(x,y,z\right)\in\mathbb{R}^{3}\middle|z=y^{3}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מהי עקמומיות גאוס 
+\begin_inset Formula $K$
+\end_inset
+
+ של 
+\begin_inset Formula $M$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+הוכיחו שהקו 
+\begin_inset Formula $L=\left\{ \left(x,y,z\right)=\mathbb{R}^{3}\middle|y=z=0\right\} $
+\end_inset
+
+ הוא עקומה גיאודזית על 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+פרמטריזציה עבור 
+\begin_inset Formula $M$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\left(u,v,v^{3}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{\prime1}=\left(1,0,0\right)\qquad r_{\prime2}=\left(0,1,3v^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\left(g_{ij}\right)=\begin{pmatrix}1 & 0\\
+0 & 1+9v^{4}
+\end{pmatrix}\qquad G^{-1}=\left(g^{ij}\right)=\begin{pmatrix}1 & 0\\
+0 & \frac{1}{1+9v^{4}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+הנורמל:
+\begin_inset Formula 
+\[
+\vec{n}=r_{\prime1}\times r_{\prime2}=\begin{vmatrix}\hat{\imath} & \hat{\jmath} & \hat{\kappa}\\
+1 & 0 & 0\\
+0 & 1 & 3v^{2}
+\end{vmatrix}=0\hat{\imath}-3v^{2}\hat{\jmath}+\hat{\kappa}=\left(0,-3v^{2},1\right)
+\]
+
+\end_inset
+
+הנורמל המנורמל:
+\begin_inset Formula 
+\[
+\hat{n}=\frac{\vec{n}}{\left\Vert \vec{n}\right\Vert }=\boxed{\frac{1}{\sqrt{1+9v^{2}}}\left(0,-3v^{2},1\right)}
+\]
+
+\end_inset
+
+נגזרות שניות:
+\begin_inset Formula 
+\[
+r_{\prime11}=\left(0,0,0\right)\qquad r_{\prime12}=r_{\prime21}=\left(0,0,0\right)\qquad r_{\prime22}=\left(0,0,6v\right)
+\]
+
+\end_inset
+
+מקדמי התבנית היסודית השניה:
+\begin_inset Formula 
+\[
+b_{11}=\left\langle r_{\prime11},\hat{n}\right\rangle =0\qquad b_{12}=b_{21}=0\qquad b_{22}=\frac{6v}{\sqrt{1+9v^{2}}}
+\]
+
+\end_inset
+
+)תזכורת: 
+\begin_inset Formula $G^{T}=G$
+\end_inset
+
+, 
+\begin_inset Formula $\left(G^{-1}\right)^{T}=G^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $B^{T}=B$
+\end_inset
+
+ אבל ייתכן 
+\begin_inset Formula $S^{T}\neq S$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}0 & 0\\
+0 & \frac{6v}{\sqrt{1+9v^{2}}}
+\end{pmatrix}\implies S=G^{-1}B=\begin{pmatrix}0 & 0\\
+0 & \frac{6v}{\left(1+9v^{4}\right)^{\nicefrac{3}{2}}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{K=\det S=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל שהקו 
+\begin_inset Formula $L\left\{ \left(x,y,z\right)\middle|y=z=0\right\} $
+\end_inset
+
+ גיאודזי.
+ צריכים להסתכל על המשוואות הגיאודזיות:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{k}+\Gamma_{ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\]
+
+\end_inset
+
+נמצא את סימני כריספוטל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma_{22}^{1} & = & 0\\
+\Gamma_{22}^{2} & = & \frac{18v^{3}}{1+9v^{4}}
+\end{eqnarray*}
+
+\end_inset
+
+המשוואות הגאודזיות בקואורדינטות 
+\begin_inset Formula $\begin{array}{c}
+\gamma^{1}=u\\
+\gamma^{2}=v
+\end{array}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}+\xcancel{\Gamma_{11}^{1}\dot{\gamma}^{1}\dot{\gamma}^{1}}+\xcancel{2\Gamma_{12}^{1}\dot{\gamma}^{1}\dot{\gamma}^{2}}+\xcancel{\Gamma_{22}^{1}\dot{\gamma}^{2}\dot{\gamma}^{2}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{2}+\Gamma_{11}^{2}\dot{\gamma}^{1}\dot{\gamma}^{1}+\Gamma_{12}^{2}\dot{\gamma}^{1}\dot{\gamma}^{2}+\Gamma_{22}^{2}\dot{\gamma}^{2}\dot{\gamma}^{2}=0
+\]
+
+\end_inset
+
+קיבלנו שתי משוואות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{\gamma}^{1}=0\\
+\ddot{\gamma}^{2}+\frac{18v^{3}}{1+9v^{4}}\dot{\gamma}^{2}\dot{\gamma}^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+במונחים של 
+\begin_inset Formula $u,v$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(*\right)\left\{ \begin{array}{c}
+\ddot{u}=0\\
+\ddot{v}+\frac{18v^{3}}{1+9v^{4}}\left(\dot{v}\right)^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+רוצים להראות ש
+\begin_inset Formula $L$
+\end_inset
+
+ מקיים את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+.
+ על 
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{array}{c}
+y=0\\
+z=0
+\end{array}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+ ואם באמת 
+\begin_inset Formula $v=0$
+\end_inset
+
+ המשוואה השניה היא נכונה.
+ נשארים עם:
+\begin_inset Formula 
+\[
+\ddot{u}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{u}=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\left(t\right)=at+b
+\]
+
+\end_inset
+
+כלומר עקומות מהסוג
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(u\left(t\right),v\left(t\right),v\left(t\right)^{3}\right)
+\]
+
+\end_inset
+
+הם קווים גאודזיים.
+ ניקח:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(at+b,0,0\right)
+\]
+
+\end_inset
+
+ואם ניקח למשל 
+\begin_inset Formula $a=1,b=0$
+\end_inset
+
+ מקבלים ש
+\begin_inset Formula $\gamma\left(t\right)=\left(t,0,0\right)$
+\end_inset
+
+ היא קו גאודזי.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+לחלופין
+\end_layout
+
+\begin_layout Standard
+אפשר לנחש מלכתחילה פרמטריזציה 
+\begin_inset Formula $\gamma\left(t\right)=\left(t,0,0\right)$
+\end_inset
+
+ ולראות שזה פותר את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נסתכל על מישור 
+\begin_inset Formula $\mathbb{R}^{2}=\left\{ \left(x,y\right)\middle|x,y\in\mathbb{R}\right\} $
+\end_inset
+
+, כאשר הועא מצויד בתבנית היסודית הראשונה 
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=e^{x+y}\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מצאו את סימני כריסטופל 
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+האם הישר 
+\begin_inset Formula $y=x$
+\end_inset
+
+ הוא עקומה גיאודזית?
+\end_layout
+
+\begin_layout Enumerate
+האם הישר 
+\begin_inset Formula $y=0$
+\end_inset
+
+ הוא עקומה גיאודזית?
+\end_layout
+
+\begin_layout Enumerate
+האם הישר 
+\begin_inset Formula $x=1$
+\end_inset
+
+ הוא עקומה גיאודזית?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Gamma_{11}^{1} & = & \frac{1}{2}\\
+\Gamma_{21}^{1}=\Gamma_{12}^{1} & = & \frac{1}{2}\\
+\Gamma_{22}^{1} & = & -\frac{1}{2}\\
+\Gamma_{11}^{2} & = & -\frac{1}{2}\\
+\Gamma_{12}^{2}=\Gamma_{21}^{2} & = & \frac{1}{2}\\
+\Gamma_{22}^{2} & = & \frac{1}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: הקואורדינטות: 
+\begin_inset Formula $\begin{array}{c}
+\gamma^{1}=x\\
+\gamma^{2}=y
+\end{array}$
+\end_inset
+
+.
+ המשווואת הגיאודזיות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{x}+\frac{1}{2}\left(\dot{x}\right)^{2}+\dot{x}\dot{y}-\frac{1}{2}\left(\dot{y}\right)^{2}=0\\
+\ddot{y}-\frac{1}{2}\left(\dot{x}\right)^{2}+\dot{x}\dot{y}+\frac{1}{2}\left(\dot{y}\right)^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ב.]
+\backslash
+setcounter{enumi}{2}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+ נציב 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{x}+\left(\dot{x}\right)^{2}=0\\
+\ddot{x}+\left(\dot{x}\right)^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+בעצם זה אוטו מד"ר! נציב 
+\begin_inset Formula $\dot{x}=p$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\ddot{x}=\dot{p}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\dot{p}+p^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{p}=-p^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}p}{\mathrm{d}t}=-p^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}p}{p^{2}}=-\mathrm{d}t\qquad/\int
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{1}{p}=-t+c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{p}=t-c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\frac{1}{t-c}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $p=\dot{x}$
+\end_inset
+
+!
+\begin_inset Formula 
+\[
+p=\dot{x}=\frac{1}{t-c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies x=\int\frac{\mathrm{d}t}{\mathrm{d}t-c}=\ln\left|t-c\right|+a=y
+\]
+
+\end_inset
+
+נטען שהעקומה 
+\begin_inset Formula $\gamma\left(t\right)=\left(\ln\left|t-c\right|+a,\ln\left|t-c\right|+a\right)$
+\end_inset
+
+ מקיימת את המשוואות הגאודזיות.
+ נסתכל על 
+\begin_inset Formula $\dot{\gamma}^{T}\left(g_{ij}\right)\dot{\gamma}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\dot{\gamma}=\begin{pmatrix}\frac{1}{t-c}\\
+\frac{1}{t-c}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}e^{x+y} & 0\\
+0 & e^{x+y}
+\end{pmatrix}=\begin{pmatrix}e^{2\ln\left|t-c\right|+2a} & 0\\
+0 & e^{2\ln\left|t-c\right|+2a}
+\end{pmatrix}=\begin{pmatrix}e^{2a}\cdot\left|t-c\right|^{2} & 0\\
+0 & e^{2a}\cdot\left|t-c\right|^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\gamma}^{T}\left(g_{ij}\right)\dot{\gamma}=\begin{pmatrix}\frac{1}{t-c} & \frac{1}{t-c}\end{pmatrix}\cdot\begin{pmatrix}e^{2a}\left(t-c\right)^{2} & 0\\
+0 & e^{2a}\left(t-c\right)^{2}
+\end{pmatrix}\begin{pmatrix}\frac{1}{t-c}\\
+\frac{1}{t-c}
+\end{pmatrix}=2e^{2a}=\textnormal{const}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: להוכיח שהמהירות קבועה זה לא חלק מהתשובה!
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ג.]
+\backslash
+setcounter{enumi}{3}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\boxed{y=0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{x}+\frac{1}{2}\left(\dot{x}\right)^{2}+\dot{x}\dot{y}-\frac{1}{2}\left(\dot{y}\right)^{2}=0\\
+\ddot{y}-\frac{1}{2}\left(\dot{x}\right)^{2}+\dot{x}\dot{y}+\frac{1}{2}\left(\dot{y}\right)^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $y=0$
+\end_inset
+
+ ונישאר רק עם 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{l}
+\ddot{x}+\frac{1}{2}\dot{x}^{2}=0\\
+-\frac{1}{2}\left(\dot{x}\right)^{2}=0\implies\dot{x}=0\implies x=c_{1}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $x=c_{1}$
+\end_inset
+
+ פותר גם את המד"ר הראשונה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+"ננסה" 
+\begin_inset Formula $\begin{array}{c}
+x=t\\
+y=0
+\end{array}$
+\end_inset
+
+ - ואז 
+\begin_inset Formula $\dot{x}=1$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $0+\frac{1}{2}\left(1\right)^{2}\neq0$
+\end_inset
+
+! לכן זה לא קו גאודזי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נציב במשוואות הגאודזיות 
+\begin_inset Formula $x=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{l}
+-\frac{1}{2}\left(\dot{y}\right)^{2}=0\implies y=c_{2}\\
+\ddot{y}+\frac{1}{2}\left(\dot{y}\right)^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+אי אפשר לקבל את 
+\bar under
+כל
+\bar default
+ הישר 
+\begin_inset Formula $x=1$
+\end_inset
+
+ באופן הזה, ולכן הישר 
+\begin_inset Formula $x=1$
+\end_inset
+
+ אינו גאודזי - מקסימום נקודה בודדת.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+מבחן 
+\numeric on
+2010-02-26
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח שפרמטריזציה של משטח מקיימת 
+\begin_inset Formula $g_{12}=b_{12}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[ג.]
+\end_layout
+
+\end_inset
+
+בטא מנה 
+\begin_inset Formula $\frac{\kappa_{1}}{\kappa_{2}}$
+\end_inset
+
+ לגבי משטח המתקבל כפונקציה של מקדמים של תבנית יסודית ראשונה ושנייה
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נתון:
+\begin_inset Formula 
+\[
+G=\begin{pmatrix}g_{11} & 0\\
+0 & g_{22}
+\end{pmatrix}\qquad B=\begin{pmatrix}b_{11} & 0\\
+0 & b_{22}
+\end{pmatrix}\qquad G^{-1}=\begin{pmatrix}\frac{1}{g_{11}} & 0\\
+ & \frac{1}{g_{22}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=G^{-1}B=\begin{pmatrix}\frac{b_{11}}{g_{11}} & 0\\
+0 & \frac{b_{22}}{g_{22}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\kappa_{1}=\frac{b_{11}}{g_{11}}\qquad\kappa_{2}=\frac{b_{22}}{g_{22}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\frac{k_{1}}{k_{2}}=\frac{b_{11}g_{22}}{g_{11}b_{22}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

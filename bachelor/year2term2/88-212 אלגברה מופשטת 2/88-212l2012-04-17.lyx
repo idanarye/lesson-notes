@@ -1,0 +1,1383 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\usepackage{stmaryrd}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R$
+\end_inset
+
+ חוג
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S\subseteq R$
+\end_inset
+
+ קבוצה במרכז של החוג, איבריה רגולריים, סגורה לכפל, 
+\begin_inset Formula $1\in S$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+R\subseteq S^{-1}R=\left\{ \cfrac{a}{s}\middle|\begin{array}{c}
+a\in R\\
+s\in S
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה, 
+\begin_inset Formula $\mathbb{Z}\subseteq\mathbb{Z}\left[\cfrac{1}{2}\right]=\left\langle 2\right\rangle ^{-1}\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\lhd S^{-1}R$
+\end_inset
+
+, אז 
+\begin_inset Formula $A\cap R\lhd R$
+\end_inset
+
+, שכן תמיד ניתן לחתוך אידאל באמצעות תת חוג ולקבל אידאל של התת חוג.
+ לכן ניתן להגדיר הומומורפיזם 
+\begin_inset Formula $\Psi:A\mapsto A\cap R$
+\end_inset
+
+ חח"ע.
+ ההומומורפיזם בכיוון ההפוך 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ הוא על.
+\end_layout
+
+\begin_layout Standard
+אם לוקחים אידאל אמיתי של 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ מקבלים אידיאלים של 
+\begin_inset Formula $R$
+\end_inset
+
+ הזרים ל
+\begin_inset Formula $S$
+\end_inset
+
+.
+ זהו צימצום של ההעתקות, והן נשארות חח"ע ועל בהתאמה.
+\end_layout
+
+\begin_layout Standard
+כל אידאל הוא מהצורה 
+\begin_inset Formula $S^{-1}I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\lhd R$
+\end_inset
+
+ ראשוני אם 
+\begin_inset Formula $II'\subseteq P$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $I\subseteq P$
+\end_inset
+
+ או 
+\begin_inset Formula $I'\subseteq P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P\lhd R$
+\end_inset
+
+ ראשוני וזר ל
+\begin_inset Formula $S$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $R\cap S^{-1}P=P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ברור ש
+\begin_inset Formula $R\cap S^{-1}P\supseteq P$
+\end_inset
+
+.
+ נוכיח את ההכלה בכיוון ההפוך.
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $x\in R\cap S^{-1}P$
+\end_inset
+
+ .
+ אז קיימים 
+\begin_inset Formula $\begin{array}{c}
+a\in P\\
+s\in S
+\end{array}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=\cfrac{a}{s}$
+\end_inset
+
+ וגם קיים 
+\begin_inset Formula $x_{0}\in R$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=\cfrac{x_{0}}{1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+x=\cfrac{x_{0}}{1}=\cfrac{a}{s}\Leftrightarrow a=sx_{0}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+Rs\cdot Rx_{0}R=sRx_{0}R=Rsx_{0}R=RaR\subseteq P
+\]
+
+\end_inset
+
+
+\begin_inset Formula $P$
+\end_inset
+
+ ראשוני ולכן מכיל אחד האידאלים, אבל 
+\begin_inset Formula $s\notin P$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x_{0}\in Rx_{0}R\subseteq P$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x=\cfrac{x_{0}}{1}\in P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $P\lhd R$
+\end_inset
+
+ ראשוני וזר ל
+\begin_inset Formula $S$
+\end_inset
+
+, אז 
+\begin_inset Formula $S^{-1}P$
+\end_inset
+
+ ראשוני.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כל אידאל של 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula $S^{-1}I$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $I\lhd R$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $I_{1}I_{2}\subseteq S^{-1}I_{1}\cdot S^{-1}I_{2}\subseteq S^{-1}P$
+\end_inset
+
+.
+ הרי גם 
+\begin_inset Formula $I_{1}I_{2}\subseteq R$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+I_{1}I_{2}\subseteq S^{-1}P\cap R=P
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{\begin{array}{c}
+\Downarrow\\
+S^{-1}I_{1}\subseteq S^{-1}P
+\end{array}}{I_{1}\subseteq P}$
+\end_inset
+
+ או 
+\begin_inset Formula $\underset{\begin{array}{c}
+\Downarrow\\
+S^{-1}I_{2}\subseteq S^{-1}P
+\end{array}}{I_{2}\subseteq P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $A\lhd S^{-1}R$
+\end_inset
+
+ אידאל ראשוני אמיתי.
+ אז 
+\begin_inset Formula $A\cap R$
+\end_inset
+
+ ראשוני.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $I_{1},I_{2}\lhd R$
+\end_inset
+
+ כך ש
+\begin_inset Formula $I_{1}I_{2}\subseteq A\cap R$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+S^{-1}I_{1}\cdot S^{-1}I_{2}=S^{-1}I_{1}I_{2}\subseteq S^{-1}\left(A\cap R\right)=A
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $A$
+\end_inset
+
+ ראשוני, קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש
+\begin_inset Formula $s^{-1}I_{k}\subseteq A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $I_{k}\subseteq S^{-1}I_{k}\cap R\subseteq A\cap R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi,\Psi$
+\end_inset
+
+ הן התאמה חח"ע ועל בין אידיאלים ראשוניים של 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ לבין אידיאלים ראשוניים של 
+\begin_inset Formula $R$
+\end_inset
+
+ שזרים ל
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה - מיפום
+\end_layout
+
+\begin_layout Standard
+כעת, נניח ש
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות)=חוג קומוטטיבי ללא מחלקי אפס(.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P$
+\end_inset
+
+ אידאל ראשוני של 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ נסתכל על המשלים שלו - 
+\begin_inset Formula $S=R-P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+הוא: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+במרכז
+\end_layout
+
+\begin_layout Itemize
+מכיל איברים רגולריים
+\end_layout
+
+\begin_layout Itemize
+כולל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ לגור לכפל כי 
+\begin_inset Formula $P$
+\end_inset
+
+ ראשוני.
+\end_layout
+
+\begin_layout Standard
+קיבלנו
+\begin_inset Formula 
+\[
+R_{P}=S^{-1}R=\left(R-P\right)^{-1}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ נקרא 
+\bar under
+המיפום
+\bar default
+)
+\lang english
+localization
+\lang hebrew
+( של 
+\begin_inset Formula $R$
+\end_inset
+
+ ב
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $P=5\mathbb{Z}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{p}=\left\{ \cfrac{a}{b}\middle|\begin{array}{c}
+a\in\mathbb{Z}\\
+b\notin P
+\end{array}\right\} =\left\{ \cfrac{a}{b}\middle|5\nmid b\right\} \subseteq\mathbb{Q}
+\]
+
+\end_inset
+
+}אפשר להציג 
+\begin_inset Formula $x=\cfrac{a}{b}$
+\end_inset
+
+ עם 
+\begin_inset Formula $5\nmid b$
+\end_inset
+
+
+\begin_inset Formula $=\mathbb{Z}\left[\cfrac{1}{2},\cfrac{1}{3},\cfrac{1}{7},\cfrac{1}{11},\dots\right]=\{x|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו שהמיפום 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ הוא חוג המכיל את 
+\begin_inset Formula $R$
+\end_inset
+
+ ושבו כל איבר שאינו ב
+\begin_inset Formula $P$
+\end_inset
+
+ הפיך.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טריוויאלי
+\series default
+: 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ קומוטטיבי.
+\end_layout
+
+\begin_layout Standard
+לפי המשפט שהוכחנו,
+\begin_inset Formula 
+\begin{eqnarray*}
+A\cap R & \mapsfrom & A\lhd R_{p}\\
+I\lhd R & \mapsto & \left(R-P\right)^{-1}I
+\end{eqnarray*}
+
+\end_inset
+
+הן התאמות חח"ע ועל בין אידאלים ראשוניים של 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ לאידאלים ראשוניים של 
+\begin_inset Formula $R$
+\end_inset
+
+ שמוכלים ב
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $P$
+\end_inset
+
+ מכיל כל אידאל המוכל ב
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(R-P\right)^{-1}P=P_{P}$
+\end_inset
+
+ מכיל כל אידאל המוכל ב
+\begin_inset Formula $R_{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P_{P}$
+\end_inset
+
+ מכיל כל אידאל המוכל ב
+\begin_inset Formula $R_{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P_{P}$
+\end_inset
+
+ הוא האידאל המקסימלי היחיד
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ חוג מקומי.
+\end_layout
+
+\begin_layout Standard
+בדוגמה, 
+\begin_inset Formula $b\neq s]$
+\end_inset
+
+ ראשוני
+\begin_inset Formula $5\cdot\mathbb{Z}\left[\cdots\right]\subseteq\mathbb{Z}[\cfrac{1}{b}|$
+\end_inset
+
+ האידאל המקסימלי היחיד של 
+\begin_inset Formula $\mathbb{Z}_{5\mathbb{Z}}$
+\end_inset
+
+.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות.
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $P=0$
+\end_inset
+
+.
+ זהו אידאל ראשוני.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=R-0=\left\{ a\neq0\right\} $
+\end_inset
+
+.
+ המיפום נותן
+\begin_inset Formula 
+\[
+S^{-1}R=\left\{ \cfrac{a}{b}\middle|\begin{array}{c}
+a\in R\\
+0\neq b\in R
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש התאמה חח"ע ועל בין אידאלים ראשוניים של 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ לבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא אידאל מקסימלי של 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S^{-1}R$
+\end_inset
+
+ הוא שדה)קל גם לראות זאת ישירות מההגדרה(.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+כל תחום שלמות 
+\begin_inset Formula $R$
+\end_inset
+
+ מוכל בשדה:
+\begin_inset Formula 
+\[
+R\subseteq\left(R-0\right)^{-1}\cdot R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+לדוגמה
+\series default
+: 
+\begin_inset Formula $\mathbb{Z}\subseteq\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+תחומי שלמות הם תת-חוגים של שדות
+\end_layout
+
+\begin_layout Standard
+]תחומים 
+\begin_inset Formula $\subsetneqq$
+\end_inset
+
+ תת-חוגים של חוגי חילוק[
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+לשדה 
+\begin_inset Formula $\left(R-0\right)^{-1}R$
+\end_inset
+
+ קוראים "שדה השברים של 
+\begin_inset Formula $R$
+\end_inset
+
+".
+ מסמנים 
+\begin_inset Formula $q\left(R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\mathbb{Z}\subseteq\mathbb{Q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+q\left(\mathbb{Z}\left[\cfrac{1}{2}\right]\right)=\mathbb{Q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\mathbb{F}=q\left(R\right)$
+\end_inset
+
+, 
+\begin_inset Formula $R\subseteq R'\subseteq\mathbb{F}$
+\end_inset
+
+ אז 
+\begin_inset Formula $q\left(R'\right)=\mathbb{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+q\left(\mathbb{Z}\left[\sqrt{2}\right]\right)=\mathbb{Q}\left[\sqrt{2}\right]=\left\{ a+b\sqrt{2}\middle|a,b\in\mathbb{Q}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+q\left(\mathbb{F}\left[x\right]\right)=\left\{ \cfrac{f\left(x\right)}{g\left(x\right)}\middle|g\neq0\right\} =\mathbb{F}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\mathbb{F}\left[x,y\right]\subseteq\left(\mathbb{F}\left(x\right)\right)\left[y\right]\subseteq\underbrace{\mathbb{F}\left(x\right)\left(y\right)}_{=\left\{ \frac{f\left(x,y\right)}{g\left(x,y\right)}\right\} }=\mathbb{F}\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+q\left(\mathbb{Z}\left[x\right]\right)=\mathbb{Q}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאופן כללי
+\begin_inset Formula 
+\[
+q\left(R\left[x\right]\right)=q\left(R\right)\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q\left(\mathbb{F}\left[\left[x\right]\right]\right)=\mathbb{F}\left(\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+בעיה
+\end_layout
+
+\begin_layout Standard
+לתאר את
+\begin_inset Formula 
+\begin{eqnarray*}
+q\left(\mathbb{Z}\left[\left[x\right]\right]\right) & \subset & \mathbb{Q}\left(\left(x\right)\right)\\
+||\qquad\\
+\left\{ \cfrac{\sum_{n=0}^{\infty}a_{n}x^{n}}{\sum_{n=0}^{\infty}b_{n}x^{n}}\middle|a_{n},b_{n}\in\mathbb{Z}\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+קצת תיאוריה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות.
+ אם 
+\begin_inset Formula $S\subseteq S_{1}\subset R$
+\end_inset
+
+ סגורות לכפל,
+\begin_inset Formula 
+\[
+R\hookrightarrow S^{-1}R\hookrightarrow q\left(R\right)=\left(R-0\right)^{-1}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\mapsto\cfrac{a}{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{a}{s}\mapsto\cfrac{a}{s}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{Z}\subseteq\mathbb{Z}\left(\cfrac{1}{2}\right)\subseteq\mathbb{Z}\left[\cfrac{1}{2},\cfrac{1}{3}\right]\subseteq\mathbb{Z}\left[\cfrac{1}{2},\cfrac{1}{3},\cfrac{1}{7},\cfrac{1}{11},\dots\right]\subseteq\mathbb{Q}
+\]
+
+\end_inset
+
+בפרט אם 
+\begin_inset Formula $P\subseteq P_{1}$
+\end_inset
+
+ שניהם ראשוניים,
+\begin_inset Formula 
+\[
+R\hookrightarrow R_{P}\hookrightarrow R_{P_{1}}\hookrightarrow q\left(R\right)
+\]
+
+\end_inset
+
+בפרט כל החוגים המקומיים שבנינו מקיימים
+\begin_inset Formula 
+\[
+R\subseteq R_{p}\subseteq\mathbb{F}=q\left(R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ תחום שלמות, 
+\begin_inset Formula $\mathbb{F}=q\left(R\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bigcap_{\begin{array}{c}
+R\subseteq L\subseteq\mathbb{F}\\
+L\textnormal{ is local}
+\end{array}}L=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+השיכון 
+\begin_inset Formula $R\to S^{-1}R$
+\end_inset
+
+ הוא על 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ איברי 
+\begin_inset Formula $S$
+\end_inset
+
+ הפיכים כבר ב
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט, אם 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה, 
+\begin_inset Formula $q\left(\mathbb{F}\right)=\mathbb{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $R\subseteq R_{1}\subseteq\mathbb{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}=q\left(R\right)$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+\mathbb{F}=q\left(R\right)\subseteq q\left(R_{1}\right)\subseteq q\left(\mathbb{F}\right)=\mathbb{F}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q\left(R_{1}\right)=\mathbb{F}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

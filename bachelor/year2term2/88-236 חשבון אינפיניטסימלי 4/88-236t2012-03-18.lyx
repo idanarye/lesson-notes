@@ -1,0 +1,669 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מתרגל מיכאל טויטו
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוא"ל 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+DexlessDK@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שעות
+\begin_inset space ~
+\end_inset
+
+קבלה בתאום במייל
+\end_layout
+
+\begin_layout Itemize
+תרגילי בית במתכונת שבועית)בקירוב(
+\end_layout
+
+\begin_layout Itemize
+אתר הקורס ב
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.math-wiki.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+יהיה בוחן
+\end_layout
+
+\begin_layout Part*
+שדות סקלריים ווקטורים
+\end_layout
+
+\begin_layout Section*
+הגדרה - שדה סקלרי
+\end_layout
+
+\begin_layout Standard
+עבור תחום 
+\begin_inset Formula $\Omega\subseteq\mathbb{R}^{n}$
+\end_inset
+
+)בד"כ 
+\begin_inset Formula $n=2,3$
+\end_inset
+
+(, שדה סקלרי הוא פונקציה 
+\begin_inset Formula $f:\underset{\textnormal{dot}\mapsto\textnormal{scalar}}{\Omega\to\mathbb{R}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למשל
+\series default
+: 
+\begin_inset Formula $\begin{array}{c}
+f\left(x,y\right)=x^{2}+y^{2}\\
+f\left(x,y,z\right)=e^{x^{2}}\cdot y-z
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - שדה וקטורי
+\end_layout
+
+\begin_layout Standard
+שדה וקטורי הוא פונקציה 
+\begin_inset Formula $F:\underset{\textnormal{dot}\mapsto\textnormal{vector}}{\Omega\to\mathbb{R}^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ נכתוב
+\begin_inset Formula 
+\[
+F\left(x,y,z\right)=F\left(\vec{r}\right)=\left(F_{1}\left(\vec{r}\right),F_{2}\left(\vec{r}\right),F_{3}\left(\vec{r}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ נכתוב
+\begin_inset Formula 
+\[
+F\left(x,y\right)=F\left(\vec{r}\right)=\left(F_{1}\left(\vec{r}\right),F_{2}\left(\vec{r}\right)\right)=F_{1}\cdot\hat{\imath}+F_{2}\cdot\hat{\jmath}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\hat{\imath}=\left(1,0\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\hat{\jmath}=\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שרטוט
+\end_layout
+
+\begin_layout Standard
+כיצד משרטטים שדה וקטורי נתון?
+\end_layout
+
+\begin_layout Standard
+תשובה: מציבים נקודות שונות עד לקבלת תמונה כללית.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,y\right)=2\hat{\imath}-\hat{\jmath}=\left(2,-1\right)$
+\end_inset
+
+ )שדה וקטורי קבוע(
+\begin_inset Formula 
+\[
+\xymatrix{\textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \, & \,\\
+\textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \, & \,\\
+\textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \textnormal{\ar[rrd]} & \, & \,\\
+ &  &  & \, & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,y\right)=x\hat{\imath}=\left(x,0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{\, & \, & \ar[ll] & \ar[l] & \cdot & \ar[r] & \ar[rr] & \, & \,\\
+\, & \, & \ar[ll] & \ar[l] & \cdot & \ar[r] & \ar[rr] & \, & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,y\right)=x\hat{\imath}+2y\hat{\jmath}=\begin{pmatrix}x\\
+2y
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  &  & \,\\
+ &  &  &  & \,\\
+ & \ar[luu] & \ar[uu] & \ar[ruu] & \,\\
+ & \ar[l] & \left(0,0\right) & \ar[r] & \,\\
+ & \ar[ldd] & \ar[dd] & \ar[rdd] & \,\\
+ &  &  &  & \,\\
+ &  &  &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x,y\right)=\begin{pmatrix}y\\
+-x
+\end{pmatrix}$
+\end_inset
+
+.
+ נשים לב שמתקיים 
+\begin_inset Formula $\begin{pmatrix}y\\
+-x
+\end{pmatrix}=\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}$
+\end_inset
+
+ - זוהי מטריצת סיבוב ב
+\begin_inset Formula $-90^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+כזכור
+\series default
+: מטריצת הסיבוב בזוית 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נגד כיוון השעון היא 
+\begin_inset Formula $R\left(\alpha\right)=\begin{pmatrix}\cos\alpha & -\sin\alpha\\
+\sin\alpha & \cos\alpha
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן, השדה הוקטורי הזה הוא:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & \ar[rrr] &  &  & \,\\
+ &  &  & \ar[rr] &  &  & \,\\
+ &  &  & \ar[r] & \, &  & \,\\
+\ar[uuu] & \ar[uu] & \ar[u] & \cdot & \ar[d] & \ar[dd] & \ar[ddd]\\
+ &  &  & \ar[l] & \, &  & \,\\
+ &  &  & \ar[ll] &  &  & \,\\
+ &  &  & \ar[lll] &  &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+ננסה להגיע משרטוט את השדה הוקטורי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd] & \ar[d] & \ar[ld]\\
+\ar[r] & \cdot & \ar[l]\\
+\ar[ru] & \ar[u] & \ar[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו השדה הווקטורי 
+\begin_inset Formula $F\left(x,y\right)=\left(-x,-y\right)$
+\end_inset
+
+, או 
+\begin_inset Formula $F\left(\vec{r}\right)=-\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd] &  & \ar[d] &  & \ar[ld]\\
+ & \ar[rd] & \ar[d] & \ar[ld]\\
+\ar[r] & \ar[r] & \cdot & \ar[l] & \ar[l]\\
+ & \ar[ru] & \ar[u] & \ar[lu]\\
+\ar[ru] &  & \ar[u] &  & \ar[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו השדה הווקטורי 
+\begin_inset Formula $F\left(\vec{r}\right)=-\cfrac{\vec{r}}{\left\Vert \vec{r}\right\Vert }=\left(\cfrac{-x}{\sqrt{x^{2}+y^{2}}},\cfrac{-y}{\sqrt{x^{2}+y^{2}}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אופרטורים דיפרנציאליים
+\end_layout
+
+\begin_layout Standard
+הסימון 
+\begin_inset Formula $\nabla$
+\end_inset
+
+ "נבלה" מייצג את האופרטור "דל" ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\nabla=\left(\cfrac{\partial}{\partial x_{1}},...\cfrac{\partial}{\partial x_{n}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור שדה סקלרי)דיפרנציאבילי( 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $\nabla f=\left(\cfrac{\partial f}{\partial x_{1}},...\cfrac{\partial f}{\partial x_{n}}\right)$
+\end_inset
+
+ יקרא הגרדיאנט של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+גרדיאנט הופך 
+\bar under
+שדה סקלרי
+\bar default
+ 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ ל
+\bar under
+שדה וקטורי
+\bar default
+ 
+\begin_inset Formula $\nabla f:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}$
+\end_inset
+
+.
+ זהו שדה סקלרי - נצייר אותו ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted2.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f=\left(\cfrac{\partial f}{\partial x},\cfrac{\partial f}{\partial y}\right)=\left(2x,2y\right)=\begin{pmatrix}2x,2y\end{pmatrix}
+\]
+
+\end_inset
+
+זהו שדה סקלרי - נצייר אותו ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  &  &  &  & \,\\
+ &  &  &  &  &  & \,\\
+ &  & \ar[lluu] & \ar[uu] & \ar[rruu] &  & \,\\
+ &  & \ar[ll] & \cdot & \ar[rr] &  & \,\\
+ &  & \ar[lldd] & \ar[dd] & \ar[rrdd] &  & \,\\
+ &  &  &  &  &  & \,\\
+ &  &  &  &  &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+בכל נקודה, 
+\begin_inset Formula $\nabla f$
+\end_inset
+
+ מצביע בכיוון ההשתנות הגבוע ביותר בפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $\left\Vert \nabla f\right\Vert $
+\end_inset
+
+ הוא קצב ההשתנות הזו.
+ 
+\begin_inset Formula $\nabla f$
+\end_inset
+
+ מאונך תמיד למשטיח עקומות רמה של 
+\begin_inset Formula $f$
+\end_inset
+
+)שבהם 
+\begin_inset Formula $f=c$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+שדה ווקטורי 
+\begin_inset Formula $F:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ נקרא 
+\bar under
+שדה פוטנציאלי
+\bar default
+ אם קיים שדה סקלרי 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F=\nabla f$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ שכזו נקראת "
+\bar under
+הפוטנציאל
+\bar default
+" של 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $x^{2}+y^{2}$
+\end_inset
+
+ היא הפוטנציאל של 
+\begin_inset Formula $\left(2x,2y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+דיבגרנץ של שדה וקטורי 
+\begin_inset Formula $F$
+\end_inset
+
+ הוא שדה סקלרי 
+\begin_inset Formula $\textnormal{div}F$
+\end_inset
+
+ המוגדר על ידי
+\begin_inset Formula 
+\[
+\textnormal{div}F=\nabla\cdot F=\underbrace{\left(\cfrac{\partial}{\partial x_{1}},...\cfrac{\partial}{\partial x_{n}}\right)}_{\nabla}\cdot\underbrace{\left(F_{1},F_{2},...F_{n}\right)}_{F}=\cfrac{\partial F_{1}}{\partial x_{1}}+\cfrac{\partial F_{2}}{\partial x_{2}}+...+\cfrac{\partial F_{n}}{\partial x_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את הדיבגרנץ של 
+\begin_inset Formula $F=\left(x^{2}y,z,xyz\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla\cdot f=\textnormal{div}\left(F\right)=\cfrac{\partial}{\partial x}\left(x^{2}y\right)+\cfrac{\partial}{\partial y}\left(z\right)+\cfrac{\partial}{\partial z}\left(xyz\right)=2xy+0+xy=\boxed{3xy}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

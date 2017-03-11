@@ -1,0 +1,814 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+חישוב אורך של עקומות על משטח
+\end_layout
+
+\begin_layout Standard
+נתונה עקומה 
+\begin_inset Formula $\alpha\left(t\right)$
+\end_inset
+
+ במישור, ומשטח הנתונה ע"י פרמטריזציה 
+\begin_inset Formula $X\left(u^{1},u^{2}\right)$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+X_{1}=\cfrac{\partial X}{\partial u^{1}}\qquad X_{2}=\cfrac{\partial X}{\partial u^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=X_{1}^{2}\qquad g_{12}=g_{21}=X_{1}X_{2}\qquad g_{22}=X_{2}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נגדיר את העקומה 
+\begin_inset Formula $\beta\left(t\right)$
+\end_inset
+
+ במרחב הרכבה של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ על 
+\begin_inset Formula $X$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+\beta=X\circ\alpha
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)\Rightarrow\beta\left(t\right)=X\circ\alpha\left(t\right)=X\left(\alpha^{1}\left(t\right),\alpha^{2}\left(t\right)\right)
+\]
+
+\end_inset
+
+אזי האורך של 
+\begin_inset Formula $\beta$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+L_{\beta}=\int_{t_{0}}^{t_{1}}\sqrt{g_{11}\left(\cfrac{\mathrm{d}\alpha_{1}}{\mathrm{d}t}\right)+2g_{12}\left(\cfrac{\mathrm{d}\alpha_{1}}{\mathrm{d}t}\right)\left(\cfrac{\mathrm{d}\alpha_{2}}{\mathrm{d}t}\right)+g_{22}\left(\cfrac{\mathrm{d}\alpha_{2}}{\mathrm{d}t}\right)^{2}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{\beta}=\int_{t_{0}}^{t_{1}}\underbrace{\sqrt{g_{ij}\cfrac{\mathrm{d}\alpha_{i}}{\mathrm{d}t}\cfrac{\mathrm{d}\alpha_{j}}{\mathrm{d}t}}\mathrm{\, d}t}_{\mathrm{d}s}=\int_{t_{0}}^{t_{1}}\sqrt{\left(\cfrac{\mathrm{d}\alpha}{\mathrm{d}t}\right)^{t}\begin{pmatrix}g_{11} & g_{12}\\
+g_{21} & g_{22}
+\end{pmatrix}\left(\cfrac{\mathrm{d}\alpha}{\mathrm{d}t}\right)}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{d}s$
+\end_inset
+
+ - אלמנט אורך של עקומה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מטריקה
+\series default
+: 
+\begin_inset Formula $\mathrm{d}s^{2}=g_{11}\mathrm{d}\alpha_{1}^{2}+2g_{12}\mathrm{d}\alpha_{1}\mathrm{d}\alpha_{2}+g_{22}\mathrm{d}\alpha_{2}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+המקדמים 
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+ נקראים "מקדמי המטריקה"
+\end_layout
+
+\begin_layout Itemize
+התבנית הבי-לינארית 
+\begin_inset Formula $F_{1}\left(u,v\right)=u\left(g_{ij}\right)v$
+\end_inset
+
+ נקראת "תבנית יסודית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+"
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון התחום 
+\begin_inset Formula $\Omega=\left\{ \left(u,v\right)\in\mathbb{R}^{2}\middle|\begin{array}{c}
+0\le u\le2\pi\\
+0\le v\le2\pi
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\left(t\right)=\left(t,t\right)$
+\end_inset
+
+ עקומה ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $0\le t\le2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף א
+\end_layout
+
+\begin_layout Standard
+מהו אורך העקומה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\left(t\right)=\left(t,t\right)$
+\end_inset
+
+.
+ לפי משפט פיטגורס 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $L_{\alpha}=\sqrt{2}\cdot2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ נתונה עם מטריקה אוקלידית 
+\begin_inset Formula $\mathrm{d}s^{2}=\mathrm{d}x^{2}+\mathrm{d}y^{2}$
+\end_inset
+
+.
+ התבנית היסודית הראשונה - 
+\begin_inset Formula $g_{ij}\to F_{1}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{\alpha}=\int_{0}^{2\pi}\sqrt{1\cdot1^{2}+2\cdot0\cdot1\cdot1+1\cdot1^{2}}\mathrm{\, d}t=\int_{0}^{2\pi}\sqrt{2}\mathrm{d}t=\sqrt{2}\cdot2\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ נתון ע"י פרמטריזציה
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X:\Omega\to\mathbb{R}^{3}\\
+\left(u,v\right)\mapsto\left(u\cos v,u\sin v,v\right)
+\end{array}
+\]
+
+\end_inset
+
+מצא את אורך העקומה 
+\begin_inset Formula $X\circ\alpha\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+איך נראה המשטח?
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u$
+\end_inset
+
+ קבוע 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Helix
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(0,0,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(u,0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v=2\pi$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(4,0,2\pi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted13.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{1}\left(t\right)=u\left(t\right)=t\qquad\alpha_{2}\left(t\right)=v\left(t\right)=t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\cfrac{\mathrm{d}\alpha_{1}}{\mathrm{d}t}=1\qquad\cfrac{\mathrm{d}\alpha_{2}}{\mathrm{d}t}=1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X_{u}=\left(\cos v,\sin v,0\right)\\
+X_{v}=\left(-u\sin v,u\cos v,1\right)
+\end{array}\Rightarrow F_{1}=g_{ij}=\begin{pmatrix}1 & 0\\
+0 & u^{2}+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{u}\cdot X_{u}=1\qquad X_{u}=X_{v}=0\qquad X_{v}\cdot X_{v}=u^{2}+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ נתון ע"י פרמטריזציה 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\tilde{X}:\Omega\to\mathbb{R}^{3}\\
+\left(u,v\right)\mapsto\left(\cos u,\sin u,v\right)
+\end{array}
+\]
+
+\end_inset
+
+חשב את האורך של 
+\begin_inset Formula $\tilde{X}=\alpha\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+המשטח הוא גליל.
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}\alpha_{1}}{\mathrm{d}t}=1\qquad\cfrac{\mathrm{d}\alpha_{2}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+נחשב את 
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{u}=\left(-\sin u,\cos u,0\right)\qquad X_{v}=\left(0,0,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{u}\cdot X_{u}=1\qquad X_{u}X_{v}=0\qquad X_{v}X_{v}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ij}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\int_{0}^{2\pi}\mathrm{d}s=\sqrt{2}\cdot2\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נשים לב
+\end_layout
+
+\begin_layout Itemize
+לאותו המשטח 
+\begin_inset Formula $S$
+\end_inset
+
+ יש אינסוף פרמטריזציות שונות.
+\end_layout
+
+\begin_layout Itemize
+לפרמטריזציות שונות יש תבניות יסודיות שונות.
+\end_layout
+
+\begin_layout Part*
+משטחים איזוטריים
+\end_layout
+
+\begin_layout Standard
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משטחים 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ העתקה חלקה 
+\begin_inset Formula $f:S_{1}\to S_{2}$
+\end_inset
+
+ נקראת איזוטריה מקומים אם אורכי עקומות נשמרים תחת ההעתקה.
+\end_layout
+
+\begin_layout Standard
+אם קיימת איזומטריה מקומית בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משטחים 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ הם נקראים איזומטריים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ איזומטריים 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיימות פרמטריזציות כך שלשני המשטחים אותה תבנית יסודית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מישור, גליל וחרוט איזומטריים, כי בשלושתם 
+\begin_inset Formula $g_{ij}=\delta_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סעיף ד של התרגיל
+\end_layout
+
+\begin_layout Standard
+מהו אורך העקומה 
+\begin_inset Formula $\alpha\left(t\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+ כאשר זו נתונה עם המטריקה 
+\begin_inset Formula $\mathrm{d}s^{2}=2e^{2u}\mathrm{d}u^{2}+2e^{2v}\mathrm{d}v^{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=F_{1}=\begin{pmatrix}2e^{2u} & 0\\
+0 & 2e^{2v}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{\alpha}=\int_{0}^{2\pi}\sqrt{2e^{2t}\left(1\right)^{2}+2\cdot0+2e^{2t}\left(1\right)^{2}}\mathrm{\, d}t=\int_{0}^{2\pi}\sqrt{4e^{2t}}\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{2\pi}2e^{t}\mathrm{\, d}t=\left.2e^{t}\right|_{0}^{2\pi}=2e^{2\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

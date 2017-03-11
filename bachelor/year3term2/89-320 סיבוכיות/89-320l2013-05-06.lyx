@@ -1,0 +1,1628 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סיבוכיות מקום
+\end_layout
+
+\begin_layout Standard
+קודם עסקנו בסיבוכיות זמן.
+ היום נעסוק בסיבוכיות מקום, כלומר 
+\series bold
+המקום
+\series default
+ המינימאלי הנדרש לחישוב.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+סיבוכיות מקום
+\emph default
+ עוסקת במקום הנדרש לביצוע החישוב בלי לכלול את אורך הקלט ואורך הפלט.
+\end_layout
+
+\begin_layout Subsection*
+המודל שנעסוק בו הוא המודל הבא:
+\end_layout
+
+\begin_layout Standard
+מודל של מ"ט בעלת שלושה סרטים: קלט, פלט, עבודה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סרט
+\begin_inset space ~
+\end_inset
+
+קלט
+\series default
+: סרט לקריאה בלבד
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סרט
+\begin_inset space ~
+\end_inset
+
+פלט
+\series default
+: סרט לכתיבה בלבד
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סרט
+\begin_inset space ~
+\end_inset
+
+עבודה
+\series default
+: סרט לכתיבה וקריאה.
+ שטח הזיכרון בסרט זה הוא השטח שנמדוד כשנעסוק ב
+\series bold
+סיבוכיות מקום
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+א"ב בינארי)למרות שניתן להשתמש בכל א"ב, כל עוד הוא לא אונארי(
+\end_layout
+
+\begin_layout Section*
+הגדרה - 
+\begin_inset Formula $\textnormal{DSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמר שבעיה מסויימת שייכת למחלקה 
+\begin_inset Formula $\textnormal{DSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+, עבור פונקציה 
+\begin_inset Formula $s\left(\cdot\right)$
+\end_inset
+
+ כלשהי, אם קיימת מכונת טיורינג כנ"ל שבהנתן קלט באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מוציאה פלט מתאים ומשתמשת בלא יותר מאשר 
+\begin_inset Formula $O\left(s\left(n\right)\right)$
+\end_inset
+
+ תאים מסרט כדי להכריע את הבעיה.
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+עבור פונקציה 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ כלשהי,
+\begin_inset Formula 
+\[
+\textnormal{DTIME}\left(t\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(t\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ צעדים ניתן לגעת/לגשת ללכל היותר 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ תאי זיכרון.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{DSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(n\cdot2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+בפרט עבור 
+\begin_inset Formula $s\left(n\right)\ge\Omega\left(\log\left(n\right)\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\textnormal{DSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהינתן מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ וקלט 
+\begin_inset Formula $x$
+\end_inset
+
+, תיאור מלא של המצב החישובי של המכונה אחרי 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים ניתן לתאר ע"י הדברים הבאים:
+\end_layout
+
+\begin_layout Itemize
+תאור תוכן סרט העבודה
+\end_layout
+
+\begin_layout Itemize
+מיקום הראש על סרט העבודה
+\end_layout
+
+\begin_layout Itemize
+מיקום הראש על סרט הקלט
+\end_layout
+
+\begin_layout Itemize
+המצב הפנימי של המכונה
+\end_layout
+
+\begin_layout Standard
+)תוכן סרט הקלט נתון וקבוע ולכן הוא לא חלק מהמצב החישובי, וסרט הפלט הוא לכתיבה
+ בלבד ולא יכול להשפיע על הפעולה הבאה ולכן גם הוא לא חלק מהמצב החישובי(
+\end_layout
+
+\begin_layout Standard
+נשים לב כי אם קונפיגורציות חישוביות מסויימות חוזרות יותר מאשר פעם אחת בזמן
+ ריצת המכונה אזי המכונה נכנסת ללולאה אינסופית, ולכן כמות הקונפיגורציות האפשרית
+ היא חסם עליון על זמן ריצת המכונה.
+ לכן זמן הריצה חסום ע"י
+\begin_inset Formula 
+\[
+\underbrace{2^{s\left(n\right)}}_{\begin{array}{c}
+\textnormal{Possible}\\
+\textnormal{contents}\\
+\textnormal{for}\\
+\textnormal{work-tape}
+\end{array}}\cdot\underbrace{s\left(n\right)}_{\begin{array}{c}
+\textnormal{Place of}\\
+\textnormal{head in}\\
+\textnormal{work-tape}
+\end{array}}\cdot\underbrace{n}_{\begin{array}{c}
+\textnormal{Place of}\\
+\textnormal{head in}\\
+\textnormal{input-tape}
+\end{array}}\cdot\underbrace{c}_{\begin{array}{c}
+\textnormal{Internal}\\
+\textnormal{state of}\\
+\textnormal{machine}
+\end{array}}=n\cdot2^{O\left(s\left(n\right)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המחלקה 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\bigcup_{\begin{array}{c}
+c\\
+l_{c}=c\log n
+\end{array}}\textnormal{DSPACE}\left(l_{c}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה)משפט קודם(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\subseteq P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\neq P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+סיבוכיות מקום של חישוב לא דטרמיניסטי
+\end_layout
+
+\begin_layout Standard
+ניזכר שכאשר עסקנו בסיבוכיות זמן לא דטרמיניסטית, עסקנו בשני מודלים שקולים
+ של חישוב:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+מודל ה
+\lang english
+on-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- למכונה יש מעברים שלא מוגדרים באופן יחיד, והבחירה אינה מעבר לבצע, נעשית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+on-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ע"י המכונה)הקלט מתקבל 
+\begin_inset Formula $\iff$
+\end_inset
+
+ יש מסלול מקבל(
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+מודל ה
+\lang english
+off-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- במקרה זה המכונה היא דטרמיניסטית, אך בנוסף לקלט היא מקבלת עד)שזהו למעשה
+ קלט נוסף(.
+ )הקלט מתקבל 
+\begin_inset Formula $\iff$
+\end_inset
+
+ יש עד שגורם למכונה להתקבל(
+\end_layout
+
+\begin_layout Standard
+בהקשר של סיבוכיות מקום שני המודלים 
+\series bold
+אינם שקולים
+\series default
+! למודל ה
+\lang english
+off-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש יותר כוח)יוכח בתרגיל(, ואנו נעסוק לפיכך במודל ה
+\lang english
+on-line
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהקשר של סיבוכיות מקום לא דטרמיניסטית.
+\end_layout
+
+\begin_layout Section*
+הגדרה - 
+\begin_inset Formula $\textnormal{NSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה מסויימת שייכת למחלקה 
+\begin_inset Formula $\textnormal{NSPACE}\left(s\left(n\right)\right)$
+\end_inset
+
+ אם קיימת מ"ט ל"ד)במודל ה
+\lang english
+on-line
+\lang hebrew
+( המכריעה את הבעיה ומשתמשת בלכל היותר 
+\begin_inset Formula $O\left(s\left(n\right)\right)$
+\end_inset
+
+ תאים מסרט העבודה.
+\end_layout
+
+\begin_layout Section*
+אבחנות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{DSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{NSPACE}\left(s\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{DTIME}\left(t\left(n\right)\right)\subseteq\textnormal{NSPACE}\left(t\left(n\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(?\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המחלקה הלא-דטרמיניסטית המקבילה ל
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $NL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NL=\bigcup_{\begin{array}{c}
+c\\
+l_{c}=c\log n
+\end{array}}\textnormal{NSPACE}\left(l_{c}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\subseteq NL\subseteq P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $s\left(n\right)\ge\log n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{DSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+ראינו קודם ש
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DTIME}\left(2^{O\left(s\left(n\right)\right)}\right)
+\]
+
+\end_inset
+
+נובע משיקול זהה לקודם, שמספר הקונפיגורציות הכולל הוא חסם עליון על זמן ריצת
+ המכונה גם במקרה הלא דטרמיניסטי.
+\end_layout
+
+\begin_layout Section*
+נחזור לשאלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(s\left(n\right)\right)\subseteq\textnormal{DSPACE}\left(?\right)
+\]
+
+\end_inset
+
+ניקח לדוגמה 
+\begin_inset Formula $s\left(n\right)=\log n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(\log n\right)\subseteq\textnormal{DSPACE}\left(?\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - רדוקציית
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\end_layout
+
+\begin_layout Standard
+רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ חשיבה בסיבוכיות זיכרון 
+\begin_inset Formula $\log\left(n\right)$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+x\in L_{1}\iff f\left(x\right)\in L_{2}
+\]
+
+\end_inset
+
+רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא מקרה פרטי של רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Karp
+\lang hebrew
+, שכן 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ החשיבה בסיבוכיות מקום 
+\begin_inset Formula $\log\left(\left|x\right|\right)$
+\end_inset
+
+ חשיבה בסיבוכיות זמן פולינומית ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\emph on
+שלמה ב
+\begin_inset Formula $NL$
+\end_inset
+
+
+\emph default
+ אם 
+\begin_inset Formula $A\in NL$
+\end_inset
+
+, וכן לכל 
+\begin_inset Formula $A'\in NL$
+\end_inset
+
+ קיימת רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $A'$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרת בעייה שהיא שלמה ב
+\begin_inset Formula $NL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+st-Conn=\left\{ \left(G,s,t\right)\middle|\begin{array}{c}
+\textnormal{\ensuremath{G} is directed graph}\\
+\textnormal{where there is a}\\
+\textnormal{route from \ensuremath{s} to \ensuremath{t}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+st-Conn\in NL
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+להלן תיאור של אלגוריתם ל
+\begin_inset Formula $st-Conn$
+\end_inset
+
+ הרץ בסיבוכיות מקום לא דטרמיניסטית חסומה 
+\begin_inset Formula $\log n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אתחל מונה ב
+\numeric on
+1
+\end_layout
+
+\begin_layout Itemize
+בצע כל עוד המונה
+\begin_inset Formula $n\ge$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בחר שכן אקראי של קודקוד נוכחי
+\end_layout
+
+\begin_layout Itemize
+אם השכן האקראי הינו 
+\begin_inset Formula $t$
+\end_inset
+
+, קבל
+\end_layout
+
+\begin_layout Itemize
+שכן אקראי 
+\begin_inset Formula $\gets$
+\end_inset
+
+ קודקוד נוכחי
+\end_layout
+
+\begin_layout Itemize
+קדם מונה ב
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+החזר 
+\emph on
+לא
+\end_layout
+
+\begin_layout Standard
+סיבוכיות המקום של החישוב היא לוגריתמית, כי אנו נדרשים לשמור 
+\series bold
+קדקד נוכחי
+\series default
+ ו
+\series bold
+מונה
+\series default
+, כל אחד מהם דורש 
+\begin_inset Formula $\log n$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $st-Conn$
+\end_inset
+
+ היא 
+\begin_inset Formula $NL$
+\end_inset
+
+ שלמה.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $A\in NL$
+\end_inset
+
+ קיימת רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $st-Conn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $A\in NL$
+\end_inset
+
+, קיימת מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ ל"ד המכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+ בסיבוכיות זיכרון
+\begin_inset Formula $c\log n\ge$
+\end_inset
+
+ עבור כל קלט 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ ו
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע כלשהו.
+ לכן ע"פ חישוב דומה לנעשה בשעה הקודמת, מספר הקונפיגורציות של המכונה עבור
+ קלט בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא לכל היותר
+\begin_inset Formula 
+\[
+\underbrace{2^{c\log n}}_{\begin{array}{c}
+\textnormal{\# of possible}\\
+\textnormal{contents for}\\
+\textnormal{work-tape}
+\end{array}}\cdot\underbrace{c\log n}_{\begin{array}{c}
+\textnormal{\# of possible}\\
+\textnormal{places for head}\\
+\textnormal{in work-tape}
+\end{array}}\cdot\underbrace{n}_{\begin{array}{c}
+\textnormal{\# of possible}\\
+\textnormal{places for head}\\
+\textnormal{in input-tape}
+\end{array}}\cdot\underbrace{c'}_{\begin{array}{c}
+\textnormal{\# of internal}\\
+\textnormal{machine states}
+\end{array}}=O\left(n^{c+2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רדוקציית ה
+\lang english
+log-space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תקבל באופן הבא: בהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ לבעיה 
+\begin_inset Formula $A$
+\end_inset
+
+, ניצור גרף 
+\begin_inset Formula $G_{A}=\left(V_{x},E_{x}\right)$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ יהי קודקוד עבור כל קונפיגורציה של 
+\begin_inset Formula $M$
+\end_inset
+
+ על הקלט 
+\begin_inset Formula $x$
+\end_inset
+
+, וכן קודקוד נוסף מיוחד 
+\begin_inset Formula $v_{\textnormal{accept}}$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ את הקודקוד המתאים לקונפיגורציה ההתחלתית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $E_{x}$
+\end_inset
+
+ תהיה קשת בין כל שתי קונפיגורציות שאפשר לעבור ביניהן ע"י צעד בודד של המכונה,
+ וכן תהיה קשת בין כל קונפיגורציה מקבלת לקודקוד 
+\begin_inset Formula $v_{\textnormal{accept}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\in A$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $st-Conn\ni\left(G_{x}v_{0},v_{\textnormal{accept}}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(G_{x},v_{0},v_{\textnormal{accept}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לסיים יש להראות כי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ חשיבה בסיבוכיות מקום לוגריתמית.
+ נשים לב כי גודל כל קונפיגורציה הוא 
+\begin_inset Formula $O\left(\log\left|x\right|\right)$
+\end_inset
+
+, ובדיקה האם שתי קונפיגורציות הן עוקבות ניתנת להעשות לפיכך בסיבוכיות מקום
+ התלויה בגודל שתי הקונפיגורציות, כלומר סיבוכיות מקום 
+\begin_inset Formula $O\left(\log\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Savitch
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{NSPACE}\left(\log n\right)\subseteq\textnormal{DSPACE}\left(\log^{2}n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+למעשה, די להראות אלגוריתם דטרמיניסטי המכריע את 
+\begin_inset Formula $st-Conn$
+\end_inset
+
+ תוך שימוש במקום 
+\begin_inset Formula $O\left(\log^{2}n\right)$
+\end_inset
+
+ והמשפט ינבע משלמות 
+\begin_inset Formula $st-Conn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האלגוריתם הבא מחשב האם יש בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ מסלול 
+\begin_inset Formula $v$
+\end_inset
+
+ באורך
+\begin_inset Formula $k\ge$
+\end_inset
+
+ 
+\begin_inset Formula $\Phi\left(G,v,u,k\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $k=1$
+\end_inset
+
+, אם ישנה ב
+\begin_inset Formula $G$
+\end_inset
+
+ קשת בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אחרת החזר 
+\emph on
+לא
+\end_layout
+
+\begin_layout Enumerate
+עבור כל קודקוד 
+\begin_inset Formula $w\in V\left(G\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+חשב את 
+\begin_inset Formula $y=\Phi\left(G,u,w,\left\lfloor \frac{k}{2}\right\rfloor \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+חשב את 
+\begin_inset Formula $z=\Phi\left(T,w,v,\left\lfloor \frac{k}{2}\right\rfloor \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+החזר כן אם 
+\begin_inset Formula $y\wedge z=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+החזר 
+\emph on
+לא
+\end_layout
+
+\begin_layout Standard
+קל להיווכח כי האלגוריתם מחזיר כן אם"ם קיים מסלול באורך
+\begin_inset Formula $k\ge$
+\end_inset
+
+ מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+ניתוח סיבוכיות המקום:
+\end_layout
+
+\begin_layout Standard
+לכל הפעלה של הרקורסיה נדרשת סיבוכיות מקום 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ לשמירת קודקוד נוכחי.
+ עומד הרקורסיה 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ ולכן סה"כ סיבוכיות המקום של האלגוריתם היא 
+\begin_inset Formula $O\left(\log n\cdot\log k\right)$
+\end_inset
+
+, ומכיוון שאפשר לפתור את 
+\begin_inset Formula $st-Conn$
+\end_inset
+
+ ע"י קריאה ל
+\begin_inset Formula $\Phi$
+\end_inset
+
+ עם 
+\begin_inset Formula $k=n$
+\end_inset
+
+, נקבל כי סיבוכיות המקום של 
+\begin_inset Formula $st-Conn$
+\end_inset
+
+ היא 
+\begin_inset Formula $O\left(\log^{2}n\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

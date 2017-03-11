@@ -1,0 +1,819 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משטחי סיבוב
+\end_layout
+
+\begin_layout Standard
+נקודת המוצא שלנו היא עקומה 
+\begin_inset Formula $C$
+\end_inset
+
+, במישור 
+\begin_inset Formula $\left[xz\right]$
+\end_inset
+
+, עם פרמטריזציה 
+\begin_inset Formula $\begin{array}{c}
+x=f\left(\phi\right)\\
+z=g\left(\phi\right)
+\end{array}\qquad a\le\phi\le b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עכשיו, נחשוב על העקומה במרחב תלת מימדי.
+ הפרמטריזציה עכשיו היא
+\begin_inset Formula 
+\[
+\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=\begin{pmatrix}f\left(\phi\right)\\
+0\\
+g\left(\phi\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+נשתמש במטריצת סיבוב סביב ציר 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\begin_inset Formula $R_{z}\left(\theta\right)=\begin{bmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+.
+ נשים לב שציר ה
+\begin_inset Formula $\left[z\right]$
+\end_inset
+
+ נשאר במקומו: 
+\begin_inset Formula $R_{z}\left(\theta\right)\underbrace{\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}}_{\hat{z}}=\hat{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נפעיל את מטריצת הסיבוב על העקומה:
+\begin_inset Formula 
+\[
+R_{z}\left(\theta\right)\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=\begin{bmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}f\left(\theta\right)\\
+0\\
+g\left(\theta\right)
+\end{bmatrix}=\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}\qquad\begin{array}{c}
+a\le\phi\le b\\
+0\le\theta\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+זאת הפרמטריזציה של משטח הסיבוב של 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+ היא קו ישר, מהסוג 
+\begin_inset Formula $x=a>0$
+\end_inset
+
+.
+ מקבלים גליל.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פרמטריזציה של העקומה 
+\begin_inset Formula $C$
+\end_inset
+
+ היא 
+\begin_inset Formula $C:\begin{array}{l}
+x\equiv a=f\left(\phi\right)\\
+z=\phi=g\left(\phi\right)
+\end{array}\qquad-\infty<\phi>\infty$
+\end_inset
+
+.
+ אחרי הסיבוב מתקבלת פרמטריזציה:
+\begin_inset Formula 
+\[
+r\left(\theta,\phi\right)=\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}=\begin{pmatrix}a\cos\theta\\
+a\sin\theta\\
+\phi
+\end{pmatrix}\qquad\begin{array}{c}
+-\infty<\phi<\infty\\
+0<\theta<2\pi
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted6.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+קו משופע 
+\begin_inset Formula $C:x=z$
+\end_inset
+
+ יוצא חרוט.
+ פרמטריזציה עבור 
+\begin_inset Formula $C$
+\end_inset
+
+ היא 
+\begin_inset Formula $\begin{array}{c}
+x=\phi\\
+z=\phi
+\end{array}\qquad0<\phi<\infty$
+\end_inset
+
+.
+ פרמטריזציה עבור 
+\begin_inset Formula $M$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r\left(\theta,\phi\right)=\begin{pmatrix}\phi\cos\theta\\
+\phi\sin\theta\\
+\phi
+\end{pmatrix}\qquad\begin{array}{c}
+0<\phi<\infty\\
+0\le\theta\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted7.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מעגל במישור 
+\begin_inset Formula $\left[xz\right]$
+\end_inset
+
+ שרדיוסו 
+\begin_inset Formula $b$
+\end_inset
+
+ ומרכזו 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ - מקבלים טורוס.
+ פרמטריזציה עבור 
+\begin_inset Formula $C$
+\end_inset
+
+ היא 
+\begin_inset Formula $\begin{array}{c}
+x=a+b\cos\phi\\
+z=b\sin\phi
+\end{array}\qquad0\le\phi\le2\pi$
+\end_inset
+
+.
+ חשוב ש
+\begin_inset Formula $b<a$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפרמטריזציה עבור משטח הסיבוב:
+\begin_inset Formula 
+\[
+M:\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}=\begin{pmatrix}\left(a+b\cos\phi\right)\cos\theta\\
+\left(a+b\cos\phi\right)\sin\theta\\
+b\sin\phi
+\end{pmatrix}\qquad\begin{array}{c}
+0\le\phi\le2\pi\\
+0\le\theta\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted8.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הוא פרמטר טבעי עבור העקומה 
+\begin_inset Formula $C:\begin{array}{c}
+x=f\left(\phi\right)\\
+z=g\left(\phi\right)
+\end{array}$
+\end_inset
+
+, אזי התבנית היסודית הראשונה של משטח הסיבוב 
+\begin_inset Formula $M$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}f^{2} & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה עבור 
+\begin_inset Formula $M$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+M:r\left(\theta,\phi\right)=\begin{pmatrix}f\left(\phi\right)\cos\theta\\
+f\left(\phi\right)\sin\theta\\
+g\left(\phi\right)
+\end{pmatrix}\qquad\begin{array}{c}
+a\le\phi\le b\\
+0\le\theta\le2\pi
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{,1}=\frac{\partial r}{\partial\theta}=\begin{pmatrix}-f\left(\theta\right)\sin\theta\\
+f\left(\phi\right)\cos\theta\\
+0
+\end{pmatrix}\qquad r_{,2}=\frac{\partial r}{\partial\phi}=\begin{pmatrix}f'\left(\phi\right)\cos\theta\\
+f'\left(\phi\right)\sin\theta\\
+g'\left(\phi\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=\left\langle r_{,1},r_{,1}\right\rangle =f^{2}\left(\phi\right)\qquad g_{12}=0=g_{21}\qquad g_{22}=f'^{2}\left(\phi\right)+g'^{2}\left(\phi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G=\left(g_{ij}\right)=\begin{pmatrix}f^{2} & 0\\
+0 & f'^{2}+g'^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $f'^{2}+g'^{2}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $G=\begin{pmatrix}f^{2} & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+סימני כריסטובל וקווים גיאודזיים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח רגולרי.
+ הנורמל הוא 
+\begin_inset Formula $\hat{n}=\frac{r_{,1}\times r_{,2}}{\left\Vert r_{,1}\times r_{,2}\right\Vert }$
+\end_inset
+
+.
+ הווקטורים 
+\begin_inset Formula $\left\{ r_{,1},r_{,2},\hat{n}\right\} $
+\end_inset
+
+ הם בת"ל, ולכן בסיס ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ זאת אומרת שוקטור ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ יכול להיכתב כצירוף לינארי 
+\series bold
+יחיד
+\series default
+ של שלושתם.
+\end_layout
+
+\begin_layout Standard
+עבור וקטורי הנגזרות השניות מתקיים
+\begin_inset Formula 
+\begin{eqnarray*}
+r_{,11} & = & \Gamma_{11}^{1}r_{,1}+\Gamma_{11}^{2}r_{,2}+b_{11}\hat{n}\\
+r_{,12}=r_{,21} & = & \Gamma_{12}^{1}r_{,1}+\Gamma_{12}^{2}r_{,2}+b_{12}\hat{n}\\
+r_{,22} & = & \Gamma_{22}^{1}r_{,1}+\Gamma_{22}^{2}r_{,2}+b_{22}\hat{n}
+\end{eqnarray*}
+
+\end_inset
+
+ובאופן כללי:
+\begin_inset Formula 
+\[
+r_{,ij}=\Gamma_{ij}^{1}r_{,1}+\Gamma_{ij}^{2}r_{,2}+b_{ij}\hat{n}
+\]
+
+\end_inset
+
+ובסימוני איינשטיין
+\begin_inset Formula 
+\[
+r_{,ij}=\Gamma_{ij}^{k}r_{,k}+b_{ij}\hat{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה המקדם השלישי הוא דווקא 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+? נסמן במקומו 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula $r_{,ij}=\Gamma_{ij}^{k}r_{,k}+x\hat{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\langle r_{,ij},\hat{n}\right\rangle =\left\langle \xcancel{\Gamma_{ij}^{1}r_{,1}}+\xcancel{\Gamma_{ij}^{2}r_{,2}}+x\hat{n},\hat{n}\right\rangle =\left\langle x\hat{n},\hat{n}\right\rangle 
+\]
+
+\end_inset
+
+זוהי ההגדרה ה
+\series bold
+סתומה
+\series default
+ לסימני כריסטובל 
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\langle r_{,ij},\hat{n}\right\rangle ="x"\left\langle \hat{n},\hat{n}\right\rangle \qquad x=\left\langle r_{,ij},\hat{n}\right\rangle =b_{ij}
+\]
+
+\end_inset
+
+וזוהי בדיוק ההגדרה ל
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+, מקדמי התבנית היסודית השנייה 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ישנה נוסחה מפורשת לסימני כריסטובל:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{k}=\frac{1}{2}g^{km}\left(g_{mi,j}+g_{mj,i}-g_{ij,m}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינדקסים למעלה פירושם מטריצה הופכית.
+ כלומר אם 
+\begin_inset Formula $G=\begin{pmatrix}g_{11} & g_{12}\\
+g_{21} & g_{22}
+\end{pmatrix}$
+\end_inset
+
+ אז 
+\begin_inset Formula $G^{-1}=\begin{pmatrix}g^{11} & g^{12}\\
+g^{21} & g^{22}
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש לנו עקומה 
+\begin_inset Formula $\gamma:\left[a,b\right]\to U\subseteq\mathbb{R}^{2}$
+\end_inset
+
+ ומפה 
+\begin_inset Formula $r:U\to M\subseteq\mathbb{R}^{3}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\rho=r\circ\gamma$
+\end_inset
+
+ נותן עקומה במרחב - 
+\begin_inset Formula $\rho:\left[a,b\right]\to M\subseteq\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+חישוב מפרך נותן
+\begin_inset Formula 
+\[
+\rho''=\left(\ddot{\gamma}^{1}+\Gamma_{ij}^{1}\dot{\gamma}^{i}\dot{\gamma}^{j}\right)r_{,1}+\left(\ddot{\gamma}^{2}+\Gamma_{ij}^{2}\dot{\gamma}^{i}\dot{\gamma}^{j}\right)r_{,2}+\left(b_{ij}\ddot{\gamma}^{i}\dot{\gamma}^{j}\right)\hat{n}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\rho''$
+\end_inset
+
+ פרופורציונלי לנורמל 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+ בלבד)כלומר המקדמים של 
+\begin_inset Formula $r_{,1},r_{,2}$
+\end_inset
+
+ הם אפס(, אומרים ש
+\begin_inset Formula $\rho$
+\end_inset
+
+ היא עקומה גיאודזית.
+ זה נותן שתי משוואות דיפרנציאליות על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{\gamma}^{1}+\Gamma_{ij}^{1}\dot{\gamma}^{i}\dot{\gamma}^{j}=0\\
+\dot{\gamma}^{2}+\Gamma_{ij}^{2}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\end{array}\right.\implies\boxed{\forall_{k=1,2}\ddot{\gamma}^{k}+\Gamma_{ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+מישור 
+\begin_inset Formula $\left[xy\right]$
+\end_inset
+
+: פרמטריזציה למישור היא 
+\begin_inset Formula $r\left(u,v\right)=\left(u,v,0\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+r_{,1}=\left(1,0,0\right)\qquad r_{,2}=\left(0,1,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{,ij}\equiv0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=r_{,ij}=\underbrace{\Gamma_{ij}^{1}}_{0}r_{,1}+\underbrace{\Gamma_{ij}^{2}}_{0}+\underbrace{b_{ij}}\hat{n}
+\]
+
+\end_inset
+
+סימני כריסטובל ומקדמי התבנית היסודית השנייה כולם אפס:
+\begin_inset Formula 
+\[
+\Gamma_{ij}^{k}\equiv0\qquad b_{ij}\equiv0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{bmatrix}0 & 0\\
+0 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+אופרטור הצורה:
+\begin_inset Formula 
+\[
+S=G^{-1}\cdot B=\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+עקמומיות גאוס:
+\begin_inset Formula 
+\[
+K=\det S=0
+\]
+
+\end_inset
+
+והממוצעת:
+\begin_inset Formula 
+\[
+H=\frac{1}{2}\textnormal{tr }S=0
+\]
+
+\end_inset
+
+המשוואות הגאודזיות הן
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\ddot{\gamma}^{1}=0\\
+\ddot{\gamma}^{2}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+במקרה של מישור יותר מקובל לסמן 
+\begin_inset Formula $\begin{array}{c}
+\gamma^{1}=x\\
+\gamma^{2}=y
+\end{array}$
+\end_inset
+
+.
+ המשוואות הגאודזיות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{ccccc}
+\ddot{x}=0 & \implies & \dot{x}=v_{1} & \implies & x=x_{0}+v_{1}t\\
+\ddot{y}=0 & \implies & \dot{y}=v_{2} & \implies & y=y_{0}+v_{2}t
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x_{0}+v_{1}t\\
+y_{0}+v_{2}t
+\end{pmatrix}=\begin{pmatrix}x_{0}\\
+y_{0}
+\end{pmatrix}+t\cdot\begin{pmatrix}v_{1}\\
+v_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+קווים ישרים = ווקטור כיוון 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ 
+\begin_inset Formula $t$
+\end_inset
+
+ + נקודת מוצא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מסקנה: במקרה של מישור, הקווים הגיאודזיים הם כל הישרים.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,1489 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אופרטורים צמודים לעצמים,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hessian
+\lang hebrew
+, חתכי חרוט
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+2.1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ליכסון אורתוגונלי
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+לכל מטריצה ממשית 
+\bar under
+סימטרית
+\bar default
+ 
+\begin_inset Formula $M\in\textnormal{Mat}_{n,n}\left(\mathbb{R}\right)$
+\end_inset
+
+ יש ערך עצמי ממשי
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+יש מטריצות בלי ערך עצמי ממשי - למשל 
+\begin_inset Formula $\begin{bmatrix}0 & -1\\
+1 & 0
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נגיד שאופרטור 
+\begin_inset Formula $P:V\to V$
+\end_inset
+
+ הוא צמוד לעצמו אם"ם 
+\begin_inset Formula $\left\langle Pv,w\right\rangle =\left\langle v,Pw\right\rangle $
+\end_inset
+
+ לכל 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+לכל אופרטור ממשי צמוד לעצמו יש ערך עצמי ממשי.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+כל מטריצה ממשית סימטרית ניתנת ללכסון אותרוגונלי.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=P\Lambda P^{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ אלכסונית, 
+\begin_inset Formula $P$
+\end_inset
+
+ מטריצה אורתוגונלית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ נקראת אורתוגונלית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+יותר נכון היה לקרוא לזה מטריצה אורתונורמלית, כי היא מורכבת מווקטורים אורתונורמלי
+ים, אבל זה השם המקובל.
+\end_layout
+
+\end_inset
+
+ אם 
+\begin_inset Formula $P^{t}=P^{-1}$
+\end_inset
+
+.
+ במילים אחרות - 
+\begin_inset Formula $P^{t}P=PP^{t}=I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ מטריצה 
+\begin_inset Formula $M=P\Lambda P^{t}$
+\end_inset
+
+ היא בהכרח סימטרית
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+ 
+\begin_inset Formula $M^{t}=\left(P\Lambda P^{t}\right)^{t}=\left(P^{t}\right)^{t}\Lambda^{t}P^{t}=P\Lambda^{t}P^{t}=P\Lambda P^{t}=M$
+\end_inset
+
+)
+\begin_inset Formula $\Lambda^{t}=\Lambda$
+\end_inset
+
+ כי 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ אלכסונית ולכן סימטרית(
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הוכחה של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נתבונן באופרטור 
+\begin_inset Formula $P_{S}:\underset{v\mapsto Sv}{\mathbb{R}^{n}\to\mathbb{R}^{n}}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $P_{S}$
+\end_inset
+
+ הוא צמוד לעצמו.
+ לכן קיים ערך עצמי 
+\begin_inset Formula $\lambda_{1}\in\mathbb{R}$
+\end_inset
+
+ וגם וקטור עצמי המתאים 
+\begin_inset Formula $v_{1}\neq0$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left|v_{1}\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $V_{1}=V=\mathbb{R}^{n}$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $V_{2}\subset V_{1}$
+\end_inset
+
+ שהוא משלים אורתוגונלי של הישר 
+\begin_inset Formula $\mathbb{R}_{V_{1}}$
+\end_inset
+
+)הישר הנפרש ע"י 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+V_{1}=\mathbb{R}_{V_{1}}\overset{\perp}{\oplus}V_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שני אופרטורים:
+\begin_inset Formula 
+\[
+P_{S}:V_{1}\to V_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.P_{S}\right|_{V_{2}}:V_{2}\to V_{2}
+\]
+
+\end_inset
+
+גם כן צמוד לעצמו, לכן אם 
+\begin_inset Formula $w\in V_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\langle w,v_{1}\right\rangle =0$
+\end_inset
+
+, לכן 
+\begin_inset Formula 
+\[
+\left\langle P_{S}\left(w\right),v_{1}\right\rangle =\left\langle w,P\left(v_{1}\right)\right\rangle =\left\langle w,\lambda_{1}v_{1}\right\rangle =\lambda_{1}\left\langle w,v_{1}\right\rangle =0
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $P_{S}\left(w\right)\in V_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשארנו עם
+\begin_inset Formula 
+\[
+\left.P_{S}\right|_{V_{2}}:V_{2}\to V_{2}
+\]
+
+\end_inset
+
+בוחרים שוב ערך עצמי של 
+\begin_inset Formula $\left.P_{S}\right|_{V_{2}}$
+\end_inset
+
+ וגם וקטור עצמי 
+\begin_inset Formula $v_{2}\in V_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|v_{2}\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+V_{3}=\left\{ w\in V_{2}\middle|\left\langle w,v_{2}\right\rangle =0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dim\left(V_{3}\right)=n-2
+\]
+
+\end_inset
+
+וכו'.
+\end_layout
+
+\begin_layout Standard
+מוצאים 
+\begin_inset Formula $\lambda_{1},\lambda_{2},...\lambda_{n}$
+\end_inset
+
+ וגם וקטורים 
+\begin_inset Formula $v_{1},v_{2},...v_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Lambda=\begin{bmatrix}\lambda_{1} &  & 0\\
+ & \ddots\\
+0 &  & \lambda_{n}
+\end{bmatrix}$
+\end_inset
+
+, וגם 
+\begin_inset Formula $P=\begin{bmatrix}v_{1} & \cdots & v_{n}\end{bmatrix}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+זוהי מטריצה ריבועית, שכן 
+\begin_inset Formula $v_{1},...v_{n}$
+\end_inset
+
+ וקטורי עמודות - 
+\begin_inset Formula $P=\begin{bmatrix}\uparrow &  & \uparrow\\
+v_{1} & \cdots & v_{n}\\
+\downarrow &  & \downarrow
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $P=P^{t}$
+\end_inset
+
+, 
+\begin_inset Formula $P=P^{-1}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $P^{t}SP=P^{t}P\Lambda P\Lambda P^{t}P$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\boxed{S=P\Lambda P^{t}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח ש
+\begin_inset Formula $S=P\Lambda P^{t}$
+\end_inset
+
+, מספיק להוכיח 
+\begin_inset Formula $S_{V_{i}}=\left(P\Lambda P^{t}\right)_{V_{i}},i=1,...n$
+\end_inset
+
+.
+ נוכיח זאת לכל ה
+\begin_inset Formula $i$
+\end_inset
+
+ים ביחד:
+\begin_inset Formula 
+\[
+S\begin{bmatrix}v_{1} & \cdots & v_{n}\end{bmatrix}\overset{?}{=}P\Lambda P^{t}\begin{bmatrix}v_{1} & \cdots & v_{n}\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+SP\overset{?}{=}P\Lambda P^{t}P=P\Lambda I_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+SP\overset{?}{=}P\Lambda
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{V_{i}}=\lambda_{i}v_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}\lambda_{1}v_{1} & \cdots & \lambda_{n}v_{n}\end{bmatrix}=P\Lambda
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Lambda=\begin{bmatrix}\lambda_{1}\\
+ & \ddots\\
+ &  & \lambda_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det S=\lambda_{1}\lambda_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}S=\lambda_{1}+\lambda_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+2.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חתכי חרוט
+\end_layout
+
+\begin_layout Standard
+הסיבה שקוראים להם חתכי חרוט היא שבאופן גיאומטרי ניתן להגדיר אותם על ידי
+ חרוט)כפול( - לוקחים חרוט וחותכים אותו למשל על ידי מישור הנמצא בזווית קטנה
+ לבסיסים - ומקבלים אליפסה.
+ אם חותכים אותו ע"י ישר הניצב לבסיסים - מקבלים היפרבולה.
+ אם חותכים אותו במקביל לקו המגדיר את החרוט - מקבלים פרבולה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תחך חרוט הוא עקומה במישור מוגדרת ע"י משוואה ריבועית:
+\begin_inset Formula 
+\[
+\left(*\right)\qquad ax^{2}+2bxy+cy^{2}+dx+ey+f=0
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $a,b,c,d,e,f\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לכתוב את זה בצורה יותר קומפקטית.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $X=\begin{bmatrix}z\\
+y
+\end{bmatrix}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $S=\begin{pmatrix}a & b\\
+b & c
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $T=\begin{bmatrix}d & e\end{bmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ היא שקולה למשוואה 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(**\right)\qquad X^{t}SX+TX+f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+עד כדי טרנספורמציה אורתוגונלית, כל חתך חרוט ניתן לביטוי בצורה "אלכסונית"
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+\lambda_{2}y'^{2}+d'x'+e'y'+f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+משמעות
+\series default
+ נפתרנו מהמקדם המעורב 
+\begin_inset Formula $2bxy$
+\end_inset
+
+.
+ היינו צריכים מקדם מעורב בגלל שלא בטוח שהמישור שחותך את החרוט מקביל/מאונך
+ לצירים.
+ ניתן להיפטר מהחלק הזה ע"י בחירת מערכת צירים לפי החתך.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נחזור ל
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+X^{t}SX+TX+f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן ללכסן את 
+\begin_inset Formula $S$
+\end_inset
+
+, כי היא סימטרית לפי ההגדרה.
+ לכן לפי משפט לכסון אורתוגונלי, 
+\begin_inset Formula $S=P\Lambda P^{t}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\Lambda=\begin{bmatrix}\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{bmatrix}$
+\end_inset
+
+ ואילו 
+\begin_inset Formula $P=\begin{bmatrix}v_{1} & v_{2}\end{bmatrix}$
+\end_inset
+
+ היא מטריצה אורתוגונלית.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ הופכת ל
+\begin_inset Formula 
+\[
+X^{t}P\Lambda\underbrace{P^{t}X}_{=X'}+TX+f=0
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $\left(X'\right)^{t}=X^{t}P^{tt}=X^{t}P$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+\left(X'\right)^{t}\Lambda X'+TX+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X'=P^{t}X
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+PX'=\underbrace{PP^{t}}_{I}X=X
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X=PX'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(X'\right)^{t}\Lambda X'+\underbrace{TP}_{T'}X'+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(X'\right)^{t}\Lambda X'+T'X'+f=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נסמן 
+\begin_inset Formula $X'=\begin{bmatrix}x'\\
+y'
+\end{bmatrix}$
+\end_inset
+
+ אזי מקבלים
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+\lambda_{2}y'^{2}+T'X'+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T'=\begin{bmatrix}d' & e'\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+2.3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פירוט של חתכי חרוט
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\det S\neq0$
+\end_inset
+
+.
+ אזי עד כדי הזזה ניתן לכתוב את חתך חרוט ע"י
+\begin_inset Formula 
+\[
+\lambda_{1}x''^{2}+\lambda_{2}y''^{2}+f'=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+\lambda_{2}y'^{2}+d'x'+e'y'+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}\neq0\qquad\lambda_{2}\neq0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+d'x'=\lambda_{1}\left(x'^{2}+2\cfrac{d'}{2\lambda_{1}}x'+\left(\cfrac{d'}{2\lambda_{1}}\right)^{2}-\left(\cfrac{d'}{2\lambda_{1}}\right)^{2}\right)=\lambda_{1}\left(\left(x'+\cfrac{d'}{2\lambda_{1}}\right)^{2}-\left(\cfrac{d'}{2\lambda_{1}}\right)^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $x''=x'+\cfrac{d'}{2\lambda_{1}}$
+\end_inset
+
+.
+ אז מקבלים
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+d'x'=\lambda_{1}x''^{2}-\lambda_{1}\left(\cfrac{d'}{2\lambda_{1}}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן דומה ניתן להיפתר מ
+\begin_inset Formula $e'y'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+חתך חרוט
+\begin_inset Formula 
+\[
+\lambda_{1}x''^{2}+\lambda_{2}y''^{2}+f'=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נקרא אליפסה אם 
+\begin_inset Formula $\lambda_{1}\lambda_{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נקרא היפרבולה אם 
+\begin_inset Formula $\lambda_{1}\lambda_{2}<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה של אליפסה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{x''^{2}}{a^{2}}+\cfrac{y''^{2}}{b^{2}}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה של היפרבולה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{x''^{2}}{a^{2}}-\cfrac{y''^{2}}{b^{2}}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+xy=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}-y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה יוצא פרבולה - אבל במערכת צירים אחרת)שלא מקבילה למערכת הצירים הרגילה(:
+\begin_inset Formula 
+\[
+x^{2}-y^{2}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\underbrace{\cfrac{x-y}{\sqrt{2}}}_{x''}\right)\left(\underbrace{\cfrac{x+y}{\sqrt{2}}}_{y''}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x''y''=\cfrac{1}{2}
+\]
+
+\end_inset
+
+וכמובן, שינוי הקבוע פשוט משנה את הגודל.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+חתח חרוט נקרא פרבולה אם מתקיימים שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תנאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{rank}S=1$
+\end_inset
+
+)מטריצה סינגולרית, 
+\begin_inset Formula $\det S=0$
+\end_inset
+
+( 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{1}\lambda_{2}=0$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\lambda_{1}^{2}+\lambda_{2}^{2}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מחבר הלינארי 
+\begin_inset Formula $\left(d'x',e'y'\right)$
+\end_inset
+
+ המתאים לערך עצמי 
+\begin_inset Formula $\lambda_{i}=0$
+\end_inset
+
+ הוא שונה מאפס.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $1x^{2}+0y^{2}+e'y=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $e'=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+חתך חרוט
+\begin_inset Formula 
+\[
+ax^{2}+2bxy+cy^{2}+dx+xy+f=0
+\]
+
+\end_inset
+
+הוא אליפסה אם 
+\begin_inset Formula $ac-b^{2}>0$
+\end_inset
+
+ והוא היפרבולה אם 
+\begin_inset Formula $ac-b^{2}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det S=ac-b^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det S=\lambda_{1}\lambda_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+2.4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משטחים ריבועיים
+\end_layout
+
+\begin_layout Standard
+משטח 
+\begin_inset Formula $M$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ מוגדר ע"י
+\begin_inset Formula 
+\[
+ax^{2}+2bxy+cy^{2}+2dxz+fz^{2}+2gyz+hx+iy+jz+k=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לכתוב את זה בצורה יותר קצרה, באמצעות וקטורים:
+\begin_inset Formula 
+\[
+X=\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}\qquad S=\begin{bmatrix}a & b & d\\
+b & c & g\\
+d & g & f
+\end{bmatrix}\qquad T=\begin{bmatrix}h & i & j\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X^{t}SX+TX+k=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי משפט ליכסון אורתוגונלי:
+\begin_inset Formula 
+\[
+S=P\Lambda P^{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X^{t}P\Lambda\underbrace{P^{t}X}_{X'}+TX+k=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(X'\right)^{t}\Lambda X'+T'X'+k=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+PX'=PP^{t}X\\
+X=PX'
+\end{array}\Rightarrow T'=TP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X'=\begin{pmatrix}x'\\
+y'\\
+z'
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda=\begin{bmatrix}\lambda_{1} &  & 0\\
+ & \lambda_{2}\\
+0 &  & \lambda_{3}
+\end{bmatrix}$
+\end_inset
+
+, ונקבל
+\begin_inset Formula 
+\[
+\lambda_{1}x'^{2}+\lambda_{2}y'^{2}+\lambda_{3}z'^{2}+T'X'+k=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+משוואת הכדור:
+\begin_inset Formula 
+\[
+x^{2}+y^{2}+z^{2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

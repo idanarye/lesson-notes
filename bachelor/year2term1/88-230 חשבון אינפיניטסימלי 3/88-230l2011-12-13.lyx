@@ -1,0 +1,772 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+הכללה של מושג הדיפרנציאביליות לפונקציות וקטוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f:\mathbb{R}^{k}\to\mathbb{R}^{l}
+\]
+
+\end_inset
+
+ מוגדרת בסביבה של נק.
+ 
+\begin_inset Formula $x^{0}\in\mathbb{R}^{k}$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת דיפרנציאבילית בנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ אם 
+\bar under
+קיימת
+\bar default
+ 
+\bar under
+העתקה לינארית
+\bar default
+ 
+\begin_inset Formula $L:\mathbb{R}^{k}\to\mathbb{R}^{l}$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\left\Vert \left[f\left(x^{0}+h\right)-f\left(x^{0}\right)\right]-Lh\right\Vert =o\left(\left\Vert h\right\Vert \right)
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\left\Vert h\right\Vert <r$
+\end_inset
+
+.
+ כלומר
+\begin_inset Formula 
+\[
+\left(*\right)\hspace{1em}\cfrac{f\left(x^{0}+h\right)-\overset{the\, error}{\overbrace{f\left(x\right)-Lh}}}{\left\Vert h\right\Vert }\xrightarrow[h\to0]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+ידוע כי
+\begin_inset Formula 
+\[
+f\left(u\right)\to v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Updownarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i}f\left(u\right)_{i}\to v_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Updownarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(**\right)\forall_{j=1,...l}\cfrac{f_{j}\left(x^{0}+h\right)-f_{j}\left(x^{0}\right)-\left(Lh\right)_{j}}{\left\Vert h\right\Vert }\xrightarrow[h\to0]{}0
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $L_{j}:=h^{\in\mathbb{R}^{k}}\to\left(Lh\right)_{h}\in\mathbb{R}$
+\end_inset
+
+ היא פונקציונאל לינארי.
+ כלומר 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ שקול לכך שקיימים פונקציונאלים לינאריים 
+\begin_inset Formula $L_{j}$
+\end_inset
+
+)
+\begin_inset Formula $j=1,...l$
+\end_inset
+
+( כך ש
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ מתקיים)עם הקשר 
+\begin_inset Formula $L_{j}h\doteqdot\left(Lh\right)_{j}$
+\end_inset
+
+( וזה 
+\uuline on
+שקול
+\uuline default
+ לפי ההגדרה הקודמת 
+\begin_inset Formula $l=1$
+\end_inset
+
+ לכך שכל הרכיבים 
+\begin_inset Formula $f_{j}$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ הם דיפרנציאבילים בנקודה 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+, ובמקרה זה הדיפרנציאל הוא הפונקציונאל הלינארי כלומר:
+\begin_inset Formula 
+\[
+\left.df_{j}\right|_{x^{0}}h=L_{j}h=\left(Lh\right)_{j}\left(***\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $df_{j}$
+\end_inset
+
+ נקבע באופן יחיד ע"י 
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+, הרי 
+\begin_inset Formula $L$
+\end_inset
+
+ נקבע באופן יחיד ע"י 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ ונקרא 
+\bar under
+הדיפרנציאל
+\bar default
+ של 
+\bar under
+הפונקציה הוקטורית
+\bar default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ ומסומן 
+\begin_inset Formula $\left.df\right|_{x^{0}}$
+\end_inset
+
+)או 
+\begin_inset Formula $df\left(x^{0}\right)$
+\end_inset
+
+(.
+ הנוסחא 
+\begin_inset Formula $\left(***\right)$
+\end_inset
+
+ נראית עתה כך:
+\begin_inset Formula 
+\[
+\forall_{j=1,...l}\left[\left.df\right|_{x^{0}}h\right]_{j}=\left.df_{j}\right|_{x^{0}}h=h\cdot\left.\nabla f_{j}\right|_{x^{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $f\left(x,y\right)\to\left(\arctan\cfrac{y}{x},\log\left(x^{2}+y^{2}\right)\right)$
+\end_inset
+
+)
+\begin_inset Formula $f:\mathbb{R}^{2}\backslash\left(0\times\mathbb{R}\right)\to\mathbb{R}^{2}$
+\end_inset
+
+ כי 
+\begin_inset Formula $x\ne0$
+\end_inset
+
+(.
+ דיפרנציאבלית כי הרכיבים גזירים עם נגזרת רציפה בכל התחום 
+\begin_inset Formula $D=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\middle|x\ne0\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cfrac{df}{dx}\right)=\left(\cfrac{d\left(f_{1},f_{2}\right)}{d\left(x,y\right)}\right)=\begin{pmatrix}\cfrac{df_{1}}{dx} & \cfrac{df_{2}}{dx}\\
+\cfrac{df_{1}}{dy} & \cfrac{df_{2}}{dy}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}\cfrac{\cfrac{-y}{x^{2}}}{1+\left(\cfrac{y}{x}\right)^{2}} & \cfrac{2x}{x^{2}+y^{2}}\\
+\cfrac{\cfrac{1}{x}}{1+\left(\cfrac{y}{x}\right)^{2}} & \cfrac{2y}{x^{2}+y^{2}}
+\end{pmatrix}=\begin{pmatrix}\cfrac{-y}{x^{2}+y^{2}} & \cfrac{2x}{x^{2}+y^{2}}\\
+\cfrac{x}{x^{2}+y^{2}} & \cfrac{2y}{x^{2}+y^{2}}
+\end{pmatrix}=\cfrac{1}{x^{2}+y^{2}}\begin{pmatrix}-y & 2x\\
+x & 2y
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.df\right|_{x^{0}}h=\begin{pmatrix}h_{1} & h_{2}\end{pmatrix}\begin{pmatrix}-y & 2x\\
+x & 2y
+\end{pmatrix}\cfrac{1}{x^{2}+y^{2}}=\left(\cfrac{-yh_{1}+xh_{2}}{x^{2}+y^{2}},\cfrac{2xh_{1}+2yh_{2}}{x^{2}+y^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+נגזרות מסדר גבוה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונ' 
+\bar under
+ממשית
+\bar default
+ המוגדרת על קבוצה 
+\begin_inset Formula $D\subset\mathbb{R}^{k}$
+\end_inset
+
+ שעבורה כל הנגזרות החלקיות 
+\begin_inset Formula $\cfrac{df}{dx_{i}}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{i=1,...k}$
+\end_inset
+
+ קיימות ב
+\begin_inset Formula $D$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\cfrac{df}{dx_{i}}$
+\end_inset
+
+ הן 
+\begin_inset Formula $k$
+\end_inset
+
+ פונקציות ממשיות המוגדרות ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אם נגזרותיהן החלקיות קיימות שם, 
+\begin_inset Formula $\cfrac{d}{dx_{j}}\left(\cfrac{df}{dx_{i}}\right)$
+\end_inset
+
+ נקראות נגזרות מעורבות מסדר שני ב
+\begin_inset Formula $D$
+\end_inset
+
+, וכך ניתן להמשיך אינדוקטיבית ולהגדיר נגזרות מעורבות מסדר כלשהו 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cfrac{d}{dx_{i_{1}}}\right)\left(\cfrac{d}{dx_{i_{2}}}\right)...\left(\cfrac{d}{dx_{i_{n}}}\right)f\doteqdot\cfrac{d^{n}}{dx_{i_{1}}dx_{i_{2}}...dx_{i_{n}}}f
+\]
+
+\end_inset
+
+יש תנאים שמותר להתעלם מסדר הגזירות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מינוח
+\series default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגזרת מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא הפונקציה עצמה.
+\end_layout
+
+\begin_layout Itemize
+פונ' 
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת ממחלקה 
+\begin_inset Formula $C^{n}$
+\end_inset
+
+)עם 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+( אם כל נגזרותיה המעורבות 
+\bar under
+עד לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\bar default
+ קיימות ורציפות בקבוצה 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תנאי מספיק לאפשרות של חילוף סדר הגזירה
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונ' ממשית ומגדרת בסביבה 
+\begin_inset Formula $D$
+\end_inset
+
+ של נק' 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ונניח:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $f$
+\end_inset
+
+ ממחלקה 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( עבור זוג אינדקסים מסויים 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+)
+\begin_inset Formula $i\ne j$
+\end_inset
+
+(, 
+\begin_inset Formula $\cfrac{d^{2}f}{dx_{j}dx_{i}}$
+\end_inset
+
+ קיימת ב
+\begin_inset Formula $D$
+\end_inset
+
+ ורציפה בנקודה 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אזי
+\series default
+: 
+\begin_inset Formula $\left.\cfrac{d^{2}f}{dx_{i}dx_{j}}\right|_{x^{0}}$
+\end_inset
+
+ קיימת ומתלכדת עם 
+\begin_inset Formula $\left.\cfrac{d^{2}f}{dx_{j}dx_{i}}\right|_{x^{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על כן, אם 
+\begin_inset Formula $f$
+\end_inset
+
+ ממחלקה 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\cfrac{d^{2}f}{dx_{i}dx_{j}}=\cfrac{d^{2}f}{dx_{j}dx_{i}}$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון שהמשפט דן רק בגזירות לפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתנים 
+\begin_inset Formula $x_{i},x_{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i,j$
+\end_inset
+
+ קבועים, מספיק להוכיח את המשפט עבור פונ' 
+\begin_inset Formula $f$
+\end_inset
+
+ של שני משתנים, ונקרא לנוחיות הסימום 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נתון
+\series default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $f$
+\end_inset
+
+ ממחלקה 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ בסביבה ממשית של נקודה 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( 
+\begin_inset Formula $f_{xy}$
+\end_inset
+
+ קיימת בסביבה ורציפה בנק' 
+\begin_inset Formula $\left(x^{0},y^{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+צ"ל: 
+\begin_inset Formula $\left.f_{yx}\right|_{\left(x^{0},y^{0}\right)}$
+\end_inset
+
+ קיימת ו
+\begin_inset Formula $f_{yx}\left(x^{0},y^{0}\right)=f_{xy}\left(x^{0},y^{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

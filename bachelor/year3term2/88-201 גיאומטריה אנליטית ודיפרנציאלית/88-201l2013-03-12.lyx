@@ -1,0 +1,1369 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+עבור שני וקטורים במרחב 
+\begin_inset Formula $u,v\in\mathbb{R}^{n}$
+\end_inset
+
+, אם קיימת מכפלה סקלרית 
+\begin_inset Formula $\left\langle u,v\right\rangle =u\cdot v$
+\end_inset
+
+ אז מוגדרת נורמה: 
+\begin_inset Formula $\left\Vert u\right\Vert =\sqrt{u\cdot u}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\Vert u\right\Vert \ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u=0\iff\left\Vert u\right\Vert =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert u+v\right\Vert \le\left\Vert u\right\Vert +\left\Vert v\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{c\in\mathbb{R}}\left\Vert cu\right\Vert =\left|c\right|\left\Vert u\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הנורמה ניתן להגדיר מרחק:
+\begin_inset Formula 
+\[
+d\left(u,v\right)=\left\Vert u-v\right\Vert 
+\]
+
+\end_inset
+
+תכונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\left(u,v\right)=d\left(v,u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\left(u,v\right)\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $d\left(u,v\right)=0\iff u=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall_{v,u,w}d\left(u,v\right)+d\left(v,u\right)\ge d\left(u,w\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא תמיד אפשר להגדיר מכפלה סקלרית, נורמה או מרחב בצורה טבעית - אבל ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ יש את ההגדרה הסטנדרטית 
+\begin_inset Formula $u\cdot v=\delta_{ij}u^{i}v^{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איזומטריות של המרחב
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+איזומטריה
+\emph default
+ היא פונקציה 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ המקיימת
+\begin_inset Formula 
+\[
+\forall_{u,v}d\left(u,v\right)=d\left(f\left(u\right),f\left(v\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איזומטריות עבורן 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ איזומטריה המקיימת 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ משמרת את המכפלה הסקלרית)כלומר לכל 
+\begin_inset Formula $u,v$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(u\right)\cdot f\left(v\right)=u\cdot v$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אל האיזומטריה משמרת מרחקים וכן את ה
+\numeric on
+0
+\numeric off
+, אזי לכל 
+\begin_inset Formula $v$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\Vert v\right\Vert =d\left(v,0\right)=d\left(f\left(v\right),f\left(0\right)\right)=d\left(f\left(v\right),0\right)=\left\Vert f\left(v\right)\right\Vert 
+\]
+
+\end_inset
+
+נפעיל את הכלל הזה על הווקטור 
+\begin_inset Formula $u-v$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\Vert u-v\right\Vert =\left\Vert f\left(u\right)-f\left(v\right)\right\Vert 
+\]
+
+\end_inset
+
+נעלה בריבוע לקבל:
+\begin_inset Formula 
+\[
+\left(u-v\right)\left(u-v\right)=\left[f\left(u\right)-f\left(v\right)\right]\left[f\left(u\right)-f\left(v\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cancel{\left\Vert u\right\Vert ^{2}}-2u\cdot v+\cancel{\left\Vert v\right\Vert ^{2}}=\cancel{\left\Vert f\left(u\right)\right\Vert ^{2}}-2f\left(u\right)\cdot f\left(v\right)+\cancel{\left\Vert f\left(v\right)\right\Vert ^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u\cdot v=f\left(u\right)\cdot f\left(v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ איזומטריה המקיימת 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ אזי קיימת מטריצה אורתוגונלית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ תיקרא אורתוגונלית אם 
+\begin_inset Formula $A^{t}A=I$
+\end_inset
+
+.
+ זוהי מטריצה הבנויה מווקטורים אורתונורמליים
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\forall_{v}f\left(v\right)=A\left(v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: זה אומר שהאיזומטריות היחידות על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ הן סיבובים ושיקופים.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נבחר בסיס אורתונורמלי 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+)
+\begin_inset Formula $i=1,\dots n$
+\end_inset
+
+( ל
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ נבדוק כיצד 
+\begin_inset Formula $f$
+\end_inset
+
+ פועלת על ווקטורי הבסיס:
+\begin_inset Formula 
+\[
+\left\Vert f\left(e_{i}\right)\right\Vert =\left\Vert e_{i}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(e_{i}\right)\cdot f\left(e_{j}\right)=e_{i}\cdot e_{j}=0
+\]
+
+\end_inset
+
+ לכן גם 
+\begin_inset Formula $f\left(e_{i}\right)$
+\end_inset
+
+ מהווים בסיס אורתונורמלי ל
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל ווקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $v\cdot e_{i}=f\left(v\right)\cdot f\left(e_{i}\right)$
+\end_inset
+
+.
+ מכאן נובע מיידית ש
+\begin_inset Formula $f\left(v\right)=\sum v^{i}f\left(e_{i}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ היא מטריצת הבסיס החדש:
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}| & | & |\\
+f\left(e_{1}\right) & f\left(e_{2}\right) & \cdots\\
+| & | & |
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ איזומטריה כלשהי אזי קיימים 
+\begin_inset Formula $A$
+\end_inset
+
+ אורתוגונלית ווקטור 
+\begin_inset Formula $b$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(v\right)=Av+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $b:=f\left(0\right)$
+\end_inset
+
+.
+ אזי גם 
+\begin_inset Formula $g\left(v\right):=f\left(v\right)-b$
+\end_inset
+
+ היא איזומטריה, והיא גם מקיימת 
+\begin_inset Formula $g\left(0\right)=0$
+\end_inset
+
+.
+ לפי המשפט הקודם 
+\begin_inset Formula $g\left(v\right)=Av$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $f\left(v\right)=Av+b$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+החבורה האורתוגונלית
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+החבורה האורתוגונלית
+\emph default
+ 
+\begin_inset Formula $O\left(n\right)\in M_{n}$
+\end_inset
+
+ מוגדרת:
+\begin_inset Formula 
+\[
+A\in O\left(n\right)\iff A^{t}A=I
+\]
+
+\end_inset
+
+
+\emph on
+החבורה האורתוגונלית המיוחדת
+\emph default
+ 
+\begin_inset Formula $SO\left(n\right)$
+\end_inset
+
+ מוגדרת:
+\begin_inset Formula 
+\[
+A\in SO\left(n\right)\iff A^{t}A=I\wedge\det A=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איזומטריה משמרת אוריינטציה
+\end_layout
+
+\begin_layout Standard
+איזומטריה שמקיימת 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ נחשבת ל
+\emph on
+משמרת אוריינטציה
+\emph default
+ אם
+\begin_inset Formula 
+\[
+\det\begin{pmatrix}| & | & | & |\\
+f\left(e_{1}\right) & f\left(e_{2}\right) & \cdots & f\left(e_{n}\right)\\
+| & | & | & |
+\end{pmatrix}=1
+\]
+
+\end_inset
+
+אלה האיזומטריות שעבורן מטריצת המעבר היא ב
+\begin_inset Formula $SO\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+עבור איזומטריה כללית ניתן ליצור 
+\begin_inset Formula $g$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $g\left(0\right)=0$
+\end_inset
+
+ - ועליה אפשר לקבוע אם היא משמרת אוריינטציה או לא.
+\end_layout
+
+\begin_layout Part*
+עקומה ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עקומה ה
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ היא פונקציה 
+\begin_inset Formula $\gamma\left(t\right):\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $\gamma\left(t\right)=\begin{pmatrix}\gamma^{1}\left(t\right)\\
+\gamma^{2}\left(t\right)\\
+\gamma^{3}\left(t\right)
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אורך של עקומה 
+\begin_inset Formula $L$
+\end_inset
+
+ מוגדר ע"י
+\begin_inset Formula 
+\[
+L=\int_{a}^{b}\sqrt{\sum_{i}\left(\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}t}\right)^{2}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+לדוגמה: במקרה של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+: 
+\begin_inset Formula $L=\int\sqrt{\left(\frac{\mathrm{d}x}{\mathrm{d}x}\right)^{2}+\left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)^{2}}\mathrm{\, d}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משיק לעקומה מוגדר להיות וקטור 
+\begin_inset Formula $v=\frac{\mathrm{d}\gamma}{\mathrm{d}t}$
+\end_inset
+
+.
+ לכן ניתן לכתוב
+\begin_inset Formula 
+\[
+L=\int_{a}^{b}\left\Vert v\right\Vert \mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה נורמלית היא פרמטריזציה 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\forall_{t}\frac{\mathrm{d}\gamma}{\mathrm{d}t}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+פרמטריזציה טבעית
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $s=\int_{0}^{t}\sqrt{\sum\limits _{i}\left(\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}q}\right)^{2}}\mathrm{\, d}q$
+\end_inset
+
+.
+ אינטגרל זה מגדיר פונקציה 
+\begin_inset Formula $s\left(t\right)$
+\end_inset
+
+.
+ זוהי פונקציה מונוטונית עולה ולכן הפיכה - כלומר מוגדר 
+\begin_inset Formula $t\left(s\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\gamma\left(s\right):=\gamma\left(t\left(s\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}t\\
+t
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\gamma}{\mathrm{d}t}=\begin{pmatrix}1\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s=\int_{0}^{t}\sqrt{2}\mathrm{\, d}q=\sqrt{2}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\frac{s}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma\left(s\right)=\begin{pmatrix}\frac{s}{\sqrt{2}}\\
+\frac{s}{\sqrt{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\gamma}{\mathrm{d}s}=\begin{pmatrix}\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מוסכמה
+\end_layout
+
+\begin_layout Standard
+כאשר נסמן את הפרמטר ב
+\begin_inset Formula $s$
+\end_inset
+
+, הכוונה היא שמדובר בפרמטריזציה טבעית
+\end_layout
+
+\begin_layout Section*
+תכונה חשובה
+\end_layout
+
+\begin_layout Standard
+ווקטור המשיק של פרמטריזציה טבעית הוא תמיד וקטור יחידה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s=\int_{0}^{t}\left\Vert \frac{\mathrm{d}\gamma}{\mathrm{d}q}\right\Vert \mathrm{\, d}q
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}s}{\mathrm{d}t}=\left\Vert \frac{\mathrm{d}\gamma}{\mathrm{d}t}\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\gamma}{\mathrm{d}s}=\frac{\mathrm{d}\gamma}{\mathrm{d}t}\cdot\frac{\mathrm{d}t}{\mathrm{d}s}=\frac{\mathrm{d}\gamma}{\mathrm{d}t}\left\Vert \frac{\mathrm{d}\gamma}{\mathrm{d}t}\right\Vert ^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\left\Vert \frac{\mathrm{d}\gamma}{\mathrm{d}s}\right\Vert =1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אורך עקומה הוא אינווריאנטי תחת איזומטריה
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{\gamma}=f\left(\gamma\right)=A\gamma+b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\tilde{\gamma}}{\mathrm{d}t}=A\frac{\mathrm{d}\gamma}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\tilde{\gamma}}{\mathrm{d}t}\cdot\frac{\mathrm{d}\tilde{\gamma}}{\mathrm{d}t}=\left(A\frac{\mathrm{d}\gamma}{\mathrm{d}t}\right)^{t}\left(A\frac{\mathrm{d}\gamma}{\mathrm{d}t}\right)=\left(\frac{\mathrm{d}\gamma}{\mathrm{d}t}\right)^{t}A^{t}A\left(\frac{\mathrm{d}\gamma}{\mathrm{d}t}\right)=\frac{\mathrm{d}\gamma}{\mathrm{d}t}\cdot\frac{\mathrm{d}\gamma}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\left\Vert \tilde{\gamma}'\right\Vert =\left\Vert \gamma'\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\left\Vert \tilde{\gamma}'\right\Vert \mathrm{\, d}t=\int\left\Vert \gamma'\right\Vert \mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+וקטור טנגנטי ונורמלי
+\end_layout
+
+\begin_layout Standard
+עבור פרמטריזציה טבעית 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+, 
+\emph on
+הוקטור הטנגנטי
+\emph default
+ לעקומה יוגדר להיות
+\begin_inset Formula 
+\[
+\hat{T}\left(s\right)=\frac{\mathrm{d}\gamma\left(s\right)}{\mathrm{d}s}
+\]
+
+\end_inset
+
+נשים לב שע"פ ההגדרה הקודמה, 
+\begin_inset Formula $\forall_{s}\left\Vert \hat{T}\left(s\right)\right\Vert =1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+)במישור(, 
+\begin_inset Formula $\hat{T}\left(s\right)=\begin{pmatrix}\cos\alpha\left(s\right)\\
+\sin\alpha\left(s\right)
+\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ היא הזווית בין המשיק לציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר וקטור נורמלי 
+\begin_inset Formula $\hat{N}\left(s\right)$
+\end_inset
+
+ כוקטור יחידה המאונך ל
+\begin_inset Formula $\hat{T}\left(s\right)$
+\end_inset
+
+ ויוצר איתו בסיס ימני - כלומר 
+\begin_inset Formula $\det\begin{pmatrix}| & |\\
+\hat{T}\left(s\right) & \hat{N}\left(s\right)\\
+| & |
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי שקול: 
+\begin_inset Formula 
+\[
+\hat{N}=\begin{pmatrix}\cos90^{\circ} & -\sin90^{\circ}\\
+\sin90^{\circ} & \cos90^{\circ}
+\end{pmatrix}\cdot\hat{T}\left(s\right)=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\cdot\hat{T}\left(s\right)=\begin{pmatrix}-\sin\alpha\left(s\right)\\
+\cos\alpha\left(s\right)
+\end{pmatrix}\cdot\hat{T}\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+עקמומיות של עקומה
+\end_layout
+
+\begin_layout Standard
+מסומנת באות היוונית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+kappa
+\lang hebrew
+: 
+\begin_inset Formula $\kappa$
+\end_inset
+
+.
+ מוגדרת להיות
+\begin_inset Formula 
+\[
+\kappa:=\frac{\mathrm{d}\alpha}{\mathrm{d}s}
+\]
+
+\end_inset
+
+כלומר כמה מהר משתנה הזווית כאשר הולכים לאורך העקומה במהירות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\hat{T}\left(s\right)}{\mathrm{d}s}=\begin{pmatrix}-\sin\alpha\left(s\right)\\
+\cos\alpha\left(s\right)
+\end{pmatrix}\frac{\mathrm{d}\alpha\left(s\right)}{\mathrm{d}s}=\hat{N}\left(s\right)\kappa\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\hat{N}}{\mathrm{d}s}=-\kappa\left(s\right)\hat{T}\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}^{2}\hat{T}\left(s\right)}{\mathrm{d}s^{2}}=-\kappa\left(s\right)^{2}\hat{T}\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert \hat{T}\left(s\right)\right\Vert =1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ פונקציה וקטורית של 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}v}{\mathrm{d}t}\perp v\iff\left\Vert v\right\Vert \cdot\textnormal{const}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v\cdot v=\textnormal{const}\iff\left\Vert v\right\Vert =\textnormal{const}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\left(v\cdot v\right)}{\mathrm{d}t}=2\frac{\mathrm{d}v}{\mathrm{d}t}\cdot v=0\iff v\perp\frac{\mathrm{d}v}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{N}=\frac{\mathrm{d}\gamma}{\mathrm{d}s}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\gamma=\int\hat{T}\mathrm{\, d}s+\gamma_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם ידוע 
+\begin_inset Formula $\hat{T}\left(s\right)$
+\end_inset
+
+ וכן נקודת ההתחלה 
+\begin_inset Formula $\gamma_{0}$
+\end_inset
+
+ אזי אנחנו יודעים את כל המסלול 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם יודעה נקודת ההתחלה 
+\begin_inset Formula $\gamma_{0}$
+\end_inset
+
+ וידוע 
+\begin_inset Formula $\hat{T}\left(0\right)$
+\end_inset
+
+ אזי הפונקציה 
+\begin_inset Formula $\kappa\left(s\right)$
+\end_inset
+
+ מגדירה חד-ערכית את העקומה 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם ידוע 
+\begin_inset Formula $\hat{T}\left(0\right)$
+\end_inset
+
+ נחשב 
+\begin_inset Formula $\hat{N}\left(0\right)$
+\end_inset
+
+, ואז מערכת המד"ר:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\frac{\mathrm{d}\hat{T}\left(s\right)}{\mathrm{d}s}=\kappa\hat{N}\left(s\right)\\
+\frac{\mathrm{d}\hat{N}}{\mathrm{d}s}=-\kappa\hat{T}\left(s\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+היא מערכת מסדר 
+\begin_inset Formula $I$
+\end_inset
+
+ לינארית הומוגנית, ולכן מקיימת את משפט הקיום והיחידות, ולכן יש לה פתרון
+ יחיד שנותן 
+\begin_inset Formula $\hat{T}\left(s\right),\hat{N}\left(s\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+עקומה מוגדרת על ידי העקמומיות שלה עד כדי איזומטריה של המישור.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+לעקמומיות ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ יש סימן, אבל כשנגדיר עקמומיות ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, נראה שאין הגיון לדבר שם על סימן 
+\begin_inset Formula $\pm$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+מרכז המעגל המשיק לעקומה בנקודה 
+\begin_inset Formula $s$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+E\left(s\right)=\gamma\left(s\right)+\frac{1}{\kappa}\hat{N}\left(s\right)
+\]
+
+\end_inset
+
+אם נתבונן בכל הנקודות אזי 
+\begin_inset Formula $E\left(s\right)$
+\end_inset
+
+ מגדיר עקומה הנקראת 
+\emph on
+האוולט
+\emph default
+ של 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+.
+ האינוולט של 
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+ הוא העקומה ש
+\begin_inset Formula $\gamma\left(s\right)$
+\end_inset
+
+ היא האוולנט שלה - 
+\begin_inset Formula 
+\[
+I\left(s\right)=\gamma\left(t\right)-s\left(t\right)\frac{\gamma'\left(t\right)}{\left\Vert \gamma'\right\Vert \left(t\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

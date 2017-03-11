@@ -1,0 +1,2082 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+1
+\numeric off
+.
+ הפונקציה 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{x+iy}=e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( אם 
+\begin_inset Formula $z=x+0i$
+\end_inset
+
+ אז 
+\begin_inset Formula $e^{z}=e^{x}cis\left(0\right)=e^{x}$
+\end_inset
+
+.
+ ז.א.
+ עבור 
+\begin_inset Formula $z=x$
+\end_inset
+
+ ממשי 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ חוזרת לפונקציה הקלאסית הממשית 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ מרחיבה את 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ לתחום המרוכב.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( עבור 
+\begin_inset Formula $z_{1},z_{2}\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{z_{1}+z_{2}}=e^{z_{1}}e^{z_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נרשום 
+\begin_inset Formula 
+\[
+z_{1}=x_{1}+iy_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{2}=x_{2}+iy_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{z_{1}+z_{2}}=e^{\left(x_{1}+x_{2}\right)+i\left(y_{1}+y_{2}\right)}=e^{x_{1}+x_{2}}=e^{x_{1}}e^{x_{2}}\textnormal{cis}\left(y_{1}\right)\textnormal{cis}\left(y_{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=e^{x_{1}}\textnormal{cis}\left(y_{1}\right)e^{x_{2}}\textnormal{cis}\left(y_{2}\right)=e^{z_{1}}e^{z_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( אם 
+\begin_inset Formula $z_{1},z_{2}\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{z_{1}-z_{2}}=\unitfrac{e^{z_{1}}}{e^{z_{2}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: הטענה שקולה לזאת:
+\begin_inset Formula 
+\[
+e^{z_{2}}\cdot e^{z_{1}-z_{2}}=e^{z_{1}}
+\]
+
+\end_inset
+
+אבל לפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)ב(
+\begin_inset Formula 
+\[
+e^{z_{2}}e^{z_{1}-z_{2}}=e^{z_{1}+z_{1}-z_{2}}=e^{z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ד( לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{z}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset Formula 
+\[
+e^{z}=\unitfrac{1}{e^{-z}}\neq0
+\]
+
+\end_inset
+
+או, עבור 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+, 
+\begin_inset Formula $e^{z}=e^{x}\textnormal{cis}y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+יש גם תכונות חדשות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ה( עבור 
+\begin_inset Formula $z$
+\end_inset
+
+ מדומה טהור 
+\begin_inset Formula $z=0+iy$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+e^{z}=e^{0+iy}=e^{0}\textnormal{cis}\left(y\right)=\textnormal{cis}\left(y\right)
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+e^{iy}=\textnormal{cis}y=\textnormal{cos}y+i\textnormal{sin}y
+\]
+
+\end_inset
+
+זה הזהות של אויילר.
+\end_layout
+
+\begin_layout Standard
+מקרה יפה במיוחד:
+\begin_inset Formula 
+\[
+e^{i\pi}=\cos\pi+i\sin\pi=-1
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+e^{i\pi}+1=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+לאור הזהות של אוילר, נוכל להציג מספר מרוכב כלשהו 
+\begin_inset Formula $r\textnormal{cis}\theta$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $re^{i\theta}$
+\end_inset
+
+, וכך מקובל ברוב הספרים.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אויילר הגיע לזהות הנ"ל בעזרת טורי טיילור.
+ כידוע, אם 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}=1+x+\cfrac{x^{2}}{2!}+\cfrac{x^{3}}{3!}+...
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $x=i\theta$
+\end_inset
+
+ לקבל פורמלית
+\begin_inset Formula 
+\[
+e^{i\theta}=1+i\theta+\cfrac{\left(i\theta\right)^{2}}{2!}+\cfrac{\left(i\theta\right)^{3}}{3!}+...=1-\cfrac{\theta^{2}}{2!}+\cfrac{\theta^{4}}{4!}-\cfrac{\theta^{6}}{6!}+...+i\left(\theta-\cfrac{\theta^{3}}{3!}+\cfrac{\theta^{5}}{5!}+...\right)=\cos\theta+i\sin\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המשך תכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ו( 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ פונקציה מחזורית.
+ בפרט נעיר ש
+\begin_inset Formula 
+\[
+e^{2\pi i}=\textnormal{cis}\left(2\pi\right)=\cos\left(2\pi\right)+i\sin\left(2\pi\right)=1
+\]
+
+\end_inset
+
+נובע שלכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+e^{z+2\pi i}=e^{z}e^{2\pi i}=e^{z}\cdot1=e^{z}
+\]
+
+\end_inset
+
+ולכן יש מחזור 
+\begin_inset Formula $2\pi i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הכללה
+\series default
+: לכל 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{z+2\pi in}=e^{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: עבור 
+\begin_inset Formula $\mathbb{C}\ni z$
+\end_inset
+
+ כלשהו, 
+\begin_inset Formula $e^{w}=e^{z}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{array}{c}
+w=z+2\pi in\\
+n\in\mathbb{Z}
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: כבר הוכחנו שאם 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $w=z+2\pi in$
+\end_inset
+
+, אז 
+\begin_inset Formula $e^{w}=e^{z}$
+\end_inset
+
+.
+ רוצים להוכיח את ההפך.
+\begin_inset Newline newline
+\end_inset
+
+נניח 
+\begin_inset Formula $e^{\omega}=e^{z}$
+\end_inset
+
+.
+ נחלק ב
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $e^{w-z}=1$
+\end_inset
+
+.
+ נרשם:
+\begin_inset Formula 
+\[
+w-z=x+iy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x+iy}=1
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+e^{x}\textnormal{cis}y=1
+\]
+
+\end_inset
+
+בפרט
+\begin_inset Formula 
+\[
+1=\left|1\right|=\left|e^{x}\textnormal{cis}y\right|=\left|e^{x}\right|\left|\textnormal{cis}y\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=e^{x}\cdot1=e^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow x=0
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\textnormal{cis}y=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos y+i\sin y=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\begin{array}{c}
+\sin y=0\\
+\cos y=1
+\end{array}\Leftrightarrow y=2\pi n,n\in\mathbb{Z}
+\]
+
+\end_inset
+
+בסיכום:
+\begin_inset Formula 
+\[
+e^{w}=e^{z}\Leftrightarrow w-z=x+iy=0+i\left(2\pi n\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=z+2\pi ni
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+נגדיר הפכית ל
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\log z$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+זהו לוג בבסיס הוא 
+\begin_inset Formula $e$
+\end_inset
+
+, לא בבסיס
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+.
+ פשוט בגלל שזה מרוכב כותבים 
+\begin_inset Formula $\log$
+\end_inset
+
+, ובממשיים נכתוב 
+\begin_inset Formula $\ln$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואטאיבית: אם 
+\begin_inset Formula $z=re^{i\theta}$
+\end_inset
+
+ צפוי לומר
+\begin_inset Formula 
+\[
+\log z=\log\left[re^{i\theta}\right]=\ln r+\log e^{i\theta}=\ln r+i\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן עבור 
+\begin_inset Formula $z=re^{i\theta}\neq0$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\log z=\ln r+i\theta=\ln\left|z\right|+i\arg z
+\]
+
+\end_inset
+
+נבדוק שזאת הפכית ל
+\begin_inset Formula $e^{z}$
+\end_inset
+
+.
+ ובכן:
+\begin_inset Formula 
+\[
+e^{\log z}=e^{\ln r+i\theta}=e^{\ln r}e^{i\theta}=re^{i\theta}=z
+\]
+
+\end_inset
+
+נבדוק ש
+\begin_inset Formula $\log z$
+\end_inset
+
+ אנליטית:
+\begin_inset Formula 
+\[
+\log z=\ln\left|z\right|+i\arg z
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log z=\underbrace{\ln\sqrt{x^{2}+y^{2}}}_{u}+i\underbrace{\arctan\left(\cfrac{y}{x}\right)}_{v}
+\]
+
+\end_inset
+
+נגזור:
+\begin_inset Formula 
+\[
+u\left(x,y\right)=\cfrac{1}{2}\ln\left(x^{2}+y^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}=\cfrac{x}{x^{2}+y^{2}}\qquad u_{y}=\cfrac{y}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\left(x,y\right)=\arctan\left(\cfrac{y}{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{x}=\cfrac{1}{1+\left(\cfrac{y}{x}\right)^{2}}\left(\cfrac{-y}{x^{2}}\right)=\cfrac{-y}{x^{2}+y^{2}}=-u_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{y}=\cfrac{1}{1+\left(\cfrac{y}{x}\right)^{2}}\cfrac{1}{x}=\cfrac{x}{x^{2}+y^{2}}=u_{x}
+\]
+
+\end_inset
+
+וקיימנו את משוואות קושי רימן.
+\end_layout
+
+\begin_layout Standard
+כיוון שיש נגזרת:
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}}{\mathrm{d}z}\log z=\cfrac{\partial}{\partial x}\log z=u_{x}+iv_{x}=\cfrac{x}{x^{2}+y^{2}}+i\cfrac{-y}{x^{2}+y^{2}}=\cfrac{x-iy}{x^{2}+y^{2}}=\cfrac{\bar{z}}{z\cdot\bar{z}}=\unitfrac{1}{z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכל טוב ויפה, אבל התעלמנו מדבר אחד: הגדרנו
+\begin_inset Formula 
+\[
+\log z=\log re^{i\theta}=\ln r+i\theta=\ln\left|z\right|+i\arg z
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\arg z$
+\end_inset
+
+ זה לא פונקציה! כי יש אינסוף זוויות מתאימות.
+\end_layout
+
+\begin_layout Standard
+נוכל להגדיר פונקציה אמיתית אם נבחר אחד מ
+\begin_inset Formula $\infty$
+\end_inset
+
+ הערכים של 
+\begin_inset Formula $\arg z$
+\end_inset
+
+ באופן עקבי.
+ למשל, מגדירים את "הענף" הראשי של 
+\begin_inset Formula $\log z$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+\textnormal{Log}z=\ln\left|z\right|+i\textnormal{Arg}z
+\]
+
+\end_inset
+
+כאשר מוסכם
+\begin_inset Formula 
+\[
+-\pi<\textnormal{Arg}\le\pi
+\]
+
+\end_inset
+
+זאת פונקציה מוגדרת היטב לכל 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+, אבל היא לא רציפה וכל שכן לא גזירה בקרן השמאלית של ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עוד ענף של 
+\begin_inset Formula $\log z$
+\end_inset
+
+, נתון ע"י 
+\begin_inset Formula 
+\[
+\log_{1}\left(z\right)=\ln\left|z\right|+i\arg_{1}\left(z\right)
+\]
+
+\end_inset
+
+כאשר מוסכם
+\begin_inset Formula 
+\[
+0\le\arg_{1}\left(z\right)<2\pi
+\]
+
+\end_inset
+
+לפי זה, 
+\begin_inset Formula $\log_{1}z$
+\end_inset
+
+ לא רציפה בקרן הימנית של ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תכונות נוספות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $\textnormal{Log}z$
+\end_inset
+
+ מרחיבה את הפונציה הקלאסית 
+\begin_inset Formula $\ln x$
+\end_inset
+
+ )
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+(, כי אם 
+\begin_inset Formula $0<z<\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Arg}z=0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\log z=\ln\left|z\right|+i0=\ln\left|z\right|=\ln z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( עבור 
+\begin_inset Formula $0\neq z,w\in\mathbb{C}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log\left(zw\right)=\log z+\log w
+\]
+
+\end_inset
+
+בתור שוויון של קבוצות! כי לכל אגף יש 
+\begin_inset Formula $\infty$
+\end_inset
+
+ ערכים, והם שווים.
+\begin_inset Newline newline
+\end_inset
+
+לגבי כל ענף מסויים, זה לא תמיד נכון, אלא למשל:
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(zw\right)=\textnormal{Log}\left(z\right)+\textnormal{Log}\left(w\right)\textnormal{ mod }2\pi
+\]
+
+\end_inset
+
+למשל, אם 
+\begin_inset Formula $z=w=-1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(z\right)=\ln\left|z\right|+i\textnormal{Arg}z=\ln\left|-1\right|+i\textnormal{Arg}\left(-1\right)=0+i\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(w\right)=\textnormal{Log}z=i\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+zw=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(zw\right)=\textnormal{Log}\left(1\right)=0\neq\textnormal{Log}\left(z\right)+\textnormal{Log}\left(w\right)=2\pi i
+\]
+
+\end_inset
+
+יש שוויון מודולו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $2\pi i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( עבור 
+\begin_inset Formula $\mathbb{C}\ni z,w\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log\left(\cfrac{z}{w}\right)=\log z-\log w
+\]
+
+\end_inset
+
+בתור שוויון של קבוצות, ו
+\begin_inset Formula 
+\[
+\textnormal{Log}\left(\cfrac{z}{w}\right)=\textnormal{Log}z-\textnormal{Log}w\textnormal{ mod }2\pi i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+3
+\numeric off
+ פונקציות טריגונומטריות
+\end_layout
+
+\begin_layout Standard
+נתחיל עם השוויות
+\begin_inset Formula 
+\[
+e^{i\theta}=\cos\theta+i\sin\theta\qquad\theta\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{-i\theta}=\cos\left(-\theta\right)+i\sin\left(-\theta\right)=\cos\theta-i\sin\theta
+\]
+
+\end_inset
+
+נחבר משוואות:
+\begin_inset Formula 
+\[
+\cos\theta=\cfrac{e^{i\theta}+e^{-i\theta}}{2}
+\]
+
+\end_inset
+
+נחסיר משוואות:
+\begin_inset Formula 
+\[
+\sin\theta=\cfrac{e^{i\theta}-e^{-i\theta}}{2i}
+\]
+
+\end_inset
+
+כל זה עבור 
+\begin_inset Formula $\theta\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת, עבור 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ כלשהו 
+\bar under
+נגדיר
+\series bold
+\bar default
+
+\begin_inset Formula 
+\[
+\cos z=\cfrac{e^{iz}+e^{-iz}}{2}\qquad\sin z=\cfrac{e^{iz}-e^{-iz}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הן שלימות כי הן הרכבים של פונקציות שלמות ידועות.
+\end_layout
+
+\begin_layout Standard
+נגזור:
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}}{\mathrm{d}z}\cos z=\cfrac{\mathrm{d}}{\mathrm{d}z}\cfrac{e^{iz}+e^{-iz}}{2}=\cfrac{ie^{iz}-ie^{-iz}}{2}=\cfrac{-e^{iz}+e^{-iz}}{2i}=-\sin z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}}{\mathrm{d}z}\sin z=\cfrac{\mathrm{d}}{\mathrm{d}z}\sin z=\cfrac{\mathrm{d}}{\mathrm{d}z}\cfrac{e^{iz}-e^{-iz}}{2i}=\cfrac{ie^{iz}+ie^{-iz}}{2i}=\cos z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות נוספות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( אם 
+\begin_inset Formula $z\in\mathbb{R}$
+\end_inset
+
+ נקבל את הפונקציות הטריגונומרטריות הקלאסיות:
+\begin_inset Formula 
+\[
+\cos z=\cfrac{e^{iz}+e^{-iz}}{2}=\cos\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin z=\cfrac{e^{iz}-e^{iz}}{2i}=\sin\theta
+\]
+
+\end_inset
+
+לכן הפונקציות הטריגונומטריות המרוכבות מרחיבות את הממשיות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל הזהויות הטריגונומטריות הידועות עוברות ל
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ ללא שינוי.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( אי שוויונים לא תמיד עוברים ל
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+ למשל אם 
+\begin_inset Formula $\theta\in\mathbb{R}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\begin{array}{c}
+\left|\cos\theta\right|\le1\\
+\left|\sin\theta\right|\le1
+\end{array}$
+\end_inset
+
+ אבל עבור 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos z$
+\end_inset
+
+ ו
+\begin_inset Formula $\sin z$
+\end_inset
+
+ לא חסומות.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Formula $\cos z=\cfrac{e^{iz}+e^{-iz}}{2}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $z=iy,0<y\in\mathbb{R}$
+\end_inset
+
+ גדול מאוד, אז
+\begin_inset Formula 
+\[
+\cos\left(iy\right)=\cfrac{e^{i\left(iy\right)}+e^{i\left(iy\right)}}{2}=\cfrac{e^{-y}+e^{y}}{2}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $y\to+\infty$
+\end_inset
+
+, 
+\begin_inset Formula $e^{iy}\to+\infty$
+\end_inset
+
+.
+ וכיוון ש
+\begin_inset Formula $\sin z=\cos\left(\cfrac{\pi}{2}-z\right)$
+\end_inset
+
+, גם 
+\begin_inset Formula $\sin z$
+\end_inset
+
+ לא חסומה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( מגדירים:
+\begin_inset Formula 
+\[
+\tan z=\cfrac{\sin z}{\cos z}\qquad\cot z=\cfrac{\cos z}{\sin z}
+\]
+
+\end_inset
+
+ע"י גזירה ישירה:
+\begin_inset Formula 
+\[
+\left(\tan z\right)'=\cfrac{1}{\cos^{2}z}\qquad\left(\cot z\right)'=\cfrac{-1}{\sin^{2}z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+4
+\numeric off
+.
+ חזקות
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ מוגדרים
+\begin_inset Formula 
+\[
+z^{n}=\underbrace{n\cdot n\cdot n\cdots n}_{n\textnormal{ times}}\qquad z^{-n}=\unitfrac{1}{z^{n}}
+\]
+
+\end_inset
+
+עם נגזרות ידועות.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\sqrt[n]{z}=z^{\unitfrac{1}{n}}$
+\end_inset
+
+ מחזירה 
+\begin_inset Formula $n$
+\end_inset
+
+ ערכים.
+ כדי להגדיר אותה כפונקציה חד-ערכית יש לבחור ענף.
+\end_layout
+
+\begin_layout Standard
+ובכן: פורמלית אם 
+\begin_inset Formula $z=re^{i\theta}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+z^{\unitfrac{1}{n}}=r^{\unitfrac{1}{n}}e^{\unitfrac{i\theta}{n}}=\left|z\right|^{\unitfrac{1}{n}}e^{i\frac{\arg z}{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\arg z$
+\end_inset
+
+ זה בעייתי, ולכן צריך לבחור ענף.
+ הענף הראשי מוגדר ע"י
+\begin_inset Formula 
+\[
+z^{\unitfrac{1}{n}}=\left|z\right|^{\unitfrac{1}{n}}e^{\frac{i\textnormal{Arg}z}{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערכים של הענף הזה כולם בגיזרה
+\begin_inset Formula 
+\[
+-\unitfrac{\pi}{n}<\textnormal{Arg}z\le\unitfrac{\pi}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה, לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, הענף הראשית של 
+\begin_inset Formula $z^{\unitfrac{1}{3}}$
+\end_inset
+
+ בגיזרה:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \, &  & \,\\
+ &  &  & \,\\
+\ar@{-->}[rrrr] &  & \ar@{-}[rruu]\ar@{-}[rrdd] & \unitfrac{\pi}{3} & \,\\
+ &  &  & \,\ar@{-}@/_{1pc}/[uu]\\
+ &  & \ar@{-->}[uuuu] &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פונקציות הרמוניות
+\end_layout
+
+\begin_layout Standard
+הוכחנו שאם 
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+ פונקציה גזירה, אז בהכרח 
+\begin_inset Formula $\begin{array}{c}
+u_{x}=v_{y}\\
+u_{y}=-v_{x}
+\end{array}$
+\end_inset
+
+.
+ כעת, נניח של
+\begin_inset Formula $u$
+\end_inset
+
+ ול
+\begin_inset Formula $v$
+\end_inset
+
+ יש נגזרות חלקיות רציפות מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ונגזור את משוואות קושי-רימן:
+\begin_inset Formula 
+\[
+u_{xx}=v_{yx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{yy}=-v_{xy}=-v_{yx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{xx}+u_{yy}=v_{yx}-v_{yx}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ז.א., 
+\begin_inset Formula $u=\textnormal{Re}f$
+\end_inset
+
+ מקיימת את "משוואת לפלס" 
+\begin_inset Formula $u_{xx}=u_{yy}=0$
+\end_inset
+
+.
+ פונקציה כזאת נקראת "פונקציה הרמונית"
+\end_layout
+
+\begin_layout Standard
+נעיר שאם 
+\begin_inset Formula $\begin{array}{c}
+f=u+iv\\
+-if=v-iu
+\end{array}$
+\end_inset
+
+ אנליטית, לכן 
+\begin_inset Formula $v=\textnormal{Re}\left(-if\right)$
+\end_inset
+
+ הרמונית - 
+\begin_inset Formula $v_{xx}+v_{yy}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $u\left(x,y\right)$
+\end_inset
+
+ פונקציה הרמונית בתחום 
+\begin_inset Formula $D\subset\mathbb{R}^{2}$
+\end_inset
+
+.
+ אומרים שפונקציה הרמונית 
+\begin_inset Formula $v$
+\end_inset
+
+ צמודה ל
+\begin_inset Formula $u$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ אם 
+\begin_inset Formula $u+iv$
+\end_inset
+
+ מרכיב פונקציה אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $z=x+iy\in\mathbb{C}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $u\left(x,y\right)=x^{2}-3xy^{2}+2x-5$
+\end_inset
+
+.
+ התרגיל הוא להוכיח ש
+\begin_inset Formula $u$
+\end_inset
+
+ הרמונית ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ ולמצוא לה פונקציה צמודה 
+\begin_inset Formula $v\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{x}=3x^{2}-3y^{2}+2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{xx}=6x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{y}=-6xy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{yy}=-6x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{xx}+u_{yy}=6x+\left(-6x\right)=0
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $u$
+\end_inset
+
+ הרמונית ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה, 
+\begin_inset Formula $v\left(x,y\right)$
+\end_inset
+
+ צמודה ל
+\begin_inset Formula $u\left(x,y\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $u+iv$
+\end_inset
+
+ מרכיב פונקציה אנליטית.
+ זאת אומרת אם
+\begin_inset Formula 
+\[
+u_{x}=v_{y}\qquad u_{y}=-v_{x}
+\]
+
+\end_inset
+
+בפרט
+\begin_inset Formula 
+\[
+v_{x}=-u_{y}=6xy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v\left(x,y\right)=\int6xy\mathrm{\, d}x=3x^{2}y+h\left(y\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $h\left(y\right)$
+\end_inset
+
+ פונקציה גזירה כלשהי של 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת:
+\begin_inset Formula 
+\[
+v_{y}=u_{x}
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+3x^{2}+h\left(y\right)=3x^{2}-3y^{y}+2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}=3x^{2}-3y^{2}+2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(y\right)=\int\left(-3y^{2}+2\right)\mathrm{\, d}y=-y^{3}+2y+C
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+v\left(x,y\right)=+3x^{2}y+h\left(y\right)=3x^{2}y-y^{3}+2y+C
+\]
+
+\end_inset
+
+וזה אפייני: הפונקציה הצמודה נקבעת באופן יחיד עד כדי תוספת קבוע.
+\end_layout
+
+\begin_layout Paragraph
+בדיקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=u+iv=x^{3}-3xy^{2}+2x-5+i\left(3x^{2}y-y^{3}+2yiC\right)=z^{3}+2z-5+iC
+\]
+
+\end_inset
+
+פונקציה שלימה.
+\end_layout
+
+\begin_layout Section*
+דוגמה נוספת
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+u\left(x,y\right)=\ln\sqrt{x^{2}+y^{2}}\qquad\left(x,y\right)\neq\left(0,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $u=\textnormal{Re}\left(\log z\right)$
+\end_inset
+
+ ולכן היא הרמונית ב
+\begin_inset Formula $\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פונקציה צמודה שתשלים את 
+\begin_inset Formula $u$
+\end_inset
+
+ לפונקציה אנליטית 
+\begin_inset Formula $u+iv$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+v\left(x,y\right)=\arg z=\arg\left(x+iy\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ידוע שאי אפשר להגדיר את 
+\begin_inset Formula $\arg\left(x+iy\right)$
+\end_inset
+
+ כפונקציה רציפה, כל שכן כפונקציה הרמונית, בתחום 
+\begin_inset Formula $\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+, ולכן לא קיימת ל
+\begin_inset Formula $\ln\sqrt{x^{2}+y^{2}}=u\left(x,y\right)$
+\end_inset
+
+ פונקציה צמודה בתחום 
+\begin_inset Formula $\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+אינטגרלים
+\end_layout
+
+\begin_layout Standard
+נגדיר שני סוגי אינטגרלים.
+ הסוג הראשון הוא אינטגרלים מהסוג 
+\begin_inset Formula $\int_{a}^{b}z\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $z\left(t\right)=x\left(t\right)+iy\left(t\right)$
+\end_inset
+
+ פונקציה מרוכבת של משתנה ממשי בקטע 
+\begin_inset Formula $t\in\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר את האינטגרל כמו שמגדירים אינטגרל רגיל באינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ע"י סכומי רימן.
+ ז.א: נעשה חלוקה 
+\begin_inset Formula $P$
+\end_inset
+
+ של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=t_{0}<t_{1}<t_{2}<\cdots<t_{n}=b
+\]
+
+\end_inset
+
+ונבנה סכום רימן על 
+\begin_inset Formula $P$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}z\left(t_{k}'\right)\Delta t_{k}
+\]
+
+\end_inset
+
+כאשר לכל 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta t_{k}=t_{k}-t_{k-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $t_{k}'$
+\end_inset
+
+ נקודה כלשהי בקטע 
+\begin_inset Formula $\left[t_{k-1},t_{k}\right]$
+\end_inset
+
+.
+ צריך לשים לב - 
+\begin_inset Formula $t_{k}',\Delta t_{k}\in\mathbb{R}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $z\left(t_{k}'\right)\in\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+גם מגדירים 
+\begin_inset Formula $\lambda\left(P\right)=\max\limits _{1\le k\le n}\Delta t_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האינטגרל מוגדר כגבול של סכומי רימן כאשר 
+\begin_inset Formula $\lambda\left(P\right)\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+אבל
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $z\left(t\right)=x\left(t\right)+iy\left(t\right)$
+\end_inset
+
+ סכום רימן מקבל צורה "ידועה":
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}z\left(t_{k}'\right)\Delta t_{k}=\sum_{k=1}^{n}\left[x\left(t_{k}'\right)+iy\left(t_{k}'\right)\right]\Delta t_{k}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=1}^{n}x\left(t_{k}'\right)\Delta t_{k}+i\sum_{k=1}^{n}y\left(t_{k}'\right)\Delta t_{k}\xrightarrow[\lambda\left(P\right)\to0]{}\int_{a}^{b}x\left(t\right)\mathrm{\, d}t+i\int_{a}^{b}y\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $w\left(t\right)$
+\end_inset
+
+ מוגדרות ורציפות למקוטעין ב
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbb{C}\ni c$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( 
+\begin_inset Formula $\int_{a}^{b}\left[z\left(t\right)\pm w\left(t\right)\right]\mathrm{\, d}t=\int_{a}^{b}z\left(t\right)\mathrm{\, d}t\pm\int_{a}^{b}w\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( 
+\begin_inset Formula $\int_{a}^{b}cz\left(t\right)\mathrm{\, d}t=c\int_{a}^{b}z\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( 
+\begin_inset Formula $\left|\int_{a}^{b}z\left(t\right)\mathrm{\, d}t\right|\le\int_{a}^{b}\left|z\left(t\right)\right|\mathrm{\, d}t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ד( אם 
+\begin_inset Formula $z'\left(t\right)$
+\end_inset
+
+ קיימת ורציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{a}^{b}z'\left(t\right)\mathrm{\, d}t=z\left(b\right)-z\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ה( אם 
+\begin_inset Formula $z'\left(t\right)$
+\end_inset
+
+ קיימת ורציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{a}^{b}\left|z'\left(t\right)\right|\mathrm{\, d}t$
+\end_inset
+
+=אורך המסילה 
+\begin_inset Formula $t\to z\left(t\right)$
+\end_inset
+
+ בין 
+\begin_inset Formula $a=t$
+\end_inset
+
+ ל
+\begin_inset Formula $b=t$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

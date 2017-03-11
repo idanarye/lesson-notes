@@ -1,0 +1,1411 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הבעיה
+\series default
+: נתון מספר 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ האם 
+\begin_inset Formula $N$
+\end_inset
+
+ ראשוני?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+עובדה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: לכל מספר ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left\{ 1,\dots p-1\right\} $
+\end_inset
+
+, למשוואה 
+\begin_inset Formula $x^{2}=r^{2}\pmod p$
+\end_inset
+
+ יש בדיוק שני פתרונות: 
+\begin_inset Formula $r,-r\pmod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+עובדה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\series default
+\numeric off
+: לכל מספר פריק אי זוגי שאיננו חזקה של ראשוני 
+\begin_inset Formula $N$
+\end_inset
+
+, למשוואה 
+\begin_inset Formula $x^{2}=r^{2}\pmod N$
+\end_inset
+
+ יש לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתרונות שונים.
+\end_layout
+
+\begin_layout Standard
+נתון אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sqrt
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: מספר ראשוני 
+\begin_inset Formula $p$
+\end_inset
+
+ ומספר 
+\begin_inset Formula $s=r^{2}\pmod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: פתרון אפשרי למשוואה 
+\begin_inset Formula $x^{2}=s\pmod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ בהנתן קלט 
+\begin_inset Formula $N>2$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $N$
+\end_inset
+
+ מספר זוגי או חזקה של ראשוני, החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+בחר בצורה רנדומית 
+\begin_inset Formula $r\in\left\{ 1,\dots N-1\right\} $
+\end_inset
+
+ וחשב 
+\begin_inset Formula $s=r^{2}\pmod N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r'=\textnormal{sqrt}\left(N,s\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $r'=r$
+\end_inset
+
+ או 
+\begin_inset Formula $r'=-r\pmod N$
+\end_inset
+
+ החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ אחרת החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+א
+\series default
+: 
+\begin_inset Formula $N$
+\end_inset
+
+ הוא מספר ראשוני.
+ לפי עובדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, הפלט של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sqrt
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $-r\pmod N$
+\end_inset
+
+ או 
+\begin_inset Formula $r$
+\end_inset
+
+, ולכן בהכרח נחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+ב
+\series default
+: 
+\begin_inset Formula $N$
+\end_inset
+
+ לא ראשוני.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+ב.
+\numeric on
+1
+\series default
+\numeric off
+: 
+\begin_inset Formula $N$
+\end_inset
+
+ הוא זוגי או חזקה של ראשוני.
+ במקרה הזה היינו מחזירים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כבר בצעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+ב.
+\numeric on
+2
+\series default
+\numeric off
+: 
+\begin_inset Formula $N$
+\end_inset
+
+ איננו זוגי ואיננו חזקה של ראשוני.
+ עבור כל 
+\begin_inset Formula $s$
+\end_inset
+
+ חשושב בצעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, קיימים 
+\begin_inset Formula $r_{1},r_{2},r_{3},r_{4}$
+\end_inset
+
+ 
+\series bold
+שונים
+\series default
+ שיכולים לייצר את 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Pr\left[r=\textnormal{sqrt}\left(N,s\right)\vee r=-\textnormal{sqrt}\left(N,s\right)\right]\le\frac{2}{4}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה - 
+\begin_inset Formula $RP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in RP$
+\end_inset
+
+ אם קיימת מכונת טיורינג הסתברותית 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+x\in L & \iff & \Pr\nolimits _{r}\left[M\left(x,r\right)=1\right]\ge\frac{1}{2}\\
+x\notin L & \iff & \Pr\nolimits _{r}\left[M\left(x,r\right)=0\right]=1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\subseteq RP\subseteq NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אפשר להקטין את הסתברות השגיאה במקרה ש
+\begin_inset Formula $x\in L$
+\end_inset
+
+ ל
+\begin_inset Formula $\frac{1}{2^{p\left(n\right)}}$
+\end_inset
+
+)כלומר את הסתברות ההצלחה ל
+\begin_inset Formula $1-\frac{1}{2^{p\left(n\right)}}$
+\end_inset
+
+( ע"י הרצת 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ פעמים, והחזרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם לפחות אחת ההרצות החזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחרת.
+ כל עוד 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ פולינומי המכונה נשארת פולינומית.
+\end_layout
+
+\begin_layout Section*
+הגדרה - 
+\begin_inset Formula $BPP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in BPP$
+\end_inset
+
+ אם קיימת מכונת טיורינג הסתברותית 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+\forall_{x}\Pr\nolimits _{r}\left[M\left(x,r\right)=\chi_{L}\left(x\right)\right]\ge\frac{2}{3}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\chi_{L}\left(x\right)=\begin{cases}
+1 & x\in L\\
+0 & x\notin L
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $RP\subseteq BPP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $BPP=coBPP$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $coBPP=\left\{ L\middle|\overline{L}\in BPP\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $BPP\,?\, NP$
+\end_inset
+
+ - הקשר לא ידוע, זו שאלה פתוחה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שאם 
+\begin_inset Formula $NP\subseteq BPP$
+\end_inset
+
+ אזי 
+\begin_inset Formula $NP=RP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ידוע ש
+\begin_inset Formula $RP\subseteq NP$
+\end_inset
+
+.
+ נראה שאם 
+\begin_inset Formula $NP\subseteq BPP$
+\end_inset
+
+ אזי 
+\begin_inset Formula $NP\subseteq RP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $NP\subseteq BPP$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $SAT\in BPP$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $NP\subseteq RP$
+\end_inset
+
+, מספיק להוכיח 
+\begin_inset Formula $SAT\in RP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת מ"ט פולינומית 
+\begin_inset Formula $M'$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+\forall_{\varphi}\Pr\nolimits _{r}\left[M'\left(\varphi,r\right)=\chi_{SAT}\left(\varphi\right)\right]\ge\frac{2}{3}
+\]
+
+\end_inset
+
+ע"י הרצות חוזרות, נקבל אלגוריתם 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+\forall_{\varphi}\Pr\nolimits _{r}\left[M\left(\varphi,r\right)=\chi_{SAT}\left(\varphi\right)\right]\ge1-\frac{1}{4n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה אלגוריתם 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ שבהינתן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קלט 
+\begin_inset Formula $\varphi$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M\left(\varphi\right)=0$
+\end_inset
+
+, החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסיים.
+\end_layout
+
+\begin_layout Enumerate
+עבור כל משתנה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+L{
+\backslash
+arabic{enumi}.
+\backslash
+arabic{enumii}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הצב 
+\begin_inset Formula $x_{i}=T$
+\end_inset
+
+, צמצם את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ל
+\begin_inset Formula $\varphi_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M\left(\varphi_{T}\right)=1$
+\end_inset
+
+, המשך עם 
+\begin_inset Formula $\varphi_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אחרת, הצב 
+\begin_inset Formula $x_{i}=F$
+\end_inset
+
+ וצמצם את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ל
+\begin_inset Formula $\varphi_{T}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+הצב את השמת האמת שהתקבלה ב
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ אם היא מספקת - החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ אחרת - החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\varphi\notin SAT$
+\end_inset
+
+ - האלגוריתם מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\varphi\in SAT$
+\end_inset
+
+ - אם כל הריצות של 
+\begin_inset Formula $M$
+\end_inset
+
+ החזירו תשובה נכונה, 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ בהכרח תחזיר תשובה נכונה.
+\begin_inset Formula 
+\[
+\Pr\left[\begin{array}{c}
+\textnormal{Some run of \ensuremath{M}}\\
+\textnormal{returns a wrong answer}
+\end{array}\right]\le\left(n+1\right)\cdot\frac{1}{4n}=\frac{n+1}{4n}\le\frac{1}{2}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,727 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+פתרון מערכת משוואות לינאריות)המשך(
+\end_layout
+
+\begin_layout Part*
+יציבות/
+\lang english
+Conditioning
+\end_layout
+
+\begin_layout Standard
+במקרה של מטריצה סינגולרית, 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ לא קיימת ו
+\begin_inset Formula $\det\left(A\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\size largest
+אין פתרון אחד ויחיד למערכת המשוואות!
+\end_layout
+
+\begin_layout Standard
+ביצוע האלימינציה ייתן בסופו של דבר אפס על האלכסון, מה שיוביל למצב של אינסוף
+ פתרונות - או של אין פתרון.
+\end_layout
+
+\begin_layout Standard
+אבל מה אם המטריצה "כמעט סינגולרית"?
+\end_layout
+
+\begin_layout Standard
+במקרים בהם המערכת על סף סינגולריות, השגיאה היחסית גדולה ביותר!
+\end_layout
+
+\begin_layout Section*
+אינטואיציה
+\end_layout
+
+\begin_layout Itemize
+אם שינוי יחסי קטן בקלט גורם לשינוי יחסי קטן בפלט - אז המערכת יציבה.
+\end_layout
+
+\begin_layout Itemize
+אם שינוי יחסי קטן בקלט גורם לשינוי יחסי גדול בפלט - אז המערכת לא יציבה.
+\end_layout
+
+\begin_layout Section*
+הגדרה פורמלית
+\end_layout
+
+\begin_layout Standard
+מספר מצב)
+\lang english
+condition number
+\lang hebrew
+( מודד את השינוי היחסי בפלט לעומת השינוי היחסי בקלט: 
+\begin_inset Formula 
+\[
+K\left(\underline{x}\right)\stackrel{{\scriptstyle \textnormal{def}}}{=}\sup_{\delta\underline{y}}\cfrac{\unitfrac{\left\Vert \delta\underline{x}\right\Vert }{\left\Vert \underline{y}\right\Vert }}{\unitfrac{\left\Vert \delta\underline{y}\right\Vert }{\left\Vert \underline{y}\right\Vert }}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\underline{y}$
+\end_inset
+
+ ו
+\begin_inset Formula $\underline{x}$
+\end_inset
+
+ וקטורי הקלט והפלט, בהתאמה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta\underline{y}$
+\end_inset
+
+ וקטור הפרטורבציה ו
+\begin_inset Formula $\delta\underline{x}$
+\end_inset
+
+ וקטור הסטיה מהפתרון האמיתי.)מונחים מעולם ההנדסה.
+ פרטורבציה - שינוי בכניסה.
+ סטיה - שינוי ביציאה.
+ מערכת יציבה היא מערכת שלא מגיבה בצורה דרסטית על שינויים קטנים.(
+\end_layout
+
+\begin_layout Section*
+חישוב נורמות של ווקטורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\Vert \cdot\right\Vert $
+\end_inset
+
+ - נורם)
+\lang english
+norm
+\lang hebrew
+( או אורך)גודל( של וקטור)מטריצה(.
+\end_layout
+
+\begin_layout Standard
+באופן כללי:
+\begin_inset Formula 
+\[
+\left\Vert \underline{x}\right\Vert _{p}\triangleq\left(\sum_{i=1}^{n}\left|x_{i}\right|^{p}\right)^{\unitfrac{1}{p}}
+\]
+
+\end_inset
+
+קל לראות כי מההגדרה הזו נובעים המקרים הפרטיים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p=1$
+\end_inset
+
+ - 
+\begin_inset Formula $\left\Vert \underline{x}\right\Vert _{1}=\sum\limits _{i=1}^{n}\left|x_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p=2$
+\end_inset
+
+ - 
+\begin_inset Formula $\left\Vert \underline{x}\right\Vert _{2}=\left(\sum\limits _{j=1}^{n}x_{i}^{2}\right)^{\unitfrac{1}{2}}=\sqrt{x_{1}^{2}+x_{2}^{2}+\dots+x_{n}^{2}}$
+\end_inset
+
+ - נורמה אוקלידית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p=\infty$
+\end_inset
+
+ - 
+\begin_inset Formula $\left\Vert \underline{x}\right\Vert _{\infty}=\max\limits _{1\le i\le n}\left|x_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה ל
+\begin_inset Formula $\left\Vert \cdot\right\Vert _{\infty}$
+\end_inset
+
+: נניח ש
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ הוא המקסימלי בערך מוחלט:
+\begin_inset Formula 
+\[
+\left\Vert \underline{x}\right\Vert _{\infty}=\lim_{p\to\infty}\left(\left|x_{i}\right|^{p}\left(\xcancel{\left|\cfrac{x_{1}}{x_{i}}\right|^{p}}+\xcancel{\left|\cfrac{x_{2}}{x_{i}}\right|^{p}}+\dots+\xcancel{\left|\cfrac{x_{n}}{x_{i}}\right|^{p}}\right)\right)^{\unitfrac{1}{p}}=x_{i}
+\]
+
+\end_inset
+
+)כל שאר ה
+\begin_inset Formula $x$
+\end_inset
+
+ים נעלמים כי 
+\begin_inset Formula $\left|\cfrac{x_{j}}{x_{i}}\right|<1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|\cfrac{x_{j}}{x_{i}}\right|^{p}\to0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+תכונות הנורם שנדרשות מווקטורים ומטריצות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert A\right\Vert \ge0$
+\end_inset
+
+ ו
+\begin_inset Formula $\left\Vert A\right\Vert =0$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $A=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\Vert k\cdot A\right\Vert =\left|k\right|\left\Vert A\right\Vert $
+\end_inset
+
+)כפל בקבוע(
+\end_layout
+
+\begin_layout Enumerate
+אי שוויון המשולש - 
+\begin_inset Formula $\left\Vert A+B\right\Vert \le\left\Vert A\right\Vert +\left\Vert B\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אורך מכפלה קטן ממכפלת האורכים - 
+\begin_inset Formula $\left\Vert A\cdot B\right\Vert \le\left\Vert A\right\Vert \cdot\left\Vert B\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטואיציה ל
+\numeric on
+4
+\numeric off
+: 
+\begin_inset Formula $\bar{A}\cdot\bar{B}=\left\Vert A\right\Vert \left\Vert B\right\Vert \cos\theta$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+\left\Vert \bar{A}\cdot\bar{B}\right\Vert =\left\Vert \left\Vert A\right\Vert \left\Vert B\right\Vert \cos\theta\right\Vert =\left\Vert A\right\Vert \left\Vert B\right\Vert \left|\cos\theta\right|\le\left\Vert A\right\Vert \left\Vert B\right\Vert 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נורמות נפוצות למטריצות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert A\right\Vert _{1}=\max\limits _{1\le j\le n}\sum\limits _{i=1}^{n}\left|a_{ij}\right|$
+\end_inset
+
+ - סכום עמודה מקסימלי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert A\right\Vert _{\infty}=\max\limits _{1\le i\le n}\sum\limits _{j=1}^{n}\left|a_{ij}\right|$
+\end_inset
+
+ - סכום שורה מקסימלי
+\end_layout
+
+\begin_layout Standard
+כמו כן ניתן להגדיר 
+\begin_inset Formula $\left\Vert A\right\Vert _{F}=\left(\sum\limits _{i=1}^{n}\sum\limits _{j=1}^{n}a_{ij}^{2}\right)^{\unitfrac{1}{2}}$
+\end_inset
+
+)נורם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Frobenius
+\lang hebrew
+( ולהראות כי 
+\begin_inset Formula $\left\Vert A\right\Vert _{2}\le\left\Vert A\right\Vert _{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וכן 
+\begin_inset Formula $\left\Vert A\right\Vert _{2}\sqrt{r_{\sigma}\left(A^{t}\cdot A\right)}$
+\end_inset
+
+ באשר 
+\begin_inset Formula $r_{\sigma}\left(A\right)\triangleq\max\limits _{\lambda\in\sigma\left(A\right)}\left|\lambda\right|$
+\end_inset
+
+ - כלומר הערך העצמי)בערך מוחלט( הגדול ביותר של המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+חישוב מספר המצב עבור מערכת משוואות לינאריות
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $I$
+\end_inset
+
+ - שינוי ב
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר
+\begin_inset Formula 
+\[
+A\underline{x}=\underline{b}
+\]
+
+\end_inset
+
+הופך ל
+\begin_inset Formula 
+\[
+A\underline{\overline{x}}=\underline{b}+\underline{r}
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $\underline{e}=\underline{\overline{x}}-\underline{x}$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+A\underline{e}=A\left(\underline{\overline{x}}-\underline{x}\right)=A\underline{\overline{x}}-A\underline{x}=\cancel{b}+\underline{r}-\cancel{b}=\underline{r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\underline{e}=A^{-1}\underline{r}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\underline{e}$
+\end_inset
+
+ זה השינוי בפלט ו
+\begin_inset Formula $\underline{r}$
+\end_inset
+
+ זה השינוי בקלט.
+ רוצים למצוא חסם עליון ל
+\begin_inset Formula $\cfrac{\unitfrac{\left\Vert \underline{e}\right\Vert }{\left\Vert \underline{x}\right\Vert }}{\unitfrac{\left\Vert \underline{r}\right\Vert }{\left\Vert \underline{b}\right\Vert }}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי תכונות של נורמות של מטריצות נקבל
+\begin_inset Formula 
+\[
+\left\Vert \underline{r}\right\Vert =\left\Vert A\underline{e}\right\Vert \le\left\Vert A\right\Vert \left\Vert \underline{e}\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \underline{e}\right\Vert \le\left\Vert A^{-1}\right\Vert \cdot\left\Vert \underline{r}\right\Vert 
+\]
+
+\end_inset
+
+נחלק את המשוואה הראשונה ב
+\begin_inset Formula $\left\Vert A\right\Vert \left\Vert \underline{x}\right\Vert $
+\end_inset
+
+ ואת השנייה 
+\begin_inset Formula $\left\Vert \underline{x}\right\Vert $
+\end_inset
+
+, ונקבל
+\begin_inset Formula 
+\[
+\boxed{\cfrac{\left\Vert \underline{r}\right\Vert }{\left\Vert A\right\Vert \left\Vert \underline{x}\right\Vert }\le\cfrac{\left\Vert \underline{e}\right\Vert }{\left\Vert \underline{x}\right\Vert }\le\cfrac{\left\Vert A^{-1}\right\Vert \left\Vert \underline{r}\right\Vert }{\left\Vert \underline{x}\right\Vert }}
+\]
+
+\end_inset
+
+נוסיף לכך את אי השוויונים 
+\begin_inset Formula $\left\Vert \underline{b}\right\Vert \le\left\Vert A\right\Vert \left\Vert \underline{x}\right\Vert $
+\end_inset
+
+ ו
+\begin_inset Formula $\left\Vert \underline{x}\right\Vert \le\left\Vert A^{-1}\right\Vert \left\Vert \underline{b}\right\Vert $
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+\cfrac{1}{\left\Vert A\right\Vert \left\Vert A^{-1}\right\Vert }\cdot\cfrac{\left\Vert \underline{r}\right\Vert }{\left\Vert \underline{b}\right\Vert }\le\cfrac{\left\Vert \underline{e}\right\Vert }{\left\Vert \underline{x}\right\Vert }\le\left\Vert A\right\Vert \left\Vert A^{-1}\right\Vert \cdot\cfrac{\left\Vert \underline{r}\right\Vert }{\left\Vert \underline{b}\right\Vert }
+\]
+
+\end_inset
+
+שכן
+\begin_inset Formula 
+\[
+\cfrac{1}{\left\Vert \underline{x}\right\Vert }\ge\cfrac{1}{\left\Vert A^{-1}\right\Vert }\cdot\cfrac{1}{\left\Vert \underline{b}\right\Vert }\qquad\cfrac{1}{\left\Vert \underline{x}\right\Vert }\le\cfrac{\left\Vert A\right\Vert }{\left\Vert \underline{b}\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שהמכפלה 
+\begin_inset Formula $\boxed{\left\Vert A\right\Vert \left\Vert A^{-1}\right\Vert }$
+\end_inset
+
+ מראה את השינוי בפלט לעומת השינוי בקלט - והיא נקראת מדד היציבות)
+\lang english
+condition number
+\lang hebrew
+( של המטריצה.
+ ככל שהוא גדול יותר ככה המערכת פחות יציבה.
+\end_layout
+
+\begin_layout Standard
+מספר המצב האופטימלי הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, כי
+\begin_inset Formula 
+\[
+\underline{1}=\left\Vert I\right\Vert =\left\Vert A\cdot A^{-1}\right\Vert \le\left\Vert A\right\Vert \left\Vert A^{-1}\right\Vert =\textnormal{cond}\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $II$
+\end_inset
+
+ - שינוי באיברי המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקום המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $A+\delta A$
+\end_inset
+
+.
+ נקבל:
+\begin_inset Formula 
+\[
+\underline{x}=A^{-1}\underline{b}=A^{-1}\left(A+\delta A\right)\underline{\overline{x}}=\left(I+A^{-1}\delta A\right)\underline{\overline{x}}=\underline{\overline{x}}+\left(A^{-1}\delta A\right)\underline{\overline{x}}
+\]
+
+\end_inset
+
+מכאן
+\begin_inset Formula 
+\[
+\underline{x}-\underline{\overline{x}}=\left(A^{-1}\delta A\right)\underline{\overline{x}}
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\cfrac{\left\Vert \underline{x}-\underline{\overline{x}}\right\Vert }{\left\Vert \underline{\overline{x}}\right\Vert }\le\left\Vert A^{-1}\delta A\right\Vert \le\left\Vert A^{-1}\right\Vert \left\Vert \delta A\right\Vert 
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\cfrac{\left\Vert \underline{x}-\underline{\overline{x}}\right\Vert }{\left\Vert \underline{\overline{x}}\right\Vert }\le\textnormal{cond}\left(A\right)\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה 
+\begin_inset Formula $III$
+\end_inset
+
+ - שינוי גם באיברי 
+\begin_inset Formula $A$
+\end_inset
+
+ וגם בווקטור 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+משפט
+\series default
+: נתונה מערכת המשוואות 
+\begin_inset Formula $A\underline{x}=\underline{b}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ לא סינגולרית, ויהי 
+\begin_inset Formula $\delta\left(A\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\delta\underline{b}$
+\end_inset
+
+ פרטורבציות הקלט.
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+\vdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+\cfrac{\left\Vert \delta\underline{x}\right\Vert }{\left\Vert \underline{x}\right\Vert }\le\cfrac{\textnormal{cond}\left(A\right)}{1-\textnormal{cond}\left(A\right)\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }}\cdot\left(\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }+\cfrac{\left\Vert \delta\underline{b}\right\Vert }{\left\Vert \underline{b}\right\Vert }\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{cond}\left(A\right)\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }=\cancel{\textnormal{cond}\left(A\right)}\cdot\cfrac{\left\Vert \delta A\right\Vert \left\Vert A^{-1}\right\Vert }{\cancel{\left\Vert A\right\Vert \left\Vert A^{-1}\right\Vert }}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\textnormal{cond}\left(A\right)\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }=1-\left\Vert \delta A\right\Vert \left\Vert A^{-1}\right\Vert \Rightarrow\left\Vert \delta A\right\Vert <\cfrac{1}{\left\Vert A^{-1}\right\Vert }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\textnormal{cond}\left(A\right)}{1-\textnormal{cond}\left(A\right)\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }}\cdot\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }\ge\cfrac{\left\Vert \delta A\right\Vert }{\left\Vert A\right\Vert }\cdot\textnormal{cond}\left(A\right)
+\]
+
+\end_inset
+
+כלומר במקרה הכללי החסם יותר גדול מאשר במקרה שמשנים רק את 
+\begin_inset Formula $A$
+\end_inset
+
+ - וזה הגיוני!
+\end_layout
+
+\end_body
+\end_document

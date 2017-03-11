@@ -1,0 +1,1750 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תזכורת - אלגוריתם לא דטרמיניסטי
+\end_layout
+
+\begin_layout Subsection*
+בעיות הכרעה
+\end_layout
+
+\begin_layout Itemize
+אם התשובה היא כן, קיים מסלול מקבל.
+\end_layout
+
+\begin_layout Itemize
+אם התשובה היא לא, כל המסלולים מחזירים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+בעיות חישוב
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם מחזיר תשובה נכונה או "לא יודע".
+\end_layout
+
+\begin_layout Itemize
+קיימת לפחות ריצה אחת שמחזירה תשובה נכונה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שהבעיות הבאות ב
+\begin_inset Formula $NL$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Subsection*
+סעיף א
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ לא מכוון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: האם קיימים ב
+\begin_inset Formula $G$
+\end_inset
+
+ בדיוק שני רכיבי קשירות המקווים ביחד את כל הגרף?
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון לא נכון
+\end_layout
+
+\begin_layout Enumerate
+נבחר קודקוד כלשהו 
+\begin_inset Formula $v$
+\end_inset
+
+ בצורה שרירותית.
+\end_layout
+
+\begin_layout Enumerate
+לכל קדקד 
+\begin_inset Formula $u\neq v$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+L{
+\backslash
+arabic{enumi}.
+\backslash
+arabic{enumii}}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $0=\textnormal{st-Conn}\left(G,v,u\right)$
+\end_inset
+
+ עבור לצעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+אם עברנו על כל הקודקודים החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסיים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לכל קדקד 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $1=\textnormal{st-Conn}\left(G,v,w\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $1=\textnormal{st-Conn}\left(G,u,w\right)$
+\end_inset
+
+ המשך לקדקד הבא.
+\end_layout
+
+\begin_layout Standard
+אחרת - החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסיים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הפתרון לא נכון, כי הוא סומך על תשובה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אלגוריתם ב
+\begin_inset Formula $NL$
+\end_inset
+
+)
+\begin_inset Formula $\textnormal{st-Conn}$
+\end_inset
+
+( - ואם אלגוריתם לא דטרמיניסטי מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה לא אומר כלום.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\color red
+אי אפשר לסמוך על תשובה 
+\numeric on
+0
+\numeric off
+ של אלגוריתם לא דטרמיניסטי!
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון נכון
+\end_layout
+
+\begin_layout Standard
+נזכור ש
+\begin_inset Formula $coNL=NL$
+\end_inset
+
+ - ולכן אם 
+\begin_inset Formula $\textnormal{st-Conn}\in NL$
+\end_inset
+
+ גם 
+\begin_inset Formula $\textnormal{non-Conn}\in NL$
+\end_inset
+
+.
+ לכן אפשר להשתמש ב
+\begin_inset Formula $\textnormal{non-Conn}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+נבחר קודקוד כלשהו 
+\begin_inset Formula $v$
+\end_inset
+
+ בצורה שרירותית.
+\end_layout
+
+\begin_layout Enumerate
+לכל קדקד 
+\begin_inset Formula $u\neq v$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+L{
+\backslash
+arabic{enumi}.
+\backslash
+arabic{enumii}}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $1=\textnormal{non-Conn}\left(G,v,u\right)$
+\end_inset
+
+ עבור לצעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+אם עברנו על כל הקודקודים החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסיים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לכל קדקד 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $1=\textnormal{st-Conn}\left(G,v,w\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $1=\textnormal{st-Conn}\left(G,u,w\right)$
+\end_inset
+
+ המשך לקדקד הבא.
+\end_layout
+
+\begin_layout Standard
+אחרת - החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וסיים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הפעם אנו מסתמכים על תשובה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אלגוריתם לא דטרמיניסטי - ועל תשובה כזו מותר לסמוך.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+גרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קדקדים 
+\begin_inset Formula $s,t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מספר 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: האם המסלול הקצר ביותר בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+ הוא באורך 
+\begin_inset Formula $k$
+\end_inset
+
+ בדיוק.
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+האלגוריתם 
+\begin_inset Formula $\textnormal{reach}\left(G,s,t,d\right)$
+\end_inset
+
+ בודק האם קיים מסלול בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+ באורך
+\begin_inset Formula $d\ge$
+\end_inset
+
+, והוא ב
+\begin_inset Formula $NL$
+\end_inset
+
+.
+ לכן גם ההופכי שלו, 
+\begin_inset Formula $\textnormal{non-reach}$
+\end_inset
+
+, הוא ב
+\begin_inset Formula $NL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\textnormal{reach}\left(G,s,t,k\right)=1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\textnormal{non-reach}\left(G,s,t,k-1\right)=1$
+\end_inset
+
+ החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+אחרת החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $PP_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $L\in PP_{1}$
+\end_inset
+
+ אם קיימת מכונת טיורינג פולינומית 
+\begin_inset Formula $M$
+\end_inset
+
+ המקיימת:
+\begin_inset Formula 
+\begin{eqnarray*}
+x\in L & \iff & \Pr\left[M\left(x\right)=1\right]>\frac{1}{2}\\
+x\notin L & \iff & \Pr\left[M\left(x\right)=0\right]\ge\frac{1}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $PP_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $L\in PP_{2}$
+\end_inset
+
+ אם קיימת מכונת טיורינג פולינומית 
+\begin_inset Formula $M$
+\end_inset
+
+ המקיימת:
+\begin_inset Formula 
+\[
+\forall_{x}\Pr\left[M\left(x\right)=\chi_{L}\left(x\right)\right]>\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכיחו ש
+\begin_inset Formula $PP_{1}=PP_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הערה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם היינו מגדירים את 
+\begin_inset Formula $PP_{1}$
+\end_inset
+
+ כך שההסתברות לתשובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נכונה היא 
+\bar under
+גדולה
+\bar default
+ או שווה ל
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, אזי כל השפות היו ב
+\begin_inset Formula $PP_{1}$
+\end_inset
+
+ - שכן אפשר להטיל מטבע.
+\end_layout
+
+\begin_layout Subsubsection*
+הערה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PP_{2}$
+\end_inset
+
+ שונה באופן מהותי מ
+\begin_inset Formula $BPP$
+\end_inset
+
+, שכן ב
+\begin_inset Formula $BPP$
+\end_inset
+
+ יש לנו רוב מוחלט לתשובה הנכונה, ואילו ב
+\begin_inset Formula $BPP$
+\end_inset
+
+ הרוב מאוד קטן - זה יכול להיות הבדל של ריצה אחת מתוך מספר אקספוננציאלי של
+ ריצות, ולכן אי אפשר לעשות אמפליפיקציה במספר פולינומי של ריצות.
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PP_{2}\subseteq PP_{1}$
+\end_inset
+
+ - ברור! נראה ש
+\begin_inset Formula $PP_{1}\subseteq PP_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in PP_{1}$
+\end_inset
+
+.
+ קיימת מכונת טיורינג פולינומית 
+\begin_inset Formula $M'$
+\end_inset
+
+ עם ההסתברות של 
+\begin_inset Formula $PP_{1}$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $L\in PP_{2}$
+\end_inset
+
+.
+ נבנה מכונת טיורינג פולינומית 
+\begin_inset Formula $M$
+\end_inset
+
+ עם ההסתברות של 
+\begin_inset Formula $PP_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\in L\iff\Pr\left[M'\left(x\right)=1\right]>\frac{1}{2}\qquad x\notin L\iff\Pr\left[M'\left(x\right)=0\right]\ge\frac{1}{2}
+\]
+
+\end_inset
+
+יהי 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ פולינום החוסם את מספר הטלות המטבע של 
+\begin_inset Formula $M'$
+\end_inset
+
+.
+ נטען שאת 
+\begin_inset Formula $\Pr\left[M'\left(x\right)=1\right]>\frac{1}{2}$
+\end_inset
+
+ אפשר להחליף ב
+\begin_inset Formula 
+\[
+\Pr\left[M'\left(x\right)=1\right]\ge\frac{1}{2}+\frac{1}{2^{p\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+שכן אם יש מקסימום 
+\begin_inset Formula $p\left(\left|x\right|\right)$
+\end_inset
+
+ הטלות מטבע, אזי ההסתברות של כל תוצאה היא כפולה שלמה של 
+\begin_inset Formula $\frac{1}{2^{p\left(\left|x\right|\right)}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה אלגוריתם 
+\begin_inset Formula $M$
+\end_inset
+
+ שעל קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, בהסתברות 
+\begin_inset Formula $\frac{1}{2^{2p\left(\left|x\right|\right)}}$
+\end_inset
+
+ מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומסיים.
+ בהסתברות המשלימה 
+\begin_inset Formula $\left(1-\frac{1}{2^{2p\left(\left|x\right|\right)}}\right)$
+\end_inset
+
+ מריץ את 
+\begin_inset Formula $M'\left(x\right)$
+\end_inset
+
+ ומחזיר את הפלט שלו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: נוסחת ההסתברות השלמה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ שני מאוראות, אזי
+\begin_inset Formula 
+\[
+\Pr\left[A\right]=\Pr\left[A\middle|B\right]\cdot\Pr\left[B\right]+\Pr\left[A\middle|\neg B\right]\cdot\Pr\left[\neg B\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $E$
+\end_inset
+
+ את המאורע ש
+\begin_inset Formula $M$
+\end_inset
+
+ החזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשלב הראשון:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Pr\left[M\left(x\right)=1\right]=\Pr\left[M\left(x\right)=1\middle|E\right]\cdot\Pr\left[E\right]+\Pr\left[M\left(x\right)=1\middle|\neg E\right]\cdot\Pr\left[\neg E\right]\ge
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ge\left(\frac{1}{2}+\frac{1}{2^{p\left(\left|x\right|\right)}}\right)\left(1-\frac{1}{2^{2p\left(\left|x\right|\right)}}\right)=\frac{1}{2}+\underbrace{\frac{1}{2^{p\left(\left|x\right|\right)}}-\frac{1}{2^{2p\left(\left|x\right|\right)+1}}-\frac{1}{2^{2p\left(\left|x\right|\right)}}}_{>0}>\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Pr\left[M\left(x\right)=0\right]=\Pr\left[M\left(x\right)=0\middle|E\right]\cdot\Pr\left[E\right]+\Pr\left[M\left(x\right)=0\middle|\neg E\right]\cdot\Pr\left[\neg E\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1\cdot\Pr\left[E\right]+\Pr\left[M'\left(x\right)=0\right]\cdot\Pr\left[\neg E\right]=\frac{1}{2^{2p\left(\left|x\right|\right)}}+\frac{1}{2}-\frac{1}{2^{2p\left(\left|x\right|\right)+1}}>\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מה ה
+\begin_inset Formula $i$
+\end_inset
+
+ המינימלי עבורו 
+\begin_inset Formula $NP^{BPP}\subseteq\Sigma_{i}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ראינו בהצראה ש
+\begin_inset Formula $BPP\subseteq\Sigma_{2}$
+\end_inset
+
+.
+ לכן:
+\begin_inset Formula 
+\[
+NP^{BPP}\subseteq NP^{\Sigma_{2}}=\Sigma_{3}
+\]
+
+\end_inset
+
+נראה ש
+\begin_inset Formula $NP^{BPP}\subseteq\Sigma_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+BPP=coBPP\\
+coBPP\subseteq co\Sigma_{2}
+\end{array}\implies BPP\subseteq\Pi_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+BPP\subseteq\Sigma_{2}\cap\Pi_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח 
+\begin_inset Formula $NP^{\Sigma_{2}\cap\Pi_{2}}\subseteq\Sigma_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+NP^{BPP}\subseteq NP^{\Sigma_{2}\cap\Pi_{2}}
+\]
+
+\end_inset
+
+תהי 
+\begin_inset Formula $L\in NP^{\Sigma_{2}\cap\Pi_{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת מכונת טיורינג לא דטרמיניסטית פולינומית 
+\begin_inset Formula $M^{A}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $A\in\Sigma_{2}\cap\Pi_{2}$
+\end_inset
+
+ נראה ש
+\begin_inset Formula $L\in\Sigma_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ידוע 
+\begin_inset Formula $A\in\Sigma_{2}\cap\Pi_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A\in\Sigma_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $N_{A}^{\textnormal{SAT}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A}\in\Sigma_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $N_{\overline{A}}^{\textnormal{SAT}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP^{\Sigma_{i}\cap\Pi_{i}}\subseteq\Sigma_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R\in PC\backslash PF$
+\end_inset
+
+.
+ הראו שאם קיימת רדוקציה עצמית עבור 
+\begin_inset Formula $R$
+\end_inset
+
+, אזי הרדוקציה עושה יותר מאשר מספר לוגריתמי של שאילתות לבעיית ההכרעה המתאימה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R\in PC\backslash PF$
+\end_inset
+
+.
+ נניח שקיימת רדוקציה עצמית שעושה מספר לוגריתמי של שאילתות לבעיית ההכרעה.
+ נראה ש
+\begin_inset Formula $R\in PF$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נריץ את המכונה המשתמשת באורקל, אבל במקום לבצע אורקל - נפצל את הריצה לשני
+ מסלולים בכל שאילתת אורקל.
+ מכיוון שיש רק מספר לוגריתמי של גישות, ניתן לעבור על כל האפשרויות בזמן פולינומי.
+ מכיוון ש
+\begin_inset Formula $R\in PC$
+\end_inset
+
+, הבדיקה אם מסלול מחזיר תשובה נכונה היא פולינומית.
+\end_layout
+
+\end_body
+\end_document

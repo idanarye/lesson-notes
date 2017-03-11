@@ -1,0 +1,1639 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מד"ר לינאריות עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}y^{\left(n\right)}+a_{n-1}y^{\left(n-1\right)}+...+a_{1}y'+a_{0}y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a_{0},a_{1},...a_{n}\in\mathbb{R}$
+\end_inset
+
+)לא פונקציות של 
+\begin_inset Formula $x$
+\end_inset
+
+ היום!( "מקדמים קבועים"
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $b\left(x\right)=0$
+\end_inset
+
+ מקרה הומוגני
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $b\left(x\right)\ne0$
+\end_inset
+
+ לא הומוגני/אי הומוגני
+\end_layout
+
+\begin_layout Standard
+כתבנו את זה גם בצורה 
+\begin_inset Formula $Ly=b\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $L=a_{n}D^{n}+a_{n-1}D^{n-1}+...+a_{1}D+a_{0}=\sum\limits _{i=0}^{n}a_{i}D^{i}$
+\end_inset
+
+.
+ אופרטור דיפרנציאלי לינארי עם מקדמים קבועים.
+\end_layout
+
+\begin_layout Standard
+ראינו פעם שעברה שאדלמ"קים)אופרטורים דיפרנציאלים לינאריים עם מקדמים קבועים(
+ מתחלפים.
+ כתוצאה מכך:
+\end_layout
+
+\begin_layout Subsection*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם ל
+\begin_inset Formula $i$
+\end_inset
+
+ כלשהו 
+\begin_inset Formula $L_{i}y=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $L_{1}L_{2}...L_{d}y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( הפתרון הכללי של 
+\begin_inset Formula $\left(a_{1}D+a_{0}\right)y=0$
+\end_inset
+
+ )
+\begin_inset Formula $a_{1}\ne0$
+\end_inset
+
+( הוא 
+\begin_inset Formula $y=Ce^{-\unitfrac{a_{0}x}{1}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $C$
+\end_inset
+
+ קבוע חופשי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( אם למשוואה 
+\begin_inset Formula $a_{2}m^{2}+a_{1}m+a_{0}=0$
+\end_inset
+
+ יש שורשים מרוכבים צמודים 
+\begin_inset Formula $\alpha\pm i\beta$
+\end_inset
+
+ אזי הפתרון הכללי של 
+\begin_inset Formula $\left(a_{2}D^{2}+a_{1}D+a_{0}\right)y=0$
+\end_inset
+
+ הוא 
+\begin_inset Formula $y=e^{\alpha x}\left(C_{1}\cos\beta x+C_{2}\sin\beta x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ קבועים חופשיים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( אם למשווה 
+\begin_inset Formula $a_{2}m^{2}+a_{1}m^{2}+a_{1}m+a_{0}=0$
+\end_inset
+
+ יש שורש כפול 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, אזי הפתרון הכללי של המשוואה 
+\begin_inset Formula $\left(a_{2}D^{2}+a_{1}D+a_{0}\right)y=0$
+\end_inset
+
+ הוא 
+\begin_inset Formula $y=e^{\alpha x}\left(C_{1}+C_{2}x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ קבועים חופשיים.
+\end_layout
+
+\begin_layout Subsubsection*
+איך פותרים 
+\begin_inset Formula $a_{2}y''+a_{1}y'+a_{0}y=0$
+\end_inset
+
+?)
+\begin_inset Formula $a_{0},a_{1},a_{2}$
+\end_inset
+
+ קבועים חופשיים(
+\end_layout
+
+\begin_layout Standard
+מסתכלים על 
+\bar under
+המשוואה המאפיינת
+\bar default
+ 
+\begin_inset Formula $a_{2}m^{2}+a_{1}m+a_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם יש שורשים מרוכבים צמודים 
+\begin_inset Formula $\alpha\pm i\beta$
+\end_inset
+
+, פתרון כללי 
+\begin_inset Formula $y=e^{\alpha x}\left(C_{1}\cos\beta x+C_{2}\sin\beta x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם יש שורש ממשי כפול 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, פתרון כללי 
+\begin_inset Formula $y=e^{\alpha x}\left(C_{1}+C_{2}x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם יש שורשים ממשיים שונים 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+, פתרון כללי 
+\begin_inset Formula $y=C_{1}e^{\alpha x}+C_{2}e^{\beta x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת הלמה)
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א( אם 
+\begin_inset Formula $y=e^{-\unitfrac{a_{0}x}{a_{1}}}$
+\end_inset
+
+, 
+\begin_inset Formula $y'=-\cfrac{a_{0}}{a_{1}}e^{-\unitfrac{a_{0}x}{a_{1}}}$
+\end_inset
+
+ ו
+\begin_inset Formula $a_{1}y'+a_{0}y=0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $y$
+\end_inset
+
+ זה פותר את המשוואה 
+\begin_inset Formula $\left(a_{1}D+a_{0}\right)y=0$
+\end_inset
+
+, והפתרון הכללי הוא 
+\begin_inset Formula $Ce^{-\unitfrac{a_{0}x}{a_{1}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב( עלינו להוכיח ש
+\begin_inset Formula $e^{\alpha x}\cos\beta x$
+\end_inset
+
+ ו
+\begin_inset Formula $e^{\alpha x}\sin\beta x$
+\end_inset
+
+ הם פתרונות של 
+\begin_inset Formula $a_{2}y''+a_{1}y'+a_{0}y=0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\alpha\pm i\beta$
+\end_inset
+
+ הם שורשים של 
+\begin_inset Formula $a_{2}m^{2}+a_{1}m+a_{0}=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y=e^{\alpha x}\cos\beta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\alpha e^{\alpha x}\cos\beta x-\beta e^{\alpha x}\sin\beta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\left(\alpha^{2}-\beta^{2}\right)e^{\alpha x}\cos\beta x-2\alpha\beta e^{\alpha x}\sin\beta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2}y''+a_{1}y'+a_{0}=\left(a_{2}\left(\alpha^{2}-\beta^{2}\right)+a_{1}\alpha+a_{0}\right)e^{\alpha x}\cos\beta x-\left(2\alpha\beta a_{2}+\beta a_{1}\right)e^{\alpha x}\sin\beta x
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $a_{2}\left(\alpha+i\beta\right)^{2}+a_{1}\left(\alpha+i\beta\right)+a_{0}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow a_{2}\left(\alpha^{2}+2i\alpha\beta-\beta^{2}\right)+a_{1}\left(\alpha+i\beta\right)+a_{0}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left\{ \begin{array}{c}
+a_{2}\left(\alpha^{2}-\beta^{2}\right)+a_{1}\alpha+a_{0}=0\\
+2\alpha\beta a_{2}+a_{1}\beta=0
+\end{array}\right.
+\]
+
+\end_inset
+
+)פיצלנו לחלק ממשי וחלק מדומה( ולכן הביטוי למעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ עבור 
+\begin_inset Formula $y=e^{\alpha x}\sin\beta x$
+\end_inset
+
+ ההוכחה דומה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ג( למשוואה 
+\begin_inset Formula $a_{2}m^{2}+a_{1}m+a_{0}=0$
+\end_inset
+
+ יש שורש כפול 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $a_{1}^{2}=4a_{0}a_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha=-\cfrac{a_{1}}{2a_{2}}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $y=e^{\alpha x}\left(C_{1}+C_{2}x\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y'=\alpha e^{\alpha x}\left(C_{1}+C_{2}x\right)+e^{\alpha x}C_{2}=e^{\alpha x}\left(C_{1}\alpha+C_{2}+C_{2}\alpha x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\alpha e^{\alpha x}\left(C_{1}\alpha+C_{2}+C_{2}\alpha x\right)+e^{\alpha x}C_{2}\alpha=e^{\alpha x}\left(C_{1}\alpha^{2}+2C_{2}\alpha+C_{2}\alpha^{2}x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2}y''+a_{1}y'+a_{0}y=e^{\alpha x}\left(\begin{array}{c}
+a_{2}\left[C_{1}\alpha^{2}+2C_{2}\alpha+C_{2}\alpha^{2}x\right]\\
++a_{1}\left[C_{1}\alpha+C_{2}+C_{2}\alpha x\right]+a_{0}\left[C_{1}+C_{2}x\right]
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=e^{\alpha x}\left(C_{2}x\underset{\begin{array}{c}
+=0\\
+when\,\alpha\, root\, of\\
+a_{2}m^{2}+a_{1}m+a_{0}=0
+\end{array}}{\underbrace{\left(a_{2}\alpha^{2}+a_{1}\alpha+a_{0}\right)}}+C_{1}\left(a_{2}\alpha^{2}+a_{1}\alpha+a_{0}\right)+C_{2}\underset{\begin{array}{c}
+=0\\
+when\\
+\alpha=-\cfrac{a_{1}}{2a_{2}}
+\end{array}}{\underbrace{\left(2\alpha a_{2}+a_{1}\right)}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשוואה 
+\begin_inset Formula $Ly=0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $L=a_{n}D^{n}+...+a_{1}D+a_{0}$
+\end_inset
+
+ מסתכלים על 
+\bar under
+המשוואה המאפיינת
+\bar default
+ 
+\begin_inset Formula $a_{n}m^{n}+a_{n-1}m^{n-1}+...+a_{1}m+a_{0}=0$
+\end_inset
+
+ ומפרקים את הפולינום בצד שמאל לגורמים לינאריים וריבועיים.
+ אם כל הגורמים שונים זה מזה
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+a_{n}\left(m-\alpha_{1}\right)\left(m-\alpha_{2}\right)...\left(m-\alpha_{r}\right)\left(m^{2}+b_{1}m+C_{1}\right)...\left(m^{2}+b_{s}m+C_{s}\right)\\
+r+2s=n
+\end{array}\right]
+\]
+
+\end_inset
+
+אם כל הגורמים שונים ניתן כבר עכשיו לרשום פתרון כללי:
+\begin_inset Formula 
+\[
+g=C_{1}e^{\alpha_{1}x}+...+C_{r}e^{\alpha_{r}}+e^{p_{1}x}\left(C_{r+1}\cos q_{1}x+C_{r+2}\sin q_{1}x\right)+...+e^{p_{s}x}\left(C_{n-1}\cos q_{s}x+C_{n}\sin q_{s}x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מה אם יש גורמים כפולים?
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ אופרטור דיפרנציאלי לינארי עם מקדמים קבועים ו
+\begin_inset Formula $Ly=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $L^{t+1}\left(x^{t}y\right)=0,t=1,2,3,...$
+\end_inset
+
+.
+ כלומר: אם 
+\begin_inset Formula $Ly=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $L^{2}y=L^{2}\left(xy\right)=0$
+\end_inset
+
+ ו
+\begin_inset Formula $L^{3}y=L^{3}\left(xy\right)=L^{3}\left(x^{2}y\right)=0$
+\end_inset
+
+ וכו', ולכן אם יש גורם 
+\begin_inset Formula $\left(m-\alpha\right)$
+\end_inset
+
+ המופיע פעמיים, בפתרון הכללי לא רק רושמים 
+\begin_inset Formula $C_{1}e^{\alpha x}$
+\end_inset
+
+ אלא גם 
+\begin_inset Formula $C_{2}x^{\alpha x}$
+\end_inset
+
+.
+ אם שלוש פעמים אז גם 
+\begin_inset Formula $C_{3}x^{2}e^{\alpha x}$
+\end_inset
+
+ וכו'.
+\end_layout
+
+\begin_layout Standard
+ואם יש גורים 
+\begin_inset Formula $m^{2}+\beta m+\gamma$
+\end_inset
+
+ המופיע פעמיים)שורשים 
+\begin_inset Formula $p\pm iq$
+\end_inset
+
+(, לא רק רושמים 
+\begin_inset Formula $e^{px}\left(C_{1}\cos qx+C_{2}\sin qx\right)$
+\end_inset
+
+ אלא גם 
+\begin_inset Formula $e^{px}\left(C_{3}x\cos x+C_{4}x\sin x\right)$
+\end_inset
+
+, ואם שלוש פעמים אז גם 
+\begin_inset Formula $e^{px}\left(C_{5}x^{2}\cos qx+C_{6}x^{2}\sin qx\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+למת
+\begin_inset space ~
+\end_inset
+
+עזר
+\bar default
+: 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ אדלמ"ק, 
+\begin_inset Formula $\mathcal{L}\left(xy\right)=x\mathcal{L}y+\mathcal{L}'y$
+\end_inset
+
+ כאשר, אם 
+\begin_inset Formula $L=\sum\limits _{i=0}^{n}a_{i}D^{i}$
+\end_inset
+
+, 
+\begin_inset Formula $L'=\sum\limits _{i=1}^{n}ia_{i}D^{i-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+: 
+\begin_inset Formula $\mathcal{L}\left(xy\right)=\sum\limits _{i=0}^{n}a_{i}D^{i}\left(xy\right)$
+\end_inset
+
+.
+ לפי חוק לייבניץ לנגזרת של כפל:
+\begin_inset Formula 
+\[
+D\left(y_{1}y_{2}\right)=y_{1}y_{2}'+y_{1}'y_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D^{2}\left(y_{1}y_{2}\right)=y_{1}y_{2}''+2y_{1}'y_{2}'+y_{1}''y_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D^{i}\left(y_{1}y_{2}\right)=y_{1}D^{i}y_{2}+iDy_{1}D^{i-1}y_{2}+\binom{i}{2}D^{2}y_{1}D^{i-2}y_{2}+...+D^{i}y_{1}y_{2}=\sum_{j=0}^{i}\binom{i}{j}D^{j}y_{1}D^{i-j}y_{2}
+\]
+
+\end_inset
+
+במקרה שלנו:
+\begin_inset Formula 
+\[
+\mathcal{L}\left(xy\right)=\sum_{i=0}^{n}a_{i}D^{i}\left(xy\right)=\sum_{i=0}^{n}a_{i}\left(xD^{i}y+iD^{i-1}y\right)=x\mathcal{L}y+\mathcal{L}'y
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+ למת עזר
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+ע"י אינדוקציה.
+ נניח שנכון כאשר 
+\begin_inset Formula $t=T$
+\end_inset
+
+ וננסה להוכיח עבור 
+\begin_inset Formula $t=T+1$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+L^{T+2}\left(x^{T+1}y\right)=L\cdot L^{T+1}\left(x\cdot x^{T}y\right)=L\cdot\left[xL^{T+1}+\left(L^{T+1}\right)'\left(x^{T}y\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(T+1\right)L'L^{T+1}\left(x^{T}y\right)=0
+\]
+
+\end_inset
+
+ע"י חילופיות של אדלמ"קים לפי הנחת ההאינדוקציה.
+\end_layout
+
+\begin_layout Standard
+הטענה נכונה עבור 
+\begin_inset Formula $t=0$
+\end_inset
+
+, ולכן נכונה לכל 
+\begin_inset Formula $t$
+\end_inset
+
+ ע"י אינדוקציה
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+ 
+\begin_inset Formula $y'''+y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משוואה מאפיינת - 
+\begin_inset Formula $m^{3}+1=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(m+1\right)\left(m^{2}-m+1\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שורשים: 
+\begin_inset Formula $-1,\cfrac{1\pm\sqrt{3}i}{2}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+y=C_{1}e^{-x}+e^{\frac{1}{2}x}\left(C_{2}\cos\cfrac{\sqrt{3}}{2}x+C_{3}\sin\cfrac{\sqrt{3}}{2}x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+ 
+\begin_inset Formula $y^{\left(7\right)}-2y^{\left(5\right)}+y'''=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואה מאפיינת 
+\begin_inset Formula $m^{7}-2m^{5}+m^{3}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{3}\left(m^{4}-2m^{2}+1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{3}\left(m^{2}-1\right)^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{3}\left(m-1\right)^{2}\left(m+1\right)^{2}
+\]
+
+\end_inset
+
+נשים לב שאמנם יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורשים, אבל זו משוואה מסדר שביע, ולכן היא צריכה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקדמים חופשיים:
+\begin_inset Formula 
+\[
+y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}e^{x}+C_{5}xe^{x}+C_{6}e^{-x}+C_{7}xe^{-x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מצא אדלמ"ק המאפסת את 
+\begin_inset Formula $e^{x}+7+3x\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איזה אופרטור מאפס את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+? נגזרת.
+ כדי לאפס את 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ אנו צריכים את האופרטור 
+\begin_inset Formula $\left(D-1\right)$
+\end_inset
+
+ איך נאפס את 
+\begin_inset Formula $3x\sin x$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D^{2}+1$
+\end_inset
+
+ מאפס את 
+\begin_inset Formula $\sin x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ מאפס את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכן לפי הלמה כדי לאפס את 
+\begin_inset Formula $3x\sin x$
+\end_inset
+
+ אנו צריכים את 
+\begin_inset Formula $\left(D^{2}+1\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לאפס את הכל נכפיל את האופרטורים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\left(D-1\right)D\left(D^{2}+1\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\series medium
+\size normal
+\numeric off
+ 
+\begin_inset Formula $\left(1\right)\,\,\, y''+2y'-3y=e^{5x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(D^{2}+2D-3\right)y=e^{5x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(D+3\right)\left(D-1\right)y=e^{5x}
+\]
+
+\end_inset
+
+צד ימין מאופס ע"י 
+\begin_inset Formula $D-5$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left(2\right)\,\,\,\left(D-5\right)\left(D+3\right)\left(D-1\right)y=0
+\]
+
+\end_inset
+
+והפתרון מקבל צורה 
+\begin_inset Formula $y=C_{1}e^{5x}+C_{2}e^{-3x}+C_{3}e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל שימו לב! יש כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ קבועים חופשיים.
+ פתרון של )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( הוא בהכרח פתרון של )
+\numeric on
+2
+\numeric off
+(, אבל 
+\series bold
+\bar under
+לא הפוך
+\series default
+\bar default
+!
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים שפתרון כללי של אי הומוג הוא פתרון פרטי בתוספת פתרון כללי של
+ ההומוג.
+ לכן 
+\begin_inset Formula $C_{2},C_{3}$
+\end_inset
+
+ באמת חופשיים, אבל את 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ יש לקבוע.
+ ולכן, נבדוק מתי 
+\begin_inset Formula $C_{1}e^{5x}$
+\end_inset
+
+ הוא פתרון פרטי.
+\begin_inset Formula 
+\[
+y=C_{1}e^{5x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=5C_{1}e^{5x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=25C_{1}e^{5x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''+2y'-3y=32C_{1}e^{5x}
+\]
+
+\end_inset
+
+לכן יש לקחת 
+\begin_inset Formula $C_{1}=\cfrac{1}{32}$
+\end_inset
+
+, ופתרון כללי של האי-הומוגנית הוא
+\begin_inset Formula 
+\[
+y=\cfrac{1}{32}e^{5x}+C_{2}e^{-3x}+C_{3}e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+5
+\numeric off
+ 
+\begin_inset Formula $y''+y=x^{2}+4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(D^{2}+1\right)y=x^{2}+4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow D^{3}\left(D^{2}+1\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=C_{1}+C_{2}x+C_{3}x^{2}+C_{4}\cos x+C_{5}\sin x
+\]
+
+\end_inset
+
+צריך לתאם את המקדמים שלא שייכים לחלק ההומוגני - כלומר את 
+\begin_inset Formula $C_{1},C_{2},C_{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y=C_{1}+C_{2}x+C_{3}x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=C_{2}+2C_{3}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=2C_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''+y=\left(2C_{3}+C_{1}\right)+C_{2}x+C_{3}x^{2}
+\]
+
+\end_inset
+
+רוצים 
+\begin_inset Formula $x^{2}+4$
+\end_inset
+
+: לכן 
+\begin_inset Formula $\begin{array}{c}
+C_{3}=1\\
+C_{2}=0\\
+C_{1}=2
+\end{array}$
+\end_inset
+
+.
+ פתרון כללי של האי-הומוג הוא
+\begin_inset Formula 
+\[
+y=2+x^{2}+C_{4}\cos x+C_{5}\sin x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+6
+\numeric off
+ 
+\begin_inset Formula $y''-4y'+4y=2e^{2x}+\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(D^{2}-4D+4\right)y=2e^{2x}+\cos x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(D-2\right)^{2}y=2e^{2x}+\cos x
+\]
+
+\end_inset
+
+
+\begin_inset Formula $2e^{2x}$
+\end_inset
+
+ מאופס ע"י 
+\begin_inset Formula $\left(D-2\right)$
+\end_inset
+
+, ו
+\begin_inset Formula $\cos x$
+\end_inset
+
+ מאופס ע"י 
+\begin_inset Formula $\left(D^{2}+1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(D^{2}+1\right)\left(D-2\right)^{3}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\left(C_{1}+C_{2}x+C_{3}x^{2}\right)e^{2x}+C_{4}\cos x+C_{5}\sin x
+\]
+
+\end_inset
+
+
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ שייכים לפתרון ההומוגני, ולכן אלו קבועים חופשיים.
+\begin_inset Formula 
+\[
+y_{1}=C_{3}x^{2}e^{2x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}'=C_{3}\left(2x^{2}e^{2x}+2xe^{2x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}''=C_{3}\left(4x^{2}e^{2x}+8xe^{2x}+2e^{2x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}''-4y_{1}'+4y_{1}=C_{3}e^{2x}\left(4x^{2}+8x+2-8x^{2}-8x+4x^{2}\right)=2C_{3}e^{2x}
+\]
+
+\end_inset
+
+יש לקחת 
+\begin_inset Formula $C_{3}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באופן דומה מוצאים 
+\begin_inset Formula $C_{4},C_{5}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

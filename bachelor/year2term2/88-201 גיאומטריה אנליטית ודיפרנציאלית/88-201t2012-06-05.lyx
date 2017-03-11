@@ -1,0 +1,883 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שטח של משטח
+\end_layout
+
+\begin_layout Standard
+בשביל לחשב שטח של משטח, מחלקים אותו למקביליות קטנות, וסוכמים את השטח שלהן
+ באמצעות אינטגרל.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset Formula $\left|x_{1}\times x_{2}\right|=\sqrt{\det\left(g_{ij}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן החישוב הוא
+\begin_inset Formula 
+\[
+\boxed{S=\int\mathrm{d}A=\int\left|x_{1}\times x_{2}\right|\mathrm{\, d}u_{1}\mathrm{\, d}u_{2}=\int\sqrt{\det g_{ij}}\mathrm{\, d}u_{1}\mathrm{\, d}u_{2}}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\mathrm{d}A$
+\end_inset
+
+ נקראת "תבנית שטח"(
+\end_layout
+
+\begin_layout Section*
+)דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב שטח של המיספירה של ספירה ברדיוס 
+\begin_inset Formula $\rho$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+...(
+\end_layout
+
+\begin_layout Part*
+עקמומיות של גאוס
+\end_layout
+
+\begin_layout Standard
+בהינתן משטח 
+\begin_inset Formula $S$
+\end_inset
+
+, נגדיר את העתקת גאוס, שבוחרת ווקטור נורמל באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בצורה יחידה:
+\begin_inset Formula 
+\[
+N:\underset{p\to N\left(p\right)}{S\to S^{2}}
+\]
+
+\end_inset
+
+לפי זה נגדיר העתקה
+\begin_inset Formula 
+\[
+W:\underset{v\to N_{v}}{T_{p}\to T_{p}}
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula $N_{v}\perp N\left(p\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W$
+\end_inset
+
+ נקראת "העתקת ווינגארדן", והיא העתקה לינארית ב
+\begin_inset Formula $T_{p}$
+\end_inset
+
+.
+ נרצה להציג את 
+\begin_inset Formula $W$
+\end_inset
+
+ כמטריצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ X_{1},X_{2}\right\} $
+\end_inset
+
+)ווקטורי הנגזרת ע"פ הקואורדינטות( הם בסיס של 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+N_{1}=W\left(X_{1}\right)=L_{1}^{1}X_{1}+L_{1}^{2}X_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{2}=W\left(X_{2}\right)=L_{2}^{1}X_{1}+L_{2}^{2}X_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W=\begin{pmatrix}L_{1}^{1} & L_{1}^{2}\\
+L_{2}^{1} & L_{2}^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+תמיד אפשר ללכסן את 
+\begin_inset Formula $W$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+W=\begin{pmatrix}K_{1} & 0\\
+0 & K_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $K_{1},K_{2}$
+\end_inset
+
+ עקמומיות ראשיות - מעידים על העקמומיות הגדולה והקטנה ביותר של עקומות על
+ המשטח שעוברות באותה נקודה.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $K_{1}\cdot K_{2}>0$
+\end_inset
+
+ אז זו נקודה אליפטית)המשטח דומה לאליפסויד באותה נקודה(
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $K_{1}\cdot K_{2}<0$
+\end_inset
+
+ אז זו נקודה היפרבולית)נקודת אוכף(
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $K_{1}\cdot K_{2}=0$
+\end_inset
+
+ אז זו נקודה פרבולית)המשטח דומה למישור או לגליל בסביבת אותה נקודה(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עקמומיות גאוס: 
+\begin_inset Formula $K=K_{1}\cdot K_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=\det\left(W\right)=\det\left(L_{i}^{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המשפט המדהים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ תכונה פנימית
+\end_layout
+
+\begin_layout Section*
+הקשר בין המקדמים 
+\begin_inset Formula $L_{i}^{j}$
+\end_inset
+
+ ו
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+ ו
+\begin_inset Formula $L_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{L_{i}^{j}=-L_{ik}g^{kj}}\Leftrightarrow\boxed{-L_{i}^{m}g_{mk}=L_{ik}}
+\]
+
+\end_inset
+
+זה אומר ש
+\begin_inset Formula 
+\[
+\begin{pmatrix}L_{1}^{1} & L_{1}^{2}\\
+L_{1}^{2} & L_{2}^{2}
+\end{pmatrix}=-\begin{pmatrix}L_{11} & L_{12}\\
+L_{21} & L_{22}
+\end{pmatrix}\begin{pmatrix}g^{11} & g^{12}\\
+g^{21} & g^{22}
+\end{pmatrix}
+\]
+
+\end_inset
+
+)תזכורת: 
+\begin_inset Formula $\left(g^{ij}\right)=\left(g_{ij}\right)^{-1}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ולכן
+\begin_inset Formula 
+\[
+\det\left(L_{i}^{j}\right)=\det\left(L_{ij}\right)\cdot\det\left(g^{ij}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=\frac{\det\left(L_{ij}\right)}{\det\left(g_{ij}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקדמי ווינגארטן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{1}=W\left(X_{1}\right)=L_{1}^{1}X_{1}+L_{1}^{2}X_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{2}=W\left(X_{2}\right)=L_{2}^{1}X_{1}+L_{2}^{2}X_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איך מחשבים 
+\begin_inset Formula $L_{ij}$
+\end_inset
+
+?)תבנית יסודית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{ij}=\left\langle X_{ij},n\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - טורוס סיבוב
+\end_layout
+
+\begin_layout Standard
+ניקח פרמטריזציה של מעגל שאינו מקיף את הראשית:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\left(a\cos t+b,0,a\sin t\right)
+\]
+
+\end_inset
+
+נסובב אותו סביב ציר ה
+\begin_inset Formula $\left[z\right]$
+\end_inset
+
+, ונקבל פרמטריזציה של טורוס:
+\begin_inset Formula 
+\[
+X\left(\theta,t\right)=\left(\left(a\cos t+b\right)\cos\theta,\left(a\cos t+b\right)\sin\theta,a\sin t\right)
+\]
+
+\end_inset
+
+)באופן כללי, אם 
+\begin_inset Formula $\gamma\left(t\right)=\left(f\left(t\right),0,g\left(t\right)\right)$
+\end_inset
+
+, סיבוב שלו סביב ציר ה
+\begin_inset Formula $\left[z\right]$
+\end_inset
+
+ הוא 
+\begin_inset Formula $X\left(\theta,t\right)=\left(f\left(t\right)\cos\theta,f\left(t\right)\sin\theta,g\left(t\right)\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+נחשב 
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X_{\theta}=\left(-\left(a\cos t+b\right)\sin\theta,\left(a\cos t+b\right)\cos\theta,0\right)\\
+X_{t}=\left(-\left(a\sin t\right)\cos\theta,-\left(a\sin t\right)\sin\theta,a\cos t\right)
+\end{array}\Rightarrow\cdots\Rightarrow g_{ij}=\begin{pmatrix}\left(a\cos t+b\right)^{2} & 0\\
+0 & a^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחשב את מקדמי ווינגארטן.
+ בשביל זה נחשב את ווקטור הנורמל בכל נקודה לפי הגדרה:
+\begin_inset Formula 
+\[
+n\left(\theta,t\right)=\frac{X_{\theta}\times X_{t}}{\left\Vert X_{\theta}\times X_{t}\right\Vert }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{\theta}\times X_{t}=\dots=\left(a\left(a\cos t+b\right)\cos t\cos\theta,a\left(a\cos t+b\right)\cos t\sin\theta,a\left(a\cos t+b\right)\sin t\right)
+\]
+
+\end_inset
+
+תזכורת: 
+\begin_inset Formula $\left\Vert X_{\theta}\times X_{t}\right\Vert =\sqrt{\det g_{ij}}$
+\end_inset
+
+.
+ במקרה שלנו:
+\begin_inset Formula 
+\[
+\left\Vert X_{\theta}\times X_{t}\right\Vert =\sqrt{\det g_{ij}}=a\left(a\cos t+b\right)
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+n\left(\theta,t\right)=\left(\cos t\cos\theta,\cos t\sin\theta,\sin t\right)
+\]
+
+\end_inset
+
+נחשב נגזרות של הנורמל:
+\begin_inset Formula 
+\[
+n_{\theta}=\left(-\cos t\sin\theta,\cos t\cos\theta,0\right)=\frac{\cos t}{a\cos t+b}X_{\theta}+0\cdot X_{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n_{t}=\left(-\sin t\cos\theta,-\sin t\sin\theta,\cos t\right)=0\cdot X_{\theta}+\frac{1}{a}\cdot X_{t}
+\]
+
+\end_inset
+
+קיבלנו שהעתקת ווינגארטן היא
+\begin_inset Formula 
+\[
+W=\begin{pmatrix}\frac{\cos t}{a\cos t+b} & 0\\
+0 & \frac{1}{a}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחשב את המקדמים 
+\begin_inset Formula $L_{ij}$
+\end_inset
+
+.
+ יש שני דרכים לעשות זאת:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לפי הנוסחה 
+\begin_inset Formula $L_{ij}=\left\langle X_{ij},n\right\rangle $
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+X_{\theta\theta}=\left(-\left(\dots\right)\cos\theta,-\left(\dots\right)\sin\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{\theta t}=\left(a\sin t\sin\theta,-a\sin t\cos\theta,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{tt}=\left(-a\cos t\cos\theta,-a\cos t\sin\theta,-a\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{11}=\left\langle X_{\theta\theta},n\right\rangle =-a\cos t\left(a\cos t+b\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{12}=\left\langle X_{\theta t},n\right\rangle =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{22}=\left\langle X_{tt},n\right\rangle =-a
+\]
+
+\end_inset
+
+הנוסחה נרשום אותם בתור מטריצה:
+\begin_inset Formula 
+\[
+L_{ij}=\begin{pmatrix}-a\cos t\left(a\cos t+b\right) & 0\\
+0 & -a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ניתן להשתמש בנוסחה 
+\begin_inset Formula $L_{i}^{j}=-L_{ik}g^{km}$
+\end_inset
+
+ כדי לחשב 
+\begin_inset Formula $L_{i}^{j}$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $L_{ij}$
+\end_inset
+
+ ו
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L_{1}^{2}=-L_{1k}g^{k2}=-\underbrace{L_{11}g^{12}}_{=0}-\underbrace{L_{12}g^{22}}_{=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{2}^{2}=L_{2k}g^{k2}=-\underbrace{L_{21}}_{=0}\underbrace{g^{12}}_{=0}-\underbrace{L_{22}}_{=-a}\underbrace{g^{22}}_{=\frac{1}{a^{2}}}=\frac{1}{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נחשב את עקמומיות גאוס:
+\begin_inset Formula 
+\[
+K=\det\left(W\right)=\begin{vmatrix}\frac{\cos t}{a\cos t+b} & 0\\
+0 & \frac{1}{b}
+\end{vmatrix}=\frac{\cos t}{a\left(a\cos t+b\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משמעות גיאומטרית
+\end_layout
+
+\begin_layout Standard
+ראינו שלמרות שטורוס היא צורה סימטרית, העקמומיות תלויה בנקודה.
+ נרצה להבין אילו נקודות הן אליפטיות)
+\begin_inset Formula $K>0$
+\end_inset
+
+(, היפרבוליות)
+\begin_inset Formula $K<0$
+\end_inset
+
+( או פרבוליות)
+\begin_inset Formula $K=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b>a>0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $a\cos t+b>0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $a\left(a\cos t+b\right)>0$
+\end_inset
+
+ - כלומר המכנה תמיד חיובי - ומה שיקבע לנו את סימן העקמומיות זה המונה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K=0$
+\end_inset
+
+: 
+\begin_inset Formula $\cos t=0$
+\end_inset
+
+.
+ זה קורה כש
+\begin_inset Formula $t=\dfrac{\pi}{2},\dfrac{3\pi}{2}$
+\end_inset
+
+ - כלומר המעגלים העליונים והתחתונים של הטורוס.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K>0$
+\end_inset
+
+: 
+\begin_inset Formula $\cos t>0$
+\end_inset
+
+.
+ זה קורה כש
+\begin_inset Formula $0<t<\frac{\pi}{2}\vee\frac{3\pi}{2}<t<2\pi$
+\end_inset
+
+ - החלק החיצוני של הטורוס.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K<0$
+\end_inset
+
+: 
+\begin_inset Formula $\cos t<0$
+\end_inset
+
+.
+ זה קורה כש
+\begin_inset Formula $\frac{\pi}{2}<t<\frac{3\pi}{2}$
+\end_inset
+
+ - החלק הפנימי של הטורוס.
+\end_layout
+
+\end_body
+\end_document

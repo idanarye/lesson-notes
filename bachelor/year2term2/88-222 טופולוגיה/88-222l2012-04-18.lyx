@@ -1,0 +1,1372 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מרחב טופולוגי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ הוא קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ ומשפחה 
+\begin_inset Formula $T$
+\end_inset
+
+ של תתי קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+, המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset,X\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left\{ U_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ אוסף קבוצות בך ש
+\begin_inset Formula $U_{\alpha}\in T$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha\in I$
+\end_inset
+
+, אז גם 
+\begin_inset Formula $\bigcup\limits _{\alpha\in I}U_{\alpha}\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $U_{1},U_{2},\dots U_{n}$
+\end_inset
+
+ אוסף 
+\bar under
+סופי
+\bar default
+ של קבוצות כך ש
+\begin_inset Formula $U_{i}\in T$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $\bigcap\limits _{1\le i\le n}U_{i}\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה כזה, 
+\begin_inset Formula $T$
+\end_inset
+
+ תיקרא טופולוגיה על 
+\begin_inset Formula $X$
+\end_inset
+
+, והקבוצות ב
+\begin_inset Formula $T$
+\end_inset
+
+ יקראו קבוצות פתוחות ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות למרחבים טופולוגיים
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ מרחב מטרי ו
+\begin_inset Formula $T$
+\end_inset
+
+ אוסף הקבוצות הפתוחות המוגדרות באממצעות המטריקה 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ אז נקראת הטופולוגיה המושרה ע"י המטריקה 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה כלשהי, 
+\begin_inset Formula $T=\left\{ \emptyset,X\right\} $
+\end_inset
+
+.
+ זו נקראת הטופולוגיה הטריוויאלית על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ אפשר לקחת 
+\begin_inset Formula $T=P\left(X\right)$
+\end_inset
+
+.
+ זו נקראת הטופולוגיה הדיסקרטית על 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ יקרא מטריזבילי אם יש מטריקה 
+\begin_inset Formula $d$
+\end_inset
+
+ על הקבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d$
+\end_inset
+
+ משרה את 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+הטופולוגיה הדיסקרטית היא מטריזבילית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+קחו את המטריקה הדיסקרטית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם ב
+\begin_inset Formula $X$
+\end_inset
+
+ יותר מנקודה אחת אז המטריקה הטריוויאלית איננה מטריזבילית.
+\end_layout
+
+\begin_layout Standard
+נראה שכל מטריקה על 
+\begin_inset Formula $X$
+\end_inset
+
+ משרה טופולוגיה שאיננה הטופולוגיה הטריוויאלית.
+ ניקח 
+\begin_inset Formula $a\neq b\in X$
+\end_inset
+
+ כלשהם.
+ נסמן 
+\begin_inset Formula $r=d\left(a,b\right)$
+\end_inset
+
+ ונביט בקבוצה 
+\begin_inset Formula $U=B\left(a,r\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U$
+\end_inset
+
+ קבוצה פתוחה כי היא כדור פתוח
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U\neq\emptyset$
+\end_inset
+
+ כי 
+\begin_inset Formula $a\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U\neq X$
+\end_inset
+
+ כי 
+\begin_inset Formula $b\notin U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(M,d\right)$
+\end_inset
+
+ מרחב מטרי.
+ אזי לכל 
+\begin_inset Formula $a\in M$
+\end_inset
+
+ הקבוצה 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ סגורה או במילים אחרות 
+\begin_inset Formula $M-\left\{ a\right\} $
+\end_inset
+
+ פתוחה.
+ מכאן שיש לנו 
+\begin_inset Formula $\left|\mathbb{N}\right|$
+\end_inset
+
+ קבוצות בנות פתוחות כי האוסף 
+\begin_inset Formula $\left\{ M-\left\{ a\right\} \right\} _{a\in M}$
+\end_inset
+
+ הוא מהעוצמה הזאת.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[5.]
+\backslash
+setcounter{enumi}{5}
+\end_layout
+
+\end_inset
+
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה, ונגדיר 
+\begin_inset Formula $T=\left\{ A\subseteq X\middle|\begin{array}{c}
+\left|X-A\right|<\infty\\
+\vee\\
+A=\emptyset
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תרגיל
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+זוהי טופולוגיה
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ אינסופית 
+\begin_inset Formula $X$
+\end_inset
+
+ איננה מטריזבילית
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(Y,S\right)$
+\end_inset
+
+ שני מרחבים טופולוגיים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ תקרא רציפה אם לכל 
+\begin_inset Formula $U\in S$
+\end_inset
+
+ מתקיים ש
+\begin_inset Formula $f^{-1}\left(U\right)\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במילים: לכל 
+\begin_inset Formula $U\subseteq Y$
+\end_inset
+
+ פתוחה מתקיים ש
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עוד יותר במילים: תמונה הפוכה של קבוצה פתוחה היא קבוצה פתוחה.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(X,T_{1}\right),\left(Y,T_{2}\right),\left(Z,T_{3}\right)$
+\end_inset
+
+ שלושה מרחבים טופולוגיים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה ו
+\begin_inset Formula $g:Y\to Z$
+\end_inset
+
+ רציפה אז 
+\begin_inset Formula $g\circ f:X\to Z$
+\end_inset
+
+ גם כן רציפה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq Z$
+\end_inset
+
+ פתוחה.
+ אזי
+\begin_inset Formula 
+\[
+\left(g\circ f\right)^{-1}\left(U\right)=f^{-1}\left(g^{-1}\left(U\right)\right)
+\]
+
+\end_inset
+
+פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Enumerate
+לכל מרחב טופולוגי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ העתקת הזהות 
+\begin_inset Formula $\textnormal{Id}:X\to X$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: תהי 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\textnormal{Id}^{-1}\left(U\right)=u$
+\end_inset
+
+ לכן כמובן פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $b\in Y$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $K_{b}:X\to Y$
+\end_inset
+
+ ע"י לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $K_{b}\left(x\right):=b$
+\end_inset
+
+.
+ זו נקראת פונקציה קבועה שערכה הקבוע הוא 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $K_{b}$
+\end_inset
+
+ רציפה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: תהי 
+\begin_inset Formula $U\subseteq Y$
+\end_inset
+
+ פתוחה.
+ אזי 
+\begin_inset Formula $K_{b}^{-1}\left(U\right)=\begin{cases}
+X & b\in U\\
+\emptyset & b\notin U
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $a\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ נקראת סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ אם 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ו
+\begin_inset Formula $a\in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+, 
+\begin_inset Formula $xa\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ תקרא 
+\bar under
+רציפה ב
+\begin_inset Formula $a$
+\end_inset
+
+
+\bar default
+ אם לכל סביבה 
+\begin_inset Formula $U$
+\end_inset
+
+ של 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+)ב
+\begin_inset Formula $Y$
+\end_inset
+
+( יש סביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $a$
+\end_inset
+
+)ב
+\begin_inset Formula $X$
+\end_inset
+
+( כך ש
+\begin_inset Formula $f\left(V\right)\subseteq U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה אם"ם היא רציפה בכל נקודה 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+ תהי 
+\begin_inset Formula $a\in X$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של של 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $f\left(f^{-1}\left(U\right)\right)\subseteq U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ תהי 
+\begin_inset Formula $U\subseteq Y$
+\end_inset
+
+ פתוחה.
+ נראה ש
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $a\in f^{-1}\left(U\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $f\left(a\right)\in U$
+\end_inset
+
+.
+ לכן קיימת 
+\begin_inset Formula $V_{a}$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(V_{a}\right)\subseteq U$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $V_{a}\subseteq f^{-1}\left(U\right)$
+\end_inset
+
+.
+ כעת מהלמה השימושית
+\begin_inset Formula 
+\[
+\bigcup_{a\in f^{-1}\left(U\right)}V_{a}=f^{-1}\left(U\right)
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $f^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,T\right)$
+\end_inset
+
+ מ"ט ותהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+טופולוגיית "תת המרחב" על 
+\begin_inset Formula $A$
+\end_inset
+
+ מוגדרת באופן הבא:
+\end_layout
+
+\begin_layout Standard
+נגדיר אוסף 
+\begin_inset Formula $S\subseteq P\left(A\right)$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+S=\left\{ u\subseteq A\middle|\exists_{V\in T}U=V\cap A\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ היא טופולוגיה על 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\emptyset\in S$
+\end_inset
+
+ כי 
+\begin_inset Formula $\emptyset=\emptyset\cap A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\in S$
+\end_inset
+
+ כי 
+\begin_inset Formula $A=X\cap A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $\left\{ U_{\alpha}\right\} $
+\end_inset
+
+ אוסף כך שלכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\begin_inset Formula $S\ni U_{\alpha}$
+\end_inset
+
+.
+ כלומר לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ יש 
+\begin_inset Formula $V_{\alpha}\in T$
+\end_inset
+
+ כך ש
+\begin_inset Formula $U_{\alpha}=V_{\alpha}\cap A$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\bigcup U_{\alpha}=\bigcup\left(V_{\alpha}\cap A\right)=\left(\bigcup V_{\alpha}\right)\cap A\in S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $U_{1},\dots U_{n}\in S$
+\end_inset
+
+.
+ כלומר לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ יש 
+\begin_inset Formula $T\ni V_{i}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $U_{i}=V_{i}\cap A$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bigcap_{1\le i\le n}U_{i}=\bigcap_{1\le i\le n}\left(V_{i}\cap A\right)=\left(\bigcap_{1\le i\le n}V_{i}\right)\cap A\in S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ מוגדרת העתקת ההכלה 
+\begin_inset Formula $i:A\to X$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $i\left(a\right)=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט ו
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ תת מרחב, אזי העתקת ההכלה 
+\begin_inset Formula $i:A\to X$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+i^{-1}\left(U\right)=U\cap A
+\]
+
+\end_inset
+
+ולכן פתוחה ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ ו
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\left.f\right|_{A}:A\to Y$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\left.f\right|_{A}\left(a\right):=f\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מתקיים ש
+\begin_inset Formula $\left.f\right|_{A}=f\circ i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left.f\right|_{A}:A\to Y$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.f\right|_{A}=f\circ i$
+\end_inset
+
+ ולכן רציפה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה, 
+\begin_inset Formula $f\left(X\right)\subseteq B\subseteq Y$
+\end_inset
+
+.
+ אזי ניתן להגדיר 
+\begin_inset Formula $\hat{f}:X\to B$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\hat{f}\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+ אזי גם 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq B$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $B$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\hat{f}^{-1}\left(U\right)$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $B$
+\end_inset
+
+ פרושו שקיימת 
+\begin_inset Formula $V\subseteq Y$
+\end_inset
+
+ פתוחה ב
+\begin_inset Formula $Y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $U=V\cap B$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{f}^{-1}\left(U\right)=\left\{ x\in X\middle|\hat{f}\left(x\right)\in U\right\} =\left\{ x\in X\middle|f\left(x\right)\in U_{=V\cap B}\right\} =\left\{ x\in X\middle|f\left(x\right)\in V\right\} =\underbrace{f^{-1}\left(V\right)}_{\textnormal{open}}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ מתקיים ממילא ש
+\begin_inset Formula $f\left(x\right)\in B$
+\end_inset
+
+, לכן 
+\begin_inset Formula $f\left(x\right)\in V\cap B$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $f\left(x\right)\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+למעשה הטענה היא אם"ם כי ודאי שאם 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ רציפה)כהעתקה ל
+\begin_inset Formula $B$
+\end_inset
+
+( אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא רציהפ כהעתקה ל
+\begin_inset Formula $Y$
+\end_inset
+
+, כי 
+\begin_inset Formula $f=i\circ\hat{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט.
+ 
+\begin_inset Formula $K\subseteq X$
+\end_inset
+
+ תיקרא סגורה אם 
+\begin_inset Formula $K^{c}$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Standard
+מהגדרת טופולוגיה נקבל את התכונות הבאות של קבוצות סגורות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset,X$
+\end_inset
+
+ סגורות
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left\{ S_{\alpha}\right\} _{\alpha\in I}$
+\end_inset
+
+ אוסף 
+\bar under
+כלשהו
+\bar default
+ של קבוצות סגורות אזי 
+\begin_inset Formula $\bigcap\limits _{\alpha\in I}S_{\alpha}$
+\end_inset
+
+ קבוצה סגורה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $S_{1},\dots S_{n}$
+\end_inset
+
+ אוסף 
+\bar under
+סופי
+\bar default
+ של קבוצות סגורות אזי 
+\begin_inset Formula $\bigcap\limits _{1\le i\le n}S_{i}$
+\end_inset
+
+ קבוצה סגורה.
+\end_layout
+
+\end_body
+\end_document

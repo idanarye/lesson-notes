@@ -1,0 +1,1380 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מערכות מד"ר מסדר ראשון
+\end_layout
+
+\begin_layout Part*
+האקפוננט המטריצי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ מטריצה 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\exp\left(M\right)=I+M+\cfrac{M^{2}}{2!}+\cfrac{M^{3}}{3!}+...=\sum_{i=0}^{\infty}\cfrac{M^{i}}{i!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך מוכיחים/מחשבים התכנסות?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+1
+\numeric off
+( אם 
+\begin_inset Formula $M=UDU^{-1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\exp\left(M\right)=U\exp\left(D\right)U^{-1}$
+\end_inset
+
+ ולכן מספיק לחשב/להוכיח כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ בצורה נורמלית של ז'ורדן.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+2
+\numeric off
+( 
+\begin_inset Formula $M=\begin{pmatrix}M_{1} & 0 & 0\\
+0 & M_{2} & 0\\
+0 & 0 & \ddots
+\end{pmatrix}$
+\end_inset
+
+ מטריצת בלוקים, אזי 
+\begin_inset Formula $\exp\left(M\right)=\begin{pmatrix}\exp\left(M_{1}\right) & 0 & 0\\
+0 & \exp\left(M_{2}\right) & 0\\
+0 & 0 & \ddots
+\end{pmatrix}$
+\end_inset
+
+ ולכן מספיק לחשב/להוכיח לבלוק אחד של ז'ורדן.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+3
+\numeric off
+( אם 
+\begin_inset Formula $M=\begin{pmatrix}\lambda & 1 & 0 & 0\\
+0 & \lambda & \ddots & 0\\
+0 & 0 & \ddots & 1\\
+0 & 0 & 0 & \lambda
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\exp\left(M\right)=e^{\lambda}\begin{pmatrix}1 & 1 & \frac{1}{2} & \frac{1}{6} & ...\\
+0 & \ddots & \ddots & \ddots & \ddots\\
+0 & 0 & 1 & 1 & \ddots\\
+0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 1
+\end{pmatrix}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(\exp\left(M\right)\right)_{ij}=\begin{cases}
+\cfrac{1}{\left(j-i\right)!} & j\ge i\\
+0 & J<i
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פתרון מערכות מד"ר מסדר ראשון
+\end_layout
+
+\begin_layout Subsection*
+עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{11},a_{12},a_{21},a_{22}\left\{ \begin{array}{c}
+y_{1}'=a_{11}y_{1}+a_{12}y_{2}+b_{1}\left(t\right)\\
+y_{2}'=a_{21}y_{1}+a_{22}y_{2}+b_{2}\left(t\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $a_{11},a_{12},a_{21},a_{22}$
+\end_inset
+
+ קבועים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{1}\left(t\right)=b_{2}\left(t\right)=0$
+\end_inset
+
+ - מקרה הומוגני.
+\end_layout
+
+\begin_layout Section*
+עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}=\begin{pmatrix}y_{1}\\
+\vdots\\
+y_{n}
+\end{pmatrix}\hspace{1em}\vec{y}'=A\vec{y}+\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה קבועה
+\begin_inset Formula 
+\begin{multline*}
+\vec{b}\left(t\right)=\begin{pmatrix}b_{1}\left(t\right)\\
+\vdots\\
+b_{n}\left(t\right)
+\end{pmatrix}\hspace{1em}A=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \cdots & a_{nn}
+\end{pmatrix}
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula $\vec{b}\left(t\right)=0$
+\end_inset
+
+ מקרה הומוגני.
+\end_layout
+
+\begin_layout Part*
+מקרה הומוגני: 
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+הפתרון הכללי הוא 
+\begin_inset Formula $\vec{y}\left(t\right)=\exp\left(tA\right)\vec{y}\left(0\right)$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\vec{y}\left(0\right)$
+\end_inset
+
+ קבועים חופשיים(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)בהנחה שניתן לגזור את הטור האינספי הרלוונטי איבר איבר( רוצים לבדוק ש
+\begin_inset Formula $\vec{y}\left(t\right)$
+\end_inset
+
+ המוצע מקיים את המשוואה:
+\begin_inset Formula 
+\[
+\vec{y}\left(t\right)=\left(\sum_{i=0}^{\infty}\cfrac{\left(tn\right)^{i}}{i!}\right)\vec{y}\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'\left(t\right)=\left(\sum_{i=1}^{\infty}\cfrac{t^{i-1}A^{i}}{\left(i-1\right)!}\right)\vec{y}\left(0\right)=A\left(\sum_{i=1}^{\infty}\cfrac{t^{i-1}A^{i-1}}{\left(i-1\right)!}\right)\vec{y}\left(0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=A\left(\sum_{j=0}^{\infty}\cfrac{t^{j}A^{j}}{j!}\right)\vec{y}\left(0\right)=A\vec{y}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הבעיה
+\end_layout
+
+\begin_layout Standard
+קשה לחשב את צורת ז'ורדן של מטריצה 
+\begin_inset Formula $At$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+קיצורים לפתרון: 
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם ל
+\begin_inset Formula $A$
+\end_inset
+
+ יש ע"ע 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ עם ו"ע 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{y}=e^{\lambda t}\vec{v}$
+\end_inset
+
+ הוא פתרון.
+ )הוכחה: 
+\begin_inset Formula $\vec{y}'=\lambda e^{\lambda t}\vec{v}\overset{\left(A\vec{v}=\lambda\vec{v}\right)}{=\vphantom{\int}}A\vec{v}e^{\lambda t}=A\vec{y}$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+אם יש ל
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ ע"עים שונים, זה נותן 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל שניתן לצרף לפתרון הכולל.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אזהרה
+\series default
+: אולי 
+\begin_inset Formula $\lambda v$
+\end_inset
+
+ מרוכבים!
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ ממשי ו
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ע"ע מרוכבים עם ו"ע 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $\overline{\lambda}$
+\end_inset
+
+ ע"ע עם ו"ע 
+\begin_inset Formula $\overline{\vec{v}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $C_{1}e^{\lambda t}\vec{v}+C_{2}e^{\overline{\lambda}}\overline{\vec{v}}$
+\end_inset
+
+ ממשי אם 
+\begin_inset Formula $\overline{C_{1}}=C_{2}$
+\end_inset
+
+]
+\begin_inset Formula $z+\overline{z}=2\textnormal{Re}\left(z\right)$
+\end_inset
+
+[
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם יש ל
+\begin_inset Formula $A$
+\end_inset
+
+ ע"עים החוזרים על עצמם)עם ריבוי גיאומטרי לא שווה לריבוי אלגברי( אזי יש ל
+\begin_inset Formula $A$
+\end_inset
+
+ בלוק ז'ורדן לא טריוויאלי 
+\begin_inset Formula $\begin{pmatrix}\lambda & 1 & 0 & 0\\
+0 & \lambda & \ddots & 0\\
+0 & 0 & \ddots & 1\\
+0 & 0 & 0 & \lambda
+\end{pmatrix}$
+\end_inset
+
+.
+ ניתן לבדוק ש:
+\begin_inset Formula 
+\[
+\exp\left(t\begin{pmatrix}\lambda & 1 & 0 & 0\\
+0 & \lambda & \ddots & 0\\
+0 & 0 & \ddots & 1\\
+0 & 0 & 0 & \lambda
+\end{pmatrix}\right)=e^{t\lambda}\begin{pmatrix}1 & t & \cfrac{t^{2}}{2!} & \cdots\\
+ & \ddots & \ddots & \ddots & \vdots\\
+ &  & \ddots & \ddots & \cfrac{t^{2}}{2!}\\
+ &  &  & \ddots & t\\
+0 &  &  &  & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+באופן כללי אם יש ל
+\begin_inset Formula $A$
+\end_inset
+
+ ע"ע 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ החוזר על עצמו 
+\begin_inset Formula $r$
+\end_inset
+
+ פעמים - יש לחפש פיתרון של 
+\begin_inset Formula $\vec{y}'=A\vec{y}$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $\vec{y}=e^{\lambda t}\left(\vec{v_{1}}+\vec{v}_{2}t+\vec{v}_{3}t^{2}+...+\vec{v}_{r}t^{r-1}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\vec{v}_{1},...\vec{v}_{r}$
+\end_inset
+
+ הם וקטורים קבועים שיש למצוא)יופיעו בוקטורים האלו 
+\begin_inset Formula $r$
+\end_inset
+
+ קבועים חופשיים(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\hspace{1em}\vec{y}'=\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(\lambda I-A\right)=\begin{vmatrix}\lambda & 1\\
+-2 & \lambda-3
+\end{vmatrix}=\lambda\left(\lambda-3\right)+2=\left(\lambda-1\right)\left(\lambda-2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא לע"ע וקטורים עצמיים:
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x\\
+y
+\end{pmatrix}\Rightarrow\begin{pmatrix}1\\
+-1
+\end{pmatrix}\hspace{1em}\underline{\lambda=1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}2x\\
+2y
+\end{pmatrix}\Rightarrow\begin{pmatrix}1\\
+-2
+\end{pmatrix}\hspace{1em}\underline{\lambda=2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{y=C_{1}e^{t}\begin{pmatrix}1\\
+-1
+\end{pmatrix}+C_{2}e^{2t}\begin{pmatrix}1\\
+-2
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}4 & -2\\
+5 & 2
+\end{pmatrix}\hspace{1em}\vec{y}'=\begin{pmatrix}4 & -2\\
+5 & 2
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(\lambda I-A\right)=\begin{vmatrix}\lambda-4 & 2\\
+-5 & \lambda-2
+\end{vmatrix}=\left(\lambda-4\right)\left(\lambda-2\right)+10=\lambda^{2}-6\lambda+18\Rightarrow\boxed{\lambda=3\pm3i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\lambda=3+3i$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{pmatrix}4 & -2\\
+5 & 2
+\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=\left(3+3i\right)\begin{pmatrix}a\\
+b
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\begin{pmatrix}1\\
+\cfrac{1-3i}{2}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\lambda=e-ei$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{pmatrix}1\\
+\cfrac{1+3i}{2}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון כללי:
+\begin_inset Formula 
+\[
+\vec{y}=C_{1}e^{\left(3+3i\right)t}\begin{pmatrix}1\\
+\cfrac{1-3i}{2}
+\end{pmatrix}+C_{2}e^{\left(3-3i\right)}\begin{pmatrix}1\\
+\cfrac{1+3i}{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=e^{3t}\left(C_{1}\left(\cos3t+i\sin3t\right)\begin{pmatrix}1\\
+\cfrac{1-3i}{2}
+\end{pmatrix}+C_{2}\left(\cos3t-i\sin3t\right)\begin{pmatrix}1\\
+\cfrac{1+3i}{2}
+\end{pmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=e^{3t}\left[\cos3t\begin{pmatrix}C_{1}+C_{2}\\
+\cfrac{C_{1}+C_{2}}{2}+\cfrac{3i\left(C_{2}-C_{1}\right)}{2}
+\end{pmatrix}+\sin3t\begin{pmatrix}i\left(C_{1}-C_{2}\right)\\
+\cfrac{i\left(C_{1}-C_{2}\right)}{2}+\cfrac{3\left(C_{1}+C_{2}\right)}{2}
+\end{pmatrix}\right]=...
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $C_{1}+C_{2}=D_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $i\left(C_{1}-C_{2}\right)=D_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...=\boxed{e^{3t}\left[\cos3t\begin{pmatrix}D_{1}\\
+\cfrac{D_{1}}{2}+\cfrac{3D_{2}}{2}
+\end{pmatrix}+\sin3t\begin{pmatrix}D_{2}\\
+\cfrac{D_{2}}{2}+\cfrac{3D_{1}}{2}
+\end{pmatrix}\right]}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $D_{1},D_{2}$
+\end_inset
+
+ ממשיים זה פתרון ממשי כללי.
+\end_layout
+
+\begin_layout Section*
+דוגמה - שני ערכים עצמיים שווים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}1 & -1\\
+1 & 3
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}1 & -1\\
+1 & 3
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(\lambda I-A\right)=\begin{pmatrix}\lambda-1 & 1\\
+-1 & \lambda-3
+\end{pmatrix}=\left(\lambda-1\right)\left(\lambda-3\right)+1=\lambda^{2}-4\lambda+4=\left(\lambda-2\right)^{2}
+\]
+
+\end_inset
+
+נחפש פתרון בצורה
+\begin_inset Formula 
+\[
+\vec{y}=\left[\begin{pmatrix}\alpha\\
+\beta
+\end{pmatrix}+\begin{pmatrix}\gamma\\
+\delta
+\end{pmatrix}t\right]e^{2t}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\alpha,\beta,\gamma,\delta$
+\end_inset
+
+ קבועים שיש למצוא, במונחים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קבועים חופשיים.
+\begin_inset Formula 
+\[
+\vec{y}=\begin{pmatrix}\alpha+\gamma t\\
+\beta+\delta t
+\end{pmatrix}e^{2t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}\gamma\\
+\delta
+\end{pmatrix}e^{2t}+2\begin{pmatrix}\alpha+\gamma t\\
+\beta+\delta t
+\end{pmatrix}e^{2t}=\begin{pmatrix}\gamma+2\alpha+2\gamma t\\
+\delta+2\beta+2\delta t
+\end{pmatrix}e^{2t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\vec{y}=\begin{pmatrix}1 & -1\\
+1 & 3
+\end{pmatrix}\begin{pmatrix}\alpha+\gamma t\\
+\beta+\delta t
+\end{pmatrix}=\begin{pmatrix}\alpha-\beta+\left(\gamma-\delta\right)t\\
+\alpha+3\beta+\left(\gamma+3\delta\right)t
+\end{pmatrix}=e^{2t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+2\gamma=\gamma-\delta\\
+2\delta=\gamma+3\delta\\
+\gamma+2\alpha=\alpha-\beta\\
+\delta+2\beta=\alpha+3\beta
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משני הראשונים 
+\begin_inset Formula $\delta=-\gamma$
+\end_inset
+
+.
+ משני האחרונים 
+\begin_inset Formula $-\beta-\alpha=\gamma$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ להיות 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+)חופשית(, כלומר
+\begin_inset Formula 
+\[
+\gamma=C_{1}\Rightarrow\delta=-C_{1},\hspace{1em}\alpha=C_{2}\Rightarrow\beta=-C_{1}-C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הפתרון הכללי הוא
+\begin_inset Formula 
+\[
+\boxed{\vec{y}=\begin{pmatrix}C_{2}+C_{1}t\\
+-C_{1}-C_{2}-C_{1}t
+\end{pmatrix}e^{2t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה 
+\begin_inset Formula $3\times3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}-1 & 4 & 4\\
+-3 & 7 & 6\\
+2 & -4 & -3
+\end{pmatrix}\vec{y}
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $Mupad$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ע"ע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וערכים עצמיים 
+\begin_inset Formula $\begin{pmatrix}2\\
+1\\
+0
+\end{pmatrix}$
+\end_inset
+
+ ו
+\begin_inset Formula $\begin{pmatrix}2\\
+0\\
+1
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}=e^{t}\left(\begin{pmatrix}\alpha\\
+\beta\\
+\gamma
+\end{pmatrix}+\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}\right)
+\]
+
+\end_inset
+
+בלוק ז'ורדן צמוד 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ עם ע"ע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ הבלוק הכי גדול פה - 
+\begin_inset Formula $2\times2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדרגה של הפולינום = מימד של בלוק ז'ורדן הכי גדול מינוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix}e^{t}+\begin{pmatrix}\alpha+at\\
+\beta+bt\\
+\gamma+ct
+\end{pmatrix}e^{t}=\begin{pmatrix}\alpha+a+at\\
+\beta+b+bt\\
+\gamma+c+ct
+\end{pmatrix}e^{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\vec{y}=\begin{pmatrix}-1 & 4 & 4\\
+-3 & 7 & 6\\
+2 & -4 & -3
+\end{pmatrix}\begin{pmatrix}\alpha+at\\
+\beta+bt\\
+\gamma+ct
+\end{pmatrix}e^{t}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}\left(-\alpha+4\beta+4\gamma\right)+\left(-a+4b+4c\right)t\\
+\left(-3\alpha+7\beta+6\gamma\right)+\left(-3a+7b+6c\right)t\\
+\left(2\alpha-4\beta-3\gamma\right)+\left(2a-4b-3c\right)t
+\end{pmatrix}e^{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+-2a+4b+4c=0\\
+-3a+6b+6c=0\\
+2a-4b-4c=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{a=2b+2c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+-2\alpha+4\beta+4\gamma=2\left(b+c\right)\\
+-3a+6\beta+6\gamma=b\\
+2a-4\beta-4\gamma=c
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1\right)+\left(3\right)=2\left(b+c\right)+c=0\Rightarrow\boxed{b=-\cfrac{3}{2}c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2\right)+\cfrac{3}{2}\left(3\right)=b+\cfrac{3}{2}c=0
+\]
+
+\end_inset
+
+וקיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ קבועים חופשיים 
+\begin_inset Formula $c,\beta,\gamma$
+\end_inset
+
+, ושאר הקבועים הם:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+b=-\cfrac{3}{2}c\\
+a=-c\\
+\alpha=\cfrac{c}{2}+2\left(\beta+\gamma\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מקרה לא הומוגני
+\end_layout
+
+\begin_layout Section*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\vec{y}+\begin{pmatrix}1\\
+t
+\end{pmatrix}
+\]
+
+\end_inset
+
+ניתן לעשות וריאציית מקדמים, לפעמים ניתן לקצר.
+ 
+\begin_inset Formula 
+\[
+\vec{y}=A\left(t\right)\vec{y}+\vec{b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{y}=Y\left(t\right)\vec{\alpha}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=\left(\vec{y}_{1},...\vec{y}_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int Y^{-1}\vec{b}dt
+\]
+
+\end_inset
+
+להומוגני יש פתרונות 
+\begin_inset Formula $e^{t}\vec{v}_{1},e^{2t}\vec{v}_{2}$
+\end_inset
+
+.
+ לאי הומוגני ננחש פתרון פרטי בצורה 
+\begin_inset Formula $\vec{y}=\begin{pmatrix}\alpha+\beta t\\
+\gamma+\delta t
+\end{pmatrix}$
+\end_inset
+
+.
+ נציב:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\beta\\
+\delta
+\end{pmatrix}=\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\begin{pmatrix}\alpha+\beta t\\
+\gamma+\delta t
+\end{pmatrix}+\begin{pmatrix}1\\
+t
+\end{pmatrix}=\begin{pmatrix}-\alpha-\delta t+1\\
+2\alpha+3\gamma+\left(2\beta+3\delta\right)t+t
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\delta=0,\beta=-\cfrac{1}{2},\gamma=\cfrac{3}{2},\alpha=\cfrac{-9}{4}
+\]
+
+\end_inset
+
+ככה מוצאים פתרון פרטי:
+\begin_inset Formula 
+\[
+\vec{y}=\begin{pmatrix}-\cfrac{9}{4} & -\cfrac{1}{2}t\\
+\cfrac{3}{2} & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+למשוואה
+\begin_inset Formula 
+\[
+\vec{y}'=\begin{pmatrix}0 & -1\\
+2 & 3
+\end{pmatrix}\vec{y}+\begin{pmatrix}1\\
+3
+\end{pmatrix}e^{rt}
+\]
+
+\end_inset
+
+ניחוש 
+\begin_inset Formula $\begin{pmatrix}\alpha\\
+\beta
+\end{pmatrix}e^{rt}$
+\end_inset
+
+ עובד, אלא אם כן 
+\begin_inset Formula $r=1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $r=1,2$
+\end_inset
+
+ צריך 
+\begin_inset Formula $\begin{pmatrix}\alpha+\beta t\\
+\gamma+\delta t
+\end{pmatrix}e^{rt}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

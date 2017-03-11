@@ -1,0 +1,1542 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+יש חמש פעולות בסיס של אלגברה רלציונית, לפי קטגוריות:
+\end_layout
+
+\begin_layout Enumerate
+פעולות על קבוצות
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+איחוד)
+\begin_inset Formula $\cup$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+חיסור)
+\begin_inset Formula $-$
+\end_inset
+
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+פעולות להסרת חלקים)בחירה(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הטלה)
+\begin_inset Formula $\pi$
+\end_inset
+
+( - בחירה של עמודות
+\end_layout
+
+\begin_layout Itemize
+בחירה)
+\begin_inset Formula $\sigma$
+\end_inset
+
+( - בחירה של שורות
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צירופים
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מכפלה קרטזית)
+\begin_inset Formula $\times$
+\end_inset
+
+(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אפשר גם להרכיב כמה פעולות בסיס כדי להגדיר פעולות נוספות, כמו חיתוך)
+\begin_inset Formula $\cap$
+\end_inset
+
+(, או צירוף 
+\begin_inset Formula $\theta$
+\end_inset
+
+ - כלומר צירוף לפי תנאי)
+\begin_inset Formula $\bowtie$
+\end_inset
+
+( וכו'
+\end_layout
+
+\begin_layout Section*
+שינוי שם
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Renaming
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+ניתן גם להגדיר פעולה של שינוי עמודות - מסמנים 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ לפעמים, לפני פעולה של איחוד, צריך לשנות שם כדי שהשמות יתאימו.
+ לדוגמה:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+Lectors\\
+\hline Lector & Salary\\
+\hline
+\end{tabular}\qquad\begin{tabular}{c|c}
+Metar\\
+\hline Met & Money\\
+\hline
+\end{tabular}
+\]
+
+\end_inset
+
+כדי לצרף את הטבלאות נצטרך לבצע שינויי שם:
+\begin_inset Formula 
+\[
+\rho_{\textnormal{Lector1}\left(N,M\right)}\textnormal{Lector}\qquad\rho_{\textnormal{Metar1}\left(N,M\right)}\textnormal{Metar}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+בניית השאילתות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c}
+Minerals &  &  & \\
+\hline Min & Weight & Hard & Streak & Color\\
+\hline zircon & 190 & 7.5 & white & green\\
+topaz & 182 & 8 & white & blue\\
+calcite & 100 & 3 & white & white\\
+zircon & 190 & 7.5 & while & brown\\
+topaz & 182 & 8 & white & yellow
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שאנו רוצים לבצע שאילתה עם השלבים:
+\end_layout
+
+\begin_layout Enumerate
+שורות עם 
+\begin_inset Formula $\textnormal{weight}>150$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+שורות עם 
+\begin_inset Formula $\textnormal{hard}<8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cap$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\pi_{\textnormal{Min}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+.
+ עץ ביטויים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Expression Tree(bottom up)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\pi_{\textnormal{Min}}\left(\sigma_{\textnormal{Weight}>150}\textnormal{Minerals}\cap\sigma_{\textnormal{Hard}<8}\textnormal{Minerals}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \pi_{\textnormal{Min}}\ar@{-}[d]\\
+ & \cap\ar@{-}[ld]\ar@{-}[rd]\\
+\sigma_{\textnormal{Weight}>150}\ar@{-}[d] &  & \sigma_{\textnormal{Hard}<8}\ar@{-}[d]\\
+\textnormal{Minerals} &  & \textnormal{Minerals}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם לבצע את פעולות הבחירה ביחד:
+\begin_inset Formula 
+\[
+\pi_{\textnormal{Min}}\sigma_{\textnormal{Weight}>150\wedge\textnormal{Hard}<8}\textnormal{Minerals}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{\pi_{\textnormal{Min}}\ar@{-}[d]\\
+\sigma_{\textnormal{Weight}<150\wedge\textnormal{Hard}<8}\ar@{-}[d]\\
+\textnormal{Minerals}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוהי שאילתה יותר יעילה, למרות שהיא עושה אותו דבר כמו השאילתה הקודמת.
+ ה
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יודע לבצע אופטימיזציה לשאילתה, כדי להשיג שאילתות יותר יעילות.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Linear notation
+\end_layout
+
+\begin_layout Standard
+מבטאים את היחס באמצעות סדרה של הצבות:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Rel(attr_list):-Alg_expr
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Answer:-root
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+במקרה שלנו:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+R1(m,w,h,s,c):-
+\begin_inset Formula $\sigma_{\textnormal{Weight}>150}\textnormal{Minerals}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+R2(m,w,h,s,c):-
+\begin_inset Formula $\sigma_{\textnormal{Hard}<8}\textnormal{Minerals}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+R3(m,w,h,s,c):-R1
+\begin_inset Formula $\cap$
+\end_inset
+
+R2
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Answer:-
+\begin_inset Formula $\pi_{m}\textnormal{R3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+סדר ההצבות לא חשוב - חשוב רק לא להשתמש ביחס לפני שהגדרנו אותו.
+\end_layout
+
+\begin_layout Part*
+אילוצים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Constraints
+\end_layout
+
+\begin_layout Standard
+יש שתי אפשרויות לבטא אילוצים בעזרת פעולות של אלגברה רלציונית:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R1\subseteq R2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Referential integrity
+\end_layout
+
+\begin_layout Standard
+זהו אילוץ שאם ערך מופיע בהקשר אחד, אז הוא חייב להופיע בהקשר אחר.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Cars
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Reg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Model
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+11-222
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Hyundai
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\lang hebrew
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquad
+\end_layout
+
+\end_inset
+
+
+\lang english
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Booking
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Book
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Reg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+From
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+To
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Days
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Cr_card
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquad
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Client
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+E_mail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Cr_card
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האילוצים שלנו הם:
+\begin_inset Formula 
+\[
+\begin{tabular}{cccc}
+Cars & - & Client & \chi\\
+Cars & \gets\ & Booking & Reg\\
+Client & \gets\ & Booking & Cr\_card
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך מבטאים את זה עם אלגברה רלציונית?
+\begin_inset Formula 
+\[
+R1\left(S1\right),A\in S1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R2\left(S2\right),B\in S2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שתי דרכים לבטא את זה:
+\end_layout
+
+\begin_layout Itemize
+להגיד שקבוצה אחת מוכלת בשניה:
+\begin_inset Formula 
+\[
+\pi_{A}R_{1}\subseteq\pi_{B}R2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+להגיד שהחיסור ריק:
+\begin_inset Formula 
+\[
+\pi_{A}R_{1}-\pi_{B}R_{2}=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדוגמה שלנו:
+\begin_inset Formula 
+\[
+\pi_{\textnormal{Reg}}\textnormal{Booking}-\pi_{\textnormal{Reg}}\textnormal{Cars}=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Key constraint
+\end_layout
+
+\begin_layout Standard
+זהו אילוץ שצריך בשביל להיות מפתח
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+\textnormal{Minerals} & \\
+\hline Min & Weight & Hard\\
+\hline zircon & 190 & 7.5\\
+topaz & 182 & 8\\
+colcite & 100 & 3
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצוא יחס 
+\begin_inset Formula $K$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall_{t_{1},t_{2}}t_{1}\left(K\right)\neq t_{2}\left(K\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה יחס חדש:
+\begin_inset Formula 
+\[
+\rho_{M1}\textnormal{Minerals},\rho_{M2}\textnormal{Minerals}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M1\times M2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c|c}
+Min.M1 & Weight.M1 & Hard.M1 & Min.M2 & Weight.M2 & Hard.M2\\
+\hline zircon & 190 & 7.5 & zircon & 190 & 7.5\\
+zircon & 190 & 7.5 & topaz & 182 & 8\\
+ &  &  &  & \\
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{\textnormal{Min.M1}=\textnormal{Min.M2}\wedge\left(\textnormal{Weight.M1}\neq\textnormal{Weight.M2}\vee\textnormal{Hard.M1}\neq\textnormal{Hard.M2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+3
+\numeric off
+.
+ ערכים מותרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Permitted values
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+H\_group\\
+\hline Hard & Group\\
+\hline 3 & soft\\
+7 & hard\\
+8 & hard
+\end{tabular}
+\]
+
+\end_inset
+
+הערך של השדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Group
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכול להיות רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+soft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hard
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\sigma_{\textnormal{Group}\neq\textnormal{soft}\wedge\textnormal{Group}\neq\textnormal{hard}}\textnormal{H\_group}=\emptyset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

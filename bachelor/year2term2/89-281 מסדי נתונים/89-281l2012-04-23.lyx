@@ -1,0 +1,1437 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תלויות פונקציונליות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Functional Dependencies
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c}
+Flight & Class & Price & Airpl & Num\\
+\hline  &  &  & \\
+ &  &  & \\
+\end{tabular}
+\]
+
+\end_inset
+
+השדות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Flight
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+Class
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מגדירים את הטיסה)הם מפתח ראשי( - כלומר אם הם שווים בשני השדות האלה הם שווים
+ בכל שאר השדות - כלומר הם אותה שורה בדיוק!
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+)יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ עם סכימה 
+\begin_inset Formula $S$
+\end_inset
+
+( ותתי קבוצות 
+\begin_inset Formula $X,Y\subset S$
+\end_inset
+
+.
+ נגדיר שמתקיים 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $Y$
+\end_inset
+
+ תלוי ב
+\begin_inset Formula $X$
+\end_inset
+
+, אם
+\begin_inset Formula 
+\[
+\forall_{t_{1},t_{2}}t_{1}\left(X\right)=t_{2}\left(X\right)\Rightarrow t_{1}\left(Y\right)=t_{2}\left(Y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c}
+Flight & Class & Price & Airpl & Num\\
+\hline 123 & bus & 700 & Boeing & 250\\
+123 & ec & 600 & Boeign & 250\\
+124 & bus & 500 & Airbus & 300
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+טיסה מתבצעת במטוס אחד, ולכן גם מדגם אחד, ולכן 
+\begin_inset Formula $\textnormal{Flight}\to\textnormal{Aripl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מספר המקומות במטוס קבוע, ולכן 
+\begin_inset Formula $\textnormal{Airpl}\to\textnormal{Num}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מכיוון שהמטוס קבוע לטיסה, ומספר המקומות קבוע למטוס, מספר המקומות קבוע לטיסה
+ - 
+\begin_inset Formula $\textnormal{Flight}\to\textnormal{Num}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הטיסה והמחלקה מגדירים את המחיר - 
+\begin_inset Formula $\textnormal{Flight},\textnormal{Class}\to\textnormal{Price}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אפשר גם לבודד את המחלקה לפי המחלקה והטיסה, לכן 
+\begin_inset Formula $\textnormal{Flight},\textnormal{Price}\to\textnormal{Class}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלו הם התלויות הפונקציונליות של הטבלה הזו לפי הלוגיקה.
+ כשנרצה למדל את הטבלה, נפעיל הגיון אנושי ונבחר את המפתח 
+\begin_inset Formula $\textnormal{key}:\textnormal{Flight},\textnormal{Class}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר גם לבחור 
+\begin_inset Formula $\textnormal{Superkey}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\textnormal{SK}\supseteq\textnormal{Key}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח קבוצת תלויות אחרת:
+\begin_inset Formula 
+\[
+F2\left\{ \begin{array}{c}
+\textnormal{Flight}\to\textnormal{Airpl},\textnormal{Num}\\
+\textnormal{Airpl}\to\textnormal{Num}\\
+\textnormal{Flight},\textnormal{Class}\to\textnormal{Price}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לנו יחס 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $I_{R}-\textnormal{instance\left(state\right) of }R$
+\end_inset
+
+.
+ ל
+\begin_inset Formula $R$
+\end_inset
+
+ יכולים להיות המון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+instance
+\lang hebrew
+ים, המון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+state
+\lang hebrew
+ים.
+ אם לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לגיטימי תלות פונקציונאלית 
+\begin_inset Formula $f$
+\end_inset
+
+ מתבצעת, אזי אומרים ש
+\begin_inset Formula $R$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $f$
+\end_inset
+
+ - 
+\begin_inset Formula $R\textnormal{ satisfies }f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $F2\Leftarrow F1$
+\end_inset
+
+ - 
+\begin_inset Formula $F1$
+\end_inset
+
+ גורר 
+\begin_inset Formula $F2$
+\end_inset
+
+.
+ אם יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ המקיים את התלויות של 
+\begin_inset Formula $F1$
+\end_inset
+
+ מקיים גם את התלויות של 
+\begin_inset Formula $F2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+גרירה בשני הכיוונים היא שקילות - 
+\begin_inset Formula $F1\equiv F2$
+\end_inset
+
+ - 
+\begin_inset Formula $F1$
+\end_inset
+
+ שקול ל
+\begin_inset Formula $F2$
+\end_inset
+
+ אם 
+\begin_inset Formula $F2\Leftarrow F1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $F1\Leftarrow F2$
+\end_inset
+
+.
+ בדוגמה שלנו 
+\begin_inset Formula $F1\not\equiv F2$
+\end_inset
+
+.
+ אבל ניתן לקחת
+\begin_inset Formula 
+\[
+F3\left\{ \begin{array}{c}
+\textnormal{Flight}\to\textnormal{Airpl},\textnormal{Num}\\
+\textnormal{Airpl}\to\textnormal{Num}\\
+\textnormal{Flight},\textnormal{Class}\to\textnormal{Price}\\
+\textnormal{Flight},\textnormal{Price}\to\textnormal{Class}
+\end{array}\right.
+\]
+
+\end_inset
+
+ואז 
+\begin_inset Formula $F1\equiv F3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+כללים
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+(
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Splitting/Combining Rule
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+, 
+\begin_inset Formula $X,Y\subset S$
+\end_inset
+
+, 
+\begin_inset Formula $Y=\left\{ y_{1},y_{2},\dots y_{n}\right\} $
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+F1=\left\{ X\to Y\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F2=\left(X\to y_{1},\dots X\to y_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+splitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $F1\Rightarrow F2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+combining
+\lang hebrew
+ 
+\begin_inset Formula $F2\Rightarrow F1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בדוגמה שלנו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+splitting
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{Flight}\to\textnormal{Airpl}\Rightarrow\begin{array}{c}
+\textnormal{Flight}\to\textnormal{Airpl}\\
+\textnormal{Flight}\to\textnormal{Num}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+combining
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{Flight}\to\textnormal{Airpl}\Leftarrow\begin{array}{c}
+\textnormal{Flight}\to\textnormal{Airpl}\\
+\textnormal{Flight}\to\textnormal{Num}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סטנדרט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+standard
+\end_layout
+
+\begin_layout Standard
+כאשר כותבים תלות פונקציונלית, נהוג שבצד ימין יהיה שדה אחד.
+ למשל
+\begin_inset Formula 
+\[
+\textnormal{Flight},\textnormal{Class},\textnormal{Airpl}\to\textnormal{Num}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: זוהי תלות נכונה, אבל נעדיף לכתוב קבוצה מינימלית בצד שמאל - 
+\begin_inset Formula 
+\[
+\xcancel{\textnormal{Flight}},\xcancel{\textnormal{Class}},\textnormal{Airpl}\to\textnormal{Num}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Trivial FD
+\end_layout
+
+\begin_layout Standard
+אילוץ טריוויאלי על יחס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Trivial constraint 
+\begin_inset Formula $C$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא תנאי שמתקיים תמיד:
+\begin_inset Formula 
+\[
+\forall_{I_{R}}C\left(R\right)=\textnormal{true}
+\]
+
+\end_inset
+
+התנאי תמיד מתקיים - לא תלוי ב
+\lang english
+instance
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $\textnormal{Flight},\textnormal{Class}\to\textnormal{Flight}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהגדרה: נתון 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+, 
+\begin_inset Formula $X,Y\subset S$
+\end_inset
+
+, 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ נקראת תלות טריוויאלית
+\begin_inset Formula 
+\[
+\left\{ X\to Y\right\} \equiv\left\{ X\to Z\right\} ,Z=Y-X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה טריוויאלי ש
+\begin_inset Formula $X\to Z$
+\end_inset
+
+, כי 
+\begin_inset Formula $Y-Z\subseteq X$
+\end_inset
+
+ ו
+\begin_inset Formula $X\to Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בדוגמה שלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Flight},\textnormal{Class}\to\textnormal{Class},\textnormal{Price}
+\]
+
+\end_inset
+
+ברור ש
+\begin_inset Formula $\textnormal{Flight},\textnormal{Class}\to\textnormal{Class}$
+\end_inset
+
+ - זה ממש מפריע כאן.
+ לכן נוריד את זה:
+\begin_inset Formula 
+\[
+\textnormal{Flight},\textnormal{Class}\to\textnormal{Price}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמרנו שיכולה להיות גרירה 
+\begin_inset Formula $F1\Rightarrow F2$
+\end_inset
+
+ - אם אם 
+\begin_inset Formula $F1\left(R\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $F2\left(R\right)$
+\end_inset
+
+.
+ האם ניתן להוכיח את זה בצורה פורמלית?
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R\left(X,Y,Z\right)$
+\end_inset
+
+)יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ וסכימה 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+(.
+ נניח שמתקיים
+\begin_inset Formula 
+\[
+F1=\left\{ X\to Y,Y\to Z\right\} \qquad F2=\left\{ X\to Z\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח
+\begin_inset Formula 
+\[
+F1\Rightarrow F2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+t_{1}=\left(x,y_{1},z_{1}\right)\\
+t_{2}=\left(x,y_{2},z_{2}\right)\\
+X\to Y
+\end{array}\right]\Rightarrow y_{1}=y_{2}=y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+t_{1}=\left(x,y,z_{1}\right)\\
+t_{2}=\left(x,y,z_{2}\right)\\
+Y\to Z
+\end{array}\right]\Rightarrow z_{1}=x_{2}=z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+t_{1}=\left(x,y,z\right)\\
+t_{2}=\left(x,y,z\right)
+\end{array}\right]\Rightarrow X\to Z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+עיקרון כללי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+General Principle
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Closure of a set of attributes
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X-\textnormal{set of attr}$
+\end_inset
+
+ קבוצת שדות, 
+\begin_inset Formula $X\subseteq S$
+\end_inset
+
+, ו
+\begin_inset Formula $F-\textnormal{set of FDs}$
+\end_inset
+
+.
+ נרצה לחשב את
+\begin_inset Formula 
+\[
+X^{+}-\textnormal{closure of }X\textnormal{ under }F
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המוגדר ע"י:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X^{+}$
+\end_inset
+
+ הוא קבוצת 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F\Rightarrow X\to y_{i}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $X^{+}\subseteq S$
+\end_inset
+
+ מקסימלי המקיים
+\begin_inset Formula 
+\[
+F\Rightarrow X\to X^{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+במילים
+\end_layout
+
+\begin_layout Standard
+בהינתן קבוצת תלויות פונקציונאליות 
+\begin_inset Formula $F$
+\end_inset
+
+ וקבוצת שדות 
+\begin_inset Formula $X$
+\end_inset
+
+, נרצה למצוא את כל השדות התלויים ב
+\begin_inset Formula $X$
+\end_inset
+
+ תחת 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+% Init
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while(
+\begin_inset Formula $\exists\left(f=X'\to Y'\right)\in F,\left|Y'\right|>1$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+split 
+\begin_inset Formula $f$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $X^{+}$
+\end_inset
+
+=
+\begin_inset Formula $X$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+% Body
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while(
+\begin_inset Formula $\exists\left(f=X'\to y'\right)\in F,X'\subseteq X^{+},y'\notin X^{+}$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $X^{+}$
+\end_inset
+
+=
+\begin_inset Formula $X^{+}\cup\left\{ y'\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+return 
+\begin_inset Formula $X^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\left(A,B,C,D,E,G\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ A,B\to C;B,C\to A,D;D\to E;C,G\to B\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X=\left\{ A,B\right\} 
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+בשלב הראשון נפצל את 
+\begin_inset Formula $F$
+\end_inset
+
+, כך שבצד ימין יהיה תמיד רק איבר אחד, ומשם כל פעם מוסיפים עוד שדות שתלויים
+ ב
+\begin_inset Formula $X^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c}
+stage & X^{+} & F & \textnormal{new }X^{+}\\
+\hline init & A,B & \begin{array}{c}
+A,B\to C\\
+B,C\to A\\
+B,C\to D\\
+D\to E\\
+C,G\to B
+\end{array}\\
+\hline 1 & A,B,C & \begin{array}{c}
+B,C\to A\\
+B,C\to D
+\end{array} & B,C,D\\
+\hline 2 & A,B,C,D & D\to E & A,B,C,D,E\\
+\hline 3 & A,B,C,D,E & C,G\to B
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שימושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Applications
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X\to Y\Leftarrow F\\
+\Updownarrow\\
+Y\subset X^{+}
+\end{array}
+\]
+
+\end_inset
+
+כדי לבדוק אם תלות מתבצעת, נוכל להוכיח בעזרת כללים כלשהם שהיא אכן מתבצעת,
+ אבל זה מאוד קשה ומסובך.
+\end_layout
+
+\begin_layout Section*
+
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X^{+}=S\\
+\Downarrow\\
+X\textnormal{ is Superkey}
+\end{array}
+\]
+
+\end_inset
+
+ואז אפשר לנסות להוריד תכונות מ
+\begin_inset Formula $X$
+\end_inset
+
+ ולראות אם מגיעים למפתח.
+\end_layout
+
+\end_body
+\end_document

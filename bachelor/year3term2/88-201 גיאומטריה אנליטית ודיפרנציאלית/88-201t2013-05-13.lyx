@@ -1,0 +1,1021 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $r\left(u,v\right):\left(0,2\pi\right)\times\left(-\infty,\infty\right)\to\mathbb{R}^{3}$
+\end_inset
+
+ המפה המוגדרת ע"י 
+\begin_inset Formula $\gamma\left(u,v\right)=\left(\cos u,\sin u,v\right)$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $\gamma:\left[a,b\right]\to U$
+\end_inset
+
+ עקומה.
+\end_layout
+
+\begin_layout Standard
+נגדיר עקומה נוספת 
+\begin_inset Formula $\rho$
+\end_inset
+
+ על הגליל 
+\begin_inset Formula $M=\left\{ x^{2}+y^{2}=1\right\} $
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\rho\left(t\right)=r\left(\gamma\left(t\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכיחו שאורך העקומה 
+\begin_inset Formula $\rho$
+\end_inset
+
+ שווה לאורך העקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+בצורה פרמטרית, 
+\begin_inset Formula $\gamma\left(t\right)=\left(u\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\gamma\right]=\int_{a}^{b}\left\Vert \gamma'\left(t\right)\right\Vert \mathrm{\, d}t=\int_{a}^{b}\sqrt{\left(u'\left(t\right)\right)^{2}+\left(v'\left(t\right)\right)^{2}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+מצד שני
+\begin_inset Formula 
+\[
+\rho\left(t\right)=r\left(\gamma\left(t\right)\right)=r\left(u\left(t\right),v\left(t\right)\right)=\left(\cos u\left(t\right),\sin u\left(t\right),v\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\rho'\left(t\right)=\left(-\sin u\left(t\right)\cdot u'\left(t\right),\cos u\left(t\right)\cdot u'\left(t\right),v'\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \rho'\left(t\right)\right\Vert =\sqrt{\sin^{2}u\left(t\right)\cdot\left[u'\left(t\right)\right]^{2}+\cos^{2}u\left(t\right)\cdot\left[u'\left(t\right)\right]^{2}+\left(v'\left(t\right)\right)^{2}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sqrt{\left(u'\left(t\right)\right)^{2}+\left(u'\left(t\right)\right)^{2}}=\left\Vert \gamma'\left(t\right)\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\int_{a}^{b}\left\Vert \rho'\left(t\right)\right\Vert \mathrm{\, d}t\equiv\int_{a}^{b}\left\Vert \gamma'\left(t\right)\right\Vert \mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\rho\right]=L\left[\gamma\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+האם ל
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ול
+\begin_inset Formula $\rho$
+\end_inset
+
+ גם אותה עקמומיות?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+לא בהכרח.
+ קווים ישרים מהסוג 
+\begin_inset Formula $v=\textnormal{const}$
+\end_inset
+
+ עם עקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עוברים למעגלים על הגליל)כמעט מעגל(שלהם עקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עוברים למעגלים על הגליל)כמעט מעגל( שלהם עקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ משטח.
+ אם יש בידינו את 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+ ניתן לחשב אורכים של עקמומיות מהסוג 
+\begin_inset Formula $\rho=r\circ\gamma$
+\end_inset
+
+ ע"י:
+\begin_inset Formula 
+\[
+\int_{a}^{b}\sqrt{\underbrace{\gamma'\left(t\right)^{T}}_{\begin{array}{c}
+\textnormal{row}\\
+\textnormal{vector}
+\end{array}}\left(g_{ij}\right)\cdot\underbrace{\gamma'\left(t\right)}_{\begin{array}{c}
+\textnormal{column}\\
+\textnormal{vector}
+\end{array}}}\mathrm{\, d}t=\int_{a}^{b}\sqrt{\underbrace{g_{ij}\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}t}\cdot\frac{\mathrm{d}\gamma^{j}}{\mathrm{d}t}}_{\textnormal{Einstein notation}}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+נרשום:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{pmatrix}\gamma^{1}\left(t\right)\\
+\gamma^{2}\left(t\right)
+\end{pmatrix}\qquad\gamma'\left(t\right)=\begin{pmatrix}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}\\
+\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=\left\langle \frac{\partial r}{\partial u},\frac{\partial r}{\partial u}\right\rangle \qquad g_{12}=\left\langle \frac{\partial r}{\partial u},\frac{\partial r}{\partial v}\right\rangle =g_{21}\qquad g_{22}=\left\langle \frac{\partial r}{\partial v},\frac{\partial r}{\partial v}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\gamma'\left(t\right)^{T}\cdot\left(g_{ij}\right)\cdot\gamma'\left(t\right)=\left(\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t},\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}\right)\begin{pmatrix}g_{11} & g_{12}\\
+g_{21} & g_{22}
+\end{pmatrix}\begin{pmatrix}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}\\
+\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}
+\end{pmatrix}=\left(\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t},\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}\right)\begin{pmatrix}g_{11}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}+g_{12}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}\\
+g_{21}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}+g_{22}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}
+\end{pmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=g_{11}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}+g_{12}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}+g_{21}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}\frac{\mathrm{d}\gamma^{1}}{\mathrm{d}t}+g_{22}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}\frac{\mathrm{d}\gamma^{2}}{\mathrm{d}t}=\cdots
+\]
+
+\end_inset
+
+ובסימון איינשטיין ניתן לכתוב:
+\begin_inset Formula 
+\[
+\cdots=g_{ij}\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}t}\frac{\mathrm{d}\gamma^{j}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף, אם 
+\begin_inset Formula $r$
+\end_inset
+
+ מעתיקה תחום 
+\begin_inset Formula $D\subseteq U$
+\end_inset
+
+ אל 
+\begin_inset Formula $\tilde{D}\subseteq M$
+\end_inset
+
+, אפשר לחשב את השטח של 
+\begin_inset Formula $\tilde{D}$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+A=\iint\limits _{D}\sqrt{\det\left(g_{ij}\right)}\mathrm{\, d}u\mathrm{\, d}v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתון התחום 
+\begin_inset Formula $U=\left\{ \left(u,v\right)\in\mathbb{R}^{2}\middle|\begin{array}{c}
+0<u<2\pi\\
+0<v<2\pi
+\end{array}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\left(t\right)=\left(t,t\right)$
+\end_inset
+
+ עקומה ב
+\begin_inset Formula $U$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0<t<2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מהו אורך העקומה 
+\begin_inset Formula $\alpha\left(t\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $U$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+משטח 
+\begin_inset Formula $M$
+\end_inset
+
+ נתון ע"י פרמטריזציה 
+\begin_inset Formula $r:U\to\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $r\left(u,v\right)=\left(u\cos v,u\sin v,v\right)$
+\end_inset
+
+.
+ מהו אורך העקומה 
+\begin_inset Formula $\rho=r\circ\alpha$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+נניח שנחליף את המטריקה 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+ בסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א' מ
+\begin_inset Formula $\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+ ל
+\begin_inset Formula $\begin{pmatrix}2e^{2u} & 0\\
+0 & 2e^{2v}
+\end{pmatrix}$
+\end_inset
+
+.
+ מהו אורך העקומה 
+\begin_inset Formula $\alpha\left(t\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $U$
+\end_inset
+
+ עם מטריקה זו?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ע"פ פיתגורס 
+\begin_inset Formula $L\left[\alpha\right]=\sqrt{2}\cdot2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פתרון נוסף באמצעות 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+, המטריקה של 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ צריכים פרמטריזציה של 
+\begin_inset Formula $U$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\gamma\left(u,v\right)=\left(u,v\right)\qquad\begin{array}{c}
+0<u<2\pi\\
+0<v<2\pi
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial\gamma}{\partial u}=\left(1,0\right)\qquad\frac{\partial\gamma}{\partial v}=\left(0,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=\left\langle \left(1,0\right),\left(1,0\right)\right\rangle =1\qquad g_{12}=0=g_{21}\qquad g_{22}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=I_{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\alpha\right]=\int_{0}^{2\pi}\sqrt{g_{ij}\frac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}\frac{\mathrm{d}\alpha}{\mathrm{d}}}\mathrm{\, d}t=\int_{0}^{2\pi}\sqrt{g_{11}\frac{\mathrm{d}\alpha^{1}}{\mathrm{d}t}\frac{\mathrm{d}\alpha^{1}}{\mathrm{d}dt}+\xcancel{g_{12}\left(\cdots\right)}+\xcancel{g_{21}\left(\cdots\right)}+g_{22}\frac{\mathrm{d}\alpha^{2}}{\mathrm{d}t}\frac{\mathrm{d}\alpha^{2}}{\mathrm{d}t}}\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{2\pi}\sqrt{1+1}\mathrm{\, d}t=\sqrt{2}\cdot2\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כיצד 
+\begin_inset Formula $M$
+\end_inset
+
+ נראה?
+\begin_inset Formula 
+\[
+\gamma\left(u,v\right)=\left(u\cos v,u\sin v,v\right)\qquad\begin{array}{c}
+0<u<2\pi\\
+0<v<2\pi
+\end{array}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $u$
+\end_inset
+
+ קבוע, מקבלים סליל ברדיוס 
+\begin_inset Formula $u$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הצורה הזאת נקרא 
+\emph on
+הליקויד
+\emph default
+:
+\begin_inset Formula 
+\[
+\rho\left(t\right)=r\left(\alpha\left(t\right)\right)=\gamma\left(t,t\right)=\left(t\cos t,t\sin t,t\right)\qquad0<t<2\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא את 
+\begin_inset Formula $L\left[\rho\right]$
+\end_inset
+
+ בשתי דרכים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+חישוב ישיר:
+\begin_inset Formula 
+\[
+\rho'\left(t\right)=\left(\cos t-\sin t,\sin t+t\cos t,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \rho'\left(t\right)\right\Vert =\sqrt{\cos^{2}t-\cancel{2t\cos t\sin t}+t^{2}\sin^{2}t+\sin^{2}t+\cancel{2t\cos t\sin t}+t^{2}\cos^{2}t+1}=\sqrt{t^{2}+2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\rho\right]=\int_{0}^{2\pi}\sqrt{t^{2}+2}\mathrm{\, d}t=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\sqrt{2}\cdot\sinh\theta\qquad\mathrm{d}t=\sqrt{2}\cosh\theta\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t^{2}=2\sinh^{2}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t^{2}+2=2\left[\sinh^{2}\theta+1\right]=2\cosh^{2}\theta
+\]
+
+\end_inset
+
+הגבול העליון של האינטגרל מתאים ל
+\begin_inset Formula $t=2\pi$
+\end_inset
+
+.
+ מה ה
+\begin_inset Formula $\theta$
+\end_inset
+
+ המתאים?
+\begin_inset Formula 
+\[
+t=\sqrt{2}\sinh\theta\qquad\frac{t}{\sqrt{2}}=\sinh\theta\qquad\theta=\textnormal{arcsinh}\left(\frac{t}{\sqrt{2}}\right)
+\]
+
+\end_inset
+
+ולכן הגבול העליון הוא 
+\begin_inset Formula $\textnormal{archsinh}\left(\frac{2\pi}{\sqrt{2}}\right)$
+\end_inset
+
+, והאינטגרל הוא:
+\begin_inset Formula 
+\[
+\cdots=2\int_{0}^{\textnormal{archsinh}\left(\frac{2\pi}{\sqrt{2}}\right)}\cosh^{2}\theta\mathrm{\, d}\theta=\cdots
+\]
+
+\end_inset
+
+מה זה 
+\begin_inset Formula $\cosh^{2}$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\cosh\theta=\frac{e^{\theta}+e^{-\theta}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cosh^{2}\theta=\left(\frac{e^{\theta}+e^{-\theta}}{2}\right)=\frac{1}{4}\left(e^{\theta}+e^{-\theta}\right)^{2}=\frac{1}{4}\left(e^{2\theta}+e^{-2\theta}\right)=\frac{2}{4}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2}\cdot\frac{e^{2\theta}+e^{-2\theta}}{2}+\frac{1}{2}=\frac{1}{2}e\cosh2\theta+\frac{1}{2}
+\]
+
+\end_inset
+
+נמשיך את פתרון האינטגרל:
+\begin_inset Formula 
+\[
+\cdots=\int_{\cdots}^{\cdots}\left(\cosh2\theta+1\right)\mathrm{\, d}\theta=\left.\frac{\sinh2\theta}{2}+\theta\right|_{\theta=0}^{\theta=\textnormal{arcsinh}\left(\frac{2\pi}{\sqrt{2}}\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\sinh\left(2\textnormal{arcsinh}\left(\frac{2\pi}{\sqrt{2}}\right)\right)}{2}+\textnormal{archsinh}\left(\frac{2\pi}{\sqrt{2}}\right)\approx22.43
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+דרך שנייה - באמצעות 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נחשב נגזרות חלקיות:
+\begin_inset Formula 
+\[
+\frac{\partial r}{\partial u}=\left(\cos v,\sin v,0\right)\qquad\frac{\partial r}{\partial v}=\left(-u\sin v,u\cos v,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=1\qquad g_{12}=g_{21}=0\qquad g_{22}=u^{2}+1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{ij}\right)=\begin{pmatrix}1 & 0\\
+0 & u^{2}+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\rho\right]=\int_{0}^{2\pi}\sqrt{g_{ij}\frac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}\cdot\frac{\mathrm{d}\alpha^{j}}{\mathrm{d}t}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\left(t\right)=\left(\overbrace{t}^{u},\overbrace{t}^{v}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\sqrt{g_{11}\cdot1\cdot1+\xcancel{g_{12}\left(\cdots\right)}+\xcancel{g_{21}\left(\cdots\right)}+g_{22}\cdot1\cdot1}=\int\sqrt{\left(t^{1}+1\right)+1}\mathrm{\, d}t
+\]
+
+\end_inset
+
+ומכאן ממשיכים אותו דבר
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עכשיו במקום 
+\begin_inset Formula $g_{ij}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+ נשתמש ב
+\begin_inset Formula $\left(g_{ij}\right)=\begin{pmatrix}2e^{2u} & 0\\
+0 & 2e^{2v}
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\left(g_{ij}\right)\right|_{\alpha}=\begin{pmatrix}2e^{2t} & 0\\
+0 & 2e^{2t}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left[\alpha\right]=\int_{0}^{2\pi}\sqrt{g_{ij}\frac{\mathrm{d}\alpha^{i}}{\mathrm{d}t}\frac{\mathrm{d}\alpha^{j}}{\mathrm{d}t}}\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{2\pi}\sqrt{g_{11}\frac{\mathrm{d}\alpha^{1}}{\mathrm{d}t}\frac{\mathrm{d}\alpha^{1}}{\mathrm{d}t}+\xcancel{g_{12}\left(\cdots\right)}+\xcancel{g_{21}\left(\cdots\right)}+g_{22}\frac{\mathrm{d}\alpha^{2}}{\mathrm{d}t}\frac{\mathrm{d}\alpha^{2}}{\mathrm{d}t}}\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{2\pi}\sqrt{2e^{2t}\cdot1\cdot1+2e^{2t}\cdot1\cdot1}\mathrm{\, d}t=\int_{0}^{2\pi}\sqrt{4e^{2t}}\mathrm{\, d}t=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}2e^{t}\mathrm{\, d}t=\left.2e^{t}\right|_{t=0}^{t=2\pi}=\boxed{2\left(e^{2\pi}-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

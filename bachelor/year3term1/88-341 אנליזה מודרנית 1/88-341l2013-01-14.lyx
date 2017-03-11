@@ -1,0 +1,2414 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ שני מרחבים נורמיים מעל השדה 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+טרנספורמציה
+\emph default
+)או אופרטור( 
+\emph on
+לינארית
+\emph default
+ 
+\begin_inset Formula $T:X\to Y$
+\end_inset
+
+ היא טרנספורמציה המקיימת
+\begin_inset Formula 
+\[
+T\left(x_{1}+cx_{2}\right)=T\left(x_{1}\right)+cT\left(x_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קל להוכיח שכל טרנספורמציה ליניארית על 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+ רציפה בנורמה האוקלידית.
+\end_layout
+
+\begin_layout Standard
+במרחבים נורמיים ממימד 
+\begin_inset Formula $\infty$
+\end_inset
+
+ יש הרבה דוגמאות של טרנספורמציות ליניאריות ולא רציפות.
+\end_layout
+
+\begin_layout Section*
+דוגמה פשוטה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+X=C\left(\left[0,1\right]\right)=\left\{ f:\left[0,1\right]\to\mathbb{R}\middle|f\textnormal{ is continouus}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert =\max_{0\le x\le1}\left|f\left(x\right)\right|
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $C'\subset C\left(\left[0,1\right]\right)$
+\end_inset
+
+ להיות תת המרחב של 
+\begin_inset Formula $C\left(\left[0,1\right]\right)$
+\end_inset
+
+ המכיל את כל הפונקציות בעלות נגזרת רציפה עם הנורמה של 
+\begin_inset Formula $C\left(\left[0,1\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $T:C'\to\mathbb{R}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $T\left(f\right)=f'\left(0\right)$
+\end_inset
+
+.
+ פשוט ש
+\begin_inset Formula $T$
+\end_inset
+
+ לינארית.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\series bold
+לא רציפה
+\series default
+ כי אם נגדיר 
+\begin_inset Formula $f_{n}\in C'$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f_{n}\left(x\right)=\frac{\sin\left(n^{2}x\right)}{n}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $f_{n}\to0$
+\end_inset
+
+ במ"ש ב
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ ולכן במובן של הנורמה 
+\begin_inset Formula $f_{n}\to0$
+\end_inset
+
+.
+ 
+\series bold
+אבל
+\series default
+:
+\begin_inset Formula 
+\[
+f'_{n}\left(x\right)=n\cos\left(n^{2}x\right)\qquad f'_{n}\left(0\right)=n
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\lim_{n\to\infty}T\left(f_{n}\right)=\lim_{n\to\infty}f'_{n}\left(0\right)$
+\end_inset
+
+ אינו קיים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ מרחבים נורמיים מעל 
+\begin_inset Formula $K$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $T:X\to Y$
+\end_inset
+
+ לינארית.
+ נגדיר את הנורמה של 
+\begin_inset Formula $T$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+\left\Vert T\right\Vert =\sup_{0\neq x\in X}\frac{\left\Vert Tx\right\Vert _{Y}}{\left\Vert x\right\Vert _{X}}\stackrel{{\scriptscriptstyle \textnormal{exercise}}}{=}\sup_{\left\Vert x\right\Vert =1}\left\Vert Tx\right\Vert _{Y}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\left\Vert T\right\Vert <\infty$
+\end_inset
+
+ אומרים ש
+\begin_inset Formula $T$
+\end_inset
+
+ חסומה.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ מרחבים נורמים מעל 
+\begin_inset Formula $K$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $T:X\to Y$
+\end_inset
+
+ טרנספורמציה לינארית.
+ אזי הטענות הבאות שקולות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $T$
+\end_inset
+
+ חסומה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה במ"ש על כל 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה בנקודה אחת 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה באפס.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ב נתון:
+\begin_inset Formula $\left\Vert T\right\Vert =M<\infty$
+\end_inset
+
+.
+ אם כן, לכל 
+\begin_inset Formula $x_{1},x_{2}\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert T\left(x_{1}\right)-T\left(x_{2}\right)\right\Vert =\left\Vert T\left(x_{1}-x_{2}\right)\right\Vert \le M\left\Vert x_{1}-x_{2}\right\Vert 
+\]
+
+\end_inset
+
+זה תנאי ליפשיץ שגורר רציפות במ"ש.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ג טריוויאלי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ד נתון 
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $0$
+\end_inset
+
+.
+ לצורך זה ניקח סדרה 
+\begin_inset Formula $\left\{ x_{n}\right\} \subset X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+.
+ צריך להוכיח 
+\begin_inset Formula $T\left(x_{n}\right)\to T\left(0\right)=0$
+\end_inset
+
+.
+ ובכן: כיוון ש
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}+x_{0}\to x_{0}$
+\end_inset
+
+, ונתון ש
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $T\left(x_{0}+x_{n}\right)\to T\left(x_{0}\right)$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $T\left(x_{0}\right)+T\left(x_{n}\right)\to T\left(x_{0}\right)$
+\end_inset
+
+.
+ נעביר אגף להסיק 
+\begin_inset Formula $T\left(x_{n}\right)\to0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה באפס.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+א כיוון ש
+\begin_inset Formula $T$
+\end_inset
+
+ רציפה באפס, קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left\Vert x\right\Vert <\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\Vert Tx\right\Vert <1$
+\end_inset
+
+.
+ כעת ניקח 
+\begin_inset Formula $0\neq x\in X$
+\end_inset
+
+ כלשהו, ונגדיר 
+\begin_inset Formula $z=\frac{\delta x}{2\left\Vert x\right\Vert }$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left\Vert z\right\Vert =\frac{\delta}{2}<\delta$
+\end_inset
+
+.
+ ממילא 
+\begin_inset Formula $\left\Vert Tz\right\Vert <1$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $\left\Vert T\left(\frac{\delta x}{2\left\Vert x\right\Vert }\right)\right\Vert <1$
+\end_inset
+
+.
+ שקול: 
+\begin_inset Formula 
+\[
+\left\Vert \frac{\delta}{2\left\Vert x\right\Vert }Tx\right\Vert <1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\delta}{2\left\Vert x\right\Vert }\left\Vert Tx\right\Vert <1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert Tx\right\Vert <\underbrace{\frac{2}{\delta}}_{=M<\infty}\left\Vert x\right\Vert 
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $T$
+\end_inset
+
+ חסומה.
+\end_layout
+
+\begin_layout Part*
+מרחבי מכפלה פנימית ומרחבי הילברט
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב וקטורי מעל 
+\begin_inset Formula $K$
+\end_inset
+
+)=
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מכפלה סקלרית
+\emph default
+)מכפלה פנימית( היא פונקציה 
+\begin_inset Formula $\left(,\right):X\times X\to K$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x,y,z\in X$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha\in K$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left(y,x\right)=\overline{\left(x,y\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x+y,z\right)=\left(x,z\right)+\left(y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\alpha x,y\right)=\alpha\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x,x\right)\ge0$
+\end_inset
+
+ עם שוויון רק עבור 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תוצאות מיידיות
+\end_layout
+
+\begin_layout Enumerate
+א' עם ב' 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(z,x+y\right)=\left(z,x\right)+\left(z,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+א' עם ג' 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x,\alpha y\right)=\overline{\alpha}\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ג' 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x,0\right)=\left(0,x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ יחד עם מכפלה פנימית 
+\begin_inset Formula $\left(,\right)$
+\end_inset
+
+ נקרא 
+\emph on
+מרחב מכפלה פנימית
+\emph default
+)ממ"פ(.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ ממ"פ.
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\left\Vert x\right\Vert =\left(x,x\right)^{\nicefrac{1}{2}}$
+\end_inset
+
+, ומוכיחים בלינארית שזאת נורמה אמיתית.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)אי שוויון קושי שווארץ(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ ממ"פ.
+ לכל 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left(x,y\right)\right|\le\left\Vert x\right\Vert \left\Vert y\right\Vert 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה)אי שוויון המשולש(
+\end_layout
+
+\begin_layout Standard
+דרך המלך להוכיח זאת היא
+\begin_inset Formula 
+\[
+\left\Vert \left(x+y\right)\right\Vert ^{2}=\left(x+y,x+y\right)=\left(x,x\right)+\left(x,y\right)+\left(y,x\right)+\left(y,y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left\Vert x\right\Vert ^{2}+2\textnormal{Re}\left(x,y\right)+\left\Vert y\right\Vert ^{2}\le\left\Vert x\right\Vert ^{2}+2\left|\left(x,y\right)\right|+\left\Vert y\right\Vert ^{2}\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\stackrel{{\scriptscriptstyle \textnormal{cauchy-shwartz}}}{\le}\left\Vert x\right\Vert ^{2}+2\left\Vert x\right\Vert \left\Vert y\right\Vert +\left\Vert y\right\Vert ^{2}=\left(\left\Vert x\right\Vert +\left\Vert y\right\Vert \right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+תוך כדי ההוכחה ראינו דבר שימושי:
+\begin_inset Formula 
+\[
+\left\Vert x+y\right\Vert ^{2}=\left\Vert x\right\Vert ^{2}+\left\Vert y\right\Vert ^{2}+2\textnormal{Re}\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+המכפלה הפנימית רציפה במובן זה שאם 
+\begin_inset Formula $\begin{array}{c}
+x_{n}\to x\\
+y_{n}\to y
+\end{array}$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $X$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x_{n},y_{n}\right)\to\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: תרגיל
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)משפט המקבילית(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ ממ"ם, ויהיו 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ וקטורים ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+\left\Vert x+y\right\Vert ^{2}+\left\Vert x-y\right\Vert ^{2}=2\left\Vert x\right\Vert ^{2}+2\left\Vert y\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert x+y\right\Vert ^{2}+\left\Vert x-y\right\Vert ^{2}=\left\Vert x\right\Vert ^{2}+\left\Vert y\right\Vert ^{2}+\cancel{2\textnormal{Re}\left(x,y\right)}+\left\Vert x\right\Vert ^{2}+\left\Vert y\right\Vert ^{2}-\cancel{2\textnormal{Re}\left(x,y\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+היפה במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא שזה טענה רק על הנורמה, אבל ההוכחה תלויה באופן עקרוני בזה שהנורמה מושרית
+ ע"י מכפלה פנימית.
+\end_layout
+
+\begin_layout Standard
+נובע מייד שאם 
+\begin_inset Formula $Y$
+\end_inset
+
+ נורמי שבו משפט המקבילית אינו נכון, אז אי אפשר להגדיר על 
+\begin_inset Formula $Y$
+\end_inset
+
+ מכפלה פנימית שתשרה את הנורמה.
+\end_layout
+
+\begin_layout Standard
+וגם ההפך נכון)אבל לא טריוויאלי(: אם משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים ב
+\begin_inset Formula $Y$
+\end_inset
+
+ אז אפשר להגדיר על 
+\begin_inset Formula $Y$
+\end_inset
+
+ מכפלה פנימית שמשרה את הנורמה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מרחב מכפלה פנימית שלם)במטריקה המושרית ע"י הנורמה( נקרא 
+\emph on
+מרחב הילברט
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+ עם המכפלה הפנימית הקלאסית: אם 
+\begin_inset Formula $\begin{array}{c}
+x=\left(x_{1},x_{2},\dots x_{n}\right)\\
+y=\left(y_{1},y_{2},\dots y_{n}\right)
+\end{array}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,y\right)=\sum\limits _{k=1}^{n}x_{k}\overline{y}_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+=מרחב כל הסדרות 
+\begin_inset Formula $x=\left(x_{n}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert x\right\Vert _{\ell^{2}}=\left(\sum\limits _{n=1}^{\infty}\left|x_{n}\right|^{2}\right)^{\nicefrac{1}{2}}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $\begin{array}{c}
+x=\left(x_{n}\right)\\
+y=\left(y_{n}\right)
+\end{array}\in\ell^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x,y\right)=\sum\limits _{n=1}^{\infty}x_{n}\overline{y_{n}}$
+\end_inset
+
+, וכבר הוכחנו שזה מרחב שלם, ולכן מרחב הילברט.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח אז 
+\begin_inset Formula $L^{2}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+ מרחב הילברט ע"י מכפלה פנימית 
+\begin_inset Formula $\left(f,g\right)=\int_{X}f\overline{g}\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $p\neq2$
+\end_inset
+
+, 
+\begin_inset Formula $L^{p}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+)וגם 
+\begin_inset Formula $L^{\infty}\left(\mathrm{d}\mu\right)$
+\end_inset
+
+( אינם מרחבי הילברט, וקל לבדוק שבהם משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נכשל.
+\end_layout
+
+\begin_layout Standard
+גם 
+\begin_inset Formula $C\left(K\right)$
+\end_inset
+
+ לא מרחב הילברט.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תת מרחב סגור)טופולוגית( הוא תת מרחב שכל סדרה בו שמתכנסת מתכנסת לתוכו.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+ נגדיר תת-מרחב 
+\begin_inset Formula $S=\left\{ x=\left(x_{n}\right)\middle|x_{n}\neq0\textnormal{ for finite number of }n\textnormal{'s}\right\} $
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $S$
+\end_inset
+
+ תת מרחב של 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+, אבל הוא לא סגור, כל למעשה 
+\begin_inset Formula $\overline{S}=\ell^{2}\supsetneqq S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $H$
+\end_inset
+
+ מרחב הילברט, ויהי 
+\begin_inset Formula $M\subseteq H$
+\end_inset
+
+ תת מרחב סגור.
+ אם 
+\begin_inset Formula $x\in H\backslash M$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $y\in M$
+\end_inset
+
+ יחיד כך ש
+\begin_inset Formula $\left\Vert x-y\right\Vert $
+\end_inset
+
+)=
+\begin_inset Formula $\textnormal{dist}\left(x,y\right)$
+\end_inset
+
+( מינימלי מתוך 
+\begin_inset Formula $\left\{ \left\Vert z-x\right\Vert \middle|z\in Y\right\} $
+\end_inset
+
+.
+ יתר על כן 
+\begin_inset Formula $x-y$
+\end_inset
+
+ אורתוגונלית ל
+\begin_inset Formula $m$
+\end_inset
+
+, במובן שלכל 
+\begin_inset Formula $z\in M$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x-y,z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+0<d=\textnormal{dist}\left(x,M\right)=\inf\left\{ \left\Vert x-y\right\Vert :z\in M\right\} 
+\]
+
+\end_inset
+
+)כיוון ש
+\begin_inset Formula $M$
+\end_inset
+
+ סגור ו
+\begin_inset Formula $x\notin M$
+\end_inset
+
+, 
+\begin_inset Formula $0<d$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לפי הגדרת ה
+\begin_inset Formula $\inf$
+\end_inset
+
+, קיימת סדרה 
+\begin_inset Formula $\left\{ y_{n}\right\} \subset M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\lim_{n\to\infty}\left\Vert x-y_{n}\right\Vert =d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ סדרת קושי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: עבור 
+\begin_inset Formula $m,n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left\Vert y_{m}-y_{n}\right\Vert ^{2}=\left\Vert \left(y_{m}-x\right)+\left(x-y_{n}\right)\right\Vert ^{2}\stackrel{{\scriptscriptstyle \textnormal{Theorem 2}}}{=}2\left\Vert y_{m}-x\right\Vert ^{2}+2\left\Vert y_{n}-x\right\Vert ^{2}-\left\Vert y_{m}+y_{n}-2x\right\Vert ^{2}
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $y_{m},y_{n}\in M$
+\end_inset
+
+, גם 
+\begin_inset Formula $M\ni\frac{y_{m}+y_{n}}{2}$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula $\left\Vert \frac{y_{m}+y_{n}}{2}-x\right\Vert \ge d$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\left\Vert y_{m}+y_{n}-2x\right\Vert ^{2}\ge4d^{2}$
+\end_inset
+
+.
+ נחזור למעלה:
+\begin_inset Formula 
+\[
+\left\Vert y_{m}-y_{n}\right\Vert ^{2}\le2\left\Vert y_{m}-x\right\Vert ^{2}+2\left\Vert y_{n}-x\right\Vert ^{2}-4d^{2}
+\]
+
+\end_inset
+
+לפי הבחירה של 
+\begin_inset Formula $\left\{ y_{m}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{m\to\infty}\left\Vert y_{m}-x\right\Vert ^{2}=d$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\lim\limits _{m,n\to\infty}\left\Vert y_{m}-y_{n}\right\Vert ^{2}\le2d^{2}+2d^{2}-4d^{2}=0$
+\end_inset
+
+, וזה מוכיח את הטענה ש
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+קושי.
+ כיוון ש
+\begin_inset Formula $H$
+\end_inset
+
+ מרחב הילברט)ז.א.
+ שלם( קיים גבול 
+\begin_inset Formula $y=\lim\limits _{n\to\infty}y_{n}$
+\end_inset
+
+, וכיוון שכל 
+\begin_inset Formula $M\ni y_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $M$
+\end_inset
+
+ סגור גם 
+\begin_inset Formula $y\in M$
+\end_inset
+
+, וכיוון שהנורמה רציפה
+\begin_inset Formula 
+\[
+\left\Vert y-x\right\Vert =\lim_{n\to\infty}\left\Vert y_{n}-x\right\Vert =d
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\Vert x-y\right\Vert $
+\end_inset
+
+ מינימלי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $y$
+\end_inset
+
+ יחיד.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: אם קיים 
+\begin_inset Formula $w\in\mathbb{N}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert w-x\right\Vert =d$
+\end_inset
+
+ נפעיל אי שוויון לעיל)עבור 
+\begin_inset Formula $y_{n},y_{m}$
+\end_inset
+
+( במקרה של 
+\begin_inset Formula $w$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ לומר
+\begin_inset Formula 
+\[
+\left\Vert w-y\right\Vert ^{2}\le2{\underbrace{\left\Vert w-x\right\Vert }_{=d}}^{2}+2{\underbrace{\left\Vert y-x\right\Vert }_{=d}}^{2}-4d^{2}=2d^{2}+2d^{2}-4d^{2}=0
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $w=y$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ יחיד.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $x-y$
+\end_inset
+
+ אורתוגונלית ל
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: מספיק להוכיח שאם 
+\begin_inset Formula $z\in M$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\left\Vert z\right\Vert =1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x-y,z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ובכן: אם 
+\begin_inset Formula $\alpha\in K$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{dist}\left(x,y+\alpha z\right)\ge\underbrace{\textnormal{dist}\left(x,y\right)}_{=\min}
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+\cancel{\left\Vert x-y\right\Vert ^{2}}\le\left\Vert x-\left(y+\alpha z\right)\right\Vert ^{2}=\left\Vert \left(x-y\right)-\alpha z\right\Vert ^{2}=\left\Vert x-y\right\Vert ^{2}+\left\Vert \alpha z\right\Vert ^{2}-2\textnormal{Re}\overline{\alpha}\left(x-y,z\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cancel{\left\Vert x-y\right\Vert ^{2}}+\left|\alpha\right|^{2}-2\textnormal{Re}\overline{\alpha}\left(x-y,z\right)
+\]
+
+\end_inset
+
+)כי 
+\begin_inset Formula $\left\Vert z\right\Vert =1$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+2\textnormal{Re}\overline{\alpha}\left(x-y,z\right)\le\left|\alpha\right|^{2}
+\]
+
+\end_inset
+
+כעת נבחר 
+\begin_inset Formula $\alpha=\left(x-y,z\right)$
+\end_inset
+
+ ונסיק עבור אותו 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\left|\alpha\right|^{2}=2\textnormal{Re}\overline{\alpha}\underbrace{\left(x-y,t\right)}_{=\alpha}\le\left|\alpha\right|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\alpha=0\implies\left(x-y,z\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+)משפט ההצגה של ריס(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $H$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מרחב הילברט ויהי 
+\begin_inset Formula $y\in H$
+\end_inset
+
+ וקטור כלשהו.
+ נגדיר 
+\begin_inset Formula $f_{y}:H\to K$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f_{y}\left(x\right)=\left(x,y\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f_{y}$
+\end_inset
+
+ לינארי וחסום ומתקיים 
+\begin_inset Formula $\left\Vert f_{y}\right\Vert =\left\Vert y\right\Vert _{H}$
+\end_inset
+
+ ולהיפך: אם 
+\begin_inset Formula $f:X\to K$
+\end_inset
+
+ לינארי וחסום אז קיים 
+\begin_inset Formula $y\in H$
+\end_inset
+
+ יחיד כך ש
+\begin_inset Formula $f=f_{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה ניקח 
+\begin_inset Formula $y\in H$
+\end_inset
+
+ כלשהו ונגדיר 
+\begin_inset Formula $f_{y}\left(x\right)=\left(x,y\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{y}$
+\end_inset
+
+ לינארי כי
+\begin_inset Formula 
+\[
+f_{y}\left(x_{1}+cx_{2}\right)=\left(x_{1}+cx_{2},y\right)=\left(x_{1},y\right)+c\left(x_{2},y\right)=f_{y}\left(x_{1}\right)+cf_{y}\left(x_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f_{y}$
+\end_inset
+
+ חסום כי לכל 
+\begin_inset Formula $x\in H$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f_{y}\left(x\right)\right|=\left|\left(x,y\right)\right|\le\underbrace{\left\Vert y\right\Vert }_{=M}\left\Vert x\right\Vert $
+\end_inset
+
+.
+ בזה הוכחנו ש
+\begin_inset Formula $f_{y}$
+\end_inset
+
+ חסום ו
+\begin_inset Formula $\left\Vert f_{y}\right\Vert \le\left\Vert y\right\Vert _{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת, אם 
+\begin_inset Formula $y=0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{y}=0$
+\end_inset
+
+ ו
+\begin_inset Formula $\left\Vert y\right\Vert _{H}=0=\left\Vert f_{y}\right\Vert $
+\end_inset
+
+, ואם 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ הרי
+\begin_inset Formula 
+\[
+\left\Vert f_{y}\right\Vert \ge\frac{\left|f_{y}\left(y\right)\right|}{\left\Vert y\right\Vert }=\frac{\left|\left(y,y\right)\right|}{\left\Vert y\right\Vert }=\frac{\left\Vert y\right\Vert ^{2}}{\left\Vert y\right\Vert }=\left\Vert y\right\Vert 
+\]
+
+\end_inset
+
+נובע: 
+\begin_inset Formula $\left\Vert f_{y}\right\Vert =\left\Vert y\right\Vert _{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצד שני, אם 
+\begin_inset Formula $f:H\to K$
+\end_inset
+
+ לינארי ורציף יתכן ש
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+ ואז 
+\begin_inset Formula $f=f_{0}$
+\end_inset
+
+, אבל אם 
+\begin_inset Formula $f\not\equiv0$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\ker\left(f\right)=M\subsetneqq H$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ לינארי 
+\begin_inset Formula $M=\ker\left(f\right)$
+\end_inset
+
+ תת מרחב של 
+\begin_inset Formula $H$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציף 
+\begin_inset Formula $M=f^{-1}\left(\left\{ 0\right\} \right)$
+\end_inset
+
+ סגור, וכיוון ש
+\begin_inset Formula $M\neq H$
+\end_inset
+
+ קיים 
+\begin_inset Formula $w\in H\backslash M$
+\end_inset
+
+.
+ נסתמך על משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לבחור 
+\begin_inset Formula $u\in M$
+\end_inset
+
+ קרוב ביותר ל
+\begin_inset Formula $w$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left(u-w\right)\perp M$
+\end_inset
+
+.
+ עוד נגדיר וקטור יחידה 
+\begin_inset Formula $z=\frac{u-w}{\left\Vert u-w\right\Vert }\perp M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $0\neq z\notin M$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת ניקח 
+\begin_inset Formula $x\in H$
+\end_inset
+
+ כלשהו ונעיר שהוקטור 
+\begin_inset Formula $\underbrace{f\left(x\right)}_{\in K}\underbrace{z}_{\in H}-\underbrace{f\left(z\right)}_{\in K}\underbrace{x}_{\in H}\in M$
+\end_inset
+
+, ואם כן 
+\begin_inset Formula 
+\[
+0=\left(f\left(x\right)z-f\left(z\right)x,z\right)=\left(f\left(x\right)z,z\right)-\left(f\left(z\right)x,z\right)=f\left(x\right)\underbrace{\left(z,z\right)}_{=1}-\left(x,\overline{f\left(z\right)}z\right)
+\]
+
+\end_inset
+
+ז.א.
+ אם 
+\begin_inset Formula $y=\overline{f\left(z\right)}z$
+\end_inset
+
+ קיבלנו לכל 
+\begin_inset Formula $x\in H$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x,y\right)=f_{y}\left(x\right)
+\]
+
+\end_inset
+
+נותר רק להוכיח ש
+\begin_inset Formula $y$
+\end_inset
+
+ יחיד.
+ אבל אם קיים 
+\begin_inset Formula $y_{1}\in H$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(x\right)=\left(x,y_{1}\right)$
+\end_inset
+
+ ויוצא ש
+\begin_inset Formula $\left(x,y-y_{1}\right)=f\left(x\right)-f\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in H$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $x=y-y_{1}$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+0=\left(x,y-y_{1}\right)=\left(y-y_{1},y-y_{1}\right)=\left\Vert y-y_{1}\right\Vert ^{2}\implies y=y_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+נחזור לתורת המידה.
+ נניח ש
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ מרחב מדיד ו
+\begin_inset Formula $\mu$
+\end_inset
+
+ מידה על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+.
+ כבר ראינו שלכל 
+\begin_inset Formula $f\ge0$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $S$
+\end_inset
+
+, ההגדרה 
+\begin_inset Formula $\nu\left(E\right)=\int_{E}f\mathrm{\, d}\mu$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $E\in S$
+\end_inset
+
+( מגדירה מידה חדשה 
+\begin_inset Formula $\nu$
+\end_inset
+
+ על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+.
+ נעיר שאם 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ אז בהכרח 
+\begin_inset Formula $\nu\left(E\right)=\int_{E}f\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ו
+\begin_inset Formula $\nu$
+\end_inset
+
+ שתי מידות על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+.
+ אומרים ש
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\emph on
+רציפה בהחלט ביחס ל
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\emph default
+)מסומן 
+\begin_inset Formula $\nu\ll\mu$
+\end_inset
+
+( אם לכל 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ גם 
+\begin_inset Formula $\theta\left(E\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לעיל הוכחנו שאם 
+\begin_inset Formula $\nu\left(E\right)=\int_{E}f\mathrm{\, d}\mu$
+\end_inset
+
+ אז 
+\begin_inset Formula $\nu\ll\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט רדון ניקודים)
+\lang english
+Radon-Nikodym
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ מרחב מדיד, ויהיו 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ו
+\begin_inset Formula $\nu$
+\end_inset
+
+ שתי מידות על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ שהן סופיות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, ו
+\begin_inset Formula $\nu\ll\mu$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $f\ge0$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $S$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ 
+\begin_inset Formula $\nu\left(E\right)=\int_{E}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ו
+\begin_inset Formula $\nu$
+\end_inset
+
+ שתי מידות על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+.
+ נאמר שהן 
+\emph on
+סינגולריות הדדית
+\emph default
+)
+\lang english
+Mutually Singular
+\lang hebrew
+()מסומן 
+\begin_inset Formula $\mu\perp\nu$
+\end_inset
+
+( אם 
+\begin_inset Formula $X=E_{1}\uplus E_{2}$
+\end_inset
+
+, כל 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ מדידה ו
+\begin_inset Formula $\mu\left(E_{1}\right)=\nu\left(E_{2}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)במילים: 
+\begin_inset Formula $\mu$
+\end_inset
+
+ "חי" על 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\theta$
+\end_inset
+
+ "חי" על 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+משפט הפירוק של לבג
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ו
+\begin_inset Formula $\nu$
+\end_inset
+
+ שתי מידות על 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+, שהן 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ סופיות.
+ אזי קיים פירוק 
+\begin_inset Formula $\nu=\nu_{a}+\nu_{s}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\nu_{a}\ll\mu$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{s}\perp\mu$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\nu_{a}\perp\nu_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המתמטיקאי המפורסם 
+\emph on
+פון נויימן
+\emph default
+ מצא הוכחה לשני המשפטים הנ"ל ביחד ע"פ משפט ההצגה של ריס.
+\end_layout
+
+\end_body
+\end_document

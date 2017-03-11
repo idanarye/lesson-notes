@@ -1,0 +1,1444 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dec3
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+Dec3(S,F)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+B - min basis
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for(
+\begin_inset Formula $\forall\left(f=X\to Y\right)\in B$
+\end_inset
+
+) sch(X,Y)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if(none of the schemes from for-loop is a s.
+ key for R)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+add sch=key for R;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\left(A,B,C,D,E\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=AB\to C,C\to B,A\to D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא לבנות סכימה לכל תלות פונקציונאלית מבסיס מינימלי:
+\begin_inset Formula 
+\[
+S1=A,B,C\qquad S2=C,B\qquad S3=A,D
+\]
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $S2\subset S1$
+\end_inset
+
+, לכן 
+\begin_inset Formula $S2$
+\end_inset
+
+ מיותרת:
+\begin_inset Formula 
+\[
+S1=A,B,C\qquad\xcancel{S2=C,B}\qquad S3=A,D
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $S3$
+\end_inset
+
+ הוא ה
+\begin_inset Formula $S2$
+\end_inset
+
+ החדש שלנו:
+\begin_inset Formula 
+\[
+S1=A,B,C\qquad S2=A,D
+\]
+
+\end_inset
+
+הלולאה היא בעצם בדיקה אחת - לא באמת נכנסים ללולאה, פשוט בודקים את כל הסכימות
+ של התלויות.
+ לכן עכשיו אפשר לבנות את המפתחות:
+\begin_inset Formula 
+\[
+K1=A,B,E\qquad K2=A,C,E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תלויות רב ערכיות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MUD - Multi Valued Dependencies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c}
+name & phone & bank & branch\\
+\hline Avi & 03-11 & Disc & 014\\
+Avi & 03-11 & Miz & 144\\
+Avi & 054-2 & Dis & 014\\
+Avi & 054-2 & Miz & 144\\
+Ben & 03-11 & Dis & 120\\
+Ben & 03-11 & Leumi & 133\\
+Ben & 054-3 & Dis & 120\\
+Ben & 054-3 & Leumi & 133
+\end{tabular}
+\]
+
+\end_inset
+
+אין כאן תלויות פונקציונאליות, אבל ברור שיש כאן כפילות!
+\end_layout
+
+\begin_layout Standard
+לכל אחד מהשמות, יש שתי קבוצות:
+\begin_inset Formula 
+\[
+\begin{tabular}{lcc}
+Avi & \Rightarrow\ & \left\{ 03-11,054-2\right\} \\
+ &  & \left\{ \left(Disc,014\right),\left(Miz,144\right)\right\} \\
+Ben & \Rightarrow\ & \left\{ 03-11,054-3\right\} \\
+ &  & \left\{ \left(Disc,120\right),\left(Leumi,133\right)\right\} 
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $S$
+\end_inset
+
+ סכימה, 
+\begin_inset Formula $X,Y\subset S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+ אם לכל ערך של 
+\begin_inset Formula $X$
+\end_inset
+
+ קיימת קבוצת ערכים ב
+\begin_inset Formula $Y$
+\end_inset
+
+ מוגדרת היטב - כלומר קבוצה שלא תלויה ב
+\begin_inset Formula $S-X-Y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left[X\right]\Rightarrow\left[Y\right]\times\left[S-X-Y\right]
+\]
+
+\end_inset
+
+לכל ערך של 
+\begin_inset Formula $X$
+\end_inset
+
+ מתאימה מכפלה קרטזית של ערכים ב
+\begin_inset Formula $Y$
+\end_inset
+
+ עם ערכים ב
+\begin_inset Formula $S-X-Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+כללים
+\end_layout
+
+\begin_layout Enumerate
+טריוויאלית: אם 
+\begin_inset Formula $Y\subset X$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+טרנזיטיביות: אם 
+\begin_inset Formula $X\to\to Y,Y\to\to Z$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\to\to Z$
+\end_inset
+
+ כאשר לוקחים 
+\begin_inset Formula $Z=Z-X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Splitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לא עושים כאן!
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+FD promotion
+\lang hebrew
+: אם 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+:Complementation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אם 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\to\to S-X-Y$
+\end_inset
+
+.
+ תלויות רב ערכיות תמיד באות בזוגות.
+\end_layout
+
+\begin_layout Enumerate
+עוד טריוויאליות: אם 
+\begin_inset Formula $S=\left(X,Y\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+4NF
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יחס הוא ב
+\lang english
+4NF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם לכל 
+\begin_inset Formula $X\to\to Y$
+\end_inset
+
+ לא טריוואלית, 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+superkey
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+בדוגמה הקודמת
+\end_layout
+
+\begin_layout Standard
+הדוגמה שלנו היא לא ב
+\lang english
+4NF
+\lang hebrew
+, שכן 
+\begin_inset Formula $\textnormal{name}\to\to\left\{ \textnormal{phone,bank,branch}\right\} $
+\end_inset
+
+ אבל 
+\begin_inset Formula $\left(\textnormal{name}\right)$
+\end_inset
+
+ אינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+superkey
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c}
+name & phone & cr\_card & valid\\
+\hline Avi & 03-11 & V1111 & 11/11\\
+Avi & 03-11 & M2222 & 11/11\\
+Avi & 054-2 & M3333 & 10/12\\
+Avi & 054-2 & V1111 & 11/11\\
+Ben & 03-11 & V4444 & 09/13\\
+Ben & 03-11 & A5555 & 10/13\\
+Ben & 054-3 & V4444 & 09/13\\
+Ben & 054-3 & A5555 & 10/13\\
+Avi & 03-11 & M3333 & 10/12\\
+Avi & 054-2 & M2222 & 11/11
+\end{tabular}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\textnormal{name,phone,cr\_card,valid}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ \begin{array}{c}
+\textnormal{name}\to\to\textnormal{phone}\\
+\textnormal{name}\to\to\textnormal{cr\_card,valid}\\
+\textnormal{cr\_card}\to\textnormal{valid}\\
+\textnormal{cr\_card}\to\textnormal{name}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dec4
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+dec4(S,F)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(S in 4NF) return S
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $X\to\to Y\in F$
+\end_inset
+
+ violates 4NF) // X not a s.k.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+compute F1; compute F2;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+return (dec4(S1,F1)
+\begin_inset Formula $\cup$
+\end_inset
+
+dec4(S2,F2))
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section*
+בדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\textnormal{name}\to\to\textnormal{phone}\right)\in F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S1=\left(\textnormal{name,phone}\right)\qquad S2\left(\textnormal{name,cr\_card,valid}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F1=\emptyset\qquad S2=\left\{ \textnormal{cr\_card}\to\textnormal{name},\textnormal{cr\_card}\to\textnormal{valid}\right\} 
+\]
+
+\end_inset
+
+נשים לב שב
+\lang english
+dec4
+\lang hebrew
+, בניגוד ל
+\lang english
+dec3
+\lang hebrew
+, צריך להמשיך עד שמגיעים ליחס ב
+\lang english
+4NF
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{dec4}\left(S1,F1\right)=\textnormal{dec}\left(S2,F2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התוצאה הסופית היא:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c}
+name & phone\\
+\hline Avi & 03-11\\
+Avi & 054-2\\
+Ben & 03-11\\
+Ben & 054-3
+\end{tabular}\qquad\begin{tabular}{c|c|c}
+name & cr\_card & valid\\
+\hline Avi & V1111 & 11/11\\
+Avi & M2222 & 11/11\\
+Avi & M3333 & 10/12\\
+Ben & V4444 & 09/13\\
+Ben & A5555 & 10/13
+\end{tabular}
+\]
+
+\end_inset
+
+נשים לב! פעם ראשונה שבשני היחסים פחות שורות מאשר במקור!
+\end_layout
+
+\begin_layout Standard
+בכל הפירוקים הקודמים, תמיד באחד היחסים היה מפתח, ולכן אותו מספר שורות כמו
+ ביחס המקומי.
+\end_layout
+
+\begin_layout Part*
+ניהול טרנזקציות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Transactions Management
+\end_layout
+
+\begin_layout Section*
+מושגים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ - טרנזקציה)
+\lang english
+Transation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E$
+\end_inset
+
+ - אלמנט)
+\lang english
+Element
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+מצב מסד הנתונים)
+\lang english
+State of DB
+\lang hebrew
+( - ערכים של כל הנתונים
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Itemize
+אטומיות)
+\lang english
+atomicity
+\lang hebrew
+( - או שהטרנזקציה מתבצעת או שהיא לא מתבצעת.
+ אסור שהיא תתבצע רק חצי.
+\end_layout
+
+\begin_layout Itemize
+נכונות)
+\lang english
+Correctness principle
+\lang hebrew
+( - אם הטרנזקציה מתבצעת לבד, ללא שגיאות של המערכת, וכשהיא מתחילה המערכת
+ הייתה במצב תקין)
+\lang english
+DB consistent state
+\lang hebrew
+( - המערכת תימצא במצב תקין לאחר הטרנזציה.
+\end_layout
+
+\begin_layout Standard
+מצב תקין - שומר על אילוצים מפורשים ומרומזים
+\end_layout
+
+\begin_layout Part*
+פעולות בסיסיות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Primitive operations
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעולות פרימיטיביות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{input}\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{output}\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{read}\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textnormal{write}\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל טרנזציה יש מקום בזיכרון.
+ אם כמה טרנזקציות קוראות ערך של 
+\begin_inset Formula $X$
+\end_inset
+
+, כל אחד קוראת אותו לזיכרון שלה.
+ יש גם בפרים בין הטרנזקציות לבסיס הנתונים.
+\end_layout
+
+\begin_layout Standard
+קוראים לבסיס הנתונים בלוק שלם ממסד הנתונים)פעולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+input
+\lang hebrew
+(, וקוראים את הערך 
+\begin_inset Formula $X$
+\end_inset
+
+ לזיכרון הפרטי של הטרנזציה עם)פעולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read
+\lang hebrew
+(.
+ פעולות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+output
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+write
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עושות אותו דבר רק הפוך.
+\end_layout
+
+\begin_layout Part*
+תזמון -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Serializability of schedules
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Schedule
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה סדרה של צעדים, פעולות, של טרנזקציות.
+ לדוגמה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+S1=T1:r(A,t),T1:t=t+100;T1:w(A,t);T1:r(B,t);T1:t=t+100;T1:w(B,t)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+S2=T2:r(A,s);T2:s=s*2;T2:w(A,s);T2:r(B,s);T2:s=s*2;T2:w(B,s)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+S3=T1,T2
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+S4=T2,T1
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+אם יש אילוץ האילוץ:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+constraint: A=B
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T1$
+\end_inset
+
+ מוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $A$
+\end_inset
+
+, ואז מוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אם מתחילים ממצב תקין, מגיעים למצב תקין.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T2$
+\end_inset
+
+ מכפיל את 
+\begin_inset Formula $A$
+\end_inset
+
+ פי 
+\numeric on
+2
+\numeric off
+, ואז מכפיל את 
+\begin_inset Formula $B$
+\end_inset
+
+ פי 
+\numeric on
+2
+\numeric off
+.
+ אם מתחילים ממצב תקין, מגיעים למצב תקין.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S3$
+\end_inset
+
+ ו
+\begin_inset Formula $S4$
+\end_inset
+
+ מריצים את 
+\begin_inset Formula $S1,S2$
+\end_inset
+
+ אחת אחרי השנייה, ולכן גם הן תקינות.
+\end_layout
+
+\begin_layout Standard
+מתי יכולה להיות בעיה? אם מריצים אותם אחד ביחד עם השני, בו זמנית.
+\end_layout
+
+\end_body
+\end_document

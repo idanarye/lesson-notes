@@ -1,0 +1,695 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\vec{F}:\mathbb{R}^{n}\to\mathbb{R}^{n}$
+\end_inset
+
+ שדה וקטורי, הדיברגנץ שלו מוגדר ע"י
+\begin_inset Formula 
+\[
+\textnormal{div}\vec{F}=\cfrac{\partial F_{1}}{\partial x_{1}}+\cfrac{\partial F_{2}}{\partial x_{2}}+...+\cfrac{\partial F_{n}}{\partial F_{n}}
+\]
+
+\end_inset
+
+הדיברגנץ של שדה וקטורי הוא מדד שינוי שטח/נפח תחת תנועה בשדה.
+\end_layout
+
+\begin_layout Standard
+למשל:
+\begin_inset Formula 
+\[
+\vec{F}\left(x,y\right)=x\hat{\imath}+y\hat{\jmath}=\left(x,y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla\cdot\vec{F}=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\vec{F}:\mathbb{R}^{3}\to\mathbb{R}^{3}$
+\end_inset
+
+ שדה וקטורי.
+ ה
+\bar under
+רוטור
+\bar default
+)
+\lang english
+rotor/curl
+\lang hebrew
+( של 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ הוא גם כן שדה וקטורי, המוגדר ע"י
+\begin_inset Formula 
+\[
+\textnormal{rot}\vec{F}:\mathbb{R}^{3}\to\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{curl}\left(\vec{F}\right)=\vec{\nabla}\times\vec{F}=\det\begin{pmatrix}\hat{\imath} & \hat{\jmath} & \hat{k}\\
+\cfrac{\partial}{\partial x} & \cfrac{\partial}{\partial y} & \cfrac{\partial}{\partial z}\\
+F_{1} & F_{2} & F_{3}
+\end{pmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(\cfrac{\partial F_{3}}{\partial y}-\cfrac{\partial F_{2}}{\partial z}\right)\hat{\imath}-\left(\cfrac{\partial F_{3}}{\partial x}-\cfrac{\partial F_{1}}{\partial z}\right)\hat{\jmath}+\left(\cfrac{\partial F_{2}}{\partial x}-\cfrac{\partial F_{1}}{\partial y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+הרוטור 
+\begin_inset Formula $\nabla\times F\left(x\right)$
+\end_inset
+
+ מעיד על "מידת הסיבוב" של השדה 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+כיוונו מעיד על ציר הסיבוב
+\end_layout
+
+\begin_layout Itemize
+אורכו 
+\begin_inset Formula $\left|\nabla\times F\right|$
+\end_inset
+
+ שווה למהירות הזוויתית כפול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Section*
+ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר רוטור גם בשדה ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ ע"י "שיכון" שלו ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+F:\mathbb{R}^{2}\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $F\left(x,y\right)=M\left(x,y\right)\hat{\imath}+N\left(x,y\right)\hat{\jmath}$
+\end_inset
+
+, נוח לחשוב עליו כשדה ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+F\left(x,y,z\right)=M\hat{\imath}+N\hat{\jmath}+0\hat{k}
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+\textnormal{curl}\left(F\right)=\begin{vmatrix}\hat{\imath} & \hat{\jmath} & \hat{k}\\
+\partial_{x} & \partial_{y} & \partial_{z}\\
+M\left(x,y\right) & N\left(x,y\right) & 0
+\end{vmatrix}=\left(0\right)\hat{\imath}+\left(0\right)\hat{\jmath}+\left(\cfrac{\partial N}{\partial x}-\cfrac{\partial M}{\partial y}\right)\hat{k}=\left(0,0,N_{x}-M_{y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את הרוטור עבור 
+\begin_inset Formula $F\left(x,y\right)=x^{2}\hat{\imath}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ע"י הנוסחה:
+\begin_inset Formula 
+\[
+\textnormal{curl}\left(\vec{F}\right)=\left(\cfrac{\partial\left(x^{2}\right)}{\partial x}-\cfrac{\partial\left(0\right)}{\partial y}\right)\hat{k}=2x\hat{k}=\boxed{\left(0,0,2x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור שדה סקלרי 
+\begin_inset Formula $f:\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+, ה
+\bar under
+לפלסיאן
+\bar default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+\Delta f\equiv\nabla^{2}f:=\cfrac{\partial^{2}f}{\partial x_{1}^{2}}+\cfrac{\partial^{2}f}{\partial x_{2}^{2}}+...+\cfrac{\partial^{2}f}{\partial x_{n}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\left(x,y\right)=x^{2}-y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta f=\cfrac{\partial^{2}\left(x^{2}-y^{2}\right)}{\partial x^{2}}+\cfrac{\partial^{2}\left(x^{2}-y^{2}\right)}{\partial y^{2}}=2+\left(-2\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+פונקציה עם לפלסיאן אפס נקראת פונקציה הרמונית.
+\end_layout
+
+\begin_layout Section*
+פירוש 
+\begin_inset Formula $\nabla^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla=\left(\cfrac{\partial}{\partial x_{1}},\cfrac{\partial}{\partial x_{2}},...\cfrac{\partial}{\partial x_{n}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla^{2}=\nabla\cdot\nabla=\left(\cfrac{\partial}{\partial x_{1}}\right)\left(\cfrac{\partial}{\partial x_{1}}\right)+\left(\cfrac{\partial}{\partial x_{2}}\right)\left(\cfrac{\partial}{\partial x_{2}}\right)+...+\left(\cfrac{\partial}{\partial x_{n}}\right)\left(\cfrac{\partial}{\partial x_{n}}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\partial^{2}}{\partial x_{1}^{2}}+\cfrac{\partial^{2}}{\partial x_{2}^{2}}+...+\cfrac{\partial^{2}}{\partial x_{n}^{2}}=\Delta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+זהויות חשובות בין האופרטורים השונים
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\boxed{\textnormal{curl}\left(\textnormal{grad}\left(f\right)\right)=0}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אם 
+\begin_inset Formula $\vec{F}=\nabla f$
+\end_inset
+
+)שדה פוטנציאלי( אזי 
+\begin_inset Formula $\textnormal{curl}\left(\vec{F}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: תנאי הכרחי לשדה פוטנציאלי 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\textnormal{curl}\left(\vec{F}\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\textnormal{curl}\left(\vec{F}\right)\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ לא פוטנציאלי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\textnormal{div}\left(\textnormal{curl}\left(\vec{F}\right)\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אינווריאנטיות תחת החלפת קואורדינטות
+\end_layout
+
+\begin_layout Standard
+משדה סקלרי 
+\begin_inset Formula $f$
+\end_inset
+
+ או שדה וקטורי 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+, אפשר:
+\end_layout
+
+\begin_layout Itemize
+דרך קואורדינטות 
+\begin_inset Formula $X$
+\end_inset
+
+, להגיע דרך 
+\begin_inset Formula $\begin{array}{c}
+f\left(x\right)\\
+\vec{F}\left(x\right)
+\end{array}$
+\end_inset
+
+, באמצעות 
+\begin_inset Formula $\nabla_{x}$
+\end_inset
+
+ להגיע לביטוי.
+\end_layout
+
+\begin_layout Itemize
+דרך קואורדינטות 
+\begin_inset Formula $X'$
+\end_inset
+
+, להגיע דרך 
+\begin_inset Formula $\begin{array}{c}
+f\left(x'\right)\\
+\vec{F}\left(x'\right)
+\end{array}$
+\end_inset
+
+, באמצעות 
+\begin_inset Formula $\nabla_{x'}$
+\end_inset
+
+ להגיע לביטוי.
+\end_layout
+
+\begin_layout Standard
+האם יש קשר בין הביטויים?
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left\{ e_{1},e_{1}\right\} $
+\end_inset
+
+ בסיס אורתונורמלי עבור 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $u$
+\end_inset
+
+ שדה סקלרי הנתון בקואורדינטות ע"י הנוסחה 
+\begin_inset Formula $f\left(x,y\right)=x^{2}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\left(x,y\right)=xe_{1}+ye_{2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נבנה בסיס נוסף 
+\begin_inset Formula $\left\{ e'_{1},e'_{2}\right\} $
+\end_inset
+
+ ע"י סיבוב הבסיס 
+\begin_inset Formula $\left\{ e_{1},e_{2}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+ נגד כיוון השעון ונקבל מערכת קואורדינטות חדשה 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מצא נוסחת מעבר מ
+\begin_inset Formula $\left\{ e_{1},e_{2}\right\} $
+\end_inset
+
+ ל
+\begin_inset Formula $\left\{ e_{1}',e_{2}'\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בטא את השדה הסקלרי 
+\begin_inset Formula $u$
+\end_inset
+
+ כפונקציה של הקואורדינטות 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+חשב את הגרדיאנט 
+\begin_inset Formula $\textnormal{grad}\left(u\right)$
+\end_inset
+
+ בקואורדינטות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ וגם ב
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+חשב את הלפלסיאן 
+\begin_inset Formula $\Delta u$
+\end_inset
+
+ בשתי המערכות
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+מטריצת סיבוב ב
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא 
+\begin_inset Formula $R\left(\theta\right)^{t}=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}^{t}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}e_{1}'\\
+e_{2}'
+\end{pmatrix}=\begin{pmatrix}\cfrac{\sqrt{3}}{2} & \cfrac{1}{2}\\
+-\cfrac{1}{2} & \cfrac{\sqrt{3}}{2}
+\end{pmatrix}\begin{pmatrix}e_{1}\\
+e_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e_{1}'=\cfrac{\sqrt{3}}{2}e_{1}+\cfrac{1}{2}e_{2}=\left(\cfrac{\sqrt{3}}{2},\cfrac{1}{2}\right)=e_{1}'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e_{2}'=-\cfrac{1}{2}e_{1}+\cfrac{\sqrt{3}}{2}e_{2}=\left(-\cfrac{1}{2},\cfrac{\sqrt{3}}{2}\right)=e_{2}'
+\]
+
+\end_inset
+
+כדי לתרגם וקטור מקואורדינטות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ לקואורדינטות 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+ נכפיל במטריצה 
+\begin_inset Formula $U=\begin{pmatrix}\cfrac{\sqrt{3}}{2} & \cfrac{1}{2}\\
+-\cfrac{1}{2} & \cfrac{\sqrt{3}}{2}
+\end{pmatrix}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=u\cdot\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

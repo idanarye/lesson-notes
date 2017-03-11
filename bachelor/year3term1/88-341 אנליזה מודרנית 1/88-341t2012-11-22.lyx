@@ -1,0 +1,936 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f_{n}:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ סדרת פונקציות ממשירות רציפות.
+ הראו שהקבוצה
+\begin_inset Formula 
+\[
+\left\{ x\in\mathbb{R}\middle|\left\{ f_{n}\right\} _{n=1}^{\infty}\textnormal{ converges at x}\right\} 
+\]
+
+\end_inset
+
+היא מטיפוס 
+\begin_inset Formula $F_{\sigma\delta}$
+\end_inset
+
+)חיתוך בן מנייה של איחוד בן מנייה של קבוצות סגורות(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ניזכר כי 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ הוא מרחב שלם, ולכן 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ מתכנסת בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ או"א 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ היא סדרת קושי.
+ ז"א:
+\begin_inset Formula 
+\[
+\forall_{\varepsilon>0}\exists_{N}\forall_{m,n\ge N}\left|f_{m}\left(x\right)-f_{n}\left(x\right)\right|\le\varepsilon
+\]
+
+\end_inset
+
+אפשר לעדן קצת:
+\begin_inset Formula 
+\[
+\forall_{K\in\mathbb{N}}\exists_{N}\forall_{m,n\ge N}\left|f_{m}\left(x\right)-f_{n}\left(x\right)\right|\le\frac{1}{K}
+\]
+
+\end_inset
+
+לסיום:
+\begin_inset Formula 
+\[
+\left\{ x\in\mathbb{R}\middle|f_{n}\textnormal{ converges at }x\right\} =\left\{ x\in\mathbb{R}\middle|f_{n}\left(x\right)\textnormal{ is cauchy}\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\underbrace{\bigcap_{K=1}^{\infty}\underbrace{\bigcup_{N=1}^{\infty}\underbrace{\bigcap_{m,n=N}^{\infty}\underbrace{\left\{ x\middle|\left|f_{m}\left(x\right)-f_{n}\left(x\right)\right|\le\frac{1}{K}\right\} }_{\textnormal{close - }F}}_{F}}_{F_{\sigma}}}_{\left(F_{\sigma}\right)_{\delta}=F_{\sigma\delta}}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\equiv\bigcap$
+\end_inset
+
+לכל, 
+\begin_inset Formula $\equiv\bigcup$
+\end_inset
+
+קיים(
+\end_layout
+
+\begin_layout Standard
+הפונקציות 
+\begin_inset Formula $f_{m},f_{n}$
+\end_inset
+
+ רציפות ולכן גם 
+\begin_inset Formula $\left|f_{m}^{\left(x\right)}-f_{n}^{\left(x\right)}\right|$
+\end_inset
+
+ רציפות.
+\begin_inset Formula 
+\[
+\left\{ x\middle|\left|f_{m}\left(x\right)-f_{n}\left(x\right)\right|\le\frac{1}{K}\right\} =\left|f_{m}-f_{n}\right|^{-1}\left(\left[0,\frac{1}{K}\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: זו גם קבוצה מטיפוס 
+\begin_inset Formula $G_{\delta\sigma\delta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $U\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ קבוצה פתוחה, ותהי 
+\begin_inset Formula $f:U\to\mathbb{R}$
+\end_inset
+
+ פונקציה ממשית.
+ הראו שהקבוצה 
+\begin_inset Formula $\left\{ x\in U\middle|f\textnormal{ is continuous at x}\right\} $
+\end_inset
+
+ היא מטיפוס 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x\in U,\varepsilon>0$
+\end_inset
+
+ נגדיר את התנודה)"
+\lang english
+oscillation
+\lang hebrew
+"( של 
+\begin_inset Formula $f$
+\end_inset
+
+ בכדור 
+\begin_inset Formula $B\left(x,\varepsilon\right)$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+\omega\left(x,\varepsilon\right):=\sup\left\{ \left|f\left(s\right)-f\left(t\right)\right|\middle|s,t\in B\left(x,\varepsilon\right)\right\} 
+\]
+
+\end_inset
+
+ונקודתית ע"י 
+\begin_inset Formula $\omega\left(x\right):=\inf\left\{ \omega\left(x,\varepsilon\right)\middle|\varepsilon>0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מאמר
+\begin_inset space ~
+\end_inset
+
+מוסגר
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(x\right)=\lim\limits _{\varepsilon\to0^{+}}\omega\left(x,\varepsilon\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+עבור פונקציית הביסייד 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+1 & x\ge0\\
+0 & x<0
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(3,2\right)=0$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\omega\left(0\right)=1$
+\end_inset
+
+ כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(0,\varepsilon\right)=1$
+\end_inset
+
+, ואז ה
+\begin_inset Formula $\inf$
+\end_inset
+
+ גם יהיה אחד.
+\end_layout
+
+\begin_layout Standard
+בעצם, רואים שהתנודה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר הפונקציה רציפה בנקודה - אבל עדיין צריך להוכיח את זה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אנו טוענים שלכל 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ ממשי הקבוצה 
+\begin_inset Formula $E_{a}=\left\{ x\in U\middle|\omega\left(x\right)<a\right\} $
+\end_inset
+
+ היא פתוחה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחת
+\begin_inset space ~
+\end_inset
+
+הטענה
+\series default
+: יהי 
+\begin_inset Formula $x_{0}\in E_{a}$
+\end_inset
+
+.
+ ישנו 
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\omega\left(x_{0},\varepsilon_{0}\right)=\sup\left\{ \left|f\left(s\right)-f\left(t\right)\right|\middle|s,t\in B\left(x_{0},\varepsilon_{0}\right)\right\} <a
+\]
+
+\end_inset
+
+אחרת 
+\begin_inset Formula $\omega\left(x_{0}\right)$
+\end_inset
+
+ שהוא ה
+\begin_inset Formula $\inf$
+\end_inset
+
+ של כולם לא יהיה קטן מ
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכן, לכל 
+\begin_inset Formula $x\in B\left(x_{0},\frac{\varepsilon_{0}}{2}\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\omega\left(x,\frac{\varepsilon_{0}}{2}\right)=\sup\left\{ \left|f\left(s\right)-f\left(t\right)\right|\middle|s,t\in B\left(x,\frac{\varepsilon_{0}}{2}\right)\right\} \le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sup\left\{ \left|f\left(s\right)-f\left(t\right)\right|\middle|s,t\in B\left(x_{0},\varepsilon_{0}\right)\right\} =\omega\left(x_{0},\varepsilon_{0}\right)<a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכאן כ
+\begin_inset Formula $\inf$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(x\right)<a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $E_{a}$
+\end_inset
+
+ פתוחה, כי אם 
+\begin_inset Formula $x_{0}\in E_{a}$
+\end_inset
+
+ הכדור 
+\begin_inset Formula $B\left(x_{0},\frac{\varepsilon_{0}}{2}\right)$
+\end_inset
+
+ מוכל כולו ב
+\begin_inset Formula $E_{a}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ניתן לראות כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $\omega\left(x\right)=0$
+\end_inset
+
+, ולכן:
+\begin_inset Formula 
+\[
+\left\{ x\middle|f\textnormal{ is continuou as }x\right\} =\left\{ x\middle|\omega\left(x\right)=0\right\} \underbrace{\bigcap_{n=1}^{\infty}\underbrace{\left\{ x\middle|\omega\left(x\right)<\frac{1}{n}\right\} }_{\textnormal{open}\equiv E_{\frac{1}{n}}}}_{G_{\delta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח את זה בכל מרחב מטרי.
+\end_layout
+
+\begin_layout Section*
+תזכורת - משפט ההתכנסות המונוטונית של לבג
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $0\le f_{1}\le f_{2}\le f_{3}\le\cdots\le+\infty$
+\end_inset
+
+ כולן מדידות לבג, אזי פונקציית הגבול שלהן קיימת ומדידה ומתקיים
+\begin_inset Formula 
+\[
+\int_{X}\left(\lim_{n\to\infty}f_{n}\right)\mathrm{\, d}\mu=\lim_{n\to\infty}\int_{X}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\ge0$
+\end_inset
+
+ פונקציה מדידה ואי-שלילית.
+ המקיימת 
+\begin_inset Formula $\int_{X}f\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+ הוכיחו כי הקבוצה שבה 
+\begin_inset Formula $f$
+\end_inset
+
+ חיובית-ממש היא בעלת מידה אפס.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $E:=\left\{ x\in X\middle|f\left(x\right)>0\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}\left(x\right):=s$
+\end_inset
+
+.
+ קל לראות שהסדרה 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ עומדת בתנאי משפט ההתכנסות המונוטונית, ולכן
+\begin_inset Formula 
+\[
+\int_{X}\left(\lim_{n\to\infty}n\cdot f\right)\mathrm{\, d}\mu=\lim_{n\to\infty}\int_{X}n\cdot f\mathrm{\, d}\mu=\lim_{n\to\infty}n\cdot\underbrace{\int_{X}f\mathrm{\, d}\mu}_{=0}=0
+\]
+
+\end_inset
+
+נניח בשלילה כי 
+\begin_inset Formula $\mu\left(E\right)>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X\supseteq E$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\int_{X}\left(\lim_{n\to\infty}n\cdot f\right)\mathrm{\, d}\mu\ge\int_{E}\left(\lim_{n\to\infty}n\cdot f\right)\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+אבל, לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)>0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\left(\left.f_{n}\right|_{E}\right)\left(x\right)=n\cdot f\left(x\right)\xrightarrow{n\to\infty}\infty
+\]
+
+\end_inset
+
+שזה בעצם
+\begin_inset Formula 
+\[
+\int_{E}\infty\mathrm{\, d}\mu=\infty\underbrace{\mu\left(E\right)}_{>0}=\infty
+\]
+
+\end_inset
+
+וזו סתירה!
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו את הגבול
+\begin_inset Formula 
+\[
+I:=\lim_{n\to\infty}\int_{0}^{n}\left(1-\frac{x}{n}\right)^{n}\cdot\log\left[2+\cos\left(\frac{x}{n}\right)\right]\mathrm{\, d}m\left(x\right)
+\]
+
+\end_inset
+
+)הערה: 
+\begin_inset Formula $m$
+\end_inset
+
+ זו מידת לבג(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ניתן לרשום את הגבול בצורה הבאה:
+\begin_inset Formula 
+\[
+I=\lim_{n\to\infty}\int_{\left(0,\infty\right)}\left(1-\frac{x}{n}\right)^{n}\cdot\log\left(2+\cos\left(\frac{x}{n}\right)\right)\cdot I_{\left(a,n\right)}\left(x\right)\mathrm{\, d}m\left(x\right)
+\]
+
+\end_inset
+
+ברוח זו, נגדיר את סדרת הפונקציות המדידות לבג)כי הן רציפות( הבאה
+\begin_inset Formula 
+\[
+f_{n}\left(x\right):=\left(1-\frac{x}{n}\right)^{n}\cdot\log\left(2+\cos\left(\frac{x}{n}\right)\right)\cdot I_{\left(0,n\right)}\left(x\right)
+\]
+
+\end_inset
+
+נטען כעת כי 
+\begin_inset Formula $\left\{ f_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ היא סדרה עולה 
+\begin_inset Formula $f_{n}\le f_{n+1}$
+\end_inset
+
+.
+ יש להראות שלכל 
+\begin_inset Formula $0<x<\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-\frac{x}{n}\right)^{n}\cdot\log\left(2x\cos\left(\frac{x}{n}\right)\right)\cdot I_{\left(0,n\right)}\left(x\right)\le\underbrace{\left(1-\frac{x}{n+1}\right)^{n+1}\cdot\log\left(2+\cos\left(\frac{x}{n+1}\right)\right)\cdot I_{\left(0,n+1\right)}\left(x\right)}_{f_{n+1}}
+\]
+
+\end_inset
+
+נחלק למספר מקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\ge n+1$
+\end_inset
+
+ - צ"ל 
+\begin_inset Formula $0\le0$
+\end_inset
+
+)כי שני האינדיקטורים מתאפסים( - ברור!
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n\le x\le n+1$
+\end_inset
+
+ - צ"ל 
+\begin_inset Formula $0\le f_{n+1}$
+\end_inset
+
+ - ברור!
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0<x<n$
+\end_inset
+
+ - צ"ל
+\begin_inset Formula 
+\[
+\left(1-\frac{x}{n}\right)^{n}\cdot\log\left(2+\cos\left(\frac{x}{n}\right)\right)\le\left(1-\frac{x}{n+1}\right)^{n+1}\cdot\log\left(2+\cos\left(\frac{x}{n+1}\right)\right)
+\]
+
+\end_inset
+
+נראה זאת בשני שלבים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left(1-\frac{x}{n}\right)^{n}\le\left(1-\frac{x}{n+1}\right)^{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\log\left(2+\cos\left(\frac{x}{n}\right)\right)\le\log\left(2+\cos\left(\frac{x}{n+1}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+היחס הוא
+\begin_inset Formula 
+\[
+\frac{\left(1-\frac{x}{n}\right)^{n}}{\left(1-\frac{x}{n+1}\right)^{n+1}}=\frac{\left(n+1\right)^{n+1}\left(n-x\right)^{n}}{\left(n+1-x\right)^{n}}\le\xcancel{\frac{\left(n+1\right)^{n+1}\cdot\cancel{\left(n-0\right)^{n}}}{\left(n+1-x\right)^{n+1}\cdot\cancel{n^{n}}}}
+\]
+
+\end_inset
+
+זה לא עובד - נמצא הוכחה אחרת)למשל ע"י חקירת פונקציות(
+\end_layout
+
+\begin_layout Enumerate
+פונקציית הקוסינוס יורדת בקטע 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, ולכן למרות ש
+\begin_inset Formula $\frac{x}{n}\ge\frac{x}{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\left(\frac{x}{n}\right)\le\cos\left(\frac{x}{n+1}\right)$
+\end_inset
+
+.
+ נוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונפעיל 
+\begin_inset Formula $\log$
+\end_inset
+
+ לקבל את הדרוש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ע"פ משפט ההתכנסות המונוטונית
+\begin_inset Formula 
+\[
+I=\int_{\left(0,\infty\right)}\lim_{n\to\infty}\left(1-\frac{x}{n}\right)^{n}\cdot\log\left(2+\cos\left(\frac{x}{n}\right)\right)\cdot I_{\left(0,n\right)}\left(x\right)\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{\left(0,\infty\right)}e^{-x}\cdot\log\left(3\right)\cdot\underbrace{\xcancel{I_{\left(0,\infty\right)}}}_{\equiv1}\mathrm{\, d}m\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\log\left(3\right)\cdot\int_{\left(0,\infty\right)}e^{-x}\mathrm{\, d}m\left(x\right)=\log\left(3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

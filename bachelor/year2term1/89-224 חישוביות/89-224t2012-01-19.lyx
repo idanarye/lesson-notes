@@ -1,0 +1,574 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+הראינו בהרצאה את משפט קוק: 
+\begin_inset Formula $SAT\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בעיה
+\end_layout
+
+\begin_layout Standard
+נתון גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ ורוצים למצוא את הקבוצה הגדולה ביותר של קודקודים שמכילה רק קשת אחת לכל היותר.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+בניגוד לבעיות הקודמות שהיו לנו, כאן זו לא בעיית הכרעה, כי התשובה היא לא
+ כן/לא.
+ זו בעיית אופטימיזציה, אך ניתן להגדיר עבורה בעיית הכרעה מתאימה.
+\end_layout
+
+\begin_layout Section*
+גרסה הכרעה
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+, רוצים לקבוע האם קיימת קבוצה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ קודקודים)לפחות( שבה לא יותר מקשת אחת.
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $Almost-IS$
+\end_inset
+
+ - ב
+\begin_inset Formula $IS$
+\end_inset
+
+ דורשים שלא יהיו קשתות כלל.(.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+IS\le_{p}Almost-IS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+ קלט ל
+\begin_inset Formula $IS$
+\end_inset
+
+ נרצה לבנות קלט 
+\begin_inset Formula $\left(G',k'\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $Almost-IS$
+\end_inset
+
+ כך שיתקיים
+\begin_inset Formula 
+\[
+\left(G,h\right)\in IS\Leftrightarrow\left(G',k'\right)\in Almost-Is
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אפשרות ראשונה: 
+\begin_inset Formula $G'=G$
+\end_inset
+
+, 
+\begin_inset Formula $k'=k+1$
+\end_inset
+
+.
+ לא עובד.
+\end_layout
+
+\begin_layout Itemize
+להוריד את 
+\begin_inset Formula $k$
+\end_inset
+
+ - גם לא עובד
+\end_layout
+
+\begin_layout Itemize
+להוסיף קודקוד וקשת בינו למישהו שרירותי, ו
+\begin_inset Formula $k'=k+1$
+\end_inset
+
+.
+ זה לא עובד כי אנחנו לא יודעים מי נמצא ב
+\begin_inset Formula $IS$
+\end_inset
+
+ ומי לא, וברגע שבוחרים קודקוד שרירותי עלולים לבחור לא טוב.
+\end_layout
+
+\begin_layout Subsection*
+הרעיון
+\end_layout
+
+\begin_layout Standard
+נוסיף שני קודקודים חדשים שמחוברים ביניהם.
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ונקבע 
+\begin_inset Formula $G'=\left(V',E'\right)$
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\[
+V'=V\cup\left\{ u',v'\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E'=E\cup\left\{ \left(u',v'\right)\right\} 
+\]
+
+\end_inset
+
+ובנוסף 
+\begin_inset Formula $k'=k+2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הבניה ניתנת לביצוע בזמן פולינומי)ואפילו לינארי(.
+\end_layout
+
+\begin_layout Subsection*
+נכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Rightarrow\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(G,k\right)\in IS$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש ב
+\begin_inset Formula $G$
+\end_inset
+
+ קבוצה ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בתוספת שני הקודקודים החדשים, מתקבלת קב' כמעט ב"ת בגודל 
+\begin_inset Formula $k'$
+\end_inset
+
+ ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(G',k'\right)\in Almost-IS$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש קבוצה 
+\begin_inset Formula $S'$
+\end_inset
+
+ כמעט ב"ת של קודקודים.
+\begin_inset Newline newline
+\end_inset
+
+נחלק למקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+שני הקודקודים החדשים נמצאים ב
+\begin_inset Formula $S'$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+הקשת היחידה בקבוצה היא ביניהם - לכן ניתן לזרוק את שניהם ולקבל קב' ב"ת בגודל
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הקב' 
+\begin_inset Formula $S'$
+\end_inset
+
+ מכילה רק קודקודים מ
+\begin_inset Formula $G$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+נזרוק מ
+\begin_inset Formula $S'$
+\end_inset
+
+ שני קודקודים)אם יש קשת, נזרוק את קצוותיה( ונקבל קב' ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S'$
+\end_inset
+
+ מכילה בדיוק קודקוד חדש אחד:
+\begin_inset Newline newline
+\end_inset
+
+נזרוק מ
+\begin_inset Formula $S'$
+\end_inset
+
+ את הקודקוד החדש, וקודקוד נוסף)אם יש קשת, הקודקוד הנוסף שנזרוק יהיה אחד
+ מקצוותיה(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+בכל המקרים מתקיים שאכן ב
+\begin_inset Formula $G$
+\end_inset
+
+ קיימת קב' ב"ת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(G,k\right)\in AS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+בעיה -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Set-Cover
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נתונים 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+קבוצת "עולם" 
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+רשימת תת-קבוצות 
+\begin_inset Formula $S_{1},S_{2},...S_{jn}\subseteq U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מס' 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+רוצים לקבוע האם ישנה אפשרות לבחור אוסף 
+\begin_inset Formula $T$
+\end_inset
+
+ של תת-קבוצות כך ש
+\begin_inset Formula $\left|T\right|\le k$
+\end_inset
+
+ ובנוסף לכל 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $S_{i}\in T$
+\end_inset
+
+ כך ש
+\begin_inset Formula $u\in S_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VC\le_{p}Set-Cover
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהינתן קלט 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $VC$
+\end_inset
+
+ נרצה לבנות קלט מתאיחם עבור 
+\begin_inset Formula $Set-Cover$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הבנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U=E
+\]
+
+\end_inset
+
+לכל קודקוד 
+\begin_inset Formula $v_{i}\in V\left(G\right)$
+\end_inset
+
+ ניצור קבוצה
+\end_layout
+
+\begin_layout Standard
+}
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ הוא אחד הקצוות של הקשת שבגרף 
+\begin_inset Formula $G$
+\end_inset
+
+
+\begin_inset Formula $S_{i}=\{e\in U\big|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לבסוף, נקבע 
+\begin_inset Formula $k'=k$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

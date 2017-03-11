@@ -1,0 +1,1583 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תורת השדות
+\end_layout
+
+\begin_layout Part*
+הבעיות של ימי קדם
+\end_layout
+
+\begin_layout Standard
+המתמטיקה של היוונים הייתה מאוד גיאומטרית.
+ בשבילם לפתור בעיה זה אומר לצייר את הפתרון אם מחוגה וסרגל.
+\end_layout
+
+\begin_layout Itemize
+להכפיל את הקוביה - לבנות במחוגה וסרגל את 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לשלש את הזווית - היוונים ידעו איך לחצות זווית עם מחוגה 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+לצייר מעגל שמרכזו בנקודת זוית ולסמן את המפגשים שלו עם הקרנות.
+ ליצור מעגל ברדיוס שווה על כל מרכז כזה.
+ הקו העובר בין הקטבים הוא חוצה הזווית
+\end_layout
+
+\end_inset
+
+.
+ הם לא ידעו איך לשלש אותה - איך לבנות במחוגה וסרגל את 
+\begin_inset Formula $\frac{\alpha}{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\cos\left(20^{\circ}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לרבע את המעגל - לבנות במחוגה וסרגל את 
+\begin_inset Formula $\sqrt{\pi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לבנות משובע משוכלל)עד משושה ידעו לבנות( - לבנות במחוגה וסרגל את 
+\begin_inset Formula $\frac{2\pi}{7}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\cos\left(\frac{2\pi}{7}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+)להוכיח את אקסיומת המקבילים 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+שאם יש ישר ונקודה מחוץ לישר אז אפשר להעביר ישר מקביל אחד ויחיד דרכה
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+הרעיון הכללי
+\end_layout
+
+\begin_layout Standard
+בנייה במחוגה וסרגל = נתון המישור עם שתי נקודות מיוחדות:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0,1
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+סרגל = דרך כל שתי נקודות אפשר להעביר קו ישר.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הסרגל בא בלי סימונים - אי אפשר למדוד מרחק.
+\end_layout
+
+\begin_layout Itemize
+רק צד אחד של הסרגל הוא חלק - אי אפשר להשתמש בו בשביל לצייר מקבילים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מחוגה = אפשר להעביר מעגל שמרכזו נקודה נתונה ועובר דרך נקודה נתונה אחרת.
+\end_layout
+
+\begin_layout Itemize
+אפשר לסמן את החיתוך של כל שני קווים
+\end_layout
+
+\begin_layout Section*
+איך מתרגמים את זה לאלגברה?
+\end_layout
+
+\begin_layout Standard
+נשים לב שכל הנקודות האלה הן על מישור.
+ נגדיר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ המישור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ הישר העובר דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0,1
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F$
+\end_inset
+
+ אוסף הנקודות שאפשר לקבל בבנייה סופית במחוגה וסרגל מהנקודות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0,1
+\end_layout
+
+\begin_layout Section*
+עובדות על 
+\begin_inset Formula $F$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F\cap\mathbb{R}=F_{0}$
+\end_inset
+
+ הוא שדה )ביחס לפעולות הרגילות(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ שדה)ביחס לפעולות הרגילות(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ סגור להוצאת שורש
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ הוא תת השדה הקטן ביותר של 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ שסגור להוצאת שורש 
+\bar under
+שני
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זה אומר ש
+\begin_inset Formula $\dim\left(F\right)=\infty$
+\end_inset
+
+, כי 
+\begin_inset Formula $\dim\left(\mathbb{Q}\left[\sqrt{2},\sqrt{3},\sqrt{5},\dots\right]\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+לכל איבר 
+\begin_inset Formula $\alpha\in F$
+\end_inset
+
+ יש שרשרת של שדות
+\begin_inset Formula 
+\[
+\mathbb{Q=F_{0}}\subset F_{1}\subset F_{2}\subset F_{3}\subset\cdots\subset F_{n}\left(\subset F\subset\mathbb{C}\right)
+\]
+
+\end_inset
+
+כך ש 
+\begin_inset Formula $\left[F_{i+1}:F_{i}\right]=2$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[A:B\right]$
+\end_inset
+
+ מסמן את המימד של 
+\begin_inset Formula $A$
+\end_inset
+
+ מעל 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha=F_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+בקרוב
+\series default
+ נוכיח שאם 
+\begin_inset Formula $L_{0}\subset L_{1}\subset L_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left[L_{2}:L_{0}\right]=\left[L_{2}:L_{1}\right]\cdot\left[L_{1}:L_{0}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[L_{1}:L_{0}\right]\mid\left[L_{2}:L_{0}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ המימד מעל 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ של כל תת שדה של 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ הוא חזקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל מספר ניתן לבנייה יוצר שדה ממימד חזקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הסתכלות אלגברית על בעיות ימי קדם:
+\end_layout
+
+\begin_layout Itemize
+הכפלת הקוביה: 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+ הוא שורש של 
+\begin_inset Formula $x^{3}-2$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left[\mathbb{Q}\left[\sqrt[3]{2}\right]:\mathbb{Q}\right]=3$
+\end_inset
+
+)כי 
+\begin_inset Formula $x^{3}-2$
+\end_inset
+
+ אי פריק ו
+\begin_inset Formula $\deg\left(x^{3}-2\right)=3$
+\end_inset
+
+( - ולכן אי אפשר לבנות אותו.
+\end_layout
+
+\begin_layout Itemize
+שילוש הזווית: אם נצליח לבנות את 
+\begin_inset Formula $\frac{\alpha}{3}$
+\end_inset
+
+ נוכל למצוא את 
+\begin_inset Formula $\beta=\cos\left(20^{\circ}\right)$
+\end_inset
+
+.
+ זהו שורש של 
+\begin_inset Formula $8x^{3}-6x-1$
+\end_inset
+
+ - פולינום אי-פריק ושוב אי אפשר לבנות אותו.
+\end_layout
+
+\begin_layout Itemize
+בניית משובע: שוב, זה מאפשר למצוא את 
+\begin_inset Formula $\eta=2\cos\left(\frac{2\pi}{7}\right)$
+\end_inset
+
+ שהוא שורש של 
+\begin_inset Formula $\eta^{3}-\eta^{2}-2\eta+1=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ריבוע המעגל: 
+\begin_inset Formula $\pi$
+\end_inset
+
+ הוא בכלל לא מספר אלגברי, והוא יוצר שדה ממימד אינסופי.
+\end_layout
+
+\begin_layout Part*
+משוואות פולינומיות
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+2
+\numeric off
+( משוואות ריבועיות - 
+\begin_inset Formula $ax^{2}+bx+c=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבבלים ידעו את הנוסחא: 
+\begin_inset Formula $x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$
+\end_inset
+
+.
+ הפתרון מתקבל מהוצאת 
+\bar under
+שורש שני
+\bar default
+.
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+3
+\numeric off
+( פתרון משוואות ממעלה שלישית
+\end_layout
+
+\begin_layout Standard
+מי שגילה את השיטה הוא דל-פרו בשנת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1515
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $y^{3}+ay^{2}+by+c=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נציב 
+\begin_inset Formula $y=x-\frac{a}{3}$
+\end_inset
+
+ נקבל משוואה שבה המקדם של 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ הוא אפס.
+\end_layout
+
+\begin_layout Standard
+נתבונן במשוואה 
+\begin_inset Formula $x^{3}-ax+b=0$
+\end_inset
+
+.
+ נכתוב 
+\begin_inset Formula $x=\alpha+\beta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha^{3}+\beta^{3}+3\alpha\beta x-ax+b=0
+\]
+
+\end_inset
+
+נחליט ש
+\begin_inset Formula $\alpha\beta=\frac{a}{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha^{3}+\beta^{3}+\cancel{3\alpha\beta x}-\cancel{ax}+b=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{3}+\beta^{3}=-b
+\]
+
+\end_inset
+
+אבל לפי ההחלטה 
+\begin_inset Formula $\alpha\beta=\frac{a}{3}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\alpha^{3}\beta^{3}=\left(\frac{a}{3}\right)^{3}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\alpha^{3},\beta^{3}$
+\end_inset
+
+ הם השורשים של הפולינום
+\begin_inset Formula 
+\[
+\left(z-\alpha^{3}\right)\left(z-\beta^{3}\right)=z^{2}+bz+\frac{a^{3}}{27}
+\]
+
+\end_inset
+
+ויוצא ש
+\begin_inset Formula 
+\[
+\alpha,\beta=\sqrt[3]{\frac{-b\pm\sqrt{b^{3}-\frac{4a^{3}}{27}}}{2}}
+\]
+
+\end_inset
+
+הבחירה בין 
+\begin_inset Formula $+$
+\end_inset
+
+ ל
+\begin_inset Formula $-$
+\end_inset
+
+ היא בעצם מה שמבדיל בין 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ל
+\begin_inset Formula $\beta$
+\end_inset
+
+, לכן נבחר תמיד 
+\begin_inset Formula $+$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\alpha$
+\end_inset
+
+: 
+\begin_inset Formula $\alpha=\sqrt[3]{\frac{-b+\sqrt{b^{3}-\frac{4a^{3}}{27}}}{2}}$
+\end_inset
+
+.
+ נקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+, ולכל אחד מהם יש 
+\begin_inset Formula $\beta$
+\end_inset
+
+ יחד 
+\begin_inset Formula $\beta=\frac{\nicefrac{a}{3}}{\alpha}$
+\end_inset
+
+.
+ כך ניתן למצוא את שלושת ה
+\begin_inset Formula $x$
+\end_inset
+
+ים באמצעות 
+\begin_inset Formula $x=\alpha+\beta$
+\end_inset
+
+, ולפי זה את שלושת ה
+\begin_inset Formula $y$
+\end_inset
+
+ים.
+\end_layout
+
+\begin_layout Standard
+כלומר הפתרון מתקבל מהוצאת 
+\series bold
+שורש שני
+\series default
+ ואח"כ 
+\series bold
+שורש שלישי
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+משמעות היסטורית
+\end_layout
+
+\begin_layout Itemize
+זהו ההישג המשמעותי הראשון של מתמטיקאים באירופה מאז פיבונ'צי.
+\end_layout
+
+\begin_layout Itemize
+בשביל להגיע אפילו לפתרון פשוט כמו 
+\begin_inset Formula $\left(x-1\right)\left(x-2\right)\left(x-3\right)$
+\end_inset
+
+ צריך לעבור דרך מספרים מרוכבים.
+ זה הוביל להכרה במספרים המרוכבים בתור מספרים "לגיטימיים".
+\end_layout
+
+\begin_layout Section*
+)
+\numeric on
+4
+\numeric off
+(פתרון משוואת ממעלה רביעית
+\end_layout
+
+\begin_layout Standard
+הפתרון התגלה ע"י טרטליה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1545
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+אחרי החלפה פשוטה 
+\begin_inset Formula $x\mapsto x-\alpha$
+\end_inset
+
+ אפשר להגיע למשוואה
+\begin_inset Formula 
+\[
+x^{4}-ax^{2}+bx-c=0
+\]
+
+\end_inset
+
+מנסים להציג את זה בתור
+\begin_inset Formula 
+\[
+\left(x^{2}+Ax+B\right)\left(x^{2}-A'x+D\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+||
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{4}+\left(A-A'\right)x^{3}+\left(B+D-AA'\right)x^{2}+\left(AD-A'B\right)x+BD
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השוואת מקדמים נותנת
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+A'=A\\
+B+D-AA'=-a\\
+AD-A'B=b\\
+BD=-C
+\end{array}\right.\Rightarrow\left\{ \begin{array}{c}
+B+D-A^{2}=-a\\
+A\left(D-B\right)=b\\
+BD=-C
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B+D=A^{2}-a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D-B=\frac{b}{A}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D=\frac{1}{2}\left(A^{2}-a+\frac{b}{A}\right)\qquad B=\frac{1}{2}\left(A^{2}-a-\frac{b}{A}\right)
+\]
+
+\end_inset
+
+נציב במשוואה 
+\begin_inset Formula $BD=-C$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A^{4}-2aA^{2}+a^{2}-\frac{b^{2}}{A^{2}}=-4c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A^{6}-2aA^{4}+\left(a^{2}+4c\right)-b^{2}=0
+\]
+
+\end_inset
+
+זו אמנם נראית כמו משוואה ממעלה שישית, אבל בעצם אפשר לפתור אותה כמו משוואה
+ ממעלה שלישית ב
+\begin_inset Formula $A^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מוצאים את 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+)
+\begin_inset Formula $\sqrt{}$
+\end_inset
+
+ ואח"כ 
+\begin_inset Formula $\sqrt[3]{}$
+\end_inset
+
+(; -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות
+\end_layout
+
+\begin_layout Standard
+מוצאים את 
+\begin_inset Formula $A$
+\end_inset
+
+)
+\begin_inset Formula $\sqrt{}$
+\end_inset
+
+(; -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות
+\end_layout
+
+\begin_layout Standard
+פותרים את 
+\begin_inset Formula $x^{2}+Ax+B=0$
+\end_inset
+
+)
+\begin_inset Formula $\sqrt{}$
+\end_inset
+
+( ואת 
+\begin_inset Formula $x^{2}-Ax+D=0$
+\end_inset
+
+)כבר הוצאנו את ה
+\begin_inset Formula $\sqrt{\Delta}$
+\end_inset
+
+ הדרוש(
+\end_layout
+
+\begin_layout Standard
+לכאורה מקבלים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ יותר מ
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות - אבל חלק יובילו לאותו הדבר.
+\end_layout
+
+\begin_layout Section*
+משוואות ממעלה יותר גבוהה
+\end_layout
+
+\begin_layout Standard
+ניסו להפעיל את הרעיון הזה על משוואות ממעלה יותר גבוהה, אבל לא הצליחו.
+ יש הבדל עקרוני בין מעלה רביעית למעלה חמישית.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+סדרת הרכב של חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+1=G_{t}\lhd\cdots\lhd G_{2}\lhd G_{1}\lhd G
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\nicefrac{G_{i}}{G_{i-1}}$
+\end_inset
+
+)=הגורמים( הן חבורות פשוטות.
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח שסדרת הרכב היא פשוטה עד כדי סדר הגורמים.
+\end_layout
+
+\begin_layout Standard
+מגדירים חבורה פתירה = כל המנות בסדרת הרכב הן אבליות.
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\lhd S_{2}$
+\end_inset
+
+ - זאת סדרת ההרכב היחידה.
+ המנה מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\stackrel{3}{\lhd}\underbrace{A_{3}}_{\left\langle \left(1\,2\,3\right)\right\rangle }\stackrel{2}{\lhd}\underbrace{S_{3}}_{\left\langle \left(1\,2\right),\left(1\,3\right)\right\rangle }\left(\cong D_{3}\right)$
+\end_inset
+
+.
+ המנות מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\stackrel{2}{\lhd}\mathbb{Z}_{2}\stackrel{2}{\lhd}\underbrace{K_{4}}_{\left\langle \left(i\, j\right)\left(k\, l\right)\right\rangle }\stackrel{3}{\lhd}\underbrace{A_{4}}_{\left\langle \left(i\, j\, k\right)\right\rangle }\stackrel{2}{\lhd}\underbrace{S_{4}}_{\left\langle \left(i\, j\right)\right\rangle }$
+\end_inset
+
+.
+ הגורמים מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+יש קשר בין הוצאות השורש הדרושות לפתרון משוואה ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+ לבין הסדרים של המנות של סדרות הרכב של 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Section*
+משפט גלואה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אפשר לפתור
+\bar default
+ את המשוואה 
+\begin_inset Formula $f=0$
+\end_inset
+
+ על ידי פעולות שדה והוצאת שורשים 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ "חבורת גלואה של 
+\begin_inset Formula $f$
+\end_inset
+
+")מוכלת ב
+\begin_inset Formula $S_{n}$
+\end_inset
+
+( פתירה.
+\end_layout
+
+\begin_layout Subsection*
+הסבר כללי למשפט )דרך הדוגמה של פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+נתון פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ ומקדמים ב
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ סדרת ההרכב רומזת על הרחבות של השדה 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{F_{4} &  & 1\\
+F_{3}\ar@{-}[u] &  & \mathbb{Z}_{2}\ar@{-}[u]_{2}\\
+F_{2}\ar@{-}[u] &  & K_{2}\ar@{-}[u]_{2}\\
+F_{1}\ar@{-}[u] &  & A_{4}\ar@{-}[u]_{3}\\
+\mathbb{Q}\ar@{-}[u]^{2} &  & S_{4}\ar@{-}[u]_{2}
+}
+\]
+
+\end_inset
+
+כאשר בכל שלב מקבלים מקדמים בשדה אחר)מבצעים פעולה של הוצאת שורש שני על מקדמים
+ ב
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ ומקבלים מקדמים ב
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ וכו'(.
+\end_layout
+
+\end_body
+\end_document

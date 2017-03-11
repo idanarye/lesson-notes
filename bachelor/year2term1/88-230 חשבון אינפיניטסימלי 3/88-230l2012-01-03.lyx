@@ -1,0 +1,1029 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט עזר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\left\{ \left(x,y\right)\in\mathbb{R}^{k}\times\mathbb{R}^{s}\middle|\begin{array}{c}
+\left|x_{i}\right|<a,\left\Vert y\right\Vert \le b\\
+i=1,...k
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f:D\to\mathbb{R}^{s}
+\]
+
+\end_inset
+
+רציפה, ומקיימת את תנאי ליפשיץ ביחס ל
+\begin_inset Formula $y$
+\end_inset
+
+ עם קבוע ליפשיץ 
+\begin_inset Formula $q<1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(0,0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+אזי
+\uuline default
+: קיים 
+\begin_inset Formula $0<a'<a$
+\end_inset
+
+ כך ש
+\bar under
+לכל
+\bar default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ בתא 
+\begin_inset Formula $I=\left\{ x\in\mathbb{R}^{k}\middle|\left|x_{i}\right|\right\} $
+\end_inset
+
+ קיים פתרון יחיד למשוואה 
+\begin_inset Formula $f\left(x,y\right)=y$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left\Vert y\right\Vert \le b$
+\end_inset
+
+.
+ הפונ' 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+ הנקבעת על ידי זה היא 
+\bar under
+רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+
+\bar default
+ ו
+\begin_inset Formula $\varphi\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השלמת פרטים בהוכחה)משיעור קודם(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon\Doteq\left(1-q\right)b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{0}\left(x\right)\Doteq f\left(x,0\right)$
+\end_inset
+
+ רציפה על 
+\begin_inset Formula $D_{0}=\left\{ x\middle|\left|x_{i}\right|<a\right\} $
+\end_inset
+
+.
+ לכן קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert f_{0}\left(x\right)\right\Vert <\left(1-q\right)b\left(=\epsilon\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\in D_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $x\in D_{0}$
+\end_inset
+
+.
+ לוקחים 
+\begin_inset Formula $a'<\min\left\{ a,\cfrac{\delta}{\sqrt{k}}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $I$
+\end_inset
+
+ כמו בניסוח משפט העזר.
+ אם 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x\in D_{0}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left|x_{i}\right|\le a'<a$
+\end_inset
+
+ וכמו כן 
+\begin_inset Formula $\left\Vert x\right\Vert =\sqrt{\sum\limits _{i=1}^{k}\underset{<\frac{\delta^{2}}{k}}{\underbrace{x_{i}}}}<\sqrt{\delta^{2}}=\delta$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\boxed{\left\Vert f_{0}\left(x\right)\right\Vert <\left(1-q\right)b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו פתרון יחיד למשוואה 
+\begin_inset Formula $f\left(x,y\right)=y$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left\Vert y\right\Vert \le b$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ נתון ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+ ע"י כך מוגדרת הפונקציה 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+ על 
+\begin_inset Formula $I$
+\end_inset
+
+, ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+זו נמצאת ב
+\begin_inset Formula $C_{b}\left(I,\mathbb{R}^{s}\right)$
+\end_inset
+
+, ז"א 
+\uuline on
+רציפה
+\uuline default
+ ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "20col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y$
+\end_inset
+
+ פתרון ל
+\begin_inset Formula $x\in I$
+\end_inset
+
+ כלשהו של המשוואה, המקיים 
+\begin_inset Formula $\left\Vert y\right\Vert \le b$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\forall x\in I,\hspace{1em}\left(x,y\right)\in D$
+\end_inset
+
+.
+ לכן, ע"פ ליפשיץ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert y-\varphi\left(x\right)\right\Vert =\left\Vert f\overset{\in D}{\overbrace{\left(x,y\right)}}-f\overset{\in D}{\overbrace{\left(x,\varphi\left(x\right)\right)}}\right\Vert \le q\left\Vert y-\varphi\left(x\right)\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le\left(1-q\right)\left\Vert y-\varphi\left(x\right)\right\Vert \le0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert y-\varphi\left(x\right)\right\Vert =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\varphi\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט עזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+)תנאי מספיק לליפשיץ בעזרת הגרדיינט(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\Omega\subseteq\mathbb{R}^{k}\times\mathbb{R}^{s}$
+\end_inset
+
+ פתוחה עם התכונה שלכל שתי נקודות 
+\begin_inset Formula $\left(x,y\right),\left(x,y'\right)\in\Omega$
+\end_inset
+
+ הקטע המחבר אותן מוכל כולו ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f:\Omega\to\mathbb{R}^{s}$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ יחסית ל
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+, ו
+\uuline on
+נניח
+\uuline default
+ שקיימים מספרים חיוביים 
+\begin_inset Formula $q_{r}$
+\end_inset
+
+ )
+\begin_inset Formula $r=1,...s$
+\end_inset
+
+( כך ש
+\begin_inset Formula $\left\Vert \nabla_{y}f_{r}\right\Vert \le q_{r}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $r=1,...s$
+\end_inset
+
+ על 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת את תנאי ליפשיץ יחסית ל
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+ עם קבוע ליפשיץ 
+\begin_inset Formula $\left\Vert q\right\Vert $
+\end_inset
+
+)כש
+\begin_inset Formula $q=\left(q_{1},...q_{s}\right)$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $r=1,...s$
+\end_inset
+
+ ו
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\uuline on
+קבוע
+\uuline default
+ כך ש
+\begin_inset Formula $f_{r}\left(x,\cdot\right)$
+\end_inset
+
+ היא פונ' ממשית ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+)כפונ' של 
+\begin_inset Formula $y$
+\end_inset
+
+ עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ים כנ"ל(.
+ לכן משפט הערך הממוצע מקיים
+\begin_inset Formula 
+\[
+f_{r}\left(x,y\right)-f_{r}\left(x,y'\right)=\left(y-y'\right)\cdot\nabla_{y}f\left(x,\tilde{y}\right)
+\]
+
+\end_inset
+
+במקום של 
+\begin_inset Formula $\left(x,\tilde{y}\right)$
+\end_inset
+
+ נקודה על הקטע המחבר את 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x,y'\right)$
+\end_inset
+
+ ולכן נמצאת ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+)הנחת מ"ע(.
+\end_layout
+
+\begin_layout Standard
+לכן, לפי הנחת מ"ע,
+\begin_inset Formula 
+\[
+\forall r=1,...s\hspace{1em}\left\Vert \nabla_{y}f_{r}\left(x,\tilde{y}\right)\right\Vert \le q_{r}
+\]
+
+\end_inset
+
+על כן, לפי קושי-שוורץ
+\begin_inset Formula 
+\[
+\left|f_{r}\left(x,y\right)-f_{r}\left(x,y'\right)\right|\le\left\Vert y-y'\right\Vert \left\Vert \nabla_{y}f\left(x,\tilde{y}\right)\right\Vert \le q_{r}\left\Vert y-y'\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall\left(x,y\right),\left(x,y'\right)\in\Omega
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert f\left(x,y\right)-f\left(x,y'\right)\right\Vert =\sqrt{\sum_{r=1}^{s}\left|f_{r}\left(x,y\right)-f_{r}\left(x,y'\right)\right|}\le\sqrt{\left(\sum_{r=1}^{s}q_{r}^{2}\right)\left\Vert y-y'\right\Vert ^{2}}=\left\Vert q\right\Vert \left\Vert y-y'\right\Vert 
+\]
+
+\end_inset
+
+כלומר: 
+\begin_inset Formula $f$
+\end_inset
+
+ ליפשיץ ביחס ל
+\begin_inset Formula $y$
+\end_inset
+
+ עם קבוע 
+\begin_inset Formula $\left\Vert q\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משפט הפונקציות הסתומות למערכת של 
+\begin_inset Formula $s$
+\end_inset
+
+ משוואות ב
+\begin_inset Formula $s$
+\end_inset
+
+ "נעלמים"
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $F:\Omega\subset\mathbb{R}^{k}\times\mathbb{R}^{s}\to\mathbb{R}^{s}$
+\end_inset
+
+ רציפה בתא הפתוח 
+\begin_inset Formula $\Omega=\left\{ \left(x,y\right)\in\mathbb{R}^{k}\times\mathbb{R}^{s}\middle|\begin{array}{c}
+\left|x_{i}-x_{i}^{0}\right|<a,i=1,...k\\
+\left|y_{j}-y_{j}^{0}\right|<b,j=1,...s
+\end{array}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $a,b$
+\end_inset
+
+ נתונים.
+ נניח ש
+\begin_inset Formula $F$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ יחסית ל
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+ ו
+\begin_inset Formula $\left.\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}\right|_{\left(x^{0},y^{0}\right)}\ne0$
+\end_inset
+
+, 
+\begin_inset Formula $F\left(x^{0},y^{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיימים 
+\begin_inset Formula $0<a'<a$
+\end_inset
+
+ ו
+\begin_inset Formula $0<b'<b$
+\end_inset
+
+ כך שלמשוואה 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ יש פתרון יחיד 
+\begin_inset Formula $y$
+\end_inset
+
+ בתא 
+\begin_inset Formula $J\Doteq\left\{ y\middle|\left|y_{j}-y_{j}^{0}\right|\le b',j=1,...s\right\} $
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ בתא 
+\begin_inset Formula $I\Doteq\left\{ x\middle|\left|x_{i}-x_{i}^{0}\right|\right\} $
+\end_inset
+
+.
+ ההתאמה 
+\begin_inset Formula $y\gets x$
+\end_inset
+
+ מגדירה פונקציה 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+ מ
+\begin_inset Formula $I$
+\end_inset
+
+ ל
+\begin_inset Formula $J$
+\end_inset
+
+ שהיא רציפה ו
+\begin_inset Formula $\varphi\left(x^{0}\right)=y^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה 
+\begin_inset Formula $k=s=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+y^{2}-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(x,y\right)\equiv x^{2}+y^{2}-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Omega:\begin{array}{c}
+-1<x<1\\
+-1<y<1
+\end{array}\hspace{1em}\left(a=b=1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x^{0},y^{0}\right)=\left(\cfrac{1}{\sqrt{2}}\right)^{2}+\left(\cfrac{1}{\sqrt{2}}\right)^{2}-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial F}{\partial y}\right|_{\left(x^{0},y^{0}\right)}=\left.2y\right|_{...}=\cfrac{2}{\sqrt{2}}=\sqrt{2}\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $y=+\sqrt{1-x^{2}}$
+\end_inset
+
+ - הפתרון היחיד
+\end_layout
+
+\begin_layout Section*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ע"י הזזת 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+, אפשר להניח 
+\begin_inset Formula $\left(x^{0},y^{0}\right)=\left(0,0\right)$
+\end_inset
+
+.
+ לכן הנתונים הם:
+\begin_inset Formula 
+\[
+\Omega=\left\{ \left(x,y\right)\middle|\begin{array}{c}
+\left|x_{i}\right|<a\forall i\\
+\left|y_{j}\right|<b\forall j
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(0,0\right)=0\hspace{1em}\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}\left(0,0\right)\ne0
+\]
+
+\end_inset
+
+ נסמן 
+\begin_inset Formula $A=\left.\left(\cfrac{\partial\left(F_{1},...F_{s}\right)}{\partial\left(y_{1},...y_{s}\right)}\right)\right|_{\left(0,0\right)}=\left(a_{jr}\right)_{s\times s}$
+\end_inset
+
+.
+ לפי הנתון 
+\begin_inset Formula $B\Doteq A^{-1}$
+\end_inset
+
+ קיימת.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(x,y\right)\Doteq y-A^{-1}F$
+\end_inset
+
+ )
+\begin_inset Formula $\left(x,y\right)\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ קבוע!, וקטורים כתובים כעמודים(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ המשוואה 
+\begin_inset Formula $F\left(x,y\right)=0$
+\end_inset
+
+ שקולה למשוואה 
+\begin_inset Formula $\boxed{f\left(x,y\right)=y}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(0,0\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+D\Doteq\left\{ \left(x,y\right)\in\mathbb{R}^{k}\times\mathbb{R}^{s}\middle|\begin{array}{c}
+1\le i\le k\\
+\left|x_{i}\right|<a\\
+\left\Vert y\right\Vert \le\beta
+\end{array}\right\} 
+\]
+
+\end_inset
+
+במקום ש
+\begin_inset Formula $0<\beta<b$
+\end_inset
+
+ כלשהו, כי 
+\begin_inset Formula $D\subset\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x_{i}\right|<a$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left(x,y\right)\in D$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|y_{j}\right|\le\left\Vert y\right\Vert _{\infty}\le\left\Vert y\right\Vert \le\beta<b\hspace{1em}\forall j
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $f$
+\end_inset
+
+רציפה ב
+\begin_inset Formula $D$
+\end_inset
+
+, ו וממח' 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+יחסית ל
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left[BA\right]_{rj}=\left[ld\right]_{rj}=\delta_{rj}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\nabla_{y}f_{r}\right|_{\left(0,0\right)}=0
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\nabla_{y}f_{r}$
+\end_inset
+
+ פונקציה רציפה המתאפסת ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+ נקבע 
+\begin_inset Formula $0<q<1$
+\end_inset
+
+ שרירותי.
+ קיים 
+\begin_inset Formula $0<\beta'<\beta$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left\Vert \nabla_{y}f_{n}\right\Vert <\cfrac{q}{\sqrt{s}}$
+\end_inset
+
+לכל 
+\begin_inset Formula $1\le r\le s$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|y_{j}\right|<\beta'$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|x_{u}\right|<a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי משפט עזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת את תנאי ליפשיץ)כאשר 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ כנ"ל( עם קבוע ליפשיץ
+\begin_inset Formula 
+\[
+\left\Vert \left(\cfrac{q}{\sqrt{s}},...\cfrac{q}{\sqrt{s}}\right)\right\Vert =\cfrac{q}{\sqrt{s}}\left\Vert \overset{s}{\overbrace{\left(1,...1\right)}}\right\Vert =\cfrac{q}{\sqrt{s}}\sqrt{s}=q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{f\left(x,y\right)=y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

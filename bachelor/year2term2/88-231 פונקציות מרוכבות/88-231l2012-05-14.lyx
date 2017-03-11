@@ -1,0 +1,3391 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תכונות של טורי חזקות 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מגדירים 
+\begin_inset Formula $R$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\unitfrac{1}{R}=\mathop{\overline{\lim}}\limits _{n\to\infty}\sqrt[n]{\left|a_{n}\right|}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $"R"$
+\end_inset
+
+ נקרא "רדיוס" ההתכנסות של הטור
+\end_layout
+
+\begin_layout Enumerate
+הטור מתכנס בהחלט ב
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+ ומתבדר ב
+\begin_inset Formula $\overline{B\left(z_{0},R\right)}^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $0<r<R$
+\end_inset
+
+ הטור מתכנס במ"ש ב
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\lim\limits _{n\to\infty}\cfrac{\left|a_{n}\right|}{\left|a_{n+1}\right|}$
+\end_inset
+
+ קיים אז הוא שווה ל
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $R>0$
+\end_inset
+
+ אז הטור מגדיר פונקציה אנליטית
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}\qquad z\in B\left(z_{0},R\right)
+\]
+
+\end_inset
+
+ובפרט
+\begin_inset Formula 
+\[
+f'\left(z\right)=\sum_{n=1}^{\infty}na_{n}\left(z-z_{0}\right)^{n-1}
+\]
+
+\end_inset
+
+עם אותו רדיוס התכנסות 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}=\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}$
+\end_inset
+
+ ולכן הטור טור טיילור של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית בעיגול 
+\begin_inset Formula $\overline{B\left(0,R\right)}$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $B\left(0,R\right)\ni z$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(0\right)}{n!}z^{n}
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ שווה לטור מקלורן שלה.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספיק להניח ש
+\begin_inset Formula $f\in H\left(B\left(z_{0},R\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula 
+\[
+f\in H\left(B\left(z_{0},R\right)\right)\qquad\left(R>0\right)
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+ז.א.
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ שווה לטור טיילור שלה.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאוד לא נכון לגבי פונקציות ממשיות 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל אם 
+\begin_inset Formula $f\left(x\right)=x^{\unitfrac{4}{3}}$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $f'\left(x\right)=\cfrac{4}{3}x^{\unitfrac{1}{3}}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $f''\left(x\right)=\cfrac{4}{9}x^{-\unitfrac{2}{3}}$
+\end_inset
+
+ - לא קיים באפס.
+ לכן יש כאן פונקציה גזירה על כל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ שלא נתין לבנות לה טור מקלורן כי 
+\begin_inset Formula $f''\left(0\right)$
+\end_inset
+
+ לא קיים.
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה:
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+e^{\unitfrac{-1}{x^{2}}} & x\neq0\\
+0 & x=0
+\end{cases}
+\]
+
+\end_inset
+
+אפשר להוכיח ש
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $\infty$
+\end_inset
+
+ פעמים בכל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ובפרט
+\begin_inset Formula 
+\[
+g\left(0\right)=g'\left(0\right)=g''\left(0\right)=\dots=g^{\left(n\right)}\left(0\right)=\dots=0
+\]
+
+\end_inset
+
+לכן טור מקלורן של 
+\begin_inset Formula $g$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\cfrac{g^{\left(n\right)}\left(0\right)}{n!}z^{n}=0
+\]
+
+\end_inset
+
+וזה לא מתכנס ל
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ ששונה מאפס לכל 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית בסביבה של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ אז בסביבה זו
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+רדיוס ההתכנסות של הטור הוא המספר המקסימלי 
+\begin_inset Formula $R$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ניתנת להמשכה כפונקציה אנליטית ב
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ נמשכת אנליטית ל
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+, מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומרת שלכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}
+\]
+
+\end_inset
+
+לכן אם 
+\begin_inset Formula $S$
+\end_inset
+
+=רדיוס ההתכנסות של הטור, 
+\begin_inset Formula $S\ge R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל לא ייתכן ש
+\begin_inset Formula $S>R$
+\end_inset
+
+ כי אם כן הטור מגדיר פונקציה אנליטית ב
+\begin_inset Formula $B\left(z_{0},S\right)$
+\end_inset
+
+ שמתלכדת עם 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ ז.א.
+ הטור ממשיך את 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ באופן אנליטי לעיגול גדול מ
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+, בניגוד למקסימליות של 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ המסקנה היא ש
+\begin_inset Formula $S=R$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+תרגיל)כעין תרגיל שהיה במבחן(
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{\sin z}{z^{2}-2z+5}
+\]
+
+\end_inset
+
+נפתח את 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לטור מהסוג
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}\left(z-1\right)^{n}
+\]
+
+\end_inset
+
+קבעו את רדיוס ההתכנסות של הטור.
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית בכל 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ פרט לשתי נקודות שבהן המכנה מתאפס:
+\begin_inset Formula 
+\[
+z=\cfrac{2\pm\sqrt{4-20}}{2}=1\pm2i
+\]
+
+\end_inset
+
+ המרחק מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $1\pm2i$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ולכן רדיוס ההתכנסות של הטור הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+= המרחק לנקודה הסינגולרית הקרובה ביותר.
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\in H\left(B\left(z_{0},R\right)\right)$
+\end_inset
+
+ ונניח שלכל 
+\begin_inset Formula $n=0,1,2,\dots$
+\end_inset
+
+ 
+\begin_inset Formula $f^{\left(n\right)}=0$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left(z_{0},R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל 
+\begin_inset Formula $z\in B\left(z_{0},R\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}=0
+\]
+
+\end_inset
+
+מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+משפט מטופולוגיה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ קבוצה פתוחה.
+ 
+\begin_inset Formula $D$
+\end_inset
+
+ קשירה אם ורק אם לכל חלוקה 
+\begin_inset Formula $D=O_{1}\uplus O_{2}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $O_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ פתוחות בהכרח אחת הקבוצות ריקה ואחת שווה ל
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subseteq\mathbb{C}$
+\end_inset
+
+ תחום פתוח וקשיר, ותהי 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+.
+ נניח שקיימת 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(z_{0}\right)=0\qquad n=0,1,2,3,\dots
+\]
+
+\end_inset
+
+אזי לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+O_{1}=\left\{ z\in D\middle|\begin{array}{c}
+f^{\left(n\right)}\left(z\right)=0\\
+n=0,1,2,\dots
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+O_{2}=D\backslash O_{1}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+D=O_{1}\uplus O_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: 
+\begin_inset Formula $O_{1}$
+\end_inset
+
+ קבוצה פתוחה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: נניח שנקודה 
+\begin_inset Formula $z_{1}\in O_{1}\subset D$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $D$
+\end_inset
+
+ פתוח קיים 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $B\left(z_{1},r\right)\subset D$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $z_{1}\in O_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\left(n\right)}\left(z_{1}\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ לפי הלמה, 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left(z_{1},r\right)$
+\end_inset
+
+.
+ לכן עבור כל 
+\begin_inset Formula $z_{2}\in B\left(z_{1},r\right)$
+\end_inset
+
+ יש ל
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ סביבה שלימה שבה 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+.
+ נובע שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\left(n\right)}\left(z_{2}\right)=0$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $z_{2}\in O_{1}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $z_{2}\in B\left(z_{1},r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בזה הוכחנו שלכל 
+\begin_inset Formula $z_{1}\in O_{1}$
+\end_inset
+
+ יש סביבה שלימה שלה ששייכת כולה ל
+\begin_inset Formula $O_{1}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $O_{1}$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\series default
+\numeric off
+: 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ פתוחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: ניקח 
+\begin_inset Formula $z_{3}\in O_{2}$
+\end_inset
+
+ כלשהו.
+ כיוון ש
+\begin_inset Formula $z_{3}\in O_{2}$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $f^{\left(n\right)}\left(z_{3}\right)\neq0$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $f^{\left(n\right)}\left(z\right)$
+\end_inset
+
+ פונקציה רציפה, וכיוון ש
+\begin_inset Formula $0\neq f^{\left(n\right)}\left(z_{3}\right)$
+\end_inset
+
+ קיימת סביבה 
+\begin_inset Formula $B\left(z_{3},r\right)$
+\end_inset
+
+ שבה 
+\begin_inset Formula $f^{\left(n\right)}\left(z\right)\neq0$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $B\left(z_{3},r\right)\subset O_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מצאנו שלכל 
+\begin_inset Formula $z_{3}\in O_{2}$
+\end_inset
+
+ יש סביבה שלימה שלה ששייכת כולה ל
+\begin_inset Formula $O_{2}$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+בסיכום
+\series default
+:
+\begin_inset Formula 
+\[
+D=O_{1}\uplus O_{2}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $O_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $O_{2}$
+\end_inset
+
+ד פתוחות, אבל 
+\begin_inset Formula $D$
+\end_inset
+
+ קשיר ולכן בהכרח אחת הקבוצות 
+\begin_inset Formula $O_{i}$
+\end_inset
+
+ ריקה.
+ אבל נתון לנו ש
+\begin_inset Formula $z_{0}\in O_{1}$
+\end_inset
+
+, לכן בהכרח 
+\begin_inset Formula $O_{2}\neq\emptyset$
+\end_inset
+
+ ו
+\begin_inset Formula $O_{1}=D$
+\end_inset
+
+, לכן 
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום פתוח וקשיר.
+ נניח ש
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(z\right)\not\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ עוד נניח שקיים 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(z_{0}\right)=0$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ ו
+\begin_inset Formula $g\in H\left(D\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $n$
+\end_inset
+
+ יחידים, 
+\begin_inset Formula $"n"$
+\end_inset
+
+ נקרא סדר האפס של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נתון ש
+\begin_inset Formula $f\left(z\right)\not\equiv0$
+\end_inset
+
+ ולכן נובע ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלא כל הנגזרות של 
+\begin_inset Formula $f$
+\end_inset
+
+ מתאפסות ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ לכן קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ מינימלי כך ש
+\begin_inset Formula $f^{\left(n\right)}\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+ ז.א.
+\begin_inset Formula 
+\[
+f\left(z_{0}\right)=f'\left(z_{0}\right)=f''\left(z_{0}\right)=\dots=f^{\left(n-1\right)}\left(z_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(z_{0}\right)\neq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נפתח את 
+\begin_inset Formula $f$
+\end_inset
+
+ לטור טיילור סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum_{k=0}^{\infty}\cfrac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k}=\sum_{k=n}^{\infty}\cfrac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\left(z-z_{0}\right)^{n}+\cfrac{f^{\left(n+1\right)}\left(z_{0}\right)}{\left(n+1\right)!}\left(z-z_{0}\right)^{n+1}+\dots=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(z-z_{0}\right)^{n}\left[\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}+\cfrac{f^{\left(n+1\right)}\left(z_{0}\right)}{\left(n+1\right)!}\left(z-z_{0}\right)+\cfrac{f^{\left(n+2\right)}\left(z_{0}\right)}{\left(n+2\right)!}\left(z-z_{0}\right)^{2}+\dots\right]
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+ פתוח, קיים 
+\begin_inset Formula $n>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $B\left(z_{0},r\right)\subset D$
+\end_inset
+
+ וכיוון ש
+\begin_inset Formula $f\in H\left(B\left(z_{0},r\right)\right)$
+\end_inset
+
+, פיתוח טיילור שפיתחנו מתכנס ל
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+.
+ בפרט הביטוי בסוגריים
+\begin_inset Formula 
+\[
+\left[\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}+\cfrac{f^{\left(n+1\right)}\left(z_{0}\right)}{\left(n+1\right)!}\left(z-z_{0}\right)+\cfrac{f^{\left(n+2\right)}\left(z_{0}\right)}{\left(n+2\right)!}\left(z-z_{0}\right)^{2}+\dots\right]
+\]
+
+\end_inset
+
+הוא טור חזקות שמתכנס ב
+\begin_inset Formula $B\left(z_{0},r\right)$
+\end_inset
+
+.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטור מתכנס לפונקציה אנליטית
+\begin_inset Formula 
+\[
+g\in H\left(B\left(z_{0},n\right)\right)
+\]
+
+\end_inset
+
+ואם נציב 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+g\left(z_{0}\right)=\cfrac{f^{\left(n\right)}\left(z_{0}\right)}{n!}\neq0
+\]
+
+\end_inset
+
+לפי הבנייה.
+\end_layout
+
+\begin_layout Standard
+בזה הגענו לפירוק הרצוי
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)\qquad z\in H\left(z_{0},r\right)
+\]
+
+\end_inset
+
+כעת נרחיב את 
+\begin_inset Formula $g$
+\end_inset
+
+ לכל 
+\begin_inset Formula $D$
+\end_inset
+
+ ע"י ההגדרה
+\begin_inset Formula 
+\[
+g\left(z\right)=\begin{cases}
+\sum_{k=n}^{\infty}\cfrac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z-z_{0}\right)^{k-n} & z\in B\left(z_{0},r\right)\\
+\unitfrac{f\left(z\right)}{\left(z-z_{0}\right)^{n}} & z\in D\backslash\left\{ z_{0}\right\} 
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $g$
+\end_inset
+
+ מוגדרת היטב ושייכת ל
+\begin_inset Formula $H\left(D\right)$
+\end_inset
+
+ כי בתחום המשותף של שתי ההגדרות, 
+\begin_inset Formula $B\left(z_{0},r\right)\backslash\left\{ z_{0}\right\} $
+\end_inset
+
+, שתי ההגדרות מתלכדות.
+\end_layout
+
+\begin_layout Standard
+נשאר רק להוכיח את היחידות של הפירוק.
+ לצורך זה נניח שיש שני פירוקים
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)=\left(z-z_{0}\right)^{m}h\left(z\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $h\in H\left(D\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נמשיך בדרך השלילה.
+ תחילה נניח ש
+\begin_inset Formula $m>n$
+\end_inset
+
+.
+ אז נחלק ב
+\begin_inset Formula $\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ לקבל
+\begin_inset Formula 
+\[
+g\left(z\right)=\left(z-z_{0}\right)^{m-n}h\left(z\right)
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ להסיק
+\begin_inset Formula 
+\[
+g\left(z_{0}\right)=\left(z-z_{0}\right)^{m-n}h\left(z_{0}\right)=0
+\]
+
+\end_inset
+
+בניגוד לנתונים של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן, אם נניח 
+\begin_inset Formula $n>m$
+\end_inset
+
+ נסיק ש
+\begin_inset Formula $h\left(z_{0}\right)\neq0$
+\end_inset
+
+ בניגוד לנתון.
+\end_layout
+
+\begin_layout Standard
+לכן בהכרח 
+\begin_inset Formula $n=m$
+\end_inset
+
+.
+ אם כן, אז לכל 
+\begin_inset Formula $D\ni z\neq z_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(z\right)=h\left(z\right)$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $h$
+\end_inset
+
+ רציפות,
+\begin_inset Formula 
+\[
+g\left(z_{0}\right)=\mathop{\underline{\lim}}\limits _{z\to z_{0}}g\left(z\right)=\mathop{\underline{\lim}}\limits _{z\to z_{0}}h\left(z\right)=h\left(z_{0}\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $n=m$
+\end_inset
+
+ ו
+\begin_inset Formula $g=h$
+\end_inset
+
+ והפירוק יחיד.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+מסקנה)מתוך ההוכחה(
+\end_layout
+
+\begin_layout Standard
+בנתונים של משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\numeric off
+, 
+\begin_inset Formula $"n"$
+\end_inset
+
+=סדר האפס של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ הוא המספר הטבעי המינימלי כך ש
+\begin_inset Formula $f^{\left(n\right)}\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+f\left(z\right)=\left[\sin z-z\right]^{3}\left(1-\cos z\right)^{4}
+\]
+
+\end_inset
+
+מצאו את סדר האפס של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+אם נגדיר 
+\begin_inset Formula $g\left(z\right)=\sin z-z$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+g\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(z\right)=\cos z-1\qquad g'\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g''\left(z\right)=-\sin z\qquad g''\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'''\left(z\right)=-\cos z\qquad g'''\left(0\right)\neq0
+\]
+
+\end_inset
+
+אז ל
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ יש אפס מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\numeric on
+0
+\numeric off
+, ולכן יש פירוק 
+\begin_inset Formula $g\left(z\right)=z^{3}h\left(z\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $h$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ ו
+\begin_inset Formula $h\left(0\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עוד נגדיר 
+\begin_inset Formula $k\left(z\right)=1-\cos z$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k'\left(z\right)=\sin z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k''\left(z\right)=\cos z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow k\left(0\right)=k'\left(0\right)=0\qquad k''\left(0\right)\neq0
+\]
+
+\end_inset
+
+אז יש פירוק 
+\begin_inset Formula $k\left(z\right)=z^{2}l\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ שלימה, 
+\begin_inset Formula $l\left(0\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחזור לפונקציה המקורית:
+\begin_inset Formula 
+\[
+f\left(z\right)=\left[\sin z-z\right]^{3}\left(1-\cos z\right)^{4}=\left[g\left(z\right)\right]^{3}\left[k\left(z\right)\right]^{4}=\left[z^{3}h\left(z\right)\right]^{3}\left[z^{2}l\left(z\right)\right]^{4}=z^{17}\left[h\left(z\right)\right]^{3}\left[l\left(z\right)\right]^{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left[h\left(z\right)\right]^{3}\left[l\left(z\right)\right]^{4}$
+\end_inset
+
+ היא פונקציה שלימה שלא מתאפסת באפס.
+ המסקנה היא של
+\begin_inset Formula $f$
+\end_inset
+
+ קיים אפס סדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+17
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באפס.
+\end_layout
+
+\begin_layout Section*
+תרגיל נוסף
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\begin_inset Formula 
+\[
+f\left(z\right)=\left[\sin z-z\right]^{3}+\left[1-\cos z\right]^{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ מתאפסת לסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באפס, כי עבור 
+\begin_inset Formula $k=0,1,2,\dots7$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\left(k\right)}\left(0\right)=0$
+\end_inset
+
+ כי שני הביטויים מתאפסים עד סדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+.
+ בנגזרת השמינית נקבל
+\begin_inset Formula 
+\[
+f^{\left(8\right)}\left(0\right)=\underbrace{\left\{ \left[\sin z-z\right]^{3}\right\} ^{\left(8\right)}\left(0\right)}_{=0}+\underbrace{\left\{ \left[1-\cos z\right]^{4}\right\} ^{\left(8\right)}\left(0\right)}_{\neq0}\neq0
+\]
+
+\end_inset
+
+ולכן האפס מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+!
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום פתוח וקשיר, ותהי 
+\begin_inset Formula $0\not\equiv f\in H\left(D\right)$
+\end_inset
+
+.
+ אזי כל אפס של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ מבודד, ז.א.
+ אם 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(z_{0}\right)=0$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $n>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $z\in B\left(z_{0},r\right)\backslash\left\{ z_{0}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(z_{0}\right)=0$
+\end_inset
+
+ אז לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש פירוק 
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)\qquad g\left(z_{0}\right)\neq0\qquad g\in H\left(D\right)
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $D$
+\end_inset
+
+ ו
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+ אז קיים 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $z\in B\left(z_{0},r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מלבד זאת הפונקציה 
+\begin_inset Formula $\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ מתאפסת אך ורק בנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, ומזה נובע ש
+\begin_inset Formula 
+\[
+f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)
+\]
+
+\end_inset
+
+שונה מאפס ב
+\begin_inset Formula $B\left(z_{0},r\right)\backslash\left\{ z_{0}\right\} $
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+)משפט היחידות לפונקציות אנליטיות(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום פתוח וקשיר ונניח ש
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ סדרה ב
+\begin_inset Formula $D$
+\end_inset
+
+ שמתכנסת לנקודה 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+.
+ ז.א.
+ 
+\begin_inset Formula $\mathop{\underline{\lim}}\limits _{h\to\infty}z_{n}$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\in H\left(D\right)$
+\end_inset
+
+ ואם 
+\begin_inset Formula $f\left(z_{n}\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f,g\in H\left(D\right)$
+\end_inset
+
+ ואם 
+\begin_inset Formula $f\left(z_{n}\right)=g\left(z_{n}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+כיוון שלכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z_{n}\right)=0$
+\end_inset
+
+ וכיוון ש
+\begin_inset Formula $z_{n}\to z_{0}$
+\end_inset
+
+, הרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ נותנת
+\begin_inset Formula 
+\[
+f\left(z_{0}\right)=\lim_{n\to\infty}f\left(z_{n}\right)=\lim_{n\to\infty}0=0
+\]
+
+\end_inset
+
+נמצא ש
+\begin_inset Formula $"z_{0}"$
+\end_inset
+
+ הוא אפס לא מבודד של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ לפי הלמה, זה ייתכן רק אם 
+\begin_inset Formula $f\left(z\right)\equiv0$
+\end_inset
+
+, והוכחנו את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\numeric on
+1
+\numeric off
+(.
+\end_layout
+
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $h\in H\left(D\right)$
+\end_inset
+
+.
+ ללפי הנתון לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(z_{n}\right)=f\left(z_{n}\right)-g\left(z_{n}\right)=0
+\]
+
+\end_inset
+
+לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\numeric on
+1
+\numeric off
+( 
+\begin_inset Formula $h\left(z\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ ז.א.
+ לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+0=h\left(z\right)=f\left(z\right)-g\left(z\right)\Rightarrow f\left(z\right)=g\left(z\right)
+\]
+
+\end_inset
+
+מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f,g\in H\left(D\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ ברצף של נקודות ב
+\begin_inset Formula $D$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+רצף של נקודות מכיל הרבה סדרות עם גבול!
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $f\left(z\right)=\sin\left(\cfrac{1}{z}\right),z\in\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{n}=\cfrac{1}{n\pi}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z_{n}\right)=\sin\left(\cfrac{1}{\unitfrac{1}{n\pi}}\right)=\sin n\pi=0
+\]
+
+\end_inset
+
+בסיכום יש כאן סדרה 
+\begin_inset Formula $\left\{ \cfrac{1}{n\pi}\right\} =\left\{ z_{n}\right\} $
+\end_inset
+
+.
+ קיים גבול 
+\begin_inset Formula $0\lim\limits _{n\to\infty}z_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(z_{n}\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ובכל זאת 
+\begin_inset Formula $f\left(z\right)\not\equiv0$
+\end_inset
+
+.
+ זה לא סותר את משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+, כי במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ דורשים שנקודת הגבול 
+\begin_inset Formula $z_{0}=\lim\limits _{n\to\infty}z_{n}$
+\end_inset
+
+ אף היא בתחום האנליטיות של 
+\begin_inset Formula $f$
+\end_inset
+
+, מה שאין כאן:
+\begin_inset Formula 
+\[
+0=\lim_{n\to\infty}z_{n}
+\]
+
+\end_inset
+
+אינו בתחום האנליטיות 
+\begin_inset Formula $\mathbb{C}\backslash\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסביר את התופעה של "התמדת הזהויות" שפגשנו בקורס לשנו.
+ למשל אם 
+\begin_inset Formula $0\le\theta\le\cfrac{\pi}{4}$
+\end_inset
+
+, מתקיים מטריגו
+\begin_inset Formula 
+\[
+\sin2\theta=2\sin\theta\cos\theta
+\]
+
+\end_inset
+
+באינפי מרחיבים את הפונקציות הטריגונומטריות לכל 
+\begin_inset Formula $\theta\in\mathbb{R}$
+\end_inset
+
+ ובקורס שלנו הרחבנו אותן לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ ומצאנו שגם כאן
+\begin_inset Formula 
+\[
+\sin2z=2\sin z\cos z
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+.
+ הדבר הזה מוכרח ע"פ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי אם נגדיר 
+\begin_inset Formula 
+\[
+f\left(z\right)=\sin2z\qquad g\left(z\right)=2\sin z\cos z
+\]
+
+\end_inset
+
+אז ידוע ש
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+ פונקציות שלמות, וידוע שבקטע ממשי 
+\begin_inset Formula $\left[0,\unitfrac{\pi}{4}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+.
+ בפרט הן מתכדות ברצף של נקודות.
+ לכן ע"פ המסקנה למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+ 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+באופן דומה, ניתן להוכיח ולהכריח שלכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\sin^{2}z+\cos^{2}z=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{2z}=e^{z}e^{z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\left(z_{1}+z_{2}\right)=\sin z_{1}\cos z_{2}+\cos z_{1}\sin z_{2}
+\]
+
+\end_inset
+
+וכו'.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+נקודות סינגולריות מבודדות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+סביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ היא סביבה מהסוג 
+\begin_inset Formula 
+\[
+B\left(z_{0},r\right)\backslash\left\{ z_{0}\right\} =\left\{ z\in\mathbb{C}\middle|0<\left|z-z_{0}\right|<r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ נאמר של
+\begin_inset Formula $f$
+\end_inset
+
+ יש סינגולריות מבודדת ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ אם 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית בסביבה מנוקבת של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ ולא ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ עצמה.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+לפונקציה 
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{z}$
+\end_inset
+
+ יש סינגולריות מבודדת באפס.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה 
+\begin_inset Formula $\textnormal{Log}z$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ פרט לקרן השמאלית של ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ x\in\mathbb{R}\middle|x\le0\right\} 
+\]
+
+\end_inset
+
+כאן נקודות הסינגולריות לא מבודדות כי הן רצף של נקודות.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{\sin\left(\cfrac{1}{z}\right)}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ פרט לנקודות 
+\begin_inset Formula $n\in\mathbb{Z},\cfrac{1}{n\pi}$
+\end_inset
+
+ והנקודה 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ הנקודות 
+\begin_inset Formula $\cfrac{1}{n\pi}$
+\end_inset
+
+ מבודדות אבל 
+\begin_inset Formula $0$
+\end_inset
+
+ היא סינגולרית לא מבודדת כי כל סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ מכילה עוד נקודות סינגולריות.
+\end_layout
+
+\end_body
+\end_document

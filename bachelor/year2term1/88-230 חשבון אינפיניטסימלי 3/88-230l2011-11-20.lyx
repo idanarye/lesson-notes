@@ -1,0 +1,1227 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ מרחב מטרי.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+סדרה 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ נקראת 
+\bar under
+סדרת קושי
+\bar default
+)
+\lang english
+Cauchy
+\lang hebrew
+( אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n-n\left(\epsilon\right)$
+\end_inset
+
+ טבעי כך ש
+\begin_inset Formula $d\left(x_{n},x_{m}\right)<\epsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n,m>n\left(\epsilon\right)$
+\end_inset
+
+.)אפשר לדרוש ב.ל.כ.
+ שהתנאי יתקיים לכל 
+\begin_inset Formula $n>m>n\left(\epsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+כל סדרה מתכנסת היא סדרת קושי.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+באמת
+\series default
+, אם 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, קיים 
+\begin_inset Formula $n'\left(\epsilon\right)$
+\end_inset
+
+ טבעי כך ש
+\begin_inset Formula $d\left(x_{n},x\right)<\cfrac{\epsilon}{2}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>n'\left(\epsilon\right)$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $d\left(x_{n},x_{m}\right)\le d\left(x_{n},x\right)+d\left(x,x_{m}\right)<\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n,m>n'\left(\epsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+אבל ההפך בד"כ לא נכון
+\end_layout
+
+\begin_layout Standard
+לדוגמה 
+\begin_inset Formula $X=\left(0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}=\left\{ \cfrac{1}{n}\right\} \subseteq X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ולכן היא קושי ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ ז"א לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x_{n}-x_{m}\right|=d\left(x_{n},x_{m}\right)<\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n,m>n\left(\epsilon\right)$
+\end_inset
+
+ ולכן גם קושי ב
+\begin_inset Formula $X$
+\end_inset
+
+)שהוא תת קבוצה של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ עם אותה מטריקה 
+\begin_inset Formula $d$
+\end_inset
+
+(.
+ אולם, 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ לא מתכנסת ב
+\begin_inset Formula $X$
+\end_inset
+
+, כי גבולה)ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+(, הנקבע באופן יחיד)!(, הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, ו
+\begin_inset Formula $0\notin X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ מ"מ שבו 
+\series bold
+\bar under
+כל
+\series default
+\bar default
+ סדרת קושי מתכנסת)ב
+\begin_inset Formula $X$
+\end_inset
+
+(, נאמר ש
+\begin_inset Formula $X$
+\end_inset
+
+ שלם)
+\lang english
+complete
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ שלם, אזי כל תת-קבוצה 
+\bar under
+סגורה
+\bar default
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ ג"כ מ"מ שלם.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+באמת
+\series default
+, אם 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרת קושי ב
+\begin_inset Formula $F$
+\end_inset
+
+, היא גם ס"ק ב
+\begin_inset Formula $X$
+\end_inset
+
+, ולכן כיוון ש
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+שלם
+\bar default
+, היא מתכנסת ב
+\begin_inset Formula $X$
+\end_inset
+
+, ו
+\begin_inset Formula $x_{n}\to x\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם טווח הסדרה סופי - הסדרה קבועה החל מאינדקס מסויים והלאה, ולכן 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא אחד מערכי הסדרה, ושייך לכן ל
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ועל כן 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ מתכנסת ב
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם טווח הסדרה הוא אין-סופי, הגבול 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא נק' גבול של 
+\begin_inset Formula $F$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $F$
+\end_inset
+
+ סגורה, נקודת הגבול 
+\begin_inset Formula $x$
+\end_inset
+
+ שייכת ל
+\begin_inset Formula $F$
+\end_inset
+
+)משפט!(.
+ ז"א 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ מתכנסת ב
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+במקרה הפרטי ש
+\begin_inset Formula $X$
+\end_inset
+
+ הוא 
+\bar under
+מרחב נורמי
+\bar default
+, קוראים ל
+\bar under
+מרחב נורמי שלם
+\bar default
+ 
+\bar under
+מרחב בנך
+\bar default
+)
+\lang english
+Banach
+\lang hebrew
+( )דהיינו: כל סדרת קושי במרחב בנך מתכנסת(.
+ תנאי קושי 
+\begin_inset Formula $\|x_{n}-x_{m}\|<\epsilon$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>m>n\left(\epsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תכונות של סדרות קושי
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ כל סדרת קושי היא חסומה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה
+\series default
+: תהי 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרת קושי.
+ ניקח 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+ בהגדרה.
+ קיים לכן 
+\begin_inset Formula $n\left(1\right)$
+\end_inset
+
+ טבעי כך ש
+\begin_inset Formula $d\left(x_{n},x_{m}\right)<1$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $n>m>n\left(1\right)$
+\end_inset
+
+.
+ נקבע 
+\begin_inset Formula $m>n\left(1\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+d\left(x_{n},x_{m}\right)\begin{cases}
+<1 & n>n\left(1\right)\\
+\max_{1\le n\le\left(1\right)}d\left(x_{n},x_{m}\right) & n\le n\left(1\right)
+\end{cases}<2+\max\left(\cdots\right)\doteqdot R
+\]
+
+\end_inset
+
+קיבלנו 
+\begin_inset Formula $\left\{ x_{n}\right\} \subseteq B\left(x_{m},R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)במיוחד: כל סדרה מתכנסת היא חסומה(.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ אם 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרת קושי 
+\bar under
+שיש
+\bar default
+ לה תת-סדרה מתכנסת, אזי 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ מתכנסת)לגבול של הסדרה חלקית(
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה
+\series default
+: לפי הנתון ש
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ סדרת קושי, אם 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ מספר נתון, קיים 
+\begin_inset Formula $n\left(\epsilon\right)$
+\end_inset
+
+ טבעי כך ש
+\begin_inset Formula $d\left(x_{n},x_{m}\right)<\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n>m>n\left(\epsilon\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתון שיש תת סדרה 
+\begin_inset Formula $\left\{ x_{n_{j}}\right\} $
+\end_inset
+
+ שמתכנסת)ל
+\begin_inset Formula $x$
+\end_inset
+
+(.
+ ז"א קיים 
+\begin_inset Formula $j\left\{ \epsilon\right\} $
+\end_inset
+
+ טבעי בך ש
+\begin_inset Formula $d\left(x_{n_{j}},x\right)<\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $j>j\left(\epsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n^{*}\left(\epsilon\right)=\max\left[n\left(\cfrac{\epsilon}{2}\right),j\left(\cfrac{\epsilon}{2}\right)\right]
+\]
+
+\end_inset
+
+
+\series bold
+\bar under
+לכל
+\series default
+\bar default
+ 
+\begin_inset Formula $n>n^{*}\left(\epsilon\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+d\left(x_{n},x\right)\le d\left(x_{n},x_{n_{j}}\right)+d\left(x_{n_{j}},x\right)
+\]
+
+\end_inset
+
+נבחר מתווך 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $j>j\left(\cfrac{\epsilon}{2}\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula 
+\[
+n_{j}\ge j>j\left(\cfrac{\epsilon}{2}\right)\ge n\left(\cfrac{\epsilon}{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\ge n^{*}\left(\epsilon\right)\ge n\left(\cfrac{\epsilon}{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left(x_{n_{j}},x\right)<\cfrac{\epsilon}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left(x_{n},x_{n_{j}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $d\left(x_{n},x\right)<\epsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n>n^{*}\left(\epsilon\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+תוצאה
+\end_layout
+
+\begin_layout Standard
+המרחב 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ הוא מרחב בנך.
+ דהיינו הוא מרחב נורמי שלם.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח את השלמות של 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\left\{ x^{n}\right\} $
+\end_inset
+
+ סדרת קושי כלשהי ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ לפי )
+\numeric on
+1
+\numeric off
+( הסדרה חסומה.
+ לכן יש לה תת סדרה מתכנסת!)ראה משפט(.
+ לפי )
+\numeric on
+2
+\numeric off
+(, 
+\begin_inset Formula $\left\{ x^{n}\right\} $
+\end_inset
+
+ עצמה מתכנסת.
+ מש"ל.
+\end_layout
+
+\begin_layout Section*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב מטרי שלם, ו
+\begin_inset Formula $F\subseteq X$
+\end_inset
+
+ סגורה, הרי גם 
+\begin_inset Formula $F$
+\end_inset
+
+ מ|מ שלם.
+\end_layout
+
+\begin_layout Standard
+למשל 
+\begin_inset Formula $\bar{B}\left(a,R\right)=\left\{ x\in X\middle|d\left(x,a\right)\le R\right\} $
+\end_inset
+
+ הוא מ"מ שלם)כאשר 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"מ שלם(.
+\end_layout
+
+\begin_layout Standard
+למשל, אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב בנך, אזי 
+\begin_inset Formula $\bar{B}\left(0,R\right)=\left\{ x\in X\middle|\|x\|\le R\right\} $
+\end_inset
+
+ מ"מ שלם.
+ למשל 
+\begin_inset Formula $\bar{B}\left(0,R\right)=\left\{ x\in\mathbb{R}^{k}\middle\|x\|\le R\right\} $
+\end_inset
+
+מ"מ שלם.
+\end_layout
+
+\begin_layout Part*
+פונקציות
+\end_layout
+
+\begin_layout Section*
+תזכורת מונחים מתורת הקבוצות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X,Y$
+\end_inset
+
+ קבוצות לא ריקות.
+ פונקציה)או "העתקה"( מ
+\begin_inset Formula $X$
+\end_inset
+
+ ל
+\begin_inset Formula $Y$
+\end_inset
+
+)סימון 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+( היא התאמה של אבר יחיד 
+\begin_inset Formula $f\left(x\right)\in Y$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ נתון.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+: תחום ההגדרה של הפונקציה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(E\right)=\left\{ f\left(x\right)\middle|x\in E\right\} $
+\end_inset
+
+ - התמונה של 
+\begin_inset Formula $E$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+במיוחד 
+\begin_inset Formula $f\left(X\right)$
+\end_inset
+
+ נקרא 
+\series bold
+\bar under
+הטווח
+\series default
+\bar default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+)
+\lang english
+range
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע)
+\lang english
+injective
+\lang hebrew
+( אם 
+\begin_inset Formula $f\left(x\right)=f\left(x'\right)$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $x=x'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ על)
+\lang english
+surjective
+\lang hebrew
+( אם 
+\begin_inset Formula $f\left(X\right)=Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת חח"ע ועל)
+\lang english
+bijective
+\lang hebrew
+( אם שני התנאים הנ"ל מתקיימים גם יחד.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+במקרה זה
+\series default
+, כל 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ מתאים)כי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא על( ו
+\begin_inset Formula $x$
+\end_inset
+
+ זה יחיד)כי 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע(.
+ כלומר הגדרנו 
+\begin_inset Formula $g:Y\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=g\left(y\right)$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ זו נקראת הפונקציה ההפוכה של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $B\subseteq Y$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $f^{-1}\left(B\right)=\left\{ x\in X\middle|f\left(x\right)\in B\right\} $
+\end_inset
+
+.
+ שם - התמונהה הפוכה של 
+\begin_inset Formula $B$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\begin{array}{c}
+f:X\to Y\\
+g:Y\to Z
+\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ קבוצות 
+\begin_inset Formula $\emptyset\neq$
+\end_inset
+
+ הפונקציה המורכבת:
+\begin_inset Formula 
+\[
+h\doteqdot g\circ f:X\to Z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(x\right)=g\left(f\left(x\right)\right)\forall x\in X
+\]
+
+\end_inset
+
+
+\series bold
+למשל
+\series default
+: אם 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ חח"ע ועל, 
+\begin_inset Formula $g:Y\to X$
+\end_inset
+
+ הפונקציה ההפכוה, 
+\begin_inset Formula $\left(g\circ f\right)\left(x\right)=g\left(f\left(x\right)\right)=x$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ היא פונקציה הזהותית ב
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( של התמונה ההפוכה
+\begin_inset Formula 
+\[
+f^{-1}\left(\bigcup_{\alpha}A_{\alpha}\right)=\bigcup_{\alpha}f^{-1}\left(A_{\alpha}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{-1}\left(\bigcap_{\alpha}A_{\alpha}\right)=\bigcap_{\alpha}f^{-1}\left(A_{\alpha}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{-1}\left(A^{c}\right)=\left[f^{-1}\left(A\right)\right]^{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( של התמונה
+\begin_inset Formula 
+\[
+f\left(\bigcup_{\alpha}A_{\alpha}\right)=\bigcup_{\alpha}f\left(A_{\alpha}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\bigcap_{\alpha}A_{\alpha}\right)\subseteq\bigcap_{\alpha}f\left(A_{\alpha}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f\left(A^{c}\right)\subseteq\left[f\left(A\right)\right]^{c}$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע.
+ 
+\begin_inset Formula $\left[f\left(A\right)\right]^{C}\subseteq f\left(A^{C}\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ על.
+ ולכן 
+\begin_inset Formula $\left[f\left(A\right)\right]^{C}=f\left(A^{C}\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא חח"ע וכל.
+\end_layout
+
+\begin_layout Part*
+גבול של פונקציה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מרחבים מטריים.
+ 
+\begin_inset Formula $E\subseteq X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f:E\to Y$
+\end_inset
+
+.
+ פונקציה.
+ תהי 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\bar under
+נקודת גבול
+\bar default
+ של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $\lim\limits _{x\to p}f\left(x\right)$
+\end_inset
+
+ 
+\bar under
+קיים ושווה ל
+\begin_inset Formula $q$
+\end_inset
+
+
+\bar default
+)
+\begin_inset Formula $Y\ni$
+\end_inset
+
+( אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, קיים 
+\begin_inset Formula $\delta=\delta\left(\epsilon\right)>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d\left(f\left(x\right),q\right)<\epsilon$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $d\left(x,p\right)<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $x\in E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יחידות:
+\begin_inset Formula $d\left(q,q'\right)\le d\left(q,f\left(x\right)\right)+d\left(f\left(x\right),q'\right)<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כותבים: 
+\begin_inset Formula $q=\lim\limits _{x\to p}f\left(x\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $f\left(x\right)\to q$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\to p$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

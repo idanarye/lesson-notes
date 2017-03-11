@@ -1,0 +1,1430 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פתרון ע"י תורי חזקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y''+P\left(x\right)y'+Q\left(x\right)y=0$
+\end_inset
+
+, 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ אנליטיים.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+
+\bar default
+ נקודה אורדינלית: פתרון 
+\begin_inset Formula $y=\sum a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{0},a_{1}$
+\end_inset
+
+ חופשיים)כל השאר נקבעים על פיהם( - זה נותן פתרון כללי.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+
+\bar default
+ נקודה רגולרית סינגולרית: מחפשים פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}\left(x-x_{0}\right)^{n+\alpha}\hspace{1em}\left(a_{0}\ne0\right)$
+\end_inset
+
+.
+ קיים לפחות פתרון אחד כזה.
+\end_layout
+
+\begin_layout Section*
+דוגמה)של נק.
+ רגולרית סינגולרית(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nu\ge0\hspace{1em}x^{2}y''+xy'+\left(x^{2}-\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\nu$
+\end_inset
+
+)האות היוונית "נו"( קבוע
+\begin_inset Formula 
+\[
+y''+\cfrac{y'}{x}+\left(1-\cfrac{\nu^{2}}{x^{2}}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ נקודה סינגולרית)סינגולרית(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\sum_{n=0}^{\infty}a_{n}x^{n+\alpha}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0}^{\infty}\left(n+\alpha\right)\left(n+\alpha-1\right)a_{n}x^{n+\alpha-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left(n+\alpha\right)\left(n+\alpha-1\right)a_{n}x^{n+\alpha}+\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha}+...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...+\sum_{n=0}^{\infty}a_{n}x^{n+\alpha+2}-\sum_{n=0}^{\infty}\nu^{2}a_{n}x^{n+\alpha}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left[\left(n+\alpha\right)^{2}-\nu^{2}\right]a_{n}x^{n+\alpha}+\sum_{n=0}^{\infty}a_{n}x^{n+\alpha+2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{\alpha}$
+\end_inset
+
+: 
+\begin_inset Formula $\left(\alpha^{2}-\nu^{2}\right)\not a_{0}=0$
+\end_inset
+
+.
+ "משוואה מאפיינת" 
+\begin_inset Formula $\alpha=\pm\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{\alpha+1}$
+\end_inset
+
+: 
+\begin_inset Formula $\left(\left(1+\alpha\right)^{2}-\nu^{2}\right)a_{1}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1+2\alpha\right)a_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקרה מיוחד 
+\begin_inset Formula $\alpha=-\cfrac{1}{2},\nu=\cfrac{1}{2}$
+\end_inset
+
+ מתקיים לגר
+\end_layout
+
+\begin_layout Itemize
+אחרת 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{\alpha+m}$
+\end_inset
+
+, 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\left(m+\alpha\right)^{2}-\nu^{2}\right)a_{m}+a_{m-2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על שתי האופציות ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=+\nu$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha=-\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+\begin_inset Formula $\alpha=+\nu$
+\end_inset
+
+
+\bar default
+ 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(m^{2}+2\nu m\right)\left(a_{m}+a_{m-2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{m}=\cfrac{-a_{m-2}}{m\left(m+2\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{1}=a_{3}=a_{5}=...=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2}=\cfrac{-a_{0}}{2\left(2+2\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{4}=\cfrac{-a_{2}}{4\left(4+2\nu\right)}=\cfrac{a_{0}}{2\cdot4\left(2+2\nu\right)\left(4+2\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{6}=\cfrac{-a_{0}}{2\cdot4\cdot6\left(2+2\nu\right)\left(4+2\nu\right)\left(6+2\nu\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2p}=\cfrac{\left(-1\right)^{p}a_{0}}{2^{2p}p!\left(1+\nu\right)\left(2+\nu\right)...\left(p+\nu\right)}
+\]
+
+\end_inset
+
+וקיבלנו שהפתרון הראשון הוא
+\begin_inset Formula 
+\[
+\boxed{y=a_{0}\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+\nu}}{2^{2p}p!\left(1+\nu\right)\left(2+\nu\right)...\left(p+\nu\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+\begin_inset Formula $\alpha=-\nu$
+\end_inset
+
+
+\bar default
+ 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+ אלא אם כן 
+\begin_inset Formula $\nu=\cfrac{1}{2}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $a$
+\end_inset
+
+ חופשי.
+ לכל 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(m^{2}-2m\nu\right)a_{m}+a_{m-2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{m}=\cfrac{-a_{m-2}}{m\left(m-2\nu\right)}
+\]
+
+\end_inset
+
+אלא אם כן 
+\begin_inset Formula $2\nu$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2,3,4,...$
+\end_inset
+
+)מספר שלם גדול או שווה ל
+\numeric on
+2
+\numeric off
+( - כלומר 
+\begin_inset Formula $\nu\in\left\{ 1,\cfrac{3}{2},2,\cfrac{5}{2},...\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $I$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\begin_inset Formula $\nu$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינו שלם.
+ הפתרון השני הוא
+\begin_inset Formula 
+\[
+\boxed{y=a_{0}\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p-\nu}}{2^{2p}p!\left(1-\nu\right)\left(2-\nu\right)...\left(p-\nu\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $II$
+\end_inset
+
+
+\series default
+ 
+\begin_inset Formula $2\nu$
+\end_inset
+
+ שלם אי זוגי.
+ ה
+\begin_inset Formula $m$
+\end_inset
+
+ הבעייתי הוא אי זוגי, אבל על ידי הבחירה 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+ יוצא 
+\begin_inset Formula $a_{3}=a_{5}=...=0$
+\end_inset
+
+ והרקורסיה לפני המחילוק מתקיים.
+ הפתרון השני עדיין תקף.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $III$
+\end_inset
+
+
+\series default
+ 
+\begin_inset Formula $2\nu$
+\end_inset
+
+ שלם זוגי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\nu=0,1,2,...$
+\end_inset
+
+.
+ כרגע יש רק פתרון אחד.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+סיכום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nu\ge0\hspace{1em}x^{2}y''+xy'+\left(x^{2}-\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חיפשנו פתרון 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+\nu}}{2^{2p}p!\left(1+\nu\right)\left(2+\nu\right)...\left(p+\nu\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ אינו שלם...
+ פתרון כללי 
+\begin_inset Formula $y=C_{1}f_{\nu}\left(x\right)+C_{2}f_{-\nu}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\nu$
+\end_inset
+
+ שלם כרגע מצאנו רק פתרון אחד 
+\begin_inset Formula $f_{\nu}\left(x\right)$
+\end_inset
+
+)עד כדי כפל בקבוע(
+\end_layout
+
+\begin_layout Section*
+המקרה הכללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+P\left(x\right)y'+Q\left(x\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ נק.
+ רגולרית סינגולרית.
+ הפונקציות 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ לא טובות לנו)כי לא בטוח שיש להם גבולות ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+( ולכן נכתוב
+\begin_inset Formula 
+\[
+\left(x-x_{0}^{2}\right)y''+\left[P\left(x\right)\left(x-x_{0}\right)\right]\left(x-x_{0}\right)y'+\left[\left(x-x_{0}\right)^{2}Q\left(x\right)\right]y=0
+\]
+
+\end_inset
+
+בגלל ש
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ רקולדית סינגולרית מתקיים:
+\begin_inset Formula 
+\[
+P\left(x\right)\left(x-x_{0}\right)\xrightarrow[x\to x_{0}]{}p_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(x\right)\left(x-x_{0}\right)^{2}\xrightarrow[x\to x_{0}]{}q_{0}
+\]
+
+\end_inset
+
+המשוואה 
+\begin_inset Formula $\left(x-x_{0}\right)^{2}y''+p_{0}\left(x-x_{0}\right)y'+q_{0}y=0$
+\end_inset
+
+ היא משוואת אויילר.
+ הפתרונות של משוואת אויילר זו הם 
+\begin_inset Formula $\left(x-x_{0}\right)^{\lambda}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא פתרון של 
+\begin_inset Formula $\lambda\left(\lambda-1\right)+p_{0}\lambda+q_{0}=0$
+\end_inset
+
+ - המשוואה המציינת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+indicial equation
+\end_layout
+
+\begin_layout Section*
+משפט פרובניוס)הכללי(
+\end_layout
+
+\begin_layout Itemize
+אם ההפרש בין שתי הפתרונות של המשוואה המציינת 
+\bar under
+אינו שלם
+\bar default
+ אזי ניתן למצוא שני פתרונות בת"ל
+\begin_inset Formula 
+\[
+y_{1}\approx C_{1}\left(x-x_{0}\right)^{\lambda_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{2}\approx C_{2}\left(x-x_{0}\right)^{\lambda_{2}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lambda_{1},\lambda_{2}$
+\end_inset
+
+ שני השורשים של המש' המציינת(
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+אם ההפרש הוא שלם
+\bar default
+ אזי ניתן למצוא פתרון אחד 
+\begin_inset Formula $y_{1}\approx C_{1}\left(x-x_{0}\right)^{\lambda_{1}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ הוא הפתרון הגדול יותר.
+\end_layout
+
+\begin_layout Standard
+הפתרונות הם בקירוב כי הפתרון המדוייק הוא טור אינסופי.
+\end_layout
+
+\begin_layout Section*
+המשך לגבי הפתרון השני
+\end_layout
+
+\begin_layout Standard
+אם יש בעיה בפתרון השני, בד"כ הפתרון השני הוא היותר קטן.
+\end_layout
+
+\begin_layout Standard
+יש לנו כבר פתרון אחד.
+ נשתמש בהורדת סדר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ פתרון - נחפש פתרון שני בצורה 
+\begin_inset Formula $y=zy_{1}$
+\end_inset
+
+)
+\begin_inset Formula $z$
+\end_inset
+
+ פונקציה(
+\begin_inset Formula 
+\[
+y'=z'y_{1}+zy_{1}'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=z''y_{1}+2z'y_{1}'+zy_{1}''
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(z''y_{1}+2z'y_{1}'+zy_{1}''\right)+P\left(x\right)\left(z'y_{1}+zy_{1}'\right)+Q\left(x\right)zy_{1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $zy_{1}'',P\left(X\right)zy_{1}',Q\left(x\right)zy_{1}$
+\end_inset
+
+ מצטמצמים כי 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ מקיים את המשוואה, ונקבל
+\begin_inset Formula 
+\[
+z''y_{1}+z'\left(2y_{1}'+P\left(x\right)y_{1}\right)=0
+\]
+
+\end_inset
+
+נכתוב 
+\begin_inset Formula $z'=w$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w'+w\left(\cfrac{2y_{1}'}{y_{1}}+P\left(x\right)\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{w'}{w}=-\left(\cfrac{2y_{1}'}{y_{1}}+P\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln w=-2\ln y_{1}-\int P\left(x\right)dx
+\]
+
+\end_inset
+
+אנחנו יודעים ש
+\begin_inset Formula $\left(x-x_{0}\right)P\left(x\right)\xrightarrow{x\to x_{0}}p_{0}$
+\end_inset
+
+, ולכן סמוך ל
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(x\right)\approx\cfrac{p_{0}}{x-x_{0}}$
+\end_inset
+
+.
+ לכן:
+\begin_inset Formula 
+\[
+\ln w\approx-2\ln y_{1}-p_{0}\ln\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w\approx\cfrac{1}{y_{1}^{2}\left(x-x_{0}\right)^{p_{0}}}\approx\cfrac{\textnormal{const}}{\left(x-x_{0}\right)^{p_{0}+2\lambda_{1}}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא פתרון של 
+\begin_inset Formula $\lambda\left(\lambda-1\right)+p_{0}\lambda+q_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם היינו עושים מדוייק היינו מקבלים
+\begin_inset Formula 
+\[
+w=\cfrac{1}{\left(x-x_{0}\right)^{p_{0}+2\lambda_{1}}}\cdot\sum_{n=0}^{\infty}b_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=w
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\cfrac{1}{\left(x-x_{0}\right)^{_{p}+2\lambda_{1}-1}}\cdot\sum_{n=0}^{\infty}c_{n}\left(x-x_{0}\right)^{n}+C\ln\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאן אנו רואים את הבעיה - לרוב הפתרון הוא טור חזקות, אבל לפעמים חזקה אחת)
+\begin_inset Formula $n=p_{0}+2\lambda_{1}-1$
+\end_inset
+
+( הופכת ל
+\begin_inset Formula $\ln$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+y=zy_{1}=\cfrac{1}{\left(x-x_{0}\right)^{p_{0}+\lambda_{1}-1}}\sum_{n=0}^{\infty}d_{n}\left(x-x_{0}\right)^{n}+Cy_{1}\ln\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה המציינת היא 
+\begin_inset Formula $\lambda^{2}+\lambda\left(p_{0}-1\right)+q_{0}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}+\lambda_{2}=1-p_{0}\Rightarrow p_{0}+\lambda_{1}-1=-\lambda_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן)נציב בפתרון(
+\begin_inset Formula 
+\[
+y=\left(x-x_{0}\right)^{\lambda_{2}}\sum_{n=0}^{\infty}d_{n}\left(x-x_{0}\right)^{n}+Cy_{1}\ln\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר מצאנו את מה שהיה חסר בפתרון השני, ולכן:
+\end_layout
+
+\begin_layout Itemize
+פתרון ראשון 
+\begin_inset Formula $y_{1}\sim C_{1}\left(x-x_{0}\right)^{\lambda_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פתרון שני 
+\begin_inset Formula $y_{2}\sim C_{2}\left(x-x_{0}\right)^{\lambda_{2}}+Cy_{1}\ln\left(x-x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רק במקרה ש
+\begin_inset Formula $p_{0}+2\lambda-1$
+\end_inset
+
+ שלם 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{1}-\lambda_{2}$
+\end_inset
+
+ שלם
+\end_layout
+
+\begin_layout Subsection*
+הפתרון השני
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\lambda_{1}-\lambda_{2}$
+\end_inset
+
+ השלם חיובי,
+\begin_inset Formula 
+\[
+y=C_{1}y_{1}\left(x\right)+C_{2}y_{2}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=\left(x-x_{0}\right)^{\lambda_{1}}\cdot\sum_{n=0}^{\infty}y_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{2}\left(x\right)=\left(x-x_{0}\right)^{\lambda_{2}}\cdot\sum_{n=0}^{\infty}z_{n}\left(x-x_{0}\right)^{n}+C\log\left(x-x_{0}\right)y_{1}\left(x\right)
+\]
+
+\end_inset
+
+ייתכן 
+\begin_inset Formula $C=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $C$
+\end_inset
+
+ בהכרח לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+)וניתן לקחת 
+\begin_inset Formula $C=1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}y''+xy'+\left(x^{2}-\nu^{2}\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu\ge0$
+\end_inset
+
+ שלם.
+ עד כאן פתרון אחד 
+\begin_inset Formula $y=f_{\nu}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f_{\nu}\left(x\right)=\sum\limits _{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+\nu}}{2^{2p}p!\left(1+\nu\right)\left(2+\nu\right)...\left(p+\nu\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\nu=0$
+\end_inset
+
+ אז המשוואה היא 
+\begin_inset Formula $xy''+y'+x\lambda=0$
+\end_inset
+
+, והפתרון הוא הראשון הוא 
+\begin_inset Formula $y_{1}=\sum\limits _{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p}}{2^{2p}\left(p!\right)^{2}}=1-\cfrac{x^{2}}{4}+\cfrac{x^{2}}{64}-...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון שני?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=zy_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(z''y_{1}+2z'y_{1}'+2y''\right)+\left(z'y_{1}+zy_{1}'\right)+xzy_{1}=0
+\]
+
+\end_inset
+
+לפי שיטת הורדת הסדר זה מצטמצם ל:
+\begin_inset Formula 
+\[
+xw'y_{1}+w\left(2xy_{1}'+y_{1}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{w'}{w}=-\cfrac{2y_{1}'}{y_{1}}-\cfrac{1}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln w=-2\ln y_{1}-\ln x+C_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w=\cfrac{C_{2}}{xy_{1}^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\int wdx=\int\cfrac{C_{2}}{xy_{1}^{2}}dx+C_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=C_{3}y_{1}+C_{2}y_{1}\int\cfrac{dx}{xy_{1}^{2}}
+\]
+
+\end_inset
+
+כדי לקבל פתרון שני)ששונה מהראשון( צריך 
+\begin_inset Formula $C_{2}\ne0$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $C_{2}=1$
+\end_inset
+
+ והפתרון השני מקבל צורה של 
+\begin_inset Formula $y_{1}\ln x+*$
+\end_inset
+
+ כאשר * פונקציה אנליטית.
+\end_layout
+
+\begin_layout Part*
+נקודה סינגולרית ב
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+P\left(x\right)y'+Q\left(x\right)y=0
+\]
+
+\end_inset
+
+אם רוצים להסתכל על התנהגות הפתרון כאשר 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחליפים קואורדינטות ל
+\begin_inset Formula $z=\cfrac{1}{x}$
+\end_inset
+
+ )ונסתכל ב
+\begin_inset Formula $z=0$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\cfrac{d}{dx}=\cfrac{dz}{dx}\cfrac{d}{dz}=-\cfrac{1}{x^{2}}\cfrac{d}{dz}=-z^{2}\cfrac{d}{dz}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{d^{2}}{dx^{2}}=z^{2}\cfrac{d}{dz}\left(z^{2}\cfrac{d}{dz}\right)=z^{4}\cfrac{d^{2}}{dz^{2}}+2z^{3}\cfrac{d}{dz}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(z^{4}\cfrac{d^{2}y}{dz^{2}}+2z^{3}\cfrac{dy}{dz}\right)-z^{2}P\left(\cfrac{1}{z}\right)\cfrac{dy}{dz}+Q\left(\cfrac{1}{z}\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{d^{2}y}{dz^{2}}+\underset{\textnormal{new }P\left(z\right)}{\underbrace{\cfrac{2z-P\left(\cfrac{1}{z}\right)}{z^{2}}}}\cfrac{dy}{dz}+\underset{\textnormal{new }Q\left(z\right)}{\underbrace{\cfrac{1}{z^{4}}Q\left(\cfrac{1}{Z}\right)}}y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נק.
+ אורדינרית ב
+\begin_inset Formula $\infty$
+\end_inset
+
+ אם הפונקציות 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ החדשות "מתנהגות יפה")אנליטיות( ב
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+רג.
+ סינג.
+ אם 
+\begin_inset Formula $\lim\limits _{z\to0}\cfrac{2z-P\left(\cfrac{1}{z}\right)}{z}$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\limits _{z\to0}\cfrac{1}{z^{2}}Q\left(\cfrac{1}{2}\right)$
+\end_inset
+
+ קיימים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)y''-2xy'+cy=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''-\cfrac{2x}{1-x^{2}}y'+\cfrac{c}{1-x^{2}}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x\right)=\cfrac{-2x}{1-x^{2}},Q\left(x\right)=\cfrac{C}{1-x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{2z-P\left(\cfrac{1}{t}\right)}{z^{2}}=\cfrac{2z-\cfrac{-\unitfrac{2}{z}}{1-\unitfrac{2}{z^{2}}}}{z^{2}}=\cfrac{2z+\cfrac{2z}{z^{2}-1}}{z^{2}}=\cfrac{z}{z}\left(1+\cfrac{1}{z^{2}-1}\right)=\cfrac{2z}{z^{2}-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{z^{4}}Q\left(\cfrac{1}{z}\right)=\cfrac{1}{z^{4}}\cfrac{c}{1-\cfrac{1}{z^{2}}}=\cfrac{c}{z^{2}\left(z^{2}-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקואורדינטה החדשה:
+\begin_inset Formula 
+\[
+\cfrac{d^{2}y}{dz}+\cfrac{2z}{z^{2}-1}\cfrac{dy}{dz}+\cfrac{c}{z^{2}\left(z^{2}-1\right)}y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציות 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ החדשות מקיימות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cfrac{2z}{z^{2}-1}$
+\end_inset
+
+ - אנליטי ב
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cfrac{c}{z^{2}\left(z^{2}-1\right)}$
+\end_inset
+
+ - סינגולריות, רגולרי סינגולרית
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_body
+\end_document

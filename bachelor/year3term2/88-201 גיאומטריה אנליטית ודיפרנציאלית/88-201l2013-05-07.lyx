@@ -1,0 +1,1177 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+יש לנו מפה 
+\begin_inset Formula $\mathbb{R}^{2}\supseteq U\to M\subseteq\mathbb{R}^{2}$
+\end_inset
+
+.
+ אמרנו שאפשר למצוא מיפוי 
+\begin_inset Formula $M\to S^{2}$
+\end_inset
+
+, כאשר המיפוי ממפה כל נקודה ב
+\begin_inset Formula $M$
+\end_inset
+
+ לווקטור יחידה שניצב למשטח באותה נקודה.
+\end_layout
+
+\begin_layout Standard
+המיפוי הזה משרה מפה של דיפרנציאל: אם יש לנו 
+\begin_inset Formula $r:U\to M$
+\end_inset
+
+, אז הדיפרנציאל 
+\begin_inset Formula $\mathrm{d}r_{a}:T_{a}U\to T_{A}M$
+\end_inset
+
+ הוא מיפוי המקיים 
+\begin_inset Formula $\mathrm{d}r_{a}\left(x\right)\in\mathbb{R}^{3}$
+\end_inset
+
+.
+ כמו כן המטריצה
+\begin_inset Formula 
+\[
+\mathrm{d}r_{a}^{t}\mathrm{d}r_{a}=:g
+\]
+
+\end_inset
+
+היא המטריקה, או התבנית היסודית הראשונה, ודרכו אפשר למדוד אורכים באמצעות
+\begin_inset Formula 
+\[
+x^{t}gx=I\left(x,x\right)\in\mathbb{R}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $x\in T_{a}U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+התבנית היסודית השנייה
+\end_layout
+
+\begin_layout Standard
+אם יש לנו מיפוי 
+\begin_inset Formula $\rho:U\to M\to S^{2}$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $\rho:U\to S^{2}$
+\end_inset
+
+, אבל עוברים דרך 
+\begin_inset Formula $M$
+\end_inset
+
+ בדרך( - זוהי מפה שמתאימה כל נקודה בשטח לנקודה על פני הכדור.
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר דיפרנציאל: 
+\begin_inset Formula $\mathrm{d}\rho_{a}:T_{A}U\to T_{\hat{n}\left(r\left(A\right)\right)}M$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כאשר 
+\begin_inset Formula $\hat{n}\left(rA\right)$
+\end_inset
+
+ הוא וקטור יחידה הניצב לפני הכדור
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התבנית היסודית השניה מוגדרת
+\begin_inset Formula 
+\[
+II:T_{a}U\times T_{a}U\to\mathbb{R}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+II_{a}\left(X,Y\right)=-\left\langle \mathrm{d}r_{a}\left(x\right),\mathrm{d}\rho_{a}\left(Y\right)\right\rangle 
+\]
+
+\end_inset
+
+ומשמעותה - אם הלכתי כך וכך לכיוון כך וכך, כמה השתנה הוקטור הנורמלי?
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula 
+\[
+r_{i}=\frac{\mathrm{d}r}{\mathrm{d}x^{i}}=\mathrm{d}r\left(x^{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+II_{a}\left(x,y\right)=II_{a}\left(y,x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle r_{i},n\right\rangle =0$
+\end_inset
+
+ כי 
+\begin_inset Formula $\hat{n}\perp T_{A}M$
+\end_inset
+
+.
+ נגזור לפי 
+\begin_inset Formula $x^{j}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\langle r_{ij},\hat{n}\right\rangle +\left\langle r_{i},n_{j}\right\rangle =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\left\langle r_{i},n_{j}\right\rangle =\left\langle r_{ij},n\right\rangle =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=II_{a}\left(x^{i},x^{j}\right)
+\]
+
+\end_inset
+
+כנ"ל:
+\begin_inset Formula 
+\[
+\left\langle r_{j},n\right\rangle =0
+\]
+
+\end_inset
+
+נגזור לפי 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+ לקבל
+\begin_inset Formula 
+\[
+-\left\langle r_{j},n_{i}\right\rangle =\left\langle r_{ji},n\right\rangle =\left\langle r_{ij},n\right\rangle =II_{a}\left(x^{j},x^{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן שלכל וקטורי הבסיס 
+\begin_inset Formula $II_{a}$
+\end_inset
+
+ תבנית חילופית ובילינארית - נובע שלכל הוקטורים.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+II_{a}\left(u,v\right)=\left\langle \frac{\mathrm{d}^{2}r\left(u,v\right)}{\mathrm{d}u\mathrm{d}v},\hat{n}\right\rangle 
+\]
+
+\end_inset
+
+כלומר אפשר לכתוב
+\begin_inset Formula 
+\[
+\Pi_{a}\left(x,y\right)=x^{t}By
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+B_{ij}=\left\langle r_{ij},\hat{n}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אופרטור הצורה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ - אופרטור הצורה - מוגדר ע"י
+\begin_inset Formula 
+\[
+II_{a}\left(x,y\right)=\left\langle Sx,y\right\rangle =\left\langle x,Sy\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{t}By=\left(Sx\right)^{t}gy=x^{t}S^{t}gy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=S^{t}g
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=B^{t}=g^{t}S=gS
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=g^{-1}B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - אליפסואיד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r\left(u,v\right)=\begin{pmatrix}a\cos u\cos v\\
+a\cos u\sin v\\
+c\sin u
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{u}=\begin{pmatrix}-a\sin u\cos v\\
+-a\sin u\sin v\\
+c\cos u
+\end{pmatrix}\qquad r_{v}=\begin{pmatrix}-a\cos u\sin v\\
+a\cos u\cos v\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{rclcl}
+g_{11} & = & r_{u}r_{u} & = & a^{2}\sin^{2}u+c^{2}\cos^{2}u\\
+g_{12}=g_{21} & = & r_{u}r_{v} & = & 0\\
+g_{22} & = & r_{v}r_{v} & = & a^{2}\cos^{2}u
+\end{array}
+\]
+
+\end_inset
+
+נשים לב שהמטריקה לא תלויה בכלל ב
+\begin_inset Formula $v$
+\end_inset
+
+ - והסיבה היא שיש כאן סימטריה של סיבוב, ולכן המטריקה לא תלויה בסיבוב סביב
+ ציר ה
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשביל לחשב את הוקטור הנורמלי בכל נקודה ונקודה:
+\begin_inset Formula 
+\[
+\hat{n}=\frac{r_{u}\times r_{v}}{\left\Vert r_{u}\times r_{v}\right\Vert }=\frac{1}{\left\Vert \cdot\right\Vert }\begin{vmatrix}\hat{x} & \hat{y} & \hat{z}\\
+-a\sin u\cos v & -a\sin u\sin v & c\cos u\\
+-a\cos u\sin v & a\cos u\cos v & 0
+\end{vmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\sqrt{a^{2}\sin^{2}u+c^{2}\cos^{2}u}}\begin{pmatrix}c\cos u\cos v\\
+c\cos u\sin v\\
+a\sin u
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{uu}=\begin{pmatrix}-a\cos u\cos v\\
+-a\cos u\sin v\\
+-c\sin u
+\end{pmatrix}\qquad r_{uv}=\begin{pmatrix}a\sin u\sin v\\
+-a\sin u\cos v\\
+0
+\end{pmatrix}\qquad r_{vv}=\begin{pmatrix}-a\cos u\cos v\\
+-a\cos u\sin v\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B_{11}=\frac{ac}{\sqrt{a^{2}\sin^{2}u+c^{2}\cos^{2}u}}\qquad B_{12}=B_{21}=0\qquad B_{22}=\frac{ac\cos^{2}u}{\sqrt{a^{2}\sin^{2}u+c^{2}\cos^{2}u}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\frac{ac}{\sqrt{a^{2}\sin^{2}u+c^{2}\cos^{2}u}}\begin{pmatrix}1 & 0\\
+0 & \cos^{2}u
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו את 
+\begin_inset Formula $B$
+\end_inset
+
+, מטריצה מלוכסנת, שהיא התבנית היסודית השנייה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+איך
+\begin_inset space ~
+\end_inset
+
+משתמשים
+\begin_inset space ~
+\end_inset
+
+בזה
+\series default
+? אם יש לנו עקומה 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\hat{n}}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}\hat{h}\left(\gamma\left(t\right)\right)=\sum_{i}\frac{\mathrm{d}\hat{n}}{\mathrm{d}x^{i}}\cdot\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}t}=\frac{\mathrm{d}\hat{n}}{\mathrm{d}u}\cdot\frac{\mathrm{d}u}{\mathrm{d}t}+\frac{\mathrm{d}\hat{n}}{\mathrm{d}v}\cdot\frac{\mathrm{d}v}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\left(t_{n}\right)=n\left(t_{0}\right)+\int_{t_{0}}^{t_{1}}\frac{\mathrm{d}\hat{n}}{\mathrm{d}t}\mathrm{\, d}t
+\]
+
+\end_inset
+
+התבנית היסודית השניה נועדה לקשר לנו בין המסלולים על המפה לרמת הכיפוף שלהם.
+\end_layout
+
+\begin_layout Standard
+אופרטור הצורה הוא 
+\begin_inset Formula $S=g^{-1}B$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+S=\frac{ac}{\sqrt{a^{2}\sin^{2}u+c^{2}\cos^{2}u}}\begin{pmatrix}\frac{1}{a^{2}\sin^{2}u+c^{2}\cos^{2}u} & 0\\
+0 & \frac{1}{a^{2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+II_{a}\left(X,Y\right)=\left\langle SX,Y\right\rangle =II_{a}\left(SX,Y\right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $a=c$
+\end_inset
+
+, אז 
+\begin_inset Formula 
+\[
+g=\begin{pmatrix}a^{2} & 0\\
+0 & a^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}a & 0\\
+0 & a\cos^{2}u
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\begin{pmatrix}\frac{1}{a} & 0\\
+0 & \frac{1}{a}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - עקמומיות
+\end_layout
+
+\begin_layout Standard
+הגדרנו כבר עקמומיות עבור עקומה)=מסילה( - עכשיו נגדיר עקמומיות עבור משטח.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+ערכי העקמומיות הראשיים
+\emph default
+ הם הע"ע של 
+\begin_inset Formula $S$
+\end_inset
+
+, והכיוונים הראשיים הם הווקטורים העצמיים המתאימים, אשר מאונכים זה לזה.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+עקמומיות גאוס
+\emph default
+ מוגדרת להיות
+\begin_inset Formula 
+\[
+K=\det S=\frac{\det B}{\det g}=k_{1}\cdot k_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+עקמומיות ממוצעת
+\emph default
+ מוגדרת להיות
+\begin_inset Formula 
+\[
+H=\frac{1}{2}\textnormal{tr }S=\frac{1}{2}\left(k_{1}+k_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נסתכל על גליל אינסופי ברדיוס 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ אפשר לכתוב לו מפה:
+\begin_inset Formula 
+\[
+r=\begin{pmatrix}R\cos u\\
+R\sin u\\
+v
+\end{pmatrix}
+\]
+
+\end_inset
+
+נחשב:
+\begin_inset Formula 
+\[
+r_{u}=\begin{pmatrix}-R\sin u\\
+R\cos u\\
+0
+\end{pmatrix}\qquad r_{v}=\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g=\begin{pmatrix}R^{2} & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g^{-1}=\begin{pmatrix}\frac{1}{R^{2}} & 0\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{n}=\begin{pmatrix}\hat{x} & \hat{y} & \hat{z}\\
+-R\sin u & R\cos u & 0\\
+0 & 0 & 1
+\end{pmatrix}\cdot\frac{1}{\left\Vert \cdot\right\Vert }=\frac{\hat{x}R\cos u+\hat{y}R\sin u}{\sqrt{R^{2}\cos^{2}u+R^{2}\sin^{2}u}}=\begin{pmatrix}\cos u\\
+\sin u\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{uu}=\begin{pmatrix}-R\cos u\\
+-R\sin u\\
+0
+\end{pmatrix}\qquad r_{uv}=r_{vu}=0\qquad r_{vv}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}-R & 0\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\begin{pmatrix}-\frac{1}{R} & 0\\
+0 & 0
+\end{pmatrix}=g^{-1}B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H=-\frac{1}{2R}\qquad K=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עקמומיות גאוס של החרוט היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+! זה קורה בגלל שאפשר לקפל נייר לגליל בלי לקמט אותו - מה שאי אפשר למשל לעשות
+ עם כדור.
+ אי אפשר לדעת שגליל הוא עקום רק מתוך טיול עליו - שוב, בניגוד לכדור ששם אפשר
+ להגיע למשולש שכל זוויותיו ישרות וכך להסיק שמדובר במשטח עקום.
+\end_layout
+
+\begin_layout Section*
+תזכורת - סימונים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{ij}B^{jk}=\sum_{j}A_{ij}B^{jk}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{i,j}\equiv\frac{\partial A_{i}}{\partial x^{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{,ij}=\frac{\partial^{2}A}{\partial x^{i}\partial x^{j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מטריצה הפכית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g^{ij}$
+\end_inset
+
+ מוגדרת להיות ההפכית של 
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $g_{ij}\cdot g^{jk}=\delta_{i}^{\hspace{4bp}k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקדמי כריסטופל
+\end_layout
+
+\begin_layout Standard
+אם יש לנו פרמטריזציה של משטח 
+\begin_inset Formula $r:U_{\subseteq\mathbb{R}^{2}}\to M\subseteq\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לאחר שחישבנו את
+\begin_inset Formula 
+\[
+r_{,1}\qquad r_{,2}\qquad\hat{n}
+\]
+
+\end_inset
+
+אפשר לחשב את
+\begin_inset Formula 
+\begin{eqnarray*}
+r_{,11} & = & \Gamma_{\hspace{4bp}11}^{1}r_{,1}+\Gamma_{\hspace{4bp}11}^{2}r_{,2}+b_{11}\hat{n}\\
+r_{,21}=r_{,12} & = & \Gamma_{\hspace{4bp}12}^{1}r_{,1}+\Gamma_{\hspace{4bp}12}^{2}r_{,2}+b_{12}\hat{n}\\
+r_{,22} & = & \Gamma_{\hspace{4bp}22}^{1}r_{,1}+\Gamma_{\hspace{4bp}22}^{2}r_{2}+b_{22}\hat{n}
+\end{eqnarray*}
+
+\end_inset
+
+ובסימון איינשטיין ניתן לכתוב
+\begin_inset Formula 
+\[
+r_{,ij}=\Gamma_{\hspace{4bp}ij}^{k}r_{,k}+b_{ij}\hat{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma_{\hspace{4bp}ij}^{k}$
+\end_inset
+
+ נקראי 
+\emph on
+מקדמי כריסטובל
+\emph default
+, והם מוגדרים לפי הנוסחאות הללו.
+ את 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+ אפשר לחשב לפי:
+\begin_inset Formula 
+\[
+b_{ij}=\left\langle r_{,ij},\hat{n}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז צריך לחשב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מספרים:
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{1}\qquad\Gamma_{\hspace{4bp}12}^{1}=\Gamma_{\hspace{4bp}21}^{1}\qquad\Gamma_{\hspace{4bp}22}^{1}
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{2}\qquad\Gamma_{\hspace{4bp}12}^{2}=\Gamma_{\hspace{4bp}21}^{2}\qquad\Gamma_{\hspace{4bp}22}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מה זה נותן לנו?
+\end_layout
+
+\begin_layout Standard
+אם יש לנו יריעה ווקטור המשיק לנקודה, אנו רוצים לדעת איך הוקטור המשיק משתנה
+ עם שינוי הנקודה.
+ זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Parallel displacement
+\lang hebrew
+.
+ הרעיון הוא שאם רוצים להמשיך ללכת באותו כיוון על משטח עקום, אז אי אפשר לשמור
+ על אותו כיוון כמו במשטח ישר, ולכן משתמשים בהיטל על מישור, ומסתפקים בכל
+ שההיטל שומר על כיוון.
+\end_layout
+
+\begin_layout Section*
+הקשר בין התבנית היסודית הראשונה למקדמי כריסטופל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle r_{,ij},r_{,m}\right\rangle =\left\langle \Gamma_{\hspace{4bp}ij}^{k}r_{,k},r_{,m}\right\rangle +\xcancel{\left\langle b_{ij}\hat{n},r_{,m}\right\rangle }=\Gamma_{\hspace{4bp}ij}^{k}g_{km}
+\]
+
+\end_inset
+
+שכן 
+\begin_inset Formula $\left\langle r_{,k},r_{,m}\right\rangle \equiv g_{km}$
+\end_inset
+
+.
+ עכשיו:
+\begin_inset Formula 
+\[
+g_{ij,m}=\frac{\partial}{\partial x^{m}}\left\langle r_{,i},r_{,j}\right\rangle =\left\langle r_{,im},r_{,j}\right\rangle +\left\langle r_{,jm},r_{,i}\right\rangle =\Gamma_{\hspace{4bp}mj}^{k}g_{ki}+\Gamma_{\hspace{4bp}ij}^{k}g_{km}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{jm,i}=\Gamma_{\hspace{4bp}ji}^{k}g_{km}+\Gamma_{\hspace{4bp}mi}^{k}g_{kj}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{mi,j}=\Gamma_{\hspace{4bp}mj}^{k}g_{ki}+\Gamma_{\hspace{4bp}ij}^{k}g_{km}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{mi,j}+g_{jm,i}-g_{ij,m}=2\Gamma_{\hspace{4bp}ij}^{k}g_{km}
+\]
+
+\end_inset
+
+)חשוב לזכור - משתמשים כאן בסימוני איינשטיין!(
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל את המקדמים 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ עצמם, אבל יש לנו כאן כפל ב
+\begin_inset Formula $g_{km}$
+\end_inset
+
+ - ולכן נכפיל בהפכי:
+\begin_inset Formula 
+\[
+g^{nm}\left(g_{mi,j}+g_{jm,i}-g_{ij,m}\right)=2\Gamma_{\hspace{4bp}ij}^{k}g_{km}g^{mn}=2\Gamma_{ij}^{k}\delta_{u}^{n}=2\Gamma_{\hspace{4bp}ij}^{n}
+\]
+
+\end_inset
+
+וקיבלנו את הנוסחה למקדמי כריסטופל:
+\begin_inset Formula 
+\[
+\boxed{\Gamma_{\hspace{4bp}ij}^{k}=\frac{1}{2}g^{km}\left(g_{mi,j}+g_{jn,i}-g_{ij,k}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אנו מתעניינים בשני מימדים, אבל באופן כללי המשוואה הזו נכונה לכל מימד.
+\end_layout
+
+\begin_layout Section*
+במפורש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{1}=\frac{1}{2}\left(g^{11}g_{11,1}+g^{12}\left(2g_{12,1}-g_{11,2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{2}=\frac{1}{2}\left(g^{12}g_{11,1}+g^{22}\left(2g_{21,1}-g_{11,2}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}12}^{1}=\Gamma_{\hspace{4bp}12}^{1}=\frac{1}{2}\left(g^{11}g_{11,2}+g^{12}g_{22,1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}12}^{2}=\Gamma_{\hspace{4bp}21}^{2}=\frac{1}{2}\left(g^{12}g_{11,2}+g^{22}g_{22,1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}22}^{1}=\frac{1}{2}\left(g^{11}\left(2g_{12,2}-g_{22,1}\right)+g^{12}g_{22,2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}22}^{2}=\frac{1}{2}\left(g^{12}\left(2g_{12,2}-g_{22,1}\right)+g^{22}g_{22,2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

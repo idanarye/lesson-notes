@@ -1,0 +1,1134 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרות וסימונים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אות
+\series default
+ סימן בסיסי 
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+א"ב
+\series default
+ 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, אוסף האותיות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מילה
+\series default
+ 
+\begin_inset Formula $w$
+\end_inset
+
+, רצף של אותיות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+ אורך המילה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\#_{\sigma}\left(w\right)$
+\end_inset
+
+ מספר מופעי האות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ במילה 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ המילה הריקה.
+ 
+\begin_inset Formula $\left|\epsilon\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Sigma^{n}$
+\end_inset
+
+ אוסף המילים באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Sigma^{+}$
+\end_inset
+
+ אוסף המילים הניתן לייצר מאותיות 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Sigma^{+}=\bigcup\limits _{n\in\mathbb{N}}\Sigma^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Sigma^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\Sigma^{+}$
+\end_inset
+
+ בתוספת 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Sigma^{*}=\bigcup\limits _{n\in\mathbb{N}_{0}}\Sigma^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה - 
+\begin_inset Formula $\begin{array}{c}
+\mathbb{N}=\left\{ 1,2,3,...\right\} \\
+\mathbb{N}_{0}=\left\{ 0,1,2,...\right\} 
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שרשור
+\series default
+ 
+\begin_inset Formula $w_{1},w_{2}\in\Sigma^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{1}\cdot w_{2}=w_{1}w_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+רישא
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ רישא של 
+\begin_inset Formula $y$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $z\in\Sigma^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=x\cdot z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סיפא
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ סיפא של 
+\begin_inset Formula $y$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $z\in\Sigma^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=z\cdot x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תת
+\begin_inset space ~
+\end_inset
+
+מילה
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ תת מילה של 
+\begin_inset Formula $y$
+\end_inset
+
+ אם קיימות 
+\begin_inset Formula $z_{1},z_{2}\in\Sigma^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $y=z_{1}xz_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+רוורס
+\series default
+ אם 
+\begin_inset Formula $w=\sigma_{1}\sigma_{2}\cdots\sigma_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $w^{R}=\sigma_{n}\sigma_{n-1}\cdots\sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שפה
+\series default
+ אוסף)קבוצה( של מילים מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שרשור
+\series default
+ 
+\begin_inset Formula $L_{1}\cdot L_{2}=\left\{ w_{1}\cdot w_{2}\middle|\begin{array}{c}
+w_{1}\in L_{1}\\
+w_{2}\in L_{2}
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $L^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $L^{n}=\overbrace{L\cdot L\cdots L}^{n\textnormal{ times}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $L^{+}$
+\end_inset
+
+ 
+\begin_inset Formula $\bigcup\limits _{n\in\mathbb{N}}L^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $L^{*}$
+\end_inset
+
+ 
+\begin_inset Formula $\bigcup\limits _{n\in\mathbb{N}_{0}}L^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+רוורס
+\series default
+ 
+\begin_inset Formula $L^{R}=\left\{ w^{R}\middle|w\in L\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אוטומט סופי דטרמיניסטי מלא
+\end_layout
+
+\begin_layout Section*
+דוגמה לאוטומט
+\end_layout
+
+\begin_layout Standard
+אוטומט של מכונת משקאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar@/^{2pc}/[rrr]^{a}\ar@(ul,ur)^{b} &  &  & *++[o][F=]{q_{1}}\ar@/^{2pc}/[lll]^{b}\ar@(ul,ur)^{a}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $a$
+\end_inset
+
+ הכנסת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שקלים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $b$
+\end_inset
+
+ הוצאת כסף
+\end_layout
+
+\begin_layout Standard
+ניתן להתייחס לאוטומט כקופסה שחורה שמקבלת קלט - מילה 
+\begin_inset Formula $w$
+\end_inset
+
+ - ומחזירה פלט - האם מקבל את 
+\begin_inset Formula $w$
+\end_inset
+
+ או לא?
+\end_layout
+
+\begin_layout Section*
+הגדרה פורמלית
+\end_layout
+
+\begin_layout Standard
+אוטומט הוא חמישיה:
+\begin_inset Formula 
+\[
+A=\left\langle Q,\Sigma,q_{0},F\right\rangle 
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Q$
+\end_inset
+
+ קבוצת מצבים 
+\bar under
+סופית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ א"ב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ המצב ההתחלתי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\delta$
+\end_inset
+
+ פונקציית מעברים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F$
+\end_inset
+
+ מצבים מקבלים
+\end_layout
+
+\begin_layout Section*
+פונקציית המעברים
+\end_layout
+
+\begin_layout Standard
+פונקציית המעברים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מוגדרת 
+\begin_inset Formula $\delta:Q\times\Sigma\to Q$
+\end_inset
+
+ - לכל מצב ולכל אות מוגדר מצב חדש.
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר בתור רשימה - למשל עבור הדוגמה
+\begin_inset Formula 
+\begin{eqnarray*}
+\delta\left(q_{0},a\right) & = & q_{1}\\
+\delta\left(q_{0},b\right) & = & q_{0}\\
+\delta\left(q_{1},a\right) & = & q_{1}\\
+\delta\left(q_{1},b\right) & = & q_{0}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר השורות ברשימה צריך להיות 
+\series bold
+בדיוק
+\series default
+ 
+\begin_inset Formula $\left|Q\right|\cdot\left|\Sigma\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם להגדיר אותה באמצעות טבלה:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Sigma\backslash Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+inputencoding{cp1255}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - מסלול ריצה
+\end_layout
+
+\begin_layout Standard
+מסלול ריצה של 
+\begin_inset Formula $w=\sigma_{1}\sigma_{2}\cdots\sigma_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{q_{0}}\ar[rr]^{\sigma_{1}} &  & *++[o][F]{q_{1}}\ar[rr]^{\sigma_{2}} &  & *++[o][F]{q_{0}}\ar[rr]^{\sigma_{3}} &  & \cdots\ar[rr]^{\sigma_{n-1}} &  & *++[o][F]{q_{4}}\ar[rr]^{\sigma_{n}} &  & *++[o][F]{q_{0}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הרחבה למילים של 
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{\delta}\left(q,\epsilon\right)=q
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{\delta}\left(q,w\cdot\sigma\right)=\delta\left(\hat{\delta}\left(q,w\right),\sigma\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - שפת האוטומט
+\end_layout
+
+\begin_layout Standard
+שפת האוטומט - 
+\begin_inset Formula 
+\[
+L\left(A\right)=\left\{ w\middle|\hat{\delta}\left(q\cdot w\right)\in F\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כזכור, 
+\begin_inset Formula $\digamma$
+\end_inset
+
+ היא קבוצת המצבים המקבלים, 
+\begin_inset Formula $F\in Q$
+\end_inset
+
+.
+ נסמן מצב מקבל ע"י 
+\begin_inset Formula $\xymatrix{*++[o][F=]{q}}
+$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+המשימה
+\end_layout
+
+\begin_layout Standard
+בהינתן שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, בנו אוטומט סופי דטרמיניסטי מלא המקבל את 
+\begin_inset Formula $L$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $L\left(A\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בדוגמאות שלנו - 
+\begin_inset Formula $\Sigma=\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+למה הכוונה בדטרמיניטסי ומלא?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מלא
+\series default
+ לכל מצב ולכל אות, פונקציית המעברים מגדירה מצב חדש.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דטרמיניסטי
+\series default
+ לכל מצב ולכל אות, יש בדיוק מצב אחד שעוברים אליו.
+\end_layout
+
+\begin_layout Standard
+נרצה לבנות אוטומט עם כמה שפחות מצבים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+אוסף המילים המכילות תת המילה/קטע/מקטע 
+\begin_inset Formula $ab$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[r]^{a}\ar@(ul,ur)^{b} & *++[o][F]{q_{a}}\ar[r]^{b}\ar@(ul,ur)^{a} & *++[o][F=]{q_{ab}}\ar@(u,r)^{a,b}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח באופן פורמלי שהאוטומט עובד, אבל זה ארוך ומסובך, ולא נרצה לעשות
+ את זה עבור כל אוטומט שנכתוב.
+ במקום זה, יותר קל לבדוק את ריצת האוטומט עבור מספר מילים.
+\end_layout
+
+\begin_layout Standard
+הבעיה היא, שתמיד יכול להיות שפספסנו בדיוק את המילה שלא עובדת כמו שצריך.
+ לכן עדיף לנסות להבין את הלוגיקה.
+\end_layout
+
+\begin_layout Itemize
+מתחילים במצב 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+.
+ אם מקבלים 
+\begin_inset Formula $b$
+\end_inset
+
+, זה לא מקדם אותנו לשום מקום, ולכן נשארים ב
+\begin_inset Formula $q_{0}$
+\end_inset
+
+.
+ אם מקבלים 
+\begin_inset Formula $a$
+\end_inset
+
+, אז זה כבר ההתחלה של תת המילה 
+\begin_inset Formula $ab$
+\end_inset
+
+ שאנו מחפשים, ולכן אנו עוברים למצב 
+\begin_inset Formula $q_{a}$
+\end_inset
+
+, שמסמל שאנו זוכרים שקיבלנו 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+במצב 
+\begin_inset Formula $q_{a}$
+\end_inset
+
+, אם מקבלים 
+\begin_inset Formula $b$
+\end_inset
+
+, אז מגיעים למצב 
+\begin_inset Formula $q_{ab}$
+\end_inset
+
+, שאומר שכבר קיבלנו את תת המילה שחיפשנו.
+ אם מקבלים 
+\begin_inset Formula $a$
+\end_inset
+
+, אז נשארים ב
+\begin_inset Formula $q_{a}$
+\end_inset
+
+, כי אנחנו עדיין מחכים ל
+\begin_inset Formula $b$
+\end_inset
+
+ שיבוא אחריו.
+\end_layout
+
+\begin_layout Itemize
+מצב 
+\begin_inset Formula $q_{ab}$
+\end_inset
+
+ זוכר שכבר קיבלנו את תת המילה 
+\begin_inset Formula $ab$
+\end_inset
+
+, ולכן נשארים בו עד לסוף המילה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+שפת המילים מעל 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ בהן האות הלפני אחרונה היא 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[r]_{a}\ar@(lu,ru)^{b} & *++[o][F]{q_{1}}\ar[r]^{a}\ar[rd]^{b} & *++[o][F=]{q_{2}}\ar@(lu,ru)^{a}\ar[d]^{b}\\
+ &  &  & *++[o][F=]{q_{3}}\ar@/^{1pc}/[lu]^{a}\ar@/^{2pc}/[llu]^{b}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בצורה פורמלית, האוטומט הוא
+\begin_inset Formula 
+\[
+A=\left\langle \left\{ q_{0},q_{1},q_{2},q_{3}\right\} ,\left\{ a,b\right\} ,q_{0},\delta,\left\{ q_{2},q_{3}\right\} \right\rangle 
+\]
+
+\end_inset
+
+אין צורך לכתוב את 
+\begin_inset Formula $\delta$
+\end_inset
+
+ בצורה פורמלית - הציור יותר מובן.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\left\{ w=\sigma_{1}\cdots\sigma_{n}\middle|\begin{array}{c}
+\sigma_{i}\in\Sigma\\
+\wedge\\
+\sigma_{1}\neq\sigma_{n}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[rr]^{a}\ar[dd]^{b} &  & *++[o][F]{q_{1}}\ar@/^{1pc}/[rr]^{b}\ar@(ld,rd)_{a} &  & *++[o][F=]{q_{3}}\ar@/^{1pc}/[ll]^{a}\ar@(ld,rd)^{b}\\
+\\
+ & *++[o][F]{q_{2}}\ar@/^{1pc}/[rr]^{a}\ar@(ld,rd)_{b} &  & *++[o][F=]{q_{4}}\ar@(u,r)^{a}\ar@/^{1pc}/[ll]^{b}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1410 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+סדרות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ סדרת מספרים מרוכבים.
+ הסדרה נקראת חסומה אם קיים מספר ממשי 
+\begin_inset Formula $0<M$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall_{n\in\mathbb{N}}\left|z_{n}\right|<M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ סדרת מספרים מרוכבים.
+ סדרה 
+\begin_inset Formula $\left[z_{n}\right]$
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $w\in\mathbb{C}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall_{n>n_{0}}\left|z_{n}-w\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סימון: 
+\begin_inset Formula $\lim\limits _{n\to\infty}z_{n}=w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ i^{n}\right\} \qquad\left\{ \left(\cfrac{1}{1+i}\right)^{n}\right\} \qquad\left\{ n^{2}\left(i^{n}-1\right)\right\} 
+\]
+
+\end_inset
+
+האם הסדרות האלה חסומות?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ i^{n}\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $\left|i^{n}\right|=\left|i\right|^{n}=1^{n}=1$
+\end_inset
+
+ - הסדרה חסומה ע"י 
+\begin_inset Formula $M=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \left(\cfrac{1}{1+i}\right)^{n}\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $\left|\cfrac{1}{1+i}\right|^{n}=\left(\cfrac{1}{\left|1+i\right|}\right)^{n}=\left(\cfrac{1}{\sqrt{2}}\right)^{n}$
+\end_inset
+
+ - הסדרה חסומה ע"י 
+\begin_inset Formula $M=\cfrac{1}{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ n^{2}\left(i^{2}-1\right)\right\} $
+\end_inset
+
+: לכל 
+\begin_inset Formula $n\neq4k$
+\end_inset
+
+: 
+\begin_inset Formula $\left|n^{2}\left(i^{n}-1\right)\right|=n^{2}\sqrt{2}\to\infty$
+\end_inset
+
+ - הסדרה אינה חסומה
+\end_layout
+
+\begin_layout Section*
+עוד תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו כי אם 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ חסומה אז גם הסדרות הבאות חסומות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \cfrac{1}{n}\sum\limits _{i=1}^{n}a_{n}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\cfrac{1}{n}\sum_{i=1}^{n}a_{i}\right|=\cfrac{1}{n}\left|\sum a_{i}\right|\le\cfrac{1}{n}\sum\left|a_{i}\right|\le\cfrac{1}{n}\cdot M\cdot n=M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \sqrt[n]{\prod\limits _{i=1}^{n}a_{i}}\right\} $
+\end_inset
+
+ - הפתרון דומה
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו כי אם סדרה 
+\begin_inset Formula $\left\{ w_{n}\right\} $
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $w$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\{ \left|w_{n}\right|\right\} $
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $\left|w\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההיפך לא נכון.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה נוכיח את אי השוויון 
+\begin_inset Formula $\left|u-v\right|\ge\left|\left|u\right|-\left|v\right|\right|$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+u=\left(u-v\right)+v\Rightarrow\left|u\right|\le\left|u-v\right|+\left|v\right|\Rightarrow\left|u-v\right|\ge\left|u\right|-\left|v\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\left(v-u\right)+u\Rightarrow\left|v\right|\le\left|v-u\right|+\left|u\right|\Rightarrow\left|u-v\right|\ge\left|v\right|-\left|u\right|=-\left(\left|u\right|-\left|v\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left|u-v\right|\ge\left|\left|u\right|-\left|v\right|\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $u=w_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $v=w$
+\end_inset
+
+.
+ הסדרה 
+\begin_inset Formula $\left\{ w_{n}\right\} $
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $w$
+\end_inset
+
+, כלומר לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|w_{n}-w\right|<\epsilon$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+\left|\left|w_{n}\right|-\left|w\right|\right|\le\left|w_{n}-w\right|<\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה לכך שההיפך לא נכון:
+\begin_inset Formula 
+\[
+w_{n}=\left(-1\right)^{n}\qquad\left|w_{n}\right|=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מבחן שורש)מבחן קושי(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup_{n\to\infty}\sqrt[n]{\left|z_{n}\right|}<1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מתכנס בהחלט
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup_{n\to\infty}\sqrt[n]{\left|z_{n}\right|}>1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup_{n\to\infty}\sqrt[n]{\left|z_{n}\right|}=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא ידוע
+\end_layout
+
+\begin_layout Section*
+מבחן מנה)דלאמבר(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup\limits _{n\to\infty}\left|\cfrac{z_{n+1}}{z_{n}}\right|<1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מתכנס בהחלט
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup\limits _{n\to\infty}\left|\cfrac{z_{n+1}}{z_{n}}\right|>1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup\limits _{n\to\infty}\left|\cfrac{z_{n+1}}{z_{n}}\right|=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לא ידוע
+\end_layout
+
+\begin_layout Section*
+מבחן ראמבה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\limsup\limits _{n\to\infty}\left(n\left(\left|\cfrac{z_{n+1}}{z_{n}}\right|-1\right)\right)<-1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מתכנס בהחלט
+\end_layout
+
+\begin_layout Part*
+פונקציות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+רציפות
+\series default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\lim\limits _{z\to z_{0}}f\left(z\right)=f\left(z_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+גזירות
+\series default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ אם 
+\begin_inset Formula $\lim\limits _{z\to z_{0}}\cfrac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}$
+\end_inset
+
+ קיים וסופי)
+\begin_inset Formula $f'\left(z\right)=$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אנליטיות
+\series default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ אם היא גזירה בסביבה כלשהי של נק' 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+)עיגול ברדיוס כלשהי סביב הנקודה(
+\end_layout
+
+\begin_layout Section*
+תנאי קושי רימן)
+\lang english
+C-R
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x+iy\right)=u\left(x,y\right)+iv\left(x,y\right)$
+\end_inset
+
+.
+ תנאי קושי רימן הוא
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+u_{x}=v_{y}\\
+u_{y}=-v_{x}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+ גזירה בנק' 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}$
+\end_inset
+
+ אז היא מקיימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-R
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנק' 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $u,v$
+\end_inset
+
+ דיפרנציאביליות ב
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ ומקיימות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-R
+\lang hebrew
+, אז 
+\begin_inset Formula $f=u+iv$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'=u_{x}+iv_{x}=v_{y}-iu_{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+בדקו האם הפונקציות הבאות רציפות/גזירות/אנליטיות ב
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\bar{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(z\right)=\left|z\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h\left(z\right)=\bar{z}-4z^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x+iy\right)=x-iy$
+\end_inset
+
+ - רציפה.
+ נבדוק גזירות בשתי דרכים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לפי הגדרה:
+\begin_inset Formula 
+\[
+\lim_{z\to0}\cfrac{f\left(z\right)-f\left(0\right)}{z-0}=\lim_{z\to0}\cfrac{\bar{z}}{z}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\lim_{z=x+i0\to0}\cfrac{x}{x}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\lim_{z=0+iy\to0}\cfrac{-y}{y}=-1
+\]
+
+\end_inset
+
+הגבול לא קיים, לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ לא גזירה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, לכן היא גם לא אנליטית ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\bar{z}=\underbrace{x}_{u}-i\underbrace{y}_{v}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{x}=1\qquad v_{y}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\textnormal{C-R}$
+\end_inset
+
+ לא מתקיים כי 
+\begin_inset Formula $u_{x}\neq v_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\left(z\right)=\left|z\right|^{2}=x^{2}+y^{2}$
+\end_inset
+
+ - רציפה.
+ נבדוק גזירות:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\textnormal{C-R}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+u_{x}=2x &  & v_{x}=0\\
+u_{y}=2y &  & v_{y}=0
+\end{eqnarray*}
+
+\end_inset
+
+בנק' 
+\begin_inset Formula $z_{0}=0=0+i0$
+\end_inset
+
+, 
+\begin_inset Formula $u_{x}=v_{x}=u_{y}=v_{y}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הפונקציה גזירה ב
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+, אבל לא אנליטית כי לא גזירה בשום נקודה אחרת.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $h=\bar{z}-4z^{3}$
+\end_inset
+
+ - ברור שהיא רציפה, נבדוק גזירות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\bar{z}=\bar{h}=h+4z^{3}$
+\end_inset
+
+.
+ אילו הפונקציה 
+\begin_inset Formula $h$
+\end_inset
+
+ גזירה אז גם 
+\begin_inset Formula $\bar{h}$
+\end_inset
+
+ גזירה, אבל לפי סעיף א', 
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ לא גזירה באף נקודה.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+דיפרנציאביליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ נקראת דיפרנציאבילית ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, אם קיים 
+\begin_inset Formula $\alpha\in\mathbb{C}$
+\end_inset
+
+ כך שבסביבה של 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ ניתן להציג את 
+\begin_inset Formula $f$
+\end_inset
+
+ כ
+\begin_inset Formula 
+\[
+f\left(z\right)=f\left(z_{0}\right)+\alpha\left(z-z_{0}\right)+\phi\left(z\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\lim_{z\to z_{0}}\cfrac{\phi\left(z\right)}{z-z_{0}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Enumerate
+אפשר להוכיח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ 
+\bar under
+אם"ם
+\bar default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\alpha=f'\left(z_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל: יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות בנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(z_{0}\right)=g\left(z_{0}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g'\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\lim\limits _{z\to z_{0}}\cfrac{f\left(z\right)}{g\left(z\right)}=\lim\limits _{z\to z_{0}}\cfrac{f'\left(z_{0}\right)}{g'\left(z_{0}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי )
+\numeric on
+1
+\numeric off
+(, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ דיפרנציאביליות.
+\begin_inset Formula 
+\[
+f\left(z\right)=f\left(z_{0}\right)+\alpha_{f}\left(z-z_{0}\right)+\phi_{f}\left(z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(z\right)=g\left(z_{0}\right)+\alpha_{g}\left(z-z_{0}\right)+\phi_{g}\left(z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{z\to z_{0}}\cfrac{f\left(z\right)}{g\left(z\right)}=\lim_{z\to z_{0}}\cfrac{\alpha_{f}\left(z-z_{0}\right)+\phi_{f}}{\alpha_{g}\left(z-z_{0}\right)+\phi_{g}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{z\to z_{0}}\cfrac{\alpha_{f}+\cfrac{\phi_{f}}{z-z_{0}}}{\alpha_{g}+\cfrac{\phi_{g}}{z-z_{0}}}=\lim\cfrac{f'\left(z\right)}{g'\left(z\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בתחום כלשהו 
+\begin_inset Formula $D$
+\end_inset
+
+, לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)\right|=\textnormal{const}=C\in\mathbb{R}$
+\end_inset
+
+.
+ צ"ל: 
+\begin_inset Formula $f$
+\end_inset
+
+ קבועה ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $g\left(z\right)=\left|f\left(z\right)\right|^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)=C^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x+iy\right)=u^{2}+v^{2}=C^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+g_{x}=2uu_{x}+2vv_{x}=0\\
+g_{y}=2uu_{y}+2vv_{y}=0
+\end{array}\right.\Rightarrow\begin{pmatrix}u_{x} & v_{x}\\
+u_{y} & v_{y}
+\end{pmatrix}\begin{pmatrix}u\\
+v
+\end{pmatrix}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $C=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $u=v=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f=u+iv=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $C\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\begin{pmatrix}u\\
+v
+\end{pmatrix}\neq0$
+\end_inset
+
+.
+ קיים פתרון רק אם 
+\begin_inset Formula $0=\det\begin{pmatrix}u_{x} & v_{x}\\
+u_{y} & v_{y}
+\end{pmatrix}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $u_{x}v_{y}-v_{x}u_{y}=0$
+\end_inset
+
+.
+ נשתמש ב
+\lang english
+C-R
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+v_{y}=u_{x}\qquad v_{x}=-u_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}^{2}+u_{y}^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}=u_{y}=0\Rightarrow v_{x}=v_{y}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ קבועה
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\textnormal{Re}f\left(z\right)\right)^{2}=\textnormal{Im}\left(f\left(z\right)\right)$
+\end_inset
+
+.
+ צ"ל: 
+\begin_inset Formula $f$
+\end_inset
+
+ קבועה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{x}=v_{y}=2u\cdot u_{y}=-2uv_{x}=-4u^{2}u_{X}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}\left(1+4u^{2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u_{x}=0\Rightarrow v_{y}=0
+\]
+
+\end_inset
+
+באותו אופן נקבל 
+\begin_inset Formula $u_{y}=...$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u_{y}=v_{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x+iy\right)=u\left(x,y\right)+iv\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+\cfrac{\partial f}{\partial z}=\cfrac{1}{2}\left(\cfrac{\partial f}{\partial x}-u\cfrac{\partial f}{\partial y}\right)\qquad\cfrac{\partial f}{\partial\bar{z}}=\cfrac{1}{2}\left(\cfrac{\partial f}{\partial x}+i\cfrac{\partial f}{\partial y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-R
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\cfrac{\partial f}{\partial\bar{z}}=0$
+\end_inset
+
+, וגם במקרה זה 
+\begin_inset Formula $f'=\cfrac{\partial f}{\partial z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\partial f}{\partial\bar{z}}=\cfrac{1}{2}\left(\cfrac{\partial}{\partial x}+i\cfrac{\partial}{\partial y}\right)\left(u+iv\right)=\cfrac{1}{2}\left(u_{x}+iv_{x}+iu_{y}-v_{y}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\left(u_{x}-v_{y}\right)+\cfrac{1}{2}i\left(u_{y}+v_{x}\right)=0\Leftrightarrow\left\{ \begin{array}{c}
+u_{x}=v_{y}\\
+u_{y}=-v_{x}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial f}{\partial z}=\cfrac{1}{2}\left(\cfrac{\partial}{\partial x}-i\cfrac{\partial}{\partial y}\right)\left(u+iv\right)=\cfrac{1}{2}\left(u_{x}+iv_{x}-iu_{y}+v_{y}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2}\left(u_{x}+v_{y}\right)+\cfrac{1}{2}i\left(v_{x}-u_{y}\right)=u_{x}+iv_{x}=f'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\partial}{\partial\bar{z}}\cfrac{\partial}{\partial z}f=\cfrac{1}{4}\Delta f
+\]
+
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ הוא הלפלסיאן - 
+\begin_inset Formula $\Delta=\cfrac{\partial^{2}}{\partial x^{2}}+\cfrac{\partial^{2}}{\partial y^{2}}$
+\end_inset
+
+(
+\end_layout
+
+\end_body
+\end_document

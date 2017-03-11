@@ -1,0 +1,1156 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונקציה גזירה פעמיים בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ פולינום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cubic spline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנקודות
+\begin_inset Formula 
+\[
+a=x_{0}<x_{1}<\dots<x_{n}=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(a\right)=f'\left(a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(b\right)=f'\left(b\right)
+\]
+
+\end_inset
+
+צ"ל:
+\begin_inset Formula 
+\[
+\int_{a}^{b}\left[g''\left(x\right)\right]^{2}\mathrm{\, d}x\le\int_{a}^{b}\left[f''\left(x\right)\right]^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $D\left(x\right)=f\left(x\right)-g\left(x\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+D'\left(a\right)=0\qquad D'\left(b\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le i\le n\qquad D\left(x_{i}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}\left[f''\left(x\right)\right]^{2}\mathrm{\, d}x=\int_{a}^{b}\left[g''\left(x\right)+D''\left(x\right)\right]^{2}\mathrm{\, d}x=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\\+2\int_{a}^{b}g''\left(x\right)D''\left(x\right)\mathrm{\, d}x+\int_{a}^{b}\left[D''\left(x\right)\right]^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+נרצה להוכיח ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\int_{a}^{b}g''\left(x\right)D''\left(x\right)\mathrm{\, d}x=0$
+\end_inset
+
+.
+ נשתמש באינטרציה בחלקים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset Formula $\left(uv\right)'=u'v+uv'\stackrel{\int}{\Rightarrow}uv=u'v+\int uv'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובמקרה שלנו:
+\begin_inset Formula 
+\[
+\int_{a}^{b}g''\left(x\right)D''\left(x\right)\mathrm{\, d}x=\left[g''\left(x\right)D'\left(x\right)\right]_{a}^{b}-\int_{a}^{b}\left[g'''\left(x\right)D'\left(x\right)\right]\mathrm{\, d}x=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left[g''\left(x\right)D'\left(x\right)\right]_{a}^{b}=0$
+\end_inset
+
+ כי 
+\begin_inset Formula $D'\left(a\right)=D'\left(b\right)=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\cdots=-\int_{a}^{b}\left[g'''\left(x\right)D'\left(x\right)\right]\mathrm{\, d}x=-\sum_{i=0}^{n-1}\int_{x_{i}}^{x_{i+1}}\left[g'''\left(x\right)f'\left(x\right)\right]\mathrm{\, d}x=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\sum_{i=0}^{n-1}\left(\left[g'''\left(x\right)D\left(x\right)\right]_{x_{i}}^{x_{i+1}}-\int_{x_{i}}^{x_{i+1}}\left[g''''\left(x\right)D\left(x\right)\right]\mathrm{\, d}x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left[g'''\left(x\right)D\left(x\right)\right]_{x_{i}}^{x_{i+1}}=0$
+\end_inset
+
+ כי...
+ ו
+\begin_inset Formula $\int_{x_{i}}^{x_{i+1}}\left[g''''\left(x\right)D\left(x\right)\right]\mathrm{\, d}x=0$
+\end_inset
+
+ כי 
+\begin_inset Formula $g$
+\end_inset
+
+ פולינום ממעלה שלישית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{a}^{b}g''\left(x\right)D''\left(x\right)\mathrm{\, d}x=0$
+\end_inset
+
+, ו
+\begin_inset Formula $\int_{a}^{b}\left[D''\left(x\right)\right]^{2}\mathrm{\, d}x\ge0$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\int_{a}^{b}\left[g''\left(x\right)\right]^{2}\mathrm{\, d}x\le\int_{a}^{b}\left[f''\left(x\right)\right]^{2}\mathrm{\, d}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+קירובים
+\end_layout
+
+\begin_layout Standard
+באינטרפולציה, אם יש 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות דגימה אז
+\end_layout
+
+\begin_layout Enumerate
+הפונקציה שאנו בונים חייבת לעבור דרך כל הנקודות.
+\end_layout
+
+\begin_layout Enumerate
+אין לנו שליטה על המעלה של הפולינום - היא חייבת להיות 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בקירוב, לעומת זאת, לא חייבים לעבור דרך כל הנקודות, והמעלה נתונה לבחירתנו.
+\end_layout
+
+\begin_layout Section*
+נורמה של פונקציה
+\end_layout
+
+\begin_layout Standard
+נניח שמצאנו קירוב 
+\begin_inset Formula $p$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ בשביל לבדוק אם הקירוב טוב, צריך למצוא נורמה - 
+\begin_inset Formula $\left\Vert f\left(x\right)-p\left(x\right)\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כזכור, נורמה צריכה לקיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תנאים:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert f\right\Vert \ge0$
+\end_inset
+
+, ו
+\begin_inset Formula $\left\Vert f\right\Vert =0\Leftrightarrow f\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert \alpha f\right\Vert =\left|\alpha\right|\cdot\left\Vert f\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert f+g\right\Vert \le\left\Vert f\right\Vert +\left\Vert g\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שיטת טור טיילור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(x\right)=\sum_{i=0}^{n}f^{\left(i\right)}\left(x_{0}\right)\cdot\cfrac{\left(x-x_{0}\right)^{i}}{n!}
+\]
+
+\end_inset
+
+בשביל זה צריך את הפונקציה המקורית - אבל בד"כ בקירובים יש לנו את הפונקציה
+ המקורית.
+\end_layout
+
+\begin_layout Section*
+מינימקס
+\end_layout
+
+\begin_layout Standard
+נגדיר נורמת אינסוף:
+\begin_inset Formula 
+\[
+\left\Vert f\right\Vert _{\infty}=\max_{a\le x\le b}\left|f\left(x\right)\right|
+\]
+
+\end_inset
+
+אנחנו רוצים למצוא את
+\begin_inset Formula 
+\[
+\inf\limits _{\deg\left(q\right)\le n}\left\Vert f\left(x\right)-q\left(x\right)\right\Vert _{\infty}
+\]
+
+\end_inset
+
+כלומר למצוא את הפולינום ממעלה עד 
+\begin_inset Formula $n$
+\end_inset
+
+ שהמרחק שלו בנורמת אינסוף מ
+\begin_inset Formula $f$
+\end_inset
+
+ הוא מינימלי - כלומר שבנקודה שבה הם הכי רחוקים, המרחק הוא מינימלי.
+\end_layout
+
+\begin_layout Section*
+מזעור ריבועי ההפרשים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Least Squares
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא למזער את האינטגרל של ריבועי ההפרשים בין הפונקציות.
+\end_layout
+
+\begin_layout Standard
+נורמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדרת על ווקטור בתור
+\begin_inset Formula 
+\[
+\left\Vert v\right\Vert _{2}=\sqrt{\sum_{i=0}^{n}\left|v_{i}\right|^{2}}
+\]
+
+\end_inset
+
+במקרה של פונקציה, יש לנו רצף של נקודות, ולכן נשתמש באינטגרל:
+\begin_inset Formula 
+\[
+\left\Vert f\left(x\right)\right\Vert _{2}=\sqrt{\int_{a}^{b}\left|f\left(x\right)\right|^{2}\mathrm{\, d}x}
+\]
+
+\end_inset
+
+אנו רוצים למזער את הערך הזה:
+\begin_inset Formula 
+\[
+\inf\left\Vert f\left(x\right)-r\left(x\right)\right\Vert _{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r\left(x\right)=a_{0}+a_{1}x+a_{2}x^{2}+\dots+a_{n}x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז
+\begin_inset Formula 
+\[
+\left\Vert f-r\right\Vert _{2}=\sqrt{\int_{a}^{b}\left(f\left(x\right)-\sum_{i=0}^{n}a_{i}x^{i}\right)\mathrm{\, d}x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\left(a_{0},a_{1},\dots a_{n}\right)=\int_{a}^{b}\left(f\left(x\right)-\sum_{i=0}^{n}a_{i}x^{i}\right)^{2}\mathrm{\, d}x
+\]
+
+\end_inset
+
+וצריך למצוא את המינימום.
+ יש לנו 
+\begin_inset Formula $n+1$
+\end_inset
+
+ משתנים)
+\begin_inset Formula $a_{0},a_{1},\dots a_{n}$
+\end_inset
+
+(, ולכן צריך לגזור אותה לפי 
+\begin_inset Formula $n+1$
+\end_inset
+
+ משתנים:
+\begin_inset Formula 
+\[
+0\le i\le n\qquad\cfrac{\partial F}{\partial a_{i}}=0
+\]
+
+\end_inset
+
+הנקודות שנקבל יהיו רק נקודות מינימום - לא נקבל נקודות מקסימום כי עבור כל
+ משתנה, 
+\begin_inset Formula $F$
+\end_inset
+
+ היא פרבולה.
+\begin_inset Formula 
+\[
+\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}\left[f\left(x\right)-\sum_{j=0}^{n}a_{j}x^{j}\right]^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}f^{2}\left(x\right)\mathrm{\, d}x-2\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}f\left(x\right)\sum_{j=0}^{n}a_{j}x^{j}+\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}\left(\sum_{j=0}^{n}a_{j}x^{j}\right)^{2}\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+נגזור כל מחובר בנפרד:
+\begin_inset Formula 
+\[
+\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}\left[f''\left(x\right)\right]^{2}\mathrm{\, d}x=\int_{a}^{b}\underbrace{\cfrac{\partial}{\partial a_{i}}\left[f''\left(x\right)\right]^{2}}_{=0}\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-2\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}f\left(x\right)\sum_{j=0}^{n}a_{j}x^{j}=-2\int_{a}^{b}\cfrac{\partial}{\partial a_{i}}f\left(x\right)\sum_{j=0}^{n}a_{j}x^{j}=-2\int_{a}^{b}f\left(x\right)x^{i}\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial}{\partial a_{i}}\int_{a}^{b}\left(\sum_{j=0}^{n}a_{j}x^{j}\right)^{2}\mathrm{\, d}x=\int_{a}^{b}\cfrac{\partial}{\partial a_{i}}\left(\sum_{j=0}^{n}a_{j}x^{j}\right)^{2}\mathrm{\, d}x=2\int_{a}^{b}x^{i}\sum_{j=0}^{n}a_{j}x^{j}\mathrm{\, d}x
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+-2\int_{a}^{b}f\left(x\right)x^{i}\mathrm{\, d}x+2\int_{a}^{b}x^{i}\sum_{j=0}^{n}a_{j}x^{j}\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x\right)x^{i}\mathrm{\, d}x=\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{i+j}\mathrm{\, d}x
+\]
+
+\end_inset
+
+זוהי נוסחה כללית - עכשיו צריך למצוא באמצעותה את כל ה
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ים:
+\begin_inset Formula 
+\[
+\cfrac{\partial F}{\partial a_{0}}=0\qquad\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{j}\mathrm{\, d}x=\int_{a}^{b}f\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial F}{\partial a_{1}}=0\qquad\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{j+1}\mathrm{\, d}x=\int_{a}^{b}xf\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial F}{\partial a_{n}}=0\qquad\sum_{j=0}^{n}a_{j}\int_{a}^{b}x^{n+j}\mathrm{\, d}x=\int_{a}^{b}x^{n}f\left(x\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+ולכן צריך לפתור מערכת:
+\begin_inset Formula 
+\[
+\begin{bmatrix}\int_{a}^{b}1\mathrm{\, d}x & \int_{a}^{b}x\mathrm{\, d}x & \cdots & \int_{a}^{b}x^{n}\mathrm{\, d}x\\
+\int_{a}^{b}x\mathrm{\, d}x & \int_{a}^{b}x^{2}\mathrm{\, d}x & \cdots & \int_{a}^{b}x^{n+1}\mathrm{\, d}x\\
+\vdots & \vdots & \ddots & \vdots\\
+\int_{a}^{b}x^{n}\mathrm{\, d}x & \int_{a}^{n}x^{n+1}\mathrm{\, d}x & \cdots & \int_{a}^{b}x^{2n}\mathrm{\, d}x
+\end{bmatrix}\begin{bmatrix}a_{0}\\
+a_{1}\\
+\vdots\\
+a_{n}
+\end{bmatrix}=\begin{bmatrix}\int_{a}^{b}f\left(x\right)\mathrm{\, d}x\\
+\int_{a}^{b}xf\left(x\right)\mathrm{\, d}x\\
+\vdots\\
+\int_{a}^{b}x^{n}f\left(x\right)\mathrm{\, d}x
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל)ממבחן
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2010
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\ln x$
+\end_inset
+
+ על הקטע 
+\begin_inset Formula $\left[1,e\right]$
+\end_inset
+
+, צריך למצוא פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ טיילור
+\end_layout
+
+\begin_layout Standard
+לא נתנו לנו 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, ולכן נבחר אותו להיות אמצע הקטע - 
+\begin_inset Formula $x_{0}=\cfrac{1+e}{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+p_{2}\left(x\right)=f\left(x_{0}\right)+f'\left(x_{0}\right)\left(x-x_{0}\right)+f''\left(x_{0}\right)\cfrac{\left(x-x_{0}\right)^{2}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=\cfrac{1}{x}\qquad f''\left(x\right)=-\cfrac{1}{x^{2}}\qquad f'''\left(x\right)=\cfrac{2}{x^{3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{2}\left(x\right)=\ln x_{0}+\cfrac{x-x_{0}}{x_{0}}-\cfrac{\left(x-x_{0}\right)^{2}}{2x_{0}^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{2}\left(x\right)=-0.8799+1.076x-0.1447x^{2}
+\]
+
+\end_inset
+
+נמצא את השארית:
+\begin_inset Formula 
+\[
+\left|R_{3}\left(x\right)\right|\le\left|\cfrac{f'''\left(\xi\right)\left(x-x_{0}\right)^{3}}{3!}\right|\qquad\xi\in\left[1,e\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|\cfrac{2}{\xi^{3}}\cdot\cfrac{1}{6}\left(x-x_{0}\right)^{3}\right|=\left|\cfrac{1}{3}\cdot\cfrac{1}{\xi^{3}}\left(x-\cfrac{1+e}{2}\right)^{3}\right|
+\]
+
+\end_inset
+
+אם נבחר 
+\begin_inset Formula $x=\xi=1$
+\end_inset
+
+ נקבל שהשגיאה היא 
+\begin_inset Formula $0.2114$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ מזעור ריבועי ההפרשים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}\int_{1}^{e}1\mathrm{\, d}x & \int_{1}^{e}x\mathrm{\, d}x & \int_{1}^{e}x^{2}\mathrm{\, d}x\\
+\int_{1}^{e}x\mathrm{\, d}x & \int_{1}^{e}x^{2}\mathrm{\, d}x & \int_{1}^{e}x^{3}\mathrm{\, d}x\\
+\int_{1}^{e}x^{2}\mathrm{\, d}x & \int_{1}^{e}x^{3}\mathrm{\, d}x & \int_{1}^{e}x^{4}\mathrm{\, d}x
+\end{bmatrix}\begin{bmatrix}a_{0}\\
+a_{1}\\
+a_{2}
+\end{bmatrix}=\begin{bmatrix}\left[xe-\ln x\right]_{1}^{e}\\
+\left[\cfrac{x^{2}}{2}\ln x-\cfrac{x^{2}}{4}\right]_{1}^{e}\\
+\int_{1}^{e}x^{2}\ln x\mathrm{\, d}x
+\end{bmatrix}
+\]
+
+\end_inset
+
+קיבלנו
+\begin_inset Formula 
+\[
+r_{2}\left(x\right)=-0.9779+1.157x-0.1597x^{2}
+\]
+
+\end_inset
+
+רוצים למצוא את השגיאה:
+\begin_inset Formula 
+\[
+E\left(x\right)=\ln x+0.9779-1.157x+0.1597x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E'=\cfrac{1}{x}-1.157+0.3194x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(1\right)=-0.0194
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(1.424\right)=0.007638
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(2.198\right)=0.006095
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(e\right)=0.01288
+\]
+
+\end_inset
+
+נשים לב שהיינו צריכים לבדוק מקסימום גם בקצוות הקטע, לא רק בנקודות הקריטיות.
+\end_layout
+
+\begin_layout Section*
+שיפור הדיוק באמצעות פולינומי צ'בישב
+\end_layout
+
+\begin_layout Standard
+אם הקטע שלנו הוא 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+, אז במקום להשתמש בפולינומים הרגילים בשביל לבנות את פולינום הקירוב, נשתמש
+ בפולינומי צ'בישב:
+\begin_inset Formula 
+\[
+T_{0}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{1}\left(x\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{n+1}\left(x\right)=2x\cdot T_{n}\left(x\right)-T_{n-1}\left(x\right)
+\]
+
+\end_inset
+
+זו ההגדרה הרקרוסיבית - ואפשר להמשיך:
+\begin_inset Formula 
+\[
+T_{2}\left(x\right)=2x^{2}-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{3}=4x^{3}-x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פולינומי צ'בישב הם אורתוגונלים:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\cfrac{T_{m}\left(x\right)-T_{n}\left(x\right)}{\sqrt{1-x^{2}}}\mathrm{\, d}x=\begin{cases}
+0 & m\neq n\\
+\pi & m=n=0\\
+\cfrac{\pi}{2} & m=n\neq0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להפוך את איברי הבסיס לפולינומי צ'בישב:
+\begin_inset Formula 
+\[
+1=T_{0}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=T_{1}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}=\cfrac{1}{2}\left(T_{0}\left(x\right)+T_{2}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{3}=\cfrac{1}{4}\left(3T_{1}\left(x\right)+T_{3}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{x}=\left[-1,1\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}=1+e+\cfrac{x^{2}}{2!}+\cfrac{x^{3}}{3!}+\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}=T_{0}\left(x\right)+T_{1}\left(x\right)+\cfrac{1}{4}\left(T_{0}\left(x\right)+T_{2}\left(x\right)\right)+\cfrac{1}{24}\left(3T_{1}\left(x\right)+T_{3}\left(x\right)\right)+\dots=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1.2661T_{0}\left(x\right)+1.302T_{1}\left(x\right)+0.2715T_{2}\left(x\right)+\dots=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=0.9446+0.9973x+0.5430x^{2}+\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

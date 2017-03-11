@@ -1,0 +1,1121 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SUBSET SUM
+\end_layout
+
+\begin_layout Standard
+נותנים לנו סדרה של מספרים )נגיד 
+\begin_inset Formula $\left(18,12,4,11,23,4,25\right)$
+\end_inset
+
+( ומספר)נגיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+52
+\numeric off
+( ושואלים אם יש תת קבוצה שהסכום שלה הוא בדיוק המספר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $SUBSETSUM$
+\end_inset
+
+ מוגדרת ככל הזוגות 
+\begin_inset Formula $\left(s,t\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $S$
+\end_inset
+
+ מולטי-קבוצה של מספרים טבעיים, 
+\begin_inset Formula $t$
+\end_inset
+
+ טבעי, וישנה 
+\begin_inset Formula $A\subseteq S$
+\end_inset
+
+ כך שסכום אברי 
+\begin_inset Formula $A$
+\end_inset
+
+ הינו 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NPC\ni SUBSETSUM$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NP\ni SUBSETSUM$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ננחש
+\backslash
+נקבל קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נבדוק ש
+\begin_inset Formula $A\le S$
+\end_inset
+
+ ושסכום אברי 
+\begin_inset Formula $A$
+\end_inset
+
+ הינו בדיוק 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ הבדיקה פולינומית.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NPH\ni SUBSETSUM$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ברדוקציה מ
+\begin_inset Formula $VC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים בהינתן 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+ לבנות 
+\begin_inset Formula $\left(S,t\right)$
+\end_inset
+
+ כך של
+\begin_inset Formula $G$
+\end_inset
+
+ כיסוי קודקודים בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ אם"ם ישנה תת קבוצה 
+\begin_inset Formula $A\subseteq S$
+\end_inset
+
+ שסכומה בדיוק 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+הקבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+: נסמן את קשתות 
+\begin_inset Formula $G$
+\end_inset
+
+ ב
+\begin_inset Formula $e_{0},e_{1},...e_{m-1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+שני מקורות למספרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ "מספר קשתות"
+\begin_inset Newline newline
+\end_inset
+
+עבור הקשת 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ נתאים את המספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $10^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ "מספרי קודקודים"
+\begin_inset Newline newline
+\end_inset
+
+לכל קודקוד 
+\begin_inset Formula $v\in G$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $E_{v}$
+\end_inset
+
+ הקשתות ששכנות ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+ אזי נתאים ל
+\begin_inset Formula $v$
+\end_inset
+
+ את המספר 
+\begin_inset Formula $x_{v}=10^{m}+\sum\limits _{i:e_{i}\in E_{V}}10^{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+המספר 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $t=k\cdot10^{m}+\sum\limits _{i=0}^{m-1}2\cdot10^{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{ &  & b\ar@{-}[rddd]_{0}\ar@{-}[rrd]_{2}\\
+a\ar@{-}[rru]^{1}\ar@{-}[rrrr]^{3} &  &  &  & c\\
+\\
+d\ar@{-}[uu]_{4} &  &  & e\ar@{-}[ruu]_{5}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & \to & e_{0}\\
+10 & \to & e_{1}\\
+100 & \to & e_{2}\\
+1000 & \to & e_{3}\\
+10000 & \to & e_{4}\\
+100000 & \to & e_{5}\\
+1011010 &  & a\\
+1000111 &  & b\\
+1101100 &  & c\\
+1010000 &  & d\\
+1100001 &  & e
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על התכונות של זה.
+ אין זליגה שכן אנו עובדים בבסיס עשר ולכל קשת מחוברים מקסימום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים.
+ לכן אם אנחנו מצליחים להגיע ל
+\begin_inset Formula $k22222...$
+\end_inset
+
+ אנחנו יודעים בוודאות שכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הגיע מהקשת ומקודקוד אחד שנגע בה.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $B\subseteq G$
+\end_inset
+
+ קבוצת קודקודים ב
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $\left|B\right|=k$
+\end_inset
+
+ כיסוי קודקודים ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ נראה קבוצה 
+\begin_inset Formula $A\subseteq S$
+\end_inset
+
+ שסכומה 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ יהיו המספרים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+כל המספרים שמתאימים לקודקודי 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל קשת 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ אם לא שני צדי 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $B$
+\end_inset
+
+, נכניס ל
+\begin_inset Formula $A$
+\end_inset
+
+ את המספר שמתאים ל
+\begin_inset Formula $e_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל בעמודה ה
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $0\le i\le m-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי בהכרח )כיוון ש
+\begin_inset Formula $B$
+\end_inset
+
+ כיסוי קודקודים( ישנו לפחות "
+\numeric on
+1
+\numeric off
+" אחד מתוך המספרים של 
+\begin_inset Formula $A$
+\end_inset
+
+ שהתקבלו מקודקודים.
+ אם ישנם שניים אזי הסכום הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואחרת משלימים את הסכום ל"
+\numeric on
+2
+\numeric off
+" ע"י הוספת המספר שמתאים לקשת.
+ כמו כן, הסכום בעמודה האחרונה הינו 
+\begin_inset Formula $k$
+\end_inset
+
+ - כמספר המספרים שהגיעו מקודקודים.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+בכיוון ההפוך
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A\subseteq S$
+\end_inset
+
+ שסכומה 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ נבנה כיסוי קודקודים ל
+\begin_inset Formula $G$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ כיסוי הקודקודים יכלול את כל הקודקודים שהמספרים המתאימים להם הינם ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שכיוון שאין נשא)
+\lang english
+curry
+\lang hebrew
+( מעמודה לעמודה ב
+\begin_inset Formula $A$
+\end_inset
+
+)או 
+\begin_inset Formula $S$
+\end_inset
+
+( ערך 
+\begin_inset Formula $k$
+\end_inset
+
+ בעמודה ה
+\begin_inset Formula $m$
+\end_inset
+
+ית בהכרח אומר שישנם בדיוק 
+\begin_inset Formula $k$
+\end_inset
+
+ מספרי קודקודים ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+ כמו כן, נשים לב שכל מספרי הקשתות במצורף נותנים רק "
+\numeric on
+1
+\numeric off
+" אחד בכל עמודה)מבין 
+\begin_inset Formula $0,...m-1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כיוון שסכום איברי 
+\begin_inset Formula $A$
+\end_inset
+
+ נותן "
+\numeric on
+2
+\numeric off
+" בעל עמודה בהכרח מתוך המספרים שמתאימים לקודקודים מקבלים לפחות תוספת של
+ "
+\numeric on
+1
+\numeric off
+" לכל עמודה)
+\begin_inset Formula $0,...m-1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר, לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, ישנו שכן בכיסוי הקודקודים כנדרש.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הרפדוקציה פולינומית
+\end_layout
+
+\begin_layout Standard
+כמות מספרי קשתות - 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ גודל כל אחד
+\begin_inset Formula $m\ge$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמות מספרי קודקודים
+\begin_inset Formula $m\ge n\ge$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גודל כל אחד
+\begin_inset Formula $m-1\ge$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה"כ גודל כולל
+\begin_inset Formula 
+\[
+\le m^{2}+\left(m+1\right)n=O\left(\left|G\right|^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+כדי ש
+\begin_inset Formula $SUBSETSUM$
+\end_inset
+
+ תהיה 
+\begin_inset Formula $NP$
+\end_inset
+
+ שלמה, הייצוג של המספרים חייב להיות בינארי)או עשרוני(.
+ אם הייצוג הוא אונרי, הבעייה ב
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+בעיית
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SCH
+\end_layout
+
+\begin_layout Standard
+רשימת מטלות 
+\begin_inset Formula $W=\left\{ w_{i}\right\} _{i=1}^{m}$
+\end_inset
+
+.
+ כל מטלה 
+\begin_inset Formula $w_{i}=\left(t_{i},b_{i},s_{i}\right)$
+\end_inset
+
+ - כמה זמן היא לוקחת)
+\begin_inset Formula $t$
+\end_inset
+
+(, מה הזמן המוקדם ביותר שמותר להתחיל אותה)
+\begin_inset Formula $b$
+\end_inset
+
+(, ומה הזמן המאוחר ביותר שמותר לסיים אותה)
+\begin_inset Formula $s$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+לא ניתן לבצע מספר עבודות במקביל ולא ניתן להפסיק פעילות של עבודה באמצע.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $SCH\subseteq\left\{ \left\{ w_{i}\right\} _{i=1}^{m}\right\} $
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $w_{i}=\left(t_{i},b_{i},s_{i}\right)$
+\end_inset
+
+ וישנו תכנון זמנים לעבודות שעונה על כל האילוצים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NPC\ni SCH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NP\ni SCH$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+בהינתן זמני התחלה 
+\begin_inset Formula $x_{1},...x_{n}$
+\end_inset
+
+ לעבודות 
+\begin_inset Formula $w_{1},...w_{n}$
+\end_inset
+
+ נבדוק שמתקיימים כל האילוצים.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $NPH\ni SCH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ברדוקציה מ
+\begin_inset Formula $SUBSETSUM$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+רוצים
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\left(S,z\right)$
+\end_inset
+
+ לבנות קבוצת עבודות 
+\begin_inset Formula $w=\left\{ w_{i}\right\} _{i=1}^{n}$
+\end_inset
+
+ כך של
+\begin_inset Formula $S$
+\end_inset
+
+ תת קבוצה שסכומה 
+\begin_inset Formula $z$
+\end_inset
+
+ אם"ם ניתן לתזמן את כל העבודות ב
+\begin_inset Formula $w$
+\end_inset
+
+ לפי האילוצים.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $S=\left\{ x_{1},...x_{n}\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $Y=\sum\limits _{i=1}^{n}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x_{i}\in S$
+\end_inset
+
+ נתאים עבודה 
+\begin_inset Formula $w_{i}\in W$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{array}{c}
+\begin{array}{c}
+t_{i}=x_{i}\\
+b_{i}=0\\
+s_{i}=Y+1
+\end{array}\end{array}$
+\end_inset
+
+.
+ בנוסף, ב
+\begin_inset Formula $W$
+\end_inset
+
+ העבודה 
+\begin_inset Formula $\hat{w}=\left(\hat{t},\hat{b},\hat{s}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+\hat{t}=1\\
+\hat{b}=z\\
+\hat{s}=z+1
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שכל פתרון לתכנון הזמנים של 
+\begin_inset Formula $w$
+\end_inset
+
+ בהכרח שם את 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $\left[z,z+1\right]$
+\end_inset
+
+ והעבודה לוקחת את כל הקטע, ולכן ישנו פתרון ל
+\begin_inset Formula $w$
+\end_inset
+
+ אם"ם ניתן לתזמן את שאר העבודות בקטע 
+\begin_inset Formula $\left[0,z\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $\left[z+1,Y+1\right]$
+\end_inset
+
+.
+ הגודל הכולל של קטעים אלו הינו בדיוק 
+\begin_inset Formula $Y$
+\end_inset
+
+, ולכן כל תזמון כזה יצטרך למלא את הקטעים הללו לגמרי.
+\end_layout
+
+\begin_layout Standard
+קיבלנו אם כן שישנו תזמון כנ"ל אם"ם ישנו תזמון שממלא את הקטע 
+\begin_inset Formula $\left[0,z\right]$
+\end_inset
+
+ כולו, שזה אם"ם ישנה תת קבוצה של 
+\begin_inset Formula $S$
+\end_inset
+
+ שסכומה בדיוק 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+המבחן
+\end_layout
+
+\begin_layout Itemize
+משך המבחן - שעתיים וחצי
+\end_layout
+
+\begin_layout Itemize
+מבנה המבחן יהיה דומה למבחנים בשנתיים-שלוש הקודמות
+\end_layout
+
+\begin_layout Itemize
+הכל כלול בחומר של המבחן
+\end_layout
+
+\begin_layout Itemize
+חומר סגור)=בלי חומר(
+\end_layout
+
+\begin_layout Itemize
+תרגילים)לפתור בעיות שלא ראינו קודם(
+\end_layout
+
+\begin_layout Itemize
+בד"כ יש שאלה או סעיף משאלה משיעורי הבית
+\end_layout
+
+\begin_layout Itemize
+דברים שהיו בהרצאה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+להוכיח חלק מהוכחה ארוכה.
+\end_layout
+
+\begin_layout Itemize
+ליישם הוכחה)להפעיל רדוקציה על קלט מסויים(
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

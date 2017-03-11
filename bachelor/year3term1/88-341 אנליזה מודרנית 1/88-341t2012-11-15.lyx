@@ -1,0 +1,971 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פונקציות מדידות
+\end_layout
+
+\begin_layout Standard
+תזכורת: אם 
+\begin_inset Formula $\left(X,S\right)$
+\end_inset
+
+ מרחב מדיד, נאמר ש
+\begin_inset Formula $f:X\to\mathbb{R}^{*}=\left[-\infty,\infty\right]$
+\end_inset
+
+ הינה מדידה)מדידה ב
+\begin_inset Formula $S$
+\end_inset
+
+( אם מתקיים אחד מהתנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ x\in X\middle|f\left(x\right)>\alpha\right\} \in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ s\in X\middle|f\left(x\right)\ge\alpha\right\} \in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ s\in X\middle|f\left(x\right)<\alpha\right\} \in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ s\in X\middle|f\left(x\right)\le\alpha\right\} \in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+האם הפונקציה הבאה הינה מדידה 
+\bar under
+בורל
+\bar default
+?
+\begin_inset Formula 
+\[
+T:\mathbb{R}\to\mathbb{R}\qquad T\left(x\right)=\begin{cases}
+\sin2x & x>0\\
+1+\cos x & x\le0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+בהרצאה נאמר 
+\begin_inset Formula $E\in S$
+\end_inset
+
+)
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה( 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $I_{E}:X\to\mathbb{R}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{E}$
+\end_inset
+
+ היא פונקציית האינדיקטור 
+\begin_inset Formula $I_{E}\left(x\right)=\begin{cases}
+1 & x\in E\\
+0 & x\notin E
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ מדידה)
+\begin_inset Formula $S$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נגדיר את הפונקציות הבאות:
+\begin_inset Formula 
+\[
+f\left(x\right)=I_{\left(0,\infty\right)}\left(x\right)=\begin{cases}
+1 & 0<x<\infty\\
+0 & x\le0
+\end{cases}\qquad g\left(x\right)=I_{\left(-\infty,0\right]}\left(x\right)=\begin{cases}
+1 & -\infty<x\le0\\
+0 & x>0
+\end{cases}
+\]
+
+\end_inset
+
+הקבוצה 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ פתוחה ולכן מדידה בורל)
+\begin_inset Formula $\left(0,\infty\right)\in B$
+\end_inset
+
+(.
+ הקבוצה 
+\begin_inset Formula $\left(-\infty,0\right]$
+\end_inset
+
+ היא סגורה ולכן גם היא מדידה בורל.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הבחנה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אומרים על קבוצה 
+\begin_inset Formula $E$
+\end_inset
+
+ שהיא מדידה אם כהיא נמצאת ב
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אלגברה המדוברת.
+\end_layout
+
+\begin_layout Itemize
+אומרים על פונקציה שהיא מדידה אם היא מקיימת תנאים 
+\begin_inset Formula $\textnormal{I}-\textnormal{IV}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ע"פ הטענה מההרצאה, האינדיקטורים של קבוצות אלו 
+\begin_inset Formula $f\left(x\right),g\left(x\right)$
+\end_inset
+
+ הן פונקציות מדידות.
+ ניתן לרשום
+\begin_inset Formula 
+\[
+T\left(x\right)=\sin\left(2x\right)\cdot f\left(x\right)+\left(1+\cos x\right)g\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sin\left(2x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(1+\cos x\right)$
+\end_inset
+
+ הן פונקציות מדידות כי הן רציפות.
+ 
+\begin_inset Formula $T\left(x\right)$
+\end_inset
+
+ נוצרת ע"י חיבור וכפל בין פונקציות מדידות ולכן היא מדידה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר כי הפונקציה 
+\begin_inset Formula $f:E\to\mathbb{R}^{*}$
+\end_inset
+
+ מדידה אם לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ x\in E\middle|f\left(x\right)\begin{array}{c}
+>\\
+<\\
+\ge\\
+\le
+\end{array}\alpha\right\} \in S$
+\end_inset
+
+)אלו תנאים 
+\begin_inset Formula $\textnormal{I}-\textnormal{IV}$
+\end_inset
+
+ ביחד(.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה בעלת תחום מדיד 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+.
+ הראו כי 
+\begin_inset Formula $f$
+\end_inset
+
+ מדידה אם ורק אם הפונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ ו
+\begin_inset Formula $g\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\notin D$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ מדידה.
+ אם 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\{ x\middle|g\left(x\right)>\alpha\right\} =\left\{ x\middle|f\left(x\right)>\alpha\right\} $
+\end_inset
+
+ וזו מדידה, ואם 
+\begin_inset Formula $\alpha\le0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\{ x\middle|g\left(x\right)>0\right\} =\left\{ x\middle|f\left(x\right)>\alpha\right\} \cup D$
+\end_inset
+
+ וזו קבוצה מדידה כאיחוד של קבוצות מדידות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\implies$
+\end_inset
+
+ נניח כי 
+\begin_inset Formula $g$
+\end_inset
+
+ מדידה.
+ אזי 
+\begin_inset Formula $f\left(x\right)=\left.g\left(x\right)\right|_{D}$
+\end_inset
+
+, וצמצום של פונקציה מדידה לתוך קבוצה מדידה הוא מדיד.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+הגדרנו בהרצאה פונקציות אינדיקטור ופונקציות פשוטות.
+\end_layout
+
+\begin_layout Standard
+פונקציה פשוטה היא פונקציה מהצורה 
+\begin_inset Formula $\varphi\left(x\right)=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}$
+\end_inset
+
+ באשר 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ קבועים ממשיים ו
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ הן קבוצות מדידות.
+\end_layout
+
+\begin_layout Standard
+אם לא נאמר אחרת, ההצגה קנונית)כלומר ה
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ שונים זה מזה ו
+\begin_inset Formula $E_{k}=\left\{ x\middle|\varphi\left(x\right)=a_{k}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהרצאה הוגדר גם האינטגרל של פונקציה פשוטה:
+\begin_inset Formula 
+\[
+\int_{X}\varphi\left(x\right)\mathrm{\, d}\mu:=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E$
+\end_inset
+
+ קבוצה מדידה עם מידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ הראו כי אם 
+\begin_inset Formula $f:E\to\mathbb{R}$
+\end_inset
+
+ פשוטה אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ מדידה לבג)כפונקציה( ו
+\begin_inset Formula $\int_{E}f\mathrm{\, d}m=0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ היא מידת לבג.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left\{ x\in E\middle|f\left(x\right)\le\alpha\right\} \subseteq E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le m\left(\left\{ x\in E\middle|f\left(x\right)\le\alpha\right\} \right)\le m\left(E\right)=0
+\]
+
+\end_inset
+
+ע"פ משפט מההרצאה אם לקבוצה 
+\begin_inset Formula $F$
+\end_inset
+
+ יש מידת לבג)חיצונית(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, אזי 
+\begin_inset Formula $F\in\mathscr{L}$
+\end_inset
+
+)
+\begin_inset Formula $F$
+\end_inset
+
+ קבוצה מדידה לבג(, ולכן לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x\in E\middle|f\left(x\right)\le\alpha\right\} $
+\end_inset
+
+ מדידה)לבג(.
+\end_layout
+
+\begin_layout Standard
+כמו כן, 
+\begin_inset Formula $f$
+\end_inset
+
+ פשוטה ולכן ניתן לרשום:
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum_{k=1}^{n}c_{k}\cdot I_{E_{k}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ קבוצות מדידות ו
+\begin_inset Formula $\bigcup\limits _{k=1}^{n}E_{k}=E$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $M=\max\limits _{1\le k\le n}\left|c_{n}\right|$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+\left|\int_{E}f\mathrm{\, d}m\right|=\left|\sum_{k=1}^{n}c_{k}m\left(E_{k}\right)\right|\le\sum_{k=1}^{n}M\cdot m\left(e_{k}\right)=M\sum_{k=1}^{n}m\left(E_{k}\right)=M\cdot m\left(E\right)=0
+\]
+
+\end_inset
+
+הראנו ש
+\begin_inset Formula $0\le\left|\int_{E}f\mathrm{\, d}m\right|\le0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}m=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Enumerate
+כל 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ מדידה וחסומה, הינה גבול של סדרת פונקציות פשוטות המתכנסות אליה במ"ש.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}^{*}$
+\end_inset
+
+ מדידה, אזי קיימת סדרה עולה של פונקציות פשוטות 
+\begin_inset Formula $\varphi_{1}\le\varphi_{2}\le\varphi_{3}\le\cdots$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+הכוונה 
+\begin_inset Formula $\forall_{x}\forall_{n}\varphi_{n}\left(x\right)\le\varphi_{n+1}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ כך ש
+\begin_inset Formula $\lim\limits _{n\to\infty}\varphi_{n}=f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נניח)כרגע( כי הטווח של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+)בעתיד נטפל גם בפונקציות שליליות(.
+ כעת, נניח כי 
+\begin_inset Formula $N$
+\end_inset
+
+ הינו השלם הראשון כך ש
+\begin_inset Formula $N>\sup\limits _{x\in\mathbb{R}}f\left(x\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר:
+\begin_inset Formula 
+\[
+\varphi_{n}\left(x\right)=\sum_{k=1}^{N\cdot2^{n}}\frac{k-1}{2^{n}}\cdot I_{E_{n,k}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $E_{n,k}=f^{-1}\left(\left[\frac{k-1}{2^{n}},\frac{k}{2^{n}}\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בלשון בני אדם: בונים את 
+\begin_inset Formula $\varphi_{n}$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מחלקים את הקטע 
+\begin_inset Formula $\left[0,N\right]$
+\end_inset
+
+ ל
+\begin_inset Formula $N\cdot2^{n}$
+\end_inset
+
+ קטעים, שווים באורכם.
+\end_layout
+
+\begin_layout Enumerate
+מעגלים את 
+\begin_inset Formula $f$
+\end_inset
+
+ כלפי מטה אל קצה הקטע הקרוב.
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $\varphi_{n+1}\left(x\right)=\sum\limits _{k=1}^{N\cdot2^{n+1}}\frac{k-1}{2^{n+1}}I_{E_{n+1,k}}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ ממשי, 
+\begin_inset Formula $\varphi_{n}\left(x\right)\le\varphi_{n+1}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{n}\left(x\right)=\frac{k-1}{2^{n}}\iff x\in E_{n,k}\iff
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff f\left(x\right)\in\left[\frac{k-1}{2^{n}},\frac{k}{2^{n}}\right)=\left[\frac{2\left(k-1\right)}{2^{n+1}},\frac{2k}{2^{n+1}}\right)\iff
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff f\left(x\right)\in\underbrace{\left[\frac{2k-2}{2^{n+1}},\frac{2k-1}{2^{n+1}}\right)}_{=E_{n+1,2k-1}}\hspace{1em}\vee\hspace{1em}f\left(x\right)\in\underbrace{\left[\frac{2k-1}{2^{n+1}},\frac{2k}{2^{n+1}}\right)}_{=E_{n+1,2k}}\iff
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff\varphi_{n+1}\left(x\right)=\frac{k-1}{2^{n}}\hspace{1em}\vee\hspace{1em}\varphi_{n+1}\left(x\right)=\frac{k-\frac{1}{2}}{2^{n}}
+\]
+
+\end_inset
+
+בכל מקרה 
+\begin_inset Formula $\varphi_{n}\left(x\right)\le\varphi_{n+1}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)ברור כי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{n}\le f$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+במ"ש
+\series default
+: נראה כי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f\left(x\right)-\varphi_{n}\left(x\right)\right|\le\frac{1}{2^{n}}$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $x\in E_{n,k}$
+\end_inset
+
+ יחידה לאיזשהו 
+\begin_inset Formula $1\le k\le N\cdot2^{n}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $f\left(x\right)\in\left[\frac{k-1}{2^{n}},\frac{k}{2^{n}}\right)$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-\varphi_{n}\left(x\right)\right|=f\left(x\right)-\varphi_{n}\left(x\right)=f\left(x\right)-\frac{k-1}{2^{n}}<\frac{k}{2^{n}}-\frac{k-1}{2^{n}}=\frac{1}{2^{n}}
+\]
+
+\end_inset
+
+ע"פ קריטריון ה
+\begin_inset Formula $\sup$
+\end_inset
+
+ להתכנסות - הוכחנו שזה במ"ש.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

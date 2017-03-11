@@ -1,0 +1,964 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מערכות של משוואות דיפרנציאליות
+\end_layout
+
+\begin_layout Standard
+לפעמים נצטרך כמה מד"ר בו זמנית.
+ עדיין יהיה משתנה בלתי תלוי אחד)נקרא לו 
+\begin_inset Formula $t$
+\end_inset
+
+( אבי יהיו יותר משתנים שתלויים בו)בד"כ 
+\begin_inset Formula $y_{1}\left(t\right),y_{2}\left(t\right)$
+\end_inset
+
+(.
+ מערכת לאו דווקא לינארית נראית
+\begin_inset Formula 
+\[
+x_{1}\left(t\right)=x_{1}'=f_{1}\left(t,x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מערכת מד"ר לינארית היא
+\begin_inset Formula 
+\[
+\vec{y}'\left(t\right)=A\left(t\right)\cdot\vec{y}\left(t\right)+\vec{b}\left(t\right)
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{y}\left(t\right)=\begin{pmatrix}y_{1}\left(t\right)\\
+\vdots\\
+y_{n}\left(t\right)
+\end{pmatrix}$
+\end_inset
+
+ הנעלם אותו צריך למצוא.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\left(t\right)=\begin{pmatrix}a_{11}\left(t\right) & \cdots & a_{1n}\left(t\right)\\
+\vdots & \ddots & \vdots\\
+a_{n1}\left(t\right) & \cdots & a_{nn}\left(t\right)
+\end{pmatrix}$
+\end_inset
+
+ מטריצה שרכיביה פונקציות של 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{b}\left(t\right)=\begin{pmatrix}b_{1}\left(t\right)\\
+\vdots\\
+b_{n}\left(t\right)
+\end{pmatrix}$
+\end_inset
+
+ וקטור שרכיביו פונקציות של 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עם 
+\begin_inset Formula $\vec{b}=0$
+\end_inset
+
+ נאמר שהמערכת הומוגנית.
+\end_layout
+
+\begin_layout Section*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x'\left(t\right)=-y\left(t\right)=0x-1y\\
+y'\left(t\right)=x\left(t\right)=1x+0y
+\end{array}\right.
+\]
+
+\end_inset
+
+בצורה מטריציונית
+\begin_inset Formula 
+\[
+\begin{pmatrix}x\\
+y
+\end{pmatrix}'=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור את המשוואה הראשונה
+\begin_inset Formula 
+\[
+x''=-y'=-\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x''+x=0
+\]
+
+\end_inset
+
+מ.
+ אופיינית
+\begin_inset Formula 
+\[
+m^{2}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m_{1,2}=\pm i
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t\right)=C_{1}\cos t+C_{2}\sin t
+\]
+
+\end_inset
+
+מהמשוואה הראשונה
+\begin_inset Formula 
+\[
+y=-x'=-\left(-C_{1}\sin t+C_{2}\cos t\right)=C_{1}\sin t-C_{2}\cos t
+\]
+
+\end_inset
+
+הפתרון הוא
+\begin_inset Formula 
+\[
+\boxed{\begin{pmatrix}x\left(t\right)\\
+y\left(t\right)
+\end{pmatrix}=\begin{pmatrix}C_{1}\cos t+C_{2}\sin t\\
+C_{1}\sin t-C_{2}\cos t
+\end{pmatrix}=C_{1}\begin{pmatrix}\cos t\\
+\sin t
+\end{pmatrix}+C_{2}\begin{pmatrix}\sin t\\
+-\cos t
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה נוספת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+*\left\{ \begin{array}{c}
+y_{1}'=y_{1}\\
+y_{2}'=2y_{2}
+\end{array}\right.\hspace{1em}\vec{y}=\begin{pmatrix}y_{1}\left(t\right)\\
+y_{2}\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{1}\\
+y_{2}
+\end{pmatrix}'=\begin{pmatrix}1 & 0\\
+0 & 2
+\end{pmatrix}\begin{pmatrix}y_{1}\\
+y_{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+*\left\{ \begin{array}{c}
+y_{1}=C_{1}e^{t}\\
+y_{2}=C_{2}e^{2t}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\begin{pmatrix}y_{1}\\
+y_{2}
+\end{pmatrix}=\begin{pmatrix}C_{1}e^{t}\\
+C_{2}e^{2t}
+\end{pmatrix}=C_{1}\begin{pmatrix}1\\
+0
+\end{pmatrix}e^{t}+C_{2}\begin{pmatrix}0\\
+1
+\end{pmatrix}e^{2t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן כללי בכדי לפתור מד"ר לינארית הומוגנית מסדר ראשון)הנגזרת הכי גבוהה
+ היא נגזרת ראשונה( של 
+\begin_inset Formula $n$
+\end_inset
+
+ פונקציות עלינו למצוא 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל 
+\begin_inset Formula $\vec{y}_{1},...\vec{y}_{n}$
+\end_inset
+
+ ולקחת צירוף לינארי שלהם 
+\begin_inset Formula $\left(C_{1}\vec{y}_{1}+C_{2}\vec{y}_{2}+...+C_{n}\vec{y}_{n}\right)$
+\end_inset
+
+.
+ המטריצה)
+\begin_inset Formula $n\times n$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+Y=\begin{pmatrix}\uparrow & \uparrow & \uparrow\\
+\vec{y}_{1} & \cdots & \vec{y}_{n}\\
+\downarrow & \downarrow & \downarrow
+\end{pmatrix}
+\]
+
+\end_inset
+
+נקראת מטריצה יסודית)אך היא לא יחידה(.
+\end_layout
+
+\begin_layout Standard
+למשל עבור המטריצה הראשונה 
+\begin_inset Formula $Y=\begin{pmatrix}\cos t & \sin t\\
+\sin t & -\cos t
+\end{pmatrix}$
+\end_inset
+
+ היא מטריצה יסודית.
+\end_layout
+
+\begin_layout Standard
+דרך טובה לבדוק תלות לינארית בין 
+\begin_inset Formula $\vec{y}_{1},...\vec{y}_{n}$
+\end_inset
+
+ היא להסתכל על 
+\begin_inset Formula $W=\det\left(Y\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $W\ne0$
+\end_inset
+
+ הפתרונות בת"ל, אחרת 
+\begin_inset Formula $W=0$
+\end_inset
+
+ הם ת"ל.
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו 
+\begin_inset Formula $\det\left(Y\right)=-\cos^{2}t-\sin^{2}t=-1\ne0$
+\end_inset
+
+ - קיבלנו בת"ל!
+\end_layout
+
+\begin_layout Part*
+נוסחאת ליוביל)ליוביל אוסטרוגרצסקי(
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $t,t_{0}$
+\end_inset
+
+ בתחום המדובר
+\begin_inset Formula 
+\[
+\det\left(Y\left(t\right)\right)=\det\left(Y\left(t_{0}\right)\right)e^{\int_{t_{0}}^{t}\textnormal{tr}\left(A\left(\xi\right)\right)d\xi}
+\]
+
+\end_inset
+
+בעזרתה ניתן למצוא פתרון אחד אם ידועים 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פתרונות אחרים.
+\end_layout
+
+\begin_layout Section*
+דוגמה לשימוש בנוסחה
+\end_layout
+
+\begin_layout Standard
+פתור את המערכת 
+\begin_inset Formula $\vec{y}'=\begin{pmatrix}1 & -\cfrac{1}{t}\\
+1+t & -1
+\end{pmatrix}\vec{y}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+.
+ העזר בכך ש
+\begin_inset Formula $\vec{y}_{p}=\begin{pmatrix}1\\
+t
+\end{pmatrix}$
+\end_inset
+
+.
+ למה 
+\begin_inset Formula $\vec{y}_{p}$
+\end_inset
+
+ פתרון פרטי?
+\begin_inset Formula 
+\[
+\vec{y}_{p}'=\begin{pmatrix}0\\
+1
+\end{pmatrix}\hspace{1em}\begin{pmatrix}1 & -\cfrac{1}{t}\\
+1+t & -1
+\end{pmatrix}\begin{pmatrix}1\\
+t
+\end{pmatrix}=\begin{pmatrix}0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $y_{1}\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}\left(t\right)$
+\end_inset
+
+ פתרון נוסף של המערכת בת"ל.
+ נבנסה מטריצה יסודית 
+\begin_inset Formula $Y=\begin{pmatrix}y_{1}\left(t\right) & 1\\
+y_{2}\left(t\right) & t
+\end{pmatrix}$
+\end_inset
+
+.
+ במקרה שלנו
+\begin_inset Formula 
+\[
+A\left(\xi\right)=\begin{pmatrix}1 & -\cfrac{1}{\xi}\\
+1+\xi & -1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{tr}\left(A\left(\xi\right)\right)=0=1-1
+\]
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $t_{0}\in\left(0,\infty\right)$
+\end_inset
+
+ 
+\series bold
+\bar under
+קבוע
+\series default
+\bar default
+, אזי לכל 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+ ליוביל אומר
+\begin_inset Formula 
+\[
+\det\left[Y\left(t\right)\right]=\det\left[Y\left(t_{0}\right)\right]e^{\int_{t_{0}}^{t}0d\xi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\cdot y_{1}\left(t\right)-y_{2}\left(t\right)=\det\left[Y\left(t_{0}\right)\right]=C_{1}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ לא תלוי ב
+\begin_inset Formula $t$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לפי המערכת 
+\begin_inset Formula $\begin{pmatrix}y_{1}\\
+y_{1}
+\end{pmatrix}=\begin{pmatrix}1 & -\cfrac{1}{t}\\
+1+t & -1
+\end{pmatrix}\begin{pmatrix}y_{1}\\
+y_{2}
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}'\left(t\right)=y_{1}\left(t\right)-\cfrac{y_{2}\left(t\right)}{t}=\cfrac{t-y_{0}\left(t\right)-y_{2}\left(t\right)}{t}=\cfrac{L_{1}}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}'\left(t\right)=\cfrac{C_{1}}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1}\left(t\right)=C_{1}\ln\left|t\right|+C_{2}=C_{1}\ln t+C_{2}
+\]
+
+\end_inset
+
+)כי 
+\begin_inset Formula $t\in\left(0,\infty\right)$
+\end_inset
+
+ חיובי(
+\begin_inset Formula 
+\[
+\cfrac{y_{2}\left(t\right)}{t}=y_{1}\left(t\right)-y_{1}'\left(t\right)=C_{1}\ln t+C_{2}-\cfrac{C_{1}}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{y_{1}\left(t\right)}{t}=C_{1}\ln t+C_{2}-\cfrac{C_{1}}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{y_{1}\left(t\right)=C_{1}t\ln t+C_{2}t-C_{1}}
+\]
+
+\end_inset
+
+קיבלנו פתרון 
+\begin_inset Formula $\begin{pmatrix}C_{1}\ln t+C_{2}\\
+C_{1}t\ln t+C_{2}t-C_{1}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $\left\{ \begin{array}{c}
+C_{1}=1\\
+C_{2}=0
+\end{array}\right.$
+\end_inset
+
+ ונקבל פתרון פרטי 
+\begin_inset Formula $\begin{pmatrix}\ln t\\
+t\ln t-1
+\end{pmatrix}$
+\end_inset
+
+ שבהוא בת"ל עם 
+\begin_inset Formula $\begin{pmatrix}1\\
+t
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המטריצה היסודית שקיבלנו 
+\begin_inset Formula $Y=\begin{pmatrix}\ln t & 1\\
+t\ln t-1 & t
+\end{pmatrix}$
+\end_inset
+
+.
+ הפתרון הכללי של המערכת:
+\begin_inset Formula 
+\[
+\vec{y}=C_{1}\begin{pmatrix}1\\
+t
+\end{pmatrix}+C_{2}\begin{pmatrix}\ln t\\
+t\ln t-1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איטרציות פיקארד
+\end_layout
+
+\begin_layout Standard
+בהרצאה נלמד משפט הקיום והיחידות שמבטיח שלבעיית קושי 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y'=F\left(t,y\right)\\
+y\left(t_{0}\right)=y_{0}
+\end{array}\right.$
+\end_inset
+
+ יש פתרון יחיד)מקומית(, בתנאי ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ומקיימת את תנאי ליפשיץ ב
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהוכחה בנינו סדרה של פונקציות שמתכנסות לפתרון: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+\varphi_{0}\left(t\right)=y_{0}\\
+\varphi_{n+1}\left(t\right)=y_{0}+\int_{t_{0}}^{t}F\left(s,\varphi_{n}\left(s\right)\right)ds
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+פתור בעזרת קירובי פיקארד את הקירובים עד סדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונסה לנחש את הפתרון המדויק
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y'\left(t\right)=y\left(t\right)=F\left(t,y\left(t\right)\right)\\
+y\left(0\right)=1
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+במקרה זה 
+\begin_inset Formula $F\left(t,y\right)=y$
+\end_inset
+
+ שזוהי פונקציה נהדרת)בפרט מקיימת את תנאי ליפשיץ(.
+ הקירוב ההתחלתי הוא
+\begin_inset Formula 
+\[
+n=0\hspace{1em}\forall_{t}\varphi_{0}\left(t\right)=1\left(=y_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{1}\left(t\right)=y_{0}+\int_{t_{0}}^{t}F\left(s,\varphi_{0}\left(s\right)\right)ds=1+\int_{0}^{t}F\left(s,1\right)ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1+\int_{0}^{t}1ds=1+\left.s\right|_{0}^{t}=1+t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{2}\left(t\right)=y_{0}+\int_{t_{0}}^{t}F\left(s,\varphi_{1}\left(s\right)\right)ds=1+\int_{0}^{t}F\left(s,1+s\right)ds
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1+\int_{0}^{t}\left(1+s\right)ds=1+s+\left.\cfrac{s^{2}}{2}\right|_{0}^{t}=1+t+t^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{3}\left(t\right)=1+\int_{0}^{t}F\left(s,\varphi_{2}\left(s\right)\right)ds=1+\int_{0}^{t}\left(1+s+\cfrac{s^{2}}{2}\right)ds=...=\boxed{1+t+\cfrac{t^{2}}{2!}+\cfrac{t^{3}}{3!}}
+\]
+
+\end_inset
+
+אפשר להראות באינדוקציה
+\begin_inset Formula 
+\[
+\varphi_{n}\left(t\right)=1+t+\cfrac{t^{2}}{2!}+...+\cfrac{t^{n}}{n!}=\sum_{k=0}^{n}\cfrac{t^{n}}{n!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\lim_{n\to\infty}\varphi_{n}\left(t\right)=\lim_{n\to\infty}\sum_{k=0}^{n}\cfrac{t^{k}}{n!}=\sum_{k=0}^{n}\cfrac{t^{k}}{k!}=e^{t}
+\]
+
+\end_inset
+
+זוהי שיטה נומרית שימושית)לפעמים(
+\end_layout
+
+\begin_layout Part*
+הקשר בין מד"ר לבין מד"ר מסדר גבוה
+\end_layout
+
+\begin_layout Standard
+כל מד"ר מסדר גבוה בצורה 
+\begin_inset Formula $y^{\left(n\right)}=F\left(t,y,y',...y^{\left(n-1\right)}\right)$
+\end_inset
+
+ ניתן להביא לצורה של מערכת ע"י ההצבות 
+\begin_inset Formula $x_{k}=y^{\left(k-1\right)},k\in\mathbb{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{1} & = & y^{\left(0\right)}=y\\
+x_{2} & = & y'\\
+x_{3} & = & y''\\
+ & \vdots\\
+x_{n} & = & y^{\left(n-1\right)}
+\end{eqnarray*}
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{1}' & = & y'=x_{2}\\
+x_{2}' & = & \left(y'\right)'=y''=x_{3}\\
+ & \vdots\\
+x_{n-1}' & = & \left(y^{\left(n-2\right)}\right)'=y^{\left(n-1\right)}=x_{n}\\
+x_{n}' & = & \left(y^{\left(n-1\right)}\right)'=y^{\left(n\right)}=F\left(t,x_{1},x_{2},...x_{n}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2y''=-5y'+y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=-\cfrac{1}{2}y+\cfrac{5}{2}y'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נציב
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}=y\\
+x_{2}=y'
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}'=y'=x_{2}\\
+x_{2}'=y''=-\cfrac{1}{2}y+\cfrac{5}{2}y'=-\cfrac{1}{2}x_{1}+\cfrac{5}{2}x_{2}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בצורה מטריציונית: 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+x_{2}
+\end{pmatrix}'=\begin{pmatrix}0 & 1\\
+-\cfrac{1}{2} & \cfrac{5}{2}
+\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}
+\end{pmatrix}$
+\end_inset
+
+ וזו מערכת של מד"ר.
+\end_layout
+
+\end_body
+\end_document

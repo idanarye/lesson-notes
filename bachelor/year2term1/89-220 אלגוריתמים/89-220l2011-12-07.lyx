@@ -1,0 +1,789 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+חיפוש מחרוזת
+\end_layout
+
+\begin_layout Standard
+באלגוריתם הנאיבי, תבנית החיפוש נבדקת כל פעם מול הקלט, אז זזים תו אחד ובודקים
+ שוב.
+ בד"כ אפשר לראות בתווים הראשונים שהתבנית לא מתאימה למיקום מסויים, אבל לא
+ תמיד זה ככה.
+ למשל:
+\begin_inset Formula $\begin{matrix}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+A & B & C & A & B & C & A & B & C\\
+A & B & C & A & B & C & A & B & D
+\end{matrix}$
+\end_inset
+
+.
+ גם במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וגם במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אנו בודקים שוב חלק גדול מהמחרוזת - וזה מיותר.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם קנות-מוריס-פראט
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא שלא חוזרים אחורה.
+ בכל פעם ש"נתקעים" בבדיקת המחרוזת - מחפשים את הרישא הכי ארוכה ששווה לסיפה,
+ ולפי זה קופצים.
+\end_layout
+
+\begin_layout Standard
+לוקחים את התבנית, ובונים טבלת הזזות שהאורך שלה 
+\begin_inset Formula $m$
+\end_inset
+
+, ובמקום ה
+\begin_inset Formula $i$
+\end_inset
+
+ רושמים מה הרישא הארוכה ביותר בתבנית ששווה לסיפא.
+ ניתן לבצע את זה ב
+\begin_inset Formula $o\left(m^{2}\right)$
+\end_inset
+
+, אבל קנות-מוריס-פראט מראים גם איך לבצע את זה בזמן לינארי.
+\end_layout
+
+\begin_layout Standard
+אבל למה מכינים טבלה לתבנית ולא למחרוזת? הסיבה היא טרנזיטיביות של יחס השוויון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לנו 
+\begin_inset Formula $T$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ מעל א"ב 
+\begin_inset Formula $\Sigma\cup\left\{ \phi\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ באורך 
+\begin_inset Formula $m$
+\end_inset
+
+ מעעל 
+\begin_inset Formula $\Sigma\cup\left\{ \phi\right\} $
+\end_inset
+
+.
+ מחפשים את כל המקומות בהם 
+\begin_inset Formula $P$
+\end_inset
+
+ מופיע ב
+\begin_inset Formula $T$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\phi$
+\end_inset
+
+ יכול להתאים לכל תו.
+\end_layout
+
+\begin_layout Standard
+זה דומה לבעיית חיפוש מחרוזות, לכן נרצה לנסות את האלגוריתם של קנות-מוריס-פראט.
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שהטבלה שלנו היא של המקומות בתבנית מול המקומות בטקסט, והשתמשנו
+ בטרנזיטיביות.
+ הבעיה היא שכאן אין לנו טרנזיטיביות - 
+\begin_inset Formula $A=\phi=B$
+\end_inset
+
+ אבל 
+\begin_inset Formula $B\ne A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שזה דומה לכפל שני מספרים - שמים מספר אחד מעל השני, וכל פעם מזיזים,
+ מכפילים ומחברים:
+\begin_inset Formula 
+\[
+\begin{matrix}T & = & a_{0} & a_{1} & a_{2} & a_{3} & a_{4}\\
+S & = & b_{0} & b_{1} & b_{2}
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\cdot b=\begin{cases}
+0 & a=b\vee a=\phi\vee b=\phi\\
+1 & otherwise
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אם נכפיל את 
+\begin_inset Formula $T$
+\end_inset
+
+ ב
+\begin_inset Formula $S$
+\end_inset
+
+ לפי הפעולה הזו, נקבל לא רק אם יש התאמה - אלא גם כמה שגיאות היו.
+\end_layout
+
+\begin_layout Section*
+בעיה
+\end_layout
+
+\begin_layout Standard
+לא הורדנו כלום - גם הכפל הוא פעולה של 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יש לנו אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+FFT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמכפיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פולינומים!
+\end_layout
+
+\begin_layout Section*
+עוד בעיה!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $FFT$
+\end_inset
+
+ משתמש בשורשי היחידה - כלומר בעובדה שאנו משתמשים בשדה סגור אלגברי.
+ אבל הכפל שלנו, לא רק שהוא לא נותן לנו שדה סגור אלגברי - הוא בכלל לא נותן
+ לנו שדה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+אמנם, אנחנו לא יודעים להכפיל עם 
+\begin_inset Formula $FFT$
+\end_inset
+
+ בכפל החדש, אבל אנחנו יודעים להכפיל מספרים רגילים.
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\Sigma=\left\{ 0,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה ראשונה
+\end_layout
+
+\begin_layout Standard
+בזמן 
+\begin_inset Formula $O\left(n\log m\right)$
+\end_inset
+
+ בא"ב 
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+ אנחנו יודעים לספור את כל ההתאמות של "
+\numeric on
+1
+\numeric off
+"ים בתבנית עם הטקסט בכל אינדקס.
+\end_layout
+
+\begin_layout Subsection*
+לכן
+\end_layout
+
+\begin_layout Standard
+קודם נבדוק התאמות של אחדים, ואז נהפוך את התבנית, ואז ההתאמות של אפסים יהיו
+ אחדים ונוכל לספור אותם.
+\end_layout
+
+\begin_layout Section*
+הפונקציה האופיינית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi_{a}\left(x\right)=\begin{cases}
+1 & x=a\\
+0 & otherwise
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Sigma=\left\{ A,B,C\right\} 
+\]
+
+\end_inset
+
+ מספר ההתאמות יחושב ע"י
+\begin_inset Formula 
+\[
+\chi_{A}\left(T\right)\times\chi_{A}\left(P\right)+\chi_{B}\left(T\right)\times\chi_{B}\left(P\right)+\chi_{C}\left(T\right)\times\chi_{C}\left(P\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+עבור א"ב 
+\begin_inset Formula $\left|\Sigma\right|=c$
+\end_inset
+
+, ניתן לפתור את בעיית אי ההתאמות בזמן 
+\begin_inset Formula $O\left(c\cdot n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אבל מה אם יש לנו א"ב אינסופי?
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $P$
+\end_inset
+
+ סופי, נוכל לפתור את הבעיה ב
+\begin_inset Formula $O\left(mn\log m\right)$
+\end_inset
+
+ - שזה פחות טוב מ
+\begin_inset Formula $O\left(mn\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פתרון
+\end_layout
+
+\begin_layout Standard
+אם כל תו מופיע פעם אחת, נבנה טבלה שתספור התאמות בתבנית לכל אינדקס בטקסט.
+ בכל פעם שמציבים את התבנית במקום כלשהו על הטקסט, נקדם מונה קודם לפי האינדקס.
+ כלומר אם אנחנו מציבים את התבנית במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+, והתבנית היא 
+\begin_inset Formula $"ABCD"$
+\end_inset
+
+, ובטקסט במקום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמצא התו 
+\begin_inset Formula $D$
+\end_inset
+
+, אז מכיוון שבתבנית זהו התו הרביעי - האינדקס שלו זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, ולכן נקדם את מונה 
+\begin_inset Formula $15-3=12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כל תו מופיע 
+\begin_inset Formula $c$
+\end_inset
+
+ פעמים, זה יתבצע ב
+\begin_inset Formula $O\left(cn\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אלגוריתם
+\end_layout
+
+\begin_layout Standard
+כל תו בתבנית שמופיע יותר מ
+\begin_inset Formula $c$
+\end_inset
+
+ פעמים נקרא 
+\bar under
+שכיח
+\bar default
+ ונספור התאמות שלו ע"י 
+\begin_inset Formula $FFT$
+\end_inset
+
+.
+ כל שאר התוים נספור אותם יחד בזמן 
+\begin_inset Formula $O\left(nc\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סה"כ - 
+\begin_inset Formula $O\left(nc+\cfrac{m}{c}n\log m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+אופטימום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+nc=\cfrac{m}{c}\log m
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c^{2}=m\log m
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{c=\sqrt{m\log m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1744 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משוואות לינאריות עם מקדמים אנליטים
+\end_layout
+
+\begin_layout Standard
+משוואה לינארית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y^{\left(n\right)}+a_{n-1}\left(x\right)y^{\left(n-1\right)}+...+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)
+\]
+
+\end_inset
+
+אומרים שהמשוואה היא עם מקדמים אנליטים אם 
+\begin_inset Formula $a_{0}\left(x\right),...a_{n}\left(x\right)$
+\end_inset
+
+ גזירים לכל הסדרים עם טור טיילור עם רדיוס התכנסות גדול מ
+\numeric on
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: רדיוס התכנסות של 
+\begin_inset Formula $\sum\limits _{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+: קיים 
+\begin_inset Formula $R$
+\end_inset
+
+ כך שהתור מתכנס אם 
+\begin_inset Formula $\left|x\right|<R$
+\end_inset
+
+ ומתבדר אם 
+\begin_inset Formula $\left|x\right|>R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $\cfrac{1}{1+x}=1-x+x^{2}-x^{3}+...$
+\end_inset
+
+, 
+\begin_inset Formula $R=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל רק על 
+\begin_inset Formula $n=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y''+P\left(x\right)y+Q\left(x\right)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ אנליטי עם רדיוס התכנסות 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+)מסביב ל
+\numeric on
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ אנליטי עם רדיוס התכנסות 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+)מסביב ל
+\numeric on
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+משפט)לא נוכיח(
+\end_layout
+
+\begin_layout Standard
+קיימים שני פתרונות אנליטיים בת"ל עם רדיוס התכנסות לפחות 
+\begin_inset Formula $\min\left(R_{1},R_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+1
+\numeric off
+( 
+\begin_inset Formula $y''+y=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+פתרון כללי: 
+\begin_inset Formula $y=C_{1}\cos x+C_{2}\sin x$
+\end_inset
+
+ - רדיוס התכנסות 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+2
+\numeric off
+( 
+\begin_inset Formula $y''+xy'+2y=0$
+\end_inset
+
+.
+ נחפש פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\sum_{n=0\left(n=1\right)}^{\infty}na_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0\left(n=2\right)}^{\infty}n\left(n-1\right)a_{n}x^{n-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}+\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}2a_{n}x^{n}=0
+\]
+
+\end_inset
+
+טור חזקות שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אמ"ם כל מקדם הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מקדם של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $2a_{2}+2a_{0}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מקדם של 
+\begin_inset Formula $x^{1}$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $6a_{3}+3a_{1}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מקדם של 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $12a_{4}+4a_{2}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מקדם של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+
+\bar default
+: 
+\begin_inset Formula $\left(m+2\right)\left(m+1\right)a_{m+2}+\left(m+2\right)a_{m}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxed{a_{m+2}=\cfrac{-a_{m}}{m+1}}$
+\end_inset
+
+ - כלל נסיגה.
+ 
+\begin_inset Formula $a_{0},a_{1}$
+\end_inset
+
+ חופשיים - בהינתן 
+\begin_inset Formula $a_{0},a_{1}$
+\end_inset
+
+ מוצאים את כל שאר המקדמים דרך כלל הנסיגה.
+\begin_inset Newline newline
+\end_inset
+
+זוהי מד"ר ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, לכן אנו רוצים שתי פתרונות בת"ל.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{0}=1,a_{1}=0$
+\end_inset
+
+ נותן פתרון אחד - 
+\begin_inset Formula $a_{1}=a_{3}=a_{5}=...=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2}=-1,a_{4}=\cfrac{1}{3},a_{6}=\cfrac{-1}{3\cdot5},a_{8=}\cfrac{1}{3\cdot5\cdot7}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a_{0}=0,a_{1}=1$
+\end_inset
+
+ נותן פתרון שני: 
+\begin_inset Formula $a_{0}=a_{2}=a_{4}=...=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{1}=1,a_{3}=-\cfrac{1}{2},a_{5}=\cfrac{1}{2\cdot4},a_{7}=\cfrac{-1}{2\cdot4\cdot6},...
+\]
+
+\end_inset
+
+באופן כללי)עבור הפתרון השני(
+\begin_inset Formula 
+\[
+a_{2p+1}=\cfrac{\left(-1\right)^{p}}{2^{p}p!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+1}}{2^{p}p!}
+\]
+
+\end_inset
+
+ניתן לבדוק רדיוס התכנסות 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+y_{o}=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}x^{2p+1}}{2^{p}p!}=x\sum_{p=0}^{\infty}\cfrac{1}{p!}\left(\cfrac{-x^{2}}{2}\right)^{p}=xe^{\unitfrac{-x^{2}}{2}}
+\]
+
+\end_inset
+
+)המקרה יוצא דופן שניתן לחשב את הסכום(
+\begin_inset Newline newline
+\end_inset
+
+לכן הפתרון האי זוגי הוא 
+\begin_inset Formula $y_{o}=xe^{\unitfrac{-x^{2}}{2}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור הפתרון הזוגי: 
+\begin_inset Formula 
+\[
+a_{2p}=\left(-1\right)^{p}\cfrac{2^{p}p!}{\left(2p\right)!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{e}=\sum_{p=0}^{\infty}\cfrac{\left(-1\right)^{p}2^{p}p!x^{2p}}{\left(2p\right)!}
+\]
+
+\end_inset
+
+רדיוס התכנסות 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+פתרון כללי - צירוף ליארי של 
+\begin_inset Formula $y_{o}$
+\end_inset
+
+ ו
+\begin_inset Formula $y_{e}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+3
+\numeric off
+( 
+\begin_inset Formula $\left(1-x^{2}\right)y''-2xy'+Cy=0$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ קבוע.
+ ננרמל:
+\begin_inset Formula 
+\[
+y''-\cfrac{2x}{1-x^{2}}y'+\cfrac{C}{1-x^{2}}y=0
+\]
+
+\end_inset
+
+רדיוס התכנסות של המקדמים הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ נחפש פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\sum_{n=1}^{\infty}na_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}
+\]
+
+\end_inset
+
+נחזור לצורה המקורית של המשוואה)לפני החילוק ב
+\begin_inset Formula $1-x^{2}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left(1-x^{2}\right)\sum_{n=2}^{\infty}=n\left(n-1\right)a_{n}x^{n-2}-2\sum_{n=0}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}Ca_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}+\sum_{n=0}^{\infty}a_{n}x^{n}\left(-n\left(n-1\right)-2n+C\right)=0
+\]
+
+\end_inset
+
+נסתכל על מקדם של 
+\begin_inset Formula $x^{m}$
+\end_inset
+
+ )
+\begin_inset Formula $m=0,1,2,...$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left(m+2\right)\left(m+1\right)a_{m+2}-\left(m^{2}+m-C\right)a_{m}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{a_{m+2}=\cfrac{m^{2}+m-C}{\left(m+1\right)\left(m+2\right)}a_{m}}
+\]
+
+\end_inset
+
+גם פה אם ניקח 
+\begin_inset Formula $a_{0}=1,a_{1}=0$
+\end_inset
+
+ יננצר פתרון זוגי 
+\begin_inset Formula $y_{e}$
+\end_inset
+
+ ואם ניקח 
+\begin_inset Formula $a_{0}=0,a_{1}=1$
+\end_inset
+
+ נייצר פתרון אי זוגי 
+\begin_inset Formula $y_{o}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+יש לשים לב ש
+\begin_inset Formula 
+\[
+\lim_{m\to\infty}\left|\cfrac{a_{m+2}}{a_{m}}\right|=\lim_{m\to\infty}\left|\cfrac{m^{2}+m-C}{\left(m+1\right)\left(m+2\right)}\right|=1
+\]
+
+\end_inset
+
+מרמז שרדיוס ההתכנסוןת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ 
+\bar under
+אבל יש מקרה יוצא דופן
+\bar default
+! נניח 
+\begin_inset Formula $C=p\left(p+1\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p$
+\end_inset
+
+ שלם
+\begin_inset Formula 
+\[
+a_{m+2}=\cfrac{m\left(m+1\right)-p\left(p+1\right)}{\left(m+1\right)\left(m+2\right)}a_{m}=\cfrac{\left(m-p\right)\left(m+p+1\right)}{\left(m+1\right)\left(m+2\right)}a_{m}
+\]
+
+\end_inset
+
+במקרה זה)
+\begin_inset Formula $C=p\left(p+1\right)$
+\end_inset
+
+ יש פתרון פולינומי מסדר 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(1-x^{2}\right)y''-2xy'+p\left(p+1\right)y=0$
+\end_inset
+
+ נקראת 
+\bar under
+משוואת לז'נדר מדרגה 
+\begin_inset Formula $p$
+\end_inset
+
+
+\bar default
+.
+ )
+\begin_inset Formula $p=0,1,2,...$
+\end_inset
+
+(.
+ הפתרון הפולינומי מדרגה 
+\begin_inset Formula $p$
+\end_inset
+
+ של משוואה זו נקרא 
+\bar under
+פולינום לז'נדר מדרגה 
+\begin_inset Formula $p$
+\end_inset
+
+
+\bar default
+
+\begin_inset Formula 
+\[
+P_{0}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{1}\left(x\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}\left(x\right)=\cfrac{3}{2}x^{2}-\cfrac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)
+\numeric on
+4
+\numeric off
+( 
+\begin_inset Formula $y''+e^{x}y=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מחפשים פתרון בצורה 
+\begin_inset Formula $y=\sum\limits _{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}+\left(\sum_{r=0}^{\infty}\cfrac{x^{r}}{r!}\right)\left(\sum_{n=0}^{\infty}a_{n}x^{n}\right)=0
+\]
+
+\end_inset
+
+נסתכל על המקדם של 
+\begin_inset Formula $x^{m}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(m+2\right)\left(m+1\right)a_{m+2}+\sum_{r=0}^{m}\cfrac{a_{m-r}}{r!}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+m=0 &  & 2a_{2}+a_{0}=0\\
+m=1 &  & 6a_{3}+a_{1}+a_{0}=0\\
+m=2 &  & 12a_{4}+a_{2}+a_{1}+\cfrac{a_{0}}{2}=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $a_{0},a_{1}$
+\end_inset
+
+ חופשיים.
+ ניתן לבחור 
+\begin_inset Formula $\left\{ \begin{array}{c}
+a_{0}=1,a_{1}=0\\
+a_{0}=0,a_{1}=1
+\end{array}\right.$
+\end_inset
+
+ לייצר שני פתרונות בת"ל.
+ במקרה זה אין חלוקה לפתרונות זוגיים ואי זוגיים.
+\begin_inset Newline newline
+\end_inset
+
+גם כאן רדיוסה התכנסות 
+\begin_inset Formula $\infty$
+\end_inset
+
+ - קשה להראות.
+\end_layout
+
+\begin_layout Part*
+משוואת אויילר
+\end_layout
+
+\begin_layout Section*
+משוואת אויילר מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha x^{2}y''+\beta xy'+\gamma y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+משוואה כללית מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\begin_inset Formula $a_{2}\left(x\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדמים קבועים - 
+\begin_inset Formula $a_{0},a_{1},a_{2}$
+\end_inset
+
+ קבועים.
+\end_layout
+
+\begin_layout Itemize
+אויילר: 
+\begin_inset Formula $a_{2}\left(x\right)=\alpha x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}\left(x\right)=\beta x$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}\left(x\right)=\gamma$
+\end_inset
+
+)קבוע(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+איך פותרים? ננסה 
+\begin_inset Formula $y=x^{\lambda}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ קבוע.
+\begin_inset Formula 
+\[
+y'=\lambda x^{\lambda-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\lambda\left(\lambda-1\right)x^{\lambda-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha\lambda\left(\lambda-1\right)x^{\lambda}+\beta\lambda x^{\lambda}+\gamma x^{\lambda}=0
+\]
+
+\end_inset
+
+יש לבחור 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha\lambda\left(\lambda-1\right)+\beta\lambda+\gamma=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם יש שני פתרונות ממשיים 
+\begin_inset Formula $\lambda_{1},\lambda_{2}$
+\end_inset
+
+.
+ פתרון כללי: 
+\begin_inset Formula $y=C_{1}x^{\lambda_{1}}+C_{2}x^{\lambda_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם יש שני פתרונות מרוכבים צמודים 
+\begin_inset Formula $p\pm iq$
+\end_inset
+
+.
+ פתרון כללי: 
+\begin_inset Formula 
+\[
+y=Cx^{p+iq}+\overline{C}x^{p-iq}=x^{p}\left(Cx^{iq}+\overline{C}x^{-iq}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=x^{p}\left(Cx^{iq}+\overline{C}x^{-iq}\right)=x^{p}\left(Ce^{iq\ln x}+\overline{C}e^{-iq\ln x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=x^{p}\left(D_{1}\cos\left(q\ln x\right)+D_{2}\sin\left(q\ln x\right)\right)
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $D_{1},D_{2}$
+\end_inset
+
+ קבועים ממשיים, 
+\begin_inset Formula $C$
+\end_inset
+
+ קבוע מרוכב(
+\end_layout
+
+\begin_layout Enumerate
+פתרון 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ כפול.
+ ניתן לפתור ע"י הורדת סדר פתרון כללי
+\begin_inset Formula 
+\[
+y=x^{\lambda}\left(C_{1}+C_{2}\ln x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משוואת אויילר מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{n}x^{n}y^{\left(n\right)}+\alpha_{n-1}x^{n-1}y^{\left(n-1\right)}+...+\alpha_{1}xy'+\alpha_{0}y=0
+\]
+
+\end_inset
+
+מחפשים פתרונות בצורה 
+\begin_inset Formula $y=x^{\lambda}$
+\end_inset
+
+, מוצאים )עד( 
+\begin_inset Formula $n$
+\end_inset
+
+ אפשרויות ל
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+שים לב
+\end_layout
+
+\begin_layout Standard
+משוואת אויילר ניתן לכתוב בצורה
+\begin_inset Formula 
+\[
+y''+\cfrac{\beta}{\alpha}\cfrac{y'}{x}+\cfrac{\gamma}{\alpha}\cfrac{y}{x^{2}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=P\left(x\right)y'+Q\left(x\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left\{ \begin{array}{c}
+P\left(x\right)=\cfrac{\beta}{\alpha}\cfrac{1}{x}\\
+Q\left(x\right)=\cfrac{\gamma}{\alpha}\cfrac{1}{x^{2}}
+\end{array}\right.$
+\end_inset
+
+ - לא אנליטיות ב
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+למשוואה 
+\begin_inset Formula $y''+P\left(x\right)y'+Q\left(x\right)y=0$
+\end_inset
+
+ אומרים ש
+\begin_inset Formula $x=a$
+\end_inset
+
+ היא נקודה 
+\bar under
+אורדינרית
+\bar default
+)
+\lang english
+ordinary point
+\lang hebrew
+( אם 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ רציפות ב
+\begin_inset Formula $a$
+\end_inset
+
+.
+ אחרת אומרים ש
+\begin_inset Formula $x=a$
+\end_inset
+
+ היא נקודה 
+\bar under
+סינגולרית
+\bar default
+\lang english
+(singular point)
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x=a$
+\end_inset
+
+ היא נקודה סינגולרית אבל הגבולות 
+\begin_inset Formula $\begin{array}{c}
+\lim\limits _{x\to a}\left(x-a\right)P\left(x\right)\\
+\lim\limits _{x\to a}\left(x-a\right)^{2}Q\left(x\right)
+\end{array}$
+\end_inset
+
+ קיימים, אזי 
+\begin_inset Formula $x=a$
+\end_inset
+
+ היא נקודה 
+\bar under
+רגולרית סינגולרית
+\bar default
+)
+\lang english
+regular singuler point
+\lang hebrew
+( אחרת היא נקודה 
+\bar under
+לא רגולרית סינגולרית
+\bar default
+)
+\lang english
+irregular singular point
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במחצית הראשונה של השיעור למדנו שאם 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ אנליטיים ב
+\begin_inset Formula $x=a$
+\end_inset
+
+, אזי הפתרון של המדר אנליטיים ב
+\begin_inset Formula $x=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט פרוביניוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Frobenius
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x=a$
+\end_inset
+
+ היא נקודה רגולרית סינגולרית, והפונקציות 
+\begin_inset Formula $\left(x-a\right)P\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x-a\right)^{2}Q\left(x\right)$
+\end_inset
+
+ הן אנליטיות אזי קיים לפחות פתרון אחד של המד"ר בצורה
+\begin_inset Formula 
+\[
+y=\left(x-a\right)^{\alpha}\sum_{n=0}^{\infty}a_{n}\left(x-a\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\alpha,a_{0},a_{1},a_{2},...$
+\end_inset
+
+ קבועים.)
+\begin_inset Formula $\alpha$
+\end_inset
+
+ לא בהכרח שלם! או אפילו ממשי(
+\end_layout
+
+\begin_layout Section*
+דוגמאות של נקודות רגולריות סינגולריות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''+\cfrac{\beta}{\alpha}\cfrac{y'}{x}+\cfrac{\gamma}{\alpha}\cfrac{y}{x^{2}}=0$
+\end_inset
+
+ - מש' אויילר.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ נק.
+ רג.
+ סינג.
+\begin_inset Formula 
+\[
+P\left(x\right)=\cfrac{\beta}{\alpha}\cfrac{1}{x},Q\left(x\right)=\cfrac{\gamma}{\alpha}\cfrac{1}{x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0}xP\left(x\right)=\cfrac{\beta}{\alpha}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to0}x^{2}Q\left(x\right)=\cfrac{\gamma}{\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''+\cfrac{2}{x}y'+\cfrac{3}{\left(x-1\right)^{3}x}y=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נק.
+ סינגולרית 
+\begin_inset Formula $x=0,1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ נק.
+ רג.
+ סינג.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x=1$
+\end_inset
+
+ נק.
+ לא רג.
+ סינג.
+\end_layout
+
+\begin_layout Section*
+לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y^{\left(n\right)}+a_{n-1}\left(x\right)y^{\left(n-1\right)}+...+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=0
+\]
+
+\end_inset
+
+לנק.
+ רג.
+ סינג.
+ צריך קיום של גבולות
+\begin_inset Formula 
+\[
+\lim_{x\to a}\cfrac{a_{n-1}\left(x\right)}{a_{n}\left(x\right)}\left(x-a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to a}\cfrac{a_{n-2}\left(x\right)}{a_{n}\left(x\right)}\left(x-a\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to a}\cfrac{a_{0}\left(x\right)}{a_{n}\left(x\right)}\left(x-a\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה למשפט פרוביניוס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+9x^{2}y''+\left(x+2\right)y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ נק.
+ רג.
+ סינג.
+\end_layout
+
+\begin_layout Standard
+נחפש פתרון בצורה
+\begin_inset Formula 
+\[
+y=x^{\alpha}\sum_{n=0}^{\infty}a_{n}x^{n}=\sum_{n=0}^{\infty}a_{n}x^{n+\alpha}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $a_{0}\ne0$
+\end_inset
+
+)כדי ש
+\begin_inset Formula $x^{\alpha}$
+\end_inset
+
+ תהיה החזקה הראשונה(
+\begin_inset Formula 
+\[
+y'=\sum_{n=0}^{\infty}\left(n+\alpha\right)a_{n}x^{n+\alpha-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=0}^{\infty}\left(n+\alpha\right)\left(n+\alpha-1\right)a_{n}x^{n+\alpha-2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{9x^{2}y''}{\overbrace{\sum_{n=0}^{\infty}9\left(n+\alpha\right)\left(n+\alpha-1\right)a_{n}x^{n+\alpha}}}+\overset{xy}{\overbrace{\sum_{n=0}^{\infty}a_{n}x^{n+\alpha+1}}}+\overset{2y}{\overbrace{\sum_{n=0}^{\infty}2a_{n}x^{n+\alpha}}}=0
+\]
+
+\end_inset
+
+נצמצם 
+\begin_inset Formula $x^{\alpha}$
+\end_inset
+
+, ונצרף סכומים ראשון ושלישי
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left[9\left(n+\alpha\right)\left(n+\alpha+1\right)+2\right]a_{n}x^{n}+\sum_{n=0}^{\infty}a_{n}x^{n+1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ - מהסכום הראשון בלבד
+\begin_inset Formula 
+\[
+\left[9\alpha\left(\alpha-1\right)+2\right]a_{0}=0
+\]
+
+\end_inset
+
+יודעים ש
+\begin_inset Formula $a_{0}\ne0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\alpha^{2}-\alpha+\cfrac{2}{9}=0$
+\end_inset
+
+.
+ זאת המשוואה שקובעת את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, והיא נקראת 
+\bar under
+המשוואה המציינת
+\bar default
+)
+\lang english
+The indicial equation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+שתי אפשרויות ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+: 
+\begin_inset Formula $\alpha=\cfrac{2}{3},\alpha=\cfrac{1}{3}$
+\end_inset
+
+.
+ עם קצת מזל כל אחד יתן פתרון.
+\end_layout
+
+\begin_layout Itemize
+מקדם של 
+\begin_inset Formula $x^{m}$
+\end_inset
+
+ )
+\begin_inset Formula $m=1,2,3,...$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left[9\left(m+\alpha\right)\left(m+\alpha-1\right)+2\right]a_{m}+a_{m-1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\alpha=\cfrac{1}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[9\left(m+\cfrac{1}{3}\right)\left(m-\cfrac{2}{3}\right)+2\right]a_{m}+a_{m-1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(9m^{2}-3m\right)a_{m}+a_{m-1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{m}=\cfrac{-a_{m-1}}{3m\left(3m-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a=\cfrac{2}{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[9\left(m+\cfrac{2}{3}\right)\left(m-\cfrac{1}{3}\right)+2\right]a_{m}+a_{m-1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(9m^{2}+3m\right)a_{m}+a_{m-1}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{m}=\cfrac{-a_{m-1}}{3m\left(3m+1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לוקחים בשני המקרים פתרון מ
+\begin_inset Formula $a_{0}=1$
+\end_inset
+
+,...
+ הפתרון מהצורה
+\begin_inset Formula 
+\[
+x^{\alpha}\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+בסוף - צירוף לינארי.
+\end_layout
+
+\end_body
+\end_document

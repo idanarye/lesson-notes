@@ -1,0 +1,1504 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+רשתות זרימה
+\end_layout
+
+\begin_layout Standard
+אפשר לחשוב על רשת זרימה כעל רשת של צינורות שמכניסים מים לנקודת המקור ורוצים
+ שזה יגיע ליעד.
+ בצינורות מים אי אפשר להזרים יותר מאשר הקוטר של המים, וגם אי אפשר להזרים
+ ברשת יותר מרוחב הפס.
+ רוצים לדעת מה הכמות המקסימלית שניתן להזרים ברשת בלי שזה יעבור את הקיבולת
+ של הרשת.
+\end_layout
+
+\begin_layout Section*
+הגדרה - רשת זרימה
+\end_layout
+
+\begin_layout Standard
+גרף מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ שבו לכל קשת 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+ יש 
+\bar under
+קיבולת
+\bar default
+ 
+\begin_inset Formula $c\left(u,v\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)נגדיר לכל 
+\begin_inset Formula $\left(u,v\right)\notin E$
+\end_inset
+
+ 
+\begin_inset Formula $c\left(u,v\right)=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ברשת יש קודקוד מקור 
+\begin_inset Formula $s$
+\end_inset
+
+ וקודקוד יעד 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \ocircle\ar@<2pt>[dd]^{10}\ar[rr]^{12} &  & \ocircle\ar[dr]^{20}\ar[ddll]^{9}\\
+s\ar[ur]^{16}\ar[dr]_{13} &  &  &  & t\\
+ & \ocircle\ar@<2pt>[uu]^{4}\ar[rr]_{14} &  & \ocircle\ar[uu]^{7}\ar[ur]_{4}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - זרימה על רשת זרימה 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היא פונקציה 
+\begin_inset Formula $f:V\times V\to\mathbb{R}$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+אילוצי קיבולת
+\bar default
+: 
+\begin_inset Formula $f\left(u,v\right)\le c\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+סימטריה נגדית
+\bar default
+: 
+\begin_inset Formula $f\left(u,v\right)=-f\left(v,u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+שימור הזרימה
+\bar default
+: 
+\begin_inset Formula $\forall_{u\in V-\left\{ s,t\right\} }\sum\limits _{v\in V}f\left(u,v\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{v\in V}f\left(u,v\right)=\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)>0
+\end{array}}f\left(u,v\right)+\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)<0
+\end{array}}f\left(u,v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)>0
+\end{array}}f\left(u,v\right)$
+\end_inset
+
+ - הזרימה ה"אמיתית" היוצאת מ
+\begin_inset Formula $u$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)<0
+\end{array}}f\left(u,v\right)$
+\end_inset
+
+ - הזרימה ה"אמיתית" הנכנסת ל
+\begin_inset Formula $u$
+\end_inset
+
+.
+ מתקיים:
+\begin_inset Formula 
+\[
+\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)<0
+\end{array}}f\left(u,v\right)=\sum_{f\left(u,v\right)<0}\left(-f\left(v,u\right)\right)=-\sum_{\begin{array}{c}
+f\left(u,v\right)>0\\
+v\in V
+\end{array}}f\left(v,u\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\sum_{v\in V}f\left(u,v\right)=\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)>0
+\end{array}}f\left(u,v\right)-\sum_{\begin{array}{c}
+v\in V\\
+f\left(v,u\right)>0
+\end{array}}f\left(v,u\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)>0
+\end{array}}f\left(v,u\right)=\sum_{\begin{array}{c}
+v\in V\\
+f\left(u,v\right)>0
+\end{array}}f\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{u &  & v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c\left(v,u\right)=c\left(u,v\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\begin{array}{c}
+0=-c\left(v,u\right)\le-f\left(v,u\right)=f\left(u,v\right)\le c\left(u,v\right)=0\\
+f\left(v,u\right)\le c\left(v,u\right)=0
+\end{array}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(u,v\right)=f\left(v,u\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{u\ar[rr]^{4/8} &  & v}
+\]
+
+\end_inset
+
+)ה
+\numeric on
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה רוחב הפס, ה
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה הניצול בפועל(
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(u,v\right)=4 & \hspace{1em} & c\left(u,v\right)>0\\
+f\left(v,u\right)=-4 &  & c\left(v,u\right)=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{u\ar@/^{10pt}/[rr]^{13/8} &  & \ar@/^{10pt}/[ll]^{8/7}v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נחזור לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \ocircle\ar@<2pt>[dd]^{0/10}\ar[rr]^{12/12} &  & anr,\ocircle\ar[dr]^{15/20}\ar[ddll]^{4/9}\\
+s\ar[ur]^{11/16}\ar[dr]_{8/13} &  &  &  & t\\
+ & \ocircle\ar@<2pt>[uu]^{1/4}\ar[rr]_{11/14} &  & \ocircle\ar[uu]^{7/7}\ar[ur]_{4/4}
+}
+-
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזרימה בפועל בצינור)המספר השמאלי( לא יכולה לעלות על הקיבולת של הצינור)המספר
+ הימני(, והזרימה בפועל הנכנסת שווה לזרימה בפועל היוצאת בכל קודקוד - פרט
+ ל
+\begin_inset Formula $s$
+\end_inset
+
+ ו
+\begin_inset Formula $t$
+\end_inset
+
+, והזרימה שיוצאת מ
+\begin_inset Formula $s$
+\end_inset
+
+ שווה לזרימה שנכנסת ל
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה - ערך הזרימה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\right|=\sum_{v\in V}f\left(s,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $X,Y\subseteq V$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $f\left(x,y\right)=\sum\limits _{x\in X}\sum\limits _{y\in Y}f\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה לסימון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(\left\{ s\right\} ,V\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה - שימור הזרימה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall u\in V-\left\{ s,t\right\} :\hspace{1em}f\left(\left\{ u\right\} ,V\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+בהינתן רשת זרימה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ וזרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ על 
+\begin_inset Formula $G$
+\end_inset
+
+ אזי עבור:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X\subseteq V$
+\end_inset
+
+: 
+\begin_inset Formula $f\left(X,X\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X,Y\subseteq V$
+\end_inset
+
+: 
+\begin_inset Formula $f\left(X,Y\right)=-f\left(Y,X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X,Y,Z\subseteq V$
+\end_inset
+
+, 
+\begin_inset Formula $X\cap Y\ne\emptyset$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(X\cup Y,Z\right)=f\left(X,Z\right)+f\left(Y,Z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(Z,X\cup Y\right)=f\left(Z,X\right)+f\left(Z,Y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(V,t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(s,V\right)=\overbrace{f\left(V,V\right)}^{=0}-f\left(V-\left\{ s\right\} ,V\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-f\left(V-\left\{ s\right\} ,V\right)=f\left(V,V-\left\{ s\right\} \right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\underbrace{f\left(V,V-\left\{ s\right\} -\left\{ t\right\} \right)}_{=0:\downarrow}+f\left(V,t\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(V,V-\left\{ s,t\right\} \right)=-f\left(V-\left\{ s,t\right\} ,V\right)=-\sum_{u\in V-\left\{ s,t\right\} }f\left(u,V\right)=-\sum0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+בעיית מיקסום זרימה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: רשת זרימה 
+\begin_inset Formula $\left(t,s,c,G\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+: זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+)על 
+\begin_inset Formula $G$
+\end_inset
+
+( כך ש
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ מכסימום
+\end_layout
+
+\begin_layout Section*
+שיטה של פורד פלקרסון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+(Ford-Fulkerson)
+\end_layout
+
+\begin_layout Enumerate
+אתחל עם זרימת-
+\numeric on
+0
+\numeric off
+)כלומר 
+\begin_inset Formula $\forall_{u,v\in V}f\left(u,v\right)=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+כל עוד יש "מסלול שיפור" 
+\begin_inset Formula $p$
+\end_inset
+
+ הוסף זרימה על המסלול 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכוונה בשיפור מסלול:
+\begin_inset Formula 
+\[
+\xymatrix{s\ar[rr]^{3/16} &  & \ocircle\ar[rr]^{2/7} &  & \ocircle\ar[rr]^{9/12} &  & \ocircle\ar[rr]^{1/11} &  & \ocircle\ar[rr]^{22/100} &  & \ocircle}
+\]
+
+\end_inset
+
+את המסלול הזה אפשר לשפר ע"י הוספת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\begin_inset Formula 
+\[
+\xymatrix{s\ar[rr]^{6/16} &  & \ocircle\ar[rr]^{5/7} &  & \ocircle\ar[rr]^{12/12} &  & \ocircle\ar[rr]^{4/11} &  & \ocircle\ar[rr]^{25/100} &  & \ocircle}
+\]
+
+\end_inset
+
+ נשים לב שמכיוון שאנו מוסיפים אותו מספר גם לקשת יוצאת וגם לקשת נכנסת, אנחנו
+ שומרים על הסימטריה הנגדית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Subsection*
+הקיבולת השיורית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{f}\left(u,v\right)=c\left(u,v\right)-f\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+רשת השיורית
+\end_layout
+
+\begin_layout Standard
+)עבור רשת זרימה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ וזרימה 
+\begin_inset Formula $f$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{f}=\left(V,E_{f}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{f}=\left\{ \left(u,v\right)\in V\times V\middle|c_{f}\left(u,v\right)>0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסלול שיפור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: מסלול 
+\begin_inset Formula $p$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+ ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב בצורה יותר מפורטת את האלגוריתם:
+\end_layout
+
+\begin_layout LyX-Code
+
+\bar under
+\lang english
+Ford-Fulkerson
+\bar default
+
+\begin_inset Formula $\left(G,c,s,t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for each 
+\begin_inset Formula $\left(u,v\right)\in E\left(G\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+f
+\begin_inset Formula $\left(u,v\right)\gets0$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(v,u\right)\gets0$
+\end_inset
+
+, 
+\begin_inset Formula $c_{f}\left(u,v\right)\gets c\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+while 
+\begin_inset Formula $\exists p$
+\end_inset
+
+ from 
+\begin_inset Formula $s$
+\end_inset
+
+ to 
+\begin_inset Formula $t$
+\end_inset
+
+ in 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $c_{f}\left(p\right)\gets\min\left\{ c_{f}\left(u,v\right)\middle|\left(u,v\right)\in p\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for each 
+\begin_inset Formula $\left(u,v\right)\in p$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $f\left(u,v\right)\gets f\left(u,v\right)+c_{f}\left(p\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(v,u\right)\gets-f\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $c_{f}\left(u,v\right)\gets c\left(u,v\right)-f\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $c_{f}\left(v,u\right)\gets c\left(v,u\right)-f\left(v,u\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+הגדרה - חתך ברשת זרימה)
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+הוא חלוקה של הקודקודים 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $\begin{array}{c}
+S\cap T=\emptyset\\
+S\cup T=V
+\end{array}$
+\end_inset
+
+( כך ש
+\begin_inset Formula $s\in S$
+\end_inset
+
+, 
+\begin_inset Formula $t\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הזרימה על חתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(S,T\right)=\sum_{x\in S}\sum_{y\in T}f\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל חתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ ולכל זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(S,T\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(S,T\right)=f\left(S,V\right)-f\left(S,S\right)=f\left(S,V\right)=f\left(S-\left\{ s\right\} ,V\right)+f\left(\left\{ s\right\} ,V\right)=f\left(\left\{ s\right\} ,V\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - קיבולת של חתך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c\left(S,T\right)=\sum_{x\in S}\sum_{y\in T}c\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ ולכל חתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right|\le c\left(S,T\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הטענה הקודמת 
+\begin_inset Formula $\left|f\right|=f\left(S,T\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(S,T\right)=\sum_{x\in S}\sum_{y\in T}f\left(x,y\right)\le\sum_{x\in S}\sum_{y\in T}c\left(x,y\right)=c\left(S,T\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+עבור זרימת המכסימום 
+\begin_inset Formula $f^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f^{*}\right|\le c\left(S,T\right)$
+\end_inset
+
+)לכל 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Part*
+משפט פורד-פילקרסון
+\end_layout
+
+\begin_layout Standard
+בהינתן רשת זרימה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+)עם 
+\begin_inset Formula $c,S,T$
+\end_inset
+
+( וזרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ על 
+\begin_inset Formula $G$
+\end_inset
+
+, אז התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ זרימת מכסימום
+\end_layout
+
+\begin_layout Enumerate
+ברשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ אין מסלול שיפור
+\end_layout
+
+\begin_layout Enumerate
+קיים חתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|f\right|=c\left(S,T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(2\right)\Leftarrow\left(1\right)$
+\end_inset
+
+ בשלילה, אם יש מסלול שיפור אז ניתן להגדיל את 
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+.
+ סתירה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(3\right)\Leftarrow\left(2\right)$
+\end_inset
+
+ ברשת השיורית אין מסלול מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $T$
+\end_inset
+
+ ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נגדיר: }יש מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula $S=\{v\in V|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+}אין מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Formula $T=\{v\in V|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\cap T=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $S\cup T=V$
+\end_inset
+
+, 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, 
+\begin_inset Formula $t\in T$
+\end_inset
+
+)כי 
+\begin_inset Formula $t\notin S$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ חתך.
+\begin_inset Formula 
+\[
+\left|f\right|=f\left(S,T\right)=\sum_{x\in S}\sum_{y\in T}\overset{?}{=}\sum_{x\in S}\sum_{y\in T}c\left(x,y\right)=c\left(S,T\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x,y\right)=c\left(x,y\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ לכן יש מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f\left(x,y\right)<c\left(x,y\right)$
+\end_inset
+
+ אז יש קשת ב
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מ
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+ ואז יש מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $y\in T$
+\end_inset
+
+, כלומר אין מסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+)סתירה(
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(1\right)\Leftarrow\left(3\right)$
+\end_inset
+
+ בשלילה אם 
+\begin_inset Formula $\left|f\right|=c\left(S,T\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ אינה זרימת מכסימום אז ניתן להגדיל את 
+\begin_inset Formula $\left|f\right|$
+\end_inset
+
+ בסתירה לטענה ה
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

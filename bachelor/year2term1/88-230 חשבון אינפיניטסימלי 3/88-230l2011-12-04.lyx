@@ -1,0 +1,1366 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ המוגדרת בסביבה של נק' 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $B\left(x,r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u$
+\end_inset
+
+ וקטור יחידה נתון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $x+tu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|t\right|<r$
+\end_inset
+
+, 
+\begin_inset Formula $\|\left(x+tu\right)-x=\|=\|tu\|=\left|t\right|<r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|t\right|<r$
+\end_inset
+
+, 
+\begin_inset Formula $\boxed{F\left(t\right)=f\left(x+tu\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,u$
+\end_inset
+
+ נתונים, רק 
+\begin_inset Formula $t$
+\end_inset
+
+ משתנה.
+\begin_inset Formula 
+\[
+\mathbb{R}^{k}\ni y\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+u=\cfrac{1}{\|y\|}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\|u\|=\cfrac{1}{\|y\|}\|y\|=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה בנקודה 
+\begin_inset Formula $t=0$
+\end_inset
+
+, נאמר ש
+\bar under
+הנגזרת הכיוונית
+\bar default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ קיימת, וערכה הוא 
+\begin_inset Formula $F'\left(0\right)$
+\end_inset
+
+: 
+\begin_inset Formula $\left.\cfrac{\partial f}{\partial u}\right|_{x}=D_{u}f\left(x\right)\doteqdot F'\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial f}{\partial u}\right|_{x}=F'\left(0\right)\doteqdot\lim_{0\ne t\to0}\cfrac{F\left(t\right)-F\left(0\right)}{t}=\lim_{0\ne t\to0}\cfrac{f\left(x+tu\right)-f\left(x\right)}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקרה פרטי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u=e^{j}$
+\end_inset
+
+, )
+\begin_inset Formula $j=1,...k$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left(\cfrac{\partial f}{\partial x_{j}}\left(x\right)=\right)\left.\cfrac{\partial f}{\partial x_{j}}\right|_{x}=\left.\cfrac{\partial f}{\partial e^{j}}\right|_{x}\lim_{t\to0}\cfrac{f\left(x+te^{j}\right)-f\left(x\right)}{t}=\lim_{t\to0}\cfrac{f\left(x_{1},...x_{j}+t,...x_{k}\right)-f\left(x_{1},...x_{k}\right)}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם נשנה את 
+\begin_inset Formula $x$
+\end_inset
+
+ בקבוצה 
+\begin_inset Formula $D\subseteq\mathbb{R}^{k}$
+\end_inset
+
+ מסויימת, ובכל נקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ קיימות הנגזרות החלקיות 
+\begin_inset Formula $\left.\cfrac{\partial f}{\partial x_{j}}\right|_{x}$
+\end_inset
+
+, נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $D$
+\end_inset
+
+ לפי כל המשתנים.
+\end_layout
+
+\begin_layout Standard
+ה
+\bar under
+פונקציות
+\bar default
+ 
+\begin_inset Formula $\cfrac{\partial f}{\partial x_{j}}:D\to\mathbb{R}$
+\end_inset
+
+ נקראות הנגזרות החלקיות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ )
+\begin_inset Formula $j=1,...k$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+הפונקציה הוקטורית 
+\begin_inset Formula $\left(\cfrac{\partial f}{\partial x_{1}},...\cfrac{\partial f}{\partial x_{k}}\right):D^{\subseteq\mathbb{R}^{k}}\to\mathbb{R}^{k}$
+\end_inset
+
+ נקראת 
+\uuline on
+הגדריינט
+\uuline default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+, המסומנת 
+\begin_inset Formula $\left.\textnormal{grad }f\right|_{x}$
+\end_inset
+
+ או 
+\begin_inset Formula $\left.\nabla f\right|_{x}$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(\nabla f\right)\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nabla$
+\end_inset
+
+: נבלה)או גרדינט(
+\end_layout
+
+\begin_layout Section*
+דוגמה ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\arctan\left(\cfrac{y}{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D=\left\{ \left(x,y\right)\middle|x\ne0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial f}{\partial x}=\cfrac{1}{1+\left(\cfrac{y}{x}\right)^{2}}\left(-\cfrac{y}{x^{2}}\right)=-\cfrac{y}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\partial f}{\partial y}=\cfrac{1}{1+\left(\cfrac{y}{x}\right)^{2}}\cfrac{1}{x}=\cfrac{x}{x^{2}+y^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f=\cfrac{1}{x^{2}+y^{2}}\left(-y,x\right):D\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)$
+\end_inset
+
+ - שינוי של הפונקציה בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+)קבועה!( כאשר עוברים לנק' 
+\begin_inset Formula $x+h$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\|\left(x+h\right)-x\|=\|h\|<r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מעוניינים ב
+\bar under
+קירוב לינארי
+\bar default
+)ב
+\begin_inset Formula $h$
+\end_inset
+
+( של השינוי הנ"ל: 
+\begin_inset Formula $L:\mathbb{R}^{k}\to\mathbb{R}$
+\end_inset
+
+ "לינארית":
+\begin_inset Formula 
+\[
+\lambda\in\mathbb{R},u,v\in\mathbb{R}^{k}:L\left(u+\lambda v\right)=Lu+\lambda Lv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבו ר 
+\begin_inset Formula $x\in\mathbb{R}^{k}$
+\end_inset
+
+ כלשהו, 
+\begin_inset Formula $x=\sum\limits _{i=1}^{k}x_{i}e^{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+Lx=L\left(\sum_{i=1}^{k}x_{i}e^{i}\right)=\sum_{i=1}^{k}x_{i}Le^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{Le^{i}\doteqdot a_{i}\in\mathbb{R}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Lx=\sum_{i=1}^{k}x_{i}a_{i}=a\cdot x
+\]
+
+\end_inset
+
+לפיכך, הפונקציונל 
+\begin_inset Formula $x\to x\cdot a$
+\end_inset
+
+ הוא 
+\bar under
+פונקציונאל לינארי
+\bar default
+.
+ ז"א: 
+\bar under
+הצורה הכללית
+\bar default
+ של פונקציונל לינארי על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ היא 
+\begin_inset Formula $x\to x\cdot a$
+\end_inset
+
+)עבור 
+\begin_inset Formula $a\in\mathbb{R}^{k}$
+\end_inset
+
+ מתאימים(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi\left(h\right)\doteqdot\left[f\left(x+h\right)-f\left(x\right)\right]-Lh
+\]
+
+\end_inset
+
+מודד את השגיאה בקרוב הלינאיר.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבה 
+\begin_inset Formula $B\left(x,r\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+דיפרנציאבילית
+\bar default
+ בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ אם 
+\uuline on
+קיים
+\uuline default
+ 
+\bar under
+פונקציונל לינארי 
+\begin_inset Formula $L$
+\end_inset
+
+
+\bar default
+ כך ש)בסימונים לעיל(
+\begin_inset Formula 
+\[
+\left(h\ne0\right),\hspace{1em}\cfrac{\varphi\left(h\right)}{\|h\|}\xrightarrow[h\to0]{}0\hspace{1em}\left(*\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+\bar under
+סימון
+\series default
+\bar default
+: כאשר )*( מתקיים עבור פונקציה כלשהי)המוגדרת בסביבת 
+\begin_inset Formula $h=0$
+\end_inset
+
+( אומרים ש
+\begin_inset Formula $\varphi$
+\end_inset
+
+ היא 
+\bar under
+"או קטן"
+\bar default
+ של 
+\begin_inset Formula $\|h\|$
+\end_inset
+
+ וכותבים 
+\begin_inset Formula $\varphi\left(h\right)=o\left(\|h\|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{2}=o\left(\left|h\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{h^{2}}{\left|h\right|}=\left|h\right|\xrightarrow[h\to0]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\ne o\left(\left|h\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|h\right|^{1+\epsilon}=o\left(\left|h\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מאידך
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\cfrac{\left|g\left(h\right)\right|}{\|h\|}\le M$
+\end_inset
+
+ בסביבה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, אומרים ש
+\begin_inset Formula $g\left(h\right)$
+\end_inset
+
+ היא "או גדול" של 
+\begin_inset Formula $\|h\|$
+\end_inset
+
+ ורושמים 
+\begin_inset Formula $g\left(h\right)=O\left(\|h\|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+o\Rightarrow O
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל פונקציונל לינארי 
+\begin_inset Formula $Lh=L\left(h\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $O$
+\end_inset
+
+ של 
+\begin_inset Formula $\|h\|$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|Lh\right|=\left|h\cdot a\right|\le\|h\|\|a\|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\left|Lh\right|}{\|h\|}\le\|a\|
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $\|a\|$
+\end_inset
+
+ קבוע(
+\end_layout
+
+\begin_layout Subsection*
+נחזור ל
+\begin_inset Formula $\varphi\left(h\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x+h\right)-f\left(x\right)=\underset{O}{\underbrace{Lh}}+\underset{o}{\underbrace{\varphi\left(h\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, אזי הפונקציונל הלינארי)פ"ל( 
+\begin_inset Formula $L$
+\end_inset
+
+ בהגדרה 
+\uuline on
+נקבע באופן יחיד
+\uuline default
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)=Lh+\varphi\left(h\right)$
+\end_inset
+
+ )בסימונים לעיל(.
+ 
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)=L'h+\tilde{\varphi}\left(h\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+o=Lh-L'h+\left[\varphi\left(h\right)-\tilde{\varphi}\left(h\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L'h-Lh=h\cdot a'-h\cdot a=o\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(a'-a\right)=\varphi^{*}\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall h,\|r\|<r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h=t\left(a'-a\right)\hspace{1em}0<t<r
+\]
+
+\end_inset
+
+נציב:
+\begin_inset Formula 
+\[
+t\left(a'-a\right)\left(a'-a\right)=\varphi^{*}\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\|a'-a\|^{2}=\varphi^{*}\left(h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{t\|a'-a\|^{2}}{t\|a'-a\|}=\cfrac{\varphi^{*}\left(h\right)}{\|h\|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\|a'-a\|=\cfrac{\varphi^{*}\left(h\right)}{\|h\|}\xrightarrow[t\to0]{}0
+\]
+
+\end_inset
+
+צד שמאל לא תלוי ב
+\begin_inset Formula $t$
+\end_inset
+
+, וצד ימין שואף ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $t\to0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\|a'-a\|=0$
+\end_inset
+
+ ז"א 
+\begin_inset Formula $a'=a$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L'y=Ly$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+, כלומר הפונקציות 
+\begin_inset Formula $L',L$
+\end_inset
+
+ מתלכדות.
+\end_layout
+
+\begin_layout Section*
+הגדרה - דיפרנציאל
+\end_layout
+
+\begin_layout Standard
+הפונקציונל הלינארי 
+\bar under
+היחיד
+\bar default
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ כנ"ל נקרא 
+\bar under
+הדיפרנציאל
+\bar default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, ומסומן ב
+\begin_inset Formula $df\left(x\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left.df\right|_{x}$
+\end_inset
+
+)אפשר גם להשתמש ב
+\begin_inset Formula $D$
+\end_inset
+
+ גדול במקום 
+\begin_inset Formula $d$
+\end_inset
+
+ קטן(
+\end_layout
+
+\begin_layout Standard
+במקרה זה, ישנה הזהות
+\begin_inset Formula 
+\[
+f\left(x+h\right)-f\left(x\right)=df\left(x\right)h+\varphi\left(h\right)
+\]
+
+\end_inset
+
+עם 
+\begin_inset Formula $\varphi\left(h\right)=o\left(\|h\|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות של פונקציה דיפרנציאבילית
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+תכונה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+)המוגדרת בסביבה של נק' 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+( 
+\bar under
+דיפרנציאבילית בנק'
+\bar default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, אזי 
+\bar under
+היא רציפה בנק'
+\bar default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f\left(x+h\right)-f\left(x\right)=\left.df\right|_{x}h+\varphi\left(h\right)$
+\end_inset
+
+ עם 
+\begin_inset Formula $\varphi\left(h\right)=o\left(\|h\|\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|\left.df\right|_{x}h\right|=\left|h\cdot a\right|\le\le\|h\|\|a\|\xrightarrow[h\to0]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(h\right)=\cfrac{\varphi\left(h\right)}{\|h\|}\|h\|\xrightarrow[h\to0]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x+h\right)-f\left(x\right)\xrightarrow[x\to0]{}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x+h\right)\xrightarrow[x\to0]{}f\left(x\right)
+\]
+
+\end_inset
+
+ז"א: 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תכונה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+)כנ"ל( דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, אזי 
+\bar under
+כל הנגזרות הכיווניות
+\bar default
+ שלה קיימות בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\bar under
+מתקיימת הנוסחה
+\bar default
+:
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial f}{\partial u}\right|_{x}=\left.df\right|_{x}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F\left(t\right)=f\left(x+tu\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{F\left(t\right)-F\left(0\right)}{t}=\cfrac{f\left(x+tu\right)-f\left(x\right)}{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\cfrac{F\left(t\right)-F\left(0\right)}{t}-\left.df\right|_{x}u\right|=\left|\cfrac{\left[f\left(x+tu\right)-df_{x}\left(tu\right)\right]}{t}\right|=\left|\cfrac{\varphi\left(tu\right)}{t}\right|=\cfrac{\left|\varphi\left(tu\right)\right|}{\|tu\|}\xrightarrow[t\to0]{}0
+\]
+
+\end_inset
+
+ז"א
+\begin_inset Formula 
+\[
+\exists\lim_{t\to0}\cfrac{F\left(t\right)-F\left(0\right)}{t}=\left.df\right|_{x}u
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists F'\left(0\right)=...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מש"ל
+\end_layout
+
+\begin_layout Section*
+במיוחד
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $u=e^{j}$
+\end_inset
+
+ מקבלים שאם 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+, אזי כל הנגזרות החלקיות 
+\begin_inset Formula $\left.\cfrac{\partial f}{\partial x_{j}}\right|_{x}$
+\end_inset
+
+ קיימות
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial f}{\partial x_{j}}\right|_{x}=\left.df\right|_{x}e^{j}\doteqdot a_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+אם מסמנים 
+\begin_inset Formula $Le^{j}=a_{j}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $Lh=h\cdot a$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h=\sum h_{j}e^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h=\sum h_{h}Le^{j}=ha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ דיפרנציאבילית בנק' 
+\begin_inset Formula $x$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial f}{\partial u}\right|_{x}=u\left.\nabla f\right|_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left.\cfrac{\partial f}{\partial x}\right|_{x}\right|=\left|u\cdot\left.\nabla f\right|_{x}\right|\le\|u\|\|\left.\nabla f\right|_{x}\|
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left|\left.\cfrac{\partial f}{\partial u}\right|_{x}\right|\le\|\left.\nabla f\right|_{x}\|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left.\nabla f\right|_{x}\ne0$
+\end_inset
+
+, 
+\begin_inset Formula $u^{*}=\cfrac{\left.\nabla f\right|_{x}}{\|\left.\nabla f\right|_{x}\|}$
+\end_inset
+
+ הוא וקטור יחידה בכיוון הגרדיינט.
+\begin_inset Formula 
+\[
+\left.\cfrac{\partial f}{\partial u^{*}}\right|_{x}=u^{*}\cdot\left.\nabla f\right|_{x}=\cfrac{\left.\nabla f\right|_{x}\cdot\left.\nabla f\right|_{x}}{\|\left.\nabla f\right|_{x}\|}=\|\left.\nabla f\right|_{x}\|
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\boxed{\max_{u}\left|\cfrac{\partial f}{\partial u}\left(x\right)\right|=\left.\cfrac{\partial f}{\partial u^{*}}\right|_{x}=\|\left.\nabla f\right|_{x}\|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

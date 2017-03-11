@@ -1,0 +1,1065 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $x_{n+1}=g\left(x_{n}\right)$
+\end_inset
+
+ נוסחת איטרציה המתכנסת לשורש 
+\begin_inset Formula $z$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $z=g\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $p$
+\end_inset
+
+ פעמים בסביבת 
+\begin_inset Formula $z$
+\end_inset
+
+, 
+\begin_inset Formula $g'\left(z\right)=g''\left(z\right)=\cdots=g^{\left(p-1\right)}\left(z\right)=0$
+\end_inset
+
+ ו
+\begin_inset Formula $g^{\left(p\right)}\left(p\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עבור 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ בקירוב ל
+\begin_inset Formula $z$
+\end_inset
+
+ סדר ההתכנסות הוא 
+\begin_inset Formula $p$
+\end_inset
+
+ ושיעור ההתכנסות הוא 
+\begin_inset Formula $C=\cfrac{g^{\left(p\right)}\left(z\right)}{p!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נפתח טור טיילור:
+\begin_inset Formula 
+\[
+g\left(x_{n}\right)=g\left(z\right)+\left(x_{n}-z\right)g'\left(z\right)+\dots+\cfrac{\left(x_{n}-z\right)^{p-1}g^{\left(p-1\right)}\left(z\right)}{\left(p-1\right)!}+\cfrac{\left(x_{n}-z\right)^{p}g^{\left(p\right)}\left(\xi\right)}{p!}\qquad\xi\in\left[x_{n},z\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n+1}-z=\xcancel{\left(x_{n}-z\right)g'\left(z\right)}+\dots+\xcancel{\cfrac{\left(x_{n}-z\right)^{p-1}g^{\left(p-1\right)}\left(z\right)}{\left(p-1\right)!}}+\cfrac{\left(x_{n}-z\right)^{p}g^{\left(p\right)}\left(\xi\right)}{p!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n+1}-z=\cfrac{\left(x_{n}-z\right)^{p}g^{\left(p\right)}\left(\xi\right)}{p!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\cfrac{\left|x_{n+1}-z\right|}{\left|x_{n}-z\right|^{p}}=\cfrac{g^{\left(p\right)}\left(z\right)}{p!}=C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{3}+2x-3
+\]
+
+\end_inset
+
+נתונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נוסחאות אפשריות:
+\begin_inset Formula 
+\begin{eqnarray*}
+1. &  & x_{n+1}=\cfrac{3-2x_{n}}{x_{n}^{2}}\\
+2. &  & x_{n+1}=\cfrac{3-x_{n}^{3}}{2}\\
+3. &  & \cfrac{2x_{n}^{3}+3}{3x_{n}^{2}+2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור הנוסחאות המתכנסות, מצא סדר ושיעור התכנסות
+\end_layout
+
+\begin_layout Subsubsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נבדוק קודם איזה מהן מתכנסות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g'\left(x\right)=\cfrac{-2x^{2}-2x\left(3-2x\right)}{x^{4}}=\cfrac{2x^{2}-6x}{x^{4}}\qquad\left|g'\left(1\right)\right|=4>1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g'\left(x\right)=\cfrac{-3x^{2}}{2}\qquad\left|g'\left(1\right)\right|=1.5>1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g'\left(x\right)=\cfrac{6x^{2}\left(3x^{2}+2\right)-6x\left(2x^{3}+3\right)}{\left(3x^{2}+2\right)^{2}}=\cfrac{6x^{4}+12x^{2}-18x}{\left(3x^{2}+2\right)^{2}}\qquad g'\left(1\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רק השלישית מתכנסת.
+ נגזור אותה עוד פעמים כדי למצוא את 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+ריבוי שורשים
+\end_layout
+
+\begin_layout Standard
+עבור פונקציה 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נקרא שורש בריבוי 
+\begin_inset Formula $k$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\left(\alpha\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קיימת פונקציה 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $h\left(\alpha\right)\neq0$
+\end_inset
+
+ ו
+\begin_inset Formula $P\left(x\right)=\left(x-\alpha\right)^{k}\cdot h\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+עבור פונקציה 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שורש מריבוי 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P\left(\alpha\right)=P'\left(\alpha\right)=\cdots=P^{\left(k-1\right)}\left(\alpha\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p^{\left(k\right)}\left(\alpha\right)\neq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שורש פשוט בשיטת ניוטון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}\qquad g\left(x\right)=x-\cfrac{f\left(x\right)}{f'\left(x\right)}
+\]
+
+\end_inset
+
+נבדוק התכנסות:
+\begin_inset Formula 
+\[
+g'\left(x\right)=1-\cfrac{f'\left(x\right)\cdot f'\left(x\right)-f''\left(x\right)\cdot f\left(x\right)}{\left(f'\left(x\right)\right)^{2}}=\cfrac{\cancel{\left(f'\left(x\right)\right)^{2}}-\cancel{\left(f'\left(x\right)\right)^{2}}+f''\left(x\right)\cdot f\left(x\right)}{\left(f'\left(x\right)\right)^{2}}=\cfrac{f''\left(x\right)\cdot f\left(x\right)}{\left(f'\left(x\right)\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שורש לא פשוט בשיטת ניוטון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x-z\right)^{k}h\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=k\left(x-z\right)^{k-1}h\left(x\right)+\left(x-z\right)^{k}h'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g\left(x\right)=x-\cfrac{f\left(x\right)}{f'\left(x\right)}=x-\cfrac{\left(x-z\right)^{k}h\left(x\right)}{k\left(x-z\right)^{k-1}h\left(x\right)+h'\left(x\right)\left(x-z\right)^{k}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{\cancel{\left(x-z\right)^{k-1}}\left(x-z\right)h\left(x\right)}{\cancel{\left(x-z\right)^{k-1}}\left(k\cdot h\left(x\right)+h'\left(x\right)\left(x-z\right)\right)}=x-\left(x-z\right)\cfrac{h\left(x\right)}{k\cdot h\left(x\right)+h'\left(x\right)\left(x-z\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(x\right)=1-\cfrac{h\left(x\right)}{k\cdot h\left(x\right)+h'\left(x\right)\left(x-z\right)}+\left(x-z\right)\left(\cfrac{h\left(x\right)}{k\cdot h\left(x\right)+h'\left(x\right)\left(x-z\right)}\right)'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g'\left(z\right)=1-\cfrac{\cancel{h\left(z\right)}}{k\cdot\cancel{h\left(z\right)}}=1-\cfrac{1}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+עבור שורש לא פשוט יש לנו בעיה.
+\end_layout
+
+\begin_layout Section*
+הצעה לתיקון
+\end_layout
+
+\begin_layout Standard
+נשתמש בנוסחה 
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-k\cdot\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi\left(x\right)=f\left(x\right)^{\frac{1}{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{\phi\left(x_{n}\right)}{\phi'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השיטה הזו עובדת - אבל בד"ך לא יודעים את 
+\begin_inset Formula $k$
+\end_inset
+
+ כל כך בקלות.
+\end_layout
+
+\begin_layout Section*
+תיקון אחר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\left(x\right)=\cfrac{f\left(x\right)}{f'\left(x\right)}\qquad x_{n+1}=x_{n}-\cfrac{u\left(x\right)}{u'\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היתרון כאן שלא צריך לדעת את הריבוי של השורש.
+ החיסרון הוא שצריך לעשות עוד נגזרת.
+\end_layout
+
+\begin_layout Part*
+המקרה הרב מימדי - חישוב מערכת משוואות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+f_{1}\left(x_{1},x_{2},\dots x_{m}\right)=0\\
+f_{2}\left(x_{1},x_{2},\dots x_{m}\right)=0\\
+\vdots\\
+f_{n}\left(x_{1},x_{2},\dots x_{m}\right)=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שיטת ניוטון במקרה הרב מימדי:
+\end_layout
+
+\begin_layout Standard
+במקום
+\begin_inset Formula 
+\[
+x_{n+1}=x_{n}-\cfrac{f\left(x_{n}\right)}{f'\left(x_{n}\right)}
+\]
+
+\end_inset
+
+נכתוב
+\begin_inset Formula 
+\[
+\vec{x}_{n+1}=\vec{x}_{n}-J\left(\vec{x}_{n}\right)^{-1}\cdot\vec{f}\left(\vec{x}_{n}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $J$
+\end_inset
+
+ מטריצת היעקוביאן: עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ פונקציות ו
+\begin_inset Formula $m$
+\end_inset
+
+ משתנים
+\begin_inset Formula 
+\[
+J\left(\vec{x}_{n}\right)=\left(i,j\right)=\left(\cfrac{\partial f_{i}}{\partial x_{j}}\right)\in M_{n\times m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\left\{ \begin{array}{c}
+4x^{2}-y^{2}+2\\
+x^{2}-4y-6
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}x_{0}\\
+y_{0}
+\end{bmatrix}=\begin{bmatrix}-1\\
+2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J=\begin{bmatrix}\cfrac{\partial f_{1}}{\partial x} & \cfrac{\partial f_{1}}{\partial y}\\
+\cfrac{\partial f_{2}}{\partial x} & \cfrac{\partial f_{2}}{\partial y}
+\end{bmatrix}=\begin{bmatrix}8x & -2y\\
+2x & 4
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(\vec{x}_{0}\right)=\begin{bmatrix}-8 & -4\\
+-2 & 4
+\end{bmatrix}\qquad J^{-1}\left(\vec{x}_{0}\right)=\cfrac{1}{40}\begin{bmatrix}4 & 4\\
+2 & -8
+\end{bmatrix}=\begin{bmatrix}-0.1 & -0.1\\
+-0.05 & -0.2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\begin{bmatrix}-1\\
+2
+\end{bmatrix}\right)=\begin{bmatrix}2\\
+3
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}_{1}=\begin{bmatrix}-1\\
+2
+\end{bmatrix}-\begin{bmatrix}-0.1 & -0.1\\
+-0.05 & 0.2
+\end{bmatrix}\begin{bmatrix}2\\
+3
+\end{bmatrix}=\begin{bmatrix}-0.5\\
+1.5
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ייעול
+\end_layout
+
+\begin_layout Standard
+הבעיה בשיטה הזו היא שצריך להפוך מטריצה, שזו פעולה מאוד יקרה.
+ אבל אפשר גם לעקוף את זה:
+\begin_inset Formula 
+\[
+\vec{\Delta}_{n}=\vec{x}_{n}-\vec{x}_{n+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}_{n+1}=\vec{x}_{n}-J^{-1}\left(\vec{x}_{n}^{-1}\right)\cdot\vec{f}\left(\vec{x}_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}_{n}-\vec{x}_{n+1}=J\left(\vec{x}_{n}\right)^{-1}\cdot\vec{f}\left(\vec{x}_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{\Delta}_{n}=J\left(\vec{x}_{n}\right)\cdot\vec{f}\left(\vec{x}_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{J\left(\vec{x}_{n}\right)\vec{\Delta}_{n}=\vec{f}\left(\vec{x}_{n}\right)}
+\]
+
+\end_inset
+
+עכשיו צריך פשוט לפתור מערכת משוואות:
+\begin_inset Formula 
+\[
+\boxed{A\vec{x}=\vec{b}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שיטת אורנר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right)=a_{0}+a_{1}x+x_{2}x^{2}+\dots+a_{n}x^{n}
+\]
+
+\end_inset
+
+הייצוג הזה שקול ל
+\begin_inset Formula 
+\[
+P\left(x\right)=a_{0}+x\left(a_{1}+x\left(a_{2}+\dots x\left(a_{n-1}+a_{n}x\right)\right)\dots\right)
+\]
+
+\end_inset
+
+)עבור 
+\begin_inset Formula $a$
+\end_inset
+
+ים אחרים כמובן(
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right)=5x^{4}-2x^{3}+3x-3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x\right)=-3+x\left(3+x\left(0+x\left(-2+5x\right)\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b_{n}=a_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{k\in\left[n-1,0\right]}b_{k}=a_{k}+z\cdot b_{k+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{0}=P\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q\left(x\right)=b_{1}+b_{2}x+\dots b_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right)=b_{0}+\left(x-z\right)q\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+\dots+a_{1}x+a_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}=b_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{k}=b_{k}-z\cdot b_{k+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x\right)=b_{n}x^{n}+\left(b_{n-1}-z\cdot b_{n}\right)\cdot x^{n-1}+\dots+\left(b_{1}-z\cdot b_{2}\right)x+\left(b_{0}-z\cdot b_{1}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=b_{n}x^{n}+b_{n-1}x^{n-1}-z\cdot b_{n}x^{n-1}+\dots+b_{1}x-z\cdot b_{2}x+b_{0}-z\cdot b_{1}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(x-z\right)b_{n}x^{n-1}+\dots+\left(x-z\right)b_{1}+b_{0}=b_{0}+\left(x-z\right)\left(b_{n}x^{n-1}+\dots+b_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P'\left(x\right)=q\left(x\right)+\left(x-z\right)q'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P'\left(z\right)=q\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+האלגוריתם
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $b_{n}=c_{n}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $k\gets n-1$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $b_{k}\gets a_{k}+z\cdot b_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $c_{k}\gets b_{k}+z\cdot c_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $b_{0}\gets a_{0}+z\cdot b_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $P\left(z\right)=b_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $P'\left(z\right)=c_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{0}=2\qquad a_{1}=1\qquad a_{2}=0\qquad a_{3}=-2\qquad a_{4}=3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{4}=c_{4}=3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{3}=-2+2\cdot3=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{3}=4+2\cdot3=10
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{2}=8
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{2}=8+2\cdot10=28
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

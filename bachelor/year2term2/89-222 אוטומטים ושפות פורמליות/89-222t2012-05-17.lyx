@@ -1,0 +1,1218 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+שפות לא רגולריות
+\end_layout
+
+\begin_layout Standard
+שפה לא רגולרית היא שפה שאין לה אוטומט.
+ בהינתן שפה ואוטומט, אפשר להראות שהאוטומט לא מקבל את השפה באמצעות מציאת
+ מילה שקיימת בשפה והאוטומט לא מקבל, או שלא קיימת בשפה והאוטומט מקבל.
+ אבל זה לא מספיק בשביל להוכיח שהשפה לא רגולרית - צריך להוכיח ש
+\bar under
+לא קיים
+\bar default
+ אוטומט שמקבל אותה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=a^{n}b^{n}
+\]
+
+\end_inset
+
+נניח שקיים אוטומט בעל 
+\begin_inset Formula $m$
+\end_inset
+
+ מצבים שמקבל את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ האוטומט הזה חייב לזכור כמה 
+\begin_inset Formula $a$
+\end_inset
+
+ים הוא קרא, כדי לדעת כמה 
+\begin_inset Formula $b$
+\end_inset
+
+ים הוא צריך לקבל.
+ נתבונן בקריאת המילה 
+\begin_inset Formula $a^{m}b^{m}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ & *++[o][F]{q_{1}}\ar[rd]^{b}\\
+*++[o][F]{q_{0}}\ar[ru]^{a}\ar[r]^{aa}\ar[rd]^{aaa}\ar[rdd] & *++[o][F]{q_{2}}\ar[r]^{bb} & *++[o][F=]{}\\
+ & *++[o][F]{q_{3}}\ar[ru]^{bbb}\\
+ & \vdots\ar[ruu]
+}
+\]
+
+\end_inset
+
+יש להבחין בין 
+\begin_inset Formula $m+1$
+\end_inset
+
+ סיטואציות שונות 
+\begin_inset Formula $a^{0},a^{1},\dots a^{m}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $m+1$
+\end_inset
+
+ מצבים, אבל הנחנו רק 
+\begin_inset Formula $m$
+\end_inset
+
+ מצבים ולכן)ע"פ עקרון שובך היונים( לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מצבים הינם זהים.
+ נסמנם 
+\begin_inset Formula $q_{i},q_{j}$
+\end_inset
+
+
+\begin_inset Formula $\left(i\neq j\right)$
+\end_inset
+
+.
+ במצב שכזה נקבל
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{q_{0}}\ar[r]^{a^{i}}\ar@/_{1pc}/[r]_{a^{j}} & *++[o][F]{q_{i}}\ar[r]^{b^{i}} & *++[o][F=]{}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $a^{i}b^{i}\in L\left(A\right)$
+\end_inset
+
+ כנדרש, אבל גם 
+\begin_inset Formula $a^{j}b^{i}\in L\left(A\right)$
+\end_inset
+
+ - אך לא בשפה! 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סתירה לקיומו של 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+למת הניפוח - תכונה של שפות רגולריות
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A$
+\end_inset
+
+ בעל 
+\begin_inset Formula $m$
+\end_inset
+
+ מצבים.
+ נתבונן בקריאת הריישא 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ בביטוי 
+\begin_inset Formula $a^{m}b^{m}$
+\end_inset
+
+.
+ בקריאת 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ נעבור ב
+\begin_inset Formula $m+1$
+\end_inset
+
+ מצבים, אבל יש לנו רק 
+\begin_inset Formula $m$
+\end_inset
+
+ מצבים:
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[r]^{a} & *++[o][F--]{}\ar[r]^{a} & \cdots & *++[o][F--]{}\ar[r]^{a} & *++[o][F]{}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נעבור בלפחות מצב אחד פעמיים בקריאת 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{\ar[rd]\\
+ & *++[o][F]{q_{0}}\ar[r]^{a^{s}} & *++[o][F]{}\ar@(rd,ld)^{a^{t}}\ar[r]^{a^{m-s-t}b^{m}} & *++[o][F=]{}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+למת הניפוח
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Enumerate
+לכל שפה רגולרית 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיים 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כך שלכל 
+\begin_inset Formula $z\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|\ge n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיים פירוק 
+\begin_inset Formula $z=uvw$
+\end_inset
+
+ כך ש
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|uv\right|\le n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|v\right|\ge1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כך שלכל 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $z'=u\left(v\right)^{i}w\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איך משתמשים?
+\end_layout
+
+\begin_layout Standard
+כדי להראות 
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית:
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+)
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\bar under
+לא
+\bar default
+ לבחירתנו(
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+נבחר
+\bar default
+ 
+\begin_inset Formula $z\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|\ge n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+יהי פירוק 
+\begin_inset Formula $\begin{array}{c}
+a=uvw\\
+\left|uv\right|\le n\\
+\left|u\right|\ge1
+\end{array}$
+\end_inset
+
+)הפירוק 
+\bar under
+לא
+\bar default
+ לבחירתנו(
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+נבחר
+\bar default
+ 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $z'=u\left(v\right)^{i}w\notin L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה בעלת מספר סופי של מילים
+\end_layout
+
+\begin_layout Enumerate
+האם 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית, שכן לכל מילה בשפה ניתן לבנות ביטוי רגולרי שיקבל רק אותה, ואז לעשות
+ 
+\begin_inset Formula $\cup$
+\end_inset
+
+ לכל הביטויים הרגולריים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+האם 
+\begin_inset Formula $L$
+\end_inset
+
+ מקיימת את למת הניפוח?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מתקיימת הלמה באופן ריק - עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ו השווה לערך המילה המקסימלית ב
+\begin_inset Formula $L$
+\end_inset
+
+ +
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+שאלות
+\end_layout
+
+\begin_layout Standard
+הוכח ע"י למת הניפוח שהשפות הבאות אינן רגולריות מעל 
+\begin_inset Formula $\Sigma=\left\{ a,b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תבנית
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $z=?$
+\end_inset
+
+ כך ש
+\begin_inset Formula $z\in L,n\le\left|z\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יהי פירוק 
+\begin_inset Formula $z=uvw$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|uv\right|\le n$
+\end_inset
+
+, 
+\begin_inset Formula $\left|v\right|\ge1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i=?$
+\end_inset
+
+.
+ נראה 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+ - סתירה
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Formula $L=\left\{ w\middle|\#_{a}\left(w\right)=\#_{b}\left(w\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $z=a^{n}b^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יהי פירוק 
+\begin_inset Formula $z=uvw$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|uv\right|\le n$
+\end_inset
+
+, 
+\begin_inset Formula $\left|v\right|\ge1$
+\end_inset
+
+.
+ אזי בהכרח 
+\begin_inset Formula $u=a^{s};v=a^{t};w=a^{n-s-t}b^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i=0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+z'=uv^{0}w=uw=a^{s}a^{n-s-t}b^{n}=a^{n-t}b^{n}\notin L
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+סתירה ולכן 
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset Formula $L=\left\{ w\middle|w=w^{R}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+\end_layout
+
+\begin_layout Itemize
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+ 
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $z=a^{n}ba^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+יהי פירוק 
+\begin_inset Formula $z=uvw$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|uv\right|\le n$
+\end_inset
+
+, 
+\begin_inset Formula $\left|v\right|\ge1$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $u=a^{s},v=a^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נבחר 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i=2$
+\end_inset
+
+.
+ נקבל
+\begin_inset Formula 
+\[
+z'=uv^{2}w=u\cdot v\cdot v\cdot w=a^{n+t}ba^{n}\notin L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ 
+\begin_inset Formula $L=\left\{ a^{k}ba^{n_{1}}ba^{n_{2}}b\cdots a^{n_{r}}b\middle|\forall_{1\le j\le r}n_{j}\neq k\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $z=a^{n}ba^{n+1}b$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+z'=uv^{2}w=a^{n+t}ba^{n+1}b
+\]
+
+\end_inset
+
+נקבל סתירה 
+\begin_inset Formula $\left(z'\notin L\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n+t=n+1$
+\end_inset
+
+ - אבל הנ"ל לא מובטח
+\end_layout
+
+\begin_layout Standard
+נציע פתרון חלופי:
+\begin_inset Formula 
+\[
+z=a^{n}ba^{n+1}ba^{n+2}b\cdots a^{n+n}b
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $i=2$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+z'=a^{n+t}ba^{n+1}b\cdots a^{n+n}b
+\]
+
+\end_inset
+
+ידוע 
+\begin_inset Formula $1\le t$
+\end_inset
+
+, 
+\begin_inset Formula $s+t\le n$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $1\le t\le n$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $1+n<1+n\le n+n$
+\end_inset
+
+ ולכן בהכרח קיים 
+\begin_inset Formula $j$
+\end_inset
+
+ כך ש
+\begin_inset Formula $nj=n+t$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L$
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Section*
+אינטואיציה מתי שפה לא רגולרית
+\end_layout
+
+\begin_layout Itemize
+בעיות ספירה)זכירה( לא מוגבלת)לדוגמא 
+\begin_inset Formula $\#_{b}=\#_{a}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+קיום נוסחא)למשל 
+\begin_inset Formula $a^{n^{2}}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+המשך שאלות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\numeric off
+.
+ 
+\begin_inset Formula $L=\left\{ ww\middle|w\in\Sigma^{*}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+ ניקח 
+\begin_inset Formula $z=a^{n}ba^{n}b$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=a^{n-t}ba^{n}b\notin L\qquad1\le t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\left\{ a^{i}b^{j}\middle|i\neq j\right\} 
+\]
+
+\end_inset
+
+הוכח ש
+\begin_inset Formula $K$
+\end_inset
+
+ לא רגולרית:
+\end_layout
+
+\begin_layout Enumerate
+ע"י סגירות
+\end_layout
+
+\begin_layout Enumerate
+ע"י למת הניפוח
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+ מסגירות נקבל 
+\begin_inset Formula $L'=\left\{ \cdots\right\} $
+\end_inset
+
+ רגולרית, אך ידוע 
+\begin_inset Formula $L'$
+\end_inset
+
+ לא רגולרית - סתירה.
+\begin_inset Newline newline
+\end_inset
+
+ניקח את השפה הבאה:
+\begin_inset Formula 
+\[
+\left\{ a^{*}b^{*}\right\} -L=a^{n}b^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left\{ a^{*}b^{*}\right\} $
+\end_inset
+
+ רגולרית - 
+\begin_inset Formula $\xymatrix{*++[o][F]{}\ar@(lu,ru)^{a}\ar[r]^{\epsilon} & *++[o][F=]{}\ar@(lu,ru)^{b}}
+$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $a^{n}b^{n}$
+\end_inset
+
+ לא רגולרית.
+\end_layout
+
+\begin_layout Enumerate
+נניח בשלילה 
+\begin_inset Formula $L$
+\end_inset
+
+ רגולרית.
+ יהי 
+\begin_inset Formula $n$
+\end_inset
+
+ מלמת הניפוח.
+ נבחר 
+\begin_inset Formula $z=a^{n}b^{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $z\in L$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|\ge n$
+\end_inset
+
+.
+ יהי פירוק 
+\begin_inset Formula $z=uvw$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{array}{c}
+s+t\le n\\
+t\ge1
+\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{array}{c}
+u=a^{s}\\
+v=a^{t}\\
+w=a^{n-s-t}b^{n+1}
+\end{array}$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $i=1$
+\end_inset
+
+.
+ נקבל 
+\begin_inset Formula $z'=uv^{2}w=a^{n+t}b^{n+1}$
+\end_inset
+
+.
+ נקבל סתירה כאשר 
+\begin_inset Formula $n+t=n+1$
+\end_inset
+
+ - אבל לא מובטח לנו ש
+\begin_inset Formula $t=1$
+\end_inset
+
+!
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ננסה פירוק נוסף:
+\begin_inset Formula 
+\[
+z'=uv^{i}w=uvv^{i-1}w=a^{n+t\left(i-1\right)}b^{n+1}
+\]
+
+\end_inset
+
+כדי לקבל סתירה, נדרוש 
+\begin_inset Formula $n+t\left(i-1\right)=n+1$
+\end_inset
+
+, 
+\begin_inset Formula $t\left(i-1\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $i=\cfrac{1}{t}+1$
+\end_inset
+
+ - אבל לא בטוח ש
+\begin_inset Formula $i$
+\end_inset
+
+ הנ"ל מקיים 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Itemize
+נסיון שלישי:
+\begin_inset Formula 
+\[
+z=a^{n}b^{k}\qquad k\neq n
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $i\in\mathbb{N}_{0}$
+\end_inset
+
+ ונקבל סתירה כאשר 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'=uv^{i}w=uvv^{\left(i-1\right)}u=a^{n+\left(i-1\right)t}\cdot b^{k}\notin L
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $n+\left(i-1\right)t=k$
+\end_inset
+
+.
+ האילוצים שלנו הם
+\begin_inset Formula 
+\[
+k\neq n\qquad i\in\mathbb{N}_{0}
+\]
+
+\end_inset
+
+נדרוש
+\begin_inset Formula 
+\[
+i=\cfrac{k-n}{t}+1\in\mathbb{N}_{0}
+\]
+
+\end_inset
+
+צריך 
+\begin_inset Formula $t|k-n$
+\end_inset
+
+.
+ מובטח לנו 
+\begin_inset Formula $1\le t\le n$
+\end_inset
+
+.
+ איזה מספר יתחלק תמיד ב
+\begin_inset Formula $t$
+\end_inset
+
+? 
+\begin_inset Formula $n!$
+\end_inset
+
+.
+ ואז
+\begin_inset Formula 
+\[
+i=\cfrac{k-n}{t}+1=\cfrac{\left(n!+n\right)-n}{t}+1=\cfrac{n!}{t}+1=\cfrac{1\cdot2\cdots\cancel{t}\cdots n}{\cancel{t}}+1\in\mathbb{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כלומר: נבחר 
+\begin_inset Formula $z=a^{n}b^{n!+n}$
+\end_inset
+
+, ובהמשך נבחר 
+\begin_inset Formula $i=\cfrac{n!}{t}+1\in\mathbb{N}_{0}$
+\end_inset
+
+, ונראה 
+\begin_inset Formula $z'\notin L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

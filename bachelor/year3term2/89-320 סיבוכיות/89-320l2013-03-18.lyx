@@ -1,0 +1,2137 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+CO-NP
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CO-NP=\left\{ \left\{ 0,1\right\} ^{*}\backslash L\middle|L\in NP\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $SAT\in NP$
+\end_inset
+
+ אוסף הנוסחאות הספיקות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{SAT}\in CO-NP$
+\end_inset
+
+ - אוסף הנוסחאות שאינן ספיקות
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ יחס שהינו ב
+\begin_inset Formula $PC$
+\end_inset
+
+, ובעיית ההכרעה שלו היא לכן ב
+\begin_inset Formula $NP$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+NP\ni L_{R}\left\{ x\middle|\exists_{y}\left(x,y\right)\in R\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CO-NP\ni\left\{ 0,1\right\} ^{*}\backslash L_{R}=\left\{ x\middle|\forall_{y}\left(x,y\right)\notin R\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\neq NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP\neq CO-NP
+\]
+
+\end_inset
+
+נשים 
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ כי השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הסבר
+\series default
+: עבור 
+\begin_inset Formula $P$
+\end_inset
+
+, ידוע 
+\begin_inset Formula $P=CO-P$
+\end_inset
+
+ שכן
+\begin_inset Formula 
+\[
+CO-P=\left\{ \left\{ 0,1\right\} ^{*}\backslash L\middle|L\in P\right\} 
+\]
+
+\end_inset
+
+שכן אם אפשר להכריע בזמן פולינומי, אפשר להפוך את ההכרעה ולקבל הכרעה הפוכה
+ בזמן פולינומי, ולכן אם 
+\begin_inset Formula $NP\neq CO-NP$
+\end_inset
+
+ אזי אפשר להסיק 
+\begin_inset Formula $NP\neq P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+לא תמיד קיימת רדוקציית קארפ בין 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{L}=\left\{ 0,1\right\} ^{*}\backslash L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+ניזכר כי קיימת רדוקציית קארפ מ
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ אם קיימת פונקציה חשיבה פולינומיאלית 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(x\right)\in\overline{L}\iff x\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\begin{array}{c}
+L=\emptyset\\
+\overline{L}=\left\{ 0,1\right\} ^{*}
+\end{array}$
+\end_inset
+
+ לא קיימת רדוקציה כזאת, שכל לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\begin{array}{c}
+x\notin\emptyset\\
+f\left(x\right)\in\left\{ 0,1\right\} ^{*}
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ תמיד קיימת רדוקציית קוק מ
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+ניזכר כי רדוקציית קוק מ
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ היא מכונה פולינומית עם גישת אורקל ל
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+, ולכן בהנתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ עבורו צריך להכריע האם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+, הרדוקציה תבצע שאילתת אורקל ל
+\begin_inset Formula $\overline{L}$
+\end_inset
+
+ ותהפוך את התשובה.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\subseteq NP\cap CO-NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\subsetneq NP\cap CO-NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $NP\cap CO-NP$
+\end_inset
+
+ מכיל קבוצות שהן 
+\begin_inset Formula $NP-Hard$
+\end_inset
+
+ אזי 
+\begin_inset Formula $NP=CO-NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lander
+\lang hebrew
+)ראינו בפעם שעברה(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $P\neq NP$
+\end_inset
+
+ אזי קיימת 
+\begin_inset Formula $A\in NP$
+\end_inset
+
+ כך ש
+\begin_inset Formula $A\notin P$
+\end_inset
+
+ ו
+\begin_inset Formula $A\notin NPC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נשים 
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\emph on
+הטענה לעיל
+\emph default
+ מובילים למסקנה דומה למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lander
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+ע"פ השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיימת 
+\begin_inset Formula $A\in NP\cap CO-NP$
+\end_inset
+
+)ולכן 
+\begin_inset Formula $A\in NP$
+\end_inset
+
+( וכן 
+\begin_inset Formula $A\notin P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ כזו היא אינה 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה, אז מצאנו 
+\begin_inset Formula $A$
+\end_inset
+
+ העונה על תנאי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lander
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+A\notin P\qquad A\notin NPC\qquad A\in NP
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ כזו היא כן 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה אזי ע"פ הטענה 
+\begin_inset Formula $NP=CO-NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לסיכום, אם 
+\begin_inset Formula $NP\neq CO-NP$
+\end_inset
+
+ וכן השערה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיימת אזי קיימת 
+\begin_inset Formula $A$
+\end_inset
+
+ ע"פ תנאי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lander
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+הוכחת הטענה
+\end_layout
+
+\begin_layout Standard
+נניח כי קיימת 
+\begin_inset Formula $L\in NP\cap CO-NP$
+\end_inset
+
+ שהינה 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה.
+ נראה כי זה גורר 
+\begin_inset Formula $CO-NP\subseteq NP$
+\end_inset
+
+.
+ אח"כ נראה כי 
+\begin_inset Formula $\left(CO-NP\subseteq NP\right)$
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left(CO-NP=NP\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L'\in CO-NP$
+\end_inset
+
+ כלשהי.
+ מטרתנו להראות כי 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+)ומכך נסיק כי 
+\begin_inset Formula $CO-NP\subseteq NP$
+\end_inset
+
+(.
+ ראשית נשי לב כי קיימת רדוקציה מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הסבר
+\series default
+: קיימת רדוקציה 
+\bar under
+מ
+\begin_inset Formula $CO-NP\ni L'$
+\end_inset
+
+ ל
+\begin_inset Formula $NP\ni\overline{L'}$
+\end_inset
+
+
+\bar default
+)כפי שהסברנו קיימת רדוקציית קוק משפה למשלימתה, זוהי רדוקציה ההופכת את תשובת
+ האורקל(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+קיימת רדוקציה 
+\bar under
+מ
+\begin_inset Formula $NP\ni\overline{L'}$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+
+\bar default
+ כי 
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-קשה.
+\end_layout
+
+\begin_layout Standard
+ולכן מטרנזיטיביות רדוקציות יש רדוקציה 
+\bar under
+מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+
+\bar default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כדי להוכיח ש
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+, נגדיר יחס 
+\begin_inset Formula $R$
+\end_inset
+
+ שהוא ב
+\begin_inset Formula $PC$
+\end_inset
+
+ וכן 
+\begin_inset Formula $L'=L_{R}$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $L'$
+\end_inset
+
+ תהיה בעיית ההכרעה המתאימה ל
+\begin_inset Formula $R$
+\end_inset
+
+ ומכך נסיק ש
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ יוגדר באופן הבא:
+\begin_inset Formula 
+\[
+R=\left\{ \left(x,\left[\left(z_{1},b_{1},w_{1}\right),\dots\left(z_{t},b_{t},w_{t}\right)\right]\right)\middle|\cdots\right\} 
+\]
+
+\end_inset
+
+כאשר הרדוקציה מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+ לאחר סדרת השאלות 
+\begin_inset Formula $z_{1},\dots z_{t}$
+\end_inset
+
+, סדרת ותשובות 
+\begin_inset Formula $b_{1},\dots b_{t}$
+\end_inset
+
+, וכן:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $b_{i}=1$
+\end_inset
+
+ - כלומר אם התשובה היא ש
+\begin_inset Formula $z_{i}\in L$
+\end_inset
+
+ - אזי 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ יהיה עד לכך ש
+\begin_inset Formula $z_{i}\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $b_{i}=0$
+\end_inset
+
+ - כלומר אם התשובה היא 
+\begin_inset Formula $z_{i}\notin L$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $z_{i}\in\overline{L}$
+\end_inset
+
+( - אזי 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ יהיה עד לכך ש
+\begin_inset Formula $z_{i}\notin L$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $z_{i}\in\overline{L}$
+\end_inset
+
+.
+ נזכור ש
+\begin_inset Formula $\overline{L}\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\in PC$
+\end_inset
+
+ בשל ההסבר הבא:
+\end_layout
+
+\begin_layout Standard
+בהנתן קלט ל
+\begin_inset Formula $R$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $\left(x,\left[\left(z_{1},b_{1},w_{1}\right),\dots\left(z_{t},b_{t},w_{t}\right)\right]\right)$
+\end_inset
+
+ אפשר לוודא בזמן פולינומי שהרדוקציה מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+ אכן תקבל את 
+\begin_inset Formula $x$
+\end_inset
+
+ עבור סדרת השאלות והתשובות האמורה.
+ כדי לוודא זאת צריך להשתכנע בשני דברים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+שעבור סדרת השאלות 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ וסדרת התשובות 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ הרדוקציה מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+ אכן מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ זאת ניתן לעשות בזמן פולינומי כי הרדוקציה היא פולינומית.
+\end_layout
+
+\begin_layout Enumerate
+צריך להשתכנע בכך שסדרת התשובות 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ אכן מתאימה לסדרת תשובות של האורקל ל
+\begin_inset Formula $L$
+\end_inset
+
+ עבור השאלות 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+.
+ זאת ניתן לעשות בזמן פולינומי ע"י שימוש בעדים 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ וכן ע"י שכנוע ש
+\begin_inset Formula $L\in NP\cap CO-NP$
+\end_inset
+
+, ולכן ישנם עדים קצרים גם לכך ש
+\begin_inset Formula $z_{i}\in L$
+\end_inset
+
+, וגם לכך ש
+\begin_inset Formula $z_{i}\notin L$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $z_{i}\in\overline{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+)כי היא בעיית ההכרעה המתאימה ל
+\begin_inset Formula $R$
+\end_inset
+
+( ולכן הסקנו ש
+\bar under
+
+\begin_inset Formula $CO-NP\subseteq NP$
+\end_inset
+
+
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+כעת נראה כי 
+\begin_inset Formula $CO-NP=NP$
+\end_inset
+
+.
+ נניח בשלילה כי השוויון לא מתקיים, ולכן קיימת 
+\begin_inset Formula $a\in NP\backslash CO-NP$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\overline{a}\in CO-NP\subseteq NP
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overline{a}\in NP
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\in CO-NP
+\]
+
+\end_inset
+
+וזו סתירה להנחה ש 
+\begin_inset Formula $a\in NP\backslash CO-NP$
+\end_inset
+
+, ולכן קיבלנו שאם 
+\begin_inset Formula $CO-NP\subseteq NP$
+\end_inset
+
+ אז למעשה 
+\begin_inset Formula $CO-NP=NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת)מחישוביות(: 
+\begin_inset Formula $NP$
+\end_inset
+
+ סגור לרדוקציות קארפ
+\end_layout
+
+\begin_layout Standard
+כלומר אם קיימת רדוקציית קארפ מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+, וכן 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+, אזי 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+כזכור רדוקציית קארפ מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $f$
+\end_inset
+
+ חשיבה פולינומית 
+\begin_inset Formula $f:\left\{ 0,1\right\} ^{*}\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\in L'$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים מוודא 
+\begin_inset Formula $V'$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P'$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\exists_{y}\left|y\right|<P'\left(\left|f\left(x\right)\right|\right),V'\left(f\left(x\right),y\right)=1
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $\begin{array}{rcl}
+V\left(x,y\right) & = & V'\left(f\left(x\right),y\right)\\
+P\left(\left|x\right|\right) & = & P'\left(\left|f\left(x\right)\right|\right)
+\end{array}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\boxed{\exists_{y}\left|y\right|<P\left(\left|x\right|\right),V\left(x,y\right)=1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $NP$
+\end_inset
+
+ אינו סגור)כנראה( לרדוקציות קוק
+\end_layout
+
+\begin_layout Standard
+ז"א אם קיימת רדוקציית קוק מ
+\begin_inset Formula $L'$
+\end_inset
+
+ ל
+\begin_inset Formula $L$
+\end_inset
+
+ וכן 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+, אזי לא ניתן להסיק 
+\begin_inset Formula $L'\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L=\overline{SAT}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\overline{L}=SAT$
+\end_inset
+
+.
+ קיימת רדוקציית קוק מ
+\begin_inset Formula $\overline{SAT}$
+\end_inset
+
+ ל
+\begin_inset Formula $SAT$
+\end_inset
+
+)כמקודם, זוהי רדוקציה שהופכת את תשובת האורקל(.
+ כמו כן 
+\begin_inset Formula $SAT\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אילו 
+\begin_inset Formula $NP$
+\end_inset
+
+ היה סגור לרדוקציות קוק אז היינו מסיקים כי 
+\begin_inset Formula $\overline{SAT}\in NP$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $SAT\in CO-NP\cap NP$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $SAT$
+\end_inset
+
+ היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה וזה גורר ע"פ הטענה שהראינו ש
+\begin_inset Formula $CO-NP=NP$
+\end_inset
+
+)ומשערים שזהו אינו המצב(
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+PH
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Polynomial-time Heirarchy
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ההיררכיה הפולינומית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $PH$
+\end_inset
+
+ הינה מחלקה שמכלילה את 
+\begin_inset Formula $NP$
+\end_inset
+
+ ואת 
+\begin_inset Formula $CO-NP$
+\end_inset
+
+.
+ 
+\begin_inset Formula $PH$
+\end_inset
+
+ סגורה לרדוקציות קוק, וכן נראה כי מתקיים ש
+\begin_inset Formula $PH=P$
+\end_inset
+
+
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $NP=P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+נאמר 
+\begin_inset Formula $A\in\Sigma_{k}$
+\end_inset
+
+ אם קיים מוודא פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\underbrace{\exists_{y_{1}}\forall_{y_{2}}\exists_{y_{3}}\cdots Q_{k}y_{k}}_{\left|y_{i}\right|<P\left(\left|x\right|\right)}V\left(x,y_{1},y_{2},\dots y_{k}\right)=1\cong x=A
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $Q_{k}=\exists$
+\end_inset
+
+ אם 
+\begin_inset Formula $k$
+\end_inset
+
+ אי זוגי, 
+\begin_inset Formula $Q_{k}=\forall$
+\end_inset
+
+ אם 
+\begin_inset Formula $k$
+\end_inset
+
+ זוגי.
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP=\Sigma_{1}\qquad P=\Sigma_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PH=\bigcup_{k=0}^{\infty}\Sigma_{k}
+\]
+
+\end_inset
+
+נשים 
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ ש
+\begin_inset Formula $PH$
+\end_inset
+
+ היא אכן היררכיה - לפחות במובן חלש, כלומר 
+\begin_inset Formula $\Sigma_{k}\subseteq\Sigma_{k+1}$
+\end_inset
+
+)נובע מהגדרה(.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Clique}=\left\{ \left\langle G,k\right\rangle \middle|\textnormal{\ensuremath{G}is a graph with \ensuremath{k}-sized clique}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Clique}\in NP=\Sigma_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Max-Clique}=\left\{ \left\langle G,k\right\rangle \middle|\textnormal{\ensuremath{G}is a graph where the maximal clique is of size \ensuremath{k}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\textnormal{Max-Clique}$
+\end_inset
+
+ לא ידוע להיות שייך ל
+\begin_inset Formula $\Sigma_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $\textnormal{Max-Clique}\in\Sigma_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הסבר
+\series default
+: קיים 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\underbrace{\exists_{c_{1}}\forall_{c_{2}}}_{\left|c_{i}\right|<P\left(\left|\left\langle G,k\right\rangle \right|\right)}V\left(\left\langle G,k\right\rangle ,c_{1},c_{2}\right)=1\iff\left\langle G,k\right\rangle \in\textnormal{Max-Clique}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $V\left(\left\langle G,k\right\rangle ,c_{1},c_{2}\right)=1$
+\end_inset
+
+ אם 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ הוא קליק בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ ו
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ אינו קליק, או שהוא קליק בגודל קטן או שווה ל
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ נגדיר את 
+\begin_inset Formula $\Pi_{k}$
+\end_inset
+
+ להיות:
+\begin_inset Formula 
+\[
+\Pi_{k}=CO-\Sigma_{k}=\left\{ \left\{ 0,1\right\} \backslash L\middle|L\in\Sigma_{k}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{0}=P\qquad\Pi_{1}=CO-NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נשים לב כי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in\Pi_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים מוודא פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in A$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $x\notin\overline{A}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\neg\left(\underbrace{\exists_{y_{1}}\forall_{y_{2}}\cdots Q_{k}y_{k}}_{\left|y_{i}\right|<P\left(\left|x\right|\right)}V\left(x,y_{1},y_{2},\dots y_{k}\right)=1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Updownarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\forall_{y_{1}}\exists_{y_{2}}\cdots Q_{k}y_{k}}_{\left|y_{i}\right|<P\left(\left|x\right|\right)}V\left(x,y_{1},y_{2},\dots y_{k}\right)=0
+\]
+
+\end_inset
+
+ע"י סדרת 
+\begin_inset Formula $k$
+\end_inset
+
+ כמתים ש
+\bar under
+מתחילה
+\bar default
+ בכמת 
+\begin_inset Formula $\forall$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התכונות הבאות נובעות מההגדרה של 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $\Pi_{k}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Pi_{k}\subseteq\Pi_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Pi_{k}\subseteq\Sigma_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma_{k}\subseteq\Pi_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in\Pi_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\underbrace{\forall_{y_{1}}\exists_{y_{2}}\cdots Q_{k}y_{k}}_{\left|y_{i}\right|<P\left(\left|x\right|\right)}V\left(x,y_{1},\dots y_{k}\right)\iff x\in A
+\]
+
+\end_inset
+
+נגדיר:
+\begin_inset Formula 
+\[
+V'\left(x,y_{1},\dots y_{k+1}\right)=V\left(x,y_{2},\dots y_{k+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P'\left(\left|x\right|\right)=P\left(\left|x\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists_{y_{1}}\forall_{y_{2}}\cdots Q_{k+1}y_{k+1}V\left(x,y_{1},\dots y_{k+1}\right)\iff x\in A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PH=\bigcup_{k=0}^{\infty}\Pi_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

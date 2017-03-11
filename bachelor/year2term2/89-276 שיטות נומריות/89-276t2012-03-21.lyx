@@ -1,0 +1,1205 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+סוגי השגיאות שיכולים להיות בחישובים נומריים:
+\end_layout
+
+\begin_layout Itemize
+שגיאת עיגול - יש מספר ספרות גדול יותר ממה שאפשר לשמור.
+\end_layout
+
+\begin_layout Itemize
+שגיאת קירוב
+\end_layout
+
+\begin_layout Itemize
+שגיאה מתפשטת
+\end_layout
+
+\begin_layout Standard
+סימון השגיאה - 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+.
+ זה בעצם חסם של השגיאה.
+\end_layout
+
+\begin_layout Section*
+שגיאה מתפשטת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{*}=f\left(x^{*}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta f=\left|\cfrac{\partial f}{\partial x}\right|\Delta x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+ קטן:
+\begin_inset Formula 
+\[
+\Delta f=\cfrac{\left|f\left(x+\Delta x\right)-f\left(x\right)\right|\cdot\Delta x}{\left(x+\Delta x\right)-x}=\left|\cfrac{\partial f}{\partial x}\right|\Delta x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר יש לנו פונקציה במספר משתנים:
+\begin_inset Formula 
+\[
+y=f\left(x_{1},x_{2},...x_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta y=\sum_{i=1}^{n}\left|\cfrac{\partial f}{\partial x_{i}}\right|\Delta x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שגיאה יחסית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta y=\left|\cfrac{\Delta y}{y}\right|=\cfrac{\sum_{i=1}^{n}\left|\cfrac{\partial f}{\partial x_{i}}\right|\Delta x_{i}}{\left|y\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=3x_{1}-5x_{2}^{2}+x_{3}^{2}
+\]
+
+\end_inset
+
+חשב את השגיאה כאשר
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{1}=1.05 &  & \Delta x_{1}=0.1\\
+x_{2}=0.33 &  & \Delta x_{2}=0.1\\
+x_{3}=1.12 &  & \Delta x_{3}=0.1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\partial y}{\partial x_{1}}=3\qquad\cfrac{\partial y}{\partial x_{2}}=-10x_{2}\qquad\cfrac{\partial y}{\partial x_{3}}=2x_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta y\le3\cdot0.1+3.3\cdot0.1+2.24\cdot0.1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\cfrac{4\pi R^{3}}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=5.3\qquad\Delta R=0.05
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\pi^{*}=3.14\qquad\pi=3.14159...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\partial V}{\partial R}=4\pi R^{2}
+\]
+
+\end_inset
+
+אמנם 
+\begin_inset Formula $\pi$
+\end_inset
+
+ הוא קבוע מתמטי, אבל אנחנו לא יכולים לייצג אותו באופן מדוייק במחשב - כלומר
+ יש בייצוג שלו שגיאה.
+ ברגע שאנחנו לא יכולים לייצג ערך כלשהו באופן מוחלט - הוא אוטומטית הופך למשתנה
+ )לפחות בחישוב הזה(.
+ לכן צריך גם לחשב את
+\begin_inset Formula 
+\[
+\cfrac{\partial V}{\partial\pi}=\cfrac{4R^{3}}{3}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\Delta V=\left|4\cdot3.14\cdot5.3^{2}\right|0.05+\left|\cfrac{4\cdot5.3^{3}}{3}\right|\left|\pi-3.14\right|=17.96
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פעולות חשבון על שגיאה מתפשטת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\left(x+y\right)=\left|1\right|\cdot\Delta x+\left|1\right|\cdot\Delta y=\Delta x+\Delta y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(x-y\right)=\left|1\right|\cdot\Delta x+\left|-1\right|\Delta x=\Delta x+\Delta y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(x\cdot y\right)=\left|y\right|\Delta x+\left|x\right|\Delta y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(\cfrac{x}{y}\right)=\left|\cfrac{1}{y}\right|\Delta x+\left|\cfrac{x}{y^{2}}\right|\Delta y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(x\cdot y\right)=\cfrac{\Delta\left(x\cdot y\right)}{\left|x\cdot y\right|}=\left|\cfrac{\left|y\right|\Delta x+\left|x\right|\Delta y}{\left|x\right|\left|y\right|}\right|=\cfrac{\Delta x}{\left|x\right|}+\cfrac{\Delta y}{\left|y\right|}=\delta x+\delta y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta\left(\cfrac{x}{y}\right)=\cfrac{\Delta\left(\cfrac{x}{y}\right)}{\left|\cfrac{x}{y}\right|}=\left|\cfrac{\left|\cfrac{1}{y}\right|\Delta x+\left|\cfrac{x}{y^{2}}\right|\Delta y}{\cfrac{x}{y}}\right|=\cfrac{\Delta x}{\left|x\right|}+\cfrac{\Delta y}{\left|y\right|}=\delta x+\delta y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חסם השגיאה הכללי
+\end_layout
+
+\begin_layout Standard
+חסם השגיאה עבור חישוב מסויים הוא סכום שלושת סוגי השגיאות:
+\begin_inset Formula 
+\[
+\Delta f=\left|\textnormal{round}\right|+\left|\textnormal{approx}\right|+\left|\textnormal{spread}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מספר מצב)
+\lang english
+Condition Number
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+מספר מצב הוא מדד שאומר כמה הפונקציה הרגישה לשינויים במקום מסויים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מספר המצב הוא היחס בין השגיאה היחסית בפלט לשגיאה היחסית בקלט:
+\begin_inset Formula 
+\[
+C=\left|\cfrac{\delta y}{\delta x}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\left|\cfrac{\delta y}{\delta x}\right|=\left|\cfrac{\cfrac{\Delta y}{y}}{\cfrac{\Delta x}{x}}\right|=\left|\cfrac{\left|\cfrac{\Delta y}{\Delta x}\right|\cdot x}{y}\right|=\left|\cfrac{\left|\cfrac{\partial y}{\partial x}\right|\cdot x}{y}\right|=\left|\cfrac{y'\cdot x}{y}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C\gg1$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ill condition
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - מצב לא רצוי שבו שינוי קטן יכול להוביל לשגיאה גדולה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C\approx1$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+well-condition
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מצב טוב, שבו הפונקציה לא מזדעזעת מכל שינוי קטן.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{1}\left(x\right)=\cfrac{1}{x^{2}+1}\qquad f_{2}\left(x\right)=\cfrac{\left(3x^{4}-10\right)^{2}}{12}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במידה ואנו יכולים לבחור בין שתי הפונקציות לחשב עבור 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, איזו פונקציה נעדיף?
+\end_layout
+
+\begin_layout Subsection*
+תשובה
+\end_layout
+
+\begin_layout Standard
+נבדוק את מספרי המצב של הפונקציות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{1}'\left(x\right)=-\cfrac{2x}{\left(x^{2}+1\right)^{2}}\qquad f_{2}'\left(x\right)=\cfrac{2\left(3x^{2}-10\right)\cdot\cancel{12}x^{3}}{\cancel{12}}=2y^{3}\left(3y^{2}-10\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{1}=\left|\cfrac{f_{1}'\left(x\right)\cdot x}{\delta\left(x\right)}\right|=\left|\cfrac{\cfrac{\delta x}{\left(x^{2}+1\right)^{\cancel{2}}}\cdot x}{\cfrac{1}{\cancel{x^{2}+1}}}\right|=\cfrac{\delta x\cdot x}{\left(x^{2}+1\right)},C_{1}\left(x\right)=\cfrac{3}{4}
+\]
+
+\end_inset
+
+מחשבים גם את 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, ורואים ש
+\begin_inset Formula $C_{1}>C_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=\cfrac{1}{1-x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{0}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}=1.1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=1.01
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{3}=1.0001
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חשב את מספרי המצב
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\left|\cfrac{\cfrac{1}{\left(1-x\right)^{\cancel{2}}}\cdot x}{\cancel{\cfrac{1}{1-x}}}\right|=\left|\cfrac{x}{x-1}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x_{0}}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x_{1}}=\cfrac{1.1}{0.1}=11
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x_{2}}=\cfrac{1.01}{0.01}=101
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{x_{3}}=\cfrac{1.0001}{0.0001}=10001
+\]
+
+\end_inset
+
+זה קורה בגלל שב
+\begin_inset Formula $x=1$
+\end_inset
+
+ הפונקציה לא מוגדרת, ולכן מקבלים שם אסימפטותה.
+\end_layout
+
+\begin_layout Part*
+שגיאה של פונקציה במספר משתנים
+\end_layout
+
+\begin_layout Section*
+הגדרה - נורמה
+\end_layout
+
+\begin_layout Standard
+מסמנים נורמה בתור 
+\begin_inset Formula $\left\Vert x\right\Vert $
+\end_inset
+
+.
+ פונקציית הנורמה צריכה לקיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרישות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert x\right\Vert \ge0$
+\end_inset
+
+, ו
+\begin_inset Formula $x=0\Leftrightarrow\left\Vert x\right\Vert =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert c\cdot x\right\Vert =\left|c\right|\left\Vert x\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert x+y\right\Vert \le\left\Vert x\right\Vert +\left\Vert y\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Itemize
+נורמת 
+\begin_inset Formula $t$
+\end_inset
+
+ - 
+\begin_inset Formula $\left\Vert x\right\Vert _{t}=\sqrt[t]{\sum\limits _{i=1}^{n}\left|x_{i}\right|^{t}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נורמה אוקלידית - 
+\begin_inset Formula $\left\Vert x\right\Vert _{2}=\sqrt[2]{\sum\limits _{i=1}^{n}\left|x_{i}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נורמת מנהטן - 
+\begin_inset Formula $\left\Vert x\right\Vert _{1}=\sum\limits _{i=1}^{n}\left|x_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\Vert x\right\Vert _{\infty}=\max\left|x_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עבור מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert A\right\Vert _{1}=\max_{1\le j\le n}\sum_{i=1}^{m}\left|a_{ij}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert A\right\Vert _{\infty}=\max_{1\le i\le m}\sum_{j=1}^{n}\left|a_{ij}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{x}=\begin{bmatrix}1.59\\
+3.78\\
+5.67\\
+0.16
+\end{bmatrix}\qquad\vec{x}^{*}=\begin{bmatrix}1.6\\
+3.8\\
+5.7\\
+0.2
+\end{bmatrix}
+\]
+
+\end_inset
+
+נחשב את השגיאה היחסית בנורמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\begin_inset Formula 
+\[
+\Delta x=\begin{bmatrix}0.01\\
+0.02\\
+0.03\\
+0.04
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\delta x=\cfrac{\left\Vert \Delta\vec{x}\right\Vert _{1}}{\left\Vert \vec{x}\right\Vert _{1}}=\cfrac{0.1}{11.2}\approx8.93\cdot10^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{3}+3x-4
+\]
+
+\end_inset
+
+רוצים לחשב נגזרת:
+\begin_inset Formula 
+\[
+x=2.0001
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{*}=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{f\left(x+h\right)-f\left(h\right)}{h}\qquad h>0
+\]
+
+\end_inset
+
+מה השגיאות שיהיו בחישוב הזה?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Itemize
+שגיאת קלט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{*}=x+\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x^{*}\right)=f\left(x+\Delta x\right)=3\left(x+\Delta x\right)^{2}+3=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=3\left(x^{2}+2x\Delta x+\Delta x^{2}\right)+3\approx3x^{2}+6x\Delta x_{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x^{\alpha}\right)-f'\left(x\right)=\cancel{3x^{2}}+6x\Delta x+\cancel{3}-\cancel{-3x^{2}}-3=6x\Delta x=6\cdot2.0\cdot0.0001=1.2\cdot10^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שגיאת קירוב:
+\begin_inset Formula 
+\[
+\delta'\left(x\right)^{*}=\cfrac{\left(x+h\right)^{3}+3\left(x+h\right)-4-\left(x^{3}+3x-4\right)}{h}=\cfrac{3x^{2}\cancel{h}+3xh^{\cancel{2}}+h^{\cancelto{2}{3}}+e^{\cancel{2}}}{\cancel{h}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=3x^{2}+3xh+h^{2}+3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(x\right)=3x^{2}+3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta f'\left(x\right)=\left|3xh+h^{2}\right|=\left|6h+h^{2}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\cfrac{\Delta f'\left(x\right)}{f'\left(x\right)}\right|\approx\left|\cfrac{\Delta f'\left(x\right)}{f'\left(x\right)^{*}}\right|\le\cfrac{1}{2}B^{1-p}=2^{-23}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left|\Delta f'\left(x\right)\right|\le\left|f'\left(x\right)^{*}\right|\cdot2^{-23}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2^{-23}\left|\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le2^{-23}\cfrac{\left|f\left(x+h\right)\right|+\left|f\left(x\right)\right|}{h}\approx2^{-23}\cdot\cfrac{2\left|f\left(x\right)\right|}{h}=\cfrac{2^{-22}}{h}\left|x^{3}+3x-4\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\cfrac{x-x^{*}}{x}\right|\approx\left|\cfrac{x-x*}{x^{*}}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונה פונקציה 
+\begin_inset Formula $y\left(x_{1},x_{2},...x_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הערכים המדוייקים: 
+\begin_inset Formula $x_{1},x_{2},...x_{n}\to x_{1}^{\left(0\right)},x_{2}^{\left(0\right)},...x_{n}^{\left(0\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערכים המקורבים: 
+\begin_inset Formula $\tilde{x}_{1},\tilde{x}_{2},...\tilde{x}_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לחשב את השגיאה.
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{\underline{x}}=\left(\tilde{x}_{1},...\tilde{x}_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}^{\left(0\right)}=\left(x_{1}^{\left(0\right)},...x_{n}^{\left(0\right)}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}_{i}=\left(\tilde{x}_{1},...\tilde{x}_{i},x_{i+1}^{\left(0\right)},...x_{n}^{\left(0\right)}\right),\qquad i=1,...n-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta x_{i}=\tilde{x}_{i}-x_{i}^{\left(0\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta y=y\left(\tilde{\underline{x}}\right)-y\left(\underline{x}^{\left(0\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מעבר בין 
+\begin_inset Formula $\underline{x}_{i-1}$
+\end_inset
+
+
+\begin_inset Formula $\gets$
+\end_inset
+
+
+\begin_inset Formula $\underline{x}_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y\left(x_{i}\right)-y\left(x_{i-1}\right)=\cfrac{\partial y}{\partial x_{i}}\left(\underline{\xi}_{i}\right)\left(\tilde{x}_{i}-x_{i}^{\left(0\right)}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xi_{i}\in\left(\underline{x}_{i-1},\underline{x}_{i}\right)\approx\cfrac{\partial y}{\partial x_{i}}\left(\tilde{\underline{x}}\right)\Delta x_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta y=y\left(x_{n}\right)-y\left(x_{0}\right)=\sum_{i=1}^{n}y\left(x_{i}\right)-y\left(x_{i-1}\right)\approx\sum_{i=1}^{n}\cfrac{\partial y}{\partial x_{i}}\left(\tilde{\underline{x}}\right)\cdot\Delta x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

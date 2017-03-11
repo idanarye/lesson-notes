@@ -1,0 +1,953 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f_{a}$
+\end_inset
+
+=פולינום המינימלי של 
+\begin_inset Formula $a$
+\end_inset
+
+)ספרבילי(
+\begin_inset Formula 
+\[
+f_{a}=\prod_{i=0}^{m}\left(\lambda-a_{i}\right)=\lambda^{n}-\sum_{j=1}^{n}\sigma_{j}\left(a\right)\lambda^{n-1}+\cdots\pm\cdots+\left(-1\right)^{n}\prod_{j=1}^{n}\sigma_{j}\left(a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{n}-\textnormal{Tr}_{E/F}\left(a\right)\lambda^{n-1}+\cdots+\left(-1\right)^{n}N_{E/F}\left(a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $E$
+\end_inset
+
+ שדה הפיצול של 
+\begin_inset Formula $f_{a}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $K/F$
+\end_inset
+
+ הרחבת שדות כאשר 
+\begin_inset Formula $\left[K:F\right]=n$
+\end_inset
+
+.
+ אז כל איבר 
+\begin_inset Formula $a\in K$
+\end_inset
+
+ מגדיר טרנספורמציה לינארית 
+\begin_inset Formula $A:K\to K$
+\end_inset
+
+ לפי 
+\begin_inset Formula $A\left(w\right)=aw$
+\end_inset
+
+ לכל 
+\begin_inset Formula $w\in K$
+\end_inset
+
+.
+ לכן יש לנו הומומורפיזם 
+\begin_inset Formula $\Phi:K\hookrightarrow M_{n}\left(F\right)$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\Phi\left(a\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $b_{1},\dots b_{n}$
+\end_inset
+
+ בסיס של 
+\begin_inset Formula $K$
+\end_inset
+
+ מעל 
+\begin_inset Formula $ab_{i}=\sum\limits _{j=1}^{n}\alpha_{ij}b_{j}$
+\end_inset
+
+)
+\begin_inset Formula $\alpha_{ij}\in F$
+\end_inset
+
+(, לכן עבור 
+\begin_inset Formula $A=\left(\alpha_{ij}\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+ab_{i}=\sum_{i}\alpha_{ij}b_{j}=A\begin{pmatrix}0\\
+\vdots\\
+1\\
+\vdots\\
+0
+\end{pmatrix}\gets i\textnormal{'th place}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\leftrightarrow\left(\alpha_{ij}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A'\leftrightarrow\left(\alpha'_{kj}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A'A=\left(\alpha'_{kj}\right)\left(\alpha_{ji}\right)=\left(\left(\sum_{j}\alpha'_{kj}\alpha_{ji}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a'ab_{i}=a'\left(\sum\alpha_{ji}b_{j}\right)=\sum_{j}\left(\sum_{k}\alpha_{ji}\alpha'_{kj}\right)=A'A\left(b_{k}\right)\qquad\forall b
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $A'A\left(w\right)\leftrightarrow a'aw$
+\end_inset
+
+ לכל 
+\begin_inset Formula $w\in K$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ הומומורפיזם 
+\begin_inset Formula $\Phi\left(a'a\right)=\Phi\left(a'\right)\Phi\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה הגרעין של 
+\begin_inset Formula $\Phi$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\ker\Phi=\left\{ a\middle|\forall_{w\in K}aw=0\right\} 
+\]
+
+\end_inset
+
+אבל זה אומר שאם ניקח 
+\begin_inset Formula $w=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K$
+\end_inset
+
+ שדה 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\Phi\left(a\right)=A$
+\end_inset
+
+ מטריצה אי סינגולרית 
+\begin_inset Formula $\forall_{0\neq a\in K}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כל 
+\begin_inset Formula $A$
+\end_inset
+
+ ניתן לכתוב בצורה של בלוקים: 
+\begin_inset Formula $\begin{pmatrix}A_{1} & 0 & \cdots & 0\\
+0 & A_{2} & 0 & \vdots\\
+\vdots & 0 & \ddots & 0\\
+0 & \cdots & 0 & A_{d}
+\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $A_{i}=\begin{pmatrix}0 & 1\\
+ & \ddots & \ddots\\
+ &  & \ddots & 1\\
+ &  &  & 0\\
+-\alpha_{0} & -\alpha_{1} & \cdots & -\alpha_{n-1}
+\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p_{i}=\sum_{i=0l}\alpha_{i}\lambda^{i}$
+\end_inset
+
+ הוא פולינום האופיני של 
+\begin_inset Formula $A$
+\end_inset
+
+, שגם הפולינים המינימלי של 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\textnormal{ord}\left(A_{d}\right)\ge\cdots\ge\textnormal{ord}\left(A_{2}\right)\ge\textnormal{ord}\left(A_{1}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{1}\left(A\right)=\begin{pmatrix}\overbrace{p_{1}\left(A_{1}\right)}^{=0}\\
+ & p_{1}\left(A_{2}\right)\\
+ &  & \ddots\\
+ &  &  & p_{1}\left(A_{d}\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $p_{1}\left(A\right)\leftrightarrow p_{1}\left(a\right)$
+\end_inset
+
+ מטריצה סינגולרית של 
+\begin_inset Formula $K$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $p_{1}\left(A\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{i}p_{1}\left(A_{i}\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A_{1}=A_{2}=\cdots=A_{d}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+N\left(a\right)=\left(-1\right)^{n}\alpha_{0}^{d}=\left(\left(-1\right)^{\nicefrac{n}{d}}\alpha_{0}\right)^{d}=\left|A_{1}\right|^{d}=\left|A\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{Tr}\left(a\right)=d\left(-\alpha_{n-1}\right)=d\textnormal{Tr}\left(A_{1}\right)=\textnormal{Tr}\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פעם שעבר אמרנו 
+\begin_inset Formula $\textnormal{Tr}_{E/F}$
+\end_inset
+
+ טרנס' לינארית מעל 
+\begin_inset Formula $F$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\dim_{F}F=1$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ או 
+\begin_inset Formula $\textnormal{Tr}_{E/F}=0$
+\end_inset
+
+ או 
+\begin_inset Formula $\textnormal{Tr}_{E/F}$
+\end_inset
+
+ על.
+ אבל אם 
+\begin_inset Formula $\left[E:F\right]=n$
+\end_inset
+
+ אז 
+\begin_inset Formula $\textnormal{Tr}\left(1\right)=1+\cdots+1=n\neq0$
+\end_inset
+
+ אם 
+\begin_inset Formula $\textnormal{char}\left(F\right)\nmid n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח 
+\begin_inset Formula $\exists_{a}\sum\sigma_{i}\left(a\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למת דיריכלט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dirichlet
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\sigma_{1},\dots\sigma_{n}$
+\end_inset
+
+ אוטומורפיזמים של שדה 
+\begin_inset Formula $E$
+\end_inset
+
+ שונים.
+ אם 
+\begin_inset Formula $\sum\limits _{i=1}^{t}a_{i}\sigma_{i}=0$
+\end_inset
+
+ כפונקציה )
+\begin_inset Formula $\left(\sum\alpha_{i}\sigma_{i}\right)\left(a\right)=\sum a_{i}\sigma_{i}\left(a\right)$
+\end_inset
+
+( אז כל 
+\begin_inset Formula $a_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה - באינדוקציה על 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרת ניקח 
+\begin_inset Formula $\sum\limits _{i=1}^{t}a_{i}\sigma_{i}=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t$
+\end_inset
+
+ מינימלי.
+ אם 
+\begin_inset Formula $t=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $a_{1}\sigma_{1}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{0\neq a\in E}a_{1}\sigma_{1}\left(a\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באופן כללי נניח 
+\begin_inset Formula $a_{1}\neq0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\sigma_{1}=1$
+\end_inset
+
+)אפשר להפעיל 
+\begin_inset Formula $\sigma_{1}^{-1}$
+\end_inset
+
+(.
+\begin_inset Formula 
+\[
+\forall_{ai\in A}\sum a_{i}\sigma_{i}\left(aa'\right)=0=\sum a_{i}\sigma_{i}\left(a\right)\sigma_{i}\left(a'\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum a_{i}\sigma_{i}\left(a\right)\right)\sigma_{t}\left(a'\right)=0\sigma_{t}\left(a'\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{i=1}^{t}a_{i}\sigma_{i}\left(a\right)\left(\sigma_{i}\left(a'\right)-\sigma_{f}\left(a'\right)\right)=0=\sum_{i=1}^{t-1}a_{i}\sigma_{i}\left(a\right)\left(\sigma_{i}\left(a'\right)-\sigma_{t}\left(a'\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי אינדוקציה על 
+\begin_inset Formula $t$
+\end_inset
+
+ כל מקדם 
+\begin_inset Formula $a_{i}\left(\sigma_{i}\left(a'\right)-\sigma_{t}\left(a'\right)\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{a'}\sigma_{i}\left(a'\right)=\sigma_{t}\left(a'\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma_{i}=\sigma_{t}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma_{1},\dots\sigma_{n}\in\textnormal{Gal}\left(E/F\right)$
+\end_inset
+
+ בלתי תלויים במובן הלמה 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Tr}_{E/F}=\sum\sigma_{i}\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists_{a\in E}\textnormal{Tr}_{E/F}\left(a\right)\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Tr}_{E/F}$
+\end_inset
+
+ על.
+\end_layout
+
+\begin_layout Section*
+שימוש של דיריכלט עבור הנורמה
+\end_layout
+
+\begin_layout Standard
+מתי 
+\begin_inset Formula $N\left(a\right)=1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+ברור: אם 
+\begin_inset Formula $a=\frac{b}{\sigma\left(b\right)}$
+\end_inset
+
+ ו
+\begin_inset Formula $\textnormal{Gal}\left(E/F\right)=\left\langle \sigma\right\rangle $
+\end_inset
+
+ אז 
+\begin_inset Formula 
+\[
+N\left(a\right)=\frac{\cancel{b}}{\cancel{\sigma\left(b\right)}}\frac{\cancel{\sigma\left(b\right)}}{\cancel{\sigma^{2}\left(b\right)}}\cdots\frac{\cancel{\sigma^{n-1}\left(b\right)}}{\cancel{\sigma^{n}\left(b\right)}}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+90
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של פילברט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\textnormal{Gal}\left(E/F\right)=\left\langle \sigma\right\rangle $
+\end_inset
+
+ )מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+( ו
+\begin_inset Formula $N\left(a\right)=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $a=\frac{b}{\sigma\left(b\right)}$
+\end_inset
+
+ עבור איזשהו 
+\begin_inset Formula $b\in E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+b_{i}=a\sigma\left(a\right)\sigma^{2}\left(a\right)\cdots\sigma^{i-1}\left(a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma\left(b_{i}\right)=\sigma\left(a\right)\sigma^{2}\left(a\right)\cdots\sigma^{i}\left(a\right)=\frac{b_{i+1}}{a}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b=\sum b_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma\left(b\right)=\sum\frac{\sigma\left(b_{i+1}\right)}{a}=\frac{b}{a}
+\]
+
+\end_inset
+
+)כי 
+\begin_inset Formula $\sigma\left(b_{n-1}\right)=N\left(a\right)=1$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\therefore a=\frac{b}{\sigma\left(b\right)}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\sum b_{i}\sigma^{i}\neq0$
+\end_inset
+
+ לפי דיריכלט 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a'$
+\end_inset
+
+ כך ש
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\surd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $a_{1},\dots a_{n}$
+\end_inset
+
+.
+ השורשים של הפולינום 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $d=\prod\limits _{i>j}\left(a_{i}-a_{j}\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\sigma\in\textnormal{Gal}\left(E/F\right)$
+\end_inset
+
+)
+\begin_inset Formula $E$
+\end_inset
+
+ שדה פיצול(, 
+\begin_inset Formula $\sigma\left(d\right)=\left(\textnormal{Sgma}\right)d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)הוכחה: ברור עבור 
+\begin_inset Formula $\sigma=\left(ij\right)$
+\end_inset
+
+ חילוף, אבל כל תמורה היא מכפלת חילופים(.
+\end_layout
+
+\begin_layout Section*
+זה מוכיח: טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\in F$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gal}\left(E/F\right)\subset A_{n}$
+\end_inset
+
+ )כי 
+\begin_inset Formula $\sigma\left(d\right)=d$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma\in A_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\deg f=3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\xymatrix{F\ar@{-}@/_{1pc}/[rr]_{2} & \subset & F\left[\rho_{3}\right]\ar@{-}@/_{1pc}/[rr]_{1\textnormal{ or }2} & \subset & F\left[\rho_{3},d\right]\ar@{-}@/_{1pc}/[rr]_{3} & \subset & E\left[\rho_{3}\right]}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $F\left[\rho_{3},d\right]\subset E\left[\rho_{3}\right]$
+\end_inset
+
+ היא הרחבה שורשית(
+\end_layout
+
+\end_body
+\end_document

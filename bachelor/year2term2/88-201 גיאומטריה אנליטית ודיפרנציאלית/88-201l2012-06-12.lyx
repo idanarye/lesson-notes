@@ -1,0 +1,1865 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+13
+\numeric off
+.
+ דריבציות
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+שטח של משטח 
+\begin_inset Formula $M\subset\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\underline{x}:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\dfrac{x_{1}\times x_{2}}{\left|x_{1}\times x_{2}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלמנט השטח: 
+\begin_inset Formula $\left|x_{1}\times x_{2}\right|\mathrm{\, d}u^{1}\mathrm{\, d}u^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{area}\left(M\right)=\iint\left|x_{1}\times x_{2}\right|\mathrm{\, d}u^{1}\mathrm{\, d}u^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Binet-Cauchy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|x_{1}\times x_{2}\right|=\sqrt{\det\left(g_{ij}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{area}=\iint\sqrt{\det\left(g_{ij}\right)}\mathrm{\, d}u^{1}\mathrm{\, d}u^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{i}=\frac{\partial x}{\partial u^{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=x\left(u^{1},u^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דואליות באינפי
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $E$
+\end_inset
+
+ מרחב אוקלידי ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\in E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{D}_{p}=\left\{ f\middle|f\in C^{\infty}\right\} 
+\]
+
+\end_inset
+
+דריבציה 
+\begin_inset Formula $X$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית
+\begin_inset Formula 
+\[
+X:\mathbb{D}_{p}\to\mathbb{R}
+\]
+
+\end_inset
+
+המקיים זהות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Leibniz
+\lang hebrew
+
+\begin_inset Formula 
+\[
+X\left(fg\right)=X\left(f\right)g\left(p\right)+f\left(p\right)X\left(g\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+מרחב הדריבציות על 
+\begin_inset Formula $\mathbb{D}_{p}$
+\end_inset
+
+ הוא מרחב וקטורי במימד 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{p}E$
+\end_inset
+
+ מרחב כל הדריבציות של 
+\begin_inset Formula $\mathbb{D}_{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בסיס למרחב 
+\begin_inset Formula $T_{p}E$
+\end_inset
+
+: בקואורדינטות 
+\begin_inset Formula $\left(u^{1},u^{2}\dots u^{n}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\frac{\partial}{\partial u^{1}},\frac{\partial}{\partial u^{2}},\dots\frac{\partial}{\partial u^{n}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ מרחב וקטורי על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V^{*}$
+\end_inset
+
+ מרחב דואלי של 
+\begin_inset Formula $V$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V^{*}=\left\{ \phi\middle|\phi\textnormal{ is 1-form on }V\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi:V\to\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(x_{1},\dots x_{n}\right)$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי אומרים ש
+\begin_inset Formula $\left(y_{1},\dots y_{n}\right)$
+\end_inset
+
+ של איברים של 
+\begin_inset Formula $V^{*}$
+\end_inset
+
+ הוא 
+\bar under
+בסיס דואלי
+\bar default
+ לבסיס 
+\begin_inset Formula $\left(x_{i}\right)$
+\end_inset
+
+אם ורק אם מתקיים
+\begin_inset Formula 
+\[
+y_{i}\left(x_{j}\right)=\delta_{ij}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $i=1,\dots n$
+\end_inset
+
+, לכל 
+\begin_inset Formula $j=1,\dots n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\mathbb{R}^{2}
+\]
+
+\end_inset
+
+בסיס סטנדרטי: 
+\begin_inset Formula $e_{1}=\begin{pmatrix}1\\
+0
+\end{pmatrix},e_{2}=\begin{pmatrix}0\\
+1
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(e_{1},e_{2}\right)$
+\end_inset
+
+ בסיס ל
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סימון לבסיס דואלי: 
+\begin_inset Formula $\left(\mathrm{d}x,\mathrm{d}y\right)$
+\end_inset
+
+בסיס של 
+\begin_inset Formula $V^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\begin_inset Formula 
+\[
+\mathrm{d}x\left(e_{1}\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}x\left(e_{2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}y\left(e_{1}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}y\left(e_{2}\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p\in E$
+\end_inset
+
+, 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ מרחב משיק.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\frac{\partial}{\partial u^{1}},\dots\frac{\partial}{\partial u^{n}}\right)$
+\end_inset
+
+ בסיס
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מרחב קו משיק)
+\lang english
+cotangent
+\lang hebrew
+( 
+\begin_inset Formula $T_{p}^{*}$
+\end_inset
+
+ הוא 
+\bar under
+מרחב וקטורי דואלי
+\bar default
+ למרחב משיק 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בסיס ל
+\begin_inset Formula $T_{p}^{*}$
+\end_inset
+
+ שהוא דואלי לבסיס 
+\begin_inset Formula $\left(\frac{\partial}{\partial u^{i}}\right)$
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $\left(\mathrm{d}u^{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle \frac{\partial}{\partial u^{i}},\mathrm{d}u^{j}\right\rangle =\delta_{i}^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}u^{j}\left(\frac{\partial}{\partial u^{i}}\right)=\delta_{i}^{j}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\delta_{i}^{j}=\begin{cases}
+1 & i=j\\
+0 & i\neq j
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בניית תבנית בילינארית מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\left(v,w\right):V\times V\to\mathbb{R}
+\]
+
+\end_inset
+
+נניח ש
+\begin_inset Formula $B$
+\end_inset
+
+ היא סימטרית:
+\begin_inset Formula $B\left(v,w\right)=B\left(w,v\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תבנית ריבועית 
+\begin_inset Formula $Q$
+\end_inset
+
+ המתאימה:
+\begin_inset Formula 
+\[
+\boxed{Q\left(v\right)=B\left(v,v\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\in V=\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(v,w\right)=vw
+\]
+
+\end_inset
+
+תבנית ריבועית 
+\begin_inset Formula $Q$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+Q\left(v\right)=B\left(v,v\right)=v^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נוסחת פולריזציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\left(v,w\right)=\frac{1}{4}\left(Q\left(v+w\right)-Q\left(v-w\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\mathrm{d}u^{i}\in V^{*}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Q=\left(\mathrm{d}u^{i}\right)^{2}$
+\end_inset
+
+ )תבנית ריבועית(
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Q\left(v\right)=\left(\mathrm{d}u^{i}\left(v\right)\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+ננח 
+\begin_inset Formula $v=v^{1}e_{1}+v^{2}e_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $V=\mathbb{R}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(e_{1},e_{2}\right)$
+\end_inset
+
+בסיס ל
+\begin_inset Formula $V$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+v=v^{i}e_{i}\in V
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{d}x,\mathrm{d}y\in V^{*}$
+\end_inset
+
+ מהווים בסיס דואלי ל
+\begin_inset Formula $\left(e_{1},e_{2}\right)$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q=E\mathrm{\, d}x^{2}+F\mathrm{\, d}y^{2}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $E,F\in\mathbb{R}$
+\end_inset
+
+ קבועים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, מחשבים 
+\begin_inset Formula $Q\left(v\right)$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+\left(*\right)\qquad\boxed{Q\left(v\right)=E\left(\mathrm{d}x\left(v\right)\right)^{2}+F\left(\mathrm{d}y\left(v\right)\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{Q\left(v\right)=E\left(v^{1}\right)^{2}+F\left(v^{2}\right)^{2}}
+\]
+
+\end_inset
+
+נבנה תבנית בילינארית 
+\begin_inset Formula $B\left(v,v'\right)$
+\end_inset
+
+ המתאימה:
+\begin_inset Formula 
+\[
+\left(**\right)\qquad\boxed{B\left(v,v'\right)=E\mathrm{\, d}x\left(v\right)\mathrm{d}x\left(v'\right)+F\mathrm{\, d}y\left(v\right)\mathrm{d}y\left(v'\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(v,v'\right)=\frac{1}{4}\left(Q\left(v+v'\right)-Q\left(v-v'\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{4}\left[E\left(\mathrm{d}x\left(v+v'\right)\right)^{2}+F\left(\mathrm{d}y\left(v+v'\right)\right)^{2}-E\left(\mathrm{d}x\left(v-v'\right)\right)^{2}-F\left(\mathrm{d}y\left(v-v'\right)\right)^{2}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(v,v'\right)=\frac{1}{4}\left(E\left(v^{1}+v^{1'}\right)^{2}+F\left(v^{2}+v^{2'}\right)^{2}-E\left(v^{1}-v^{1'}\right)^{2}-F\left(v^{2}-v^{2'}\right)^{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{4}\left(\begin{array}{c}
+Ev^{1^{2}}+Ev^{1'^{2}}+2Ev^{1}v^{1'}+F\left(v^{2}\right)^{2}+F\left(v^{2'}\right)^{2}+\\
++2Fv^{2}v^{2'}-E\left(v^{1}\right)^{2}-E\left(v^{1'}\right)^{2}+2Ev^{1}v^{1'}-\\
+-F\left(v^{2}\right)^{2}-F\left(v^{2'}\right)^{2}+2Fv^{2}v^{2'}
+\end{array}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{4}\left(4Ev^{1}v^{1'}+4Fv^{2}v^{2'}\right)=Ev^{1}v^{1'}+Fv^{2}v^{2'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=F=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q=\mathrm{d}x^{2}+\mathrm{d}y^{2}
+\]
+
+\end_inset
+
+ואילו
+\begin_inset Formula 
+\[
+B\left(v,v'\right)=\mathrm{d}x\left(v\right)\mathrm{d}x\left(v'\right)+\mathrm{d}y\left(v\right)\mathrm{d}y\left(v'\right)=v^{1}v^{1'}+v^{2}v^{2'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תבנית יסודית ראשונה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g:T_{p}\times T_{p}\to\mathbb{R}$
+\end_inset
+
+ )סימטרית( כאשר 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ הוא מישור משיק של משטח 
+\begin_inset Formula $M$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $p\in M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בקואורדינטות 
+\begin_inset Formula $\left(u^{1},u^{2}\right)$
+\end_inset
+
+, בסיס ל
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\frac{\partial}{\partial u^{1}},\frac{\partial}{\partial u^{2}}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+g_{ij}=g\left(\frac{\partial}{\partial u^{i}},\frac{\partial}{\partial u^{j}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ii}=g\left(\frac{\partial}{\partial u^{i}},\frac{\partial}{\partial u^{i}}\right)\ge0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}g_{11} & g_{12}\\
+g_{21} & g_{22}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \frac{\partial}{\partial u^{i}}\right\Vert =\sqrt{g_{ii}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ii}=\left\Vert \frac{\partial}{\partial u^{i}}\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{x:\mathbb{R}^{2}\to\mathbb{R}^{3}\qquad g\left(\frac{\partial}{\partial u^{i}},\frac{\partial}{\partial u^{j}}\right)=\left\langle \frac{\partial x}{\partial u^{i}},\frac{\partial y}{\partial u^{j}}\right\rangle _{\mathbb{R}^{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בסיסים דואליים בגיאומטריה דיפרנציאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{g=g_{n}\left(x,y\right)\mathrm{\, d}x^{2}+g_{22}\left(x,y\right)\mathrm{\, d}y^{2}}\qquad\begin{array}{c}
+u^{1}=x\\
+u^{2}=y
+\end{array}
+\]
+
+\end_inset
+
+נניח ש
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+ 
+\bar under
+אלכסונית
+\bar default
+ 
+\begin_inset Formula $\begin{pmatrix}g_{11} & 0\\
+0 & g_{22}
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)מקרה פרטי: 
+\begin_inset Formula $\boxed{g=\mathrm{d}x^{2}+\mathrm{d}y^{2}}$
+\end_inset
+
+ היא מטריקה שטוחה סטנדרטית של המישור 
+\begin_inset Formula $\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $g_{11}=g_{22}=\dfrac{1}{y^{2}}$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+g=\frac{1}{y^{2}}\left(\mathrm{d}x^{2}+\mathrm{d}y^{2}\right)
+\]
+
+\end_inset
+
+היא מטריקה היפרבולית בעקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss
+\lang hebrew
+ 
+\begin_inset Formula $k=--1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{1}{y^{2}}\left(\mathrm{d}x^{2}+\mathrm{d}y^{2}\right)\qquad\lambda=\frac{1}{y^{2}}\qquad f=\frac{1}{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=-\Delta_{LB}\log f=+\Delta_{LB}\log y=\frac{1}{f^{2}}\frac{\mathrm{d}^{2}}{\mathrm{d}y^{2}}\left(\log y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{f^{2}}\left(-\frac{1}{y^{2}}\right)=-\frac{y^{2}}{y^{2}}=-1
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+uniformisation
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל מטריקה על משטח קשיר היא קשולה קומפקטית למטריקה בעקמומיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss
+\lang hebrew
+ קבועה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K\equiv+1$
+\end_inset
+
+ - ספירה 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{R}P^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K\equiv0$
+\end_inset
+
+ - טורוס, בקבוק של קליין
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K\equiv-1$
+\end_inset
+
+ - כל משטח אחר.
+\end_layout
+
+\begin_layout Section*
+דוגמה - טורוס
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+גישה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+: 
+\begin_inset Formula $L\subset\mathbb{C}$
+\end_inset
+
+ שריג, טורוס 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $T^{2}=\nicefrac{\mathbb{C}}{L}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=\textnormal{span}_{\mathbb{Z}}\left(\tau,1\right)\qquad\tau\in D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+גישה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+: משטח סיבוב.
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משטחי סיבוב בקואורדינטות איזותרמיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f\left(\phi\right),g\left(\phi\right)\right)
+\]
+
+\end_inset
+
+מקבלים משטח עם מטריקה
+\begin_inset Formula 
+\[
+\begin{pmatrix}g_{ij}\end{pmatrix}=\begin{pmatrix}f^{2}\left(\phi\right)\\
+ & \left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=f^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{22}=\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}
+\]
+
+\end_inset
+
+בקואורדינטות 
+\begin_inset Formula $\left(\theta,\phi\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{x}\left(\theta,\phi\right)=\left(f\left(\phi\right)\cos\phi,f\left(\phi\right)\sin\theta,g\left(\phi\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g=g_{11}\mathrm{\, d}\theta^{2}+g_{22}\mathrm{\, d}\phi^{2}
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\backslash
+mathrm{
+\backslash
+, d}
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\boxed{g=f^{2}\left(\phi\right)+\left(\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}\gamma}{\mathrm{d}\phi}\right)^{2}\right)\mathrm{\, d}\phi^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(f\left(\phi\right),g\left(\phi\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f\left(\phi\right)>0$
+\end_inset
+
+ פרמטריזציה במהירות יחידה של עקומה 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ אזי שינוי משתנים
+\begin_inset Formula 
+\[
+\boxed{\psi=\int\frac{\mathrm{d}\phi}{f\left(\phi\right)}}\qquad\qquad\boxed{\begin{array}{c}
+\psi=\psi\left(\phi\right)\\
+\phi=\phi\left(\psi\right)
+\end{array}}
+\]
+
+\end_inset
+
+מגדיר פעולה איזורתמים באמצעות המשתנים 
+\begin_inset Formula $\left(\theta,\phi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ביחס לקואורדינטות אלה, תבנית יסודית ראשונה של המטריקה מתבאת על ידי מטריצה
+ סקלרית 
+\begin_inset Formula $g_{ij}=f\left(\phi\left(\psi\right)\right)^{2}\delta_{ij}$
+\end_inset
+
+.
+ במילים אחרות
+\begin_inset Formula 
+\[
+g=f\left(\phi\left(\psi\right)\right)^{2}\left(\mathrm{d}\theta^{2}+\mathrm{d}\psi^{2}\right)\qquad g_{11}=g_{22}=f\left(\phi\left(\psi\right)\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi=\phi\left(\psi\right)$
+\end_inset
+
+.
+ לפי כלל השרשרת,
+\begin_inset Formula 
+\[
+\left(*\right)\qquad\frac{\mathrm{d}f}{\mathrm{d}\psi}=\frac{\mathrm{d}f}{\mathrm{d}\phi}\frac{\mathrm{d}\phi}{\mathrm{d}\psi}
+\]
+
+\end_inset
+
+כדי לקבל שוויון 
+\begin_inset Formula $g_{11}=g_{22}$
+\end_inset
+
+ צריכים לפתור משוואה דיפרנציאלית
+\begin_inset Formula 
+\[
+f^{2}=\left(\frac{\mathrm{d}f}{\mathrm{d}\psi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\psi}\right)^{2}
+\]
+
+\end_inset
+
+לפי 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f^{2}=\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\frac{\mathrm{d}\phi}{\mathrm{d}\psi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\frac{\mathrm{d}\phi}{\mathrm{d}\psi}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{2}=\left(\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}\right)\left(\frac{\mathrm{d}\phi}{\mathrm{d}\psi}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\sqrt{\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}}\frac{\mathrm{d}\phi}{\mathrm{d}\psi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\psi}{\mathrm{d}\phi}=\frac{\sqrt{\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}}}{f}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi=\int\frac{\sqrt{\left(\frac{\mathrm{d}f}{\mathrm{d}\phi}\right)^{2}+\left(\frac{\mathrm{d}g}{\mathrm{d}\phi}\right)^{2}}}{f\left(\phi\right)}\mathrm{\, d}\phi=\int\frac{\mathrm{d}\phi}{f\left(\phi\right)}=\psi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\numeric on
+13.7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטר קונפורמי 
+\begin_inset Formula $\tau$
+\end_inset
+
+ של טורוס סיבוב
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+נתבונן בטורוס סיבוב ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ המתקבל ע"י סיבוב של עקומת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Jordan
+\lang hebrew
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ באורך 
+\begin_inset Formula $L>0$
+\end_inset
+
+ עם פרמטריזציה במהירות יחידה 
+\begin_inset Formula $\left(f\left(\phi\right),g\left(\phi\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\phi\in\left[0,L\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי הטורוס הוא שקול קונפורמי לטורוס שטוח
+\begin_inset Formula 
+\[
+\nicefrac{\mathbb{R}^{2}}{L_{c,d}}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ הוא מישור 
+\begin_inset Formula $\left(\theta,\psi\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\psi$
+\end_inset
+
+ הוא אנטי-נגזרת)אינטגל( של 
+\begin_inset Formula $\dfrac{1}{f\left(\phi\right)}$
+\end_inset
+
+ כאשר שריג 
+\begin_inset Formula $L_{c,d}$
+\end_inset
+
+ הוא שריג נפרש ע"י וקטורים 
+\begin_inset Formula $\left(c\frac{\partial}{\partial\theta},d\frac{\partial}{\partial\psi}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+L_{c,d}=\textnormal{span}_{\mathbb{Z}}\left(ce_{1},de_{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(e_{2}=\frac{\partial}{\partial\psi},e_{1}=\frac{\partial}{\partial\theta}\right)$
+\end_inset
+
+ עם
+\begin_inset Formula 
+\[
+c=2\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d=\int_{0}^{L}\frac{\mathrm{d}\theta}{f\left(\phi\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{c}
+0\le\theta\le2\pi\\
+0\le\phi\le L
+\end{array}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $0\le\psi\le d$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

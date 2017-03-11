@@ -1,0 +1,782 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+סיכוביות
+\end_layout
+
+\begin_layout Section*
+מחלקת סיבוכיות 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\subseteq\left\{ L\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $L$
+\end_inset
+
+ הן שפות שקיימת מ"ט דטרמיניסטית המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ בזמן פולינומי.
+\end_layout
+
+\begin_layout Standard
+זמן פולינומי נחשב לזמן יעיל.
+\end_layout
+
+\begin_layout Subsubsection*
+למה לא מחשיבים זמן לינארי כזמן יעיל?
+\end_layout
+
+\begin_layout Standard
+הסיבה היא שדרגת הפולינום תלויה גם במודל, לא רק באלגוריתם, אבל הפולינום ישאר
+ פולינום בכל מודל דטרמיניסטי.
+\end_layout
+
+\begin_layout Section*
+מחלקת סיכוביות 
+\begin_inset Formula $NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $NP\subseteq\left\{ L\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $L$
+\end_inset
+
+ הן שפות שקיימת מ"ט לא דטרמיניסטית המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ בזמן פולינומי.
+\end_layout
+
+\begin_layout Standard
+זמן ריצה של מכונה ל"ד מוגדר כזמן הריצה הארוך ביותר של מסלול ריצה.
+ לא יכול להיות מסלול אינסופי - כי מדובר במכונה להכרעה.
+\end_layout
+
+\begin_layout Subsection*
+איפיון חלופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ אם"ם קיים יחס 
+\begin_inset Formula $R_{L}\subseteq\Sigma^{*}\times\Sigma^{*}$
+\end_inset
+
+ המקיים:
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+היחס חסום פולינומית
+\bar default
+: קיימים קבועים 
+\begin_inset Formula $b,c$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\left(x,y\right)\in R_{L}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+ זה הקלט, 
+\begin_inset Formula $y$
+\end_inset
+
+ זה ההוכחה
+\end_layout
+
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|y\right|\le\left|x\right|^{c}+b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+היחס ניתן להכרעה בזמן פולינומי
+\bar default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x:\hspace{1em}x\in L\Leftrightarrow\exists y:\left(x,y\right)\in R_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מחלקת סיבוכיות 
+\begin_inset Formula $CONP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+coNP=\left\{ L\middle|\overline{L}\in NP\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הבחנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+coNP\ne\overline{NP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+באופן כללי
+\end_layout
+
+\begin_layout Standard
+הקידומת 
+\begin_inset Formula $co$
+\end_inset
+
+ לגבי מחלקת שפות מגדירה מחלקה של כל השפות שהמשלימות שלהן שייכול לשפה המקורית
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R=coR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $RE\ne coRE$
+\end_inset
+
+ - לדוגמה 
+\begin_inset Formula $A_{TM}\in RE$
+\end_inset
+
+ אבל 
+\begin_inset Formula $A_{TM}\notin RE$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $RE\cap coRE=R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\subseteq\left\{ \left(G,k\right)\right\} $
+\end_inset
+
+ כך שבכל קבוצה של 
+\begin_inset Formula $k$
+\end_inset
+
+ קודקודים ב
+\begin_inset Formula $G$
+\end_inset
+
+ יש לפחות קשת אחת)בתת הגרף המושרה ממנה(.
+\end_layout
+
+\begin_layout Standard
+מה ניתן לומר על 
+\begin_inset Formula $L$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{L}=\left\{ \left(G,k\right)\right\} $
+\end_inset
+
+ כך שקיימת קבוצת בת 
+\begin_inset Formula $k$
+\end_inset
+
+ קודקודים ב
+\begin_inset Formula $G$
+\end_inset
+
+ שאין ביניהם קשתות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{L}=IS$
+\end_inset
+
+ - בעיית הפשה הבלתי תלויה:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+טענה
+\bar default
+: 
+\begin_inset Formula $IS\in NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+: נגדיר יחס
+\begin_inset Formula $R_{IS}\subseteq\left\{ \left(\left(G,k\right),y\right)\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $y$
+\end_inset
+
+ היא רשימת קודקודים מ
+\begin_inset Formula $G$
+\end_inset
+
+ שמהווים קבוצה בת בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תנאי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים ישירות.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תנאי
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+\bar default
+: 
+\begin_inset Formula $\left|y\right|\le\left|V\right|\le\left|G\right|\le\left|\left(G,k\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תנאי
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+\bar default
+: בדיקה ישירה ניתן לבצע כזמן של לכל היותר
+\begin_inset Formula 
+\[
+O\left(\left|y\right|^{2}\cdot\left|E\right|\right)\le O\left(\left|G,k,y\right|^{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+טענה
+\bar default
+: 
+\begin_inset Formula $VC\le_{p}IS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תזכורת
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+\bar default
+: 
+\begin_inset Formula $VC\subseteq\left\{ \left(G,k\right)\right\} $
+\end_inset
+
+ כך שקיימת קבוצת קודקודים בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ המכילה לפחות קצה אחד של כל קשת.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+תזכורת
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+\bar default
+: 
+\begin_inset Formula $A\le_{p}B$
+\end_inset
+
+.
+ קיימת רדוקציה הניתנת לחישוב 
+\bar under
+בזמן פולינומי
+\bar default
+ מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הוכחה
+\bar default
+: בהינתן 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+ קלט עבור 
+\begin_inset Formula $VC$
+\end_inset
+
+ נבנה 
+\begin_inset Formula $\left(G',K'\right)$
+\end_inset
+
+ קלט עבור 
+\begin_inset Formula $IS$
+\end_inset
+
+ כך שיתקיים 
+\begin_inset Formula $\left(G,k\right)\in VC\Leftrightarrow\left(G',k'\right)\in IS$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הבחנה
+\bar default
+: נניח ש
+\begin_inset Formula $G$
+\end_inset
+
+ הוא גרף ויש בו כיסוי 
+\begin_inset Formula $V'\subseteq V$
+\end_inset
+
+.
+ נסתכל על 
+\begin_inset Formula $u,v\notin V'$
+\end_inset
+
+.
+ בהכרח 
+\begin_inset Formula $\left(u,v\right)\notin E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הבנייה
+\bar default
+: 
+\begin_inset Formula $G'=G$
+\end_inset
+
+, 
+\begin_inset Formula $K'=\left|V\right|-k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מובן שהבנייה ניתנת לחישוב בזמן פולינומי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Rightarrow\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(a,k\right)\in VC$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש ב
+\begin_inset Formula $G$
+\end_inset
+
+ כיסוי בעזרת 
+\begin_inset Formula $k$
+\end_inset
+
+ קודקודים 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לפי הבניה אין קשתות בין אף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים שאינם בכיסוי ולכן כל הקודקודים שאינם בכיסוי מהווים קב' ב"ת בגודל
+ 
+\begin_inset Formula $k'=\left|V\right|-k$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G'=G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(G',k'\right)\in LS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left(G',k'\right)\in LS$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ יש קב' ב"ת בגודל 
+\begin_inset Formula $k'$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G'$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ תהי 
+\begin_inset Formula $e$
+\end_inset
+
+ קשת ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ בהכרח יש ל
+\begin_inset Formula $e$
+\end_inset
+
+ לפחות קודקוד אחד מחוץ לקבוצה הב"ת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הקודקודים שאינם בקב' הב"ת מהווים כיסוי בגודל 
+\begin_inset Formula $\left|V\right|-k=k'$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G=G'$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left(G,k\right)\in VC$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,646 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset href
+LatexCommand href
+target "u.math.biu.ac.il/~kantor/sev75.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+כלל השרשרת
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה 
+\bar under
+ממשית
+\bar default
+ המוגדרת בסביבה 
+\begin_inset Formula $B\left(x^{0},r\right)$
+\end_inset
+
+ של הנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ 
+\bar under
+ודיפרנציאבילית
+\bar default
+ בנק.
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $x$
+\end_inset
+
+ מוגדרת בסביבה 
+\begin_inset Formula $\left(t_{0}-\delta,t_{0}+\delta\right)$
+\end_inset
+
+ של הנקודה 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+עם ערכים ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+, עם טווח 
+\begin_inset Formula $B\left(x^{0},r\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $x\left(t_{0}\right)=x^{0}$
+\end_inset
+
+.
+ נניח ש
+\begin_inset Formula $x'\left(t_{0}\right)$
+\end_inset
+
+ גזירה וקיימת 
+\begin_inset Formula $x'\left(t_{0}\right)=\lim\limits _{t\to t_{0}}\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f\circ x$
+\end_inset
+
+)
+\begin_inset Formula $\left(f\circ x\right)\left(t\right)=f\left(x\left(t\right)\right)$
+\end_inset
+
+( גזירה בנק.
+ 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, ו
+\begin_inset Formula $\left(f\circ x\right)'\left(t_{0}\right)=\left.df\right|_{x^{0}}x'\left(t_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+במפורש
+\series default
+: 
+\begin_inset Formula $\left(f\circ x\right)'\left(t_{0}\right)=x'\left(t_{0}\right)\left.\nabla f\right|_{x^{0}}=\sum\limits _{i=1}^{k}\cfrac{df}{dx_{i}}\cfrac{dx_{i}}{dt}\left(t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הנחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: 
+\begin_inset Formula $f\left(x^{0}+h\right)-f\left(x^{0}\right)=\left.df\right|_{x^{0}}h+\varphi\left(h\right)$
+\end_inset
+
+ו
+\begin_inset Formula $\varphi h=o\left(\|h\|\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\cfrac{\varphi\left(h\right)}{\|h\|}\xrightarrow[h\to0]{}0$
+\end_inset
+
+.
+ ז"א אם 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נתון, קיים 
+\begin_inset Formula $0<\eta<r$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\|h\|<\eta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\cfrac{\left|\varphi\left(h\right)\right|}{\|h\|}<\epsilon$
+\end_inset
+
+)
+\begin_inset Formula $\left|\varphi\left(h\right)\right|<\epsilon\left(\left|h\right|\right)$
+\end_inset
+
+(.
+ ניקח 
+\begin_inset Formula $h_{t}\doteqdot x\left(t\right)-x\left(t_{0}\right)$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $x'$
+\end_inset
+
+ קיים בנק' 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ רציף בנק' 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ולכן 
+\begin_inset Formula $x\left(t\right)-x\left(t_{0}\right)\to0$
+\end_inset
+
+, לכן קיים 
+\begin_inset Formula $0<\delta_{1}<\delta$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left|t-t_{0}\right|<\delta_{1}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\|x\left(t\right)-x\left(t_{0}\right)\|<\eta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|\varphi\left(h_{t}\right)\right|<\epsilon\|h_{t}\|$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left|t-t_{0}\right|<\delta_{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $t\ne t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|t-t_{0}\right|<\delta_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+0\le\left|\cfrac{\varphi\left(h_{t}\right)}{t-t_{0}}\right|<\epsilon\cfrac{\|h_{t}\|}{\left|t-t_{0}\right|}=\epsilon\|\cfrac{h_{t}}{t-t_{0}}\|=\epsilon\|\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}\|
+\]
+
+\end_inset
+
+)לפי ההגדרה ולפי רציפות הנורמה על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+0\le\lim_{t\to t_{0}}\left|\cfrac{\varphi\left(h_{t}\right)}{t-t_{0}}\right|\le\epsilon\|x'\left(t_{0}\right)\|
+\]
+
+\end_inset
+
+ולכן הגבול
+\begin_inset Formula 
+\[
+\boxed{\exists\lim_{t\to t_{0}}\cfrac{\varphi\left(h_{t}\right)}{t-t_{0}}=0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{0}+h_{t}=x\left(t_{0}\right)+h_{t}=x\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{f\left(x\left(t\right)\right)-f\left(x\left(t_{0}\right)\right)}{t-t_{0}}=\cfrac{f\left(x^{0}+h_{t}\right)-f\left(x^{0}\right)}{t-t_{0}}=\left.df\right|_{x}\left(\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}\right)+\cfrac{\varphi\left(h_{t}\right)}{t-t_{0}}\left(***\right)
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $\left.df\right|_{x}$
+\end_inset
+
+ הוא פ"ל)פונקציונאל לינארי(.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $t\to t_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{x\left(t\right)-x\left(t_{0}\right)}{t-t_{0}}\to x'\left(t_{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left.df\right|_{x}$
+\end_inset
+
+ פ"ל ולכן הוא רציף)ראינו שכל פונקציונאל לינארי על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ הוא פונקציה רציפה על 
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+(.
+ לכן המחובר הראשון ב*** שואף ל
+\begin_inset Formula $\left.df\right|_{x_{0}}x'\left(t_{0}\right)$
+\end_inset
+
+.
+ המחובר השני שואף ל
+\begin_inset Formula 
+\[
+\exists\lim_{t\to t_{0}}\cfrac{f\left(x\left(t\right)\right)-f\left(x\left(t_{0}\right)\right)}{t-t_{0}}=\left.df\right|_{x_{0}}x'\left(t_{0}\right)
+\]
+
+\end_inset
+
+הכללה למקרה ש
+\begin_inset Formula $x$
+\end_inset
+
+ הינה פונ')וקטורית( של 
+\begin_inset Formula $l$
+\end_inset
+
+ משתנים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונ' ממשית המוגדרת בסביבה 
+\begin_inset Formula $B\left(x^{0},r\right)$
+\end_inset
+
+ של הנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{k}$
+\end_inset
+
+ ודיפרנציאבילית בנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\left(\right):\mathbb{R}^{l}\Rightarrow\mathbb{R}^{k}$
+\end_inset
+
+ מוגדרת בסביבה של הנק.
+ 
+\begin_inset Formula $u^{0}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbb{R}^{l}$
+\end_inset
+
+ עם ערכים ב
+\begin_inset Formula $B\left(x^{0},r\right)$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $\cfrac{dx}{du_{i}}\left(u^{0}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $x\left(\right)$
+\end_inset
+
+ רציפה בנק.
+ 
+\begin_inset Formula $u^{0}$
+\end_inset
+
+.
+ 
+\bar under
+אזי
+\bar default
+ 
+\begin_inset Formula $\left.\cfrac{d\left(f\circ x\right)}{du_{i}}\right|_{u^{0}}$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $\forall i=1,...k$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Subsubsection*
+והנוסחה הבאה נכונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\cfrac{d\left(f\circ x\right)}{du_{i}}\right|_{u^{0}}=\left.df\right|_{x^{0}}\left.\cfrac{dx}{du_{i}}\right|_{u^{0}}=\left.\nabla f\right|_{x^{0}}\left.\cfrac{dx}{du_{i}}\right|_{u^{0}}=\sum_{j=1}^{k}\left.\cfrac{df}{dx_{j}}\right|_{x_{0}}\left.\cfrac{dx_{j}}{du_{i}}\right|u^{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\nabla_{u}\left(f\circ x\right)\right|_{u^{0}}=\left.\nabla_{x}f\right|_{x^{0}}\left.\left(\cfrac{dx}{du}\right)\right|_{u^{0}}
+\]
+
+\end_inset
+
+המטריצה של 
+\bar under
+היעקוביאן
+\bar default
+: 
+\begin_inset Formula $\left(\cfrac{dx}{du}\right)=\left(\cfrac{d\left(x_{1},...x_{k}\right)}{d\left(u_{1},...u_{k}\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $k=l$
+\end_inset
+
+ נוהגים לקרוא לדטרמיננטה של המטריצה 
+\begin_inset Formula $\left(\cfrac{dx}{du}\right)$
+\end_inset
+
+ 
+\bar under
+היעקוביאן
+\bar default
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ לפי 
+\begin_inset Formula $u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה חישובית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{R}^{2}\backslash\left(0,0\right)\Rightarrow\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\log\left(x^{2}+y^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(\right):\left(r,\varphi\right):\left(0,\infty\right)\times\left[0,2\pi\right)\to\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(r,\varphi\right)=\left(r\cos\varphi,r\sin\varphi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f\circ x\right)\left(r,\varphi\right)=f\left(x\left(r,\varphi\right)\right)=\log\left(r^{2}\cos^{2}\varphi+r^{2}\sin^{2}\varphi\right)=\boxed{2\log r}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\cfrac{d\left(f\circ x\right)}{dr}=\cfrac{2}{r}\\
+\cfrac{d\left(f\circ x\right)}{d\varphi}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+חישוב לפי כלל השרשרת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cfrac{d\left(f\circ x\right)}{dr}=\left.\cfrac{df}{dx}\right|\cfrac{dx}{dr}+\left.\cfrac{df}{dy}\right|\cfrac{dy}{dr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cfrac{d\left(f\circ x\right)}{d\varphi}=\left.\cfrac{df}{dx}\right|\cfrac{dx}{dy}+\left.\cfrac{df}{dy}\right|\cfrac{dy}{d\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left.\cfrac{2x}{x^{2}+y^{2}}\right|\cos\varphi+\left.\cfrac{2y}{x^{2}+y^{2}}\right|\sin\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left.\cfrac{2y}{x^{2}+y^{2}}\right|\left(-r\sin\varphi\right)+\left.\cfrac{2y}{x^{2}+y^{2}}\right|r\cos\varphi=\cfrac{-2r\cos\varphi\sin\varphi+2r\sin\varphi\cos\varphi}{r^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

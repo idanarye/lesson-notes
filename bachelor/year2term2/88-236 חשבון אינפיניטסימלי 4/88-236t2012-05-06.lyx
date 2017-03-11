@@ -1,0 +1,608 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הבהרה מפעם שעברה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+ זה 
+\bar under
+מרחב
+\bar default
+ משיק - מרחב וקטורי - עובר דרך הראשית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p+T_{p}M$
+\end_inset
+
+ זה ישר משיק - מרחב אפיני)מ"ו מוזז( - עובר דרך 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצא את משוואת המישור המשיק לאליפסואיד
+\begin_inset Formula 
+\[
+M=\left\{ \left(x,y,z\right)\middle|\cfrac{x^{2}}{4}+\cfrac{y^{2}}{9}+z^{2}=1\right\} 
+\]
+
+\end_inset
+
+בנקודה 
+\begin_inset Formula $p=\left(\cfrac{2}{\sqrt{3}},\sqrt{3},\cfrac{1}{\sqrt{3}}\right)$
+\end_inset
+
+ שעליו.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Subsubsection*
+דרך א'
+\end_layout
+
+\begin_layout Standard
+נמצא פרמטריזציה לאליפסואיד.
+ נעזר בפרמטריזציה של ספירת היחידה 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+ המוכרת מקואורדינטות ספריות:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+0\le\theta\le2\pi\\
+0\le\phi\le\pi
+\end{array}\qquad r:\Omega\to S^{2}\qquad r\left(\phi,\theta\right)=\left(\cos\theta\sin\phi,\sin\theta\sin\phi,\cos\phi\right)
+\]
+
+\end_inset
+
+נחשוב על האליפסואיד כספירה שמתחו אותה.
+ במקום 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=1$
+\end_inset
+
+ יש לנו 
+\begin_inset Formula $\left(\cfrac{x}{2}\right)^{2}+\left(\cfrac{y}{2}\right)^{2}+z^{2}=1$
+\end_inset
+
+, ולכן נגדיר פרמטריזציה כזו:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+0\le\theta\le2\pi\\
+0\le\phi\le\pi
+\end{array}\qquad r\left(\phi,\theta\right)=\left(2\cos\theta\sin\phi,3\sin\theta\sin\phi,\cos\phi\right)
+\]
+
+\end_inset
+
+על מנת למצוא את המשיור המשיק ל
+\begin_inset Formula $p$
+\end_inset
+
+ נמצא תחילה את 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ו
+\begin_inset Formula $\theta$
+\end_inset
+
+ המתאימות ל
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(2\cos\theta\sin\phi,3\sin\theta\sin\phi,\cos\phi\right)\overset{!}{=}\left(\cfrac{2}{\sqrt{3}},\sqrt{3},\cfrac{1}{\sqrt{3}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi=\arccos\left(\cfrac{1}{\sqrt{3}}\right)\qquad\theta=\cfrac{\pi}{4}
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\cos\phi=\cfrac{1}{\sqrt{3}},\sin\phi=\sqrt{\cfrac{2}{3}}\qquad\cos\theta=\cfrac{1}{\sqrt{2}}=\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\left(\arccos\left(x\right)\right)=\sqrt{1-x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{x=\cfrac{1}{\sqrt{3}}}
+\]
+
+\end_inset
+
+באופן כללי, הווקטורים המשיקים הם
+\begin_inset Formula 
+\[
+r_{\phi}=\left(2\cos\theta\cos\phi,3\sin\theta\cos\phi,-\sin\phi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r_{\theta}=\left(-2\sin\theta\sin\phi,3\cos\theta\sin\phi,0\right)
+\]
+
+\end_inset
+
+ובנקודה המדוברת 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r_{\phi}\left(p\right)=\left(\sqrt{\cfrac{2}{3}},\sqrt{\cfrac{3}{2}},-\sqrt{\cfrac{2}{3}}\right)\qquad r_{\theta}\left(p\right)=\left(-\cfrac{2}{\sqrt{3}},\sqrt{3},0\right)
+\]
+
+\end_inset
+
+ההצגה הפרמטרית עבור המישור המשיק היא
+\begin_inset Formula 
+\[
+p+T_{p}M=\left\{ \left(\cfrac{2}{\sqrt{3}},\sqrt{3},\cfrac{1}{\sqrt{3}}\right)+t\left(\sqrt{\cfrac{2}{3}},\sqrt{\cfrac{3}{2}},-\sqrt{\cfrac{3}{2}}\right)+s\left(-\cfrac{2}{\sqrt{3}},\sqrt{3},0\right)\middle|\begin{array}{c}
+-\infty<t<\infty\\
+-\infty<s<\infty
+\end{array}\right\} 
+\]
+
+\end_inset
+
+אבל ביקשו את 
+\bar under
+משוואת
+\bar default
+ המישור, 
+\begin_inset Formula $Ax+By+Cz+D=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+ניזכר בעובדה שעבור משוואת מישור כנ"ל הוקטור 
+\begin_inset Formula $\left(A,B,C\right)$
+\end_inset
+
+ מאונך למישור.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: עבור שני וקטורים 
+\begin_inset Formula $u,v\in\mathbb{R}^{3}$
+\end_inset
+
+ בת"ל, הווקטור 
+\begin_inset Formula $w=u\times v$
+\end_inset
+
+ הוא וקטור שמאונך ל
+\begin_inset Formula $u$
+\end_inset
+
+ ול
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנו יודעים שהמישור המשיק נפרש ע"י
+\begin_inset Formula 
+\[
+u=\left(\sqrt{\cfrac{2}{3}},\sqrt{\cfrac{3}{2}},-\sqrt{\cfrac{2}{3}}\right)\qquad v=\left(-\cfrac{2}{\sqrt{3}},\sqrt{3},0\right)
+\]
+
+\end_inset
+
+כדי למצוא את הוקטור המאונך למישור נעזר במכפלה הוקטורית
+\begin_inset Formula 
+\[
+u\times v=\begin{vmatrix}\hat{\imath} & \hat{\jmath} & \hat{k}\\
+\sqrt{\cfrac{2}{3}} & \sqrt{\cfrac{3}{2}} & -\sqrt{\cfrac{2}{3}}\\
+-\cfrac{2}{\sqrt{3}} & \sqrt{3} & 0
+\end{vmatrix}=\dots=\left(\sqrt{2},\cfrac{2\sqrt{2}}{3},2\sqrt{2}\right)
+\]
+
+\end_inset
+
+הווקטור 
+\begin_inset Formula $\vec{n}=\left(\sqrt{2},\cfrac{2\sqrt{2}}{3},2\sqrt{2}\right)$
+\end_inset
+
+ מאונך למישור, וגם הווקטור 
+\begin_inset Formula $\cfrac{3}{\sqrt{2}}\cdot\vec{n}=\left(3,2,6\right)$
+\end_inset
+
+.
+ משוואת המישור המשיק היא
+\begin_inset Formula 
+\[
+3x+2y+6z+D=0
+\]
+
+\end_inset
+
+והוא עובר בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ נציב את 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+3\cdot\cfrac{2}{\sqrt{3}}+2\cdot\sqrt{3}+6\cdot\cfrac{1}{\sqrt{3}}+D=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{D=-6\sqrt{3}}
+\]
+
+\end_inset
+
+ולכן משוואת המישור המשיק היא:
+\begin_inset Formula 
+\[
+\boxed{3x+2y+6z-6\sqrt{3}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דרך ב
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $M$
+\end_inset
+
+ הוא משטח רמה של הפונקציה
+\begin_inset Formula 
+\[
+F\left(x,y,z\right)=\cfrac{x^{2}}{4}+\cfrac{y^{2}}{9}+z^{2}
+\]
+
+\end_inset
+
+השדה הגרדיאנטי 
+\begin_inset Formula $\nabla F=\left(\cfrac{x}{2},\cfrac{2y}{9},2z\right)$
+\end_inset
+
+ מאונך למשטחי הרמה של 
+\begin_inset Formula $F$
+\end_inset
+
+)בהם 
+\begin_inset Formula $F=C$
+\end_inset
+
+ קבוע(.
+ בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla F\left(p\right)=\left(\cfrac{1}{\sqrt{3}},\cfrac{2}{3\sqrt{3}},\cfrac{2}{\sqrt{3}}\right)
+\]
+
+\end_inset
+
+מאונך ל
+\begin_inset Formula $P+T_{p}M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nabla F\left(p\right)$
+\end_inset
+
+ מאונך למישור המשיק בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ נכפול ב
+\begin_inset Formula $3\sqrt{3}$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+\vec{n}=\left(\overbrace{3}^{A},\overbrace{2}^{B},\overbrace{6}^{C}\right)
+\]
+
+\end_inset
+
+מאונך גם הוא.
+ נותר למצוא את 
+\begin_inset Formula $D$
+\end_inset
+
+...
+ 
+\begin_inset Formula $D=-6\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אוריאנטציה
+\end_layout
+
+\begin_layout Standard
+אוריאנטציה של יריעה 
+\begin_inset Formula $M$
+\end_inset
+
+ היא בחירת כיוון "לטיול" על היריעה בכל נקודה שעליה.
+\end_layout
+
+\begin_layout Section*
+אוריאנטציה של עקומות
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מעגל היחידה ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ נמצא כמה פרמטריזציות:
+\begin_inset Formula 
+\[
+\varphi_{1}\left(t\right)=\left(\cos t,\sin t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{2}\left(u\right)=\left(\cos\left(2u\right),\sin\left(2u\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{3}\left(v\right)=\left(\cos\left(v\right),-\sin\left(v\right)\right)=\left(\cos\left(-v\right),\sin\left(-v\right)\right)
+\]
+
+\end_inset
+
+הפרמטריזציות 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+ מתקבלות ע"י הרכבה של 
+\begin_inset Formula $\varphi_{1}\left(t\right)$
+\end_inset
+
+ עם
+\begin_inset Formula 
+\[
+t=t\left(u\right)=2u\qquad t=t\left(v\right)=-v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\mathrm{d}t}{\mathrm{d}u}=2>0\qquad\cfrac{\mathrm{d}t}{\mathrm{d}v}=-1<0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ מגדירות אותה אוריאנטציה על המעגל.
+ 
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+ מגדירה אוריאנטציה הפוכה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אוריאנטציה במישור - בחירה של כיוון הסיבוב.
+\end_layout
+
+\begin_layout Standard
+באופן פורמלי מגדירים בחירה זו בעזרת בסיס סדור 
+\begin_inset Formula $\left(e_{1},e_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+את שקילות בחירת הבסיס מגדירים ע"י דטרמיננטת מטריצת המעבר: עבור שני בסיסים
+ 
+\begin_inset Formula $\begin{array}{c}
+\left(b_{1},b_{2}\right)\\
+\left(c_{1},c_{2}\right)
+\end{array}$
+\end_inset
+
+כך ש
+\begin_inset Formula $\begin{pmatrix}c_{1}\\
+c_{2}
+\end{pmatrix}=A\begin{pmatrix}b_{1}\\
+b_{2}
+\end{pmatrix}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\det A>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הבסיסים מגדירים אותה אוריאנטציה
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\det A<0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הבסיסים מגדירים אוריאנטציה הפוכה
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1087 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+החלפת משתנים
+\end_layout
+
+\begin_layout Standard
+במקרה ונרצה להחליף את המשתנים שלנו 
+\begin_inset Formula $x,y$
+\end_inset
+
+ במשתנים אחרים 
+\begin_inset Formula $u,v$
+\end_inset
+
+, נרשום את 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ כפונקציות של 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+y=y\left(u,v\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=x\left(u,v\right)
+\]
+
+\end_inset
+
+בנוסף נניח שהאינטגרל הוא בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אז:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x,y\in C^{1}\left(D\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $J=\begin{vmatrix}x'_{u} & x'_{v}\\
+y'_{u} & y'_{v}
+\end{vmatrix}\ne0$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+)כמובן ש
+\begin_inset Formula $f$
+\end_inset
+
+ צריכה להיות אינטגרבילית( ו
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ מעתיקות את 
+\begin_inset Formula $D$
+\end_inset
+
+ על 
+\begin_inset Formula $D'$
+\end_inset
+
+ בצורה חח"ע, אז מתקיים
+\begin_inset Formula 
+\[
+\iint\limits _{D}f\left(x,y\right)\mathrm{\, d}x\mathrm{\, d}y=\iint\limits _{D'}f\left(x\left(u,v\right),y\left(u,v\right)\right)\left|J\right|\mathrm{\, d}u\mathrm{\, d}v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי המשפט יכולים להתקיים ב
+\begin_inset Formula $D$
+\end_inset
+
+ פרט לקבוצת נקודות בעלת מידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+)כלומר שטחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+חשבו את האינטגרל
+\begin_inset Formula 
+\[
+\iint\limits _{D}\sin\left(\sqrt{x^{2}+y^{2}}\right)\mathrm{\, d}x\mathrm{\, d}y
+\]
+
+\end_inset
+
+בתחום 
+\begin_inset Formula $D=\left\{ x^{2}+y^{2}\le1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+מכיוון שהתחום הנתון הוא מעגל מתבקש לעבור לקואורדינטות פולריות.
+\begin_inset Formula 
+\[
+x=r\cos\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=r\sin\theta
+\]
+
+\end_inset
+
+במקרה שלנו
+\begin_inset Formula 
+\[
+D=\left\{ x^{2}+y^{2}\le1\right\} =\left\{ r^{2}\cos^{2}\theta+r^{2}\sin^{2}\theta\le1\right\} =\left\{ r^{2}\le1\right\} =\left\{ 0\le r\le1\right\} 
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $r$
+\end_inset
+
+ לא יכול להיות קטן מאפס בהצגה פולרית(
+\end_layout
+
+\begin_layout Standard
+נשאר לדאוג כי הפונקציות 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ יהיו חח"ע)בשביל שתנאי המשפט יתקיימו( ולכן נדרוש 
+\begin_inset Formula $0\le\theta<2\pi$
+\end_inset
+
+.
+ כלומר נגדיר את 
+\begin_inset Formula $D'$
+\end_inset
+
+ להיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D'=\left\{ 0\le r\le1,0\le\theta<2\pi\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+כעת נחשב את היעקוביאן:
+\begin_inset Formula 
+\[
+J=\begin{vmatrix}x'_{r} & x'_{\theta}\\
+y'_{r} & y'_{\theta}
+\end{vmatrix}=\begin{vmatrix}\cos\theta & -r\sin\theta\\
+\sin\theta & r\cos\theta
+\end{vmatrix}=r\left(\cos^{2}\theta+\sin^{2}\theta\right)=r\ne0
+\]
+
+\end_inset
+
+)לבקשת קנטרוביץ אין צורך להוכיח במבחן(
+\end_layout
+
+\begin_layout Standard
+נקבל כי
+\begin_inset Formula 
+\[
+\iint\limits _{D}\sin\sqrt{x^{2}+y^{2}}\mathrm{\, d}x\mathrm{\, d}y=\iint\limits _{D'}\left(\sin\sqrt{\left(r\cos\theta\right)^{2}+\left(r\sin\theta\right)^{2}}\right)r\mathrm{\, d}r\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\iint\limits _{D'}r\left(\sin r\right)\mathrm{\, d}r\mathrm{\, d}\theta=\int_{0}^{2\pi}\mathrm{\, d}\theta\int_{0}^{1}\left(r\sin r\right)\mathrm{\, d}r=\int_{0}^{2\pi}\mathrm{\, d}\theta\left(\left[-r\cos\theta\right]_{0}^{1}+\int_{0}^{1}\cos\theta\mathrm{\, d}r\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{2\pi}\left(-\cos\theta+\sin1\right)\mathrm{\, d}\theta=\left[-\sin\theta+\theta\sin1\right]_{0}^{2\pi}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\pi\sin1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נתון האינטגרל 
+\begin_inset Formula $I=\int_{0}^{2}\mathrm{\, d}x\int_{x}^{\sqrt{3}x}f\left(\sqrt{x^{2}+y^{2}}\right)\mathrm{\, d}y$
+\end_inset
+
+.
+ עברו לקורדינטות פולריון ושנו סדר אינטגרציה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I$
+\end_inset
+
+ נחליף לקודינטות פולריות.
+\begin_inset Newline newline
+\end_inset
+
+את 
+\begin_inset Formula $x\in r\cos\theta$
+\end_inset
+
+, 
+\begin_inset Formula $y=r\sin\theta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נתון 
+\begin_inset Formula $0\le x\le2$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\le r\cos\theta\le2$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\le r\le\cfrac{2}{\cos\theta}$
+\end_inset
+
+)נוסיף כי התחום הוא 
+\begin_inset Formula $0,2$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+נראה בהמשך שאכן ניתן לחלק ב
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ נשים לב שמתקיים 
+\begin_inset Formula $x\le y\le\sqrt{3}x$
+\end_inset
+
+.
+ נחלק לשתי משוואות ע"י "וגם":
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\le y$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $r\cos\theta\le r\sin\theta$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tan\theta\ge1$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\theta\ge\cfrac{\pi}{4}$
+\end_inset
+
+)נשים לב שכאן דורשים גם 
+\begin_inset Formula $\theta\ne\cfrac{\pi}{2}+2\pi k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y\le\sqrt{3x}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $r\sin\theta\le\sqrt{3}r\cos\theta$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tan\theta\le\sqrt{3}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\theta\le\arctan\left(\sqrt{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל כי 
+\begin_inset Formula 
+\[
+\cfrac{\pi}{4}\le\theta\le\arctan\left(\sqrt{3}\right)=\arctan\left(\cfrac{\sqrt{3}}{3}\right)=\cfrac{\pi}{3}
+\]
+
+\end_inset
+
+ולכן קיבלנו
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כלומר האינטגרל הכפול לאחר מעבר לקואורדינטות קוטביות הוא 
+\begin_inset Formula 
+\[
+\int_{\frac{\pi}{4}}^{\frac{\pi}{3}}\int_{0}^{\frac{2}{\cos\theta}}f\left(r\right)\cdot r\mathrm{\, d}r\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $II$
+\end_inset
+
+ ביקשו שנחליף סדר אינטגרציה:
+\begin_inset Newline newline
+\end_inset
+
+נצייר את התחום המבוקש.
+ נזכיר שבקורדינטות קוטביות 
+\begin_inset Formula $"r"$
+\end_inset
+
+ מייצג את הרדיוס ו
+\begin_inset Formula $"\theta"$
+\end_inset
+
+ מייצגת את הזוית.
+\begin_inset Newline newline
+\end_inset
+
+נעזר בתחום המקורים:
+\begin_inset Formula $\begin{array}{c}
+x\le y\le\sqrt{3}x\\
+0\le x\le2
+\end{array}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מצאנו כי 
+\begin_inset Formula $\cfrac{\pi}{4}\le\theta\le\cfrac{\pi}{3}$
+\end_inset
+
+.
+ רוצים להחליף סדר אינטגרציה ולכן במקום ש
+\begin_inset Formula $\theta$
+\end_inset
+
+ יהיה קבוע מבקשים ש
+\begin_inset Formula $r$
+\end_inset
+
+ קבוע.
+\begin_inset Newline newline
+\end_inset
+
+ידוע כי 
+\begin_inset Formula $0\le r\le\cfrac{2}{\cos\theta}$
+\end_inset
+
+.
+ על ידי הצבה של 
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\begin_inset Formula $\cfrac{2}{\cos\cfrac{\pi}{3}}=4$
+\end_inset
+
+, 
+\begin_inset Formula $\cfrac{2}{\cos\cfrac{\pi}{4}}=\cfrac{2}{\sqrt{2}}=\cfrac{4}{\sqrt{12}}=2\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בתחום
+\begin_inset space ~
+\end_inset
+
+א': 
+\begin_inset Formula $\cfrac{\pi}{4}\le\theta\le\cfrac{\pi}{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $0\le r\le2\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בתחום
+\begin_inset space ~
+\end_inset
+
+ב': 
+\begin_inset Formula $2\sqrt{2}\le r\le4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שבתחום ב' הרדיוס הקטן ביותר הוא 
+\begin_inset Formula $2\sqrt{2}$
+\end_inset
+
+ והגדול ביותר הוא 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+הזווית הגדולה ביותר היא 
+\begin_inset Formula $\cfrac{\pi}{3}$
+\end_inset
+
+.
+ כעת ידוע ש
+\begin_inset Formula $r\ge\cfrac{2}{\cos\theta}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\theta\ge\arccos\left(\cfrac{2}{r}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ולכן האינטגרל הוא הבא:
+\begin_inset Formula 
+\[
+I=I_{\left(\aleph\right)}+I_{\left(\beth\right)}=\int_{0}^{2\sqrt{2}}\int_{\frac{\pi}{4}}^{\frac{\pi}{3}}f\left(r\right)r\mathrm{\, d}r\mathrm{\, d}\theta+\int_{2\sqrt{2}}^{4}\int_{\arccos\left(\frac{2}{r}\right)}^{\frac{\pi}{4}}f\left(r\right)r\mathrm{\, d}r\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשבו 
+\begin_inset Formula $\iint\limits _{D}\cos\left(\cfrac{x-y}{x+y}\right)\mathrm{\, d}x\mathrm{\, d}y$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ חסום ע"י הקווים 
+\begin_inset Formula $x+y=1,x=0,y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $u=x+y$
+\end_inset
+
+, 
+\begin_inset Formula $v=x-y$
+\end_inset
+
+.
+ קל לפרש את 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{array}{c}
+x=\cfrac{u+v}{2}\\
+y=\cfrac{u-v}{2}
+\end{array}$
+\end_inset
+
+.
+ נראה את היעקוביאן:
+\begin_inset Formula 
+\[
+\begin{vmatrix}x'_{u} & x'_{v}\\
+y'_{u} & y'_{v}
+\end{vmatrix}=\begin{vmatrix}\cfrac{1}{2} & \cfrac{1}{2}\\
+\cfrac{1}{2} & -\cfrac{1}{2}
+\end{vmatrix}=-\cfrac{1}{4}-\cfrac{1}{4}=-\cfrac{1}{2}
+\]
+
+\end_inset
+
+נשאר לקבוע את גבולות האינטגרציה.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $u=x+y$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $2x=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x+y\right)+\left(x-y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u+v=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נקבל גבול אינטגרציה 
+\begin_inset Formula $u=-v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+באופן דומה עבור 
+\begin_inset Formula $y=0$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $2y=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(x+y\right)-\left(x-y\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u-v=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $u=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"כ נפתור את האינטגרל הבא:
+\begin_inset Formula 
+\[
+I=-\cfrac{1}{2}\int_{0}^{1}\mathrm{\, d}u\int_{-u}^{u}\cos\left(\cfrac{v}{u}\right)\mathrm{\, d}v
+\]
+
+\end_inset
+
+ברור שהאינטגרל הוא ידוע כי 
+\begin_inset Formula $u$
+\end_inset
+
+ קבוע.
+ 
+\emph on
+המשיכו לבד!
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשב את השטח של האליפסה 
+\begin_inset Formula $\cfrac{x^{2}}{a^{2}}+\cfrac{y^{2}}{b^{2}}\le1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+שטח של גוף גיאומטרי הוא האינטגרל של הפונקציה 
+\begin_inset Formula $f\left(x,y\right)=1$
+\end_inset
+
+.
+ ז"א צריך לעשות 
+\begin_inset Formula $\iint\limits _{D}1\mathrm{\, d}x\mathrm{\, d}y$
+\end_inset
+
+.
+ במקרה שלנו 
+\begin_inset Formula $D=\left\{ \cfrac{x^{2}}{a^{2}}+\cfrac{y^{2}}{b^{2}}\le1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה נעשה קורדינטות קוטביות.
+ נשים לב שמדובר על אליפסה ולכן נתייחס לכל מוקד עם רדיוס נפרד.
+\end_layout
+
+\begin_layout Standard
+ידוע שכל מוקד הוא לכל היותר 
+\begin_inset Formula $a$
+\end_inset
+
+ ו
+\begin_inset Formula $b/$
+\end_inset
+
+אם נבחר 
+\begin_inset Formula $0\le r\le1$
+\end_inset
+
+ ההצבה הבאה:
+\begin_inset Formula 
+\[
+x=ar\cos\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=br\sin\theta
+\]
+
+\end_inset
+
+נעשה יעקוביאן:
+\begin_inset Formula 
+\[
+J=\begin{vmatrix}a\cos\theta & -ar\sin\theta\\
+b\sin\theta & br\sin\beta
+\end{vmatrix}=abr\ne0
+\]
+
+\end_inset
+
+ולכן האינטגרל המבוקש
+\begin_inset Formula 
+\[
+\iint\limits _{D}\mathrm{\, d}x\mathrm{\, d}y=\int_{0}^{1}\mathrm{\, d}r\int_{0}^{2\pi}abr\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אינטגרל משולש
+\end_layout
+
+\begin_layout Standard
+נפתור באופן דומה לאינטגרל כפול
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+חשבו 
+\begin_inset Formula $\iiint\limits _{V}x^{3}y^{2}z\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z$
+\end_inset
+
+ עבור 
+\begin_inset Formula $V=\left\{ \begin{array}{c}
+0\le x\le1\\
+0\le y\le x\\
+0\le z\le xy
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{1}\mathrm{\, d}x\int_{0}^{x}\mathrm{\, d}y\int_{0}^{xy}x^{3}y^{2}z\mathrm{\, d}z=\int_{0}^{1}\mathrm{\, d}x\int_{0}^{x}\mathrm{\, d}y\left[x^{3}y^{2}\cfrac{z^{2}}{2}\right]_{z=0}^{z=x\cdot y}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{1}\mathrm{\, d}x\int_{0}^{x}\cfrac{x^{5}y^{4}}{2}\mathrm{\, d}y=\int_{0}^{1}\left[\cfrac{x^{5}y^{5}}{10}\right]_{y=0}^{y=x}\mathrm{\, d}x=\int_{0}^{1}\cfrac{x^{10}}{10}\mathrm{\, d}x=\cfrac{1}{110}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

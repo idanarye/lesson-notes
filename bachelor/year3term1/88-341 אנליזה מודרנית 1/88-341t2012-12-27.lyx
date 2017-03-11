@@ -1,0 +1,967 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בתרגיל הבית האחרון ראינו שיש "אי נעימויות" במרחב 
+\begin_inset Formula $\textnormal{AC}\left(I\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $I$
+\end_inset
+
+ אינו סגור וחסום, ולכן מהיום נתמקד במקרה שבו 
+\begin_inset Formula $I=\left[a,b\right]$
+\end_inset
+
+ סגור וחסום.
+\end_layout
+
+\begin_layout Part*
+השתנות חסומה
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $P\mid\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כלומר 
+\begin_inset Formula $P$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ ע"י הנקודות 
+\begin_inset Formula $a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b$
+\end_inset
+
+, מגדירים את 
+\emph on
+ההשתנות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $P$
+\end_inset
+
+
+\emph default
+ ע"י
+\begin_inset Formula 
+\[
+\bigvee\left(f,P\right)=\sum_{k=1}^{n}\left|f\left(x_{k}\right)-f\left(x_{k-1}\right)\right|
+\]
+
+\end_inset
+
+ואת ההשתנות של 
+\begin_inset Formula $f$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+T_{a}^{b}\left[f\right]:=\sup\left\{ \bigvee\left(f,P\right)\middle|P\mid\left[a,b\right]\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T_{a}^{b}\left[f\right]<\infty$
+\end_inset
+
+, אומרים ש
+\begin_inset Formula $f$
+\end_inset
+
+ בעלת השתנות חסומה בקטע.
+\end_layout
+
+\begin_layout Standard
+מרחב כל הפונקציות בעלות השתנות חסומה יסומן 
+\begin_inset Formula $\textnormal{BV}\left(\left[a,b\right]\right)=\left\{ f\middle|T_{a}^{b}\left[f\right]<\infty\right\} $
+\end_inset
+
+)
+\lang english
+Bounded Variation
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+בהרצאה: 
+\begin_inset Formula $\textnormal{AC}\left(\left[a,b\right]\right)\subsetneq\textnormal{BV}\left(\left[a,b\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אומרים שחלוקה 
+\begin_inset Formula $Q$
+\end_inset
+
+ היא 
+\emph on
+עידון
+\emph default
+ של החלוקה 
+\begin_inset Formula $P$
+\end_inset
+
+, אם 
+\begin_inset Formula $Q$
+\end_inset
+
+ מתקבלת ע"י הוספה של מספר סופי של נקודות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $P,P^{*}\mid\left[a,b\right]$
+\end_inset
+
+ חלוקות ו
+\begin_inset Formula $P^{*}$
+\end_inset
+
+ עידון של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\bigvee\left(f,P\right)\le\bigvee\left(f,P^{*}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+תחילה, נניח כי 
+\begin_inset Formula $P^{*}$
+\end_inset
+
+ מתקבלת מ
+\begin_inset Formula $P$
+\end_inset
+
+ ע"י הוספת נקודה אחת 
+\begin_inset Formula $x_{r-1}<x^{*}<x_{r}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\bigvee\left(f,P\right)=\left|f\left(x_{1}\right)-f\left(x_{0}\right)\right|+\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|+\cdots+\left|f\left(x_{r}\right)-f\left(x_{r-1}\right)\right|+\cdots+\left|f\left(x_{n}\right)-f\left(x_{n-1}\right)\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|f\left(x_{1}\right)-f\left(x_{0}\right)\right|+\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|+\cdots+\left|f\left(x_{r}\right)-f\left(x^{*}\right)+f\left(x^{*}\right)-f\left(x_{r-1}\right)\right|+\cdots+\left|f\left(x_{n}\right)-f\left(x_{n-1}\right)\right|\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\left|f\left(x_{1}\right)-f\left(x_{0}\right)\right|+\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|+\cdots+\left|f\left(x^{*}\right)-f\left(x_{r-1}\right)\right|+\left|f\left(x_{r}\right)-f\left(x^{*}\right)\right|+\cdots+\left|f\left(x_{n}\right)-f\left(x_{n-1}\right)\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\bigvee\left(f,P^{*}\right)
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $P^{*}$
+\end_inset
+
+ התקבלה מ
+\begin_inset Formula $P$
+\end_inset
+
+ ע"י הוספת 
+\begin_inset Formula $N$
+\end_inset
+
+ נקודות, חוזרים על ההוכחה הזו 
+\begin_inset Formula $N$
+\end_inset
+
+ פעמים.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $P:a=x_{0}<x_{1}<\cdots<x_{n}=b$
+\end_inset
+
+ חלוקה.
+ הוכיחו כי 
+\begin_inset Formula $T_{a}^{b}\left[f\right]=\sum\limits _{k=1}^{n}T_{x_{k-1}}^{x_{n}}\left[f\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נניח כי מדובר על חלוקה בת שני קטעים)אחרת, נחזור על ההוכחה כמו מקודם( - 
+\begin_inset Formula $Q:a=x_{0}<c=x_{1}<x_{2}=b$
+\end_inset
+
+ - ויש להראות 
+\begin_inset Formula $T_{a}^{b}\left[f\right]=T_{a}^{c}\left[f\right]+T_{c}^{b}\left[f\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)הערה: 
+\begin_inset Formula $\sup\left(f\left(x\right)+y\left(x\right)\right)\le\sup f+\sup g$
+\end_inset
+
+ כאשר מודדים על אותה קבוצה - אבל כאן מדובר על אותה פונקציה עם קבוצות שונות(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\le\right)$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\bigvee\left(f,P\right)\ge\bigvee\left(f,P\cup\left\{ c\right\} \right) & = & \overbrace{\left|f\left(x_{1}\right)-f\left(x_{0}\right)\right|+\cdots+\left|f\left(c\right)-f\left(x_{m-1}\right)\right|}^{=\textnormal{Variance in partitioning of }\left[a,c\right]\le T_{a}^{c}\left[f\right]}\\
+ & + & \underbrace{\left|f\left(x_{m}\right)-f\left(c\right)\right|+\cdots+\left|f\left(x_{n}\right)-f\left(x_{n-1}\right)\right|}_{=\textnormal{Variance in partitioning of }\left[b,c\right]\le T_{c}^{b}\left[f\right]}
+\end{eqnarray*}
+
+\end_inset
+
+יש לנו
+\begin_inset Formula 
+\[
+\bigvee\left(f,P\right)\le T_{a}^{c}\left[f\right]+T_{c}^{b}\left[f\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sup_{P\mid\left[a,b\right]}\left\{ \bigvee\left(f,P\right)\right\} \le T_{a}^{c}\left[f\right]+T_{c}^{b}\left[f\right]
+\]
+
+\end_inset
+
+אגף שמאל הוא 
+\begin_inset Formula $T_{a}^{b}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\ge\right)$
+\end_inset
+
+ יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ ע"פ האיפיון של 
+\begin_inset Formula $\sup$
+\end_inset
+
+ יש חלוקות 
+\begin_inset Formula $P_{1}\mid\left[a,c\right],\; P_{2}\mid\left[c,b\right]$
+\end_inset
+
+ המקיימות
+\begin_inset Formula 
+\[
+\bigvee\left(f,P_{1}\right)\ge\underbrace{T_{a}^{c}\left[f\right]}_{=\sup\left\{ \bigvee\left(f,P\right)\middle|P\mid\left[a,c\right]\right\} }-\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bigvee\left(f,P_{2}\right)\ge T_{c}^{b}\left[f\right]-\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+נחבר אי שוויונות לקבל
+\begin_inset Formula 
+\[
+\bigvee\left(f,P_{1}\right)+\bigvee\left(f,P_{2}\right)\ge T_{a}^{c}-\varepsilon
+\]
+
+\end_inset
+
+ניתן לראות כי 
+\begin_inset Formula $P=P_{1}\cup P_{2}$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $\bigvee\left(f,P_{1}\cup P_{2}\right)=\bigvee\left(f,P_{1}\right)+\bigvee\left(f,P_{2}\right)$
+\end_inset
+
+.
+ סה"כ
+\begin_inset Formula 
+\[
+T_{a}^{b}\left[f\right]\ge\bigvee\left(f,P_{1}\cup P_{2}\right)\ge T_{a}^{c}\left[f\right]+T_{c}^{b}\left[f\right]-\varepsilon
+\]
+
+\end_inset
+
+נשאיף 
+\begin_inset Formula $\varepsilon\to0$
+\end_inset
+
+ לקבל התוצאה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $D:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ פונקציית דריכלה: 
+\begin_inset Formula $D\left(x\right)=\begin{cases}
+1 & x\in\mathbb{Q}\\
+0 & x\notin\mathbb{Q}
+\end{cases}=I_{\mathbb{Q}}\left(x\right)$
+\end_inset
+
+.
+ הוכיחו שבכל קטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+)עם אורך חיובי( 
+\begin_inset Formula $T_{a}^{b}\left[D\right]=+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $N$
+\end_inset
+
+ טבעי.
+ על סמך צפיפות הרציונליים והאי-רציונליים בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, נוכל לבנות חלוקה 
+\begin_inset Formula $P_{N}:a=x_{0}<x_{1}<\cdots<x_{N}=b$
+\end_inset
+
+ "מתחלפת" - זאת אומרת שהנקודות הן מתחלפות בין רציונליות לאי-רציונליות לסירוגין)ל
+פחות בלי הקצוות(.
+\begin_inset Formula 
+\[
+\bigvee\left(D,P_{N}\right)=\sum_{k=1}^{N}\left|D\left(x_{k}\right)-D\left(X_{k-1}\right)\right|\ge\sum_{k=2}^{N-1}\left|D\left(x_{k}\right)-D\left(x_{k-1}\right)\right|=\sum_{k=2}^{N-1}1=N-2
+\]
+
+\end_inset
+
+מכאן שהקבוצה 
+\begin_inset Formula $\left\{ \bigvee\left(D,P\right)\middle|P\mid\left[a,b\right]\right\} $
+\end_inset
+
+ מכילה מספרים גדולים כרצוננו! 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T_{a}^{b}\left[D\right]=\sup\left\{ \bigvee\left(D,P\right)\middle|P\mid\left[a,b\right]\right\} =+\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו כי הפונקציה 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+x\sin\frac{1}{x} & x\neq0\\
+0 & x=0
+\end{cases}$
+\end_inset
+
+ אינה בעלת השתנות חסומה בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+צריכים לתפוס את התנודות של הסינוס.
+ מדי פעם 
+\begin_inset Formula $\sin\frac{1}{x}=\pm1$
+\end_inset
+
+ ואז ונוחתים על הישרים 
+\begin_inset Formula $y=\pm x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sin\frac{1}{x}$
+\end_inset
+
+ מחזירה 
+\begin_inset Formula $+1$
+\end_inset
+
+ בנקודות 
+\begin_inset Formula $x_{t}=\frac{2}{\pi+4\pi k}$
+\end_inset
+
+, ומחזירה 
+\begin_inset Formula $-1$
+\end_inset
+
+ בנקודות 
+\begin_inset Formula $y_{k}=\frac{2}{3\pi+4\pi k}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ נגדיר חלוקה
+\begin_inset Formula 
+\[
+P_{N}:\frac{2}{\pi}>\frac{2}{3\pi}>\frac{2}{5\pi}>\frac{2}{7\pi}>\cdots>\frac{2}{\pi+4\pi k}>\frac{2}{3\pi+4\pi k}>\cdots>\frac{2}{\pi+4\pi N}>\frac{2}{3\pi+4\pi N}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\bigvee\left(f,P_{N}\right) & \ge & \left|f\left(\frac{2}{3\pi}\right)-f\left(\frac{2}{\pi}\right)\right|+\left|f\left(\frac{2}{7\pi}\right)-f\left(\frac{2}{5\pi}\right)\right|+\cdots\\
+ &  & \cdots+\left|f\left(\frac{2}{3\pi+4\pi k}\right)-f\left(\frac{2}{\pi+4\pi k}\right)\right|+\cdots+\left|f\left(\frac{2}{3\pi+4\pi N}\right)-f\left(\frac{2}{\pi+4\pi N}\right)\right|=
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=0}^{N}\left|f\left(\frac{2}{3\pi+4\pi k}\right)-f\left(\frac{2}{\pi+4\pi k}\right)\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=0}^{N}\left|\frac{2}{3\pi+4\pi k}\cdot\overbrace{\sin\left(\frac{3\pi}{2}+2\pi k\right)}^{=-1}-\frac{2}{\pi+4\pi k}\cdot\overbrace{\sin\left(\frac{\pi}{2}+2\pi k\right)}^{+1}\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=0}^{N}\left|\frac{2}{3\pi+4\pi k}+\frac{2}{\pi+4\pi k}\right|=\frac{8}{\pi}\sum_{k=0}^{N}\frac{2k+1}{\left(4k+1\right)\left(4k+3\right)}\approx16k^{2}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ מקבלים טור מתבדר)חבר של הטור ההרמוני( 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sup_{P\mid\left[0,1\right]}\left\{ \bigvee\left(f,P\right)\right\} =+\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\in\textnormal{BV}\left(\left[a,b\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הוכיחו כי לכל 
+\begin_inset Formula $x_{0}\in\left(a,b\right)$
+\end_inset
+
+, קיימים הגבולות החד צדדיים
+\begin_inset Formula $\lim\limits _{x\to x_{0}^{-}}f\left(x\right),\lim\limits _{x\to x_{0}^{+}}f\left(x\right)$
+\end_inset
+
+.)מכאן שלפונקציות בעלות השתנות חסומה אין אי רציפות מהסוג השני(.
+\end_layout
+
+\begin_layout Enumerate
+הוכיחו כי קבוצת נקודות אי הרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ היא בת מניה.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ע"פ "משפט הפירוק של ז'ורדן" ניתן לרשום 
+\begin_inset Formula $f=g-h$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g,h$
+\end_inset
+
+ עולות.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ידוע שלפונקציות עולות קיימים הגבולות החד צדדיים, ולכן המספרים 
+\begin_inset Formula $\begin{array}{cc}
+\lim\limits _{x\to x_{0}^{-}}g\left(x\right) & \lim\limits _{x\to x_{0}^{+}}g\left(x\right)\\
+\lim\limits _{x\to x_{0}^{-}}h\left(x\right) & \lim\limits _{x\to x_{0}^{+}}h\left(x\right)
+\end{array}$
+\end_inset
+
+ קיימים כולם, ומאריתמטיקה של גבולות גם ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש גבולות חד צדדיים בכל נקודה.
+\end_layout
+
+\begin_layout Enumerate
+ידו מאינפי' שקבוצת נקודות אי הרציפות של פונקציה מונוטונית היא בת מנייה.
+ קבוצת נקודות אי הרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ מוכלת באיחוד של נקודות אי הרציפות של 
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[0,1\right]\to\mathbb{R}$
+\end_inset
+
+.
+ הוכיחו כי התנאים הבאים שקולים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בהחלט, 
+\begin_inset Formula $f'\left(x\right)=\left\{ 0,1\right\} $
+\end_inset
+
+ כב"מ)
+\begin_inset Formula $\mathrm{d}m$
+\end_inset
+
+( ו
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+קיימת קבוצה 
+\begin_inset Formula $A\subseteq\left[0,1\right]$
+\end_inset
+
+ מדידה לבג כך ש
+\begin_inset Formula $f\left(x\right)=m\left(A\cap\left(0,x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2\Longleftarrow1$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $A:=\left\{ x\in\left[0,1\right]\middle|f'\left(x\right)=1\right\} $
+\end_inset
+
+.
+ בגלל ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה היא מדידה לבג, ובתרגול שעבר ראינו שגם הנגזרת 
+\begin_inset Formula $f'$
+\end_inset
+
+ מדידה לבג, ומכאן שהקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ מדידה)
+\begin_inset Formula $A=\left(f'\right)^{-1}\left[\left\{ 1\right\} \right]$
+\end_inset
+
+(.
+ עכשיו בגלל ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בהחלט, היא מקיימת את נוסחת ניוטון-לייבניץ 
+\begin_inset Formula $\forall_{x\in\left[0,1\right]}\int_{0}^{x}f'\mathrm{\, d}m=f\left(x\right)-f\left(0\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(x\right)=\xcancel{f\left(0\right)}+\int_{0}^{x}f'\mathrm{\, d}m=\int_{0}^{x}f'\mathrm{\, d}m
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\int_{0}^{x}f'\mathrm{\, d}m=\int_{0}^{x}I_{A}\mathrm{\, d}m=\int_{0}^{1}I_{A\cap\left(0,x\right)}\mathrm{\, d}m=m\left(A\cap\left(0,x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $1\Longleftarrow2$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)=m\left(A\cap\left(0,x\right)\right)=\int_{0}^{x}I_{A}\mathrm{\, d}m$
+\end_inset
+
+, ומכאן 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בהחלט)הכללת לבג חלק א'.
+ אינטגרל לא מסויים הוא פונקציה רציפה בהחלט(.
+ ע"פ הכללת לבג, 
+\series bold
+כב"מ
+\series default
+ 
+\begin_inset Formula $f'\left(x\right)=I_{A}\left(x\right)\in\left\{ 0,1\right\} $
+\end_inset
+
+, וברור כי 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בהחלט עם נגזרת חסומה)כב"מ(
+\begin_inset Formula $\left|f'\left(x\right)\right|\le M$
+\end_inset
+
+ אזי היא מקיימת את תנאי ליפשיץ.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\left(y\right)-f\left(x\right)\right|=\left|\int_{x}^{y}f'\mathrm{\, d}m\right|\le\int_{x}^{y}\left|f'\right|\mathrm{\, d}m\le\int_{x}^{y}M\mathrm{\, d}m=M\left(y-x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

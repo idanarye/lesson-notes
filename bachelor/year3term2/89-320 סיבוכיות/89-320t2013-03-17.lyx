@@ -1,0 +1,926 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+\lang english
+P
+\series default
+\lang hebrew
+: תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ בעיית הכרעה/שפה.
+ נאמר ש
+\begin_inset Formula $L\in P$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי דטרמיניסטי שבהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, מחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם"ם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+\lang english
+NP
+\series default
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ אם קיים אלגוריתם פולינומי 
+\begin_inset Formula $V$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $P\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+שלמות
+\series default
+: לכל 
+\begin_inset Formula $x\in L$
+\end_inset
+
+, קיים 
+\begin_inset Formula $y$
+\end_inset
+
+)"עד"( עם 
+\begin_inset Formula $\left|y\right|\le P\left(\left|x\right|\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $V\left(x,y\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+נאותות
+\series default
+: לכל 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $V\left(x,y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+השאלה הגדולה של מדעי המחשב - האם 
+\begin_inset Formula $P\equiv NP$
+\end_inset
+
+? האם כל שפה שאפשר לוודא בזמן פולינומי אפשר גם להכריע בזמן פולינומי?
+\end_layout
+
+\begin_layout Standard
+נרצה לדבר על קושי לפתור בעיות.
+ בשביל זה נשתמש בכלי שנקרא 
+\emph on
+רדוקציה
+\emph default
+:
+\end_layout
+
+\begin_layout Section*
+הגדרה - רדוקציית
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+many-to-one
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פולינומית)
+\lang english
+karp
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ שתי שפות.
+ נאמר שיש רדוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+many-to-one
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פולינומית מ
+\begin_inset Formula $B$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $B\le_{m}^{p}A$
+\end_inset
+
+ אם קיימת פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ הניתנת לחישוב בזמן פולינומי כך ש:
+\begin_inset Formula 
+\[
+\forall_{x}x\in B\iff f\left(x\right)\in A
+\]
+
+\end_inset
+
+במילים אחרות: קיום של אלגוריתם יעיל עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ גורר אלגוריתם יעיל עבור 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP-Hardness
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ נאמר ש
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-קשה אם
+\begin_inset Formula 
+\[
+\forall_{L'\in NP}L'\le_{m}^{p}L
+\]
+
+\end_inset
+
+כלומר שפה היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-קשה היא קשה לפחות כמו כל שפה אחרת ב
+\begin_inset Formula $NP$
+\end_inset
+
+.
+ במילים אחרות - אם יצליחו למצוא אלגוריתם פולינומי לשפה 
+\begin_inset Formula $NP$
+\end_inset
+
+-קשה כלשהי, אז בעצם יהיה פתרון פולינומי לכל שפה ב
+\begin_inset Formula $NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP-Completeness
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ נאמר ש
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-שלמה ונסמן 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L$
+\end_inset
+
+ היא 
+\begin_inset Formula $NP$
+\end_inset
+
+-קשה
+\end_layout
+
+\begin_layout Section*
+משפט קוק
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SAT\in NPC
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CONP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CONP=\left\{ L\middle|\overline{L}\in NP\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{SAT}=\left\{ \varphi\middle|\varphi\textnormal{ is not satisfiable}\right\} \in CONP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה פתוחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP\overset{?}{=}CONP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $L\notin P$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P=NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תחת ההנחה ש
+\begin_inset Formula $P\neq NP$
+\end_inset
+
+, לכל אחד מהסעיפים הבאים קבעו האם הוא נכון, לא נכון, או שקול לשאלה פתוחה
+ כלשהי.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+תהי 
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $L'$
+\end_inset
+
+ שפה כך ש
+\begin_inset Formula $L\subseteq L'$
+\end_inset
+
+, אזי 
+\begin_inset Formula $L'\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+: לא נכון - נראה דוגמה נגדית ל
+\begin_inset Formula $L,L'$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumii}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L\in NPC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\subseteq L'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L'\notin NPC$
+\end_inset
+
+)
+\begin_inset Formula $L'\in P$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+לכן ניקח:
+\begin_inset Formula 
+\[
+L=SAT\in NPC\qquad L'=\Sigma^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\subseteq L'\qquad L'\in P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+המחלקה 
+\begin_inset Formula $NPC$
+\end_inset
+
+ סגורה תחת איחוד.
+ כלומר לכל 
+\begin_inset Formula $L_{1},L_{2}\in NPC$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $L_{1},L_{2}\notin NPC$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $L_{1}\cup L_{2}\in NPC$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+: לא נכון - נראה דוגמה נגדית ל
+\begin_inset Formula $L_{1},L_{2}\in NPC$
+\end_inset
+
+ כך ש
+\begin_inset Formula $L_{1}\cup L_{2}\in P$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L_{1}=\left\{ \left(\varphi,k\right)\middle|\varphi\in SAT\vee k\textnormal{ is even}\right\} \in NPC
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{2}=\left\{ \left(\varphi,k\right)\middle|\varphi\in SAT\vee k\textnormal{ is odd}\right\} \in NPC
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{1}\cup L_{2}=\left\{ \left(\varphi,k\right)\middle|\varphi\in SAT\vee k\textnormal{ is even}\vee k\textnormal{ is odd}\right\} =\left\{ \left(\varphi,k\right)\right\} \in P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תזכורת: 
+\begin_inset Formula $\textnormal{Clique}=\left\{ \left(G,k\right)\middle|\textnormal{Exists a }k\textnormal{ sized clique in }G\right\} \in NPC$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+\textnormal{Big-Clique}=\left\{ G\middle|\begin{array}{c}
+\textnormal{Exists a }n-4\textnormal{ sized clique in }G\\
+n=\textnormal{number of nodes in }G
+\end{array}\right\} 
+\]
+
+\end_inset
+
+האם 
+\begin_inset Formula $\textnormal{Big-Clique}\in NPC$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פתרון
+\series default
+: לא נכון - נראה ש
+\begin_inset Formula $\textnormal{Big-Clique}\in P$
+\end_inset
+
+.
+ נבנה אלגוריתם פולינומי שעובר על כל תתי קבוצות הקודקודים בגודל 
+\begin_inset Formula $n-4$
+\end_inset
+
+ ובודק אם אחת מהן מהווה קליק.
+ מספר תתי הקבוצות בגול 
+\begin_inset Formula $n-4$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+\binom{n}{n-4}=\frac{n!}{4!\left(n-4\right)!}=\frac{n\left(n-1\right)\left(n-2\right)\left(n-3\right)}{4!}\in O\left(n^{4}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

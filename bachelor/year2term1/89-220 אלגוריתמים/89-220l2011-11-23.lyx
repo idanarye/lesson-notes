@@ -1,0 +1,1838 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+קידוד ודיחסה
+\end_layout
+
+\begin_layout Standard
+נניח שאנו רוצים לשמור את המחרוזת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+abacdaaa
+\lang hebrew
+.
+ זה תופס 
+\begin_inset Formula $8\times8=64$
+\end_inset
+
+ ביטים.
+ אבל אם אנחנו יודעים שאנחנו רוצים לשמור רק את ארבעת התווים 
+\begin_inset Formula $a,b,c,d$
+\end_inset
+
+, היינו יכולים לייצג אותה ב
+\begin_inset Formula $2\times8=16$
+\end_inset
+
+ ביטים, באמצעות הייצוג 
+\begin_inset Formula $\begin{matrix}a & 00\\
+b & 01\\
+c & 10\\
+d & 11
+\end{matrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם היו לנו רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תוים - למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+abaccaaa
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- היינו יכולים להשתמש באורכים שונים כדי לשמור רצפים שונים.
+ ע"י הייצוג 
+\begin_inset Formula $\begin{matrix}a & 0\\
+b & 10\\
+c & 11
+\end{matrix}$
+\end_inset
+
+ היינו יכולים לשמור את המחרוזת ב
+\begin_inset Formula $2\cdot2+1\cdot2+5\cdot1=11$
+\end_inset
+
+ ביטים, שכן 
+\begin_inset Formula $a$
+\end_inset
+
+ תופס רק ביט אחד.
+\end_layout
+
+\begin_layout Standard
+כשאנחנו נותנים את הקודים באורכים שונים, צריך להיזהר שנדע איפה מסתיימת אות
+ אחת ומתחילה אות אחרת.
+\end_layout
+
+\begin_layout Itemize
+נרצה שקוד יהיה 
+\bar under
+בר פענוח יחיד
+\bar default
+)
+\lang english
+Unique Decipherability(UD)
+\lang hebrew
+( כלומר שהקוד של מחרוזת יהיה לו פיענוח אחד ויחיד.
+\end_layout
+
+\begin_layout Itemize
+נרצה שהפענוח יהיה 
+\bar under
+מיידי
+\bar default
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+קוד
+\bar default
+=פונקציה 
+\begin_inset Formula $c:\Sigma\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ א"ב(
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\begin{matrix}a & 01\\
+b & 00\\
+c & 100
+\end{matrix}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\begin{array}{c}
+c\left(a\right)=01\\
+c\left(b\right)=00\\
+c\left(c\right)=100
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המשך הגדרה
+\end_layout
+
+\begin_layout Standard
+עבור מחרוזת 
+\begin_inset Formula $S=s_{1}s_{2}...s_{n}$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $c\left(S\right)=c\left(s_{1}\right)\cdot c\left(s_{2}\right)\cdot...\cdot c\left(s_{n}\right)$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ מסמן שרשור(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים קוד שלכל 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $c\left(S\right)$
+\end_inset
+
+ בר פענוח יחיד ומיידי.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+קוד יקרא 
+\bar under
+קוד תחילי
+\bar default
+)או קוד רישות( אם לכל 
+\begin_inset Formula $x,y\in\Sigma$
+\end_inset
+
+, 
+\begin_inset Formula $x\ne y$
+\end_inset
+
+, 
+\begin_inset Formula $c\left(x\right)$
+\end_inset
+
+ אינו רישא של 
+\begin_inset Formula $c\left(y\right)$
+\end_inset
+
+.
+ כלומר הקידוד של אף אות אינו התחלה של אות אחרת.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+קוד תחילי הוא בר פענוח יחיד ומיידי.
+\end_layout
+
+\begin_layout Section*
+בעיית מציאת קוד תחילי באורך מינימום
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+קלט 
+\begin_inset Formula $f_{1},f_{2},...f_{n}$
+\end_inset
+
+ תדירויות של 
+\begin_inset Formula $a_{1},a_{2},...a_{n}\in\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פלט קוד אופטימלי.
+ כלומר קוד 
+\begin_inset Formula $c:\Sigma\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\sum\limits _{i=1}^{n}f_{i}l_{i}$
+\end_inset
+
+ מינימום, כאשר 
+\begin_inset Formula $l_{i}=\left|c\left(s_{i}\right)\right|$
+\end_inset
+
+ = האורך של הקוד של 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{matrix}\Sigma & f & c\\
+a & 99 & 00\\
+b & 99 & 01\\
+c & 99 & 10\\
+d & 99 & 11
+\end{matrix}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל האותיות מופיעות בתדירות שווה, ולכן נייצג את כולן באותו אורך.
+ אבל אם 
+\begin_inset Formula $\begin{matrix}\Sigma & f & c\\
+a & 1000 & 0\\
+b & 100 & 10\\
+c & 10 & 110\\
+d & 5 & 111
+\end{matrix}$
+\end_inset
+
+ - כלומר לאותיות שמופיעות יותר פעמים ניתן קודים יותר קצרים.
+ נשים לב שברגע שקוד אחד הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, אף קוד אחר לא יכול להתחיל ב
+\numeric on
+0
+\numeric off
+, ולכן כל הקודים האחרים חייבים להיות מאורך לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+ייצוג קודים ע"י עץ)
+\lang english
+Trie
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted3.png
+
+\end_inset
+
+ מייצג את 
+\begin_inset Formula $\begin{matrix}a & 01\\
+b & 101\\
+c & 010
+\end{matrix}$
+\end_inset
+
+ - אם בקודקוד רשומה אות, אז המסלול אליו יהיה הקוד של אותה אות.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם של הופמן)
+\lang english
+Huffman
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ נמיין את התדירויות 
+\begin_inset Formula $f_{1}\ge f_{2}\ge...\ge f_{n}$
+\end_inset
+
+ )המתאימות ל
+\begin_inset Formula $a_{1},...a_{n}$
+\end_inset
+
+(ו
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ 
+\bar under
+תנאי עצירה
+\bar default
+: 
+\begin_inset Formula $n=2$
+\end_inset
+
+, ואז קוד אחד יקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והשני יקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+3
+\numeric off
+.
+ 
+\bar under
+אחרת
+\bar default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+* נוציא את 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ מהרשימה)ובהתאם את 
+\begin_inset Formula $a_{n-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $a_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+* נכניס)למיקום המתאים ברשימה הממויינת( את 
+\begin_inset Formula $f_{n}+f_{n-1}$
+\end_inset
+
+)עם אות חדשה 
+\begin_inset Formula $b$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+נקבל: 
+\begin_inset Formula $f_{1},f_{2},...f_{n-2},f_{n-1}+f_{n}$
+\end_inset
+
+ ובהתאמה 
+\begin_inset Formula $a_{1},a_{2},...a_{n-2},b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+4
+\numeric off
+.
+ בצורה רקורסיבית נבנה עץ עבור 
+\begin_inset Formula $f_{1},...f_{n-2},f_{n-1}+f_{n}$
+\end_inset
+
+)
+\begin_inset Formula $a_{1},...a_{n-2},b$
+\end_inset
+
+( ונוציא מהקודקוד 
+\begin_inset Formula $b$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים, אחד עבור 
+\begin_inset Formula $a_{n-1}$
+\end_inset
+
+ ואחד עבור 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+זמן ריצת האלגוריתם של הופמן
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+ עבור מיון.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+.
+ 
+\bar under
+מימוש
+\bar default
+: עבור מערך 
+\begin_inset Formula $O\left(i\right)$
+\end_inset
+
+ לסיבוב ה
+\begin_inset Formula $i$
+\end_inset
+
+)שכן צריך לדחוף את האיברים כשמכניסים את 
+\begin_inset Formula $f_{n-1}+f_{n}$
+\end_inset
+
+(.
+ עבור רשימה מקושרת 
+\begin_inset Formula $O\left(i\right)$
+\end_inset
+
+, שכן צריך למצוא את המיקום.
+\begin_inset Newline newline
+\end_inset
+
+זמן: 
+\begin_inset Formula $O\left(n+\left(n-1\right)+\left(n-2\right)+...+2\right)=O\left(n^{2}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+עץ מאוזן בינרי
+\bar default
+: 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\log n$
+\end_inset
+
+ לכל סיבוב.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+בעזרת מחסנית ותור
+\bar default
+: זמן 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+.
+ נשמור את כל האיברים במחסנית, וכל פעם שמוציאים שני איברים במחסנית - את הסכום
+ שלהם נשמור בתור.
+ האיברים הכי קטנים יהיו או בראש המחסנית)כי זה ממויין( או בתחילת התור)כי
+ שם שמנו את הזוגות הכי קטנים(.
+\end_layout
+
+\begin_layout Standard
+סה"כ זה יקח 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+ בגלל שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+הוכחת נכונות
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+בעץ אופטימלי)=עץ עבורו 
+\begin_inset Formula $\sum f_{i}l_{i}$
+\end_inset
+
+ מינימום( לכל קודקוד פנימי יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים אץ אופטימלי 
+\begin_inset Formula $T$
+\end_inset
+
+ עבורו יש קודקוד פנימי, 
+\begin_inset Formula $u$
+\end_inset
+
+, עם בן יחיד, 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ נסמן את האבא של 
+\begin_inset Formula $u$
+\end_inset
+
+ ב
+\begin_inset Formula $x$
+\end_inset
+
+, וניצור עץ 
+\begin_inset Formula $T'$
+\end_inset
+
+ מ
+\begin_inset Formula $T$
+\end_inset
+
+ באופן הבא: נמחק את 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקשתות המחוברות אליו וניצור קשת חדשה 
+\begin_inset Formula $\left(x,v\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T'$
+\end_inset
+
+ עץ המתאים לקוד תחילי)כי 
+\begin_inset Formula $T$
+\end_inset
+
+ מתאים לקוד תחילי(.
+\end_layout
+
+\begin_layout Standard
+אבל, 
+\begin_inset Formula $\forall_{u\in T'}l_{u}'\le l_{u}$
+\end_inset
+
+, ו
+\begin_inset Formula $l_{u}'<l_{u}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $u$
+\end_inset
+
+ בתת-עץ של 
+\begin_inset Formula $x$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\Sigma f_{i}l_{i}'<\sum f_{i}l_{i}$
+\end_inset
+
+ בסתירה לאופטימליות 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ מש"ל.
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+בעץ אופטימלי יש לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים ברמה התחתונה.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אחרת הקודקוד היחיד 
+\begin_inset Formula $u$
+\end_inset
+
+ ברמה התחתונה מחייב של
+\begin_inset Formula $x$
+\end_inset
+
+, האבא של 
+\begin_inset Formula $u$
+\end_inset
+
+, יהיה בן יחיד.
+ סתירה ללמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+בעץ אופטימלי 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ נמצאים ברמה התחתונה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שהטענה לא נכונה, בה"כ נניח ש
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ אינו ברמה התחתונה.
+ מהמסקנה נסיק שברמה התחתונה יש 
+\begin_inset Formula $f_{n-1}<f_{i}$
+\end_inset
+
+.
+ מהעץ 
+\begin_inset Formula $T$
+\end_inset
+
+ האופטימלי ניצור 
+\begin_inset Formula $T'$
+\end_inset
+
+ ע"י החלפת 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{i-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $M=\sum f_{i}l_{i}$
+\end_inset
+
+)עבור 
+\begin_inset Formula $T$
+\end_inset
+
+( ו
+\begin_inset Formula $M'=\sum f_{i}l_{i}'$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+M'=M+f_{n-1}\left(l_{i}-l_{i-1}\right)-f_{i}\left(l_{i}-l_{n-1}\right)=M+\left(f_{i-1}-f_{i}\right)\left(l_{i}-l_{n-1}\right)<M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+קיים עץ אופטימלי עבורו 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+)
+\begin_inset Formula $a_{n-1}$
+\end_inset
+
+( ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+)
+\begin_inset Formula $a_{n}$
+\end_inset
+
+( אחים.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+עץ הופמן אופטימלי, כלומר מחזיר עץ עבורו 
+\begin_inset Formula $\sum f_{i}l_{i}$
+\end_inset
+
+ מינימום.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+באינדוקצה על 
+\begin_inset Formula $n$
+\end_inset
+
+)מספר התדירויות(
+\end_layout
+
+\begin_layout Standard
+בסיס האינדוקציה: 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ הופמן יוצר את העץ היחיד שאפשר.
+\end_layout
+
+\begin_layout Standard
+נניח נכונות ל
+\begin_inset Formula $n-1$
+\end_inset
+
+ ונוכיח ל
+\begin_inset Formula $n$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ עץ אופטימלי עבור 
+\begin_inset Formula $f_{1},...f_{n}$
+\end_inset
+
+)ל
+\begin_inset Formula $a_{1},...a_{n}$
+\end_inset
+
+( המקיים את למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, כלומר 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ אחים.
+\end_layout
+
+\begin_layout Standard
+נבנה 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ מ
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ ע"י מחיקת העלים 
+\begin_inset Formula $f_{n}-1$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ ונסמן את האבא ב
+\begin_inset Formula $b$
+\end_inset
+
+)עם 
+\begin_inset Formula $f_{n-1}+f_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsubsection*
+למה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ אופטימלי)ל
+\begin_inset Formula $f_{1},...f_{n-2},f_{n-1}+f_{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ אינו אופטימלי.
+ לכן קיים 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ אופטימלי ל
+\begin_inset Formula $f_{1},...f_{n-2},f_{n-1}+f_{n}$
+\end_inset
+
+ שונה מ
+\begin_inset Formula $T_{2}$
+\end_inset
+
+.
+ ניקח את 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ ונבנה ממנו 
+\begin_inset Formula $T_{4}$
+\end_inset
+
+ ע"י הוצאת
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים מ
+\begin_inset Formula $b$
+\end_inset
+
+)המתאים ל
+\begin_inset Formula $f_{n-1}+f_{n}$
+\end_inset
+
+(.
+ בן אחד יסומן עם 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ והאחר עם 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T_{4}$
+\end_inset
+
+ עץ תחילי עבור 
+\begin_inset Formula $f_{1},...f_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן 
+\begin_inset Formula $M_{1}=\sum f_{i}l_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $T_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $M_{2}=\sum f_{i}'l_{i}'$
+\end_inset
+
+ ב
+\begin_inset Formula $T_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $M_{3}=\sum f_{i}''l_{i}''$
+\end_inset
+
+ ב
+\begin_inset Formula $T_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $M_{4}=\sum f_{i}'''l_{i}'''$
+\end_inset
+
+ ב
+\begin_inset Formula $T_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{1}=M_{2}+f_{n-1}+f_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{4}=M_{3}+f_{n-1}+f_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{1}=M_{2}+f_{n-1}+f_{n}>M_{3}+f_{n-1}+f_{n}=M_{4}
+\]
+
+\end_inset
+
+קיבלנו ...
+\end_layout
+
+\begin_layout Standard
+מש"ל למה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר בונים עץ הופמן עבור 
+\begin_inset Formula $f_{1},...f_{n}$
+\end_inset
+
+ בשלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\numeric on
+3
+\numeric off
+( האלגוריתם מצמצם את 
+\begin_inset Formula $f_{n-1}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ לקודקוד 
+\begin_inset Formula $b$
+\end_inset
+
+ עם 
+\begin_inset Formula $f_{n-1}+f_{n}$
+\end_inset
+
+ וברקורסיה בונה עץ 
+\begin_inset Formula $T'$
+\end_inset
+
+ עבור התדירויות 
+\begin_inset Formula $f_{1},...f_{n-1}+f_{n-2}$
+\end_inset
+
+.
+ לפי הנחת האינדוקציה 
+\begin_inset Formula $T'$
+\end_inset
+
+ אופטימלית)עבור 
+\begin_inset Formula $f_{1},...f_{n-1}+f_{n}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+M_{T_{2}}=M_{T'}
+\]
+
+\end_inset
+
+בצעד האחרון הופמן מקבל עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ עם עלות 
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=M_{T'}+f_{n-1}+f_{n}=M_{T_{2}}+f_{n-1}+f_{n}=M_{T_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $T$
+\end_inset
+
+ אופטימלי)כי 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ אופטימלי(.
+ מש"ל
+\end_layout
+
+\end_body
+\end_document

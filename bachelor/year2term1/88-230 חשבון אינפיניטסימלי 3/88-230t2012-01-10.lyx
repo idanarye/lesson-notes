@@ -1,0 +1,1193 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מערכת של פונקציות סתומות
+\end_layout
+
+\begin_layout Standard
+הכוונה למקרה פרטי של משפט הפונקציה הסתומה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הוכיחו שקיימות פונקציות 
+\begin_inset Formula $u\left(x,y\right),v\left(x,y\right),w\left(x,y\right)$
+\end_inset
+
+ דיפרנציאביליות בסביבת 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\begin{array}{c}
+u\left(1,1\right)=1\\
+v\left(1,1\right)=1\\
+w\left(1,1\right)=1
+\end{array},\left\{ \begin{array}{c}
+u^{5}+xv^{2}-y+w=2\\
+v^{5}+yu^{2}-x+w=2\\
+w^{4}+y^{5}-x^{4}=1
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נבנה פונקציה 
+\begin_inset Formula $f:\mathbb{R}^{5}\to\mathbb{R}^{3}$
+\end_inset
+
+.
+ נגדיר פונקציות באופן הבא:
+\begin_inset Formula 
+\[
+f_{1}\left(x,y,u,v,w\right)=u^{5}+xv^{2}-y+w-2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{2}\left(x,y,u,v,w\right)=v^{5}+yu^{2}-x+w-2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{3}\left(x,y,u,v,w\right)=w^{4}+y^{5}-x^{4}-1
+\]
+
+\end_inset
+
+נגדיר את 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula $f\left(x,y,u,v,w\right)=\left(f_{1},f_{2},f_{3}\right)$
+\end_inset
+
+)שאכן מוגדרת מ
+\begin_inset Formula $\mathbb{R}^{5}$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נבדוק את התנאים למשפט הפונקציה הסתומה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(\vec{p}\right)=0$
+\end_inset
+
+ במקרה שלנו נקבל 
+\begin_inset Formula $\vec{p}=\left(1,1,1,1,1\right)$
+\end_inset
+
+ לפי הנתון! ניתן לראות שעבור הנקודה הנ"ל 
+\begin_inset Formula $f\left(1,1,1,1,1\right)=0$
+\end_inset
+
+.
+ ברור כי הפונקציות גזירות ורציפות שם, כלומר 
+\begin_inset Formula $f\in C^{1}\left(\mathbb{R}^{5}\right)$
+\end_inset
+
+, כי 
+\begin_inset Formula $f_{1},f_{2},f_{3}$
+\end_inset
+
+ הם פולינומים ולכן ב
+\begin_inset Formula $C^{1}$
+\end_inset
+
+.
+ נגזור:
+\begin_inset Formula 
+\[
+\begin{vmatrix}f'_{1u} & f'_{1v} & f'_{1w}\\
+f'_{2u} & f'_{2v} & f'_{2w}\\
+f'_{3u} & f'_{3v} & f'_{3w}
+\end{vmatrix}=\begin{vmatrix}5u^{4} & 2xv & 1\\
+2yu & 5v^{4} & 1\\
+0 & 0 & 4w^{3}
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב הנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\begin{vmatrix}\end{vmatrix}=84\ne0$
+\end_inset
+
+.
+ לפי משפט הפונקציה הסתומה מגדירות את 
+\begin_inset Formula $u,v,w$
+\end_inset
+
+ כפונקציות סתומות יחידות של 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ ברור שעבור סביבה של נקודה 
+\begin_inset Formula $\vec{p}$
+\end_inset
+
+ המשוואות והפונקציות 
+\begin_inset Formula $u,v,w$
+\end_inset
+
+ יחידות.
+\end_layout
+
+\begin_layout Part*
+מישור משיק למשטח
+\end_layout
+
+\begin_layout Standard
+משטח ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ נתון ע"י משוואה 
+\begin_inset Formula $f\left(x,y,z\right)=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $p_{0}=\left(x_{0},y_{0},z_{0}\right)\in\mathbb{R}^{3}$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $f\in C^{1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $u$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+אז
+\uuline default
+ משוואת המישור המשיק למשטח זה בנקודה 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f'_{x}\left(p_{0}\right)\left(x-x_{0}\right)+f'_{y}\left(p_{0}\right)\left(y-y_{0}\right)+f'_{z}\left(p_{0}\right)\left(z-z_{0}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנורמל במקרה זה של המישור הוא 
+\begin_inset Formula $\left(f'_{x}\left(p_{0}\right),f'_{y}\left(p_{0}\right),f'_{z}\left(p_{0}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מצאו את כל הנקודות 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ במשטח 
+\begin_inset Formula $x^{2}+y^{2}-z^{2}=1$
+\end_inset
+
+ כך שהמישור המשיק למשטח זה ב
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ מקביל למישור 
+\begin_inset Formula $x+y+z=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נבחר נקודה 
+\begin_inset Formula $p=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ כללית במשטח זה.
+ נגדיר פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+f\left(x,y,z\right)=x^{2}+y^{2}-z^{2}-1
+\]
+
+\end_inset
+
+נמצא נגזרות חלקיות:
+\begin_inset Formula 
+\[
+f'_{x}=2x,f'_{y}=2y,f'_{z}=-2z
+\]
+
+\end_inset
+
+הפונקציות רציפות ב
+\begin_inset Formula $C^{1}\left(\mathbb{R}^{3}\right)$
+\end_inset
+
+ ולכן הנורמל למשירו בנקודה 
+\begin_inset Formula $\left(2x,2y,-2z\right)$
+\end_inset
+
+.
+ עכשיו נציב בנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\left(2x_{0},2y_{0},-2z_{0}\right)$
+\end_inset
+
+.
+ כזכור כדי שמישורים יהיו מקבילים דרוש שוקטורי הנורמל יהיו תלויים לינארית.
+\end_layout
+
+\begin_layout Standard
+ברור שהנורמל של המישוי השני הוא 
+\begin_inset Formula $\left(1,1,1\right)$
+\end_inset
+
+)מצאנו מהמשוואה 
+\begin_inset Formula $x+y+z=1$
+\end_inset
+
+ קל לראות שאלו המקדמים( ולכן צריכים להתקיים המשוואות הבאות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\cfrac{2x_{0}}{1}=a\\
+\cfrac{2y_{0}}{1}=a\\
+\cfrac{-2z_{0}}{1}=a
+\end{array}\right.
+\]
+
+\end_inset
+
+נקבל
+\begin_inset Formula 
+\[
+\left(*\right)\hspace{1em}x_{0}=\cfrac{a}{2},y_{0}=\cfrac{a}{2},z_{0}=-\cfrac{a}{2}
+\]
+
+\end_inset
+
+כזכור הנקודה 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ נמצאת על המשטח 
+\begin_inset Formula $x^{2}+y^{2}-z^{2}=1$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}-z_{0}^{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאר להציב את 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ שמצאנו במשוואת המשטח:
+\begin_inset Formula 
+\[
+\cfrac{a^{2}}{4}+\cfrac{a^{2}}{4}-\cfrac{a^{2}}{4}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{a^{2}}{4}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{a=\pm2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קל לראות שיהיו שתי נקודות שיקיימו זאת:
+\begin_inset Formula 
+\[
+p_{1}=\left(1,1,-1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{2}=\left(-1,-1,1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+)ב(
+\end_layout
+
+\begin_layout Standard
+מצא את משוואת המישור המשיק בנקודות הנ"ל
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+עבור הנקודה 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+2\cdot1\left(x-1\right)+2\cdot1\left(y-1\right)-2\left(-1\right)\left(z+1\right)=0
+\]
+
+\end_inset
+
+.
+ באופןו דומה עבור הנקודה 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\left(-1\right)\left(x+1\right)+2\left(-1\right)\left(y+1\right)-2\left(1\right)\left(z-1\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+נקודות קיצון עם אילוצים
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מצאו את נקודת הקיצון של הפונקציה 
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+ עם האילוץ 
+\begin_inset Formula $x+y=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+במקרה הנ"ל קל לחלץ את 
+\begin_inset Formula $y$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x+y=1$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $y=1-x$
+\end_inset
+
+.
+ נציב זאת במשוואה של 
+\begin_inset Formula $z\left(x,y\right)$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+z=x^{2}+y^{2}=x^{2}+\left(1-x\right)^{2}=x^{2}+1-2x+x^{2}=2x^{2}-2x+1
+\]
+
+\end_inset
+
+את המשוואה קל לפתור ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+!!
+\end_layout
+
+\begin_layout Standard
+נשים לב כי המשוואה 
+\begin_inset Formula $z=2x^{2}-2x+1$
+\end_inset
+
+ היא משוואה עם נעלם אחד ולכן נגזור ונשווה לאפס:
+\begin_inset Formula 
+\[
+z'_{x}=4x-2\Rightarrow4x-2=0\Rightarrow x=\cfrac{1}{2}
+\]
+
+\end_inset
+
+נבדוק האם היא מינ'/מקס: 
+\begin_inset Formula $z''_{x}=4>0$
+\end_inset
+
+ ולכן מינימום!
+\end_layout
+
+\begin_layout Standard
+)באופן דומה ניתן לקבוע בשאלה זו ע"פ פרבולה!(
+\end_layout
+
+\begin_layout Standard
+לסיכום, הנקודה המבוקשת היא 
+\begin_inset Formula $x+y=1\wedge x=\cfrac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $y=\cfrac{1}{2}$
+\end_inset
+
+, אבל 
+\begin_inset Formula $z\left(\cfrac{1}{2},\cfrac{1}{2}\right)=\cfrac{1}{2}$
+\end_inset
+
+ ולכן הקורדינטה הרצויה היא
+\begin_inset Formula 
+\[
+\left(\cfrac{1}{2},\cfrac{1}{2},\cfrac{1}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נשים לב
+\end_layout
+
+\begin_layout Standard
+בדוגמה האחרונה היה קל לחלץ את 
+\begin_inset Formula $x$
+\end_inset
+
+, אבל ייתכן כי האילוצים למשל מוגדרים ע"י פונקציות סתומות ולכן נצטרך למצוא
+ שיטה כללית טובה יותר!
+\end_layout
+
+\begin_layout Part*
+שיטת כופלי לגרנז'
+\end_layout
+
+\begin_layout Standard
+מחפשים נקודת קיצון לפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ באילוצים הנ"ל:
+\begin_inset Formula 
+\[
+f_{1}=0,...f_{k}=0
+\]
+
+\end_inset
+
+לשם כך מגדירים פונקציות לגרנז' באופן הבא:
+\begin_inset Formula 
+\[
+L=f+\sum_{i=L}^{i=k}\lambda_{i}f_{i}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ נקראים כופלי לגרנז'.
+\end_layout
+
+\begin_layout Standard
+מוודאים נקודות קריטיות ע"י השוואת הנגזרת החלקית של 
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\numeric on
+0
+\numeric off
+.
+ נקבל:
+\begin_inset Formula 
+\[
+L'_{x_{1}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L'_{x_{k}}=0
+\]
+
+\end_inset
+
+נקבל מכאן נקודות קריטיות.
+ נניח ש
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ נקודה קריטית.
+ נסתכל על התבנית הריבועית 
+\begin_inset Formula $d_{p_{0}}^{2}\left(L\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d_{p_{0}}^{2}\left(L\right)>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אז ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש מינימום ב
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ באילוצים הנ"ל.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d_{p_{0}}^{2}\left(L\right)<0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ מקס'
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d_{p_{0}}^{2}\left(L\right)$
+\end_inset
+
+ הופכת סימן בסביבה של 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ אז הנקודה היא אוכף.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מצאו נקודות קיצון של 
+\begin_inset Formula $f\left(x,y\right)=6-4x-3y$
+\end_inset
+
+ עם האילוץ 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+קל לראות ש
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ היא 
+\begin_inset Formula $f_{1}\left(x,y\right)=x^{2}+y^{2}-1$
+\end_inset
+
+.
+ נרשום:
+\begin_inset Formula 
+\[
+L\left(x,y\right)=f\left(x,y\right)+\lambda_{1}f_{1}\left(x,y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(x,y\right)=6-4x-3y+\lambda_{1}\left(x^{2}+y^{2}-1\right)
+\]
+
+\end_inset
+
+נמצא נגזרות חלקיות:
+\begin_inset Formula 
+\[
+L'_{x}=-4+2\lambda_{1}x=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L'_{y}=-3+2\lambda_{1}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\cfrac{4}{2\lambda_{1}},y=\cfrac{3}{2\lambda_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב באילוץ:
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\cfrac{y}{2\lambda_{1}}\right)^{2}+\left(\cfrac{3}{2\lambda_{1}}\right)^{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}=\cfrac{25}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda_{1}=\pm\cfrac{5}{2}
+\]
+
+\end_inset
+
+נבדוק עבור כל 
+\begin_inset Formula $\lambda_{1_{A}}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le A\le2$
+\end_inset
+
+ בנפרד!:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda_{1}=\cfrac{5}{2}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $x=\cfrac{4}{5}$
+\end_inset
+
+, 
+\begin_inset Formula $y=\cfrac{3}{5}$
+\end_inset
+
+.
+ ז"א הנקודה החשודה כקיצון במקרה זה היא 
+\begin_inset Formula $p_{1}=\left(\cfrac{4}{5},\cfrac{3}{5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבדוק בנקודה 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ מהו הדיפרנציאל מסדר שני:)הדיפרנציאל של "
+\numeric on
+2
+\numeric off
+"!(
+\begin_inset Formula 
+\[
+L''_{xx}=2\lambda_{1_{1}}=5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L''_{yy}=5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L''_{yx}=L''_{xy}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{p_{1}}^{2}L\left(h_{1},h_{2}\right)=L''_{xy}\left(p_{1}\right)h_{1}^{2}+2L''_{xy}\left(p_{1}\right)h_{1}h_{2}+L''_{yy}\left(p_{1}h_{2}^{2}\right)=5h_{1}^{2}+5h_{2}^{2}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב: מהאילוץ 
+\begin_inset Formula $f_{1}\left(x,y\right)=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f_{1}\left(x,y\right)=x^{2}+y^{2}-1=0$
+\end_inset
+
+ קל לראות שהדיפרנציאל מסדר ראשון שלו בנקודה 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+הוא אפס:
+\begin_inset Formula 
+\[
+d_{p_{1}}^{1}f_{1}\left(h_{1},h_{2}\right)=f_{1x}'\left(p_{1}\right)h_{1}+f'_{1y}\left(p_{1}\right)h_{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לבטא את 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ כביטוי של
+\begin_inset Formula 
+\[
+2\cdot\cfrac{4}{5}\cdot h_{1}+2\cdot\cfrac{3}{5}\cdot h_{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+4h_{1}+3h_{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{1}=-\cfrac{3h_{2}}{4}
+\]
+
+\end_inset
+
+אפשר להציב זאת ב
+\begin_inset Formula $5h_{2}^{2}+5\left(-\cfrac{3h_{2}}{4}\right)^{2}$
+\end_inset
+
+ ואז לקבוע שהביטוי גדול מאפס!
+\end_layout
+
+\begin_layout Standard
+מצאנו שהנקודה 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ היא מינימום.
+ באופן דומה נמצא את נקודה 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+מצאנו לפונקציה בלי אילוצים קריטריון מקוצר לקביעת מינ' מקס'.
+ במקרה שלנו נשתמש בפונקצית לגרנז', כלומר הכללים יהיו הבאים:
+\end_layout
+
+\begin_layout Standard
+נסתכל על הדטרמיננטה של פונקציית לגרנז'.
+ נסמן 
+\begin_inset Formula $\begin{array}{c}
+A=L''_{xx}\left(p_{0}\right)\\
+B=L''_{yx}\left(p_{0}\right)\\
+C=L''_{yy}\left(p_{0}\right)
+\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta=\begin{vmatrix}A & B\\
+B & C
+\end{vmatrix}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\Delta>0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $A>0$
+\end_inset
+
+ אז הנקודה מינימום
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\Delta>0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $A>0$
+\end_inset
+
+ אז הנקודה מקסימום
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\Delta=0$
+\end_inset
+
+ - לא ידוע, נבדוק מפורשות את הנקודה
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\Delta<0$
+\end_inset
+
+ ו
+\begin_inset Formula $A\ne0$
+\end_inset
+
+ אז הנקודה היא אוכף
+\end_layout
+
+\end_body
+\end_document

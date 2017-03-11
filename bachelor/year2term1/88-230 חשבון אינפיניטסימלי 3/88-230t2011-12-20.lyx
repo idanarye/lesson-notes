@@ -1,0 +1,1477 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+קבע האם המישורים מקבילים?
+\begin_inset Formula 
+\[
+\begin{matrix}I. & 3x-4y+5z=0\\
+II. & -6x+8y-10z-4=0
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+משיקולים גאומטריים: מישורים מקבילים 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ הנורמלים שלהם מקבילים.
+ עבור 
+\begin_inset Formula $I$
+\end_inset
+
+ ברור שהנורמל הוא 
+\begin_inset Formula $\left(3,-4,5\right)$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $II$
+\end_inset
+
+ ברור שהנורמל הוא 
+\begin_inset Formula $\left(-6,8,-10\right)$
+\end_inset
+
+.
+ הוקטורים תלויים לינארית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ המישורים מקבילים
+\end_layout
+
+\begin_layout Part*
+המשך טורי טיילור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+ 
+\begin_inset Formula $P_{r}\left(\vec{x}\right)=\sum\limits _{i=0}^{r}\cfrac{1}{i!}d^{i}f_{p_{0}}\left(\vec{x}-p_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+חשבו טור טיילור מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור הפונקציה 
+\begin_inset Formula $f\left(x,y\right)=e^{x}\sin y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נשתמש בטורים ידועים.
+ תזכורת של טורים ידועים:
+\begin_inset Formula 
+\[
+e^{x}=\sum_{n=1}^{\infty}\cfrac{x^{n}}{n!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin x=\sum_{n=0}^{\infty}\cfrac{\left(-1\right)^{n}x^{2n+1}}{\left(2n+1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos x=\sum_{n=0}^{\infty}\cfrac{\left(-1\right)^{n}x^{2n}}{\left(2n\right)!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו נכפיל את הטור של 
+\begin_inset Formula $\sin$
+\end_inset
+
+ בטור של 
+\begin_inset Formula $e$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+e^{x}\cdot\sin y=\sum_{n=0}^{\infty}\cfrac{x^{n}}{n!}\cdot\sum_{n=0}^{\infty}\cfrac{\left(-1\right)^{n}\cdot y^{2n+1}}{\left(2n+1\right)!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההצגה הזו אינה של טור טיילור.
+\end_layout
+
+\begin_layout Standard
+עבור סדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נחפש מתי סכום החזקות של 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\begin_inset Formula 
+\[
+e^{x}\sin y=\left(1+x+\cfrac{x^{2}}{2!}+...+\cfrac{x^{n}}{n!}\right)\cdot\left(1+y-\cfrac{y^{3}}{3!}-...\right)
+\]
+
+\end_inset
+
+נבחר רק דרגה קטנה מ
+\numeric on
+3
+\numeric off
+
+\begin_inset Formula 
+\[
+1\left(y-\cfrac{y^{3}}{3!}\right)+x\cdot y+\cfrac{x^{2}}{2!}\cdot y=\boxed{y-\cfrac{y^{3}}{6}+x\cdot y+\cfrac{x^{2}y}{2}=P_{3}\left(x,y\right)}
+\]
+
+\end_inset
+
+)לא נוסיף 
+\begin_inset Formula $\cfrac{x\cdot y^{3}}{3}$
+\end_inset
+
+ כי הדרגה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וביקשו עד דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+חשבו טיילור מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפונקציה 
+\begin_inset Formula $f\left(x,y\right)=x^{y}$
+\end_inset
+
+ סביב הנקודה 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נפתח טור טיילור לפי הגדרה
+\begin_inset Formula 
+\[
+f\left(1,1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'_{x}=y\cdot x^{y-1}\Rightarrow f'_{x}\left(1,1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'_{y}=x^{y}\ln x\Rightarrow f'_{y}\left(1,1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''_{xx}=y\cdot\left(y-1\right)\cdot x^{y-2}\Rightarrow f''_{xx}\left(1,1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''_{yy}=x^{y}\ln^{2}x\Rightarrow f''_{yy}\left(1,1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''_{yx}=yx^{y-1}\ln x+\cfrac{x^{y}}{x}\Rightarrow f''_{yx}\left(1,1\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f''_{xy}=x^{y-1}+yx^{y-1}\cdot\ln x\Rightarrow f''_{xy}\left(1,1\right)=1
+\]
+
+\end_inset
+
+)תזכורת: ראינו שיעור שעבר שאם 
+\begin_inset Formula $f\in C^{n}$
+\end_inset
+
+ אז סדר הגזירה החלקית לא משנה עד סדר 
+\begin_inset Formula $n$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נציב בנוסחת טיילור
+\begin_inset Formula 
+\[
+\boxed{P_{2}=f\left(1,1\right)+f'_{x}\left(1,1\right)\left(x-1\right)+f'_{y}\left(1,1\right)\left(y-1\right)+\cfrac{1}{2!}\left[f''_{xx}\left(1,1\right)\left(x-1\right)^{2}+2f''_{xy}\left(1,1\right)\left(x-1\right)\left(y-1\right)+f''_{yy}\left(1,1\right)\left(y-1\right)^{2}\right]}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{P_{2}\left(x,y\right)=1+\left(x-1\right)+\left(x-1\right)\left(y-1\right)}
+\]
+
+\end_inset
+
+זו התשובה ו
+\bar under
+\uuline on
+אסור
+\bar default
+\uuline default
+ לפתוח סוגריים - זהו הפיתוח של טור טיילור.
+\end_layout
+
+\begin_layout Section*
+משפט)תנאי מספיק למינימום מקומי(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה ממשית ממח' 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ בסביבה של נקודה קריטית 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+, ונניח ש
+\begin_inset Formula $H=\left(\cfrac{\partial^{2}f}{\partial x_{j}\partial x_{i}}\right)$
+\end_inset
+
+ מוגדרת חיובית בנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+.
+ ]דהיינו: כל המינורים 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+)
+\begin_inset Formula $i=1,...k$
+\end_inset
+
+( של 
+\begin_inset Formula $H\left(x^{0}\right)$
+\end_inset
+
+ חיוביים.
+\end_layout
+
+\begin_layout Standard
+אזי: הנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ היא נקודת מינימום מקומית של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נרשום את נוסחת טיילור עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק.
+ 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+)אפשרי כי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא ממח' 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+( עם 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f\left(x^{0}+h\right)=f\left(x^{0}\right)+\left.\left(h\cdot\nabla\right)f\right|_{x^{0}}+\cfrac{1}{2!}\left.\left(h\cdot\nabla\right)^{2}f\right|_{x^{0}+\theta h}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $h$
+\end_inset
+
+, 
+\begin_inset Formula $0<\theta<1$
+\end_inset
+
+ מתאימים.
+ ולכן:
+\begin_inset Formula 
+\[
+f\left(x^{0}+h\right)-f\left(x^{0}\right)=\cfrac{1}{2}\left(h\cdot\nabla\right)^{2}f\left(x^{0}+\theta h\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\nabla=\sum_{i=1}^{k}h_{i}\cfrac{\partial}{\partial x_{i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(h\nabla\right)^{2}=\left(\sum_{i=1}^{k}h_{i}\cfrac{\partial}{\partial x_{i}}\right)\left(\sum_{j=1}^{k}h_{j}\cfrac{\partial}{\partial x_{j}}\right)=\sum_{i,j=1}^{k}h_{i}h_{j}\cfrac{\partial^{2}}{\partial x_{i}\partial x_{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\left(h\nabla\right)^{2}f\right|_{x}=\sum_{i,j=1}^{k}h_{i}h_{j}\cdot\underset{H_{ij}\left(x\right)}{\underbrace{\left.\cfrac{\partial^{2}f}{\partial x_{i}\partial x_{j}}\right|_{x}}}=h\left.H\right|_{x}h^{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $H_{ij}$
+\end_inset
+
+ פונקציה רציפה בסביבה של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+)כי 
+\begin_inset Formula $f$
+\end_inset
+
+ ממח' 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ בסביבה של 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+פתחו את הטור טיילור של הפונקציה 
+\begin_inset Formula $f\left(x,y\right)=\cfrac{x}{y}$
+\end_inset
+
+ סביב הנק.
+ 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נכתוב את 
+\begin_inset Formula $f$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\cfrac{x-1+1}{y-1+1}=\cfrac{x-1}{1+\left(y-1\right)}+\cfrac{1}{1+\left(y-1\right)}=\left(x-1\right)\cdot\cfrac{1}{1+\left(y-1\right)}+\cfrac{1}{1+\left(y-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+ טור הנדסי: 
+\begin_inset Formula $\boxed{\cfrac{1}{1-q}=\sum\limits _{n=1}^{\infty}q^{n-1}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ובמקרה הכללי: 
+\begin_inset Formula $\sum\limits _{i=1}^{n}q^{i-1}=\cfrac{1-q^{n}}{1-q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\cfrac{1}{1+\left(y-1\right)}=\cfrac{1}{1-\left(-\left(y-1\right)\right)}=\sum\limits _{n=0}^{\infty}\left(-\left(y-1\right)\right)^{n}=\sum\limits _{n=0}^{\infty}\left(-1\right)^{n}\left(y-1\right)^{n}$
+\end_inset
+
+ ונחזור למשוואה
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\left(x-1\right)\cdot\cfrac{1}{1+\left(y-1\right)}+\cfrac{1}{1+\left(y-1\right)}=\left(x-1\right)\cdot\sum_{n=0}^{\infty}\left(-1\right)^{n}\cdot\left(y-1\right)^{n}+\sum_{n=0}^{\infty}\left(-1\right)^{n}\cdot\left(y-1\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{f\left(x,y\right)=\sum_{n=0}^{\infty}\left(-1\right)^{n}\left(y-1\right)^{n}\left(\left(x-1\right)+1\right)}
+\]
+
+\end_inset
+
+אנחנו בעצם רוצים הצגה של 
+\begin_inset Formula $\left(x-a\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(y-b\right)$
+\end_inset
+
+ עבור הנק.
+ 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מצא טור טיילור סביב הנק.
+ 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $f\left(x,y\right)=\cfrac{x}{1+y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נכתוב 
+\begin_inset Formula $f\left(x,y\right)=x\cdot\cfrac{1}{1+y^{2}}=\left(x-0\right)\cdot\cfrac{1}{1+y^{2}}$
+\end_inset
+
+.
+ נמצא טור מתאים לביטוי 
+\begin_inset Formula $\cfrac{1}{1+y^{2}}$
+\end_inset
+
+.
+ נעזר בתכונות טור הנדסי 
+\begin_inset Formula $\cfrac{1}{1-\left(-y^{2}\right)}$
+\end_inset
+
+.
+ ברור שהטור מתכנס עבור 
+\begin_inset Formula $\left|-y^{2}\right|<1$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ האי הסביבה שלנו אז זה בסדר.
+\begin_inset Formula 
+\[
+\cfrac{1}{1-\left(-y^{2}\right)}=\sum_{n=0}^{\infty}\left(-y^{2}\right)^{n}=\sum_{n=0}^{\infty}\left(-1\right)^{n}\cdot y^{2n}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+f\left(x,y\right)=x\cdot\cfrac{1}{1+y^{2}}=x\cdot\sum_{n=0}^{\infty}\left(-1\right)^{n}y^{2n}\hspace{1em}\left(*\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: במקרה זה ניתן להגדיר בקלות טור טיילור מהצורה 
+\begin_inset Formula $\left(x-0\right)\sum\limits _{k=0}^{\infty}\left(-1\right)^{k}\left(y-0\right)^{k}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=2n$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k=2n$
+\end_inset
+
+ יקבל את הטור עצמו, 
+\begin_inset Formula $k\ne2n$
+\end_inset
+
+ יקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+מצאו טור טיילור מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפונקציה 
+\begin_inset Formula $f\left(x,y\right)=\cfrac{1}{1-x^{2}y}$
+\end_inset
+
+ סביב 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ומצאו בעזרתו את 
+\begin_inset Formula $\cfrac{\partial^{6}f}{\partial x^{4}\partial y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+טור הנדסי: 
+\begin_inset Formula $\left|x^{2}y\right|<1$
+\end_inset
+
+ והרי צריך סביב הנק.
+ 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\cfrac{1}{1-x^{2}y}=\sum_{n=0}^{\infty}\left(x^{2}y\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{8}\left(x,y\right)=1+x^{2}y+x^{4}y^{2}
+\]
+
+\end_inset
+
+לא לקחנו יותר כי הבא הוא 
+\begin_inset Formula $x^{8}y^{4}$
+\end_inset
+
+ וזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וצריך עד סדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+מיחידות טור טיילור נובע כי
+\begin_inset Formula 
+\[
+\cfrac{1}{6!}\cdot\cfrac{6!}{4!\cdot2!}\cdot\cfrac{\partial^{6}f}{\partial x^{4}\partial y^{2}}
+\]
+
+\end_inset
+
+ונקבל
+\begin_inset Formula 
+\[
+\cfrac{1}{4!2!}\cdot\cfrac{\partial^{6}f}{\partial x^{4}\partial y^{2}}=1
+\]
+
+\end_inset
+
+מכיוון שהמקדם של 
+\begin_inset Formula $x^{4}y^{2}$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ ולכן 
+\begin_inset Formula $\cfrac{\partial^{6}f}{\partial x^{4}\partial y^{2}}=4!\cdot2!=48$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+נק.
+ מינימום ומקסימום
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מצא את כל נקודות הקיצון המקומיות עבור 
+\begin_inset Formula $f\left(x,y\right)=3x^{2}-2xy+y^{2}-8y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נמצא נגזרות חלקיות
+\begin_inset Formula 
+\[
+f'_{x}\left(x,y\right)=6x-2y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'_{y}\left(x,y\right)=-2x+2y-8
+\]
+
+\end_inset
+
+ברור שקיימת נקודה חשודה כנק.
+ קיצון אם 
+\begin_inset Formula $f'_{x}=0\wedge f'_{y}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+6x-2y=0\\
+-2x+2y-8=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+4x-8=0\Rightarrow4x=8\Rightarrow\boxed{x=2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+6\cdot2-2y=0\Rightarrow\boxed{y=6}
+\]
+
+\end_inset
+
+הנק.
+ קיצון הזו 
+\begin_inset Formula $\left(2,6\right)$
+\end_inset
+
+, אם היא אכן קיצון היא רק מקומית כי זה פולינום ששואף לאינסוף.
+ כאשר נציב 
+\begin_inset Formula $f\left(2,6\right)=3\cdot4-24+26-48=-24$
+\end_inset
+
+ זו נק.
+ מינימום כי שואפים ל
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם ל
+\begin_inset Formula $f$
+\end_inset
+
+ קיצון מקומי ב
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+והנגזרות החלקיות מסדר ראשון של 
+\begin_inset Formula $f$
+\end_inset
+
+ קיימות אזי 
+\begin_inset Formula $f'_{x}\left(x_{0},y_{0}\right)=0\wedge f'_{y}\left(x_{0},y_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

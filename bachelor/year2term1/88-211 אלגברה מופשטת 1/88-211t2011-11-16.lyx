@@ -1,0 +1,1741 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל)קצת תורת המספרים)
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא מחלק משותף של 
+\begin_inset Formula $a,b$
+\end_inset
+
+ אזי 
+\begin_inset Formula $d\mid\gcd\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא כפולה משותפת של 
+\begin_inset Formula $a,b$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\textnormal{lcm}\left(a,b\right)\mid m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+ראינו בתרגיל הראשון)משפט ה
+\lang english
+gcd
+\lang hebrew
+( שקיימים 
+\begin_inset Formula $u,v$
+\end_inset
+
+ שלמים כך ש
+\begin_inset Formula $\gcd\left(a,b\right)=au+bv$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $d\mid\gcd\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+ ב
+\begin_inset Formula $\textnormal{lcm}\left(a,b\right)$
+\end_inset
+
+עם שארית: קיימים 
+\begin_inset Formula $q,r$
+\end_inset
+
+ שלמים 
+\begin_inset Formula $m=\textnormal{lcm}\left(a,b\right)q+r$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le r<\left|\textnormal{lcm}\left(a,b\right)\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+r=m-\textnormal{lcm}\left(a,b\right)q
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $r$
+\end_inset
+
+ מתחלק ב
+\begin_inset Formula $a,b$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא כפולה משותפת.
+ אם 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+ אזי סתירה למינימליות של 
+\begin_inset Formula $\textnormal{lcm}\left(a,b\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $r=0$
+\end_inset
+
+ ולכן הטענה מתקיימת.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בהנתן שתי חבורות 
+\begin_inset Formula $\begin{array}{c}
+\left(G,*_{G},e_{G}\right)\\
+\left(H,*_{H},e_{H}\right)
+\end{array}$
+\end_inset
+
+ נאמר ש
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\series bold
+\bar under
+תת חבורה
+\series default
+\bar default
+ של 
+\begin_inset Formula $G$
+\end_inset
+
+, ונסמן 
+\begin_inset Formula $H\le G$
+\end_inset
+
+, אם מתקיימים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $H\subseteq G$
+\end_inset
+
+)
+\begin_inset Formula $H$
+\end_inset
+
+ תת קבוצה של 
+\begin_inset Formula $G$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ לכל 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a*_{H}b=a*_{G}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $e_{H}=e_{G}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $h\in H$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h*_{G}e_{H}=h*_{H}e_{H}=h
+\]
+
+\end_inset
+
+נכפיל ב
+\begin_inset Formula $h^{-1}$
+\end_inset
+
+ משמאל
+\begin_inset Formula 
+\[
+e_{H}=e_{G}*_{G}e_{H}=\left(h^{-1}*_{G}h\right)*_{G}e_{H}=\left(h^{-1}*_{G}h\right)=e_{G}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $G$
+\end_inset
+
+ תת חבורה?
+\end_layout
+
+\begin_layout Itemize
+נתונה תת קבוצה 
+\begin_inset Formula $H$
+\end_inset
+
+ של 
+\begin_inset Formula $G$
+\end_inset
+
+ וצריך לבדוק האם 
+\begin_inset Formula $H$
+\end_inset
+
+ מקיימת את הקסיומות החבורה תחת 
+\begin_inset Formula $*_{G}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נתונות שתי חבורות ובודקים האם אחת מוכלת בשניה ושהפעולה תואמת
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\mathbb{Z},+,0\right)\le\left(\mathbb{Q},+,0\right)\le\left(\mathbb{R},+,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\mathbb{Z}_{8},+,0\right)$
+\end_inset
+
+.
+ האם 
+\begin_inset Formula $\left\{ 0,1\right\} \le\mathbb{Z}_{8}$
+\end_inset
+
+? 
+\bar under
+לא
+\bar default
+! 
+\begin_inset Formula $1+1\equiv2\left(\textnormal{mod}8\right)\notin\left\{ 0,1\right\} $
+\end_inset
+
+ לכן לא מתקיימת סגירות.
+\end_layout
+
+\begin_layout Enumerate
+האם 
+\begin_inset Formula $\left(\mathbb{N},+,0\right)\le\left(\mathbb{Z},+,0\right)$
+\end_inset
+
+? לא! לא מתקיימת אקסיומת האיבר ההפכי.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא הפיך כי 
+\begin_inset Formula $-1\notin\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 0,4\right\} \le\mathbb{Z}_{8}$
+\end_inset
+
+? כן.
+ ניתן לעבור על האקסיומות ולבדוק.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+טענה
+\bar default
+: 
+\begin_inset Formula $K\le H$
+\end_inset
+
+ וגם 
+\begin_inset Formula $H\le G$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $k\le G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Z}_{3}\le\mathbb{Z}_{6}$
+\end_inset
+
+? לא! הפעולה אחרת: 
+\begin_inset Formula $\begin{array}{c}
+1+2=0\left(\textnormal{mod}3\right)\\
+1+2\equiv3\left(\textnormal{mod}6\right)
+\end{array}$
+\end_inset
+
+.
+ בצורה דומה 
+\begin_inset Formula $\mathbb{Z}_{n}\nleq\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\mathbb{C}^{*},\cdot,1\right)$
+\end_inset
+
+.
+ מעגל היחידה:
+\begin_inset Formula 
+\[
+S^{1}:=\left\{ z\in\mathbb{C}^{*}\middle|\left|z\right|=1\right\} \le\mathbb{C}^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Omega_{n}:\left\{ z\in S^{1}\middle|z^{n}=1\right\} $
+\end_inset
+
+ שורשי היחידה ה
+\begin_inset Formula $n$
+\end_inset
+
+ים ב
+\begin_inset Formula $\mathbb{C}^{*}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\Omega_{n}\le S^{1}\le\mathbb{C}^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-1\in\Omega_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-i,i\in\Omega_{4}
+\]
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $z\in S^{1}$
+\end_inset
+
+ קיימת הצגה 
+\begin_inset Formula $\textnormal{cis}x=\cos x+i\sin x$
+\end_inset
+
+.
+ קיימת זהות: 
+\begin_inset Formula $\textnormal{cis}\left(x\right)\cdot\textnormal{cis}\left(y\right)=\textnormal{cis}\left(x+y\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ סגירות.
+\begin_inset Formula 
+\[
+\left|\textnormal{cis}x\right|=\cos^{2}x+\sin^{2}x=1
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נראה סגירות ב
+\begin_inset Formula $\Omega_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a,b\in\Omega_{n}\Rightarrow a^{n}=b^{n}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(ab\right)^{n}=a^{n}b^{n}=1\cdot1=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow ab\in\Omega_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+איבר יחידה:
+\begin_inset Formula 
+\[
+1\in\Omega_{n}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+)כי 
+\begin_inset Formula $1^{n}=1$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+אסוצ': נובעת מ
+\begin_inset Formula $\mathbb{C}^{*}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+הפכי
+\bar default
+: אם 
+\begin_inset Formula $a\in\Omega_{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a^{n}=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a^{-1}\right)^{n}=\left(a^{n}\right)^{-1}=1^{-1}=1
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $a^{-1}\in\Omega_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט קיצור הדרך
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\emptyset\ne H\subseteq G$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $H\le G$
+\end_inset
+
+ אם ורק אם:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $a*_{G}b\in H$
+\end_inset
+
+ 
+\begin_inset Formula $\forall a,b\in H$
+\end_inset
+
+)סגירות(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ 
+\begin_inset Formula $\forall a\in H\, a^{-1}\in H$
+\end_inset
+
+)ההפכי של 
+\begin_inset Formula $a$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+משפט קיצור הדרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\emptyset\ne H\subseteq G$
+\end_inset
+
+, אזי 
+\begin_inset Formula $H\le G$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $\forall a,b\in H\, a*_{G}b^{-1}\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו שהתת חבורות היחידות של 
+\begin_inset Formula $\left(\mathbb{Z},+,0\right)$
+\end_inset
+
+ הן מהצורה 
+\begin_inset Formula $n\mathbb{Z}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n\mathbb{Z}=\left\{ nk\middle|k\in\mathbb{Z}\right\} =\left\{ ...,-2n,-n,0,n,2n,3n,...\right\} 
+\]
+
+\end_inset
+
+כלומר כל המספרים השלמים שמתחלקים ב
+\begin_inset Formula $n$
+\end_inset
+
+.
+ לדוגמה
+\begin_inset Formula 
+\[
+2\mathbb{Z}=\left\{ ...,-4,-2,0,2,4,6,...\right\} 
+\]
+
+\end_inset
+
+כש
+\begin_inset Formula $n=0$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $0\mathbb{Z}=\left\{ 0\right\} $
+\end_inset
+
+
+\bar under
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\bar under
+טרמינולוגיה
+\bar default
+: 
+\begin_inset Formula $G=\left\{ e\right\} $
+\end_inset
+
+ נקראת 
+\series bold
+החבורה הטריויאלית
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-n\mathbb{Z}=n\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון תרגיל
+\end_layout
+
+\begin_layout Standard
+שני חלקים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א.
+ 
+\begin_inset Formula $n\mathbb{Z}\le\mathbb{Z}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $0\le n$
+\end_inset
+
+.
+ נשתמש בקיצור דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+0,n\in n\mathbb{Z}\Rightarrow n\mathbb{Z}\ne\emptyset
+\]
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $a,b\in n\mathbb{Z}$
+\end_inset
+
+, צריך להוכיח 
+\begin_inset Formula $a-b\in n\mathbb{Z}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a,b\in n\mathbb{Z}\Rightarrow n\mid a,b\Rightarrow n\mid a-b\Rightarrow a-b\in n\mathbb{Z}
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $n\mathbb{Z}\le\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב.
+ 
+\begin_inset Formula $H\le\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $m$
+\end_inset
+
+ כך ש
+\begin_inset Formula $H=m\mathbb{Z}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $H\le\mathbb{Z}$
+\end_inset
+
+ נניח 
+\begin_inset Formula $H\ne\left\{ 0\right\} $
+\end_inset
+
+]נשים לב שבכל 
+\begin_inset Formula $n\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $n>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא המספר השלם החיובי הקטן ביותר.[
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $m\in H$
+\end_inset
+
+ המספר החיובי הקטן ביותר.
+ נראה שבהכרח 
+\begin_inset Formula $H=m\mathbb{Z}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ידוע ש
+\begin_inset Formula $m\in H$
+\end_inset
+
+, ובגלל הסגירות 
+\begin_inset Formula $m+m\in H$
+\end_inset
+
+, וגם 
+\begin_inset Formula $-m\in H$
+\end_inset
+
+, ואז באינדוקציה אפשר להראות 
+\begin_inset Formula $km\in H$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $m\mathbb{Z}\subseteq H$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $t\in H$
+\end_inset
+
+.
+ נראה 
+\begin_inset Formula $m\mid t$
+\end_inset
+
+.
+ נחלק עם שארית: קיימים 
+\begin_inset Formula $q,r$
+\end_inset
+
+ שלמים כך ש
+\begin_inset Formula $t=mq+r$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le r<\left|m\right|
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $r\ne0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r=t-mq
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow r\in H
+\]
+
+\end_inset
+
+סתירה למינימליות 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow r=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow m\mid t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow t\in m\mathbb{Z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow H\subseteq m\mathbb{Z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow H=m\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה 
+\series bold
+סופית
+\series default
+, 
+\begin_inset Formula $\emptyset\ne H\subseteq G$
+\end_inset
+
+ אזי
+\begin_inset Formula 
+\[
+\Leftrightarrow\emptyset\ne H\subseteq G
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x,y\in H\,\, x*_{G}y\in H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+מתקיים לפי אקסיומת הסגירות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+:נשאר להוכיח ש
+\begin_inset Formula $\forall a\in H\Rightarrow a^{-1}\in H$
+\end_inset
+
+)לפי קיצור הדרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+I
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, ניצור סדרה של איברים 
+\begin_inset Formula $a,a^{2},a^{3},a^{4},...\left(\in H\right)$
+\end_inset
+
+.
+ לא ייתכן שכל האיברים בסדרה שונים כי החבורה סופית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k,j$
+\end_inset
+
+ כך ש
+\begin_inset Formula $k>j$
+\end_inset
+
+ וגם 
+\begin_inset Formula $a^{k}=a^{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נכפיל ב
+\begin_inset Formula $a^{-j}$
+\end_inset
+
+ את שני הצדדים)ב
+\begin_inset Formula $G$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+e=a^{k-j}=a\cdot a^{k-j-1}=a^{k-j-1}\cdot a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow a^{-1}=a^{k-j-1}\in H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $H,K\le G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $H\cap K\le G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם נתון אוסף 
+\begin_inset Formula $\left\{ H_{i}\right\} _{i\in I}$
+\end_inset
+
+ של ת"ח של 
+\begin_inset Formula $G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\bigcap\limits _{i\in I}H_{i}\le G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הראו ש
+\begin_inset Formula $z\mathbb{Z}\cap b\mathbb{Z}=\textnormal{lcm}\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x\in a\mathbb{Z}\cap b\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $b\mid x$
+\end_inset
+
+ וגם 
+\begin_inset Formula $a\mid x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ כפולה משותפת של 
+\begin_inset Formula $a,b$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{lcm}\left(a,b\right)\mid x$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\textnormal{lcm}\left(a,b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $a\mathbb{Z}\cap b\mathbb{Z}=\textnormal{lcm}\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תת חבורה ציקלית
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה, יהי 
+\begin_inset Formula $a\in G$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\langle a\right\rangle :=\left\{ a^{n}\middle|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\bar under
+נטען
+\bar default
+ ש
+\begin_inset Formula $\left\langle a\right\rangle \le G$
+\end_inset
+
+.
+ נקרא ל
+\begin_inset Formula $\left\langle a\right\rangle $
+\end_inset
+
+ 
+\series bold
+הת"ח הציקלית הנוצרת ע"י
+\series default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי משפט קיצור הדרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+II
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle a\right\rangle \ne\emptyset$
+\end_inset
+
+ כי 
+\begin_inset Formula $a\in\left\langle a\right\rangle $
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $xy^{-1}\in\left\langle a\right\rangle $
+\end_inset
+
+ 
+\begin_inset Formula $\forall x,y\in\left\langle a\right\rangle $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=a^{m},y=a^{n},xy^{-1}=a^{m}a^{-n}=a^{m-n}\in\left\langle a\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר שחבורה 
+\begin_inset Formula $G$
+\end_inset
+
+ היא 
+\series bold
+ציקלית
+\series default
+ אם קיים 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ כך ש
+\begin_inset Formula $G=\left\langle a\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ סופית אזי 
+\begin_inset Formula $\left\langle a\right\rangle =\left\{ a^{n}\middle|n\in\mathbb{N}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a,a^{2},a^{3},...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{k}=a^{j}\Rightarrow a^{k-j}
+\]
+
+\end_inset
+
+צ"ל 
+\begin_inset Formula $a^{-j}\in B$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a^{-j}\right)=\left(a^{j}\right)^{-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{j},a^{2j},a^{3j},...
+\]
+
+\end_inset
+
+ונקבל כמו בתרגיל קודם 
+\begin_inset Formula $\left(a^{j}\right)^{-1}\in B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\mathbb{Z}_{6},+,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 1\right\rangle =\left\{ 1,2,3,4,5,0\right\} =\mathbb{Z}_{6}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 2\right\rangle =\left\{ 2,4,0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 3\right\rangle =\left\{ 0,3\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 5\right\rangle =\left\{ 0,5,4,3,2,1\right\} 
+\]
+
+\end_inset
+
+
+\numeric on
+1,5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יוצרים של החבורה 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+ ציקלית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ ציקלית: 
+\begin_inset Formula $\mathbb{Z}=\left\langle 1\right\rangle =\left\langle -1\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\langle m\right\rangle =m\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

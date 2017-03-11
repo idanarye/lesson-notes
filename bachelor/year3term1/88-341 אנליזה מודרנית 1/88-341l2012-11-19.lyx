@@ -1,0 +1,2490 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+חזרה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\begin_inset space ~
+\end_inset
+
+קבועה
+\series default
+: 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח, וכאשר נדבר על קבוצה מדידה, הכוונה היא לקבוצה ב
+\begin_inset Formula $S$
+\end_inset
+
+, ופונקציה מדידה היא פונקציה מדידה לגבי 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: פונקציה פשוטה היא פונקציה 
+\begin_inset Formula $\varphi:X\to\mathbb{R}$
+\end_inset
+
+ שהיא מדידה ומקבלת מספר סופי של ערכים.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שקול
+\series default
+: 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ צירוף לינארי סופי של אינדיקטורים 
+\begin_inset Formula $\varphi=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\forall_{k}E_{k}\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+"
+\emph on
+ההצגה הקנונית של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\emph default
+" מתקבלת כך: נרשום את הערכים השונים 
+\begin_inset Formula $a_{1},\dots a_{n}$
+\end_inset
+
+ שמהווים את הטווח של 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ נתאים קבוצה מדידה
+\begin_inset Formula 
+\[
+E_{k}=\varphi^{-1}\left(a_{k}\right)=\left\{ x\in X\middle|\varphi\left(x\right)=a_{k}\right\} 
+\]
+
+\end_inset
+
+ה
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ זרות בזוגות, ואז
+\begin_inset Formula 
+\[
+\varphi\left(x\right)=\sum_{k=1}^{n}a_{k}I_{E_{k}}\left(x\right)
+\]
+
+\end_inset
+
+ וזו ההצגה הקנונית של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ כנ"ל שהיא לא-שלילית 
+\begin_inset Formula $\varphi\ge0$
+\end_inset
+
+, אז כל 
+\begin_inset Formula $a_{k}\ge-$
+\end_inset
+
+ ונגדיר
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)
+\]
+
+\end_inset
+
+כאשר מוסכם: אם 
+\begin_inset Formula $a_{k}=0$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\mu\left(E_{k}\right)=+\infty$
+\end_inset
+
+ אז 
+\begin_inset Formula $a_{k}\cdot\mu\left(E_{k}\right)=0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+ מוגדר היטב, ומתקיים
+\begin_inset Formula 
+\[
+0\le\int_{X}\varphi\mathrm{\, d}\mu\le\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ מדידה, אפשר להגדיר 
+\begin_inset Formula 
+\[
+\int_{E}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+ע"י
+\begin_inset Formula 
+\[
+\int_{X}\varphi I_{E}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\bar under
+או
+\bar default
+: אפשר לכתוב את 
+\begin_inset Formula $\left.\varphi\right|_{E}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\sum\limits _{k=1}^{n}a_{k}I_{E_{k}\cap E}$
+\end_inset
+
+, וממילא
+\begin_inset Formula 
+\[
+\int_{E}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\cup E\right)
+\]
+
+\end_inset
+
+קל להוכיח ששתי ההגדרות שקולות.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\varphi=\sum\limits _{j=1}^{n}a_{k}I_{E_{j}}\ge0$
+\end_inset
+
+ היא פונקציה פשוטה, כאשר ה
+\begin_inset Formula $E_{j}$
+\end_inset
+
+ זרות בזוגות)אבל ההצגה לאו דווקא קנונית(.
+ אזי
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\sum_{j=1}^{n}a_{j}\mu\left(E_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $b_{1},b_{2},\dots b_{m}$
+\end_inset
+
+ הערכים השונים שבטווח של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ כיוון שלכל 
+\begin_inset Formula $x\in E_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(x\right)=a_{j}$
+\end_inset
+
+, אז בהכרח כל 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ שווה לאיזה 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת, עבור 
+\begin_inset Formula $k=1,2,\dots m$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $S_{k}=\left\{ x\in X\middle|\varphi\left(x\right)=b_{k}\right\} $
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+E=\biguplus_{a_{j}=b_{k}}E_{j}
+\]
+
+\end_inset
+
+וכיוון שהאיחוד זר 
+\begin_inset Formula 
+\[
+\mu\left(S_{k}\right)=\sum\limits _{a_{j}=b_{k}}\mu\left(E_{j}\right)
+\]
+
+\end_inset
+
+לפי הבנייה שלנו, ההצגה הקנונית של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+\varphi=\sum_{k=1}^{m}b_{k}I_{S_{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן ש
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{m}b_{k}\mu\left(S_{k}\right)=\sum_{k=1}^{m}b_{k}\sum_{a_{j}=b_{k}}\mu\left(E_{j}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k=1}^{m}\sum_{a_{j}=b_{k}}b_{k}\mu\left(E_{j}\right)=\sum_{k=1}^{m}\sum_{a_{j}=b_{k}}a_{j}\mu\left(E_{j}\right)=\sum_{j=1}^{n}a_{j}\mu\left(E_{j}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\varphi,\psi\ge0$
+\end_inset
+
+ פונקציות פשוטות, ו
+\begin_inset Formula $\alpha\ge0$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\int_{X}\alpha\varphi\mathrm{\, d}\mu=\alpha\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{X}\left(\varphi+\psi\right)\mathrm{\, d}\mu=\int_{X}\varphi\mathrm{\, d}\mu+\int_{X}\psi\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E,F\in S$
+\end_inset
+
+ ואם 
+\begin_inset Formula $E\cap F=\emptyset$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\int_{E\uplus F}\varphi\mathrm{\, d}\mu=\int_{E}\varphi\mathrm{\, d}\mu+\int_{F}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $0\le\varphi\le\psi$
+\end_inset
+
+ אזי 
+\begin_inset Formula $0\le\int_{X}\varphi\mathrm{\, d}\mu\le\int_{X}\psi\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ ואם לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $m\le\varphi\left(x\right)\le M$
+\end_inset
+
+, אז 
+\begin_inset Formula $m\mu\left(E\right)\le\int_{E}\varphi\mathrm{\, d}\mu\le M\mu\left(E\right)$
+\end_inset
+
+, ואם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{E}\varphi\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+נרשום את ההצגה הקנונית של 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\varphi=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}$
+\end_inset
+
+, אז 
+\begin_inset Formula $\alpha\varphi=\sum\limits _{k=1}^{n}\alpha a_{k}I_{E_{k}}$
+\end_inset
+
+, לכן לפי הגדרה
+\begin_inset Formula 
+\[
+\int_{X}\alpha\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}\alpha a_{k}\mu\left(E_{k}\right)=\alpha\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)=\alpha\int_{X}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נרשום הצגות קנוניות 
+\begin_inset Formula 
+\[
+\varphi=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}\qquad\psi=\sum_{j=1}^{m}b_{j}I_{f_{j}}
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $F_{j}$
+\end_inset
+
+ זרות בזוגות, גם הקבוצות 
+\begin_inset Formula $E_{k}\cap F_{j}$
+\end_inset
+
+ זרות בזוגות, ובקבוצה 
+\begin_inset Formula $E_{k}\cap F_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\left(x\right)=a_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $\psi\left(x\right)=b_{j}$
+\end_inset
+
+ ויחד נקבל 
+\begin_inset Formula $\left(\varphi+\psi\right)\left(x\right)=a_{k}+b_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula 
+\[
+\int_{X}\left(\varphi+\psi\right)\mathrm{\, d}\mu=\sum\limits _{j,k}\left(a_{k}+b_{j}\right)\mu\left(E_{k}\cap F_{j}\right)=\sum_{j,k}a_{k}\mu\left(E_{k}\cap F_{j}\right)+\sum_{j,k}b_{j}\mu\left(E_{k}\cap F_{j}\right)=\cdots
+\]
+
+\end_inset
+
+ולפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה יוצא
+\begin_inset Formula 
+\[
+\cdots=\int_{X}\varphi\mathrm{\, d}\mu+\int_{X}\psi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+והוכחנו את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כיוון ש
+\begin_inset Formula $E\cap F=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $I_{E\cup F}\left(x\right)=I_{E}\left(x\right)+I_{F}\left(x\right)$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $\varphi I_{E\cup F}=\varphi I_{E}+\varphi I_{F}$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula 
+\[
+\int_{E\uplus F}\varphi\mathrm{\, d}\mu=\int_{X}\varphi I_{E\cup F}\mathrm{\, d}\mu=\int_{X}\left(\varphi I_{E}+\varphi I_{F}\right)\mathrm{\, d}\mu=\cdots
+\]
+
+\end_inset
+
+ולפי סעיף ב'
+\begin_inset Formula 
+\[
+\cdots=\int_{X}\varphi I_{E}\mathrm{\, d}\mu+\int_{X}\varphi I_{F}\mathrm{\, d}\mu=\int_{E}\varphi\mathrm{\, d}\mu+\int_{F}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נתון 
+\begin_inset Formula $0\le\varphi\le\psi$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}=\varphi$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int\varphi\delta\mu=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)\ge0$
+\end_inset
+
+.
+ כמו כן אם 
+\begin_inset Formula $0\le\varphi\le\psi$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\psi=\varphi+\underbrace{\left(\psi-\varphi\right)}_{\ge0}$
+\end_inset
+
+, כאשר גם 
+\begin_inset Formula $\psi-\varphi$
+\end_inset
+
+ פשוטה.
+ לפי סעיף ב',
+\begin_inset Formula 
+\[
+\int\psi=\int\varphi+\underbrace{\int\left(\psi-\varphi\right)}_{\ge0}\ge\int\varphi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נתון שלכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+, 
+\begin_inset Formula $m\le\varphi\left(x\right)\le M$
+\end_inset
+
+.
+ לפי סעיף ד',
+\begin_inset Formula 
+\[
+\int_{E}m\mathrm{\, d}\mu\le\int_{E}\varphi\mathrm{\, d}\mu\le\int_{E}M\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{X}mI_{E}\le\int_{E}\varphi\mathrm{\, d}\mu\le\int_{X}MI_{E}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m\mu\left(E\right)\le\int_{E}\varphi\mathrm{\, d}\mu\le M\mu\left(E\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ואם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ נרשום 
+\begin_inset Formula $\varphi\left(x\right)\le M\le\infty$
+\end_inset
+
+, ולפי אי השוויון הקודם
+\begin_inset Formula 
+\[
+0\le\int_{E}\varphi\mathrm{\, d}\mu\le M\mu\left(E\right)=M-0=0
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\int_{E}\varphi\mathrm{\, d}\mu=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varphi_{1},\dots\varphi_{n}\ge0$
+\end_inset
+
+ פשוטות ואם 
+\begin_inset Formula $a_{1},\dots a_{n}\ge0$
+\end_inset
+
+ קבועים,
+\begin_inset Formula 
+\[
+\int_{X}\sum_{k=1}^{n}a_{k}\varphi_{k}\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\int_{X}\varphi_{k}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: ע"פ סעיף א' וב' +אינדוקציה.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varphi=\sum\limits _{k=1}^{n}a_{k}I_{E_{k}}$
+\end_inset
+
+)
+\begin_inset Formula $a_{k}\ge0$
+\end_inset
+
+(, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פשוטה בהצגה כלשהי, אז
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\int_{X}I_{k}\mathrm{\, d}\mu=\sum_{k=1}^{n}a_{k}\mu\left(E_{k}\right)
+\]
+
+\end_inset
+
+
+\numeric off
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E=\biguplus\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+ מדידות ואם 
+\begin_inset Formula $\varphi\ge0$
+\end_inset
+
+ פשוטה, אז
+\begin_inset Formula 
+\[
+\int_{E}\varphi\mathrm{\, d}\mu=\sum_{k=1}^{n}\int_{E_{k}}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: ע"פ סעיף ג' באינדוקציה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:X\to\left[0,\infty\right]$
+\end_inset
+
+ פונקציה מדידה.
+ אז נגדיר
+\begin_inset Formula 
+\[
+\int_{X}f\mathrm{\, d}\mu=\sup_{\begin{array}{c}
+0\le\varphi\le f\\
+\varphi\textnormal{ is simple}
+\end{array}}\int_{X}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+"
+\begin_inset Formula $\sup$
+\end_inset
+
+" תמיד מוגדר כמספר ב
+\begin_inset Formula $\left[0,\infty\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ מדידה יש שתי הגדרות שקולות:
+\begin_inset Formula 
+\[
+\int_{E}f\mathrm{\, d}\mu=\sup_{\begin{array}{c}
+0\le\varphi\left(x\right)\le f\left(x\right)\\
+x\in E
+\end{array}}\int_{E}\varphi\mathrm{\, d}\mu=\int_{X}fI_{E}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעיר שאם 
+\begin_inset Formula $\varphi\ge0$
+\end_inset
+
+ פשוטה יש לנו שתי הגדרות ל
+\begin_inset Formula $\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ההגדרה המקורית 
+\begin_inset Formula $\sum a_{k}\mu\left(E_{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sup\limits _{\begin{array}{c}
+0\le\psi\le\varphi\\
+\psi\textnormal{ is simple}
+\end{array}}\int_{X}\psi\mathrm{\, d}\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תרגיל
+\series default
+: להראות שהן שוות.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g:X\to\left[0,\infty\right]$
+\end_inset
+
+ מדידות ו
+\begin_inset Formula $c>0$
+\end_inset
+
+ קבוע.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $0\le f\le g$
+\end_inset
+
+ אז 
+\begin_inset Formula $0\le\int_{X}f\mathrm{\, d}\mu\le\int_{X}g\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\subset B\subset X$
+\end_inset
+
+ מדידות אז 
+\begin_inset Formula $\int_{A}f\mathrm{\, d}\mu\le\int_{B}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{X}cf\mathrm{\, d}\mu=c\int_{X}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $S\ni E$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=0$
+\end_inset
+
+)אפילו אם 
+\begin_inset Formula $\mu\left(E\right)=\infty$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=0$
+\end_inset
+
+)אפילו אם 
+\begin_inset Formula $f\left(x\right)=\infty$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m\le f\left(x\right)\le M$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+ אז 
+\begin_inset Formula $m\mu\left(E\right)\le\int_{E}f\mathrm{\, d}\mu\le M\mu\left(E\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\int_{E}c\mathrm{\, d}\mu=c\mu\left(E\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\int_{X}f\mathrm{\, d}\mu=\sup\limits _{\begin{array}{c}
+0\le\varphi\le f\\
+\varphi\textnormal{ is simple}
+\end{array}}\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+ ולפי המשפט הקודם לכל 
+\begin_inset Formula $\varphi\left(x\right)\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{X}\varphi\mathrm{\, d}\mu\ge0$
+\end_inset
+
+, וממילא 
+\begin_inset Formula $\int f\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יתר על כן אם 
+\begin_inset Formula $0\le f\le g$
+\end_inset
+
+ אז כל 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\varphi\le f$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\varphi\le g$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\sup=\int_{X}g\mathrm{\, d}\mu$
+\end_inset
+
+ של אינטגרלים של יותר פונקציות 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $\int f\le\int g$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+ אז 
+\begin_inset Formula $I_{A}\le I_{B}$
+\end_inset
+
+.
+ לכן עבור 
+\begin_inset Formula $f\ge0$
+\end_inset
+
+ 
+\begin_inset Formula $fI_{A}\le fI_{B}$
+\end_inset
+
+, ונובע מסעיף א':
+\begin_inset Formula 
+\[
+\int_{A}f\mathrm{\, d}\mu=\int_{X}fI_{A}\mathrm{\, d}\mu\le\int_{X}fI_{B}\mathrm{\, d}\mu=\int_{B}f\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $c>0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{X}cf\mathrm{\, d}\mu=\sup_{\begin{array}{c}
+0\le\varphi\le cf\\
+\varphi\textnormal{ is simple}
+\end{array}}\int_{X}\varphi\mathrm{\, d}\mu=\sup_{0\le\frac{1}{c}\varphi\le f}c\int_{X}\frac{1}{c}\varphi=c\sup_{0\le\frac{1}{c}\varphi\le f}\int_{X}\frac{1}{c}\varphi\mathrm{\, d}\mu=c\int_{X}f\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+\int_{E}f\mathrm{\, d}\mu=\int_{E}0\mathrm{\, d}\mu=0
+\]
+
+\end_inset
+
+כי "
+\numeric on
+0
+\numeric off
+" פונקציה פשוטה והאינטגרל שלה ידוע.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\int_{E}f\mathrm{\, d}\mu=\sup_{\begin{array}{c}
+0=\varphi\le f\\
+\textnormal{on }E
+\end{array}}\int_{E}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פשוטה כבר ידענו שכאשר 
+\begin_inset Formula $\mu\left(E\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{E}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula $\int_{E}f\mathrm{\, d}\mu=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m\le f\left(x\right)\le M$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+ אז לפי סעיף א'
+\begin_inset Formula 
+\[
+\int_{E}m\mathrm{\, d}\mu\le\int_{E}f\mathrm{\, d}\mu\le\int_{E}M\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+m\mu\left(E\right)\le\int_{E}f\mathrm{\, d}\mu\le M\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+כמו כן
+\begin_inset Formula 
+\[
+\int_{E}c\mathrm{\, d}\mu=\int_{X}cI_{E}\mathrm{\, d}\mu=c\mu\left(E\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+)משפט ההתכנסות המונוטונית של לבג(
+\end_layout
+
+\begin_layout Standard
+נניח שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מוגדרת היטב ומדידה 
+\begin_inset Formula $f_{n}:X\to\left[0,\infty\right]$
+\end_inset
+
+, ונניח שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\le f_{1}\left(x\right)\le f_{2}\left(x\right)\le f_{3}\left(x\right)\le\cdots
+\]
+
+\end_inset
+
+אזי מוגדרת ומדידה
+\begin_inset Formula 
+\[
+f\left(x\right)=\sup f_{n}\left(x\right)=\lim_{n\to\infty}f_{n}\left(x\right)
+\]
+
+\end_inset
+
+ומתקיים
+\begin_inset Formula 
+\[
+\int_{X}f\mathrm{\, d}\mu=\lim_{n\to\infty}\int_{X}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+\alpha=\int_{X}f\mathrm{\, d}\mu\qquad\beta=\lim_{n\to\infty}\int_{X}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מוגדר היטב כי 
+\begin_inset Formula $f\ge0$
+\end_inset
+
+ ומדידה.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ מוגדר היטב כי כאשר ה
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ עולות עם 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\int f_{n}$
+\end_inset
+
+ עולים עם 
+\begin_inset Formula $n$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\beta$
+\end_inset
+
+ גבול של סדרה עולה של מספרים שתמיד קיים במובן הרחב.
+\end_layout
+
+\begin_layout Standard
+צ"ל 
+\begin_inset Formula $\alpha=\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תחילה נראה ש
+\begin_inset Formula $\beta\le\alpha$
+\end_inset
+
+.
+ אבל כיוון ש
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ עולות ל
+\begin_inset Formula $f$
+\end_inset
+
+, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $X\ni x$
+\end_inset
+
+ 
+\begin_inset Formula $f_{n}\left(x\right)\le f\left(x\right)$
+\end_inset
+
+.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{X}f_{n}\mathrm{\, d}\mu\le\int_{X}f\mathrm{\, d}\mu$
+\end_inset
+
+.
+ מכאן נובע ש
+\begin_inset Formula 
+\[
+\beta=\lim_{n\to\infty}\int_{X}f_{n}\mathrm{\, d}\mu\le\int_{X}f\mathrm{\, d}\mu=\alpha
+\]
+
+\end_inset
+
+נותר להוכיח ש
+\begin_inset Formula $\alpha\le\beta$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\alpha=\int_{X}f\mathrm{\, d}\mu=\sup\limits _{0=\varphi\le f}\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+, לכן מספיק להוכיח שאם 
+\begin_inset Formula $0\le\varphi\le f$
+\end_inset
+
+)
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פשוטה( אז 
+\begin_inset Formula $\beta\ge\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+ לכן ניקח 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ פשוטה כך שלכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $0\le\varphi\left(x\right)\le f\left(x\right)$
+\end_inset
+
+, ונפריד שני מקרים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: 
+\begin_inset Formula $+\infty=\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\beta\ge\int_{X}\varphi=\infty$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $\beta=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת, כיוון ש
+\begin_inset Formula $\int_{X}\varphi\mathrm{\, d}\mu=+\infty$
+\end_inset
+
+, בהכרח קיים 
+\begin_inset Formula $A$
+\end_inset
+
+ מדידה כך ש
+\begin_inset Formula $\mu\left(A\right)=+\infty$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\left(x\right)\equiv c>0$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $0\le\varphi\le f$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\ge\varphi\left(x\right)\ge c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $A_{n}=\left\{ x\in A\middle|f_{n}\left(x\right)>\nicefrac{c}{2}\right\} $
+\end_inset
+
+.
+ כיוון שה
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ עולות, 
+\begin_inset Formula $A_{1}\subset A_{2}\subset A_{3}\subset\cdots$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ עולה ל
+\begin_inset Formula $c\equiv f\left(X\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $A$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ קיים איזה 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f_{n}\left(x\right)>\nicefrac{c}{2}$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $A=\bigcup\limits _{n=1}^{\infty}A_{n}$
+\end_inset
+
+ כיוון שה
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ עולות ו
+\begin_inset Formula $\infty=\mu\left(A\right)=\lim\limits _{n\to\infty}\mu\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת לכל 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta\ge\int_{X}f_{n}\mathrm{\, d}\mu\ge\int_{A_{n}}f_{n}\mathrm{\, d}\mu>\int_{A_{n}}\nicefrac{c}{2}\mathrm{\, d}\mu=\frac{c}{2}\mu\left(A_{n}\right)
+\]
+
+\end_inset
+
+נובע ש
+\begin_inset Formula 
+\[
+\beta\ge\lim_{n\to\infty}\nicefrac{c}{2}\mu\left(A_{n}\right)=\frac{c}{2}\infty=\infty
+\]
+
+\end_inset
+
+והוכחנו ש
+\begin_inset Formula $\beta\ge\int\varphi$
+\end_inset
+
+ במקרה 
+\begin_inset Formula $\infty=f\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\series default
+\numeric off
+: 
+\begin_inset Formula $0\le\varphi\le f$
+\end_inset
+
+ ו
+\begin_inset Formula $\int_{X}\varphi<\infty$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $\beta\ge\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+ ובכן: נגדיר
+\begin_inset Formula 
+\[
+A=\left\{ x\in X\middle|\varphi\left(x\right)>0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu\left(A\right)<\infty\Longleftarrow\int_{X}\varphi\mathrm{\, d}\mu<\infty
+\]
+
+\end_inset
+
+ומתקיים
+\begin_inset Formula 
+\[
+\int_{X}\varphi\mathrm{\, d}\mu=\int_{A}\varphi\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת, יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+A_{n}=\left\{ x\in A\middle|f_{n}\left(x\right)>\left(1-\varepsilon\right)\varphi\left(x\right)\right\} 
+\]
+
+\end_inset
+
+כיוון שה
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ עולות, 
+\begin_inset Formula $A_{1}\subset A_{2}\subset A_{3}\subset\cdots$
+\end_inset
+
+.
+ יתר על כן, לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)\ge\varphi\left(x\right)>\left(1-\varepsilon\right)\varphi\left(x\right)
+\]
+
+\end_inset
+
+לכן קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f_{n}\left(x\right)>\left(1-\varepsilon\right)\varphi\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $x\in A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יוצא כמו קודם ש
+\begin_inset Formula $A=\bigcup\limits _{k=1}^{\infty}A_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mu\left(A\right)=\lim\limits _{n\to\infty}\mu\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A=A_{n}\biguplus\left(A-A_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu\left(A\right)=\mu\left(A_{n}\right)+\mu\left(A-A_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu\left(A_{n}\right)\le\mu\left(A\right)<\infty
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\mu\left(A-A_{n}\right)=\mu\left(A\right)-\mu\left(A_{n}\right)\xrightarrow[n\to\infty]{}0
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $n$
+\end_inset
+
+ מסויים כך ש
+\begin_inset Formula $\mu\left(A-A_{n}\right)<E$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $\infty>M=\max\limits _{x\in X}\varphi\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+לבסוף
+\bar default
+: לאותו 
+\begin_inset Formula $n$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\beta\ge\int_{X}f_{n}\mathrm{\, d}\mu\ge\int_{A_{n}}f_{n}\mathrm{\, d}\mu\ge\int_{A_{n}}\left(1-\varepsilon\right)\varphi\mathrm{\, d}\mu=\left(1-\varepsilon\right)\int_{A_{n}}\varphi\mathrm{\, d}\mu=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(1-\varepsilon\right)\left[\int_{A}\varphi\mathrm{\, d}\mu-\int_{A-A_{n}}\varphi\mathrm{\, d}\mu\right]\ge\left(1-\varepsilon\right)\left[\int_{A}\varphi\mathrm{\, d}\mu-M\mu\left(A-A_{n}\right)\right]\ge
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ge\left(1-\varepsilon\right)\left[\int_{X}\varphi\mathrm{\, d}\mu-M\varepsilon\right]
+\]
+
+\end_inset
+
+נשאיף 
+\begin_inset Formula $0\gets\varepsilon$
+\end_inset
+
+ להסיק 
+\begin_inset Formula $\beta\ge\int_{X}\varphi\mathrm{\, d}\mu$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הדבר נכון לכל 
+\begin_inset Formula $\varphi\le f$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\beta\ge\alpha$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+)למת פאטו(
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נניח ש
+\begin_inset Formula $f_{n}:X\to\left[0,\infty\right]$
+\end_inset
+
+ מדידה.
+ נגדיר 
+\begin_inset Formula $g\left(x\right)=\underline{\lim}f_{n}\left(x\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $g\left(x\right)\ge0$
+\end_inset
+
+ ומדידה, ומתקיים
+\begin_inset Formula 
+\[
+\int_{X}g\mathrm{\, d}\mu\le\underline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+)במילים אחרות:
+\begin_inset Formula $\int_{X}\underline{\lim}f_{n}\mathrm{\, d}\mu\le\underline{\lim}\int_{X}f_{n}\mathrm{\, d}\mu$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+כיוון שכל 
+\begin_inset Formula $f_{n}\left(x\right)\ge0$
+\end_inset
+
+, פשוט ש
+\begin_inset Formula $g\left(x\right)=\underline{\lim}f_{n}\left(x\right)\ge0$
+\end_inset
+
+, ו
+\begin_inset Formula $g$
+\end_inset
+
+ מדידה ע"פ משפט מהפרק הקודם.
+\end_layout
+
+\begin_layout Standard
+כידוע, 
+\begin_inset Formula $g\left(x\right)=\sup\limits _{k}\inf\limits _{n\ge k}f_{n}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\mathbb{N}\ni k$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $g_{k}\left(x\right)=\inf\limits _{n\ge k}f_{n}\left(x\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $g_{k}\left(x\right)\ge0$
+\end_inset
+
+ מדידות ועולות עם 
+\begin_inset Formula $k$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $k$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $g_{k}\left(x\right)\le f_{k}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כיוון שה
+\begin_inset Formula $g_{k}$
+\end_inset
+
+ עולות, משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומר
+\begin_inset Formula 
+\[
+\int_{X}g\mathrm{\, d}\mu=\lim_{k\to\infty}\int_{X}g_{k}\mathrm{\, d}\mu=\underline{\lim}\int_{X}g_{k}\mathrm{\, d}\mu\le\underline{\lim}\int_{X}f_{k}\mathrm{\, d}\mu
+\]
+
+\end_inset
+
+כי כל 
+\begin_inset Formula $g_{k}\le f$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

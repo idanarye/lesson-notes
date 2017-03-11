@@ -1,0 +1,881 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+למפה 
+\begin_inset Formula $\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+ יש מטריקה - 
+\begin_inset Formula $g_{ij}$
+\end_inset
+
+ - שמגדירה את המכפלה הסקלרית של וקטורים במפה)ולכן גם את האורכים( ע"י 
+\begin_inset Formula $\left\langle u,v\right\rangle =g_{ij}u^{i}v^{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש גם מיפוי מהמשטח לכדור היחידה שנותן את הנורמל
+\end_layout
+
+\begin_layout Standard
+נגזרות המשטח מקיימות
+\begin_inset Formula 
+\[
+r_{,ij}=\Gamma_{\hspace{4bp}ij}^{k}x_{,k}+b_{ij}\hat{n}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}ij}^{k}=\frac{1}{2}g^{km}\left(g_{mi,j}+g_{jm,i}-g_{ij,m}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+ אומר איך הנורמל משתנה
+\end_layout
+
+\begin_layout Part*
+קו גאוזדי
+\end_layout
+
+\begin_layout Standard
+קווים גאוזדיים הם הכללה של קו ישר למרחבים כלליים.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר את הגאוזיות בשתי דרכים שקולות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+מינימום לוקלי של המרחק בין שתי נקודות
+\end_layout
+
+\begin_layout Enumerate
+המשיק בכל נקודה מקביל, במובן שההיטל של המשיק על המישור המשיק בנקודה קרובה
+ שווה להיטל בנקודה עצמה.
+ כלומר:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ על המפה מוגדרת 
+\begin_inset Formula $\gamma\left(t\right):\mathbb{R}\to U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המיפוי של המשטח 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא 
+\begin_inset Formula $r\left(u\right):U\to M$
+\end_inset
+
+ - מיפוי של המפה למציאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r\left(\gamma\left(t\right)\right)$
+\end_inset
+
+ אומר לנו איפה העקומה נמצאת בכל זמן נתון 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\mathrm{d}r}{\mathrm{d}t}\in T_{a}M$
+\end_inset
+
+ - וקטור המהירות, נמצא בנקודה מסויימת 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי שהעקומה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ תהיה גאוזדית, הדרישה היא
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\mathrm{d}r}{\mathrm{d}t}\right)\perp T_{a}M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתח:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}v}{\mathrm{d}t}\perp v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \frac{\mathrm{d}v}{\mathrm{d}t},v\right\rangle =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert v\right\Vert =\sqrt{\left\langle v,v\right\rangle }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert v\right\Vert ^{2}=\left\langle v,v\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\left\Vert v\right\Vert ^{2}}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}\left\langle v,v\right\rangle =\left\langle \frac{\mathrm{d}v}{\mathrm{d}t},v\right\rangle -\left\langle v,\frac{\mathrm{d}v}{\mathrm{d}t}\right\rangle =0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הנגזרת של העקומה במרחב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}r\left(\gamma\left(t\right)\right)}{\mathrm{d}t}=\sum_{i}\frac{\mathrm{d}r}{\mathrm{d}u^{i}}\frac{\mathrm{d}\gamma^{i}}{\mathrm{d}t}=\sum_{i}r_{,i}\left(\gamma\left(t\right)\right)\dot{\gamma}^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\frac{\mathrm{d}r}{\mathrm{d}t}=\sum_{i}r_{,i}\left(\gamma\left(t\right)\right)\ddot{\gamma}^{i}+\sum_{i}\left(\frac{\mathrm{d}}{\mathrm{d}t}r_{,i}\left(\gamma\left(t\right)\right)\right)\dot{\gamma}^{i}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i}r_{,i}\left(\gamma\left(t\right)\right)\ddot{\gamma}^{i}+\sum_{i}\left(\sum_{j}r_{,ij}\dot{\gamma}^{j}\right)\dot{\gamma}^{i}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i}r_{,i}\ddot{\gamma}^{i}+\sum_{i}\left(\sum_{j}\dot{\gamma}^{j}\sum_{k}\Gamma_{\hspace{4bp}ij}^{k}r_{,k}\right)\dot{\gamma}^{i}+\sum_{i}\sum_{j}\dot{\gamma}^{j}b_{ij}\hat{n}\dot{\gamma}^{i}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{k}r_{,k}\ddot{\gamma}^{k}+\sum_{k}\sum_{i}\sum_{j}r_{,k}\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}+\left(\begin{array}{c}
+\textnormal{something}\\
+\textnormal{perpendicular}\\
+\textnormal{to \ensuremath{\hat{n}}}
+\end{array}\right)\hat{n}
+\]
+
+\end_inset
+
+בקו גאודזי נדרוש
+\begin_inset Formula 
+\[
+0=\sum_{k}r_{,k}\ddot{\gamma}^{k}+\sum\sum\sum r_{,k}\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}
+\]
+
+\end_inset
+
+לכן דורשים
+\begin_inset Formula 
+\[
+\forall_{k}\ddot{\gamma}^{k}+\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma$
+\end_inset
+
+ עקומה גאוזדית אם"ם היא מקיימת את המערכת
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{k}+\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובכתיבה רגילה:
+\begin_inset Formula 
+\[
+\forall_{k}\ddot{\gamma}^{k}+\sum_{i}\sum_{j}\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - חרוט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r\left(\phi,z\right)=\begin{pmatrix}Rz\cos\phi\\
+Rz\sin\phi\\
+z
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R$
+\end_inset
+
+ מתאר את צורת החרוט - את היחס בין המרחק בציר ה
+\begin_inset Formula $\left[z\right]$
+\end_inset
+
+ למרחק על המישור 
+\begin_inset Formula $\left[xy\right]$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\mathrm{d}r=\begin{pmatrix}-Rz\sin\phi & R\cos\phi\\
+Rz\cos\phi & R\sin\phi\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g=\mathrm{\, d}r^{T}\mathrm{d}r=\begin{pmatrix}R^{2}z^{2} & 0\\
+0 & R^{2}+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{11}=R^{2}z^{2}\qquad g_{22}=R^{2}+1\qquad g_{12}=g_{21}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g^{11}=R^{-2}z^{-2}\qquad g^{22}=\left(R^{2}+1\right)^{-1}\qquad g^{12}=g^{21}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: 
+\begin_inset Formula $\Gamma_{\hspace{4bp}ij}^{k}=\frac{1}{2}g^{km}\left(g_{mi,j}+g_{jm,i}-g_{ij,m}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{11,1}=0\qquad g_{11,2}=2R^{2}z\qquad g_{22,1}=0\qquad g_{22,2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{1}=\frac{1}{2}g^{11}\left(g_{11,1}+g_{11,1}-g_{11,1}\right)+\frac{1}{2}g^{12}\left(g_{21,1}+g_{12,1}-g_{11,2}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}12}^{1}=\Gamma_{\hspace{4bp}21}^{1}=\frac{1}{2}g^{11}\left(g_{11,2}+\cancel{g_{21,1}}-\cancel{g_{12,1}}\right)+\frac{1}{2}g^{12}\left(g_{21,1}+g_{22,1}-g_{12,2}\right)=\frac{1}{2}\frac{1}{R^{2}z^{2}}2R^{2}z=\frac{1}{z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{\hspace{4bp}11}^{2}=-\frac{R^{2}}{1+r^{2}}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: כדי שעקומה תהיה גיאודזית עליה לקיים 
+\begin_inset Formula $\ddot{\gamma}^{k}+\Gamma_{\hspace{4bp}ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו, עבור 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\ddot{\gamma}^{1}+\sum_{i=1}^{2}\sum_{j=1}^{2}\Gamma_{\hspace{4bp}ij}^{1}\dot{\gamma}^{i}\dot{\gamma}^{j}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ddot{\phi}+2\frac{1}{z}\dot{\phi}\dot{z}=0
+\]
+
+\end_inset
+
+ועבור 
+\begin_inset Formula $k=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\ddot{z}-\frac{R^{2}}{1+R^{2}}z\dot{\phi}^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לצורך פשטות הגזירה נרצה פרמטריזציה טבעית - כלומר 
+\begin_inset Formula $\left\Vert \dot{\gamma}\right\Vert =1$
+\end_inset
+
+.
+ הנורמה כאן צריכה להיות לפי המטריקה:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\dot{\phi} & \dot{z}\end{pmatrix}\begin{pmatrix}R^{2}z^{2} & 0\\
+0 & R^{2}+1
+\end{pmatrix}\begin{pmatrix}\dot{\phi}\\
+\dot{z}
+\end{pmatrix}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\phi}^{2}R^{2}z^{2}+\dot{z}^{2}\left(1+R^{2}\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי המקרה 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{\ddot{\phi}}{\dot{\phi}}=-2\frac{\dot{z}}{z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\ln\dot{\phi}\right)=-2\frac{\mathrm{d}}{\mathrm{d}t}\left(\ln z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln\dot{\phi}=-2\ln z+\ln A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\phi}=\frac{A}{z^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי מקרים 
+\begin_inset Formula $k=1$
+\end_inset
+
+ ו
+\begin_inset Formula $k=2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+1=R^{2}z^{2}\left(\frac{A}{z^{2}}\right)^{2}+\left(1+R^{2}\right)\dot{z}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}z}{\mathrm{d}t}=\dot{z}=\frac{\sqrt{z^{2}-R^{2}A^{2}}}{z\sqrt{1+R^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\sqrt{1+R^{2}}\int\frac{z\mathrm{\, d}z}{\sqrt{z^{2}-R^{2}A^{2}}}=\sqrt{A+R^{2}}\sqrt{z^{2}-R^{2}A^{2}}+B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\sqrt{\frac{\left(t-B\right)^{2}}{1+R^{2}}+R^{2}A^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{\phi}=\frac{A}{z^{2}}=\frac{1}{R^{2}A}\frac{1}{1+\left(\frac{t-B}{AR\sqrt{1+R^{2}}}\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi=\sqrt{1+\frac{1}{R^{2}}}\arctan\left(\frac{t-B}{AR\sqrt{1+R^{2}}}\right)+C
+\]
+
+\end_inset
+
+וקיבלנו העקומות הגיאודזיות הן:
+\begin_inset Formula 
+\[
+z=\begin{pmatrix}\sqrt{1+\frac{1}{R^{2}}}\arctan\left(\frac{t-B}{AR\sqrt{1+R^{2}}}\right)+C\\
+\sqrt{\frac{\left(t-B\right)^{2}}{1+R^{2}}+R^{2}A}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שקיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרגות חופש)הפרמטרים 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+(, בעוד שאמורות להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרגות חופש, לכל נקודה)
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרגות חופש( וכיוון)עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרגות חופש( אפשר להגדיר קו גיאודזי.
+ הסיבה היא שדרשנו פרמטריזציה טבעית - ולכן הכיוון התכווץ לדרגת חופש אחת.
+\end_layout
+
+\begin_layout Part*
+שדות וקטוריים
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+שדה וקטורי
+\emph default
+ הוא פונקציה 
+\begin_inset Formula $V:M\to T_{a}M$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+V\left(a\in M\right)\in T_{a}M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

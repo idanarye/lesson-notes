@@ -1,0 +1,1305 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+רוצים לעבור מחחבורה כלשהי באמצעות הומומורפיזם לחבורה אבלית: 
+\begin_inset Formula $\xymatrix{G\ar[r]^{F} & K}
+$
+\end_inset
+
+ כך ש
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה כלשהי ו
+\begin_inset Formula $K$
+\end_inset
+
+ אבלית.
+\end_layout
+
+\begin_layout Standard
+שואלים אם יש 
+\begin_inset Formula $U$
+\end_inset
+
+ אוניברסלית כך ש
+\begin_inset Formula $\xymatrix{G\ar[rr]^{F}\ar[rd]_{\varphi} &  & K\\
+ & U\ar[ru]^{\exists!L}
+}
+$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבנייה חוצה קטגוריות:
+\end_layout
+
+\begin_layout Standard
+בהנתן חבורה 
+\begin_inset Formula $G$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $\left[G,G\right]\subseteq G$
+\end_inset
+
+ ע"י ת"ח הנוצרות ע"י כל האיברים ב
+\begin_inset Formula $G$
+\end_inset
+
+ מהצורה 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+(.
+ ההפכיים שלהם גם שם: 
+\begin_inset Formula $\left(aba^{-1}b^{-1}\right)^{-1}=bab^{-1}a^{-1}$
+\end_inset
+
+.
+ גם הצמודים שלהם שם: 
+\begin_inset Formula $g\left(aba^{-1}b^{-1}\right)g^{-1}=\left(gag^{-1}\right)\left(gbg^{-1}\right)\left(gag^{-1}\right)\left(gbg^{-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן היא תת חבורה)מההופכיים( וגם תת חבורה נורמלית)סגורה להצמדות(.
+ היא אפילו אופיינית: נשמרת תחת כל אוטומורפיזם, לא רק הצמדות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+איבול
+\emph default
+\bar default
+ של חבורה 
+\begin_inset Formula $\textnormal{Ab}\left(G\right):=\nicefrac{G}{\left[G,G\right]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היא 
+\series bold
+אבלית
+\series default
+, כי צ"ל 
+\begin_inset Formula $xyx^{-1}y^{-1}=1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $xy$
+\end_inset
+
+, וזה קורה כי
+\begin_inset Formula 
+\[
+\left[a\right]\left[b\right]\left[a\right]^{-1}\left[b\right]^{-1}=\left[aba^{-1}b^{-1}\right]=\left[1\right]=1
+\]
+
+\end_inset
+
+כעת נראה 
+\begin_inset Formula 
+\[
+\xymatrix{G\ar[rr]^{f}\ar[rd]_{\rho} &  & K\left(\textnormal{Abelian}\right)\\
+ & \textnormal{Ab}\left(G\right)\ar[ru]_{\exists!L}
+}
+\]
+
+\end_inset
+
+באופן כללי:
+\begin_inset Formula 
+\[
+\xymatrix{G\ar[rr]\ar[rd]_{f} &  & \nicefrac{G}{N}\ar[ld]^{L}\\
+ & H
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $L$
+\end_inset
+
+ קיים אם"ם 
+\begin_inset Formula $N\subseteq\ker f$
+\end_inset
+
+, בומקרה זה 
+\begin_inset Formula $L$
+\end_inset
+
+ יחיד.
+\end_layout
+
+\begin_layout Standard
+אבל אם 
+\begin_inset Formula $G\xrightarrow{f}K$
+\end_inset
+
+ היא אבלית, אז תמיד 
+\begin_inset Formula $\left[G,G\right]\subseteq\ker f$
+\end_inset
+
+.
+ 
+\bar under
+אם
+\bar default
+ נראה זאת עבור הייוצרים של 
+\begin_inset Formula $\left[G,G\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(aba^{-1}b^{-1}\right)=fafb\left(fa\right)^{-1}\left(fb\right)^{-1}\underset{K\textnormal{ is Abelian}}{=}1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הבנייה הבאה
+\end_layout
+
+\begin_layout Standard
+נתונה קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ מתעניינים בפונקציות לתוך חבורה 
+\begin_inset Formula $K$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ & \ar@{--}[dd]\\
+X\ar[rr] &  & K\\
+ & \,
+}
+\]
+
+\end_inset
+
+אפשר כמובן בכיוון ההפוך לקחת חבורה ולשכוח שהיא חבורה ולהתייחס אליה כאל קבוצה
+ רגילה.
+ אבל האם אפשר לבנות פנקטור גלובלי שבהינתן קבוצה נוכל להפוך אותה לחבורה בצורה
+ שהפירוק יעבור דרך החבורה האוניברסלי 
+\begin_inset Formula $U$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{X\ar[rr]^{f}\ar[rd]_{\varphi} &  & L\\
+ & U\ar[ru]^{\exists!L}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על הקבוצה 
+\begin_inset Formula $Y=X\uplus\left\{ a^{-1}\middle|a\in X\right\} $
+\end_inset
+
+)צריך להניח שאם 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ אז 
+\begin_inset Formula $a^{-1}\notin X$
+\end_inset
+
+(.
+ כאן 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ לא אומר "ההופכי של 
+\begin_inset Formula $a$
+\end_inset
+
+", כי אנחנו מדברים על קבוצות, לא על חבורות.
+ ה
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ זה פשוט "קשקוש" שמוסיפים כדי להבדיל את ה
+\begin_inset Formula $a$
+\end_inset
+
+ים מאברי 
+\begin_inset Formula $X$
+\end_inset
+
+ המקוריים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W$
+\end_inset
+
+ קבוצת המילים ב
+\begin_inset Formula $Y$
+\end_inset
+
+: 
+\begin_inset Formula $W=\left\{ \left(a_{1},a_{2},\dots a_{n}\right)\middle|\begin{array}{c}
+a_{i}\in Y\\
+n\in\mathbb{N}\cup\left\{ 0\right\} 
+\end{array}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כזכור, יחס שקילות הוא שאם 
+\begin_inset Formula $a$
+\end_inset
+
+ ו
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ מופיעות ברצף)יכול גם להיות בסדר הפוך( אז אפשר לזרוק את שתיהם:
+\begin_inset Formula 
+\[
+\left(a_{1},a_{2},\dots a_{16},a,a^{-1},a_{19},\dots a_{100}\right)\sim\left(a_{1},a_{2},\dots a_{16},a_{19},\dots a_{100}\right)\sim\left(a_{1},a_{2},\dots a_{16},a^{-1},a,a_{19},\dots a_{100}\right)
+\]
+
+\end_inset
+
+ואפשר גם לחבר ולנתק מילים בכל נקודה: 
+\begin_inset Formula $\left(a_{1},a_{2}\right)\left(a_{3}\right)\sim\left(a_{1},a_{2},a_{3}\right)\sim\left(a_{1}\right)\left(a_{2},a_{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שיש לנו כבר חבורה של מילים:
+\end_layout
+
+\begin_layout Itemize
+יש פעולת כפל בין איברים)שרשור(
+\end_layout
+
+\begin_layout Itemize
+יש איבר יחידה)המילה הריקה(
+\end_layout
+
+\begin_layout Itemize
+יש הופכי)
+\begin_inset Formula $\left(a_{1},a_{2},a_{3}\right)^{-1}=\left(a_{3}^{-1},a_{2}^{-1},a_{1}^{-1}\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר קבוצת מחלקות השקילות 
+\begin_inset Formula $F\left(X\right)$
+\end_inset
+
+ עם פעולת השרשור היא חבורה ויש העתקה 
+\begin_inset Formula $X\to F\left(X\right)$
+\end_inset
+
+ מוגדרת ע"י 
+\begin_inset Formula $x\ni a\mapsto\left[\left(a\right)\right]$
+\end_inset
+
+)לא מעתיקים למילה אלא למחלקת השקילות שלה(.
+ נסמן את ההעתקה הזו ב
+\begin_inset Formula $j$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{X\ar[rr]^{f\textnormal{(function)}}\ar[rd]_{a\mapsto j\left(a\right)}^{j} &  & K\\
+ & F\left(x\right)\ar@{-->}[ru]_{\exists!L}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\left(b^{-1}\right)\right]=\left[\left(b\right)\right]^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\left(a,b^{-1},c\right)\right]=\left[\left(a\right)\right]\left[\left(b\right)\right]^{-1}\left[\left(c\right)\right]=j\left(a\right)j\left(b\right)^{-1}j\left(c\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $F\left(X\right)$
+\end_inset
+
+ נקראת 
+\emph on
+החבורה החפשית על קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+
+\emph default
+, ועכשיו בעצם נאלצים להודות שה"קשקוש" 
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ הוא בעצם האיבר ההפכי.
+\end_layout
+
+\begin_layout Standard
+אנחנו צריכים עדיין למצוא את ההעתקה 
+\begin_inset Formula $L$
+\end_inset
+
+ ששומרת על הפעולה:
+\begin_inset Formula 
+\[
+L\left(\left[a,b^{-1},c\right]\right)=\left(f\left(a\right)f\left(b\right)^{-1}f\left(c\right)\right)\left(\underbrace{\qquad\qquad}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(\left[a,b,b^{-1},c\right]\right)=f\left(a\right)f\left(b\right)f\left(b\right)^{-1}f\left(c\right)=f\left(a\right)f\left(c\right)=L\left(\left[a,c\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $X=\left\{ x_{1},x_{2},x_{3},\dots x_{n}\right\} $
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $F\left(X\right)=F_{n}$
+\end_inset
+
+.
+ נסתכל על מילה:
+\begin_inset Formula 
+\[
+\left[\left(x_{3},x_{9}^{-1},x_{9}^{-1},x_{9}^{-1},x_{1},x_{1},x_{1},x_{1}\right)\right]
+\]
+
+\end_inset
+
+מכיוון שהמילה הזו היא באמת המכפלה של מילים באורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אפשר לזרוק את הסוגריים ואת הפסיקים:
+\begin_inset Formula 
+\[
+x_{3}x_{9}^{-1}x_{9}^{-1}x_{9}^{-1}x_{1}x_{1}x_{1}x_{1}
+\]
+
+\end_inset
+
+ואם כבר חושבים על זה בתור חבורה, אפשר כבר לרשום
+\begin_inset Formula 
+\[
+x_{3}x_{9}^{-3}x_{1}^{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל לדוגמה
+\end_layout
+
+\begin_layout Standard
+להוכיח 
+\begin_inset Formula $F_{n}*F_{m}\equiv F_{n+m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דרך פתרון
+\end_layout
+
+\begin_layout Standard
+אין טעם ללכת להגדרה ולבנות את ההעתקה - עדיף ללכת ישר לתכונות האוניברסליות:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & G &  & G\ar[rrd]\\
+K\ar[rru]\ar[rrd] &  &  &  &  &  & K\\
+ &  & H &  & H\ar[rru]\\
+\\
+G\ar[rr] &  & K_{\textnormal{Abelian}} &  & X_{\textnormal{Set}}\ar[rr] &  & K_{\textnormal{Group}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שוב נסתכל על פונקציה מקבוצה לחבורה.
+ הפעם נבחר קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ עם "קצת מבנה" עליה, והפונקציה 
+\begin_inset Formula $F$
+\end_inset
+
+ תצטרך לכבד את המבנה הזה.
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $R\subseteq W=X\biguplus\left\{ a^{-1}\middle|a\in X\right\} $
+\end_inset
+
+.
+ דוגמה: 
+\begin_inset Formula $X=\left\{ x_{1},x_{2},x_{3}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $R=\left\{ x_{1}x_{2}^{-1}x_{3}^{2},x_{2}x_{2}x_{1}^{-1}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ה
+\begin_inset Formula $R$
+\end_inset
+
+ הזה יהיה המבנה שצריך לכבד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \ar@{--}[dd]\\
+\left(X,R\right)\ar[rr]^{f} &  & K\\
+ & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו מתעניינים בפונקציות 
+\begin_inset Formula $f:X\to K$
+\end_inset
+
+ כך שלכל מילה 
+\begin_inset Formula $r\in R$
+\end_inset
+
+)לדוגמה 
+\begin_inset Formula $r=ab^{-1}cc$
+\end_inset
+
+( יתקיים 
+\begin_inset Formula $f\left(r\right)=1$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $f\left(a\right)f\left(b\right)^{-1}f\left(c\right)f\left(c\right)=1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+עכשיו נסתכל על
+\begin_inset Formula 
+\[
+\xymatrix{X\ar[rrrr]^{f}\ar[rrd]\ar[rrdd] &  &  &  & K\\
+ &  & FN\left(\textnormal{Elements of }F\left(x\right)\textnormal{ represented by the words of }R\right)\left(x\right)\ar[d]^{\rho}\ar[rru]^{M\left(\textnormal{homomorphism}\right)}\\
+ &  & \nicefrac{F\left(X\right)}{N\left(\textnormal{Elements of }F\left(x\right)\textnormal{ represented by the words of }R\right)\ar[rruu]^{\exists!L}}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן את 
+\begin_inset Formula $X$
+\end_inset
+
+ עם קבוצת המילים 
+\begin_inset Formula $R$
+\end_inset
+
+ ב
+\begin_inset Formula $\left\langle X\middle|R\right\rangle $
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left\langle x_{1},x_{2},x_{3},x_{4}\middle|r_{1},r_{2},r_{3}\right\rangle $
+\end_inset
+
+.
+ לדוגמה: 
+\begin_inset Formula 
+\[
+\left\langle a,b\middle|ab^{2}ab^{-1},a^{2},b^{7}\right\rangle =\left\langle a,b\middle|ab^{2}ab^{-2}=1,a^{2}=1,b^{7}=1\right\rangle =\left\langle a,b\middle|ab^{2}a=b^{2},a=^{2}=1,b^{7}=1\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעצם, חבורה חופשית היא מקרה פרטי כאשר קבוצת היחסים 
+\begin_inset Formula $R$
+\end_inset
+
+ היא ריקה, ולכן אפשר לסמן
+\begin_inset Formula 
+\[
+F_{n}=\left\langle a_{1},x_{2},\dots x_{n}\middle|\right\rangle 
+\]
+
+\end_inset
+
+וכאן לא רק כותבים כמה יוצרים יש, אלא גם נותנים להם שמות.
+\end_layout
+
+\begin_layout Section*
+ניסוח אחר של התכונה האוניבסלית
+\end_layout
+
+\begin_layout Standard
+בהינתן קבוצת המילים 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ וחבורה 
+\begin_inset Formula $G=\left\{ g_{1},g_{2},\dots g_{n}\right\} $
+\end_inset
+
+, אפשר לשלוח כל איבר 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ לאיזה לאיפה שאנחנו רוצים, ויהיה אומומורפיזם יחיד.
+\end_layout
+
+\begin_layout Standard
+אם יש חבורה עם יחסים אז אי אפשר לשלוח לאן שאנחנו רוצים.
+\end_layout
+
+\begin_layout Standard
+אם למשל יש לנו 
+\begin_inset Formula $H=\left\langle x,y\middle|xyx^{2},x^{7},y^{2}\right\rangle $
+\end_inset
+
+.
+ אם רוצים לשלוח את 
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $g$
+\end_inset
+
+ ואת 
+\begin_inset Formula $y$
+\end_inset
+
+ ל
+\begin_inset Formula $h$
+\end_inset
+
+, אז צריך לבחור 
+\begin_inset Formula $g,h\in G$
+\end_inset
+
+ שמקיימים את היחסים האלה:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+ghg^{2}=1\\
+g^{7}=1\\
+h^{2}=1
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמאות - ניחושים ללא הוכחה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle x\middle|x^{7}\right\rangle \cong\nicefrac{\mathbb{Z}}{7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\langle a,b\middle|aba^{-1}b^{-1}\right\rangle $
+\end_inset
+
+ - זה בעצם אומר שהם מתחלפים: 
+\begin_inset Formula $\left\langle a,b\middle|ab=ba\right\rangle $
+\end_inset
+
+.
+ לכן זה איזומורפי ל
+\begin_inset Formula $\left(\mathbb{Z}_{2},+\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+איבול של חבורה: אם 
+\begin_inset Formula $H=\left\langle a,b,c\middle|r_{1},r_{2},\dots r_{k}\right\rangle $
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+\textnormal{Ab}\left(H\right)=\left\langle a,b,c\middle|r_{1},\dots r_{k},aba^{-1}b^{-1},aca^{-1}c^{-1},bcb^{-1}c^{-1}\right\rangle 
+\]
+
+\end_inset
+
+ובאופן כללי, צריך להוסיף יחס 
+\begin_inset Formula $xyx^{-1}y^{-1}$
+\end_inset
+
+ לכל זוג יוצרים 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מילה באותיות 
+\begin_inset Formula $G$
+\end_inset
+
+ ו
+\begin_inset Formula $H$
+\end_inset
+
+ נקראת 
+\emph on
+\bar under
+מצומצמת
+\emph default
+\bar default
+ אם לא מופיע בה 
+\begin_inset Formula $1_{G}$
+\end_inset
+
+ או 
+\begin_inset Formula $1_{H}$
+\end_inset
+
+, וכן לא מופיעות שתי אותיות רצופות מאותה חבורה.
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל איבר ב
+\begin_inset Formula $G*H$
+\end_inset
+
+ יש נציג יחיד שהוא מילה מצומצמת.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x$
+\end_inset
+
+ איבר ב
+\begin_inset Formula $G*H$
+\end_inset
+
+.
+ יש לו נציג שהוא מילה מצומצמת - כי אחרת תמיד אפשר לצמצם.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A,B$
+\end_inset
+
+ שתי מילים מצומצות שקולות.
+ אפשר לבנות סדרה של מילים ביניהם, שכל אחת מהן הפעלה של כלל שקילות יחיד על
+ הקודמת)כלומר הוספה/הסרה של 
+\begin_inset Formula $1_{G}$
+\end_inset
+
+ או 
+\begin_inset Formula $1_{H}$
+\end_inset
+
+ או חיבור/פיצול של הופכיים(.
+\end_layout
+
+\begin_layout Standard
+ההבדל בין האורכים של שתי מילות ביניים רצופות הוא 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ מ
+\begin_inset Formula $A$
+\end_inset
+
+ אפשר רק לעלות)כי אי אפשר לצמצם אותה( ואל 
+\begin_inset Formula $B$
+\end_inset
+
+ אפשר רק לרדת)כי אחרת היה אפשר לצמצם בכיוון ההפוך(.
+ לכן המילה באורך מקסימלי בסדרה לא יכולה להיות לא 
+\begin_inset Formula $A$
+\end_inset
+
+ ולא 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ נראה שאת המילה הזו אפשר לוותר - או להחליף אותה במינימום מקומי)מבחינת אורך(.
+ 
+\end_layout
+
+\begin_layout Standard
+נעשה אינדוקציה על סכום אורכי המילים בדרך + מספר הצעדים.
+\end_layout
+
+\begin_layout Itemize
+אם זה 
+\begin_inset Formula $0$
+\end_inset
+
+ - אז 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אחרת, ראינו שיש מקסימום באמצע.
+ נראה שאפשר לוותר עליו או להפוך אותו למינימום מקומי - ואז מקצרים את סכום
+ האורכים ואולי גם את מספר הצעדים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם יש פיצול ואז איחוד באיזורים זרים, אז אפשר להפוך את הסדר.
+\end_layout
+
+\begin_layout Itemize
+אם יש פיצול ואז יש איחוד של אותו פיצול, אז אפשר לותר על זה.
+\end_layout
+
+\begin_layout Itemize
+אם יש הוספה של יחידה ואז הסרה שלה, אז אפשר לוותר על זה.
+\end_layout
+
+\begin_layout Itemize
+אם יש פיצול והדבקה בזוג חופף - למשל
+\begin_inset Formula 
+\[
+\xymatrix{g_{1}\ar[d]\ar[rd] &  & g_{2}\\
+g_{1}' & g_{1}''\ar[rd] & g_{2}\ar[d]\\
+g_{1}' &  & g_{1}''\cdot g_{2}
+}
+\]
+
+\end_inset
+
+אז אפשר במקום זה לעשות
+\begin_inset Formula 
+\[
+\xymatrix{g_{1}\ar[rd] &  & g_{2}\ar[ld]\\
+ & g_{1}\cdot g_{2}\ar[ld]\ar[rd]\\
+g_{1}' &  & g_{1}''\cdot g_{2}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון לנו שלושה חבורות:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & G\\
+P\ar[rru]^{g}\ar[rrd]^{h}\\
+ &  & H
+}
+\]
+
+\end_inset
+
+אנו מעוניינים בחבורה 
+\begin_inset Formula $K$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\xymatrix{ &  & G\ar[rrd]^{\varphi}\\
+P\ar[rru]^{g}\ar[rrd]^{h} &  &  &  & K\\
+ &  & H\ar[rru]^{\psi}
+}
+\]
+
+\end_inset
+
+כך שהדיאגרמה הזו מתחלפת - כלומר לכל 
+\begin_inset Formula $x\in P$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\varphi\circ g\left(x\right)=\psi\circ h\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנו מעוניינים באובייקט אוניברסלי 
+\begin_inset Formula $U$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & G\ar[rrrd]^{\varphi}\ar[rd]_{k}\\
+P\ar[rru]^{g}\ar[rrd]^{h} &  &  & U\ar@{-->}[rr]^{\exists!L} &  & K\\
+ &  & H\ar[rrru]^{\psi}\ar[ru]^{l}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מכפלת היתוך -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Amalgamated Product
+\lang hebrew
+)שם מלא:
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Free product with amalgmation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $U$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+U=\nicefrac{G*H}{N\left(\left\{ g\left(x\right)h\left(x\right)^{-1}\middle|x\in P\right\} \right)}
+\]
+
+\end_inset
+
+איברי 
+\begin_inset Formula $G,H$
+\end_inset
+
+ יוצרים בהגדרה את 
+\begin_inset Formula $G*H$
+\end_inset
+
+, ולכן הם גם יוצרים את חבורת המנה.
+\begin_inset Formula 
+\[
+\xymatrix{G\ar[rd]\\
+ & G*H\ar[r]^{M} & K\\
+H\ar[ru]
+}
+\]
+
+\end_inset
+
+נותר להראות שלכל 
+\begin_inset Formula $x\in P$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+M\left(g\left(x\right)h\left(x\right)^{-1}\right)=\varphi\left(g\left(x\right)\right)\psi\left(h\left(x\right)^{-1}\right)=\varphi\left(g\left(x\right)\right)\psi\left(h\left(x\right)\right)^{-1}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\underset{P}{*}H
+\]
+
+\end_inset
+
+זה סוג של קיצור של
+\begin_inset Formula 
+\[
+\xymatrix{G & \textnormal{*} & H\\
+ & P\ar[lu]^{g}\ar[ru]_{h}
+}
+\]
+
+\end_inset
+
+כאשר לא איכפת לנו מהם 
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה"כ:
+\begin_inset Formula 
+\[
+\xymatrix{ & G\ar[rd]\ar@/^{1pc}/[rrrd]^{\psi}\\
+P\ar[ru]\ar[rd] &  & G\underset{_{g}\diagdown P\diagup_{h}}{*}H\ar[rr] &  & K\\
+ & H\ar[ru]\ar@/_{1pc}/[rrru]^{\psi}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט ון קמפן
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב טופולוגי.
+ יהיו 
+\begin_inset Formula $U,V\subseteq X$
+\end_inset
+
+ פתוחות כך ש
+\begin_inset Formula $U\cup V=X$
+\end_inset
+
+ ו
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ לא ריק וקשיר מסילתית.
+\end_layout
+
+\begin_layout Standard
+נבחר נק' בסיס 
+\begin_inset Formula $a\in U\cap V$
+\end_inset
+
+.
+ אז גם
+\begin_inset Formula $\begin{array}{c}
+a\in U\\
+a\in V\\
+a\in X
+\end{array}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+הדיאגרמה
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \left(U,a\right)\ar[rrd]^{k}\\
+\left(U\cap V,a\right)\ar[rru]^{i}\ar[rrd]^{j} &  &  &  & \left(X,a\right)\\
+ &  & \left(V,a\right)\ar[rru]^{l}
+}
+\]
+
+\end_inset
+
+היא מתחלפת.
+ נמיר את המרחבים הטופולוגיים לחבורות:
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \pi_{1}\left(U,a\right)\ar[rrrd]^{k_{*}}\ar[rd]\\
+\pi_{1}\left(U\cap V,a\right)\ar[rru]^{i_{*}}\ar[rrd]^{j_{*}} &  &  & \pi_{1}\left(U\right)\underset{\pi_{1}\left(U\cap V\right)}{\textnormal{*}}\pi_{1}\left(V\right)\ar[rr]^{L} &  & \pi_{1}\left(X,a\right)\\
+ &  & \pi_{1}\left(V,a\right)\ar[rrru]_{l_{*}}\ar[ru]
+}
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא איזומורפיזם.
+\end_layout
+
+\end_body
+\end_document

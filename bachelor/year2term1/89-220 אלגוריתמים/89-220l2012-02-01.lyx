@@ -1,0 +1,1372 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+זיווגים
+\end_layout
+
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ וזיווג 
+\begin_inset Formula $M\subseteq E$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $V\left(M\right)$
+\end_inset
+
+ את קודקודי 
+\begin_inset Formula $M$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $V\left(M\right)=\left\{ v\in V\middle|\exists\left(u,v\right)\in M\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ וזיווג 
+\begin_inset Formula $M\subseteq E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ נקרא 
+\bar under
+מושלם
+\bar default
+ אם 
+\begin_inset Formula $V\left(M\right)=V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  & \ocircle\ar@{=}[rrd]\\
+\ocircle\ar@{-}[rru]\ar@{-}[rrrrd]\ar@{-}[rrrdd] &  &  &  & \ocircle\ar@{-}[d]\ar@{-}[ldd]\\
+ &  &  &  & \ocircle\ar@{=}[ld]\ar@{-}[lluu]\\
+\ocircle\ar@{=}[uu]\ar@{-}[rrr]\ar@{-}[rruuu] &  &  & \ocircle
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+זיווג מושלם 
+\begin_inset Formula $M\subseteq E$
+\end_inset
+
+)לגרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גודלו 
+\begin_inset Formula $\left|M\right|=\cfrac{\left|V\right|}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hall
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף דו-חלקי עם חלוקה 
+\begin_inset Formula $V_{1}\uplus V_{2}$
+\end_inset
+
+ ל
+\begin_inset Formula $V$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|V_{1}\right|=\left|V_{2}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש ב
+\begin_inset Formula $G$
+\end_inset
+
+ זיווג מושלם 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall_{s\subseteq V_{1}}\left|S\right|\le\left|N\left(S\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+=שכני 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ נתון שיש זיווג מושלם, לכן לכל 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $X=\left\{ u\in V_{2}\middle|\left(v,u\right)\in M,v\in S\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כיוון ש
+\begin_inset Formula $M$
+\end_inset
+
+ זיווג, 
+\begin_inset Formula $\left|X\right|=\left|S\right|$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $X\subseteq N\left(S\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|S\right|\le\left|N\left(S\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(\Rightarrow\right)$
+\end_inset
+
+ באינדוקציה על 
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בסיס
+\bar default
+: 
+\begin_inset Formula $\left|V_{1}\right|=1$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left|V_{2}\right|=\left|V_{1}\right|=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מהתנאי 
+\begin_inset Formula $\left|S\right|\le\left|N\left(S\right)\right|$
+\end_inset
+
+ עבור 
+\begin_inset Formula $S=V_{1}$
+\end_inset
+
+ מתחייב שיש קשת בין הקודקוד של 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ והקודקוד של 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ וזה זיווג מושלם.
+\end_layout
+
+\begin_layout Standard
+נניח נכונות המשפט ל
+\begin_inset Formula $n>k$
+\end_inset
+
+ ונוכיח נכונות ל
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מפרידים ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקרים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+\bar default
+: 
+\begin_inset Formula $\forall_{S\subsetneq V_{1}}\left|S\right|<\left|N\left(S\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+\bar default
+: 
+\begin_inset Formula $\exists_{S\subsetneq V_{1}}\left|S\right|=\left|N\left(S\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+נתבונן
+\begin_inset space ~
+\end_inset
+
+במקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+\bar default
+: נבחר קשת 
+\begin_inset Formula $\left(u,v\right)\in E$
+\end_inset
+
+ שרירותית 
+\begin_inset Formula $\left(v\in V_{1},u\in V_{2}\right)$
+\end_inset
+
+.
+ ניצור גרף 
+\begin_inset Formula $G'=\left(V',F'\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V_{1}'=V_{1}-\left\{ u\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $V_{2}'=V_{2}-\left\{ v\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $V'=V_{1}'\uplus V_{2}'$
+\end_inset
+
+, ו
+\begin_inset Formula $E=\left\{ \left(x,y\right)\middle|\begin{array}{c}
+x\in V_{1}'\\
+y\in V_{2}'
+\end{array}\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נרצה להראות שיש זיווג מושלם ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $S\subseteq V_{1}'$
+\end_inset
+
+ נרצה להראות ש
+\begin_inset Formula $\left|S\right|\le\left|N\left(S\right)\right|$
+\end_inset
+
+.
+ אבל לפי מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, 
+\begin_inset Formula $\left|S\right|<\left|N\left(S\right)\right|$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $V_{2}'=V_{2}-\left\{ u\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $G'$
+\end_inset
+
+ יכיל לכל הפחות מס' הקודקודים פחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ מ
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+)
+\begin_inset Formula $\left|N_{G'}\left(S\right)\right|\ge\left|N\left(S\right)\right|-1$
+\end_inset
+
+(
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\left|S\right|<\left|N_{G}\left(S\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|S\right|\le\left|N_{G'}\left(S\right)\right|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן, לפי הנחת האינדוקציה יש זיווג מושלם ב
+\begin_inset Formula $G'$
+\end_inset
+
+, 
+\begin_inset Formula $M'$
+\end_inset
+
+.)מ.ש.ל מקרה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $M=M'\cup\left\{ \left(u,v\right)\right\} $
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $M$
+\end_inset
+
+ זיווג מושלם ל
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+נתבונן
+\begin_inset space ~
+\end_inset
+
+במקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+\bar default
+: 
+\begin_inset Formula $\exists_{A\subsetneq V_{1}}\left|A\right|=\left|N_{E}\left(A\right)\right|$
+\end_inset
+
+.
+ ניצור 
+\begin_inset Formula $G'=\left(A,N\left(A\right),E'\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E'=\left\{ \left(u,v\right)\in\middle|\begin{array}{c}
+u\in A\\
+v\in N\left(A\right)
+\end{array}\right\} $
+\end_inset
+
+.
+ נרצה להוכיח שיש זיווג מושלם ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $S\subseteq A$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $S\subseteq A$
+\end_inset
+
+, 
+\begin_inset Formula $N_{G}\left(S\right)\subseteq N_{G}\left(A\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $N_{G'}\left(S\right)=N_{G}\left(S\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|S\right|\le\left|N_{G}\left(S\right)\right|=\left|N_{G'}\left(S\right)\right|$
+\end_inset
+
+.
+ לכן, לפי הנחת האינדוקציה, יש זיווג מושלם 
+\begin_inset Formula $M'$
+\end_inset
+
+ ב
+\begin_inset Formula $G'$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ניצור 
+\begin_inset Formula $G''=\left(V_{1}-A,V_{2}-N\left(A\right),E^{n}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E''=\left\{ \left(u,v\right)\in\middle|\begin{array}{c}
+u\in V_{1}-A\\
+v\in V_{2}-N\left(A\right)
+\end{array}\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נרצה להראות שיש זיווג מושלם ב
+\begin_inset Formula $G''$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $S\subseteq V_{1}-A$
+\end_inset
+
+ נרצה להראות ש
+\begin_inset Formula $\left|S\right|\le\left|N_{G''}\left(S\right)\right|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן ב
+\begin_inset Formula $B=S\cup A$
+\end_inset
+
+.
+ מהנתון 
+\begin_inset Formula $\left|B\right|\le\left|N_{G}\left(B\right)\right|$
+\end_inset
+
+.
+ במילים אחרות: 
+\begin_inset Formula $\boxed{\left|S\right|+\left|A\right|=\left|S\cup A\right|\le\left|N\left(S\cup A\right)\right|}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, 
+\begin_inset Formula $\left|N\left(S\cup A\right)\right|\le\left|N\left(S\right)\right|+\left|N\left(A\right)\right|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+יחד נקבל 
+\begin_inset Formula $\left|S\right|+\left|A\right|\le\left|N\left(S\right)\right|+\left|N\left(A\right)\right|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\left|N\right|=\left|N\left(A\right)\right|$
+\end_inset
+
+)מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( ולכן ב
+\begin_inset Formula $N\left(S\cup A\right)$
+\end_inset
+
+ יש לפחות 
+\begin_inset Formula $\left|S\right|$
+\end_inset
+
+ קודקודים שאינם ב
+\begin_inset Formula $N\left(A\right)$
+\end_inset
+
+, נסמנם 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $C\subseteq N\left(S\right)$
+\end_inset
+
+, כי כל שכני 
+\begin_inset Formula $A$
+\end_inset
+
+ נמצאים ב
+\begin_inset Formula $N\left(A\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|S\right|=\left|C\right|\le\left|N_{G'}\left(S\right)\right|$
+\end_inset
+
+, ולכן, לפי הנחת האינדוקציה, יש זיווג מושלם 
+\begin_inset Formula $M''$
+\end_inset
+
+ ב
+\begin_inset Formula $G''$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $M=M'\cup M''$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $M$
+\end_inset
+
+ זיווג מושלם ל
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $k$
+\end_inset
+
+-רגולרי אם דרגתו של כל קודקוד = 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+-רגולרי:
+\begin_inset Formula 
+\[
+\xymatrix{ & \bigcirc\ar@{-}[ld]\ar@{-}[dd]\ar@{-}[rd]\\
+\bigcirc\ar@{-}[rr] &  & \bigcirc\\
+ & \bigcirc\ar@{-}[lu]\ar@{-}[ru]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+לכל גרף דו-חלקי רגולרי יש זיווג מושלם.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נסמן את הגרף 
+\begin_inset Formula $G=\left(V_{1},V_{2},E\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|V_{1}\right|=\left|V_{2}\right|$
+\end_inset
+
+: כי יש 
+\begin_inset Formula $\left|V_{1}\right|\cdot k$
+\end_inset
+
+ קשתות ומצדי שני, יש 
+\begin_inset Formula $\left|V_{2}\right|\cdot k$
+\end_inset
+
+ קשתות ולכן 
+\begin_inset Formula $\left|V_{1}\right|\cdot k=\left|V_{2}\right|\cdot k$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|V_{1}\right|=\left|V_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $S\subseteq V_{1}$
+\end_inset
+
+ מספר הקשתות של 
+\begin_inset Formula $S$
+\end_inset
+
+=
+\begin_inset Formula $\left|S\right|\cdot k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונן ב
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+ נוגעת ב
+\begin_inset Formula $\left|N\left(S\right)\right|\cdot k$
+\end_inset
+
+ קשתות כיוון שכל קשת שנוגעת בקשת מ
+\begin_inset Formula $S$
+\end_inset
+
+ נוגעת בקודקודו מ
+\begin_inset Formula $N\left(S\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|S\right|\cdot k\le\left|N\left(S\right)\right|\cdot k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|S\right|\le\left|N\left(S\right)\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hall
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש זיווג מושלם ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ריבוע קסם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}x_{11} & \cdots & x_{1n}\\
+\vdots & \ddots & \vdots\\
+x_{n1} & \cdots & x_{nn}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{ij}\in\mathbb{N}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists_{k}\forall_{i}\sum_{j}x_{ij}=k,\sum_{j}x_{ji}=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}2 & 7 & 6\\
+9 & 5 & 1\\
+4 & 3 & 8
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}16 & 3 & 2 & 13\\
+5 & 10 & 11 & 8\\
+9 & 6 & 7 & 12\\
+4 & 15 & 14 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל לא כל המספרים חייבים להיות שונים.
+ לדוגמה:
+\end_layout
+
+\begin_layout Section*
+מטריצת תמורה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+למטריצת התמורה יש קשת לזיווג מושלם - מטריצת שכנויות של זיווג מושלם היא מטריצת
+ תמורה.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+כל ריבוע קסם ניתן לפרק כסכום של מטריצת תמורות:
+\begin_inset Formula 
+\[
+V=\sum_{i\le n^{2}}n_{i}P_{i}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ ריבוע הקסם, 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ מספרים טבעיים, ו
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ מטריצות תמורות.
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+נסתכל על זיווג מושלם בגרף דו חלקי:
+\begin_inset Formula 
+\[
+\xymatrix{u_{1}\ar@{-}[rrrd]\ar@{-}[rrrdd] &  &  & v_{1}\\
+u_{2}\ar@{-}[rrru]\ar@{-}[rrr] &  &  & v_{2}\\
+u_{3}\ar@{-}[rrruu]\ar@{-}[rrru] &  &  & v_{3}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}+1\begin{pmatrix}0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0
+\end{pmatrix}+6\begin{pmatrix}0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1
+\end{pmatrix}+3\begin{pmatrix}0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0
+\end{pmatrix}+3\begin{pmatrix}0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+קיבלנו ריבוע קסם, שכן בכל סיבוב ניתן להבטיח זיווג מושלם.
+\end_layout
+
+\begin_layout Part*
+כמה מילים על המבחן
+\end_layout
+
+\begin_layout Itemize
+יש מבחנים משנים קודמות שאמורים לעלות לקבוצה בפייסבוק.
+\end_layout
+
+\begin_layout Itemize
+אין הארכות!
+\end_layout
+
+\begin_layout Itemize
+חומר סגור.
+\end_layout
+
+\begin_layout Itemize
+לא צריך לדעת את ההוכחות למשפטים שנלמדו בשיעור, אבל צריך להבין אותן.
+\end_layout
+
+\begin_layout Itemize
+יכולות להיות שאלות על הגדרות, אז צריך לדעת להגדיר את המושגים.
+\end_layout
+
+\begin_layout Itemize
+ניתן להתייחס למשפטים ואלגוריתמים שנלמדו בכיתה)למשל - "הפעל בלמן-פורד"( -
+ אין צורך לכתוב אותם שוב.
+\end_layout
+
+\begin_layout Itemize
+במידה ויש שאלה של תכנות דינאמי
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לא צריך פתרון נאיבי
+\end_layout
+
+\begin_layout Itemize
+צריך לכתוב את נוסחת הנסיגה - אבל 
+\series bold
+\bar under
+לא
+\series default
+\bar default
+ צריך לכתוב את האלגוריתם שמממש אותה.
+\end_layout
+
+\begin_layout Itemize
+לא צריך הוכחת נכונות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בדרך כלל לא מבקשים הוכחה, אלא נימוק - כלומר לא מאוד מאוד פורמאלי, מספיק
+ לכתוב נימוק ממוקד שמסביר את האינטואיציה.
+\end_layout
+
+\end_body
+\end_document

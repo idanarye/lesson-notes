@@ -1,0 +1,668 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מתרגלת
+\series default
+: הילה זרוסים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוא"ל
+\series default
+: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+hila.zarosim@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אתר
+\series default
+: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://u.cs.biu.ac.il/~zarosih/Complexity.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+בעיית הכרעה
+\end_layout
+
+\begin_layout Standard
+המטרה היא לקבוע האם קיים פתרון לבעיה או לא)התשובה כן/לא(
+\end_layout
+
+\begin_layout Subsection*
+בעיית חיפוש/אופטימיזציה
+\end_layout
+
+\begin_layout Standard
+המטרה היא מציאת פתרון לבעיה)או להחזיר שאין(/מציאת פתרון אופטימלי לבעיה
+\end_layout
+
+\begin_layout Subsection*
+רדוקציית טיורינג)קוק( פולינומית
+\end_layout
+
+\begin_layout Standard
+נתונות שתי בעיות חישוביות 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $L_{2}\le^{p}L_{1}$
+\end_inset
+
+ אם בהנתן "קופסה שחורה" 
+\begin_inset Formula $A$
+\end_inset
+
+ שפותרת את 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+, ניתן לבנות אלגוריתם פולינומי 
+\begin_inset Formula $M$
+\end_inset
+
+ שפותר את 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ תוך שימוש ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+רדוקציה עצמית
+\end_layout
+
+\begin_layout Standard
+היא רדוקציית טיורינג במעיית החיפוש/האופטימיזציה לבעיית ההכרעה.
+ כלומר בהנתן "קופסה שחורה" 
+\begin_inset Formula $A$
+\end_inset
+
+ שפותרת את בעיית ההכרעה, נבנה אלגוריתם פולינומי שפותר את בעיית החיפוש/אופטימיזצי
+ה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+SAT
+\end_layout
+
+\begin_layout Standard
+נתונה נוסחה בוליאנית 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ בצורת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CNF
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\varphi=\left(\alpha_{11}\vee\alpha_{12}\vee\cdots\vee\alpha_{1n_{1}}\right)\wedge\left(\alpha_{21}\vee\cdots\vee\alpha_{2n_{2}}\right)\wedge\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+האם 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ניתנת לסיפוק?
+\end_layout
+
+\begin_layout Enumerate
+מהי השמת האמת המספקת את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+)אם קיימת(?
+\end_layout
+
+\begin_layout Subsection*
+רדוקציה עצמית ל
+\lang english
+SAT
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+: נוסחה בוליאנית 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+המטרה
+\series default
+: מציאת השמת אמת המספקת את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ תוך שימוש ב"קופסה שחורה" 
+\begin_inset Formula $A$
+\end_inset
+
+ שמכריעה את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SAT
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\left(\varphi\right)=1$
+\end_inset
+
+.
+ אם לא, החזר "לא" וסיים.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ מ
+\begin_inset Formula $1$
+\end_inset
+
+ עד 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+arabic{enumii}.2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+הצב 
+\begin_inset Formula $\alpha_{i}=T$
+\end_inset
+
+ וצמצם את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ל
+\begin_inset Formula $\varphi_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\left(\varphi_{T}\right)=1$
+\end_inset
+
+, המשך עם 
+\begin_inset Formula $\varphi_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אחרת, הצב 
+\begin_inset Formula $\alpha_{i}=F$
+\end_inset
+
+, צמצם את 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ל
+\begin_inset Formula $\varphi_{F}$
+\end_inset
+
+ והמשך אם 
+\begin_inset Formula $\varphi_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+החזר את השמת האמת שהתקבלה.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi=\left(\alpha_{1}\vee\neg\alpha_{2}\vee\alpha_{3}\right)\wedge\left(\neg\alpha_{1}\vee\alpha_{2}\vee\alpha_{3}\right)\wedge\left(\neg\alpha_{1}\vee\neg\alpha_{2}\vee\neg\alpha_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\left(\varphi\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נציב 
+\begin_inset Formula $\alpha_{1}=T$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varphi_{T}=\left(\alpha_{2}\vee\alpha_{3}\right)\wedge\left(\neg\alpha_{2}\vee\neg\alpha_{3}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A\left(\varphi_{T}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נציב 
+\begin_inset Formula $\alpha_{2}=T$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varphi_{TT}=\neg\alpha_{3}
+\]
+
+\end_inset
+
+נציב 
+\begin_inset Formula $\alpha_{3}=T$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{TTT}=\textnormal{FALSE}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\left(\varphi_{TTT}=0\right)$
+\end_inset
+
+ ולכן נציב 
+\begin_inset Formula $\alpha_{3}=F$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Clique
+\end_layout
+
+\begin_layout Subsection*
+בעיית אופטימיזציה
+\end_layout
+
+\begin_layout Standard
+נתון גרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ יש למצוא את קבוצת הקודקודים המקסימלית שמהווה קליק)קבוצת קדקדים כך שבין
+ כל זוג קדקדים יש קשת(.
+\end_layout
+
+\begin_layout Subsection*
+בעיית הכרעה
+\end_layout
+
+\begin_layout Standard
+נתון גרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+ ופרמטר 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ האם קיים ב
+\begin_inset Formula $G$
+\end_inset
+
+ קליק בגודל
+\begin_inset Formula $k\le$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+רדוקציה עצמית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שלב
+\begin_inset space ~
+\end_inset
+
+א'
+\series default
+: מציאת גודל הקליק המקסימלי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ מ
+\begin_inset Formula $n$
+\end_inset
+
+ עד 
+\begin_inset Formula $1$
+\end_inset
+
+: אם 
+\begin_inset Formula $A\left(G,i\right)=1$
+\end_inset
+
+, אזי 
+\begin_inset Formula $k=i$
+\end_inset
+
+ והמשך לשלב ב'.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שלב
+\begin_inset space ~
+\end_inset
+
+ב'
+\series default
+: מציאת קבוצת הקודקודים שמהווה קליק.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל קדקד 
+\begin_inset Formula $v$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+: צור עותק 
+\begin_inset Formula $G'$
+\end_inset
+
+ של 
+\begin_inset Formula $G$
+\end_inset
+
+ ללא הקדקד 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $1=A\left(G',k\right)$
+\end_inset
+
+, אזי 
+\begin_inset Formula $G\gets G'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בסוף התהליך, הקדקדים שנשארו בגרף מהווים קליק בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

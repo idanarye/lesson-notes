@@ -1,0 +1,842 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משפטי היררכיה
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $t:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ פונקציה.
+ המחלקה 
+\begin_inset Formula $\textnormal{DTIME}\left(t\right)$
+\end_inset
+
+ מכילה את השפות שניתן להכריעה בסיבוכיות זמן 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $t:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ נקראת 
+\emph on
+ניתנת לבניה בזמן
+\emph default
+ אם קיים אלגוריתם שבהינתן 
+\begin_inset Formula $n$
+\end_inset
+
+, מחשב את 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ תוך 
+\begin_inset Formula $t\left(n\right)$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+לכל פונקציה 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ שניתנת לבניה בזמן ולכל פונקציה 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $t_{2}\left(n\right)>t_{1}\left(n\right)\cdot\log^{2}\left(t_{1}\left(n\right)\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $t_{1}\left(n\right)>n$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+\textnormal{DTIME}\left(t_{1}\right)\subsetneq\textnormal{DTIME}\left(t_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מודל
+\end_layout
+
+\begin_layout Standard
+לצורך ההוכחה נסתכל על מכונות טיורינג עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סרטים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אפשר להוכיח משפט דומה לכל מודל חישובי סביר, אבל חייבים להחליט על המודל
+ מראש.
+\end_layout
+
+\begin_layout Section*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה שקיימת שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\notin\textnormal{DTIME}\left(t_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in\textnormal{DTIME}\left(t_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הרעיון
+\series default
+: לכל מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שרצה 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ צעדים, קיים קלט 
+\begin_inset Formula $x_{M}$
+\end_inset
+
+ עליו 
+\begin_inset Formula $M$
+\end_inset
+
+ נכשלת - כלומר מחזירה תשובה שגויה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{\heartsuit}$
+\end_inset
+
+
+\series default
+: בד"כ מגדירים מכונה לפי שפה - אבל פה אנו מגדירים מכונה לפי שפה.
+\end_layout
+
+\begin_layout Standard
+פורמלית, נגדיר פונקציית מיפוי 
+\begin_inset Formula $\mu$
+\end_inset
+
+ שממפה מחרוזות בינאריות למכונות טיורינג.
+ הדרישה היא ש
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא על - כלומר לכל מ"ט קיימת מחרוזת שממופה אליה.
+\end_layout
+
+\begin_layout Standard
+השפה 
+\begin_inset Formula $L$
+\end_inset
+
+ מוגדרת באופן הבא: בהינתן קלט 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+חשב את 
+\begin_inset Formula $t=t_{1}\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט המתאימה ל
+\begin_inset Formula $x$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $M=\mu\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים לכל היותר.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ עצרה תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים והחזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ עצרה תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים והחזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, 
+\begin_inset Formula $x\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ לא עצרה תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+המקרה הזה לא באמת מעניין אותנו, כי זה אומר שסיבוכיות הזמן של 
+\begin_inset Formula $M$
+\end_inset
+
+ היא יותר מ
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ כלומר בכל אופן 
+\begin_inset Formula $L_{M}\notin\textnormal{DTIME}\left(t_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, נקבע שרירותית ש
+\begin_inset Formula $x\notin L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $L\notin\textnormal{DTIME}\left(t_{1}\right)$
+\end_inset
+
+.
+ נראה ש
+\series bold
+כל
+\series default
+ מ"ט בעלת סיבוכיות זמן 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ לא מכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט בעלת סיבוכיות זמן 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, נראה שקיים קלט עבורו 
+\begin_inset Formula $M$
+\end_inset
+
+ נכשלת.
+\end_layout
+
+\begin_layout Standard
+נתבונן ב
+\begin_inset Formula $x_{M}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\mu\left(x_{M}\right)=M$
+\end_inset
+
+)
+\begin_inset Formula $M$
+\end_inset
+
+ הוא על(.
+ יש שתי אפשרויות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{M}\in L$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ עצרה תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים והחזירה 
+\begin_inset Formula $0$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ טועה על 
+\begin_inset Formula $x_{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{M}\notin L$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M\left(x_{M}\right)$
+\end_inset
+
+ עצרה תוך 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים והחזירה 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ טועה על 
+\begin_inset Formula $x_{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $L\in\textnormal{DTIME}\left(t_{2}\right)$
+\end_inset
+
+, נראה שקיימת מ"ט עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סרטים המכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ בסיבוכיות זמן 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענת
+\begin_inset space ~
+\end_inset
+
+עזר
+\series default
+: תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט בעלת 
+\begin_inset Formula $k$
+\end_inset
+
+ סרטים העובדת בסיבוכיות זמן 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ קיימת מ"ט 
+\begin_inset Formula $M'$
+\end_inset
+
+ בעלת שני סרטים המסמלצת את אופן פעולת 
+\begin_inset Formula $M$
+\end_inset
+
+ תוך 
+\begin_inset Formula $O\left(t\log t\right)$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: כל צעד של המכונה 
+\begin_inset Formula $M$
+\end_inset
+
+ ניתן לסמלץ בזמן 
+\begin_inset Formula $\left|\left\langle M\right\rangle \right|$
+\end_inset
+
+ - כי צריך לעבור על 
+\begin_inset Formula $M$
+\end_inset
+
+, לראות את הפקודה הבאה, ולבצע אותה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+סה"כ - 
+\begin_inset Formula $t_{1}\left(\left|x\right|\right)\cdot\left|\left\langle M\right\rangle \right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ שעובדת באופן הבא: אם 
+\begin_inset Formula $x=\left\langle M\right\rangle 1\overbrace{0\cdots0}^{2^{\left|\left\langle M\right\rangle \right|}}$
+\end_inset
+
+ אזי החזר את 
+\begin_inset Formula $M$
+\end_inset
+
+, אחרת החזר מ"ט שרירותית.
+\begin_inset Formula 
+\[
+\left|\left\langle M\right\rangle \right|=\log\left|x\right|<\log t_{1}\left(\left|x\right|\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,924 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+כפל פולינומים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\left(x\right)=\sum_{i=0}^{n-1}a_{i}x^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(x\right)=\sum_{i=1}^{n-1}b_{i}x^{i}
+\]
+
+\end_inset
+
+רוצים למצוא 
+\begin_inset Formula $C\left(x\right)=A\left(x\right)\cdot B\left(x\right)$
+\end_inset
+
+.
+ אם מבצעים הכפלת מקדמים, זה יוצא 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצד שני, אם הופכים אותו לייצוג נקודות באמצעות 
+\begin_inset Formula $FFT$
+\end_inset
+
+)עלות 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+(, ניתן להכפיל כל זוג נקודות בנפרד ולחבר את התוצאות ב
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+, ואז להחזיר לייצוג מקדמים באמצעות 
+\begin_inset Formula $FFT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\left(x\right)=4+3x+2x^{2}+x^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(x\right)=3+x^{2}+2x^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\deg A\cdot\deg B=\deg C$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\deg C=6$
+\end_inset
+
+, כלומר אנו צריכים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות.
+ אבל - בשביל 
+\begin_inset Formula $FFT$
+\end_inset
+
+ צריך חזקה שלמה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות הגדולה ממעלת 
+\begin_inset Formula $C$
+\end_inset
+
+, ולכן נשלים כל פולינום למעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקדמים)ולכן גם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות(
+\begin_inset Formula 
+\[
+A:\left(4,3,2,1,0,0,0,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B:\left(3,0,1,2,0,0,0,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה נקודה 
+\begin_inset Formula $w$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w^{8}=1$
+\end_inset
+
+, ולכן ניקח 
+\begin_inset Formula $w=\cos\cfrac{\pi}{4}+i\sin\cfrac{\pi}{4}$
+\end_inset
+
+.
+ לפי 
+\begin_inset Formula $FFT$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+A\left(x\right)=A_{even}\left(x^{2}\right)+xA_{odd}\left(x^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(x\right)=4+3x+2x^{2}+x^{3}=A_{even}\left(x\right)+xA_{odd}\left(x^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{even}\left(x\right)=A_{0246}\left(x\right)=4+2x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0246}\left(x\right)=A_{04}\left(x^{2}\right)+xA_{26}\left(x^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{04}\left(x\right)=A_{0}\left(x\right)+xA_{4}\left(x\right)=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{26}\left(x\right)=A_{2}\left(x\right)+xA_{6}\left(x\right)=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0426}\left(x\right)=...
+\]
+
+\end_inset
+
+וכן הלאה, ואותו דבר עבור הצד השני 
+\begin_inset Formula $A_{1357}\left(x^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל פעם אנחנו מצמצמים את הבעיה, ולכן הסיבוכיות היא
+\begin_inset Formula 
+\[
+T\left(n\right)=2T\left(\cfrac{n}{2}\right)+o\left(n\right)=o\left(n\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב כלפי מעלה, כל פעם עבור 
+\begin_inset Formula $x=1$
+\end_inset
+
+, ולפי זה נדע גם עבור 
+\begin_inset Formula $x=-1$
+\end_inset
+
+)כי עושים על 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+A_{0}\left(1\right)=4,A_{4}\left(1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{04}\left(1\right)=A_{0}\left(1\right)+1\cdot A_{4}\left(1\right)=4\Rightarrow A_{04}\left(-1\right)=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{26}\left(1\right)=2,A_{26}\left(-1\right)=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0246}\left(1\right)=4+2=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0246}\left(-1\right)=4+2i
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0246}\left(i\right)=4-2=2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{0246}\left(-i\right)=4-2i
+\]
+
+\end_inset
+
+ אותו דבר עם שאר הנקודות ועם הפולינום השני, ואז מכפילים את הנקודות ועושים
+ 
+\begin_inset Formula $FFT$
+\end_inset
+
+ הפוך - כדי להחזיר את זה למקדמים של פולינום.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ סטים של 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים כ"א בטווח 
+\begin_inset Formula $0-10n$
+\end_inset
+
+.
+ רוצים לחשב את הסכום הקרטזי:
+\begin_inset Formula 
+\[
+C=\left\{ x+y\middle|x\in A\wedge y\in B\right\} 
+\]
+
+\end_inset
+
+וכן את מס' הפעמים שכל איבר ב
+\begin_inset Formula $C$
+\end_inset
+
+ ממומש כסכום של איבר מ
+\begin_inset Formula $A$
+\end_inset
+
+ ואיבר מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נציג כל קבוצה כפולינום, כשהאיברים בקבוצה הם החזקות, ומס' הפעמים שאיבר מופיע
+ בקבוצה זה המקדם.
+ למשל את הקבוצות
+\begin_inset Formula 
+\[
+A=\left\{ 1,3,7,6\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left\{ 2,5\right\} 
+\]
+
+\end_inset
+
+נציג בתור
+\begin_inset Formula 
+\[
+A\left(x\right)=x+x^{3}+x^{6}+x^{7}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B\left(x\right)=x^{2}+x^{5}
+\]
+
+\end_inset
+
+נעשה הכפלת פולינומים, 
+\begin_inset Formula $FFT$
+\end_inset
+
+.
+ איבר 
+\begin_inset Formula $i$
+\end_inset
+
+ מופיע ב
+\begin_inset Formula $C$
+\end_inset
+
+ אם המקדם של 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+
+\begin_inset Formula $0\ne$
+\end_inset
+
+, ומס' ההופעות הוא המקדם של 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+.
+ עלות - 
+\begin_inset Formula $O\left(10n\log\left(10n\right)\right)=O\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $S=s_{0}s_{1}...s_{n-1}$
+\end_inset
+
+ מחרוזת בינארית.
+ נאמר ש
+\begin_inset Formula $S$
+\end_inset
+
+ היא בעלת מחזור 
+\begin_inset Formula $t$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $i\equiv j\textnormal{ mod }t$
+\end_inset
+
+ 
+\begin_inset Formula $s_{i}=s_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\left(S\right)$
+\end_inset
+
+ - המחזור המינימאלי של 
+\begin_inset Formula $S$
+\end_inset
+
+)
+\begin_inset Formula $t$
+\end_inset
+
+ המינימאלי כך ש
+\begin_inset Formula $t$
+\end_inset
+
+ מחזור של 
+\begin_inset Formula $S$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $S$
+\end_inset
+
+, נרצה לחשב את 
+\begin_inset Formula $T\left(S\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אלגוריתם נאיבי
+\end_layout
+
+\begin_layout Standard
+נבדוק את כל המחזורים - 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון יותר חכם
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $S$
+\end_inset
+
+ יש מחזור 
+\begin_inset Formula $t$
+\end_inset
+
+ אם 
+\begin_inset Formula $s_{0}...s_{n-t-1}=s_{t}...s_{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+p\left(x\right)=\sum\limits _{i=0}^{n-1}\left(-1\right)^{s_{i}}x^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q\left(x\right)=\sum_{i=0}^{n-1}\left(-1\right)^{s_{n-i-1}}x^{i}
+\]
+
+\end_inset
+
+המכפלה שלהם היא פולינום 
+\begin_inset Formula $C\left(x\right)$
+\end_inset
+
+ שמקדמיו הם
+\begin_inset Formula 
+\[
+C_{k}=\sum_{i=0}^{k}a_{i}b_{k-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{n-k-1}=\sum_{i=0}^{n-k-1}p_{i}q_{n-k-1-i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{i=0}^{n-k-1}\left(-1\right)^{s_{i}}\left(-1\right)^{s_{n-\left(n-k-1-i\right)-i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{j=0}^{n-k-1}\left(-1\right)^{s_{i}}\left(-1\right)^{s_{k+i}}=\sum_{i=0}^{n-k-1}\left(-1\right)^{s_{i}+s_{k+i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left|\left\{ i\middle|s_{i}=s_{k+i},0\le i\le n-k-1\right\} \right|-\left|\left\{ i\middle|s_{i}\ne s_{k+1},0\le i\le n-k-1\right\} \right|=res
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $res=n-k$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש מחזור באורך 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n-k=C_{n-k-1}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ יש מחזור באורך 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נעבור על המקדמים 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+, ואז עבור 
+\begin_inset Formula $i=n-k-1$
+\end_inset
+
+ נבדוק אם 
+\begin_inset Formula $C_{i}=n-k$
+\end_inset
+
+.
+ המחזור המינימלי הוא ה
+\begin_inset Formula $i$
+\end_inset
+
+ המקסימלי שמקיים את זה.
+\end_layout
+
+\end_body
+\end_document

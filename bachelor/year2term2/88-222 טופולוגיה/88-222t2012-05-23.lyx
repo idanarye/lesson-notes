@@ -1,0 +1,1561 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר את הפנים של 
+\begin_inset Formula $A$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{int}\left(A\right)=\bigcup_{\begin{array}{c}
+O\subseteq A\\
+O\textnormal{ is open}
+\end{array}}O
+\]
+
+\end_inset
+
+)סימון נוסף - 
+\begin_inset Formula $\mathring{A}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $\textnormal{int}\left(A\right)$
+\end_inset
+
+ היא הפתוחה המקסימלית המוכלת ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפיון נוסף: 
+\begin_inset Formula $x\in\textnormal{int}\left(A\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה כך ש
+\begin_inset Formula $x\in U\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו סגור ופנים של הקבוצה הבאה ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\middle|x\ge0,y\neq0\right\} 
+\]
+
+\end_inset
+
+)כלומר חצי מישור שמאלי, לא כולל ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula 
+\[
+\textnormal{int}\left(A\right)=C=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\middle|x>0,y\neq0\right\} 
+\]
+
+\end_inset
+
+נוכיח את השוויון באמצעות הכלה דו כיוונית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\supseteq$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+B & = & \left\{ \left(x,y\right)\middle|x>0\right\}  & \cap & \left\{ \left(x,y\right)\middle|y\neq0\right\} \\
+ &  & || &  & ||\\
+ &  & \underbrace{P_{1}^{-1}}_{\textnormal{continuous}}\left(\underbrace{\left(0,\infty\right)}_{\textnormal{open}}\right) & \cap & \underbrace{P_{2}^{-1}}_{\textnormal{continuous}}\left(\underbrace{\mathbb{R}-\left\{ 0\right\} }_{\textnormal{open in }\mathbb{R}}\right)
+\end{array}
+\]
+
+\end_inset
+
+)תזכורת - 
+\begin_inset Formula $P$
+\end_inset
+
+ הן הטלות(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה כחיתוך סופי של פתוחות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ וכן 
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה ולכן 
+\begin_inset Formula $B\subseteq\textnormal{int }A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $\textnormal{int}\left(A\right)\subseteq B$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{int}\left(A\right),B\subseteq A$
+\end_inset
+
+.
+ לכן מספיק להוכיח 
+\begin_inset Formula $A\backslash B\subseteq A\backslash\textnormal{int}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(x,y\right)\in A\backslash B$
+\end_inset
+
+.
+ מהגדרת 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ נובע ש
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ כלומר הנקודה היא מהצורה 
+\begin_inset Formula $\left(0,y\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $\left(0,y\right)$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left(0,y\right)\in B\left(\left(0,y\right),\varepsilon\right)\subseteq U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\not\ni\left(-\cfrac{\varepsilon}{2},y\right)\in B\left(\left(0,y\right),\varepsilon\right)\subseteq U$
+\end_inset
+
+ - כלומר לכל 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $U\not\subseteq A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left(0,y\right)\in A\backslash\textnormal{int }A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $\textnormal{cl}\left(A\right)=D=\left\{ \left(x,y\right)\middle|x\ge0\right\} $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ 
+\begin_inset Formula $D=\underbrace{P_{1}^{-1}}_{\textnormal{continuous}}\left(\underbrace{\left[0,\infty\right]}_{\textnormal{closed in }\mathbb{R}}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $D$
+\end_inset
+
+ סגורה.
+ 
+\begin_inset Formula $A\subseteq D$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\textnormal{cl}\left(A\right)\subseteq D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\supseteq$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $D\subseteq\textnormal{cl}\left(A\right)$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\left(x,y\right)\in D$
+\end_inset
+
+.
+ נראה שקיימת סדרה ב
+\begin_inset Formula $A$
+\end_inset
+
+ השואפת אליה.
+ שני מקרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(x,y\right)\in A$
+\end_inset
+
+.
+ ניקח את הסדרה הקבועה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x,y\right)\notin A$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\left(x,y\right)=\left(x,0\right)$
+\end_inset
+
+.
+ ניקח את הסדרה 
+\begin_inset Formula $\left(x,0\right)\gets\left\{ \left(x,\cfrac{1}{n}\right)\right\} _{n\in\mathbb{N}}\subseteq A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט ותהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\bar under
+צפופה
+\bar default
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ אם 
+\begin_inset Formula $\textnormal{cl}\left(A\right)=X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה)הוכחנו בהרצאה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ צפופה ב
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A\cap U\neq\emptyset$
+\end_inset
+
+ לכל 
+\begin_inset Formula $U\neq\emptyset$
+\end_inset
+
+ פתוחה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(\mathbb{R},\tau_{\textnormal{cof}}\right)$
+\end_inset
+
+.
+ הוכיחו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula $A$
+\end_inset
+
+ פתוחה או בעלת פנים ריק.
+\end_layout
+
+\begin_layout Enumerate
+כל קבוצה סופית 
+\begin_inset Formula $F\subseteq\mathbb{R}$
+\end_inset
+
+ היא סגורה.
+\end_layout
+
+\begin_layout Enumerate
+כל קבוצה אינסופית 
+\bar under
+צפופה
+\bar default
+ ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+נניח ש
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ אינה פתוחה ונראה ש
+\begin_inset Formula $\textnormal{int}\left(A\right)\neq\emptyset$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ אינה פתוחה ולכן 
+\begin_inset Formula $A^{c}$
+\end_inset
+
+ אינסופית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\emptyset\neq O\subseteq A$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A^{c}\subseteq O^{c}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $O^{c}$
+\end_inset
+
+ אינסופית.
+ כמו כן 
+\begin_inset Formula $O\neq\emptyset$
+\end_inset
+
+, לכן 
+\begin_inset Formula $O$
+\end_inset
+
+ אינה פתוחה.
+ כלומר ה
+\bar under
+פתוחה היחידה
+\bar default
+ המוכלת ב
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\textnormal{int}\left(A\right)=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $F$
+\end_inset
+
+ סופית.
+ 
+\begin_inset Formula $F=\left(F^{c}\right)^{c}$
+\end_inset
+
+ סופית, ולכן 
+\begin_inset Formula $F^{c}$
+\end_inset
+
+ פתוחה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ אינסופית.
+ הסגורות בטופולוגיה הקו-סופית הן 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ והסופיות.
+ לכן הקבוצה הסגורה היחידה המכילה את 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ מרחב מטרי כך ש
+\begin_inset Formula $2<\left|X\right|\le\aleph_{0}$
+\end_inset
+
+.
+ הוכיחו שהמרחב לא קשיר.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ניזכר שבהינתן 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $f_{a}:X\to\mathbb{R}$
+\end_inset
+
+ המוגדרת 
+\begin_inset Formula $\forall_{x\in X}f_{a}\left(x\right)=d\left(x,a\right)$
+\end_inset
+
+ היא 
+\bar under
+רציפה
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש
+\begin_inset Formula $X$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{a}\left(a\right)=0$
+\end_inset
+
+.
+ לפי ההנחה קיימת 
+\begin_inset Formula $X\ni x\neq a$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{a}\left(x\right)=d\left(a,x\right)>0$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $f_{a}\left(x\right)=\varepsilon$
+\end_inset
+
+.
+ ע"פ משפט ערך הביניים)
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\bar under
+קשיר
+\bar default
+, 
+\begin_inset Formula $f_{a}$
+\end_inset
+
+ רציפה( לכל 
+\begin_inset Formula $0<c<\varepsilon$
+\end_inset
+
+ קיים 
+\begin_inset Formula $y\in X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f_{a}\left(y\right)=c$
+\end_inset
+
+.
+ אבל
+\begin_inset Formula 
+\[
+\left|f_{a}\left(X\right)\right|\le\left|X\right|\le\aleph_{0}<\aleph=\left|\left(0,\varepsilon\right)\right|\le\left|f_{a}\left(X\right)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מ"ט 
+\begin_inset Formula $X$
+\end_inset
+
+ נקרא 
+\bar under
+קשיר מסילתית
+\bar default
+ אם לכל 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ קיימת מסילה רציפה 
+\begin_inset Formula $f\left[0,1\right]\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(0\right)=x,f\left(1\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+ראינו בהרצאה שקשירות מסילתית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ קשירות.
+ ההיפך לא נכון בהכרח)יש דוגמה נגדית(.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $C$
+\end_inset
+
+ קבוצה במ"ו כלשהו.
+ נאמר ש
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\bar under
+קמורה
+\bar default
+ אם לכל 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\forall_{t\in\left[0,1\right]}\left(1-t\right)x+ty\in C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,\left\Vert \cdot\right\Vert \right)$
+\end_inset
+
+ מרחב נורמי, 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+ קמורה.
+ הוכיחו כי 
+\begin_inset Formula $C$
+\end_inset
+
+ קשירה מסילתית.
+\end_layout
+
+\begin_layout Subsection*
+"הוכחה"
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+ ניקח את המסילה 
+\begin_inset Formula $f:\left[0,1\right]\to C$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $f\left(t\right)=\left(1-t\right)x+ty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה לקבוצה קמורה
+\end_layout
+
+\begin_layout Standard
+בכל מרחב נורמי 
+\begin_inset Formula $\left(X,\left\Vert \cdot\right\Vert \right)$
+\end_inset
+
+ולכל 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ ו
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $B\left(a,\varepsilon\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $B\left[a,\varepsilon\right]$
+\end_inset
+
+ קמורים.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,\tau\right)$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ תת מרחב קשיר.
+\end_layout
+
+\begin_layout Standard
+הוכיחו או הפריכו - 
+\begin_inset Formula $\textnormal{int}\left(A\right)$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+שני עיגולים)כדורים סגורים ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+( 
+\begin_inset Formula $B,C$
+\end_inset
+
+ המשיקים בנק'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B,C$
+\end_inset
+
+ קמורים ולכן קשירים מסילתית ולכן קשירים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\cap C\neq\emptyset$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A=B\cup C$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textnormal{int}\left(A\right)=D\cup E$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $D,E$
+\end_inset
+
+ כדורים פתוחים, לא ריקים, ו
+\begin_inset Formula $D\cap E=\emptyset$
+\end_inset
+
+ - לכן 
+\begin_inset Formula $\textnormal{int}\left(A\right)$
+\end_inset
+
+ לא קשיר.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f=\left(f_{1},\dots f_{n}\right):\overbrace{A}^{\subseteq\mathbb{R}}\to\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפה לכל 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: אינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Section*
+הגדרה)הומיאומורפיזם(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ פונקציה בין שני מ"ט.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ היא הומיאומורפיזם)הומיאו' בקיצור( אם 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+, 
+\bar under
+הפיכה
+\bar default
+ ו
+\bar under
+
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ רציפה
+\bar default
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+באופן
+\begin_inset space ~
+\end_inset
+
+שקול
+\series default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+ הפיכה 
+\bar under
+ופתוחה
+\bar default
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שקול
+\begin_inset space ~
+\end_inset
+
+נוסף
+\series default
+: 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+ הפיכה 
+\bar under
+וסגורה
+\bar default
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ ו
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+.
+ הוכיחו ש
+\begin_inset Formula $\textnormal{Gr}_{f}:=\left\{ \left(x,f\left(x\right)\right)\middle|x\in A\right\} $
+\end_inset
+
+ הומיאומורפי ל
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $h:A\to\textnormal{Gr}_{f}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $h\left(x\right)=\left(x,f\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציית עזר 
+\begin_inset Formula $\bar{h}:A\to\mathbb{R}^{2}$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $\bar{h}\left(x\right)=\left(x,f\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bar{h}_{1}:A\to\mathbb{R}$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $\bar{h}_{1}\left(x\right)=x$
+\end_inset
+
+ זוהי בדיוק פונקציית ההכלה שהינה 
+\bar under
+רציפה
+\bar default
+.
+ 
+\begin_inset Formula $\bar{h}_{2}=f$
+\end_inset
+
+ רציפה ע"י הנתון.
+\end_layout
+
+\begin_layout Standard
+לכן ע"פ הטענה הקודמת 
+\begin_inset Formula $\bar{h}$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h$
+\end_inset
+
+ מתקבלת מ
+\begin_inset Formula $\bar{h}$
+\end_inset
+
+ ע"י צמצום הטווח )
+\begin_inset Formula $\bar{h}\left(A\right)=\textnormal{Gr}_{f}$
+\end_inset
+
+(, ומכיוון ש
+\begin_inset Formula $\bar{h}$
+\end_inset
+
+ רציפה אז גם 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g:\textnormal{Gr}_{f}\to A$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $g\left(x,f\left(x\right)\right)=x$
+\end_inset
+
+ היא ההופכית של 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ נראה ש
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה.
+ נתבונן ב
+\begin_inset Formula $\left.P_{1}\right|_{\textnormal{Gr}_{f}}:\textnormal{Gr}_{f}\to A$
+\end_inset
+
+)צמצום התחום והטווח(, גם היא רציפה ומתקיים 
+\begin_inset Formula $g=\left.P_{1}\right|_{\textnormal{Gr}_{f}}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $h$
+\end_inset
+
+ הומיאומורפיזם.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ תת מרחב ו
+\begin_inset Formula $f:A\to\mathbb{R}$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ קשיר 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gr}_{f}$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ קשיר מסילתית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{Gr}_{f}$
+\end_inset
+
+ קשיר מסילתית.
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $\textnormal{Gr}_{f}$
+\end_inset
+
+ הומיאומורפים.
+ הומיאו' מעביר מרחב קשיר)מסילתית( לקשיר)מסילתית(.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתבונן בשלושה תתי מרחבים של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+מעגל
+\end_layout
+
+\begin_layout Enumerate
+שני מעגלים משיקים
+\end_layout
+
+\begin_layout Enumerate
+שני מעגלים חותכים
+\end_layout
+
+\begin_layout Standard
+האם הם הומיאומורפיים זה לזה?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+לכאורה נראה שכן - שלושתם קשירים מסילתית ולכן קשירים.
+ אבל:
+\end_layout
+
+\begin_layout Itemize
+אם מוציאים מ
+\begin_inset Formula $I$
+\end_inset
+
+ נקודה, הוא נשאר קשיר, אבל אפשר להוציא שתי נקודות והוא כבר לא יהיה קשיר.
+\end_layout
+
+\begin_layout Itemize
+ניתן להוציא מ
+\begin_inset Formula $II$
+\end_inset
+
+ את נקודת ההשקה, והוא יהפוך ללא קשיר.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $I$
+\end_inset
+
+ ו
+\begin_inset Formula $II$
+\end_inset
+
+ לא הומיאומורפים.
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $I$
+\end_inset
+
+, לכל שתי נקודות שנוציא המרחב לא קשיר.
+\end_layout
+
+\begin_layout Itemize
+ב
+\begin_inset Formula $III$
+\end_inset
+
+, קיימות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות שנוציא כך שהמרחב ישאר קשיר.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $I$
+\end_inset
+
+ ו
+\begin_inset Formula $III$
+\end_inset
+
+ לא הומיאומורפים.
+\end_layout
+
+\end_body
+\end_document

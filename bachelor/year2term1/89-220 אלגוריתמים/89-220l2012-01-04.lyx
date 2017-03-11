@@ -1,0 +1,1769 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מציאת מסלולים קלים בגרף
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+)מכוון/לא מכוון(.
+ המשקל של מסלול 
+\begin_inset Formula $p=\left\langle u_{1},...u_{k}\right\rangle $
+\end_inset
+
+)מסלול מ
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $u_{k}$
+\end_inset
+
+( הינו 
+\begin_inset Formula $\sum\limits _{1\le i<k}w\left(u_{i},u_{i+1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\bar under
+מסלול קל
+\bar default
+ מ
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $u_{k}$
+\end_inset
+
+ אם 
+\begin_inset Formula $w\left(p\right)$
+\end_inset
+
+ מינימום)מבין כל משקלות המסלולים מ
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $u_{k}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+ ייתכן יותר ממסלול קל אחד - כמה מסלולים שונים בעלי אותו משקל)מינימלי(
+\end_layout
+
+\begin_layout Section*
+קלט
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ממשקל 
+\begin_inset Formula $w:E\to\mathbb{R}^{+}$
+\end_inset
+
+.
+ קודקוד מקוד 
+\begin_inset Formula $s\in V$
+\end_inset
+
+ וקודקוד יעד 
+\begin_inset Formula $t\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פלט
+\end_layout
+
+\begin_layout Standard
+משקל המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+)או המסלול הקל ביותר(
+\end_layout
+
+\begin_layout Section*
+השיטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+=קבוצת הקודקודים עבורם חישבנו את משקלו של המסלול הקל מ
+\begin_inset Formula $S$
+\end_inset
+
+ אליהם
+\begin_inset Formula 
+\[
+S=\left\{ s\right\} ,S=\left\{ s,v_{1}\right\} ,...S=V
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך נמצא? בסיבוב הראשון נסתכל על השכנים, כי כל מסלול לקודקוד שאינו שכן חייב
+ לעבור דרך השכנים.
+\end_layout
+
+\begin_layout Standard
+איך נבחר את הקודקוד כל פעם? בבחירה הראשונה זה קל - בוחרים את הקודקוד הכי
+ קרוב.
+ אבל בבחירות הבאות אין לנו שום הבטחה שהקודקוד המיידי הכי קרוב הוא באמת הכי
+ קרוב
+\end_layout
+
+\begin_layout Standard
+בשביל זה נגדיר הגדרה נוספת:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+ 
+\bar under
+מסלול מיוחד מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+
+\bar default
+ הוא מסלול שכל קודקוד במסלול שייך ל
+\begin_inset Formula $S$
+\end_inset
+
+ חוץ מ
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+ 
+\bar under
+מסלול מיוחד הקל מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{i}$
+\end_inset
+
+
+\bar default
+ הוא המסלול המיוחד בעל המשקל הנמוך ביותר מבין כל המסלולים המיוחדים מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשמור מערך 
+\begin_inset Formula $D$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n=\left|V\right|$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $v_{i}\in V$
+\end_inset
+
+ נשמור ב
+\begin_inset Formula $D\left(i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $v_{i}\in S$
+\end_inset
+
+: נשמור את משקלו של המסלול הקל מ
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $v_{i}\notin S$
+\end_inset
+
+, אם יש מסלול מיוחד מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ נשמור את משקלו של המסלול המיוחד הקל מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אחרת, נשמור 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל שלב, נוסיף ל
+\begin_inset Formula $S$
+\end_inset
+
+ את הקודקוד שהערך שלו ב
+\begin_inset Formula $D$
+\end_inset
+
+ הוא הנמוך ביותר
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & c\ar^{3}[rd]\ar^{6}[ldd]\\
+s\ar^{2}[ur]\ar_{10}[d] &  & d\ar^{3}[d]\\
+b\ar^{6}[urr] &  & e\ar_{5}[ll]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור בשלבים על הגרף:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D\left(b\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D\left(c\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D\left(d\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=\left\{ s\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=\left\{ s,c\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=\left\{ s,c,d\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=\left\{ s,c,d,e\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+האלגוריתם של דייקסטרה)
+\lang english
+Dijkstra
+\lang hebrew
+(
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+\begin_inset Formula $S\gets\left\{ s\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $D\left(s\right)\gets0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for all 
+\begin_inset Formula $v\in V$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $D\left(v\right)\gets\begin{cases}
+w\left(s,v\right) & if\left(s,v\right)\in E\\
+\infty & if\left(s,v\right)\notin E
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $p\left(v\right)\gets s$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+while 
+\begin_inset Formula $S\ne V$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+*let 
+\begin_inset Formula $v_{0}\in V-S$
+\end_inset
+
+ such that 
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+ minimum
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $S\gets S\cup\left\{ v_{0}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $x\in V-S\cap\textnormal{Adj}\left(v_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+**
+\begin_inset Formula $D\left(x\right)\gets\min\left\{ D\left(x\right),D\left(v_{0}\right)+w\left(v_{0},x\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+ changed
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $p\left(x\right)\gets v_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section*
+זמן הריצה של דייקסטרה
+\end_layout
+
+\begin_layout Standard
+שלב האתחול)
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורות ראשונות( - 
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השלב העיקרי - 
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $E_{v}$
+\end_inset
+
+ להיות קבוצת שכני 
+\begin_inset Formula $v$
+\end_inset
+
+, אזי לולאת ה
+\begin_inset Formula $for$
+\end_inset
+
+ האחרונה תיקח 
+\begin_inset Formula $O\left(\left|E_{v}\right|\right)$
+\end_inset
+
+, ולכן מעבר על כל הסיבובים של ה
+\begin_inset Formula $while$
+\end_inset
+
+ יקח 
+\begin_inset Formula $O\left(\sum\limits _{1\le i\le n}\left|E_{v_{i}}\right|\right)=O\left(\left|E\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השורה המסומנת ב* תיקח 
+\begin_inset Formula $O\left(\left|V\right|^{2}\right)$
+\end_inset
+
+.
+ האם אפשר לשפר את זה?
+\end_layout
+
+\begin_layout Subsubsection*
+אפשר!
+\end_layout
+
+\begin_layout Standard
+נשמור את ערכי 
+\begin_inset Formula $D$
+\end_inset
+
+ בערימה ואז בשורה * נוכל להוציא את המינימום בזמן 
+\begin_inset Formula $O\left(\log\left|V\right|\right)$
+\end_inset
+
+.
+ בשורה ** נצטרך לעדכן את ערכי הערימה בהתאמ לשינוי ערכי 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ זמן 
+\begin_inset Formula $O\left(\log\left|V\right|\right)$
+\end_inset
+
+ לכל עדכון - סה"כ 
+\begin_inset Formula $O\left(\left|E\right|\log\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+זמן הריצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+O\left(\left|V\right|+\left|V\right|\log\left|V\right|+\left|E\right|\log\left|V\right|\right)=O\left(\left(\left|V\right|+\left|E\right|\right)\log\left|E\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+האלגוריתם של דייקסטרה מחזיר לכל קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ את משקלו של המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ננסח מחדש)ונרחיב(
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+בכל שלב
+\bar default
+: לכל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+ הוא המשקל של המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+.
+ כל המסלול נמצא ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+בכל שלב
+\bar default
+: לכל 
+\begin_inset Formula $x\notin S$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+ הוא המשקל של המסלול המיוחד הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על 
+\begin_inset Formula $\left|S\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בסיס
+\begin_inset space ~
+\end_inset
+
+האינדוקציה
+\bar default
+: 
+\begin_inset Formula $\left|S\right|=1$
+\end_inset
+
+ 
+\begin_inset Formula $S=\left\{ s\right\} $
+\end_inset
+
+ נובע ישירות משלב האתחול
+\end_layout
+
+\begin_layout Standard
+נניח נכונות הטענה ל
+\begin_inset Formula $\left|S\right|=k$
+\end_inset
+
+ ונוכיח ל
+\begin_inset Formula $\left|S\right|=k+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ את הקודקוד שמוסיפים ל
+\begin_inset Formula $S$
+\end_inset
+
+ במעבר משלב 
+\begin_inset Formula $k$
+\end_inset
+
+ לשלב 
+\begin_inset Formula $k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נוכיח את 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+נתבונן ב
+\begin_inset Formula $x\in S-\left\{ v_{0}\right\} $
+\end_inset
+
+.
+ לפי הנחת האינדוקציה 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+=המשקל של המסלול הקל מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+)שימו לב: דייקרסטה לא משנה את 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+( וכל המסלול מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+ נמצא ב
+\begin_inset Formula $S-\left\{ v_{0}\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ מתקיים לכל 
+\begin_inset Formula $x\in S-\left\{ v_{0}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $x=v_{0}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+ אינו משתנה בדייקרסטה.
+ לפי הנחת האינדוקציה 
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+=המשקל של המסלול המיוחד הקל ביותר מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+)יחסית ל
+\begin_inset Formula $S-\left\{ v_{0}\right\} $
+\end_inset
+
+(.
+ נרצה להוכיח שמשקלו של המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+=
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+.
+ נניח בשלילה שיש מסלול 
+\begin_inset Formula $p$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $w\left(p\right)<D\left(v_{0}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ אינו מסלול מיוחד)כי 
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+ משקל המסלול המיוחד הקל ביותר(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x$
+\end_inset
+
+ הקודקוד הראשון ב
+\begin_inset Formula $p$
+\end_inset
+
+ שאינו ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ את משקלו של הרישא של המסלול של 
+\begin_inset Formula $p$
+\end_inset
+
+ עד 
+\begin_inset Formula $x$
+\end_inset
+
+ ונסמן ב
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ את משקלו של הסיפא של המסלול של 
+\begin_inset Formula $p$
+\end_inset
+
+ מ
+\begin_inset Formula $x$
+\end_inset
+
+ עד 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+.
+ כלומר, 
+\begin_inset Formula $w\left(p\right)=w_{1}+w_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרישא של המסלול 
+\begin_inset Formula $p$
+\end_inset
+
+ עד 
+\begin_inset Formula $x$
+\end_inset
+
+ הינו מסלול מיוחד מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+)ומשקלו 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+(.
+ לכן 
+\begin_inset Formula $D\left(x\right)\le w_{1}$
+\end_inset
+
+)מהנחת האינדוקציה(.
+ מצד שני 
+\begin_inset Formula $w_{2}\ge0$
+\end_inset
+
+ כי המשקלות חיוביים.
+ לכן 
+\begin_inset Formula 
+\[
+D\left(x\right)\le w_{1}\le w_{1}+w_{2}=w\left(p\right)<D\left(v_{0}\right)
+\]
+
+\end_inset
+
+לכן, דייקסטרה לא היה בוחר את 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+.
+ סתירה.
+ לכן, 
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+ משקלו של המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+ היה משקלו של מסלול מיוחד רגע לפני שהוספנו את 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $S$
+\end_inset
+
+, עכשיו כל המסלול נמצא ב
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+נוכיח את 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x\in V-S$
+\end_inset
+
+.
+ נרצה להוכיח ש
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+ משקלו של המסלול המיוחד הקל ביותר.
+ נסמן 
+\begin_inset Formula $p$
+\end_inset
+
+ את המסלול המיוחד הקל ביותר.
+ נחלק ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v_{0}\notin p$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ מסלול מיוחד גם ביחס ל
+\begin_inset Formula $S-\left\{ v_{0}\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $D\left(x\right)=w\left(p\right)$
+\end_inset
+
+ גם לפני הוספת 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $S$
+\end_inset
+
+ מהשורה
+\begin_inset Formula 
+\[
+D\left(x\right)=\min\left\{ D\left(x\right),D\left(v_{0}\right)+w\left(v_{0},x\right)\right\} 
+\]
+
+\end_inset
+
+דייקסטרה ישאיר את 
+\begin_inset Formula $D\left(x\right)$
+\end_inset
+
+ כפי שהיה קודם.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v_{0}\in p$
+\end_inset
+
+, 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ הקודם של 
+\begin_inset Formula $x$
+\end_inset
+
+ על 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לפי 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ 
+\begin_inset Formula $D\left(v_{0}\right)$
+\end_inset
+
+=משקלו של המסלול הקל ביותר מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $w\left(p\right)=D\left(v_{0}\right)+w\left(v_{0},x\right)$
+\end_inset
+
+ ולכן דייקסטרה יעדכן כפי שצריך בשורה
+\begin_inset Formula 
+\[
+D\left(x\right)=\le\min\left\{ D\left(x\right),D\left(v_{0}\right)+w\left(v_{0},x\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v_{0}\in p$
+\end_inset
+
+ אבל 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ אינו הקודם של 
+\begin_inset Formula $x$
+\end_inset
+
+ על 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ נסמן ב
+\begin_inset Formula $y$
+\end_inset
+
+ את קודמו של 
+\begin_inset Formula $x$
+\end_inset
+
+ על 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ לפי הנחת האינדוקציה המסלול הקל ביותר 
+\begin_inset Formula $p'$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+ נמצא כולו ב
+\begin_inset Formula $S-\left\{ v_{0}\right\} $
+\end_inset
+
+, ולכן 
+\begin_inset Formula $p'$
+\end_inset
+
+ אינו מכיל את 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, אבל הרישא של 
+\begin_inset Formula $p$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+ עד 
+\begin_inset Formula $y$
+\end_inset
+
+ עובר ב
+\begin_inset Formula $v_{0}$
+\end_inset
+
+.
+ סתירה.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

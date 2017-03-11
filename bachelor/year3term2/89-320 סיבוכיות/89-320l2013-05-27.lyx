@@ -1,0 +1,1508 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אלגוריתמים ראנדומיים
+\end_layout
+
+\begin_layout Section*
+מודל - מכונת טיורינג הסתברותית
+\end_layout
+
+\begin_layout Standard
+זוהי למעשה 
+\series bold
+מכונת טיורינג לא דטרמיניסטית
+\series default
+ פולינומית כך שבכל מעבר של המכונה שאינו מוגדר באופן יחיד)בה"כ, במקרה זה
+ קיימים בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעברים אפשריים( המכונה מטילה מטבע, בסיכוי של 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מבצעת מעבר ראשון, בסיכוי של 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מבצעת מעבר שני.
+\end_layout
+
+\begin_layout Standard
+נאמר כי מכונת טיורינג הסתברותית 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את הקלט 
+\begin_inset Formula $x$
+\end_inset
+
+, אם 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ מחזיר לנו את התשובה 
+\series bold
+הנכונה "בהסתברות גבוהה"
+\series default
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+לעומת
+\begin_inset space ~
+\end_inset
+
+זאת
+\series default
+: מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ לא דטרמיניסטית מקבלת 
+\begin_inset Formula $x$
+\end_inset
+
+, אם קיים מסלול בו 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המודל שתיארנו הוא מודל ה
+\lang english
+on-line
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+נאמר כי מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ הסתברותית, הרצה על קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ מחזירה 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ משתנה מקרי)מ"מ(.
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $M$
+\end_inset
+
+ כנ"ל, ניתן לעסוק במודל שקול)
+\lang english
+off-line
+\lang hebrew
+(: קיימת 
+\begin_inset Formula $M'$
+\end_inset
+
+ מ"ט דטרמיניסטית המקבלת כקלט זוג 
+\begin_inset Formula $\left(x,r\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ הינו הקלט המקורי של 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $r$
+\end_inset
+
+ הינה סדרת הטלות מטבע.
+ 
+\begin_inset Formula $M'\left(x,r\right)$
+\end_inset
+
+ משתנה מקרי המתפלג באופן זהה ל
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+כדי שראנדומיות תהיה מועילה, צריך לשלב עליה מחיר - כלומר סיכוי לטעות.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט הסתברותית לפתרון 
+\begin_inset Formula $A$
+\end_inset
+
+ אשר לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מחזירה את התשובה הנכונה בהסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)כלומר לא טועה(.
+ אזי קיימת מ"ט דטרמיניסטית 
+\begin_inset Formula $M'$
+\end_inset
+
+ הרצה בזמן זהה לזה של 
+\begin_inset Formula $M$
+\end_inset
+
+ ומכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $M$
+\end_inset
+
+ כנ"ל, נבנה 
+\begin_inset Formula $M'$
+\end_inset
+
+ כנ"ל באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M'$
+\end_inset
+
+ תבצע סימולציה של 
+\begin_inset Formula $M$
+\end_inset
+
+, וכל פעם ש
+\begin_inset Formula $M$
+\end_inset
+
+ מטילה מטבע, 
+\begin_inset Formula $M'$
+\end_inset
+
+ תניח כי התשובה המתקבלת היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $x$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $M'$
+\end_inset
+
+ מחזירה תשובה שגויה, 
+\begin_inset Formula $M$
+\end_inset
+
+ מקבלת את סדרת הטלות המטבע שכולן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהסתברות
+\begin_inset Formula $\le$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{2^{p\left(m|x\right)}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ הוא הפולינום החוסם את זמן ריצת המכונה 
+\begin_inset Formula $M$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $M$
+\end_inset
+
+ מחזירה תשובה נכונה בהסתברות
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $1>1-\frac{1}{2^{p\left(\left|x\right|\right)}}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $M$
+\end_inset
+
+ מחזירה תשובה נכונה בהסתברות
+\begin_inset Formula $>$
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+, בניגוד להנחה שלנו ש
+\begin_inset Formula $M$
+\end_inset
+
+ מחזירה תשובה נכונה בהסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Part*
+טעות חד צדדית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RP
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר כי קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ שייכת למחלקה 
+\begin_inset Formula $RP$
+\end_inset
+
+)=
+\lang english
+Randomized Poly
+\lang hebrew
+( אם קיימת מכונת טיורינג הסתברותית 
+\begin_inset Formula $M$
+\end_inset
+
+ הרצה כזמן פולינומי ומקיימת:
+\begin_inset Formula 
+\[
+\forall_{x\in A}\Pr\nolimits _{r}\left(M\left(x,r\right)=1\right)\ge\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{x\notin A}\Pr\nolimits _{r}\left(M\left(x,r\right)=0\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RP\subseteq NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in RP$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+כזכור
+\series default
+: 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+ אם קיים מוודא פולינומי 
+\begin_inset Formula $v\left(\cdot\right)$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\exists_{y}y<p\left(\left|x\right|\right),v\left(x,y\right)=1\iff x\in L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $L\in RP$
+\end_inset
+
+ קיימת מכונת טיורינג דטרמיניסטית 
+\begin_inset Formula $M$
+\end_inset
+
+ המקבלת כקלט זוג 
+\begin_inset Formula $\left(x,r\right)$
+\end_inset
+
+ כך שתמקיים
+\begin_inset Formula 
+\[
+x\in L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=1\right]\ge\frac{1}{2}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\boxed{x\in L\implies\exists_{r}\left(x,r\right)=1}
+\]
+
+\end_inset
+
+ובאופן דומה
+\begin_inset Formula 
+\[
+x\notin L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=0\right]=1
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\boxed{x\notin L\implies\forall_{r}M\left(x,r\right)=0}
+\]
+
+\end_inset
+
+סה"כ
+\begin_inset Formula 
+\[
+x\in L\implies\exists_{r}M\left(x,r\right)=1\qquad x\notin L\implies\forall_{r}M\left(x,r\right)=0
+\]
+
+\end_inset
+
+וביחד זה אומר ש
+\begin_inset Formula 
+\[
+\boxed{x\in L\iff\exists_{r}M\left(x,r\right)=1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ המוודא הפולינומי הנדרש בהגדרת 
+\begin_inset Formula $NP$
+\end_inset
+
+, ו
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ הפולינום החוסם את זמן ריצת 
+\begin_inset Formula $M$
+\end_inset
+
+, וכן 
+\begin_inset Formula $r$
+\end_inset
+
+ יהיה העד המשמש את המוודא הפולינומי הנדרש בהגדרת 
+\begin_inset Formula $NP$
+\end_inset
+
+, ונשים לב כי למעשה קיבלנו 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+נגדיר 
+\begin_inset Formula $RP1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in RP1$
+\end_inset
+
+ אם קיימת מ"ט הסתברותית 
+\begin_inset Formula $M$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\in L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=1\right]>\frac{1}{p\left(\left|x\right|\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\notin L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=0\right]=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נגדיר 
+\begin_inset Formula $RP2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\in RP2$
+\end_inset
+
+ אם קיימים 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ כנ"ל כך ש:
+\begin_inset Formula 
+\[
+x\in L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=1\right]\ge1-2^{-p\left(\left|x\right|\right)}=1-\frac{1}{2^{p\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\notin L\implies\Pr\nolimits _{r}\left[M\left(x,r\right)=0\right]=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RP1=RP2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ברור 
+\begin_inset Formula $RP2\subseteq RP1$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $RP1\subseteq RP2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L\in RP1$
+\end_inset
+
+, אזי ע"פ הגדרת 
+\begin_inset Formula $RP1$
+\end_inset
+
+, קיימת מ"ט הסתברותית 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ ופולינום 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+\forall_{x\in L}\Pr\nolimits _{r}\left[M_{1}\left(x,r\right)=1\right]\ge\frac{1}{p\left(\left|x\right|\right)}
+\]
+
+\end_inset
+
+נגדיר מ"ט הסתברותית 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M_{2}\left(x\right)$
+\end_inset
+
+ תריץ את 
+\begin_inset Formula $M_{1}\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $t\left(\left|x\right|\right)$
+\end_inset
+
+ פעמים)כל פעם עם 
+\begin_inset Formula $r$
+\end_inset
+
+ חדש(, ואם אחת ההפעלות של 
+\begin_inset Formula $M_{1}\left(x\right)$
+\end_inset
+
+ החזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אזי 
+\begin_inset Formula $M_{2}\left(x\right)$
+\end_inset
+
+ תחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אחרת תחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ההסתברות לטעות היא:
+\begin_inset Formula 
+\[
+x\in L\implies\Pr\nolimits _{r}\left[M_{2}\left(x,r\right)=0\right]=\left(\Pr\nolimits _{r}\left[M_{1}\left(x,r\right)=0\right]\right)^{t\left(\left|x\right|\right)}\le\underbrace{\left(1-\frac{1}{p\left(\left|x\right|\right)}\right)^{t\left(\left|x\right|\right)}}_{\textnormal{probability of \ensuremath{M_{2}\left(x\right)}mistake}}\le\frac{1}{2^{p\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-\frac{1}{p}\right)^{p\cdot\frac{t}{p}}\le\left(\frac{1}{2}\right)^{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1-\frac{1}{p}\right)^{\frac{t}{p}}\le\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\le\left(1-\frac{1}{p}\right)^{-1\cdot\frac{t}{p}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{1\le\frac{t}{p}\log_{2}\left(1-\frac{1}{p}\right)^{-1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\ge p\cdot\frac{1}{\log_{2}\left(1-\frac{1}{p}\right)^{-1}}=\frac{p}{-\log_{2}\left(1-\frac{1}{p}\right)^{p\cdot\frac{1}{p}}}=\frac{p}{-\frac{1}{p}\underbrace{\log_{2}\left(1-\frac{1}{p}\right)^{p}}_{=\log_{2}e^{-1}}}\ge\frac{p}{-\frac{1}{p}\cdot\left(-\log_{2}e\right)}=\frac{p^{2}}{\log_{2}e}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t\left(x\right)\ge\frac{p^{2}\left(x\right)}{\log_{2}e}
+\]
+
+\end_inset
+
+מסקנה - 
+\begin_inset Formula $L\in RP2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+אלגוריתמים הסתברותיים עם טעות דו צדדית
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נאמר כי קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ שייכת ל
+\begin_inset Formula $BPP$
+\end_inset
+
+)
+\lang english
+Bounded error Porbability Polynomial time
+\lang hebrew
+( אם קיימת מכונת טיורינג הסתברותית פולינומית 
+\begin_inset Formula $M$
+\end_inset
+
+ המקיימת:
+\begin_inset Formula 
+\[
+\forall_{x}\Pr\nolimits _{r}\left[M\left(x,r\right)=\chi_{A}\left(x\right)\right]\ge\frac{2}{3}
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\chi_{A}\left(x\right)=\begin{cases}
+1 & x\in A\\
+0 & x\notin A
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אבחנות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RP\subseteq BPP
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+BPP\subseteq\textnormal{PSPACE}\subseteq\textnormal{EXP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא ידוע מה הקשר בין 
+\begin_inset Formula $BPP$
+\end_inset
+
+ ו
+\begin_inset Formula $NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כזכור, 
+\begin_inset Formula $RP\subseteq NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+, אזי לכל פולינום 
+\begin_inset Formula $p\left(\cdot\right)$
+\end_inset
+
+ ישנה מכונת טיורינג הסתברותית 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ העוצרת בזמן פולינומי ומקיימת
+\begin_inset Formula 
+\[
+\forall_{x}\Pr\nolimits _{r}\left[M^{*}\left(x,r\right)=\chi_{A}\left(x\right)\right]\ge1-\frac{1}{2^{p\left(\left|x\right|\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+, לכן קיימת 
+\begin_inset Formula $M$
+\end_inset
+
+ מכונת טיורינג הסתברותית שהסתברות ההצלחה שלה
+\begin_inset Formula $\le$
+\end_inset
+
+
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+)לפי המובטח בהגדרת 
+\begin_inset Formula $M$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+נגדיר 
+\begin_inset Formula $M^{*}\left(x\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\gets0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הרץ את 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ פעמים)
+\begin_inset Formula $k$
+\end_inset
+
+ יקבע אח"כ( וקדם את 
+\begin_inset Formula $T$
+\end_inset
+
+ כל פעם שהתוצאה של 
+\begin_inset Formula $M\left(x\right)$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $T>\frac{k}{2}$
+\end_inset
+
+ החזר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אחרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+חסם
+\begin_inset space ~
+\end_inset
+
+צ'רנוף
+\series default
+: יהיו 
+\begin_inset Formula $x_{1},\dots x_{k}$
+\end_inset
+
+ משתנים מקריים בלתי תלויים שווי התפלגות המקבלים ערכים ב
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+, ותהי 
+\begin_inset Formula $\mu$
+\end_inset
+
+ התוחלת של כל אחד מהמשתנים.
+ אזי עבור כל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\Pr\left[\frac{\sum\limits _{i=1}^{k}x_{i}}{k}\ge\mu+\varepsilon\right]\le e^{-2\varepsilon^{2}k}\approx\frac{1}{2^{2\varepsilon^{2}k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $\omega_{1},\dots\omega_{k}$
+\end_inset
+
+ את המשתנים המקריים הבאים:
+\begin_inset Formula 
+\[
+\omega_{i}=\begin{cases}
+1 & M\left(x,r_{i}\right)\neq\chi_{A}\left(x\right)\\
+0 & \textnormal{otherwize}
+\end{cases}
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\omega_{i}=1$
+\end_inset
+
+ אם"ם בהרצה ה
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $M\left(x,r_{i}\right)$
+\end_inset
+
+ נתנה תשובה שגויה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{i}$
+\end_inset
+
+ משתנים מקריים בלתי תלויים שווי התפלגות המקבלים ערכים ב
+\begin_inset Formula $\left\{ 0,1\right\} $
+\end_inset
+
+, ו
+\begin_inset Formula $\mu\left(\omega_{i}\right)\le\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי ש
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ תטעה צריך להתקיים 
+\begin_inset Formula $\frac{\sum\limits _{i}w_{i}}{k}>\frac{1}{2}$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+E\left[\frac{\sum\limits _{i}\omega_{i}}{k}\right]\le\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת ע"פ צ'רנוף:
+\begin_inset Formula 
+\[
+\Pr\left[M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right]=\Pr\left[\frac{\sum\limits _{i}\omega_{i}}{k}>\frac{1}{2}\right]=\Pr\left[\frac{\sum\omega_{i}}{k}>\underbrace{\frac{1}{3}}_{\mu}+\underbrace{\frac{1}{6}}_{\varepsilon}\right]\le e^{-2\cdot\left(\frac{1}{6}\right)^{2}\cdot k}=e^{-\frac{k}{18}}
+\]
+
+\end_inset
+
+אנו רוצים
+\begin_inset Formula 
+\[
+e^{-\frac{k}{18}}\le2^{-p\left(\left|x\right|\right)}
+\]
+
+\end_inset
+
+למשל, אם נבחר 
+\begin_inset Formula $\boxed{k=18p\left(\left|x\right|\right)}$
+\end_inset
+
+, נקבל
+\begin_inset Formula 
+\[
+e^{-\frac{k}{18}}=e^{-p\left(\left|x\right|\right)}<2^{-p\left(\left|x\right|\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

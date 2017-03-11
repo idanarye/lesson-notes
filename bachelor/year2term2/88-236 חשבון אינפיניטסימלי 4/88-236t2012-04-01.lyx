@@ -1,0 +1,706 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אינווריאנטיות תחת החלפת קואורדינטות
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left\{ e_{1},e_{2}\right\} $
+\end_inset
+
+ בסיס אורתונורמלי עבור 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $u$
+\end_inset
+
+ שדה סקלרי הנתון בקואורדינטות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ע"י הנוסחה 
+\begin_inset Formula $f\left(x,y\right)=x^{2}$
+\end_inset
+
+]
+\begin_inset Formula $\left(x,y\right)=xe_{1}+ye_{2}$
+\end_inset
+
+[.
+ נבנה בסיס א"נ נוסף 
+\begin_inset Formula $\left\{ e_{1}',e_{2}'\right\} $
+\end_inset
+
+ ע"י סיבוב הבסיס 
+\begin_inset Formula $\left\{ e_{1},e_{2}\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+ נגד כיוון השעון, ונקבל מערכת קואורדינטות חדשה 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( מצא נוסחת מעבר בין 
+\begin_inset Formula $\left\{ e_{1},e_{2}\right\} $
+\end_inset
+
+ ל
+\begin_inset Formula $\left\{ e_{1}',e_{2}'\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( מצא את השדה הסקלרי 
+\begin_inset Formula $u$
+\end_inset
+
+ כפונקציה של הקואורדינטות 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( חשב את הגראדיאנט 
+\begin_inset Formula $\textnormal{grad}\left(u\right)$
+\end_inset
+
+ בקואורדינטות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+, וקשר בין התוצאות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד( חשב את הלפלסיאן של 
+\begin_inset Formula $u$
+\end_inset
+
+ בשתי המערכות.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( ידוע מטריגו:
+\begin_inset Formula 
+\[
+e_{1}'=\cfrac{\sqrt{3}}{2}e_{1}+\cfrac{1}{2}e_{2}\qquad e_{2}'=-\cfrac{1}{2}e_{1}+\cfrac{\sqrt{3}}{2}e_{2}
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $U=\begin{pmatrix}\cfrac{\sqrt{3}}{2} & \cfrac{1}{2}\\
+-\cfrac{1}{2} & \cfrac{\sqrt{3}}{2}
+\end{pmatrix}$
+\end_inset
+
+.
+ בעזרת 
+\begin_inset Formula $U$
+\end_inset
+
+ ניתן לעבור בין הקואורדינטות ע"י
+\begin_inset Formula 
+\[
+\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=U\begin{pmatrix}x\\
+y
+\end{pmatrix}\Rightarrow\begin{pmatrix}x\\
+y
+\end{pmatrix}=U^{-1}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=U^{t}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $u=f\left(x,y\right)=x^{2}$
+\end_inset
+
+.
+ מהסעיף הקודם:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}\cfrac{\sqrt{3}}{2} & -\cfrac{1}{2}\\
+\cfrac{1}{2} & \cfrac{\sqrt{3}}{2}
+\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow x=\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow u=x^{2}=\left(\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'\right)^{2}=:g\left(x',y'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ג( במערכת 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{grad}\left(u\right)=\begin{pmatrix}\cfrac{\partial u}{\partial x}\\
+\cfrac{\partial u}{\partial y}
+\end{pmatrix}=\begin{pmatrix}2x\\
+0
+\end{pmatrix}=\nabla f\left(x,y\right)
+\]
+
+\end_inset
+
+ובמערכת 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{grad}\left(u\right)=\begin{pmatrix}\cfrac{\partial u}{\partial x'}\\
+\cfrac{\partial u}{\partial y'}
+\end{pmatrix}=\begin{pmatrix}\cancel{2}\cdot\left(\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'\right)\cdot\cfrac{\sqrt{3}}{\cancel{2}}\\
+\cancel{2}\cdot\left(\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'\right)\cdot\left(-\cfrac{1}{\cancel{2}}\right)
+\end{pmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nabla'=\begin{pmatrix}\cfrac{\partial}{\partial x'}\\
+\cfrac{\partial}{\partial y'}
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{pmatrix}\sqrt{3}\cdot\left(\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'\right)\\
+-\left(\cfrac{\sqrt{3}}{2}x'-\cfrac{1}{2}y'\right)
+\end{pmatrix}=\begin{pmatrix}\sqrt{3}x\\
+-x
+\end{pmatrix}=\nabla'g\left(x',y'\right)
+\]
+
+\end_inset
+
+מתקיים:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\sqrt{3}x\\
+-x
+\end{pmatrix}=\begin{pmatrix}\cfrac{\sqrt{3}}{2} & \cfrac{1}{2}\\
+-\cfrac{1}{2} & \cfrac{\sqrt{3}}{2}
+\end{pmatrix}\begin{pmatrix}2x\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\nabla'g\left(x',y'\right)=U\cdot\nabla f\left(x,y\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ד( בצירים 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\Delta=\textnormal{div}\left(\textnormal{grad}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta u=\underbrace{\nabla\cdot\underbrace{\nabla\cdot u}_{\textnormal{grad}}}_{\textnormal{div}\left(\textnormal{grad}u\right)}=\cfrac{\partial^{2}f}{\partial x^{2}}+\cfrac{\partial^{2}f}{\partial y^{2}}=2+0=\boxed{2}
+\]
+
+\end_inset
+
+ובצירים 
+\begin_inset Formula $\left(x',y'\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\Delta u=\cfrac{\partial^{2}g}{\partial x'^{2}}+\cfrac{\partial^{2}g}{\partial y'^{2}}=\sqrt{3}\cdot\cfrac{\sqrt{3}}{2}+-1\cdot\left(-\cfrac{1}{2}\right)=\boxed{2}
+\]
+
+\end_inset
+
+הלפלסיאן לא השתנה במעבר בין הקואורדינטות!
+\end_layout
+
+\begin_layout Part*
+תבניות דיפרנציאליות - "אל תסתכל באינטגרל, אלא במה שיש בתוכו"
+\end_layout
+
+\begin_layout Standard
+נשים לב, שלא עושים אינטגרל לפונקציה)
+\begin_inset Formula $\int f\left(x\right)$
+\end_inset
+
+(, אלא לתבנית דיפרנציאלית)
+\begin_inset Formula $\int f\left(x\right)\mathrm{\, d}x$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+במקרה של אינטגרל חד מימדי - למשל 
+\begin_inset Formula $\int_{0}^{3}x^{3}\mathrm{\, d}x$
+\end_inset
+
+ - קוראים לזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar under
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית דיפרנציאלית
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+במקרה של אינטגרל דו מימדי - למשל 
+\begin_inset Formula $\int_{1}^{2}\int_{0}^{2\pi}r\mathrm{\, d}r\mathrm{\, d}\theta$
+\end_inset
+
+ - קוראים לזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar under
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+-תבנית דיפרנציאלית
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+במקרה של אינטגרל תלת מימדי - למשל 
+\begin_inset Formula $\int_{-1}^{1}\int_{0}^{2}\int_{3}^{4}x^{2}z\mathrm{\, d}x\mathrm{\, d}y\mathrm{\, d}z$
+\end_inset
+
+ - קוראים לזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar under
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+-תבנית דיפרנציאלית
+\bar default
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+)אנו נגדיר ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, אבל ניתן להגדיר בכל מרחב וקטורי(
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+0
+\numeric off
+-תבנית דיפרנציאלית ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ זו פונקציה סקלרית 
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+1
+\numeric off
+-תבנית דיפרנציאלית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ זה צירוף לינארי פורמלי של 
+\begin_inset Formula $\mathrm{d}x,\mathrm{d}y,\mathrm{d}z$
+\end_inset
+
+, ביטויים מהצורה 
+\begin_inset Formula 
+\[
+P\left(x,y,z\right)\mathrm{\, d}x+Q\left(x,y,z\right)\mathrm{\, d}y+R\left(x,y,z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+למשל, 
+\begin_inset Formula $\omega=x^{2}\mathrm{\, d}x+\sin\left(z\right)\mathrm{\, d}y+3\mathrm{\, d}z$
+\end_inset
+
+ - זו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+-תבנית דיפרנציאלית.
+\end_layout
+
+\begin_layout Itemize
+
+\numeric on
+2
+\numeric off
+-תבנית דיפרנציאלית ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ זה צירוף לינארי פורמלי של 
+\begin_inset Formula $\mathrm{d}x\wedge\mathrm{d}y,\mathrm{d}y\wedge\mathrm{d}z,\mathrm{d}z\wedge\mathrm{d}x$
+\end_inset
+
+)האופרטור 
+\begin_inset Formula $"\wedge"$
+\end_inset
+
+ נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+wedge
+\lang hebrew
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $\omega=x\mathrm{\, d}x\wedge\mathrm{d}y-2\mathrm{\, d}y\wedge\mathrm{d}z+0\mathrm{d}z\wedge\mathrm{d}x$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\numeric on
+3
+\numeric off
+-תבנית דיפרנציאלית ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ זה ביטוי מהצורה 
+\begin_inset Formula $F\mathrm{\, d}x\wedge\mathrm{d}y\wedge\mathrm{d}z$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה.
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר חיבור בקלות:
+\begin_inset Formula 
+\[
+\left(x^{2}\mathrm{\, d}x+\sin\left(z\right)\mathrm{\, d}y+e^{x}\mathrm{\, d}z\right)+\left(6y\mathrm{\, d}x-3\mathrm{\, d}y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(x^{2}+6y\right)\mathrm{\, d}x+\left(\sin\left(z\right)-3\right)\mathrm{\, d}y+e^{x}\mathrm{\, d}z
+\]
+
+\end_inset
+
+ולהכפיל ב
+\numeric on
+0
+\numeric off
+-תבנית דיפרנציאלית:
+\begin_inset Formula 
+\[
+e^{xy}\cdot\left(6y\mathrm{\, d}x-3\mathrm{\, d}y\right)=e^{xy}\cdot6y\mathrm{\, d}x-3e^{xy}\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1133 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+רבין קרפ
+\end_layout
+
+\begin_layout Standard
+אחד האלגוריתמים הראשונים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pattern Matching
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+הבעיה בצורה לא פורמלית - למצוא את 
+\begin_inset Formula $P$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרעיון -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+finger print
+\series default
+\lang hebrew
+: למצוא פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hash
+\lang hebrew
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ שמקיימת:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $P=t_{i}\dots t_{i+m-1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $h\left(P\right)=h\left(i\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $h\left(i\right)$
+\end_inset
+
+ הוא סימון ל
+\begin_inset Formula $h\left(i\right)=h\left(t_{i}\dots t_{i+m-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $P\neq t_{i}\dots t_{i+m-1}$
+\end_inset
+
+ אזי בהסתברות גבוהה 
+\begin_inset Formula $h\left(P\right)\neq h\left(i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+בהינתן 
+\begin_inset Formula $h\left(i\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $t_{i+m}$
+\end_inset
+
+, ניתן לחשב את 
+\begin_inset Formula $h\left(i+1\right)$
+\end_inset
+
+ "מהר".
+\end_layout
+
+\begin_layout Section*
+סיבוכיות תקשורת
+\end_layout
+
+\begin_layout Standard
+יש שני שחקנים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Alice
+\lang hebrew
+)
+\begin_inset Formula $A$
+\end_inset
+
+( וב
+\lang english
+Bob
+\lang hebrew
+)
+\begin_inset Formula $B$
+\end_inset
+
+(.
+ לכל אחד יש ווקטור: לאליס יש את 
+\begin_inset Formula $X=\left(x_{0},\dots x_{n-1}\right)$
+\end_inset
+
+ ולבוב יש את 
+\begin_inset Formula $Y=\left(y_{0},\dots y_{n-1}\right)$
+\end_inset
+
+.
+ רוצים לדעת אם הווקטורים זהים או לא.
+\end_layout
+
+\begin_layout Standard
+אליס צריכה לשלוח לבוב ביטים, כאשר כל ביט שהיא שולחת מאוד יקר)ולכן רוצים
+ לצמצם את מספר הביטים(, ובסופו של דבר, בוב צריך לדעת אם לשניהם יש אותו וקטור
+ או לא.
+\end_layout
+
+\begin_layout Standard
+אפשר להראות בצורה די פשוטה שאם רוצים תשובה דטרמיניסטית שתמיד צודקת חייבים
+ לשלוח 
+\begin_inset Formula $n$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Standard
+אם רוצים לשלוח פחות מ
+\begin_inset Formula $n$
+\end_inset
+
+ ביטים חייבים להסתפק בתשובה הסתברותית, אבל עדיין רוצים הסתברות מאוד גבוהה.
+\end_layout
+
+\begin_layout Standard
+אפשר להשתמש בפרוטוקול הבא:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בחר באקראי מספר ראשוני 
+\begin_inset Formula $p\in\textnormal{PRIME}\left(n^{2}\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textnormal{PRIME}\left(n^{2}\right)$
+\end_inset
+
+ זה כל המספרים הראשוניים בין
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חשב: 
+\begin_inset Formula $h\left(X\right)=\textnormal{NUMBER}\left(X\right)\pmod p$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\textnormal{NUMBER}\left(X\right)$
+\end_inset
+
+ הוא המספר המיוצג ע"י 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{NUMBER}\left(X\right)=\sum_{i=0}^{n-1}x_{i}\cdot2^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שלח ל
+\begin_inset Formula $B$
+\end_inset
+
+ את 
+\begin_inset Formula $\left(h\left(x\right),p\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B$
+\end_inset
+
+: עושה את אותו חישוב עם ה
+\begin_inset Formula $p$
+\end_inset
+
+ שהוא קיבל ועם הוקטור 
+\begin_inset Formula $Y$
+\end_inset
+
+ שלו ובודק אם יצא אותו דבר.
+\end_layout
+
+\begin_layout Standard
+כמה ביטים שולחים? 
+\begin_inset Formula $p\le n^{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|p\right|\le\log n^{2}=2\log n$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $h\left(x\right)<p$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|x\right|\le\left|p\right|\le2\log n$
+\end_inset
+
+.
+ לכן סה"כ צריך לשלוח 
+\begin_inset Formula $4\log n$
+\end_inset
+
+ ביטים.
+\end_layout
+
+\begin_layout Subsection*
+נכונות:
+\end_layout
+
+\begin_layout Standard
+מה ההסתברות ש
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ שונים, אבל 
+\begin_inset Formula $h\left(X\right)=h\left(Y\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נאמר שמספר ראשוני הוא "רע" אם הוא מטעה את האלגוריתם.
+ צריך לחשב את 
+\begin_inset Formula $\frac{\textnormal{number of bad primes}}{\left|\textnormal{PRIME}\left(n^{2}\right)\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש משפט בתורת המספרים שאומר שלכל 
+\begin_inset Formula $x>67$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\textnormal{PRIME}\left(x\right)\right|>\frac{x}{\ln x}$
+\end_inset
+
+.
+ זה אומר שבערך לכל 
+\begin_inset Formula $\log$
+\end_inset
+
+ מספרים יש מספר ראשוני - כלומר יש יחסית הרבה מספרים ראשוניים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $n\ge9$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $n^{2}>67$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\textnormal{PRIME}\left(n^{2}\right)\right|>\frac{n^{2}}{2\ln n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לחסום את מספר הראשוניים הרעים.
+ נקבע 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ ונסתכל על "
+\begin_inset Formula $p$
+\end_inset
+
+" שהוא רע:
+\begin_inset Formula 
+\[
+\left.\begin{array}{rcl}
+\textnormal{NUMBER}\left(X\right) & = & x'\cdot p+s\\
+\textnormal{NUMBER}\left(Y\right) & = & y'\cdot p+s
+\end{array}\right\} \implies h\left(X\right)=h\left(Y\right)=s
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $X\neq Y$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+w=\textnormal{NUMBER}\left(X\right)-\textnormal{NUMBER}\left(Y\right)=p\cdot\left(x'-y'\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $p\mid w$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $\textnormal{NUMBER}\left(X\right)<2^{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $w<2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש משפט נוסף בתורת המספרים שאומר של
+\begin_inset Formula $w$
+\end_inset
+
+ קיים פירוק יחודי:
+\begin_inset Formula 
+\[
+\left(2^{n}>\right)w=p_{1}^{i_{1}}\cdot p_{2}^{i_{2}}\cdots p_{k}^{i_{k}}\qquad\forall_{j}i_{j}\ge1,p_{j}<p_{j+1}
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $\forall_{j}i_{j}\ge1$
+\end_inset
+
+, אפשר להעיף אותם:
+\begin_inset Formula 
+\[
+w=p_{1}^{i_{1}}\cdot p_{2}^{i_{2}}\cdots p_{k}^{i_{k}}\ge p_{1}\cdot p_{2}\cdots p_{k}
+\]
+
+\end_inset
+
+עכשיו, נשים לב ש
+\begin_inset Formula $p_{1}\ge2$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}\ge3$
+\end_inset
+
+, 
+\begin_inset Formula $p_{3}\ge5$
+\end_inset
+
+ וכו' - ובאופן עקרוני 
+\begin_inset Formula $p_{i}>i$
+\end_inset
+
+, ולכן אפשר לכתוב:
+\begin_inset Formula 
+\[
+w=p_{1}^{i_{1}}\cdot p_{2}^{i_{2}}\cdots p_{k}^{i_{k}}\ge p_{1}\cdot p_{2}\cdots p_{k}>1\cdot2\cdot3\cdot4\cdots k=k!>2^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה זה 
+\begin_inset Formula $k$
+\end_inset
+
+? מספר הראשוניים הרעים, שמחלקים את 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $n>k$
+\end_inset
+
+, ולכן מספר הראשוניים הרעים
+\begin_inset Formula $>$
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+.
+ לכן:
+\begin_inset Formula 
+\[
+\frac{\textnormal{Number of bad primes}}{\left|\textnormal{PRIME}\left(n^{2}\right)\right|}<\frac{n}{\nicefrac{n^{2}}{2\log n}}=\frac{2\log n}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל לבית
+\end_layout
+
+\begin_layout Standard
+מה קורה בבסיס 
+\begin_inset Formula $b$
+\end_inset
+
+: כאשר המספרים יכולים להיות 
+\begin_inset Formula $\left\{ 0,1,2,\dots b-1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+חזרה ל
+\lang english
+Pattern Matching
+\end_layout
+
+\begin_layout Standard
+הפונקציה 
+\begin_inset Formula $h$
+\end_inset
+
+ שהשתמשנו בה קודם מקיימת את שני התנאים הראשונים:
+\end_layout
+
+\begin_layout Enumerate
+מחרוזות שוות נותנות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hash
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שווה.
+\end_layout
+
+\begin_layout Enumerate
+מחרוזות שונות נותנות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hash
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שונה בסיכוי מאוד גבוה.
+\end_layout
+
+\begin_layout Standard
+ומה עם התנאי השלישי? נראה איך אפשר לחשב במהירות את ה
+\lang english
+hash
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הבא מתוך ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hash
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקודם:
+\end_layout
+
+\begin_layout Itemize
+כדי להזיז את הביטים שנשארים מכפילים ב
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כדי להוסיף את הביט החדש מוסיפים את 
+\begin_inset Formula $t_{i+m}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+כדי להעיף את הביט הישן מחסירים 
+\begin_inset Formula $t_{i}\cdot2^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h\left(i+1\right)=\left(h\left(i\right)\cdot2+t_{i+m}-t_{i}\cdot2^{m}\right)\pmod p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה: כדי לייצג 
+\begin_inset Formula $2^{m}$
+\end_inset
+
+ צריך 
+\begin_inset Formula $\frac{m}{\log n}$
+\end_inset
+
+ מילים.
+ אבל נשים לב שאפשר לחשב מראש, פעם אחת, את 
+\begin_inset Formula $2^{m}\pmod p$
+\end_inset
+
+ ולשמור את זה לשימוש בשאר החישוב.
+\end_layout
+
+\begin_layout Section*
+יתרון על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+KMP
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+KMP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש אוטומט, ולפעמים צריך לחזור אחורה.
+ בעלות לשיעורין זה מתקזז, אבל ה
+\lang english
+worst case
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפעולה יכול להיות הרבה זמן.
+ ברבין קרפ יש זמן קבוע לכל תו.
+ יש תוכניות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+real time
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שבהן מוכנים להתפשר על טעות בשביל לקבל זמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+worst case
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קטן לכל תו.
+\end_layout
+
+\end_body
+\end_document

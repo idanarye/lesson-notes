@@ -1,0 +1,1537 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+יעילות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט )דט'( ו
+\begin_inset Formula $x$
+\end_inset
+
+ מחרוזת.
+ נסמן 
+\begin_inset Formula $\textnormal{steps}\left(M,x\right)$
+\end_inset
+
+ את מספר הצעדים ש
+\begin_inset Formula $M$
+\end_inset
+
+ מבצחת בחישוב על 
+\begin_inset Formula $x$
+\end_inset
+
+.)אם 
+\begin_inset Formula $M\uparrow x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\textnormal{steps}\left(M,x\right)=\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מ"ט)דט'(ו
+\begin_inset Formula $f:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $M$
+\end_inset
+
+ פועלת בסיבוכיות זמן 
+\begin_inset Formula $f$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $\textnormal{steps}\left(M,k\right)\le f\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה, 
+\begin_inset Formula $f:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $L$
+\end_inset
+
+ בעלת סיבוכיות)זמן( 
+\begin_inset Formula $f$
+\end_inset
+
+ אם קיימת מ"ט 
+\begin_inset Formula $M$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+, ו
+\begin_inset Formula $M$
+\end_inset
+
+ פועלת בסיבוכיות זמן 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $\textnormal{TIME}\left(f\right)$
+\end_inset
+
+ כאוסף כל השפות 
+\begin_inset Formula $L$
+\end_inset
+
+ בעלות סיבוכיות זמן 
+\begin_inset Formula $O\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט אם 
+\begin_inset Formula $g\le f$
+\end_inset
+
+)כלומכ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(n\right)\le f\left(n\right)$
+\end_inset
+
+( אזי 
+\begin_inset Formula $\textnormal{TIME}\left(g\right)\subseteq\textnormal{TIME}\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה בעלת סיבוכיות זמן 
+\begin_inset Formula $f$
+\end_inset
+
+ במודל 
+\begin_inset Formula $TM_{k}$
+\end_inset
+
+)כלומר מ"ט עם 
+\begin_inset Formula $k$
+\end_inset
+
+ סרטים(.
+ אזי 
+\begin_inset Formula $L$
+\end_inset
+
+ בעלת סיבוכיות זמן 
+\begin_inset Formula $O\left(f^{2}\right)$
+\end_inset
+
+ במודל מ"ט עם סרט בודד.
+\end_layout
+
+\begin_layout Subsection*
+רעיון בהוכחה
+\end_layout
+
+\begin_layout Standard
+אם החישוב של המכונה עם 
+\begin_inset Formula $k$
+\end_inset
+
+ סרטים לוקח 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ צעדים, אזי החישוב של המכונה עם סרט בודד לוקח 
+\begin_inset Formula $f\left(n\right)\cdot2\cdot2\cdot f\left(n\right)=f^{2}\left(n\right)$
+\end_inset
+
+)המרחק המקסימלי בין שני ראשים הוא 
+\begin_inset Formula $2f\left(n\right)$
+\end_inset
+
+, בכל צעד יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ סריקות, ויש 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ צעדים(.
+\end_layout
+
+\begin_layout Section*
+נסמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=\bigcup_{k=1}^{\infty}\textnormal{TIME}\left(n^{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+=אוסף השפות בעלות סיבוכיות זמן פולינומית=אוסף השפות הניתנות להכרעה בזמן
+ פולינומי.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $N$
+\end_inset
+
+ מ"ט ל"ד, 
+\begin_inset Formula $x$
+\end_inset
+
+ מחרוזת.
+\end_layout
+
+\begin_layout Itemize
+נסמן 
+\begin_inset Formula $\textnormal{steps}\left(N,x\right)$
+\end_inset
+
+ את מספר הצעדים המקסימלי ש
+\begin_inset Formula $N$
+\end_inset
+
+ עושה בחישוב כלשהו על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+עבור מ"ט ל"ד 
+\begin_inset Formula $N$
+\end_inset
+
+ ופונקציה 
+\begin_inset Formula $f:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+.
+ נאמר כי 
+\begin_inset Formula $N$
+\end_inset
+
+ פועלת בסיבוכיות זמן 
+\begin_inset Formula $f$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{steps}\left(N,x\right)\le f\left(\left|x\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+עבור שפה 
+\begin_inset Formula $L$
+\end_inset
+
+ ופונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+, נאמר כי 
+\begin_inset Formula $L$
+\end_inset
+
+ בעלת סיבוכיות ל"ד 
+\begin_inset Formula $f$
+\end_inset
+
+ אם קיימת מ"ט ל"ד 
+\begin_inset Formula $N$
+\end_inset
+
+ שמכריעה את 
+\begin_inset Formula $L$
+\end_inset
+
+ ופועלת בסיבוכיות זמן 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נסמן 
+\begin_inset Formula $\textnormal{NTIME}\left(f\right)$
+\end_inset
+
+ את קבוצת השפות בעלות סיבוכיות ל"ד 
+\begin_inset Formula $O\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $L$
+\end_inset
+
+ בעלת סיבוכיות זמן ל"ד 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ מה ניתן להגיד על הסיבוכיות הדט' של 
+\begin_inset Formula $L$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+אם רוצים לעבור על כל מסלול, ונניח שבכל צעד יש רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות, אז סה"כ יש 
+\begin_inset Formula $2^{f\left(n\right)}$
+\end_inset
+
+ מסלולים.
+\end_layout
+
+\begin_layout Section*
+נסמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP=\bigcup_{k=1}^{\infty}\textnormal{NTIME}\left(n^{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{P\overset{?}{=}NP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוהי שאלה מהותית - האם קיימות בעיות שניתן לפתור ב
+\begin_inset Formula $NP$
+\end_inset
+
+ אבל לא ב
+\begin_inset Formula $P$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Part*
+\begin_inset Formula $\mathbf{NP'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפעמים יש בעיות שקשה למצוא את התשובה, אבל קל לבדוק את התשובה.
+ למשל - האם יש בגרף מעגל המילטוני)כלומר מעגל שעובר בכל קודקוד פעם אחת בלבד(?
+ קשה לבדוק את זה, אבל אם מישהו נותן לנו מעגל המילטוני 
+\numeric on
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אפשר לבדוק בזמן לינארי שהתשובה נכונה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $L$
+\end_inset
+
+ שפה.
+ נאמר כי 
+\begin_inset Formula $L\in NP'$
+\end_inset
+
+ אם קיים אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ וקבועים 
+\begin_inset Formula $b,c,d$
+\end_inset
+
+ 
+\bar under
+כך שמתקיים
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $A\left(x,y\right)$
+\end_inset
+
+ מבצע לכל היותר 
+\begin_inset Formula $O\left(\left|x,y\right|^{d}\right)$
+\end_inset
+
+ צעדים.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\in L$
+\end_inset
+
+, קיים 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $\left|y\right|\le\left|x\right|^{b}+c$
+\end_inset
+
+ כך ש
+\begin_inset Formula $A\left(x,y\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+, לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $A\left(x,y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במילים פשוט - 
+\begin_inset Formula $L\in NP'$
+\end_inset
+
+ אם 
+\series bold
+\bar under
+הבדיקה
+\series default
+\bar default
+ היא פולינומית - לאו דווקא המציאה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $HAM\subseteq\left\{ G\right\} $
+\end_inset
+
+ כך שב
+\begin_inset Formula $G$
+\end_inset
+
+ מעגל המילטוני.
+ 
+\begin_inset Formula $HAM\in$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+נותנים לנו נוסחא בצורת 
+\begin_inset Formula $CNF$
+\end_inset
+
+ - לדוגמה 
+\begin_inset Formula $\left(x_{1}\vee\neg x_{2}\vee x_{3}\right)\wedge\left(\neg x_{1}\vee\neg x_{2}\right)\wedge\left(x_{1}\vee x_{3}\right)$
+\end_inset
+
+.
+ האם הנוסחא ספיקה? כלומר האם יש הצבה מספקת?
+\end_layout
+
+\begin_layout Standard
+במקרה הזה יש: לדוגמה
+\begin_inset Formula 
+\[
+x_{1}=T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{2}=F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{3}=T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה לנוסחא שאין לה הצבה מספקת: 
+\begin_inset Formula $\left(x_{1}\right)\wedge\left(\neg x_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: 
+\begin_inset Formula $SAT\subseteq\left\{ \psi\right\} $
+\end_inset
+
+ כך ש
+\begin_inset Formula $\psi$
+\end_inset
+
+ בצורת 
+\begin_inset Formula $CNF$
+\end_inset
+
+ והיא ספיקה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+SAT\in NP'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NP'=NP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ תהי 
+\begin_inset Formula $NP'\ni L$
+\end_inset
+
+, נראה ש
+\begin_inset Formula $L\in NP$
+\end_inset
+
+.
+ קיימים 
+\begin_inset Formula $A,b,c,d$
+\end_inset
+
+ ע"פ ההגדרה של 
+\begin_inset Formula $NP'$
+\end_inset
+
+.
+ נבנה אלגוריתם ל"ד 
+\begin_inset Formula $B$
+\end_inset
+
+ שמכריע את 
+\begin_inset Formula $L$
+\end_inset
+
+ בסיבוכיות זמן פולינומית:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בחר באופן ל"ד 
+\begin_inset Formula $y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|y\right|\le\left|x\right|^{b}+c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+הרץ 
+\begin_inset Formula $A\left(x,y\right)$
+\end_inset
+
+ והחזר את התשובה המתקבלת.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מתקיים: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ קיים 
+\begin_inset Formula $y$
+\end_inset
+
+)
+\begin_inset Formula $\left|y\right|\le\left|x\right|^{b}+c$
+\end_inset
+
+( כך ש
+\begin_inset Formula $A\left(x,y\right)=1$
+\end_inset
+
+.
+ בחירה של 
+\begin_inset Formula $y$
+\end_inset
+
+ זה תיתן 
+\begin_inset Formula $B\left(x\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $A\left(x,y\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ כל חישוב של 
+\begin_inset Formula $B\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+סיבוכיות: 
+\begin_inset Formula $O\left(\left|x\right|^{b}+c+\left(\left|x\right|+\left|y\right|\right)^{d}\right)=O\left(\left|x\right|^{b}+c+\left(\left|x\right|+\left|x\right|^{b}+c\right)^{d}\right)=O\left(\left|x\right|^{bd}\right)$
+\end_inset
+
+ - קיבלנו פולינום ב
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\supseteq$
+\end_inset
+
+ נניח 
+\begin_inset Formula $L\in NP$
+\end_inset
+
+, נראה 
+\begin_inset Formula $L\in NP'$
+\end_inset
+
+.
+ כלומר קיום אלגוריתם ל"ד 
+\begin_inset Formula $B$
+\end_inset
+
+ שפועל בסיבוכיות זמן 
+\begin_inset Formula $O\left(\left|x\right|^{k}\right)$
+\end_inset
+
+ ומכריע את 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ נבנה 
+\begin_inset Formula $A\left(x,y\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $b,c,d$
+\end_inset
+
+ כהגדרת 
+\begin_inset Formula $NP'$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A\left(x,y\right)$
+\end_inset
+
+ )
+\begin_inset Formula $x$
+\end_inset
+
+ - קלט, 
+\begin_inset Formula $y$
+\end_inset
+
+ - רשימת בחירות ל"ד(
+\end_layout
+
+\begin_layout Enumerate
+הרץ 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ ובכל צעד קבע את החישוב הל"ד ע"פ המחרוזת 
+\begin_inset Formula $y$
+\end_inset
+
+, והחזר את התשובה המתקבלת.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מתקיים: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ אזי קיים חישוב של 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ שמחזיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, ומספר הצעדים של החישוב 
+\begin_inset Formula $\left|x\right|^{k}$
+\end_inset
+
+.
+ נבחר את 
+\begin_inset Formula $y$
+\end_inset
+
+ להיות סדרת הבחירות הל"ד בחישוב הנ"ל.
+ 
+\begin_inset Formula $\left|x\right|^{k}\ge\left|y\right|$
+\end_inset
+
+, ועבור ה
+\begin_inset Formula $y$
+\end_inset
+
+ הנ"ל 
+\begin_inset Formula $A\left(x,y\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x\notin L$
+\end_inset
+
+ אזי לכל סדרת בחירות ל"ד 
+\begin_inset Formula $B\left(x\right)=0$
+\end_inset
+
+)ע"פ הגדרת הכרעה ל"ד(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+סיבוכיות הזמן של 
+\begin_inset Formula $A$
+\end_inset
+
+ לינארית)כי 
+\begin_inset Formula $y$
+\end_inset
+
+ באורך החישוב(.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+ניתן להגדיר את בעיית 
+\begin_inset Formula $P\overset{?}{=}NP$
+\end_inset
+
+ בתור - האם כל בעיה שאפשר 
+\series bold
+\uuline on
+לבדוק
+\series default
+\uuline default
+ בזמן פולינומי, אפשר גם 
+\series bold
+\uuline on
+למצוא
+\series default
+\uuline default
+ בזמן פולינומי?
+\end_layout
+
+\begin_layout Section*
+דוגמה - כיסוי קודקודים
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Vertex Cover
+\end_layout
+
+\begin_layout Standard
+מהו כיסוי קודקודים מינימלי של גרף? כלומר בחירה מינימלית של קודקודים כך שכל
+ הקשתות יגעו באחד הקודקודים הנבחרים?
+\begin_inset Formula 
+\[
+\xymatrix{\odot\ar@{-}[r]\ar@{-}[d] & \ocircle\\
+\odot\ar@{-}[ru]\ar@{-}[r] & \odot\\
+\ocircle\ar@{-}[u] & \ocircle\ar@{-}[u]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קלט: 
+\begin_inset Formula $\left(G,n\right)$
+\end_inset
+
+, וצריך לבדוק אם יש ניתן לכסות את הגרף עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים.
+ הבעיה ב
+\begin_inset Formula $NP'$
+\end_inset
+
+ ולכן ב
+\begin_inset Formula $NP$
+\end_inset
+
+, שכן בהינתן כיסוי, ניתן לבדוק אם כל הקשתות נכללות בו, ואם מספר הקודקודים
+ קטן או שווה ל
+\begin_inset Formula $n$
+\end_inset
+
+, בזמן פולינומי.
+ נסמן: 
+\begin_inset Formula $VC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה נוספת - קבוצה שלטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dominating Set
+\end_layout
+
+\begin_layout Standard
+קבוצת קודקודים בגרף שכל קודקוד אחר הוא בקבוצה או שכן של אחד הקודקודים בקבוצה.
+\begin_inset Formula 
+\[
+\xymatrix{\ocircle\ar@{-}[r]\ar@{-}[d] & \ocircle\\
+\odot\ar@{-}[ru]\ar@{-}[r] & \odot\\
+\ocircle\ar@{-}[u] & \ocircle\ar@{-}[u]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן: 
+\begin_inset Formula $DS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $Ds\in P$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $VC\in P$
+\end_inset
+
+.
+ כלומר אם ישנו אלגוריתם פולינומי להכריע את 
+\begin_inset Formula $DS$
+\end_inset
+
+ אזי ישנו גם אלגוריתם פולינומי להכריע את 
+\begin_inset Formula $VC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נבנה רדוקציה 
+\bar under
+פולינומית
+\bar default
+ מ
+\begin_inset Formula $VC$
+\end_inset
+
+ ל
+\begin_inset Formula $DS$
+\end_inset
+
+.
+ את 
+\begin_inset Formula $\left(G,k\right)$
+\end_inset
+
+ נהפוך ל
+\begin_inset Formula $\left(H,j\right)$
+\end_inset
+
+ על ידי כך שנהפוך כל קשת למשולש: 
+\begin_inset Formula $\xymatrix{\ocircle\ar@{-}[rr] &  & \ocircle}
+$
+\end_inset
+
+ יהפוך ל
+\begin_inset Formula $\xymatrix{ & \ocircle\ar@{-}[dr]\\
+\ocircle\ar@{-}[rr]\ar@{-}[ur] &  & \ocircle
+}
+$
+\end_inset
+
+.
+ כדי לבחור את כל הקודקודים, צריך לבחור אחד מהקודקודים במשולש - אבל אין טעם
+ לבחור את האמצעי, כי תמיד אפשר לבחור במקומו את אחד האחרים, ולכן תמיד נבחר
+ את הקשת במרכז.
+\end_layout
+
+\begin_layout Subsection*
+מתקיים
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $VC\ni\left(H,j\right)$
+\end_inset
+
+ אזי תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצת הקודקודים שמכסה את כל קשתות 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|A\right|\le j$
+\end_inset
+
+.
+ אזי אותה קבוצת קודקודים גם שולטת על כל קודקודי 
+\begin_inset Formula $G$
+\end_inset
+
+, כי עבור הקודקודים השונים כל קודקוד שכן של צלע כלשהי)מניחים שאין קודקודים
+ מבודדים( וכמו כן כל קודקוד חדש שכן לשני צדי הקשת המתאימה ולכן נשלט ע"י
+ הקודקוד שמכסה את הקשת.
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\left(G,k\right)\in DS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ומצד שני
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\left(G,k\right)\in DS$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצת הקודקודים ב
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $k\ge\left|A\right|$
+\end_inset
+
+, ו
+\begin_inset Formula $A$
+\end_inset
+
+ שולטת ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ אזי נבנה מ
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה 
+\begin_inset Formula $A'$
+\end_inset
+
+ כך שב
+\begin_inset Formula $A'$
+\end_inset
+
+ יש רק קודקודים מ
+\begin_inset Formula $H$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A'\right|=\left|A\right|$
+\end_inset
+
+, על ידי כך שכל קודקוד של 
+\begin_inset Formula $A$
+\end_inset
+
+ שאינו מ
+\begin_inset Formula $H$
+\end_inset
+
+ נחליף באחד משני השכנים שלו.
+ אזי 
+\begin_inset Formula $A'$
+\end_inset
+
+ קבוצה שלטת ב
+\begin_inset Formula $G$
+\end_inset
+
+, כי כל קודקוד שנשלט ב
+\begin_inset Formula $A$
+\end_inset
+
+ ע"י קודקוד מ
+\begin_inset Formula $H$
+\end_inset
+
+ ממשיך להיות נשלט גם ב
+\begin_inset Formula $A'$
+\end_inset
+
+.
+ קודקוד שנשלט ע"י קודקוד שאינו מ
+\begin_inset Formula $H$
+\end_inset
+
+, נשלט במקור ע"י קודקוד חדש אבל עתה נשלט ע"י השכן שנבחר)וע"פ בנייה(.
+ בפרט, 
+\begin_inset Formula $A'$
+\end_inset
+
+ שולט על כל הקודקודים החדשים.
+\end_layout
+
+\begin_layout Standard
+כל קודקוד כנ"ל שכן רק לשני קודקודים שבצידי הקשת המתאימה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הקודקוד ששולט על הקודקוד החדש גם מכסה את הקשת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A'$
+\end_inset
+
+ כיסוי קודקודים.
+\end_layout
+
+\end_body
+\end_document

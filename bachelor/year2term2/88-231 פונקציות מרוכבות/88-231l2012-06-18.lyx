@@ -1,0 +1,2520 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subseteq\mathbb{C}$
+\end_inset
+
+ תחום.
+ פונקציה 
+\begin_inset Formula $f:D\to\mathbb{C}$
+\end_inset
+
+ נקראת "מורומורפית" אם היא אנליטית בכל 
+\begin_inset Formula $D$
+\end_inset
+
+ פרט למספר קטבים מבודדים.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nicefrac{1}{z}$
+\end_inset
+
+)על 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dfrac{z^{3}-2z+4}{z^{4}-1}$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+כעת, נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ומורומורפית בתחום 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $g\left(z\right)=\dfrac{f'\left(z\right)}{f\left(z\right)}$
+\end_inset
+
+.
+ אז גם 
+\begin_inset Formula $g$
+\end_inset
+
+ מורומורפית ב
+\begin_inset Formula $D$
+\end_inset
+
+, כאשר האפסים של 
+\begin_inset Formula $f$
+\end_inset
+
+ הם קטבים פשוטים של 
+\begin_inset Formula $g$
+\end_inset
+
+ והקטבים של 
+\begin_inset Formula $f$
+\end_inset
+
+ הם האפסים של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Itemize
+בפרט אם ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש אפס מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $z_{0}\in D$
+\end_inset
+
+ אז יש פירוק 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)^{n}h\left(z\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $h$
+\end_inset
+
+ אנליטית בסביבת 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $h\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+ לפי זה
+\begin_inset Formula 
+\[
+g\left(z\right)=\frac{f'\left(z\right)}{f\left(z\right)}=\frac{n\left(z-z_{0}\right)^{n-1}h\left(z\right)+\left(z-z_{0}\right)^{n}h'\left(z\right)}{\left(z-z_{0}\right)^{n}h\left(z\right)}=\frac{n}{z-z_{0}}+\frac{h'\left(z\right)}{h\left(z\right)}
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $0\neq h\left(z_{0}\right)$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $\dfrac{h'\left(z\right)}{h\left(z\right)}$
+\end_inset
+
+ אנליטית בסביבת 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, לכן קיים ל
+\begin_inset Formula $g$
+\end_inset
+
+ קוטב פשוט ב
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $\textnormal{Res}\left(g,z_{0}\right)=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ואם קיים ל
+\begin_inset Formula $f$
+\end_inset
+
+ קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $z_{1}\in D$
+\end_inset
+
+, אז יש פירוק 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{1}\right)^{-m}k\left(z\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $k\left(z\right)$
+\end_inset
+
+ אנליטית בסביבת 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $k\left(z_{1}\right)\neq0$
+\end_inset
+
+.
+ לפי זה 
+\begin_inset Formula 
+\[
+g\left(z\right)=\dfrac{f'\left(z\right)}{f\left(z\right)}=\frac{-m\left(z-z_{1}\right)^{-m-1}k\left(z\right)+\left(z-z_{1}\right)^{-m}k'\left(z\right)}{\left(z-z_{1}\right)^{-m}k\left(z\right)}=\frac{-m}{z-z_{1}}+\frac{k'\left(z\right)}{k\left(z\right)}
+\]
+
+\end_inset
+
+לכן קיים ל
+\begin_inset Formula $g$
+\end_inset
+
+ קוטב פשוט ב
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $\textnormal{Res}\left(g,z_{1}\right)=-m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+"ריבוי" של אפס של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ הוא הסדר של האפס.
+ מספר האפסים של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ כולל ריבוי הוא סכום הסדרים של כל האפסים של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ כמו כן מספר הקטבים של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ כולל ריבוי הוא סכום הסדרים של כל הקטבים של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט)עקרון הארגומנט בגירסה ראשונה(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום על ידי מסילת ז'ורדן 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ומורומורפית ב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ כך שאין ל
+\begin_inset Formula $f$
+\end_inset
+
+ לא אפסים ולא קטבים בשפה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ = מספר האפסים כולל ריבוי פחות מספר הקטבים כולל ריבוי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח שב
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ מתאפסת בנקודות 
+\begin_inset Formula $z_{1},\dots z_{n}$
+\end_inset
+
+ לסדרים 
+\begin_inset Formula $k_{1},\dots k_{n}$
+\end_inset
+
+ בהתאמה, ונניח שיש לה קטבים בנקודות 
+\begin_inset Formula $w_{1},\dots w_{m}$
+\end_inset
+
+)ב
+\begin_inset Formula $D$
+\end_inset
+
+( לסדרים 
+\begin_inset Formula $l_{1},\dots l_{m}$
+\end_inset
+
+.
+ אזי, לפי משפט השארית,
+\begin_inset Formula 
+\[
+\frac{1}{2\pi i}\varointctrclockwise_{\gamma}\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z=\frac{\cancel{2\pi i}}{\cancel{2\pi i}}\left[\sum_{j=1}^{n}\textnormal{Res}\left(\frac{f'}{f},z_{j}\right)+\sum_{s=1}^{m}\textnormal{Res}\left(\frac{f'}{f},w_{j}\right)\right]=\sum_{j=1}^{n}k_{j}+\sum_{s=1}^{m}\left(-l_{s}\right)=
+\]
+
+\end_inset
+
+=מספר האפסים כולל ריבוי פחות מספר הקטבים כולל ריבוי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+כעת נעיר שלאינטגרל 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ יש פירוש נוסף.
+\end_layout
+
+\begin_layout Standard
+נעשה החלפת משתנים)הצגה( פורמלית באינטגרל זה:
+\begin_inset Formula 
+\[
+w=f\left(z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}w}{\mathrm{d}z}=f'\left(z\right)\Rightarrow dw=f'\left(z\right)\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באינטגרל המקורי, 
+\begin_inset Formula $z$
+\end_inset
+
+ מסתובב על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ מסתובב על התמונה 
+\begin_inset Formula $f\left(\gamma\right)$
+\end_inset
+
+.
+ לכנ נראה פורמלית:
+\begin_inset Formula 
+\[
+\frac{1}{2\pi i}\int_{\gamma}\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z=\frac{1}{2\pi i}\int_{f\left(\gamma\right)}\frac{\mathrm{d}w}{w}=\textnormal{Ind}_{f\left(\gamma\right)}\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נצדיק את התהליך הנ"ל.
+ בפרט נתחיל עם האינטגרל 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ ונעשה פרמטריזציה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=z\left(t\right)\qquad a\le t\le b
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $\mathrm{d}z=z'\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+, ו
+\begin_inset Formula 
+\[
+\frac{1}{2\pi i}\varointctrclockwise_{\gamma}\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z=\frac{1}{2\pi i}\int_{a}^{b}\frac{f'\left(z\left(t\right)\right)}{f\left(z\left(t\right)\right)}z'\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+לעומת זאת, באינטגרל 
+\begin_inset Formula $\dfrac{1}{2\pi i}\int_{f\left(\gamma\right)}\dfrac{\mathrm{d}w}{w}$
+\end_inset
+
+ פרמטריזציה של 
+\begin_inset Formula $f\left(\gamma\right)$
+\end_inset
+
+ נתונה ע"י 
+\begin_inset Formula 
+\[
+w=f\left(z\left(t\right)\right)\qquad a\le t\le b
+\]
+
+\end_inset
+
+לפי זה
+\begin_inset Formula 
+\[
+\mathrm{d}w=f'\left(z\left(t\right)\right)z'\left(t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\frac{1}{2\pi i}\int_{f\left(\gamma\right)}\frac{\mathrm{d}w}{w}=\frac{1}{2\pi i}\int_{a}^{b}\frac{f'\left(z\left(t\right)\right)z'\left(t\right)\mathrm{\, d}t}{f\left(z\left(t\right)\right)}=\frac{1}{2\pi i}\int_{\gamma}\frac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט)עקרון הארגונמט, גירסה שנייה(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום ע"י מסילת ז'ורדן 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ומרומורפית ב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+ ללא אפסים וקטבים על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}t$
+\end_inset
+
+ = מספר האפסים כולל ריבוי פחות מספר הקטבים כולל ריבוי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{f\left(\gamma\right)}\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $"f"$
+\end_inset
+
+ במשפט אנליטית ב
+\begin_inset Formula $D$
+\end_inset
+
+)ושונה מאפס ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+( אז 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)}\mathrm{\, d}z$
+\end_inset
+
+ = מספר האפסים כולל ריבוי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{f\left(\gamma\right)}\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ וצג כמו במשפט, ויהי 
+\begin_inset Formula $a\in\mathbb{C}$
+\end_inset
+
+ מספר קבוע.
+ נניח ש
+\begin_inset Formula $a\neq f\left(z\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\dfrac{1}{2\pi i}\varointctrclockwise_{\gamma}\dfrac{f'\left(z\right)}{f\left(z\right)-1}\mathrm{\, d}z$
+\end_inset
+
+ = מספר האפסים כולל ריבוי פחות מספר הקטבים כולל ריבוי של 
+\begin_inset Formula $f\left(z\right)-a$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{f\left(\gamma\right)-a}\left(0\right)$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{f\left(\gamma\right)}\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמת חישוב
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ מוגדרת ואנליטית ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+, ונניח שכל 
+\begin_inset Formula $C\left(0,1\right)$
+\end_inset
+
+)השפה( 
+\begin_inset Formula $\textnormal{Ref}\left(z\right)>0$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $g\left(z\right)=ze^{f\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכיחו שאם 
+\begin_inset Formula $\left|a\right|<1$
+\end_inset
+
+ אז קיים בדיוק 
+\begin_inset Formula $"z"$
+\end_inset
+
+ אחד ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $g\left(z\right)=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+איך 
+\size largest
+\bar under
+לא
+\size default
+\bar default
+ לפתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g\left(z\right)=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ze^{f\left(z\right)}=a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{f\left(z\right)}=\nicefrac{a}{z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\log\left(\nicefrac{a}{z}\right)
+\]
+
+\end_inset
+
+אבוד!
+\end_layout
+
+\begin_layout Subsection*
+פתרון נכון
+\end_layout
+
+\begin_layout Standard
+נפתור את התרגיל בעזרת עקרון הארגומנט.
+ כאן 
+\begin_inset Formula $D=B\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma=C\left(0,1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ אנליטית)ללא קטבים( ולכן עבור 
+\begin_inset Formula $a\in B\left(0,1\right)$
+\end_inset
+
+ מספר הפעמים של 
+\begin_inset Formula $g\left(z\right)=a$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{g\left(\gamma\right)}\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל לכל 
+\begin_inset Formula $\left|a\right|<1$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Ind}_{g\left(\gamma\right)}\left(a\right)=1$
+\end_inset
+
+.
+ כעת הנתון אומר 
+\begin_inset Formula $g\left(z\right)=ze^{f\left(z\right)}$
+\end_inset
+
+, ולכן על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|z\right|\left|e^{f\left(z\right)}\right|=qe^{\textnormal{Ref}\left(z\right)}>1e^{0}=1
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $g\left(\gamma\right)$
+\end_inset
+
+ כולו מחוץ ל
+\begin_inset Formula $\overline{B\left(0,1\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Ind}_{g\left(\gamma\right)}\left(a\right)$
+\end_inset
+
+ שווה אותו מספר לכל 
+\begin_inset Formula $a\in B\left(0,1\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+\textnormal{Ind}_{g\left(\gamma\right)}\left(a\right)=\textnormal{Ind}_{g\left(\gamma\right)}\left(0\right)=
+\]
+
+\end_inset
+
+= מספר האפסים כולל ריבוי של 
+\begin_inset Formula $g$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $g\left(z\right)=ze^{f\left(z\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)=0$
+\end_inset
+
+ רק עבור 
+\begin_inset Formula $z=0$
+\end_inset
+
+, ואזה אפס מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ז.א.
+\begin_inset Formula 
+\[
+\textnormal{Ind}_{g\left(\gamma\right)}\left(a\right)=\textnormal{Ind}_{g\left(0\right)}\left(0\right)=
+\]
+
+\end_inset
+
+= מספר אפסים כולל ריבוי של 
+\begin_inset Formula $g$
+\end_inset
+
+ =
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+לכן כל ערך 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a\right|<1$
+\end_inset
+
+ מתקבל בדיוק פעם אחת ע"י 
+\begin_inset Formula $g$
+\end_inset
+
+ ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט רושה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $D\subset\mathbb{C}$
+\end_inset
+
+ תחום החסום ע"י מסילת ז'ורדן 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, ונניח שעל 
+\begin_inset Formula $\gamma$
+\end_inset
+
+)השפה( 
+\begin_inset Formula $\left|f\left(z\right)-g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+)לכל 
+\begin_inset Formula $z\in\gamma$
+\end_inset
+
+(.
+ אזי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $g\left(z\right)\neq0$
+\end_inset
+
+ על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ ול
+\begin_inset Formula $g$
+\end_inset
+
+ אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+)בדרך השלילה( נניח ש
+\begin_inset Formula $z\in\gamma$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+.
+ לפי הנתון 
+\begin_inset Formula $\left|f\left(z\right)-g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+)כי 
+\begin_inset Formula $z\in\gamma$
+\end_inset
+
+(, ז.א.
+ 
+\begin_inset Formula $\left|0-g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+ - שקול 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+ - סתירה!
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם נניח 
+\begin_inset Formula $g\left(z\right)=0$
+\end_inset
+
+, אז לפי הנתון 
+\begin_inset Formula $\left|f\left(z\right)-0\right|<\left|0\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(z\right)\right|<0$
+\end_inset
+
+ - שוב סתירה!
+\end_layout
+
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $h\left(z\right)=\dfrac{f\left(z\right)}{g\left(Z\right)}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $h$
+\end_inset
+
+ מורומורפית ב
+\begin_inset Formula $\overline{D}$
+\end_inset
+
+, ועל השפה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ אין ל
+\begin_inset Formula $h$
+\end_inset
+
+ אפסים)כי 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+ לפי )א(( ואין ל
+\begin_inset Formula $h$
+\end_inset
+
+ קטבים)כי 
+\begin_inset Formula $g\left(z\right)\neq0$
+\end_inset
+
+ לפי )א((.
+ לכן אפשר להפעיל את עיקרון הארגומנט לומר שמספר האפסים כולל ריבוי פחות מספר
+ הקטבים כולל ריבוי של 
+\begin_inset Formula $h$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{Ind}_{h\left(\gamma\right)}\left(0\right)$
+\end_inset
+
+.
+ כזכור הנתון הוא שעל 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f\left(z\right)-g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+.
+ נחלק ב
+\begin_inset Formula $\left|g\left(z\right)\right|$
+\end_inset
+
+)ששונה מאפס ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+( לקבל
+\begin_inset Formula 
+\[
+\left|\frac{f\left(z\right)}{g\left(z\right)}-1\right|<1
+\]
+
+\end_inset
+
+ז.א.
+ לכל 
+\begin_inset Formula $z\in\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\left|h\left(z\right)-1\right|<1$
+\end_inset
+
+.
+ ז.א.
+ אם 
+\begin_inset Formula $z\in\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $w=h\left(z\right)$
+\end_inset
+
+ נמצא בעיגול 
+\begin_inset Formula $\left|w-1\right|<1$
+\end_inset
+
+.
+ בפרט 
+\begin_inset Formula $h\left(\gamma\right)$
+\end_inset
+
+אינו מקיף את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ מכאן ש
+\begin_inset Formula $0=\textnormal{Ind}_{h\left(\gamma\right)}\left(0\right)$
+\end_inset
+
+ = מספר האפסים כולל ריבוי פחות מספר הכתבים כולל ריבוי של 
+\begin_inset Formula $h=\nicefrac{f}{g}$
+\end_inset
+
+ ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ אבל האפסים של 
+\begin_inset Formula $h$
+\end_inset
+
+ הם האפסים של 
+\begin_inset Formula $f$
+\end_inset
+
+ והקטבים של 
+\begin_inset Formula $h$
+\end_inset
+
+ הם האפסים של 
+\begin_inset Formula $g$
+\end_inset
+
+, וכיוון שמספר האפסים פחות מספר הקטבים כולל ריבוי =
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נסיק של
+\begin_inset Formula $f$
+\end_inset
+
+ ול
+\begin_inset Formula $g$
+\end_inset
+
+ יש אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+גרסת רושה של פרופסור הורוביץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-g\left(z\right)\right|<\left|g\left(z\right)\right|
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ל
+\begin_inset Formula $f$
+\end_inset
+
+ ול
+\begin_inset Formula $g$
+\end_inset
+
+ אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+גרסת רושה של גרישה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|F\left(z\right)\right|<\left|G\left(z\right)\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ל
+\begin_inset Formula $F+G$
+\end_inset
+
+ ול
+\begin_inset Formula $G$
+\end_inset
+
+ אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שקילות הגירסאות
+\end_layout
+
+\begin_layout Standard
+נוכיח את הגירסה של גרישה ע"פ הגירסה של הורוביץ)שכבר הוכחנו(.
+ פשוט נגדיר 
+\begin_inset Formula $f\left(z\right)-g\left(z\right)=F\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)=G\left(z\right)$
+\end_inset
+
+.
+ הנתון)של הורוביץ(הוא 
+\begin_inset Formula $\left|f\left(z\right)-g\left(z\right)\right|<\left|g\left(z\right)\right|$
+\end_inset
+
+)על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+(, ז.א.
+ 
+\begin_inset Formula $\left|F\left(z\right)\right|<\left|G\left(z\right)\right|$
+\end_inset
+
+)על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+(.
+ המסקנה)של הורוביץ( היא של
+\begin_inset Formula $f$
+\end_inset
+
+ ול
+\begin_inset Formula $g$
+\end_inset
+
+ אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+ ז.א.
+ ל
+\begin_inset Formula $f=G+g=F+G$
+\end_inset
+
+ יש אותו מספר אפסים כולל ריבוי כמו ל
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות חישוב
+\end_layout
+
+\begin_layout Enumerate
+קבעו כמה אפסים כולל ריבוי יש לפונקציה 
+\begin_inset Formula $z^{6}-5z^{3}+z^{2}+2$
+\end_inset
+
+ בתוך עיגול היחידה 
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נבחר איבר "דומיננטי" 
+\begin_inset Formula $f\left(z\right)=-5z^{3}$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $g\left(z\right)=z^{6}+z^{2}+2$
+\end_inset
+
+.
+ נראה שבשפה 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|f\left(z\right)\right|$
+\end_inset
+
+.
+ ובכן, אם 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|z^{6}+z^{2}+2\right|\le\left|z^{6}\right|+\left|z^{2}\right|+\left|2\right|=\left|z\right|^{6}+\left|z\right|^{2}+2=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1+1+2=4<5=\left|-5z^{3}\right|=\left|f\left(z\right)\right|
+\]
+
+\end_inset
+
+קיימנו את התנאי של רושה, לכן ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+ קיימים ל
+\begin_inset Formula $f+g=z^{6}-5z^{3}+z^{2}+2$
+\end_inset
+
+ ול
+\begin_inset Formula $f\left(z\right)=-5z^{3}$
+\end_inset
+
+ אותו מספר אפסים כולל ריבוי.
+ ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש אפס רק עבור 
+\begin_inset Formula $z=0$
+\end_inset
+
+ והוא מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, לכן ל
+\begin_inset Formula $f+g$
+\end_inset
+
+ יש בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים כולל ריבוי ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+קבעו כמה אפסים כולל ריבוי יש לפונקציה 
+\begin_inset Formula $z^{6}-5z^{3}+z^{2}+2$
+\end_inset
+
+ בתוך עיגול 
+\begin_inset Formula $B\left(0,2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f\left(z\right)=z^{6}$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(z\right)=-5z^{3}+z^{2}+2$
+\end_inset
+
+.
+ בשפה של 
+\begin_inset Formula $B\left(0,2\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\left|z\right|=2$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|-5z^{3}+z^{2}+2\right|\le5\left|z\right|^{3}+\left|z\right|^{2}+2=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=5-8+2^{2}+2=46<64=\left|z^{6}\right|=\left|f\left(z\right)\right|
+\]
+
+\end_inset
+
+קיימנו את תנאי רושה, לכן לפונקציה 
+\begin_inset Formula $\left(f+g\right)\left(z\right)=z^{6}-5z^{3}+z^{2}+2$
+\end_inset
+
+ יש אותו מספר אפסים כולל ריבוי ב
+\begin_inset Formula $B\left(0,2\right)$
+\end_inset
+
+ כמו 
+\begin_inset Formula $f\left(z\right)=z^{6}$
+\end_inset
+
+, ול
+\begin_inset Formula $f$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים כולל ריבוי בעיגול זה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ z\in\mathbb{C}\middle|-1<\textnormal{Re }z<1\right\} $
+\end_inset
+
+.
+ כמה אפסים כולל ריבוי יש לפונקציה 
+\begin_inset Formula $3z^{6}-e^{z}$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $D$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $m>0$
+\end_inset
+
+ ונגדיר
+\begin_inset Formula 
+\[
+D_{m}=\left\{ z\in\mathbb{C}\middle|\begin{array}{c}
+-1<\textnormal{Re }z<1\\
+-m<\textnormal{Im }z<m
+\end{array}\right\} 
+\]
+
+\end_inset
+
+נספור את האפסים של 
+\begin_inset Formula $3z^{6}-e^{z}$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $D_{m}$
+\end_inset
+
+ ונשאיף 
+\begin_inset Formula $m\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אמנם לכל 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ 
+\begin_inset Formula $\left|e^{z}\right|=e^{\textnormal{Re }z}$
+\end_inset
+
+ ולכן אם 
+\begin_inset Formula $z\in\overline{D_{m}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|e^{z}\right|=e^{\textnormal{Re }z}\le e^{1}=e
+\]
+
+\end_inset
+
+בשפה של 
+\begin_inset Formula $D_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+ = המרחק לראשית 
+\begin_inset Formula $\le$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, לכן
+\begin_inset Formula 
+\[
+3\le3\left|z\right|^{6}\le\left|3z^{6}\right|
+\]
+
+\end_inset
+
+לכן בשפה של 
+\begin_inset Formula $D_{m}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|-e^{z}\right|\le e<3\le\left|3z^{6}\right|
+\]
+
+\end_inset
+
+לכן ב
+\begin_inset Formula $D_{m}$
+\end_inset
+
+ יש אותו מספר של אפסים כולל ריבוי לפונקציה 
+\begin_inset Formula $3z^{6}-e^{z}$
+\end_inset
+
+ ולפונקציה 
+\begin_inset Formula $3z^{6}$
+\end_inset
+
+ שהם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים כולל ריבוי.
+ לכל 
+\begin_inset Formula $m>1$
+\end_inset
+
+ יש אותה תוצאה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים כולל ריבוי ב
+\begin_inset Formula $D_{m}$
+\end_inset
+
+.
+ לכן ב
+\begin_inset Formula $D$
+\end_inset
+
+ כולו יש לפונקציה 
+\begin_inset Formula $3z^{6}-e^{z}$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפסים כולל ריבוי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $p\left(z\right)$
+\end_inset
+
+ פולינום מרוכב ממעלה 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
+ נוכיח של
+\begin_inset Formula $p$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים כולל ריבוי ב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.)המשפט היסודי של אלגברה(.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ללא הגבלת הכלליות, 
+\begin_inset Formula $p\left(z\right)=z^{n}+\sum\limits _{k=0}^{n-1}a_{k}z^{k}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula 
+\[
+f\left(z\right)=z^{n}\qquad g\left(z\right)=\sum_{k=0}^{n-1}a_{k}z^{k}
+\]
+
+\end_inset
+
+נראה שלכל 
+\begin_inset Formula $R>0$
+\end_inset
+
+ "גדול" 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|f\left(z\right)\right|$
+\end_inset
+
+ ב
+\begin_inset Formula $C\left(0,R\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ובכן: 
+\begin_inset Formula $\dfrac{g\left(z\right)}{f\left(z\right)}=\sum\limits _{k=0}^{n-1}a_{k}z^{k-m}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\lim\limits _{z\to\infty}\dfrac{g\left(z\right)}{f\left(z\right)}=0$
+\end_inset
+
+.
+ לכן קיים 
+\begin_inset Formula $R_{0}>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|\dfrac{g\left(z\right)}{f\left(z\right)}\right|<1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left|z\right|=R$
+\end_inset
+
+.
+ במילים אחרות, אם 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|g\left(z\right)\right|<\left|f\left(z\right)\right|$
+\end_inset
+
+ על 
+\begin_inset Formula $C\left(0,R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיימנו את תנאי רושה.
+ נוכל להסיק שלכל 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+ יש ל
+\begin_inset Formula $P\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ אותו מספר אפסים, כולל ריבוי ב
+\begin_inset Formula $B\left(0,R\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+ שיש לה 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים כולל ריבוי ב
+\begin_inset Formula $B\left(0,R\right)$
+\end_inset
+
+, לכן גם ל
+\begin_inset Formula $p\left(z\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים כולל ריבוי ב
+\begin_inset Formula $B\left(0,R\right)$
+\end_inset
+
+.
+ הדבר נכון לכל 
+\begin_inset Formula $R>R_{0}$
+\end_inset
+
+, לכן נוכל להסיק שב
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ כולו יש ל
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים כולל ריבוי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית ב
+\begin_inset Formula $\overline{B\left(0,1\right)}$
+\end_inset
+
+ ועל 
+\begin_inset Formula $C\left(0,1\right)$
+\end_inset
+
+)השפה( 
+\begin_inset Formula $\textnormal{Ref}\left(z\right)>0$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $g\left(z\right)=ze^{f\left(z\right)}$
+\end_inset
+
+.
+ הוכיחו שאם 
+\begin_inset Formula $\left|g\right|<1$
+\end_inset
+
+ אז קיים בדיוק 
+\begin_inset Formula $"z"$
+\end_inset
+
+ אחד ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $g\left(z\right)=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ננסה להוכיח שלפונקציה 
+\begin_inset Formula $g\left(z\right)-a$
+\end_inset
+
+ יש בדיוק אפס אחד כולל ריבוי ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+.
+ לצורך זה נגדיר
+\begin_inset Formula 
+\[
+h\left(z\right)=-a\left(\textnormal{const}\right)
+\]
+
+\end_inset
+
+נתון
+\begin_inset Formula 
+\[
+\left|h\left(z\right)\right|=\left|-a\right|<1
+\]
+
+\end_inset
+
+על השפה 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|g\left(z\right)\right|=\left|ze^{f\left(z\right)}\right|=\left|z\right|\left|e^{f\left(z\right)}\right|=1e^{\textnormal{Ref}\left(z\right)}>1e^{0}=1
+\]
+
+\end_inset
+
+ז.א.
+ בשפה 
+\begin_inset Formula $C\left(0,1\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|h\left(z\right)\right|<1<\left|g\left(z\right)\right|
+\]
+
+\end_inset
+
+לכן ל
+\begin_inset Formula $h\left(z\right)+g\left(z\right)=-a+g\left(z\right)$
+\end_inset
+
+ ול
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ אותו מספר אפסים ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+)כולל ריבוי(, אבל 
+\begin_inset Formula $g\left(z\right)=ze^{f\left(z\right)}$
+\end_inset
+
+ שיש לה בדיוק אפס אחד מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באפס.
+ לכן ל
+\begin_inset Formula $\left(g+h\right)\left(z\right)=g\left(z\right)-a$
+\end_inset
+
+ יש אפס אחד בדיוק ב
+\begin_inset Formula $B\left(0,1\right)$
+\end_inset
+
+.
+ מ.ש.ל.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,911 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינטגרלים כפולים
+\end_layout
+
+\begin_layout Standard
+נבחר נקודה כלשהי בכל תת מלבן ונסמן את הנקודה שנבחרה במלבן ע"י 
+\begin_inset Formula $\left(x_{k}^{*},y_{k}^{*}\right)$
+\end_inset
+
+.
+ המכפלה 
+\begin_inset Formula $f\left(x_{k}^{*},y_{k}^{*}\right)\Delta A_{k}$
+\end_inset
+
+ שווה לנפח התיבה המלבנית ששטח בסיסה הוא 
+\begin_inset Formula $\Delta A_{k}$
+\end_inset
+
+ וגובהה 
+\begin_inset Formula $f\left(x_{k}^{*},y_{k}^{*}\right)$
+\end_inset
+
+.
+ הסכום של הנפחים הנ"ל הוא
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}f\left(x_{k}^{*},y_{k}^{*}\right)\Delta A_{k}
+\]
+
+\end_inset
+
+הגבול של סכומי רימן הנ"ל הוא
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\sum_{k=1}^{n}f\left(x_{k}^{*},y_{k}^{*}\right)\Delta A_{k}=\iint\limits _{R}f\left(x,y\right)\mathrm{\, d}A
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא תחום במישור.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $R$
+\end_inset
+
+ מלבן המוגדר ע"י השוויונים
+\begin_inset Formula 
+\[
+a\le x\le b\qquad c\le y\le d
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $R$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\iint\limits _{R}f\left(x,y\right)\mathrm{\, d}A=\int_{a}^{b}\int_{c}^{d}f\left(x,y\right)\mathrm{\, d}y\mathrm{\, d}x=\int_{c}^{d}\int_{a}^{b}f\left(x,y\right)\mathrm{\, d}x\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+חשב את האינטגרל הכפול
+\begin_inset Formula 
+\[
+\iint\limits _{R}y^{2}x^{2}\mathrm{\, d}A
+\]
+
+\end_inset
+
+על פני המלבן 
+\begin_inset Formula $R=\left\{ \left(x,y\right):-3\le x\le2,0\le y\le1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $f\left(x,y\right)=x^{2}y^{2}$
+\end_inset
+
+.
+ ברור כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה והתחום מלבני.
+\begin_inset Formula 
+\[
+\iint\limits _{R}y^{2}x^{2}\mathrm{\, d}A=\int_{0}^{1}\int_{-3}^{2}y^{2}x^{2}\mathrm{\, d}x\mathrm{\, d}y=\int_{0}^{1}\left(\int_{-3}^{2}y^{2}x^{2}\mathrm{\, d}x\right)\mathrm{\, d}y=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{1}\left(\left[\cfrac{y^{2}x^{3}}{3}\right]_{x=-2}^{x=2}\right)\mathrm{\, d}y=\int_{0}^{1}\left(\cfrac{8y^{2}}{3}+\cfrac{27y^{2}}{3}\right)\mathrm{\, d}y=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left[\cfrac{8y^{3}}{9}+3y^{3}\right]_{0}^{1}=\cfrac{8}{9}+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם התחום אינו מלבני?
+\end_layout
+
+\begin_layout Standard
+נחשב את האינטגרל באופן הבא:
+\begin_inset Formula 
+\[
+\iint\limits _{R}f\left(x,y\right)\mathrm{\, d}x\mathrm{\, d}y=\begin{array}{c}
+=\int_{c}^{d}\mathrm{\, d}y\int_{x_{1}\left(y\right)}^{x_{2}\left(y\right)}f\left(x,y\right)\mathrm{\, d}x\\
+=\int_{a}^{b}\mathrm{\, d}x\int_{y_{1}\left(x\right)}^{y_{2}\left(x\right)}f\left(x,y\right)\mathrm{\, d}y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+חשבו את 
+\begin_inset Formula $\iint\limits _{S}\left(x+y\right)\mathrm{\, d}x\mathrm{\, d}y$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $S$
+\end_inset
+
+ החסום ע"י הקווים 
+\begin_inset Formula $y=0,y=1$
+\end_inset
+
+ ו
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא משולש.
+ נרשום את התחום 
+\begin_inset Formula $S$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+S=\left\{ 0\le x\le1,1\ge y\ge x\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: שימו לב שחייבים במקרה זה פונקציה, אחרת נקבל במקרה זה ריבוע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iint\limits _{S}\left(x+y\right)\mathrm{\, d}x\mathrm{\, d}y=\int_{0}^{1}\mathrm{\, d}x\int_{x}^{1}\left(x+y\right)\mathrm{\, d}y=\int_{0}^{1}\left(x+\cfrac{1}{2}-x^{2}-\cfrac{x^{2}}{2}\right)\mathrm{\, d}x=\left[\cfrac{x^{2}}{2}+\cfrac{1}{2}x-\cfrac{x^{3}}{2}\right]_{0}^{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נעשה את האינטגרציה לפי 
+\begin_inset Formula $\mathrm{\, d}y\mathrm{\, d}x$
+\end_inset
+
+ אז קל לראות ש
+\begin_inset Formula $0\le y\le1$
+\end_inset
+
+ ובנוסף 
+\begin_inset Formula $0\le x\le y$
+\end_inset
+
+, ולכן האינטגרל המבוקש הוא
+\begin_inset Formula 
+\[
+\int_{0}^{1}\mathrm{\, d}y\int_{0}^{y}\left(x+y\right)dx=-\int_{0}^{1}\mathrm{\, d}y\left[\cfrac{x^{2}}{2}+yx\right]_{x=0}^{x=y}=\int_{0}^{1}\left(\cfrac{y^{2}}{2}+y^{2}\right)\mathrm{\, d}y=\int_{0}^{1}\left(\cfrac{3}{2}y^{2}\right)\mathrm{\, d}y=\cfrac{1}{2}
+\]
+
+\end_inset
+
+ ז"א הפכנו סדר אינטגרציה והראינו שהאינטגרלים שווים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+חשבו את האינטגרל 
+\begin_inset Formula $I=\iint\limits _{S}x^{2}y\mathrm{\, d}x\mathrm{\, d}y$
+\end_inset
+
+ עבור 
+\begin_inset Formula $S$
+\end_inset
+
+ התחום החסום ע"י הקווים 
+\begin_inset Formula $x=-2$
+\end_inset
+
+, 
+\begin_inset Formula $x=2$
+\end_inset
+
+, 
+\begin_inset Formula $y^{2}-x^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{2}-x^{2}=1\Rightarrow y^{2}=1+x^{2}\Rightarrow y=\pm\sqrt{1+x^{2}}
+\]
+
+\end_inset
+
+ולכן התחום הדרוש 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+S=\left\{ -2\le x\le2,-\sqrt{1+x^{2}}\le y\le\sqrt{1+x^{2}}\right\} 
+\]
+
+\end_inset
+
+ולכן האינטגרל המבוקש הוא
+\begin_inset Formula 
+\[
+\int_{-2}^{2}\mathrm{\, d}x\int_{-\sqrt{1+x^{2}}}^{\sqrt{1+x^{2}}}x^{2}y\mathrm{\, d}y=\int_{-2}^{2}\mathrm{\, d}x\left[x^{2}\cfrac{y^{2}}{2}\right]_{y=-\sqrt{1+x^{2}}}^{y=\sqrt{1+x^{2}}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{-2}^{2}\left(x^{2}\cfrac{\left(1+x^{2}\right)}{2}-\cfrac{x^{2}\left(1+x^{2}\right)}{2}\right)\mathrm{\, d}x=\int_{-2}^{2}0\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם היה רשום חשבו את השטח היינו בוחרים
+\begin_inset Formula 
+\[
+0\le y\le\sqrt{1+x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-2\le x\le2
+\]
+
+\end_inset
+
+וכופלים את התוצאה ב
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+הפכו את סדר האינטגרציה באינטגרל
+\begin_inset Formula 
+\[
+\int_{0}^{4}\mathrm{\, d}x\int_{3x^{2}}^{12x}f\left(x,y\right)\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+בשביל להפוך סדר אינטגרציה צריך ש
+\begin_inset Formula $y$
+\end_inset
+
+ יהיה קבוע ולכן נציב א תה
+\begin_inset Formula $x$
+\end_inset
+
+ים בין "
+\numeric on
+0
+\numeric off
+" ל"
+\numeric on
+4
+\numeric off
+":
+\begin_inset Formula 
+\[
+0\le y\le48
+\]
+
+\end_inset
+
+מהמשוואה
+\begin_inset Formula 
+\[
+3x^{2}\le y\le12x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3x^{2}\le y\wedge y\le12x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Updownarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}\le\cfrac{y}{3}\wedge x\ge\cfrac{y}{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\le\sqrt{\cfrac{y}{3}}\wedge x\ge\cfrac{y}{12}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\int_{0}^{48}\int_{\frac{y}{12}}^{\sqrt{\frac{3}{y}}}f\left(x,y\right)\mathrm{\, d}x\mathrm{\, d}y$
+\end_inset
+
+ זוהי ההחלפה הדרושה
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+הפכו סדר אינטגרציה
+\begin_inset Formula 
+\[
+I=\int_{0}^{2}\mathrm{\, d}x\int_{\sqrt{2x-x^{2}}}^{\sqrt{2x}}f\left(x,y\right)\mathrm{\, d}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+כדי לצייר את התחום נבדוק את הגרפים של הפונקציות הרלוונטיות
+\end_layout
+
+\begin_layout Standard
+יש שתי פונקציות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y=\sqrt{2x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y=\sqrt{2x-x^{2}}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $y=\sqrt{-\left(x^{2}-2x+1-1\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\sqrt{-\left(x-1\right)^{2}+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{2}+\left(x-1\right)^{2}=1
+\]
+
+\end_inset
+
+ זהו מעגל שרדיוסו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומרכזו 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נמצא נקודות חיתוך:
+\begin_inset Formula 
+\[
+\sqrt{2x}=\sqrt{2x-x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2x=2x-x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חייבים לחלק לתחומים כי ה
+\begin_inset Formula $x$
+\end_inset
+
+ לא חסום בין שני 
+\begin_inset Formula $y$
+\end_inset
+
+ים.
+ לכן נחשב את האינטגרל בנפרד בשלושת התחומים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תחום
+\begin_inset space ~
+\end_inset
+
+א'
+\series default
+ 
+\begin_inset Formula $0\le y\le1$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $y=\sqrt{x}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $x=\sqrt{1-y^{2}}+1$
+\end_inset
+
+ ולכן התחום המבוקש הוא 
+\begin_inset Formula $\cfrac{y^{2}}{2}\le x\le\sqrt{1-y^{2}}+1\qquad0\le y\le1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תחום
+\begin_inset space ~
+\end_inset
+
+ב'
+\series default
+ 
+\begin_inset Formula $0<y\le1$
+\end_inset
+
+ ו
+\begin_inset Formula $\sqrt{1-y^{2}}+1\le x\le2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תחום
+\begin_inset space ~
+\end_inset
+
+ג'
+\series default
+ 
+\begin_inset Formula $1\le y\le2$
+\end_inset
+
+, 
+\begin_inset Formula $\cfrac{y^{2}}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\cfrac{y^{2}}{2}\le x\le2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הפתרון הוא דרוש סכום התחומים!!
+\end_layout
+
+\end_body
+\end_document

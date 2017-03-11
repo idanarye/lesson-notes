@@ -1,0 +1,1142 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: יש לנו יריעה ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ומפה 
+\begin_inset Formula $r$
+\end_inset
+
+, וע"י היעקוביאן 
+\begin_inset Formula $\mathrm{d}r$
+\end_inset
+
+ יש לנו מיפוי לווקטורים המשיקים.
+ המטריצה 
+\begin_inset Formula $g=\mathrm{d}r^{t}\mathrm{d}r$
+\end_inset
+
+ מאפשרת לנו להכפיל שני וקטורים על המפה במקום לתרגם אותם ליריעה.
+ יש גם את מיפוי הנורמל מהיריעה לספירת היחידה, ומיפוי משעון לתוך המפה שנותן
+ לנו מסילה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+גילינו שאם אנחנו מסתכלים על 
+\begin_inset Formula $r_{i\prime j}$
+\end_inset
+
+)הנגזרת לפי הכיוון האמיתי(, אז מתקיים 
+\begin_inset Formula $r_{i\prime j}=\Gamma_{ij}^{k}r_{k}+b_{ij}\hat{n}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\left(b_{ij}\right)$
+\end_inset
+
+ היא התבנית היסודית השנייה ו
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+ הם סמלי כריסטופל.
+ זה אומר לנו איך היריעה משתנה לפי תנועה עליה.
+\end_layout
+
+\begin_layout Standard
+מכפלה פנימית: 
+\begin_inset Formula $\left\langle u,v\right\rangle =g_{ij}u^{i}v^{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניתן לחשב את סימני כריסטופל ישירות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma_{jk}^{i}=\frac{1}{2}g^{il}\left(g_{lj\prime k}+g_{kl\prime j}-g_{jk\prime l}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אופרטור הצורה: 
+\begin_inset Formula $S=g^{-1}b$
+\end_inset
+
+.
+ עקמומיות גאוס: 
+\begin_inset Formula $K=\kappa_{1}\kappa_{2}=\det S=\frac{\det b}{\det g}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עקמומיות גאוס, על פניה, נראית מאוד תלויה באיך העקומה הוכנסה ל
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, אבל גאוס גילה שלמעשה כל מה שצריך לדעת כדי לחשב את עקמומיות גאוס זה את
+ המטריקה.
+ כלומר גם ממדידות על פני השטח של כדור הארץ אפשר להסיק שכדור הארץ הוא כדור)כלומר
+ בעל עקמומיות קבועה(, ולא צריך להסתכל מבחוץ.
+ גאוס מאוד הופתע מהתגלית הזו, וקרא לה "
+\lang english
+theorema egregium
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ - התגלית המפתיעה.
+ בעצם זה אומר שעקמומיות גאוס היא תכונה פנימית - בניגוד לעקמומויות הראשיות
+ ולעקמומיות הממוצעת.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+עקמומיות גאוס ניתנת לביטוי בעזרת רכיבי התבנית היסודית הראשונה בלבד.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K=\frac{\det B}{\det G}=\frac{b_{11}b_{22}-b_{12}^{2}}{\det g}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{ij}=\frac{\det\left(\left(r_{i}\right)\left(r_{j}\right)\left(r_{ij}\right)\right)}{\sqrt{\det g}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=\frac{1}{\det\left(g\right)^{2}}\left(\left(r_{11},r_{22},r_{2}\right)\left(r_{22},r_{1},r_{2}\right)-\left(r_{12},r_{1},r_{2}\right)^{2}\right)=\cdots
+\]
+
+\end_inset
+
+)כל שלשה כזאת 
+\begin_inset Formula $\left(u,v,w\right)$
+\end_inset
+
+ היא דטרמיננטה - 
+\begin_inset Formula $\begin{vmatrix}| & | & |\\
+u & v & w\\
+| & | & |
+\end{vmatrix}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\cdots=\frac{1}{\det\left(g\right)^{2}}\left(\det\begin{pmatrix}r_{11}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}\det\begin{pmatrix}r_{22}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}-\det\begin{pmatrix}r_{12}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}^{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\left(\det g\right)^{2}}\left(\det\begin{pmatrix}r_{11}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}\det\begin{pmatrix}r_{22}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}^{t}-\det\begin{pmatrix}r_{12}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}\det\begin{pmatrix}r_{12}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}^{t}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\left(\det g\right)^{2}}\left(\det\left(\begin{pmatrix}r_{11}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}\begin{pmatrix}r_{22}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}^{t}\right)-\det\left(\begin{pmatrix}r_{12}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}\begin{pmatrix}r_{12}\\
+r_{1}\\
+r_{2}
+\end{pmatrix}^{t}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\left(\det g\right)^{2}}\left(\det\begin{bmatrix}\left\langle r_{11},r_{22}\right\rangle  & \left\langle r_{11},r_{1}\right\rangle  & \left\langle r_{11},r_{2}\right\rangle \\
+\left\langle r_{1},r_{22}\right\rangle  & \left\langle r_{1},r_{1}\right\rangle  & \left\langle r_{1},r_{2}\right\rangle \\
+\left\langle r_{2},r_{22}\right\rangle  & \left\langle r_{2},r_{1}\right\rangle  & \left\langle r_{2},r_{2}\right\rangle 
+\end{bmatrix}-\det\begin{bmatrix}\left\langle r_{12},r_{12}\right\rangle  & \left\langle r_{12},r_{1}\right\rangle  & \left\langle r_{12},r_{2}\right\rangle \\
+\left\langle r_{1},r_{12}\right\rangle  & \left\langle r_{1},r_{1}\right\rangle  & \left\langle r_{1},r_{2}\right\rangle \\
+\left\langle r_{2},r_{12}\right\rangle  & \left\langle r_{2},r_{1}\right\rangle  & \left\langle r_{2},r_{2}\right\rangle 
+\end{bmatrix}\right)=\cdots
+\]
+
+\end_inset
+
+דטרמיננה היא לינארית בכל עמודה, ולכן ניתן לפרק:
+\begin_inset Formula 
+\[
+\cdots=\frac{1}{\left(\det g\right)^{2}}\left(\begin{array}{c}
+\det\begin{pmatrix}\left\langle r_{11},r_{22}\right\rangle  & \left\langle r_{11},r_{1}\right\rangle  & \left\langle r_{11},r_{2}\right\rangle \\
+0 & g_{11} & g_{12}\\
+0 & g_{12} & g_{22}
+\end{pmatrix}+\det\begin{pmatrix}0 & \left\langle r_{11},r_{1}\right\rangle  & \left\langle r_{11},r_{2}\right\rangle \\
+\left\langle r_{1},r_{22}\right\rangle  & g_{11} & g_{12}\\
+\left\langle r_{2},r_{22}\right\rangle  & g_{12} & g_{22}
+\end{pmatrix}\\
+-\det\begin{pmatrix}\left\langle r_{12},r_{12}\right\rangle  & \left\langle r_{12},r_{1}\right\rangle  & \left\langle r_{12},r_{2}\right\rangle \\
+0 & g_{11} & g_{12}\\
+0 & g_{12} & g_{22}
+\end{pmatrix}-\det\begin{pmatrix}0 & \left\langle r_{12},r_{1}\right\rangle  & \left\langle r_{12},r_{2}\right\rangle \\
+\left\langle r_{1},r_{12}\right\rangle  & g_{11} & g_{12}\\
+\left\langle r_{2},r_{12}\right\rangle  & g_{12} & g_{22}
+\end{pmatrix}
+\end{array}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\det g}\left(\left\langle r_{11},r_{22}\right\rangle \right)+\frac{1}{\left(\det g\right)^{2}}\left(\det\begin{bmatrix}0 & \left\langle r_{11},r_{1}\right\rangle  & \left\langle r_{11},r_{2}\right\rangle \\
+\left\langle r_{1},r_{22}\right\rangle  & g_{11} & g_{12}\\
+\left\langle r_{2},r_{22}\right\rangle  & g_{12} & g_{22}
+\end{bmatrix}-\det\begin{bmatrix}0 & \left\langle r_{12},r_{1}\right\rangle  & \left\langle r_{12},r_{2}\right\rangle \\
+\left\langle r_{1},r_{12}\right\rangle  & g_{11} & g_{12}\\
+\left\langle r_{2},r_{12}\right\rangle  & g_{12} & g_{22}
+\end{bmatrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\Gamma_{ij\prime k}=\left\langle r_{ij},r_{k}\right\rangle $
+\end_inset
+
+.
+ נשים לב ש:
+\begin_inset Formula 
+\[
+I)\qquad\frac{\partial g_{ij}}{\partial u^{k}}=\frac{\partial}{\partial u_{k}}\left\langle r_{i},r_{j}\right\rangle =\left\langle r_{ik},r_{j}\right\rangle +\left\langle r_{i},r_{jk}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+II)\qquad\frac{\partial g_{jk}}{\partial u^{i}}=\frac{\partial}{\partial u^{i}}\left\langle r_{j},r_{k}\right\rangle =\left\langle r_{ji},r_{k}\right\rangle +\left\langle r_{j},r_{ki}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+III)\qquad\frac{\partial g_{ki}}{\partial u^{j}}=\frac{\partial}{\partial u^{j}}\left\langle r_{k},r_{i}\right\rangle =\left\langle r_{kj},r_{i}\right\rangle +\left\langle r_{k},r_{ij}\right\rangle 
+\]
+
+\end_inset
+
+נחבר: 
+\begin_inset Formula $I+II+III$
+\end_inset
+
+ לקבל:
+\begin_inset Formula 
+\[
+\partial\left\langle r_{ij},r_{k}\right\rangle =\frac{\partial g_{ki}}{\partial u_{j}}+\frac{\partial g_{ik}}{\partial u_{i}}-\frac{\partial g_{ij}}{\partial u^{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{ij\prime k}=\frac{1}{2}\left(g_{ki\prime j}+g_{jk\prime i}-g_{ij\prime k}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial u^{2}}\Gamma_{11\prime2}=\frac{\partial}{\partial u^{2}}\left\langle r_{11},r_{2}\right\rangle =\left\langle r_{121},r_{2}\right\rangle +\left\langle r_{12},r_{12}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle r_{12},r_{22}\right\rangle -\left\langle r_{12},r_{12}\right\rangle =\frac{\partial}{\partial u^{2}}\Gamma_{11\prime2}-\frac{\partial}{\partial u^{1}}\Gamma_{12\prime2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K=\frac{1}{\det g}\left(\frac{\partial}{\partial u^{2}}\Gamma_{11\prime2}-\frac{\partial}{\partial u^{1}}\Gamma_{12\prime2}\right)+\frac{1}{\left(\det g\right)^{2}}\left(\det\begin{bmatrix}0 & \Gamma_{11\prime1} & \Gamma_{11\prime2}\\
+\Gamma_{22\prime1} & g_{11} & g_{12}\\
+\Gamma_{22\prime2} & g_{12} & g_{22}
+\end{bmatrix}-\det\begin{bmatrix}0 & \Gamma_{12\prime1} & \Gamma_{12\prime2}\\
+\Gamma_{12\prime1} & g_{11} & g_{12}\\
+\Gamma_{12\prime2} & g_{12} & g_{22}
+\end{bmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אופרטור הצורה הוא תכונה חיצונית, אבל עקמומיות גאוס, למרות שהיא מחושבת מאופרטור
+ הצורה, היא תכונה פנימית.
+\end_layout
+
+\begin_layout Part*
+מערכת קואורדינטות גאודזיות מקבילות
+\end_layout
+
+\begin_layout Standard
+כזכור, יש שתי הגדרות שקולות לקוים הגאודזיים שמהן מגיעים לאותה משוואה 
+\begin_inset Formula $\ddot{\gamma}^{k}+\Gamma_{ij}^{k}\dot{\gamma}^{i}\dot{\gamma}^{j}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ע"י 
+\begin_inset Formula $u^{2}$
+\end_inset
+
+ את הפרמטר הטבעי לאורך קו גאודזי כך ש
+\begin_inset Formula $\gamma\left(u^{2}=0\right)=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהנתן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטרים 
+\begin_inset Formula $\left(u^{1},u^{2}\right)$
+\end_inset
+
+ נבצע את הפעולה הבאה על מנת למצוא את 
+\begin_inset Formula $\gamma\left(u^{1},u^{2}\right)$
+\end_inset
+
+: נמצא את הנקודה על העקום 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ המרוחקת מרחק 
+\begin_inset Formula $u^{2}$
+\end_inset
+
+ מהנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ ולאחר מכן נוציא ממנה קו גאודזי המאונך ל
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ונתקדם לאורכו מרחק 
+\begin_inset Formula $\left(u^{1}\right)$
+\end_inset
+
+.
+ הכיוון יוגדר ע"י הסימן של 
+\begin_inset Formula $u^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מובן ש
+\begin_inset Formula $\left\Vert r_{1}\right\Vert =\left\Vert \frac{\partial r}{\partial u_{1}}\right\Vert =1$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $r_{1},r_{2}$
+\end_inset
+
+ מאונכים על 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $\left.\left\langle r_{1},r_{2}\right\rangle \right|_{u_{1=0}}=0$
+\end_inset
+
+.
+ נגזור לפי 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ לקבל:
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial u_{1}}\left\langle r_{1},r_{2}\right\rangle =\left\langle r_{11},r_{2}\right\rangle +\left\langle r_{1},r_{21}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{11}$
+\end_inset
+
+ הוא התאוצה של קו גאודזי ולכן הוא מאונך למישור המשיק ולכן
+\begin_inset Formula 
+\[
+\left\langle r_{11},r_{2}\right\rangle =0
+\]
+
+\end_inset
+
+כלומר המחובר הראשון מתאפס.
+ 
+\begin_inset Formula $g_{11}=1$
+\end_inset
+
+ כי מכפילים וקטורים לאורך עקומה גיאוזית בפרמטריזציה טבעית.
+\begin_inset Formula 
+\[
+0=\frac{\partial g_{11}}{\partial u^{2}}=\frac{\partial}{\partial u^{2}}\left\langle r_{1},r_{2}\right\rangle =2\left\langle r_{12},r_{1}\right\rangle \implies\left\langle r_{12},r_{1}\right\rangle 
+\]
+
+\end_inset
+
+כלומר גם המחובר השני מתאפס.
+\begin_inset Formula 
+\[
+\implies\frac{\partial}{\partial u^{1}}\left\langle r_{1},r_{2}\right\rangle =0\implies\left\langle r_{1},r_{2}\right\rangle =0
+\]
+
+\end_inset
+
+לכל נקודה - כלומר הרכיבים הלא אלכסוניים של המטריקה מתאפסים - 
+\begin_inset Formula $g_{12}=g_{21}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאר לנו רק איבר אחד - 
+\begin_inset Formula $g_{22}$
+\end_inset
+
+.
+ אם הוא היה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ היה לנו מישור - אבל זה לא תמיד מישור.
+ כלומר יש לנו איבר אחד לא טריוויאלי שנסמנו ב
+\begin_inset Formula $h$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+g=\begin{pmatrix}1 & 0\\
+0 & h
+\end{pmatrix}
+\]
+
+\end_inset
+
+וזה אומר ש
+\begin_inset Formula 
+\[
+\det g=h
+\]
+
+\end_inset
+
+כמו כן, על העקומה המקורית 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ היא מטריצת היחידה: 
+\begin_inset Formula 
+\[
+\left.\det g\right|_{u^{1}=0}=1
+\]
+
+\end_inset
+
+שכן
+\begin_inset Formula 
+\[
+\left.\frac{\partial\det g}{\partial u^{1}}\right|_{u_{1}=0}=\left.\frac{\partial g_{22}}{\partial u^{1}}\right|_{u^{1}=0}=\left.2\left\langle r_{12},r_{2}\right\rangle \right|_{u^{1}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משפט גאוס בונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gauss Bonnet
+\end_layout
+
+\begin_layout Section*
+הגדרה - זוית סיבוב מעודנת ביחס למשטח
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שדות וקטוריים על המשטח)או סביבה של נקודה במשטח( 
+\begin_inset Formula $v,w$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\left(v,w\right)$
+\end_inset
+
+ מהוה בסיס אורתונורמלי עם אוריינטציה קבועה בכל נקודה בסביבה.
+\end_layout
+
+\begin_layout Standard
+לכל שדה וקטורי 
+\begin_inset Formula $x$
+\end_inset
+
+ ניתן להגדיר זוית 
+\begin_inset Formula $\alpha:M\to\left[0,2\pi\right)$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\[
+x\left(P\right)=v\cos\alpha\left(P\right)+w\sin\alpha\left(P\right)
+\]
+
+\end_inset
+
+כעת ניתן לדבר על שינוי זוית של עקומה:
+\begin_inset Formula 
+\[
+\alpha\left(b\right)-\alpha\left(a\right)\int\frac{\mathrm{d}\alpha}{\mathrm{d}s}\mathrm{\, d}s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M\subset\mathbb{R}^{3}$
+\end_inset
+
+ משטח רגולרי קומפקטי אוריינטבילי.
+ נניח שהשפה 
+\begin_inset Formula $\partial M$
+\end_inset
+
+ אינה ריקה ומורכבת מעקומים חלקים למקוטעין.
+ אזי זוית הסיבוב המעודנת מיחס ל
+\begin_inset Formula $M$
+\end_inset
+
+ שווה לאינטגרל על עקמומיות גאוס:
+\begin_inset Formula 
+\[
+\theta\left(M\right)=\iint_{M}K\mathrm{\, d}S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח שהיריעה מכוסה ע"י מידה בודדת וכן שהמטריקה נתונה ע"י 
+\begin_inset Formula $\mathrm{d}S^{2}=\mathrm{d}r_{1}^{2}+h^{2}\mathrm{\, d}r_{2}^{2}$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+v=r_{1}\qquad w=\frac{r_{2}}{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ שדה משיק ל
+\begin_inset Formula $M$
+\end_inset
+
+.
+ אזי:
+\begin_inset Formula 
+\[
+x_{i}\left(t\right)=\cos\alpha_{i}\left(t\right)v\left(\gamma_{i}\left(t\right)\right)+\sin\alpha_{i}\left(t\right)w\left(\gamma_{i}\left(t\right)\right)=\cos\alpha_{i}\left(t\right)r_{1}+\frac{\sin\alpha_{i}\left(t\right)}{h}r_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\gamma_{i}$
+\end_inset
+
+ חלק:
+\begin_inset Formula 
+\[
+\Gamma_{11}^{1}=0\qquad\Gamma_{12}^{1}=0\qquad\Gamma_{22}^{1}=\frac{1}{2}\left(h^{2}\right)_{1}
+\]
+
+\end_inset
+
+מקבלים:
+\begin_inset Formula 
+\[
+-\sin\alpha_{i}\cdot\alpha_{i}'\left(t\right)-\frac{1}{2}\left(h^{2}\right)_{1}u_{2}'\cdot\frac{1}{h}\sin\alpha_{i}\left(t\right)=0
+\]
+
+\end_inset
+
+כלומר:
+\begin_inset Formula 
+\[
+\alpha_{i}'\left(t\right)=-\frac{\partial}{\partial u_{1}}hu_{2}'\left(t\right)
+\]
+
+\end_inset
+
+ומכאן
+\begin_inset Formula 
+\[
+\theta_{i}=\alpha\left(b\right)-\alpha\left(a\right)=\int_{a}^{b}\alpha_{i}'\left(t\right)\mathrm{\, d}t=\int_{\partial_{i}v}\frac{\partial h}{\partial u_{1}}\mathrm{\, d}u_{2}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\partial_{i}v$
+\end_inset
+
+ הוא רכיב הקשירות ה
+\begin_inset Formula $i$
+\end_inset
+
+ של השפה.
+\begin_inset Formula 
+\[
+\theta\left(M\right)=\sum_{i=1}^{2}\theta_{i}=-\int_{\partial U}\frac{\partial2h}{\partial u_{1}}\mathrm{\, d}u_{2}
+\]
+
+\end_inset
+
+נשתמש במשפט סטוקס/גרין:
+\begin_inset Formula 
+\[
+\int_{\partial U}\left(P\mathrm{\, d}u_{1}+Q\mathrm{\, d}u_{2}\right)=\iint_{U}\left(\frac{\partial Q}{\partial u_{1}}-\frac{\partial P}{\partial u_{2}}\right)\mathrm{\, d}u_{1}\mathrm{\, d}u_{2}
+\]
+
+\end_inset
+
+במקרה שלנו 
+\begin_inset Formula $P=0\qquad Q=\frac{2h}{2u_{1}}$
+\end_inset
+
+ ונשים לב ש
+\begin_inset Formula $h=\sqrt{g}$
+\end_inset
+
+.
+ נקבל:
+\begin_inset Formula 
+\[
+\theta=-\iint_{U}\frac{\partial^{2}}{\partial u_{1}^{2}}h\mathrm{\, d}u_{1}\mathrm{\, d}u_{2}
+\]
+
+\end_inset
+
+ידוע 
+\begin_inset Formula $\frac{\partial^{2}}{\partial u_{1}^{2}}h=-K\sqrt{g}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\theta\left(M\right)=\iint_{U}K\sqrt{g}\mathrm{\, d}u_{1}\mathrm{\, d}u_{2}=\iint_{M}K\mathrm{\, d}S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+במשולש גאודזי סכום הזויות הוא 
+\begin_inset Formula $\pi+\iint_{\Delta}K\mathrm{\, d}S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט גאוס בונה
+\end_layout
+
+\begin_layout Standard
+עבור יריעה קומפקטית ללא גבול,
+\begin_inset Formula 
+\[
+\iint_{M}K\mathrm{\, d}S=2\pi\chi\left(M\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\chi$
+\end_inset
+
+ הוא מאפיין אויילר-פוונקרה - מחלקים משטח למשולשים וסופרים את מספר הצלעות
+ פחות מספר הצלעות ועוד מספר הקודקודים)
+\begin_inset Formula $F-E+V$
+\end_inset
+
+(.
+ עבור כדור זה נותן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, עבור טורוס זה נותן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- זוהי תכונה שקשורה לטופולוגיה בלבד, לא למבנה הגיאומטרי, ותמיד 
+\begin_inset Formula $\chi\le2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעצם זה אומר שסה"כ העקמומיות על גוף היא מוגבלת.
+\end_layout
+
+\end_body
+\end_document

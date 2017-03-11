@@ -1,0 +1,1435 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מד"ר לינארית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)y^{\left(n\right)}+...+a_{2}\left(x\right)y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $b\left(x\right)=0$
+\end_inset
+
+ המקרה ההומוגני
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $b\left(x\right)\ne0$
+\end_inset
+
+ המקרה האי הומוגני
+\end_layout
+
+\begin_layout Standard
+הוכחנו שבמקרה ההומוגני קבוצת הפתרונות היא מרחב ווקטורי ובמקרה האי הומוגני
+ 
+\begin_inset Formula $y\left(x\right)=y_{p}\left(x\right)+y_{c}\left(x\right)$
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ פתרון כללי של האי הומוגני
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $y_{p}\left(x\right)$
+\end_inset
+
+ פתרון פרטי של ההומוגני
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $y_{c}\left(x\right)$
+\end_inset
+
+ פתרון כללי של האי הומוגני)פתרון משלים(.
+\end_layout
+
+\begin_layout Part*
+במקרה ההומוגני: מה מימד המרחב הווקטורי?
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+למד"ר לינארית הומוגנית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\bar under
+בצורה נורמלית
+\bar default
+ )
+\begin_inset Formula $a_{n}\left(x\right)=1$
+\end_inset
+
+(, קבוצת הפתרונות היא מרחב ווקטורי ממימד 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תלוי על משפט הקיום והיחידות.
+\end_layout
+
+\begin_layout Standard
+משפט הקיום והיחידות מבטיח פתרון אחד ויחיד כך שעבור 
+\begin_inset Formula $\alpha_{1},...\alpha_{n}$
+\end_inset
+
+ קבועים:
+\begin_inset Formula 
+\[
+y\left(x_{0}\right)=\alpha_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'\left(x_{0}\right)=\alpha_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\left(n-1\right)}\left(x_{0}\right)=\alpha_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה פתרונות מיוחדים 
+\begin_inset Formula $y_{1}\left(x\right),y_{2}\left(x\right),...y_{n}\left(x\right)$
+\end_inset
+
+ על ידיד הדרישות:
+\begin_inset Formula 
+\[
+Y_{i}^{\left(j\right)}\left(x_{0}\right)=\begin{cases}
+0 & j\ne i-1\\
+1 & j=i-1
+\end{cases},i=1,2,...n,j=0,1,...n-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שאלה הם בסיס למרחב הפתרונות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)א(הם
+\begin_inset space ~
+\end_inset
+
+בת"ל נניח שקיימים קבועים 
+\begin_inset Formula $\alpha_{1},...\alpha_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha_{1}y_{1}\left(x\right)+\alpha_{2}y_{2}\left(x\right)+...+\alpha_{n}y_{n}\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נציב 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{1}=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגזור 
+\begin_inset Formula $\alpha_{1}y_{1}^{\prime}\left(x\right)+\alpha_{2}y_{2}^{\prime}\left(x\right)+...+\alpha_{n}y_{n}^{\prime}\left(x\right)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נציב 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{2}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+גוזרים שוב ושוב, מציבים 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $\alpha_{1}=\alpha_{2}=...=\alpha_{n}=0$
+\end_inset
+
+, לכן הם בת"ל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+)ב(פריסה ניקח פתרון כלשהו 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ של המד"ר.
+\begin_inset Newline newline
+\end_inset
+
+נסתכל על 
+\begin_inset Formula $z\left(x\right)=y\left(x\right)-\left[y\left(x_{0}\right)y_{1}\left(x\right)+y'\left(x_{0}\right)y_{2}\left(x\right)+...+y^{\left(n-1\right)}\left(x_{0}\right)y_{n}\left(x\right)\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה פתרון של המד"ר:
+\begin_inset Formula 
+\[
+z\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z'\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{\left(n-1\right)}\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+לפי משפט הקיום והיחידות 
+\begin_inset Formula $z\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שאלה
+\end_layout
+
+\begin_layout Standard
+אם נתונים מספר פתרונות של מד"ר, איך ניתן להבחין שהם תלויים לינארית? )אפילו
+ רלוונטי כאשר נתונים פונקציות שאינן פתרונות של מד"ר(
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אומרים שהפונקציות 
+\begin_inset Formula $y_{1}\left(x\right),y_{2}\left(x\right),...y_{n}\left(x\right)$
+\end_inset
+
+ הם ב"ת לינארית בקטע 
+\begin_inset Formula $I$
+\end_inset
+
+ אם הקבועים היחידים 
+\begin_inset Formula $\alpha_{1},...\alpha_{n}$
+\end_inset
+
+ שעבורם 
+\begin_inset Formula $\alpha_{1}y_{1}\left(x\right)+...+\alpha_{n}y_{n}\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ הם 
+\begin_inset Formula $\alpha_{1}=...=\alpha_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דוגמה פשוטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}\left(x\right)=x,y_{2}\left(x\right)=\left|x\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בקטע
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1}-y_{2}=0$
+\end_inset
+
+ - ת"ל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בקטע
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\left[-1,0\right]$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1}+y_{2}=0$
+\end_inset
+
+ - ת"ל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בקטע
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+ בת"ל
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{1}\left(x\right),y_{2}\left(x\right),...y_{n}\left(x\right)$
+\end_inset
+
+ גזירות 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פעמים.
+ וורונסקיאן)
+\lang english
+Wronkian
+\lang hebrew
+( של 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ היא הפונקציה
+\begin_inset Formula 
+\[
+W\left(y_{1},y_{2},...y_{n}\right)=\det\begin{pmatrix}y_{1}\left(x\right) & y_{2}\left(x\right) & \cdots & y_{n}\left(x\right)\\
+y_{1}^{\prime}\left(x\right) & y_{2}^{\prime}\left(x\right) & \cdots & y_{n}^{\prime}\left(x\right)\\
+\vdots & \vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)}\left(x\right) & y_{2}^{\left(n-1\right)}\left(x\right) & \cdots & y_{n}^{\left(n-1\right)}\left(x\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ הם ת"ל אזי 
+\begin_inset Formula $W\left(y_{1},y_{2},...y_{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בהנחה של תלות, קיימים, לא כולם אפס, כך ש
+\begin_inset Formula $\alpha_{1}y_{1}\left(x\right)+...+\alpha_{n}y_{n}\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ בקטע מסויים.
+ ניתן לגזור את הפונקציות 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פעמים:
+\begin_inset Formula 
+\[
+\alpha_{1}y_{1}^{\prime}\left(x\right)+...+\alpha_{n}y_{n}^{\prime}\left(x\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}y_{1}^{\left(n-1\right)}\left(x\right)+...+\alpha_{n}y_{n}^{\left(n-1\right)}\left(x\right)=0
+\]
+
+\end_inset
+
+כלומר:
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{1}\left(x\right) & \cdots & y_{n}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)}\left(x\right) & \cdots & y_{n}^{\left(n-1\right)}\left(x\right)
+\end{pmatrix}\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}\neq\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}$
+\end_inset
+
+, לכן למטריצה יש ווקטור לא טריוויאלי בגרעין, ולכן ה
+\begin_inset Formula $\det$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsubsection*
+בכיוון ההפוך זה לא נכון!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}=x^{3},y_{2}=\left|x\right|^{3},I=\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ גזיר ב
+\begin_inset Formula $x=0$
+\end_inset
+
+)בניגוד ל
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+y_{1}^{\prime}=3x^{2},y_{2}^{\prime}=3\textnormal{sgn}\left(x\right)x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(y_{1},y_{2}\right)=\left|\begin{matrix}x^{3} & \textnormal{sgn}\left(x\right)x^{3}\\
+3x^{2} & 3\textnormal{sgn}\left(x\right)x^{2}
+\end{matrix}\right|=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ הם פתרונות מד"ר ליניארית הומוגנית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ ו
+\begin_inset Formula $W\left(y_{1},...y_{n}\right)=0$
+\end_inset
+
+, אפילו בנקודה אחת, אזי 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ הם תלויים לינארית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $W=0$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ קיים ווקטור 
+\begin_inset Formula $\vec{\alpha}\ne0$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{1}\left(x_{0}\right) & \cdots & y_{n}\left(x_{0}\right)\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)}\left(x_{0}\right) & \cdots & y_{n}^{\left(n-1\right)}\left(x_{0}\right)
+\end{pmatrix}\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+נסתכל על 
+\begin_inset Formula $z\left(x\right)=\alpha_{1}y_{1}\left(x\right)+...+\alpha_{n}y_{n}\left(x\right)$
+\end_inset
+
+)לכל 
+\begin_inset Formula $x$
+\end_inset
+
+!(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שורה
+\begin_inset space ~
+\end_inset
+
+ראשונה 
+\begin_inset Formula $z\left(x_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שורה
+\begin_inset space ~
+\end_inset
+
+שנייה 
+\begin_inset Formula $z'\left(x_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שורה
+\begin_inset space ~
+\end_inset
+
+אחרונה 
+\begin_inset Formula $z^{\left(n-1\right)}\left(x_{0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z\left(x\right)$
+\end_inset
+
+ הוא צירוף לינארי של 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ ולכן גם הוא פתרון המד"ר.
+ אבל תנאיי ההתחלה כולם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, ולכן לפי משפט הקיום והיחידות 
+\begin_inset Formula $z\left(x\right)=0$
+\end_inset
+
+ זהותית לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ ת"ל.
+\end_layout
+
+\begin_layout Section*
+משפט אבל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},...y_{n}$
+\end_inset
+
+ פתרונות של המד"ר 
+\begin_inset Formula $y^{\left(n\right)}+a_{n-1}\left(x\right)y^{\left(n-1\right)}+...+a_{1}\left(x\right)y^{\prime}+a_{0}\left(x\right)y=0$
+\end_inset
+
+ ו
+\begin_inset Formula $W\left(y_{1},y_{2},...y_{n}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $W\left(x\right)=W\left(x_{0}\right)e^{-\int_{x_{0}}^{x}a_{n-1}\left(t\right)dt}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה )
+\begin_inset Formula $n=2$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+y_{1}^{\prime\prime}+a_{1}y_{1}^{\prime}+a_{0}y_{1}=0\\
+y_{2}^{\prime\prime}+a_{1}y_{2}^{\prime}+a_{0}y_{2}=0
+\end{array}\right.,W=\det\begin{pmatrix}y_{1} & y_{2}\\
+y_{1}^{\prime} & y_{2}^{\prime}
+\end{pmatrix}=y_{1}y_{2}^{\prime}-y_{2}y_{1}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W^{\prime}=\left(y_{1}y_{2}^{\prime\prime}+y_{1}^{\prime}y_{2}^{\prime}\right)-\left(y_{2}y_{1}^{\prime\prime}+y_{2}^{\prime}y_{1}^{\prime}\right)=y_{1}y_{2}^{\prime\prime}-y_{2}y_{1}^{\prime\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=y_{1}\left(-a_{1}y_{2}^{\prime}-a_{0}y_{2}\right)-y_{2}\left(-a_{1}y_{1}^{\prime}-a_{0}y_{1}\right)=-a_{1}\left(y_{1}y_{2}^{\prime}-y_{2}y_{1}^{\prime}\right)=-a_{1}W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W^{\prime}=-a_{1}W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{W^{\prime}\left(t\right)}{W\left(t\right)}=-a_{1}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln W\left(x\right)-\ln W\left(x_{0}\right)=\left[\ln W\left(t\right)\right]_{x_{0}}^{x}=-\int\limits _{x_{0}}^{x}a_{1}\left(t\right)dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{W\left(x\right)}{W\left(x_{0}\right)}=e^{-\int_{x_{0}}^{x}a_{1}\left(t\right)dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הכנה להוכחה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כללי
+\end_layout
+
+\begin_layout Standard
+איך גוזרים דטקרמיננטה?
+\begin_inset Formula 
+\[
+\left[\det\begin{pmatrix}a_{11}\left(x\right) & \cdots & a_{1n}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+a_{n1}\left(x\right) & \cdots & a_{nn}\left(x\right)
+\end{pmatrix}\right]^{\prime}=\det\begin{pmatrix}a_{11}^{\prime}\left(x\right) & \cdots & a_{1n}^{\prime}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+a_{n1}\left(x\right) & \cdots & a_{nn}\left(x\right)
+\end{pmatrix}+...+\det\begin{pmatrix}a_{11}\left(x\right) & \cdots & a_{1n}\left(x\right)\\
+\vdots & \ddots & \vdots\\
+a_{n1}^{\prime}\left(x\right) & \cdots & a_{nn}^{\prime}\left(x\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה ל
+\begin_inset Formula $n$
+\end_inset
+
+ כללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W=\det\begin{pmatrix}y_{1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)} & \cdots & y_{n}^{\left(n-1\right)}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוזרים שורה ראשונה - זה נותן שורה שנייה - וה
+\begin_inset Formula $\det$
+\end_inset
+
+ מתאפס
+\end_layout
+
+\begin_layout Standard
+אם גוזרים שונה שניה - זה נותן שורה שלישית - וה
+\begin_inset Formula $\det$
+\end_inset
+
+ מתאפס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוזרים שורה לפני אחרונה - זה נותן שורה אחרונה - וה
+\begin_inset Formula $\det$
+\end_inset
+
+ מתאפס
+\end_layout
+
+\begin_layout Standard
+לכן השורה היחידה שלא מאפסת את הדטרמיננטה היא השורה האחרונה, ולכן
+\begin_inset Formula 
+\[
+W'=\det\begin{pmatrix}y_{1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-2\right)} & \cdots & y_{n}^{\left(n-2\right)}\\
+y_{1}^{\left(n\right)} & \cdots & y_{n}^{\left(n\right)}
+\end{pmatrix}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ פותרים את המד"ר 
+\begin_inset Formula $y_{i}^{\left(n\right)}=-\left[a_{n-1}y_{i}^{\left(n-1\right)}+...+a_{1}y_{i}^{\prime}+a_{0}y_{i}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W'=\det\begin{pmatrix}y_{1} & \cdots & y_{n}\\
+\vdots & \ddots & \vdots\\
+y_{1}^{\left(n-2\right)} & \cdots & y_{n}^{\left(n-2\right)}\\
+a_{n-1}y_{1}^{\left(n-1\right)}+...+a_{1}y_{1}^{\prime}+a_{0}y_{1} & \cdots & a_{n-1}y_{n}^{\left(n-1\right)}+...+a_{1}y_{n}^{\prime}+a_{0}y_{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+מחסרים משורה תחתונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\times a_{0}$
+\end_inset
+
+שורה ראשונה
+\end_layout
+
+\begin_layout Standard
++
+\begin_inset Formula $\times a_{1}$
+\end_inset
+
+שורה תחתונה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
++
+\begin_inset Formula $\times a_{n-2}$
+\end_inset
+
+ שורה אחת לפני אחרונה.
+\end_layout
+
+\begin_layout Standard
+נשאר 
+\begin_inset Formula $W'=-a_{n-1}W$
+\end_inset
+
+.
+ כל השאר כמו במקרה 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הורדת סדר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}y^{\left(n\right)}+a_{n-1}y^{\left(n-1\right)}+...+a_{1}y^{\prime}+a_{0}y=b
+\]
+
+\end_inset
+
+אם נתון פתרון 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ של המשוואה ההומוגנית יש לחפש פתרון של האי הומוגנית בצורה 
+\begin_inset Formula $y=y_{0}z$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ מקיים משוואה מסדר 
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\prime\prime}-\cfrac{6}{x^{2}}y=x\ln x
+\]
+
+\end_inset
+
+
+\begin_inset Formula $y_{0}=x^{3}$
+\end_inset
+
+ פותר את 
+\begin_inset Formula $y^{\prime\prime}-\cfrac{6}{x^{2}}y=0$
+\end_inset
+
+.
+ נציב:
+\begin_inset Formula 
+\[
+y=x^{3}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\prime}=3x^{2}z+x^{3}z^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\prime\prime}=6xz+6x^{2}z^{\prime}+x^{3}z^{\prime\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+6xz+6x^{2}z^{\prime}+x^{3}z^{\prime\prime}-\cfrac{6}{x^{2}}\left(x^{3}z\right)=x\ln x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}z^{\prime\prime}+6xz^{\prime}=\ln x
+\]
+
+\end_inset
+
+אם נציב 
+\begin_inset Formula $w=z^{\prime}$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\[
+x^{2}w^{\prime}+6xw=\ln x
+\]
+
+\end_inset
+
+נפתור: 
+\begin_inset Formula $x^{2}w^{\prime}+6xw=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\cfrac{w^{\prime}}{w}=-\cfrac{6}{x}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\ln w=-6\ln x+K$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $w=\cfrac{C}{x^{6}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $w=\cfrac{v}{x^{6}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}\left(\cfrac{v^{\prime}}{x^{6}}-\cfrac{6v}{x^{7}}\right)^{\prime}+6x\left(\cfrac{v}{x^{6}}\right)=\ln x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v^{\prime}=x^{4}\ln x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\int x^{4}\ln xdx=\cfrac{x^{5}}{5}\ln x-\int\cfrac{x^{5}}{5}\cfrac{1}{x}dx=\cfrac{x^{5}}{5}\ln x-\cfrac{x^{5}}{25}+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{\prime}=w=\cfrac{\ln x}{5x}-\cfrac{1}{25x}+\cfrac{C}{x^{6}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=\int\left(\cfrac{\ln x}{5x}-\cfrac{1}{25x}+\cfrac{C}{x^{6}}\right)dx=\cfrac{\left(\ln x\right)^{2}}{10}-\cfrac{\ln x}{25}-\cfrac{C}{5x^{5}}+D
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\overset{y_{p}}{\overbrace{x^{3}\left(\cfrac{\left(\ln x\right)^{2}}{10}-\cfrac{\ln x}{25}\right)}}+\overset{y_{c}}{\overbrace{\cfrac{K_{1}}{x^{2}}+K_{2}x^{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שיטת וריאציית המקדמים
+\end_layout
+
+\begin_layout Standard
+נניח שאנחנו יודעים בסיס 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ של פתרונות של מש.
+ הומוגנית, ורוצים לפתור אי-הומוגנית.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ הם פתרונות בת"ל של 
+\begin_inset Formula $a_{n}y^{\left(n\right)}+...+a_{1}y^{\prime}+a_{0}y=0$
+\end_inset
+
+.
+ אזי ניתן לכתוב את הפתרון הכללי של 
+\begin_inset Formula $a_{n}y^{\left(n\right)}+...+a_{1}y^{\prime}+a_{0}y^{\prime}=b$
+\end_inset
+
+ בצורה 
+\begin_inset Formula $y=\sum\limits _{i=1}^{n}c_{i}\left(x\right)y_{i}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c_{1},c_{2},...c_{n}$
+\end_inset
+
+ הם פתרונות של 
+\begin_inset Formula 
+\[
+\begin{pmatrix}y_{1} & y_{2} & \cdots & y_{n}\\
+y_{1}^{\prime} & y_{2}^{\prime} & \cdots & y_{n}^{\prime}\\
+\vdots & \vdots & \ddots & \vdots\\
+y_{1}^{\left(n-1\right)} & y_{2}^{\left(n-1\right)} & \cdots & y_{n}^{\left(n-1\right)}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\prime\prime}-\cfrac{6}{x^{2}}y=x\ln x
+\]
+
+\end_inset
+
+ הפתרונות של ההומוג.
+ הם 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}=x^{3}\\
+y_{2}=\cfrac{1}{x^{2}}
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x^{3} & \cfrac{1}{x^{2}}\\
+3x^{2} & -\cfrac{2}{x^{3}}
+\end{pmatrix}\begin{pmatrix}C_{1}^{\prime}\\
+C_{2}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+x\ln x
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}C_{1}^{\prime}\\
+C_{2}^{\prime}
+\end{pmatrix}=\cfrac{1}{-5}\begin{pmatrix}-\cfrac{2}{x^{3}} & -\cfrac{1}{x^{2}}\\
+-3x^{3} & x^{3}
+\end{pmatrix}\begin{pmatrix}0\\
+x\ln x
+\end{pmatrix}=\begin{pmatrix}\cfrac{\ln x}{5x}\\
+-\cfrac{x^{4}\ln x}{5}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{1}=\int\cfrac{\ln x}{5x}dx=\cfrac{\left(\ln x\right)^{2}}{10}+L_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{2}=\int\cfrac{-x^{4}\ln x}{5}dx=-\left(\cfrac{x^{5}\ln x}{5}-\cfrac{x^{5}}{25}\right)+L_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=x^{3}\left(\cfrac{\left(\ln x\right)^{2}}{10}+L_{1}\right)+\left(-\cfrac{x^{5}\ln x}{25}+\cfrac{x^{5}}{125}+L_{2}\right)\cfrac{1}{x^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{y=\cfrac{x^{3}\left(\ln x\right)^{2}}{10}-\cfrac{x^{3}\ln x}{25}+K_{1}x^{3}+\cfrac{K_{2}}{x^{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

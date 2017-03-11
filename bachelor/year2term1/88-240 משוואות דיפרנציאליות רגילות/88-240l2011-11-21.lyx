@@ -1,0 +1,1494 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+מפעם שעברה
+\end_layout
+
+\begin_layout Subsection*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ פתרונות של מד"ר לינארי הומוגני בצורה נורמלית, ואפילו בנקודה אחת 
+\begin_inset Formula $w=0$
+\end_inset
+
+, אז הם ת"ל.
+\end_layout
+
+\begin_layout Subsection*
+משפט אבל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ פתרונות של מד"ר לינארי הומוגני אזי 
+\begin_inset Formula $a_{n}\left(x\right)\ne0,w\left(x\right)=w\left(x_{0}\right)e^{-\int_{x_{0}}^{x}\frac{a_{n-1}\left(t\right)}{a_{n}\left(t\right)}dt}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אם המד"ר בצורה נורמלית: 
+\begin_inset Formula $a_{n}\left(x\right)=1,w\left(x\right)=w\left(x_{0}\right)e^{-\int_{x_{0}}^{x}a_{n-1}\left(t\right)dt}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+וריאציית מקדמים
+\end_layout
+
+\begin_layout Standard
+אם יודעים לפתור משוואה דיפרנציאלית לינארית הומוגנית, ניתן לפתור את המשוואה
+ האי הומוגנית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}\left(x\right)\ne0,a_{n}\left(x\right)y^{\left(n\right)}+...+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)\,\,\,\,\left(\Delta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y_{1},y_{2},...y_{n}$
+\end_inset
+
+ הם 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות בת"ל של המש.
+ ההומוגנית, ניתן לכתוב את הפתרון של האי הומוגנית בצורה
+\begin_inset Formula 
+\[
+y=c_{1}\left(x\right)y_{1}\left(x\right)+c_{2}\left(x\right)y_{2}\left(x\right)+...+c_{n}\left(x\right)y_{n}\left(x\right)\,\,\,\left(*\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $c_{1},c_{2},...c_{n}$
+\end_inset
+
+ פותרים את המערכת
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+c_{1}'y_{1}+c_{2}'y_{2}+...+c_{n}'y_{n}=0\\
+c_{1}'y_{1}'+c_{2}'y_{2}'+...+c_{n}'y_{n}'=0\\
+\vdots\\
+c_{1}'y_{1}^{\left(n-1\right)}+c_{2}'y_{2}^{\left(n-1\right)}+...+c_{n}'y_{n}^{\left(n-1\right)}=\cfrac{b}{a_{n}}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)מוצאים 
+\begin_inset Formula $c_{1}',c_{2}',...c_{n}'$
+\end_inset
+
+ מתוך משוואות אלה, מבצעים אינטגרלים למצוא 
+\begin_inset Formula $c_{1},c_{2},...c_{n}$
+\end_inset
+
+ עד כדי קבועים, וזה נותן פתרון כללי של האי-הומוגני - הקבועים.
+ החופשיים נותנים חופשיות להוסיף פתרון של ההומוגני לפתרון של האי הומוגני(.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+בודקים שהפתרון המוצע
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מקיים את המשוואה
+\begin_inset Formula $\left(\Delta\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'=\left(c_{1}'y_{1}+c_{1}y_{1}'\right)+\left(c_{2}'y_{2}+c_{2}y_{2}'\right)+...+\left(c_{n}'y_{n}+c_{n}y_{n}'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=c_{1}y_{1}'+c_{2}y_{2}'+...+c_{n}y_{n}'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\left(c_{1}'y_{1}'+c_{1}y_{1}''\right)+\left(c_{2}'y_{2}'+c_{2}y_{2}''\right)+...+\left(c_{n}'y_{n}'+c_{n}y_{n}''\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=c_{1}y_{1}''+c_{2}y_{2}''+...+c_{n}y_{n}''
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\left(n-1\right)}=c_{1}y_{1}^{\left(n-1\right)}+c_{2}y_{2}^{\left(n-1\right)}+...+c_{n}y_{n}^{\left(n-1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\left(n\right)}=c_{1}y_{1}^{\left(n\right)}+c_{2}y_{2}^{\left(n\right)}+...+c_{n}y_{n}^{\left(n\right)}+\cfrac{b}{a_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לקחת את הפתרון ולהציב במשוואה.
+ נצרף את הכל יחד:
+\begin_inset Formula 
+\[
+a_{n}y^{\left(n\right)}+a_{n-1}y^{\left(n-1\right)}+...+a_{1}y'+a_{0}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a_{n}\left[c_{1}y_{1}^{\left(n\right)}+c_{2}y_{2}^{\left(n\right)}+...+c_{n}y_{n}^{\left(n\right)}+b\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++a_{n-1}\left[c_{1}y_{1}^{\left(n-1\right)}+c_{2}y_{2}^{\left(n-1\right)}+...+c_{n}y_{n}^{\left(n-1\right)}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++\vdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++a_{1}\left[c_{1}y_{1}'+c_{2}y_{2}'+...+c_{n}y_{n}'\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++a_{0}\left[c_{1}y_{1}+c_{2}y_{2}+...+c_{n}y_{n}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a_{n}\cfrac{b}{a_{n}}=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מילון
+\end_layout
+
+\begin_layout Standard
+פונקציה מעתיקה קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ לקבוצה 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $A$
+\end_inset
+
+ ו/או 
+\begin_inset Formula $B$
+\end_inset
+
+ הם קבוצות של פונקציות בקלות מסתבכים.
+ לכן קוראים לפונקציה מקבוצה של פונקציות לקבוצה של פונקציות 
+\emph on
+אופרטור
+\emph default
+)
+\lang english
+operator
+\lang hebrew
+(.
+ 
+\series bold
+דוגמה
+\series default
+: 
+\begin_inset Formula $\cfrac{d}{dx}$
+\end_inset
+
+ הוא אופרטור 
+\begin_inset Formula $f\left(x\right)\mapsto f'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קוראים לפונקציה מקבוצה של פונקציות לקבוצה של מספרים 
+\emph on
+פונקציונל
+\emph default
+)
+\lang english
+functional
+\lang hebrew
+(.
+ 
+\series bold
+דוגמה
+\series default
+: אינטגרל מאפס לאחד: 
+\begin_inset Formula $f\left(x\right)\mapsto\int_{0}^{1}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - אופרטור דיפרנציאלי לינארי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{0}\left(x\right),a_{1}\left(1\right),...a_{n}\left(x\right)$
+\end_inset
+
+ פונקציות רציפות.
+ האופרטור 
+\begin_inset Formula $L$
+\end_inset
+
+ המעתיק 
+\begin_inset Formula $y\left(x\right)\to a_{n}\left(x\right)y^{\left(n\right)}+a_{n-1}\left(x\right)y^{n-1}\left(x\right)+...+a_{1}\left(x\right)y'+a_{0}\left(x\right)y$
+\end_inset
+
+ נקרא אופרטור דיפרנציאלי לינארי מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ מעתיק פונקציות עם 
+\begin_inset Formula $n$
+\end_inset
+
+ נגזרות רציפות)על קטע 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+( לפונקציות רציפות)בקטע 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Subsection*
+למה 
+\begin_inset Formula $L$
+\end_inset
+
+ נקראת לינארית?
+\end_layout
+
+\begin_layout Standard
+ניתן להראות שלכל שני קבועים 
+\begin_inset Formula $\alpha_{1},\alpha_{2}$
+\end_inset
+
+ ולכן שתי פונקציות 
+\begin_inset Formula 
+\[
+L\left(\alpha_{1}y_{1}\left(x\right)+\alpha_{2}y_{2}\left(x\right)\right)=\alpha_{1}L\left(y_{1}\left(x\right)\right)+\alpha_{2}L\left(y_{2}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\cfrac{d}{dx},D\left(y\left(x\right)\right)=y'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L=D^{2}+xD+3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(y\left(x\right)\right)=y''+xy'+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מד"ר לינארי ניתן לכתוב בצורה )*(
+\begin_inset Formula $Ly=b\left(x\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L=a_{n}\left(x\right)D^{n}+a_{n-1}\left(x\right)D^{n-1}+...+a_{1}\left(x\right)D+a_{0}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם ניתן להגדיר הופכי ל
+\begin_inset Formula $L$
+\end_inset
+
+? כלומר האם קיים פונקציה יחידה 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ הפותרת את )*(, אז נכתוב 
+\begin_inset Formula $y=Mb$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+לא
+\bar default
+!
+\series default
+ יש הרבה פתרונות למד"ר
+\end_layout
+
+\begin_layout Standard
+אבל אם נקבע פתרון יחיד ע"י)לדוגמה( תנאי התחלה: 
+\begin_inset Formula $y\left(x_{0}\right),y'\left(x_{0}\right),...y^{\left(n-1\right)}\left(x_{0}\right)$
+\end_inset
+
+ אז אולי אפשר.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=D,y'=b
+\]
+
+\end_inset
+
+נתון 
+\begin_inset Formula $y\left(x_{0}\right)=y_{0}$
+\end_inset
+
+.
+ נעשה אינטגרל לשני הצדדים:
+\begin_inset Formula 
+\[
+y\left(x\right)-y\left(x_{0}\right)=\int_{x_{0}}^{x}b\left(t\right)dt
+\]
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $y\left(x_{0}\right)=0$
+\end_inset
+
+: 
+\begin_inset Formula $\boxed{y\left(x\right)=\int_{x_{0}}^{x}b\left(t\right)dt}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+Dy=b\to y=Mb
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(x_{0}\right)=y'\left(x_{0}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ly=b\to y=Mb
+\]
+
+\end_inset
+
+
+\begin_inset Formula $L=D^{2}+a_{1}\left(x\right)D+a_{0}\left(x\right)$
+\end_inset
+
+.
+ מה זה 
+\begin_inset Formula $M$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נקרא לפתרונות של ההומוגני 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+)בת"ל(.
+ פתרון האי הומוגני הוא
+\begin_inset Formula 
+\[
+y=c_{1}\left(x\right)y_{1}\left(x\right)+c_{2}\left(x\right)y_{2}\left(x\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+c_{1}'y_{1}+c_{2}'y_{2}=0\\
+c_{1}'y_{1}'+c_{2}'y_{2}'=b
+\end{array}\right.
+\]
+
+\end_inset
+
+ממש.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: 
+\begin_inset Formula $c_{2}'=\cfrac{-c_{1}'y_{1}}{y_{2}}$
+\end_inset
+
+.
+ ממש.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\begin_inset Formula $c_{1}'y_{1}'+\left(\cfrac{-c_{1}'y_{1}}{y_{2}}\right)y_{2}'=b$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{1}'\left(y_{1}'y_{2}-y_{1}y_{2}'\right)=by_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{1}'=\cfrac{-by_{2}}{W},c_{2}'=\cfrac{by_{1}}{W}
+\]
+
+\end_inset
+
+אנו רוצים שזה יתאפס ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, לכן נעשה את כל האינטגרלים מ
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+c_{1}\left(x\right)=K_{1}+\int_{x_{0}}^{x}\cfrac{-b\left(t\right)y_{2}\left(t\right)}{W\left(t\right)}dt\\
+c_{2}\left(x\right)=K_{2}+\int_{x_{0}}^{x}\cfrac{b\left(t\right)y_{1}\left(t\right)}{W\left(t\right)}dt
+\end{array}\right.
+\]
+
+\end_inset
+
+ויש למצוא 
+\begin_inset Formula $K_{1},K_{2}$
+\end_inset
+
+ קבועים כך ש
+\begin_inset Formula $y\left(x_{0}\right)=y'\left(x_{0}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היות ו
+\begin_inset Formula $c_{1}'y_{1}+c_{2}'y_{2}=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y\left(0\right)=c_{1}\left(x\right)y_{1}\left(x\right)+c_{2}\left(x\right)y_{2}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y'\left(x\right)=c_{1}\left(x\right)y_{1}'\left(x\right)+c_{2}\left(x\right)+y_{2}'\left(x\right)
+\]
+
+\end_inset
+
+מקבלים 
+\begin_inset Formula $y\left(x_{0}\right)=y'\left(x_{0}\right)=0$
+\end_inset
+
+ אמ"ם 
+\begin_inset Formula $c_{1}\left(x_{0}\right)=c_{2}\left(x_{0}\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $K_{1}=K_{2}=0$
+\end_inset
+
+, וסוף סוף
+\begin_inset Formula 
+\[
+y\left(x\right)=y_{1}\left(x\right)\int_{x_{0}}^{x}\cfrac{-b\left(t\right)y_{2}\left(t\right)}{W\left(t\right)}dt+y_{2}\left(x\right)\int_{x_{0}}^{x}\cfrac{b\left(t\right)y_{1}\left(t\right)}{W\left(t\right)}dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{x_{0}}^{x}\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)-y_{1}\left(x\right)y_{2}\left(t\right)}{W\left(t\right)\left(=y_{1}y_{2}'-y_{2}y_{1}'\right)}b\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האופרטור ההופכי 
+\begin_inset Formula $M$
+\end_inset
+
+ מוגדר ע"י
+\begin_inset Formula 
+\[
+Mb=\int_{x_{0}}^{x}G\left(x,t\right)b\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו אופרטור לינארי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\left(x,y\right)=\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)-y_{1}\left(x\right)y_{2}\left(y\right)}{y_{1}\left(t\right)y_{2}'\left(t\right)-y_{2}\left(t\right)y_{1}'\left(t\right)}
+\]
+
+\end_inset
+
+)
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+ פותרים את ההומוגני 
+\begin_inset Formula $y''+a_{1}y'+a_{0}y=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+הפונקציה הזו)
+\begin_inset Formula $G$
+\end_inset
+
+( נקראת פונקציית גרין)
+\lang english
+Green's function
+\lang hebrew
+( לבעייה של ערכים התחלתיים
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(0\right)=y'\left(0\right)=0
+\]
+
+\end_inset
+
+פתרונות של ההומוג: 
+\begin_inset Formula $\left\{ \begin{array}{c}
+y_{1}\left(x\right)=\cos x\\
+y_{2}\left(x\right)=\sin x
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G\left(x,t\right)=\cfrac{\cos t\sin x-\sin t\cos x}{\cos t\cos t-\sin t\left(-\sin t\right)}=\sin\left(x-t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(x\right)=\int_{0}^{x}\sin\left(x-t\right)b\left(t\right)dt
+\]
+
+\end_inset
+
+איך גוזרים דבר כזה ביחס ל
+\begin_inset Formula $x$
+\end_inset
+
+? יש לנו שתי "תרומות" של 
+\begin_inset Formula $x$
+\end_inset
+
+ - בתוך האינטגרל ובתור גבול עליון של האינטגל.
+\end_layout
+
+\begin_layout Standard
+הכלל הוא
+\begin_inset Formula 
+\[
+\cfrac{d}{dx}\left[\int_{0}^{x}f\left(x,t\right)dt\right]=f\left(x,x\right)+\int_{0}^{x}\cfrac{\partial f}{\partial x}\left(x,t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פה:
+\begin_inset Formula 
+\[
+y'=\int_{0}^{x}\cos\left(x-t\right)b\left(t\right)dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=b\left(x\right)+\underset{-y}{\underbrace{\int_{0}^{x}-\sin\left(x-t\right)b\left(t\right)dt}}
+\]
+
+\end_inset
+
+רואים ש
+\begin_inset Formula $\begin{array}{c}
+y''+y=b\\
+y\left(0\right)=y'\left(0\right)=0
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפעמים רוצים לפתור את המשוואה 
+\begin_inset Formula $y''+a_{1}\left(x\right)y'+a_{0}\left(x\right)y=b\left(x\right)$
+\end_inset
+
+ עם 
+\bar under
+תנאי שפה
+\bar default
+ 
+\begin_inset Formula $y\left(x_{0}\right)=y\left(x_{1}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין לבעיה זאת קיום ויחידות: לא בהכרח קיים פתרון, יש לפעמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ יותר מפתרון אחד וכו'.
+\end_layout
+
+\begin_layout Standard
+ראינו שאם 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+ פותרים את ההומוג אזי 
+\begin_inset Formula $y=c_{1}\left(x\right)y_{1}\left(x\right)+c_{2}\left(x\right)y_{2}\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left\{ \begin{array}{c}
+c_{1}'=\cfrac{-by_{2}}{W}\\
+c_{2}'=\cfrac{by_{1}}{W}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $y_{1}\left(x\right)$
+\end_inset
+
+ להיות פתרון של ההומוג עם 
+\begin_inset Formula $y_{1}\left(x_{0}\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}\left(x\right)$
+\end_inset
+
+ להיות הפתרון של ההומוג עם 
+\begin_inset Formula $y_{2}\left(x_{1}\right)=0$
+\end_inset
+
+ )לא הבכרח ניתן לעשות את זה(.
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $c_{2}=\int_{x_{0}}^{x}\cfrac{b\left(t\right)y_{1}\left(t\right)}{W\left(t\right)}$
+\end_inset
+
+)כי אנחנו רוצים 
+\begin_inset Formula $c_{2}\left(x_{0}\right)=0$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $c_{1}=\int_{x_{1}}^{x}\cfrac{-b\left(t\right)y_{2}\left(t\right)}{W\left(t\right)}dt$
+\end_inset
+
+)ואז 
+\begin_inset Formula $c_{1}\left(x_{1}\right)=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+מצאנו ש
+\begin_inset Formula $y\left(x\right)=y_{1}\left(x\right)\int_{x}^{x_{1}}\cfrac{y_{2}\left(t\right)b\left(t\right)}{W\left(t\right)}dt+y_{2}\left(x\right)\int_{x_{0}}^{x}\cfrac{y_{1}\left(t\right)b\left(t\right)}{W\left(t\right)}dt$
+\end_inset
+
+.
+ נרצה לחבר את האינטגרלים, אבל הם לא על אותו תחום.
+\end_layout
+
+\begin_layout Standard
+נשתמש בפונקציה 
+\begin_inset Formula $H\left(s\right)=\begin{cases}
+1 & s\ge0\\
+0 & s<0
+\end{cases}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heaviside function
+\lang hebrew
+, ואז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ נציב:
+\begin_inset Formula 
+\[
+\int_{x_{0}}^{x}\cfrac{y_{1}\left(t\right)b\left(t\right)}{W\left(t\right)}dt=\int_{x_{0}}^{x_{1}}\cfrac{y_{1}b\left(t\right)}{W\left(t\right)}H\left(x-t\right)dt
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{x}^{x_{1}}\cfrac{y_{2}\left(t\right)b\left(t\right)}{W\left(t\right)}dt=\int_{x_{0}}^{x_{1}}\cfrac{y_{2}\left(t\right)b\left(t\right)}{W\left(t\right)}H\left(t-x\right)dt
+\]
+
+\end_inset
+
+ונקבל סה"כ
+\begin_inset Formula 
+\[
+y\left(x\right)=\int_{x_{0}}^{x_{1}}K\left(x,t\right)b\left(t\right)dt
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+K\left(x,t\right)=\cfrac{y_{1}\left(t\right)y_{2}\left(x\right)H\left(x-t\right)+y_{1}\left(x\right)y_{2}\left(t\right)H\left(t-x\right)}{W\left(t\right)}
+\]
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא פונקציית גרין לבעיית שפה.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+שימו לב!! 
+\begin_inset Formula $\boxed{\begin{array}{c}
+y_{1}\left(x_{0}\right)=0\\
+y_{2}\left(x_{1}\right)=0
+\end{array}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{matrix}y''+y=b\left(x\right)\\
+y\left(0\right)=y\left(1\right)=0
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקום 
+\begin_inset Formula $\begin{array}{c}
+y_{1}=\cos x\\
+y_{2}=\sin x
+\end{array}$
+\end_inset
+
+)שלא מתאפסים בקצוות( נבחר צירופים לינארים שלהם: 
+\begin_inset Formula $\begin{array}{c}
+y_{1}=\sin x\\
+y_{2}=\sin x-\tan1\cos x
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y\left(0\right)=y\left(\pi\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{array}{c}
+y_{1}=\sin x\\
+y_{2}=\alpha\cos x+\beta\sin x
+\end{array}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $\underset{\left(y_{2}\left(\pi\right)=0\right)}{\alpha=0}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $y_{2}=\beta\sin x$
+\end_inset
+
+ - זה לא עובד, כי התנאים לא מתאימים.
+\end_layout
+
+\begin_layout Part*
+מד"ר לינאריות עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n}y^{\left(n\right)}+a_{n-1}y^{\left(n-1\right)}+...+a_{1}y'+a_{0}y=b\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a_{n},...a_{0}$
+\end_inset
+
+ - כולם קבועים, 
+\series bold
+\bar under
+לא
+\series default
+\bar default
+ פונקציות של 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ לא בהכרח קבוע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=0$
+\end_inset
+
+ - הומוגני.
+ 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ - לא הומוגני.
+\end_layout
+
+\begin_layout Standard
+בצורה אופרטורית: 
+\begin_inset Formula $Ly=b\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $L=a_{n}D^{n}+a_{n-1}D^{n-1}+...+a_{1}D+a_{0}$
+\end_inset
+
+ אופרטור דיפרנציאלי לינארי עם מקדמים קבועים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אופרטורים דיפרנציאלים ליניארים עם מקדמים קבועים 
+\bar under
+מתחלפים
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+כלומר אם 
+\begin_inset Formula $L_{1},L_{2}$
+\end_inset
+
+ אדלמ"קים, 
+\begin_inset Formula $L_{1}L_{2}=L_{2}=L_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מספיק להוכיח במקרה 
+\begin_inset Formula $\begin{array}{c}
+L_{1}=\alpha D^{n}\\
+L_{2}=\beta D^{m}
+\end{array}$
+\end_inset
+
+)
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ קבועים(
+\begin_inset Formula 
+\[
+L_{1}L_{2}y=\alpha D^{n}\left(\beta y^{\left(m\right)}\right)=\alpha\beta y^{\left(m+n\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{2}L_{1}y=\beta D^{m}\left(\alpha y^{\left(n\right)}\right)=\alpha\beta y^{\left(m+n\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המקרה הכללי נובע ע"י ליניאריות
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ או 
+\begin_inset Formula $\beta$
+\end_inset
+
+ תלויים ב
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $L_{1}L_{2}$
+\end_inset
+
+ לא בהכרח שווה ל
+\begin_inset Formula $L_{2}L_{1}$
+\end_inset
+
+!!
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $L=L_{1}L_{2}...L_{d}$
+\end_inset
+
+ )
+\begin_inset Formula $L_{1},...L_{d}$
+\end_inset
+
+ אדלמ"קים(.
+ אזי אם 
+\begin_inset Formula $L_{i}y=0$
+\end_inset
+
+ גם 
+\begin_inset Formula $L_{i}y=0$
+\end_inset
+
+)ל
+\begin_inset Formula $i$
+\end_inset
+
+ כלשהו( גם 
+\begin_inset Formula $Ly=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ע"י חילופיות:
+\begin_inset Formula 
+\[
+Ly=L_{1}L_{2}...L_{d}y=L_{1}L_{2}...L_{i-1}L_{i+1}...L_{d}L_{i}y=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1117 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Closure of a set of attributes
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $X\subseteq S$
+\end_inset
+
+ וסט של תלויות פונקציונאליות 
+\begin_inset Formula $F$
+\end_inset
+
+, ניתן באמצעות אלגוריתם למצוא את 
+\begin_inset Formula $X^{+}$
+\end_inset
+
+ - כל השדות התלויים ב
+\begin_inset Formula $X$
+\end_inset
+
+ לפי 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מזה נובע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\lang english
+Corollary
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+X\to Y\Leftarrow F\Leftrightarrow Y\subset X^{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן
+\begin_inset Formula 
+\[
+\left(X^{+}\right)^{+}=X^{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שימושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Applications of closure
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+\end_layout
+
+\begin_layout Standard
+זה דומה ל
+\lang english
+Recognizer
+\lang hebrew
+)משהו שבודק אם מילה שייכת לשפה( - נתונה תלות, בודקים אם היא נכונה.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ holds on R?
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $Y\subset X^{+}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+holds
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $Y\not\subset X^{+}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+doesn't hold
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+2.
+\end_layout
+
+\begin_layout Standard
+זה דומה ל
+\lang english
+Generator
+\lang hebrew
+)משהו שמפיק מילים של שפה( - נתון 
+\begin_inset Formula $X$
+\end_inset
+
+ וקבוצה של כללים, ומפיקים את התלויות הנובעות מהם.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $R\left(S\right),K\subset S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $K$
+\end_inset
+
+ is superkey?
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $K^{+}=S$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+yes
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $K^{+}\subsetneq S$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+no
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+אסקיומות 
+\lang english
+Armstrong's Axioms
+\end_layout
+
+\begin_layout Enumerate
+רפלסקיביות - 
+\begin_inset Formula $Y\subseteq X\Rightarrow X\to Y$
+\end_inset
+
+)
+\lang english
+Trivial FD
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Augemntation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $X\to Y\Rightarrow\forall_{Z}XZ\to YZ$
+\end_inset
+
+ 
+\begin_inset Formula $\qquad\qquad$
+\end_inset
+
+ 
+\begin_inset Formula $X\cup Z\to Y\cup Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+טרנזיטיביות - 
+\begin_inset Formula $X\to Y,Y\to Z\Rightarrow X\to Z$
+\end_inset
+
+
+\begin_inset Formula $\qquad\qquad$
+\end_inset
+
+
+\begin_inset Formula $Z:=Z-X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+סגור של תלויות פונקציונאליות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Closure of a set of FDs
+\end_layout
+
+\begin_layout Standard
+יהי יחס 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $F$
+\end_inset
+
+ קבוצה של תלויות פונקציונאליות שמתקיימות ב
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+כל קבוצת תלויות פונקציונאליות 
+\begin_inset Formula $F1\equiv F$
+\end_inset
+
+ נקראת בסיס.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ נקרא בסיס מינימלי אם הוא מקיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ את התנאים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{f\in B}\textnormal{singleton right side}$
+\end_inset
+
+ - בצד ימין של כל תלות ב
+\begin_inset Formula $B$
+\end_inset
+
+ יש רק שדה אחד.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall_{f\in B}B-f\not\equiv B$
+\end_inset
+
+ - אי אפשר להוריד אף תלות מ
+\begin_inset Formula $B$
+\end_inset
+
+ בלי להחליש אותו.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f=X_{1}X_{2}\to Y,X_{2}\to Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: תלויות טריוויאליות לא שייכות לבסיס מינימלי)לפי אקסיומה שנייה(
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\left(A,B,C\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ A\to B,A\to C,B\to A,B\to C,C\to A,C\to B\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצוא את כל התלויות הנגזרות:
+\end_layout
+
+\begin_layout Standard
+נוסיף בסיבים שקולים לפי ההנחות:
+\begin_inset Formula 
+\[
+F_{1}=F\cup\left\{ AB\to C,AC\to B,BC\to A\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{2}=F_{1}\cup\left\{ A\to BC,B\to AC,C\to AB\right\} 
+\]
+
+\end_inset
+
+נוסיף את התלויות הטריוויאליות:
+\begin_inset Formula 
+\[
+F_{3}=F_{2}\cup\left\{ A\to A,B\to B,C\to C\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל אלו בסיסיםפ - אבל לא מינימליים.
+ נבנה בסיסים מינימליים:
+\begin_inset Formula 
+\[
+B_{1}=\left\{ A\to B,B\to A,B\to C,C\to B\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B_{2}=\left\{ A\to B,B\to C,C\to A\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פירוק יחסים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c|c|c}
+Flights &  &  & \\
+Flight & Class & Price & Airpl & Num
+\\\hline \end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו שהיחס הזה עושה לנו הרבה בעיות של כפילות.
+ נרצה לפרק אותו, אבל בצורה נכונה, כך שכל פעם מה שאנחנו מקבלים שקול למקור.
+ יהיה ניתן לבנות מהפירוק הזה עץ, שבו כל אב שקול לאוסף הבנים שלו.
+\begin_inset Formula 
+\[
+\xymatrix{ &  & *++[F]{R}\ar[ld]\ar[rd]\\
+ & *++[F]{R1}\ar[ld]\ar[rd] &  & *++[F]{R2}\\
+*++[F]{R3} &  & *++[F]{R4}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הטלת תלויות פונקציונאליות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Projectin FDs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\left(S\right),F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S1\subset S,R1=\pi_{S1}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F1\Leftarrow F
+\]
+
+\end_inset
+
+איך נחשב את 
+\begin_inset Formula $F1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Section*
+שיטה
+\end_layout
+
+\begin_layout Standard
+נתון יחס 
+\begin_inset Formula $R\left(A,B,C,D\right)$
+\end_inset
+
+, וקבוצת תלויות פונקציונאליות 
+\begin_inset Formula $F=\left\{ A\to B,B\to C,C\to D\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R1\left(A,C,D\right),F1=?
+\]
+
+\end_inset
+
+לפי טרנזיטיביות, 
+\begin_inset Formula $A\to B\to C\to D$
+\end_inset
+
+ לכן 
+\begin_inset Formula $A\to C\to D$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $F1=\left\{ A\to C,C\to D\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+Input: 
+\begin_inset Formula $R\left(S\right)$
+\end_inset
+
+,
+\begin_inset Formula $R1\left(S1\right)$
+\end_inset
+
+,
+\begin_inset Formula $R1=\pi_{S1}R$
+\end_inset
+
+,
+\begin_inset Formula $F\left(\textnormal{on }R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Output: 
+\begin_inset Formula $F1$
+\end_inset
+
+, 
+\begin_inset Formula $F1\Leftarrow F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+//Initialization
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+F1=
+\begin_inset Formula $\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+//Basis
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for(all 
+\begin_inset Formula $X\subset S1$
+\end_inset
+
+){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+compute 
+\begin_inset Formula $X_{F}^{+}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+F1:=F1+
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ |
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+משמעות הסימן | הוא
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+if
+\lang hebrew
+.
+ כלומר לקחת רק את האיברים שעונים על התנאים שמפורטים אחריו.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $X\to Y$
+\end_inset
+
+ nontrivial, 
+\begin_inset Formula $Y\in X_{F}^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $Y\in S1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+//Min basis
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while(
+\begin_inset Formula $\exists f\in1|f\Leftarrow F1-f$
+\end_inset
+
+) F1:=F1-f
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+while(
+\begin_inset Formula $\exists X\to Y|\left|X\right|>1,Z=X-Xi$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if(
+\begin_inset Formula $Z\to Y\Leftarrow F$
+\end_inset
+
+){
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $X\to Y$
+\end_inset
+
+:=
+\begin_inset Formula $Z\to Y$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+}
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\left(A,B,C,D\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\left\{ A\to B,B\to C,C\to D\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R1=\left(A,C,D\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F1=?
+\]
+
+\end_inset
+
+כבר עשינו את זה קודם - אבל לא פורמלית.
+ עכשיו נעשה את זה לפי האלגוריתם.
+\end_layout
+
+\begin_layout Standard
+הסגור של 
+\begin_inset Formula $A$
+\end_inset
+
+ יתן לנו סכימה - 
+\begin_inset Formula $A^{+}=\left\{ A,B,C,D\right\} $
+\end_inset
+
+.
+ לכן אנחנו לא צריכים להתבונן ב
+\begin_inset Formula $AB,AC,AD,ABC,\dots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הסגור של 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא 
+\begin_inset Formula $C^{+}=\left\{ C,D\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאותו אופן, 
+\begin_inset Formula $D^{+}=\left\{ D\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר לסכם את זה)לאחר הורדת התלויות הטריוויאליות, ואלו שלא נמצאות ב
+\begin_inset Formula $R1$
+\end_inset
+
+( באמצעות הבסיס 
+\begin_inset Formula $\left\{ A\to C,A\to D,C\to D\right\} $
+\end_inset
+
+.
+ אבל התלות 
+\begin_inset Formula $A\to D$
+\end_inset
+
+ נובעת מתלויות אחרות, ולכן ניתן להוריד אותה.
+\end_layout
+
+\begin_layout Part*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+RDB(Relational Database) design
+\end_layout
+
+\begin_layout Standard
+בגלל הבעיות ביחסים גדולים, רוצים לפרק ליחסים יותר קטנים:
+\begin_inset Formula 
+\[
+\xymatrix{ & R\left(S\right)\ar[ld]\ar[rd]\\
+R1\left(S2\right) &  & R2\left(S2\right)
+}
+\]
+
+\end_inset
+
+רוצים שיתקיים
+\begin_inset Formula 
+\[
+S1\subset S\qquad S2\subset S
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R1=\pi_{S1}R\qquad R2=\pi_{S2}R
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S1\cup S2=S
+\]
+
+\end_inset
+
+כדי לבנות דבר כזה משתמשים ב
+\end_layout
+
+\begin_layout Section*
+אלגוריתם נירמול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Normalization Algorithm
+\end_layout
+
+\begin_layout Standard
+מתחילים מצורה נורמלית ראשונה - 
+\begin_inset Formula $1NF$
+\end_inset
+
+ - כל המידע ביחס אחד.
+\begin_inset Formula 
+\[
+\xymatrix{1NF\ar[r] & 2NF}
+\]
+
+\end_inset
+
+ב
+\begin_inset Formula $2NF$
+\end_inset
+
+ יש פחות בעיות, אבל עדיין יש, ולכן ממשיכים לפרק:
+\begin_inset Formula 
+\[
+\xymatrix{1NF\ar[r] & 2NF\ar[r] & 3NF\ar[r] & BCNF\ar[r] & 4NF\ar[r] & \cdots}
+\]
+
+\end_inset
+
+בקורס הזה נעצור ב
+\begin_inset Formula $4NF$
+\end_inset
+
+, אבל אפשר להמשיך עוד.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1015 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\lang english
+Counting Sort
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+קלט
+\bar default
+: 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים שלמים בטווח 
+\begin_inset Formula $\left[1..k\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשתמש במערך עזר 
+\begin_inset Formula $C\left[1..k\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+האלגוריתם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ - קלט.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ - פלט
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\bar under
+ֻ
+\lang english
+Counting sort(A,B,k)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+1.
+ for i
+\begin_inset Formula $\gets$
+\end_inset
+
+1 to k
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+1.1 C[i]
+\begin_inset Formula $\gets$
+\end_inset
+
+0
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+2.
+ for j
+\begin_inset Formula $\gets$
+\end_inset
+
+1 to length(A)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+2.1 C[A[j]]
+\begin_inset Formula $\gets$
+\end_inset
+
+C[A[j]]+1
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+3.
+ for i
+\begin_inset Formula $\gets$
+\end_inset
+
+2 to k
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+3.1 C[i]
+\begin_inset Formula $\gets$
+\end_inset
+
+C[i]+C[i-1]
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+4.
+ for j
+\begin_inset Formula $\gets$
+\end_inset
+
+length(A) down to 1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+4.1 B[C[A[j]]]
+\begin_inset Formula $\gets$
+\end_inset
+
+A[j]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+4.2 C[A[j]]
+\begin_inset Formula $\gets$
+\end_inset
+
+C[A[j]]-1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+האלגוריתם עובד על ידי כך שאחרי שהוא סופר כמה איברים יש מכל איבר, הוא עובר
+ על המערך המקורי ולפי הטבלה יודע איפה למקם אותו.
+\end_layout
+
+\begin_layout Standard
+יש דרך יותר פשוטה - לעבור על 
+\begin_inset Formula $C$
+\end_inset
+
+ ולשים 
+\begin_inset Formula $x$
+\end_inset
+
+ איברים מכל ערך אחד אחרי השני.
+ הסיבה שהאלגוריתם הזה לא עושה את זה זה כדי להיות מיון יציב:
+\end_layout
+
+\begin_layout Subsubsection*
+מיון יציב)
+\lang english
+Stable
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+מספרים עם אותו ערך יופיעו במערך הפלט באותו סדר שבו הם הופיעו במערך הקלט.
+\end_layout
+
+\begin_layout Subsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Standard
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח 
+\begin_inset Formula $\theta\left(k\right)$
+\end_inset
+
+.
+ חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+.
+ חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח 
+\begin_inset Formula $\theta\left(k\right)$
+\end_inset
+
+.
+ חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זמן ריצה - 
+\begin_inset Formula $\theta\left(n+k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $k=O\left(n\right)$
+\end_inset
+
+ אז המיון בזמן 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+מיון בסיס
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Radix sort
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+קלט
+\bar default
+: 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים בעלי 
+\begin_inset Formula $d$
+\end_inset
+
+ ספרות בטווח 
+\begin_inset Formula $\left[0..k-1\right]$
+\end_inset
+
+)כלומר כל ספרה היא בבסיס 
+\begin_inset Formula $k$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הרעיון
+\bar default
+: נעשה מיונים לפי ספרות, כשמתחילים מהספרה הפחות משמעותית 
+\begin_inset Formula $LSD$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+האלגוריתם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ - קלט
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\bar under
+\lang english
+Radix-sort(A,d)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+1.
+ for i
+\begin_inset Formula $\gets$
+\end_inset
+
+1 to d
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+1.1 sort array A on digit i using stable sort
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Standard
+מבצעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Counting sort
+\lang hebrew
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ פעמים.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Counting sort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דורש 
+\begin_inset Formula $\theta\left(n+k\right)$
+\end_inset
+
+ זמן.
+ סה"כ זמן ריצה אם משתמשים ב
+\lang english
+Counting sort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $\theta\left(d\left(n+k\right)\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $d$
+\end_inset
+
+ קבוע ו
+\begin_inset Formula $k=O\left(n\right)$
+\end_inset
+
+, זמן הריצה הוא 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Radix sort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממיין נכון והוא מיון יציב.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על מספר הספרות.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $x_{l}$
+\end_inset
+
+- 
+\begin_inset Formula $l$
+\end_inset
+
+ הספרות הפחות משמעותיות של המס' 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+בסיס
+\bar default
+ 
+\begin_inset Formula $d=1$
+\end_inset
+
+: ביצענו מיון יציב על 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים בטווח 
+\begin_inset Formula $\left[0,...k-1\right]$
+\end_inset
+
+ ולכן אם 
+\begin_inset Formula $x_{1}<y_{1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x$
+\end_inset
+
+ יופיע לפני 
+\begin_inset Formula $y$
+\end_inset
+
+, ואם 
+\begin_inset Formula $x_{1}=y_{1}$
+\end_inset
+
+ המיקום היחסי לא ישתנה כי המיון יציב.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+הנחת
+\begin_inset space ~
+\end_inset
+
+האינדוקציה
+\bar default
+ 
+\begin_inset Formula $d=l-1$
+\end_inset
+
+: אם 
+\begin_inset Formula $x_{l-1}<y_{l-1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x$
+\end_inset
+
+ יופיע לפני 
+\begin_inset Formula $y$
+\end_inset
+
+, ואם 
+\begin_inset Formula $x_{l-1}=y_{l-1}$
+\end_inset
+
+ אז המיקום היחסי לא השתנה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\bar under
+צעד
+\bar default
+: 
+\begin_inset Formula $d=l$
+\end_inset
+
+: אם 
+\begin_inset Formula $x_{l}<y_{l}$
+\end_inset
+
+ אז יש שתי אפשריות:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+1
+\numeric off
+( הספרה 
+\begin_inset Formula $l$
+\end_inset
+
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ קטנה מהספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+ של 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ המיון לפי הספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+ ישים את 
+\begin_inset Formula $x$
+\end_inset
+
+ לפני 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\numeric on
+2
+\numeric off
+( הספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+ שווה ב
+\begin_inset Formula $x$
+\end_inset
+
+ וב
+\begin_inset Formula $y$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $x_{l-1}<x_{l+1}$
+\end_inset
+
+.
+ לפי הנחת האינדוקציה, לפני המיון של הספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ הופיע לפני 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ מכיוון שהספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+ זהה והמיון יציב, 
+\begin_inset Formula $x$
+\end_inset
+
+ ישאר לפני 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{l}=y_{l}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x_{l-1}=y_{l-1}$
+\end_inset
+
+ אז לפי הנחת האינדוקציה המיקום היחסי 
+\bar under
+לפני
+\bar default
+ המיון של הספרה 
+\begin_inset Formula $l$
+\end_inset
+
+, נשמר.
+ ומכיוון שהמיון לפי הספרה ה
+\begin_inset Formula $l$
+\end_inset
+
+ יציב נקבל שהמיקום היחסי נשמר.
+\end_layout
+
+\end_body
+\end_document

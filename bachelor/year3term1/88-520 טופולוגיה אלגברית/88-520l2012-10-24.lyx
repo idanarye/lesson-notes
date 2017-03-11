@@ -1,0 +1,724 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+קטגוריות
+\end_layout
+
+\begin_layout Standard
+יש כמה קטגוריות, שבהן יש אובייקטים)קבוצות( והומומורפיזמים בין האובייקטים.
+ למשל:
+\end_layout
+
+\begin_layout Itemize
+קטגוריה של מרחבים טופולוגיים.
+ האובייקטים הם מרחבים טופולוגיים וההומומורפיזמים הם העתקות רציפות.
+\end_layout
+
+\begin_layout Itemize
+קטגוריה של חבורות והומומורפיזמים.
+\end_layout
+
+\begin_layout Standard
+קטגוריה - שהיא אוסף של קבוצות - היא גדולה מדי בשביל להיות קבוצה - לכן טופולוגיה
+ היא מחלקה.
+ אבל עבור כל זוג אובייקטים אוסף ההומומורפיזמים מהווה קבוצה.
+\end_layout
+
+\begin_layout Standard
+לכל אובייקט 
+\begin_inset Formula $A$
+\end_inset
+
+ קיים הומומורפיזם מיוחד שנקרא העתקת הזהות 
+\begin_inset Formula $I_{A}:A\to A$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $A\xrightarrow{f}B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\circ I_{A}=I_{B}\circ f=f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הומומורפיזם זה פונקציה מקבוצה אחת לאחרת ששומרת איכשהו)תלוי בקטגוריה( על
+ המבנה.
+ בחבורות, למשל יש פעולת כפל וההומומורפיזם שומר על פעולת הכפל.
+\end_layout
+
+\begin_layout Section*
+)ה(פנקטור
+\end_layout
+
+\begin_layout Standard
+טופולוגיה אלגברית מגדירה 
+\bar under
+העתקה שומרת מבנה בין אוסף כל המרחבים הטופולוגיים לאוסף כל החבורות
+\bar default
+.
+ העתקה כזו)מקטגוריה לקטגוריה( נקראת פנקטור.
+\end_layout
+
+\begin_layout Standard
+הפנקטור הזה יוצר חבורה מכל מרחב טופולוגי.
+ נסמן את הפנקטור הזה ב
+\begin_inset Formula $F$
+\end_inset
+
+: 
+\begin_inset Formula $X\xrightarrow{F}G$
+\end_inset
+
+.
+ הפנקטור הזה צריך גם לשמר את ההומומורפיזמים: לכל העתקה רציפה 
+\begin_inset Formula $X\xrightarrow{\chi}Y$
+\end_inset
+
+ צריך להתקיים 
+\begin_inset Formula $F\left(X\right)\xrightarrow{F\left(\chi\right)}F\left(Y\right)$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ שומר על הרכבה: 
+\begin_inset Formula $F\left(g\circ h\right)=F\left(g\right)\circ F\left(h\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ שומר על יחידה: 
+\begin_inset Formula $F\left(I_{A}\right)=I_{F\left(A\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מורפיזם 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ תיקרא איזומורפיזם אם קיים 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+g\circ f=I_{A}\\
+g\circ f=I_{B}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אנו מסתכלים רק על מורפיזמים)הומומורפיזם במקרה של חבורות, העתקות רציפות
+ במקרה של מרחבים טופולוגיים( ולא על כל פונקציה.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ איזומורפיזם ו
+\begin_inset Formula $F$
+\end_inset
+
+ פנקטור אז בהכרח 
+\begin_inset Formula $F\left(f\right)$
+\end_inset
+
+ גם כן איזומורפיזם.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+קיימת 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ כנ"ל.
+ יתקיים:
+\begin_inset Formula 
+\[
+F\left(g\right)\circ F\left(f\right)=F\left(g\circ f\right)=F\left(I_{A}\right)=I_{F\left(A\right)}
+\]
+
+\end_inset
+
+ובאותו אופן
+\begin_inset Formula 
+\[
+F\left(f\right)\circ F\left(g\right)=F\left(f\circ g\right)=F\left(I_{B}\right)=I_{F\left(B\right)}
+\]
+
+\end_inset
+
+ כלומר
+\begin_inset Formula 
+\[
+\xymatrix{F\left(A\right)\ar@/^{1pc}/[r]^{F\left(f\right)} & F\left(B\right)\ar@/^{1pc}/[l]^{F\left(g\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה זה טוב?
+\end_layout
+
+\begin_layout Standard
+כזכור מטופולוגיה, בשביל להראות ששני מרחבים טופולוגיים הם לא הומאומורפיים
+ היינו צריכים למצוא תכונה טופולוגית שמבדילה ביניהם.
+\end_layout
+
+\begin_layout Itemize
+במקרה של קטע פתוח וקטע חצי פתוח השתמשנו בהוצאת נקודה או בקומפקטיות
+\end_layout
+
+\begin_layout Itemize
+במקרה של ישר ומישור השתמשנו בהוצאת נקודה
+\end_layout
+
+\begin_layout Standard
+אבל האם 
+\begin_inset Formula $\mathbb{R}^{4}\cong\mathbb{R}^{7}$
+\end_inset
+
+? האם 
+\begin_inset Formula $\mathbb{R}^{2}-\left\{ a\right\} \cong\left\{ a,b\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+בשלב מסויים נגמרות התכונות שאנו יכולים להשתמש בהם כדי להבדיל בין מרחבים.
+ כאן נכנס מושג הפנקטור - החבורה שאנו מייצרים ממרחב טופולוגי היא תכונה של
+ המרחב הטופולוגי.
+ לכן אם המרחבים הומאומורפיים גם החבורות צריכות להיות איזומורפיות - 
+\begin_inset Formula $A\cong B\Leftrightarrow F\left(A\right)\cong F\left(B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+ המרנו בעיה קשה אחת לבעיה קשה אחרת - אבל בד"כ הוכחת איזומורפיזם בין חבורות
+ פחות קשה מהוכחת הומאומורפיזם בין מרחבים טופולוגיים.
+\end_layout
+
+\begin_layout Section*
+מוסכמות
+\end_layout
+
+\begin_layout Itemize
+כאשר נכתוב 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ נתכוון תמיד למורפיזם)העתקה רציפה במקרה של מרחבים טופולוגיים, הומומורפיזמים
+ במקרה של חבורות(.
+ פונקציות רגילות 
+\bar under
+לא קיימות
+\bar default
+ בקטגוריות שלנו.
+\end_layout
+
+\begin_layout Itemize
+נסמן ב
+\begin_inset Formula $I$
+\end_inset
+
+ את הקטע הסגור 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $f,g:X\to Y$
+\end_inset
+
+)
+\series bold
+העתקות רציפות
+\series default
+(.
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\emph on
+הומוטופית
+\emph default
+ ל
+\begin_inset Formula $g$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $f\sim g$
+\end_inset
+
+ אם קיימת העתקה)
+\series bold
+רציפה
+\series default
+( 
+\begin_inset Formula $H:X\times I\to Y$
+\end_inset
+
+ כך ש
+\begin_inset Formula $H\left(x,0\right)=f\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ ו
+\begin_inset Formula $H\left(x,1\right)=g\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+כלומר
+\series default
+: יש לנו מעבר רציף מהפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: כשאומרים ש
+\begin_inset Formula $H$
+\end_inset
+
+ רציפה, הכוונה רציפה על מרחב המכפלה 
+\begin_inset Formula $X\times I$
+\end_inset
+
+ עם טופולוגיית המכפלה.
+\end_layout
+
+\begin_layout Standard
+לפעמים נסמן 
+\begin_inset Formula $h_{t}\left(x\right)=H\left(x,t\right)$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\begin{array}{c}
+h_{0}=f\\
+h_{1}=g
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הראו שהיחס 
+\begin_inset Formula $f\sim g$
+\end_inset
+
+ הוא יחס שקילות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ מרחבים טופולוגיים, 
+\begin_inset Formula $\begin{array}{cc}
+f\sim f' & f,f':X\to Y\\
+g\sim g' & g,g':Y\to Z
+\end{array}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g\circ f\sim g'\circ f'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר להראות שהומוטופיה משמרת הרכבה.
+\end_layout
+
+\begin_layout Section*
+קטגוריה חדשה
+\end_layout
+
+\begin_layout Standard
+האובייקטים יהיו מרחבים טופולוגיים, והמורפיזמים יהיו מחלקות הומוטופיה)כלומר
+ מחלקות שקילות ביחס להומוטופיה( של העתקות רציפות.
+\end_layout
+
+\begin_layout Standard
+כלומר אם יש שתי העתקות הומוטופיות אנחנו לא מבדילים ביניהן.
+\end_layout
+
+\begin_layout Standard
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומר שגם אם חושבים עליהם ככה ההרכבה מוגדרת היטב.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ תיקרא 
+\emph on
+שקילות הומוטופית
+\emph default
+ אם קיימת 
+\begin_inset Formula $g:Y\to X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $g\circ f\sim Id_{X}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\circ g\sim Id_{Y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם יש שקילות הומוטופית 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ אנו נאמר ש
+\begin_inset Formula $X$
+\end_inset
+
+ שקול הומוטופית ל
+\begin_inset Formula $Y$
+\end_inset
+
+ ונרשום 
+\begin_inset Formula $X\simeq Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\sim$
+\end_inset
+
+ מסמן הומוטופיה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\simeq$
+\end_inset
+
+ מסמן שקילות הומוטופית
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cong$
+\end_inset
+
+ מסמן איזומורפיזם/שקילות
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

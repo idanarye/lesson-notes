@@ -1,0 +1,1449 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו שלכל 
+\begin_inset Formula $a\in S^{1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S^{1}\backslash\left\{ a\right\} \cong\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)כלומר מעגל שהסירו ממנו נקודה הומיאומורפי למישור(
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f:S^{1}\backslash\left\{ \left(0,1\right)\right\} \to\mathbb{R}$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula $f\left(a,b\right)=\cfrac{a}{1-b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפונקציה ההופכית היא 
+\begin_inset Formula $g:\mathbb{R}\to S^{1}\backslash\left\{ \left(0,1\right)\right\} $
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $g\left(x\right)=\left(\cfrac{2x}{x^{2}+1},\cfrac{x^{2}-1}{x^{2}+1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f,g$
+\end_inset
+
+ רציפות ולכן 
+\begin_inset Formula $S^{1}\backslash\left\{ a\right\} \cong\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ"ט, 
+\begin_inset Formula $A,B\subseteq X$
+\end_inset
+
+ תתי מרחבים קשירים מסילתית.
+ נניח ש
+\begin_inset Formula $A\cap B\neq\emptyset$
+\end_inset
+
+, אזי 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ קשיר מסילתית.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a,b\in A\cup B$
+\end_inset
+
+.
+ נחלק למקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ קשיר מסילתית ולכן קיימת 
+\begin_inset Formula $\gamma:\left[0,1\right]\to A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+\gamma\left(0\right)=a\\
+\gamma\left(1\right)=b
+\end{array}$
+\end_inset
+
+ 
+\bar under
+רציפה
+\bar default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $i:A\to A\cup B$
+\end_inset
+
+ - העתקת ההכלה היא 
+\bar under
+רציפה
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i\circ\gamma:\left[0,1\right]\to A\cup B$
+\end_inset
+
+ רציפה)כהרכבת רציפות( ומתקיים
+\begin_inset Formula 
+\[
+\left(i\circ\gamma\right)\left(0\right)=a\qquad\left(i\circ\gamma\right)\left(1\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+.
+ דומה ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+a\in A\backslash B\wedge b\in B\backslash A
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\epsilon c\in A\cap B\neq\emptyset
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a,c\in A
+\]
+
+\end_inset
+
+ע"פ מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיימת מסילה 
+\bar under
+רציפה
+\bar default
+ 
+\begin_inset Formula $\gamma_{1}:\left[0,1\right]\to A\cup B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+\gamma_{1}\left(0\right)=a\\
+\gamma_{1}\left(1\right)=c
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+שוב, ע"פ מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיימת מסילה 
+\bar under
+רציפה
+\bar default
+ 
+\begin_inset Formula $\gamma_{2}:\left[0,1\right]\to A\cup B$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\begin{array}{c}
+\gamma_{2}\left(0\right)=c\\
+\gamma_{2}\left(1\right)=b
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניתן לשרשר את שתי המסילות ולקבל מסילה רציפה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=\begin{cases}
+\gamma_{1}\left(2t\right) & 0\le t\le\cfrac{1}{2}\\
+\gamma_{2}\left(2t-1\right) & \cfrac{1}{2}\le t\le1
+\end{cases}
+\]
+
+\end_inset
+
+מתקיים: 
+\begin_inset Formula $\gamma\left(0\right)=a,\gamma\left(1\right)=b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל/מסקנה
+\end_layout
+
+\begin_layout Standard
+הוכיחו שלכל 
+\begin_inset Formula $n\le1$
+\end_inset
+
+, 
+\begin_inset Formula $S^{n}$
+\end_inset
+
+ קשיר מסילתית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset Formula $S^{n}:=\left\{ \left(x_{1},\dots x_{n+1}\right)\in\mathbb{R}^{n+1}\middle|\sum\limits _{i=1}^{n+1}x_{i}^{2}=1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: ניתן להוכיח ש
+\begin_inset Formula $\forall_{a\in S^{n}}S^{n}\backslash\left\{ a\right\} \cong\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a\neq b\in S^{n}$
+\end_inset
+
+.
+ הוכחנו כבר ש
+\begin_inset Formula $\begin{array}{c}
+S^{n}\backslash\left\{ a\right\} \cong\mathbb{R}^{n}\\
+S^{n}\backslash\left\{ b\right\} \cong\mathbb{R}^{n}
+\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ קשיר מסילתית כמרחב נורמי קמור ולכן 
+\begin_inset Formula $S^{n}\backslash\left\{ a\right\} ,S^{n}\backslash\left\{ b\right\} $
+\end_inset
+
+ קשירים מסילתית.
+\begin_inset Formula 
+\[
+\left(S^{n}\backslash\left\{ a\right\} \right)\cap\left(S^{n}\backslash\left\{ b\right\} \right)\neq\emptyset
+\]
+
+\end_inset
+
+וכן
+\begin_inset Formula 
+\[
+\left(S^{n}\backslash\left\{ a\right\} \right)\cup\left(S^{n}\backslash\left\{ b\right\} \right)=S^{n}
+\]
+
+\end_inset
+
+לכן מהמשפט הקודם 
+\begin_inset Formula $S^{n}$
+\end_inset
+
+ קשיר מסילתית.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכיחו או הפריכו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left[3,\infty\right)\cong\left(-\infty,5\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S^{1}\cong S^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S^{1}\cong Z$
+\end_inset
+
+ כאשר
+\begin_inset Formula 
+\[
+S^{1}=\left\{ \left(x,y\right)\in\mathbb{R}^{2}\middle|x^{2}+y^{2}=1\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z=S^{1}\cup\left\{ \left(x,y\right)\middle|\left(x-\cfrac{3}{2}\right)^{2}+y^{2}=1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+נמצא את ההומיאומורפיזם המפורש.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f:\left[3,\infty\right)\to\left(-\infty,5\right]$
+\end_inset
+
+ המוגדרת ע"י 
+\begin_inset Formula $f\left(x\right)=-x+8$
+\end_inset
+
+ - רציפה, הפיכה, וההופכית גם כן רצפיה 
+\begin_inset Formula $g\left(x\right)=-x+8$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נניח בשלילה ש
+\begin_inset Formula $S^{1}\cong S^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $f:S^{1}\to S^{n}$
+\end_inset
+
+ הומיאומורפיזם.
+ תהי 
+\begin_inset Formula $a\in S^{1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left.f\right|_{\left(S^{1}\backslash\left\{ a\right\} \right)}:S^{1}\backslash\left\{ a\right\} \to S^{n}\backslash\left\{ r\left(a\right)\right\} 
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\begin{array}{c}
+\mathbb{R}\cong S^{1}\backslash\left\{ a\right\} \\
+\mathbb{R}^{n}\cong S^{n}\backslash\left\{ a\right\} 
+\end{array}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}\cong\mathbb{R}^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ לא הומיאומורפי ל
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+)תוכיחו בש"ב(.
+\end_layout
+
+\begin_layout Enumerate
+נניח בשלילה ששני המרחבים הומיאומורפים.
+ לכן קיים 
+\begin_inset Formula $f:Z\to S^{1}$
+\end_inset
+
+ הומיאומורפיזם.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתבונן בשתי נקודות ב
+\begin_inset Formula $Z$
+\end_inset
+
+: 
+\begin_inset Formula $a=\left(-1,0\right),b=\left(2.5,0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Z\backslash\left\{ \left(-1,0\right),\left(2.5,0\right)\right\} $
+\end_inset
+
+ הוא מרחב קשיר.
+\end_layout
+
+\begin_layout Standard
+הסבר לקשירות:
+\end_layout
+
+\begin_layout Itemize
+מעגל ימני פחות נקודה
+\begin_inset Formula $\mathbb{R}\cong$
+\end_inset
+
+ ולכן קשיר.
+\end_layout
+
+\begin_layout Itemize
+מעגל שמאלי פתוח נקודה 
+\begin_inset Formula $\mathbb{R}\cong$
+\end_inset
+
+ ולכן קשיר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cap B\neq\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $A\cup B=Z\backslash\left\{ a,b\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Z\backslash\left\{ a,b\right\} $
+\end_inset
+
+ קשיר.
+ גם הוא הומיאומורפי)צמצום סימולטני של התחום והטווח(.
+ 
+\begin_inset Formula $Z\backslash\left\{ a,b\right\} $
+\end_inset
+
+ קשיר ולכן 
+\begin_inset Formula $S^{1}\backslash\left\{ f\left(a\right),f\left(b\right)\right\} $
+\end_inset
+
+ קשיר, אבל לכל 
+\begin_inset Formula $r\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $S^{1}\backslash\left\{ f\left(a\right),f\left(b\right)\right\} \cong\underbrace{\mathbb{R}\backslash\left\{ r\right\} }_{{\scriptscriptstyle \textnormal{not connected}}}$
+\end_inset
+
+ - וקיבלנו סתירה.ו
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ הוכיחו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\left(\textnormal{cl}\left(A\right)\right)\subseteq\textnormal{cl}\left(f\left(A\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח ש
+\begin_inset Formula $f$
+\end_inset
+
+ הומיאומורפיזם.
+ הוכיחו ש
+\begin_inset Formula $f\left(\textnormal{cl}\left(A\right)\right)=\textnormal{cl}\left(f\left(A\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $ff^{-1}\left(A\right)\subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\subseteq f^{-1}\left(f\left(A\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+נוכיח ש
+\begin_inset Formula 
+\[
+\left(*\right)\qquad\textnormal{cl}\left(A\right)\subseteq f^{-1}\left(\textnormal{cl}\left(f\left(A\right)\right)\right)
+\]
+
+\end_inset
+
+כי אז ע"פ התזכורת נקבל
+\begin_inset Formula 
+\[
+f\left(\textnormal{cl}\left(A\right)\right)\subseteq f\left(f^{-1}\left(\textnormal{cl}\left(f\left(A\right)\right)\right)\right)\subseteq\textnormal{cl}\left(f\left(A\right)\right)
+\]
+
+\end_inset
+
+כדי להוכיח את 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ מספיק להוכיח 
+\begin_inset Formula $A\subseteq\underbrace{f^{-1}\left(\textnormal{cl}\left(f\left(A\right)\right)\right)}_{\textnormal{closed}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סגורה
+\series default
+: 
+\begin_inset Formula $\textnormal{cl}\left(f\left(A\right)\right)$
+\end_inset
+
+ סגורה.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ולכן 
+\begin_inset Formula $f^{-1}\left(\textnormal{cl}\left(f\left(A\right)\right)\right)$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הכלה
+\series default
+: 
+\begin_inset Formula $f\left(A\right)\subseteq\textnormal{cl}\left(f\left(A\right)\right)$
+\end_inset
+
+.
+ נפעיל 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ על שני האגפים:
+\begin_inset Formula 
+\[
+A\subseteq f^{-1}\left(f\left(A\right)\right)\subseteq f^{-1}\left(\textnormal{cl}\left(f\left(A\right)\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ הומיאומורפיזם ובפרט סגורה.
+ מספיק להוכיח)אחרי סעיף א'( 
+\begin_inset Formula $\textnormal{cl}\left(f\left(A\right)\right)\subseteq f\left(\textnormal{cl}\left(A\right)\right)$
+\end_inset
+
+.
+ מספיק להוכיח ש
+\begin_inset Formula $f\left(A\right)\subseteq\underbrace{f\left(\textnormal{cl}\left(A\right)\right)}_{\textnormal{closed}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+סגורה
+\series default
+: 
+\begin_inset Formula $\textnormal{cl}\left(A\right)$
+\end_inset
+
+ סגורה, 
+\begin_inset Formula $f$
+\end_inset
+
+ סגורה ולכן 
+\begin_inset Formula $f\left(\textnormal{cl}\left(A\right)\right)$
+\end_inset
+
+ סגורה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הכלה
+\series default
+: 
+\begin_inset Formula $f\left(A\right)\subseteq f\left(\textnormal{cl}\left(A\right)\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(A\right)\subseteq f\left(\textnormal{cl}\left(A\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ רציפה ועל ותהי 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ צפופה.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f\left(A\right)$
+\end_inset
+
+ צפופה ב
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=f\left(x\right)=f\left(\textnormal{cl}\left(A\right)\right)\subseteq\textnormal{cl}\left(f\left(A\right)\right)
+\]
+
+\end_inset
+
+ברור ש
+\begin_inset Formula $\textnormal{cl}\left(f\left(A\right)\right)\subseteq Y$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\textnormal{cl }f\left(A\right)=Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ הומיאומורפיזם, אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ מעביר מרכיב קשירות של 
+\begin_inset Formula $X$
+\end_inset
+
+ למרכיב קשירות של 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+ מרכיב קשירות.
+ בפרט 
+\begin_inset Formula $C$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ הומיאומורפיזם ולכן 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ תת מרחב קשיר.
+ נראה ש
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ קשיר מסקימלית ונסיק שהוא מרכיב קשירות.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים 
+\begin_inset Formula $f\left(C\right)\subsetneqq\underbrace{D}_{{\scriptscriptstyle \textnormal{connected}}}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $C\subsetneqq f^{-1}\left(D\right)$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $f^{-1}\left(D\right)$
+\end_inset
+
+ קשיר, שכן 
+\begin_inset Formula $D$
+\end_inset
+
+ קשיר ו
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ רציפה.
+ קיבלנו סתירה לכך ש
+\begin_inset Formula $C$
+\end_inset
+
+ קשיר מסילתית.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ הומיאומורפיזם אז הוא חח"ע ולכן לא ייתכן שהוא מעביר שני מרכיבי קשירות לאותו
+ מרכיב קשירות.
+ מכאן הומיאומורפיזם שומר על מספר מרכיבי הקשירות.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+נתבונן בגרף של הפונקציה 
+\begin_inset Formula $f:\mathbb{R}\backslash\left\{ 0\right\} \to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=\cfrac{1}{x}$
+\end_inset
+
+.
+ מצא את מרכיבי הקשירות ואת מרכיבי הקשירות המסילתית.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ודאי רציפה.
+ ע"פ מה שהראינו בתרגיל הקודם 
+\begin_inset Formula $\textnormal{Gr}_{f}\cong\mathbb{R}-\left\{ 0\right\} $
+\end_inset
+
+.
+ ב
+\begin_inset Formula $\mathbb{R}\backslash\left\{ 0\right\} $
+\end_inset
+
+ יש שני מרכיבי קשירות - 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(-\infty,0\right)$
+\end_inset
+
+ - שכן 
+\begin_inset Formula $\left(-\infty,0\right),\left(0,\infty\right)$
+\end_inset
+
+ קשירים מקסימלית)תתי המרחבים של 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ הקשירים הם קטעים בלבד(.
+\end_layout
+
+\begin_layout Standard
+כמו כן הוכחנו בהרצאה שאם 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ פתוחה אז מרכיבי הקשירות של 
+\begin_inset Formula $A$
+\end_inset
+
+ מתלכדים עם מרכיבי הקשירות המסילתית.
+ לכן שני ענפי ההיפרבולה הם מרכיבי הקשירות וגם מרכיבי הקשירות המסילתית.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מ"ט 
+\begin_inset Formula $X$
+\end_inset
+
+ נקרא 
+\bar under
+האוסדורף
+\bar default
+ אם לכל 
+\begin_inset Formula $x\neq y\in X$
+\end_inset
+
+ קיימות 
+\begin_inset Formula $U,V$
+\end_inset
+
+ סביבות של 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בהתאמה כך ש
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+)נקרא גם מרחב 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $f,g:X\to Y$
+\end_inset
+
+ רציפות, 
+\begin_inset Formula $Y$
+\end_inset
+
+ האוסדורף, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ צפופה ו
+\begin_inset Formula $f\left(a\right)=g\left(a\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכיחו ש
+\begin_inset Formula $f=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נניח שבלילה שקיים 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f\left(x\right)\neq g\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ האוסדורף ולכן קיימות 
+\begin_inset Formula $U,V$
+\end_inset
+
+ סביבות של 
+\begin_inset Formula $f\left(x\right),g\left(x\right)$
+\end_inset
+
+ בהתאמה כך ש
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f^{-1}\left(U\right)\cap g^{-1}\left(V\right)$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+ ובפרט פתוחה
+\begin_inset Formula $\emptyset\neq$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ צפופה 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists a\in A\cap\left(f^{-1}\left(U\right)\cap g^{-1}\left(V\right)\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\in A$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\underbrace{f\left(A\right)}_{\in U}=\underbrace{g\left(A\right)}_{\in V}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(a\right)=g\left(a\right)\in U\cap V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסתירה לכך ש
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f,g:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ רציפות ומתלכדות על הרציונליים אזי 
+\begin_inset Formula $\forall_{x\in\mathbb{R}}f\left(x\right)=g\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הסבר
+\end_layout
+
+\begin_layout Standard
+מתקיימים תנאי המשפט הקודם שכן 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ צפופה ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, וגם 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ האוסדורף.
+\end_layout
+
+\end_body
+\end_document

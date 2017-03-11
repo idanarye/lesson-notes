@@ -1,0 +1,1329 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+כפל פולינומים
+\end_layout
+
+\begin_layout Standard
+פולינום: 
+\begin_inset Formula $P\left(x\right)=\sum\limits _{i=0}^{n-1}a_{i}x^{i}$
+\end_inset
+
+)דרגה 
+\begin_inset Formula $n-1$
+\end_inset
+
+(.
+ איך נייצג?
+\end_layout
+
+\begin_layout Subsection*
+ייצוג מקדמים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a_{0},a_{1},...a_{n-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ייצוג נקודות
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $P\left(x\right)=4x-2$
+\end_inset
+
+ - עובר דרך 
+\begin_inset Formula $\left(0,-2\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(\cfrac{1}{2},0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P$
+\end_inset
+
+ פולינום מדרגה 
+\begin_inset Formula $n-1$
+\end_inset
+
+, אז כל 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות)שונות( מגדירות את 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left\{ \left(x_{i},P\left(x_{i}\right)\right)\right\} _{i=0}^{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+כפל פולינומים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+ 
+\begin_inset Formula $P\left(x\right)=\sum\limits _{i=0}^{n-1}a_{i}x^{i}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $Q\left(x\right)=\sum\limits _{i=0}^{n-1}b_{i}x^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+ 
+\begin_inset Formula $PQ\left(x\right)=\sum\limits _{i=0}^{2n-2}c_{i}x^{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{j}=a_{0}b_{j}+a_{1}b_{j-1}+...+a_{j}b_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סיבוכיות
+\end_layout
+
+\begin_layout Standard
+בבעיה עם ייצוג מקדמים, על ידי חישוב ישיר, לוקח 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ומה קורה בייצוג לפי נקודות?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right):\left(0,-3\right),\left(1,12\right),\left(-1,-4\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(x\right):\left(0,-2\right),\left(1,2\right),\left(-1,-6\right)
+\]
+
+\end_inset
+
+ניתן להכפיל את הנקודות ב
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ לכל נקודה ו
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ לכל הפולינום:
+\begin_inset Formula 
+\[
+PQ\left(x\right):\left(0,6\right),\left(1,24\right),\left(-1,24\right)
+\]
+
+\end_inset
+
+בעיה - אין לנו מספיק נקודות, שכן הדרגה של הפולינום גדלה.
+ ניתן אמנם למצוא עוד נקודות, אבל זה מסובך כאשר יש לנו ייצוג נקודות.
+\end_layout
+
+\begin_layout Subsection*
+חישוב נקודה ע"י מקדמים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(x\right)=\left(a_{0},a_{1},...a_{n-1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x_{0}\right)=a_{0}+a_{1}x_{0}+a_{2}x_{0}^{2}+...
+\]
+
+\end_inset
+
+אפשר לחשב נקודה ב
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ אם במקום לחשב את 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+ מחדש לכל איבר, שומרים את הערך הקודם ומבצעים 
+\begin_inset Formula $x^{i-1}x$
+\end_inset
+
+.
+ זה בעצם ייצוג הורנר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\left(\left(a_{n-1}x+a_{n-2}\right)x+a_{n-3}\right)x+...\right)+a_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זמן לחישוב נקודה ע"י המקדמים: 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שילוב של שתי השיטות
+\end_layout
+
+\begin_layout Standard
+נקבל בייצוג של מקדמים, נעביר לייצוג נקודות, נכפיל, ונחזיר לייצוג מקדמים.
+\end_layout
+
+\begin_layout Standard
+החישוב של כל נקודה הוא 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+, ויש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות בכל פולינום - כלומר ההמרה לוקחת 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לייעל את התהליך, נרצה לא לחשב כל נקודה בנפרד.
+ אנחנו יכולים לבחור איזה 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות שאנחנו רוצים, ולכן נרצה לבחור את הנקודות בצורה מתוחכמת, כך שהן יהיו
+ תלויות אחת בשניה.
+\end_layout
+
+\begin_layout Section*
+המרת הפולינום
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+קלט
+\series default
+ 
+\begin_inset Formula $P\left(x\right)=\sum\limits _{i=0}^{n-1}a_{i}x^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+פלט
+\series default
+ 
+\begin_inset Formula $P\left(x_{0}\right),...P\left(x_{n-1}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x_{0},...x_{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לחלק איכשהו את הבעיה לשניים.
+ נפריד את הפולינום למקדמים הזוגיים והאי זוגיים:
+\begin_inset Formula 
+\[
+P\left(x\right)=\sum_{i=0}^{n-1}a_{i}x^{i}=\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i}x^{2i}+\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i+1}x^{2i+1}=\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i}\left(x^{2}\right)^{i}+x\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i+1}\left(x^{2}\right)^{i}
+\]
+
+\end_inset
+
+נגדיר שני פולינומים חדשים:
+\begin_inset Formula 
+\[
+PE\left(y\right)=\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i}y^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+PO\left(y\right)=\sum_{i=0}^{\unitfrac{n}{2}-1}a_{2i+1}y^{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(x\right)=PE\left(x^{2}\right)+xPO\left(x^{2}\right)
+\]
+
+\end_inset
+
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - צריך לחשב את זה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות.
+ נרצה להיפטר 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק מהנקודות.
+ נבדוק עבור 
+\begin_inset Formula $-x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P\left(-x\right)=PE\left(x^{2}\right)-xPO\left(x^{2}\right)
+\]
+
+\end_inset
+
+כלומר אם נחשב את 
+\begin_inset Formula $P\left(5\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $P\left(-5\right)$
+\end_inset
+
+ הוא )כמעט( חינם, שכן כבר יש לנו את 
+\begin_inset Formula $PE\left(5^{2}\right),PO\left(5^{2}\right)$
+\end_inset
+
+.
+ לכן נרצה לקחת נקודות 
+\begin_inset Formula $x_{0},x_{1},...x_{\unitfrac{n}{2}-1},-x_{0},-x_{1},...-x_{\unitfrac{n}{2}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+ את הזמן לחישוב פולינום מדרגה 
+\begin_inset Formula $n-1$
+\end_inset
+
+ על 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות:
+\begin_inset Formula 
+\[
+T\left(n\right)=2T\left(\cfrac{n}{2}\right)+cn=\theta\left(n\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל יש בעיה - לא בטוח שאפשר לבצע את הרקורסיה.
+\end_layout
+
+\begin_layout Standard
+נתבונן בשלב הראשון של הרקורסיה: רוצים לחשב את 
+\begin_inset Formula $PE,PO$
+\end_inset
+
+ על 
+\begin_inset Formula $x_{0}^{2},x_{1}^{2},...x_{\unitfrac{n}{2}-1}^{2}$
+\end_inset
+
+.
+ רוצים שהם יהיו מהצורה 
+\begin_inset Formula $x_{0}^{2},x_{1}^{2},...x_{\unitfrac{n}{4}-1}^{2},-\left(x_{0}^{2}\right),-\left(x_{1}^{2}\right),...-\left(x_{\unitfrac{n}{4}-1}^{2}\right)$
+\end_inset
+
+.
+ כלומר נרצה ש
+\begin_inset Formula $x_{\unitfrac{n}{4}}^{2}=-\left(x_{0}^{2}\right)$
+\end_inset
+
+.
+ נצטרך להשתמש במרוכבים, ולבחור:
+\begin_inset Formula 
+\[
+x_{0},...x_{\unitfrac{n}{4}-1},ix_{0},...ix_{\unitfrac{n}{4}-1},-x_{0},...-x_{\unitfrac{n}{4}-1},-ix_{0},...-ix_{\unitfrac{n}{4}}-2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואפשר להמשיך ככה עוד שלבים)בשלב הבא נכפיל את החצי השני ב
+\begin_inset Formula $\sqrt{i}$
+\end_inset
+
+ וכן הלאה(.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PE\left(x^{2}\right)=\sum_{j=0}^{\unitfrac{n}{2}-1}a_{2j}\left(x^{2}\right)^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+PE\left(x^{2}\right)=PEE\left(x^{4}\right)+x^{2}PEO\left(x^{4}\right)
+\]
+
+\end_inset
+
+את 
+\begin_inset Formula $PEE$
+\end_inset
+
+ נחשב על 
+\begin_inset Formula $x_{0}^{4},x_{1}^{4},...x_{\unitfrac{n}{4}-1}^{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+PEE\left(x^{4}\right)=PEEE\left(x^{8}\right)+x^{4}PEEE\left(x^{8}\right)
+\]
+
+\end_inset
+
+את 
+\begin_inset Formula $PEEE$
+\end_inset
+
+ נחשב על 
+\begin_inset Formula $x_{0}^{8},...x_{\unitfrac{n}{8}-1}^{8}$
+\end_inset
+
+, ונרצה ש
+\begin_inset Formula $x_{\unitfrac{n}{8}-1}^{4}=-\left(x_{0}^{4}\right)$
+\end_inset
+
+, וכן הלאה.
+\end_layout
+
+\begin_layout Standard
+בשביל למצוא את כל ה
+\begin_inset Formula $x$
+\end_inset
+
+ים, נשתמש בשורש היחידה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ יקרא 
+\bar under
+שורש פרימיטיבי
+\bar default
+ ה
+\begin_inset Formula $n$
+\end_inset
+
+י של 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\bar under
+אם
+\bar default
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+א( 
+\begin_inset Formula $\omega^{n}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ב( 
+\begin_inset Formula $\forall1\le j\le n-1\hspace{1em}w^{j}\ne1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורש הפריטמיבי ה
+\numeric on
+2
+\numeric off
+: 
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורש הפרימיטיבי ה
+\numeric on
+4
+\numeric off
+: 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורש הפרימיטיבי ה
+\numeric on
+8
+\numeric off
+: 
+\begin_inset Formula $\sqrt{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+טענה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\omega$
+\end_inset
+
+ הוא השורש הפרימיטיבי ה
+\begin_inset Formula $n$
+\end_inset
+
+י של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז 
+\begin_inset Formula $\omega^{2}$
+\end_inset
+
+ הוא השורש הפרימיטיבי ה
+\begin_inset Formula $\unitfrac{n}{2}$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\omega^{2}\right)^{\unitfrac{n}{2}}=w^{2}\omega^{n}=1$
+\end_inset
+
+ כי 
+\begin_inset Formula $\omega$
+\end_inset
+
+ שורש פרימיטיבי ה
+\begin_inset Formula $n$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $j<\cfrac{n}{2}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $2j<n$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left(\omega^{2}\right)^{j}=\omega^{2j}\ne1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לכן
+\end_layout
+
+\begin_layout Standard
+נבחר לבעיה שלנו את הנקודות 
+\begin_inset Formula $\omega^{0},\omega^{1},...\omega^{n-1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\omega$
+\end_inset
+
+ השורש הפרימיטיביה
+\begin_inset Formula $n$
+\end_inset
+
+י של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור הנק' ה
+\begin_inset Formula $x_{0},...x_{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טרנספורם פורייר המהיר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fast Fourier Transform
+\lang hebrew
+)
+\lang english
+FFT
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $a_{0},a_{1},...a_{n-1}$
+\end_inset
+
+ הם מקדמי הפולינום, מתקיים:
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 1 & 1 & \cdots & 1\\
+1 & \omega & \omega^{2} & \cdots & \omega^{n-1}\\
+1 & \omega^{2} & \omega^{2\cdot2} & \cdots & \omega^{\left(n-1\right)\cdot2}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & \omega^{n-1} & \omega^{2\left(n-1\right)} & \cdots & \omega^{\left(n-1\right)\left(n-1\right)}
+\end{pmatrix}\begin{pmatrix}a_{0}\\
+a_{1}\\
+a_{2}\\
+\vdots\\
+a_{n-1}
+\end{pmatrix}=\begin{pmatrix}P\left(1\right)\\
+P\left(\omega\right)\\
+P\left(\omega^{2}\right)\\
+\vdots\\
+P\left(w^{n-1}\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאפשר לחשב את 
+\begin_inset Formula $\omega$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $n$
+\end_inset
+
+, נעביר אותו בכל זאת לפונקציה.
+ כמו כן נשים לב שיש לנו שתי סוגים של חלוקות - את המקדמים מחלקים כל פעם לזוגיים
+ ואי זוגיים, ואת הנקודות לראשונות ואחרונות:
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\lang english
+FFT
+\begin_inset Formula $\left(n,a_{0},a_{1},...a_{n-1},\omega\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if n=1
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+return 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+PE
+\begin_inset Formula $\gets$
+\end_inset
+
+FFT
+\begin_inset Formula $\left(\cfrac{n}{2},a_{0},a_{2},a_{4},...a_{n-2},\omega^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+PO
+\begin_inset Formula $\gets$
+\end_inset
+
+FFT
+\begin_inset Formula $\left(\cfrac{n}{2},a_{1},a_{3},a_{5},...a_{n-1},\omega^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for j=0 to 
+\begin_inset Formula $\cfrac{n}{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+P[j]=PE[j]+
+\begin_inset Formula $\omega^{j}$
+\end_inset
+
+PO[j]
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+P
+\begin_inset Formula $\left[\cfrac{n}{2}+j\right]$
+\end_inset
+
+=PE[j]-
+\begin_inset Formula $\omega^{j}$
+\end_inset
+
+PO[j]
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\lang english
+return
+\begin_inset space ~
+\end_inset
+
+P
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+זמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(n\right)=2T\left(\cfrac{n}{2}\right)+cn=\theta\left(n\log n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חזרה לייצוג מקדמים
+\end_layout
+
+\begin_layout Standard
+לאחר שהמרנו לייצוג נקודות והכפלנו את הנקודות, נרצה להחזיר את הפולינום לייצוג
+ מקדמים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 1 & 1 & \cdots & 1\\
+1 & \omega & \omega^{2} & \cdots & \omega^{n-1}\\
+1 & \omega^{2} & \omega^{2\cdot2} & \cdots & \omega^{\left(n-1\right)\cdot2}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & \omega^{n-1} & \omega^{2\left(n-1\right)} & \cdots & \omega^{\left(n-1\right)\left(n-1\right)}
+\end{pmatrix}\begin{pmatrix}a_{0}\\
+a_{1}\\
+a_{2}\\
+\vdots\\
+a_{n-1}
+\end{pmatrix}=\begin{pmatrix}P\left(1\right)\\
+P\left(\omega\right)\\
+P\left(\omega^{2}\right)\\
+\vdots\\
+P\left(w^{n-1}\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F\bar{a}=\bar{p}
+\]
+
+\end_inset
+
+נשים לב ש
+\begin_inset Formula $F$
+\end_inset
+
+ היא מטריצת וונדרמונדה, ולכן היא הפיכה, ולכן אפשר לקבל חזרה את ווקטור המקדמים
+ ע"י חישוב:
+\begin_inset Formula 
+\[
+\bar{a}=F^{-1}Fa\bar{a}=F^{-1}\bar{p}
+\]
+
+\end_inset
+
+עדיין - צריך למצוא דרך מהירה לחשב את 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה 
+\begin_inset Formula $F_{ij}^{-1}=\cfrac{1}{n}\left(\omega^{-ij}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה 
+\begin_inset Formula $\left(F\cdot F^{-1}\right)_{ij}=\sum\limits _{k=0}^{n-1}\omega^{ik}\cfrac{1}{n}w^{-kj}=\cfrac{1}{n}\sum\limits _{k=0}^{n-1}\omega^{k\left(i-j\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נבדוק
+\begin_inset space ~
+\end_inset
+
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $i=j$
+\end_inset
+
+
+\series default
+ 
+\begin_inset Formula $\left(FF^{-1}\right)_{ij}=\cfrac{1}{n}\sum\limits _{k=0}^{n-1}1=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $i\ne j$
+\end_inset
+
+
+\series default
+ נקבע 
+\begin_inset Formula $c=i-j$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(FF^{-1}\right)_{ij}=\cfrac{1}{n}\sum_{k=0}^{n-1}\omega^{kc}=\cfrac{1}{n}\sum_{k=0}^{n-1}\left(\omega^{c}\right)^{k}=\cfrac{1}{n}\left(\cfrac{1-\left(\omega^{c}\right)^{k}}{1-\omega^{c}}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל ש:
+\begin_inset Formula 
+\[
+\cfrac{1}{n}\begin{pmatrix}1 & 1 & 1 & \cdots & 1\\
+1 & \cfrac{1}{\omega} & \cfrac{1}{\omega^{2}} & \cdots & \cfrac{1}{\omega^{n-1}}\\
+1 & \cfrac{1}{\omega^{2}} & \cfrac{1}{\omega^{2\cdot2}} & \cdots & \cfrac{1}{\omega^{\left(n-1\right)\cdot2}}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & \cfrac{1}{\omega^{n-1}} & \cfrac{1}{\omega^{2\left(n-1\right)}} & \cdots & \cfrac{1}{\omega^{\left(n-1\right)\left(n-1\right)}}
+\end{pmatrix}\begin{pmatrix}P\left(1\right)\\
+P\left(\omega\right)\\
+P\left(\omega^{2}\right)\\
+\vdots\\
+P\left(w^{n-1}\right)
+\end{pmatrix}=\begin{pmatrix}a_{0}\\
+a_{1}\\
+a_{2}\\
+\vdots\\
+a_{n-1}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שזו בדיוק אותה מטריצה כמו 
+\begin_inset Formula $F$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - פשוט מחלקים ב
+\begin_inset Formula $n$
+\end_inset
+
+ וכל 
+\begin_inset Formula $\omega$
+\end_inset
+
+ הופך ל
+\begin_inset Formula $\cfrac{1}{\omega}$
+\end_inset
+
+)שהוא גם שורש פרימיטיבי(.
+ לכן מריצים 
+\begin_inset Formula $FFT\left(n,P\left[0\right],P\left[1\right],...P\left[n-1\right],\cfrac{1}{\omega}\right)$
+\end_inset
+
+ ומחלקים את התוצאה ב
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,842 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection*
+)המשך מפעם שעברה(
+\end_layout
+
+\begin_layout Standard
+מחפשים את העקומות האינטגרליות של השדה 
+\begin_inset Formula $v=\begin{pmatrix}-\sin\phi\cos\theta\\
+-\sin\phi\sin\theta\\
+\cos\phi
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עקומה כללית על המפה 
+\begin_inset Formula $\alpha\left(t\right)=\left(\theta\left(t\right),\phi\left(t\right)\right)$
+\end_inset
+
+ עוברת לעקומה על הטורוס
+\begin_inset Formula 
+\[
+\gamma\left(t\right)=r\left(\alpha\left(t\right)\right)=\begin{pmatrix}\left(2+\cos\phi\left(t\right)\right)\cos\theta\left(t\right)\\
+\left(2+\cos\phi\left(t\right)\right)\sin\theta\left(t\right)\\
+\sin\phi\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+דרשנו 
+\begin_inset Formula $\dot{\gamma}\left(t\right)=v\left(\gamma\left(t\right)\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{pmatrix}-\sin\phi\left(t\right)\cdot\dot{\phi}\left(t\right)\cdot\cos\theta\left(t\right)-\left(2+\cos\phi\left(t\right)\right)\cdot\sin\theta\left(t\right)\cdot\dot{\theta}\left(t\right)\\
+-\sin\phi\left(t\right)\cdot\dot{\phi}\left(t\right)\cdot\sin\theta\left(t\right)+\left(2+\cos\phi\left(t\right)\right)\cdot\cos\theta\left(t\right)\cdot\dot{\theta}\left(t\right)\\
+\cos\phi\left(t\right)\cdot\dot{\phi}\left(t\right)
+\end{pmatrix}=\begin{pmatrix}-\sin\phi\left(t\right)\cdot\cos\theta\left(t\right)\\
+-\sin\phi\left(t\right)\cdot\sin\theta\left(t\right)\\
+\cos\phi\left(t\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+המשוואה השלישית: 
+\begin_inset Formula $\cos\phi\cdot\dot{\phi}=\cos\phi$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\cos\phi\neq0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\dot{\phi}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שתי המשוואות הראשונות בכתיב מטריצי:
+\begin_inset Formula 
+\[
+\underbrace{\begin{bmatrix}-\sin\phi\cos\theta & -\left(2+\cos\phi\right)\sin\theta\\
+-\sin\phi\sin\theta & \left(2+\cos\phi\right)\cos\theta
+\end{bmatrix}}_{A}\cdot\underbrace{\begin{bmatrix}\dot{\phi}\\
+\dot{\theta}
+\end{bmatrix}}_{v}=\underbrace{\begin{bmatrix}-\sin\phi\cos\theta\\
+-\sin\phi\sin\theta
+\end{bmatrix}}_{b}
+\]
+
+\end_inset
+
+מתי 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ קיימת? אם 
+\begin_inset Formula $\left|A\right|\neq0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left|A\right|=-\sin\phi\cos^{2}\theta\left(2+\cos\phi\right)-\sin\phi\sin^{2}\theta\left(2+\cos\phi\right)=-\sin\phi\left(2+\cos\phi\right)
+\]
+
+\end_inset
+
+מתי זה
+\begin_inset Formula $0\neq$
+\end_inset
+
+? כאשר 
+\begin_inset Formula $\sin\phi\neq0$
+\end_inset
+
+.
+ ואם המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ הפיכה, כלומר 
+\begin_inset Formula $\left|A\right|\neq0$
+\end_inset
+
+, אפשר לקבל:
+\begin_inset Formula 
+\[
+\begin{bmatrix}\dot{\phi}\\
+\dot{\theta}
+\end{bmatrix}=A^{-1}\cdot b=\frac{1}{-\sin\phi\left(2+\cos\phi\right)}\begin{bmatrix}\left(2+\cos\phi\right)\cos\theta & \left(2+\cos\phi\right)\sin\theta\\
+\sin\phi\sin\theta & -\sin\phi\cos\theta
+\end{bmatrix}\cdot\begin{bmatrix}-\sin\phi\cos\theta\\
+-\sin\phi\sin\theta
+\end{bmatrix}=\begin{bmatrix}1\\
+0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקיבלנו שאם 
+\begin_inset Formula $\sin\phi\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{bmatrix}\dot{\phi}\\
+\dot{\theta}
+\end{bmatrix}=\begin{bmatrix}1\\
+0
+\end{bmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל מקרה 
+\begin_inset Formula $\cos\phi\neq0$
+\end_inset
+
+ או 
+\begin_inset Formula $\sin\phi\neq0$
+\end_inset
+
+, ולכן תמיד 
+\begin_inset Formula $\dot{\phi}=1$
+\end_inset
+
+.
+ אם נציב 
+\begin_inset Formula $\dot{\phi}=1$
+\end_inset
+
+ במד"ר מקבלים שחייב להיות 
+\begin_inset Formula $\dot{\theta}=0$
+\end_inset
+
+ גם תמיד.
+ סה"כ מקבלים שהקווים הגאודזיים הם:
+\begin_inset Formula $\left\{ \begin{array}{c}
+\theta\left(t\right)=a\\
+\phi\left(t\right)=t+c
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+נגזרת לי
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+נגזרת לי
+\emph default
+ של הפונקציה 
+\begin_inset Formula $f:M\to\mathbb{R}$
+\end_inset
+
+ לפי השדה הוקטורי 
+\begin_inset Formula $v$
+\end_inset
+
+ מוגדרת ע"י:
+\begin_inset Formula 
+\[
+\left(\mathcal{L}_{v}f\right)\left(P\right):=\left.\frac{\mathrm{d}}{\mathrm{d}t}f\left(\gamma\left(t\right)\right)\right|_{t=0}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ היא עקומה אינטגרלית שמתחילה בנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $\gamma\left(0\right)=P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר: 
+\begin_inset Formula $\left(\mathcal{L}_{v}f\right)\left(P\right)$
+\end_inset
+
+ = השינוי של 
+\begin_inset Formula $f$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $v$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ הטורוס, שהוא משטח הסיבוב של המעגל 
+\begin_inset Formula $\left(x-2\right)^{2}+z^{2}=1$
+\end_inset
+
+ סביב ציר ה
+\begin_inset Formula $z$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:M\to\mathbb{R}$
+\end_inset
+
+ מוגדרת ע"י 
+\begin_inset Formula $f=X$
+\end_inset
+
+.
+ חשבו את 
+\begin_inset Formula $\left(\mathcal{L}_{v}f\right)\left(P\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $P=\left(3,0,0\right)\in M$
+\end_inset
+
+ ולכל שדה משיק 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P$
+\end_inset
+
+ היא הנקודה הכי לכיוון 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+ בטורוס.
+ בהרצאה ראינו נוסחה נוספת לנגזרת לי: 
+\begin_inset Formula $\mathcal{L}_{v}f=\left\langle \nabla f,v\right\rangle $
+\end_inset
+
+.
+ אצלנו, 
+\begin_inset Formula $\nabla f=\left(1,0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $v$
+\end_inset
+
+ שדה משיק כלשהו.
+ אזי בנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+, שיעור ה
+\begin_inset Formula $x$
+\end_inset
+
+ של 
+\begin_inset Formula $v$
+\end_inset
+
+ הוא אפס, כלומר 
+\begin_inset Formula $v\left(P\right)=\left(0,*,*\right)$
+\end_inset
+
+.
+ יוצא 
+\begin_inset Formula $\nabla f\left(P\right)\perp v\left(P\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\left\langle \nabla f\left(P\right),v\left(P\right)\right\rangle =0=\left(\mathcal{L}_{v}f\right)\left(P\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דרך נוספת
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $v$
+\end_inset
+
+ שדה וקטורי משיק כלשהו.
+ נמצא עקומה אינטגרלית 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\gamma\left(0\right)=P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נסתכל על 
+\begin_inset Formula $f\left(\gamma\left(t\right)\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f\left(\gamma\left(0\right)\right)=3=x\left(\gamma\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(P\right)=x\left(P\right)=3
+\]
+
+\end_inset
+
+לכן יש מקסימום בנקודה 
+\begin_inset Formula $t=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל הנקודות על הטואוס יש 
+\begin_inset Formula $x\le3$
+\end_inset
+
+, ובנקודה המיוחדת 
+\begin_inset Formula $P$
+\end_inset
+
+ יש 
+\begin_inset Formula $x=3$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $f\left(\gamma\left(0\right)\right)$
+\end_inset
+
+ הוא המקסימום של כל המספרים 
+\begin_inset Formula $f\left(\gamma\left(t\right)\right)$
+\end_inset
+
+.
+ כלומר לפונקציה 
+\begin_inset Formula $f\left(\gamma\left(t\right)\right)$
+\end_inset
+
+ יש מקסימום כאשר 
+\begin_inset Formula $t=0$
+\end_inset
+
+.
+ לפי משפט מאינפי,
+\begin_inset Formula 
+\[
+\left(\mathcal{L}_{v}f\right)\left(P\right)=\left.\frac{\mathrm{d}}{\mathrm{d}t}f\left(\gamma\left(t\right)\right)\right|_{t=0}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות של נגזרת לי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}_{v+w}f=\mathcal{L}_{v}f+\mathcal{L}_{w}f
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{L}_{v}\left(fg\right)=\left(\mathcal{L}_{v}f\right)g+f\left(\mathcal{L}_{v}g\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מתי השדה 
+\begin_inset Formula $v\left(x,y\right)=A\cdot\begin{pmatrix}x\\
+y
+\end{pmatrix}$
+\end_inset
+
+ הוא גרדיאנט של פונקציה כלשהי 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נרשום במפורש 
+\begin_inset Formula $A=\begin{pmatrix}a_{\hspace{4bp}1}^{1} & a_{\hspace{4bp}2}^{1}\\
+a_{\hspace{4bp}1}^{2} & a_{\hspace{4bp}2}^{2}
+\end{pmatrix}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+v=A\cdot\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}a_{\hspace{4bp}1}^{1}x+a_{\hspace{4bp}2}^{1}y\\
+a_{\hspace{4bp}1}^{2}x+a_{\hspace{4bp}2}^{2}y
+\end{pmatrix}\overset{?}{=}\nabla f
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $f$
+\end_inset
+
+ מקיימת
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\frac{\partial f}{\partial x}=a_{\hspace{4bp}1}^{1}x+a_{\hspace{4bp}2}^{1}y\\
+\frac{\partial f}{\partial y}=a_{\hspace{4bp}1}^{2}x+a_{\hspace{4bp}2}^{2}y
+\end{array}\right.
+\]
+
+\end_inset
+
+נדרוש 
+\begin_inset Formula $\frac{\partial^{2}f}{\partial x\partial y}=\frac{\partial^{2}f}{\partial y\partial x}$
+\end_inset
+
+ )ז.א.
+ 
+\begin_inset Formula $w=\frac{\mathrm{d}f}{\mathrm{d}x}\mathrm{\, d}x+\frac{\mathrm{d}f}{\mathrm{d}y}\mathrm{\, d}y$
+\end_inset
+
+ סגורה(.
+ תנאי הכרחי הוא 
+\begin_inset Formula $A$
+\end_inset
+
+ סימטרית, וע"פ למת פואנקרה יוצא שזה גם תנאי מספיק.
+\end_layout
+
+\begin_layout Standard
+נמצא את 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x}=a_{\hspace{4bp}1}^{1}x+a_{\hspace{4bp}2}^{1}y\qquad/\int\left(\cdot\right)\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\frac{a_{\hspace{4bp}1}^{1}}{2}x^{2}+a_{\hspace{4bp}2}^{1}xy+\varphi\left(y\right)\qquad/\frac{\partial}{\partial y}\left(\cdot\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial y}=\cancel{a_{\hspace{4bp}2}^{1}x}+\varphi'\left(y\right)
+\]
+
+\end_inset
+
+זה צריך להיות שווה ל
+\begin_inset Formula 
+\[
+\cancel{a_{\hspace{4bp}1}^{2}x}+a_{\hspace{4bp}2}^{2}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi'\left(y\right)=a_{\hspace{4bp}2}^{2}y\qquad/\int
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\varphi\left(y\right)=\frac{a_{\hspace{4bp}2}^{2}}{2}y^{2}+c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{f\left(x,y\right)=\frac{a_{\hspace{4bp}1}^{1}}{2}x^{2}+\overbrace{a_{\hspace{4bp}2}^{1}}^{=a_{\hspace{4bp}1}^{2}}xy+\frac{a_{\hspace{4bp}2}^{2}}{2}y^{2}+c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Egregium
+\end_layout
+
+\begin_layout Subsection*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+אנטי סימטריזציה - 
+\begin_inset Formula $a_{\left[ij\right]}=\frac{1}{2}\left(a_{ij}-g_{ji}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+עקמומיות גאוס תלויה רק במטריקה 
+\begin_inset Formula $\left(g_{ij}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K=\frac{2}{g_{11}}\left(\Gamma_{1\left[1\prime2\right]}^{1}+\Gamma_{1[1}^{j}\Gamma_{2]j}^{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{2}{g_{11}}\left[\left(\frac{1}{2}\left(\Gamma_{11\prime2}^{2}-\Gamma_{12\prime1}^{2}\right)\right)+\frac{1}{2}\left(\Gamma_{11}^{j}\Gamma_{2j}^{2}-\Gamma_{12}^{j}\Gamma_{1j}^{2}\right)\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{g_{11}}\left(\Gamma_{11\prime2}^{2}-\Gamma_{11\prime1}^{2}+\Gamma_{11}^{j}\Gamma_{2j}^{2}-\Gamma_{12}^{j}\Gamma_{1j}^{2}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{g_{11}}\left(\Gamma_{11\prime2}^{2}-\Gamma_{12\prime1}^{2}+\Gamma_{11}^{1}\Gamma_{21}^{2}-\Gamma_{12}^{1}\Gamma_{11}^{2}+\Gamma_{11}^{2}\Gamma_{22}^{2}-\Gamma_{12}^{2}\Gamma_{12}^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו את עקמומיות גאוס של המישור 
+\begin_inset Formula $z=0$
+\end_inset
+
+ ע"י משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Eg
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+ראינו שבמישור 
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+ ונגזרותיהם זה אפס ולכן
+\begin_inset Formula 
+\[
+K=\frac{1}{g_{11}}\left(0-0+0\cdot0-0\cdot0+\cdots\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

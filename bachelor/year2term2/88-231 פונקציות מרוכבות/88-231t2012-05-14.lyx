@@ -1,0 +1,893 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+משפט הערך הממוצע של גאוס
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה אנליטית בתחום 
+\begin_inset Formula $\left|z-a\right|<R$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+f\left(a\right)=\cfrac{1}{2\pi}\int_{0}^{2\pi}f\left(a+re^{i\theta}\right)\mathrm{\, d}\theta\qquad0<r<R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\cfrac{1}{2\pi}\int_{0}^{2\pi}\sin^{2}\left(\cfrac{\pi}{6}+2e^{i\theta}\right)\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(z\right)=\sin^{2}\left(\cfrac{\pi}{6}+2z\right)
+\]
+
+\end_inset
+
+אנו מחשבים את הפונקציה עבור 
+\begin_inset Formula $z=0$
+\end_inset
+
+ ומקבלים
+\begin_inset Formula 
+\[
+f\left(0\right)=I=\sin^{2}\left(\cfrac{\pi}{6}\right)=\cfrac{1}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+חשבו את הערך הממוצע של הפונקציה 
+\begin_inset Formula $x^{2}-y^{2}+2y$
+\end_inset
+
+ על המעגל 
+\begin_inset Formula $\left|z-5+2i\right|=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=x^{2}-y^{2}+2y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|z-5+2i\right|=3\Leftrightarrow z=5-2i+3e^{i\theta}\Leftrightarrow\left(5+3\cos\left(\theta\right);-2+3\sin\left(\theta\right)\right)\qquad0<\theta<2\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{2\pi}\int_{0}^{2\pi}\left[\left(5+3\cos\theta\right)^{2}-\left(-2+3\sin\theta\right)^{2}+2\left(-2+3\sin\theta\right)\right]\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{2\pi}\int_{0}^{2\pi}\left(17+30\cos\theta+9\cos2\theta+18\sin\theta\right)\mathrm{\, d}\theta=\cfrac{1}{2\pi}\cdot17\cdot2\pi=17
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טורי חזקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}\left(z-\alpha\right)^{n}
+\]
+
+\end_inset
+
+תחום ההתכנסות של הטור:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\mathbb{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ \alpha\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+קיים 
+\begin_inset Formula $R>0$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\left\{ z\middle|\left|z-\alpha\right|<R\right\} \subseteq D\subseteq\left\{ z\middle|\left|z-\alpha\right|\le R\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\cfrac{1}{\mathop{\overline{\lim}}\limits _{n\to\infty}\left|a_{n}\right|^{\unitfrac{1}{n}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\lim_{n\to\infty}\left|\cfrac{a_{n}}{a_{n+1}}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טור טיילור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(\alpha\right)}{n!}\left(z-\alpha\right)^{n}
+\]
+
+\end_inset
+
+רדיוס ההתכנסות של טור טיילור של פונקצי 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב נקודה 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+ הוא מרחק של 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מנקוה סינגורלית הקרובה ביותר ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית בעיגול פתוח 
+\begin_inset Formula $D$
+\end_inset
+
+ סביב נקודה 
+\begin_inset Formula $z=\alpha$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f\left(z\right)=\sum\limits _{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(\alpha\right)}{n!}\left(z-\alpha\right)^{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $z\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+בתוך עיגול ההתכנסות הפתוח, הטור 
+\begin_inset Formula $S=\sum\limits _{n=0}^{\infty}a_{n}\left(z-\alpha\right)^{n}$
+\end_inset
+
+ מתכנס לפונקציה אנליטית - וזהו למעשה טור טיילור שלה.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{z}=\sum_{n=0}^{\infty}\cfrac{z^{n}}{n!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin z=\sum_{n=0}^{\infty}\cfrac{\left(-1\right)^{n}}{\left(2n+1\right)!}z^{2n+1}\qquad\cos z=\sum_{n=0}^{\infty}\cfrac{\left(-1\right)^{n}}{\left(2n\right)!}z^{2n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+יש לפתח לטור טיילור את הפונקציות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=e^{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{z-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{\left(1-z\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{\left(n\right)}\left(z\right)=e^{z}$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\left(n\right)}\left(0\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f\left(z\right)=\sum\limits _{n=0}^{\infty}\cfrac{f^{\left(n\right)}\left(0\right)}{n!}\left(z-0\right)^{n}=\sum_{n=0}^{\infty}\cfrac{z^{n}}{n!}
+\]
+
+\end_inset
+
+הסכום מתכנס 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S=\sum\limits _{n=0}^{\infty}b_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}=b_{0}\cdot q^{n-1}$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\left|q\right|<1$
+\end_inset
+
+ 
+\begin_inset Formula $\boxed{S=\cfrac{b_{0}}{1-q}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\cfrac{1}{z-i}=\cfrac{1}{\left(z-1\right)+\left(1-i\right)}=\cfrac{1}{1-i}\cdot\cfrac{1}{1+\cfrac{z-1}{i-1}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{1-i}\sum_{n=0}^{\infty}\left(\cfrac{z-1}{i-1}\right)^{n}=\sum_{n=0}^{\infty}\underbrace{\cfrac{1}{\left(i-1\right)^{n+i}}}_{a_{n}}\left(z-1\right)^{n}
+\]
+
+\end_inset
+
+תנאי להתכנסות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+דרך א':
+\begin_inset Formula 
+\[
+\left|\cfrac{z-1}{i-1}\right|<1\qquad\left|z-1\right|,\sqrt{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+דרך ב': קיבלנו פיתוח סביב 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ נק' סינגולרית של הפוקציה 
+\begin_inset Formula $z=i$
+\end_inset
+
+.
+ המרחק בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל
+\begin_inset Formula $i$
+\end_inset
+
+ שווה ל
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{1}{\left(1-z\right)^{2}}
+\]
+
+\end_inset
+
+נשים לב ש
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{1}{\left(1-z^{2}\right)}=\left(\cfrac{1}{1-z}\right)'
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{1}{1-z}=\sum_{n=0}^{\infty}z^{n}
+\]
+
+\end_inset
+
+אפשר לבצע גזירה איבר איבר
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(\cfrac{1}{1-z}\right)'=\sum_{i=0}^{\infty}n\cdot z^{n-1}=\sum_{n=0}^{\infty}\underbrace{\left(n+1\right)}_{a_{n}}z^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(z\right)=\begin{cases}
+\cfrac{z}{\sin z} & z\neq0\\
+1 & z=0
+\end{cases}
+\]
+
+\end_inset
+
+צ"ל שניתן לפתח את 
+\begin_inset Formula $f$
+\end_inset
+
+ לטור חזקות סביב 
+\begin_inset Formula $z=0$
+\end_inset
+
+ ויש למצוא את רדיוס ההתכנסות
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{z\to0}\cfrac{f\left(0+z\right)-f\left(0\right)}{z-0}=\lim_{z\to0}\cfrac{\cfrac{z}{\sin z}-1}{z}=\lim_{z\to0}\cfrac{z-\sin z}{z\cdot\sin z}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{z\to0}\cfrac{1-\cos z}{\sin z+z\cos z}=\lim_{z\to0}\cfrac{\sin z}{\cos z+\cos z-z\sin z}=\cfrac{0}{2}=0
+\]
+
+\end_inset
+
+קיבלנו ש
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ גזירה בנקודה 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ כלומר, 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ סגירה בכל סביבה פתוחה של 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+קיבלנו ש
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ניתן לפתח את 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לטור טיילור סביב 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+רדיוס ההתכנסות:
+\end_layout
+
+\begin_layout Standard
+נקודות סינגולריות של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ הן 
+\begin_inset Formula $z_{n}=\partial n,n\in\mathbb{Z}\backslash\left\{ 0\right\} $
+\end_inset
+
+.
+ נקודות סינגולריות הקרובות ביותר ל
+\begin_inset Formula $z=0$
+\end_inset
+
+ הם 
+\begin_inset Formula $z\pm\pi$
+\end_inset
+
+, כלומר כדיוס ההתכנסות שווה ל
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Enumerate
+מצא פיתוח טיילור של פונקציה 
+\begin_inset Formula $f\left(z\right)=\cfrac{1}{1+z^{2}}$
+\end_inset
+
+ סביב הראשית
+\end_layout
+
+\begin_layout Enumerate
+בעזרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ )
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(, יש חשב
+\begin_inset Formula 
+\[
+I_{k}=\int_{C}\cfrac{\mathrm{d}z}{z^{k}\left(1+z^{2}\right)}\qquad C=\left\{ z\middle|\left|z\right|=\cfrac{1}{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(z\right)=\cfrac{1}{1+z^{2}}=\cfrac{1}{1-\left(-z^{2}\right)}=\sum_{n=0}^{\infty}\left(-z^{2}\right)^{n}=\sum_{n=0}^{\infty}\left(-1\right)^{n}\cdot z^{2n}
+\]
+
+\end_inset
+
+רדיוס ההתכנסות שווה ל
+\numeric on
+1
+\end_layout
+
+\begin_layout Enumerate
+לפי נוסחת קושי, מקבלים
+\begin_inset Formula 
+\[
+f^{\left(k\right)}\left(0\right)=\cfrac{k!}{2\pi i}\int_{C}\cfrac{\mathrm{d}z}{z^{\left(k+1\right)}\left(1+z^{2}\right)}=\cfrac{k!}{2\pi i}\cdot I_{k+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{k}=\cfrac{2\pi i\cdot f^{\left(k-1\right)}\left(0\right)}{\left(k-1\right)!}
+\]
+
+\end_inset
+
+לפי פיתוח של סעיף )
+\numeric on
+1
+\numeric off
+( נקבל
+\begin_inset Formula 
+\[
+\cfrac{f^{\left(k\right)}\left(0\right)}{k!}=\begin{cases}
+\left(-1\right)^{\frac{k}{2}} & k\textnormal{ is even}\\
+0 & k\textnormal{ is odd}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{k}=\begin{cases}
+\left(-1\right)^{\frac{k-1}{2}}\cdot2\pi i & k\textnormal{ is even}\\
+0 & k\textnormal{ is odd}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ וקיימת נקודה 
+\begin_inset Formula $z=\alpha\in D$
+\end_inset
+
+ כך שהיא אפס מסדר אינסופיף אזי 
+\begin_inset Formula $\forall_{z\in D}f\left(z\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט יחידות
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ וקיימת סדרה מתכנסת של נקודות 
+\begin_inset Formula $\left\{ z_{n}\right\} \subseteq D$
+\end_inset
+
+ כך שהגבול שלה ב
+\begin_inset Formula $D$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(z_{n}\right)=0$
+\end_inset
+
+, אזי
+\begin_inset Formula 
+\[
+\forall_{z\in D}f\left(z\right)\equiv0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f,g$
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+ניסוח שקול
+\end_layout
+
+\end_inset
+
+ פונקציות אנליטיות ב
+\begin_inset Formula $D$
+\end_inset
+
+, וקיימת סדרה מתכנסת 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ כך שגבול שייך ל
+\begin_inset Formula $D$
+\end_inset
+
+, וכך שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(z_{n}\right)=g\left(z_{n}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula 
+\[
+\forall_{z\in D}f\left(z\right)\equiv g\left(z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a_{n}\right\} =\left\{ \cfrac{1}{2},0,\cfrac{1}{4},0,\cfrac{1}{6},\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a_{n}\right\} =\left\{ \cfrac{1}{2},\cfrac{1}{2},\cfrac{1}{4},\cfrac{1}{4},\cfrac{1}{6},\cfrac{1}{6},\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a_{n}\right\} =\left(\cfrac{1}{3},\cfrac{1}{5},\cfrac{1}{7},\dots\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם קיימת פונקציה אנליטית בנקודה 
+\begin_inset Formula $z=0$
+\end_inset
+
+ שעבור סדרת הנקודות 
+\begin_inset Formula $\left\{ z_{n}=\cfrac{1}{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ מקבלת את סדרת הערכים 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+?
+\end_layout
+
+\end_body
+\end_document

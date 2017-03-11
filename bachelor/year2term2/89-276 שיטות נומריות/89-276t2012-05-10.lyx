@@ -1,0 +1,1458 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\lang english
+Scaling
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+Scaling
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא שיטה שמבוססת על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pivoting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ועוזרת למצוא פתרון למערכת משוואות.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}3 & 2 & 100 & 105\\
+-1 & 3 & 100 & 102\\
+1 & 2 & -1 & 2
+\end{bmatrix}\Rightarrow\vec{x}=\begin{bmatrix}1\\
+1\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+באמצעות פיווטינג, נגיע לפתרון
+\begin_inset Formula 
+\[
+\begin{bmatrix}3 & 2 & 100 & 105\\
+0 & 3.67 & 1.33 & 1.35\\
+0 & 0 & -82.4 & -82.6
+\end{bmatrix}\Rightarrow\vec{x}=\begin{bmatrix}0.939\\
+1.09\\
+1.00
+\end{bmatrix}
+\]
+
+\end_inset
+
+רוצים למצוא פתרון יותר מדויק
+\end_layout
+
+\begin_layout Section*
+הרעיון
+\end_layout
+
+\begin_layout Standard
+נגדיר לכל שורה את האיבר הכי גדול בה, הוא סדר הגודל שלה - נגדיר ווקטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+scaling
+\lang hebrew
+: 
+\begin_inset Formula $S=\begin{bmatrix}100\\
+100\\
+2
+\end{bmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחלק את האיבר הראשון בכל שורה באיבר הגדול ביותר:
+\begin_inset Formula 
+\[
+R^{\left(1\right)}=\begin{bmatrix}\unitfrac{3}{100}\\
+\unitfrac{-1}{100}\\
+\unitfrac{1}{2}
+\end{bmatrix}=\begin{bmatrix}0.03\\
+-0.01\\
+0.5
+\end{bmatrix}
+\]
+
+\end_inset
+
+ואז עושים את השחלוף לפי 
+\begin_inset Formula $R^{\left(1\right)}$
+\end_inset
+
+, לא לפי המטריצה המקורית.
+ במקרה שלנו - נחליף את השורה הראשונה והשלישית:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 2 & -1 & 2\\
+0 & 5 & 99 & 104\\
+0 & -4 & 103 & 99
+\end{bmatrix}
+\]
+
+\end_inset
+
+נמשיך:
+\begin_inset Formula 
+\[
+S=\begin{bmatrix}2\\
+99\\
+103
+\end{bmatrix}\qquad R^{\left(2\right)}=\begin{bmatrix}1\\
+0.05\\
+-0.04
+\end{bmatrix}
+\]
+
+\end_inset
+
+לכאורה, צריך לשחלף את השורה השנייה עם הראשונה, כדי שהאיבר הגדול ביותר בערכו
+ המוחלט -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ישב במקום השני.
+ אבל אנחנו לא יכולים לשחלף עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כי הוא כבר מעל האלכסון - ולכן לא נבצע שחלוף)כי 
+\begin_inset Formula $0.05=\max\left\{ \left|0.05\right|,\left|-0.04\right|\right\} $
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 2 & -1 & 2\\
+0 & 5 & 99 & 104\\
+0 & 0 & 182 & 182
+\end{bmatrix}\Rightarrow\begin{array}{c}
+x_{1}=1\\
+x_{2}=1\\
+x_{3}=1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שיטת יעקובי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+6x_{1}-2x_{2}+x_{3}=11\\
+-2x_{1}+7x_{2}+2x_{3}=5\\
+x_{1}+2x_{2}-5x_{3}=-1
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא בשורה ה
+\begin_inset Formula $i$
+\end_inset
+
+, לבטא את 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ באמצעות ה
+\begin_inset Formula $x$
+\end_inset
+
+ים האחרים:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}^{\left(k+1\right)}=0.3333x_{2}^{\left(k\right)}-0.6667x_{3}^{\left(k\right)}+1.833\\
+x_{2}^{\left(k+1\right)}=0.2857x_{1}^{\left(k\right)}-0.2857x_{3}^{\left(k\right)}+0.714\\
+x_{3}^{\left(k+1\right)}=0.2x_{1}^{\left(k\right)}+0.4x_{2}^{\left(k\right)}+0.2
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נבצע פירוק:
+\begin_inset Formula 
+\[
+A=D+L+U
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ האלכסון של 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ משולשית תחתונה ו
+\begin_inset Formula $U$
+\end_inset
+
+ משולשית עליונה
+\begin_inset Formula 
+\[
+Ax=b\Rightarrow\left(D+R\right)x=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Dx+Rx=b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Dx=b-Rx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{\left(k+1\right)}=D^{-1}\left(b-Rx^{\left(k\right)}\right)=D^{-1}\cdot b-D^{-1}\cdot Rx^{\left(k\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=-D^{-1}\cdot R\qquad C=D^{-1}\cdot b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{x^{\left(k+1\right)}=Tx^{\left(k\right)}+C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}2 & 1\\
+5 & 7
+\end{bmatrix}\qquad b=\begin{bmatrix}11\\
+13
+\end{bmatrix}\qquad x^{\left(0\right)}=\begin{bmatrix}1\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\numeric on
+
+\begin_inset Formula 
+\[
+D=\begin{bmatrix}2 & 0\\
+0 & 7
+\end{bmatrix}\qquad D^{-1}=\begin{bmatrix}0.5 & 0\\
+0 & 0.1429
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\begin{bmatrix}0 & 1\\
+5 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\begin{bmatrix}0.5 & 0\\
+0 & 0.1429
+\end{bmatrix}\begin{bmatrix}11\\
+13
+\end{bmatrix}=\begin{bmatrix}5.5\\
+1.858
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\numeric off
+
+\begin_inset Formula 
+\[
+x^{\left(1\right)}=\begin{bmatrix}0 & -0.5\\
+-0.7145 & 0
+\end{bmatrix}\begin{bmatrix}1\\
+1
+\end{bmatrix}+\begin{bmatrix}5.5\\
+1.858
+\end{bmatrix}=\begin{bmatrix}5\\
+1.435
+\end{bmatrix}
+\]
+
+\end_inset
+
+עבור המשך הקירוב, כבר חישבנו את 
+\begin_inset Formula $T,C$
+\end_inset
+
+, ואפשר להשתמש בהם שוב.
+\end_layout
+
+\begin_layout Standard
+עוצרים את הקירוב לפי מספר איטרציות, לפי
+\begin_inset Formula 
+\[
+\left\Vert x^{\left(k\right)}-x^{\left(k-1\right)}\right\Vert <\delta
+\]
+
+\end_inset
+
+או לפי
+\begin_inset Formula 
+\[
+\left\Vert Ax^{\left(k\right)}-b\right\Vert <\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מתי זה מתכנס?
+\end_layout
+
+\begin_layout Standard
+יש כמה תנאים להתנכסות של שיטת יעקובי:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ שולטת אלכסונית:
+\begin_inset Formula 
+\[
+\forall_{i}\left|a_{ii}\right|>\sum_{j\neq i}\left|a_{ij}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\rho\left(D^{-1}\cdot R\right)\right|<1$
+\end_inset
+
+ - אם ניתן לחסום את הערכים העצמיים עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, אז זה מתכנס.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}4 & 2 & 0\\
+2 & 10 & 4\\
+0 & 4 & 5
+\end{bmatrix}\qquad b=\begin{bmatrix}2\\
+6\\
+5
+\end{bmatrix}\qquad x=\begin{bmatrix}1\\
+1\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ שולטת אלכסונית - 
+\begin_inset Formula $\begin{array}{c}
+4>2+0\\
+10>2+4\\
+5>4+0
+\end{array}$
+\end_inset
+
+ - וגם הערכים העצמיים חסומים ב
+\numeric on
+1
+\numeric off
+, ולכן השיטה תתכנס.
+\begin_inset Formula 
+\[
+D=\begin{bmatrix}4 & 0 & 0\\
+0 & 10 & 0\\
+0 & 0 & 5
+\end{bmatrix}\qquad D^{-1}=\begin{bmatrix}0.25 & 0 & 0\\
+0 & 0.1 & 0\\
+0 & 0 & 0.2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R=\begin{bmatrix}0 & 2 & 0\\
+2 & 0 & 4\\
+0 & 4 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=-D^{-1}R=\begin{bmatrix}0 & -0.5 & 0\\
+-0.2 & 0 & -0.4\\
+0 & -0.8 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=D^{-1}\cdot b=\begin{bmatrix}0.5\\
+0.6\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{\left(k\right)}=\begin{bmatrix}0 & -0.5 & 0\\
+-0.2 & 0 & -0.4\\
+0 & -0.8 & 0
+\end{bmatrix}\begin{bmatrix}1\\
+1\\
+1
+\end{bmatrix}=\begin{bmatrix}0.5\\
+-0.6\\
+-0.8
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מספר מצב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: מספר מצב זה מדד שמודד כמה הפונקציה רגישה לטעויות בנקודה מסויימת.
+\end_layout
+
+\begin_layout Standard
+נגדיר מספר מצב גם עבור מטריצות:
+\begin_inset Formula 
+\[
+\textnormal{Cond}\left(A\right)=\left\Vert A\right\Vert \cdot\left\Vert A^{-1}\right\Vert 
+\]
+
+\end_inset
+
+מתקיים תמיד: 
+\begin_inset Formula $\textnormal{Cond}\left(A\right)\ge1$
+\end_inset
+
+.
+ למה?
+\begin_inset Formula 
+\[
+1=\left\Vert I\right\Vert =\left\Vert A\cdot A^{-1}\right\Vert \le\left\Vert A\right\Vert \cdot\left\Vert A^{-1}\right\Vert =\textnormal{Cond}\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מה קורה בקירוב?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{b}^{*}=\vec{b}+\vec{r}\qquad r=b-b^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}^{*}=\vec{x}+\vec{e}\qquad e=x-x^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ax^{*}=b^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\left(x+e\right)=b+r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cancel{Ax}+Ae=\cancel{b}+r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ae=r
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e=A^{-1}r\Rightarrow\left\Vert e\right\Vert \le\left\Vert A^{-1}\right\Vert \left\Vert r\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert b\right\Vert \le\left\Vert A\right\Vert \cdot\left\Vert x\right\Vert 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cfrac{\left\Vert e\right\Vert }{\left\Vert x\right\Vert }\le\textnormal{Cond}\left(A\right)\cdot\cfrac{\left\Vert r\right\Vert }{\left\Vert b\right\Vert }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 10\\
+10 & 101
+\end{bmatrix}\begin{bmatrix}x_{1}\\
+x_{2}
+\end{bmatrix}=\begin{bmatrix}11\\
+111
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}1 & 10\\
+10 & 101
+\end{bmatrix}\qquad A^{-1}\begin{bmatrix}101 & -10\\
+-10 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert A\right\Vert _{1}=111\qquad\left\Vert A^{-1}\right\Vert _{1}=111
+\]
+
+\end_inset
+
+)תזכורת - כדי לחשב 
+\begin_inset Formula $\left\Vert \cdot\right\Vert _{1}$
+\end_inset
+
+ של מטריצה, לוקחים את סכום הערכים המוחלטים של העמודה עם הסכום הכי גבוה(
+\begin_inset Formula 
+\[
+\textnormal{Cond}\left(A\right)=111\cdot111=12321
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מספר ממש גדול.
+ הפתרון למשוואה הוא 
+\begin_inset Formula $x=\begin{bmatrix}1\\
+1
+\end{bmatrix}$
+\end_inset
+
+.
+ אם נשנה את 
+\begin_inset Formula $b$
+\end_inset
+
+ שינוי קטן - 
+\begin_inset Formula $b^{*}=\begin{bmatrix}11\\
+111.1
+\end{bmatrix}$
+\end_inset
+
+ - נקבל 
+\begin_inset Formula $x^{*}=\begin{bmatrix}0\\
+1.1
+\end{bmatrix}$
+\end_inset
+
+ - השינוי מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא שינוי ממש גדול!
+\end_layout
+
+\begin_layout Section*
+המקרים האחרים - בדפי התרגול!
+\end_layout
+
+\begin_layout Part*
+אינטרפולציה
+\end_layout
+
+\begin_layout Standard
+אינטרפולציה היא מציאת הערכה לפונקציה לפי נקודות.
+ למשל סרטוט גרף לפי מספר קטן של נקודות.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתונות לנו 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות דגימה 
+\begin_inset Formula $\left(x_{0},y_{0}\right),\dots\left(x_{n},y_{n}\right)$
+\end_inset
+
+, ונתונות לנו 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פונקציות בסיס 
+\begin_inset Formula $\phi_{0}\left(x\right),\dots\phi_{n}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המטרה: לבנות צירוף לינארי
+\begin_inset Formula 
+\[
+p\left(x\right)=C_{0}\phi_{0}\left(x\right)+C_{1}\phi_{1}\left(x\right)+\dots+C_{n}\phi_{n}\left(x\right)
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula 
+\[
+\forall_{0\le i\le n}p\left(x_{i}\right)=y_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ נקרא אינטרפולציה)"ביון" בשפת הקודש(
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב את זה בצורה של סט משוואות:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+p\left(x_{0}\right)=C_{0}\phi_{x}\left(x_{0}\right)+\dots+C_{n}\phi_{n}\left(x_{0}\right)=y_{0}\\
+\vdots\\
+p\left(x_{n}\right)=C_{0}\phi_{0}\left(x_{n}\right)+\dots+C_{n}\phi_{n}\left(x_{n}\right)=y_{n}
+\end{array}\right.
+\]
+
+\end_inset
+
+ניתן לתרגם את זה למערכת לינארית:
+\begin_inset Formula 
+\[
+\begin{bmatrix}\phi_{0}\left(x_{0}\right) & \cdots & \phi_{n}\left(x_{0}\right)\\
+\vdots & \ddots & \vdots\\
+\phi_{0}\left(x_{n}\right) & \cdots & \phi_{n}\left(x_{n}\right)
+\end{bmatrix}\begin{bmatrix}C_{0}\\
+\vdots\\
+C_{n}
+\end{bmatrix}=\begin{bmatrix}y_{0}\\
+\vdots\\
+y_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב! הפעם ה
+\begin_inset Formula $x$
+\end_inset
+
+ ידועים, והמקדמים 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ לא ידועים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+הפונקציות שלנו הן 
+\begin_inset Formula $1,\sin\left(\cfrac{\pi}{2}\cdot x\right),\cos\left(\cfrac{\pi}{2}\cdot x\right)$
+\end_inset
+
+, והנקודות 
+\begin_inset Formula $\left(0,1\right),\left(1,2\right),\left(2,5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(x\right)=C_{0}\cdot1+C_{1}\cdot\sin\left(\cfrac{\pi}{2}\cdot x\right)+C_{2}\cdot\cos\left(\cfrac{\pi}{2}\cdot x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+p\left(0\right)=C_{0}\cdot1+C_{1}\cdot\sin\left(0\right)+C_{2}\cdot\cos\left(0\right)=1\\
+p\left(1\right)=C_{0}\cdot1+C_{1}\cdot\sin\left(\cfrac{\pi}{2}\right)+C_{2}\cdot\cos\left(\cfrac{\pi}{2}\right)=2\\
+p\left(2\right)=C_{0}\cdot1+C_{1}\cdot\sin\left(\pi\right)+C_{2}\cdot\cos\left(\pi\right)=5
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0 & 1\\
+1 & 1 & 0\\
+1 & 0 & -1
+\end{bmatrix}\begin{bmatrix}C_{1}\\
+C_{1}\\
+C_{2}
+\end{bmatrix}=\begin{bmatrix}1\\
+2\\
+5
+\end{bmatrix}\qquad\vec{C}=\begin{bmatrix}3\\
+-1\\
+-2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+כמה אפשרויות יש?
+\end_layout
+
+\begin_layout Standard
+יכולות להיות הרבה אינטרפולציות לאותו סט של נקודות עם אותן פונקציות.
+\end_layout
+
+\begin_layout Section*
+אינטרפולציה פולינומית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{i}\left(x\right)=x^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נורא קל לחשב פולינומים, ובגלל זה אנחנו אוהבים לעבוד איתם.
+ כאשר יש לנו סט כזה של פולינומים, אנו מקבלים מערכת עם מטריצת וונדרמונדה:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & x_{0} & x_{0}^{2} & \cdots & x_{0}^{n}\\
+1 & x_{1} & x_{1}^{2} & \cdots & x_{1}^{n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & x_{n} & x_{n}^{2} & \cdots & x_{n}^{n}
+\end{bmatrix}\begin{bmatrix}a_{0}\\
+\vdots\\
+\vdots\\
+\vdots\\
+a_{n}
+\end{bmatrix}=\begin{bmatrix}y_{0}\\
+\vdots\\
+\vdots\\
+\vdots\\
+y_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(0,1\right),\left(1,4\right),\left(2,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0 & 0\\
+1 & 1 & 1\\
+1 & 2 & 4
+\end{bmatrix}\begin{bmatrix}a_{0}\\
+a_{1}\\
+a_{n}
+\end{bmatrix}=\begin{bmatrix}1\\
+4\\
+0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\rho\left(x\right)=1+6\cdot5x-3\cdot5x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+קיים פולינום יחיד ממעלה לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ העובר דרך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות 
+\begin_inset Formula $\left(x_{0},y_{0}\right)\dots\left(x_{n},y_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ פולינום ממעלה לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+, העובר דרך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ הנקודות:
+\begin_inset Formula 
+\[
+0\le i\le n\qquad p\left(x_{i}\right)=y_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי קיים 
+\begin_inset Formula $q\left(x\right)$
+\end_inset
+
+ ממעלה לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ וגם הוא עובר דרך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ נקודות:
+\begin_inset Formula 
+\[
+0\le i\le n\qquad q\left(x_{i}\right)=y_{i}\qquad q\left(x\right)\neq p\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $r\left(x\right)=p\left(x\right)-q\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\deg r\le\max\left\{ \deg\left(p\right),\deg\left(q\right)\right\} \le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $0\le i\le n$
+\end_inset
+
+, 
+\begin_inset Formula $p\left(x_{i}\right)=q\left(x_{i}\right)$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $r\left(x_{i}\right)=p\left(x_{i}\right)-q\left(x_{i}\right)=0$
+\end_inset
+
+.
+ כלומר
+\begin_inset Formula 
+\[
+\forall_{0\le i\le n}r\left(x_{i}\right)=0
+\]
+
+\end_inset
+
+כלומר יש ל
+\begin_inset Formula $r$
+\end_inset
+
+ 
+\begin_inset Formula $n+1$
+\end_inset
+
+ שורשים - אבל לפי המשפט היסודי של האלגברה לפולינום מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ שורשים)יכולים להיות שורשים כפולים(.
+ הפולינום היחיד ממעלה לכל היותר 
+\begin_inset Formula $n$
+\end_inset
+
+ שלו יותר מ
+\begin_inset Formula $n$
+\end_inset
+
+ שורשים הוא פולינום האפס, כלומר:
+\begin_inset Formula 
+\[
+q\left(x\right)=p\left(x\right)+r\left(x\right)=p\left(x\right)+0=p\left(x\right)
+\]
+
+\end_inset
+
+ בסתירה לכך ש
+\begin_inset Formula $q\left(x\right)\neq p\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

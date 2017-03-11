@@ -1,0 +1,1115 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+הגדרנו את הגראדיאנט 
+\begin_inset Formula $\nabla f$
+\end_inset
+
+ לפי השוויון 
+\begin_inset Formula $\mathrm{d}f\left(v\right)=\left\langle \nabla f,v\right\rangle $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mathrm{d}f\left(v\right)=f_{\prime i}v^{i}$
+\end_inset
+
+, כלומר:
+\begin_inset Formula 
+\[
+f_{\prime i}v^{i}=\left(\nabla f\right)^{i}v^{i}g_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: אי אפשר להגדיר את הגראדיינט ישירות, שכן אסור להתעלם מהמטריקה.
+ במרחבים כלליים אין קשר ישיר בין ווקטורים לקו-ווקטורים - קשרים כאלה אפשריים
+ רק כאשר יש מטריקה.
+\end_layout
+
+\begin_layout Standard
+אם נסדר את זה מחדש, נקבל:
+\begin_inset Formula 
+\[
+f_{\prime i}v^{i}=\left(\nabla f\right)^{j}g_{ij}v^{i}
+\]
+
+\end_inset
+
+רוצים שזה יתקיים לכל וקטור 
+\begin_inset Formula $v$
+\end_inset
+
+, ולשם כך צריך שהמקדמים יהיו שווים בשני הצדדים:
+\begin_inset Formula 
+\[
+\implies f_{\prime i}=g_{ij}\left(\nabla f\right)^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g^{ki}f_{\prime i}=g^{ki}g_{ij}\left(\nabla f\right)^{j}
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $g^{ki}g_{ij}=I$
+\end_inset
+
+, ולכן:
+\begin_inset Formula 
+\[
+g^{ki}f_{\prime i}=\delta_{\hspace{4bp}j}^{k}\left(\nabla f\right)^{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g^{ki}f_{\prime i}=\left(\nabla f\right)^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אינטואיציה - מה זה גראדיאנט ומה זה ווקטור
+\end_layout
+
+\begin_layout Standard
+אם יש לנו מרחב דו מימדי ועקומות, אז אפשר להסתכל על כל העקומות העוברות דרך
+ נקודה, וזה מגדיר)לפי המשיקים( מרחב וקטורי.
+\end_layout
+
+\begin_layout Standard
+באותו מרחב יש גם פונקציות סקלריות - פונקציות שמגדירות ערך בכל נקודה.
+ הפונקציות האלה מגדירים "קוי גובה" - קוים שבהם הפונקציה נותנת אותו ערך.
+ הצפיפות של הקוים אותם וקטור חותך הם קצב העליה כאשר הולכים עם אותו וקטור.
+\end_layout
+
+\begin_layout Standard
+באינפי יכולנו להגדיר גראדיאנט בכל נקודה - הכיוון בו העליה היא התלולה ביותר.
+ אבל בשביל לקבוע איזו עליה היא התלולה ביותר צריך מטריקה - כי תלילות עליה
+ זה הגובה שעולים חלקי המרחק שעברנו במרחב, ובשביל לקבוע כמה מרחק הלכנו במרחב
+ צריך מטריקה.
+\end_layout
+
+\begin_layout Standard
+להגדיר את הדיפרנציאל 
+\begin_inset Formula $\mathrm{d}f$
+\end_inset
+
+ זה תמיד משמעותי, אבל לא תמיד יש לזה משמעות בתור וקטור.
+ אם יש מטריקה אוטומטית זה נותן לדיפרנציאל משמעות של וקטור.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+בספירת היחידה 
+\begin_inset Formula $g=\begin{pmatrix}\sin^{2}\theta & 0\\
+0 & 1
+\end{pmatrix}\qquad g^{-1}=\begin{pmatrix}\frac{1}{\sin^{2}\theta} & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+.
+ אורך עקומה על פני הספירה הוא 
+\begin_inset Formula $S=\int\sqrt{\sin^{2}\theta\left(\mathrm{d}\varphi\right)^{2}+\left(d\theta\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את הפונקציה 
+\begin_inset Formula $f=ax^{2}+by^{2}+cz^{2}$
+\end_inset
+
+.
+ נכתוב אותה בקואאורדינטות כדוריות:
+\begin_inset Formula 
+\[
+f\left(\varphi,\theta\right)=\left(a\cos^{2}\phi+b\sin^{2}\varphi\right)\sin^{2}\theta+c\cos^{2}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}f=\left(-a2\cos\varphi\sin\varphi+2b\sin\varphi\cos\varphi\right)\sin\theta\mathrm{d}\varphi+\left[\left(a\cos^{2}\phi+b\sin^{2}\phi\right)2\sin\theta\cos\theta+2c\sin\theta\cos\theta\right]\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}f=\left(b-a\right)\sin^{2}\varphi\sin^{2}\theta\mathrm{\, d}\varphi+\sin2\theta\left(a\cos^{2}\varphi+b\sin^{2}\varphi-c\right)\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f=\begin{pmatrix}\frac{1}{\sin^{2}\theta} & 0\\
+0 & 1
+\end{pmatrix}\begin{pmatrix}\left(b-a\right)\sin2\varphi\sin^{2}\theta\\
+\sin2\theta\left(a\cos^{2}\varphi+b\sin^{2}\varphi-c\right)
+\end{pmatrix}=\begin{pmatrix}\left(b-a\right)\sin\left(2\varphi\right)\\
+\sin2\theta\left(a\cos^{2}\varphi+b\sin^{2}\varphi-c\right)
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \nabla f,v\right\rangle =\left(\nabla f\right)^{t}gv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - נגזרת קו-וריאנטית
+\end_layout
+
+\begin_layout Standard
+נגזרת קו-וריאנטית מוגדרת:
+\begin_inset Formula 
+\[
+v_{;k}^{i}=v_{\prime k}^{i}+\underbrace{\Gamma_{kl}^{i}v^{l}}_{\textnormal{connection}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - טנזור הפיתול)
+\lang english
+tortion
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+טנזור הפיתול
+\emph default
+ הוא טנזור מסדר 
+\begin_inset Formula $\begin{pmatrix}1\\
+2
+\end{pmatrix}$
+\end_inset
+
+ המוגדר:
+\begin_inset Formula 
+\[
+T\left(v,w\right)=\nabla_{v}w-\nabla_{w}v-\left[v,w\right]
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+T\left(e_{i},e_{j}\right)=\nabla_{e_{i}}e_{j}-\nabla_{e_{j}}e_{i}-\underbrace{\left[e_{i},e_{j}\right]}_{=0}=\Gamma_{ij}^{k}e_{k}-\Gamma_{ji}^{k}e_{k}
+\]
+
+\end_inset
+
+ונקבל ש
+\begin_inset Formula 
+\[
+T_{\hspace{4bp}ij}^{k}=\Gamma_{ij}^{k}-\Gamma_{ji}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+מקדמי כריסטופל סימטריים בווקטורים התחתונים, ולכן אמור לצאת 
+\begin_inset Formula $T_{\hspace{4bp}ij}^{k}=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו הנחנו שסימני כריסטופל הם סימטריים.
+ אם הם נובעים מתוך מטריקה הם אכן סימטריים.
+ אבל אם אין מטריקה, אפשר להגדיר את סימני כריסטופל)ה
+\lang english
+connection
+\lang hebrew
+( באופן שרירותי, ואז אפשר לקבל טנזור פיתול)
+\lang english
+tortion
+\lang hebrew
+( שאינו אפס.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+באמצעות הנגזרת הקו-וריאנטית אפשר להגדיר את הגראדיאנט ישירות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\nabla_{v}w\right)^{k}=v^{i}w_{;j}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פונקציונאלים
+\end_layout
+
+\begin_layout Standard
+אם יש לנו מרחב פונקציות 
+\begin_inset Formula $F$
+\end_inset
+
+, אז ההעתקה ממרחב הפונקציות למרחב הממשיים 
+\begin_inset Formula $S:F\to\mathbb{R}$
+\end_inset
+
+ נקראת 
+\emph on
+פונקציונאל
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר את 
+\begin_inset Formula $S$
+\end_inset
+
+ ע"י הפונקציה, הנגזרת שלה והפרמטר:
+\begin_inset Formula 
+\[
+S\left(q\right)=\int_{t_{1}}^{t_{2}}\mathscr{L}\left(q,\dot{q},t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\mathscr{L}$
+\end_inset
+
+ נקרא 
+\emph on
+לגרנז'יאן
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\begin_inset Formula 
+\[
+\int_{t_{1}}^{t_{2}}\left(q^{2}\left(t\right)+\dot{q}^{2}\left(t\right)\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האורך של עקומות הוא:
+\begin_inset Formula 
+\[
+\int\sqrt{\mathrm{d}x^{2}+\mathrm{d}y^{2}}=\int\sqrt{1+\dot{y}^{2}}\mathrm{\, d}x
+\]
+
+\end_inset
+
+המטרה שלנו היא לפתח בדרך אחרת את משוואת הקו הגיאודזי כך שתיתן את המרחק הקצר
+ ביותר בין שתי נקודות עבור מטריקה כללית.
+\end_layout
+
+\begin_layout Standard
+נסתכל על על העקומות המקיימות 
+\begin_inset Formula $\begin{array}{c}
+q\left(t_{1}\right)=q_{1}\\
+q\left(t_{2}\right)=q_{2}
+\end{array}$
+\end_inset
+
+)כלומר כל העקומות שקבועות בשתי נקודות הקצה(.
+ נרצה למצוא את אלו שנותנות ערך מינימלי לאינטגרל הזה.
+\end_layout
+
+\begin_layout Standard
+נשים לב שעושים כאן מינימיזציה על אינסוף משתנים!
+\end_layout
+
+\begin_layout Standard
+אפשר להשתמש בזה גם כדי למצוא משטחים מינימליים.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+תנאי הכרחי)אבל לא מספיק!( להיותה של פונקציה 
+\begin_inset Formula $q\left(t\right)$
+\end_inset
+
+, גזירה פעמיים)לפחות(, מינימום של הפונקציונאל
+\begin_inset Formula 
+\[
+S=\int\mathscr{L}\left(q\left(t\right),\dot{q}\left(t\right),t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+הוא ש
+\begin_inset Formula $q$
+\end_inset
+
+ מקיימת את המשוואה)משוואת אוילר-לגרנז'(:
+\begin_inset Formula 
+\[
+\frac{\partial\mathscr{L}}{\partial q}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ רציפה.
+ אם מתקיים 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x\right)g\left(x\right)\mathrm{\, d}x=0
+\]
+
+\end_inset
+
+ לכל פונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+ חלקה)
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+( אזי 
+\begin_inset Formula $\forall_{x\in\left[a,b\right]}f\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הלמה
+\end_layout
+
+\begin_layout Standard
+נניח שהלמה לא נכונה, כלומר 
+\begin_inset Formula $\varepsilon=\left|f\left(x_{0}\right)\right|\neq0$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x_{0}\in\left[a,b\right]$
+\end_inset
+
+.
+ אזי מהרציפות קיים תחום 
+\begin_inset Formula $\left[x_{1},x_{2}\right]$
+\end_inset
+
+ שבכל נקודה 
+\begin_inset Formula $x\in\left[x_{1},x_{2}\right]$
+\end_inset
+
+ בו 
+\begin_inset Formula $\left|f\left(x\right)\right|>\frac{\varepsilon}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה את הפונקציה 
+\begin_inset Formula $g$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+e^{\frac{1}{x_{1}-x}+\frac{1}{x-x_{2}}} & x\in\left(x_{1},x_{2}\right)\\
+0 & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+נשים לב הפונקציה שואפת ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $x\to x_{1}^{+},x_{2}^{-}$
+\end_inset
+
+, ושהמעבר הוא חלק.
+ אזי:
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x\right)g\left(x\right)\mathrm{\, d}x=\int_{x_{1}}^{x_{2}}f\left(x\right)g\left(x\right)\mathrm{\, d}x>\frac{\varepsilon}{2}\int_{x_{1}}^{x_{2}}g\left(x\right)\mathrm{\, d}x>0
+\]
+
+\end_inset
+
+בסתירה לתנאי הלמה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת המשפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $q\left(t\right)$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\begin{array}{c}
+q\left(t_{1}\right)=q_{1}\\
+q\left(t_{2}\right)=q_{2}
+\end{array}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $h$
+\end_inset
+
+ פונקציה כלשהי המקיימת 
+\begin_inset Formula $h\left(t_{2}\right)=h\left(t_{1}\right)=0$
+\end_inset
+
+.
+ אזי כל פונקציה מהצורה
+\begin_inset Formula 
+\[
+f\left(t\right)=q\left(t\right)+h\left(t\right)
+\]
+
+\end_inset
+
+מקיימת
+\begin_inset Formula 
+\[
+f\left(t_{1}\right)=q_{1}\qquad f\left(t_{2}\right)=q_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\begin_inset Formula 
+\[
+S=\int_{t_{1}}^{t_{2}}\mathscr{L}\left(q\left(t\right),\dot{q}\left(t\right),t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+ונסמן
+\begin_inset Formula 
+\[
+S^{*}=\int_{t_{1}}^{t_{2}}\mathscr{L}\left(q\left(t\right)+\varepsilon h\left(t\right),\dot{q}\left(t\right)+\varepsilon\dot{h}\left(t\right),t\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\varepsilon\neq0$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_layout Standard
+תנאי הכרחי לכך ש
+\begin_inset Formula $q\left(t\right)$
+\end_inset
+
+ תיתן את המינימום עבור 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $S\le S^{*}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $h\left(t\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר:
+\begin_inset Formula 
+\[
+\delta S=S^{*}-S\ge0
+\]
+
+\end_inset
+
+כלומר כל שינוי בפונקציה 
+\begin_inset Formula $q$
+\end_inset
+
+ יגדיל את הערך של 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+S^{*}=\int_{t_{1}}^{t_{2}}\mathscr{L}\left(q\left(t\right)+\varepsilon h\left(t\right),\dot{q}\left(t\right)+\varepsilon\dot{h}\left(t\right),t\right)\mathrm{\, d}t=\int_{t_{1}}^{t_{2}}\left(\mathscr{L}\left(q,\dot{q},t\right)+\frac{\partial\mathscr{L}}{\partial q}\varepsilon h+\frac{\partial L}{\partial\dot{q}}\varepsilon\dot{h}+o\left(\varepsilon\right)\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S^{*}-S=\int_{t_{1}}^{t_{2}}\left(\frac{\partial\mathscr{L}}{\partial q}\varepsilon h+\frac{\partial\mathscr{L}}{\partial\dot{q}}\varepsilon\dot{h}+o\left(\varepsilon\right)\right)\mathrm{\, d}t
+\]
+
+\end_inset
+
+נבצע אינטגרציה בחלקים:
+\begin_inset Formula 
+\[
+\int_{t_{1}}^{t_{2}}\frac{\partial\mathscr{L}}{\partial\dot{q}}\dot{h}\mathrm{\, d}t=\left.\frac{\partial\mathscr{L}}{\partial\dot{q}}h\right|_{t_{1}}^{t_{2}}-\int_{t_{1}}^{t_{2}}\left(\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}\right)h\mathrm{\, d}t
+\]
+
+\end_inset
+
+נציב חזרה בתוך ה
+\begin_inset Formula $\delta S$
+\end_inset
+
+ לקבל:
+\begin_inset Formula 
+\[
+\delta S=\int_{t_{1}}^{t_{2}}h\left(\frac{\partial\mathscr{L}}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}\right)\mathrm{\, d}t+o\left(\varepsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תמיד ניתן לבחור 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ מספיק קטן כך שהביטוי 
+\begin_inset Formula $o\left(\varepsilon\right)$
+\end_inset
+
+ יהיה זניח יחסית ל
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\int h\left(\frac{\partial\mathscr{L}}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}\right)>0$
+\end_inset
+
+ אזי נבחר 
+\begin_inset Formula $\varepsilon<0$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\delta S<0$
+\end_inset
+
+ בסתירה למינימליות.
+ כנ"ל אם 
+\begin_inset Formula $\int h\left(\frac{\partial\mathscr{L}}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}\right)<0$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\delta S<0$
+\end_inset
+
+.
+ לכן תנאי הכחרי למינימליות הוא:
+\begin_inset Formula 
+\[
+\int_{t_{1}}^{t_{2}}h\left(\frac{\partial\mathscr{L}}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}\right)\mathrm{\, d}t=0
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ לפי הלמה נובע:
+\begin_inset Formula 
+\[
+\frac{\partial\mathscr{L}}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז איך מחשבים את המרחק המינימלי
+\begin_inset Formula 
+\[
+\xymatrix{ &  & {\begin{pmatrix}x_{2} & y_{2}\end{pmatrix}}\\
+{\begin{pmatrix}x_{1} & y_{1}\end{pmatrix}}\ar@{-}[rru]
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\sqrt{dy^{2}+dx^{2}}=\int_{x_{1}}^{x_{2}}\sqrt{1+\dot{y}^{2}}\mathrm{\, d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\frac{\partial\mathscr{L}}{\partial y}=\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial\mathscr{L}}{\partial\dot{y}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial\mathscr{L}}{\partial\dot{y}}=\textnormal{const}=\frac{\cancel{2}\dot{y}}{\cancel{2}\sqrt{1+\dot{y}^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\dot{y}}{\sqrt{1+\dot{y}^{2}}}=c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}^{2}=c\left(1+\dot{y}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}^{2}\left(1-c\right)=c
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}^{2}=\frac{c}{1-c}=\tilde{c}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{y}=\tilde{c}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\tilde{c}x+c_{2}
+\]
+
+\end_inset
+
+וקיבלנו)כצפוי( שהמרחק הקצר ביותר במישור הוא קו ישר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אורך של עקומה בגיאומטריה דיפרנציאלית הא
+\begin_inset Formula 
+\[
+\int_{t_{1}}^{t_{2}}\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}\mathrm{\, d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר באופן כללי
+\begin_inset Formula 
+\[
+\mathscr{L}\left(q_{1},q_{2},\dots\dot{q}_{1},\dot{q}_{2},\dots t\right)
+\]
+
+\end_inset
+
+ע"י
+\begin_inset Formula 
+\[
+\forall_{i}\frac{\partial\mathscr{L}}{\partial q_{i}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q}_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור לפי כל רכיב פרט ל
+\begin_inset Formula $t$
+\end_inset
+
+)כלומר לפי כל 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ ולפי כל 
+\begin_inset Formula $\dot{q}_{i}$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\frac{\partial\mathscr{L}}{\partial x^{k}}=\frac{g_{ij\prime k}\dot{x}^{i}\dot{x}^{j}}{2\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}}\qquad\frac{\partial\mathscr{L}}{\partial\dot{x}^{k}}=\frac{2g_{ik}\dot{x}^{i}\dot{x}^{k}}{2\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב במשוואת אויילר לגרנז':
+\begin_inset Formula 
+\[
+\frac{g_{ij\prime k}\dot{x}^{i}\dot{x}^{j}}{\cancel{2}\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{2g_{ik}\dot{x}^{i}\dot{x}^{j}}{\cancel{2}\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}}
+\]
+
+\end_inset
+
+לשם הפשטות נניח 
+\begin_inset Formula $\sqrt{g_{ij}\dot{x}^{i}\dot{x}^{j}}=1$
+\end_inset
+
+ לקבל
+\begin_inset Formula 
+\[
+g_{ij\prime k}\dot{x}^{i}\dot{x}^{j}=2\frac{\mathrm{d}}{\mathrm{d}t}\left(g_{ik}\dot{x}^{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ij\prime k}\dot{x}^{i}\dot{x}^{j}=2\left(g_{ik\prime j}\dot{x}^{j}\dot{x}^{i}+g_{ik}\ddot{x}^{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ik}\ddot{x}^{i}+\frac{1}{2}\left(2g_{ik\prime j}-g_{ij\prime k}\right)\dot{x}^{i}\dot{x}^{j}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{ik}\ddot{x}^{i}+\underbrace{\frac{1}{2}\left(g_{ik\prime j}+g_{jk\prime i}-g_{ij\prime k}\right)\dot{x}^{i}\dot{x}^{j}}_{\Gamma_{ijk}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הערה
+\series default
+: הביטוי 
+\begin_inset Formula $\Gamma_{ijk}$
+\end_inset
+
+ נקרא 
+\emph on
+סמל כריסטופל מהסוג הראשון
+\emph default
+)כאשר 
+\begin_inset Formula $\Gamma_{ij}^{k}$
+\end_inset
+
+ הוא מסוג השני(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g^{lk}g_{ij}\ddot{x}^{i}+\frac{1}{2}g^{lk}\left(g_{ih\prime j}+g_{jh\prime i}-g_{ij\prime k}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\ddot{x}^{l}+\Gamma_{ij}^{l}\dot{x}^{i}\dot{x}^{j}=0}
+\]
+
+\end_inset
+
+וקיבלנו שוב את משוואת הקווים הגיאודזים, אמנם בדרך יותר מסובכת - אבל יותר
+ כללית.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,966 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+גיאומטריה אנליטית
+\end_layout
+
+\begin_layout Standard
+ענף זה עוסק בחקר הגיאומטריה באמצעות כלים אלגבריים ובשימוש 
+\series bold
+במערכת צירים
+\series default
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+מצאו את הנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+ על הפרבולה 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ הקרובה ביותר אל הנקודה 
+\begin_inset Formula $\left(3,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נפתור בשתי דרכים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דרך
+\begin_inset space ~
+\end_inset
+
+א'
+\series default
+: נקודה כללית על הפרבולה היא מהצורה 
+\begin_inset Formula $Q=\left(\underbrace{t}_{x},\underbrace{t^{2}}_{y}\right)$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+ המרחק בין 
+\begin_inset Formula $Q$
+\end_inset
+
+ לבין 
+\begin_inset Formula $\left(3,0\right)$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+d\left(Q,\left(3,0\right)\right)=\sqrt{\left(t-3\right)^{2}+\left(t^{2}\right)^{2}}\ge0
+\]
+
+\end_inset
+
+ורוצים למזהר את זה.
+ נעבוד עם המרחק בריבוע:
+\begin_inset Formula 
+\[
+f\left(t\right):=d\left(Q,\left(3,0\right)\right)=\left(t-3\right)^{2}+\left(t^{2}\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(t\right)=4t^{3}+2t-6\stackrel{!}{=}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $t=1$
+\end_inset
+
+ פותר, ויוצא שהוא הפתרון הממשי היחיד.
+ נוודא מינימום:
+\begin_inset Formula 
+\[
+f''\left(t\right)=12t^{2}+2\qquad f''\left(1\right)=14>0\qquad\surd
+\]
+
+\end_inset
+
+הנקודה המבוקשת:
+\begin_inset Formula 
+\[
+p\equiv\left.Q\right|_{t=1}=\left(1,1\right)
+\]
+
+\end_inset
+
+והמרחק המינימלי הוא
+\begin_inset Formula 
+\[
+d\left(P,\left(3,0\right)\right)=\sqrt{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דרך
+\begin_inset space ~
+\end_inset
+
+ב'
+\series default
+: שיפוע הישר המחבר בין 
+\begin_inset Formula $\left(3,0\right)$
+\end_inset
+
+ לבין נקודה כללית 
+\begin_inset Formula $Q=\left(t,t^{2}\right)$
+\end_inset
+
+ על הפרבולה הוא
+\begin_inset Formula 
+\[
+m_{1}=\frac{\Delta y}{\Delta x}=\frac{t^{2}-0}{t-3}
+\]
+
+\end_inset
+
+שיפוע המשיק לפרבולה בנקודה כללית 
+\begin_inset Formula $Q$
+\end_inset
+
+ הוא
+\begin_inset Formula 
+\[
+m_{2}=\left.y'\right|_{x=t}=\left.2x\right|_{x=t}=2t
+\]
+
+\end_inset
+
+נדרוש שמכפלת השיפועים היא 
+\begin_inset Formula $-1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+m_{1}\cdot m_{2}\stackrel{!}{=}-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2t\cdot\frac{t^{2}}{t-3}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2t^{3}=-\left(t-3\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{2t^{3}+t-3=0}
+\]
+
+\end_inset
+
+קיבלנו אותה משוואה כבמו בדרך א' - ומכאן הפתרון זהה.
+\end_layout
+
+\begin_layout Part*
+עקומות ריבועיות
+\end_layout
+
+\begin_layout Section*
+הגדרה - עקומה ריבועית ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עקומה ריבועית ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ היא אוסף של משוואות מהסוג
+\begin_inset Formula 
+\[
+ax^{2}+2bxy+cy^{2}+dx+ey+f=0
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $a,b,\dots f\in\mathbb{R}$
+\end_inset
+
+ קבועים.
+\end_layout
+
+\begin_layout Standard
+ניתן לרשום גם
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}a & b\\
+b & c
+\end{bmatrix}\qquad\vec{x}=\begin{bmatrix}x\\
+y
+\end{bmatrix}\qquad\vec{b}\begin{bmatrix}d\\
+e
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}a & b\\
+b & c
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+\begin{bmatrix}d & e\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}^{T}A\vec{x}+\vec{b}^{T}\vec{x}+c=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמא
+\end_layout
+
+\begin_layout Itemize
+מעגל: 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פרבולה: 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרים מנוונים:
+\end_layout
+
+\begin_layout Itemize
+זוג ישרים מקבילים:
+\begin_inset Formula $y^{2}-1=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כלום: 
+\begin_inset Formula $x^{2}+y^{2}=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נקודה בודדת: 
+\begin_inset Formula $x^{2}+y^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+סווג והבא לצורה קנונית את העקומה הריבועית הבאה:
+\begin_inset Formula 
+\[
+16x^{2}-32x+25y^{2}-200y+16=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+נעזר בהשלמה לריבוע:
+\begin_inset Formula 
+\[
+6\left(x-1\right)^{2}-\cancel{16}+25\left(y-4\right)^{2}-400+\cancel{16}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+6\left(x-1\right)^{2}+25\left(y-4\right)^{2}=400
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\frac{\left(x-1\right)^{2}}{5^{2}}+\frac{\left(y-4\right)^{2}}{4^{2}}=1}
+\]
+
+\end_inset
+
+נחליף משתנים: 
+\begin_inset Formula $\begin{array}{rcl}
+x' & = & x-1\\
+y' & = & y-4
+\end{array}$
+\end_inset
+
+ לקבל:
+\begin_inset Formula 
+\[
+\frac{\left(x'\right)^{2}}{5^{2}}+\frac{\left(y'\right)^{2}}{4^{2}}=+1
+\]
+
+\end_inset
+
+אליפסה עם מרכז בנקודה 
+\begin_inset Formula $\left(1,4\right)$
+\end_inset
+
+ וחצאי הצירים באורכים 
+\begin_inset Formula $5,4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למעשה, אפשר היה לדעת שזו אליפסה מהערכים העצמיים של 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}16 & 0\\
+0 & 25
+\end{bmatrix}\qquad\lambda_{1,2}=16,25
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\det A>0$
+\end_inset
+
+ ולכן זו אליפסה.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+כנ"ל עבור
+\begin_inset Formula 
+\[
+x^{2}+4xy-2y^{2}+1=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+הפעם יש איבר מעורב 
+\begin_inset Formula $xy$
+\end_inset
+
+, אותו אי אפשר להעיף עם השלמה לריבוע.
+\begin_inset Formula 
+\[
+\begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}1 & 2\\
+2 & -2
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+1=0
+\]
+
+\end_inset
+
+ע"ע של 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\det\left(A-\lambda I\right)=\det\begin{bmatrix}1-\lambda & 2\\
+2 & -2-\lambda
+\end{bmatrix}=\left(1-\lambda\right)\left(-2-\lambda\right)-4\overset{!}{=}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}+\lambda-6=9\implies\boxed{\lambda_{1,2}=-3,2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\lambda_{1,2}$
+\end_inset
+
+ בעלי סימנים הפוכים 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ היפרבולה.
+\end_layout
+
+\begin_layout Standard
+וקטורים עצמיים:
+\begin_inset Formula 
+\[
+\lambda_{1}=2\qquad\vec{v}_{1}=\begin{bmatrix}a\\
+b
+\end{bmatrix}\qquad A\vec{v}_{1}=\lambda_{1}\vec{v}_{1}\qquad\left(A-\lambda_{1}I\right)\vec{v}_{1}=\vec{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}-1 & 2\\
+2 & -4
+\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=\begin{pmatrix}0\\
+0
+\end{pmatrix}\implies-a+2b=0\implies a=2b\implies\vec{v}_{1}=\begin{pmatrix}2b\\
+b
+\end{pmatrix}=b\begin{pmatrix}2\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \vec{v}_{1}\right\Vert =\left|b\right|\left\Vert \begin{pmatrix}2\\
+1
+\end{pmatrix}\right\Vert =\left|b\right|\sqrt{5}
+\]
+
+\end_inset
+
+ניקח 
+\begin_inset Formula $b=\frac{1}{\sqrt{5}}$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $\hat{v}_{1}=\frac{1}{\sqrt{5}}\begin{pmatrix}2\\
+1
+\end{pmatrix}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\lambda_{2}=-3\qquad\begin{pmatrix}4 & 2\\
+2 & 1
+\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=\begin{pmatrix}0\\
+0
+\end{pmatrix}\qquad4a+2b=0\qquad b=-2a
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{v}_{2}=\begin{pmatrix}a\\
+-2a
+\end{pmatrix}\qquad a=\frac{1}{\sqrt{5}}\qquad\hat{v}_{2}=\frac{1}{\sqrt{5}}\begin{pmatrix}1\\
+-2
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המטריצה המלכסנת היא:
+\begin_inset Formula 
+\[
+P=\begin{bmatrix}| & |\\
+D_{1} & D_{2}\\
+| & |
+\end{bmatrix}=\frac{1}{\sqrt{5}}\begin{bmatrix}2 & 1\\
+1 & -2
+\end{bmatrix}
+\]
+
+\end_inset
+
+נגדיר משתנים חדשים 
+\begin_inset Formula $x',y'$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+P\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\]
+
+\end_inset
+
+המשוואה הייתה:
+\begin_inset Formula 
+\[
+\vec{x}^{T}A\vec{x}+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(P\vec{x}'\right)^{T}A\left(P\vec{x}'\right)+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{x}'^{T}\underbrace{P^{T}AP}_{D}\vec{x}'+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x',y'\right)\begin{pmatrix}2 & 0\\
+0 & -3
+\end{pmatrix}\begin{pmatrix}x'\\
+y'
+\end{pmatrix}+1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\left(x'\right)^{2}-3\left(y'\right)^{2}+1=0
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+2\left(x'\right)^{2}-3\left(y'\right)^{2}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\left(x'\right)^{2}}{\left(\frac{1}{\sqrt{2}}\right)^{2}}-\frac{\left(y'\right)^{2}}{\left(\frac{1}{\sqrt{3}}\right)^{2}}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{\left(x'\right)^{2}}{\left(\frac{1}{\sqrt{2}}\right)^{2}}+\frac{\left(y'\right)^{2}}{\left(\frac{1}{\sqrt{3}}\right)^{2}}=+1
+\]
+
+\end_inset
+
+ורואים שמדובר בהיפרבולה
+\end_layout
+
+\begin_layout Standard
+נחזור למשוואה המקורית:
+\begin_inset Formula 
+\[
+x^{2}+4xy-2y^{2}+1=0
+\]
+
+\end_inset
+
+נחלץ את 
+\begin_inset Formula $y$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(-2\right)y^{2}+\left(4x\right)y+\left(x^{2}+1\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{1,2}=\frac{-4x\pm\sqrt{16x^{2}-4\left(-2\right)\left(x^{2}+1\right)}}{-4}=\frac{-4x\pm\sqrt{24x^{2}+8}}{-4}
+\]
+
+\end_inset
+
+אם אנחנו מסתכלים רחוק מאוד ממכזר ההיפרבולה, 
+\begin_inset Formula $\left|x\right|$
+\end_inset
+
+מאוד מאוד גדול, ואז
+\begin_inset Formula 
+\[
+y_{1,2}\approx\frac{-4x\pm\sqrt{24x^{2}}}{-4}=x\pm\frac{\sqrt{24}\cdot\left|x\right|}{-4}=x\pm\frac{2\sqrt{6}}{4}x\implies\begin{array}{rcl}
+y & = & \left(1+\frac{2\sqrt{6}}{4}\right)x\\
+y & = & \left(1-\frac{2\sqrt{6}}{4}\right)x
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואלו האסימפטוטות של ההיפרבולה.
+\end_layout
+
+\begin_layout Standard
+דרך אחרת למצוא אסימפטוטות היא לעבור לצורה קנונית, למצוא אסימפטוטות בקלות,
+ ולחזור חזרה עם 
+\begin_inset Formula $P^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+רק לסווג הפעם:
+\begin_inset Formula 
+\[
+x^{2}-2xy+y^{2}+y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}1 & -1\\
+-1 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{2}-2\lambda=0\implies\lambda\left(\lambda-2\right)=0\implies\lambda_{1,2}=0,2
+\]
+
+\end_inset
+
+לכן זוהי משוואה של פרבולה.
+\end_layout
+
+\begin_layout Part*
+משטחים ריבועיים
+\end_layout
+
+\begin_layout Standard
+הפעם יש גם 
+\begin_inset Formula $z$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a\cdot x^{2}+b\cdot y^{2}+c\cdot z^{2}+2d\cdot xy+2e\cdot xz+2f\cdot yz+g\cdot x+h\cdot y+j\cdot z+k=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+סווג והבא לצורה קנונית:
+\begin_inset Formula 
+\[
+x^{2}+4y^{2}+z^{2}-2x=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(x-1\right)^{2}-1+4y^{2}+z^{2}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x-1\right)^{2}+4y^{2}+z^{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\left(x-1\right)^{2}}{1^{2}}+\frac{y^{2}}{\left(\frac{1}{2}\right)^{2}}+\frac{z^{2}}{1^{2}}=1
+\]
+
+\end_inset
+
+כל המקדמים חיוביים ובאגף ימין יש 
+\begin_inset Formula $+1$
+\end_inset
+
+ - לכן מדובר באליפסואיד.
+ מרכזו בנקודה 
+\begin_inset Formula $\left(1,0,0\right)$
+\end_inset
+
+.
+ חצאי צירים באורכים 
+\begin_inset Formula $1,\frac{1}{2},1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+סווג:
+\begin_inset Formula 
+\[
+9x^{2}+5y^{2}+5z^{2}+12xy++6xz+5x-6y-32=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}9 & 6 & 3\\
+6 & 5 & 0\\
+3 & 0 & 5
+\end{bmatrix}\qquad\lambda_{1,2,3}=14,5,0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן מדובר בפרבולואיד
+\end_layout
+
+\end_body
+\end_document

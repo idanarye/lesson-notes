@@ -1,0 +1,942 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מודול
+\emph default
+ מעל חוג 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא חבורה אבלית 
+\begin_inset Formula $\left(M,+\right)$
+\end_inset
+
+ יחד עם פעולה 
+\begin_inset Formula $R\times M\to M$
+\end_inset
+
+, שמקיימת את האקסיומות הבאות)
+\begin_inset Formula $\begin{array}{c}
+r_{i}\in R\\
+a_{i}\in M
+\end{array}$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(r_{1}+r_{2}\right)a=r_{1}a+r_{2}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r\left(a_{1}+a_{2}\right)=ra_{1}+ra_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{1}\left(r_{2}a\right)=\left(r_{1}r_{2}\right)a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+מודול 
+\begin_inset Formula $M$
+\end_inset
+
+ מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ הוא 
+\emph on
+נוצר סופית
+\emph default
+ אם קיים 
+\begin_inset Formula $t$
+\end_inset
+
+ כך ש
+\begin_inset Formula $M=\sum\limits _{i=1}^{t}Ra_{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $a_{1},\dots a_{t}\in M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוא 
+\emph on
+ציקלי
+\emph default
+ אם אפשר לקחת 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R$
+\end_inset
+
+ מודול מעל עצמו.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יותר כללי: אם 
+\begin_inset Formula $R\subseteq S$
+\end_inset
+
+ חוגים אז 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא מודול מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ - קוראים לזה 
+\begin_inset Formula $R$
+\end_inset
+
+-מודול.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+עבור 
+\begin_inset Formula $R$
+\end_inset
+
+ שדה
+\series default
+, מרחב וקטורי = מודול.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $R=\mathbb{Z}$
+\end_inset
+
+, מודול=חבורה אבלית כי הכפל מוכרך להיות 
+\begin_inset Formula $na=a+a+\cdots+a$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים ו
+\begin_inset Formula $-na=-\left(na\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מילון
+\end_layout
+
+\begin_layout Itemize
+תת מודול = תת חבורה 
+\begin_inset Formula $N\le M$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $RN\subseteq N$
+\end_inset
+
+)ולכן 
+\begin_inset Formula $RN=N$
+\end_inset
+
+ כי 
+\begin_inset Formula $1\in R$
+\end_inset
+
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקביל לתת חבורה בחבורות אבליות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\nicefrac{M}{N}$
+\end_inset
+
+ חבורה ואפילו מודול לפי 
+\begin_inset Formula $r\left(a+N\right)=ra+N$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקביל לחבורת מנה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+משפטי נותר - עובדים גם בחבורות אבליות וגם במודולים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Roman{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+כל תת מודול של 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula $m\mathbb{Z}$
+\end_inset
+
+, כלומר הוא ציקלי.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $I\lhd R$
+\end_inset
+
+ אז 
+\begin_inset Formula $\nicefrac{R}{I}$
+\end_inset
+
+ מודול)אפילו אם 
+\begin_inset Formula $I$
+\end_inset
+
+ אידיאל שמאלי( ו
+\begin_inset Formula $\nicefrac{R}{I}$
+\end_inset
+
+ הוא מודול ציקלי כל כל קוסט
+\begin_inset Formula 
+\[
+a+I=a\left(1+I\right)\in R\left(1+I\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\nicefrac{R}{I}=R\left(1+I\right)
+\]
+
+\end_inset
+
+מצד שני, כל מודול ציקלי 
+\begin_inset Formula $\cong$
+\end_inset
+
+ 
+\begin_inset Formula $\nicefrac{R}{I}$
+\end_inset
+
+ לאיזשהו אידיאל שמאלי 
+\begin_inset Formula $I$
+\end_inset
+
+ של 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: לכתוב 
+\begin_inset Formula $m=Ra$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f:R\to Ra=M$
+\end_inset
+
+ לפי 
+\begin_inset Formula $r\mapsto ra$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ הומומורפיזם:
+\begin_inset Formula 
+\[
+f\left(r_{1}+r_{2}\right)=f\left(r_{1}\right)+f\left(r_{2}\right)\qquad f\left(rr_{1}\right)=rf\left(r_{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ על כי 
+\begin_inset Formula $ra$
+\end_inset
+
+ הוא 
+\begin_inset Formula $f\left(r\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $r\in R$
+\end_inset
+
+, לכן נותר 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M=Ra\cong\nicefrac{R}{\ker f}$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\ker f$
+\end_inset
+
+ הוא אידאל שמאלי 
+\begin_inset Formula $I$
+\end_inset
+
+ של 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחה שהגרעין הוא אידאל שמאלי:
+\begin_inset Formula 
+\[
+\ker f=\left\{ a\middle|f\left(a\right)=0\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a,b\in\ker f
+\]
+
+\end_inset
+
+אז
+\begin_inset Formula 
+\[
+f\left(a+b\right)=f\left(a\right)+f\left(b\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(ra\right)=rf\left(a\right)=r0=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{r}
+a+b\in\ker f\\
+\forall_{r\in R}ra\in\ker f
+\end{array}\right\} 
+\]
+
+\end_inset
+
+כי
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\cancel{f\left(0\right)}=f\left(0+0\right)=f\left(0\right)+\cancel{f\left(0\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=f\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+סימון
+\end_layout
+
+\begin_layout Standard
+כותבים 
+\begin_inset Formula $M=\bigoplus M_{i}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ סכום ישר של ה
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ כחבורות אבליות, כאשר כל 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ הוא מודול.
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+כל מודול נוצר סופית מעל תחום שלמות ראשי הוא סכום ישר סופי של מודולים ציקליים.
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+עבור כל חוג 
+\begin_inset Formula $R$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+R^{\left(n\right)}:=\underbrace{R\oplus\cdots\oplus R}_{n\textnormal{ times}}
+\]
+
+\end_inset
+
+מודול מעל 
+\begin_inset Formula $R$
+\end_inset
+
+ כי הוא חבורה, והכפל מוגדר לפי
+\begin_inset Formula 
+\[
+r\left(r_{1},\dots r_{n}\right)=\left(rr_{1},\dots rr_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hom\left(R^{\left(n\right)},R^{\left(n\right)}\right)$
+\end_inset
+
+ הוא חוג לפי 
+\begin_inset Formula $\begin{array}{c}
+\left(f+g\right)\left(a\right)=f\left(a\right)+g\left(a\right)\\
+fg\left(a\right)=f\left(g\left(a\right)\right)
+\end{array}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in R^{\left(n\right)}$
+\end_inset
+
+ כחוגים, ו
+\begin_inset Formula 
+\[
+\hom\left(R^{\left(n\right)},R^{\left(n\right)}\right)\cong M_{n}\left(R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הדוגמה הרביעית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=F\left[\lambda\right]$
+\end_inset
+
+, 
+\begin_inset Formula $V=F^{\left(n\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $T:V\to V$
+\end_inset
+
+ טרנספורמציה לינארית מעל 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $R\times V\to V$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\left(\sum\alpha_{i}\lambda^{i}\right)\left(v\right)=\sum\alpha_{i}T^{i}\left(v\right)$
+\end_inset
+
+.
+ במיליםן אחרות.
+ במילים אחרות: 
+\begin_inset Formula 
+\[
+\boxed{\lambda v:=T\left(v\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda^{i}\left(v\right)=T\left(T\left(\cdots T\left(v\right)\right)\right)=T^{i}\left(v\right)\right)
+\]
+
+\end_inset
+
+מה 
+\bar under
+התת מודולים
+\bar default
+ של 
+\begin_inset Formula $V=F^{\left(n\right)}$
+\end_inset
+
+? הם בדיוק התת מרחבים 
+\begin_inset Formula $W$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\lambda W\le W$
+\end_inset
+
+.
+ עכשיו לכתוב 
+\begin_inset Formula $V=M_{1}\oplus\cdots\oplus M_{t}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ תת מודולים, וניקח בסיס)מעל 
+\begin_inset Formula $F$
+\end_inset
+
+( של כל 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ מיוחד: נתחיל עם 
+\begin_inset Formula $0+N_{i}\in M_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $M_{i}=Rv_{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{i},\lambda v_{i},\lambda^{2}v_{i},\dots\lambda^{n_{i}-1}v_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lambda^{n_{i}}=\left(\sum_{j=0}^{n_{i}-1}\lambda^{j}\right)v_{i}
+\]
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $f_{i}\left(\lambda\right)=\lambda^{n_{i}}-\sum\limits _{j=0}^{n_{i}-1}\alpha_{ij}\lambda^{j}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{i}\left(\lambda\right)v_{i}=0
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+M_{i}=F\left[\lambda\right]v_{i}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+f_{i}\left(T\right)\left(M_{i}\right)=f_{i}\left(\lambda\right)M_{i}=0
+\]
+
+\end_inset
+
+המטריצה של 
+\begin_inset Formula $T$
+\end_inset
+
+ ביחס לבסיס הזה היא:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\begin{pmatrix}0 & 1 & \cdots & \cdots & 0\\
+0 & 0 & 1 & 0 & \cdots\\
+\vdots &  & \ddots & \ddots\\
+\vdots &  & \dots & \ddots & 1\\
+\alpha_{10} & \alpha_{11} & \cdots & \cdots & \alpha_{1,n-1}
+\end{pmatrix}\\
+ & \begin{pmatrix}0 & 1 & \cdots & \cdots & 0\\
+0 & 0 & 1 & 0 & \cdots\\
+\vdots &  & \ddots & \ddots\\
+\vdots &  & \dots & \ddots & 1\\
+\alpha_{20} & \alpha_{21} & \cdots & \cdots & \alpha_{2,n-1}
+\end{pmatrix}\\
+ &  & \ddots\\
+ &  &  & \begin{pmatrix}0 & 1 & \cdots & \cdots & 0\\
+0 & 0 & 1 & 0 & \cdots\\
+\vdots &  & \ddots & \ddots\\
+\vdots &  & \dots & \ddots & 1\\
+\alpha_{t0} & \alpha_{t1} & \cdots & \cdots & \alpha_{t,n-1}
+\end{pmatrix}
+\end{pmatrix}
+\]
+
+\end_inset
+
+לפי הבסיס הזה קיבלנו את הצורה הרציונלית.
+ הוא פולינום מינימלי של 
+\begin_inset Formula $\left.T\right|_{M_{i}}$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\deg f_{i}=n_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ פולינום האופייני של 
+\begin_inset Formula $\left.T\right|_{M_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תרגיל
+\begin_inset space ~
+\end_inset
+
+קל
+\series default
+: 
+\begin_inset Formula $f_{1},\dots f_{t}$
+\end_inset
+
+ הוא פולינום האופייני של 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+יש משפט
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב 
+\begin_inset Formula 
+\[
+M=R^{\left(k\right)}\oplus\nicefrac{R}{Rf_{1}}\oplus\cdots\oplus\nicefrac{R}{Rf_{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k+n=t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\neq f_{i}\in R
+\]
+
+\end_inset
+
+בדוגמה שלנו, 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ הוא בדיוק הפולינום האופייני של 
+\begin_inset Formula $\left.T\right|_{M_{i}}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+a\left(\nicefrac{R}{Ra}\right)=0
+\]
+
+\end_inset
+
+כי
+\begin_inset Formula 
+\[
+a\left(r+Ra\right)=ra+R\in R_{a}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{1},\dots f_{n}
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula $f_{i}\mid f_{i+1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לא קשה לראות ש
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ הוא הפולינום המינימלי של 
+\begin_inset Formula $T$
+\end_inset
+
+, כי כל 
+\begin_inset Formula $f_{i}\mid f_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\forall_{i}f_{n}\left(\lambda\right)M_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

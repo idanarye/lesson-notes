@@ -1,0 +1,1110 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אלגוריתמים ראנדומיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $BPP$
+\end_inset
+
+ - טעות דו צדדית
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+BPP\subseteq P/poly
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+.
+ ע"פ הדיון בפעם קודמת, קיימת מכונת טיורינג הסתברותית 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ אשר על כל קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ מקיימת
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left(M^{*}\left(x,r\right)=\chi_{A}\left(x\right)\right)\ge1-\frac{1}{2^{2\left|x\right|}}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left(M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right)\le\frac{1}{2^{2\left|x\right|}}
+\]
+
+\end_inset
+
+ויהי 
+\begin_inset Formula $p\left(\left|x\right|\right)$
+\end_inset
+
+ הפולינום החוסם את זמן ריצת 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\left|x\right|=n$
+\end_inset
+
+, 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ משתמשת במחרוזת של הטלות מטבע 
+\begin_inset Formula $r_{nn}\in\left\{ 0,1\right\} ^{p\left(n\right)}$
+\end_inset
+
+.
+ מהי ההסתברות ש
+\begin_inset Formula $r$
+\end_inset
+
+ גורם ל
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ לטעות על קלט כלשבו באורך 
+\begin_inset Formula $n$
+\end_inset
+
+? מטרה:
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left[\exists_{x\in\left\{ 0,1\right\} ^{n}}M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right]<1\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sum_{x\in\left\{ 0,1\right\} ^{n}}\Pr\nolimits _{r}\left[M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right]\le2^{n}\cdot\frac{1}{2^{2n}}=\frac{1}{2^{n}}\ll1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $r$
+\end_inset
+
+ יקרא "
+\emph on
+טוב
+\emph default
+" אם
+\begin_inset Formula 
+\[
+\forall_{x\in\left\{ 0,1\right\} ^{n}}M^{*}\left(x,r\right)=\chi_{A}\left(x\right)
+\]
+
+\end_inset
+
+ולמעשה הוכחנו כי קיים 
+\begin_inset Formula $r$
+\end_inset
+
+ טוב)למעשה, הראנו כי כמעט כל ה
+\begin_inset Formula $r$
+\end_inset
+
+ים הם טובים(.
+\end_layout
+
+\begin_layout Standard
+כעת נטען כי 
+\begin_inset Formula $A\in P/poly$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+המכונה הדטרמיניסטית שתכריע את 
+\begin_inset Formula $A$
+\end_inset
+
+ תהי 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ שרצה בזמן פולינומי, כאשר עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ העצה ש
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ תקבל היא 
+\begin_inset Formula $r_{n}$
+\end_inset
+
+, עבור 
+\begin_inset Formula $r_{n}$
+\end_inset
+
+ שהינו "טוב" ל
+\begin_inset Formula $x$
+\end_inset
+
+ים באורך 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ מהעובדה ש
+\begin_inset Formula $r_{n}$
+\end_inset
+
+ הינו טוב עבור 
+\begin_inset Formula $n=\left|x\right|$
+\end_inset
+
+ מקבלים ש
+\begin_inset Formula $M^{*}\left(x,r_{n}\right)$
+\end_inset
+
+ הינה מכונה פולינומית המכריעה את 
+\begin_inset Formula $A$
+\end_inset
+
+ ע"י שימוש בעיצה באורך פולינומי, ולכן מתקיימות דרישות 
+\begin_inset Formula $P/poly$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A\in P/poly$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $BPP\subsetneq P/poly$
+\end_inset
+
+ כי 
+\begin_inset Formula $P/poly$
+\end_inset
+
+ מכיל שפות לא כריעות.
+\end_layout
+
+\begin_layout Part*
+הוכחה בשיטה הסתברותית
+\end_layout
+
+\begin_layout Section*
+משפט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{BPP\subseteq\Sigma_{2}\cap\Pi_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+ניזכר
+\series default
+: 
+\begin_inset Formula $RP\subseteq BPP\qquad RP\subseteq NP=\Sigma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+.
+ נרצה להראות כי קיים פרדיקט 
+\begin_inset Formula $\varphi\left(x,r,s\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\mathop{\exists_{s}\forall_{r}}\limits _{\left|s\right|,\left|r\right|<p\left(\left|x\right|\right)}\varphi\left(x,r,s\right)=1\iff x\in A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צעד ראשון יהיה להראות קיום של מכונת טיורינג הסתברותית 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ שהסתברות השגיאה שלה תהיה תלויה במספר הטלות המטבע שלה.
+ כלומר, אם עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ מבצעת 
+\begin_inset Formula $l$
+\end_inset
+
+ הטלות מטבע, אזי נראה שעבור 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left[M^{*}\left(x,r\right)\neq\chi\left(x\right)\right]<\frac{1}{3l}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כזכור, 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $M$
+\end_inset
+
+ המכונה ההסתברותית המובטחת מהוכחת 
+\begin_inset Formula $BPP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M^{*}$
+\end_inset
+
+)כמו בשיעור הקודם( תהיה מכונה המריצה את 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ פעמים)
+\begin_inset Formula $k$
+\end_inset
+
+ יקבע בהמשך( ומחזירה תשובה ע"פ תוצאת רוב ההרצות.
+\end_layout
+
+\begin_layout Standard
+אם נסמן ב
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ את המשתנה המקרי המציין שהייתה טעות בהרצה ה
+\begin_inset Formula $i$
+\end_inset
+
+ית של 
+\begin_inset Formula $M$
+\end_inset
+
+ אזי:
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left[M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right]=\Pr\nolimits _{r}\left[\frac{\sum\limits _{i=1}^{k}w_{i}}{k}\ge\underbrace{\frac{1}{3}+\frac{1}{6}}_{=\frac{1}{2}}\right]\stackrel{\textnormal{{\scriptscriptstyle Chernof}}}{\le}e^{-2\left(\frac{1}{6}\right)^{2}\cdot k}=e^{\frac{-k}{18}}
+\]
+
+\end_inset
+
+נבחר 
+\begin_inset Formula $k=18\ln\left(3p^{2}\left(n\right)\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ הוא מספר הטלות המטבע של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ לכן מספר הטלות המטבע של 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+)שסימנו אותו בתור 
+\begin_inset Formula $l\left(n\right)$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\boxed{l\left(n\right)=k\cdot p\left(n\right)}=18p\left(n\right)\ln\left(3p^{2}\left(n\right)\right)
+\]
+
+\end_inset
+
+נשים לב ש
+\begin_inset Formula $k\le p\left(n\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול דיו.
+ לכן סה"כ:
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left[M^{*}\left(x,r\right)\neq\chi_{A}\left(x\right)\right]\le e^{-\frac{k}{18}}=e^{-\ln\left(3p^{2}\left(n\right)\right)}=\frac{1}{3p^{2}\left(n\right)}\le\frac{1}{3kp\left(n\right)}=\frac{1}{3l\left(n\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+, נתאר כעת בעיית הכרעה 
+\begin_inset Formula $\pi\left(\cdots\right)$
+\end_inset
+
+ באופן הבא: נסמן 
+\begin_inset Formula $s_{i}\in\left\{ 0,1\right\} ^{l}$
+\end_inset
+
+, 
+\begin_inset Formula $s=s_{1},\dots s_{l}$
+\end_inset
+
+.
+ נתבונן בזוגות:
+\begin_inset Formula 
+\[
+\Pi_{\textnormal{yes}}=\left\{ \left(x,s\right)\middle|\forall_{r\in\left\{ 0,1\right\} ^{l}}\left[\bigvee_{i=1}^{l}\left(M^{*}\left(x,r\oplus s_{i}\right)\right)=1\right]\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+במילים
+\series default
+: הגדרנו אוסף זוגות 
+\begin_inset Formula $x,s$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $r$
+\end_inset
+
+ קיים 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $1=M^{*}\left(x,r\oplus s_{i}\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\oplus y$
+\end_inset
+
+ משמעותו 
+\begin_inset Formula $x\textnormal{ xor }y$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר גם:
+\begin_inset Formula 
+\[
+\Pi_{\textnormal{no}}=\left\{ \left(x,s\right)\middle|\Pr\nolimits _{r\in\left\{ 0,1\right\} ^{l}}\left[\bigvee_{i=1}^{l}\left(M^{*}\left(x,r\oplus s_{i}\right)=0\right)\right]\ge\frac{1}{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור קלט 
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+ נגדיר 
+\bar under
+פונקציית מיפוי אקראית 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\bar default
+ המחזירה זוג 
+\begin_inset Formula $\left(x,s\right)$
+\end_inset
+
+ באופן הבא: בחר באקראי 
+\begin_inset Formula $s=s_{1},\dots s_{l}\in\left\{ 0,1\right\} ^{l}$
+\end_inset
+
+ והחזר 
+\begin_inset Formula $\left(x,s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נרצה לטעון:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\Pr_{s}\left[f\left(x\right)\in\Pi_{\textnormal{yes}}\right]>\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\series default
+\numeric off
+: אם 
+\begin_inset Formula $x\notin A$
+\end_inset
+
+, 
+\begin_inset Formula $\Pr_{s}\left[f\left(x\right)\in\Pi_{\textnormal{no}}\right]=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"פ טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\begin_inset Formula 
+\[
+x\in A\implies\Pr\nolimits _{s}\left[\forall_{r}\varphi\left(x,r,s\right)=1\right]>\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists_{s}\forall_{r}\left[\varphi\left(x,r,s\right)=1\right]
+\]
+
+\end_inset
+
+ע"פ טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\begin_inset Formula 
+\[
+x\notin A\implies\forall_{s}\left[\Pr\nolimits _{r}\left(\varphi\left(x,r,s\right)=0\right)\ge\frac{1}{2}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{s}\exists_{r}\varphi\left(x,r,s\right)=0
+\]
+
+\end_inset
+
+וכל זה אם"ם
+\begin_inset Formula 
+\[
+\exists_{s}\forall_{r}\varphi\left(x,r,s\right)\implies x\in A
+\]
+
+\end_inset
+
+ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+x\in A\iff\exists_{s}\forall_{r}\varphi\left(x,r,s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $A\in\Sigma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים 
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ שאם 
+\begin_inset Formula $A\in BPP$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $\overline{A}\in BPP$
+\end_inset
+
+.
+ לכן ע"פ מה שראינו 
+\begin_inset Formula $\overline{A}\in\Sigma_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $a\in\Pi_{2}$
+\end_inset
+
+, ולכן סה"כ קיבלנו
+\begin_inset Formula 
+\[
+A\in BPP\implies A\in\Sigma_{2}\cap\Pi_{2}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+BPP\subseteq\Sigma_{2}\cap\Pi_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נותר להראות נכונות טענות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כדי לסיים.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pr\nolimits _{s}\left[f\left(x\right)\notin\Pi_{\textnormal{yes}}\right]=\Pr\nolimits _{s}\left[\exists_{r}\left[\bigwedge_{i=1}^{l}M^{*}\left(x,r\oplus s_{i}\right)=0\right]\right]\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sum_{r\in\left\{ 0,1\right\} ^{l}}\Pr\nolimits _{s=s_{1},\dots s_{l}}\left[\bigwedge_{i=1}^{l}M^{*}\left(x,r\oplus s_{i}\right)=0\right]=\cdots
+\]
+
+\end_inset
+
+כזכור 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=\sum_{r\in\left\{ 0,1\right\} ^{l}}\prod_{i=1}^{l}\Pr\nolimits _{s_{i}}\left[M^{*}\left(x,r\oplus s_{i}\right)=0\right]\le
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\le\sum_{r\in\left\{ 0,1\right\} ^{l}}\left(\frac{1}{3l}\right)^{l}=2^{l}\cdot\frac{1}{\left(3l\right)^{l}}<\frac{1}{2}
+\]
+
+\end_inset
+
+)עבור 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\Pr_{\tilde{r}}\left[M^{*}\left(x,\tilde{r}\right)=0\right]<\frac{1}{3l}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר הראנו כי:
+\begin_inset Formula 
+\[
+x\in A\implies\Pr\nolimits _{s}\left[f\left(x\right)\in\Pi_{\textnormal{yes}}\right]\ge\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\notin A$
+\end_inset
+
+, צ"ל שלכל 
+\begin_inset Formula $s$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left(\underbrace{\bigvee_{i=1}^{l}\left(M^{*}\left(x,r\oplus s_{i}\right)=0\right)}_{=\varphi\left(x,r,s\right)}\right)\ge\frac{1}{2}
+\]
+
+\end_inset
+
+יהי 
+\begin_inset Formula $s=s_{1},\dots s_{l}$
+\end_inset
+
+ כלשהו.
+\begin_inset Formula 
+\[
+\Pr\nolimits _{r}\left[\varphi\left(x,r,s\right)=0\right]=1-\Pr\nolimits _{r}\left[\varphi\left(x,r,s\right)=1\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1-\Pr\nolimits _{r}\left[\left(\bigvee_{i=1}^{l}M^{*}\left(x,r\oplus s_{i}\right)\right)=1\right]\ge
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ge1-\sum_{i=1}^{l}\Pr\nolimits _{r}\left(M^{*}\left(x,r\oplus s_{i}\right)=1\right)\ge
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ge1-l\cdot\frac{1}{3l}\ge\frac{2}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+באופן אינטואיטיבי, ב
+\begin_inset Formula $BPP$
+\end_inset
+
+ יש שגיאה דו צדדית, ולכן היינו צריכים להוסיף שני כמתים, שכן אחד הוריד את
+ השגיאה מצד אחר.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2242 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+מטרת הקורס
+\end_layout
+
+\begin_layout Enumerate
+עיצוב מסדי נתונים 
+\lang english
+DB Design
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+איך מסדי נתונים מאורגנים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שפות מסדי נתונים 
+\lang english
+DB Languages
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+איך לגשת לבסיסי הנתונים
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מימוש 
+\lang english
+DBMS implementation
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מימוש מערכות שונות של בסיסי נתונים
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+אין טעם לתת הגדרה מדוייקת לבסיס נתונים)למרות שיש הגדרה כזו(, אבל בסיס נתונים
+ כולל:
+\end_layout
+
+\begin_layout Itemize
+בסיס נתונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DB
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אוסף של נתונים
+\end_layout
+
+\begin_layout Itemize
+קשרים בין הנתונים
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+תוכנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DBMS
+\lang hebrew
+)
+\lang english
+DB Management System
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+שניהם ביחד נקראים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DBS
+\lang hebrew
+)
+\lang english
+DB System
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+בקורס הזה נלמד על שניהם - גם איך לארגן נתונים בבסיס, וגם איך לטפל בהם.
+\end_layout
+
+\begin_layout Section*
+תכונות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DBMS
+\end_layout
+
+\begin_layout Enumerate
+מודל נתונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Data model
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מבוסס על איזשהו מודל)היררכי, יחסי וכו'(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שפה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HLL-High Level Language
+\end_layout
+
+\begin_layout Enumerate
+ניהול טרנסקציות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Transactions management
+\end_layout
+
+\begin_layout Enumerate
+אבטחת נתונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Data security
+\end_layout
+
+\begin_layout Enumerate
+אפשרות לשחזר נתונים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Durability(restoration)
+\end_layout
+
+\begin_layout Enumerate
+הפרדה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Data independence
+\end_layout
+
+\begin_layout Section*
+קצת היסטוריה
+\end_layout
+
+\begin_layout Standard
+התחום התחיל ב
+\numeric on
+1960
+\numeric off
+.
+ אמנם גם לפני כן עבדו עם נתונים - אבל בתור מערכות קבצים)
+\lang english
+File systems
+\lang hebrew
+(.
+ מערכות קבצים לא תומכות ברוב התכונות - הן מאפשרות רק לאכסן קבצים.
+ לכן בשנות ה
+\numeric on
+60
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ראשונות, שהיו מבוססות על מודל נתונים בצורת עץ - בסיס נתונים היררכי.
+\end_layout
+
+\begin_layout Standard
+לבסיס נתונים בצורת עץ יש כמה חסרונות, בין השאר:
+\end_layout
+
+\begin_layout Itemize
+אין אלגוריתם פורמלי שמאפשר לבנות בסיס כזה.
+ מי שבונה את הבסיס עושה את זה לפי ההבנה והנסיון שלו, אבל אין אפשרות לבדוק
+ שהוא עשה את זה בצורה נכונה, יעילה.
+ אין אפשרות לבנות בסיס נתונים כזה בצורה סטנדרטית, פורמלית.
+\end_layout
+
+\begin_layout Itemize
+שפת השאילתות במודל כזה היא שפה פרוצדורלית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Procedural Query Language
+\lang hebrew
+.
+ חייבים לתאר איך להגיע לתוצאה.
+\end_layout
+
+\begin_layout Itemize
+אי אפשר לתאר קשרי רבים לרבים - רק אחד לרבים)
+\begin_inset Formula $1:N$
+\end_inset
+
+(.
+ לכל קודקוד יכולים להיות הרבה בנים, אבל לכל בן רק אב אחד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+את החסרון הזה ניתן לבנות באמצעות בניית מודל רשתי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Network
+\lang hebrew
+, שמבוסס על גרף.
+ כאן ניתן לתאר קשרים מסוג רבים לרבים, אבל שני החסרונות הקודמים)והכי חשובים(
+ עדיין נשארים.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+המהפכה
+\end_layout
+
+\begin_layout Standard
+בשנת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1970
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התחוללה מהפכה בעולם של מסדי הנתונים.
+ פורסם מאמר מדעי -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+"A Relational Model for Large Shared Data Banks/Codd
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+.
+ זו לא הייתה אימפלמנטציה - אלא גישה חדשה, שאפשר לשמור נתונים לפי מודל אחר,
+ המבוסס על תורת הקבוצות, ואפשר לראות את המודל הזה באמצעות טבלאות.
+ המודל הזה נקרא "מודל יחסי)
+\lang english
+Relational
+\lang hebrew
+(" או "מודל טבלאי".
+\end_layout
+
+\begin_layout Standard
+במודל הזה, חוץ מזה שאפשר לתאר קשרים מסוג רבים לרבים, אפשר לתאר אלגוריתם
+ מדוייק לבניית סכימה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+algorithm for schema
+\lang hebrew
+.
+ בנוסף, שפת השאילתות הייתה דקלרטיבית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+declerative QL
+\lang hebrew
+, שבה לא צריך לכתוב פרוצדורה, אלא לכתוב הצהרה, מה רוצים לקבל.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1990
+\end_layout
+
+\begin_layout Standard
+המודל הרילציוני נשאר, אבל משלבים אותו עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OOP
+\lang hebrew
+, עם אינטרנט)למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XML
+\lang hebrew
+( וכו'.
+ אבל המודל הרלציוני נשאר הבסיס.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Data Model
+\end_layout
+
+\begin_layout Part*
+רמות הפשטה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Levels of abstraction
+\end_layout
+
+\begin_layout Standard
+בכל 
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש רמות שונות של הפשטה.
+\end_layout
+
+\begin_layout Enumerate
+רמה הפיסית - ברמה הפיסית מתואר איך הנתונים מאוכסנים בדיסק)קבצים(.
+ זה תיאור מאוד מדוייק, עם כל הטיפוסים, גודל, שיטת גישה, אינדקס וכו' - כל
+ הפרטים שלא מעניינים למשתמש.
+\end_layout
+
+\begin_layout Enumerate
+רמה קונספטואלית)
+\lang english
+conceptual
+\lang hebrew
+( - מתוארים אותם נתונים, אבל בלי כל הפרטים האלה.
+ מתואר הארגון הלוגי של הנתונים, מה הקשרים ביניהם.
+\begin_inset Newline newline
+\end_inset
+
+לא כל הנתונים מעניינים את כולם, ולא לכולם מותר לגשת לכל הנתונים.
+\end_layout
+
+\begin_layout Enumerate
+רמת תצפית)
+\lang english
+view
+\lang hebrew
+( - תצפית על הנתונים.
+ משתמש שיש לו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+view
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסויים, יכול לראות חלק מהנתונים - החלק שרלוונטי אליו ושמותר לו לגשת אליו.
+ למשתמשים שונים בונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+view
+\lang hebrew
+ים שונים.
+\end_layout
+
+\begin_layout Standard
+אלו רמות הפשטה של כל מודל - כל מודל)היררכי, רילציונלי וכו'( ניתן לראות ברמות
+ ההפשטה האלה.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+HLL - High Level Language
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+DB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נתונים מאוכסנים לטווח ארוך.
+ לכן יש הבדל בין בניית המבנה של המאגר לבין העבודה עם הנתונים עצמם.
+ לכן בעולם של מסדי נתונים מבדילים בין שני 
+\bar under
+סוגים
+\bar default
+ של שפות:
+\end_layout
+
+\begin_layout Enumerate
+שפה להגדרת נתונים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DDL - Data Definition Language
+\end_layout
+
+\begin_layout Enumerate
+שפה לפעולות על הנתונים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DML - Data Manipulation Language
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+DDL
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עושים שני דברים:
+\end_layout
+
+\begin_layout Enumerate
+תיאור של סכימה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+schema description
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+CREATE TABLE enroll
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+(ID:INTEGER,
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Name:CHAR(10),
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Course:CHAR(6),
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Sem:CHAR(1),
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Grade:INTEGER);
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עדכון של סכימה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+schema update
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא מתוארים הנתונים, אלא מבנה הטבלה - שם הטבלה, שמות של שדות, תכונות של שדות
+ וכו'.
+ לא מתואר תיאור פיזי - לא כתוב איך לשמור את הנתונים, באיזה קובץ וכו' - על
+ זה ה
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחראית.
+\end_layout
+
+\begin_layout Standard
+עם ה
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובדים לעיתים מאוד רחוקות - רק כאשר יש צורך בעדכון של מבנה הנתונים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+DML
+\end_layout
+
+\begin_layout Standard
+עבודה עם נתונים היא עבודה מאוד דינאמית, יומיומית, ולה יש סוג אחר של שפות
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DML
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+SQL - Structual QL
+\end_layout
+
+\begin_layout Standard
+באותה שפה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SQL
+\lang hebrew
+, יש חלק שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וחלק שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DML
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+מי משתמש בשפות האלה?
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המשתמש הרגיל לא נוגע - יש אדם מיוחד,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DB admin
+\lang hebrew
+, שבונה את הסכימות, את ה
+\lang english
+view
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Standard
+המשתמש הרגיל כותב תוכניות ב
+\lang english
+DML
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שליפת נתונים
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+SELECT course
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+FROM enroll
+\end_layout
+
+\begin_layout LyX-Code
+
+\family roman
+\lang english
+WHERE ID=123;
+\end_layout
+
+\begin_layout Standard
+השאילתה מגדירה מה לקחת)
+\lang english
+course
+\lang hebrew
+(, מאיפה לקחת)טבלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+enroll
+\lang hebrew
+(, ולפי איזה תנאי)
+\lang english
+id=123
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שינוי נתונים
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+UPDATE enroll
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+SET grade=grade+5
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+WHERE course='DB' AND ID=123;
+\end_layout
+
+\begin_layout Standard
+השאילתה מגדירה על איזה טבלה לפעול)
+\lang english
+enroll
+\lang hebrew
+(, מה לעשות שם)להעלות ציון ב
+\numeric on
+5
+\numeric off
+(, ומה התנאים)
+\lang english
+course='DB' AND ID=123
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Section*
+שפה מארחת - 
+\lang english
+Host Language
+\end_layout
+
+\begin_layout Standard
+יש דברים שעושים מחוץ ל
+\lang english
+DB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Interface
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ואותם לא עושים ב
+\lang english
+DDL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או ב
+\lang english
+DML
+\lang hebrew
+, אלא בשפה מארחת, שיכולה להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+c
+\lang hebrew
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+java
+\lang hebrew
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+basic
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או כל שפה אחרת.
+ השפה המארחת שולחת את פקודות ה
+\lang english
+SQL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\lang english
+DBMS
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Transactions management
+\end_layout
+
+\begin_layout Standard
+כיוון שהרבה משתמשים פונים לאותם נתונים בו זמנית, צריך לנהל את העבודה עם
+ הנתונים.
+ צריך לתמוך בשני דברים:
+\end_layout
+
+\begin_layout Enumerate
+הפרדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+isolation
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+צריך לגרום לכך שכל טרנזקציה תרגיש כאילו היא עובדת לבד - למרות שעוד טרנזקציות
+ עלולות לגשת לאותם נתונים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אטומיות 
+\lang english
+atomicity
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם באיזשהו מקום צריך להפסיק את הטרנזקציה, אסור שתתבצע חצי עבודה.
+ או שהטרנזקציה סיימה לעבוד - או שהיא לא עשתה כלום.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+זהו תפקיד ה
+\lang english
+DBMS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לספק מצב קונסיסטנטי בכל רגע ורגע, כדי שכל התוצאות יהיו נכונות.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Data security
+\end_layout
+
+\begin_layout Standard
+אין צורך להסביר למה זה חשוב.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Durability
+\end_layout
+
+\begin_layout Standard
+בסיסי נתונים הם מאגרים מאוד גדולים, ואם נופל משהו צריכה להיות אפשרות לשחזר
+ את הנתונים לאיזשהו מצב קונסיסטנטי)לא בהכרח אחרון( שמשם אפשר להתחיל.
+ יש כלים שמאפשרים את זה - למשל גיבוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+(copy)
+\lang hebrew
+.
+ אבל אי אפשר לעשות גיבוי כל רגע, ולכן בנוסף לזה רושמים את כל הטרנזקציות
+ ב
+\lang english
+log
+\lang hebrew
+)יומן(.
+ ככה אפשר לשחזר נתונים ממצב קונסיסטנטי כלשהו באמצעות ה
+\lang english
+log
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+
+\lang english
+Data independence
+\end_layout
+
+\begin_layout Standard
+האפליקציה לא תלויה בשיטת האחסון ובשיטת הגישה לנתונים.
+\end_layout
+
+\end_body
+\end_document

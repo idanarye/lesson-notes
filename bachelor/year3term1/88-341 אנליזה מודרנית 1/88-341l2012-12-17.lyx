@@ -1,0 +1,2486 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+חזרה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הנחה
+\begin_inset space ~
+\end_inset
+
+קבועה
+\series default
+: מדובר במידת לבג "
+\begin_inset Formula $m$
+\end_inset
+
+" על אלגברת לבג 
+\begin_inset Formula $\mathscr{L}\left(\mathbb{R}\right)\subset\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרבה פעמים נכתוב 
+\begin_inset Formula $\int_{a}^{v}f\mathrm{\, d}m$
+\end_inset
+
+ במקום 
+\begin_inset Formula $\int_{\left[a,b\right]}f\mathrm{\, d}m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: תהא 
+\begin_inset Formula $F$
+\end_inset
+
+ משפחה של קטעים ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\emph on
+מכסה
+\emph default
+ קבוצה 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ 
+\emph on
+במובן של ויטלי
+\emph default
+ אם לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים קטע 
+\begin_inset Formula $I\in F$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in I$
+\end_inset
+
+ ו
+\begin_inset Formula $\left|I\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ז.א., לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ קיימים קטעים קטנים כרצוננו ב
+\begin_inset Formula $f$
+\end_inset
+
+ שמכילים את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+למת
+\begin_inset space ~
+\end_inset
+
+ויטלי
+\series default
+: תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה כך ש
+\begin_inset Formula $m^{*}\left(E\right)<\infty$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $F$
+\end_inset
+
+ משפחה של קטעים שמכסים את 
+\begin_inset Formula $E$
+\end_inset
+
+ במובן של ויטלי.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים מספר סופי של קטעים 
+\begin_inset Formula $I_{1},\dots I_{n}$
+\end_inset
+
+ זרים בזוגות ב
+\begin_inset Formula $F$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m^{*}\left(E\backslash\biguplus\limits _{k=1}^{n}I_{k}\right)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+בנתונים של הלמה אם 
+\begin_inset Formula $m^{*}\left(E\right)=s<\infty$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ יש מספר סופי של קטעים 
+\begin_inset Formula $I_{1},\dots I_{n}$
+\end_inset
+
+ זרים בזוגות מ
+\begin_inset Formula $F$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $K=\biguplus\limits _{k=1}^{n}I_{k}$
+\end_inset
+
+ אז 
+\begin_inset Formula $m^{*}\left(E\cap K\right)>s-\varepsilon$
+\end_inset
+
+ ו
+\begin_inset Formula $m\left(K\right)<s+\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הגדרת 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ קיימת קבוצה פתוחה 
+\begin_inset Formula $O$
+\end_inset
+
+ כך ש
+\begin_inset Formula $E\subset O$
+\end_inset
+
+ ו
+\begin_inset Formula $m\left(O\right)<s+\varepsilon$
+\end_inset
+
+.
+ נגדיר את 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ להיות משפחת כל הקטעים ב
+\begin_inset Formula $F$
+\end_inset
+
+ שמוכלים ב
+\begin_inset Formula $O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+גם 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ מהווה כיסוי ויטלי של 
+\begin_inset Formula $E$
+\end_inset
+
+, ולכן ע"פ למת ויטלי יש לנו קטעים זרים בזוגות 
+\begin_inset Formula $I_{1},\dots I_{n}$
+\end_inset
+
+ ב
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $k=\biguplus\limits _{l=1}^{n}I_{l}$
+\end_inset
+
+ 
+\begin_inset Formula $m^{*}\left(E\backslash K\right)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי הבנייה כל 
+\begin_inset Formula $I_{l}\subset O$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $K\subset O$
+\end_inset
+
+, ויוצא ש
+\begin_inset Formula 
+\[
+s+\varepsilon>m\left(O\right)\ge m\left(K\right)=\sum_{k=1}^{n}\left|I_{l}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד נעיר כי 
+\begin_inset Formula $E=\left(E\cap K\right)\uplus\underbrace{\left(E\cap K^{\complement}\right)}_{=E\backslash K}$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+S=m^{*}\left(E\right)\le m^{*}\left(E\cap K\right)+m^{*}\left(E\backslash K\right)<m^{*}\left(E\cap K\right)+\varepsilon
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}^{*}$
+\end_inset
+
+ אינטרגרבילית לבג, ויהי 
+\begin_inset Formula $c>0$
+\end_inset
+
+ קבוע.
+ אזי לכל 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x+c\right)\mathrm{\, d}m=\int_{a+c}^{b+c}f\left(x\right)\mathrm{\, d}m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה ניקח 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מדידה ונבדוק את הלמה עבור 
+\begin_inset Formula $f\left(x\right)=I_{E}\left(x\right)$
+\end_inset
+
+.
+ לפי זה
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(x+c\right)\mathrm{\, d}m=\int_{a}^{b}I_{E}\left(x+c\right)\mathrm{\, d}m
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+I_{E}\left(x+c\right)=\begin{cases}
+1 & x\in E\\
+0 & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+לכן
+\begin_inset Formula 
+\[
+\int_{a}^{b}I_{E}\left(x+c\right)\mathrm{\, d}m=\int_{a}^{b}I_{E-c}\mathrm{\, d}m=m\left(E-c\cap\left[a,b\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שהלמה נכונה לכל 
+\begin_inset Formula $I_{E}$
+\end_inset
+
+ היא גם נכונה לכל פונקציה פשוטה, ואם 
+\begin_inset Formula $f:\mathbb{R}\to\left[0,\infty\right]$
+\end_inset
+
+ מדידה, היא גבול של סדרה עולה של פונקציות פשוטות והלמה נובעת מהשלב הקודם
+ עם התכנסות מונוטונית.
+ ואם 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}^{*}$
+\end_inset
+
+ אינטגרבילית אז 
+\begin_inset Formula $f=f^{+}-f^{-}$
+\end_inset
+
+ והלמה נובעת מהשלב הקודם.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+)משפט הגזירה של לבג(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ פונקציה עולה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה כב"ם)
+\begin_inset Formula $\mathrm{d}m$
+\end_inset
+
+(, 
+\begin_inset Formula $f'\left(x\right)\ge0$
+\end_inset
+
+ כב"ם ומתקיים 
+\begin_inset Formula $\int_{a}^{b}f'\mathrm{\, d}m\le f\left(b\right)-f\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה נרחיב את 
+\begin_inset Formula $f$
+\end_inset
+
+ לפונקציה עולה על כל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+f\left(a\right) & x<a\\
+f\left(b\right) & x>b
+\end{cases}$
+\end_inset
+
+.
+ נגדיר קבוצה:
+\begin_inset Formula 
+\[
+E=\left\{ x\in\left[a,b\right]\middle|\underset{h\to0}{\underline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}<\underset{h\to0}{\overline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+טענה
+\series default
+: 
+\begin_inset Formula $m^{*}\left(E\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחת
+\begin_inset space ~
+\end_inset
+
+הטענה
+\series default
+: 
+\begin_inset Formula $E=\bigcup\limits _{\alpha<\beta\in\mathbb{Q}}E_{\alpha\beta}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E_{\alpha\beta}=\left\{ x\in\left[a,b\right]\middle|\underset{h\to0}{\underline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}<\alpha<\beta<\underset{h\to\infty}{\overline{\lim}}\frac{f\left(x+h\right)-f\left(x\right)}{h}\right\} $
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $m^{*}\left(E_{\alpha\beta}\right)=s\le b-a$
+\end_inset
+
+.
+ נעיר שאם 
+\begin_inset Formula $x\in E_{\alpha\beta}$
+\end_inset
+
+ אז קיימת סדרה 
+\begin_inset Formula $h_{n}\to0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\frac{f\left(x+h_{n}\right)-f\left(x\right)}{h_{n}}<\alpha$
+\end_inset
+
+.
+ ז.א.
+ לכל 
+\begin_inset Formula $x\in E_{\alpha\beta}$
+\end_inset
+
+ יש קטעים מסוג 
+\begin_inset Formula $\left[x,x+h_{n}\right]$
+\end_inset
+
+ או)אם 
+\begin_inset Formula $h_{n}<0$
+\end_inset
+
+( 
+\begin_inset Formula $\left[x+h_{n},x\right]$
+\end_inset
+
+ קטנים כרצוננו כך ש
+\begin_inset Formula $\frac{f\left(x+h_{n}\right)-f\left(x\right)}{h_{n}}<\alpha$
+\end_inset
+
+.
+ קטעים אלו מהווים כיסוי ויטלי של 
+\begin_inset Formula $E_{\alpha\beta}$
+\end_inset
+
+.
+ לפי המסקנה ללמת ויטלי נוכל לבחור מספר סופי של קטעים מסוג זה 
+\begin_inset Formula $\left[x_{n},y_{n}\right],n=1,2,\dots N$
+\end_inset
+
+ שזרים בזוגות כל שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{f\left(y_{n}\right)-f\left(x_{n}\right)}{y_{n}-x_{n}}<\alpha$
+\end_inset
+
+ ואם 
+\begin_inset Formula $K=\biguplus\limits _{n=1}^{\infty}\left[x_{n},y_{n}\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\begin{array}{rcc}
+m^{*}\left(K\right) & < & s+\varepsilon\\
+m^{*}\left(E_{\alpha\beta}\cap K\right) & > & s-\varepsilon
+\end{array}$
+\end_inset
+
+.
+ לפי כל זה בפרט
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}f\left(x_{n}\right)-f\left(y_{n}\right)<\sum_{n=1}^{N}\alpha\left[y_{n}-x_{n}\right]=\alpha m\left(K\right)<\alpha\left(s+\varepsilon\right)
+\]
+
+\end_inset
+
+כעת ניקח 
+\begin_inset Formula $x\in E_{\alpha\beta}\cap K$
+\end_inset
+
+.
+ אז קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in\left[x_{n},y_{n}\right]$
+\end_inset
+
+, ואם לא בקצה של קטע זה, ויש מספרים 
+\begin_inset Formula $h$
+\end_inset
+
+ קטנים כרצוננו כך שהקטע 
+\begin_inset Formula $\left[x,x+h\right]$
+\end_inset
+
+ או 
+\begin_inset Formula $\left[x+h,x\right]$
+\end_inset
+
+ כולו בתוך 
+\begin_inset Formula $\left[x_{n},y_{n}\right]$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\frac{f\left(x+h\right)-f\left(x\right)}{h}>\beta$
+\end_inset
+
+.
+ קטעים אלה מהווים כיסוי ויטלי של 
+\begin_inset Formula $K$
+\end_inset
+
+)פחות הקצוות(.
+ לכן ע"פ למת ויטלי נוכל לבחור מספר סופי של קטעים זרים 
+\begin_inset Formula $J_{l}=\left[w_{l},z_{l}\right],l=1,2,\dots m$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $l$
+\end_inset
+
+ יש איזה 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $J_{l}\subset\left[x_{n},y_{n}\right]\equiv I_{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $\beta<\frac{f\left(z_{l}\right)-f\left(w_{l}\right)}{z_{l}-w_{l}}$
+\end_inset
+
+ וה
+\begin_inset Formula $J_{l}$
+\end_inset
+
+ מכסים תת קבוצה של 
+\begin_inset Formula $k$
+\end_inset
+
+ שמידתה גדולה מ
+\begin_inset Formula $s-2\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כעת, עבור כל 
+\begin_inset Formula $n=1,2,\dots N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{J_{l}\subset I_{n}}f\left(z_{l}\right)-f\left(w_{l}\right)>\sum_{J_{l}\subset I_{n}}\beta\left(z_{l}-w_{l}\right)
+\]
+
+\end_inset
+
+אבל
+\begin_inset Formula 
+\[
+f\left(y_{n}\right)-f\left(x_{n}\right)\ge\sum_{J_{l}\subset I_{n}}f\left(z_{l}\right)-f\left(w_{l}\right)
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $f$
+\end_inset
+
+ עולה.
+ לבסוף,
+\begin_inset Formula 
+\[
+\alpha\left(s+\varepsilon\right)>\sum_{n=1}^{N}f\left(y_{n}\right)-f\left(x_{n}\right)\ge\sum_{n=1}^{N}\sum_{J_{l}\subset I_{n}}f\left(z_{l}\right)-f\left(w_{l}\right)>\sum_{n=1}^{N}\sum_{J_{l}\subset I_{n}}\beta\left(z_{l}-w_{l}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{l=1}^{m}\beta\left(z_{l}-w_{l}\right)=\beta\sum_{l=1}^{m}\left|J_{l}\right|>\beta\left(s-2\varepsilon\right)
+\]
+
+\end_inset
+
+הדבר אפשרי לכל 
+\begin_inset Formula $\varepsilon>\beta$
+\end_inset
+
+.
+ אי השוויון אפשרי רק אם 
+\begin_inset Formula $s=0$
+\end_inset
+
+, והוכחנו ש
+\begin_inset Formula $m^{*}\left(E_{\alpha\beta}\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha<\beta\in\mathbb{Q}$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $E=\bigcup\limits _{\alpha<\beta\in\mathbb{Q}}E_{\alpha\beta}$
+\end_inset
+
+, 
+\begin_inset Formula $m^{*}\left(E\right)=0$
+\end_inset
+
+, והוכחנו את הטענה.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+נחזור להוכחת המשפט
+\end_layout
+
+\begin_layout Standard
+כעת עבור 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $g_{n}\left(x\right)=\frac{f\left(x+\nicefrac{1}{n}\right)-f\left(x\right)}{\nicefrac{1}{n}},x\in\left[a,b\right]$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית היא מדידה לבג, לכן כל 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ מדידה לבג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{n}\left(x\right)\ge0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ו
+\begin_inset Formula $x$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in E^{\complement}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $g\left(x\right)=\lim\limits _{k\to\infty}g_{n}\left(x\right)\in\left[0,\infty\right]$
+\end_inset
+
+)ולכל 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש
+\begin_inset Formula $g\left(x\right)<\infty$
+\end_inset
+
+ 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ קיים ושווה 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+(.
+ בפרט 
+\begin_inset Formula $g_{n}\to g$
+\end_inset
+
+ כב"מ ולפי למת פאטו:
+\begin_inset Formula 
+\[
+\int_{a}^{b}g\mathrm{\, d}m\le\underline{\lim}\int_{a}^{b}g_{n}\mathrm{\, d}m=\underline{\lim}n\int_{a}^{b}\left[f\left(x+\frac{1}{n}\right)-f\left(x\right)\right]\mathrm{\, d}m=\cdots
+\]
+
+\end_inset
+
+לפי למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה שווה:
+\begin_inset Formula 
+\[
+\cdots=\underline{\lim}n\left[\int_{a+\nicefrac{1}{n}}^{b+\nicefrac{1}{n}}f\mathrm{\, d}m-\int_{a}^{b}f\mathrm{\, d}m\right]=\underline{\lim}n\left[\int_{b}^{b+\nicefrac{1}{n}}f\mathrm{\, d}m-\int_{a}^{a+\nicefrac{1}{n}}f\mathrm{\, d}m\right]
+\]
+
+\end_inset
+
+כעת לפי הגדרה בקטע 
+\begin_inset Formula $\left[b,b+\nicefrac{1}{n}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\equiv f\left(b\right)$
+\end_inset
+
+, ולכן עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $n\int_{b}^{b+\nicefrac{1}{n}}f\mathrm{\, d}m=f\left(b\right)$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ עולה, בקטע 
+\begin_inset Formula $\left[a,a+\nicefrac{1}{n}\right]$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)\ge f\left(a\right)$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+n\int_{a}^{a+\nicefrac{1}{n}}f\mathrm{\, d}m\ge n\int_{a}^{a+\nicefrac{1}{n}}f\left(a\right)\mathrm{\, d}m=f\left(a\right)
+\]
+
+\end_inset
+
+יוצא ש
+\bar under
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+
+\bar default
+ 
+\begin_inset Formula 
+\[
+n\left[\int_{b}^{b+\nicefrac{1}{n}}f\mathrm{\, d}m-\int_{a}^{a+\nicefrac{1}{n}}f\mathrm{\, d}m\right]\le f\left(b\right)-f\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכל זה נובע 
+\begin_inset Formula $\int_{a}^{b}g\mathrm{\, d}m\le f\left(b\right)-f\left(a\right)$
+\end_inset
+
+, בפרט 
+\begin_inset Formula $\infty>\int_{a}^{b}g\mathrm{\, d}m$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $g\left(x\right)<\infty$
+\end_inset
+
+ כב"מ.
+ בפרט 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ קיים כב"מ ושווה 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $f'$
+\end_inset
+
+ קיים כב"מ ומתקיים
+\begin_inset Formula 
+\[
+\int_{a}^{b}f'\mathrm{\, d}m=\int_{a}^{b}g\mathrm{\, d}m\le f\left(b\right)-f\left(a\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=I_{\left[\nicefrac{1}{2},1\right]}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ עולה ב
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, כב"מ 
+\begin_inset Formula $f'\left(x\right)=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(1\right)-f\left(0\right)=1>0=\int_{0}^{1}f'\mathrm{\, d}m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+אז תמיד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f'\mathrm{\, d}m\lneqq f\left(b\right)-f\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f=\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)-h\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $h$
+\end_inset
+
+ עולות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ קיימת כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ מוגדרת ואינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\mathrm{\, d}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F'\left(x\right)$
+\end_inset
+
+ קיימת כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\begin{array}{c}
+G\left(x\right)=\int_{a}^{x}f^{+}\mathrm{\, d}m\\
+H\left(x\right)=\int_{a}^{x}f^{-}\mathrm{\, d}m
+\end{array}$
+\end_inset
+
+.
+ כיוון שלכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $f^{+}\left(x\right),f^{-}\left(x\right)\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $G\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $H\left(x\right)$
+\end_inset
+
+ עולות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ לבסוף
+\begin_inset Formula 
+\[
+G\left(x\right)-H\left(x\right)=\int_{a}^{x}\left[f^{+}-f^{-}\right]\mathrm{\, d}m=\int_{a}^{x}f\mathrm{\, d}m=F\left(x\right)
+\]
+
+\end_inset
+
+ומצאנו ש
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ הפרש של שתי פונקציות עולות והיא גזירה כב"מ לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תזכורת מאינפי
+\end_layout
+
+\begin_layout Standard
+המשפט היסודי של החשבון האינטגרלי חקל ראשון אומר:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ מוגדרת ואינטגרבילית רימן ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ובכל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ שבו 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה, 
+\begin_inset Formula $F'$
+\end_inset
+
+ גזירה ומתקיים 
+\begin_inset Formula $F'\left(x_{0}\right)=f\left(x_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הכללת לבג
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{*}$
+\end_inset
+
+ מוגדרת ואינטגרבילית לבג.
+ נגדיר לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\mathrm{\, d}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F$
+\end_inset
+
+ רציפה בהחלט)יוגדר בהמשך( ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וכב"מ 
+\begin_inset Formula $F'\left(x\right)$
+\end_inset
+
+ קיים ושווה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח את הרציפות בהחלט של 
+\begin_inset Formula $F$
+\end_inset
+
+ נסתמך על משפט כללי בתורת לבג.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(X,S,\mu\right)$
+\end_inset
+
+ ממ"ח ותהי 
+\begin_inset Formula $f:X\to\mathbb{R}^{*}$
+\end_inset
+
+ אינטגרבילית 
+\begin_inset Formula $\mathrm{d}\mu$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\mu\left(E\right)<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\int_{E}\left|f\right|\mathrm{\, d}\mu<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $f_{n}:X\to\mathbb{R}$
+\end_inset
+
+ ע"י 
+\begin_inset Formula 
+\[
+f_{n}\left(x\right)=\begin{cases}
+\left|f\left(x\right)\right| & \left|f\left(x\right)\right|\le n\\
+n & \left|f\left(x\right)\right|>n
+\end{cases}=\min\left(n,\left|f\left(n\right)\right|\right)
+\]
+
+\end_inset
+
+לפי זה לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $0\le f_{1}\left(x\right)\le f_{2}\left(x\right)\le\cdots$
+\end_inset
+
+ וכל 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ מדידה.
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}f_{n}\left(x\right)=\left|f\left(x\right)\right|
+\]
+
+\end_inset
+
+לפי התכנסות מונוטונית 
+\begin_inset Formula $\int_{X}\left|f\right|\mathrm{\, d}m=\lim\limits _{n\to\infty}\int_{X}f\mathrm{\, d}m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ נוכל לבחור 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\series bold
+מסויים
+\series default
+ כך ש
+\begin_inset Formula $\left|f\left(x\right)\right|\ge f_{n}\left(x\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\int_{X}\left(\left|f\right|-f_{n}\right)\mathrm{\, d}\mu<\frac{\varepsilon}{2}$
+\end_inset
+
+.
+ כעת אם 
+\begin_inset Formula $E\in S$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\mu\left(E\right)<\frac{\varepsilon}{2n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{E}\left|f\right|\mathrm{\, d}\mu=\int_{E}\left(\left|f\right|-f_{n}\right)\mathrm{\, d}\mu+\int_{E}f_{n}\mathrm{\, d}\mu\le\int_{X}\left(\left|f\right|-f_{n}\right)\mathrm{\, d}\mu+\int_{E}n\mathrm{\, d}\mu<
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+<\frac{\varepsilon}{2}+n\mu\left(E\right)<\frac{\varepsilon}{2}+n\frac{\varepsilon}{2n}=\varepsilon
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ פונקציה כלשהי.
+ נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\emph on
+רציפה בהחלט
+\emph default
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם הקטעים 
+\begin_inset Formula $\left[a,b\right]\supset\left(a_{k},b_{k}\right)$
+\end_inset
+
+ זרים בזוגות עבור 
+\begin_inset Formula $1\le k\le n$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\sum\limits _{k=1}^{n}b_{k}-a_{k}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum\limits _{k=1}^{n}\left|f\left(b_{k}\right)-f\left(a_{k}\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הערה
+\end_layout
+
+\begin_layout Standard
+טריוויאלי שרציפות בהחלט גוררת רציפות במ"ש.
+ ההיפך לא נכון.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{*}$
+\end_inset
+
+ מוגדרת ואינטגרבילית 
+\begin_inset Formula $\mathrm{d}m$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\mathrm{\, d}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F$
+\end_inset
+
+ רציפה בהחלט ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ כיוון ש
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אומר שקיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $E\subset\left[a,b\right]$
+\end_inset
+
+ מדידה ואם 
+\begin_inset Formula $m\left(E\right)<\delta$
+\end_inset
+
+ אז 
+\begin_inset Formula $\int_{E}\left|f\right|\mathrm{\, d}m<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נניח שהקטעים 
+\begin_inset Formula $\left(a_{k},b_{k}\right)_{k=1}^{n}$
+\end_inset
+
+ מוכלים ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וזרים בזוגות, ונניח ש
+\begin_inset Formula $\sum\limits _{k=1}^{n}\left(b_{k}-a_{k}\right)$
+\end_inset
+
+.
+ לכן אם נגדיר 
+\begin_inset Formula $E=\biguplus\limits _{k=1}^{n}\left(a_{k},b_{k}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $m\left(E\right)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכל זה נובע ש
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\left|F\left(b_{k}\right)-F\left(a_{k}\right)\right|=\sum_{k=1}^{n}\left|\int_{a}^{b_{k}}f\mathrm{\, d}m-\int_{a}^{a_{k}}f\mathrm{\, d}m\right|=\sum_{k=1}^{n}\left|\int_{a_{k}}^{b_{k}}f\mathrm{\, d}m\right|\le\sum_{k=1}^{n}\int_{a_{k}}^{b_{k}}\left|f\right|\mathrm{\, d}m=\int_{E}\left|f\right|\mathrm{\, d}m<\varepsilon
+\]
+
+\end_inset
+
+לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בהחלט.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+המטרה הבאה
+\end_layout
+
+\begin_layout Standard
+המטרה הבאה שלנו היא להוכיח שאם 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\mathrm{\, d}m$
+\end_inset
+
+ אז 
+\begin_inset Formula $f=F'$
+\end_inset
+
+ כב"מ.
+\end_layout
+
+\begin_layout Standard
+נסתמך בין היתר על למה:
+\end_layout
+
+\begin_layout Section*
+למה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\left[a,b\right]$
+\end_inset
+
+ קבוצה מדידה כך ש
+\begin_inset Formula $m\left(E\right)=s>0$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת 
+\series bold
+קבוצה סגורה
+\series default
+ 
+\begin_inset Formula $F\subset E$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m\left(F\right)>s-\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: תרגיל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציה אינטגרבילית.
+ נניח שלכל 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{a}^{c}f\mathrm{\, d}m=0$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)כבר הוכחנו את זה עבור 
+\begin_inset Formula $f\left(x\right)\ge0$
+\end_inset
+
+, אבל פה זה לא נתון(
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+תחילה נעיר שאם 
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+ קטע כלשהו בתוך 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula 
+\[
+\int_{\alpha}^{\beta}f\mathrm{\, d}m=\int_{a}^{\beta}f\mathrm{\, d}m-\int_{a}^{\alpha}f\mathrm{\, d}m=0-0=0
+\]
+
+\end_inset
+
+נמשיך בדרך השלילה: אם 
+\begin_inset Formula $f\left(x\right)\not\equiv0$
+\end_inset
+
+ כב"מ אז קיים 
+\begin_inset Formula $E\subset\left[a,b\right]$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $m\left(E\right)>0$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(x\right)>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ או 
+\begin_inset Formula $f\left(x\right)<0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in E$
+\end_inset
+
+.
+ בה"כ 
+\begin_inset Formula $f\left(x\right)>0$
+\end_inset
+
+ ב
+\begin_inset Formula $E$
+\end_inset
+
+.
+ לפי הלמה קיים 
+\begin_inset Formula $F\subset E$
+\end_inset
+
+ כך ש
+\begin_inset Formula $F$
+\end_inset
+
+ סגורה ו
+\begin_inset Formula $m\left(F\right)>0$
+\end_inset
+
+.
+ ממשפט בפרק הקודם 
+\begin_inset Formula $\int_{F}f\mathrm{\, d}m>0$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $F$
+\end_inset
+
+ סגורה 
+\begin_inset Formula $\left(a,b\right)-F$
+\end_inset
+
+ פתוחה, ונוכל לכתוב
+\begin_inset Formula 
+\[
+\left(a,b\right)-F=\biguplus_{n=1}^{\infty}\left(\alpha_{n},\beta_{n}\right)
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\left(a,b\right)=F\uplus\biguplus_{n=1}^{\infty}\left(\alpha_{n},\beta_{n}\right)
+\]
+
+\end_inset
+
+נובע ש
+\begin_inset Formula 
+\[
+0=\int_{a}^{b}f\mathrm{\, d}m=\int_{F}f\mathrm{\, d}m+\int_{\biguplus\limits _{n=1}^{\infty}\left(\alpha_{n},\beta_{n}\right)}f\mathrm{\, d}m=\underbrace{\int_{F}f\mathrm{\, d}m}_{>0}+\sum_{n=1}^{\infty}\underbrace{\int_{\alpha_{n}}^{\beta_{n}}f\mathrm{\, d}m}_{=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+"הוכחנו" 
+\begin_inset Formula $0>0$
+\end_inset
+
+! הסתירה מוכיחה את המשפט.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $f,g:\left[a,b\right]\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציות אינטגרביליות, ונניח לכל 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{a}^{c}f\mathrm{\, d}m=\int_{a}^{c}g\mathrm{\, d}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי הנתון 
+\begin_inset Formula $\int_{a}^{c}\left(f-g\right)\mathrm{\, d}m=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+.
+ לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+ 
+\begin_inset Formula $f\left(x\right)-g\left(x\right)=0$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ מש"ל.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}^{*}$
+\end_inset
+
+ פונקציה אינטגרבילית.
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F\left(x\right)=\int_{a}^{x}f\mathrm{\, d}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ גזירה כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וכב"מ 
+\begin_inset Formula $F'\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הוכחה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מקרה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\series default
+\numeric off
+: 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ חסומה: ז.א.
+ קיים 
+\begin_inset Formula $M>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left|f\left(x\right)\right|\le M$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $F_{n}\left(x\right)=\frac{F\left(x+\frac{1}{n}\right)-F\left(x\right)}{\nicefrac{1}{n}}$
+\end_inset
+
+.
+ לפי מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה כב"מ, וכב"מ 
+\begin_inset Formula $F'\left(x\right)=\lim\limits _{n\to\infty}F_{n}\left(x\right)$
+\end_inset
+
+.
+ נשים לב שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ו
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $F_{n}\left(x\right)=n\int_{x}^{x+\nicefrac{1}{n}}f\mathrm{\, d}m$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\left|F_{n}\left(x\right)\right|\le n\int_{X}\left|f\right|\mathrm{\, d}m\le n\int_{x}^{x+\nicefrac{1}{n}}M\mathrm{\, d}m=M
+\]
+
+\end_inset
+
+כעת אם 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $F_{n}\to F'$
+\end_inset
+
+ כב"מ, ובאופן חסום בקטע 
+\begin_inset Formula $\left[a,c\right]$
+\end_inset
+
+, לפי משפט ההתכנסות החסומה
+\begin_inset Formula 
+\[
+\int_{a}^{c}F'\mathrm{\, d}m=\lim_{n\to\infty}\int_{a}^{c}F_{n}\mathrm{\, d}m=\lim_{n\to\infty}n\int_{a}^{c}\left[F\left(x+\frac{1}{n}\right)-F\left(x\right)\right]\mathrm{\, d}m=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lim_{n\to\infty}n\int_{c}^{c+\nicefrac{1}{n}}F\mathrm{\, d}m-n\int_{a}^{a+\nicefrac{1}{n}}F\mathrm{\, d}m
+\]
+
+\end_inset
+
+כיוון ש
+\begin_inset Formula $F$
+\end_inset
+
+ רציפה, המשפט היסודי הקלאסי אומר שהגבול הוא
+\begin_inset Formula 
+\[
+F\left(c\right)-F\left(a\right)=\int_{a}^{c}f\mathrm{\, d}m
+\]
+
+\end_inset
+
+הדבר נכון לכל 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+.
+ לפי המסקנה למשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+, 
+\begin_inset Formula $F'=f$
+\end_inset
+
+ כב"מ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

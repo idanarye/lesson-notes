@@ -1,0 +1,2122 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תזכורת - אינטגרל רימן
+\end_layout
+
+\begin_layout Standard
+אינטגרל רימן מוגדר בעזרת 
+\emph on
+סכומי רימן
+\emph default
+.
+ בפרט אם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ מוגדרת וחסומה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ נעשה חלוקה 
+\begin_inset Formula $P$
+\end_inset
+
+ של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b
+\]
+
+\end_inset
+
+סכום רימן בנוי על 
+\begin_inset Formula $P$
+\end_inset
+
+ הוא סכום מהסוג 
+\begin_inset Formula $\sum\limits _{k=1}^{n}f\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)$
+\end_inset
+
+ עבור איזה 
+\begin_inset Formula $c_{k}\in\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דורשים שכאשר החלוקה נעשית עדינה ביותר כל סכומי רימן שואפים לגבול אחד.
+ אם כן, 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית, ו
+\begin_inset Formula $\int_{a}^{b}f\left(x\right)\mathrm{\, d}x$
+\end_inset
+
+ הוא הגבול הנ"ל.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f\left(x\right)\ge0$
+\end_inset
+
+ ורציפה )גם אם למקוטעין( האינטגרל מתכנס לשטח מתחת לגרף.
+\end_layout
+
+\begin_layout Subsubsection*
+מה טוב באינטגרל רימן?
+\end_layout
+
+\begin_layout Standard
+כמעט הכל!
+\end_layout
+
+\begin_layout Subsubsection*
+מה לא טוב באינטגרל רימן?
+\end_layout
+
+\begin_layout Enumerate
+יש "הרבה" פונקציות לא אינטגרביליות רימן.
+ למשל פונקציית דריכלה 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+1 & x\in\mathbb{Q}\\
+0 & x\notin\mathbb{Q}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אין אפיון לפונקציות האינטגרביליות רימן.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ במ"ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וכולן אינטגרביליות רימן אז 
+\begin_inset Formula $\int_{a}^{b}f_{n}\to\int_{a}^{b}f$
+\end_inset
+
+, אבל אם 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ נקודתית אין משפט שיאמר מתי 
+\begin_inset Formula $\int f_{n}\to\int f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)=\frac{\mathrm{d}}{\mathrm{d}x}\int_{a}^{x}f\left(t\right)\mathrm{\, d}t$
+\end_inset
+
+.
+ מה קורה אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f'\left(x\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(b\right)-f\left(a\right)=\int_{a}^{b}f'\left(x\right)\mathrm{\, d}x$
+\end_inset
+
+.
+ זה גם נכון, למשל, אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ו
+\begin_inset Formula $f'$
+\end_inset
+
+ רציפה למקוטעין.
+ עד היכן אפשר להכליל נוסחה זו? אין תשובה מדוייקת בתורת רימן.
+\end_layout
+
+\begin_layout Enumerate
+אם ל
+\begin_inset Formula $f\left(X\right)$
+\end_inset
+
+ על 
+\begin_inset Formula $\left[-\pi,\pi\right]$
+\end_inset
+
+ יש טור פורייה פורמלי 
+\begin_inset Formula $f\left(x\right)\sim\frac{a_{0}}{2}+\sum\limits _{n=1}^{\infty}a_{n}\cos nx+b_{n}\sin nx$
+\end_inset
+
+, משפט פרסבל אומר
+\begin_inset Formula 
+\[
+\frac{1}{\pi}\int_{-\pi}^{\pi}f^{2}\left(x\right)\mathrm{\, d}x=\frac{a_{0}^{2}}{2}+\sum_{n=1}^{\infty}a_{n}^{2}+b_{n}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+שאלה
+\begin_inset space ~
+\end_inset
+
+הפוכה
+\series default
+: אם 
+\begin_inset Formula $\frac{a_{0}^{2}}{2}+\sum\limits _{n=1}^{\infty}a_{n}^{2}+b_{n}^{2}<\infty$
+\end_inset
+
+ האם הטור 
+\begin_inset Formula 
+\[
+\frac{a_{0}}{2}+\sum\limits _{n=1}^{\infty}a_{n}\cos nx+b_{n}\sin nx
+\]
+
+\end_inset
+
+ מתכנס באיזשהו מובן לפונקציה 
+\bar under
+אינטגרבילית
+\bar default
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ שהטור טור פורייה שלה?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תשובה
+\series default
+: בתורת רימן לא, בתורת לבג כן!
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+האינטגרל ע"פ לבג
+\end_layout
+
+\begin_layout Standard
+אפשר לומר שתחילת החידוש של לבג היא שבמקום לחלק את ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מחלקים את ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא שלכל "פס" בחלוקה של ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+, לוקחים את ה
+\emph on
+מידה
+\emph default
+ של כל הקטעים על ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ שהפונקציה נותנת עבורם ערכים באותו פס.
+\end_layout
+
+\begin_layout Standard
+"השטח מתחת לגרף" מקורב ע"י "סכום לבג"
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}y_{k}m\left(E_{k}\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+E_{k}=\left\{ x\in\left[a,b\right]\middle|y_{k-1}\le f\left(x\right)<y_{k}\right\} 
+\]
+
+\end_inset
+
+ו
+\begin_inset Formula $m\left(E_{k}\right)$
+\end_inset
+
+ = המידה או הגודל של 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר החלוקה נעשית עדינה ביותר, נדרוש שכל סכומי לבג ישאפו לגבול אחד.
+ אם כן 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית לבג ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, והגבול הוא 
+\begin_inset Formula $\int\limits _{\left[a,b\right]}f\mathrm{\, d}m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז כל
+\begin_inset Formula 
+\[
+E_{k}=\left\{ x\in\left[a,b\right]\middle|y_{k-1}\le f\left(x\right)\le y_{k}\right\} 
+\]
+
+\end_inset
+
+הוא איחוד של קטעים וברור שמידתה היא סכום אורי הקטעים.
+\end_layout
+
+\begin_layout Standard
+אבל אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז הקבוצות 
+\begin_inset Formula $\left[a,b\right]\supset E_{x}$
+\end_inset
+
+ הן קבוצות כלשהן, וצריכים להגדיר מידת קבוצה כלשהי.
+\end_layout
+
+\begin_layout Section*
+הגדרה - מידה חיצונית
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה כלשהי.
+ נגדיר את 
+\emph on
+המידה החיצונית
+\emph default
+ של 
+\begin_inset Formula $E$
+\end_inset
+
+ ע"י
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)=\inf_{E\in\bigcup\limits _{n=0}^{\infty}I_{n}}\sum_{n=1}^{\infty}\left|I_{n}\right|
+\]
+
+\end_inset
+
+כאשר ה
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ קטעים פתוחים ו
+\begin_inset Formula $\left|I_{n}\right|$
+\end_inset
+
+ אורך 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+כלומר
+\series default
+: החסם התחתון של סכום אורכי קבוצת הקטעים הפתוחים הקטנה ביותר המכילה את כל
+ הנקודות.
+\end_layout
+
+\begin_layout Standard
+לכן, עבור כל 
+\begin_inset Formula $\mathbb{R}\supset E$
+\end_inset
+
+, 
+\begin_inset Formula $m^{*}\left(E\right)$
+\end_inset
+
+ מוגדרת היטב ומקיימת 
+\begin_inset Formula $0\le m^{*}\left(E\right)\le+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $m^{*}\left(\left\{ x_{0}\right\} \right)=0=m^{*}\left(\emptyset\right)$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $\mathbb{R}\ni x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\subset B\subset\mathbb{R}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $m^{*}\left(A\right)\le m^{*}\left(B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+טריוויאלי.
+\end_layout
+
+\begin_layout Enumerate
+כל כיסוי פתוח של 
+\begin_inset Formula $B$
+\end_inset
+
+ הוא גם כיסוי פתוח של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $m^{*}\left(A\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\inf$
+\end_inset
+
+ של יותר מספרים מ
+\begin_inset Formula $m^{*}\left(B\right)$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $m^{*}\left(A\right)\le m^{*}\left(B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קטע כלשהו אז אורך 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula $m^{*}\left(E\right)=\left|E\right|=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: תרגיל
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(E_{n}\right)$
+\end_inset
+
+ סדרת קבוצות ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ואם 
+\begin_inset Formula $E=\bigcup\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $m^{*}\left(E\right)\le\sum\limits _{n=1}^{\infty}m^{*}\left(E_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נוכל לבחור קטעים פתוחים 
+\begin_inset Formula $\left(I_{k,n}\right)_{k=1}^{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $E_{n}\subset\bigcup\limits _{k=1}^{\infty}I_{k,n}$
+\end_inset
+
+, ו
+\begin_inset Formula 
+\[
+m^{*}\left(E_{n}\right)\le\sum_{k=1}^{\infty}\left|I_{k,n}\right|\le m^{*}\left(E_{n}\right)+\nicefrac{\varepsilon}{2^{n}}
+\]
+
+\end_inset
+
+לפי זה הקטעים 
+\begin_inset Formula $\left(I_{k,n}\right)_{k,n=1}^{\infty}$
+\end_inset
+
+ מהווים כיסוי פתוח ל
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}E_{n}=E$
+\end_inset
+
+, לכן 
+\begin_inset Formula 
+\[
+m^{*}\left(E\right)\le\sum_{k,n=1}^{\infty}\left|I_{k,n}\right|=\sum_{n=1}^{\infty}\sum_{k=1}^{\infty}\le\sum_{n=1}^{\infty}m^{*}\left(E_{n}\right)+\nicefrac{\varepsilon}{2^{n}=\left(\sum\limits _{n=1}^{\infty}m^{*}\left(E_{n}\right)\right)+\varepsilon}
+\]
+
+\end_inset
+
+הדבר נכון לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, ולכן בהכרח 
+\begin_inset Formula $m^{*}\left(E\right)\le\sum\limits _{n=1}^{\infty}m^{*}\left(E_{n}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה כלשהי.
+ הזזה של 
+\begin_inset Formula $E$
+\end_inset
+
+ היא קבוצה מהסוג 
+\begin_inset Formula 
+\[
+x_{0}+E=E+x_{0}=\left\{ x_{0}+y\middle|y\in E\right\} 
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\mathbb{R}\ni x_{0}$
+\end_inset
+
+ מספר קבוע.
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ ו
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+ מספר כלשהו.
+ אזי
+\begin_inset Formula 
+\[
+m^{*}\left(x_{0}+E\right)=m^{*}\left(E\right)
+\]
+
+\end_inset
+
+ז.א., 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ שמורה תחת הזזה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E$
+\end_inset
+
+ מכוסה ע"י 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}I_{n}$
+\end_inset
+
+, אז 
+\begin_inset Formula $x_{0}+E$
+\end_inset
+
+ מכוסה ע"י 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}\left(x_{0}+I_{n}\right)$
+\end_inset
+
+.
+ וכיוון ש
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\left|I_{n}\right|=\sum\limits _{n=1}^{\infty}\left|x_{0}+I_{n}\right|$
+\end_inset
+
+, נקבל ש
+\begin_inset Formula $m^{*}\left(E\right)=m^{*}\left(x_{0}+E\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות רצויות למידה 
+\begin_inset Formula $m$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\mathbb{R}\supset E$
+\end_inset
+
+, 
+\begin_inset Formula $m\left(E\right)$
+\end_inset
+
+ מוגדרת ומקיימת 
+\begin_inset Formula $0\le m\left(E\right)\le\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל קטע 
+\begin_inset Formula $\mathbb{R}\supset E$
+\end_inset
+
+, 
+\begin_inset Formula $m\left(E\right)=\left|E\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m$
+\end_inset
+
+ שמורה תחת הזזה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E=\biguplus\limits _{n=1}^{\infty}E_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $m\left(E\right)=\sum\limits _{n=0}^{\infty}\left(E_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נובע מתכונות אלה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+)ה(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $E\subset F\subset\mathbb{R}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $m\left(E\right)\le m\left(F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח )ע"פ אקסיומת הבחירה( שאי אפשר להגדיר מידה 
+\begin_inset Formula $m$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ שתקיים את תכונות א,ב,ג,ד כולן.
+\end_layout
+
+\begin_layout Standard
+ובכן, נניח שקיימת 
+\begin_inset Formula $m$
+\end_inset
+
+ כזאת ונגיע לסתירה.
+\end_layout
+
+\begin_layout Standard
+תחילה נגדיר יחס שקילות על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ - 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+ אם 
+\begin_inset Formula $x-y\in\mathbb{Q}$
+\end_inset
+
+.
+ אז יחס זה מחלק את 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ למספר לא מני של מחלקות שקילות.
+\end_layout
+
+\begin_layout Standard
+פשוט שכל מחלקת שקילות חותכת את הקטע 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי אקסיומת הבחירה קיימת קבוצה 
+\begin_inset Formula $E\subset\left(0,1\right)$
+\end_inset
+
+ שמכילה 
+\series bold
+בדיוק
+\series default
+ נציג אחד מכל מחלקת שקילות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[]
+\end_layout
+
+\end_inset
+
+שתי טענות פשוטות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $r\in\mathbb{Q}\wedge\left(-1,1\right)$
+\end_inset
+
+ כך 
+\begin_inset Formula $x\in E+r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $r\neq s$
+\end_inset
+
+ שייכים ל
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, אז 
+\begin_inset Formula $\emptyset=\left(E+r\right)\cap\left(E+s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחות
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\end_layout
+
+\end_inset
+
+)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+alph{enumi}
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\end_inset
+
+אם 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $y\in E$
+\end_inset
+
+ יחיד כך ש
+\begin_inset Formula $x\sim y$
+\end_inset
+
+, ז.א.
+ 
+\begin_inset Formula $x-y=r\in\mathbb{Q}$
+\end_inset
+
+, וממילא 
+\begin_inset Formula $x=y+r\in E+r$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ שייכים ל
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $r=x-y\in\left(-1,1\right)$
+\end_inset
+
+ והוכחנו א'.
+\end_layout
+
+\begin_layout Enumerate
+נניח ש
+\begin_inset Formula $x\in\left(E+r\right)\cap\left(E+s\right)$
+\end_inset
+
+, אזי קיימים 
+\begin_inset Formula $y,z\in E$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x=y+r=z+s$
+\end_inset
+
+.
+ מכאן ש
+\begin_inset Formula $y-z=\underbrace{s-r}_{x_{0}}\in\mathbb{Q}$
+\end_inset
+
+.
+ נובע ש
+\begin_inset Formula $y\sim z$
+\end_inset
+
+ וכיוון ששניהם שייכים ל
+\begin_inset Formula $E$
+\end_inset
+
+ הגענו לסתירה לזה ש
+\begin_inset Formula $E$
+\end_inset
+
+ מכילה רק איבר אחד מכל מחלקת שקילות.
+ הסתירה מוכיחה ש
+\begin_inset Formula $\left(E+r\right)\cap\left(E+s\right)=\emptyset$
+\end_inset
+
+ כדרוש.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+כעת, נרשום את כל הרציונלים ב
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+ ע"י סדרה 
+\begin_inset Formula $\left\{ r_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+.
+ לפי )א(, 
+\begin_inset Formula $\left(0,1\right)\subset\bigcup\limits _{n=1}^{\infty}E+r_{n}$
+\end_inset
+
+, וכיוון ש
+\begin_inset Formula $E\subset\left(0,1\right)$
+\end_inset
+
+ וכל 
+\begin_inset Formula $\left(-1,1\right)\ni r_{n}$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $E+r_{n}\subset\left(-1,2\right)$
+\end_inset
+
+ וממילא 
+\begin_inset Formula $\bigcup\limits _{n=1}^{\infty}E+r_{n}\subset\left(-1,2\right)$
+\end_inset
+
+.
+ בסיכום
+\begin_inset Formula 
+\[
+\left(0,1\right)\subset\bigcup_{n=1}^{\infty}E+r_{n}\subset\left(-1,2\right)
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $m$
+\end_inset
+
+ מידה המקיימת )א( עד )ד( היא מקיימת )ה( ומתקיים)האיחוד זר בגלל )ב((
+\begin_inset Formula 
+\[
+m\left[\left(0,1\right)\right]\le m\left(\biguplus E+r_{n}\right)=m\left[\left(-1,2\right)\right]
+\]
+
+\end_inset
+
+לפי תכונה )ב(
+\begin_inset Formula 
+\[
+1\le m\left(\biguplus E+r_{n}\right)\le3
+\]
+
+\end_inset
+
+לפי )ד(
+\begin_inset Formula 
+\[
+1\le\sum_{n=1}^{\infty}m\left(E+r_{n}\right)\le3
+\]
+
+\end_inset
+
+כיוון שכל 
+\begin_inset Formula $E+r_{n}$
+\end_inset
+
+ הזזה של 
+\begin_inset Formula $E$
+\end_inset
+
+, תכונה )ד( אומרת שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $m\left(E\right)=m\left(E+r_{n}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $1\le\sum\limits _{n=1}^{\infty}m\left(E\right)\le3$
+\end_inset
+
+ וזה בלתי אפשרי!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו שאי אפשר לקיים את )א( עד )ד( כולן.
+ כיוון ש
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ מקיימת את )א(,)ב( ו)ג( בהכרח היא לא מקיימת את )ד(.
+ ז.א.
+ היא לא "
+\begin_inset Formula $\sigma$
+\end_inset
+
+-חיבורית".
+\end_layout
+
+\begin_layout Standard
+למעשה אפשר להוכיח שקיים איחוד זר 
+\series bold
+סופי
+\series default
+ 
+\begin_inset Formula $E=\biguplus\limits _{k=1}^{n}E_{k}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $m^{*}\left(E\right)\lneqq\sum_{k=1}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל לוותר על תכונה )ד( זה בלתי אפשרי.
+ לכן החליטו לוותר על תכונה )א( ולהגדיר אוסף די גדול של קבוצות "הקבוצות המדידות
+ של לבג" כך שהצמצום של 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ להן מקיים את )ד( )עם )ב( ו)ג((.
+\end_layout
+
+\begin_layout Standard
+נאמץ את ההגדרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Cartheodory
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ קבוצה כלשהי.
+ נאמר ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה)לבג( אם לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $E^{*}$
+\end_inset
+
+ = המשלים של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הערה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E$
+\end_inset
+
+ ו
+\begin_inset Formula $F$
+\end_inset
+
+ מדידות ואם 
+\begin_inset Formula $\emptyset\neq E\cap F$
+\end_inset
+
+ אז 
+\begin_inset Formula $m^{*}\left(E\cup F\right)=m^{*}\left(E\right)+m^{*}\left(F\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחת ההערה
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A=E\uplus F$
+\end_inset
+
+.
+ לפי הגדרת המדידות של 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+ז.א.
+\begin_inset Formula 
+\[
+m^{*}\left(E\uplus F\right)=m^{*}\left(E\right)+m^{*}\left(F\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=)
+\backslash
+alph{enumi}(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $E^{\complement}$
+\end_inset
+
+מדידה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\subset\mathbb{R}$
+\end_inset
+
+ מדידה 
+\begin_inset Formula $\iff$
+\end_inset
+
+ לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m^{*}\left(E\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה אז לכל 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}+E$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=)
+\backslash
+alph{enumi}(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+תחילה נניח ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+ לכן עבור כל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A\cap E^{\complement}\right)+m^{*}\left(A\cap E\right)=m^{*}\left(A\cap E^{\complement}\right)+m^{*}\left(A\cap\left(E^{\complement}\right)^{\complement}\right)
+\]
+
+\end_inset
+
+כיוון שזה נכון לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $E^{\complement}$
+\end_inset
+
+ מדידה.
+ הכיוון ההפוך זהה.
+\end_layout
+
+\begin_layout Enumerate
+תמיד 
+\begin_inset Formula $A=\left(A\cap E\right)\cup\left(A\cap E^{\complement}\right)$
+\end_inset
+
+, לכן לפי משפט שהוכחנו 
+\begin_inset Formula $m^{*}\left(A\right)\le m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)$
+\end_inset
+
+.
+ לכן, כדי להוכיח ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה, הכרחי ומספיק לקיים את אי השוויון ההפוך
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A\cap E\right)+m^{*}\left(A\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ וזה )ב(
+\end_layout
+
+\begin_layout Enumerate
+נתון ש
+\begin_inset Formula $m^{*}\left(E\right)=0$
+\end_inset
+
+.
+ כעת אם 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ כךשהי הרי 
+\begin_inset Formula $A\cap E\subset E$
+\end_inset
+
+, ולכן לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap E\right)\le m^{*}\left(E\right)=0
+\]
+
+\end_inset
+
+
+\numeric off
+לכן 
+\begin_inset Formula $0=m^{*}\left(A\cap E\right)$
+\end_inset
+
+.
+ יתר על כן 
+\begin_inset Formula $A\cap E^{\complement}\subset A$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $m^{*}\left(A\cap E^{\complement}\right)\le m^{*}\left(A\right)$
+\end_inset
+
+.
+ נובע:
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A\cap E^{\complement}\right)+0=m^{*}\left(A\cap E^{\complement}\right)+m^{*}\left(A\cap E\right)
+\]
+
+\end_inset
+
+וע"פ סעיף ב' הוכחנו ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה.
+\end_layout
+
+\begin_layout Enumerate
+נתון ש
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה ו
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $x_{0}+E$
+\end_inset
+
+ מדידה.
+ ניקח 
+\begin_inset Formula $\mathbb{R}\supset A$
+\end_inset
+
+ כלשהי.
+ כעת:
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)=m^{*}\left(A-x_{0}\right)=m^{*}\left(\left(A-x_{0}\right)\cap E\right)+m^{*}\left(\left(A-x_{0}\right)\cap E^{\complement}\right)
+\]
+
+\end_inset
+
+כי 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה, וזה שווה ל
+\begin_inset Formula 
+\[
+m^{*}\left(A\cap\left(E+x_{0}\right)\right)+m^{*}\left(A\cap\left(E^{\complement}+x_{0}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=m^{*}\left(A\cap\left(E+x_{0}\right)\right)+m^{*}\left(A\cap\left(E+x_{0}\right)^{\complement}\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $E+x_{0}$
+\end_inset
+
+ מדידה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+כל קטע מהסוג 
+\begin_inset Formula $E=\left(a,\infty\right)$
+\end_inset
+
+)עבור 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+( קבוצה מדידה.
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ כלשהי ונגדיר 
+\begin_inset Formula 
+\begin{eqnarray*}
+A_{1} & = & A\cap\left(a,\infty\right)=A\cap E\\
+A_{2} & = & A\cap\left(-\infty,a\right]=A\cap E^{\complement}
+\end{eqnarray*}
+
+\end_inset
+
+צ"ל ש
+\begin_inset Formula $m^{*}\left(A\right)\ge m^{*}\left(A_{1}\right)+m^{*}\left(A_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לצורך זה יהי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ לפי הגדרת 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ יש כיסוי פתוח 
+\begin_inset Formula $A\subset\bigcup\limits _{n=1}^{\infty}I_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $m^{*}\left(A\right)\le\sum\limits _{n=1}^{\infty}\left|I_{n}\right|\le m^{*}\left(A\right)+\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נחלק 
+\begin_inset Formula $I_{n}=I_{n}'\cup I_{n}''$
+\end_inset
+
+, כאשר
+\begin_inset Formula 
+\begin{eqnarray*}
+I_{n}' & = & I_{n}\cap\left(a,\infty\right)\\
+I_{n}'' & = & I_{n}\cap\left(-\infty,a\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\begin_inset Formula 
+\[
+m^{*}\left(A_{1}+m^{*}\left(A_{2}\right)\right)\le\sum_{n=1}^{\infty}\left|I_{n}'\right|+\sum_{n=1}^{\infty}\left|I_{n}''\right|=\sum_{n=1}^{\infty}\left(\left|I_{n}'\right|+\left|I_{n}''\right|\right)=\sum_{n=1}^{\infty}\left|I_{n}\right|=m^{*}\left(A\right)+\epsilon
+\]
+
+\end_inset
+
+
+\numeric off
+הדבר נכון לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+m^{*}\left(A\right)\ge m^{*}\left(A_{1}\right)+m^{*}\left(A_{2}\right)
+\]
+
+\end_inset
+
+ומכאן ש
+\begin_inset Formula $\left(a,\infty\right)=E$
+\end_inset
+
+ קבוצה מדידה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

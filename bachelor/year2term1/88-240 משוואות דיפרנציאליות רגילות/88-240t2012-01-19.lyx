@@ -1,0 +1,1010 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+עוד קצת על פונקציית גמא
+\end_layout
+
+\begin_layout Standard
+כזכור, הגדרנו את פונקציית גמא לכל 
+\begin_inset Formula $x>0$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\Gamma\left(x\right):=\int_{0}^{\infty}t^{x-1}e^{-t}\mathrm{\, d}t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זוהי פונקציה מאוד שימושית שבעזרתה ניתן להכליל המון נוסחאות.
+\end_layout
+
+\begin_layout Standard
+בהרצאה הוכחה הזהות 
+\begin_inset Formula $\Gamma\left(x+1\right)=x\Gamma\left(x\right)$
+\end_inset
+
+, בעזרתה ניתן להכליל את 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ גם לערכים שליליים, למשל עבור 
+\begin_inset Formula $x=-\cfrac{1}{2}$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\Gamma\left(\cfrac{1}{2}\right)=-\cfrac{1}{2}\Gamma\left(-\cfrac{1}{2}\right)\Rightarrow\Gamma\left(-\cfrac{1}{2}\right)=-2\Gamma\left(\cfrac{1}{2}\right)=-2\sqrt{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם ניקח 
+\begin_inset Formula $x=\epsilon$
+\end_inset
+
+ קטן נקבל
+\begin_inset Formula 
+\[
+\Gamma\left(\epsilon+1\right)=\epsilon\Gamma\left(\epsilon\right)\Rightarrow\Gamma\left(\epsilon\right)=\cfrac{\Gamma\left(\epsilon+1\right)}{\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\epsilon\to0$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma\left(\epsilon+1\right)=\Gamma\left(1\right)=0!=1$
+\end_inset
+
+ כך שמקבלים
+\begin_inset Formula 
+\[
+\lim_{\epsilon\to0^{+}}\Gamma\left(\epsilon\right)=\cfrac{1}{0^{+}}=+\infty
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{\epsilon\to0^{-}}\Gamma\left(\epsilon\right)=\cfrac{1}{0^{-}}=-\infty
+\]
+
+\end_inset
+
+רואים של
+\begin_inset Formula $\Gamma\left(x\right)$
+\end_inset
+
+ יש נקודה סינגולרית ב
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+)בעתיד תקראו לנקודה מסוג זה "קוטב"(
+\end_layout
+
+\begin_layout Standard
+באופן דומה ניתן להראות ש
+\begin_inset Formula $\Gamma\left(x\right)\to\pm\infty$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ שואף למספרים 
+\begin_inset Formula $0,-1,-2,-3,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+להלן הגרף של 
+\begin_inset Formula $\Gamma\left(x\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אתם מוזמנים לרשום ב
+\begin_inset Formula $Mupad$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+plot(gamma(x),x=-5..5)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההגדרה של פונקציית 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ נראית קצת מוזרץ למה יש את ההזזה המרגיזה 
+\begin_inset Formula $\Gamma\left(n\right)=\left(n-1\right)!$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+ובכן, גאוס הגדיר פונקציה שונה במקצת, שלה הוא קרא פונקציית 
+\begin_inset Formula $\Pi$
+\end_inset
+
+)פי גדול(
+\begin_inset Formula 
+\[
+\Pi\left(x\right)\overset{def}{=}\int_{0}^{\infty}t^{x}e^{-t}\mathrm{\, d}t\left(=\Gamma\left(x+1\right)\right)
+\]
+
+\end_inset
+
+שמקבלים בעזרתה נוסחאות נקיות יותר
+\begin_inset Formula 
+\[
+\Pi\left(x\right)=x\Pi\left(x-1\right)\qquad\Pi\left(n\right)=n!
+\]
+
+\end_inset
+
+אך משום מה זה לא תפס...
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה עכשיו שימוש יפה לפונקציית גמא:
+\end_layout
+
+\begin_layout Standard
+נתבונן במונום הבא:
+\begin_inset Formula 
+\[
+y=f\left(x\right)=x^{k}
+\]
+
+\end_inset
+
+ניתן לגזור פעם אחת
+\begin_inset Formula 
+\[
+y'=\cfrac{d}{dx}y=kx^{\left(k-1\right)}
+\]
+
+\end_inset
+
+ופעמיים
+\begin_inset Formula 
+\[
+y''=k\left(k-1\right)x^{k-2}
+\]
+
+\end_inset
+
+ואפילו 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים:
+\begin_inset Formula 
+\[
+y^{\left(n\right)}=\cfrac{k!}{\left(k-n\right)!}x^{k-n}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $0\le n\le k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחליף את העצרת בפונקציות גמא:
+\begin_inset Formula 
+\[
+y^{\left(n\right)}=\cfrac{\Gamma\left(k+1\right)}{\Gamma\left(k-n+1\right)}x^{k-n}
+\]
+
+\end_inset
+
+נראה טיפשי, אבל להפך! ניתן כעת להגדיר נגזרות מסדר 
+\uuline on
+לא שלם
+\uuline default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+למשל
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k=1$
+\end_inset
+
+, 
+\begin_inset Formula $n=\cfrac{1}{2}$
+\end_inset
+
+ נקבל נחזרת "חצי פעם"
+\begin_inset Formula 
+\[
+y=x^{1}=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y^{\left(\frac{1}{2}\right)}=\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}=\cfrac{\Gamma\left(2\right)}{\Gamma\left(\cfrac{3}{2}\right)=\Gamma\left(\cfrac{1}{2}+1\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1!}{\cfrac{1}{2}\Gamma\left(\cfrac{1}{2}\right)}\sqrt{x}=\cfrac{1}{\cfrac{\sqrt{\pi}}{2}}\sqrt{x}=\cfrac{2}{\sqrt{\pi}}\sqrt{x}
+\]
+
+\end_inset
+
+נגזור עוד חצי פעם:
+\begin_inset Formula 
+\[
+\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}x=\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}\cfrac{2}{\sqrt{\pi}}x^{\frac{1}{2}}=\cfrac{2}{\sqrt{\pi}}\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}x^{\frac{1}{2}}=\cfrac{2}{\sqrt{\pi}}\cfrac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}x^{\frac{1}{2}}=\cfrac{2}{\sqrt{\pi}}\frac{\Gamma\left(\cfrac{3}{2}\right)}{\Gamma\left(\cfrac{1}{2}-\cfrac{1}{2}+1\right)}x^{\frac{1}{2}-\frac{1}{2}}=
+\]
+
+\end_inset
+
+
+\size small
+
+\begin_inset Formula 
+\[
+=\cfrac{2}{\sqrt{\pi}}\frac{\sqrt{\pi}}{2}\cdot1=1=\cfrac{d^{1}}{dx^{1}}x
+\]
+
+\end_inset
+
+קיבלנו
+\begin_inset Formula 
+\[
+\left(\cfrac{d}{dx}\right)^{\frac{1}{2}}\left(\cfrac{d}{dx}\right)^{\frac{1}{2}}x=\cfrac{d}{dx}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+בסימון אחר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{\cfrac{d}{dx}}\sqrt{\cfrac{d}{dx}}x=\sqrt{\cfrac{d}{dx}}^{2}x\Rightarrow"\sqrt{D}\sqrt{D}=D
+\]
+
+\end_inset
+
+מ-ה-מם!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננסה לגזור את הפונקציה 
+\begin_inset Formula $y=x$
+\end_inset
+
+ מינוס פעם אחת:
+\begin_inset Formula 
+\[
+\left(\cfrac{d}{dx}\right)^{-1}x=\cfrac{\Gamma\left(2\right)}{\Gamma\left(1-\left(-1\right)+1\right)}x=\cfrac{1!}{\Gamma\left(3\right)}x^{2}=\cfrac{1}{2!}x^{2}=\cfrac{x^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה יקרה אם ננסה לגזור פעמיים את 
+\begin_inset Formula $x$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\cfrac{d^{2}}{dx^{2}}\overset{?}{=}\cfrac{\Gamma\left(2\right)}{\Gamma\left(1-2+1\right)}\cdot x^{-1}=\cfrac{\Gamma\left(2\right)}{\Gamma\left(0\right)}\cdot x^{-1}
+\]
+
+\end_inset
+
+אם נפרש את 
+\begin_inset Formula $\cfrac{1}{\Gamma\left(0\right)}$
+\end_inset
+
+ בתור אפס)כי "
+\begin_inset Formula $\Gamma\left(0\right)\pm\infty$
+\end_inset
+
+"( נקבל כידוע 
+\begin_inset Formula $x''=0$
+\end_inset
+
+.
+ ובכלל, כשנתקלים בביטוי 
+\begin_inset Formula $\cfrac{1}{\Gamma\left(p\right)}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p=0,-1,-2,...$
+\end_inset
+
+ נהוג להתייחס אליו בתור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+הערה חשובה
+\end_layout
+
+\begin_layout Standard
+הענף הזה במתמטיקה של נגזרות מסדר לא שלם נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+"Fractional Calculus
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+וזה ממש לא למבחן!
+\end_layout
+
+\begin_layout Standard
+)דוגמה למד"ר מסדר שברי: 
+\begin_inset Formula $y^{\left(\pi\right)}+\sin x\cdot y^{\left(\sqrt{2}\right)}=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Part*
+פונקציות בסל
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכח מיחסי הרקורסיה לפונציות בסל)
+\lang english
+modified
+\lang hebrew
+(
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+I_{n-1}\left(x\right)+I_{n+1}\left(x\right)=\cfrac{2n}{x}I_{n}\left(x\right)\\
+I_{n-1}\left(x\right)-I_{n+1}\left(x\right)=2I_{n}'\left(x\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+ש
+\begin_inset Formula $I_{n}\left(x\right)$
+\end_inset
+
+ מקיים את משוואת בסל)
+\lang english
+modified
+\lang hebrew
+(
+\begin_inset Formula 
+\[
+x^{2}I_{n}''\left(x\right)+xI_{n}'\left(x\right)-\left(x^{2}+n^{2}\right)I_{n}\left(x\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Standard
+הפרש הרקורסיות:
+\begin_inset Formula 
+\[
+\left(1\right)\hspace{1em}2I_{n+1}\left(x\right)=2I_{n}'\left(x\right)-\cfrac{2n}{x}I_{n}\left(x\right)
+\]
+
+\end_inset
+
+נכפיל פי 
+\begin_inset Formula $\cfrac{x}{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2\right)\hspace{1em}xI_{n+1}\left(x\right)=xI_{n}'\left(x\right)-nI_{n}\left(x\right)
+\]
+
+\end_inset
+
+נגזור את 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{n+1}\left(x\right)+xI_{n+1}'\left(x\right)=I_{n}'\left(x\right)+xI_{n}''\left(x\right)-nI_{n}'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(3\right)\hspace{1em}xI_{n}''\left(x\right)+\left(1-n\right)I_{n}'\left(x\right)=xI_{n+1}'\left(x\right)+I_{n+1}\left(x\right)
+\]
+
+\end_inset
+
+נכפול שוב ב
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}I_{n}''\left(x\right)+\left(1-n\right)xI_{n}'\left(x\right)=x^{2}I_{n+1}'\left(x\right)+xI_{n+1}\left(x\right)
+\]
+
+\end_inset
+
+נוסיף 
+\begin_inset Formula $n$
+\end_inset
+
+ כפול משוואה 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(5\right)\hspace{1em}x^{2}I_{n}''\left(x\right)+xI_{n}'\left(x\right)-n^{2}I_{n}\left(x\right)=x^{2}I_{n+1}'\left(x\right)+x\left(n+1\right)I_{n+1}\left(x\right)
+\]
+
+\end_inset
+
+סכום של הרקורסיות נותן:
+\begin_inset Formula 
+\[
+2I_{n-1}\left(x\right)=\cfrac{2n}{x}I_{n}\left(x\right)+2I_{n}'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(6\right)\hspace{1em}I_{n-1}\left(x\right)=\cfrac{n}{x}I_{n}\left(x\right)+I_{n}'\left(x\right)
+\]
+
+\end_inset
+
+מכפילים ע"י 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(7\right)\hspace{1em}xI_{n-1}\left(x\right)=nI_{n}\left(x\right)+xI_{n}'\left(x\right)
+\]
+
+\end_inset
+
+נחליף 
+\begin_inset Formula $n-1\to n$
+\end_inset
+
+)נקדם את 
+\begin_inset Formula $n$
+\end_inset
+
+ ב
+\numeric on
+1
+\numeric off
+(:
+\begin_inset Formula 
+\[
+\left(8\right)\hspace{1em}xI_{n}\left(x\right)=\left(n+1\right)I_{n+1}\left(x\right)+xI_{n+1}'\left(x\right)
+\]
+
+\end_inset
+
+צד ימין של 
+\begin_inset Formula $\left(5\right)$
+\end_inset
+
+ שווה ל
+\begin_inset Formula $x$
+\end_inset
+
+ כפול צד ימין של 
+\begin_inset Formula $\left(8\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}I_{n}''\left(x\right)+xI_{n}'\left(x\right)-n^{2}I_{n}\left(x\right)=x\cdot xI_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}I''_{n}\left(x\right)+xI_{n}'\left(x\right)-\left(x^{2}+n^{2}\right)I_{n}\left(x\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תרגיל
+\end_layout
+
+\begin_layout Standard
+הוכח את יחסי הרקורסיה לפונציות בסל)
+\lang english
+modified
+\lang hebrew
+( מהייצוג האינטגרלי של פונקציות בסל:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+n\in\mathbb{Z}\\
+x>0
+\end{array}\qquad I_{n}\left(x\right)=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cdot\cos\theta}\cdot\cos n\theta\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הנוסחה הראשונה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{n-1}\left(x\right)+I_{n+1}\left(x\right)=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos\left[\left(n-1\right)\theta\right]\mathrm{\, d}\theta+\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos\left(\left(n+1\right)\theta\right)\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\left\{ \cos\left[\left(n-1\right)\theta\right]+\cos\left[\left(n+1\right)\theta\right]\right\} \mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cdot2\cdot\cos n\theta\cdot\cos\left(-\theta\right)\mathrm{\, d}\theta=...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\cos\alpha+\cos\beta=2\cos\cfrac{\alpha+\beta}{2}\cos\cfrac{\alpha-\beta}{2}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...=\cfrac{2}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cdot\cos n\theta\cdot\cos\theta\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{2}{\pi}\int_{0}^{\pi}\cfrac{d}{dx}\left[e^{x\cos\theta}\cdot\cos\theta\right]\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{2}{\pi}\cfrac{d}{dx}\int_{0}^{\pi}e^{x\cos\theta}\cos n\theta\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\cdot\cfrac{d}{dx}\left[\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos n\theta\mathrm{\, d}\theta\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2\cfrac{d}{dx}I_{n}\left(x\right)=2I_{n}'\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחת הנוסחה השנייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{n-1}\left(x\right)-I_{n+1}\left(x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos\left[\left(n-1\right)\theta\right]\mathrm{\, d}\theta-\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos\left[\left(n+1\right)\theta\right]\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\left\{ \cos\left[\left(n-1\right)\theta\right]\right\} \mathrm{\, d}\theta=...
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\cos\alpha-\cos\beta=-2\sin\left(\cfrac{\alpha+\beta}{2}\right)\sin\left(\cfrac{\alpha-\beta}{2}\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+...=\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\left(-2\right)\sin n\theta\cdot\sin\left(-\theta\right)\mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cfrac{2}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cdot\sin n\theta\cdot\sin\theta\mathrm{\, d}\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חישוב עזר:
+\begin_inset Formula 
+\[
+\cfrac{d}{d\theta}\left[e^{x\cos\theta}\cdot\sin n\theta\right]=-x\sin\theta\cdot e^{x\cos\theta}\cdot\sin n\theta+ne^{x\cos\theta\cdot\cos n\theta}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow-\cfrac{1}{x}\cdot\cfrac{d}{d\theta}\left[e^{x\cos\theta}\cdot\sin n\theta\right]=e^{x\cos\theta}\cdot\sin n\theta\cdot\sin\theta-\cfrac{n}{x}e^{x\cos\theta}\cdot\cos n\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חזרה להוכחה:
+\begin_inset Formula 
+\[
+\Rightarrow=2\pi\int_{0}^{\pi}\left\{ -\cfrac{1}{x}\cdot\cfrac{d}{d\theta}\left[e^{x\cos\theta}\cdot\sin n\theta\right]+\cfrac{n}{x}e^{x\cos\theta}\cdot\cos n\theta\right\} \mathrm{\, d}\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\cfrac{2}{\pi x}\int_{0}^{\pi}\cfrac{d}{d\theta}\left[e^{x\cos\theta}\sin n\theta\right]d\theta=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=+\cfrac{2n}{x}\cdot\overbrace{\cfrac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cdot\cos n\theta\mathrm{\, d}\theta}^{I_{n}\left(x\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left.\cfrac{-2}{\pi x}e^{x\cos\theta}\cdot\sin n\theta\right|_{\theta=0}^{\theta=\pi}+\cfrac{2n}{x}\cdot I_{n}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,670 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מבוא לתורת המשחקים
+\\
+\selectlanguage{english}
+89-617-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-11-01
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+ניתוח באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+normal form game
+\end_layout
+
+\begin_layout Standard
+מציירים מטריצה כאשר השורות מייצגות שחקן אחד והעמודות מייצגות שחקן אחר)אם
+ יש עוד שחקנים צריך לצייר עוד מטריצות בשביל לייצג עוד צירים(.
+ כדי למצוא שיווי משקל נאש, צריך למצוא תאים שבהם לכל אחד מהשחקנים, הזזה על
+ פני הציר של השחקן)= שינוי באסטרטגיה( לא יניב תוצאה טובה יותר עבור אותו
+ שחקן.
+\end_layout
+
+\begin_layout Section*
+שינוי המשחק ע"י הורדת אופציות מהשולחן
+\end_layout
+
+\begin_layout Standard
+לפעמים משנים את המשחק על ידי הורדת אופציות, ובכך משנים את שיווי המשקל ובעצם
+ מתחייבים לאופציות מסויימות, ובכך מכריחים את השחקן השני לבחור באופציה שבמשחק
+ המקורי לא אופטימלית עבורו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרים כאלה, ניתן להשתמש ב
+\emph on
+אסטרטגיות
+\emph default
+ 
+\emph on
+מעורבות
+\end_layout
+
+\begin_layout Part*
+אסטרטגיות מעורבות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון: להכניס מרכיב הסתברותי לאסטרטגיה, ובכך ליצור אפשרויות חדשות במשחק,
+ כאלה שיותר מתאימות לנו.
+\end_layout
+
+\begin_layout Standard
+הגדרה פורמלית - אסטרטגיה 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ עבור שחקן 
+\begin_inset Formula $i$
+\end_inset
+
+ תהיה פונקציית ההסתברות המוגדרת על הפעולות השונות ב
+\begin_inset Formula $A_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אסטרטגיה: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טהורה: ישנה רק פעולה אחת שמקבלת הסתברות חיובית)שווה ל
+\numeric on
+1
+\numeric off
+( ושאר הפעולות מקבלות הסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מעורבת: יש יותר מפעולה אחת שמקבלת הסתברות חיובית)עדיין יכולות להיות פעולות
+ שמקבלות הסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הפעולות המקבלות הסתברות חיובית באסטרטגיה מעורבת נקראות ה
+\lang english
+support
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של האסטרטגיה המעורבת.
+\end_layout
+
+\begin_layout Standard
+נגדיר מחדש:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ - כל האסטרטגיות האפשריות של 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S$
+\end_inset
+
+ - כל הפרופילים האפשריים - 
+\begin_inset Formula $S=S_{1}\times S_{2}\times\dots\times S_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ניתוח משחק עם אסטרטגיות מעורבות
+\end_layout
+
+\begin_layout Standard
+כבר אי אפשר להתייחס לתאים כבודדים - צריך לחשב את התוחלת של כל תא לפי סט
+ האסטרטגיות המעורבות של השחקנים השונים:
+\begin_inset Formula 
+\[
+u_{i}\left(x\right)=\sum_{a\in A}u_{i}\left(a\right)\Pr\left(a\middle|s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Pr\left(a\middle|s\right)=\prod_{j\in N}s_{j}\left(a_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שינוי הגדרות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+best response
+\end_layout
+
+\begin_layout Itemize
+אסטרטגיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+best response
+\lang hebrew
+)בניגוד לפעולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+best response
+\lang hebrew
+(:
+\begin_inset Formula 
+\[
+s_{i}^{*}\in\mbox{BR}\left(s_{-i}\right)\iff\forall_{s_{i}\in S_{i}}u_{i}\left(s_{i}^{*},s_{-i}\right)\ge u_{i}\left(s_{i},s_{-i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שיווי משקל נאש)שוב - גם כאן מדובר על אסטרטגיה, לא פעולה(:
+\begin_inset Formula 
+\[
+s=\left\langle s_{1},\dots s_{n}\right\rangle \mbox{ is a Nash Equilibrium}\iff\forall_{i}s_{i}\in\mbox{BR}\left(s_{-i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפט נאש
+\end_layout
+
+\begin_layout Standard
+לכל משחק סופי יש שיווי משקל נאש
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נאש לא קרא לזה "שיווי משקל נאש" - יש סוברים ששיווי משקל נאש נקרא על שם המשפט
+ הזה
+\end_layout
+
+\end_inset
+
+)או שיווי משקל באסטרטגיות טהורות או שיווי משקל באסטרטגיות מעורבות(.
+\end_layout
+
+\begin_layout Standard
+מה זאת אומרת "משחק סופי"?
+\end_layout
+
+\begin_layout Itemize
+מספר שחקנים סופי
+\end_layout
+
+\begin_layout Itemize
+מספר הפעולות של כל שחקן סופי
+\end_layout
+
+\begin_layout Section*
+חישוב שיווי משקל נאש עבור אסטרטגיות מעורבות
+\end_layout
+
+\begin_layout Standard
+באופן כללי, חישוב משקל נאש עבור אסטרטגיות מעורבות מאוד קשה כי יש המון קומבינציות
+ של אפשרויות.
+ אבל אם אנחנו יודעים מה ה
+\lang english
+support
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה נעשה הרבה יותר קל:
+\end_layout
+
+\begin_layout Standard
+נרצה לבחור 
+\begin_inset Formula $p$
+\end_inset
+
+ כך שהשחקן השני יהיה אדיש כלפי האפשרויות ב
+\lang english
+support
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו, כדי שהוא לא ירצה לסטות.
+ למשל במשחק מלחמת המינים:
+\begin_inset Formula 
+\[
+u_{\mbox{ROW}}\left(\mbox{Boxing}\middle|\left(p,1-p\right)\right)=u_{\mbox{ROW}}\left(\mbox{Shopping}\middle|\left(p,1-p\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2p+0\left(1-p\right)=0p+1\left(1-p\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+במציאות זה יותר מסובך
+\end_layout
+
+\begin_layout Standard
+למשל במשחק כדורגל, הבועט צריך לבחור אם לבעוט ימינה או שמאלה והשוער צריך
+ לבחור אם לקפוץ ימינה או שמאלה.
+ אבל מה אם, נגיד, הבועט חלק יותר בבעיטה ימינה, ומפספס ב
+\begin_inset Formula $25\%$
+\end_inset
+
+ מהמקרים.
+\end_layout
+
+\begin_layout Standard
+לאן השוער צריך לקפוץ? לקפוץ יותר שמאלה כי אם הבועט בועט ימינה הוא יכול לפספס?
+ לקפוץ יותר ימינה כי הבועט יכול להעריך שהשוער יקפוץ ימינה?
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא להשיג אדישות - השוער צריך לבחור סיכויים כך שהבועט יישאר אדיש,
+ לא ירצה לסטות:
+\begin_inset Formula 
+\[
+\left(1-p\right)\cdot1=p\cdot0.75
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\frac{1}{1.75}=\frac{4}{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואותו דבר עם הבועט:
+\begin_inset Formula 
+\[
+p+0.25\cdot\left(1-p\right)=1-p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\frac{3}{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר השוער יקפוץ יותר לשמאל, והבועט יבעט יותר לצד החלש שלו - ימינה
+\end_layout
+
+\end_body
+\end_document

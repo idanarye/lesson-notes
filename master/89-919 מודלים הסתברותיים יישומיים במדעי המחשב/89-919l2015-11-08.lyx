@@ -1,0 +1,841 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-11-08
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+התפלגות מולטינומית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multinomial
+\end_layout
+
+\begin_layout Standard
+משתנה 
+\begin_inset Formula $X$
+\end_inset
+
+ שמקבל 
+\begin_inset Formula $m$
+\end_inset
+
+ ערכים שונים 
+\begin_inset Formula $x_{1},\dots x_{i},\dots x_{m}$
+\end_inset
+
+, כל ערך 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum\limits _{i=1}^{m}p_{i}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+נוסחת הסתברות למולטינום:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ דגימות ממולטינום, ההסתברות לקבלת 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ דגימות מכל ערך 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ נקבעת לפי הנוסחה:
+\begin_inset Formula 
+\[
+p_{n}\left(k_{1},k_{2},\dots k_{m}\right)=\frac{n!}{k_{1}!\cdots k_{m}!}\cdot p_{1}^{k_{1}}\cdots p_{m}^{k_{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתעניין בכל פעם בערך יחיד של המשתנה, ניתן להסתכל עליו כמשתנה בינומי כשהערך
+ המבוקש נחשב הצלחה, אחרת כישלון.
+\end_layout
+
+\begin_layout Subsubsection*
+אומדן
+\begin_inset space ~
+\end_inset
+
+
+\lang english
+ML
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{i}=p\left(x_{i}\right)=\frac{k_{i}}{n}
+\]
+
+\end_inset
+
+לפי 
+\begin_inset Formula $n$
+\end_inset
+
+ דגימות
+\end_layout
+
+\begin_layout Subsubsection*
+תוחלת מספר הפעמים לקבלת ערך 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ב
+\begin_inset Formula $n$
+\end_inset
+
+ דגימות:
+\end_layout
+
+\begin_layout Standard
+כמו בבינום: 
+\begin_inset Formula $n\cdot p_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מודל שפה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Language Model
+\end_layout
+
+\begin_layout Subsubsection*
+התופעה שרוצים למדל:
+\end_layout
+
+\begin_layout Standard
+יצירה של רצפים של סימנים מתוך אוסף דיסקרטי של סימנים אפשריים.
+\end_layout
+
+\begin_layout Subsubsection*
+מבט גנרטיבי:
+\end_layout
+
+\begin_layout Standard
+יש מקור שמייצר את רצף הסימנים לפי מודל הסתברותי כלשהו.
+\end_layout
+
+\begin_layout Subsubsection*
+מטרת מודל שפה הסתברותי:
+\end_layout
+
+\begin_layout Standard
+בהינתן רצף סימנים, לחשב את ההסתברות ליצירת הרצף
+\end_layout
+
+\begin_layout Subsection*
+לדוגמה:
+\end_layout
+
+\begin_layout Standard
+במערכת לזיהוי דיבור, נרצה מודל שפה שיידע לאמוד את ההתסברות של כל משפט אפשרי,
+ ובהתאם המערכת לעדיף לייצר משפטים סבירים יותר.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+פיתוח מודל שפה הסתברותי
+\end_layout
+
+\begin_layout Standard
+בהינתן דגימה של סדרת סימנים בשפה: 
+\begin_inset Formula $s=w_{1},\dots w_{n}$
+\end_inset
+
+, נרצה למדל את 
+\begin_inset Formula $p\left(w_{1},\dots w_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צעד ראשון:
+\begin_inset Formula 
+\[
+p\left(w_{1},\dots w_{n}\right)=P\left(\mbox{length}\left(s\right)=n\right)\cdot p\left(s\middle|\mbox{length}\left(s\right)=n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}P\left(\mbox{length}\left(s\right)=n\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ מקובע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{\begin{array}{c}
+w_{1},\dots w_{n}\\
+\forall_{i}w_{i}\in W
+\end{array}}p\left(w_{1},\dots w_{n}\middle|\mbox{length}=n\right)=1
+\]
+
+\end_inset
+
+)כאשר 
+\begin_inset Formula $W$
+\end_inset
+
+ - סט כל המילים האפשריות(
+\end_layout
+
+\begin_layout Subsection*
+מודול הסתברות הסדרה - נניח ש
+\begin_inset Formula $\left|s\right|=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שמספר המשפטים האפשריים מאוד מאוד גדול)
+\begin_inset Formula $\left|W\right|^{n}$
+\end_inset
+
+( - הרבה יותר גדול ממספר הדגימות שיש לנו.
+ לכן נרצה לפרק את המשפט.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w_{1},\dots w_{n}\right)=p\left(w_{1}\right)\cdot p\left(w_{2}\middle|w_{1}\right)\cdot p\left(w_{2}\middle|w_{1},w_{2}\right)\cdots p\left(w_{n}\middle|w_{1}^{n-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לקבל מודל שניתן לשערך את ההסתברויות שלו, נניח הנחות אי תלות.
+ למשל - הסתברויות המילים בסדרה אינן תלויות אחת בשנייה:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mbox{assuming}\\
+\mbox{independence}
+\end{array}=p\left(w_{1}\right)\cdot p\left(w_{2}\right)\cdots p\left(w_{n}\right)=\prod_{i=1}^{n}p\left(w_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו מודל מולטינומי, עם 
+\begin_inset Formula $\left|W\right|$
+\end_inset
+
+ ערכים אפשריים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המודל
+\begin_inset space ~
+\end_inset
+
+הגנרטיבי: בכל מקום 
+\begin_inset Formula $i$
+\end_inset
+
+, מגרילים מילה 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $p\left(w_{i}\right)$
+\end_inset
+
+: 
+\begin_inset Formula $p_{ML}\left(w\right)=\frac{\mbox{freq}\left(w\right)}{N}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $N$
+\end_inset
+
+ - גודל המדגם(
+\end_layout
+
+\begin_layout Section*
+דוגמאות לשימושים
+\end_layout
+
+\begin_layout Itemize
+סיווג מאמרים - למשל אם מקבלים מסמך 
+\begin_inset Formula $d$
+\end_inset
+
+, וידוע לנו ההסתברות של מילים 
+\begin_inset Formula $w\in W$
+\end_inset
+
+ להימצא במאמר ספורט 
+\begin_inset Formula $p^{S}\left(w\right)$
+\end_inset
+
+ ומה ההסתברות שלה להימצא במאמר משפטי 
+\begin_inset Formula $p^{L}\left(w\right)$
+\end_inset
+
+, ואז אם 
+\begin_inset Formula $p^{L}\left(d\right)>p^{S}\left(d\right)$
+\end_inset
+
+ נסווג את המאמר בתור מאמר משפטי ולא בתור מאמר ספורט.
+\end_layout
+
+\begin_layout Itemize
+זיהוי דיבור - אם יש שתי היפותזות לגבי מה שהמשתמש אמר, נעדיף את היפותזה א'
+ על פני ב' אם 
+\begin_inset Formula $P^{*}\left(\aleph\right)>P^{*}\left(\beth\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+המודל המולטינומי הוא לא האפשרות היחידה.
+ נראה כעת מודל אחר)נראה אותו תחת הדוגמה של סיווג מסמכים(:
+\end_layout
+
+\begin_layout Section*
+דוגמה למודל עבור קבוצות)סט( מילים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: בקבוצה אין חזרות ואין חשיבות לסדר.
+ במודל המולטינומי, אמנם כאשר מניחים אי תלות אין חשיבות לסדר - אבל עדיין
+ יש חשיבות לחזרות.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Multiple Bernouli
+\end_layout
+
+\begin_layout Standard
+כדי למדל קבוצת סימנים שנצפתה)למשל - קבוצת המילים שהופיעה במסמך לצורך סיווג
+ טקסטים(, נתייחס ליצירת הקבוצה כדגימה ממספר משתני ברנולי: לכל מילה אפשרית
+ בשפה 
+\begin_inset Formula $w\in W$
+\end_inset
+
+ נגדיר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+ ההסתברות שהמילה תופיע במסמך אקראי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ובהתאם - 
+\begin_inset Formula $1-p\left(w\right)$
+\end_inset
+
+ - ההסתברות שלא תופיע
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+תהליך היצירה: לכל מילה במילון, נגריל לפי הסתברות 
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+ באם לכלול אותה במסמך.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $d$
+\end_inset
+
+ מסמך אקראי: 
+\begin_inset Formula $d\subseteq W$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p\left(d\right)=\prod_{w\in d}p\left(w\right)\cdot\prod_{w\notin d}\left(1-p\left(w\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: אפשר להסתכל על תת קבוצה 
+\begin_inset Formula $d$
+\end_inset
+
+ כוקטור בינרי באורך 
+\begin_inset Formula $\left|W\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אומדן 
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w\right)=\frac{\mbox{number of documents containing \ensuremath{w}}}{\mbox{number of ducuments in the sampling}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשווה לעומת המודל המולטינומי, שבו
+\begin_inset Formula 
+\[
+p\left(w\right)=\frac{\mbox{number of occurences of \ensuremath{w} in all the texts}}{\mbox{number of occurences of all the words in all the texts}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ראוי לציין
+\end_layout
+
+\begin_layout Standard
+בדרך כלל כשרוצים למדל שפה טבעית, עדיף להשתמש במודל מולטינומי כי יש חשיבות
+ לשכיחות של המילים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הקדמה לשיעור הבא - מידול רצפי סימנים ע"י מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+n-gram
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיצה: מניחים שההסתברות של מילה מושפעת מהמילים לפניה - אבל לא יותר מדי,
+ מטעמי גודל מדגם ומטעמי חישוביות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+טעם נוסף זה שככל שהולכים יותר אחורה מאבדים הקשר - אבל בדרך כלל מגיעים למגבלה
+ הטכנית הרבה לפני שזה קורה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המודל המולטינומי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w_{1},\dots w_{n}\right)=p\left(w_{1}\right)p\left(w_{2}\middle|w_{1}\right)\cdots p\left(w_{n}\middle|w_{1},\dots w_{n-1}\right)
+\]
+
+\end_inset
+
+ולאחר הנחות אי תלות מקבלים מודל יוניגרם:
+\begin_inset Formula 
+\[
+p\left(w_{1}\right)p\left(w_{2}\right)\cdots p\left(w_{n}\right)
+\]
+
+\end_inset
+
+מודל ביגרם:
+\begin_inset Formula 
+\[
+p\left(w_{1}\right)p\left(w_{2}\middle|w_{1}\right)p\left(w_{3}\middle|w_{2}\right)\cdots p\left(w_{n}\middle|w_{n-1}\right)
+\]
+
+\end_inset
+
+מודל טריגרם:
+\begin_inset Formula 
+\[
+p\left(w_{1}\right)p\left(w_{2}\middle|w_{1}\right)p\left(w_{3}\middle|w_{1},w_{2}\right)\cdots p\left(w_{n}\middle|w_{n-2},w_{n-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ההנחות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יוניגרם 
+\begin_inset Formula $p\left(w_{i}\middle|w_{1},\dots w_{i-1}\right)=p\left(w_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ביגרם 
+\begin_inset Formula $p\left(w_{i}\middle|w_{1},\dots w_{i-1}\right)=p\left(w_{i}\middle|w_{i-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טריגרם 
+\begin_inset Formula $p\left(w_{i}\middle|w_{1},\dots w_{i-1}\right)=p\left(w_{i}\middle|w_{i-2},w_{i-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+n
+\lang hebrew
+-גרם 
+\begin_inset Formula $p\left(w_{i}\middle|w_{1},\dots w_{i-1}\right)=p\left(w_{i}\middle|w_{i-n+1},\dots w_{i-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

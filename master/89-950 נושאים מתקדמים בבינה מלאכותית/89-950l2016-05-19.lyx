@@ -1,0 +1,1411 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+נושאים מתקדמים בבינה מלאכותית
+\\
+\selectlanguage{english}
+89-950-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' שרית קראוס}
+\\
+\textbf{תאריך:}
+\beginL
+2016-05-19
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+למידה עמוקה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deep Learning
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת יש לנו שני סוגים מרכזיים של למידה מדוגמאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Supervised Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- דוגמאות מתוייגות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Unsupervised Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- דוגמאות לא מתוייגות
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Machine Learning
+\lang hebrew
+, בסופו של דבר, לומד פונקציה 
+\begin_inset Formula $g\left(\vec{x}\right)$
+\end_inset
+
+ שמקבלת ווקטור ומחזירה ערך)בדיד או רציף(.
+ אם היינו יכולים לכתוב את הפונקציה בצורה מפורשת היינו עושים את זה)בדרך כלל
+ ע"י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Decision Tree
+\lang hebrew
+(, אבל בהרבה מקרים זה לא עובד - המומחים לא מצליחים לתאר בצורה מפורשת את
+ הפונקציה, לא יודעים לכתוב את עץ ההחלטות בצורה טובה, אבל אנשים כן יודעים
+ לתת דוגמאות, ולכן מנסים ללמוד את הפונקציה מתוך הדוגמאות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+למידה עמוקה מאוד טובה בתמונות
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+היו גם נסיונות מוצלחים להשתמש ב
+\lang english
+Deep Learning
+\lang hebrew
+ בשביל לשחק גו - למרות ששם היתה הרכבה של הרבה שיטות.
+\end_layout
+
+\end_inset
+
+, ומצליחה ללמוד באמצעות פחות דוגמאות משיטות אחרות)למרות שעדיין צריך כמות
+ מאוד גדולה של דוגמאות והרבה כוח חישוב(.
+ היא טובה גם בדיבור.
+\end_layout
+
+\begin_layout Standard
+למידה עמוקה לא מצליחה בטקסט.
+\end_layout
+
+\begin_layout Section*
+מה זה בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deep Learning
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Standard
+למידה עמוקה משתמשת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\lang english
+Neural Network
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם הרבה שכבות חבויות)
+\lang english
+hidden layers
+\lang hebrew
+(.
+ אלגוריתמים קודמים)
+\lang english
+back propogation
+\lang hebrew
+( לא הצליחו להתכנס עם יותר מ
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכבות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: יחידת חישוב ברשת ניורונית מקבלת כמה קלטים)משכבת הקלט או משכבות חבויות
+ קודמות( ומחשבת סכום משוקלל שלהם.
+ את הערך הסופי מכניסים לפונקציית הסיגמואיד 
+\begin_inset Formula $f\left(x\right)=\frac{1}{1+e^{-x}}$
+\end_inset
+
+, שנותנת ערכים פחות-או-יותר דיסקרטים והיא גזירה)ולכן אפשר לכנס את הרשת(.
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שהרבה פעמים הלמידה לא מתכנסת.
+ אחת הסיבות היא שכשעושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+back propogation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קשה לדעת מה מקור הטעות, איזה משקלים צריך לעדכן.
+\end_layout
+
+\begin_layout Standard
+בלמידה עמוקה משתמשים ב
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לא-מונוטונית, שמסוגלת לחלק את הדוגמאות בצורה יותר חופשית.
+\end_layout
+
+\begin_layout Standard
+)יש גם אלגוריתם בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SVM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמשתמש ב
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לינארית אבל מבצע הטלה של הדוגמאות על מרחב אחר כדי שיהיה אפשר לעשות חלוקה
+ לינארית(.
+\end_layout
+
+\begin_layout Subsection*
+למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+multilayers
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובד?
+\end_layout
+
+\begin_layout Standard
+כאשר ניסו לנתח רשת ניורונית שלמדה לזהות כתב, גילו שהשכבות הפנימיות מתחלקות
+ ל
+\lang english
+node
+\lang hebrew
+ים, כאשר כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+node
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למד אזור מסויים של תמונת הקלט, והשכבות הבאות שילבו את המידע הזה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+אז מה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deep Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עושה?
+\end_layout
+
+\begin_layout Itemize
+משתמש במליוני דוגמאות)ודורש כוח חישוב עצום(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ משתמש בפונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Relu
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במקום בסיגמואיד.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Relu
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עושה 
+\begin_inset Formula $\max\left(x,0\right)$
+\end_inset
+
+.
+ היא פחות טובה לגזירה אבל יותר להתכנסות.
+\end_layout
+
+\begin_layout Itemize
+בכל פעם שהרשת לומדת, היא מכבה באופן רנדומלי 
+\begin_inset Formula $50\%$
+\end_inset
+
+ מכל שכבה)לא מאפשרים להם להשתנות(.
+ זה מונע מהמערכת ללמוד את עצמה)במקום את הדוגמאות(.
+\end_layout
+
+\begin_layout Itemize
+שיטה שלא כולם משתמשים בה - 
+\lang english
+autoencoding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אימון כל שכבה בנפרד)במקום כל השכבות בבת אחת(:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ה
+\lang english
+input layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה
+\lang english
+output layer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריכים להיות באותו גודל.
+\end_layout
+
+\begin_layout Enumerate
+בונים שכבה חבויה אחת שיותר קטנה ברוחב מהרמה שאליה נכנסנו.
+\end_layout
+
+\begin_layout Enumerate
+מצפים שהערכים יהיו אותו דבר.
+ זה אומר שהשכבה החבויה הצרה יותר תמצא אוטומטית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+features
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמתארים את הנתונים:
+\begin_inset Formula 
+\[
+\xymatrix{\textnormal{output} & *++[o][F]{} & *++[o][F]{} & *++[o][F]{} & *++[o][F]{}\\
+\textnormal{hidden} &  & *++[o][F]{}\ar[lu]\ar[u]\ar[ru]\ar[rru] & *++[o][F]{}\ar[llu]\ar[lu]\ar[u]\ar[ru]\\
+\textnormal{input} & *++[o][F]{}\ar[ru]\ar[rru] & *++[o][F]{}\ar[u]\ar[ru] & *++[o][F]{}\ar[lu]\ar[u] & *++[o][F]{}\ar[llu]\ar[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+תורת המשחקים - מה קורה כשיש יריב?
+\end_layout
+
+\begin_layout Standard
+המשחקים שלמדנו בעבר היו משני סוגים, שניהם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+full information
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Itemize
+משחקים שמיוצגים באמצעות מטריצות)
+\lang english
+Normal Form Games
+\lang hebrew
+(, שחקן אחד על השורות והשני על העמודות, וכל אחד בוחר פעולה והתא במטריצה
+ מייצג את התמורה של שניהם.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאן בכל שלב ידענו מה מצב העולם, אבל היה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+imperfect information
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי לא ידענו מה השחקן השני הולך לעשות.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+משחקים שניתן לייצג באמצעות עץ - 
+\lang english
+perfect information
+\lang hebrew
+.
+ למשל שח.
+ מצב העולם ידוע - יודעים מה השחקן השני עשה קודם.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Incomplete Information
+\end_layout
+
+\begin_layout Standard
+מה קורה אם אין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+full information
+\lang hebrew
+? יכול להיות שאנחנו לא יודעים באיזה משחק אנחנו משחקים - יש הסתברות לגבי
+ התמורות.
+\end_layout
+
+\begin_layout Standard
+את המשחקים האלה אפשר לתאר באמצעות גרף, כאשר קודקוד בגרף הוא נקודת החלטה
+ של אחד השחקנים:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & *++[o][F]{1}\ar[lld]_{A}\ar[rrd]^{B}\\
+ & *++[o][F]{2}\ar[ld]_{a}\ar[rd]^{b} &  &  &  & *++[o][F]{2}\ar[ld]_{a}\ar[rd]^{b}\\
+\left(3,3\right) &  & \left(0,0\right) &  & \left(1,1\right) &  & \left(0,0\right)
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לגרף הזה מוסיפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+information sets
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- קבוצות של קודקודים שהשחקן לא יודע באיזה מהם הוא נמצא - וככה אפשר לתאר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+imperfect information
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & *++[o][F]{1}\ar[lld]_{A}\ar[rrd]^{B}\\
+ & *++[o][F]{2}\ar[ld]_{a}\ar[rd]^{b}\ar@{--}[rrrr] &  &  &  & *++[o][F]{2}\ar[ld]_{a}\ar[rd]^{b}\\
+\left(3,3\right) &  & \left(0,0\right) &  & \left(1,1\right) &  & \left(0,0\right)
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לתאר הסתברות מוסיפים שחקן חדש - 
+\begin_inset Formula $N$
+\end_inset
+
+)טבע - 
+\lang english
+Nature
+\lang hebrew
+(:
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & *++[o][F]{N}\ar[lld]_{70\%}\ar[rrd]^{30\%}\\
+ & *++[o][F]{\textnormal{rain}}\ar[ld]_{\textnormal{umbrella}}\ar[rd]^{\textnormal{no umbrella}} &  &  &  & *+++[o][F]{\textnormal{no rain}}\ar[ld]_{\textnormal{umbrella}}\ar[rd]^{\textnormal{no umbrella}}\\
+\, &  & \, &  & \, &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+אם אנחנו לא יודעים מה הטבע בחר - אז צריך להוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+information set
+\lang hebrew
+, ואז יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+incomplete information
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & *++[o][F]{N}\ar[lld]_{70\%}\ar[rrd]^{30\%}\\
+ & *++[o][F]{\textnormal{rain}}\ar[ld]_{\textnormal{umbrella}}\ar[rd]^{\textnormal{no umbrella}}\ar@{--}[rrrr] &  &  &  & *+++[o][F]{\textnormal{no rain}}\ar[ld]_{\textnormal{umbrella}}\ar[rd]^{\textnormal{no umbrella}}\\
+\, &  & \, &  & \, &  & \,
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

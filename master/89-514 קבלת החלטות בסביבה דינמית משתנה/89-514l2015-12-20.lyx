@@ -1,0 +1,1774 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+קבלת החלטות בסביבה דינמית משתנה
+\\
+\selectlanguage{english}
+89-514-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-12-20
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+רשתות בייסיאניות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bayesian Networks
+\end_layout
+
+\begin_layout Standard
+רשת בייסיאנית היא מודל פורמלי שעוזר לחזק או להחליש השערות בהתאם לכל מיני
+ נתונים בוליאנים.
+\end_layout
+
+\begin_layout Section*
+התסברות מותנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(A=\mbox{true}\middle|B=\mbox{true}\right)$
+\end_inset
+
+ - מתוך סט המצבים האפשריים שבהם 
+\begin_inset Formula $B$
+\end_inset
+
+ מקבל ערך 
+\begin_inset Formula $\mbox{true}$
+\end_inset
+
+, בכמה גם 
+\begin_inset Formula $A$
+\end_inset
+
+ מקבל ערך 
+\begin_inset Formula $\mbox{true}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נרשום: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+"ההסתברות של 
+\begin_inset Formula $A$
+\end_inset
+
+ המותנית ב
+\begin_inset Formula $B$
+\end_inset
+
+"
+\end_layout
+
+\begin_layout Itemize
+"ההסתברות של 
+\begin_inset Formula $A$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $B$
+\end_inset
+
+"
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $H$
+\end_inset
+
+ כאב ראש 
+\begin_inset Formula $P\left(H=\mbox{true}\right)=\frac{1}{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F$
+\end_inset
+
+ התחלה של שפעת 
+\begin_inset Formula $P\left(F=\mbox{true}\right)=\frac{1}{40}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם חלית בשפעת, הסיכוי שיהיה לך כאב ראש יותר גבוה - 
+\begin_inset Formula $P\left(H=\mbox{true}\middle|F=\mbox{true}\right)=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Joint Probability Distribution
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+joint probability
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדרת על סט של משתנים - למשל 
+\begin_inset Formula $P\left(A=\mbox{true},B=\mbox{true},C=\mbox{true}\right)$
+\end_inset
+
+.
+ ניתן לקבוע הסתברות לכל קומבינציה של ערכים - ו
+\bar under
+הסכום של ההסתברויות של חייב להסתכם ל
+\numeric on
+1
+\numeric off
+!
+\end_layout
+
+\begin_layout Standard
+מתוך ה
+\lang english
+joint probablity distribution
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניתן לחשב את ההסתברויות המותנות.
+\end_layout
+
+\begin_layout Section*
+בעיה
+\end_layout
+
+\begin_layout Standard
+יש המון קומבינציות! אם יש 
+\begin_inset Formula $k$
+\end_inset
+
+ משתנים בוליאנים, יש 
+\begin_inset Formula $2^{k}$
+\end_inset
+
+ אפשרויות!
+\end_layout
+
+\begin_layout Standard
+הפתרון - נשתמש באי תלות
+\end_layout
+
+\begin_layout Section*
+אי תלות
+\end_layout
+
+\begin_layout Standard
+המשתנים 
+\begin_inset Formula $A,B$
+\end_inset
+
+ בלתי תלויים אם מתקיים:
+\begin_inset Formula 
+\[
+P\left(A,B\right)=P\left(A\right)\cdot P\left(B\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שקול: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $P\left(A\middle|B\right)=P\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\left(B\middle|A\right)=P\left(B\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כלומר - ידיעת 
+\begin_inset Formula $B$
+\end_inset
+
+ לא מוסיפה לנו מידע על 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם רוצים לחשב 
+\begin_inset Formula $P\left(C_{1},\dots C_{n}\right)$
+\end_inset
+
+ צריך 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ נתונים בטבלה - אבל אם ידוע ש
+\begin_inset Formula $C_{1},\dots C_{n}$
+\end_inset
+
+ בלתי תלויים אזי 
+\begin_inset Formula $P\left(C_{1},\dots C_{n}\right)=\prod\limits _{i=1}^{n}P\left(C_{i}\right)$
+\end_inset
+
+ ולכן אפשר להסתפק ב
+\begin_inset Formula $n$
+\end_inset
+
+ ערכים!
+\end_layout
+
+\begin_layout Section*
+אי תלות מותנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Conditional Independence
+\end_layout
+
+\begin_layout Standard
+המשתנים 
+\begin_inset Formula $A,B$
+\end_inset
+
+ יהיו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+conditionally independent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהינתן 
+\begin_inset Formula $C$
+\end_inset
+
+ אם מתקיים
+\begin_inset Formula 
+\[
+P\left(A,B\middle|C\right)=P\left(A\middle|C\right)\cdot P\left(B\middle|C\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שקול: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $P\left(A\middle|B,C\right)=P\left(A\middle|C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\left(B\middle|A,C\right)=P\left(B\middle|C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כלומר 
+\bar under
+אם כבר יודעים את 
+\begin_inset Formula $C$
+\end_inset
+
+
+\bar default
+, ידיעת 
+\begin_inset Formula $B$
+\end_inset
+
+ לא מוסיפה לנו מידע על 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+רשת בייסיאנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bayesian Network
+\end_layout
+
+\begin_layout Standard
+רשת בייסיאנית היא גרף כיווני לא מעגלי, שבו כל צומת היא משתנה אקראי)מאורע(.
+ לכל צומת יש טבלה שבה יש את ההסתברויות של כל משתנה בהינתן ערכי האבות 
+\begin_inset Formula $P\left(X_{i}\middle|\mbox{Parents}\left(X_{i}\right)\right)$
+\end_inset
+
+.
+ לכל ערך של אב, המצבים האפשריים של הבן צריכים להסתכם ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+התפלגות ה
+\lang english
+Joint Distribution
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ברשת בייסיאנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X_{1}=x_{1},\dots X_{n}=x_{n}\right)=\prod_{i=1}^{n}P\left(X_{i}=x_{i}\middle|\mbox{Parents}\left(X_{i}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הסקה
+\end_layout
+
+\begin_layout Standard
+השימוש ברשת בייסיאנית לצורך חישוב הסתברויות נקראית הסקה)
+\lang english
+inference
+\lang hebrew
+(, וכוללת שאילתות מסוג 
+\begin_inset Formula $P\left(X\middle|E\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $X$
+\end_inset
+
+ זה המאורע שרוצים למצוא ו
+\begin_inset Formula $E$
+\end_inset
+
+ הם ה
+\lang english
+evidence
+\lang hebrew
+, המאורעות הידועים לנו.
+ לא חייבים להכניס ל
+\begin_inset Formula $E$
+\end_inset
+
+ את כל המאורעות ברשת הבייסיאנית.
+\end_layout
+
+\begin_layout Section*
+סוגים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Evidence
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Hard Evidence
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ידוע לנו בוודאות שמאורע 
+\begin_inset Formula $X$
+\end_inset
+
+ מקבל ערך ספציפי כלשהו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Soft Evidence
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לא ידוע לנו הערך של 
+\begin_inset Formula $X$
+\end_inset
+
+, אבל אנחנו יכולים לעדכן אותו בעקבות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+evidence
+\lang hebrew
+)
+\lang english
+Hard
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Soft
+\lang hebrew
+( על מאורעות אחרים שמשפיעים עליו
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Serial Connection
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{A}\ar[r] & *++[o][F]{B}\ar[r] & *++[o][F]{C}}
+\]
+
+\end_inset
+
+ידע על 
+\begin_inset Formula $A$
+\end_inset
+
+ משפיע על 
+\begin_inset Formula $B$
+\end_inset
+
+ ולכן גם על 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ אבל אם יודעים גם את 
+\begin_inset Formula $A$
+\end_inset
+
+ וגם את 
+\begin_inset Formula $B$
+\end_inset
+
+)עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hard Evidence
+\lang hebrew
+(, אין ל
+\begin_inset Formula $A$
+\end_inset
+
+ השפעה על 
+\begin_inset Formula $C$
+\end_inset
+
+, כי ההשפעה שלו קודם עברה דרך 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Converging Connection
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{B}\ar[rd] &  & *++[o][F]{C}\ar[ld]\\
+ & *++[o][F]{A}
+}
+\]
+
+\end_inset
+
+מידע על 
+\begin_inset Formula $B$
+\end_inset
+
+ ישפיע על 
+\begin_inset Formula $C$
+\end_inset
+
+ ולהפך - אלא אם כן יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hard Evidence
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על 
+\begin_inset Formula $A$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+Explaining Away
+\begin_inset Quotes erd
+\end_inset
+
+ Evidence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{D}\ar[rd] &  & *++[o][F]{A}\ar[ld]\ar[rd]\\
+ & *++[o][F]{B} &  & *++[o][F]{C}
+}
+\]
+
+\end_inset
+
+אם יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hard Evidence
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על 
+\begin_inset Formula $B$
+\end_inset
+
+, זה משפיע על ההסתברות של שתי הסיבות ל
+\begin_inset Formula $B$
+\end_inset
+
+ - 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $D$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P\left(A\middle|B\right)=\frac{P\left(B\middle|A\right)\cdot P\left(A\right)}{P\left(B\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Matching Literature
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAS
+\lang hebrew
+)
+\lang english
+Multi Agent System
+\lang hebrew
+(.
+ כל פעם זוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Agent
+\lang hebrew
+ים מעריך אחד את השני, ואם שניהם אומרים כן - שניהם יוצאים מה
+\lang english
+MAS
+\lang hebrew
+.
+ אם לפחות אחד מהם אומר לא - שניהם ממשיכים בחיפוש.
+ יש עלות להמשך החיפוש, ואף אחד לא רוצה להמשיך לחפש עד אינסוף...
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Benfits of Limited Information
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+initial cost
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאינטרקציה עם סוכן אחר, שצריך לשלם אותה בין אם השידוך מצליח ובין אם לא,
+ אבל אחרי שמשלמים אותה יודעים מה התועלת שהשידוך יתן לנו.
+\end_layout
+
+\begin_layout Standard
+למשל 
+\begin_inset Formula $\begin{array}{rcc}
+\mbox{utility} & \in & \left\{ 0,1\right\} \\
+\mbox{initial cost} & = & 0.2
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הסיכוי הוא לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $50\%$
+\end_inset
+
+, אז צריך 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בממוצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינטרקציות כדי למצוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\mbox{utility}=1$
+\end_inset
+
+)כי צריך שגם הסוכן השני יאשר אותך(, ואז:
+\begin_inset Formula 
+\[
+\mbox{utility}=1-4\cdot0.2=0.2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מה אם לא יודעים מה ה
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאחר שמשלמים את ה
+\lang english
+initial cost
+\lang hebrew
+)למשל פוגשים את הסוכן האחר בבר עם מוזיקה רועשת ואורות עמומים(? במקרה כזה
+ התוחלת לתועלת היא 
+\begin_inset Formula $0.5$
+\end_inset
+
+, ולא שווה לנו להגיד "לא" כי אין לנו אפשרות לדעת מתי לעצור, לכן:
+\begin_inset Formula 
+\[
+\mbox{utility}=0.5-0.2=0.3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הערך של המידע הוא 
+\begin_inset Formula $-0.1$
+\end_inset
+
+! איך זה יכול להיות שהערך של המידע)
+\begin_inset Formula $VoI$
+\end_inset
+
+( שלילי?
+\end_layout
+
+\begin_layout Standard
+הערך של מידע הוא תמיד 
+\begin_inset Formula $VoI\ge0$
+\end_inset
+
+.
+ מה שקרה פה זה שנתנו את המידע 
+\bar under
+לכולם
+\bar default
+.
+ מה היה קורא אם המידע היה מסופק רק לנו?
+\end_layout
+
+\begin_layout Standard
+במקרה הזה, הסוכן השני תמיד יקבל ואילו אנחנו נקבל רק כאשר 
+\begin_inset Formula $\mbox{utility}=1$
+\end_inset
+
+.
+ במקרה הזה צריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינטרקציות, ולכן:
+\begin_inset Formula 
+\[
+\mbox{utility}=1-2\cdot0.2=0.6
+\]
+
+\end_inset
+
+וזה יותר טוב מאשר כאשר אין לאף אחד מידע.
+\end_layout
+
+\begin_layout Standard
+לעומת זאת, אם אנחנו היחידים שאין להם את המידע, מספר האינטרקציות הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן:
+\begin_inset Formula 
+\[
+\mbox{utiltiy}=0.5-2\cdot0.2=0.1
+\]
+
+\end_inset
+
+וזה פחות טוב מאשר כאשר לכולם יש מידע
+\end_layout
+
+\end_body
+\end_document

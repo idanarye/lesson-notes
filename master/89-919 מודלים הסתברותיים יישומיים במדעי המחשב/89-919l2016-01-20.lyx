@@ -1,0 +1,736 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2016-01-20
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מושגים בתורת האינפורמציה עבור שני משתנים
+\end_layout
+
+\begin_layout Standard
+בהינתן שני משתנים מקריים 
+\begin_inset Formula $X,Y$
+\end_inset
+
+, נסתכל על האנטרופיה של ההתפלגות המשותפת 
+\begin_inset Formula $p\left(X,Y\right)$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Joint Entropy
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+H\left(X,Y\right)=-\sum_{x}\sum_{y}p\left(x,y\right)\log p\left(x,y\right)=-E_{p\left(x,y\right)}\log p\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - אנטרופיה מותנית
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Conditional Entropy
+\end_layout
+
+\begin_layout Standard
+אנטרופיה מותנית היא ממוצע משוקלל של אנטרופיות 
+\begin_inset Formula $p\left(y\middle|x\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+H\left(Y\middle|X\right)=\sum_{x\in X}p\left(x\right)H\left(y\middle|X=x\right)=-\sum_{x}p\left(x\right)\sum_{y}p\left(y\middle|x\right)\log p\left(y\middle|x\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\sum_{x}\sum_{y}p\left(x,y\right)\log p\left(y\middle|x\right)=-E_{p\left(x,y\right)}\log p\left(y\middle|x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שרשור אנטרופיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Probability Chaining Rule
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $p\left(x,y\right)=p\left(x\right)p\left(y\middle|x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Entropy Chaining Rule
+\lang hebrew
+: 
+\begin_inset Formula $H\left(X,Y\right)=H\left(X\right)+H\left(Y\middle|X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה: קלה - פיתוח המשוואות
+\end_layout
+
+\begin_layout Standard
+אפשר להסתכל כהגדרה אלטנרטיבית:
+\begin_inset Formula 
+\[
+H\left(Y\middle|X\right)=H\left(X,Y\right)-H\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אינפורמציה הדדית -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mutual Information
+\end_layout
+
+\begin_layout Standard
+מוגדרת כאובדן האינפורמציה במידה ונמדל את 
+\begin_inset Formula $p\left(x,y\right)$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $p\left(x\right)p\left(y\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I\left(X;Y\right)\stackrel{{\scriptscriptstyle \triangle}}{=}D_{KL}\left[p\left(x,y\right)\middle\Vert p\left(x\right)p\left(y\right)\right]=\sum_{x}\sum_{y}p\left(x,y\right)\log\frac{p\left(x,y\right)}{p\left(x\right)p\left(y\right)}\ge0
+\]
+
+\end_inset
+
+שוויון ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ בלתי תלויים.
+\end_layout
+
+\begin_layout Itemize
+החלק 
+\begin_inset Formula $\log\frac{p\left(x,y\right)}{p\left(x\right)p\left(y\right)}$
+\end_inset
+
+ נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+point-wise MI
+\lang hebrew
+)
+\lang english
+PMI
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I\left(X;Y\right)$
+\end_inset
+
+ סימטרי, שכן:
+\begin_inset Formula 
+\[
+\log\frac{p\left(x\middle|y\right)}{p\left(x\right)}=\log\frac{p\left(y\middle|x\right)}{p\left(y\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+מבט אחר על 
+\begin_inset Formula $I$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I\left(X;Y\right)=\sum_{x,y}p\left(x,y\right)\log\frac{p\left(x,y\right)}{p\left(x\right)p\left(y\right)}=\sum_{x,y}\log\frac{p\left(x\middle|y\right)}{p\left(x\right)}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{x}\underbrace{\sum_{y}p\left(x,y\right)}_{p\left(x\right)}\log p\left(x\right)-\left(-\sum_{x,y}p\left(x,y\right)\log p\left(x\middle|y\right)\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=H\left(X\right)-H\left(x\middle|y\right)=H\left(Y\right)-H\left(Y\middle|X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שימוש באינפורמציה הדדית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $X$
+\end_inset
+
+ נושאים/קטגוריות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Y$
+\end_inset
+
+ מסמכים)תצפיות(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $p\left(x\middle|y\right)$
+\end_inset
+
+ הסתברות הסיווג של 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ ל
+\begin_inset Formula $x\in X$
+\end_inset
+
+, מוגדר לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $p\left(w_{k}\middle|x_{i}\right)$
+\end_inset
+
+ הסתברות למילה 
+\begin_inset Formula $w\in V$
+\end_inset
+
+ במסמכים מסוג 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+feature selection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לסנן חלק מהמאפיינים שמייצגים כל דוגמא לסיווג, כדי לאפשר למסווג להתמקד
+ במאפיינים האינפורמטיביים ביותר.
+\end_layout
+
+\begin_layout Section*
+מדד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Information Gain
+\end_layout
+
+\begin_layout Standard
+מיועד למדוד את האינפורמציה ההדדית בין מאפיין מסויים 
+\begin_inset Formula $f$
+\end_inset
+
+ לקטגוריה מסויימת 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר שני משתנים בינריים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $X:\left\{ x^{+},x^{-}\right\} $
+\end_inset
+
+ מציין שיוך לקטגוריה של הדוגמה לסיגווית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F:\left\{ f^{+},f^{-}\right\} $
+\end_inset
+
+ מציין את הופעת/אי-הופעת 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את ההסתברויות נאמוד ממדגם אימון מתוייג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I\left(X;F\right)=\sum_{f\in F}\sum_{x\in X}p\left(f,x\right)\log\frac{p\left(f,x\right)}{p\left(f\right)p\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+השימוש: נחשב 
+\begin_inset Formula $I\left(F,X\right)$
+\end_inset
+
+ לכל המאפיינים במדגם האימון.
+ נשאיר רק 
+\begin_inset Formula $\mbox{top-\ensuremath{k}}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mbox{top-\ensuremath{k\%}}$
+\end_inset
+
+ מאפיינים לפי ערך 
+\begin_inset Formula $I\left(F,X\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

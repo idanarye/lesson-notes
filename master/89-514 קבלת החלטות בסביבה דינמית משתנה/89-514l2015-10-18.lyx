@@ -1,0 +1,531 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+קבלת החלטות בסביבה דינמית משתנה
+\\
+\selectlanguage{english}89-514-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-10-18
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אתר הקורס: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.cs.biu.ac.il/~sarned/Courses/DM/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה - מכרז של חברת החשמל
+\end_layout
+
+\begin_layout Standard
+חברת החשמל הוציאה מכרז לקבלת הלוואה.
+ המכרז כלל נוסחא לבחירה, שבה היה משקל של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $30\%$
+\end_inset
+
+ לעמלת ההנפקות הנמוכה ביותר)ביחס לאחרים(.
+ מי שניצח במכרז היה זה שהבין את זה וקבע עמלת הנפקה אפסית.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה נוספת - אלגו-טריידינג
+\end_layout
+
+\begin_layout Standard
+החברות שיושבות על הרשת של הבורסה מסוגלות לקבל את הנתונים מהר יותר, לחשב
+ את המדדים מהר יותר ולקבל את ההחלטות מהר יותר - וכך לזכות ביתרון תחרותי.
+\end_layout
+
+\begin_layout Section*
+הרעיון המרכזי
+\end_layout
+
+\begin_layout Standard
+כיצד יכול המחשב לתמוך במצבי קבלת החלטות של בני אדם ושל מערכות)על-מנת שיקבלו
+ החלטות טובות יותר, מהר יותר, בצורה יותר אפקטיבית(?
+\end_layout
+
+\begin_layout Standard
+כדי לעצב את המערכות האלה, צריך להבין איך קבלת ההחלטות מתבצעת.
+\end_layout
+
+\begin_layout Section*
+החלטות המתקבלות ע"י מחשב
+\end_layout
+
+\begin_layout Standard
+אחת הסוגיות העיקריות במחשבים שמחליטים היא מה הרמת האוטונומיות שנותנים לתוכנה.
+\end_layout
+
+\begin_layout Standard
+לדוגמא, יש תוכנות שמשחקות פוקר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Online
+\lang hebrew
+.
+ מקציבים לו כמות כסף מסויימת, והוא משחק איתה.
+ מגדירים לו את רמת האוטונומיות לפי כמות הכסף שמותר לו לסכן בכל משחק.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Roomba
+\lang hebrew
+.
+ אחרי שקונים אחד, יושבים ומסתכלים עליו כדי לראות שהוא באמת עושה את מה שהוא
+ אמור לעשות ולא עושה נזקים.
+ בהדרגה רמת האוטונומיות שלו תגדל, כאשר הבעלים מפקחים עליו פחות.
+ לכן מי שמתכנן את ה
+\lang english
+Roomba
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדאי לו לתכנן אותו ככה שבהתחלה לא יתמקד בניקוי יעיל אלא בבניית אמון עם בני
+ האדם.
+\end_layout
+
+\begin_layout Section*
+החלטות שמתקבלות ע"י בני אדם
+\end_layout
+
+\begin_layout Itemize
+מיקסום ביצועים: איך בני אדם צריכים לקבל החלטות? מה ההחלטה שתביא תוצאה הכי
+ טובה? )החלטה נורמטיבית(
+\end_layout
+
+\begin_layout Itemize
+מיקסום שביעות רצון: איך עוזרים לאדם לקבל החלטה שהוא ירגיש איתה טוב? )החלטה
+ דיסקריפטיבית( לדוגמא - סוכן השקעות או סוכן נסיעות, שגורם לך להרגיש שהוא
+ נתן לך השקעה/כרטיס טוב עוד לפני שבדקת אם זה באמת טוב בהשוואה להיצע בשוק.
+\end_layout
+
+\begin_layout Section*
+איך מודדים? שכל מול מזל, החלטה מול תוצאה
+\end_layout
+
+\begin_layout Standard
+הרבה פעמים מודדים את ההחלטה לפי התוצאה, למרות שיכול להיות שההחלטה שקיבלנו
+ הייתה טובה ופשוט לא היה לנו מזל.
+ השאלה היא אם נחזור על ההחלטה שוב ושוב מה תהיה התוחלת.
+ גם ברצף הצלחות יש לפעמים כשלונות, והם לא בהכרח מעידים כל כך שההחלטה הייתה
+ גרועה.
+\end_layout
+
+\begin_layout Section*
+איך מחליטים?
+\end_layout
+
+\begin_layout Itemize
+רציונליות
+\end_layout
+
+\begin_layout Itemize
+אינטואיציה
+\end_layout
+
+\begin_layout Itemize
+הרגל
+\end_layout
+
+\begin_layout Section*
+הגדרה - החלטה
+\end_layout
+
+\begin_layout Quote
+בחירה בלתי הפיכה בין דרכים שונות
+\end_layout
+
+\begin_layout Standard
+באנגלית קוראים למונח "
+\lang english
+Decision Making
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ - שזהו מונח אקטיבי, לעומת המונח העברי הפאסיבי.
+\end_layout
+
+\begin_layout Section*
+גישות בקבלת החלטות
+\end_layout
+
+\begin_layout Itemize
+גישה פוזיטטיבית/דקריפטיבית - איך אנשים מחליטים בפועל
+\end_layout
+
+\begin_layout Itemize
+גישה נורמטיבית - מה הדרך הנכונה לקבלת החלטות
+\end_layout
+
+\begin_layout Standard
+בקורס הזה ניגע בעיקר בגישה הנורמטיבית.
+\end_layout
+
+\begin_layout Section*
+מידת המורכבות של תהליך קבלת ההחלטה
+\end_layout
+
+\begin_layout Itemize
+ריבוי אלטרנטיבות
+\end_layout
+
+\begin_layout Itemize
+אי וודאות באשר לתוצאות
+\end_layout
+
+\begin_layout Itemize
+מימד הזמן - הרבה פעמים נרצה לדחות את ההחלטה כדי לקבל יותר מידע
+\end_layout
+
+\begin_layout Itemize
+תגובת המתחרים
+\end_layout
+
+\begin_layout Itemize
+מספר מקבלי ההחלטה - הרבה פעמים צריך לקבל החלטה בקבוצה
+\end_layout
+
+\begin_layout Itemize
+מטרות סותרות - לא תמיד אני מבין את המטרות שלי והרבה פעמים יש מטרות סותרות
+\end_layout
+
+\begin_layout Itemize
+תוצאות לא ברורות
+\end_layout
+
+\begin_layout Itemize
+אלטרנטיבות לא ברורות - האם יש אלטרנטיבות שאנו לא מכירים
+\end_layout
+
+\begin_layout Itemize
+מטרות לא ברורות - אני לא יודע להגדיר לעצמי מה אני רוצה
+\end_layout
+
+\begin_layout Section*
+מהי בעיית החלטה?
+\end_layout
+
+\begin_layout Standard
+בעיית החלטה מאופיינת ב:
+\end_layout
+
+\begin_layout Itemize
+אלטרנטיבות - כל האפשריות שאפשר לבחור בהן, שברגע שבחרתי בהן אין דרך חזרה
+\end_layout
+
+\begin_layout Itemize
+מצבי עולם/טבע אפשריים - דברים שלא בשליטתי אבל משפיעים על התוצאות
+\end_layout
+
+\begin_layout Itemize
+תמורות ותוצאות - כמה שווה לי מה שיצא
+\end_layout
+
+\begin_layout Section*
+אסטרטגיה שולטת
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים לחפש אסטרטגיה שולטת)על אסטרטגיה אחרת( - אסטרטגיה שבכל מצב טבע
+ נותנת לפחות כמו האטסטרטגיה עליה היא שולטת.
+\end_layout
+
+\begin_layout Standard
+מה אם קיימת אסטרטגיה ששולטת על כל האחרות? במקרה כזה ההחלטה קלה - בוחרים
+ בה.
+ במציאות לרוב אין אסטרטגיה שולטת.
+\end_layout
+
+\begin_layout Section*
+קבלת החלטות ללא הסתברויות
+\end_layout
+
+\begin_layout Standard
+במציאות הרבה פעמים אין מידע לגבי ההסתברות אי אפשר לחשב תוחלת.
+ במקרה כזה יש מספר כללי החלטה עיקריים:
+\end_layout
+
+\begin_layout Itemize
+גישה אופטימיסטית - בחירת האלטרנטיבה עם התמורה המקסימלית)או העלות במינימלית(
+ מבין התמורות האפשריות.
+\end_layout
+
+\begin_layout Itemize
+גישה קונסרבטיבית - בחרית האלטרנטיבה עם התמורה המינימלית המקסימלית מבין האלטרנטיב
+ות.
+ מניחים שהגרוע מכל)בהתאם להחלטה( יקרה, ובוחרים כדי למקסם את התמורה במקרה
+ הזה.
+\end_layout
+
+\begin_layout Itemize
+גישת ה
+\lang english
+minimax regret
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- חישוב עבור כל מצב טבע מהי החרטה בכל אלטרנטיבה, ובחירת האלטרנטיבה שבה החרטה
+ המקסימלית היא מינימלית.
+ למשל - אם לקחתי מטריה ולא ירד גשם, מה החרטה שתהיה לי על זה שלקחתי למטריה.
+ כמה אני מפסיק ביחס לפעולה הכי טובה שהייתי יכול לעשות עבור מצב הטבע הזה.
+\end_layout
+
+\begin_layout Itemize
+גישת ה
+\lang english
+insufficeint reasoning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מכיוון שלא יודעים סיכויים, נותנים סיכויים שווים לכל מצבי הטבע והולכים
+ לפי התוחלת.
+ מכיוון שכל הסיכויים שווים, אפשר גם ללכת לפי הסכום.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,949 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-12-27
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+אומדן פרמטרים 
+\begin_inset Formula $\theta$
+\end_inset
+
+ של מודל חבוי ללא נתונים מתוייגים)
+\lang english
+unsupervised
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מטרה: שערוך של 
+\begin_inset Formula $\theta_{ML}$
+\end_inset
+
+, בהינתן מדגם של 
+\begin_inset Formula $N$
+\end_inset
+
+ תצפיות בלתי תלויות 
+\begin_inset Formula $y=y_{1},\dots y_{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\theta_{ML}=\underset{\theta}{\mbox{argmax}}p\left(y;\theta\right)=\underset{\theta}{\mbox{argmax}}\prod_{t=1}^{N}p\left(y_{t};\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יכולים להיות 
+\series bold
+\bar under
+המון
+\series default
+\bar default
+ פרמטרים ב
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ברוב המודלים "המעשיים" - אין פתרון אנליטי, ולכן נדרש אלגוריתם חיפוש
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+קיים אלגוריתם איטרטיבי שנקרא 
+\begin_inset Formula $EM$
+\end_inset
+
+)
+\lang english
+Expectation Maximization
+\lang hebrew
+( שמחפש בכל איטרציה ערך חדש ל
+\begin_inset Formula $\theta$
+\end_inset
+
+)אומדן ל
+\begin_inset Formula $\theta$
+\end_inset
+
+(, כך שמובטח שבכל איטרציה ערך הנראות 
+\begin_inset Formula $p\left(y;\hat{\theta}\right)$
+\end_inset
+
+ יעלה, עד התכנסות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לכן מובטחת התכנסות לנקודת מקסימום, ייתכן מקסימום לוקאלי.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם 
+\begin_inset Formula $EM$
+\end_inset
+
+ למודל עירוב היסטוגרמות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אתחול: ערך 
+\begin_inset Formula $\theta$
+\end_inset
+
+ כלשהו)רנדומית, יוניפורמית, או "ניחוש מושכל"
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+למשל - לאתחל את ההסתברות של מילה בכל הקטגוריות לפי ההסתברות שלה בלי חלוקה
+ לקטגוריות
+\end_layout
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נחזור איטרטיבית:
+\end_layout
+
+\begin_layout Enumerate
+שלב 
+\begin_inset Formula $E$
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang english
+E=Expectation
+\end_layout
+
+\end_inset
+
+: נחשב לכל מסמך 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ את 
+\begin_inset Formula $w_{ti}=p\left(x_{t}=x_{i}\middle|y_{t};\theta\right)$
+\end_inset
+
+ - ההסתברות שהמסמך שייך לקטגוריה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ניתן להסתכל על 
+\begin_inset Formula $w_{ti}$
+\end_inset
+
+ כתוחלת/הסתברות שאת הסטטיסטיות מ
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ צריך לשייך ל
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+שלב 
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang english
+M=Maximization
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p\left(x_{i}\right)=\frac{\sum\limits _{t=1}^{N}w_{ti}}{\sum\limits _{j=1}^{\left|X\right|}\sum\limits _{t=1}^{N}w_{tj}}=\frac{\sum\limits _{t=1}^{N}w_{ti}}{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיטיבית: תוחלת מניית מספר מסמכי 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מנורמל בסכום התוחלות לכל ערכי 
+\begin_inset Formula $X$
+\end_inset
+
+)=
+\begin_inset Formula $N$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w_{k}\middle|x_{i}\right)=\frac{\sum\limits _{t=1}^{N}n_{tk}\cdot w_{ti}}{\sum\limits _{\ell=1}^{V}\sum\limits _{t=1}^{N}n_{t\ell}\cdot w_{ti}}=\frac{\sum\limits _{t=1}^{N}n_{tk}\cdot w_{ti}}{\sum\limits _{t=1}^{N}w_{ti}\cdot n_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $n_{tk}$
+\end_inset
+
+ - שכיחות מילה 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ ב
+\begin_inset Formula $y_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n_{t}$
+\end_inset
+
+ - אורך מסמך 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+עצירה: כאשר 
+\begin_inset Formula $p\left(y;\theta\right)$
+\end_inset
+
+ לא עולה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לביצוע תנאי העצירה:
+\end_layout
+
+\begin_layout Itemize
+נחשב לכל איטרציה את 
+\begin_inset Formula $p\left(y;\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+)הערת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+debug
+\lang hebrew
+: נבדוק שגדל מאיטרציה קודמת(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נעצור אם שווה )פרקטית הבדל קטן( מאיטרציה קודמת )או איטרציות קודמות(
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+אי שוויון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Jensen
+\end_layout
+
+\begin_layout Standard
+זהו אי שוויון שמתקיים על פונקציות קמורות
+\end_layout
+
+\begin_layout Section*
+הגדרה - פונקציה קמורה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כשבודקים קעירות/קמירות מסתכלים על הפונקציה מלמטה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ נקראת קמורה)
+\lang english
+Convex
+\lang hebrew
+( אם לכל 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ בתחום, ולכל 
+\begin_inset Formula $\alpha\in\left[0,1\right]$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+f\left(\alpha x_{1}+\left(1-\alpha\right)x_{2}\right)\le\alpha\cdot f\left(x_{1}\right)+\left(1-\alpha\right)\cdot f\left(x_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בכיוון ההפוך
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ נקראת קעורה)
+\lang english
+Concave
+\lang hebrew
+( אם לכל 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ בתחום, ולכל 
+\begin_inset Formula $\alpha\in\left[0,1\right]$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+f\left(\alpha x_{1}+\left(1-\alpha\right)x_{2}\right)\ge\alpha\cdot f\left(x_{1}\right)+\left(1-\alpha\right)\cdot f\left(x_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הרחבה לאוסף של נקודות
+\end_layout
+
+\begin_layout Standard
+למספר כלשהו של נקודות 
+\begin_inset Formula $x_{1},\dots x_{n}$
+\end_inset
+
+ בתחום, ועבור 
+\begin_inset Formula $\alpha_{1},\dots\alpha_{n}\in\left[0,1\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\sum\limits _{i=1}^{n}\alpha_{i}=1$
+\end_inset
+
+, יתקיים בפונקציה קמורה:
+\begin_inset Formula 
+\[
+f\left(\sum_{i=1}^{n}\alpha_{i}x_{i}\right)\le\sum_{i=1}^{n}\alpha_{i}\cdot f\left(x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אינטרפרטציה הסתברותית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ערכי משתנה מקרי דיסקרטי 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ הסתברות 
+\begin_inset Formula $p\left(x_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל עבור פונקציה קמורה:
+\begin_inset Formula 
+\[
+f\left(\sum_{i=1}^{n}p\left(x_{i}\right)\cdot x_{i}\right)\le\sum_{i=1}^{n}p\left(x_{i}\right)\cdot f\left(x_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(E\left[x\right]\right)\le E\left[f\left(x\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+במילים: אם 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה קמורה, ונפעיל אותה על תוחלת, נקבל ערך יותר קטן מאשר אם נפעיל תוחלת
+ על הפונקציה.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+אנטרופיה יחסית)
+\lang english
+Relative Entropy
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+נקרא גם
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Kullback-Leibler Divergence
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מטרה: מדד לסטיה בין שתי התפלגויות
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+נתונות שתי התפלגויות דיסקרטיות 
+\begin_inset Formula $q,p$
+\end_inset
+
+ מעל 
+\begin_inset Formula $n$
+\end_inset
+
+ ערכים 
+\begin_inset Formula $\begin{array}{c}
+p=p_{1},\dots p_{n}\\
+q=q_{1},\dots q_{n}
+\end{array}$
+\end_inset
+
+.
+ נגדיר:
+\begin_inset Formula 
+\[
+D_{KL}\left(p\middle\Vert q\right)=\sum_{i=1}^{n}p_{i}\log\frac{p_{i}}{q_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משמעות בתורת האינפורמציה
+\end_layout
+
+\begin_layout Standard
+כמות אובדן המידע )בביטים( כשממדלים את 
+\begin_inset Formula $p$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+מקרי קצה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $p=q$
+\end_inset
+
+ - 
+\begin_inset Formula $D\left(p\middle\Vert q\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $i$
+\end_inset
+
+ כך ש
+\begin_inset Formula $q_{i}=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $D_{KL}$
+\end_inset
+
+ לא מוגדר)"
+\begin_inset Formula $=\infty$
+\end_inset
+
+"(
+\end_layout
+
+\begin_layout Section*
+טענה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(p\middle\Vert q\right)\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D\left(p\middle\Vert q\right)=\sum_{i=1}^{n}p_{i}\log\frac{p_{i}}{q_{i}}\underset{\tiny{\begin{array}{c}
+\log\mbox{ is convex}\\
+\mbox{Jensen's inequality}
+\end{array}}}{\le}\log\sum_{i}\cancel{p_{i}}\cdot\frac{q_{i}}{\cancel{p_{i}}}=\log_{1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+הצורה הכללית של אלגוריתם 
+\begin_inset Formula $EM$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המאמר המקורי משנת
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1977
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Maximum Likelihood from Incomplete Data via the EM Algorithm
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Dempster, Laird, Rubin
+\end_layout
+
+\begin_layout Standard
+נלמד גירסא של הפיתוח:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Neal & Hinton, 98: A View of the EM Algorithm
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה: קירוב 
+\begin_inset Formula $\theta_{ML}$
+\end_inset
+
+, ע"י מציאת 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+, עבור משתנים חבויים כשאין פתרון אנליטי, ע"י אלגוריתם איטרטיבי.
+\end_layout
+
+\begin_layout Standard
+מניחים התפלגות 
+\begin_inset Formula $P\left(X,Y;\theta\right)$
+\end_inset
+
+, 
+\begin_inset Formula $X$
+\end_inset
+
+-חבוי, 
+\begin_inset Formula $Y$
+\end_inset
+
+-גלוי
+\end_layout
+
+\begin_layout Standard
+מחפשים:
+\begin_inset Formula 
+\[
+\hat{\theta}_{ML}=\underset{\theta}{\mbox{argmax}}\log p\left(y;\theta\right)=\underset{\theta}{\mbox{argmax}}\log\sum_{x\in X}p\left(x,y;\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדרך כלל אין פתרון אנליטי)ללוג של סכום( - נפתח שיטה איטרטיבית שבה בכל איטרציה
+ ערך 
+\begin_inset Formula $p\left(y;\theta\right)$
+\end_inset
+
+ יעלה.
+\end_layout
+
+\end_body
+\end_document

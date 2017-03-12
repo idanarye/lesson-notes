@@ -1,0 +1,1246 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+נושאים מתקדמים בבינה מלאכותית
+\\
+\selectlanguage{english}
+89-950-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' שרית קראוס}
+\\
+\textbf{תאריך:}
+\beginL
+2016-03-31
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+למידת מכונה
+\end_layout
+
+\begin_layout Standard
+רוב העבודות הקשורות ללמידת מכונה מבוססות על יוריסטיקות - כלומר אין אפשרות
+ לחסום את הטעות, אלא רק לעשות ניסויים ולהראות סטטיסטית שהמודל טוב.
+ מאמנים מודל על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+training data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ובודקים אותו על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+testing data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומחשבים את ההסתברות שהוא צודק.
+\end_layout
+
+\begin_layout Standard
+למרות שיש אלמנט יוריסטי, עדיין יש תיאוריה של למידה.
+ התיאוריה נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Probability Approximately Correct Learning
+\lang hebrew
+.
+ אנחנו רוצים אלגוריתמים ש
+\bar under
+בהסתברות
+\bar default
+ גבוהה, יתנו לנו היפוטזות ש
+\bar under
+בהסתברות
+\bar default
+ גבוהה יתאימו למודל החבוי.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם למידה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $X$
+\end_inset
+
+ סט הדוגמאות האפשריות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות על 
+\begin_inset Formula $X$
+\end_inset
+
+ שבאמצעותה אנחנו דוגמים דוגמאות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $H$
+\end_inset
+
+ קבוצת ההיפוטזות.
+ יש פונקציה 
+\begin_inset Formula $f\in H$
+\end_inset
+
+ שאותה אנחנו רוצים ללמוד.
+ למשל: האם בן אדם ישלח הודעה שוב או לא?
+\end_layout
+
+\begin_layout Standard
+אלגוריתם הלמידה יחזיר פונקציה 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ אנחנו רוצים 
+\begin_inset Formula $h\approx f$
+\end_inset
+
+ - כלומר שהפונקציה שנקבל תהיה מאוד דומה ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אנחנו רוצים 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)$
+\end_inset
+
+, אבל זה לא תמיד אפשרי בכל המקרים, ולכן נרצה:
+\begin_inset Formula 
+\[
+P\left\{ h\left(x\right)\neq f\left(x\right)\middle|x\in X\textnormal{ distributes by \ensuremath{D}}\right\} \le\varepsilon
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\textnormal{error}\left(h\right)\le\varepsilon
+\]
+
+\end_inset
+
+את ההיטופזות האלה נסמן ב
+\begin_inset Formula $H_{\textnormal{good}}$
+\end_inset
+
+ - כדור-
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ מסביב ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+ שאר ההיפוטזות הן 
+\begin_inset Formula $H_{\textnormal{bad}}$
+\end_inset
+
+.
+ נרצה שההסתברות לקבל 
+\begin_inset Formula $h\in H_{\textnormal{good}}$
+\end_inset
+
+ תהיה טובה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה: למצוא אלגוריתם למידת מכונה כך ש
+\begin_inset Formula $P\left(h\in H_{\textnormal{bad}}\right)\le\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והשאלה היא - כמה דוגמאות אנו באמת צריכים כדי לקבל הסתברות כזו?
+\end_layout
+
+\begin_layout Standard
+אם יש לנו 
+\begin_inset Formula $m$
+\end_inset
+
+ דוגמאות - מה ההסתברות לקבל 
+\begin_inset Formula $h\in H_{\textnormal{bad}}$
+\end_inset
+
+ כאשר עבור כל 
+\begin_inset Formula $m$
+\end_inset
+
+ הדוגמאות 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההסתברות ש
+\begin_inset Formula $h_{\textnormal{bad}}$
+\end_inset
+
+ כלשהי תסכים עם 
+\begin_inset Formula $f$
+\end_inset
+
+ על דוגמה קטנה מ
+\begin_inset Formula $1-\varepsilon$
+\end_inset
+
+)נובע מהגדרת 
+\begin_inset Formula $H_{\textnormal{bad}}$
+\end_inset
+
+(, ולכן עבור 
+\begin_inset Formula $m$
+\end_inset
+
+ דוגמאות:
+\begin_inset Formula 
+\[
+P\left(h_{\textnormal{bad}}\left(x\right)=f\left(x\right)\textnormal{ for \ensuremath{m} samples}\right)\le\left(1-\varepsilon\right)^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל זו ההתסברות עבור היפוטזה גרועה אחת - ויש לנו הרבה 
+\begin_inset Formula $h\in H_{\textnormal{bad}}$
+\end_inset
+
+! מה ההתסברות שנקבל אחת מהן? אנחנו רוצים לחסום את זה עם 
+\begin_inset Formula $\delta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P\left(H_{\textnormal{bad}}\textnormal{ contains a bad hypothesis that agrees on the \ensuremath{m} samples}\right)\le\left|H_{\textnormal{bad}}\right|\left(1-\varepsilon\right)^{m}\le\left|H\right|\left(1-\varepsilon\right)^{m}\le\delta
+\]
+
+\end_inset
+
+ולכן מספר הדוגמאות שאנו צריכים הוא:
+\begin_inset Formula 
+\[
+m\ge\frac{1}{\varepsilon}\left(\ln\frac{1}{\delta}+\ln\left|H\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon,\delta$
+\end_inset
+
+ קבועים, ולכן מה שמעניין כאן זה 
+\begin_inset Formula $\left|H\right|$
+\end_inset
+
+.
+ כמה היפוטזות יש לנו?
+\end_layout
+
+\begin_layout Standard
+אם ניקח את הפונקציות הכי פשוטות, שמקבלות קלט באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ ומחזירות תשובה חיובית או שלילית - כלומר 
+\begin_inset Formula $H\ni f:\left\{ 0,1\right\} ^{n}\to\left\{ 0,1\right\} $
+\end_inset
+
+.
+ יש לנו 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ קלטים אפשריים, ולכן מספר ההיפוטזות האפשריות הוא 
+\begin_inset Formula $2^{2^{n}}$
+\end_inset
+
+! זה אומר ש
+\begin_inset Formula $\ln\left|H\right|=\ln2^{2^{n}}\in O\left(2^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מספר הדוגמאות שאנחנו צריכים הוא אקספוננציטלי - ולכן אנחנו נאלצים להסתמך
+ על יוריסטיקות.
+\end_layout
+
+\begin_layout Section*
+פתרונות אפשריים
+\end_layout
+
+\begin_layout Itemize
+להקטין את מרחב ההיפוטזות.
+ למשל, במקום לייצג פונקציה בוליאנית באמצעות טבלה, לייצג אותה באמצעות 
+\begin_inset Formula $\wedge$
+\end_inset
+
+ של ביטויים חיוביים ושליליים, ואז יש לנו רק 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ דוגמאות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לדוגמה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+perceptrons
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתמשים בשיטה הזו.
+ הבעיה היא שאם הפונקציה לא ניתנת להצגה טובה בצורה לינארית אז נקבל פונקציה
+ גרועה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+צריך תמיד לזכור שרוב הבעיות המעניינות במדעי המחשב הן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NPC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ובמציאות מספיק קירוב טוב בשביל לקבל דברים מועילים.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Reinforcement Learning
+\end_layout
+
+\begin_layout Standard
+כל הדוגמאות שהיו לנו עד עכשיו היו מתוייגות - ידענו מה התשובה הנכונה לכל
+ דוגמה.
+ אבל הרבה פעמים במציאות אין לנו דוגמאות - אנחנו צריכים ללמוד מתוך התנסות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ בניגוד ל
+\lang english
+Unsupervised Learning
+\lang hebrew
+, שם יש לנו דוגמאות לא מתוייגות, ב
+\lang english
+Reinforcement Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אין דוגמאות, ואנחנו צריכים ליצור לבד את הדוגמאות שלנו, ולקבל עליהן תמורה
+ חיובית או שלילית.
+\end_layout
+
+\begin_layout Standard
+אנחנו צריכים לאסוף לבד את הדוגמאות - ואיסוף הדוגמאות עולה לנו!
+\end_layout
+
+\begin_layout Section*
+תזכורת -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MDP
+\lang hebrew
+)
+\lang english
+Markov Decision Process
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+MDP=\left\langle S,A,T,R\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S$
+\end_inset
+
+ מצבים)
+\lang english
+States
+\lang hebrew
+(.
+ העולם תמיד נמצא באיזשהו מצב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A$
+\end_inset
+
+ פעולות)
+\lang english
+Actions
+\lang hebrew
+( שהסוכן יכול לבצע
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $T$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Transition
+\lang hebrew
+)לפעמים 
+\begin_inset Formula $P$
+\end_inset
+
+ -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Probabbility
+\lang hebrew
+(.
+ מה ההסתברות שהסוכן היה במצב 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, ביצע פעולה 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ והגיע למצב 
+\begin_inset Formula $s'\in S$
+\end_inset
+
+ - 
+\begin_inset Formula $T\left(s,a,s'\right):S\times A\times S\to\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גמול)
+\lang english
+Reward
+\lang hebrew
+(.
+ אפשר להשתמש ב
+\begin_inset Formula $R\left(s\right)$
+\end_inset
+
+, ב
+\begin_inset Formula $R\left(s,a\right)$
+\end_inset
+
+ או ב
+\begin_inset Formula $R\left(s,s',a\right)$
+\end_inset
+
+)כי לפעמים יש עלות לפעולה, ולפעמים רוצים להתחשב במצב הקודם(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אנחנו נרצה למצוא אסטרטגיה 
+\begin_inset Formula $\Pi:S\to A$
+\end_inset
+
+ שתהיה אופטמימלית - כלומר כזו שתמקסם את ה
+\lang english
+expected utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- את ה
+\lang english
+reward
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שנקבל על כל פעולה ברצף הפעולות.
+\end_layout
+
+\begin_layout Standard
+אם היתה נתונה לנו סדרה סופית של מצבים היינו יכולים לחשב את ה
+\lang english
+expected utility
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Eu\left(s_{1},s_{2},s_{3},\dots\right)=\sum_{s_{i}}R\left(s_{i}\right)
+\]
+
+\end_inset
+
+בפועל אנחנו לא יודעים מתי הסדרה תסתיים - היא בכלל יכולה להיות אינסופית!
+ לכן בד"כ מניחים ש"תכף העולם יגמר".
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Bellman Equation
+\end_layout
+
+\begin_layout Standard
+יש הסתברות 
+\begin_inset Formula $\gamma\le1$
+\end_inset
+
+ שהעולם ימשיך - שנוכל לבצע עוד פעולות.
+ לכן התועלת של הסוכן משימוש ב
+\begin_inset Formula $\Pi$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+u^{\Pi}\left(s\right)=R\left(s\right)+\gamma\sum_{s'}T\left(s,\Pi\left(s\right),s'\right)u^{\Pi}\left(s'\right)
+\]
+
+\end_inset
+
+כאשר אין לנו 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ ספציפי, אפשר להסתכל על התמורה המקסימלית שהסוכן יכול לקבל:
+\begin_inset Formula 
+\[
+u\left(s\right)=R\left(s\right)+\gamma\max_{a\in A}\sum_{s'}T\left(sa,as'\right)u\left(s'\right)
+\]
+
+\end_inset
+
+זה בעצם התמורה מ
+\begin_inset Formula $\Pi$
+\end_inset
+
+ אופטימלית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בספרי כלכלה, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ משתמש בשביל להעדיף כסף היום על פני כסף מחר.
+\end_layout
+
+\begin_layout Itemize
+מבחינה מתמטית, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ משתמש כדי לגרום לסדרות האינסופיות להתכנס.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+זו בעיה מאוד קשה, כי זו לא בעיה לינארית וצריך לעבור על הרבה אפשרויות.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+נחזור ל
+\lang english
+RL
+\end_layout
+
+\begin_layout Standard
+מה קורה אם אנחנו לא יודעים את ה
+\lang english
+MDP
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Itemize
+אפשרות נאיבית - לשלוח את הרובוט לאסוף דוגמאות.
+ אחרי שהוא אוסף הרבה סדרות של פעולות אפשר לעשות ממוצעים על כל הפעולות שהוא
+ עשה, ולראות מה הכי טוב.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אפשר ככה להשוות בין 
+\begin_inset Formula $\Pi_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $\Pi_{2}$
+\end_inset
+
+ - לשלוח אותו לעשות את שניהם ולהשוות את ה
+\lang english
+utility
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יתרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קל לחישוב
+\end_layout
+
+\begin_layout Itemize
+לא צריך לעשות דברים מיוחדים
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חסרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זה בעצם סוג של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervised learning
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

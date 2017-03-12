@@ -1,0 +1,657 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מבוא לתורת המשחקים
+\\
+\selectlanguage{english}89-617-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-10-18
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אתר: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://u.cs.biu.ac.il/~sarned/Courses/GT/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפוקוס בקורס יהיה על הסיטואציה האסטרטגית שבמשחק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Golden Balls
+\lang hebrew
+.
+ שני שחקנים צריכים לבחור אם לחלק או לגנוב את הכסף.
+\end_layout
+
+\begin_layout Itemize
+אם שניהם בוחרים לחלק, שניהם לוקחים חצי
+\end_layout
+
+\begin_layout Itemize
+אם שניהם בוחרים לגנוב, אף אחד לא לוקח כלום
+\end_layout
+
+\begin_layout Itemize
+אם אחד בוחר לגנוב והשני לחלק, זה שבחר לגנוב לוקח את הכל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ &  &  & Alice\ar[lld]_{Split}\ar[rrd]^{Steal}\\
+ & Bob\ar[ld]_{Split}\ar[rd]^{Steal} &  &  &  & Bob\ar[ld]_{Split}\ar[rd]^{Steal}\\
+A:\frac{1}{2} &  & A:Nothing &  & A:All & t & A:Nothing\\
+B:\frac{1}{2} &  & B:All &  & B:Nothing &  & B:Nothing
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו משחק קלאסי בתורת המשחקים.
+ לפי התיאוריה הרציונאלית שני האנשים אמורים להגיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Steal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ועדיין יש מקרים שאנשים אומרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Split
+\lang hebrew
+.
+ )אם מסתכלים גם על התנהגות לא רציונאלית אפשר להסביר את זה(
+\end_layout
+
+\begin_layout Section*
+תורת המשחקים
+\end_layout
+
+\begin_layout Itemize
+ענף של המתמטיקה והכללכלה המנתח מצבי עימות או שיתוף פעולה בין מחקבלי החלטות
+ בעלי רצונות שונים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+משחקים בהם כל אחד רוצה לנצח.
+\end_layout
+
+\begin_layout Itemize
+פעילות כלכלית, בה כל אחד מהעוסקים שואף להגיע לרווח מקסימלי.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מספקת גישה למידול מצבים וסיטואציות בהן מקבל ההחלטה מצוי באינטרקציה אסטרטגית)
+\lang english
+strategic interaction
+\lang hebrew
+, בד"כ מצב תחרותי( עם מקבלי החלטה אחרים.
+\end_layout
+
+\begin_layout Itemize
+ההנחה היא כי כל מקבלי ההחלטה הם רציונליים לחלוטין - פועל אך ורק כדי לאפטם
+ את פונקציית התועלת שלו.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אין לנו בעיה עם מקבל החלטה שמתחשב בזולת - פשוט מכניסים את האינטרס של הזולת
+ לפונקציית המטרה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+משמש במגוון תחומים:לוגיקה, מדעי המדינה, מדעי המחשב, פסיכולוגיה, ביולוגיה...
+\end_layout
+
+\begin_layout Section*
+המטרה בתורת המשחקים
+\end_layout
+
+\begin_layout Itemize
+אנחנו לא השחקן - אנחנו אלו שחוקרים את המשחק.
+ המטרה שלנו היא לפתור את המשחק - לזהות מהן הפעולות שהשחקנים צפויים להשתמש
+ בהן.
+ לזהות 
+\emph on
+שיווי משקל
+\emph default
+.
+ דרך זה שאנחנו יודעים את הפעולות הצפויות של השחקנים נוכל להגיד מה תהיה התוצאה.
+\end_layout
+
+\begin_layout Itemize
+לעיתים המטרה היא ליצור מנגנון יעיל יותר)
+\lang english
+mechanism design
+\lang hebrew
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לדוגמה - מכרז שבו הזוכה הוא זה שנתן את ההצעה הטובה ביותר, והמחיר שהוא יצטרך
+ לשלם זה המכיר השני הכי טוב.
+ באמצעות תורת המשחקים ניתן להוכיח שזה גורם לכל אחד להציע מחיר מציאותי.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לניבוי נכון של התנהגות השחקנים עשויה להיות משמעות במציאות - במידה והשחקנים
+ רציונליים לחלוטין ואינם מוגבלים חישובית.
+ במציאות רוב השחקנים לא כאלה.
+\end_layout
+
+\begin_layout Section*
+דוגמה - משחק ה
+\lang english
+Deadlock
+\end_layout
+
+\begin_layout Itemize
+שני שחקנים
+\end_layout
+
+\begin_layout Itemize
+לכל אחד תהליך שנמצא בדדלוק עם השני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++++[o][F]{Process\,A}\ar@/^{15pt}/[rrrr]^{Holds\,resource\,X\,required\,by\,process\,B} &  &  &  & *++++[o][F]{Process\,B}\ar@/^{15pt}/[llll]^{Holds\,resource\,Y\,required\,by\,process\,A}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האסטרטגיה מתמקדת בהחלטה מתי לוותר לתהליך השני.
+\end_layout
+
+\begin_layout Itemize
+המטרה של התהליכים היא לא בהכרח זו של מערכת ההפעלה
+\end_layout
+
+\begin_layout Itemize
+האם תקשורת תעזור? לא בהכרח.
+ תקשורת עוזרת כאשר יש משחקים חוזרים, ואפשר להבטיח דברים לקראת המשחקים הבאים
+\end_layout
+
+\begin_layout Itemize
+האם יכול להתחייב תעזור?
+\end_layout
+
+\begin_layout Itemize
+הםא תשנה משהו העובדה שמדובר במשחק חוזר)סופי/אינסופי(? במשחק סופי, המשחק
+ האחרון הוא בעצם משחק יחיד.
+\end_layout
+
+\begin_layout Itemize
+התשובה משתנה אם השחקן השני אינו רציונלי לחלוטין.
+\end_layout
+
+\begin_layout Itemize
+אפשר למצוא אסטרטגיה שאם כולם ידבקו בה לא תהיה לאף אחד סיבה לסטות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל תהליך שהזמן שהוא דורש את משאב לא הכי קצר יחכה עד אינסוף
+\end_layout
+
+\begin_layout Itemize
+מי שמחזיק את המשאב שדרוש לתהליך עם המשאב הכי קטן ישחרר אותו
+\end_layout
+
+\begin_layout Standard
+לתהליך שאמור לשחרר אין מה להרוויח אם הוא לא ישחרר את המשאב, כי כל שאר התהליכים
+ יחכו עד אינסוף ולא ישחררו את המשאב שלו.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הקשר למדעי המחשב
+\end_layout
+
+\begin_layout Itemize
+יש לנו הרבה בעיות במדעי המחשב שהן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+self-interested
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל סוכן מנסה למקסם פונקציית מטרה משל עצמו.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Mechanism Design
+\lang hebrew
+: תכנון מכניזמים שבהם אם כל הפרטים עובדים בצורה רציונלית ניתן להגיע לתוצאה
+ הרצויה
+\end_layout
+
+\begin_layout Itemize
+החישובים עצמם:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+סיבוכיות)
+\begin_inset Formula $P$
+\end_inset
+
+? 
+\begin_inset Formula $NP$
+\end_inset
+
+?(
+\end_layout
+
+\begin_layout Itemize
+האלגוריתמים עצמם
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+approximation
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מבנה המשחק
+\end_layout
+
+\begin_layout Itemize
+שחקנים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - מקבלי החלטות במשחק
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מאוד חשוב לזהות מי באמת השחקנים במשחק.
+ לפעמים מישהו שאנחנו חושבים שהוא שחקן הוא לא באמת שחקן.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+פעולות - מהן הפעולות האפשריות לכל שחקן
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+גם גילוי אינפורמציה לשחקנים האחרים יכול להיות פעולה
+\end_layout
+
+\begin_layout Itemize
+פעולות מושפעות מציר הזמן - פעולה שאני מבצע היום יכולה להשפיע על סט הפעולות
+ של שחקן אחר מחר
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+תמורות - הערך של התועלת של השחקנים השונים לכל סט של פעולות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תמורה כספית
+\end_layout
+
+\begin_layout Itemize
+שוויוניות
+\end_layout
+
+\begin_layout Itemize
+אקולוגיות
+\end_layout
+
+\begin_layout Standard
+כל דבר יכול להיות תמורה - בסופו של דבר התמורות מתורגמות לערך אחד - התועלת
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תועלת
+\series default
+: מנסה לכמת את רמת העדפה של מקבל החלטה בין אלטרנטיבות
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כוללת בתוכה את אלמנט האי ודאות בכל אלטרנטיבה
+\end_layout
+
+\begin_layout Itemize
+בדרך כלל נשתמש בפונקציה, הרבה פעמים מרובת משתנים
+\end_layout
+
+\begin_layout Itemize
+מקבל החלטה רציונלית ו
+\lang english
+self-interested
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ינסה למקסם את תוחלת התועלת שלו
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

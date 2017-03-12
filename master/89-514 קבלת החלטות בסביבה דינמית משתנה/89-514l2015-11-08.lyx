@@ -1,0 +1,1127 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+קבלת החלטות בסביבה דינמית משתנה
+\\
+\selectlanguage{english}
+89-514-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-11-08
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+בעיית המזכירה
+\end_layout
+
+\begin_layout Standard
+הופיעה באמצע המאה הקודמת, ידועה גם בתור "בעיית הנישואין" או "בעיית המוהר".
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הבעיה: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אנחנו רוצים למלא תפקיד של מזכירה
+\end_layout
+
+\begin_layout Itemize
+יש הרבה מועמדים/ות שמספרם ידוע
+\end_layout
+
+\begin_layout Itemize
+נמיין את המועמדים בסדר אקראי ונלמד מהו הדירוג היחסי של המועמד החדש שראיינו
+ ביחס למועמדים שראיינו עד כה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נשים לב - יש לנו כאן סולם אורדינלי, בניגוד לסולם האבסולוטי שיש לנו בדרך
+ כלל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אנחנו צריכים להחליט אם לקבל או לדחות את המרואיין על בסיס הדירוג היחסי שלו
+ בלבד, באופן מיידי, לפני שמראיינים עוד מרואיינים
+\end_layout
+
+\begin_layout Itemize
+ברגע שדוחים מרואיין, אי אפשר לדחות אותו
+\end_layout
+
+\begin_layout Itemize
+יש לנו תועלת רק אם שכרנו את הטוב ביותר
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: אין לנו אפשרות לבחור את ההכי טוב - אם למשל ההכי טוב היה הראשון שראיינו
+ אין לנו למה להשוות
+\end_layout
+
+\begin_layout Subsection*
+אסטרטגיה פרמטרית
+\end_layout
+
+\begin_layout Standard
+נבחר מספר 
+\begin_inset Formula $r$
+\end_inset
+
+, ונזרוק אוטומטית את ה
+\begin_inset Formula $r-1$
+\end_inset
+
+ הראשונים שנראיין.
+ אחרי זה ניקח את הראשון שיותר טוב מכל הקודמים
+\end_layout
+
+\begin_layout Standard
+נשים לב שלא יכול להיות כלל החלטה יותר טוב, שכן אנחנו לא לומדים שום דבר חדש
+ על כלל האוכלוסיה לאחר כל ראיון.
+\end_layout
+
+\begin_layout Subsection*
+ניתוח
+\end_layout
+
+\begin_layout Standard
+מה ההסתברות 
+\begin_inset Formula $\phi_{n}\left(r\right)$
+\end_inset
+
+ לבחירת המועמד הכי טוב?
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $r=1$
+\end_inset
+
+ או 
+\begin_inset Formula $r=n$
+\end_inset
+
+ - 
+\begin_inset Formula $\phi_{n}\left(r\right)=\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $1<r<n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\phi_{n}\left(r\right)=\sum_{j=r}^{n}P\left(\begin{array}{c}
+\mbox{\ensuremath{j}-th applicant is best}\\
+\mbox{and you select it}
+\end{array}\right)=\sum_{j=r}^{n}\left(\frac{1}{n}\right)\left(\frac{r-1}{j-1}\right)=\left(\frac{r-1}{n}\right)\sum_{j=r}^{n}\left(\frac{1}{j-1}\right)
+\]
+
+\end_inset
+
+כלומר, נבדוק את הסיכוי לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ שגם:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $j$
+\end_inset
+
+ הכי טוב - ההסתברות היא 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אף אחד מ לפני 
+\begin_inset Formula $j$
+\end_inset
+
+ לא היה הכי טוב - ההסתברות היא 
+\begin_inset Formula $\frac{r-1}{j-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נשים לב - זהו בעצם קירוב האינטגרל של רימן! נגזור
+\begin_inset Formula 
+\[
+\phi_{n}\left(r\right)=-x\log\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi_{n}'\left(r\right)=-\log\left(x\right)-1=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log\left(x\right)=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=\frac{1}{e}\approx0.367879
+\]
+
+\end_inset
+
+ואם נחליף ב
+\begin_inset Formula $\phi_{n}\left(r\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\phi_{n}\left(r\right)=-\left(\frac{1}{e}\right)\log\left(\frac{1}{e}\right)=\frac{1}{e}
+\]
+
+\end_inset
+
+כלומר כדאי לחכות עד שנעבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $37\%$
+\end_inset
+
+ מהמועמדים ואז לבחור את המועמד הראשון שטוב יותר מכל הקודמים לו.
+\end_layout
+
+\begin_layout Part*
+ערך מידע חדש)המשך(
+\end_layout
+
+\begin_layout Section*
+ערך מידע מושלם
+\end_layout
+
+\begin_layout Standard
+ערך מידע מושלם הוא ההפרש בין הרווח בודאות מוחלטת לבין הרווח במצב של אי ודאות.
+\end_layout
+
+\begin_layout Section*
+הגדרה פורמלית
+\end_layout
+
+\begin_layout Standard
+מידע נחשב "מושלם")
+\lang english
+Perfect
+\lang hebrew
+( אם הוא תמיד נכון.
+\end_layout
+
+\begin_layout Standard
+לדוגמה - שוקלים להשקיע בחברה, ורוצים לדעת לפני אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מדד תל-אביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+25
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יעלה, והולכים בשביל זה למגיד עתידות.
+ נסמן ב
+\begin_inset Formula $A$
+\end_inset
+
+ את המאורע שהמדד יעלה וב
+\begin_inset Formula $A'$
+\end_inset
+
+ את המאורע שמגיע העתידות ינבא שהוא יעלה.
+\end_layout
+
+\begin_layout Standard
+אם מגיד העתידות תמיד חזוה נכונה את מצב המדד, הרי:
+\begin_inset Formula 
+\[
+\Pr\left(A'\middle|A\right)=1\iff\Pr\left(\overline{A'}\middle|A\right)=0
+\]
+
+\end_inset
+
+מה לגבי 
+\begin_inset Formula $\Pr\left(A\middle|A'\right)$
+\end_inset
+
+)למשל מה אם 
+\begin_inset Formula $P\left(A\right)=0.4$
+\end_inset
+
+(?
+\begin_inset Formula 
+\[
+\Pr\left(A\middle|A'\right)=\frac{\Pr\left(A'\middle|A\right)\Pr\left(A\right)}{\Pr\left(A'\middle|A\right)\Pr\left(A\right)+\Pr\left(A'\middle|\overline{A}\right)\Pr\left(\overline{A}\right)}=\frac{1\cdot\Pr\left(A\right)}{1\cdot\Pr\left(A\right)+0\cdot\Pr\left(\overline{A}\right)}=1
+\]
+
+\end_inset
+
+כלומר, במידע מושלם, ההסתברות 
+\begin_inset Formula $\Pr\left(A\middle|A'\right)$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ללא קשר להסתברות 
+\begin_inset Formula $\Pr\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמובן, 
+\begin_inset Formula $\Pr\left(\overline{A}\middle|\overline{A'}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוחלת מידע מושלם
+\end_layout
+
+\begin_layout Standard
+למשקיע קיימות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אלטרנטיבות:
+\end_layout
+
+\begin_layout Itemize
+חשבון חיסכון שמשלם ריבית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+500
+\numeric off
+$
+\end_layout
+
+\begin_layout Itemize
+מניה בסיכון גבוה או נמוך - צריך לשלם עמלת ברוקר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+200
+\numeric off
+$
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם השוק יעלה, מניה בסיכון גבוה תניב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1700
+\numeric off
+$ ובסיכון נמוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1200
+\numeric off
+$
+\end_layout
+
+\begin_layout Itemize
+אם השוק ישאר אותו דבר, מניה בסיכון גבוה תניב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+300
+\numeric off
+$ ובסיכון נמוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+400
+\numeric off
+$
+\end_layout
+
+\begin_layout Itemize
+אם השוק ירד, מניה בסיכון גבוה תפסיד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+800
+\numeric off
+$ ובסיכון נמוך תרוויח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\numeric off
+$)שזה עדיין הפסד כי שילמנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+200
+\numeric off
+$ עמלת ברוקר(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+רוצים להחליט מה לעשות - בשביל זה נעשה עץ החלטה ונקפל אותו.
+ תוחלת התמורה שלנו אחרי הקיפול תהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+580
+\numeric off
+$
+\end_layout
+
+\begin_layout Standard
+אבל - מה אם אנחנו יכולים לקבל מידע מושלם)כלכלנים יודעים לטעות, אז נלך למגיד
+ עתידות(.
+ אז ההחלטה תהיה קלה - אם נדע שהשוק יעלה נשקיע במנייה בסיכון גבוה, ואם לא
+ נשקיע בחשבון חיסכון.
+ תוחלת הסיכון במקרה כזה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1000
+\numeric off
+$.
+ לכן ערך המידע המושלם הוא:
+\begin_inset Formula 
+\[
+EMV=1000-580=420
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: אי אפשר להגיד שלאחר המידע המושלם נבחר בערך הכי גבוה - כי אנחנו לא יודעים
+ מראש מה המידע המושלם הולך להיות.
+ אם היינו יודעים מה המידע המושלם הולך להיות לא היינו משלמים עליו.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+לרוב המידע שאנו מקבלים אינו מושלם
+\end_layout
+
+\begin_layout Standard
+אם לא הולכים למגיד עתידות, המידע שאנח מקבלים הוא לא מושלם - יש אפשרות שהוא
+ שגוי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pr\left(A'\middle|A\right)<1\iff\Pr\left(\overline{A'}\middle|A\right)>0\qquad\Pr\left(\overline{A'}\middle|\overline{A}\right)<1\iff\Pr\left(A'\middle|\overline{A}\right)>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה הזה, מצב השוק משפיע גם על תחזית הכלכלן וגם על הרווח - בניגוד למידע
+ מושלם שבו התחזית זהה למצב הטבע.
+ נשים גם לב שהתחזית לא משפיעה על הרווח ישירות - בהינתן החלטה ומצב שוק הרווח
+ קבוע בלי קשר לתחזית
+\end_layout
+
+\begin_layout Standard
+דוגמה להערכה שהכלכלן נותן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c|ccc}
+\begin{array}{c}
+\mbox{(Estimation)}\\
+E
+\end{array} & \mbox{Up} & \mbox{Flat} & \mbox{Down}\\
+\hline \mbox{"Up"} & \Pr\left(\mbox{"Up"}\middle|\mbox{Up}\right)=0.80 & \Pr\left(\mbox{"Up"}\middle|\mbox{Flat}\right)=0.15 & \Pr\left(\mbox{"Up"}\middle|\mbox{Down}\right)=0.20\\
+\mbox{"Flat"} & \Pr\left(\mbox{"Flat"}\middle|\mbox{Up}\right)=0.10 & \Pr\left(\mbox{"Flat"}\middle|\mbox{Flat}\right)=0.70 & \Pr\left(\mbox{"Flat"}\middle|\mbox{Down}\right)=0.20\\
+\mbox{"Down"} & \Pr\left(\mbox{"Down"}\middle|\mbox{Up}\right)=0.10 & \Pr\left(\mbox{"Down"}\middle|\mbox{Flat}\right)=0.15 & \Pr\left(\mbox{"Down"}\middle|\mbox{Down}\right)=0.80
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שרק העמודות צריכות להסתכם ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שורות לא צריכות כי הן מדברות על הסתברויות בהינתן מאורעות שונים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+סיכום - ערך מידע חדש
+\end_layout
+
+\begin_layout Itemize
+שאלת הבסיס - מהו הערך ללא אינפורמציה
+\end_layout
+
+\begin_layout Itemize
+מידע מושלם - קודם צריך להחליט אם לרכוש את המידע
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם רוכשים - קודם מקבלים את מצבי הטבע ואז בוחרים
+\end_layout
+
+\begin_layout Itemize
+אם לא - קודם בוחרים ואז מקבלים את מצבי הטבע
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מידע לא מושלם - שוב, קודם צריך להחליט אם לרכוש את המידע.
+ בכל מקרה קודם בוחרים ואז מקבלים את מצבי הטבע - אבל אם רוכשים את המידע הסיכויים
+ למצבי הטבע השונים משתנים
+\end_layout
+
+\begin_layout Standard
+ערך מידע תלוי בהרבה גורמים:
+\end_layout
+
+\begin_layout Itemize
+האם המידע עדיין רלוונטי? למשל, מידע על הגרלה בלוטו שהייתה כבר לא משנה
+\end_layout
+
+\begin_layout Itemize
+אם מדובר בהגרלה שטרם הייתה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+האם יש לנו דרך לשלוח טופס? אם לא, המידע לא משנה
+\end_layout
+
+\begin_layout Itemize
+האם יש לנו בלעדיות על המידע? אם לא, תוחלת הרווח מהמידע יורדת, שכן הרבה אנשים
+ יתחלקו בו
+\end_layout
+
+\begin_layout Itemize
+מה גודל הפרס? כמה זוכים בו בממוצע?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הערך של המידע נמדד בהשפעה שלו על הסיכויים ובהשפעה שלו על התועלות.
+\end_layout
+
+\end_body
+\end_document

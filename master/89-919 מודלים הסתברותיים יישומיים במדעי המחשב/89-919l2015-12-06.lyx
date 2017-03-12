@@ -1,0 +1,1209 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-12-06
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+שיערוך 
+\lang english
+Back off
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון: אם לא מוצאים ב
+\begin_inset Formula $n$
+\end_inset
+
+-גרם, נחפש ב
+\begin_inset Formula $n-1$
+\end_inset
+
+-גרם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{B}\left(w'\middle|w\right)=\begin{cases}
+p_{d}\left(w'\middle|w\right) & C\left(w,w'\right)>0\\
+\alpha\left(w\right)p_{d}\left(w'\right) & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $n\mbox{-gram}$
+\end_inset
+
+: 
+\begin_inset Formula $w_{1},\dots w_{n}$
+\end_inset
+
+.
+ נשערך: 
+\begin_inset Formula $p\left(w_{n}\middle|\overbrace{w_{1},\dots w_{n-1}}^{w_{1}^{n-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: הרעיון ל
+\begin_inset Formula $3\mbox{-gram}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם אין סטטיסטיקה)שכיחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+( ל
+\begin_inset Formula $w_{1}^{3}$
+\end_inset
+
+, נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+backoff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $w_{2}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם אין סטטיסטיקה ל
+\begin_inset Formula $w_{2}^{3}$
+\end_inset
+
+, נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+backoff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $w_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נוסחה כללית ל
+\begin_inset Formula $P_{B}$
+\end_inset
+
+ ל
+\begin_inset Formula $n\mbox{-gram}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p_{B}\left(w_{n}\middle|w_{1}^{n-1}\right)=\begin{cases}
+p_{d}\left(w_{n}\middle|w_{1}^{n-1}\right) & C\left(w_{1}^{n}\right)>0\\
+\alpha\left(w_{1}^{n-1}\right)\cdot p_{B}\left(w_{n}\middle|w_{2}^{n-1}\right) & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+עבור יוניגרם: 
+\begin_inset Formula $p_{B}\left(w\right)=p_{d}\left(w\right)$
+\end_inset
+
+, כי אין למה לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+backoff
+\lang hebrew
+...
+\end_layout
+
+\begin_layout Subsection*
+מה זה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+עבור מילה מתנה בודדת:
+\begin_inset Formula 
+\[
+\alpha\left(w\right)=\frac{1-\sum\limits _{w':C\left(w,w'\right)>0}p_{d}\left(w'\middle|w\right)}{1-\sum\limits _{w':C\left(w,w'\right)>0}p_{d}\left(w'\right)}
+\]
+
+\end_inset
+
+ועבור סדרת מתנה של 
+\begin_inset Formula $n-1$
+\end_inset
+
+ מילים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\left(w_{1}^{n-1}\right)=\frac{1-\sum\limits _{w_{n}:C\left(w_{1}^{n}\right)>0}p_{d}\left(w_{n}\middle|w_{1}^{n-1}\right)}{1-\sum\limits _{w_{n}:C\left(w_{1}^{n}\right)>0}p_{d}\left(w_{n}\middle|w_{2}^{n-1}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+במילים: הסיכוי למילה לא ידועה אחרי 
+\begin_inset Formula $w_{1}^{n-1}$
+\end_inset
+
+ חלקי הסיכוי למילה לא ידועה אחרי 
+\begin_inset Formula $w_{2}^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא שרק אם אין לנו מידע אנחנו עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+backoff
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+גישות אינטרפולציה לאומדן
+\end_layout
+
+\begin_layout Standard
+יש לנו כמה דרכים שונות לשערך התסברויות, ואנחנו רוצים לעשות אינטרפולציה בין
+ התוצאות שלהן.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון: נשלב בצורה ממושקלת מספר אומדנים.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמאות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שילוב בין מודל ביגרם למודל נאיבי)
+\begin_inset Formula $0<\lambda<1$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+p_{\mbox{int}}\left(w'\middle|w\right)=\lambda\cdot p_{ML}\left(w'\middle|w\right)+\left(1-\lambda\right)\cdot P\left(w'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מודל יוניגרם לטקסטים ברפואה: נשלב מודל שנלמד מטקסטים ברפואה למודל מטקסטים
+ כלליים:
+\begin_inset Formula 
+\[
+p\left(w\right)=\lambda\cdot P_{\mbox{med}}+\left(1-\lambda\right)\cdot p_{\mbox{gen}}\left(w\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+באופן דומה לשקלול מספר מודלים:
+\begin_inset Formula 
+\[
+p\left(w_{3}\middle|w_{1},w_{2}\right)=\lambda_{1}\cdot p\left(w_{3}\middle|w_{1},w_{2}\right)+\lambda_{2}\cdot p\left(w_{3}\middle|w_{2}\right)+\lambda_{3}\cdot p\left(w_{3}\right)
+\]
+
+\end_inset
+
+כך ש
+\begin_inset Formula $\sum\limits _{i=1}^{3}\lambda_{i}=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+איך מכיילים?
+\end_layout
+
+\begin_layout Itemize
+במקרה פשוט, של מעט פרמטרים 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, ניתן לבצע כיול אמפירי ע"י ניסוי מספר ערכים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: במודל 
+\begin_inset Formula $n\mbox{-gram}$
+\end_inset
+
+ ניתן לקבוע צירוף מקדמים שונה לכל התפלגות, כלומר עבור כל מאורע מתנה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בפרט: נצפה לערכי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אופטימליים גבוהים יותר מאורעות מתנים שכיחים יותר.
+\end_layout
+
+\begin_layout Standard
+ניתן לקבץ מאורעות מתנים לפי שכיחויות ולכייל מקדמים ביחד לכל קבוצה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+יש מודלים של אינטרפולציה שעבורם קיימים אלגוריתמים יעילים לכיול המקדמים.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בפרט: ל
+\begin_inset Formula $n\mbox{-gram}$
+\end_inset
+
+ יש אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ME
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+משתנים חבויים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hidden Variables
+\end_layout
+
+\begin_layout Standard
+לפעמים נרצה לחשב אספקטים נוספים של התופעה, שאנחנו לא צופים בהם, כדי למדל
+ יותר טוב את התופעה.
+\end_layout
+
+\begin_layout Subsection*
+סכימה כללית
+\end_layout
+
+\begin_layout Standard
+נתונה תופעה נצפית 
+\begin_inset Formula $Y$
+\end_inset
+
+, בד"כ מורכבת 
+\begin_inset Formula $y=\left(\left\langle y_{1},\dots y_{n}\right\rangle \right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה: סקירת מילים/ידיעה/מסמך
+\end_layout
+
+\begin_layout Standard
+מניחים שקיימת התפלגות משותפת של 
+\begin_inset Formula $Y$
+\end_inset
+
+ עם משתנה חבוי נוסף 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה: הדסק במערכת שבו נכתבה הידיעה
+\end_layout
+
+\begin_layout Standard
+בדר"כ נתעניין ב
+\begin_inset Formula $X$
+\end_inset
+
+ דיסקרטי שמקבל מספר סופי של ערכים "אטומיים".
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתהליך הגנרטיבי שנניח: כדי לייצר תצפית 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ קודם נבחר 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ לפי 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+, ואח"כ נייצר 
+\begin_inset Formula $y$
+\end_inset
+
+ לפי 
+\begin_inset Formula $p\left(y\middle|X=x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+שימושים במודלים חבויים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כללית: גם כשאין שימוש לערכי 
+\begin_inset Formula $X$
+\end_inset
+
+, מידול בעזרת 
+\begin_inset Formula $X$
+\end_inset
+
+ יכול לשפר את מידול 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרים אחרים יש עניין יישומי בערכי 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+בסיטואציות אופייניות של למידה/סיווג:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+למידה/סיווג מבוקר/מפוקח)
+\lang english
+Supervised
+\lang hebrew
+(:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ערכי 
+\begin_inset Formula $X$
+\end_inset
+
+ ידועים, ויש מדגם אימון שבו לכל 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ שנצפה ידוע)מתוייג( מה ערך 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ המתאים לאותו 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ממדגם כזה נשערך את ההתפלגות המשותפת.
+\end_layout
+
+\begin_layout Itemize
+יישום: בהינתן 
+\begin_inset Formula $y$
+\end_inset
+
+, לשערך את 
+\begin_inset Formula $p\left(x\middle|y\right)$
+\end_inset
+
+.
+ ובפרט: לסווג את ה
+\begin_inset Formula $y$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+ המתאים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+למידה לא מפוקחת)
+\lang english
+Unsupervised
+\lang hebrew
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לא ידועה מראש זהות ערכי 
+\begin_inset Formula $X$
+\end_inset
+
+, ואין מדגם מתוייג.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה: לקבל)קלסטרינג( את התצפיות של ה
+\begin_inset Formula $y$
+\end_inset
+
+ לפי ערכי 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ שכנראה ייצרו אותם.
+\end_layout
+
+\begin_layout Standard
+מטרת הלמידה: שערוך 
+\begin_inset Formula $\theta$
+\end_inset
+
+, אוסף הפרמטרים של 
+\begin_inset Formula $p\left(x,y;\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+מודל חבוי - עירוב היסטוגרמות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mixture of Histograms
+\end_layout
+
+\begin_layout Standard
+)זה בעצם עירוב של מולטינומים(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נמחיש: כמודל ליצירת מסמכים)
+\begin_inset Formula $Y$
+\end_inset
+
+( לפי נושאים)
+\begin_inset Formula $X$
+\end_inset
+
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתייחס למסמך כהיסטוגרמת שכיחויות של המילים שמופיעות בו)זה המודל המולטינומי
+ שלמדנו ליוניגרם(.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן: המילים נלקחות ממילון בגודל 
+\begin_inset Formula $v$
+\end_inset
+
+: 
+\begin_inset Formula $w_{1},\dots w_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מדגם
+\begin_inset space ~
+\end_inset
+
+מסמכים: 
+\begin_inset Formula $y=y_{1},\dots y_{N}$
+\end_inset
+
+)
+\begin_inset Formula $N$
+\end_inset
+
+ מסמכים במדגם(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח אי תלות בין המסמכים.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ייצוג
+\begin_inset space ~
+\end_inset
+
+מסמך
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $y_{t}$
+\end_inset
+
+: כהיסטוגרמה של 
+\begin_inset Formula $v$
+\end_inset
+
+ שכיחויות 
+\begin_inset Formula $y_{t}=\left(n_{t1},n_{t2},\dots n_{tv}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n_{tk}$
+\end_inset
+
+ היא שכיחות המילה ה
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ במסמך 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לפשטות: נניח אורך מסמכים קבוע 
+\begin_inset Formula $n$
+\end_inset
+
+: 
+\begin_inset Formula $\forall_{t}\sum\limits _{k=1}^{v}n_{tk}=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מודל עם משתנה חבוי
+\end_layout
+
+\begin_layout Standard
+נניח קיום:
+\end_layout
+
+\begin_layout Itemize
+מ"מ נוסף 
+\begin_inset Formula $X$
+\end_inset
+
+ עם ערכים 
+\begin_inset Formula $x_{1},\dots x_{\left|X\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+)בדוגמה המסמכים:מייצג קטגוריה, או קלסטר(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+התפלגות משותפת 
+\begin_inset Formula $p\left(x,y;\theta\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+מימין לנקודה-פסיק);( רושמים את הפרמטרים של ההסתברות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תהליך גנרטיבי ליצירת מסמך
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $x\in X$
+\end_inset
+
+)קטגוריה( לפי התפלגות 
+\begin_inset Formula $p\left(x\right)=P\left(X=x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נקבע את המילים ב
+\begin_inset Formula $y$
+\end_inset
+
+ לפי התפלגות 
+\begin_inset Formula $p\left(y_{t}\middle|X=x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בפרט: נניח עבור 
+\begin_inset Formula $p\left(y_{t}\middle|x\right)$
+\end_inset
+
+ מודל מולטינומי נפרד לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+בהתאם - הפרמטרים 
+\begin_inset Formula $\theta$
+\end_inset
+
+ של המודל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall_{x_{i}\in X}p\left(x_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{x_{i}\in X}\forall_{w\in w_{1},\dots w_{v}}p\left(w_{k}\middle|x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי המודל המולטינומי:
+\begin_inset Formula 
+\[
+p\left(y_{t}\middle|x_{i}\right)=\prod_{k=1}^{v}p\left(w_{k}\middle|x_{i}\right)^{n_{tk}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נתעניין ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\left(y_{t};\theta\right)$
+\end_inset
+
+ - הסתברות יצירת תצפית
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\left(x_{i}\middle|y_{t};\theta\right)$
+\end_inset
+
+ - הסתברות הסיווג/שיוך לקלסטר
+\end_layout
+
+\begin_layout Enumerate
+אומדן 
+\begin_inset Formula $\hat{\theta}_{ML}$
+\end_inset
+
+ - נסיון ערכי 
+\begin_inset Formula $ML$
+\end_inset
+
+ לפרמטרים
+\end_layout
+
+\end_body
+\end_document

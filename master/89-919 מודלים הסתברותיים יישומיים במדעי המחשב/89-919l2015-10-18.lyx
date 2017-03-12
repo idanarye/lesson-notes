@@ -1,0 +1,1215 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-10-18
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+אדמיניסטרטיבי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מרצה: עידו דגן
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חדר:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+120
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוא"ל: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+dagan@cs.biu.ac.il
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בודקת: ורד שוורץ
+\end_layout
+
+\begin_layout Section*
+הקדמה
+\end_layout
+
+\begin_layout Standard
+האספקטים העיקריים במדעי המחשב הם אלגוריתמים מתמטיים - הפלט מגדיר את הקלט
+ באופן דטרמיניסטי - ושיטות כלליות של בניית תוכנה.
+\end_layout
+
+\begin_layout Standard
+מצד שני, בעולם האמיתי למערכות יש קשר לעולם החיצון, שבהן אין תמיד עולם סגור,
+ והן צריכות לפעול על קלט שאין שליטה עליו, ואין בד"כ אפשרות להוכיח מראש מה
+ יהיו הביצועים.
+ בעולם כזה משתמשים בשיטות אמפיריות בשביל לפתח ובמודלים הסתברותיים כדי למדל
+ מה יקרה)למרות שאי אפשר לחשב במדויק(.
+\end_layout
+
+\begin_layout Standard
+בתחום של למידת מכונה אמנם לא כל הגישות הן הסתברותיות, אבל רובן כן מתבססות
+ על הסתברות.
+\end_layout
+
+\begin_layout Standard
+בקורס הזה נלמד שיטות אלגוריתמיות, חישוביות, של שימוש במודלים הסתברותיים.
+\end_layout
+
+\begin_layout Standard
+המודלים ההסתברותיים מפותחים בד"כ בצורה כללית, ג'נרית, ולא איכפת להם על איזה
+ סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם עובדים - זיהוי תמונה, קלט של רובוט או שוק המניות בבורסה.
+ רוב הדוגמאות בקורס הזה יהיו על קלט טקסטואלי.
+\end_layout
+
+\begin_layout Subsubsection*
+נושאים מרכזיים שנכסה:
+\end_layout
+
+\begin_layout Itemize
+חזרה על מושגים רלוונטיים בהסתברות
+\end_layout
+
+\begin_layout Itemize
+מודלים הסתברותיים בסיסיים, והרלוונטיות שלהם למידול נתונים אמפיריים
+\end_layout
+
+\begin_layout Itemize
+אמדנים
+\end_layout
+
+\begin_layout Itemize
+מודלים חבויים - הרבה פעמים לא כל הנתונים שאנחנו רוצים למדל הם נתונים שאנחנו
+ יכולים לצפות בהם
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+חזרה: מבוא לתורת ההסתברות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מוטיבציה
+\series default
+: למדל תופעות שקיימת לגביהן אי וודאות ורוצים להעריך את הסיכוי לכך שמאורעות
+ מסויימים קורים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נקודת
+\begin_inset space ~
+\end_inset
+
+מבט
+\series default
+: נסתכל על התופעה שממדלים כניסוי, עם קבוצה)בדידה, רציפה( של תוצאות אפשריות.
+\end_layout
+
+\begin_layout Subsection*
+מרחב המדגם - 
+\begin_inset Formula $S$
+\end_inset
+
+ - 
+\series medium
+\size normal
+\lang english
+Sample Space
+\end_layout
+
+\begin_layout Itemize
+קבוצת כל התוצאות האפשריות של הניסוי
+\begin_inset Newline newline
+\end_inset
+
+לדוגמא:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מטבע: 
+\begin_inset Formula $\left\{ H,T\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קוביה: 
+\begin_inset Formula $\left\{ 1,2,\dots6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+טמפרטורה: 
+\begin_inset Formula $\left[-100,100\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+בניסוי מורכב - הטלת שתי מטבעות: 
+\begin_inset Formula $\left\{ \left\langle H,H\right\rangle ,\left\langle H,T\right\rangle ,\left\langle T,H\right\rangle ,\left\langle T,T\right\rangle \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+קבוצה סופית/אינסופית, רציפה/בדידה
+\end_layout
+
+\begin_layout Subsection*
+מאורע - 
+\begin_inset Formula $E$
+\end_inset
+
+ -
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Event
+\end_layout
+
+\begin_layout Standard
+מאורע 
+\begin_inset Formula $E$
+\end_inset
+
+ הינו תת קבוצה של מרחב המדגם 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+דוגמאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בקוביה: התוצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+: 
+\begin_inset Formula $\left\{ 4\right\} \subseteq S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+התוצאה זוגית: 
+\begin_inset Formula $\left\{ 2,4,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+איחוד
+\begin_inset space ~
+\end_inset
+
+מאורעות
+\series default
+: 
+\begin_inset Formula $E\cup F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+חיתוך
+\begin_inset space ~
+\end_inset
+
+מאורעות
+\series default
+: 
+\begin_inset Formula $E\cap F$
+\end_inset
+
+ או 
+\begin_inset Formula $EF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+משלים
+\series default
+: נסמן 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+ או 
+\begin_inset Formula $E^{c}$
+\end_inset
+
+: 
+\begin_inset Formula $\overline{E}\triangleq S\backslash E$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מתקיים: 
+\begin_inset Formula $\overline{S}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הסתברות מאורעות
+\end_layout
+
+\begin_layout Standard
+הפונקציה 
+\begin_inset Formula $P\left(E\right)$
+\end_inset
+
+ היא פונקציית הסתברות שמייחסת ערך הסתברות לכל מאורע אם היא מקיימת את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התנאים הבאים:
+\end_layout
+
+\begin_layout Standard
+)
+\begin_inset Formula $P$
+\end_inset
+
+ היא פונקציה ממאורעות ל
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0\le P\left(E\right)\le1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(S\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל סדרת מאורעות זרים 
+\begin_inset Formula $E_{1},E_{2},\dots$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\bigcup_{i=1}^{\infty}E_{i}\right)=\sum_{i=1}^{\infty}P\left(E_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+דיאגרמת וון להמחשת הסתברויות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מההגדרה מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\overline{E}\right)=1-P\left(E\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E\right)+P\left(\overline{E}\right)=P\left(E\cup\overline{E}\right)=P\left(S\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהתאם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\emptyset\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+תכונה נוספת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E\cup F\right)=P\left(E\right)+P\left(F\right)-P\left(E\cap F\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נובע אלגברית מההגדרה כשמסתכלים על 
+\begin_inset Formula $E\backslash F$
+\end_inset
+
+ ו
+\begin_inset Formula $F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הסתברות מותנית של מאורעות: 
+\begin_inset Formula $P\left(E\middle|F\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+מטרה
+\series default
+: לבטא את ההסתברות שמאורע 
+\begin_inset Formula $E$
+\end_inset
+
+ קרה בהינתן שידוע שמאורע 
+\begin_inset Formula $F$
+\end_inset
+
+ קרה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+במילים
+\begin_inset space ~
+\end_inset
+
+אחרות
+\series default
+: בהינתם ש
+\begin_inset Formula $F$
+\end_inset
+
+ קרה, מה ההסתברות שקרה החיתוך 
+\begin_inset Formula $EF$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעצם, מצמצמים את מרחב המדגם מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $F$
+\end_inset
+
+.
+ ושואלים - בהינתן שמרחב המדגם הוא 
+\begin_inset Formula $F$
+\end_inset
+
+, מה ההסתברות ש
+\begin_inset Formula $EF$
+\end_inset
+
+? ואם מסתכלים על דיאגרמת וון - מה השטח של החיתוך 
+\begin_inset Formula $EF$
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $F$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E\middle|F\right)=\frac{P\left(EF\right)}{P\left(F\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימוש נפוץ בהגדרה: חישוב הסתברות משותפת ע"י הסתברות מותנית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(EF\right)=P\left(E\middle|F\right)\cdot P\left(F\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמא לשימוש
+\end_layout
+
+\begin_layout Standard
+כד מכיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדורים שחורים ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לבנים.
+ נוציא באקראי שני כדוים, אחד אחרי השני.
+ מה הסיכוי ששניהם שחורים?
+\end_layout
+
+\begin_layout Paragraph
+פתרון
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $F\backslash E$
+\end_inset
+
+ - הכדור הראשון/השני שחור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(EF\right)=P\left(E\right)\cdot P\left(E\middle|F\right)=\frac{5}{10}\cdot\frac{4}{9}=\frac{2}{9}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+כלל השרשרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+P\left(E_{1}\cdots E_{n}\right) & = & P\left(E_{1}\right)\cdot P\left(E_{2}\cdots E_{n}\middle|E_{1}\right)\\
+ & = & P\left(E_{1}\right)\cdot P\left(E_{2}\middle|E_{1}\right)\cdot P\left(E_{3}\cdots E_{n}\mid E_{1}E_{2}\right)\\
+\cdots & = & P\left(E_{1}\right)\cdot P\left(E_{2}\middle|E_{1}\right)\cdot P\left(E_{3}\middle|E_{1}E_{2}\right)\cdots P\left(E_{n}\mid E_{1}\cdots E_{n-1}\right)\\
+ & = & P\left(E_{1}\right)\cdot\prod_{i=2}^{n}P\left(E_{i}\mid E_{1}\cdots E_{i-1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+: זוהי נוסחא נכונה מתמטית, אבל היא לא כל כך עוזרת לנו כי בשלב האחרון יהיה
+ קשה מאוד לחשב את האיברים האחרונים, שהם מאוד מורכבים ונדירים.
+ לכן בד"כ נשתמש בכלל השרשרת כדי ליצור את המבנה, ואז נפשט את ההסתברויות היותר
+ מורכבות)למשל נסיק שחלק מהתנאים)=ההסתברויות( לא רלוונטים להסתברות(
+\end_layout
+
+\begin_layout Section*
+מאורעות בלתי תלויים)ב"ת(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+המטרה
+\series default
+: להבדיל מאורעות שבהן ההסתברות של אחד לא משפיעה על השני, כדי לפשט את המידול.
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+שני מאורעות 
+\begin_inset Formula $E,F$
+\end_inset
+
+ נקראים ב"ת אם מתקיים 
+\begin_inset Formula $P\left(EF\right)=P\left(E\right)\cdot P\left(F\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מההגדרה מתקיים
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $E$
+\end_inset
+
+ ו
+\begin_inset Formula $F$
+\end_inset
+
+ ב"ת אזי 
+\begin_inset Formula $P\left(E\middle|F\right)=P\left(E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\begin_inset Formula 
+\[
+P\left(E\middle|F\right)=\frac{P\left(EF\right)}{P\left(F\right)}=\frac{P\left(E\right)\cdot\cancel{P\left(F\right)}}{\cancel{P\left(F\right)}}=P\left(E\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמא: הטלת זוג קוביות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ - הקוביה הראשונה יצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ - סכום הקוביות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+נראה שיש תלות)לפי ההגדרה(:
+\begin_inset Formula 
+\[
+P\left(E_{1}F\right)=\frac{1}{6}\cdot\frac{1}{6}=\frac{1}{36}\neq P\left(E_{1}\right)P\left(F\right)=\frac{5}{36}\cdot\frac{1}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{2}$
+\end_inset
+
+: סכום הקוביות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E_{2}F\right)=\frac{1}{6}\cdot\frac{1}{6}=\frac{1}{36}=P\left(E_{2}\right)P\left(F\right)=\frac{6}{36}\cdot\frac{1}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה - 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $F$
+\end_inset
+
+ ב"ת
+\end_layout
+
+\begin_layout Section*
+נכליל את מושג אי התלות לקבוצה מאורעות:
+\end_layout
+
+\begin_layout Standard
+המאורעות 
+\begin_inset Formula $E_{1},\dots E_{n}$
+\end_inset
+
+ נקראים ב"ת אם 
+\series bold
+\bar under
+לכל
+\series default
+\bar default
+ תת קבוצה שלהם 
+\begin_inset Formula $E_{i_{1}},\dots E_{i_{k}}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+P\left(E_{i_{1}}\cdots E_{i_{k}}\right)=\prod_{j=1}^{k}P\left(E_{i_{j}}\right)
+\]
+
+\end_inset
+
+ס
+\end_layout
+
+\end_body
+\end_document

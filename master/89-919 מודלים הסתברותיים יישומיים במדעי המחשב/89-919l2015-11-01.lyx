@@ -1,0 +1,1019 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-11-01
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+התפלגות משותפת של מ"מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ - 
+\begin_inset Formula $p\left(X,Y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+התפלגות שולית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{X}\left(x\right)=\sum_{y\in Y}p\left(x,y\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{Y}\left(y\right)=\sum_{x\in X}p\left(x,y\right)
+\]
+
+\end_inset
+
+טריוויאלית:
+\begin_inset Formula 
+\[
+\sum_{x}p_{X}\left(x\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוחלת של פונקציה מעל התפלגות משותפת
+\begin_inset Formula 
+\[
+E\left[g\left(x,y\right)\right]=\sum_{x,y}g\left(x,y\right)\cdot p\left(x,y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+לדוגמה
+\end_layout
+
+\begin_layout Standard
+תוחלת של סכום ערכי משתנים מקריים בהתפלגות משותפת שווה לסכום התוחלות של שני
+ המשתנים)ע"פ ההתפלגויות השוליות(.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\left[X+Y\right]=\sum_{x}\sum_{y}\left(x+y\right)\cdot p\left(x,y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{x}\sum_{y}x\cdot p\left(x,y\right)+\sum_{x}\sum_{y}y\cdot p\left(x,y\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\sum_{x}x\cdot p\left(x\right)+\sum_{y}y\cdot p\left(y\right)=E\left[X\right]+E\left[Y\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משתנה מקרי בלתי תלוי
+\end_layout
+
+\begin_layout Standard
+מ"מ 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ נקראים בלתי תלויים)ב"ת( אם לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ ו
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+p\left(x,y\right)=p_{X}\left(x\right)p_{Y}\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+התפלגות מותנית של מ"מ 
+\begin_inset Formula $p_{X|Y}\left(x\middle|y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציית הסתברות שמגדירה
+\begin_inset Formula 
+\[
+p_{X|Y}\left(x\middle|y\right)=P\left(\left\{ X=x\right\} \middle|\left\{ Y=y\right\} \right)=\frac{P\left(\left\{ X=x,Y=y\right\} \right)}{P\left(\left\{ Y=y\right\} \right)}=\frac{p\left(x,y\right)}{p\left(y\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מסויים:
+\begin_inset Formula 
+\[
+\sum_{x}p\left(x\middle|y\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אמדן)
+\lang english
+Estimation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Section*
+הקדמה - שימוש במודלים הסתברותיים
+\end_layout
+
+\begin_layout Standard
+נגדיר מודל הסתברותי לתופעה שבה מתעניינים, למטרות שונות:
+\end_layout
+
+\begin_layout Itemize
+הסבר - פענוח, סיווג.
+ לדוגמה - להחליט באיזה נושא הכתבה לפי המילים שיש בה
+\end_layout
+
+\begin_layout Itemize
+חיזוי - מזג אוויר, בורסה
+\end_layout
+
+\begin_layout Itemize
+יצירה - יצירת דיבור, תרגום
+\end_layout
+
+\begin_layout Standard
+נגדיר אוסף מ"מ ומהם הפרמטרים שלפיהם נקבעים ערכי המשתנים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: מטבע - כגון הסתברות המילה "ילד" בטקסט - נמדל כבינום.
+\end_layout
+
+\begin_layout Standard
+בד"כ נסתכל על ההתנהגות "הגנרטיבית"של המודל שמייצרת את את התצפיות בניסוי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: מודל הסתברות מילה "ילד" כבינום.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהליך גנרטיבי אפשרי: מעבר על כל מקום בטקסט, ועבורו מגרילים בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+ האם תופיע המילה "ילד" או מילה אחרת.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: זהו מודל מאוד פשטני, ויש מודלים שממדלים יותר טוב - למשל מסתכלים על ההקשר
+ של המשפט.
+ אבל בד"כ נרצה להגביל את כמות המשתנים כדי לפשט את המודל, ולכן המודלים שלנו
+ יהיו מקורבים.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+סימון מקובל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\theta$
+\end_inset
+
+ אוסף הערכים להסתברויות שמוגדרות במודל - הפרמטרים של המודל
+\end_layout
+
+\begin_layout Standard
+לדוגמה - במשתנה בינומי 
+\begin_inset Formula $\theta=\left\{ p\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שערוך מודל 
+\end_layout
+
+\begin_layout Standard
+תהליך אומדן ערכי ההסתברויות שבו 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ יתבצע ע"י דגימה סטטיסטית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: אומדן 
+\begin_inset Formula $p$
+\end_inset
+
+ למטבע: נתיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות ונניח שקיבלנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+70
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הצלחות 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+ נשערך 
+\begin_inset Formula $p=0.7$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+למה?
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+אומדן נראות מקסימלית)
+\lang english
+Maximum Likelihood Estimation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Subsection*
+נראות)
+\lang english
+Likelihood
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיציה: בהנתן שאני יודע מה ערכי הפרמטרים, מהי ההסתברות לתצפית מסויימת?
+\end_layout
+
+\begin_layout Standard
+עבור תצפית מסויימת, הנראות של התצפית היא ההסתברות לקבל אותה על פי ערכי פרמטרים
+ נתונים של המודל.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן: 
+\begin_inset Formula $p\left(\overbrace{O}^{\mbox{observation}};\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: בבינום: 
+\begin_inset Formula $p\left(70,100;p\right)$
+\end_inset
+
+)
+\numeric on
+70
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הצלחות מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נסיונות עבור הפרמטר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $p$
+\end_inset
+
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפונקציה הזו היא פונקציה של 
+\begin_inset Formula $p$
+\end_inset
+
+ - לכל 
+\begin_inset Formula $p$
+\end_inset
+
+ אפשרי היא קובעת את ההסתברות לקבלת התצפית עבור ערך זה של 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הרציונאל אומדן נראות מקסימלית
+\end_layout
+
+\begin_layout Standard
+מכיוון שאנחנו יודעים את התצפית ורוצים לחשב לפיה את הפרמטרים, נרצה למצוא
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ כך ש
+\begin_inset Formula $p\left(O,\theta\right)$
+\end_inset
+
+ מקסימלי
+\end_layout
+
+\begin_layout Subsection*
+אומדן נראות מקסימלי
+\end_layout
+
+\begin_layout Standard
+נבחר כאומדן נראות מקסימלי)
+\begin_inset Formula $MLE$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+p_{MLE}\left(\left\langle 70,100\right\rangle \right)=\mbox{argmax}_{p}p\left(70,100;p\right)=0.7
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+באופן כללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{ML}\left(\overbrace{O}^{\mbox{given observation}}\right)=\mbox{argmax}_{\theta}p\left(\overbrace{O}^{\mbox{constant}};\overbrace{\theta}^{\mbox{parameter}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נוכיח - לבינום 
+\begin_inset Formula $p_{MLE}\left(\left\langle \overbrace{n}^{\mbox{attempts}},\overbrace{k}^{\mbox{successes}}\right\rangle \right)=\frac{k}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k,n$
+\end_inset
+
+ נתונים בתצפית)קבועים(:
+\end_layout
+
+\begin_layout Standard
+פונקציית הנראות: 
+\begin_inset Formula $p\left(k,n;p\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו רוצים למצוא את ערך 
+\begin_inset Formula $p$
+\end_inset
+
+ שימקסם את פונקציית הנראות: לפונקציית הבינום ניתן למצוא פיתרון אנליטי ע"י
+ גזירה.
+\end_layout
+
+\begin_layout Standard
+יהיה נוח יותר לגזור את ה
+\begin_inset Formula $\log$
+\end_inset
+
+ של פונקציית הנראות - ובגלל מונוטוניות 
+\begin_inset Formula $\log$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ שימקסם את ה
+\begin_inset Formula $\log$
+\end_inset
+
+ ממקסמם את הפונקציה המקורית.
+ נסמן 
+\begin_inset Formula $L-\log\left(\mbox{likelihood}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\left(p\right)=\log p\left(k,n;p\right)=\log\left(\binom{n}{k}p^{k}\left(1-p\right)^{n-k}\right)=\log\binom{n}{k}+k\log p+\left(n-k\right)\log\left(1-p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור)תזכורת 
+\begin_inset Formula $\left(\log x\right)'=\frac{1}{x}$
+\end_inset
+
+( ונשווה לאפס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}L\left(p\right)}{\mathrm{d}p}=\frac{k}{p}-\frac{n-k}{1-p}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k-\cancel{kp}=np-\cancel{kp}\implies p=\frac{k}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: כדי להוכיח שזו נקודת מקסימום, צריך להראות שהפונקציה קעורה)
+\begin_inset Formula $\cap$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כאשר מסתכלים מלמטה 
+\begin_inset Formula $\cap$
+\end_inset
+
+ זה קעור ו
+\begin_inset Formula $\cup$
+\end_inset
+
+ זה קמור
+\end_layout
+
+\end_inset
+
+(: נגזרת שנייה שלילית בכל התחום של 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+ההצדקה ל
+\begin_inset Formula $MLE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באיזה מובן 
+\begin_inset Formula $MLE$
+\end_inset
+
+ הוא הנכון?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיציה: נניח שיש לנו מטבע שהפרמטר האמיתי שלו הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $0.7$
+\end_inset
+
+, ואנו רוצים למצוא את זה.
+ אם נטיל אותו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $n=100$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ פעמים ונקבל נגיד 
+\begin_inset Formula $k=68$
+\end_inset
+
+.
+ במקרה כזה 
+\begin_inset Formula $p_{MLE}=0.68$
+\end_inset
+
+.
+ אם נגדיל ל
+\begin_inset Formula $n=10000$
+\end_inset
+
+ נקבל אולי 
+\begin_inset Formula $p_{MLE}=0.705$
+\end_inset
+
+.
+ אפשר להוכיח שככל שנגדיל את 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $p_{MLE}$
+\end_inset
+
+ יתכנס לערך האמיתי 
+\begin_inset Formula $p$
+\end_inset
+
+ - זהו אומדן חסר הטיה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+אומדן חסר הטיה - אומדן שככל שמגדילים את גודל המדגם מתכנס לערך האמיתי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח: עבור תצפית שנוצרות על ידיד הפרמטרים של המודל)האמייתיים - אלו
+ שאותם מנסים לשערך( מתקיים שאומדן 
+\begin_inset Formula $MLE$
+\end_inset
+
+ מתכנס לערכי הפרמטרים עם הגדלת המדגם)שואף ל
+\begin_inset Formula $\infty$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+זה
+\begin_inset space ~
+\end_inset
+
+נקרא: אומד עקבי אסימפטוטית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Asymptotically consistent
+\end_layout
+
+\end_body
+\end_document

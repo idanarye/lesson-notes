@@ -1,0 +1,727 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+נושאים מתקדמים בבינה מלאכותית
+\\
+\selectlanguage{english}
+89-950-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' שרית קראוס}
+\\
+\textbf{תאריך:}
+\beginL
+2016-03-17
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\boxempty\left(p\to q\right)\right)\to\left(\boxempty p\to\boxempty q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם תמיד 
+\begin_inset Formula $p$
+\end_inset
+
+ גורר 
+\begin_inset Formula $q$
+\end_inset
+
+, אז זה אומר שאם תמיד 
+\begin_inset Formula $p$
+\end_inset
+
+, מתקיים גם שתמיד 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ האם המשפט הזה נכון סינטקטי? כלומר, האם הוא נכון עבור כל עולם בכל מודל?
+ האם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{w}\models\boxempty\left(p\to q\right)\to\left(\boxempty p\to\boxempty q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח ע"י פיתוח:
+\begin_inset Formula 
+\[
+w\models\boxempty\left(p\to q\right)\implies\forall_{w':wRw'}M_{w'}\models p\to q
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M_{w}\models\boxempty p\implies\forall_{w':wRw'}M_{w'}\models p
+\]
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $wRw'$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+w\models\boxempty\left(p\to q\right)\\
+w\models\boxempty p
+\end{array}\right.\implies\left\{ \begin{array}{c}
+M_{w'}\models p\to q\\
+M_{w'}\models p
+\end{array}\right.\implies M_{w'}\models q
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $M_{w}\models\boxempty q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K\left(p\wedge\neg p\right)$
+\end_inset
+
+ - מתי זה מתקיים? לכאורה זו סתירה)כי 
+\begin_inset Formula $p\wedge\neg p$
+\end_inset
+
+ תמיד שקר(, אבל בעולם 
+\begin_inset Formula $w$
+\end_inset
+
+ שלא מכיר שום עולם אחר זה מתקיים.
+ ואז:
+\begin_inset Formula 
+\[
+\forall_{w':wRw'}M_{w'}\models p\wedge\neg p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי למנוע מצבים כאלה, נרצה תכונה שנקראת "סיריאליות":
+\end_layout
+
+\begin_layout Section*
+סיריאליות
+\end_layout
+
+\begin_layout Standard
+כל עולם מכיר לפחות עולם אחר:
+\begin_inset Formula 
+\[
+\forall_{w}\exists_{w'}wRw'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+רפלקסיביות
+\end_layout
+
+\begin_layout Standard
+מקרה פרטי של סיריאליות:
+\begin_inset Formula 
+\[
+\forall_{w}wRw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על האקסיומה 
+\begin_inset Formula $Kp\to p$
+\end_inset
+
+.
+ האם אפשר לתת דוגמה לעולם שבו זה לא מתקיים? כן - אם הוא לא רפלקסיבי:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{\neg p}\ar[r] & *++[o][F]{p}\ar@(u,r)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+טרנזיטיביות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+xRy\\
+yRz
+\end{array}\implies xRz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+אוקלידיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+xRy\\
+xRz
+\end{array}\implies yRz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{y}\ar@(u,l)\ar@/^{10pt}/[rr] &  & *++[o][F]{z}\ar@(r,u)\ar@/^{10pt}/[ll]\\
+ & *++[o][F]{x}\ar[lu]\ar[ru]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שסיריאליות רפלקסיביות, טרינזיטיביות ואוקלידיות הן לא תכונות שחייבות
+ להתקיים בכל מודל.
+ התכונות קובעות איזה אקסיומות יתקימו.
+ למשל האקסיומה 
+\begin_inset Formula $\diamond\varphi\to\boxempty\diamond\varphi$
+\end_inset
+
+ לא מתקיימת במודל לא אוקלידי כמו:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{p} &  & *++[o][F]{\neg p}\\
+ & *++[o][F]{p}\ar[lu]\ar[ru]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Closed World Assumption
+\end_layout
+
+\begin_layout Standard
+אם
+\begin_inset Formula 
+\[
+KB=\left\{ \begin{array}{c}
+\forall_{x}\textnormal{Bird}\left(x\right)\to\textnormal{Fly}\left(x\right)\\
+\textnormal{Bird}\left(Tweety\right)
+\end{array}\right.
+\]
+
+\end_inset
+
+לפי כל מערכת לוגית שראינו עד עתה, מתקיים גם 
+\begin_inset Formula $\textnormal{Fly}\left(Tweety\right)$
+\end_inset
+
+, ושום מידע שנוסיף לא ישנה את זה.
+ אבל במציאות זה לא נכון - למשל יכול להיות שהציפור פצועה ולא יכולה לעוף.
+\end_layout
+
+\begin_layout Standard
+אנשים מאמינים בדברים ועובדים לפי האמונה שלהם, אבל יכולה להתווסף עובדה ולשנות
+ את האמונה הזו.
+ לוגיקה קלאסית לא מאפשרת את זה - היא מונוטונית.
+ אבל הלוגיקה שאנשים עובדים איתה במציאות היא לא מונוטונית, ולכן נצטרך 
+\lang english
+Closed World Assumption
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+, אז 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכול להתקיים:
+\begin_inset Formula 
+\[
+KB\vdash_{CWA}p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ a\right\} \cup KB\cancel{\vdash}_{CWA}p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שבכל לוגיקה יכול להיות שמתקיים 
+\begin_inset Formula $\begin{array}{c}
+KB\vdash p\\
+KB\backslash\left\{ a\right\} \cancel{\vdash}p
+\end{array}$
+\end_inset
+
+ - כלומר שהסרת עובדות גורמת לכך שלא נוכל להוכיח משהו שיכולנו להוכיח קודם
+ - אבל צריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Closed World Assumption
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשביל ש
+\series bold
+הוספת
+\series default
+ עובדות תגרום לכך שלא נוכל להוכיח דברים שיכולנו להוכיח קודם.
+\end_layout
+
+\begin_layout Standard
+בלוגיקה מונוטונית צריך הרבה עובדות בשביל להוכיח דברים:
+\begin_inset Formula 
+\[
+\neg\textnormal{Wounded}\left(x\right)\wedge\neg\textnormal{Kiwi}\left(x\right)\wedge\neg\textnormal{Ostrich}\left(x\right)\wedge\textnormal{Alive}\left(x\right)\wedge\cdots\wedge\textnormal{Bird}\left(x\right)\to\textnormal{Fly}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם אפשר לתת סמנטיקה ל
+\lang english
+Closed World Assumption
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Standard
+אחת הסמנטיקות נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Minimal Model Semantics
+\lang hebrew
+.
+ נסתכל על המודל:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F]{p} & *++[o][F]{}\\
+*++[o][F]{p,q} & *++[o][F]{q}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתעניין בשאלה - מה העולם המינימלי שמספק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Knowledge Base
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסויים? למשל 
+\begin_inset Formula $KB=\left\{ p\vee q\right\} $
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\xymatrix{*++[o][F=]{p} & *++[o][F]{}\\
+*++[o][F]{p,q} & *++[o][F=]{q}
+}
+\]
+
+\end_inset
+
+העולם 
+\begin_inset Formula $\left\{ \right\} $
+\end_inset
+
+ לא מספק והעולם 
+\begin_inset Formula $\left\{ p,q\right\} $
+\end_inset
+
+ לא מינימלי.
+\end_layout
+
+\begin_layout Standard
+כעת נרצה לדעת - מה נכון ב
+\series bold
+\bar under
+כל
+\series default
+\bar default
+ העולמות האלה?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ לא נכון - הוא לא נכון בעולם 
+\begin_inset Formula $\left\{ q\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p\to\neg q$
+\end_inset
+
+ נכון - ב
+\begin_inset Formula $\left\{ p\right\} $
+\end_inset
+
+ כי שני הצדדים נכונים וב
+\begin_inset Formula $\left\{ q\right\} $
+\end_inset
+
+ כי 
+\begin_inset Formula $p$
+\end_inset
+
+ לא נכון.
+\end_layout
+
+\end_body
+\end_document

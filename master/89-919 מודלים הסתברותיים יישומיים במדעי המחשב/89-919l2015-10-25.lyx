@@ -1,0 +1,950 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-10-25
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אתר הקורס - 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://u.cs.biu.ac.il/~89-919/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נוסחת בייס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bayes
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מטרה: חישוב 
+\begin_inset Formula $P\left(E\middle|F\right)$
+\end_inset
+
+ כשקל יותר לחשב 
+\begin_inset Formula $P\left(F\middle|E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הגדרת הסתברות מותנית: 
+\begin_inset Formula $P\left(EF\right)=P\left(E\middle|F\right)P\left(F\right)=P\left(F\middle|E\right)P\left(E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הצורה הבסיסית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E\middle|F\right)=\frac{P\left(F\middle|E\right)P\left(E\right)}{P\left(F\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(F\right)=P\left(EF\right)+P\left(\overline{E}F\right)=P\left(F\middle|E\right)P\left(E\right)+P\left(F\middle|\overline{E}\right)P\left(\overline{E}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(E\middle|F\right)=\frac{P\left(F\middle|E\right)P\left(E\right)}{P\left(F\middle|E\right)P\left(E\right)+P\left(F\middle|\overline{E}\right)P\left(\overline{E}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הנוסחה הכללית
+\end_layout
+
+\begin_layout Standard
+בהינתן קבוצת מאורעות זרים 
+\begin_inset Formula $E_{1},E_{2},\dots E_{n}$
+\end_inset
+
+ שפורשים את 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\bigcup\limits _{i=1}^{n}E_{i}=S$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\[
+P\left(F\right)=\sum_{i=1}^{n}P\left(FE_{i}\right)=\sum_{i=1}^{n}P\left(F\middle|E_{i}\right)\cdot P\left(E_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב בנוסחת בייס:
+\begin_inset Formula 
+\[
+P\left(E_{i}\middle|F\right)=\frac{P\left(F\middle|E_{i}\right)P\left(E_{i}\right)}{\sum\limits _{j=1}^{n}P\left(F\middle|E_{j}\right)P\left(E_{j}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+מכתב נמצא באחת מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תיקיות, בהסתברות שווה.
+ כשמחפשים את המכתב בתיקיה שבה הוא נמצא ההסתברות למצוא אותו היא 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ מה הסיכוי שהמכתב בכל זאת נמצא בתיקיה הראשונה למרות שסרקנו אותה ולא מצאנו
+ את המכתב?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ המכתב בתיקיה 
+\begin_inset Formula $i$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F$
+\end_inset
+
+ סרקנו את התיקיה הראשונה ולא מצאנו את המכתב
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(E_{1}\middle|F\right)=\frac{P\left(F\middle|E_{1}\right)P\left(E_{i}\right)}{\sum\limits _{i=1}^{3}P\left(F\middle|E_{i}\right)P\left(E_{i}\right)}=\frac{\left(1-\alpha\right)\cancel{\frac{1}{3}}}{\left(1-\alpha\right)\cancel{\frac{1}{3}}+1\cdot\cancel{\frac{1}{3}}+1\cdot\cancel{\frac{1}{3}}}=\frac{1-\alpha}{3-\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+משתנים מקריים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מוטיבציה: פעמים רבות לא מתעניינים ישירות בתוצאת הניסוי, אלא בפונקציה שלה.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: מה סכום הטלת זוג קוביות.
+ למשל: 
+\begin_inset Formula $P\left(\overbrace{f}^{\mbox{sum}}\left(\left\langle d_{1},d_{2}\right\rangle \right)=7\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפונקציה כזו נקרא 
+\emph on
+משתנה
+\emph default
+ 
+\emph on
+מקרי
+\emph default
+:
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הגדרה: משתנה מקרי)מ"מ(
+\end_layout
+
+\begin_layout Standard
+פונקציה ממרחב המדגם לערך כלשהו)מטווח מוגדר של הפונקציה(.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $X$
+\end_inset
+
+ המשתנה המקרי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x\in X$
+\end_inset
+
+ ערך אפשרי של המ"מ
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: מאחר שהערך 
+\begin_inset Formula $x$
+\end_inset
+
+ של 
+\begin_inset Formula $X$
+\end_inset
+
+ נקבע על פי תוצאות הניסוי, ניתן לייחס לו הסתברות: סכום ההסתברויות של כל
+ תוצאות הניסוי שעבורן ערך הפונקציה הוא 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+למשתנה בדיד.
+ עבור משתנים רציפים ההסתברות של ערך בודד)או של כל קבוצה בת מנייה של ערכים
+ בודדים( היא
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(x\right)=P\left(X=x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדוגמת זוג הקוביות:
+\begin_inset Formula 
+\[
+p\left(7\right)=\frac{6}{36}\qquad\qquad p\left(2\right)=p\left(12\right)=\frac{1}{36}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טווח הפונקציה הוא 
+\begin_inset Formula $\left\{ 2,\dots12\right\} $
+\end_inset
+
+.
+ כל זוג מאורעות עבורם ערך הפונקציה שונה הם זרים)כי זו פונקציה ולכן היא חד
+ ערכית(.
+ לכן:
+\begin_inset Formula 
+\[
+P\left\{ \bigcup_{i=2}^{12}\left\{ X=i\right\} \right\} =\sum_{i=1}^{12}P\left(\left\{ X=i\right\} \right)=\sum_{i=2}^{12}p\left(i\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+באופן כללי:
+\end_layout
+
+\begin_layout Standard
+סכום ההסתברויות לכל הערכים האפשריים של משתנה מקרי הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Section*
+הגדרה - משתנה מקרי בדיד ורציף
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\emph on
+משתנה
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+מקרי
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+בדיד
+\emph default
+: סט הערכים האפשריים סופי או בר מנייה)כגון 
+\begin_inset Formula $1,2,\dots\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\emph on
+משתנה
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+מקרי
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+רציף
+\emph default
+: המשתנה יכול לקבל טווח רציף של ערכים)כגון מספר ממשי(.
+ לדוגמה: גובה של אדם
+\end_layout
+
+\begin_layout Standard
+למשתנה בדיד קיימת פונקציית הסתברות 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ שמגדירה ערך הסתברותי לכל ערך אפשרי של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ נקראת 
+\emph on
+פונקציית מסת ההסתברות
+\emph default
+)
+\lang english
+Probability Mass Function
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+לקבוצת ההסתברויות שמגדירה את הפונקציה 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+: 
+\begin_inset Formula $\left\{ p\left(x_{i}\right)\right\} $
+\end_inset
+
+ נקרא 
+\emph on
+הפרמטרים
+\emph default
+ 
+\emph on
+של
+\emph default
+ 
+\emph on
+התפלגות
+\emph default
+ 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - מ"מ ברנולי
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מ"מ ברנולי
+\emph default
+ מוגדר עבור ניסוי שיש לו שתי תוצאות אפשריות.
+ נגדיר פונקציית מ"מ:
+\end_layout
+
+\begin_layout Itemize
+לתוצאה אחת נקרא הצלחה ועבורה 
+\begin_inset Formula $X=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לתוצאה שנייה נקרא כישלון ועבורה 
+\begin_inset Formula $X=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן: 
+\begin_inset Formula $p\left(1\right)=p\qquad p\left(0\right)=1-p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - מ"מ בינומי
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+מ"מ בינומי
+\emph default
+ מוגדר עבור ניסוי של סדרה של 
+\begin_inset Formula $n$
+\end_inset
+
+ ניסויי ברנולי.
+ ערך המ"מ 
+\begin_inset Formula $X$
+\end_inset
+
+ - מספר ההצלחות)
+\numeric on
+1
+\numeric off
+-ים( בניסוי
+\end_layout
+
+\begin_layout Standard
+ההסתברות לערך מסויים של 
+\begin_inset Formula $X$
+\end_inset
+
+)מתוך הטווח 
+\begin_inset Formula $0,\dots n$
+\end_inset
+
+(: נוסחת הבינום:
+\begin_inset Formula 
+\[
+p\left(x\right)=\binom{n}{x}p^{x}\left(1-p\right)^{n-x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - תוחלת של מ"מ)
+\lang english
+Expected Value
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיטיבית: ממוצע משוקלל של ערכי 
+\begin_inset Formula $X$
+\end_inset
+
+, משוקללים בהסתברויות שלהם: 
+\begin_inset Formula 
+\[
+E\left[X\right]=\sum_{\underbrace{x\in X}_{x:p\left(x\right)>0}}x\cdot p\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמאות: מ"מ של הטלת קוביה בודדת:
+\begin_inset Formula 
+\[
+E\left[X\right]=\frac{1}{6}\cdot\left(\underbrace{1+1+\cdots1}_{\mbox{6 times}}\right)=3.5
+\]
+
+\end_inset
+
+מ"מ של סכום זוג קוביות:
+\begin_inset Formula 
+\[
+E\left[X\right]=2\cdot\frac{1}{36}+3\cdot\frac{2}{36}+\cdots+7\cdot\frac{6}{36}+\cdots+12\cdot\frac{1}{36}
+\]
+
+\end_inset
+
+משתנה ברנולי:
+\begin_inset Formula 
+\[
+E\left[X\right]=1\cdot p+0\left(1-p\right)=p
+\]
+
+\end_inset
+
+משתנה בינומי:
+\begin_inset Formula 
+\[
+E\left[X\right]=\sum_{i=0}^{n}i\cdot p\left(i\right)=\sum_{i=0}^{n}i\cdot\binom{n}{i}p^{i}\left(1-p\right)^{n-i}=n\cdot p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+הגדרה - תוחלת של פונקציה)
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+( על מ"מ
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: 
+\begin_inset Formula $X$
+\end_inset
+
+-הטלת קוביה, 
+\begin_inset Formula $g\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $g\left(X\right)$
+\end_inset
+
+ כמשתנה מקרי חדש, שבו ההסתברות לכל ערך 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+, ולכן:
+\begin_inset Formula 
+\[
+E\left[g\left(x\right)\right]=\sum_{x\in X}g\left(x\right)\cdot p_{X}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+למשל - הגדרת שונות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Var}\left(X\right)=E\left[\left(X-E\left[X\right]\right)^{2}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הגדרה - התפלגות משותפת של מ"מ
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מוטיבציה: מידול תופעה שעבורה מחושבים מספר משתנים מקריים בניסוי, ומתעניינים
+ בהסתברות של צירוף ערכים מסויים)כל צירוף אפשרי(.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+הסתברות משותפת
+\emph default
+ למשתנים 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מגדירה ערך הסתברות לכל זוג אפשרי של ערכים 
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p\left(x,y\right)=P\left(\left\{ X=x,Y=y\right\} \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

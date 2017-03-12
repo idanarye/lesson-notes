@@ -1,0 +1,1469 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+נושאים מתקדמים בבינה מלאכותית
+\\
+\selectlanguage{english}
+89-950-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' שרית קראוס}
+\\
+\textbf{תאריך:}
+\beginL
+2016-06-02
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משחקים בייסיאנים
+\end_layout
+
+\begin_layout Standard
+אפשר לתאר אי וודאות באמצעות טיפוסים.
+ לכל שחקן 
+\begin_inset Formula $i$
+\end_inset
+
+ יש טיפוס 
+\begin_inset Formula $\Theta_{i}$
+\end_inset
+
+)או טיפוס ג'נרי - 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+(.
+ 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ הוא אוסף הטיפוסים.
+\end_layout
+
+\begin_layout Standard
+לפעמים ה
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ תלוי רק בטיפוס של השחקן - לשחקנים מטיפוסים שונים יהיו תועלות שונות על מצבי
+ עולם שונים)
+\begin_inset Formula $u_{i}$
+\end_inset
+
+( - אבל לא בטיפוס של השחקנים האחרים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: אם בקניית מכונית משומשת, התועלת של הקונה תלויה בטיפוס שלו ובאיכות
+ של הרכב - אבל לא בטיפוס של המוכר.
+ הטיפוס של המוכר משפיע כמובן על מהלך המשחק, אבל לא על ה
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הקונה מכל תוצאה.
+\end_layout
+
+\begin_layout Standard
+במקרים אחרים, ה
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כן תלוי בשחקנים האחרים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: אם אני נכנס להשקעה עם מישהו, הטיפוס שלו משפיע על הערך הסופי של ההשקעה
+ ולכן גם על התועלת שלי.
+\end_layout
+
+\begin_layout Standard
+לכל טיפוס ולכל שחקן יש אמונות על הטיפוסים של השחקן השני: 
+\begin_inset Formula 
+\[
+p_{i}:\Theta_{i}\to\Delta\left(\Theta_{-i}\right)
+\]
+
+\end_inset
+
+)כלומר אם אני יודע שאני 
+\begin_inset Formula $i$
+\end_inset
+
+, אני מניח שיש עולם בו השחקנים האחרים הם 
+\begin_inset Formula $\Theta_{-i}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{i}\left(\theta_{-i}\middle|\theta_{i}\right)
+\]
+
+\end_inset
+
+)כלומר מה הסיכוי ששחקן נותן לכך שהשחקנים האחרים מטיפוסים 
+\begin_inset Formula $\theta_{-i}$
+\end_inset
+
+ בהינתן שהוא מטיפוס 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+שחקן יכול לחשב את שיווי המשקל של כל טיפוס אחר מולו, ולפי זה והתפלגות הטיפוסים
+ לבחור אסטרטגיה.
+\end_layout
+
+\begin_layout Section*
+שני סוגים של משחקים בייסיאנים
+\end_layout
+
+\begin_layout Standard
+למעשה, אפשר לאחד את סוגי המשחקים האלה לסוג אחד)בו לא משנה אם האסטרטגיות
+ נפרדות או לא( - אבל יותר נוח להתייחס אליהן בנפרד.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Separating Equilibria
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל טיפוס משחק אסטרטגיה נפרדת
+\end_layout
+
+\begin_layout Standard
+למשל: במקרה של ההשקעות:
+\end_layout
+
+\begin_layout Itemize
+אפשרות ראשונה: אם המשקיע השני טוב הוא ימשוך את הכסף ואם הוא רע הוא לא ימשוך.
+ זה לא אפשרי, כי עבור משקיע רע למשוך את הכסף זה אסטרטגיה שולטת.
+\end_layout
+
+\begin_layout Itemize
+אפשרות שניה: אם המשקיע השני טוב הוא לא ימשוך את הכסף מההשקעה)
+\begin_inset Formula $N$
+\end_inset
+
+( ואם הוא רע הוא ימשוך את הכסף)
+\begin_inset Formula $W$
+\end_inset
+
+( - 
+\begin_inset Formula $\left(\textnormal{Good}:N,\textnormal{Bad}:W\right)$
+\end_inset
+
+.
+ לכן התמורה שאני אקבל היא)כאשר 
+\begin_inset Formula $q$
+\end_inset
+
+ זה הסיכוי שהשחקן השני טוב(:
+\begin_inset Formula 
+\begin{eqnarray*}
+W: &  & q\cdot100+\left(1-q\right)\cdot50=50\cdot q+50\\
+N: &  & q\cdot150+\left(1-q\right)\cdot0=150\cdot q
+\end{eqnarray*}
+
+\end_inset
+
+ולפי זה אפשר לבחור את הפעולה העדיפה:
+\begin_inset Formula 
+\[
+50\cdot q+50>150\cdot q\implies50>100q\implies\frac{1}{2}>q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נותן לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות:
+\end_layout
+
+\begin_layout Itemize
+לשחקן הראשון עדיף לבחור 
+\begin_inset Formula $W$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q<\frac{1}{2}$
+\end_inset
+
+.
+ אבל אז אם השחקן השני טוב הוא צריך גם לבחור 
+\begin_inset Formula $W$
+\end_inset
+
+, בניגוד להשערה שיבחר 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לשחקן הראשון עדיף לבחור 
+\begin_inset Formula $N$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $q\ge\frac{1}{2}$
+\end_inset
+
+, ואז אם השחקן השני טוב הוא גם יבחר 
+\begin_inset Formula $N$
+\end_inset
+
+ - מה שמתאים להשערה שלנו.
+\end_layout
+
+\begin_layout Standard
+לכן אין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Separating Equilibrium
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $q<\frac{1}{2}$
+\end_inset
+
+ - רק עבור 
+\begin_inset Formula $q\ge\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Pooling Equilibria
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כל הטיפוסים משחקים את אותה אסטרטגיה.
+\end_layout
+
+\begin_layout Itemize
+אפשרות אחת - 
+\begin_inset Formula $\left(\textnormal{Good}:N,\textnormal{Bad}:N\right)$
+\end_inset
+
+.
+ לא אפשרית מכייוון ש
+\begin_inset Formula $W$
+\end_inset
+
+ אסטרטגיה שולטת עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bad
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אפשרות שניה - 
+\begin_inset Formula $\left(\textnormal{Good}:W,\textnormal{Bad}:W\right)$
+\end_inset
+
+.
+ התמורות של השחקן הראשון:
+\begin_inset Formula 
+\begin{eqnarray*}
+W: &  & q\cdot50+\left(1-q\right)\cdot50=50\\
+N: &  & q\cdot0+\left(1-q\right)\cdot0=0
+\end{eqnarray*}
+
+\end_inset
+
+ולכן עדיף 
+\begin_inset Formula $W$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pooling Equilibrium
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלי תלות בערך של 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ זה נכון למקרה הזה - יכולים להיות מקרים אחרים שבהם לא תמיד יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Pooling Equilibrium
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Cournot Duopoly
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Incomplete Information
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לגבי עלויות
+\end_layout
+
+\begin_layout Itemize
+שתי פירמות בוחרות כמה לייצר 
+\begin_inset Formula $q_{i}\in\mathbb{R}_{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לפירמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ הראשונה יש עלות גבוהה - 
+\begin_inset Formula $c_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לפירמה השנייה יש עלות נמוכה 
+\begin_inset Formula $C_{L}$
+\end_inset
+
+ או גבוהה 
+\begin_inset Formula $C_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+פירמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאמינה שלפירמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש עלות נמוכה בהסתברות 
+\begin_inset Formula $\mu\in\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+התמורה לשחקן 
+\begin_inset Formula $i$
+\end_inset
+
+ עם עלות 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+u_{i}\left(q_{1},q_{2},c_{j}\right)=\left(a-\left(q_{1}+q_{2}\right)\right)q_{i}-c_{j}q_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אסטרטגיות:
+\begin_inset Formula 
+\[
+q_{1}\in\mathbb{R}_{+}\qquad q_{2}:\left\{ c_{L:},c_{H}\right\} \to\mathbb{R}_{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: בניגוד למקרה של ההשקעות, כאן ה
+\lang english
+utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של כל שחקן תלוי רק בטיפוס)במקרה הזה - הטיפוס נקבע לפי העלות( שלו.
+\end_layout
+
+\begin_layout Subsection*
+במקרה של מידע מלא:
+\end_layout
+
+\begin_layout Standard
+עבור הרפימה הראשונה:
+\begin_inset Formula 
+\[
+\max_{q_{1}}\left(a-\left(q_{1}+q_{2}\right)\right)q_{1}-c_{H}q_{1}
+\]
+
+\end_inset
+
+ולכן 
+\lang english
+best response
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ כלשהו:
+\begin_inset Formula 
+\[
+\textnormal{BR}_{1}\left(q_{2}\right)=\frac{a-q_{2}-c_{H}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור הפירמה השניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\max_{q_{2}}\left(a-\left(q_{1}+q_{2}\right)\right)q_{2}-c_{j}q_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{BR}_{2}\left(q_{q},c_{L}\right)=\frac{a-q_{1}-c_{L}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{BR}_{2}\left(q_{q},c_{H}\right)=\frac{a-q_{1}-c_{H}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+complete information
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\lang english
+equilibrium
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאוד ברור, כי אפשר פשוט להציב בנוסחאות.
+\end_layout
+
+\begin_layout Subsection*
+במקרה של מידע חלקי
+\end_layout
+
+\begin_layout Standard
+עבור פירמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נשארים עם:
+\begin_inset Formula 
+\[
+\max_{q_{2}}\left(a-\left(q_{1}+q_{2}\right)\right)q_{2}-c_{j}q_{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{BR}_{2}\left(q_{q},c_{L}\right)=\frac{a-q_{1}-c_{L}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{BR}_{2}\left(q_{q},c_{H}\right)=\frac{a-q_{1}-c_{H}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פירמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריכה להתחיל לחשב הסתברויות:
+\begin_inset Formula 
+\[
+\mu\left\{ \left[a-\left(q_{1}+q_{2}\left(c_{L}\right)\right)\right]q_{1}-c_{H}q_{1}\right\} +\left(1-\mu\right)\left\{ \left[a-\left(q_{1}+q_{2}\left(c_{H}\right)\right)\right]q_{1}-c_{H}q_{1}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\textnormal{BR}_{1}\left(q_{2}\left(c_{L}\right),q_{2}\left(c_{H}\right)\right)=\frac{a-\left[\mu q_{2}\left(c_{L}\right)+\left(1-\mu\right)q_{2}\left(c_{H}\right)\right]-c_{H}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אז מה עדיף?
+\end_layout
+
+\begin_layout Standard
+יוצא שעבור ערכים מסויימים, עדיף לשחקן הראשון שיהיה לו מידע חלקי - כי זה
+ משפיע על הבחירה של השחקן השני.
+\end_layout
+
+\begin_layout Standard
+אם הצד השני לא יודע אם אספנו מידע או לא אז תמיד עדיף שיהיה לנו מידע.
+ אם הצד השני יודע - לא תמיד.
+\end_layout
+
+\begin_layout Part*
+סיכום
+\end_layout
+
+\begin_layout Itemize
+כל משחק עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+incomplete information
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר לתאר באמצעות טיפוסים)
+\lang english
+types
+\lang hebrew
+( של כל אחד מהשחקנים ואמונות)
+\lang english
+believes
+\lang hebrew
+( לגבי הטיפוסים.
+\end_layout
+
+\begin_layout Itemize
+כל שחקן מחשב את ה
+\lang english
+Expected Utility
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי האמונה שלו לגבי מה שהצד השני יעשה - כלומר בתלות באמונה שלו לגבי הטיפוס
+ של השחקן השני.
+\end_layout
+
+\end_body
+\end_document

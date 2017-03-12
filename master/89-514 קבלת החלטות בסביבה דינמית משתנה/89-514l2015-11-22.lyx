@@ -1,0 +1,2723 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+קבלת החלטות בסביבה דינמית משתנה
+\\
+\selectlanguage{english}
+89-514-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' דוד סרנה}
+\\
+\textbf{תאריך:}
+\beginL
+2015-11-22
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+חלוקה הוגנת)
+\lang english
+Fair Division
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+חלוקה הוגנת היא קלה כאשר יש סימטריה מלאה - לכל השחקנים יש אותה פונקציית
+ ערך.
+ היא יותר קשה כאשר יש פונקציות ערך שונות לשחקנים שונים)למשל בחלוקת פיצה
+ - כל אחד מעדיף תוספת שונה(
+\end_layout
+
+\begin_layout Standard
+חלוקה הוגנת היא לא בהכרח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+envy-free
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+משחק מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair-division
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מורכב מ:
+\end_layout
+
+\begin_layout Itemize
+קבוצת המשאבים לחלוקה - 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יכול להיות מוחשי)למשל פיצה( או לא מוחשי)למשל זכיונות(
+\end_layout
+
+\begin_layout Itemize
+בעלי ערך חיובי או שלילי)למשל בחלוקת עבודה לעבודה יש ערך שלילי(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+קבוצת שחקנים 
+\begin_inset Formula $P_{1},\dots P_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עליהם מוטלת המטלה לחלק!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ערך משאב לכל שחקן)פונקציית ערך(
+\end_layout
+
+\begin_layout Subsubsection*
+הנחות על השחקנים
+\end_layout
+
+\begin_layout Itemize
+כל שחקן מסוגל להעריך את השווי של 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\series bold
+עבור עצמו
+\series default
+ וכל חלק אפשר שלו
+\end_layout
+
+\begin_layout Itemize
+שיתוף פעולה - השחקנים מסכימים להשתתף במשחק, מקבלים את חוקיו, ואין שחקנים
+ חיצוניים)כמו שופט או ממשלה(
+\end_layout
+
+\begin_layout Itemize
+רציונליות
+\end_layout
+
+\begin_layout Itemize
+פרטיות - לשחקנים אין מידע פנימי על ההתנהגות של השחקנים האחרים במהלכים הבאים
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זה אומר שהשחקנים לא יודעים את פונקציית הערך של השחקנים האחרים!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לשחקנים זכות שווה בהחלטה על החלוקה של 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+המטרה
+\end_layout
+
+\begin_layout Standard
+למצוא שיטת חלוקה הוגנת - שיטה שבה מובטח כי לכל שחקן תהיה הזדמנות לקבל נתח
+ הוגן)
+\lang english
+fair share
+\lang hebrew
+( של 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הגדרה - נתח הוגן
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $N$
+\end_inset
+
+ שחקנים, נתח 
+\begin_inset Formula $s\subseteq S$
+\end_inset
+
+ יחשב כהוגן)
+\lang english
+fair
+\lang hebrew
+( לשחקן 
+\begin_inset Formula $P$
+\end_inset
+
+ אם שוויו לשחקן 
+\begin_inset Formula $P$
+\end_inset
+
+ הוא לפחות 
+\begin_inset Formula $\frac{1}{N}$
+\end_inset
+
+ מהשווי הכולל של 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זה בעייתי כאשר סכום ערכי הנתחים הבדידים קטן מערך העוגה כולה - למשל אם מחלקים
+ מכונית, המכונית כולה שווה יותר מסכום כל החלקים שלה.
+\end_layout
+
+\begin_layout Section*
+שלושה סוגים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair division games
+\end_layout
+
+\begin_layout Itemize
+רציפים - אפשר לחתוך את הסט איך שרוצים)למשל עוגה(
+\end_layout
+
+\begin_layout Itemize
+בדידים - 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא אוסף אובייקטים שאינם ניתנים לחלוקה)למשל כרטיסים למופע(
+\end_layout
+
+\begin_layout Itemize
+מעורבים - חלק מהאובייקטים ב
+\begin_inset Formula $S$
+\end_inset
+
+ הם רציפים וחלק בדידים
+\end_layout
+
+\begin_layout Section*
+שיטה ראשונה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Divider Chooser
+\end_layout
+
+\begin_layout Standard
+בהינתן שני שחקנים:
+\end_layout
+
+\begin_layout Itemize
+אחד יהיה ה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיחלק את הסט לשני חלקים
+\end_layout
+
+\begin_layout Itemize
+ה
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יבחר אחד החלקים כרצונו
+\end_layout
+
+\begin_layout Standard
+עבור משחקים רציפים זה מבטיח שכל שחקן יקבל לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Itemize
+ה
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכול לבחור, ומכיוון שיש רק שני חלקים אחד מהם בטוח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\end_layout
+
+\begin_layout Itemize
+ה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רוצה להגן על עצמו, ולכן יחתוך כך ששני החלקים הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבורו
+\end_layout
+
+\begin_layout Section*
+הרחבה ל
+\numeric on
+3
+\numeric off
+ שחקנים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+The Lone Divider Method
+\end_layout
+
+\begin_layout Standard
+אחד מהשחקנים הוא ה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והשניים אחרים הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\lang hebrew
+ים
+\end_layout
+
+\begin_layout Enumerate
+ה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק את העוגה ל
+\numeric on
+3
+\numeric off
+ חלקים
+\end_layout
+
+\begin_layout Enumerate
+כל אחד מה
+\lang english
+chooser
+\lang hebrew
+ים מכריז איזה חלקים הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבורם)יכול להיות יותר מחלק אחד לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\lang hebrew
+(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+חלקים שהוכרזו על ידי לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-pieces
+\end_layout
+
+\begin_layout Itemize
+חלקים שלא הוכרזו על ידי אף שחקן הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+U-pieces
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם יש לפחות שני חלקים שנבחרו כ
+\lang english
+C-piece
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נותנים שניים מהם ל
+\lang english
+chooser
+\lang hebrew
+ים
+\end_layout
+
+\begin_layout Enumerate
+אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-piece
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד בלבד אז נותנים אחד מה
+\lang english
+U-pieces
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\lang english
+divier
+\lang hebrew
+, מחברים את ה
+\lang english
+C-pieces
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לעוגה חדשה ונותנים לשני ה
+\lang english
+chooser
+\lang hebrew
+ים לחלק ביניהם ב
+\lang english
+Divider-Chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רגיל
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+ניתן להרחיב את השיטה ל
+\begin_inset Formula $N$
+\end_inset
+
+ שחקנים:
+\end_layout
+
+\begin_layout Itemize
+שני השלבים הראשונים - ללא שינוי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק ל
+\begin_inset Formula $N$
+\end_inset
+
+ חלקים 
+\begin_inset Formula $s_{1},s_{2},\dots s_{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מכריז איזה חלקים הם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[3.]
+\backslash
+setcounter{enumi}3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם ניתן לתת לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\lang hebrew
+ אחד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+C-piece
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז נותנים וה
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל את מה שנשאר
+\end_layout
+
+\begin_layout Enumerate
+אם לא - יש 
+\begin_inset Formula $k$
+\end_inset
+
+ שחקנים שבחרו באותה קבוצה של פחות מ
+\begin_inset Formula $k$
+\end_inset
+
+ חלקים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+השחקנים האחרים יקבלו את ה
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלהם
+\end_layout
+
+\begin_layout Itemize
+השחקנים שבחרו באותה קבוצה של פחות מ
+\begin_inset Formula $k$
+\end_inset
+
+ חלקים ישחקו ב
+\lang english
+lone divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם מה שנשאר
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lone Chooser
+\end_layout
+
+\begin_layout Standard
+שחקן אחד הוא ה
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והשניים האחרים הם ה
+\lang english
+divider
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Enumerate
+ה
+\lang english
+divider
+\lang hebrew
+ים מחלקים ביניהם את העוגה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider-chooser
+\end_layout
+
+\begin_layout Enumerate
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק את החלק שלו ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חלקים
+\end_layout
+
+\begin_layout Enumerate
+ה
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוחר את אחד החלקים מכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\lang hebrew
+, וכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\lang hebrew
+ מקבל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החלקים שלא נבחרו
+\end_layout
+
+\begin_layout Subsection*
+ניתן להרחיב ל
+\begin_inset Formula $N$
+\end_inset
+
+ שחקנים:
+\end_layout
+
+\begin_layout Standard
+מגדירים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד ו
+\begin_inset Formula $N-1$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\lang hebrew
+ים
+\end_layout
+
+\begin_layout Enumerate
+ה
+\lang english
+divider
+\lang hebrew
+ים מחלקים ביניהם את העוגה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lone Chooser
+\lang hebrew
+)רקורסיבי(
+\end_layout
+
+\begin_layout Enumerate
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלק את החלק שלו ל
+\begin_inset Formula $N$
+\end_inset
+
+ חלקים
+\end_layout
+
+\begin_layout Enumerate
+ה
+\lang english
+chooser
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוחר את אחד החלקים מכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\lang hebrew
+, וכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+divider
+\lang hebrew
+ מקבל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $N-1$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החלקים שלא נבחרו
+\end_layout
+
+\begin_layout Section*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+The Last-Diminisher
+\end_layout
+
+\begin_layout Standard
+בכל שלב העוגה מחולקת לשני חלקים)לא בהכרח שווים(, כאשר שחקן אחד מקבל חלק
+ אחד והשאר מוקצה לשאר השחקנים
+\end_layout
+
+\begin_layout Itemize
+שחקן 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ מציע חלוקה בגודל 
+\begin_inset Formula $\frac{1}{N}$
+\end_inset
+
+ עבור עצמו.
+ הוא יחלק בדיוק 
+\begin_inset Formula $\frac{1}{N}$
+\end_inset
+
+ כדי שאם יקבל את החלק הוא לא יפסיד ואם לא אז שחקן אחר לא ירוויח על חשבונו
+\end_layout
+
+\begin_layout Itemize
+שחקן 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ יכול לבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pass
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או להפחית.
+ אם הוא מפחית הוא הופך לבעלים של החלק המופחת
+\end_layout
+
+\begin_layout Itemize
+וכן הלאה עד לשחקן ה
+\begin_inset Formula $N$
+\end_inset
+
+.
+ השחקן ה
+\begin_inset Formula $N$
+\end_inset
+
+ יכול לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pass
+\lang hebrew
+)ואז השחקן האחרון שהפחית יקבל את ה
+\lang english
+fair share
+\lang hebrew
+( או לקבל על עצמו את החלק)הוא לא צריך להפחית(
+\end_layout
+
+\begin_layout Itemize
+בסיבוב הבא יש 
+\begin_inset Formula $N-1$
+\end_inset
+
+ שחקנים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אף שחקן לא יחתוך כך שישאר פחות מה
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו - כי אז הוא מסתכן בכך שהוא יקבל את החלק הזה.
+\end_layout
+
+\begin_layout Itemize
+שחקן לא יחתוך פחות מדי, כי אז שחקן אחר יכול לבחור את החלק
+\end_layout
+
+\begin_layout Itemize
+שחקן לא יעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pass
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על חלק גדול מדי כי אז הוא מסתכן שבסוף הסבב החלק שנשאר יהיה גדול מדי ויכול
+ להיות שלא ישאר לו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fair share
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+חלוקה דיסקרטית
+\end_layout
+
+\begin_layout Standard
+עד עכשיו יכולנו לחלק 
+\begin_inset Formula $S$
+\end_inset
+
+ים רציפים כרצוננו.
+ אבל מצב שבו 
+\begin_inset Formula $S$
+\end_inset
+
+ מורכב מפריטים בלתי ניתנים לחלוקה)
+\lang english
+indivisible
+\lang hebrew
+( הוא יותר מורכב.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Fair Share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עדיין יכול להיות מובטח - תחת הנחות מסויימות.
+\end_layout
+
+\begin_layout Section*
+שיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Sealed Bids
+\end_layout
+
+\begin_layout Enumerate
+כל אחד מהשחקנים מעביר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bid
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כותב כמה שווים לו כל אחד מהפריטים ומכניס למעטפה סגורה)כדי שהאחרים לא יבססו
+ על זה את ההערכות שלהם(.
+\end_layout
+
+\begin_layout Enumerate
+כל אחד מהפריטים הולך לשחקן שנתן לו את הערך הכי גבוה)אם יש תיקו מטילים מטבע(
+\end_layout
+
+\begin_layout Enumerate
+מחשבים את ה
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סוכמים את 
+\bar under
+ה
+\lang english
+bid
+\lang hebrew
+ים לפריטים השונים
+\bar default
+ ומחלקים ב
+\bar under
+מספר השחקנים
+\bar default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+לשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: טעויות נפוצות:
+\end_layout
+
+\begin_layout Itemize
+לסכום את הערך של פריט לכל השחקנים
+\end_layout
+
+\begin_layout Itemize
+לחלק במספר הפריטים
+\end_layout
+
+\end_inset
+
+.
+ כל שחקן, בהתאם לפריטים שקיבל, צריך לשלם לקופה המרכזית)אם קיבל יותר מה
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו( או לקבל ממנה כסף)אם קיבל פחות(.
+\end_layout
+
+\begin_layout Standard
+יוותר בקופה כסף)כי כל פריט נתנו למי שהעריך אותו בהכי הרבה( - נחלק אותו שווה
+ בשווה לכל השחקנים.
+ החלוקה לא משנה - את ה
+\lang english
+fair share
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כבר השגנו.
+\end_layout
+
+\end_body
+\end_document

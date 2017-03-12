@@ -1,0 +1,1327 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass heb-article
+\begin_preamble
+\date{}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+מודלים הסתברותיים יישומיים במדעי המחשב
+\\
+\selectlanguage{english}
+89-919-01
+}%
+}
+\lhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' עידו דגן}
+\\
+\textbf{תאריך:}
+\beginL
+2015-12-20
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+עירוב היסטוגרמות
+\end_layout
+
+\begin_layout Section*
+סימונים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ קטגוריות )למשל בדסק חדשות - מסמך ספורט, מסמך אקטואליה וכו'(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ מסמך - 
+\begin_inset Formula $y_{1},y_{2},\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V$
+\end_inset
+
+ גודל המילון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ המילה ה
+\begin_inset Formula $k$
+\end_inset
+
+ במילון
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n_{tk}$
+\end_inset
+
+ שכיחות מילה 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ ב
+\begin_inset Formula $y_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\theta$
+\end_inset
+
+ אוסף הפרמטרים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $p\left(x_{i}\right)$
+\end_inset
+
+ הסתברות שמסמך יהיה עם ערך 
+\begin_inset Formula $X=x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השאלות שנתעניין
+\end_layout
+
+\begin_layout Enumerate
+התסברות תצפית מסויימת 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p\left(y_{t};\theta\right)=\sum_{i=1}^{\left|X\right|}p\left(x_{i}\right)\cdot p\left(y_{t}\middle|x_{i}\right)
+\]
+
+\end_inset
+
+בעירוב היסטוגרמות זה שווה ל:
+\begin_inset Formula 
+\[
+=\sum_{i=1}^{\left|X\right|}p\left(x_{i}\right)\cdot\prod_{k=1}^{V}p\left(w_{k}\middle|x_{i}\right)^{n_{tk}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+"סיווג" - הסתברות לכל ערך חבוי אפשרי:
+\begin_inset Formula 
+\[
+P\left(X=x_{i}\middle|y_{t};\theta\right)=\frac{p\left(y_{t}\middle|x_{i}\right)p\left(x_{i}\right)}{p\left(y_{t}\right)}
+\]
+
+\end_inset
+
+בעירוב היסטוגרמות זה שווה ל:
+\begin_inset Formula 
+\[
+=\frac{p\left(x_{i}\right)\cdot\prod\limits _{k=1}^{V}p\left(w_{k}\middle|x_{i}\right)^{n_{pk}}}{\sum\limits _{j=1}^{\left|X\right|}p\left(x_{j}\right)\prod\limits _{k=1}^{V}p\left(w_{k}\middle|x_{j}\right)^{n_{tk}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שרוצים להחליט על סיווג לערך הסביר ביותר 
+\begin_inset Formula $i^{*}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+i^{*}=\underset{i}{\mbox{argmax}}p\left(y_{t}\middle|x_{i}\right)p\left(x_{i}\right)=\underset{i}{\mbox{argmax}}\left(\log p\left(x_{i}\right)+\sum_{k=1}^{V}n_{tk}\cdot\log p\left(w_{k}\middle|x_{i}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+אומדן 
+\begin_inset Formula $\theta$
+\end_inset
+
+ במקרה המבוקר 
+\lang english
+Supervised
+\end_layout
+
+\begin_layout Standard
+נתון מדגם של מסמכים 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ שלכל אחד מהם תוייג ערך 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ המתאים)ערך הקטגוריה(.
+ לדוגמה, אומדן עם החלקת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lidstone
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+p\left(x_{i}\right)=\frac{\lambda+\mbox{number of \ensuremath{x_{i}} documents}}{\lambda\cdot\left|X\right|+\mbox{total number of documents}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: במכנה מכפילים את 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ב
+\begin_inset Formula $\left|X\right|$
+\end_inset
+
+ כי יש 
+\begin_inset Formula $\left|X\right|$
+\end_inset
+
+ קטגוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w_{k}\middle|x_{i}\right)=\frac{\lambda+\mbox{number of occurences of \ensuremath{w_{k}} in \ensuremath{x_{i}} documents}}{\lambda\cdot V+\mbox{total number of \ensuremath{x_{i}} documents}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: במכנה מכפילים את 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ב
+\begin_inset Formula $V$
+\end_inset
+
+ כי 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ נבחר מתוך 
+\begin_inset Formula $V$
+\end_inset
+
+ מילים
+\end_layout
+
+\begin_layout Section*
+מודלים אחרים
+\end_layout
+
+\begin_layout Standard
+את המודלים האלו הראנו עם מודל מסמך מולטינומי - אבל אפשר לשתול גם מודלים
+ אחרים בתוך המודל הזה.
+ הפיתוח של הנוסחאות יראה כמובן אחרת.
+\end_layout
+
+\begin_layout Section*
+מודל חבוי עם מודל מסמך של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multiple Bernoulli
+\end_layout
+
+\begin_layout Standard
+במודל זה: מסמך מיוצג כקבוצת המילים)ללא התייחסות לשכיחות(.
+ ניתן לייצג כוקטור בינארי באורך 
+\begin_inset Formula $V$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+במקרה זה:
+\begin_inset Formula 
+\[
+p\left(y_{t}\middle|x_{i};\theta\right)=\prod_{w\in y_{t}}p\left(w\middle|x_{i}\right)\cdot\prod_{w\notin y_{t}}\left(1-p\left(w\middle|x_{i}\right)\right)
+\]
+
+\end_inset
+
+במודל חבוי - נשתמש בנוסחה זו.
+\end_layout
+
+\begin_layout Subsection*
+אומדן הפרמטרים במקרה ה
+\lang english
+Supervised
+\end_layout
+
+\begin_layout Standard
+אם קודם היה מודל ברנולי אחד לכל המסמכים - עכשיו יש לנו מודל ברנולי נפרד
+ לכל קטגוריה!
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $p\left(x_{i}\right)$
+\end_inset
+
+ כמו קודם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(w_{k}\middle|x_{i}\right)=\frac{\lambda+\mbox{number of \ensuremath{x_{i}} documents where \ensuremath{w_{k}} appears}}{\lambda\cdot2+\mbox{number of \ensuremath{x_{i}} documents}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: במכנה מכפילים את 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי לכל מילה 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות - או שהיא מופיעה או שהיא לא מופיעה
+\end_layout
+
+\begin_layout Part*
+מודל חבוי במקרה הלא מבוקר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Unsupervised
+\end_layout
+
+\begin_layout Standard
+במקרה הזה, לא נתון מדגם מתוייג, אבל עדיין מניחים שהתצפיות נוצרות מהתפלגויות
+ שונות, כתלות בערך חבוי מ
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מטרות לשימוש במודל חבוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Unsupervised
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Enumerate
+כשיש מטרה יישומית לאשכול)
+\lang english
+clustering
+\lang hebrew
+( של התצפיות, נרצה לשייך כל 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ ל
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ הכי סביר.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל: להצגת מסמכים לפי קבוצות
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מידול יותר מדוייק של יצירת הנתונים, שייתן נראות גבוהה יותר לתצפיות.
+ נחפש 
+\begin_inset Formula $\theta_{ML}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה לכך שמודל חבוי מאפשר אומדן נראות גבוה יותר
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V=10$
+\end_inset
+
+ 
+\begin_inset Formula $w^{1},w^{2},\dots w^{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left|X\right|=10$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1},\dots x_{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תצפית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסמכים - 
+\begin_inset Formula $y_{1},\dots y_{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ - מופיעה רק המילה 
+\begin_inset Formula $w^{i}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים
+\end_layout
+
+\begin_layout Subsection*
+מודל ללא משתנה חבוי: 
+\begin_inset Formula $MLE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לנו סה"כ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מילים)
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסמכים *
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מילים בכל מסמך(, וכל מילה מופיעה סה"כ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים)מסמך אחד *
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים(, לכן האומדן לכל מילה הוא: 
+\begin_inset Formula 
+\[
+\forall_{i}p\left(w^{i}\right)=\frac{10}{100}=\frac{1}{10}
+\]
+
+\end_inset
+
+לפי זה, ההסתברות לקבל מסמך ספציפי לפי ההסתברויות הנ"ל:
+\begin_inset Formula 
+\[
+\forall_{i=1,\dots10}p\left(y_{i}\right)=p\left(w^{i}\right)^{10}=10^{-10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מודל חבוי: 
+\begin_inset Formula $MLE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התפלגויות, כך שכל אחת תתאים למסמך אחר:
+\begin_inset Formula 
+\[
+\forall_{i}p\left(w^{i}\middle|x_{i}\right)=1\qquad\forall_{j\neq i}p\left(w^{j}\middle|x_{i}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i}p\left(x_{i}\right)=\frac{1}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall_{i}p\left(y_{i}\middle|x_{i}\right)=1\qquad\forall_{j\neq i}p\left(y_{i}\middle|x_{j}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i}p\left(y_{i}\right)=\sum_{j}p\left(x_{j}\right)\cdot p\left(y_{i}\middle|x_{j}\right)=\underbrace{\frac{1}{10}\cdot1}_{i=j}+\underbrace{\left(\frac{1}{10}\cdot0\right)\cdot9}_{i\neq j}=\frac{1}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נשים לב
+\end_layout
+
+\begin_layout Standard
+הצלחנו לייצר נראות יותר גבוהה - אבל המחיר הוא שהשתמשנו ביותר פרמטרים.
+ בהתפלגות ללא המשתנה החבוי היו לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטרים)הסתברות לכל מילה(, אבל כאשר הכנסנו את המשתנה החבוי היינו צריכים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטרים)הסתברות לכל מילה בכל מסמך(.
+\end_layout
+
+\begin_layout Standard
+הוספת כמות גדולה יותר של פרמטרים במודל החבוי אפשרה למדל בצורה הדוקה יותר
+ את התצפית ולקבל נראות גבוהה יותר.
+\end_layout
+
+\begin_layout Standard
+צריך לשים לב שלא לוקחים יותר מדי פרמטרים, כי אז עלולים לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וליצור מודל שמתאים בדיוק למדגם האימון.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,865 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-10-24
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Paragraph
+הערת המשך לדגרגציה
+\end_layout
+
+\begin_layout Standard
+ברירת המחדל היא לחלק את המישור לגריד, אבל אפשר לעשות חלוקות אחרות )כמו משושים(
+\end_layout
+
+\begin_layout Section*
+שיפור איכות תמונה מבחינה ויזואלית
+\end_layout
+
+\begin_layout Standard
+האופרציות האלו מיועדות לצרכי ראייה אנושית - תמונה שאינה ברורה קשה לראות
+ אותה.
+ האופרציות האלה נועדו גם לשפר את ה
+\lang english
+signal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- במקרה שלנו ה
+\lang english
+signal
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא אות דו-מימדי והוא נקרא 
+\begin_inset Quotes eld
+\end_inset
+
+תמונה
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+בהירות וניגודיות
+\end_layout
+
+\begin_layout Standard
+יש שני מדדים גלובליים שאפשר להגדיר בצורה פשוטה.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מספר השורות ו
+\begin_inset Formula $m$
+\end_inset
+
+ הוא מספר העמודות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+בהירות
+\series default
+ )
+\lang english
+brightness
+\lang hebrew
+( ממוצע של רמות האפור 
+\begin_inset Formula 
+\[
+b=\frac{1}{n\cdot m}\sum_{i=0}^{n-1}\sum_{j=0}^{m-1}f\left(i,j\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+ניגודיות
+\series default
+ )
+\lang english
+contrast
+\lang hebrew
+( סטיית התקן
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+שורש של ממוצע ריבועי הסטיות מהממוצע.
+\end_layout
+
+\end_inset
+
+ של רמות האפור 
+\begin_inset Formula 
+\[
+c=\sqrt{\frac{1}{n\cdot m}\sum_{i=0}^{n-1}\sum_{j=0}^{m-1}\left[f\left(i,j\right)-b\right]^{2}}
+\]
+
+\end_inset
+
+תמונה עם ניגודיות נמוכה היא 
+\begin_inset Quotes eld
+\end_inset
+
+באותו צבע
+\begin_inset Quotes erd
+\end_inset
+
+ - כל רמות האפור דומות.
+ במצב קיצון שבו כל ה
+\begin_inset Formula $f\left(i,j\right)$
+\end_inset
+
+ דומים והבהירות של התמונה אחידה, הניגודיות תהיה מאוד נמוכה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הגדרה נוספת לניגודיות:
+\begin_inset Formula 
+\[
+c=\frac{\max f\left(i,j\right)-\min f\left(i,j\right)}{\max f\left(i,j\right)+\min\left(i,j\right)}
+\]
+
+\end_inset
+
+ההגדרה הזאת בעייתית, כי אם יש תמונה עם פיקסל אחד שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ופיקסל אחד שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+255
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הקונטרסט יהיה מקסימלי ולא ישקף שום דבר מהותי לגבי התמונה.
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר קונטרסט לוקלי, הניגודיות של פיקסל מסויים 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ לעומת עצמת הסביבה 
+\begin_inset Formula $f_{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+c\left(i,j\right)=\left|\frac{f\left(i,j\right)-f_{N}}{f_{N}}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+דוגמה לטרנספורמציה שמשנה את הניגודיות של התמונה )מכפילה פי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ גדול מ
+\size normal
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקונטרסט יגדל, אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קטן מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקונטרסט יקטן.
+\end_layout
+
+\end_inset
+
+( בלי לשנות את הבהירות:
+\begin_inset Formula 
+\[
+f\left(i,j\right)\gets\alpha*\left[f\left(i,j\right)-b\right]+b
+\]
+
+\end_inset
+
+הטרנספורמציה הזאת עלולה לתת ערכים שליליים, ולכן אם בסוף הטרנספורמציה יש
+ ערכים שליליים - הם נקטעים והופכים לאפס.
+ ואם הם גדולים מ
+\numeric on
+255
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הם נקטעים והופכים ל
+\numeric on
+255
+\numeric off
+.
+\end_layout
+
+\begin_layout Section*
+היסטורגמה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+היסטורגמה
+\series default
+ התפלגות בדידה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בניגוד לפונקציית צפיפות הסתברות - שהיא התפלגות רציפה.
+\end_layout
+
+\end_inset
+
+ של ערכים.
+\end_layout
+
+\begin_layout Standard
+ספציפית, הערכים שמעניינים אותנו הם רמות האפור של התמונה 
+\begin_inset Formula $0\le i\le g_{\max}$
+\end_inset
+
+.
+ ההיסטורגמה היא 
+\begin_inset Formula $h_{i}=\frac{N_{i}}{n\cdot m}$
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ מספר הפיקסלים בעלי רמת אפור 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $g_{\max}$
+\end_inset
+
+ רמת האפור המקסימלית בתמונה שגודלה 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+.
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $g_{\max}=255$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{i}$
+\end_inset
+
+ זה שכיחות יחסית ו
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ זה שכיחות אבסולוטית.
+\end_layout
+
+\begin_layout Standard
+ברור כי 
+\begin_inset Formula $\sum\limits _{i=0}^{g_{\max}}h_{i}=1$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אנלוגי ל
+\begin_inset Formula $\int\limits _{-\infty}^{\infty}P\left(x\right)\mathrm{\,d}x=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ ו
+\begin_inset Formula $\sum\limits _{i=0}^{g_{\max}}i\cdot h_{i}=b$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+צורה אחרת לחשב את הממוצע - במקום לסכום איבר איבר עושים ממוצע משוקלל של הערכים.
+\end_layout
+
+\end_inset
+
+, ולכן אפשר לכתוב את הקונטרסט בתור:
+\begin_inset Formula 
+\[
+c=\sqrt{\sum_{i=0}^{g_{\max}}i^{2}\cdot h_{i}-b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+השוואת היסטוגרמות )
+\lang english
+Histogram Equalization
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+כדי לשפר את הבהירות והניגודיות, היינו רוצים לעשות טרנספורמציה לערכי האפור
+ שתעביר אותם לפילוג אחיד ככל האפשר.
+\end_layout
+
+\begin_layout Standard
+בהסתברות רואים שאפשר לחשב את פונקציית ההסתברות אחרי טרנספורמציה, אבל כאן
+ אנחנו רוצים לעשות הפוך - למצוא את הטרנספורמציה לפי פונקציית ההסתברות שאנחנו
+ רוצים לקבל.
+\begin_inset Formula 
+\[
+P_{b}\left(b\right)\stackrel{{\scriptscriptstyle \triangle}}{=}\begin{cases}
+\frac{1}{b_{\max}-b_{\min}} & b_{\min}\le b\le b_{\max}\\
+0 & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן לכל 
+\begin_inset Formula $b_{\min}\le b\le b_{\max}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{b-b_{\min}}{b_{\max}-b_{\min}}=\int_{0}^{a}P_{a}\left(h\right)\mathrm{\,d}h
+\]
+
+\end_inset
+
+ומכאן
+\begin_inset Formula 
+\[
+b=T\left(a\right)=\left(b_{\max}-b_{\min}\right)\cdot\int\limits _{h\in A}P_{a}\left(h\right)\mathrm{\,d}h+b_{\min}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+כאשר עוברים להיסטוגרמה בדידה עוברים מאינטגרל לסכום:
+\begin_inset Formula 
+\[
+b_{k}=T\left(k\right)=g_{\max}\sum_{i=0}^{k}h_{i}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $0\le k\le g_{\max}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+
+\series default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זאת לא טרנספורמציה לינארית, והיא גם לא סגורה מבחינה אנליטית.
+ היא תלויה בערכים ספציפיים של תמונה ספציפית.
+\end_layout
+
+\begin_layout Itemize
+לא תמיד נקבל היסטוגרמה אחידה אידיאלית.
+ אם למשל יש רמת אפור שמקבלת חלק ניכר מהתמונה, כל הפיקסלים האלה ימופו לאותה
+ רמת אפור.
+ אי אפשר להיפטר מהמקבץ הזה - רק להגדיל אותו )אם רמת אפור אחרת תמופה לאותו
+ ערך(
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אבל עדיין זה בדרך כלל משפר משמעותית את איכות התמונה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+היסטוגרמה צוברת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{CDF}\left(x\right)=\int\limits _{-\infty}^{x}P_{x}\left(x\right)\mathrm{\,d}x
+\]
+
+\end_inset
+
+זאת פונקציה מונוטונית עולה ש
+\begin_inset Formula $\lim\limits _{x\to\infty}\textnormal{CDF}\left(x\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הצבורה של היסטורגמה אידיאלית היא 
+\begin_inset Quotes eld
+\end_inset
+
+מדרגות
+\begin_inset Quotes erd
+\end_inset
+
+ - קוואנטיזציה של פונקציה לינארית.
+\end_layout
+
+\begin_layout Standard
+אם יש לנו היסטוגרמה 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+, בעצם שואלים מה ההערך המתאים 
+\begin_inset Formula $j$
+\end_inset
+
+ כך ש
+\begin_inset Formula $k'_{j}=k_{i}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $k'$
+\end_inset
+
+ היא ההיסטוגרמה האידיאלית(
+\end_layout
+
+\begin_layout Standard
+אנחנו מחשבים לא היסטוגרמה מול היסטוגרמה אלא היסטוגרמה צבורה מול היסטוגרמה
+ צבורה.
+\begin_inset Formula 
+\[
+k'=\left\lceil \frac{\sum\limits _{i=1}^{k}P_{i}}{\frac{m\cdot n}{\#levels}}-1\right\rceil 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת גישה אחרת לפתח - בשורה התחתונה היא אמורה לתת אותה תוצאה.
+\end_layout
+
+\end_body
+\end_document

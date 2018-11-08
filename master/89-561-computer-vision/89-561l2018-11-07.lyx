@@ -1,0 +1,694 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+ראייה ממוחשבת
+\\
+\selectlanguage{english}
+89-561-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-11-07
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+טרנספורמציות מרחקים
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+distance transformation
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים להמיר את כל פיקסלי ה
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במרחקים שלהם לרקע.
+ למה? כי זה יכול לעזור בכל מיני דברים )כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OCR
+\lang hebrew
+( - לתת אינדיקציה לצורה.
+\end_layout
+
+\begin_layout Standard
+לכל פיקסל 
+\begin_inset Formula $p\in S$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+ זה קבוצת פיקסלי ה
+\size normal
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הלוגי
+\end_layout
+
+\end_inset
+
+ נרצה לחשב את המרחק של 
+\begin_inset Formula $p$
+\end_inset
+
+ מהרקע 
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+.
+ נבצע איטרציות:
+\begin_inset Formula 
+\[
+f^{0}=f\left[i,j\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{m}\left[i,j\right]=f^{0}\left[i,j\right]+\min_{\left\Vert \left[u-i,v-j\right]\right\Vert _{\textnormal{Manhatten}}=1}\left(f^{m-1}\left[u,v\right]\right)
+\]
+
+\end_inset
+
+מסיימים כאשר 
+\begin_inset Formula $f^{m}\left[i,j\right]=f^{m-1}\left[i,j\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צריך להחליט מה עושים עם החורים.
+ להחשיב בתור רקע? להתעלם? לתת מספר מקסימלי )כדי שלא ישפיע על ה
+\numeric on
+1
+\numeric off
+ים לידו(?
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+MAT - Medial Axis Transform
+\end_layout
+
+\begin_layout Standard
+יש לנו סט פיקסלי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ - אנחנו רוצים למצוא את ה
+\lang english
+Medial Axis
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ של 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+סט הפיקסלים ב
+\begin_inset Formula $S$
+\end_inset
+
+ שמרחקיהם מ
+\begin_inset Formula $S$
+\end_inset
+
+ מהווים מקסימום לוקאלי הקרוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+skeleton
+\lang hebrew
+, אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAT
+\lang hebrew
+)נסמן 
+\begin_inset Formula $S^{*}$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+d\left(\left[i,j\right],S\right)\ge d\left(\left[u,v\right],S\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\left[u,v\right]$
+\end_inset
+
+ שכני-
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $\left[i,j\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נותן קווים/נקודות שמייצגים את הצורה.
+\end_layout
+
+\begin_layout Section*
+אופרטור דילול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+thinning
+\end_layout
+
+\begin_layout Standard
+מבצע תהליך להגיע לאומדן של קבוצות פיקסלים מרכזיים )
+\lang english
+MAT
+\lang hebrew
+( מתמונה בינארית.
+ נותן ייצוג יותר קומפקטי של מרכיבי הקשירות.
+\end_layout
+
+\begin_layout Standard
+דרישות מהאופרטור:
+\end_layout
+
+\begin_layout Itemize
+לשמור על הקשירות
+\end_layout
+
+\begin_layout Itemize
+התוצאה צריכה להיות קשירה-
+\numeric on
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מינימלית - כלומר הכי מעט פיקסלים שישמרו על הקשירות
+\end_layout
+
+\begin_layout Itemize
+נקודות הקצה צריכות להישאר
+\end_layout
+
+\begin_layout Itemize
+צריך להיות אומדן ל
+\lang english
+medial lines
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+MAT
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+הפחתת רעש - לצמצם רכיבים קטנים
+\end_layout
+
+\begin_layout Standard
+באופן כללי, האלגוריתם מדלל פיקסלי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לסירוגין )פעם צפוניים ופעם דרומיים, פעם ממזרח ופעם ממערב(
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אם נדלל תמיד מאותו כיוון, נאבד את המרכז.
+\end_layout
+
+\end_inset
+
+.
+ עוברים איטרציה אחרי איטרציה עד שמגיעים לאיטרציה שלא עשתה שום שינוי.
+\end_layout
+
+\end_body
+\end_document

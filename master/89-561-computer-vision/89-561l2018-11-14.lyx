@@ -1,0 +1,209 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+ראייה ממוחשבת
+\\
+\selectlanguage{english}
+89-561-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-11-14
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+עיבוד היררכי - פירמידה
+\end_layout
+
+\begin_layout Standard
+מקלקלים את הרזולוציה בכוונה, בכל פעם חותכים כל מימד בחצי:
+\begin_inset Formula 
+\[
+8\times8\to4\times4\to2\times2\to1\times1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל מעבר כזה לוקחים סביבת 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ והממוצע שלה הוא הצבע של ה
+\begin_inset Formula $1\times1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התוצאה היא פירמידה שבה כל תמונה קטנה פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ בכל מימד עד לגודל מסויים )אין צורך להגיע עד לקצה(.
+\end_layout
+
+\begin_layout Standard
+קילקלנו את התמונה, ואנחנו צורכים עוד זיכרון בשביל השכבות הנוספות.
+ למה זה טוב?
+\end_layout
+
+\begin_layout Standard
+זה עוזר למשל בשביל סגמנטציה - אפשר לקבל תוצאה דומה אם עושים סגמנטציה על
+ התמונה ברזולוציה פחות טובה, כי האזורים ההומוגניים פחות או יותר נשארים.
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא להתחיל את פעולת העיבוד באמצע הפירמידה, כשהתמונה יותר קטנה, ולבצע
+ את הסגמנטציה הראשונית שם.
+ בהינתן סגמנטציה שכזאת אפשר לחלחל אותה לתמונה עם רזולוציה יותר גבוהה, ולעדן
+ את המעברים בין הסגמנטים.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1005 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-11-14
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תמונות בינאריות - המשך
+\end_layout
+
+\begin_layout Section*
+טרנספורמציית מרחקים
+\end_layout
+
+\begin_layout Standard
+המרחק בין פיקסלי האובייקט לרקע.
+ אפשר לחשב מסט פיקסלי ה
+\numeric on
+1
+\numeric off
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $p\in S$
+\end_inset
+
+ את המרחק של 
+\begin_inset Formula $p$
+\end_inset
+
+ מהרקע 
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+ באמצעות נוסחה איטרטיבית:
+\begin_inset Formula 
+\[
+f^{0}\left[i,j\right]=f\left[i,j\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{m}\left[i,j\right]=f^{0}\left[i,j\right]+\min\left(f^{m-1}\left[u,v\right]\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ מספר האיטרציה ו
+\begin_inset Formula $u,v$
+\end_inset
+
+ עבור כל פיקסל מקיימים 
+\begin_inset Formula $d\left(\left[u,v\right],\left[i,j\right]\right)=1$
+\end_inset
+
+ )רק שכני ארבע(.
+\end_layout
+
+\begin_layout Standard
+אם הפיקסל צמוד לרגע אז 
+\begin_inset Formula $\min\left(f^{m-1}\left[u,v\right]\right)=0$
+\end_inset
+
+ ומכיוון ש
+\begin_inset Formula $f^{0}\left[i,j\right]=1$
+\end_inset
+
+ 
+\begin_inset Formula $f^{m}\left[i,j\right]=1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ אם הוא לא, הוא יהיה אחד יותר משהשכן הקרוב ביותר לרקע שלו.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Medial Axis Transform
+\end_layout
+
+\begin_layout Standard
+סט הפיקסלים ב
+\begin_inset Formula $S$
+\end_inset
+
+ שמרחקיהם מ
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+ מהווים מקסימום
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+של גדול-שווה, לא גדול-ממש.
+\end_layout
+
+\end_inset
+
+ לוקאלי:
+\begin_inset Formula 
+\[
+\forall_{u,v:d\left(\left[i,j\right],\left[u,v\right]\right)\le1}d\left(\left[i,j\right],S\right)\ge d\left(\left[u,v\right],S\right)
+\]
+
+\end_inset
+
+קוראים לזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+skeleton
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ או 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומסמנים 
+\begin_inset Formula $S^{*}$
+\end_inset
+
+, ואאפשר לשחזר מ
+\begin_inset Formula $S^{*}$
+\end_inset
+
+ את הצורה המקורית.
+ מעגל, למשל הופך לנקודה בודדת )המרכז( שהמספר הרשום עליה הוא הרדיוס.
+\end_layout
+
+\begin_layout Section*
+אופרטור הדילול )
+\lang english
+thinning
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+המטרה היא לדלל עד כמה שניתן, לסלק מספר גדול ככל הניתן של פיקסלי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, כדי לתת אומדן לאותם קווי מתאר המכונים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAT
+\lang hebrew
+.
+ נותן סט דחוס של פיקסלים כך שנקודות הקצה נשמרות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מאפיינים: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+שומר על קשירות-
+\numeric on
+8
+\end_layout
+
+\begin_layout Itemize
+מספר מינימלי של פיקסלים כדי לשמור על הקשירות
+\end_layout
+
+\begin_layout Itemize
+נקודות קצה נשמרות
+\end_layout
+
+\begin_layout Itemize
+התוצאה תהיה קירוב ל
+\lang english
+MAT
+\end_layout
+
+\begin_layout Itemize
+ניפוי הסתעפויות קטנות )
+\lang english
+noise reduction
+\lang hebrew
+(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\paragraph_spacing single
+סגמנטציה )
+\lang english
+segmentation
+\lang hebrew
+( וייצוג
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+regions
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\emph on
+\lang english
+region
+\emph default
+\lang hebrew
+: קבוצת פיקסלים קשירה שלהם תכונה/ות דומה/ות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\emph on
+\lang english
+segmentation
+\emph default
+\lang hebrew
+: חלוקת התמונה ל
+\lang english
+regions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באופן מדוייק ככל שניתן.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בהינתן תמונה המטרה היא לייצר פלט של אזורים פחות-או-יותר הומוגניים.
+ לא צריך להתייחס לכל פיקסל בנפרד אלא לחלץ אינפורמציה שתאפשר התייחסות ברמה
+ יותר מתקדמת.
+ הגבול של סגמנט מסמל שינוי בהומוגניות.
+ החלוקה לאזורים יכולה להתבצע או על ידי הגדלת אזורים הומוגניים או )או במקביל(
+ על ידי מציאת קוי הגבול.
+\end_layout
+
+\begin_layout Paragraph
+מה הופך פיקסלים לסגמנט?
+\end_layout
+
+\begin_layout Enumerate
+הם צריכים להיות בערכי אפור דומים.
+\end_layout
+
+\begin_layout Enumerate
+הם צריכים להיות בסמיכות מרחבית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה: בהינתן סט של פיקסלי תמונה 
+\begin_inset Formula $I$
+\end_inset
+
+ ופרדיקט הומוגניות 
+\begin_inset Formula $P\left(\right)$
+\end_inset
+
+, דרוש למצוא חלוקה של 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\lang english
+regions
+\lang hebrew
+ 
+\begin_inset Formula $R_{1},R_{2},\dots,R_{n}$
+\end_inset
+
+ המקיימת:
+\begin_inset Formula 
+\[
+\bigcup_{i=1}^{n}R_{i}=I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i}P\left(R_{i}\right)=\textnormal{true}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall_{i\neq j}P\left(R_{i}\cup R_{j}\right)=\textnormal{false}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סגמנטציה ראשונית ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+thresholding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אוטומטי
+\end_layout
+
+\begin_layout Standard
+יכולה להסתמך על דברים כמו עוצמות אפור או גודל עצמים.
+\end_layout
+
+\begin_layout Standard
+אם חותכים את ההיסטוגרמה ב
+\begin_inset Formula $T$
+\end_inset
+
+ מסויים אפשר לחזור לתמונה ולמפות.
+ אם ההיסטוגרמה היא בי-מודלית )ממוצע)
+\lang english
+mode
+\lang hebrew
+( אחד שמתאים לפיקסלי האובייקט ואחד אחר שמתאים לפיקסלי הרקע( אז כדאי לחתוך
+ במינימום הלוקלי.
+ אם יש כמה אובייקטים וכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+mode
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתאים לאובייקט, נרצה לחתוך בכל אחת מנקודות המינימום.
+\end_layout
+
+\begin_layout Standard
+אם ההיסטורגמה לא מתנהגד יפה )למשל בגלל תאורה לא אחידה( אז ה
+\lang english
+thresholding
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יתן תוצאה טובה, אבל אפשר לנסות לאמוד
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אומדן לינארי )מישור(
+\end_layout
+
+\end_inset
+
+ את פונקציית התאורה ולהחסיר אותה מהתמונה.
+\end_layout
+
+\begin_layout Section*
+סגמנטציה באמצעות פיצול
+\end_layout
+
+\begin_layout Standard
+יכול להיות שבתתי-תמונות יותר קטנות ההנחות לגבי המודליות של ההיסטוגרמות יהיו
+ יותר תקפות.
+ החלוקות האלו יכולות להיות שרירותיות למלבנים, ואולי יש איזה אובייקט שמשתרע
+ על כמה מלבנים, אבל בכל מלבן כזה ההיסטורמה תהיה יותר נוחה ואחריה אפשר למזג
+ אותן.
+\end_layout
+
+\begin_layout Standard
+סגמנטציה קלאסית היא פיצול מצד אחד, ונסיון למיזוג מצד שני.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+thresholding
+\end_layout
+
+\begin_layout Enumerate
+בוחרים סף 
+\begin_inset Formula $T$
+\end_inset
+
+ באופן שרירותי )ממוצע של כל רמות האפור(
+\end_layout
+
+\begin_layout Enumerate
+בכל שלב מבצעים חלוקה: 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ ממוצע קבוצה אחת )מתחת לסף( ו
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+ ממוצע הקבוצה השניה )מעל לסף(
+\end_layout
+
+\begin_layout Enumerate
+מחשבים את הממוצע של כל קבוצה, ובוחרים סף חדש 
+\begin_inset Formula $T=\frac{\mu_{1}+\mu_{2}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+חוזרים על שלבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד ש
+\begin_inset Formula $T$
+\end_inset
+
+ מתייצב.
+\end_layout
+
+\end_body
+\end_document

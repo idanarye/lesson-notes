@@ -1,0 +1,1281 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-05
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+בהינתן תמונה, ראינו איך אפשר לייצר מהפיקסלים של התמונה את פיקסלי השפה -
+ אוסף של פיקסלים שהאופרטורים שהשתמשנו בהם תייגו אותם כפיקסלי שפה.
+\end_layout
+
+\begin_layout Standard
+בתמונה מציאותית פיקסלי השפה הם לא סתם - יש סיבה שתהליך ה
+\lang english
+edge detection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תייג אותם כשפה.
+ הם נמצאים כנראה על מעבר בין אזור בתמונה לאזור אחר, שיש שם גרדיינט - שינוי
+ משמעותי ברמות האפור או בגוון.
+ קרוב לוודאי שהוא נמצא על פני גבול של אובייקט.
+ אם זה אובייקט מלאכותי אז כנראה שהם יהיו בקווים ישרים.
+\end_layout
+
+\begin_layout Standard
+מה המטרה עכשיו? במקום אוסף פיקסלי השפה, אנחנו רוצים להתאים צורות גאומטריות
+ - לאו דווקא קווים ישרים, אולי איזו קשת מעגלית.
+ יש לנו איזה 
+\emph on
+מודל מונח
+\emph default
+ - מושג על הצורה של התמונה שמנסים לרכוש, ורוצים להתאים את פיקסלי השפה למודל
+ הזה.
+\end_layout
+
+\begin_layout Section*
+ייצוג קונטור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+קריטריונים: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+יעילות
+\series default
+: ייצוג פשוט וקומפקטי.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+דיוק
+\series default
+: התאמה מדויקת לנקודות.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+זו לא גיאומטריה נקייה - גם אם יש לנו קו ישר לא בהכרח נוכל לייצג אותו באמצעות
+ שתי נקודות, כי יש אילוצים )למשל הדיסקרטיזציה(
+\end_layout
+
+\begin_layout Standard
+מבחינה מתמטית אפשר לבדוק את זה באמצעות רגרסיה סטטיסטית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+אפקטיביות
+\series default
+: מתאים לצרכים יותר מתקדמים של עיבוד תמונה או של ראייה ממוחשבת.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+התאמת עקומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Curve Fitting
+\end_layout
+
+\begin_layout Standard
+אפשר לייחס מרחק מנקודות השפה למודל המונח.
+ נרצה איזה מדד להתאמה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+maximum absolute error (MAE)
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{MAE}=\max_{i}\left|d_{i}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+:mean squared error (MSE)
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{MSE}=\frac{1}{n}\sum_{i=1}^{n}d_{i}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+normalized maximum error (NME)
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\epsilon=\frac{\textnormal{MAE}}{S}=\max_{i}\frac{d_{i}}{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם היה לנו אינסוף זמן היה אפשר להסתכל על כל המודלים בעולם ולבחור את זה שנותן
+ את ההתאמה הכי טובה )בהתאם לקריטריון שבחרנו(.
+\end_layout
+
+\begin_layout Section*
+שיטות אינטרפולציה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה: מציאת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+polyline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ייצוג רב-קווי.
+ יש כמה קטעים ישרים שצריך להתאים לנתונים, ויש אלגוריתם איטרטיבי/רקורסיבי
+ שמוצא בכל פעם את הסטייה הגבוהה ביותר ומפצל אותו.
+\end_layout
+
+\begin_layout Section*
+שיטות אפרוקסימציה
+\end_layout
+
+\begin_layout Standard
+להבדיל מאינטרפולציה - שם ההתאמה חייבת לעבור דרך נקודות השפה - באפרוקסימציה
+ הקירוב לא חייב לעבור דרך השפה.
+\end_layout
+
+\begin_layout Standard
+שיטה אחת היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ordinary least squares
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Ordinary Least Squares
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $n$
+\end_inset
+
+ פיקסלי שפה, ומסתכלים על סטיות אנכיות )על ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+( 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+.
+ מנסים למצוא את הישר האופטימלי, שממזער את סכום ריבועי הסטיות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}r_{i}^{2}\to\min
+\]
+
+\end_inset
+
+הנעלמים הם 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ממשוואת הישר 
+\begin_inset Formula $y=ax+b$
+\end_inset
+
+, והנתונים הם 
+\begin_inset Formula $x_{i},y_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r_{i}=y_{i}-y\left(x_{i}\right)=y_{i}-\left(ax_{i}+b\right)
+\]
+
+\end_inset
+
+ולכן המשוואות הן:
+\begin_inset Formula 
+\[
+0=\frac{\partial}{\partial a}\left(\sum_{i=1}^{n}r_{i}^{2}\right)\qquad0=\frac{\partial}{\partial b}\left(\sum_{i=1}^{n}r_{i}^{2}\right)
+\]
+
+\end_inset
+
+ומבצעים את הגזירה )בלי לפתוח את הריבוע(:
+\begin_inset Formula 
+\[
+0=\frac{\partial}{\partial a}\left(\sum_{i=1}^{n}r_{i}^{2}\right)=\cancel{2}\sum_{i=1}^{n}\left(y_{i}-ax_{i}-b\right)\left(-x_{i}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0=\frac{\partial}{\partial b}\left(\sum_{i=1}^{n}r_{i}^{2}\right)=\cancel{2}\sum_{i=1}^{n}\left(y_{i}-ax_{i}-b\right)\left(-1\right)
+\]
+
+\end_inset
+
+ומקבלים שתי משוואות בשני נעלמים.
+\end_layout
+
+\begin_layout Subsubsection*
+ייצוא בהתאם לפרמטרים אלטרנטיביים
+\end_layout
+
+\begin_layout Standard
+ייצוג באמצעות 
+\begin_inset Formula $a$
+\end_inset
+
+ ו
+\begin_inset Formula $b$
+\end_inset
+
+ הוא בעייתי, כי אי אפשר לייצג ככה קוים אנכיים.
+ לכן נרצה להשתמש בייצוג אלטרנטיבי:
+\begin_inset Formula 
+\[
+\rho=x\cos\theta+y\sin\theta
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\rho$
+\end_inset
+
+ הוא המרחק מראשית הצירים )בד
+\begin_inset Quotes erd
+\end_inset
+
+כ מרכז התמונה( ו
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא הזווית של הגובה מציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+ בעצם 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ היא נקודת המפגש עם הגובה מראשית הצירים.
+\end_layout
+
+\begin_layout Standard
+לכן הנוסחה שצריך למזער היא:
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\left(x_{i}\cos\theta+y_{i}\sin\theta-\rho\right)^{2}\to\min
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+רגרסיה )
+\lang english
+Regression
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+באופן כללי יש לנו משוואה סתומה:
+\begin_inset Formula 
+\[
+f\left(x,y,a_{1},a_{2},\dots,a_{p}\right)=0
+\]
+
+\end_inset
+
+וצריך למצוא רגרסיה סטטיסטית ולפתור 
+\begin_inset Formula $p$
+\end_inset
+
+ משוואות עם 
+\begin_inset Formula $p$
+\end_inset
+
+ נעלמים.
+ אם אפשר לבטא בצורה 
+\begin_inset Formula $y=f\left(x,a_{1},a_{2},\dots,a_{p}\right)$
+\end_inset
+
+ אז יותר קל.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Least Median of Squares
+\end_layout
+
+\begin_layout Standard
+הממוצע הוא לא תמיד מדד טוב - לפעמים נרצה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LME
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- התאמה שבה החציון של הסטיות הוא המינימלי.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Hough Transform
+\end_layout
+
+\begin_layout Standard
+לכל נקודה )כלומר לכל פיקסל שפה( נחשוב על הישר הדואלי - כל נקודה תהפוך במרחב
+ הפרמטרים )מרחב 
+\begin_inset Formula $C,M$
+\end_inset
+
+( לישר:
+\begin_inset Formula 
+\[
+\left(x_{i},y_{i}\right)\to c=-x_{i}m+y_{i}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $x,y$
+\end_inset
+
+ מסוימים יש הרבה ערכי 
+\begin_inset Formula $c,m$
+\end_inset
+
+ שמקיימים אותם - וכולם נמצאים על ישר אחד.
+ אם חוזרים למישור התמונה - כל 
+\begin_inset Formula $\left(c,m\right)$
+\end_inset
+
+ מתאים לישר במישור התמונה, וכל הישרים האלה עוברים דרך 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם כל ה
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ נמצאים על ישר אחד, אז צריך להיות ישר אחד 
+\begin_inset Formula $\left(c,m\right)$
+\end_inset
+
+ שעובר דרך כולן - ואז זה אומר שבמישור הפרמטרים כל הישרים 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ עוברים דרך הנקודה 
+\begin_inset Formula $\left(c,m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: במישור התמונה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ הם נקודות ו
+\begin_inset Formula $\left(c,m\right)$
+\end_inset
+
+ הם ישרים.
+ במישור הפרמטרים 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ הם ישרים ו
+\begin_inset Formula $\left(c,m\right)$
+\end_inset
+
+ הם נקודות.
+\end_layout
+
+\begin_layout Standard
+מרחב הפרמטרים הוא דיסקרטי, אז אפשר לעבור תא תא על כל ערכי 
+\begin_inset Formula $\left(m,c\right)$
+\end_inset
+
+ האפשריים, ולספור כמה מישרי 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ עוברים דרך אותה נקודה.
+ עכשיו מחפשים במרחב הפרמטרים נקודות בהן יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+peak
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מקסימום מקומי.
+ אלו כנראה נקודות שמייצגות קווים משמעותיים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: אנחנו לא מוגבלים כאן למציאת מופע בודד - יכול להיות שנמצא כמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+peaks
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+אלגוריתם
+\series default
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בצע קוונטיזציה של מרחב הפרמטרים
+\end_layout
+
+\begin_layout Enumerate
+אתחל ב
+\begin_inset Formula $0$
+\end_inset
+
+ מונה לכל תא
+\end_layout
+
+\begin_layout Enumerate
+לכל נקודת שפה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ במרחב התמונה, הגדל ב
+\begin_inset Formula $1$
+\end_inset
+
+ את כל התאים במרחב הפרמטרים המקיימים את משוואת המודל.
+\end_layout
+
+\begin_layout Enumerate
+מצא נקודות במרחב השפה שהמונה שלהן מהווה מקסימום מקומי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אבל נזכור שאי אפשר לייצג ככה קווים אנכיים! אז מה קורה אם נייצג את הקווים
+ עם 
+\begin_inset Formula $\rho,\theta$
+\end_inset
+
+? הפונקציה המייצגת כל ישר הופכת להיות יותר מסובכת:
+\begin_inset Formula 
+\[
+\left(x,y\right)\to\rho=x\cos\theta+y\sin\theta
+\]
+
+\end_inset
+
+אבל האלגוריתם נשאר אותו דבר.
+\end_layout
+
+\begin_layout Section*
+קוונטיזציה בייצוג 
+\begin_inset Formula $\left(\rho,\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הקו נמצא מתחת לראשית הצירים, אז ה
+\begin_inset Formula $\rho$
+\end_inset
+
+ שלילי.
+ לכן ה
+\begin_inset Formula $\theta$
+\end_inset
+
+ צריך להיות בטווח 
+\begin_inset Formula $\left[-90^{\circ},90^{\circ}\right)$
+\end_inset
+
+.
+ ה
+\begin_inset Formula $\rho$
+\end_inset
+
+ מחושב לפי 
+\begin_inset Formula $\left|\rho\right|\le\frac{\sqrt{h^{2}+w^{2}}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מה לגבי גודל תאים?ככל שתא יותר קטן אז הוא ייתן יותר דיוק - אבל זה יכול לפגוע
+ בקוונטיזציה.
+ יש כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tradeoff
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+קשתות מעגליות
+\end_layout
+
+\begin_layout Standard
+איך מתאימים קשת מעגלית?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hough Transform
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תקף לכל מודל.
+ במקרה של מעגל - הנעלמים הם 
+\begin_inset Formula $a,b,r$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(x_{i}-a\right)^{2}+\left(y_{i}-b\right)^{2}\approx r^{2}
+\]
+
+\end_inset
+
+זה נותן לנו 
+\begin_inset Quotes eld
+\end_inset
+
+משטח
+\begin_inset Quotes erd
+\end_inset
+
+ )למרות שהוא לא מישורי(.
+ ואת אותו אלגוריתם שעשינו עבור קווים ישרים אפשר לעשות עבור המשוואות האלו.
+ 
+\end_layout
+
+\begin_layout Standard
+המשוואות הפרמטריות הן:
+\begin_inset Formula 
+\[
+x=a+r\cos\theta\qquad y=b+r\sin\theta
+\]
+
+\end_inset
+
+או:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=x-r\cos\theta\qquad b=y-r\sin\theta
+\]
+
+\end_inset
+
+אבל הזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ידועה לנו - כי אנחנו יודעים מה הגדריינט של השפה, והוא אמור להיות מאונך
+ למשיק באותה נקודת שפה.
+ לכן ה
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא האוריינטציה של הגרדיינט.
+\end_layout
+
+\begin_layout Standard
+לכן אפשר לסלק את 
+\begin_inset Formula $r$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+b=a\tan\theta-x\tan\theta+y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אפשר להשתמש באינפורמציה הנוספת הזאת כדי לחסוך מימד אחד - הפרמטרים הם
+ 
+\begin_inset Formula $x_{i},y_{i},\theta_{i}$
+\end_inset
+
+ והנעלמים הם רק 
+\begin_inset Formula $a,b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם מוצאים ככה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+peak
+\lang hebrew
+ים 
+\begin_inset Formula $\left(\hat{a},\hat{b}\right)$
+\end_inset
+
+, עדיין צריך למצוא את הרדיוסים של הקשתות.
+ איך עושים את זה? עושים עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hough Transform
+\lang hebrew
+, אבל בחד-מימד.
+ הפעם הפרמטרים הם 
+\begin_inset Formula $x_{i,}y_{i,}\hat{a},\hat{b}$
+\end_inset
+
+ והנעלם היחיד הוא 
+\begin_inset Formula $r$
+\end_inset
+
+, ומשתמשים במשוואה:
+\begin_inset Formula 
+\[
+\left(x_{i}-\hat{a}\right)^{2}+\left(y_{i}-\hat{b}\right)^{2}\approx r^{2}
+\]
+
+\end_inset
+
+וככה עושים לכל 
+\begin_inset Formula $\left(\hat{a},\hat{b}\right)$
+\end_inset
+
+ שמוצאים, כדי למצוא את כל הקשתות )המעגלים, בעצם( המעניינות.
+\end_layout
+
+\end_body
+\end_document

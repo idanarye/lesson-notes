@@ -1,0 +1,986 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-03
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-05
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+מציאת ספים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Edge Detection
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה: למצוא את גבולות הגזרה של כל אזור.
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תכונות ש
+\lang english
+edge detection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לענות עליהם:
+\end_layout
+
+\begin_layout Enumerate
+זיהוי טוב - כמה שפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false positive
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אמרנו שזה פיקסל שפה וזה לא פיקסל שפה.
+\end_layout
+
+\end_inset
+
+ וכמה שפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false negative
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אמרנו שזה לא פיקסל שפה וזה כן פיקסל שפה.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+good localization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כמה שפחות לפספס במיקום של השפה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+single response
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אנחנו רוצים שהעובי של השפה יהיה פיקסל אחד.
+\end_layout
+
+\begin_layout Standard
+מה שמאפיין שפה זה גרדיינט
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+שיפוע
+\end_layout
+
+\end_inset
+
+ גדול - שינוי גדול ברמות האפור.
+ בשביל למצוא גרדיינט צריך נגזרת - איך זה עובד בדו-מימד?
+\begin_inset Formula 
+\[
+s_{x}=\frac{f\left(x+\Delta x,y\right)-f\left(x,y\right)}{\Delta x}=f\left(x+1,y\right)-f\left(x,y\right)=\textnormal{conv2}\left(i,\begin{bmatrix}1 & -1\end{bmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+s_{y}=\frac{f\left(x,y+\Delta y\right)-f\left(x,y\right)}{\Delta y}=f\left(x,y+y\right)-f\left(x,y\right)=\textnormal{conv2}\left(i,\begin{bmatrix}1\\
+-1
+\end{bmatrix}\right)=\textnormal{conv2}\left(i,\begin{bmatrix}1 & -1\end{bmatrix}'\right)
+\]
+
+\end_inset
+
+ואז
+\begin_inset Formula 
+\[
+s=\sqrt{s_{x}^{2}+s_{y}^{2}}
+\]
+
+\end_inset
+
+ואז בודקים אם זה עובר סף מסויים.
+\end_layout
+
+\begin_layout Standard
+האם זה עובד? לא מספיק טוב.
+ אם למשל יש לנו כדור, יש אזור שהוא מתחיל להיות כהה, ויהיה לנו טווח רחב שהשיפוע
+ בו משמעותי.
+ במקום לקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+single response
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ תהיה לנו שפה מאוד רחבה.
+ למעשה, הפתרון הזה לא עונה מספיק טוב על אף אחד משלושת הדרישות.
+\end_layout
+
+\begin_layout Standard
+במקום זה יש אלגוריתם יותר טוב -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Canny Edge Detector
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Canny Edge Detector
+\end_layout
+
+\begin_layout Standard
+זהו שיפור לאלגוריתם.
+ קודם כל אנחנו רוצים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+single response
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכיוון הגרדיינט.
+ איך מוצאים את כיוון הגרדיינט? יש לנו 
+\begin_inset Formula $s_{x}$
+\end_inset
+
+ ו
+\begin_inset Formula $s_{y}$
+\end_inset
+
+, ולכן את הכיוון 
+\begin_inset Formula $\theta$
+\end_inset
+
+ אפשר למצוא באמצעות:
+\begin_inset Formula 
+\[
+\tan\theta=\frac{s_{y}}{s_{x}}
+\]
+
+\end_inset
+
+במעבר בין האובייקט לרקע צריך להיות הגרדיינט הכי חזק.
+ לכן יש לנו שלב בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+non-maximum supression
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שבו אנחנו מסתכלים על הפיקסל המרכזי.
+ אנחנו רוצים לעגל את הזווית לכפולה של 
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+, ובהתאם לזוית אנחנו יודעים מי שני השכנים שצריך לבדוק מולם.
+ לא צריך לעשות 
+\begin_inset Formula $\arctan$
+\end_inset
+
+ - אפשר להשתמש במונוטוניות של 
+\begin_inset Formula $\tan$
+\end_inset
+
+ בשביל העיגול:
+\begin_inset Formula 
+\[
+\begin{cases}
+0 & -0.4142\le\tan\theta\le0.4142\\
+1 & 0.4142\le\tan\theta\le2.4142\\
+2 & 2.4142\le\left|\tan\theta\right|\\
+3 & -2.4142\le\tan\theta\le-0.4142
+\end{cases}
+\]
+
+\end_inset
+
+לפי הכיוון מוצאים את שני השכנים, ומשווים להם.
+ זה נותן לנו גם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+single response
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כי בד
+\begin_inset Quotes erd
+\end_inset
+
+כ יש רק מקסימום אחד( וגם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+good localization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כי לוקחים את המקסימלי(.
+ איך משיגים זיהוי טוב?
+\end_layout
+
+\begin_layout Standard
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ יש לנו סף 
+\begin_inset Formula $T$
+\end_inset
+
+, ואנחנו משווים מולו.
+ אם ה
+\begin_inset Formula $T$
+\end_inset
+
+ שלנו גבוה מדי יהיו לנו הרבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false negatives
+\lang hebrew
+, ואם הוא נמוך מדי יהיה לנו הרבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false positives
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+במקום סף אחד נבחר שניים - סף גבוה 
+\begin_inset Formula $T_{H}$
+\end_inset
+
+ וסף נמוך 
+\begin_inset Formula $T_{L}$
+\end_inset
+
+.
+ את פיקסל השפה הראשון נמצא באמצעות 
+\begin_inset Formula $T_{H}$
+\end_inset
+
+, ועבור פיקסלים סמוכים לפיקסלי שפה שכבר מצאנו נשתמש ב
+\begin_inset Formula $T_{L}$
+\end_inset
+
+.
+ למנגנון הזה של קביעת שני ספים קוראים 
+\lang english
+Hysteresis
+\lang hebrew
+, והוא משמש למשל בטרמוסטטים.
+\end_layout
+
+\begin_layout Standard
+איך עושים את זה בפועל? עבור כל פיקסל:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $T_{H}<s\left(\textnormal{neighbors}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $T=T_{H}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $T=T_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+הבעיה בשיטה הזאת היא שאין פיעפוע.
+ אבל אם נבחר 
+\begin_inset Formula $T$
+\end_inset
+
+ לפי השאלה אם השכנים הם שפה או לא, נגלה רק את השפות שנמצאות 
+\series bold
+אחרי
+\series default
+ פיקסלי השפה שמצאנו.
+ הפתרון - לעשות מעבר כפול.
+ במעבר השני עוברים הפוך, וככה מוצאים שכנים לפי הכיוון השני.
+\end_layout
+
+\end_body
+\end_document

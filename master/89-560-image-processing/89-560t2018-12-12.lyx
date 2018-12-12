@@ -1,0 +1,882 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-03
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-12
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+שבוע שעבר למדנו איך לזהות ספים - עכשיו נרצה להתקדם עוד שלב ולזהות צורות.
+ למדנו בהרצאה על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hough Transform
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המרה ממרחב הנקודות למרחב האובייקטים שאנחנו מחפשים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+לדוגמה: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם אנחנו מחפשים קו, אז כל קו מאופיין ע
+\begin_inset Quotes erd
+\end_inset
+
+י המרחק 
+\begin_inset Formula $r$
+\end_inset
+
+ מהפינה השמאלית התחתונה ומהזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ צירוף הפרמטרים האלה 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+ מגדיר קו.
+\end_layout
+
+\begin_layout Itemize
+אם אנחנו מחפשים מעגלים, אז כל מעגל מאופיין ע
+\begin_inset Quotes erd
+\end_inset
+
+י מרכז 
+\begin_inset Formula $\left(C_{x},C_{y}\right)$
+\end_inset
+
+ ורדיוס 
+\begin_inset Formula $r$
+\end_inset
+
+ - כלומר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left(C_{x},C_{y},r\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+התא במעגל יכיל את כמות הפיקסלים שנמצאים על כל צורה )כל קו, כל מעגל...(.
+ אם יש מעט פיקסלים על הצורה כנראה שזה במקרה )קו אחר שחותך את אותו קו(, אבל
+ אם יש הרבה פיקסלים כנראה שזו באמת צורה בתמונה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hough Transform
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעביר אותנו ממרחב התמונה למרחב רב מימדי )תלוי במספר דרגות החופש( של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+counter
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Standard
+זהו אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+brute force
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- עוברים על כל האפשרויות:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $y=1:rows$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $x=1:cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $Edge\left(y,x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $C_{y}=1:rows$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $C_{x}=1:cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $r=\textnormal{round}\left(\sqrt{\left(C_{x}-x\right)^{2}+\left(C_{y}-y\right)^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $count\left(C_{x},C_{y},r\right)++$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+האלגוריתם עובד ב
+\begin_inset Formula $O\left(n^{4}\right)$
+\end_inset
+
+, אבל הוא נכנס לשתי הלולאות הפנימיות רק במקרה של פיקסלי שפה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: נרצה להגביל את 
+\begin_inset Formula $\max R=\left(\max\left(M,N\right)\right)$
+\end_inset
+
+ כדי לא לקבל דברים מחוץ לתמונה.
+\end_layout
+
+\begin_layout Standard
+אחרי זה צריך למצוא את המעגלים שעוברים סף מסויים:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $C_{x}=1:cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $C_{y}=1:rows$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $r=1:\max R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $counter\left(C_{y},C_{x},r\right)>T$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+FOUND CIRCLE!
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה צריך להיות 
+\begin_inset Formula $T$
+\end_inset
+
+? במקרה של מעגלים כדאי שהוא יהיה תלוי ברדיוס.
+ למשל 
+\begin_inset Formula $\frac{r}{4}$
+\end_inset
+
+ אמור להיות מספיק טוב.
+\end_layout
+
+\begin_layout Itemize
+לא כדאי לצפות למעגלים מושלמים, וכנראה שה
+\begin_inset Quotes erd
+\end_inset
+
+מרכז
+\begin_inset Quotes erd
+\end_inset
+
+ יתפזר על איזה אזור.
+ כדאי להסתכל על איזו 
+\begin_inset Quotes eld
+\end_inset
+
+גבעה
+\begin_inset Quotes erd
+\end_inset
+
+ ולא על נקודה בודדת במרחב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hough
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כדי לשפר את האלגוריתם, נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Non Maximum Supression
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נסתכל על השכנים של אותה נקודה וניקח רק מעגלים שהם מקסימום מקומי.
+\end_layout
+
+\begin_layout Standard
+ככל שה
+\lang english
+Edge Detection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה יותר טוב, מציאת המעגלים תהיה יותר טובה.
+\end_layout
+
+\begin_layout Subsection*
+שיפור זמן הריצה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+זמן הריצה בכל מקרה ארוך, אבל אם לוקח בתרגיל יותר מ
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שניות למצוא מעגלים - צריך לשפר אותו.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שעל כל נקודת שפה יש לנו כיוון גרדיינט, במקום לעבור על כל המרכזים
+ האפשריים אפשר לעבור רק על אלו שנמצאים בכיוון של הגרדיינט.
+ 
+\begin_inset Formula $\tan\theta=\frac{s_{y}}{s_{x}}$
+\end_inset
+
+ הוא השיפוע של משוואת הקו הישר.
+ אז אפשר פשוט לרוץ על 
+\begin_inset Formula $x$
+\end_inset
+
+ לשני הכיוונים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כי הגרדיינט הוא לפי שינוי הצבע, ואנחנו לא יודעים אם הוא עולה או יורד.
+\end_layout
+
+\end_inset
+
+ ולקדם את 
+\begin_inset Formula $y$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\tan\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שכאשר 
+\begin_inset Formula $\tan\theta>1$
+\end_inset
+
+ מפספסים פיסקלים - ולכן במקרה כזה במקום לרוץ על 
+\begin_inset Formula $x$
+\end_inset
+
+ ולהוסיף 
+\begin_inset Formula $\tan\theta$
+\end_inset
+
+ נרוץ על 
+\begin_inset Formula $y$
+\end_inset
+
+ ונוסיף 
+\begin_inset Formula $\frac{1}{\tan\theta}$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

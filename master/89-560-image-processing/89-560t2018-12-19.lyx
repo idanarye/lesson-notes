@@ -1,0 +1,941 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-03
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-19
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Fourier Transform
+\end_layout
+
+\begin_layout Standard
+יש לנו פונקציה 
+\begin_inset Formula $s=\sin x$
+\end_inset
+
+.
+ לפונציית סינוס יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תכונות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f$
+\end_inset
+
+ המחזור שלה הוא 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $s\left(x+2\pi\right)=s\left(x\right)$
+\end_inset
+
+.
+ אם במקום זה היינו כותבים 
+\begin_inset Formula $s=\sin\left(2\pi x\right)$
+\end_inset
+
+ המחזור היה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ עבור 
+\begin_inset Formula $s=\sin\left(2\pi\cdot10x\right)$
+\end_inset
+
+ הפונקציה הייתה עושה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים עד שהיא מגיעה ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכמות המחזורים ביחידה קוראים תדר ומסמנים 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ פונקציית סינוס בתדר 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $s=\sin\left(2\pi fx\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנחנו מכירים את התדר משמיעה - בן אדם שומע בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+400
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים בשניה ל
+\numeric on
+20,000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים בשניה.
+ גם בחשמל - זרם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עושה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+50
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים בשנייה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בארה
+\begin_inset Quotes erd
+\end_inset
+
+ב -
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+60
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחזורים בשניה
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יחידת המידה של תדר היא הרץ - שזה 
+\begin_inset Formula $\frac{1}{\textnormal{second}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אמפליטודה)
+\begin_inset Formula $A$
+\end_inset
+
+( לפונקציית הסינוס יש גם אמפליטודה, שהיא הגודל המקסימלי שהיא מגיעה אליו.
+ ל
+\begin_inset Formula $\sin x$
+\end_inset
+
+ יש אמפליטודה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אם היינו רוצים להגדיל אותה ל
+\numeric on
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היינו עושים 
+\begin_inset Formula $20\sin x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פאזה)
+\begin_inset Formula $\theta$
+\end_inset
+
+( תכונה אחרונה היא הפאזה - ההזזה של הפונקציה על ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+ בשביל לשנות את הפאזה עושים 
+\begin_inset Formula $\sin\left(x-\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נחבר את הכל, גל סינוס עם תדר 
+\begin_inset Formula $f$
+\end_inset
+
+ אמפליטודה 
+\begin_inset Formula $A$
+\end_inset
+
+ ופאזה 
+\begin_inset Formula $\theta$
+\end_inset
+
+ נראית כך:
+\numeric on
+3
+\numeric off
+
+\begin_inset Formula 
+\[
+s=A\sin\left(2\pi fx-\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פורייה
+\end_layout
+
+\begin_layout Standard
+פורייה אומר - כל אות שלא תביא, אפשר לייצג אותו באמצעות סכום של גלי סינוס.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אתגר הממוצע של גל סינוס הוא אפס, ולכן ממוצע של חיבור גלי סינוס הוא אפס,
+ אבל יכול להיות שלאות שלנו יש תדר אחר.
+ כדי לפתור את הבעיה משתמשים בגל סינוס עם תדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+:
+\begin_inset Formula 
+\[
+s=A\sin\left(2\pi\cdot0x+\theta\right)=A\sin\theta=\textnormal{const}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדגימה של האות היא וקטור 
+\begin_inset Formula $\begin{bmatrix}a_{0} & a_{1} & a_{2} & \cdots & a_{n}\end{bmatrix}$
+\end_inset
+
+.
+ הרעיון הוא שאם יש לנו בסיס אורתונורמלי אפשר לעשות המרה מבסיסים.
+ פורייה רוצה לעשות בסיס מגלים הרמוניים.
+ ווקטור הבסיס הראשון הוא:
+\begin_inset Formula 
+\[
+\textnormal{FB}_{0}=\begin{bmatrix}1 & 1 & 1 & 1 & \cdots & 1\end{bmatrix}
+\]
+
+\end_inset
+
+)נשים לב שזה לא מנורמל(
+\end_layout
+
+\begin_layout Standard
+עכשיו צריך לייצר ווקטור שהוא בלתי תלוי לינארית בווקטור הראשון.
+ נעשה זאת על ידי 
+\begin_inset Formula $\sin\frac{2\pi x}{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\textnormal{FB}_{1}=\begin{bmatrix}0 & \sin\frac{2\pi}{n} & \sin\frac{2\pi\cdot2}{n} & \sin\frac{2\pi\cdot3}{n} & \cdots & \sin\frac{2\pi\cdot\left(n-1\right)}{n}\end{bmatrix}
+\]
+
+\end_inset
+
+וכן הלאה - 
+\begin_inset Formula $\textnormal{FB}_{2}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\sin\frac{2\pi\cdot2x}{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{FB}_{3}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\sin\frac{2\pi\cdot3x}{n}$
+\end_inset
+
+ וכו' - עד 
+\begin_inset Formula $\textnormal{FB}_{n-1}$
+\end_inset
+
+.
+ נקבל ווקטורים בלתי תלויים לינארית, שמהם אפשר לבנות את הווקטור המקורי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה כדי שלא נאבד את הגל, תדר הדגימה צריך להיות לפחות פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתדר הגל המקורי.
+ לכן למשל כזי לשחזר גל עד 
+\begin_inset Formula $22\unit{kHZ}$
+\end_inset
+
+ נרצה דגימה על 
+\begin_inset Formula $44\unit{kHZ}$
+\end_inset
+
+, וזה מה שעשו בדיסקים של מוזיקה.
+\end_layout
+
+\begin_layout Standard
+בהצגת פורייה של אות ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ הוא לא ציר הזמן 
+\begin_inset Formula $t$
+\end_inset
+
+ אלא ציר התדר 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,690 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-19
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+כל גל סינוס יש לו עצמה/מנעד/אמפליטודה ותדר.
+\end_layout
+
+\begin_layout Section*
+התמרת פורייה חד-מימדית
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לא מחזורית, ניתן לבטא את הפונקציה ע
+\begin_inset Quotes erd
+\end_inset
+
+י מקדמים הניתנים ע
+\begin_inset Quotes erd
+\end_inset
+
+י התמרת פורייה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונקציה ממשית רציפה.
+ התמרת פורייה של הפונקציה 
+\begin_inset Formula $\mathcal{F}\left(f\left(x\right)\right)$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י:
+\begin_inset Formula 
+\[
+F\left(w\right)=\mathcal{F}\left(f\left(x\right)\right)=\int\limits _{-\infty}^{\infty}f\left(x\right)e^{-i2\pi wx}\mathrm{\,d}x
+\]
+
+\end_inset
+
+ובהינתן מקדמי פוריה 
+\begin_inset Formula $F\left(w\right)$
+\end_inset
+
+, הפונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ניתנת לביטוי באמצעות התמרת פורייה ההופכית )
+\lang english
+inverse Fourier transform
+\lang hebrew
+( כדלקמן:
+\begin_inset Formula 
+\[
+f\left(x\right)=\mathcal{F}^{-1}\left(F\left(w\right)\right)=\int\limits _{-\infty}^{\infty}F\left(w\right)e^{i2\pi wx}\mathrm{\,d}w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $w$
+\end_inset
+
+ הוא התדר, וזה 
+\begin_inset Quotes eld
+\end_inset
+
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ ב
+\begin_inset Formula $F\left(w\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המטרה תהיה להתערב באופן ישיר במבנה הספקטרלי של התמונה.
+ ללכת לערכי 
+\begin_inset Formula $w$
+\end_inset
+
+ שונים ולשנות שם את הערכים.
+ אז אפשר לעשות התמרה הופכית ולקבל חזרה את התמונה - עם השינוי שעשינו בתדרים.
+\end_layout
+
+\begin_layout Standard
+לפעמים יותר קל להבין את משמעות הבעיה כאשר דנים בה במישור חלופי - במישור
+ התדר.
+ דווקא שם יותר קל להתייחס אליה מבחינת המשמעות של הפעולות הנדרשות.
+\end_layout
+
+\begin_layout Standard
+להתמרת פורייה יש חלק ממשי וחלק מדומה:
+\begin_inset Formula 
+\[
+F\left(w\right)=\mathcal{R}\left(F\left(w\right)\right)+i\mathcal{I}\left(F\left(w\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{R}\left(F\left(w\right)\right)=\int\limits _{-\infty}^{\infty}f\left(x\right)\cos\left(2\pi wx\right)\mathrm{\,d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{I}\left(F\left(w\right)\right)=-\int\limits _{-\infty}^{\infty}f\left(x\right)\sin\left(2\pi wx\right)\mathrm{\,d}x
+\]
+
+\end_inset
+
+האמפליטודה שלה היא:
+\begin_inset Formula 
+\[
+\left|F\left(w\right)\right|=\sqrt{\mathcal{R}\left(w\right)^{2}+\mathcal{I}\left(w\right)^{2}}
+\]
+
+\end_inset
+
+והפאזה:
+\begin_inset Formula 
+\[
+\phi\left(w\right)=\arctan\frac{\mathcal{I}\left(w\right)}{\mathcal{R}\left(w\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה - פונקציית
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sinc
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חד מימדית
+\end_layout
+
+\begin_layout Standard
+עבור הפונקציה:
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+A & \left|x\right|\le\frac{T}{2}\\
+0 & \textnormal{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+נפתח טור פורייה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F\left(w\right)=\int_{\frac{-T}{2}}^{\frac{T}{2}}Ae^{-i2\pi wx}\mathrm{\,d}x
+\]
+
+\end_inset
+
+משתמשים בזהות 
+\begin_inset Formula $\sin x=\frac{e^{ix}-e^{-ix}}{2i}$
+\end_inset
+
+, ואז:
+\begin_inset Formula 
+\[
+F\left(w\right)=AT\cdot\frac{\sin\pi wT}{\pi wT}=AT\cdot\textnormal{sinc}\left(wT\right)
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+\textnormal{sinc}\left(x\right)\stackrel{{\scriptscriptstyle def}}{=}\frac{\sin\left(\pi x\right)}{\pi x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+התמרת פורייה דו מימדית
+\end_layout
+
+\begin_layout Standard
+כדי לטפל בתמונות, נתעניין בהרחבת התמרת פורייה לשני מימדים:
+\begin_inset Formula 
+\[
+F\left(u,v\right)=\mathcal{F}\left(f\left(x,y\right)\right)=\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}f\left(x,y\right)e^{-i2\pi\left(ux+vy\right)}\mathrm{\,d}x\mathrm{\,d}y
+\]
+
+\end_inset
+
+וההתמרה ההופכית:
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\mathcal{F}^{-1}\left(F\left(u,v\right)\right)=\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}F\left(u,v\right)e^{i2\pi\left(ux+vy\right)}\mathrm{\,d}u\mathrm{\,d}v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+ מסמלים את התדרים בכיוון אופקי ואנכי בהתאמה.
+ ה
+\lang english
+domain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של תמונות הכוונה בעיקר למחזורים ליחידת אורך, כגון מספר קווים/מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ מתייחסים לתדירות מעין זו כאל תדירות מרחבית )
+\lang english
+spatial frequency
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Subsection*
+דוגמה - פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sinc
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ דו מימדית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $f\left(x,y\right)=\textnormal{rect}\left(x,y\right)\stackrel{{\scriptscriptstyle def}}{=}\begin{cases}
+1 & \left|x\right|\le\frac{1}{2},\left|y\right|\le\frac{1}{2}\\
+0 & \textnormal{otherwise}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טענה: 
+\begin_inset Formula $F\left(u,v\right)=\textnormal{sinc}\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה: 
+\begin_inset Formula 
+\[
+F\left(u,v\right)=\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}f\left(x,y\right)f\left(x,y\right)\mathrm{\,d}x\mathrm{\,d}y=\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}1\cdot e^{-iw\pi\left(ux+vy\right)}\mathrm{\,d}x\mathrm{\,d}y=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}e^{-iw\pi ux}e^{-iw\pi vy}\mathrm{\,d}x\mathrm{\,d}y=\cdots
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $e^{-iw\pi ux}$
+\end_inset
+
+ הוא קבוע עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ ו
+\begin_inset Formula $e^{-iw\pi vy}$
+\end_inset
+
+ קבוע עבור 
+\begin_inset Formula $x$
+\end_inset
+
+, ניתן לפרק את האינטגל
+\begin_inset Formula 
+\[
+\cdots=\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}e^{-i2\pi ux}\mathrm{\,d}x\cdot\int\limits _{-\frac{1}{2}}^{\frac{1}{2}}e^{-i2\pi vy}=\frac{\sin\left(\pi u\right)}{\pi u}\cdot\frac{\sin\left(\pi v\right)}{\pi v}=\textnormal{sinc}\left(u\right)\cdot\textnormal{sinc}\left(v\right)=\textnormal{sinc}\left(u,v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מה המשמעות של מרכיב תדר?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B_{u,v}=g_{u,v}\left(x,y\right)=\cos\left(2\pi\left(ux+vy\right)\right)+i\sin\left(2\pi\left(ux+vy\right)\right)
+\]
+
+\end_inset
+
+היחס 
+\begin_inset Formula $\frac{u}{v}$
+\end_inset
+
+ קובע את הכיוון, והגודל של 
+\begin_inset Formula $u,v$
+\end_inset
+
+ קובע את התדירות.
+ כל מרכיב תדר הוא בעצם גל דו-מימדי.
+\end_layout
+
+\begin_layout Section*
+תכונות בסיסיות של התמרת פורייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+scaling
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(a_{1}x+b_{1}y,a_{2}x+b_{2}y\right)\right)=\left(A_{1}B_{2}-A_{2}B_{1}\right)\mathcal{F}\left(A_{1}u+A_{2}v,B_{1}u+B_{2}v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{1}=\frac{b_{2}}{a_{1}b_{2}-a_{2}b_{1}}\qquad B_{1}=\frac{-b_{1}}{a_{1}b_{2}-a_{2}b_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{2}=\frac{-a_{2}}{a_{1}b_{2}-a_{2}b_{1}}\qquad B_{2}=\frac{a_{1}}{a_{1}b_{2}-a_{2}b_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

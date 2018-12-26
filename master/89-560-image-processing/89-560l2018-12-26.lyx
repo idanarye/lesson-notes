@@ -1,0 +1,861 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{פרופ' נתן נתניהו}
+\\
+\textbf{תאריך:}
+\beginL
+2018-12-26
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+תכונות בסיסיות של התמרות פוריה
+\end_layout
+
+\begin_layout Subsection*
+סכום )פילוג(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(x,y\right)+g\left(x,y\right)\right)=F\left(u,v\right)+G\left(u,v\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $F\left(u,v\right)=\mathcal{F}\left(f\left(x,y\right)\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $G\left(u,v\right)=\mathcal{F}\left(g\left(x,y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דמיון )
+\lang english
+scaling
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(ax,by\right)\right)=\frac{1}{\left|ab\right|}F\left(\frac{u}{a},\frac{v}{b}\right)
+\]
+
+\end_inset
+
+הוכחה )בחד-מימד(:
+\begin_inset Formula 
+\[
+\mathcal{F}\left(...\right)=F\left(u\cos\theta-v\sin\theta,u\sin\theta+v\cos\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)\iff F\left(w\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(ax\right)\iff?
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(ax\right)\right)=\int\limits _{-\infty}^{\infty}f\left(ax\right)e^{-i2\pi wx}\mathrm{\,d}x=\left|\frac{1}{a}\right|\int\limits _{-\infty}^{\infty}f\left(u\right)e^{-i2\pi\frac{w}{a}u}\mathrm{\,d}u=\left|\frac{1}{a}\right|F\left(w\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ככל שהתדר המקורי יותר רחב, ככה צריך 
+\begin_inset Quotes eld
+\end_inset
+
+להתאמץ
+\begin_inset Quotes erd
+\end_inset
+
+ יותר כדי 
+\begin_inset Quotes eld
+\end_inset
+
+לאפס
+\begin_inset Quotes erd
+\end_inset
+
+ אותו - ולכן התדרים יותר צפופים.
+\end_layout
+
+\begin_layout Subsection*
+הכללה של דמיון - טרנספורמציה לינארית
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\begin{pmatrix}x'\\
+y'
+\end{pmatrix}=\begin{pmatrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}$
+\end_inset
+
+, אז מה זה 
+\begin_inset Formula $\mathcal{F}\left(f\left(x',y'\right)\right)$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(a_{1}x+b_{1}y,a_{2}x+b_{2}y\right)\right)=\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}f\left(a_{1}x+b_{1}y,a_{2}x+b_{2}y\right)e^{-i2x\left(ux+vy\right)}\mathrm{\,d}x\mathrm{\,d}y
+\]
+
+\end_inset
+
+ונעשה החלפת משתנים 
+\begin_inset Formula $w=a_{1}x+b_{1}y\qquad z=a_{2}x+b_{2}y$
+\end_inset
+
+ ואז
+\begin_inset Formula 
+\[
+x=A_{1}w+B_{1}z\qquad y=A_{2}w+B_{2}z
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}x=A_{1}\mathrm{\,d}w+B_{1}\mathrm{\,d}z\qquad\mathrm{d}y=A_{2}\mathrm{\,d}w+B_{2}\mathrm{\,d}z
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+A_{1}=\frac{b_{2}}{a_{1}b_{2}-a_{2}b_{1}}\qquad B_{1}=\frac{-b_{1}}{a_{1}b_{2}-a_{2}b_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{2}=\frac{-a_{2}}{a_{1}b_{2}-a_{2}b_{1}}\qquad B_{2}=\frac{-b_{2}}{a_{1}b_{2}-a_{2}b_{1}}
+\]
+
+\end_inset
+
+ואז התמרת הפוריה שלנו היא:
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(a_{1}x+b_{1}y,a_{2}x+b_{2}y\right)\right)=\cdots=\left(A_{1}B_{2}-A_{2}B_{1}\right)F\left(A_{1}u+A_{2}v,B_{1}u+B_{2}v\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+העתקה )
+\lang english
+shift
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}\left(f\left(x-a,y-b\right)\right)=F\left(u,v\right)\cdot e^{-i2\pi\left(au+bv\right)}
+\]
+
+\end_inset
+
+כלומר שוב, הערך המוחלט נותר קבוע - רק הפאזה משתנה.
+\end_layout
+
+\begin_layout Subsection*
+סיבוב )
+\lang english
+rotation
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+מקרה פרטי של טרנספורמציה לינארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{1} & b_{1}\\
+a_{2} & b_{2}
+\end{pmatrix}=\begin{pmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{pmatrix}
+\]
+
+\end_inset
+
+ולכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}A_{1} & B_{1}\\
+A_{2} & B_{2}
+\end{pmatrix}=\begin{pmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{pmatrix}
+\]
+
+\end_inset
+
+ולכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}\left(...\right)=F\left(u\cos\theta-v\sin\theta,u\sin\theta+v\cos\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר התמרת פוריה של פונקציה מסובבת היא מסובבת בעצמה.
+\end_layout
+
+\begin_layout Subsection*
+פריקות
+\end_layout
+
+\begin_layout Standard
+אם
+\begin_inset Formula 
+\[
+f\left(x,y\right)=f_{1}\left(x\right)\cdot f_{2}\left(y\right)
+\]
+
+\end_inset
+
+אזי:
+\begin_inset Formula 
+\[
+F\left(u,v\right)=F_{1}\left(u\right)\cdot F_{2}\left(v\right)
+\]
+
+\end_inset
+
+כאשר:
+\begin_inset Formula 
+\[
+F_{1}\left(u\right)=\mathcal{F}\left(f_{1}\left(x\right)\right)\qquad F_{2}\left(v\right)=\mathcal{F}\left(f_{2}\left(v\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+התמרות פורייה של פונקציה גאוסיאנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=e^{-\pi x^{2}}
+\]
+
+\end_inset
+
+)הרחבה לדו-מימד: 
+\begin_inset Formula $f\left(x\right)=e^{-\pi\left(x^{2}+y^{2}\right)}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+זו פונקציית צפיפות הסתברות.
+\end_layout
+
+\begin_layout Standard
+התמרת הפורייה היא:
+\begin_inset Formula 
+\[
+F\left(w\right)\mathcal{=F}\left(f\left(x\right)\right)=\int\limits _{-\infty}^{\infty}e^{-\pi x^{2}}\cdot e^{-j2\pi wx}\mathrm{\,d}x=\cdots=e^{-\pi w^{2}}
+\]
+
+\end_inset
+
+וזה נשאר גאוסיאני.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+פונקציית דלתא )הלם,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+impulse
+\lang hebrew
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dirac
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+המטרה
+\series default
+: לעבור ממרחב רציף למרחב דיסקרטי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: פונקציית דלתא מוגדרת לפי האינטגרל:
+\begin_inset Formula 
+\[
+\int\limits _{-\infty}^{\infty}\delta\left(x\right)\mathrm{\,d}x=\int\limits _{-\varepsilon}^{\varepsilon}\delta\left(x\right)\mathrm{\,d}x=1
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קטן באופן שרירותי.
+\end_layout
+
+\begin_layout Standard
+למעשה 
+\begin_inset Formula $\delta\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ אך 
+\series bold
+\bar under
+בראשית עצמה הפונקציה אינה מוגדרת!
+\end_layout
+
+\begin_layout Standard
+לפונצייה נקודת אי-רציפות ב
+\numeric on
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ההגדרה המוכללת היא:
+\begin_inset Formula 
+\[
+\int\limits _{-\infty}^{\infty}A\delta\left(x\right)\mathrm{\,d}x=A
+\]
+
+\end_inset
+
+או
+\begin_inset Formula 
+\[
+\int\limits _{-\infty}^{\infty}f\left(x\right)\delta\left(x\right)\mathrm{\,d}x=f\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות של פונקציית הדלתא
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+shifting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\limits _{-\infty}^{\infty}f\left(x\right)\delta\left(x-x_{0}\right)\mathrm{\,d}x=\int\limits _{-\infty}^{\infty}f\left(x\right)\delta\left(x+x_{0}\right)\mathrm{\,d}x=f\left(x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Scaling
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(ax\right)=\frac{1}{\left|a\right|}\delta\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הוכחה
+\series default
+: עבור פונקציה שרירותית 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\int\limits _{-\infty}^{\infty}\delta\left(ax\right)f\left(x\right)\mathrm{\,d}x=\frac{1}{a}\int\limits _{-\infty}^{\infty}\delta\left(t\right)f\left(\frac{t}{a}\right)\mathrm{\,d}t=\frac{1}{\left|a\right|}f\left(0\right)=\cdots
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $t=ax$
+\end_inset
+
+, 
+\begin_inset Formula $x=\frac{t}{a}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{d}x=\frac{1}{a}\mathrm{d}t$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=\frac{1}{\left|a\right|}\int\limits _{-\infty}^{\infty}\delta\left(x\right)f\left(x\right)\mathrm{\,d}x=\int\limits _{-\infty}^{\infty}\left(\frac{1}{\left|a\right|}\delta\left(x\right)\right)f\left(x\right)\mathrm{\,d}x
+\]
+
+\end_inset
+
+ניתן עוד להראות כי:
+\begin_inset Formula 
+\[
+u'\left(x\right)=\frac{\mathrm{d}u}{\mathrm{d}x}\left(x\right)=\delta\left(x\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ הינה פונקציית המדרגה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u\left(x\right)=\begin{cases}
+0 & x<0\\
+1 & x\ge0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+קונבולוציה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+הגדרה
+\series default
+: בחד-מימד:
+\begin_inset Formula 
+\[
+f\left(x\right)*g\left(x\right)\stackrel{{\scriptscriptstyle \triangle}}{=}\int\limits _{-\infty}^{\infty}f\left(\tau\right)g\left(x-\tau\right)\mathrm{\,d}\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $x$
+\end_inset
+
+ הוא בכלל לא פונקציה של האינטגרל - לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ נקבל ערך אחר של האינטגרל.
+ לכן סה
+\begin_inset Quotes erd
+\end_inset
+
+כ התוצאה היא פונקציה חדשה של 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קל לראות כי:
+\begin_inset Formula 
+\[
+f*g=g*f
+\]
+
+\end_inset
+
+וכן:
+\begin_inset Formula 
+\[
+f*\left(g*h\right)=\left(f*g\right)*h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: האינטגרל יתן ערך שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רק כאשר יש חפיפה בין 
+\begin_inset Formula $f$
+\end_inset
+
+ ל
+\begin_inset Formula $g$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(f*g\right)\left(x\right)\neq0\implies\nexists_{\tau}f\left(\tau\right)\neq0\wedge g\left(x-\tau\right)\neq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הרחבה לדו-מימד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)*g\left(x,y\right)\stackrel{{\scriptscriptstyle \triangle}}{=}\int\limits _{-\infty}^{\infty}\int\limits _{-\infty}^{\infty}f\left(u,v\right)g\left(x-u,y-v\right)\mathrm{\,d}u\mathrm{\,d}v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

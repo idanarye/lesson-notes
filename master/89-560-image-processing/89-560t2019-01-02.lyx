@@ -1,0 +1,628 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-03
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-01-02
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+אם נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל את התמונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נסתכל במרכז נראה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted10.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנקודה במרכז היא 
+\begin_inset Formula $\left(241,166\right)$
+\end_inset
+
+ - זה ה
+\begin_inset Quotes erd
+\end_inset
+
+אנרגיה
+\begin_inset Quotes erd
+\end_inset
+
+ של התמונה, והגיוני שהיא תהיה בהירה יותר.
+ אבל שתי הנקודות הבהירות האחרות לא - הן מייצגות את הגל שלנו.
+ הקואורדינטות שלהן הן 
+\begin_inset Formula $\left(236,159\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(246,173\right)$
+\end_inset
+
+, אז אם נאפס אותן נקבל ניקוי לרעש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted11.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והאלגוריתם:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i = imread('fftDemo2.tiff');
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i = double(i) / 255;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f = fftshift(fft2(i));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f(236, 159) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f(246, 173) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ni = ifft2(ifftshift(f));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+imshow(ni)
+\end_layout
+
+\begin_layout Standard
+ומה אם יש רעש יותר מורכב? כמו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted12.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרכז ה
+\lang english
+fft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted13.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו רואים כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות - כי חוץ מהגלים האופקיים והאנכיים יש גם גלים אלכסוניים.
+ גם את זה אפשר לנקות - זה פשוט יותר עבודה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i = imread('fftDemo4.tiff');
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+i = double(i) / 255;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f = fftshift(fft2(i));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f(284, 243) = 0; f(284, 252) = 0; f(284, 261) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f(300, 243) = 0; f(300, 261) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+f(316, 243) = 0; f(316, 252) = 0; f(316, 261) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ni = ifft2(ifftshift(f));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+imshow(ni)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+ את הנקודה הבהירה האמצעית לא מנקים!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted14.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גם אחרי הניקוי עדיין יש גלים חלשים.
+ למה זה? בגלל שאם לא היה את הרעש המקורי, עדיין היה ערך בנקודות האלה, ובגלל
+ שלא שחזרנו אותו אלא רק איפסנו רואים הפרעות בתמונה.
+ אפשר להמציא ערכים בעזרת ניסוי וטעיה, אבל צריך לשים לב שצריך להמציא גם אמפליטודה
+ )ערך מוחלט של המספר המרוכב( וגם פאזה )הזוית של המספר המרוכב(.
+ בדרך כלל לא עושים את זה, אבל אם ממש ממש חשוב לנקות את כל הרעש זה אפשרי.
+\end_layout
+
+\begin_layout Section*
+פילטר תדרים גבוהים/נמוכים
+\end_layout
+
+\begin_layout Standard
+אפשר להוציא את כל התדרים הנמוכים מהתמונה באמצעות מסיכה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+[rows cols] = size(d);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mask = ones(size(d));
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+fh = int32(rows/10);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+fw = int32(cols/10);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mask((147-fh):(147+fh),(226-fw):(226+fw)) = 0;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+figure;imshow(mask);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+g = d.*mask;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+figure;fftShow(g);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+figure;imshow(ifft2(ifftshift(g)));
+\end_layout
+
+\begin_layout Standard
+זה נותן רק את קוי המתאר )כי להם יש תדרים גבוהים(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted15.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה התמונה כהה? כי האנרגיה של התמונה, הנקודה בדיוק באמצע, התאפסה.
+ אם נמקסם אותה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mask(147,226) = 1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+g = d.*mask; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+figure;imshow(ifft2(ifftshift(g)));
+\end_layout
+
+\begin_layout Standard
+נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted17.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם להוציא את התדרים הגבוהים באמצעות היפוך המסיכה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+mask1 = 1-mask;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+g = d.*mask1;
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+figure;imshow(ifft2(ifftshift(g)));
+\end_layout
+
+\begin_layout Standard
+ואז מקבלים טשטוש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted16.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

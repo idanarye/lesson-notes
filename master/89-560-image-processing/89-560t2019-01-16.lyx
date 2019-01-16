@@ -1,0 +1,1343 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+עיבוד תמונות
+\\
+\selectlanguage{english}
+89-560-03
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-01-16
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+טרנספורמציות
+\end_layout
+
+\begin_layout Standard
+יש לנו תמונה, ואנחנו רוצים להזיז אותה.
+ או לסובב אותה.
+ או להגדיל/להקטין אותה.
+ אלו פעולות שלא משנות את הערכים של הפיקסלים, אלא רק את המיקום שלהם:
+\begin_inset Formula 
+\[
+\left(x,y\right)\to\left(x',y'\right)=\left(f\left(x,y\right),g\left(x,y\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הזזה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Translation
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{Tr}:\left(x,y\right)\overset{\left(a,b\right)}{\to}\left(x+a,y+b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הגדלה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Scaling
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{S}:\left(x,y\right)\overset{\left(a,b\right)}{\to}\left(ax,by\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סיבוב -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Rotation
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\textnormal{R}:\left(x,y\right)\overset{\theta}{\to}\left(x\cos\theta-y\sin\theta,x\sin\theta+y\cos\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: איך זוכרים את הנוסחה של סיבוב? אם יש לנו שני וקטורים בגדלים 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+ וזויות 
+\begin_inset Formula $\theta_{1},\theta_{2}$
+\end_inset
+
+, ומייצגים אותם בתור מספרים מרוכבים, הכפלה שלהם היא:
+\begin_inset Formula 
+\[
+v_{1}\varangle\theta_{1}\cdot v_{2}\varangle\theta_{2}=v_{1}v_{2}\varangle\theta_{1}+\theta_{2}
+\]
+
+\end_inset
+
+נזכור גם ש:
+\begin_inset Formula 
+\[
+\varangle\theta=\cos\theta+i\sin\theta
+\]
+
+\end_inset
+
+ואז, כדי לסובב את 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\theta$
+\end_inset
+
+, עושים:
+\begin_inset Formula 
+\[
+\left(x+iy\right)\left(\cos\theta+i\sin\theta\right)=\left(x\cos\theta-y\sin\theta\right)+i\left(x\sin\theta+y\cos\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכאורה אפשר היה פשוט לעבור פיקסל פיקסל ולמצוא לכל אחד את המיקום החדש שלו.
+ אבל אז, אם למשל נגדיל וקטור פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 2 & 3\end{bmatrix}\to\begin{bmatrix}? & ? & 1 & ? & ? & 2 & ? & ? & 3\end{bmatrix}
+\]
+
+\end_inset
+
+יהיו לנו פיקסלים ריקים.
+ לכן, במקום זה, נלך על הפיקסלים של התוצאה - ולכל מיקום נמצא את הפיקסל בתמונה
+ המקורית שהולך אליו.
+\end_layout
+
+\begin_layout Standard
+מה עושים כשלא מגיעים לאינדקס שלם?
+\end_layout
+
+\begin_layout Itemize
+אפשר לקחת את השכן הכי קרוב.
+\end_layout
+
+\begin_layout Itemize
+אפשר לעשות ממוצע משוקלל לפי האינדקס שיצא.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+האלגוריתם
+\end_layout
+
+\begin_layout Subsection*
+עבור הזזה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+[rows, cols] = size(i);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ni = zeros(rows, cols);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for r = 1:rows
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for c = 1:cols
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{r}$
+\end_inset
+
+ = r - b
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{c}$
+\end_inset
+
+ = c - a
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $1\le o_{r}\le rows$
+\end_inset
+
+ and 
+\begin_inset Formula $1\le o_{c}\le cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ni(r, c) = i(
+\begin_inset Formula $o_{r}$
+\end_inset
+
+, 
+\begin_inset Formula $o_{c}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+שימו לב שאם הערכים יוצאים מהתמונה - אנחנו לא לוקחים כלום, ומשאירים אותם
+ בתור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ זה מה שקורה כשמזיזים תמונה.
+\end_layout
+
+\begin_layout Subsection*
+עבור הגדלה
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+[rows, cols] = size(i);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ni = zeros(rows, cols);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for r = 1:rows
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for c = 1:cols
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{r}$
+\end_inset
+
+ = round(r / b)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{c}$
+\end_inset
+
+ = round(c - a)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $1\le o_{r}\le rows$
+\end_inset
+
+ and 
+\begin_inset Formula $1\le o_{c}\le cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ni(r, c) = i(
+\begin_inset Formula $o_{r}$
+\end_inset
+
+, 
+\begin_inset Formula $o_{c}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Subsection*
+עבור סיבוב
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+[rows, cols] = size(i);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ni = zeros(rows, cols);
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for r = 1:rows
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for c = 1:cols
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{r}$
+\end_inset
+
+ = round(
+\begin_inset Formula $-c\sin\left(-\theta\right)+r\cos\left(-\theta\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $o_{c}$
+\end_inset
+
+ = round(
+\begin_inset Formula $c\cos\left(-\theta\right)+r\sin\left(-\theta\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $1\le o_{r}\le rows$
+\end_inset
+
+ and 
+\begin_inset Formula $1\le o_{c}\le cols$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+ni(r, c) = i(
+\begin_inset Formula $o_{r}$
+\end_inset
+
+, 
+\begin_inset Formula $o_{c}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Subsection*
+נשים לב - לגבי הגדלה וסיבוב
+\end_layout
+
+\begin_layout Standard
+ההגדלה והסיבוב נעשים יחסית לראשית הצירים.
+ אם רוצים להגדיל או לסובב סביב נקודה אחרת - צריך לשלב גם הזזה.
+\end_layout
+
+\begin_layout Section*
+טרנספורמציות באמצעות קונבולוציה
+\end_layout
+
+\begin_layout Standard
+כדי לעשות הזזה באמצעות קונבולוציה, עושים 
+\begin_inset Formula $i*\delta\left(a,b\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\delta\left(a,b\right)$
+\end_inset
+
+ הוא פילטר שבו יש רק 
+\begin_inset Formula $1$
+\end_inset
+
+ אחד, לא במרכז, וכל השאר 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ המיקום של ה
+\begin_inset Formula $\delta$
+\end_inset
+
+ נקבע לפי 
+\begin_inset Formula $a,b$
+\end_inset
+
+ - למשל:
+\begin_inset Formula 
+\[
+\delta\left(2,0\right)=\begin{bmatrix}0 & 0 & 0 & 0 & 1\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מציאת הזזה
+\end_layout
+
+\begin_layout Standard
+אם יש לנו שתי תמונות, שאחת מהן היא הזזה של השנייה, איך מחשבים בכמה הן זזו?
+\end_layout
+
+\begin_layout Standard
+לפי משפט הקונובולוציה, אם 
+\begin_inset Formula $f*\delta\left(a,b\right)=h$
+\end_inset
+
+ אז 
+\begin_inset Formula $F\cdot G=H$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $F,G,H$
+\end_inset
+
+ התמרות פוריה של 
+\begin_inset Formula $f,\delta\left(a,b\right),h$
+\end_inset
+
+ בהתאמה(.
+ ולכן:
+\begin_inset Formula 
+\[
+G=\frac{H}{F}
+\]
+
+\end_inset
+
+ואז עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ifft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על 
+\begin_inset Formula $G$
+\end_inset
+
+ בשביל לקבל את 
+\begin_inset Formula $\delta$
+\end_inset
+
+, ומוצאים איפה ה
+\lang english
+peak
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ שלו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה: אם ב
+\begin_inset Formula $F$
+\end_inset
+
+ יש אפסים, אפשר להחליף אותם בערך מאוד קטן.
+\end_layout
+
+\begin_layout Section*
+טרנספורמציות באמצעות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התמרת פוריה
+\end_layout
+
+\begin_layout Standard
+יש לנו תמונה בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ עושים לה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ומקבלים מטריצת מקדמים 
+\begin_inset Formula $F$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ יוצרים ממנה מטריצה בגודל 
+\begin_inset Formula $2n\times2n$
+\end_inset
+
+ הנראית ככה:
+\begin_inset Formula 
+\[
+\begin{bmatrix}F_{00} & 0 & F_{01} & 0 & F_{02} & \cdots\\
+0 & 0 & 0 & 0 & 0 & \cdots\\
+F_{10} & 0 & F_{11} & 0 & F_{12} & \cdots\\
+0 & 0 & 0 & 0 & 0 & \cdots\\
+F_{20} & 0 & F_{21} & 0 & F_{22} & \cdots\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots
+\end{bmatrix}
+\]
+
+\end_inset
+
+מה יקרה כשנעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ifft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לתמונה הזאת?
+\end_layout
+
+\begin_layout Standard
+התדר 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ נשאר אותו דבר - כלומר הבהירות נשארת.
+ כל תדר אחר גדל פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)בתדירות שלו( - כלומר פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יותר מהר.
+ לכן התמונה שנקבל מ
+\lang english
+ifft
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תהיה חזרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים )פעמיים לאורך ופעמיים לרוחב( של התמונה המקורית.
+\end_layout
+
+\begin_layout Standard
+עכשיו, מה אם נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+shift
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $F$
+\end_inset
+
+ )כך ש
+\begin_inset Formula $F_{00}$
+\end_inset
+
+ יהיה באמצע( ונעתיק את 
+\begin_inset Formula $F$
+\end_inset
+
+ למרכז של מטריצה בגודל 
+\begin_inset Formula $2n\times2n$
+\end_inset
+
+ )כאשר מסביב אפסים(? כשמחזירים למישור התמונה, מה נקבל?
+\end_layout
+
+\begin_layout Standard
+התדרים ישארו בדיוק אותו דבר, אבל הגודל עליו הם מתפרסים גדל - לכן נקבל גירסה
+ גדולה )מרוחה( של התמונה המקורית.
+\end_layout
+
+\end_body
+\end_document

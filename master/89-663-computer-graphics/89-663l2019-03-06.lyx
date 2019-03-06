@@ -1,0 +1,1916 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-03-06
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+הבסיס המתמטי - חזרה על אלגברה לינארית
+\end_layout
+
+\begin_layout Section*
+יחידות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+סקלר גודל בודד
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נקודה מקום במרחב.
+ ניתן לייצג אותה בהרבה צורות - בד
+\begin_inset Quotes erd
+\end_inset
+
+כ נייצג אותה יחסית למערכת צירים כלשהי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+וקטור כיוון וגודל.
+ אין לו מיקום ספציפי.
+ כדי לשים אותם במקום מסויים במרחב צריך לקבע נקודה מסויימת.
+\end_layout
+
+\begin_layout Section*
+פעולות
+\end_layout
+
+\begin_layout Itemize
+כפל וקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ בסקלר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - מקבלים וקטור באותו כיוון שגודלו פי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|\alpha\cdot v\right|=\left|\alpha\right|\cdot\left|v\right|
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $\alpha<0$
+\end_inset
+
+ כיוון הווקטור יתהפך ב
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חיבור נקודה 
+\begin_inset Formula $Q$
+\end_inset
+
+ ווקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ - נותן נקודה:
+\begin_inset Formula 
+\[
+P=Q+v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+חיסור נקודות - נותן וקטור:
+\begin_inset Formula 
+\[
+v=P-Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $Q$
+\end_inset
+
+ היא ראשית הצירים אז 
+\begin_inset Formula $P=v$
+\end_inset
+
+ )מבחינת הייצוג(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+חיבור/חיסור וקטורים נותן וקטור.
+ בחיבור מחברים ראש לזנב.
+\end_layout
+
+\begin_layout Itemize
+קומבינציה לינארית של וקטורים:
+\begin_inset Formula 
+\[
+w=\alpha_{1}v_{1}+\alpha_{2}v_{2}+\cdots+\alpha_{m}v_{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\alpha_{1}+\alpha_{2}+\cdots+\alpha_{m}=1$
+\end_inset
+
+ אז זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Affine Combination
+\emph default
+\lang hebrew
+.
+ לדוגמה:
+\begin_inset Formula 
+\[
+w=\left(1-t\right)v_{1}+tv_{2}=v_{1}+t\left(v_{1}-v_{2}\right)
+\]
+
+\end_inset
+
+מקבלים וקטור שמסתיים על הקו שמחבר בין הראשים של 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $v_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם כל המקדמים חיוביים 
+\begin_inset Formula $\alpha_{i}\ge0,i=1\dots m$
+\end_inset
+
+ אז זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Conves Combination
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אנחנו לא חורגים מ
+\begin_inset Quotes erd
+\end_inset
+
+גבולות הגיזרה
+\begin_inset Quotes erd
+\end_inset
+
+ של הווקטורים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מכפלה סקלרית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Dot Product
+\emph default
+\lang hebrew
+: כפל איבר איבר וחיבור - נותן סקלר, שהוא מכפלת הגדלים כפול קוסינוס הזווית
+ ביניהם:
+\begin_inset Formula 
+\[
+v\cdot u=v_{1}\cdot u_{1}+v_{2}\cdot u_{2}+\cdots+v_{n}\cdot u_{n}=\left|v\right|\left|u\right|\cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם רוצים למצוא את הגודל של ווקטור, עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+dot product
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם עצמו ומוציאים שורש:
+\begin_inset Formula 
+\[
+\left|v\right|=\sqrt{v\cdot v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם רוצים לנרמל וקטור, מחלקים בגודל:
+\begin_inset Formula 
+\[
+\hat{v}=\frac{v}{\left|v\right|}=\frac{v}{\sqrt{v\cdot v}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם רוצים למצוא את הזווית בין שני וקטורים, מחלקים את ה
+\lang english
+dot product
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במכפלת הגדלים ועושים 
+\begin_inset Formula $\arccos$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\theta=\arccos\frac{u\cdot v}{\left|u\right|\left|v\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הטלה - אם רוצים למצוא את ההטלה של 
+\begin_inset Formula $v$
+\end_inset
+
+ על 
+\begin_inset Formula $u$
+\end_inset
+
+ - כלומר האנך שמורידים מ
+\begin_inset Formula $v$
+\end_inset
+
+ ל
+\begin_inset Formula $u$
+\end_inset
+
+ - 
+\begin_inset Formula 
+\[
+\textnormal{proj}=\left(v\cdot\hat{u}\right)\cdot\hat{u}=\frac{v\cdot u}{u\cdot u}\cdot u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+)אינטואיציה - אם 
+\begin_inset Formula $u=\hat{x}=\begin{pmatrix}0\\
+1
+\end{pmatrix}$
+\end_inset
+
+ )ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+(, אז 
+\begin_inset Formula $v\cdot u=v_{x}\cdot1+v_{2}\cdot0=v_{x}$
+\end_inset
+
+(
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+מכפלה וקטורית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Cross Product
+\emph default
+\lang hebrew
+: נותן וקטור:
+\begin_inset Formula 
+\[
+u\times v=\begin{vmatrix}\widehat{x} & \widehat{y} & \widehat{z}\\
+u_{x} & u_{y} & u_{z}\\
+v_{x} & v_{y} & v_{z}
+\end{vmatrix}=\left(-1\right)^{0}\begin{vmatrix}u_{y} & u_{z}\\
+v_{y} & v_{z}
+\end{vmatrix}\hat{x}+\left(-1\right)^{1}\begin{vmatrix}u_{x} & u_{z}\\
+v_{x} & v_{z}
+\end{vmatrix}\hat{y}+\left(-1\right)^{2}\begin{vmatrix}u_{x} & u_{y}\\
+v_{x} & v_{y}
+\end{vmatrix}\hat{z}=\begin{pmatrix}u_{y}v_{z}-u_{z}v_{y}\\
+u_{z}v_{x}-u_{x}v_{z}\\
+u_{x}v_{y}-u_{y}v_{x}
+\end{pmatrix}
+\]
+
+\end_inset
+
+הוקטור 
+\begin_inset Formula $u\times v$
+\end_inset
+
+ יהיה מאונך ל
+\begin_inset Formula $u$
+\end_inset
+
+ ול
+\begin_inset Formula $v$
+\end_inset
+
+, ויתקיים 
+\begin_inset Formula $\left|u\times v\right|=\left|u\right|\cdot\left|v\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ייצוג במרחב תלת מימדי
+\end_layout
+
+\begin_layout Standard
+בשביל לייצג נקודה במרחב, צריך בסיס -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ווקטורים 
+\begin_inset Formula $v_{1},v_{2},v_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם הווקטורים מאונכים - כלומר 
+\begin_inset Formula $v_{1}\cdot v_{2}=v_{1}\cdot v_{2}=v_{2}\cdot v_{3}$
+\end_inset
+
+ - אז הבסיס נקרא אורתוגונלי.
+\end_layout
+
+\begin_layout Itemize
+אם בנוסף 
+\begin_inset Formula $\left|v_{1}\right|=\left|v_{2}\right|=\left|v_{3}\right|$
+\end_inset
+
+ - אז הבסיס נקרא אורתונורמלי.
+\end_layout
+
+\begin_layout Itemize
+אם מתקיים 
+\begin_inset Formula $v_{1}\times v_{2}=v_{3}$
+\end_inset
+
+, אז הבסיס מקיים את כלל יד ימין.
+\end_layout
+
+\begin_layout Standard
+כדי לייצג נקודה צריך את שלושת ווקטורים הבסיס - ואת נקודת ראשית הצירים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+פעולות וקטוריות בבסיס אורתונורמלי
+\end_layout
+
+\begin_layout Itemize
+כפל בסקלר:
+\begin_inset Formula 
+\[
+\alpha\begin{pmatrix}\beta_{1}\\
+\beta_{2}\\
+\beta_{3}
+\end{pmatrix}=\begin{pmatrix}\alpha\beta_{1}\\
+\alpha\beta_{2}\\
+\alpha\beta_{3}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חיבור/חיסור:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\alpha_{1}\\
+\alpha_{2}\\
+\alpha_{3}
+\end{pmatrix}\pm\begin{pmatrix}\beta_{1}\\
+\beta_{2}\\
+\beta_{3}
+\end{pmatrix}=\begin{pmatrix}\alpha_{1}+\beta_{1}\\
+\alpha_{2}\pm\beta_{2}\\
+\alpha_{3}\pm\beta_{3}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מכפלה סקלרית:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\alpha_{1}\\
+\alpha_{2}\\
+\alpha_{3}
+\end{pmatrix}^{T}\cdot\begin{pmatrix}\beta_{1}\\
+\beta_{2}\\
+\beta_{3}
+\end{pmatrix}=\alpha_{1}\beta_{1}+\alpha_{2}\beta_{2}+\alpha_{3}\beta_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מכפלה וקטורית:
+\begin_inset Formula 
+\[
+\begin{pmatrix}\alpha_{1}\\
+\alpha_{2}\\
+\alpha_{3}
+\end{pmatrix}\times\begin{pmatrix}\beta_{1}\\
+\beta_{2}\\
+\beta_{3}
+\end{pmatrix}=\begin{pmatrix}\alpha_{y}\beta_{z}-\alpha_{z}\beta_{y}\\
+\alpha_{z}\beta_{x}-\alpha_{x}\beta_{z}\\
+\alpha_{x}\beta_{y}-\alpha_{y}\beta_{x}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מישור פרמטרי
+\end_layout
+
+\begin_layout Standard
+מישור מוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות 
+\begin_inset Formula $P,Q,R$
+\end_inset
+
+.
+ הקו 
+\begin_inset Formula $PQ$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+affine combination
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $P$
+\end_inset
+
+ ו
+\begin_inset Formula $Q$
+\end_inset
+
+, והמישור 
+\begin_inset Formula $PQR$
+\end_inset
+
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+affine combination
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $P$
+\end_inset
+
+, 
+\begin_inset Formula $Q$
+\end_inset
+
+ ו
+\begin_inset Formula $R$
+\end_inset
+
+.
+ אם הצירוף הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+convex
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז מקבלים נקודה בתוך המשולש 
+\begin_inset Formula $\Delta_{PQR}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+טרנספורמציות בדו-מימד
+\end_layout
+
+\begin_layout Standard
+לפני שמדברים על טרנספורמציות, צריך לדבר על איך מייצגים את האובייקטים.
+ המרחב שלנו הוא מישור, ולכן הייצוג יהיה דו-מימדי.
+ האובייקטים שלנו פשוטים - יש לנו קודקודים ו
+\lang english
+line segments
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמחברים ביניהם.
+ את הטרנספורמציה נעשה על הקודקודים, וזה כבר יזיז לנו את כל האובייקט.
+\end_layout
+
+\begin_layout Itemize
+הזזה: 
+\begin_inset Formula 
+\[
+\textnormal{Translate}\left(a,b\right):\qquad\begin{pmatrix}x,y\end{pmatrix}\to\left(x+a,y+b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הגדלה:
+\begin_inset Formula 
+\[
+\textnormal{Scale}\left(a,b\right):\qquad\left(x,y\right)\to\left(ax,by\right)
+\]
+
+\end_inset
+
+נשים לב שאם מרכז האובייקט לא יהיה ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ההגדלה 
+\begin_inset Quotes eld
+\end_inset
+
+תזיז
+\begin_inset Quotes erd
+\end_inset
+
+ את האובייקט.
+ אם נרצה לשמור על המרכז, נצטרך להזיז את האובייקט לראשית הצירים, לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Scale
+\lang hebrew
+, ואז להזיז אותו חזרה.
+\end_layout
+
+\begin_layout Itemize
+שיקוף: הגדלה מסוג 
+\begin_inset Formula $\textnormal{Scale}\left(-1,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\textnormal{Scale}\left(1,-1\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\textnormal{Scale}\left(-1,-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סיבוב )עם כיוון השעון(:
+\begin_inset Formula 
+\[
+\textnormal{Rotate}\left(\theta\right):\qquad\left(x\cos\theta+y\sin\theta,-x\sin\theta+y\cos\theta\right)
+\]
+
+\end_inset
+
+כדי לייצר את הנוסחה הזאת צריך לזכור שניתן לייצג וקטור דו מימדי באמצעות מספר
+ מרוכב 
+\begin_inset Formula $x+iy$
+\end_inset
+
+, ובהצגה פולרית 
+\begin_inset Formula $r\varangle\theta$
+\end_inset
+
+.
+ הכפלה של שני מספרים מרוכבים היא:
+\begin_inset Formula 
+\[
+\left(r_{1}\varangle\theta_{1}\right)\cdot\left(r_{2}\varangle\theta_{2}\right)=r_{1}r_{2}\varangle\theta_{1}\theta_{2}
+\]
+
+\end_inset
+
+כלומר אם 
+\begin_inset Formula $r_{2}=1$
+\end_inset
+
+ אז ההכפלה מסובבת ב
+\begin_inset Formula $\theta_{2}$
+\end_inset
+
+.
+ ובהצגה קרטזית:
+\begin_inset Formula 
+\[
+\left(x+iy\right)\left(\cos\theta+i\sin\theta\right)=x\cos\theta-iy\sin\theta+i\left(x\sin\theta+y\sin\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+רגע!
+\series default
+ זה לא מה שקיבלנו!
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שהסיבוב עם המספרים המרוכבים הוא נגד כיוון השעון - ואנחנו רצינו
+ עם כיוון השעון.
+ אז עם משתמשים ב
+\begin_inset Formula $-\theta$
+\end_inset
+
+ מקבלים את הנוסחה הנכונה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Shear
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{Shear}\left(a,b\right):\qquad\left(x,y\right)\to\left(x+ay,y+bx\right)
+\]
+
+\end_inset
+
+ה
+\begin_inset Formula $x$
+\end_inset
+
+ זז כפונציה של ה
+\begin_inset Formula $y$
+\end_inset
+
+, וה
+\begin_inset Formula $y$
+\end_inset
+
+ זז כפונקציה של ה
+\begin_inset Formula $x$
+\end_inset
+
+.
+ שומר על מקביליות.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תכונות של טרנספורמציות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Rigid
+\lang hebrew
+: הזזה + סיבוב )שומר על מרחקים(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Similarity
+\lang hebrew
+: הזזה + סיבוב + שינוי גודל
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Affine
+\lang hebrew
+: הזזה + סיבוב +שינוי גודל +
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Shear
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)שומר על דמיון(
+\end_layout
+
+\begin_layout Section*
+טרנספורמציות באמצעות מטריצות
+\end_layout
+
+\begin_layout Standard
+נתייחס לנקודה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ בתור מטריצה 
+\begin_inset Formula $2\times1$
+\end_inset
+
+ )וקטור עמודה(: 
+\begin_inset Formula $\begin{bmatrix}x\\
+y
+\end{bmatrix}$
+\end_inset
+
+.
+ נבצע את הפעולות באמצעות כפל מטריצות:
+\end_layout
+
+\begin_layout Itemize
+שינוי גודל:
+\begin_inset Formula 
+\[
+\textnormal{Scale}\left(a,b\right):\qquad\left(x,y\right)\to\left(ax,by\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}a & 0\\
+0 & b
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}=\begin{bmatrix}ax\\
+by
+\end{bmatrix}
+\]
+
+\end_inset
+
+וההופכי:
+\begin_inset Formula 
+\[
+\begin{bmatrix}a & 0\\
+0 & b
+\end{bmatrix}^{-1}\begin{bmatrix}ax\\
+by
+\end{bmatrix}=\begin{bmatrix}x\\
+y
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שיקוף: משתמשים במטריצת שיקוף:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0\\
+0 & -1
+\end{bmatrix}\qquad\begin{bmatrix}-1 & 0\\
+0 & 1
+\end{bmatrix}\qquad\begin{bmatrix}-1 & 0\\
+0 & -1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Shear
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{Shear}\left(a,b\right):\qquad\left(x,y\right)\to\left(x+ay,y+bx\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & a\\
+b & 1
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}=\begin{bmatrix}x+ay\\
+y+bx
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סיבוב:
+\begin_inset Formula 
+\[
+\textnormal{Rotate}\left(\theta\right):\qquad\left(x\cos\theta+y\sin\theta,-x\sin\theta+y\cos\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}=\begin{bmatrix}x\cos\theta+y\sin\theta\\
+-x\sin\theta+y\cos\theta
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה בכלל להשתמש במטריצות? כי אנחנו יכולים להרכיב פעולות, ואז את אותה פעולה
+ לבצע על כל הקודקודים.
+ ככה במקום סיבוכיות של כמות הפעולות 
+\series bold
+כפול
+\series default
+ כמות הקודקודים, נקבל סיבוכיות של כמות הפעולות 
+\series bold
+ועוד
+\series default
+ כמות הקודקודים.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהפעולה של כפל מטריצות היא אסוציאטיבית אבל לא קומוטטיבית.
+ לכן סדר הפעולות משנה.
+\end_layout
+
+\begin_layout Section*
+הזזה - קואורדינטות הומוגניות
+\end_layout
+
+\begin_layout Standard
+הזזה אי אפשר לעשות עם כפל מטריצות.
+ לכן נשתמש בקואורדינטות הומוגניות - במקום להישאר בדו מימד נעלה את המימד
+ של המטריצות ושל הוקטורים מ
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ ל
+\begin_inset Formula $R^{n+1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(x,y\right)\to\left(X,Y,W\right)=\left(tx,ty,t\right)
+\]
+
+\end_inset
+
+לדוגמה - 
+\begin_inset Formula $\left(2,3,1\right)\sim\left(6,9,3\right)$
+\end_inset
+
+.
+ אפשר לנרמל באמצעות 
+\begin_inset Formula $\left(X,Y,W\right)\to\left(\frac{X}{W},\frac{Y}{W}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עכשיו אפשר להגדיר 
+\begin_inset Formula $\textnormal{Translate}\left(a,b\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0 & a\\
+0 & 1 & b\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\begin{bmatrix}x+a\\
+y+b\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה - סיבוב סביב נקודה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 0 & x_{0}\\
+0 & 1 & y_{0}\\
+0 & 0 & 0
+\end{bmatrix}\begin{bmatrix}\cos\theta & \sin\theta & 0\\
+-\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & -x_{0}\\
+0 & 1 & -y_{0}\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\begin{bmatrix}\cos\theta & -\sin\theta & x_{0}\left(1-\cos\theta+y_{0}\sin\theta\right)\\
+\sin\theta & \cos\theta & y_{0}\left(1-\cos\theta\right)-x_{0}\sin\theta\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שינוי ייצוג )שינוי קואורדינטות(
+\end_layout
+
+\begin_layout Standard
+יש לנו אובייקט שמייוצג באמצעות מערכת קואורדינטות 
+\begin_inset Formula $x,y$
+\end_inset
+
+, ונרצה לשנות אותו למערכת קואורדינטות אחרת 
+\begin_inset Formula $x',y'$
+\end_inset
+
+.
+ זה כמו לקחת את מערכת הצירים החדשה ולעשות לה טרנספורמציה שתשים אותה על המערכת
+ הישנה.
+ כלומר - אם ראשית הצירים של מערכת הצירים החדשה היא 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ )בקואורדינטות של המערכת הישנה( והיא מסובבת ב
+\begin_inset Formula $\theta$
+\end_inset
+
+ לעומת המערכת הישנה, את הטרנספורמציה:
+\begin_inset Formula 
+\[
+M=R^{-1}T^{-1}=\begin{bmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & -x_{0}\\
+0 & 1 & -y_{0}\\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחלופין - נקבל את מטריצת הסיבוב ע
+\begin_inset Quotes erd
+\end_inset
+
+י כך שנשים את הווקטורים 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $v$
+\end_inset
+
+ - בסיסי המערכת החדשה לפי המערכת הישנה - בצורה אופקית:
+\begin_inset Formula 
+\[
+M=\begin{bmatrix}u_{x} & u_{y} & 0\\
+v_{x} & v_{y} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & -x_{0}\\
+0 & 1 & -y_{0}\\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+למה זה עובד? כי
+\begin_inset Formula 
+\[
+u_{x}=\cos\theta\qquad u_{y}=\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{x}=\sin\theta\qquad v_{y}=\sin\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\end_layout
+
+\begin_layout Standard
+אם יש לנו את הנקודה 
+\begin_inset Formula $P=\left(u_{x},u_{y}\right)$
+\end_inset
+
+ - כלומר את הציר המיוצג ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $v$
+\end_inset
+
+ - אנחנו אמורים לקבל 
+\begin_inset Formula $MP=\begin{bmatrix}1\\
+0\\
+1
+\end{bmatrix}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+MP=\begin{bmatrix}u_{x} & u_{y} & 0\\
+v_{x} & v_{y} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}u_{x}\\
+v_{y}\\
+1
+\end{bmatrix}=\begin{bmatrix}u_{x}u_{x}+u_{y}u_{y}\\
+u_{x}v_{x}+u_{y}v_{y}\\
+0+0+1
+\end{bmatrix}=\begin{bmatrix}1\\
+0\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דוגמה - שיקוף סביב ציר
+\end_layout
+
+\begin_layout Standard
+נגדיר מערכת צירים שבה אחד הצירים הוא הציר שעליו אחנו רוצים לשקף:
+\begin_inset Formula 
+\[
+u=\frac{P_{2}-P_{1}}{\left|P_{2}-P_{1}\right|}=\begin{bmatrix}u_{x}\\
+u_{y}
+\end{bmatrix}\qquad v=\begin{bmatrix}-u_{y}\\
+u_{x}
+\end{bmatrix}=\begin{bmatrix}v_{x}\\
+v_{y}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+M=\begin{bmatrix}1 & 0 & P_{1x}\\
+0 & 1 & P_{1y}\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}u_{x} & v_{x} & 0\\
+u_{y} & v_{y} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}u_{x} & u_{y} & 0\\
+v_{x} & v_{y} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & -P_{1x}\\
+0 & 1 & -P_{1y}\\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

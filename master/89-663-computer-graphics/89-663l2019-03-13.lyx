@@ -1,0 +1,654 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-03-13
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+הצגה בדו מימד -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+2D Viewing
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים לייצג סצנה, אבל איך מציגים אותה על המסך?
+\end_layout
+
+\begin_layout Standard
+יש לנו סצנה שמוצגת ב
+\lang english
+world coordinates
+\lang hebrew
+.
+ צריך:
+\end_layout
+
+\begin_layout Enumerate
+להמיר אותה ל
+\lang english
+viewing coordinates
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר למערכת הצירים של הצופה.
+ בעצם עושים טרנספורמציה שמזיזה ממערכת הצירים של הצופה למערכת הצירים של העולם:
+\begin_inset Formula 
+\[
+M_{we-ve}=\begin{bmatrix}u_{x} & u_{y} & 0\\
+v_{x} & v_{y} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 0 & -x_{0}\\
+0 & 1 & -y_{0}\\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+להעביר למערכת הקואורדינטות של החלון - כלומר לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+scaling
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+clipping
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לחתוך קוים שנמצאים מחוץ לחלון.
+ כדי שנקודה תהיה בתוך החלון שלנו, צריך להתקיים:
+\begin_inset Formula 
+\[
+x_{\min}\le x\le x_{\max}\qquad y_{\min}\le y\le y_{\max}
+\]
+
+\end_inset
+
+אבל איך חותכים קוים, שחלק מהקו בתוך החלון וחלק בחוץ?
+\end_layout
+
+\begin_layout Section*
+אלגוריתם כהן-סאת'רלנד
+\end_layout
+
+\begin_layout Standard
+ניתן לכל קודקוד קוד של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סיביות, שמציין באיזה אזור הוא נמצא:
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+0101 & 0100 & 0110\\
+\hline 0001 & 0000 & 0010\\
+\hline 1001 & 1000 & 1010
+\end{tabular}
+\]
+
+\end_inset
+
+בעצם, כל סיבית אומרת אם הקודקוד מחוץ לגבול מסויים.
+ ואז אפשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bitwise-and
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+bitwise-or
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לאשר או לפסול במהירות קווים מסויימים:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{code}\left(p_{1}\right)\&\textnormal{code}\left(p_{2}\right)\neq0$
+\end_inset
+
+ אז אפשר לפסול את הקו - הוא מחוץ לאותו גבול.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\textnormal{code}\left(p_{1}\right)|\textnormal{code}\left(p_{2}\right)=0$
+\end_inset
+
+ אז אפשר לאשר את הקו - כי זה אומר ששתי הנקודות בתוך החלון.
+\end_layout
+
+\begin_layout Standard
+אם אנחנו לא באחד המצבים הטריוויאלים האלה, צריך לחתוך את הקו לפי הגבולות
+ שהוא חוצה.
+ נעבור על כל סיביות ה-
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $\textnormal{code}\left(p_{1}\right)|\textnormal{code}\left(p_{2}\right)$
+\end_inset
+
+ ונחתוך את הקו עם הגבול.
+\end_layout
+
+\begin_layout Standard
+אבל איך עושים את החיתוך? בשביל לעשות את זה, קודם צריך לדעת אם נקודה נמצאת
+ בתוך או מחוץ לפוליגון.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+איך? יש לנו נקודות 
+\begin_inset Formula $V_{0}$
+\end_inset
+
+ ו
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ על הפוליגון, ווקטור 
+\begin_inset Formula $V=V_{1}-V_{0}$
+\end_inset
+
+.
+ יש לנו וקטור 
+\begin_inset Formula $U$
+\end_inset
+
+ שרוצים לדעת אם הוא פונה פנימה או החוצה )לפי אותה קשת(.
+ נחשב את הנורמל 
+\begin_inset Formula $N=\left(-V_{y},V_{x}\right)$
+\end_inset
+
+ ואז נעשה 
+\begin_inset Formula $N\cdot U$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $N\cdot U>0$
+\end_inset
+
+ אז 
+\begin_inset Formula $U$
+\end_inset
+
+ פונה החוצה, ואם 
+\begin_inset Formula $N\cdot U<0$
+\end_inset
+
+ אז הוא פונה פנימה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עכשיו, יש לנו קו 
+\begin_inset Formula $P_{0}P_{1}$
+\end_inset
+
+ ובצורה פרמטרית 
+\begin_inset Formula $P\left(t\right)=P_{0}+\left(P_{1}-P_{0}\right)t$
+\end_inset
+
+.
+ הוקטור של הנקודה מנקודה 
+\begin_inset Formula $Q$
+\end_inset
+
+ על קו הגבול הוא 
+\begin_inset Formula $V\left(t\right)=P\left(t\right)-Q$
+\end_inset
+
+.
+ אנחנו רוצים למצוא נקודה 
+\begin_inset Formula $P\left(t\right)$
+\end_inset
+
+ שלא תפנה החוצה ולא פנימה - כלומר תהיה על הקו, 
+\begin_inset Formula $V\left(t\right)\cdot N=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור כל גבול 
+\begin_inset Formula $i$
+\end_inset
+
+ נחשב את 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ - הפרמטר של החיתוך עם אותו גבול.
+ אם 
+\begin_inset Formula $t_{i}<0$
+\end_inset
+
+ או 
+\begin_inset Formula $t_{i}>1$
+\end_inset
+
+ אז אפשר להתעלם מנקודת החיתוך הזאת )היא לא על הקו(.
+ אחרת, נחשב את המכפלה הסקלרית של הנורמל של הגבול 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ עם כיוון הקו 
+\begin_inset Formula $\Delta_{i}$
+\end_inset
+
+ כדי לדעת אם מדובר בנקודת כניסה 
+\begin_inset Formula $PE$
+\end_inset
+
+ או נקודת יציאה 
+\begin_inset Formula $PE$
+\end_inset
+
+.
+ הקו שלנו הוא מנקודת הכניסה עם ה
+\begin_inset Formula $t$
+\end_inset
+
+ הגדול ביותר לנקודת היציאה עם ה
+\begin_inset Formula $t$
+\end_inset
+
+ הקטן ביותר.
+ אם נקודת הכניסה הגדולה ביותר גדולה מנקודת היציאה הקטנה ביותר, זה אומר שכל
+ הקו מחוץ לחלון ולא מציירים אותו.
+\end_layout
+
+\end_body
+\end_document

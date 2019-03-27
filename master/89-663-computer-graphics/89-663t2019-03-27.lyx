@@ -1,0 +1,1425 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-03-27
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+יש לנו מודל - קובץ 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+.scn
+\end_layout
+
+\end_inset
+
+, שמורכב מ:
+\end_layout
+
+\begin_layout Itemize
+מספר הנקודות 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+רשימה של 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות, כאשר כל נקודה מורכבת מ
+\begin_inset Formula $x,y,z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מספר הקשתות 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+רשימת של 
+\begin_inset Formula $m$
+\end_inset
+
+ קשתות, כאשר כל קשת מורכבת ממספרים של שני קודקודים )מספור מתחיל מ
+\numeric on
+0
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+18
+\end_layout
+
+\begin_layout Plain Layout
+
+-40 -100
+\end_layout
+
+\begin_layout Plain Layout
+
+40 -100
+\end_layout
+
+\begin_layout Plain Layout
+
+100 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+100 40
+\end_layout
+
+\begin_layout Plain Layout
+
+40 100
+\end_layout
+
+\begin_layout Plain Layout
+
+-40 100
+\end_layout
+
+\begin_layout Plain Layout
+
+-100 40
+\end_layout
+
+\begin_layout Plain Layout
+
+-100 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+-60 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+-30 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+30 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+60 -40
+\end_layout
+
+\begin_layout Plain Layout
+
+-10 0
+\end_layout
+
+\begin_layout Plain Layout
+
+10 0
+\end_layout
+
+\begin_layout Plain Layout
+
+-50 40
+\end_layout
+
+\begin_layout Plain Layout
+
+-20 60 
+\end_layout
+
+\begin_layout Plain Layout
+
+20 60 
+\end_layout
+
+\begin_layout Plain Layout
+
+50 40
+\end_layout
+
+\begin_layout Plain Layout
+
+14
+\end_layout
+
+\begin_layout Plain Layout
+
+0 1
+\end_layout
+
+\begin_layout Plain Layout
+
+1 2
+\end_layout
+
+\begin_layout Plain Layout
+
+2 3
+\end_layout
+
+\begin_layout Plain Layout
+
+3 4
+\end_layout
+
+\begin_layout Plain Layout
+
+4 5
+\end_layout
+
+\begin_layout Plain Layout
+
+5 6
+\end_layout
+
+\begin_layout Plain Layout
+
+6 7
+\end_layout
+
+\begin_layout Plain Layout
+
+7 0
+\end_layout
+
+\begin_layout Plain Layout
+
+8 9
+\end_layout
+
+\begin_layout Plain Layout
+
+10 11
+\end_layout
+
+\begin_layout Plain Layout
+
+12 13
+\end_layout
+
+\begin_layout Plain Layout
+
+14 15
+\end_layout
+
+\begin_layout Plain Layout
+
+15 16
+\end_layout
+
+\begin_layout Plain Layout
+
+16 17 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לנו גם קובץ 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+.viw
+\end_layout
+
+\end_inset
+
+ שמגדיר את ה
+\lang english
+viewport
+\lang hebrew
+:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Origin -140 -100
+\end_layout
+
+\begin_layout Plain Layout
+
+Direction 30
+\end_layout
+
+\begin_layout Plain Layout
+
+Size 350 350
+\end_layout
+
+\begin_layout Plain Layout
+
+Resolution 250 250
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים לפתוח חלון עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+margin
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל כיוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - כלומר הגודל של החלון הוא 
+\begin_inset Formula $\left(v.width+40,v.height+40\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנחנו נחלק את החלון ל
+\numeric on
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ריבועים, ולפי נקודת הלחיצה נעשה טרנספורמציה:
+\end_layout
+
+\begin_layout Itemize
+אם לוחצים באמצע - עושים הזזה
+\end_layout
+
+\begin_layout Itemize
+אם לוחצים בצדדים - עושים שינוי גודל
+\end_layout
+
+\begin_layout Itemize
+אם לוחצים בפינות - עושים סיבוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{tabular}{c|c|c}
+R & S & R\\
+\hline S & T & S\\
+\hline R & S & R
+\end{tabular}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר לוחצים, שומרים את נקודת הלחיצה 
+\begin_inset Formula $S$
+\end_inset
+
+, מאזינים לאירוע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+drag
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי למצוא את נקודות היעד 
+\begin_inset Formula $D$
+\end_inset
+
+, ומחשבים את הטרנספורמציה לפי 
+\begin_inset Formula $D-S$
+\end_inset
+
+.
+ גם את 
+\begin_inset Formula $S$
+\end_inset
+
+ וגם את 
+\begin_inset Formula $D$
+\end_inset
+
+ נשמור בתור וקטורים מהמרכז 
+\begin_inset Formula $C$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $v_{S}=S-C,v_{D}=D-C$
+\end_inset
+
+.
+ נחשב לפיהם את הטרנספורמציות
+\end_layout
+
+\begin_layout Itemize
+במקרה של הזזה - 
+\begin_inset Formula $D-S=T$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\Delta x=D_{x}-S_{x},\Delta y=D_{y}-S_{y}$
+\end_inset
+
+.
+ לא מזיזים על ציר ה
+\begin_inset Formula $Z$
+\end_inset
+
+ - כלומר 
+\begin_inset Formula $\Delta z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+במקרה של שינוי גודל, המקדם יהיה 
+\begin_inset Formula $\frac{\left|v_{D}\right|}{\left|v_{S}\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+במקרה של סיבוב, נרצה לסובב לפי הזוית 
+\begin_inset Formula $\theta=\varangle SCD$
+\end_inset
+
+.
+ אם הזווית של 
+\begin_inset Formula $S$
+\end_inset
+
+ בהצגה פולרית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כאשר ציר ה
+\begin_inset Formula $X$
+\end_inset
+
+ פונה ימינה וציר ה
+\begin_inset Formula $Y$
+\end_inset
+
+ פונה שמאלה
+\end_layout
+
+\end_inset
+
+ היא 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ושל 
+\begin_inset Formula $D$
+\end_inset
+
+ היא 
+\begin_inset Formula $\beta$
+\end_inset
+
+, אז אנחנו רוצים את הזווית 
+\begin_inset Formula $\theta=\beta-\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ציר הסיבוב יבחר לפי המקלדת, כאשר נלחץ על 
+\begin_inset Formula $x$
+\end_inset
+
+, על 
+\begin_inset Formula $y$
+\end_inset
+
+ או על 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ ברירת המחדל תהיה 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל הטרנספורמציות יהיו לפי מערכת הצירים של הצופה.
+\end_layout
+
+\begin_layout Itemize
+גם שינוי גודל וגם סיבוב יהיו לפי מרכז החלון.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+מבנה התרגיל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נחזיק: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחלקת 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Scene
+\end_layout
+
+\end_inset
+
+ שמכילה את העולם.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+View
+\end_layout
+
+\end_inset
+
+ שעושה את הטרנספורמציות ממערכת הצירים של העולם למערכת הצירים של הצופה )יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Viewing Matrix
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $VM$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+תהיה לנו מטריצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Total Transformation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $TT$
+\end_inset
+
+ - שמכילה את כל הטרנספורמציות עד עכשיו.
+ נאתחל אותה למטריצת היחידה 
+\begin_inset Formula $TT\gets I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+תהיה לנו מטריצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Current Transformation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $CT$
+\end_inset
+
+ - שמכילה את הטרנספורמציה שהמשתמש מזין כרגע, לפני שעזב את כפתור העכבר.
+ ברגע שמקבלים אירוע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+release
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מכפילים את 
+\begin_inset Formula $TT$
+\end_inset
+
+ ב
+\begin_inset Formula $CT$
+\end_inset
+
+ ומאפסים את 
+\begin_inset Formula $CT$
+\end_inset
+
+ ל
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+)יש גם מטריצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Projection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $P$
+\end_inset
+
+ - בשביל להמיר מתלת מימד לדו מימד.
+ אבל עוד לא למדנו את זה(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כאשר נרצה לצייר, נבנה את ה
+\lang english
+Final Transformation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $FT=CT\cdot TT\cdot VM$
+\end_inset
+
+ - ונפעיל אותה על כל קודקוד כדי לקבל את ה
+\lang english
+Final Vector List
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $FVL$
+\end_inset
+
+.
+ נעבור קשת קשת, נמצא את הקודקודים שלה לפי ה
+\begin_inset Formula $FVL$
+\end_inset
+
+, ונצייר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+FF = CT.mult(TT).mult(VM);
+\end_layout
+
+\begin_layout Plain Layout
+
+FVL = Scene.apply(FT);
+\end_layout
+
+\begin_layout Plain Layout
+
+for (i = 0; i < EL.length; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    drawLine(v0, v1);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+טעינה של קובץ
+\end_layout
+
+\begin_layout Standard
+כאשר לוחצים על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+L
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך להיפתח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+dialog
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טעינת קובץ, שמאפשר לטעון סצינה חדשה.
+\end_layout
+
+\end_body
+\end_document

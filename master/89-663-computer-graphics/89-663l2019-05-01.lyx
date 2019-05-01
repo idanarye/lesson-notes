@@ -1,0 +1,982 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-01
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+תזכורת
+\series default
+: מערכת צירים פולרית תלת-מימדית
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ היא על מישור ה
+\lang english
+XY
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - כלומר לא משנה את ציר ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Z
+\lang hebrew
+.
+ הזווית 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מההטלה על מישור ה
+\lang english
+XY
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לנקודה כשמוסיפים לה את ציר ה
+\lang english
+Z
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- והיא משפיעה על כל שלושת הצירים.
+\begin_inset Formula 
+\[
+\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\begin{bmatrix}R\cos\theta\cos\phi\\
+R\sin\theta\cos\phi\\
+R\sin\phi
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+ייצוג של נפח
+\end_layout
+
+\begin_layout Standard
+יש כמה אפשרויות לייצג נפח
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Sweep Volume
+\end_layout
+
+\begin_layout Standard
+לוקחים צורה דו-מימדית ומושכים אותה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Translational Sweep
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מושכים את הצורה על ציר לינארי מאונך למישור הצורה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Tappered Sweep
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בנוסף למשיכה גם משנים את הגודל.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Slanted Sweep
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ציר המשיכה לא מאונך למישור הצורה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Rotational Sweep
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בנוסף למשיכה גם מסובבים את הצורה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+General Sweep
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- איזה שילוב של מסלולים וטרנספורמציות שרוצים.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Spatial Occupancy Enumeration
+\end_layout
+
+\begin_layout Standard
+כמו פיקסלים - אבל תלת מימדי.
+ נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Voxels.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יתרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קל לבדוק אם נקודה היא חלק מהאובייקט.
+\end_layout
+
+\begin_layout Itemize
+קל להפעיל אופרטורים בוליאנים.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חסרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+דורש המון זיכרון.
+\end_layout
+
+\begin_layout Itemize
+רזולוציה מוגבלת.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+עצים
+\end_layout
+
+\begin_layout Itemize
+במקרה הדו-מימדי -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Quadtree
+\lang hebrew
+.
+ שורש העץ הוא התמונה כולה.
+ כל קודקוד - אם כולו אותו צבע נסמן אותו על הקודקוד ונהפוך אותו לעלה.
+ אחרת - נחלק את האזור ל
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וניתן לקודקוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ בנים שכל אחד ייצג חלק מהאזור.
+\end_layout
+
+\begin_layout Itemize
+במקרה התלת-מימדי -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Octree
+\lang hebrew
+, כשלכל קודקוד שאינו עלה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנים.
+\end_layout
+
+\begin_layout Standard
+הייצוג הזה מאוד נוח לפעולות בינאריות:
+\end_layout
+
+\begin_layout Enumerate
+יורדים בשני העצים לפי המבנה שלהם.
+\end_layout
+
+\begin_layout Enumerate
+אם מגיעים לעלה )כלומר אזור שכולו מלה או כולו ריק( באחד האופרנדים, אפשר בקלות
+ לחשב את תת העץ בתוצאה )למשל באיחוד - 
+\begin_inset Formula $\begin{subarray}{c}
+\textnormal{Partial}\cup\textnormal{Empty}=\textnormal{Partial}\\
+\textnormal{Partial}\cup\textnormal{Full}=\textnormal{Full}
+\end{subarray}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+רק כשמשווים שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Partial
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לרדת ברקורסיה.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+BSP - Binary Space Partition Tree
+\end_layout
+
+\begin_layout Standard
+הרעיון הכללי ב
+\lang english
+BSP
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Itemize
+כל קודקוד פנימי מייצג מישור במרחב התלת-מימדי.
+\end_layout
+
+\begin_layout Itemize
+לכל קודקוד כזה יש שני בנים - כל אחד מייצג צד אחר של המישור.
+\end_layout
+
+\begin_layout Itemize
+קודקוד עלה מייצג אזור הומוגני של המרחב - או שכולו חלק מהצורה )
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+in
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+( או שכולו ריק )
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+out
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+כדי לדעת אם נקודה נמצאת בתוך או מחוץ לצורה - פשוט יורדים ברקורסיה כשבכל
+ שלב בודקים באיזה צד של המישור הקודקוד נמצא.
+\end_layout
+
+\begin_layout Standard
+בחירת סדר החלוקה קובעת את האיזון של העץ.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Constructive Solid Geometry
+\end_layout
+
+\begin_layout Standard
+מייצגים את האובייקט כאוסף של אובייקטים בסיסיים עם פעולות איחוד/חיתוך.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חיסרון: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אפשר לייצג את אותה צורה באופנים שונים, כלומר הייצוג אינו יחודי.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Boundary Representation
+\end_layout
+
+\begin_layout Standard
+במקום לייצג את הנפח עצמו מייצגים את השטח שעוטף אותו.
+\end_layout
+
+\end_body
+\end_document

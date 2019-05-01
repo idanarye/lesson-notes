@@ -1,0 +1,1575 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-01
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\lang english
+JOGL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+JOGL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה מעטפת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+JNI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\lang english
+OpenGL
+\lang hebrew
+.
+ אנחנו נעבוד עם גירסה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\lang english
+OpenGL
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+אובייקטים בסיסיים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GLCanvas
+\end_layout
+
+\end_inset
+
+ מתפקד כמו 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Canvas
+\end_layout
+
+\end_inset
+
+ - משטח עליו ניתן לצייר.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GLJPanel
+\end_layout
+
+\end_inset
+
+ - מתפקד כמו 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+JPanel
+\end_layout
+
+\end_inset
+
+.
+ איטי יחסית.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GLEventListener
+\end_layout
+
+\end_inset
+
+ - מנגנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+callback
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Animator
+\end_layout
+
+\end_inset
+
+ - הלולאה הראשית שכל הזמן קוראת ל
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+paint
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מבנה תוכנית
+\end_layout
+
+\begin_layout Enumerate
+יוצרים 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Animator
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מוסיפים אירוע סגירה שקורא ל
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+stop()
+\end_layout
+
+\end_inset
+
+ על ה
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+animator
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יוצרים 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GLCanvas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מוסיפים ל
+\lang english
+canvas
+\lang hebrew
+ 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GLEventListener
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מוסיפים את ה
+\lang english
+canvas
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\lang english
+frame
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+animator.start();
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+חשוב לעשות 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+canvas.requestFocus();
+\end_layout
+
+\end_inset
+
+ - אחרת המקשים לא יעבדו )כי החלון לא יהיה בפוקוס(
+\end_layout
+
+\begin_layout Standard
+ל
+\lang english
+event listener
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש כל מיני מתודות - החשובה שבהם היא 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+display
+\end_layout
+
+\end_inset
+
+, שבה צריך לעשות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GL2 gl = drawable.getGL().getGL2();
+\end_layout
+
+\end_inset
+
+ - כדי לקבל את אובייקט הציור המתאים.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glClear(...);
+\end_layout
+
+\end_inset
+
+ - לנקות את המסך )מהאובייקטים הקודמים(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glLoadIdentity();
+\end_layout
+
+\end_inset
+
+ - לאפס את מטריצת הטרנספורמציות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glTranslatef(x, y, z);
+\end_layout
+
+\end_inset
+
+ - להזיז את מטריצת הטרנספורמציות.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glRotatef(theta, rotationAxisX, rotationAxisY, rotationAxisZ);
+\end_layout
+
+\end_inset
+
+ - לסובב את מטריצת הטרנספורמציות.
+\end_layout
+
+\begin_layout Itemize
+כדי לצייר:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glBegin(GL2.GL_TRIANGLES);
+\end_layout
+
+\end_inset
+
+ - כדי לצייר משולשים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glColor3f(r, g, b);
+\end_layout
+
+\end_inset
+
+ - כדי לקבוע את הצבע של הקודקוד.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glVertex3f(x, y, z);
+\end_layout
+
+\end_inset
+
+ - כדי לצייר את הקודקוד.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: הקואורדינטות יסובבו לפי מטריצת הטרנספורמציות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+חוזרים על שלבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ עוד פעמיים )סה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים( כדי לצייר משולש.
+\end_layout
+
+\begin_layout Enumerate
+חוזרים על שלבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2-4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לצייר כמה משולשים שרוצים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glEnd();
+\end_layout
+
+\end_inset
+
+ כדי לסיים את ציור המשולשים.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עוד מתודה חשובה היא 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+reshape
+\end_layout
+
+\end_inset
+
+, שנקראת כאשר גודל החלון משתנה.
+ שם צריך להגדיר את ה
+\lang english
+projection
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glMatrixMode(GL2.GL_PROJECTION);
+\end_layout
+
+\end_inset
+
+ - מגדירים שאנחנו עובדים עכשיו על מטריצת ה
+\lang english
+projection
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glLoadIdentity();
+\end_layout
+
+\end_inset
+
+ - מאפסים את מטריצת ה
+\lang english
+projection
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glFrustum(...);
+\end_layout
+
+\end_inset
+
+ - הגדרת ה
+\lang english
+clipping
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glMatrixMode(GL2.GL_MODELVIEW);
+\end_layout
+
+\end_inset
+
+ - חוזרים לעבוד על מטריצת הטרנספורמציות.
+\end_layout
+
+\begin_layout Section*
+ציור קווים
+\end_layout
+
+\begin_layout Standard
+עם 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glBegin(GL.GL_LINES);
+\end_layout
+
+\end_inset
+
+ אפשר לצייר קווים - בין כל שני קודקודים הוא יצייר קו.
+ אפשר להשתמש ב
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glVertex2f(x, y);
+\end_layout
+
+\end_inset
+
+ כדי לצייר את הקודקודים בדו-מימד.
+\end_layout
+
+\begin_layout Section*
+שינוי נקודת הייחוס כדי לצייר אובייקטים מסויימים
+\end_layout
+
+\begin_layout Standard
+אפשר להשתמש בפקודה 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glPushMatrix();
+\end_layout
+
+\end_inset
+
+ כדי 
+\begin_inset Quotes eld
+\end_inset
+
+לשנות את נקודת הייחוס
+\begin_inset Quotes erd
+\end_inset
+
+.
+ עושים את זה כדי לזוז למקום המתאים כשרוצים לצייר אובייקט לפי נקודת ייחוס
+ מסויימת.
+ אחרי זה אפשר לעשות 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glTranslatef(...);
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glScalef(...);
+\end_layout
+
+\end_inset
+
+ ו
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glRotatef(...);
+\end_layout
+
+\end_inset
+
+ כדי לבצע טרנספורמציות על אותו אובייקט.
+ בסיום הציור של האובייקט עושים 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glPopMatrix();
+\end_layout
+
+\end_inset
+
+ כדי לחזור לנקודת הייחוס הקודמת.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Display Lists
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glCallList(list);
+\end_layout
+
+\end_inset
+
+ מאפשר לצייר אובייקט שמור )לפי מטריצת הטרנספורמציות הנוכחית(.
+ כדי לייצר אובייקט כזה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+list = gl.glGenerateList(1);
+\end_layout
+
+\end_inset
+
+ - מייצר אובייקט אחד.
+ אפשר לבקש כמה אובייקטים רציפים - למשל 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+list = gl.glGenerateList(2);
+\end_layout
+
+\end_inset
+
+ ייצר לנו שני אובייקטים עם אינדקסים 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+list
+\end_layout
+
+\end_inset
+
+ ו
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+list + 1
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glNewList(list, GL2.GL_COMPILE);
+\end_layout
+
+\end_inset
+
+ - מתחיל לייצר את האובייקט.
+ 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+GL_COMPILE
+\end_layout
+
+\end_inset
+
+ אומר לקמפל את האובייקט כדי שיהיה אפשר לצייר אותו בצורה יותר מהירה.
+\end_layout
+
+\begin_layout Enumerate
+מתחילים לצייר כרגיל עם 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glBegin(...)
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Quad Strip
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glBegin(GL2.GL_QUAD_STRIP);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+quad
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מקבל בכל פעם ארבעה קודקודים ומצייר אותם
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+quad
+\begin_inset space ~
+\end_inset
+
+strip
+\lang hebrew
+ מקבל בכל פעם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים ומצייר עוד ריבוע משני הקודקודים האחרונים.
+\end_layout
+
+\begin_layout Standard
+אם למשל יש לנו כדור, אנחנו יכולים לחלק אותו לרצועות שכל אחת מקיפה את הכדור.
+ יוצרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+quad strip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ועוברים על כל רצועה עם קואורדינטות פולריות:
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for (a = 0f, b <= 360f, b += db) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (color > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        gl.glColor3f(1f, 0f, 0f);
+\end_layout
+
+\begin_layout Plain Layout
+
+    } else {
+\end_layout
+
+\begin_layout Plain Layout
+
+        gl.glColor3f(1f, 1f, 1f);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    x = radius * COS(b) * COS(a);
+\end_layout
+
+\begin_layout Plain Layout
+
+    y = radisu * SIN(b) * COS(a);
+\end_layout
+
+\begin_layout Plain Layout
+
+    z = radius * SIN(a);
+\end_layout
+
+\begin_layout Plain Layout
+
+    gl.glVertex3f(x, y, z);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    x = radius * COS(b) * COS(a + da);
+\end_layout
+
+\begin_layout Plain Layout
+
+    y = radisu * SIN(b) * COS(a + da);
+\end_layout
+
+\begin_layout Plain Layout
+
+    z = radius * SIN(a + da);
+\end_layout
+
+\begin_layout Plain Layout
+
+    gl.glVertex3f(x, y, z);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    color = 1 - color;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

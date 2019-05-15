@@ -1,0 +1,617 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-15
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תאורה
+\end_layout
+
+\begin_layout Standard
+בשביל ליצור תמונות ריאליסטיות אנחנו צריכים תאורה - תמונה עם צבע אחיד לא
+ נראית ריאליסטית.
+\end_layout
+
+\begin_layout Standard
+בהינתן משטח ומקורות אור, מה הצבע שמוחזר מהמשטח? הפרמטרים שמשפיעים הם:
+\end_layout
+
+\begin_layout Itemize
+מקורות האור:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה המיקום שלהם?
+\end_layout
+
+\begin_layout Itemize
+מה הצבע שלהם?
+\end_layout
+
+\begin_layout Itemize
+מה הצורה שלהם?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+המשטח:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה המיקום שלו?
+\end_layout
+
+\begin_layout Itemize
+מהן תכונות ההחזרות )
+\lang english
+reflectance properties
+\lang hebrew
+( שלו?
+\end_layout
+
+\begin_layout Itemize
+האם יש משטחים ליד? הם יכולים לחסום את האור או להשתקף...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+המצלמה )העין(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה המיקום שלה?
+\end_layout
+
+\begin_layout Itemize
+מה הרגישות שלה לצבע?
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מודל תאורה )
+\lang english
+Illumination Model
+\lang hebrew
+(: בהינתן מצב מסויים, מה הצבע שאמור להשתקף מנקודה מסויימת במשטח?
+\end_layout
+
+\begin_layout Itemize
+שיטות רינדור )
+\lang english
+Rendering Methods
+\lang hebrew
+(: איך מחשבים את מודל התאורה?
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ambient Light
+\end_layout
+
+\begin_layout Standard
+אור אמביינטי זה המודל הפשוט ביותר - תאורה שאין לה כיוון מסויים:
+\begin_inset Formula 
+\[
+I_{\textnormal{amb}}=K_{a}I_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I_{a}$
+\end_inset
+
+ עצמת האור האמביינטי
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K_{a}$
+\end_inset
+
+ 
+\begin_inset Formula $K_{a}\in\left[0,1\right]$
+\end_inset
+
+ - ההחזריות האמביינטית של המשטח
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אם התאורה היא רק אמביינטית, אי אפשר לראות עומק.
+\end_layout
+
+\begin_layout Section*
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Diffuse Reflection
+\end_layout
+
+\begin_layout Standard
+אור דיפוסיבי הוא אור שפוגע במשטח ומתפזר לכל הכיוונים.
+ ככל שהזווית בין מקור האור למשטח יותר גדולה העצמה המוחזרת תהיה נמוכה - כלומר
+ היחס הוא 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I_{\mathrm{diff}}=K_{d}I_{p}\cos\theta=K_{d}I_{p}\left(N\cdot L\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ עצמת האור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K_{d}$
+\end_inset
+
+ 
+\begin_inset Formula $K_{d}\in\left[0,1\right]$
+\end_inset
+
+ - ההחזריות הדיפוסיבית של המשטח
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N$
+\end_inset
+
+ הנורמל של המשטח
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $L$
+\end_inset
+
+ כיוון האור
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בתורה דיפוסיבית כבר אפשר לראות עומק.
+\end_layout
+
+\begin_layout Section*
+שילוב
+\end_layout
+
+\begin_layout Standard
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ נשתמש גם באור דיפוסיבי )כדי לראות עומק( וגם באור אמביינטי )כדי שהכל יהיה
+ מואר(, ואז הנוסחה היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{\mathrm{diff}}+I_{\mathrm{amb}}=K_{d}I_{p}N\cdot L+K_{a}I_{a}
+\]
+
+\end_inset
+
+נשים לב שזה רק עבור צבע אחד - צריך לעשות את זה עבור כל אחד משלושת צבעי היסוד.
+\end_layout
+
+\begin_layout Section*
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Specular Reflection
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)לפי מודל
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Phong
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+במודל הזה יש חשיבות גם למיקום הצורה.
+ במראה האור מוחזר בכיוון אחד בלבד, אבל רוב האובייקטים אינם מראות והאור כן
+ מתפזר.
+ ככל שהסטייה 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מזווית ההחזרה גדולה יותר ככה רואים פחות אור:
+\begin_inset Formula 
+\[
+L_{\mathrm{spec}}=K_{s}I_{p}\cos^{n}\phi=K_{s}I_{p}\left(R\cdot V\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ ההחזריות הספקולרית של המשטח
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n$
+\end_inset
+
+ פרמטר שיקוף - מגדיר את המרחק ממראה מושלמת.
+ ככל שהוא יותר גדול ה
+\begin_inset Quotes erd
+\end_inset
+
+דעיכה
+\begin_inset Quotes erd
+\end_inset
+
+ של ההשתקפות יותר איטית )כי היא פחות חדה(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R$
+\end_inset
+
+ כיוון ההחזרה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V$
+\end_inset
+
+ כיוון הצפייה
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נעדכן את נוסחת התאורה:
+\begin_inset Formula 
+\[
+I=I_{\mathrm{diff}}+I_{\mathrm{amb}}+I_{\mathrm{spec}}=K_{a}I_{a}+I_{p}\left(K_{d}N\cdot L+K_{s}\left(R\cdot V\right)^{n}\right)
+\]
+
+\end_inset
+
+ואם יש כמה מקורות אור:
+\begin_inset Formula 
+\[
+I=I_{\mathrm{amb}}+\sum_{k}\left(I_{\mathrm{diff}}^{k}+I_{\mathrm{spec}}^{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

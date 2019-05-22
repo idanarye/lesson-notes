@@ -1,0 +1,1365 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-22
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+רינדור פוליגונים לפי מודל תאורה -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Rendering Methods
+\end_layout
+
+\begin_layout Standard
+כאשר אנחנו רוצים לצבוע משטח על המסך, איך קובעים את הצבע של כל פיקסל?
+\end_layout
+
+\begin_layout Standard
+הצורה המהירה ביותר היא:
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Flat Shading
+\end_layout
+
+\begin_layout Standard
+לכל פוליגון נחשב את הנורמל, ונצבע את אותו הפוליגון באותו צבע.
+\end_layout
+
+\begin_layout Standard
+זה בד
+\begin_inset Quotes erd
+\end_inset
+
+כ לא יוצא חלק...
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Gouraud Shading
+\end_layout
+
+\begin_layout Enumerate
+מחשבים לכל קודקוד מה הנורמל שלו.
+ הנורמלים מוגדרים מראש בתוך ייצוג האובייקט בסצנה, או שאפשר לחשב אותם באמצעות
+ ממוצע של כל המשטחים השכנים.
+\end_layout
+
+\begin_layout Enumerate
+מחשבים את העצמה המוחזרת בכל קודקוד.
+\end_layout
+
+\begin_layout Enumerate
+עושים אינטרפולציה בי-לינארית לכל נקודה לפי הפוליגונים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+למשל, אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פוליגון של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות:
+\end_layout
+
+\begin_layout Itemize
+עושים אינטרפולציה לינארית על ציר ה
+\begin_inset Formula $u$
+\end_inset
+
+ כדי למצוא נקודה 
+\begin_inset Formula $I_{4}$
+\end_inset
+
+ על הקו 
+\begin_inset Formula $P_{1}P_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $I_{5}$
+\end_inset
+
+ על הקו 
+\begin_inset Formula $P_{3}P_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I_{4}=uI_{2}+\left(1-u\right)I_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{5}=I_{3}u+\left(1-u\right)I_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אינטרפולציה לינארית על ציר ה
+\begin_inset Formula $v$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I=vI_{4}-\left(i-v\right)I_{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+השיטה הזאת מאפשרת לייצר משטח 
+\begin_inset Quotes eld
+\end_inset
+
+מעוגל
+\begin_inset Quotes erd
+\end_inset
+
+, ובמקום מעברים חדים בין הפוליגונים השינוי יהיה הדרגתי וחלק.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Phong Shading
+\end_layout
+
+\begin_layout Standard
+כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gouraud
+\lang hebrew
+, אבל הופכים את הסדר בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\numeric on
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Enumerate
+מחשבים את הנורמל של כל קודקוד.
+\end_layout
+
+\begin_layout Enumerate
+עושים אינטרפולציה בי-לינארית על הנורמלים כדי לחשב את הנורמל בכל נקודה.
+\end_layout
+
+\begin_layout Enumerate
+מפעילים את מודל התאורה על כל נקודה לפי הנורמל שלה.
+\end_layout
+
+\begin_layout Standard
+השיטה הזאת יותר כבדה מ
+\lang english
+Gouraud
+\lang hebrew
+, אבל נותנת תוצאות יותר טובות שכן המעבר בין הצבעים הוא לא לינארי.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Global Illumination Effects
+\end_layout
+
+\begin_layout Standard
+מודל התאורה מטפל באור שעובר ללא הפרעה - אבל איך מטפלים בצל? בהשתקפות? בשבירה
+ של האור?
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Transparency
+\end_layout
+
+\begin_layout Standard
+איך מטפלים בשקיפות? אנחנו רוצים שאובייקט יהיה שקוף - שנוכל לראות את מה שנמצא
+ מאחוריו:
+\begin_inset Formula 
+\[
+I=\left(1-K_{1}\right)I_{1}+K_{1}I_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ השקיפות של האובייקט.
+ אם 
+\begin_inset Formula $K_{1}=1$
+\end_inset
+
+ האובייקט הוא שקוף - כלומר לא רואים אותו בכלל - ואם 
+\begin_inset Formula $K_{1}=0$
+\end_inset
+
+ אז הוא אטום לחלוטין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ולא רואים מה שיש מאחוריו.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ במקום 
+\begin_inset Formula $K$
+\end_inset
+
+ נשתמש ב
+\begin_inset Formula $\alpha=1-K$
+\end_inset
+
+.
+ האלפא היא האטימות של האובייקט.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ התאורה בנקודה של האובייקט השקוף )למחצה(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ התאורה בנקודה של האובייקט מאחוריו.
+ אם גם האובייקט הזה שקוף אז צריך לחשב אותו בנפרד )עם 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $I_{3}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Ray Tracing
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Ray Tracing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא שיטת רינדור שפותרת כמה בעיות:
+\end_layout
+
+\begin_layout Enumerate
+איך לדעת אם משטח מוסתר )ולא צריך להציג אותו(
+\end_layout
+
+\begin_layout Enumerate
+מטפל טוב יותר בעניין הצללים - נותן החזרה אידיאלית ושבירה אידיאלית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם רוצים החזרה ושבירה לא אידיאליות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ray Tracing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יעבוד.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מאפשר ציור ישיר של הרבה צורות גיאומטריות פשוטות.
+\end_layout
+
+\begin_layout Standard
+השיטה - לכל פיקסל ופיקסל מייצרים קרן ממיקומו בתוך העין ובודקים איפה היא
+ פוגעת:
+\end_layout
+
+\begin_layout Itemize
+אם היא לא פוגעת בכלום, מחזירים את הרקע.
+\end_layout
+
+\begin_layout Itemize
+אם היא פוגעת במשטח, אפשר לחשב את עצמת התאורה.
+\end_layout
+
+\begin_layout Itemize
+אם המשטח מבריק, אפשר לחשב את זוית ההחזרה וליצור קרן חדשה שממשיכה את הקרן
+ שלנו.
+\end_layout
+
+\begin_layout Standard
+איך עושים את ה
+\lang english
+reflection
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הזה? יש לנו את ווקטור כיוון הפגיעה 
+\begin_inset Formula $V_{\mathrm{in}}$
+\end_inset
+
+ של הקרן ויש לנו את הנורמל 
+\begin_inset Formula $N$
+\end_inset
+
+ של המשטח.
+ אנחנו רוצים לחשב את ווקטור כיוון ההחזרה 
+\begin_inset Formula $V_{\mathrm{out}}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V_{\mathrm{out}}=V_{\mathrm{in}}-2\left(V_{\mathrm{in}}\cdot N\right)N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ככל שנאפשר יותר שבירות החישוב יהיה יותר כבד - אבל נקבל תמונה יותר ריאליסטית.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Refractions
+\end_layout
+
+\begin_layout Standard
+שבירה מתרחשת כאשר יש הבדל פיזיקלי בין התכונות של החומרים השקופים )מקדם שבירה(
+ לפי חוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Snell
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+n_{1}\sin\theta=n_{2}\sin\varphi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ מקדם השבירה של החומר הראשון.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\theta$
+\end_inset
+
+ זווית הפגיעה מהצד של החומר הראשון.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n_{2}$
+\end_inset
+
+ מקדם השבירה של החומר השני.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\varphi$
+\end_inset
+
+ זווית ההחזרה מהצד של החומר השני.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+האלגוריתם
+\end_layout
+
+\begin_layout Itemize
+לכל פיקסל 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ בתמונה, ייצר את הקרן בעולם התלת מימדי
+\end_layout
+
+\begin_layout Itemize
+חשב 
+\begin_inset Formula $\mathrm{Image}\left(x,y\right)=\mathrm{TraceRay}\left(ray\right)$
+\end_inset
+
+ לפי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מצא את המשטח הראשון שהקרן פוגעת בו
+\end_layout
+
+\begin_layout Itemize
+אם אין - החזר את צבע הרקע
+\end_layout
+
+\begin_layout Itemize
+חשב את התאורה הישירה.
+\end_layout
+
+\begin_layout Itemize
+חשב את התאורה שמגיעה מההשתקפות
+\end_layout
+
+\begin_layout Itemize
+חשב את התאורה שמגיעה משבירה
+\end_layout
+
+\begin_layout Itemize
+שלב את כל עצמות התאורה לפי מודל ה
+\lang english
+shading
+\end_layout
+
+\begin_layout Itemize
+החזר את ערך התאורה
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+מציאת נקודת החיתוך
+\end_layout
+
+\begin_layout Standard
+איך מוצאים נקודת חיתוך בין קרן למשטח?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יש
+\begin_inset space ~
+\end_inset
+
+לנו: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+משטח 
+\begin_inset Formula $F\left(x,y,z\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ייצוג פרמטרי של הקרן 
+\begin_inset Formula $R\left(t\right)=O+tD$
+\end_inset
+
+.
+ כלומר: 
+\begin_inset Formula $\begin{array}{c}
+R_{x}\left(t\right)=O_{x}+tD_{x}\\
+R_{y}\left(t\right)=O_{y}+tD_{y}\\
+R_{z}\left(t\right)=O_{z}+tD_{z}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מציבים במשוואת המשטח:
+\begin_inset Formula 
+\[
+F\left(O_{x}+tD_{x},O_{y}+tD_{y},O_{z}+tD_{z}\right)=0
+\]
+
+\end_inset
+
+ומוצאים את הפתרון היחיד.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Radiosity
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Ray Tracing
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא תמיד מספיק:
+\end_layout
+
+\begin_layout Itemize
+הוא לא מטפל בתאורה לא ישירה.
+\end_layout
+
+\begin_layout Itemize
+הוא לא מטפל ב
+\lang english
+Color Bleeding
+\end_layout
+
+\begin_layout Itemize
+הוא לא מטפל ב
+\lang english
+Soft Shadows
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שטח מוצלל שכן מואר קצת מהאובייקטים מסביב.
+\end_layout
+
+\begin_layout Standard
+כדי לפתור את הבעיה הזאת, לקחו חישובים מתחום אחר מפיסיקיה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Radiocity
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)קרינה( - והשתמשו בצורה שפותרים את חישובי הקרינה שם כדי למצוא את התאורה
+ בכל נקודה ונקודה במשטח.
+\end_layout
+
+\begin_layout Standard
+איך זה עובד? מחלקים את העולם למשטחים קטנים, וכל משטח כזה תורם לקרינה הכללית.
+ הוא יכול לייצר קרינה בעצמו אם הוא מקור אור, וגם אם הוא לא מקור אור הוא
+ מקבל קרינה מכל המשטחים האחרים וכל המשטחים האחרים משפיעים על הקרינה המתקבלת
+ מאותו משטח:
+\begin_inset Formula 
+\[
+B_{i}=E_{i}+\rho_{i}\sum_{j}F_{ij}B_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ כמות הקרינה שמשטח 
+\begin_inset Formula $i$
+\end_inset
+
+ פולט
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ כמות הקרינה שהוא מייצר בעצמו )
+\lang english
+emitted
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\rho_{i}$
+\end_inset
+
+ מקדם ההחזרה של המשטח
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F_{ij}$
+\end_inset
+
+ מקדם שאומר איך משטח 
+\begin_inset Formula $j$
+\end_inset
+
+ משפיע על משטח 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $\rho_{i}$
+\end_inset
+
+ ידועים, ואת 
+\begin_inset Formula $F_{ij}$
+\end_inset
+
+ אפשר לחשב לפי זוויות.
+ אבל 
+\begin_inset Formula $B_{j}$
+\end_inset
+
+ תלויים בחישובי הנוסחה של המשטחים האחרים.
+ לכן צריך לפתור מערכת משוואות:
+\begin_inset Formula 
+\[
+\begin{bmatrix}B_{1}\\
+B_{2}\\
+\vdots\\
+B_{n}
+\end{bmatrix}=\begin{bmatrix}E_{1}\\
+E_{2}\\
+\vdots\\
+E_{n}
+\end{bmatrix}+\begin{bmatrix}\rho_{1}F_{11} & \rho F_{12} & \cdots & \rho_{1}F_{1n}\\
+\rho_{2}F_{21} & \rho_{2}F_{22} & \cdots & \rho_{2}F_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+-\rho_{n}F_{n1} & \cdots & \cdots & \rho_{n}F_{nn}
+\end{bmatrix}\begin{bmatrix}B_{1}\\
+B_{2}\\
+\vdots\\
+B_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+ולפשט:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1-\rho_{1}F_{11} & -\rho F_{12} & \cdots & -\rho_{1}F_{1n}\\
+-\rho_{2}F_{21} & 1-\rho_{2}F_{22} & \cdots & -\rho_{2}F_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+-\rho_{n}F_{n1} & \cdots & \cdots & 1-\rho_{n}F_{nn}
+\end{bmatrix}\begin{bmatrix}B_{1}\\
+B_{2}\\
+\vdots\\
+B_{n}
+\end{bmatrix}=\begin{bmatrix}E_{1}\\
+E_{2}\\
+\vdots\\
+E_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השיטה הזאת מאוד יקרה חישובית, ותלויה בכמה נפרק את העולם שלנו למשטחים קטנים.
+ אפשר גם לעשות משטחים מסויימים גדולים ואחרים קטנים.
+\end_layout
+
+\end_body
+\end_document

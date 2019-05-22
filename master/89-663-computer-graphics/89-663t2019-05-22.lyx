@@ -1,0 +1,394 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-22
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תאורה ב
+\lang english
+OpenGL
+\end_layout
+
+\begin_layout Standard
+השלב הראשון הוא לעשות 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+gl.glEnable(GL2.GL_LIGHTING);
+\end_layout
+
+\end_inset
+
+ כדי לאפשר את התאורה.
+ אחרי זה צריך להוסיף מקורות אור )אפשר עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+(:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+gl.glLightfv(GL2.GL_LIGHT0, GL2.GL_AMBIENT, ambient, 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+gl.glLightfv(GL2.GL_LIGHT0, GL2.GL_DIFFUSE, diffuse0, 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+gl.glEnable(GL2.GL_LGIHT0);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרמטר הראשון הוא מספר האור )אפשר עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+(.
+ הפרמטר השני הוא סוג האור.
+ הפרמטר השלישי הוא ווקטור צבע )
+\lang english
+RGB
+\lang hebrew
+(, והפרמטר הרביעי לא רלוונטי כרגע.
+ אחרי זה צריך לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+enable
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאור.
+\end_layout
+
+\begin_layout Standard
+אחרי שמגדירים את הפרמטרים, במהלך ציור הסצנה צריך לצייר את האור במיקום שלו:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+gl.glLightfv(GL2.GL_LIGHT0, GL2.GL_POSITION, position0, 0);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+האור תלוי בטרנספורמציות כמו כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+vertex
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר, וצריך להגדיר אותו אחרי שקובעים את מטריצת הצפייה.
+\end_layout
+
+\begin_layout Itemize
+האור הוא נקודתי - כלומר יוצא מנקודה אחת לכל הכיוונים.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

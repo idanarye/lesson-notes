@@ -1,0 +1,1187 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-05-29
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+זיהוי התנגשות
+\end_layout
+
+\begin_layout Standard
+ל
+\lang english
+OpenGL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אין מידע על האובייקטים שהוא מצייר, והוא לא מסוגל לזהות הנתגשות ביניהן.
+ אבל במשחקים/סימולציות אנחנו נרצה לזהות מתי שני אובייקטים מתנגשים, ולהחליט
+ מה לעשות במקרה כזה - בד
+\begin_inset Quotes erd
+\end_inset
+
+כ באמצעות כללים פיסיקליים פשוטים.
+ הנחת ההעבודה שלנו היא שכל האובייקטים הם פוליגונים תלת מימדיים )למרות שלא
+ חייבים להניח את זה(
+\end_layout
+
+\begin_layout Standard
+ההתנגשות מתרחשת בתזוזה - ולכן נבדוק אותה בתוך האירוע שאחראי על התזוזה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+idle function
+\end_layout
+
+\begin_layout Enumerate
+קוראים ל
+\lang english
+animation function
+\end_layout
+
+\begin_layout Enumerate
+בודקים אם הייתה התנגשות
+\end_layout
+
+\begin_layout Enumerate
+אם הייתה - מזיזים את האובייקטים בהתאם
+\end_layout
+
+\begin_layout Enumerate
+מציירים
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים זיהוי מהיר, ולכן נשתמש במודל שאינו דייקני על המילימטר כדי לקבל
+ תוצאות מספיק טובות בזמן חישוב מהיר.
+\end_layout
+
+\begin_layout Section*
+התנגשות בין נקודה לפוליגון
+\end_layout
+
+\begin_layout Standard
+למשל - אם ממדלים את השחקן בתור נקודה, ורוצים לדעת אם הוא נתקל בקיר.
+\end_layout
+
+\begin_layout Standard
+נסתכל על נקודה בתוך הפוליגון, ועל הקוים המחברים אותה לכל אחת מקודקודי הפוליגון.
+ סכום הזוויות בין הקוים יהיה 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+.
+ אבל אם היא תהיה בחוץ - הוא יהיה שונה מ
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+.
+ ואם היא תזוז לאורך הנורמל, הסכום יהיה קצת קטן יותר מ
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+דיסקרטיזציה - התזוזה היא בקפיצות.
+ יכול להיות שבפריים אחד נהיה מצד אחד של הפוליגון ובפריים אחר נהיה מהצד השני
+ שלו.
+ לכן נרצה אולי להשתמש בסף )למשל 
+\begin_inset Formula $\sum\alpha\ge350^{\circ}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+גודל הפאה מאוד חשוב - אם הפאה קטנה אז השינוי בזווית הוא מאוד מאוד חד.
+ לכן הסף צריך להיות תלוי בגודל הפוליגון.
+\end_layout
+
+\begin_layout Itemize
+אם יש גוף שמורכב מהמון פוליגונים להתחיל לחשב עבור כל פוליגון ופוליגון יהיה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+השיטה הזאת טובה למשטחים גדולים ואחידים כמו קירות, אבל לא למשטחים קטנים.
+\end_layout
+
+\begin_layout Section*
+התנגשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Polygon Mesh
+\end_layout
+
+\begin_layout Standard
+אנחנו צריכים למצוא דרך למדל את האובייקט שלנו בצורה כזאת שיהיה קל ומהיר לבצע
+ חישובים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Bounding Sphere
+\end_layout
+
+\begin_layout Standard
+השיטה הכי מהירה היא לעטוף את האובייקט בכדור, ולבדוק אם הכדורים שעוטפים את
+ האובייקטים מתנגשים.
+ מגדירים את מרכז האובייקט בתור הממוצע בין כל הקודקודים, והמרחק לקודקוד הכי
+ רחוק הוא הרדיוס.
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק אם יש התנגשות, פשוט בודקים:
+\end_layout
+
+\begin_layout Itemize
+בשביל לבדוק התנגשות בין נקודה לכדור, מחשבים את המרחק מהנקודה למרכז הכדור
+ 
+\begin_inset Formula $D^{2}=\Delta X^{2}+\Delta Y^{2}+\Delta Z^{2}$
+\end_inset
+
+ ובודקים אם 
+\begin_inset Formula $D^{2}<R^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם רוצים לבדוק התנגשות בין שני כדורים, מוצאים את המרחק בין המרכזים שלהם
+ ובודקים אם 
+\begin_inset Formula $D^{2}<\left(R_{1}+R_{2}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם רוצים לבדוק התנגשות בין כדור למישור, צריך לחשב את המרחק מהכדור למישור.
+ אם יש לנו נקודה 
+\begin_inset Formula $P$
+\end_inset
+
+ על המישור והנורמל שלו זה 
+\begin_inset Formula $N$
+\end_inset
+
+, ומרכז הכדור הוא 
+\begin_inset Formula $P$
+\end_inset
+
+, אז 
+\begin_inset Formula $D=\left(C-P\right)\cdot N$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הנורמל מציין את הכיוון החוצה - אם נעבור את הקיר נקבל 
+\begin_inset Formula $D<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר ליעל את החישוב אם נחסוך את חיבור הווקטורים ונהפוך את זה לחיבור סקלרים:
+ 
+\begin_inset Formula $D=C\cdot N-P\cdot N$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Bounding Cylinder
+\end_layout
+
+\begin_layout Standard
+אם יש לנו אובייקטים צרים וארוכים )למשל עמודים(, נרצה לתחום אותם עם צילינדרים.
+\end_layout
+
+\begin_layout Standard
+אם הצילינדר עומד, אז המעגל הוא על מישור ה
+\lang english
+XZ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והגובה הוא על ציר ה
+\lang english
+Y
+\lang hebrew
+.
+ המרכז יהיה ממוצע הקודקודים, הרדיוס יהיה המרחק על מישור ה
+\lang english
+XZ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לקודקוד הרחוק ביותר, ואז צריך למצוא את ה
+\lang english
+Y
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המינימלי והמקסימלי.
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק התנגשות בודקים את המרחק במישור ה
+\lang english
+XZ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בין הנקודה במרכז הצילינדר לנקודה שאנחנו רוצים לבדוק.
+ אם הוא גדול מהרדיוס, אין התנגשות.
+ אם הוא גדול - צריך לבדוק שהנקודה נמצאת גם בתוך תחום ה
+\lang english
+Y
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Bounding Box
+\end_layout
+
+\begin_layout Standard
+אפשרות נוספת היא לתחום באמצעות קופסא.
+ הקופסא הכי פשוטה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Axis Aligned Bounding Box
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- קופסא בהתאם לצירים, ואז החישובים יותר פשוטים.
+\end_layout
+
+\begin_layout Standard
+כדי למצוא את הקופסא, מוצאים את המינימום והמקסימום על כל אחד מהצירים.
+ כדי לבדוק התנגשות, נבדוק כל אחד מהצירים בנפרד.
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק התנגשות בין קופסא לכדור, נחשב תחילה את המרחק בין המרכזים: 
+\begin_inset Formula $D^{2}=\Delta X^{2}+\Delta Y^{2}+\Delta Z^{2}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $D^{2}<R^{2}$
+\end_inset
+
+ )כש
+\begin_inset Formula $R$
+\end_inset
+
+ זה רדיוס הכדור( אז יש התנגשות.
+ אחרת, צריך להתחיל לבדוק:
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for (int i = 0; i < 3; ++i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (C[i] < B.min(i)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        s = C[i] - B.min(i);
+\end_layout
+
+\begin_layout Plain Layout
+
+        d += s * s;
+\end_layout
+
+\begin_layout Plain Layout
+
+    } else if (C[i] > B.max(i)){
+\end_layout
+
+\begin_layout Plain Layout
+
+        s = C[i] - B.max(i);
+\end_layout
+
+\begin_layout Plain Layout
+
+        d += s * s;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+כלומר בודקים עבור כל אחד מהצירים אם מרכז הכדור נמצא בתוך הקופסא בהתחשב באותו
+ ציר, ואם לא אז מוסיפים את המרחק מהדופן הרלוונטית על אותו ציר לחישוב המרחק.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Oriented Bounding Box
+\end_layout
+
+\begin_layout Standard
+לפעמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קופסא מיושרת לצירים לא מספיקה, ואנחנו רוצים קופסא שנמצאת בזווית יותר מתאימה.
+ יש שתי שיטות: להגדיר אותה יחד עם האובייקט, או לחשב אותה.
+ כדי לחשב אותה:
+\end_layout
+
+\begin_layout Itemize
+מוצאים תחילה את המרכז בתור ממוצע הקודקודים.
+\end_layout
+
+\begin_layout Itemize
+מחפשים את הקודקוד הכי רחוק - והווקטור מהמרכז אליו יהיה הציר הראשון.
+\end_layout
+
+\begin_layout Itemize
+מחפשים את הקודקוד הכי רחוק מהציר הזה - והווקטור מהציר אליו יהיה הציר השני.
+\end_layout
+
+\begin_layout Itemize
+הציר השלישי מחושב מהשניים האחרים באמצעות מכפלה ווקטורית.
+\end_layout
+
+\begin_layout Standard
+השיטה הזאת יותר מדוייקת מ
+\lang english
+AABB
+\lang hebrew
+, אבל הרבה יותר יקרה מבחינה חישובית.
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק התנגשות בין שתי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+OBB
+\lang hebrew
+, מחשבים את ההטלה על כל אחד מהצירים )
+\lang english
+XYZ
+\lang hebrew
+(:
+\begin_inset Formula 
+\[
+r_{a}=a_{1}\left|A^{1}\cdot L\right|+a_{2}\left|A^{2}\cdot L\right|+a_{3}\left|A^{3}\cdot L\right|
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $\left|T\cdot L\right|>r_{a}+r_{b}$
+\end_inset
+
+ אז אין חפיפה.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ זה הווקטור בין מרכזי הקופסאות, אבל מה זה 
+\begin_inset Formula $L$
+\end_inset
+
+? איזה צירים לבדוק? יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צירים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הצירים הראשיים של כל קופסא ועוד הצירים של האלכסונים.
+ זה הרבה צירים, ואם לא חייבים עדיף לא להשתמש בשיטה הזאת.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Bounding Sphere Sweep Test
+\end_layout
+
+\begin_layout Standard
+אובייקטים יכולים לזוז מהר בין פריימים, ו
+\begin_inset Quotes erd
+\end_inset
+
+לקפוץ
+\begin_inset Quotes erd
+\end_inset
+
+ אחד דרך השני.
+ אנחנו רוצים, למרות זה, לזהות שהם התנגשו.
+\end_layout
+
+\begin_layout Standard
+נגדיר:
+\begin_inset Formula 
+\[
+A\left(u\right)=A_{0}+uv_{a}\qquad B\left(u\right)=B_{0}+uv_{b}
+\]
+
+\end_inset
+
+כאשר:
+\begin_inset Formula 
+\[
+v_{a}=A_{1}-A_{0}\qquad v_{b}=B_{1}-B_{0}\qquad0\le u\le1
+\]
+
+\end_inset
+
+האובייקטים מתנגשים כאשר:
+\begin_inset Formula 
+\[
+\left[B\left(u\right)-A\left(u\right)\right]\cdot\left[B\left(u\right)-A\left(u\right)\right]=\left(r_{a}+r_{b}\right)^{2}
+\]
+
+\end_inset
+
+מקבלים משוואה ריבועית עם עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שני 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתרונות.
+ אם אין לה פתרון )או שאף פתרון לא בתחום 
+\begin_inset Formula $0\le u\le1$
+\end_inset
+
+( אז אין התנגשות.
+ אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פתרונות בתחום את לוקחים את המינימלי.
+\end_layout
+
+\begin_layout Section*
+תגובה להתנגשות
+\end_layout
+
+\begin_layout Standard
+זיהינו התנגשות - מה עכשיו?
+\end_layout
+
+\begin_layout Itemize
+האפשרות הכי פשוטה - לבטל את התנועה.
+ להישאר במקום.
+\end_layout
+
+\begin_layout Itemize
+חוקים פיסיקליים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+חישוב התגובה לפי חוקי ניוטון.
+\end_layout
+
+\begin_layout Itemize
+חישוב לפי חוק הוק: 
+\begin_inset Formula $F=-kx$
+\end_inset
+
+ )
+\begin_inset Formula $k$
+\end_inset
+
+ זה קבוע הקפיץ, 
+\begin_inset Formula $x$
+\end_inset
+
+ זה ה
+\lang english
+displacement
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+חישוב כוח המשיכה
+\end_layout
+
+\begin_layout Itemize
+חיכוך: 
+\begin_inset Formula $F_{f}=\mu F$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+אופטימיזציות
+\end_layout
+
+\begin_layout Standard
+כאשר מזיזים דברים צריך להתחיל לבדוק התנגשויות.
+ אם בודקים בין כל אובייקט לכל אובייקט אחר צריך לבדוק 
+\begin_inset Formula $O\left(N^{2}\right)$
+\end_inset
+
+ התנגשויות - וזה הרבה, אז רוצים לעשות אופטימיזציות.
+\end_layout
+
+\begin_layout Standard
+אופטימיזציה פשוטה - אם יש לנו במודל שלנו חדרים, אז אובייקט בחדר אחד לא יכול
+ להתנגש עם אובייקטים בחדרים אחרים.
+ לכן אם מראש נבנה את העולם בצורה היררכית, יהיה לנו יותר קל.
+\end_layout
+
+\begin_layout Standard
+אפשר גם להשתמש ב
+\lang english
+BSP
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Binary Space Partitioning
+\end_layout
+
+\end_inset
+
+ - אם כל האובייקטים שלנו מסודרים בצורה כזאת בעץ, אז אפשר לבדוק לכל אובייקט
+ איפה הוא בכל צד של כל מישור.
+ אם אנחנו בצד אחד של המישור, אין מה לבדוק התנגשויות עם אובייקטים שנמצאים
+ בצד השני.
+\end_layout
+
+\end_body
+\end_document

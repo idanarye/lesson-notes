@@ -1,0 +1,1961 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-06-05
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Scan Conversion
+\end_layout
+
+\begin_layout Standard
+נניח שאנחנו רוצים לצייר על המסך קו מ
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ - איך אנחנו מציירים אותו על המסך?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Scan Conversion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה המרה של הקו לייצוג שלו ב
+\lang english
+raster display
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+איך מייצגים קו? יש כמה דרכים:
+\end_layout
+
+\begin_layout Itemize
+משוואה מרומזת: 
+\begin_inset Formula $f\left(x,y,\dots\right)=0$
+\end_inset
+
+.
+ במקרה של קו ישר - 
+\begin_inset Formula $\alpha x+\beta y+\gamma=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נוסחה מפורשת: 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+.
+ במקרה של קו ישר - 
+\begin_inset Formula $y=mx+B$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $m=\frac{y_{1}-y_{0}}{x_{1}-x_{0}}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+הצגה פרמטרית: 
+\begin_inset Formula $x=f_{x}\left(t\right)\qquad y=f_{y}\left(t\right)$
+\end_inset
+
+.
+ במקרה של קו ישר 
+\begin_inset Formula $P=P_{0}+\left(P_{1}-P_{0}\right)t$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה של קו ישר, אם נניח משתמשים בנוסחה המפורשת 
+\begin_inset Formula $y=mx+B$
+\end_inset
+
+.
+ בהנחה ש
+\begin_inset Formula $\left|m\right|\le1$
+\end_inset
+
+ )אם זה הפוך נהפוך בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for x = 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+y = 
+\begin_inset Formula $mx+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+PlotPixel
+\begin_inset Formula $\left(x,\mathrm{round}\left(y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+זה עובד - אבל הרבה עבודה חישובית.
+ כדי לייעל את זה אפשר לעבוד בצורה אינקרמנטלית:
+\begin_inset Formula 
+\[
+y_{i+1}=mx_{i+1}+B=m\left(x_{1}+\Delta x\right)+B=y_{1}+m\Delta x
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $\Delta x=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $y_{i+1}=y_{i}+m$
+\end_inset
+
+.
+ כלומר בכל איטרציה של הלולאה מקדמים את 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואת 
+\begin_inset Formula $y$
+\end_inset
+
+ ב
+\begin_inset Formula $m$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Line
+\begin_inset Formula $\left(x_{0},y_{0},x_{1},y_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+begin
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+float 
+\begin_inset Formula $dx,dy,x,y,slope$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $dx:=x_{1}-x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $dy:=y_{1}-y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $slope:=\frac{dx}{dy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $y:=y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $x:=x_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ do
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+begin
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+PlotPixel
+\begin_inset Formula $\left(x,\textnormal{Round}\left(y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $y:=y+slope$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+מקרים מיוחדים:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m=\pm1$
+\end_inset
+
+ - קו אלכסוני
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m=0$
+\end_inset
+
+ - קו אופקי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m=\infty$
+\end_inset
+
+ - קו אנכי
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x_{0}>x_{1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left|m\right|\le1$
+\end_inset
+
+ או ש
+\begin_inset Formula $y_{0}>y_{1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left|m\right|\ge1$
+\end_inset
+
+ - נחליף בין 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מוסיפים כל הזמן מספרים ל
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+float
+\end_layout
+
+\end_inset
+
+ - יש כאן שגיאה מצטברת
+\end_layout
+
+\begin_layout Itemize
+פעולות על 
+\begin_inset listings
+inline true
+status open
+
+\begin_layout Plain Layout
+
+float
+\end_layout
+
+\end_inset
+
+ הן יקרות
+\end_layout
+
+\begin_layout Itemize
+פעולות עיגול הן יקרות
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כדי לפתור את הבעיות האלה נרצה שיטה אחרת:
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Midpoint (~Bresenham) Line Drawing
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בהנחה
+\begin_inset space ~
+\end_inset
+
+ש: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x_{0}<x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y_{0}<y_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $0<\mathrm{slope}<1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\left(x_{p},y_{p}\right)$
+\end_inset
+
+, הפיקסל הבא יכול להיות או 
+\begin_inset Formula $E=\left(x_{p}+1,y_{p}\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $NE=\left(x_{p}+1,y_{p}+1\right)$
+\end_inset
+
+.
+ איך נדע איזה? לפי 
+\begin_inset Formula $\mathrm{sign}\left(M-Q\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M=\left(x_{p}+1,y_{p}+\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת הישר המפורשת היא 
+\begin_inset Formula $y=\frac{\Delta y}{\Delta x}x+B$
+\end_inset
+
+.
+ נעבור לצורה המרומזת 
+\begin_inset Formula $f\left(x,y\right)=ax+by+c=0$
+\end_inset
+
+.
+ אם נציב:
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\Delta y\cdot x-\Delta x\cdot y+B\cdot\Delta x=0
+\]
+
+\end_inset
+
+ההחלטה לפי:
+\begin_inset Formula 
+\[
+d=f\left(M\right)=f\left(x_{p}+1,y_{p}+\frac{1}{2}\right)=\Delta y\left(x_{p}+1\right)-\Delta x\left(y_{p}+\frac{1}{2}\right)+B\Delta x
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $d>0$
+\end_inset
+
+ נלך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NE
+\lang hebrew
+, אם 
+\begin_inset Formula $d\le0$
+\end_inset
+
+ נלך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+E
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו לא רוצים לעשות את החישוב היקר הזה כל פעם - אנחנו רוצים גם כאן
+ שיטה אינקרמנטלית!
+\end_layout
+
+\begin_layout Standard
+נשים לב - מה קורה עבור 
+\begin_inset Formula $x_{p}+2$
+\end_inset
+
+? אם עבור 
+\begin_inset Formula $x_{p}+1$
+\end_inset
+
+ יצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+E
+\lang hebrew
+, אז:
+\begin_inset Formula 
+\[
+M_{\mathrm{new}}=\left(x_{p}+2,y_{p}+\frac{1}{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{new}}=f\left(x_{p}+2,y_{p}+\frac{1}{2}\right)=\Delta y\left(x_{p}+2\right)-\Delta x\left(y_{p}+\frac{1}{2}\right)+B\cdot\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{old}}=f\left(x_{p}+1,y_{p}+\frac{1}{2}\right)=\Delta y\left(x_{p}+1\right)-\Delta x\left(y_{p}+\frac{1}{2}\right)+B\cdot\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{new}}=-d_{\mathrm{old}}+dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{d_{\mathrm{new}}=d_{\mathrm{old}}+\Delta_{E}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם עבור 
+\begin_inset Formula $x_{p}+1$
+\end_inset
+
+ יצא 
+\begin_inset Formula $NE$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+M_{\mathrm{new}}=\left(x_{p}+2,y_{p}+\frac{3}{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{new}}=f\left(x_{p}+2,y_{p}+\frac{3}{2}\right)=\Delta y\left(x_{p}+2\right)-\Delta x\left(y_{p}+\frac{3}{2}\right)+B\cdot\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{old}}=f\left(x_{p}+1,y_{p}+\frac{3}{2}\right)=\Delta y\left(x_{p}+1\right)-\Delta x\left(y_{p}+\frac{3}{2}\right)+B\cdot\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{new}}=-d_{\mathrm{old}}+dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{d_{\mathrm{new}}=d_{\mathrm{old}}+\Delta_{NE}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ויש לנו כאן רק חיבור שלמים!
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+האלגוריתם
+\end_layout
+
+\begin_layout Standard
+הנקודה הראשונה - 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+ נקודת האמצע הראשונה - 
+\begin_inset Formula $\left(x_{0}+1,y_{0}+\frac{1}{2}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+d_{\mathrm{start}}=f\left(x_{0}+1,y_{0}+\frac{1}{2}\right)=\Delta y\left(x_{0}+1\right)-\Delta x\left(y_{0}+\frac{1}{2}\right)+B\cdot\Delta x=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=\Delta y\cdot x_{0}-\Delta x\cdot ty_{0}+B\cdot\Delta x+\Delta y-\Delta x\dfrac{b}{2}=\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cdots=f\left(x_{0},y_{0}\right)+\Delta y-\frac{\Delta x}{2}=\Delta y-\frac{\Delta x}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להימנע משברים, נכפיל ב
+\numeric on
+2
+\numeric off
+.
+ כלומר:
+\begin_inset Formula 
+\[
+f\left(x,y\right)=2\left(\Delta y\cdot x-\Delta x\cdot y+B\cdot\Delta x\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{\mathrm{start}}=2\Delta y-\Delta x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta_{E}=2\Delta y\qquad\Delta_{NE}=2\left(\Delta y-\Delta x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+ציור מעגלים
+\end_layout
+
+\begin_layout Standard
+המשוואה המרומזת של מעגל )שמרכזו, לשם הפשטות, בראשית הצירים( היא 
+\begin_inset Formula $x^{2}+y^{2}-R^{2}=0$
+\end_inset
+
+.
+ הנוסחה המפורשת היא 
+\begin_inset Formula $y=\pm\sqrt{R^{2}-x^{2}}$
+\end_inset
+
+.
+ ובהצגה פרמטרית 
+\begin_inset Formula $\begin{bmatrix}x\\
+y
+\end{bmatrix}=\begin{bmatrix}R\cos\left(t\right)\\
+R\sin\left(t\right)
+\end{bmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשביל לצייר מעגל בצורה הכי פשוטה:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $x=-R$
+\end_inset
+
+ to 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $y=\sqrt{R^{2}-x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+PlotPixel
+\begin_inset Formula $\left(x,\mathrm{round}\left(y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+PlotPixel
+\begin_inset Formula $\left(x,-\mathrm{round}\left(y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+כמובן - מדובר באלגוריתם מאוד יקר, שצריך כל פעם להוציא שורש.
+\end_layout
+
+\begin_layout Standard
+שיפור אחד הוא להשתמש בסימטריה, לחשב שמינית מעגל ולצייר לכל נקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים )עם היפוך 
+\begin_inset Formula $x\leftrightarrow y$
+\end_inset
+
+ ועם היפוכי סימנים(.
+ אבל זה עדיין יקר, ונרצה גם כאן להשתמש בשיטת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MidPoint
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אם מתחילים מ
+\begin_inset Formula $\left(x_{0},y_{0}\right)=\left(0,R\right)$
+\end_inset
+
+ - כלומר השמינית הראשונה ימינה מהנקודה העליונה של המעגל - אז אפשר ללכת או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+E
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SE
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושוב נשתמש בסימן של 
+\begin_inset Formula $d\left(x,y\right)$
+\end_inset
+
+ כדי להחליט, כאשר:
+\begin_inset Formula 
+\[
+d\left(x,y\right)=f\left(x,y\right)=x^{2}+y^{2}-R^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כלומר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נתחיל עם 
+\begin_inset Formula $\left(x_{0}=0,y_{0}=R\right)$
+\end_inset
+
+ ו
+\begin_inset Formula 
+\[
+d_{\mathrm{start}}=d\left(x_{0}+1,y_{0}-\frac{1}{2}\right)=d\left(1,R-\frac{1}{2}\right)=\frac{5}{4}-R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d<0$
+\end_inset
+
+ נזוז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+E
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\Delta_{E}=d\left(x_{0}+2,y_{0}-\frac{1}{2}\right)-d\left(x_{0}+1,y_{0}-\frac{1}{2}\right)=2_{x0}+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $d>0$
+\end_inset
+
+ נזוז
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SE
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\Delta_{SE}=d\left(x_{0}+2,y_{0}-\frac{3}{2}\right)-d\left(x_{0}+1,y_{0}-\frac{1}{2}\right)=2\left(x_{0}-y_{0}\right)+5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשים לב ש
+\begin_inset Formula $\Delta_{E}$
+\end_inset
+
+ ו
+\begin_inset Formula $\Delta_{SE}$
+\end_inset
+
+ כבר לא קבועים!
+\end_layout
+
+\begin_layout Itemize
+בגלל ש
+\begin_inset Formula $d$
+\end_inset
+
+ גדל בערכים שלמים, ובגלל שאיכפת לנו רק מהסימן שלו, אפשר להשתמש ב
+\begin_inset Formula $\mathrm{d_{start}}=1-R$
+\end_inset
+
+ ולקבל אלגוריתם שעובד עם שלמים בלי להשפיע על התוצאה.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+מילוי פוליגונים
+\end_layout
+
+\begin_layout Standard
+בהינתן פוליגון, אנחנו רוצים למלא אותו בצבע מסויים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הנחות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הפוליגון פשוט:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אין הצטלבויות
+\end_layout
+
+\begin_layout Itemize
+אין בו חורים
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+איך צובעים אותו? יש שתי שיטות:
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Flood Fill
+\end_layout
+
+\begin_layout Standard
+נבחר נקודה בתוך הפוליגון, ונצבע אותה.
+ נלך רקורסיבית לארבעת השכנים שלה ונבדוק כל אחד אם צריך לצבוע אותו )כלומר
+ אם הוא לא על הגבול ולא צבוע(.
+ אם כן - נצבע אותו, וניכנס רקורסיבית גם לשכנים שלו.
+\end_layout
+
+\begin_layout Standard
+השיטה הזאת מאוד מאוד יקרה - יש כאן רקורסיה עם הסתעפות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)אי אפשר להפוך אותה לרקורסיית קריאת זנב( וצריך לבדוק לכל נקודה ונקודה אם
+ היא בתוך הפוליגון.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Scan Conversion
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת: ניתן לבדוק אם נקודה נמצאת בתוך פוליגון באמצעות ספירת נקודות החיתוך
+ של הפוליגון עם קרן כלשהי מהנקודה.
+ אם הוא אי-זוגי - הנקודה בתוך הפוליגון.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $j:=0$
+\end_inset
+
+ to ScreenYMax do
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $I:=$
+\end_inset
+
+points of intersection on edges from 
+\begin_inset Formula $P$
+\end_inset
+
+ with line 
+\begin_inset Formula $y=j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Sort 
+\begin_inset Formula $I$
+\end_inset
+
+ in increasing 
+\begin_inset Formula $x$
+\end_inset
+
+ order and fill with color 
+\begin_inset Formula $c$
+\end_inset
+
+ alternating segments
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+בעיה - מה עושים כשהקרן נחתכת עם שני קווים? מתייחסים לזה כאחד או כ
+\numeric on
+2
+\numeric off
+? המצב הזה יכול להיות או כניסה/יציאה או כניסה+יציאה.
+ הפתרון הוא להחליט שכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+edge
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא קטע פתוח-סגור כאשר לוקחים את ה
+\begin_inset Formula $y$
+\end_inset
+
+ המינימלי שלו ולא את ה
+\begin_inset Formula $y$
+\end_inset
+
+ המקסימלי שלו.
+\end_layout
+
+\begin_layout Standard
+אפשר לשפר את האלגוריתם.
+ לא צריך כל פעם למצוא את החיתוך עם כל הקשתות - אפשר להחזיק את כל הקשתות
+ ברשימה מקושרת )
+\begin_inset Formula $A$
+\end_inset
+
+( ממוינות לפי 
+\begin_inset Formula $y_{\mathrm{min}}$
+\end_inset
+
+ של הקשת, וכשסורקים פס רוחב - לא צריך להתייחס לקשתות שה
+\begin_inset Formula $y_{\mathrm{min}}$
+\end_inset
+
+ שלהן גדול מדי )כלומר מתחילים מאמצע הרשימה(.
+ וכשעוברים 
+\begin_inset Formula $y_{\mathrm{max}}$
+\end_inset
+
+ של קשת מוציאים אותה מהרשימה )מוציאים ישר כשמגיעים ל
+\begin_inset Formula $y_{\mathrm{max}}$
+\end_inset
+
+ - כי אנחנו לא רוצים אותו(
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+ScanConvert
+\begin_inset Formula $\left(P,c\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Sort all edges 
+\begin_inset Formula $E=\left\{ E_{j}\right\} $
+\end_inset
+
+ in increasing 
+\begin_inset Formula $\mathrm{MinY}\left(E_{j}\right)$
+\end_inset
+
+ order
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $A:=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+for 
+\begin_inset Formula $k:=0$
+\end_inset
+
+ to ScreenYMax do
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+for each 
+\begin_inset Formula $E_{j}\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $\mathrm{MinY}\left(E_{j}\right)\le k$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $A:=A\cup\left\{ E_{j}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $E:=E-E_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+for each 
+\begin_inset Formula $E_{j}\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+if 
+\begin_inset Formula $\mathrm{MaxY}\left(E_{j}\right)\le k$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $A:=A-E_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+\begin_inset Formula $I:=$
+\end_inset
+
+Points of intersection of members from 
+\begin_inset Formula $A$
+\end_inset
+
+ with line 
+\begin_inset Formula $y=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang english
+Sort 
+\begin_inset Formula $I$
+\end_inset
+
+ in increasing 
+\begin_inset Formula $x$
+\end_inset
+
+ order and fill with color 
+\begin_inset Formula $c$
+\end_inset
+
+ alternating segments
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+
+\lang english
+end
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

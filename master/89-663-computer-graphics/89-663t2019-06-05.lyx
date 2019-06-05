@@ -1,0 +1,641 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מתרגל}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-06-05
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+נקודה בתוך פוליגון
+\end_layout
+
+\begin_layout Standard
+איך יודעים אם נקודה נמצאת בתוך פוליגון? יש כמה שיטות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Crossing number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מוציאים קרן מהנקודה, ובודקים כמה קשתות היא חוצה.
+ אם המספר אי זוגי - אנחנו בפנים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Winding number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בודקים כמה פעמים הפוליגון מתקפל סביב הנקודה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Crossing number - non-zero rule
+\end_layout
+
+\begin_layout Standard
+אם יש לנו כוכב מחומש - החלק באמצע נחשב בפנים או בחוץ? אם קרן ממנו היא תחתוך
+ מספר זוגי של קשתות.
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר את ה
+\lang english
+crossing number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בצורה יותר מתוחכמת.
+ לקשתות יש כיוון, ולכן אפשר להגדיר 
+\begin_inset Quotes eld
+\end_inset
+
+למעלה
+\begin_inset Quotes erd
+\end_inset
+
+ ו
+\begin_inset Quotes erd
+\end_inset
+
+למטה
+\begin_inset Quotes erd
+\end_inset
+
+ עבור חצייה של קשת.
+ אפשר לספור חציה כלפי מעלה כ
+\begin_inset Formula $+1$
+\end_inset
+
+ וחציה כלפי מטה כ
+\begin_inset Formula $-1$
+\end_inset
+
+ - ואז הנקודה בחוץ רק אם הסכום הוא 
+\begin_inset Formula $0$
+\end_inset
+
+ )מספר היציאות שווה למספר הכניסות(
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Winding number
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Winding number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא מספר הפעמים שהפוליגון 
+\begin_inset Quotes eld
+\end_inset
+
+מתקפל
+\begin_inset Quotes erd
+\end_inset
+
+ מסביב לנקודה:
+\end_layout
+
+\begin_layout Itemize
+עוברים על הפוליגון ובודקים כמה פעמים הקפנו את הנקודה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל הקפה עם כיוון השעון מקדמת את 
+\begin_inset Formula $wn$
+\end_inset
+
+ ב
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Itemize
+כל הקפה נגד כיוון השעון מפחיתה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\begin_inset Formula $wn$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $wn=0$
+\end_inset
+
+ - הנקודה בחוץ.
+\end_layout
+
+\begin_layout Standard
+בעצם סוכמים את הזוויות )תוך התחשבות בכיוון שלהן( ומחלקים ב
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Crossing number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מציאת נקודת החיתוך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=p_{0}+\left(p_{1}-p_{0}\right)t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{x}=p_{0x}+\left(p_{1x}-p_{0x}\right)t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{y}=p_{0y}+\left(p_{1y}-p_{0y}\right)t
+\]
+
+\end_inset
+
+את 
+\begin_inset Formula $p_{y}$
+\end_inset
+
+ כבר יש לנו מהנקודה עצמה, אז אפשר בקלות להציב ולקבל את 
+\begin_inset Formula $p_{x}$
+\end_inset
+
+.
+ אבל זה עדיין איטי, וכשעושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ScanConversion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר לייעל את זה.
+ נשמור לכל קשת 
+\begin_inset Formula $Y_{\min},X_{\min},\mathrm{Slope}$
+\end_inset
+
+, וננצל את העובדה ש
+\begin_inset Formula $x$
+\end_inset
+
+ משתנה מעט בין 
+\begin_inset Formula $y$
+\end_inset
+
+ים:
+\begin_inset Formula 
+\[
+y_{i}=m\cdot x_{i}+b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y_{i+1}=m\cdot x_{i-1}+b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{slope}=\frac{x_{i-1}-x_{i}}{y_{i-1}-y_{i}}=\frac{1}{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{i}=x_{i-1}+\frac{1}{m}
+\]
+
+\end_inset
+
+וככה אפשר בכל פעם שמקדמים 
+\begin_inset Formula $y$
+\end_inset
+
+ לעדכן ביעילות את ה
+\begin_inset Formula $x$
+\end_inset
+
+ים של כל הקשתות.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,3385 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+גרפיקה ממוחשבת
+\\
+\selectlanguage{english}
+89-663-01
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{מקליד}:
+{עידן אריה}
+\\
+\textbf{מרצה}:
+{ד"ר אורן קאפח}
+\\
+\textbf{תאריך:}
+\beginL
+2019-06-12
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+צורות בסגנון חופשי
+\end_layout
+
+\begin_layout Standard
+נרצה דרך לתאר ולצייר משטחים לא ישרים.
+\end_layout
+
+\begin_layout Standard
+אם יש לנו אוסף של נקודות, ורוצים להעביר קו, יש שתי גישות:
+\end_layout
+
+\begin_layout Enumerate
+אינטרפולציה - קו ש
+\series bold
+עובר
+\series default
+ דרך 
+\series bold
+כל
+\series default
+ הנקודות.
+\end_layout
+
+\begin_layout Enumerate
+אפרוקסימציה - קו שעובר קרוב ככל האפשר לכל הנקודות.
+\end_layout
+
+\begin_layout Section*
+פולינום
+\end_layout
+
+\begin_layout Standard
+הדרך הפשוטה ביותר היא פולינום - דרך 
+\begin_inset Formula $N$
+\end_inset
+
+ נקודות יש פולינום ממעלה 
+\begin_inset Formula $N-1$
+\end_inset
+
+ שעובר דרך כולן.
+ במקרה של שתי נקודות, ה
+\lang english
+constraints
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלנו הם:
+\begin_inset Formula 
+\[
+x\left(0\right)=a_{x}=P_{0}^{x}\qquad x\left(1\right)=a_{x}+b_{x}=P_{1}^{x}
+\]
+
+\end_inset
+
+נפתור כדי למצוא את המקדמים של 
+\begin_inset Formula $x\left(u\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a_{x}=P_{0}\qquad b_{x}=P_{1}^{x}-P_{0}^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies x\left(u\right)=P_{0}^{x}+\left(P_{1}^{x}-P_{0}^{x}\right)u
+\]
+
+\end_inset
+
+ואם נפתור עבור 
+\begin_inset Formula $\begin{bmatrix}x\left(u\right) & y\left(u\right) & z\left(u\right)\end{bmatrix}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V\left(u\right)=\begin{bmatrix}x\left(u\right)\\
+y\left(u\right)\\
+z\left(u\right)
+\end{bmatrix}=P_{0}+\left(P_{1}-P_{0}\right)u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יתרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מדוייק
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חסרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למקדמים של הפולינום אין שום משמעות גיאומטרית.
+\end_layout
+
+\begin_layout Itemize
+שינוי קטן של נקודה יכול לשנות בצורה דרמטית את מקדמי הפולינום.
+\end_layout
+
+\begin_layout Itemize
+אין לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+local operations
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שינויים קטנים עם תוכנת עריכה משנים בצורה חדה את הייצוג.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הפתרון:
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Polynomial Splines
+\end_layout
+
+\begin_layout Standard
+לוקחים את העקומה וחותכים אותה למקטעים, שכל מקטע ניתן לייצור ע
+\begin_inset Quotes erd
+\end_inset
+
+י פולינום ממעלה נמוכה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יתרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מדוייק
+\end_layout
+
+\begin_layout Itemize
+מקבלים פולינומים ממעלה נמוכה.
+\end_layout
+
+\begin_layout Itemize
+אפשר לבצע פעולות נקודתיות.
+\end_layout
+
+\begin_layout Itemize
+אפשר לייצר מקדמים בעלי משמעות גיאומטרית
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הגדרה - 
+\lang english
+Tangent Vector
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V\left(u\right)=\left[x\left(u\right),y\left(u\right),z\left(u\right)\right]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $u\in\left[0,1\right]$
+\end_inset
+
+ עקומה פרמטרית רציפה ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ אזי ה
+\lang english
+tangent vector
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $u_{0}$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+\vec{T}\left(u_{0}\right)=V'\left(u_{0}\right)=\frac{\mathrm{d}V\left(u\right)}{\mathrm{d}u}|_{u=u_{0}}=\left[\frac{\mathrm{d}x}{\mathrm{d}u}\frac{\mathrm{d}y}{\mathrm{d}u}\frac{\mathrm{d}z}{\mathrm{d}u}\right]_{u=u_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעצם 
+\begin_inset Formula $V\left(u\right)$
+\end_inset
+
+ הוא ה
+\lang english
+trajectory
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל נקודה.
+ הוא צריך להיות רציף גיאומטרית - כלומר רציף מבחינת כיוון אבל לאו דווקא מבחינת
+ גודל - כלומר 
+\begin_inset Formula $V'_{1}\left(1\right)=\alpha V'_{2}\left(0\right)$
+\end_inset
+
+.
+ ככל שניקח פולינום ממעלה יותר גבוהה נוכל ליצור רציפות יותר גבוהה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Liner Spline
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+spline
+\lang hebrew
+ הכי פשוט - לכל מקטע ניקח פונקציה לינארית.
+ אבל כדי שלמקדמים תהיה משמעות גיאומטרית נציג אותם בצורה קצת אחרת.
+\end_layout
+
+\begin_layout Standard
+הנוסחאות הבסיסיות הן:
+\begin_inset Formula 
+\[
+x\left(u\right)=a_{x}u+b_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(u\right)=a_{y}u+b_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z\left(u\right)=a_{z}u+b_{z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $u\in\left[0,1\right]$
+\end_inset
+
+, נגדיר:
+\begin_inset Formula 
+\[
+U^{T}\left(u\right)=\begin{bmatrix}u & 1\end{bmatrix}\qquad Q=\begin{bmatrix}a_{x} & a_{y} & a_{z}\\
+b_{x} & b_{y} & b_{z}
+\end{bmatrix}
+\]
+
+\end_inset
+
+ואז נוכל לכתוב את העקומה בתור:
+\begin_inset Formula 
+\[
+\begin{bmatrix}x\left(u\right) & y\left(u\right) & z\left(u\right)\end{bmatrix}=V^{T}\left(u\right)=U^{T}\left(u\right)Q
+\]
+
+\end_inset
+
+המקדמים של 
+\begin_inset Formula $Q$
+\end_inset
+
+ לא ידועים, וצריך לחשב אותם.
+ לשם כך צריך לספק 
+\lang english
+constraint
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - למשל 
+\begin_inset Formula $p_{0}^{T}=U^{T}\left(0\right)Q$
+\end_inset
+
+.
+ אם יש לנו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\lang english
+constaints
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאלה נוכל לחשב:
+\begin_inset Formula 
+\[
+\underbrace{\begin{bmatrix}p_{0}^{T}\\
+p_{1}^{T}
+\end{bmatrix}}_{G}=\underbrace{\begin{bmatrix}U^{T}\left(0\right)\\
+U^{T}\left(1\right)
+\end{bmatrix}}_{M}Q
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+G=MQ\implies M^{-1}G=Q
+\]
+
+\end_inset
+
+
+\begin_inset Formula $G$
+\end_inset
+
+ זה המגבלות הגיאומטריות, ויש להן משמעות גיאומטרית.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ היא מטריצה קבועה - ולכן גם 
+\begin_inset Formula $M^{-1}$
+\end_inset
+
+ קבועה, ולא משתנה כאשר המגבלות הגיאומטריות משתנות.
+ לכן אם נחליף את 
+\begin_inset Formula $Q$
+\end_inset
+
+ ב
+\begin_inset Formula $M^{-1}G$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\[
+V^{T}\left(u\right)=U^{T}\left(u\right)M^{-1}G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $M^{-1}$
+\end_inset
+
+ מטריצת הבסיס.
+ לא תלויה במגבלות גיאומטריות - קבועה לכל סוג של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+spline
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $U^{T}M^{-1}$
+\end_inset
+
+ המטריצה של פונקציית ה
+\lang english
+blending
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $G$
+\end_inset
+
+ המטריצה הגיאומטרית
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\begin{bmatrix}p_{0}^{x} & p_{0}^{y} & p_{0}^{z}\\
+p_{1}^{x} & p_{1}^{y} & p_{1}^{z}
+\end{bmatrix}}_{G}=\underbrace{\begin{bmatrix}0 & 1\\
+1 & 1
+\end{bmatrix}}_{M}\underbrace{\begin{bmatrix}a_{x} & a_{y} & a_{z}\\
+b_{x} & b_{y} & b_{z}
+\end{bmatrix}}_{Q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\begin{bmatrix}x\left(u\right) & y\left(u\right) & z\left(u\right)\end{bmatrix}}_{V^{T}\left(u\right)}=\underbrace{\begin{bmatrix}u & 1\end{bmatrix}}_{U^{T}\left(u\right)}\underbrace{\begin{bmatrix}-1 & 1\\
+1 & 0
+\end{bmatrix}}_{M^{-1}}\underbrace{\begin{bmatrix}p_{0}^{T}\\
+p_{1}^{T}
+\end{bmatrix}}_{G}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V^{T}\left(u\right)=\underbrace{\begin{bmatrix}1-u & u\end{bmatrix}}_{\textnormal{blending function}}\begin{bmatrix}p_{0}^{T}\\
+p_{1}^{T}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרציפות היא 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+.
+ אם רוצים רציפות יותר גבוהה צריך פולינום ממעלה יותר גבוהה.
+ נשים לב גם שהמגבלות לא חייבות להיות דווקא מיקומי נקודות!
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Cubic Spline Interpolation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x\left(u\right)=a_{x}u^{3}+b_{x}u^{2}+c_{x}u+d_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y\left(u\right)=a_{y}u^{3}+b_{y}u^{2}+c_{y}u+d_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z\left(u\right)=a_{z}u^{3}+b_{z}u^{2}+c_{z}u+d_{z}
+\]
+
+\end_inset
+
+כמו קודם, נגביל 
+\begin_inset Formula $u\in\left[0,1\right]$
+\end_inset
+
+ ונגדיר:
+\begin_inset Formula 
+\[
+U^{T}\left(u\right)=\begin{bmatrix}u^{3} & u^{2} & u & 1\end{bmatrix}\qquad Q=\begin{bmatrix}a_{x} & a_{y} & a_{z}\\
+b_{x} & b_{y} & b_{z}\\
+c_{x} & c_{y} & c_{z}\\
+d_{x} & d_{y} & d_{z}
+\end{bmatrix}
+\]
+
+\end_inset
+
+ונכתוב
+\begin_inset Formula 
+\[
+\begin{bmatrix}x\left(u\right) & y\left(u\right) & z\left(u\right)\end{bmatrix}=V^{T}\left(u\right)=U^{T}\left(u\right)Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Hermite Interpolation
+\end_layout
+
+\begin_layout Standard
+במקום מגבלות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות, ניתן בתור מגבלות את נקודות ההתחלה והסיום - ואת ה
+\lang english
+tangent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנקודת ההתחלה ובנקודת הסיום.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\heartsuit$
+\end_inset
+
+: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ה
+\lang english
+tangent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה בעצם הנגזרת.
+\end_layout
+
+\begin_layout Itemize
+אם נשמור על אותה נגזרת בין החלקים של ה
+\lang english
+spline
+\lang hebrew
+, נקבל אוטומטית רציפות 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נחשב.
+ יש לנו:
+\begin_inset Formula 
+\[
+V^{T}\left(u\right)=\begin{bmatrix}u^{3} & u^{2} & u & 1\end{bmatrix}Q
+\]
+
+\end_inset
+
+נגזור:
+\begin_inset Formula 
+\[
+\left(V'\right)^{T}\left(u\right)=\begin{bmatrix}3u^{3} & 2u & 1 & 0\end{bmatrix}
+\]
+
+\end_inset
+
+ואם נכתוב את זה בתור מטריצה:
+\begin_inset Formula 
+\[
+G=MQ\implies\underbrace{\begin{bmatrix}p_{k}\\
+p_{k+1}\\
+T_{k}\\
+T_{k+1}
+\end{bmatrix}}_{G}=\underbrace{\begin{bmatrix}0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1\\
+0 & 0 & 1 & 0\\
+3 & 2 & 1 & 0
+\end{bmatrix}}_{M}Q
+\]
+
+\end_inset
+
+ולכן:
+\begin_inset Formula 
+\[
+V^{T}\left(u\right)=U^{T}\left(u\right)Q=U^{T}\left(u\right)M^{-1}G
+\]
+
+\end_inset
+
+כאשר
+\begin_inset Formula 
+\[
+M^{-T}=\begin{bmatrix}2 & -2 & 1 & 1\\
+-3 & 3 & -2 & -1\\
+0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+ואז:
+\begin_inset Formula 
+\[
+V\left(u\right)=\begin{bmatrix}u^{3} & u^{2} & u & 1\end{bmatrix}\begin{bmatrix}2 & -2 & 1 & 1\\
+-3 & 3 & -2 & -1\\
+0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0
+\end{bmatrix}\underbrace{\begin{bmatrix}p_{k}\\
+p_{k+1}\\
+T_{k}\\
+T_{k+1}
+\end{bmatrix}}_{\textnormal{geometry matrix}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\left(u\right)=\underbrace{\begin{bmatrix}2u^{3}-3u^{2}+1\\
+-2u^{3}+3u^{2}\\
+u^{3}-2u^{2}+u\\
+u^{3}-u^{2}
+\end{bmatrix}}_{\textnormal{blending function}}\begin{bmatrix}p_{k}\\
+p_{k+1}\\
+T_{k}\\
+T_{k+1}
+\end{bmatrix}=\begin{bmatrix}H_{0}\left(u\right)\\
+H_{1}\left(u\right)\\
+H_{2}\left(u\right)\\
+H_{3}\left(u\right)
+\end{bmatrix}^{T}\begin{bmatrix}p_{k}\\
+p_{k+1}\\
+T_{k}\\
+T_{k+1}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+יתרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קומבינציה לינארית בין הערכים בנקודות הקצה והטנגנטים בנקודות הקצה.
+\end_layout
+
+\begin_layout Itemize
+רציף ברציפות 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מגבלות ומקדמים פר מקטע ומקטע - ה
+\lang english
+blending function
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נשאר אותו דבר.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+חסרונות: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+צריך לספק טנגנטים בכל נקודה ונקודה.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\lang english
+Cardinal Spline
+\end_layout
+
+\begin_layout Standard
+כמו ה
+\lang english
+Hemrite Spline
+\lang hebrew
+, גם ה
+\lang english
+Cardinal Spline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Cubic Spline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+spline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממעלה שלישית.
+ אבל כאן לא משתמשים בטנגנטים - במקום זה משתמשים בארבע נקודות:
+\begin_inset Formula 
+\[
+V\left(0\right)=P_{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\left(1\right)=P_{k+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V'\left(0\right)=s\left(P_{k+1}-P_{k-1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V'\left(1\right)=s\left(P_{k+2}-P_{k}\right)
+\]
+
+\end_inset
+
+למעשה אנחנו מסמלצים את ה
+\lang english
+Hermite Spline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י מתן שתי נקודות נוספות.
+\begin_inset Formula 
+\[
+\begin{bmatrix}p_{k}\\
+p_{k+1}\\
+T_{k}\\
+T_{k+1}
+\end{bmatrix}=\begin{bmatrix}0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+-s & 0 & s & 0\\
+0 & -s & 0 & s
+\end{bmatrix}\begin{bmatrix}p_{k-1}\\
+p_{k}\\
+p_{k+1}\\
+p_{k+2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+ואם נכניס את זה לתוך המשוואות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hermite Interpolation
+\lang hebrew
+ נקבל:
+\begin_inset Formula 
+\[
+V\left(u\right)=\begin{bmatrix}u^{3}\\
+u^{2}\\
+u\\
+1
+\end{bmatrix}^{T}\begin{bmatrix}-s & 2-s & s-2 & s\\
+2s & s-3 & 3-2s & -s\\
+-s & 0 & s & 0\\
+0 & 1 & 0 & 0
+\end{bmatrix}\begin{bmatrix}p_{k-1}\\
+p_{k}\\
+p_{k+1}\\
+p_{k+2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Itemize
+רציפות 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קומבינציה לינארית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פונקציות
+\end_layout
+
+\begin_layout Itemize
+יתרון: לא צריך טנגטנים
+\end_layout
+
+\begin_layout Itemize
+חסון - יכול להיות שקירוב הטנגנטים לא יהיה מדוייק
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+ייצוג צבע
+\end_layout
+
+\begin_layout Standard
+צבע זה בעצם תדר של אור, באורך גל בין 
+\begin_inset Formula $380\unit{nm}$
+\end_inset
+
+ ל
+\begin_inset Formula $750\unit{nm}$
+\end_inset
+
+.
+ כשאנחנו רואים אור אנחנו רואים שילוב של הרבה מאוד אורכי גל, ומקבלים קרינה
+ בעוצמה לפי הספקטרום בכל אורך גל.
+\end_layout
+
+\begin_layout Standard
+כאשר מדברים על תמונות, אנחנו לא באמת מייצרים את כל הספקטרום עבור כל פיקסל,
+ אלא משתמשים בשלושה צבעים כדי לייצג את כל הצבעים הנראים.
+ איך זה עובד?
+\end_layout
+
+\begin_layout Standard
+לפי התיאוריה הטריכומטית )
+\lang english
+Trichromatic Color Theory
+\lang hebrew
+( של תומאס יאנג, העין שלנו לא באמת רואה את כל הצבעים האפשריים.
+ יש לנו בעין מספק מצומצם של קולטני אור )
+\lang english
+receptors
+\lang hebrew
+(.
+ ב
+\numeric on
+1850
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הלמולץ ומקסוול איששו בניסויי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Color Matching
+\lang hebrew
+ שיש שלושה סוגים של קולטנים כאלה, שקולטים עוצמות שונות.
+ חיישן אחד מגיב בעיקר לאדום, חיישן שני מגיב בעיקר לירוק וחיישן שלישי מגיב
+ בעיקר לכחול.
+\end_layout
+
+\begin_layout Standard
+החיישנים בעין מורכבים משני סוגים -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+rods
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דקים ו
+\lang english
+cones
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהם יותר עבים.
+ ה
+\lang english
+rods
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם לא חיישני צבע - הם רואים שחור לבן, רק את עוצמת האור שמגיעה.
+ ה
+\lang english
+cones
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם חיישני הצבע.
+ כדי ש
+\lang english
+cone
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יגיב הוא צריך עצמת אור יותר גבוהה - הם הרבה פחות רגישים מ
+\lang english
+rods
+\lang hebrew
+.
+ בגלל זה בחושך רואים שחור לבן - כי ה
+\lang english
+cones
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא מופעלים.
+ במרכז יש בעיקר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cones
+\lang hebrew
+, וככל שמתרחקים לצדדים כמות ה
+\lang english
+cones
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יורדת וכמות ה
+\lang english
+rods
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עולה.
+ יש שלושה סוגים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cones
+\lang hebrew
+, שמסווגים לפי תחומי אורך הגל להם הם מגיבים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Long(L)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מגיב לאדום
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Medium(M)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מגיב לירוק
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Short(S)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מגיב לכחול
+\end_layout
+
+\begin_layout Standard
+זה בעצם נותן לנו את מרחב הצבע בתור קוביה, כשכל צבע יסוד הוא מימד אחר שלה.
+ אבל יש גם דרכים אחרות לייצג את מרחב הצבע - למשל גליל 
+\lang english
+HSB
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Hue
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היקף הגליל - מיקום הצבע על הקשת
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Satuation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רדיוס הגליל - כמה הצבע טהור
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Brightness
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ גובה הגליל - הבהירות
+\end_layout
+
+\begin_layout Standard
+יש גם את מרחב הצבהים המשלימים, שגם הוא קוביה:
+\end_layout
+
+\begin_layout Itemize
+כחול-צהוב
+\end_layout
+
+\begin_layout Itemize
+אדום-ירום
+\end_layout
+
+\begin_layout Itemize
+שחור-לבן
+\end_layout
+
+\begin_layout Section*
+מערכות צבעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+additive
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+subtructive
+\end_layout
+
+\begin_layout Standard
+כאשר מקרינים צבע מוסיפים צבעים )אדום + ירוק + כחול(.
+ כאשר צובעים אנחנו שמים צבעים שבולעים אורכי גל מסויימים )לבן - אדום - ירוק
+ - כחול(.
+ בגלל זה צבעי היסוד של צביעה הם שונים:
+\end_layout
+
+\begin_layout Itemize
+צהוב - שילוב של ירוק ואדום
+\end_layout
+
+\begin_layout Itemize
+צ'יאן - שילוב של כחול וירוק.
+ דומה לכחול.
+\end_layout
+
+\begin_layout Itemize
+מג'נטה - שילוב של אדום וכחול.
+ דומה לאדום.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+מרחב צבעים לינארי
+\end_layout
+
+\begin_layout Standard
+מרחב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RGB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למשל הוא מרחב לינארי - עושים צירוף לינארי של שלושה צבעים.
+ בשביל זה צריך שלושה מקדמים.
+\end_layout
+
+\begin_layout Standard
+משתמשים במרחב צבעים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XYZ
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+X=k\int P\left(\lambda\right)\overline{x}_{\lambda}\mathrm{\,d}\lambda
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=k\int P\left(\lambda\right)\overline{y}_{\lambda}\mathrm{\,d}\lambda
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z=k\int P\left(\lambda\right)\overline{z}_{\lambda}\mathrm{\,d}\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שגם הוא לינארי, ולכן אפשר לעשות המרת בסיסים:
+\begin_inset Formula 
+\[
+\begin{bmatrix}X\\
+Y\\
+Z
+\end{bmatrix}=\begin{bmatrix}2.365 & -0.515 & 0.005\\
+-0.897 & 1.426 & -0.014\\
+-0.468 & 0.089 & 1.009
+\end{bmatrix}\begin{bmatrix}R\\
+G\\
+B
+\end{bmatrix}
+\]
+
+\end_inset
+
+אבל אם מתעלמים מהבהירות - כלומר רוצים 
+\begin_inset Formula $x+y+z=1$
+\end_inset
+
+ - אפשר להגדיר:
+\begin_inset Formula 
+\[
+x=\frac{X}{X+Y+Z}\qquad y=\frac{Y}{X+Y+Z}\qquad z=\frac{Z}{X+Y+Z}
+\]
+
+\end_inset
+
+ואז אפשר להגדיר את הצבע באמצעות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ בלבד )ללא צורך ב
+\begin_inset Formula $Z$
+\end_inset
+
+ - אבל אין מידע על בהירות(
+\end_layout
+
+\begin_layout Standard
+המרכז הוא הלבן - אבל יש כמה אפשרויות לבחור אותו )וזה חלק מההבדל בין שיטות
+ שידור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PAL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+NTSC
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Section*
+מרחב צבעים פרספטואלי -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HSV/HSB
+\end_layout
+
+\begin_layout Standard
+יש הבדל בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Brightness
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\lang english
+Value
+\lang hebrew
+.
+ אם נכפיל פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את העצמה של האור, לא נראה אותו בהיר פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בגלל שהתפישה שלנו היא סקאלה לוגריתמית.
+ לכן אנחנו צריכים להגדיר את העצמה כ
+\lang english
+brightness
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כמה זה נתפס בעין - ולא כ
+\lang english
+value
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כמה עצמה באמת יש.
+ לפי חוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+weber
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{Perceived Brightness}=\log\left(I\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להפוך את מרחב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XYZ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ליותר פרספטואלי, צריך פונקציה 
+\series bold
+לא לינארית
+\series default
+:
+\begin_inset Formula 
+\[
+u=\frac{4x}{-2x+12y+3}\qquad v=\frac{6y}{-2x+12y+3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מרחב צבעים משלימים
+\end_layout
+
+\begin_layout Standard
+יש עוד שיטת ייצוג של צבע -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+YIQ
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Y
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ עוצמת התאורה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+I
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איפה אנחנו על הסקאלה של אדום-ירוק
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Q
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ איפה אנחנו על הסקאלה של כחול-צהוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}Y\\
+I\\
+Q
+\end{bmatrix}=\begin{bmatrix}0.299 & 0.587 & 0.114\\
+0.569 & -0.275 & -0.321\\
+0.212 & -0.523 & 0.311
+\end{bmatrix}\begin{bmatrix}X\\
+Y\\
+Z
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסתבר שהעין הכי פחות רגישה לטשטוש ב
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ משתמשים בזה בשביל דחיסה - המידע ב
+\begin_inset Formula $Q$
+\end_inset
+
+ הכי פחות חשוב, ולכן אם צריך לאבד מידע עדיף לאבד ב
+\begin_inset Formula $Q$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באופן דומה, בפורמט
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size normal
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RGB
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+העין הכי פחות רגישה לכחול
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CMY
+\end_layout
+
+\begin_layout Standard
+משתמשים במדפסות.
+ לפעמים גם מוסיפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+K
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הצבע השחור.
+\end_layout
+
+\end_body
+\end_document

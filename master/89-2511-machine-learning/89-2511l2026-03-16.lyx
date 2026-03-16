@@ -1,0 +1,1599 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+פרופ' צ'צ'יק גל
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-03-16
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+דורות של מודלי סיווג (
+\lang english
+Sentiment Classification
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\text{Software 1.0}$
+\end_inset
+
+ כותבים קוד שמבצע את הסיווג
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\text{Software 2.0}$
+\end_inset
+
+ מאמנים מודל
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\text{Software 3.0}$
+\end_inset
+
+ כותבים פרומפט ל
+\lang english
+LLM
+\end_layout
+
+\begin_layout Section*
+גדילה של המודל
+\end_layout
+
+\begin_layout Standard
+יש שלושה צירים עיקריים,
+ בהם המודלים גדלים
+\end_layout
+
+\begin_layout Enumerate
+כמות הפרמטרים החופשיים
+\end_layout
+
+\begin_layout Enumerate
+כמות הנתונים הדרושה
+\end_layout
+
+\begin_layout Enumerate
+עלויות האימון
+\end_layout
+
+\begin_layout Section*
+היררכיית המושגים
+\end_layout
+
+\begin_layout Itemize
+בינה מלאכותית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Artificial Intelligence
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אוסף רחב מאוד של טכניקות שמטרתן לייצר התנהגויות המדמות אינטליגנציה.
+\end_layout
+
+\begin_layout Itemize
+למידת מכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Machine Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- טכניקות שבהן מלמדים כללים מתוך דוגמאות.
+\end_layout
+
+\begin_layout Itemize
+למידה עמוקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deep Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תחום בתוך למידת מכונה.
+\end_layout
+
+\begin_layout Section*
+סוגי בעיות ש
+\lang english
+AI
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לפתור,
+ לפי התפלגות דוגמאות
+\end_layout
+
+\begin_layout Standard
+התפלגות הדוגמאות לא אחידה.
+ יש מקרים מאוד נפוצים ומקרים מאוד נדירים.
+ זה אומר שצריך לפתור בעיה אחת עבור הדוגמאות הנפוצות ובעיה מאוד שונה עבור הדוגמאות הנדירות:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Memorize$
+\end_inset
+
+ בצד של הדוגמאות הנפוצות,
+ אנחנו הרבה פעמים נבחנים על דברים שכבר ראינו.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בשביל זה לא צריך למידה מסובכת אלא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+האסטרגיה הנכונה כאן היא שינון,
+ לצורך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+retrieval
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Generalize$
+\end_inset
+
+ באמצע הסקאלה יש מקרים שדומים לדברים שכבר ראינו,
+ אבל לא בדיוק - וצריך להכליל (
+\lang english
+Generalize
+\lang hebrew
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למידת תבניות
+\end_layout
+
+\begin_layout Itemize
+יותר קשה לבטוח בתוצאות
+\end_layout
+
+\begin_layout Itemize
+רוב ההתקדמויות המודרניות בתחום ה
+\lang english
+AI
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נכנסות לקטגוריה הזאת
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Optimize$
+\end_inset
+
+ בצד השני יש מקרים עם מעט מאוד דוגמאות קרובות - אולי אפילו בכלל לא.
+ כאן צריך לעשות הסקות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מודלים מכאניסטים וקאוזלים
+\end_layout
+
+\begin_layout Itemize
+תכנות קלאסי - אלגורתמים של חיפוש ואופטימיזציה
+\end_layout
+
+\begin_layout Itemize
+יותר קל לבטוח בתוצאות
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+סוגים של למידה מכונה
+\end_layout
+
+\begin_layout Itemize
+למידה מונחית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Supervised Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- למידה של כלל מתוך דוגמאות המורכבות מקלטים ופלטים.
+\end_layout
+
+\begin_layout Itemize
+למידה לא מונחית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Unsupervised Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- למצוא ייצוג של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+dataset
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שיהיה מועיל ל
+\begin_inset Quotes erd
+\end_inset
+
+משהו
+\begin_inset Quotes erd
+\end_inset
+
+.
+ למשל להוציא דברים חשובים מתוך מידע מורכב.
+\end_layout
+
+\begin_layout Itemize
+למידת חיזוקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Reinforcement Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מונחית באופן חלש.
+ למידה אינטראקטיבית.
+ סוכן שמבצע פעולות ולומד מתוך זה מה הוא צריך לעשות ומה אסור לו לעשות.
+ הפעולות שהסוכן מבצע יכולות לשנות את הסביבה.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בקורס הזה לא נלמד
+\family roman
+\series medium
+\shape up
+\size footnotesize
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Reinforcement Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+רקע מתמטי
+\end_layout
+
+\begin_layout Standard
+הקורס בנוי על שלושה תחומים מתמטיים
+\end_layout
+
+\begin_layout Enumerate
+אלגברה לינארית
+\end_layout
+
+\begin_layout Enumerate
+חשבון דיפרנציאלי ואינטגרלי
+\end_layout
+
+\begin_layout Enumerate
+הסתברות
+\end_layout
+
+\begin_layout Section*
+אלגברה לינארית
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\boldsymbol{v}\in\mathbb{R}^{d}$
+\end_inset
+
+ וקטור רב ממדי,
+ ו
+\begin_inset Formula $A\in\mathbb{R}^{d\times d}$
+\end_inset
+
+ מטריצה שמייצגת טרנספורמציה על הווקטור.
+\end_layout
+
+\begin_layout Standard
+רוב הווקטורים משנים את הכיוון של הווקטור ואולי גם את הגודל.
+ אבל יש ווקטורים שהכיוון שלהם לא משתנה.
+ הווקטורים האלה נקראים 
+\emph on
+ווקטורים עצמיים
+\emph default
+,
+ והשינוי בגודל שלהם נקראים 
+\end_layout
+
+\begin_layout Standard
+בצורה פורמלית:
+ מחפשים 
+\begin_inset Formula $v\in\mathbb{R}^{d}$
+\end_inset
+
+ וסקלרים 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $Av=\lambda v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מבצעים זאת ע
+\begin_inset Quotes erd
+\end_inset
+
+י פתרון מערכת משוואות:
+\begin_inset Formula 
+\[
+Av=\lambda Iv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(A-\lambda I\right)v=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לנרמל נקבע 
+\begin_inset Formula $\left\Vert v\right\Vert =1$
+\end_inset
+
+.
+ נשים לב ש
+\begin_inset Formula $\lambda$
+\end_inset
+
+ יכול להיות שלילי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם המטריצה סימטרית (
+\begin_inset Formula $A^{T}=A$
+\end_inset
+
+),
+ הווקטורים העצמיים הם אורתוגונליים
+\end_layout
+
+\begin_layout Itemize
+ערכים עצמיים יכולים להיות מרוכבים
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+מטריצה חיובית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה מטריצה תיקרה חיובית אם לכל וקטור 
+\begin_inset Formula $z\in\mathbb{R}^{d}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $z^{T}Az>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טענה כל ערך עצמי 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ של מטריצה חיובית 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא חיובי 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טענה אם כל הערכים עצמיים של מטריצה סימטרית 
+\begin_inset Formula $A\in\mathbb{R}^{d\times d}$
+\end_inset
+
+ הם חיוביים ושונים,
+ אזי המטריצה חיובית.
+\end_layout
+
+\begin_layout Section*
+משתנים מקריים רב ממדיים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת התפלגות משותפת
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יהיו שני משתנים מקריים:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ מקבל ערכים 
+\begin_inset Formula $x^{1},\dots,x^{k}$
+\end_inset
+
+ בהתפלגות 
+\begin_inset Formula $P\left(X=x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y$
+\end_inset
+
+ מקבל ערכים 
+\begin_inset Formula $y^{1},\dots,y^{l}$
+\end_inset
+
+ בהתפלגות 
+\begin_inset Formula $P\left(Y=y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שיש 
+\begin_inset Formula $d$
+\end_inset
+
+ משתנים כאלה 
+\begin_inset Formula $X_{d}$
+\end_inset
+
+.
+ ההתפלגות המשותפת היא
+\begin_inset Formula 
+\[
+P\left(X_{1}=x_{1},\dots,X_{d}=d_{x}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הווקטור 
+\begin_inset Formula $X_{d}$
+\end_inset
+
+ הוא משתנה מקרי רב ממדי
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה שונות משותפת של זוג משתנים (משתנה מקרי דו ממדי) היא:
+\begin_inset Formula 
+\[
+Cov\left(X,Y\right)=E\left(X\cdot Y\right)-E\left(X\right)E\left(Y\right)
+\]
+
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\mu_{X}=E\left(X\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\mu_{Y}=E\left(Y\right)$
+\end_inset
+
+,
+ ונוכל לכתוב
+\begin_inset Formula 
+\[
+Cov\left(X,Y\right)=E\left[\left(X-\mu_{X}\right)\cdot E\left(Y-\mu_{Y}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטריצת השונות היא:
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+Cov\left(X,X\right) & Cov\left(X,Y\right)\\
+Cov\left(Y,X\right) & Cov\left(Y,X\right)
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והבכללה ל
+\begin_inset Formula $d$
+\end_inset
+
+ מימדים:
+\begin_inset Formula 
+\[
+Cov\left(X\right)=\left(\begin{array}{ccc}
+Cov\left(X_{1},X_{1}\right) & \cdots & Cov\left(X_{1},X_{d}\right)\\
+\vdots & \ddots & \vdots\\
+Cov\left(X_{d},X_{1}\right) & \cdots & Cov\left(X_{d},X_{d}\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+נשים לב שהערכים על האלכסון הם השונויות של הרכיבים.
+\end_layout
+
+\begin_layout Standard
+אפשר לייצג את זה בצורה יותר קומפקטית באמצעות ווקטורים.
+ יהי 
+\begin_inset Formula $\mu=E\left[X\right]=\left(\mu_{1},\dots,\mu_{d}\right)^{T}$
+\end_inset
+
+,
+ אזי:
+\begin_inset Formula 
+\[
+\Sigma=E\left[\left(X-\mu\right)\left(X-\mu\right)^{T}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שכל אחת מהשונויות המשותפות היא סימטרית,
+ המטריצה כולה היא סימטרית - ולכן הווקטורים העצמיים שלה אורתוגונליים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טענה מטריצת השונות היא חיובית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+תהי 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ מטריצת שונות משותפת ורוצים להוכיח שהיא חיובית - כלומר לכל 
+\begin_inset Formula $z\in\mathbb{R}^{d}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $z^{T}\Sigma z\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתחיל מצד שמאל:
+\begin_inset Formula 
+\[
+z^{T}\Sigma z=z^{T}E\left[\left(X-\mu\right)\left(X-\mu\right)^{T}\right]z
+\]
+
+\end_inset
+
+נכניס את הווקטורים לתוחלת:
+\begin_inset Formula 
+\[
+z^{T}\Sigma z=E\left[x^{T}\left(X-\mu\right)\left(X-\mu\right)^{T}z\right]
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $zT\left(X-\mu\right)$
+\end_inset
+
+ הוא סקלר:
+\begin_inset Formula 
+\[
+z^{T}\Sigma z=E\left[z^{T}\left(X-\mu\right)\left(\left(X-\mu\right)^{T}z\right)\right]
+\]
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $\left(X-\mu\right)^{T}z=\left(z^{T}\left(X-\mu\right)\right)^{T}$
+\end_inset
+
+ (שחלוף של סקלר הוא הסקלר עצמו) אפשר לכתוב:
+\begin_inset Formula 
+\[
+z^{T}\Sigma z=E\left[\left(z^{T}\left(X-\mu\right)\right)\left(z^{T}\left(X-\mu\right)\right)^{T}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{T}\Sigma z=E\left[\left(z^{T}\left(X-\mu\right)\right)^{2}\right]
+\]
+
+\end_inset
+
+ולכן הערכים העצמיים חיוביים - ומכיוון שהמטריצה סימטרית,
+ היא חיובית.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+התפלגות נורמלית (
+\lang english
+Gaussian
+\lang hebrew
+) רב מימדית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ בהתפלגות נורמלית רגילה 
+\begin_inset Formula $X\sim N\left(\mu,\sigma^{2}\right)$
+\end_inset
+
+ פונקציית הצפיפות היא:
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהתפלגות נורמלית רב מימדית 
+\begin_inset Formula $X\sim N\left(\mu,\Sigma\right)$
+\end_inset
+
+ פונקציית הצפיפות היא:
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{\left(2\pi\right)^{\frac{d}{2}}\left|\Sigma\right|^{\frac{1}{2}}}\exp\left(-\frac{1}{2}\left(x-\mu\right)^{T}\Sigma^{-1}\left(x-\mu\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נראה כמו פעמון 
+\begin_inset Formula $d$
+\end_inset
+
+-ממדי,
+ כאשר הההתפלגות השולית על כל משתנה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כלומר ההתפלגות שלו כאשר מתעלמים מהמשתנים האחרים
+\end_layout
+
+\end_inset
+
+ היא התפלגות גאוסיאנית חד ממדית (פעמון חד ממדי)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת משמעות הפרמטרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mu$
+\end_inset
+
+ התוחלת - מזיזה את כל ההתפלגות.
+ קובעת את מרכז ההתפלגות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\sigma$
+\end_inset
+
+ השונות - הפיזור סביב האפס.
+ ככל שהיא יותר גדולה,
+ הפעמון יותר נמוך.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+במקרה הרב ממדי,
+ התוחלת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ עדיין קובעת את המרכז.
+ אבל הסיפור של השונות קצת יותר מורכב כי יש לנו מטריצה של שונות משותפת.
+ במקרה הדו מימדי (
+\lang english
+bivariate Gaussian
+\lang hebrew
+) צורת הפעמון,
+ בהסתכלות מלמעלה,
+ הוא אליפסה:
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $\Sigma=I$
+\end_inset
+
+ האליפסה היא בעצם עיגול.
+\end_layout
+
+\begin_layout Itemize
+עבור שונות משותפת שהיא מטריצה אלכסונית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+יש ערכים על האלכסון,
+ אבל כל שאר הערכים הם אפס.
+\end_layout
+
+\end_inset
+
+ - למשל 
+\begin_inset Formula $\Sigma=\text{diag}\left(1,2\right)$
+\end_inset
+
+ - האליפסה מיושרת לצירים.
+ ההתפלגות המשותפת שווה למכפלת ההתפלגויות השוליות.
+\end_layout
+
+\begin_layout Itemize
+אבל אם יש שונות משותפת שונה מאפס לשני המשתנים,
+ האליפסה 
+\begin_inset Quotes eld
+\end_inset
+
+מוטה
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות תהי 
+\begin_inset Formula $X=\left(X_{1},\dots,X_{d}\right)^{T}$
+\end_inset
+
+ התפלגות גאוסיאנית
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל חתך 
+\begin_inset Formula $\left(X_{1},\dots,X_{i-1,},X_{i+1},\dots X_{d}\right)|X_{i}$
+\end_inset
+
+ גם הוא גאוסיאני (ממימד 
+\begin_inset Formula $d-1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+החתך 
+\begin_inset Formula $\int^{\infty}_{-\infty}f_{X}\left(x_{1},x_{2},\dots,x_{d}\right)\mathrm{\,d}x_{1}$
+\end_inset
+
+ גם הוא גאוסיאני (ממימד 
+\begin_inset Formula $d-1$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+נגזרות במרחבים רב מימדיים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה גרדיאנט.
+ תהיה פונקציה 
+\begin_inset Formula $f\left(x_{1},\dots x_{d}\right):\mathbb{R}^{d}\to\mathbb{R}$
+\end_inset
+
+,
+ ווקטור 
+\begin_inset Formula $x=\left[x_{1},\dots x_{d}\right]$
+\end_inset
+
+.
+ הגרדיאנט הוא ווקטור הנגזרות ביחס לכל אחד מהמשתנים:
+\begin_inset Formula 
+\[
+\nabla f\left(x\right)=\left[\frac{\partial f}{\partial x_{1}},\dots\frac{\partial f}{\partial x_{d}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונה הגרדיאנט מצביע על הכיוון עם השיפוע החד ביותר
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+הגרדיאנט מצביע על כיוון העליה - והכיוון ההפוך הוא כיוון הירידה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה נסמן 
+\begin_inset Formula $D_{u}\left(f\left(x\right)\right)$
+\end_inset
+
+ - כמה הפונגציה משתנה בכיוון 
+\begin_inset Formula $u$
+\end_inset
+
+ (נניח ש
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בכל כיוון):
+\begin_inset Formula 
+\[
+D_{u}\left(f\left(x\right)\right)=\lim\nolimits_{h\to0}\frac{f\left(x+hu\right)-f\left(x\right)}{h}
+\]
+
+\end_inset
+
+נכתוב את 
+\begin_inset Formula $f$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י טור טיילור:
+\begin_inset Formula 
+\[
+f\left(x+hu\right)\approx f\left(x\right)+\nabla f\left(x\right)hu+\epsilon\left(h\right)
+\]
+
+\end_inset
+
+אזי:
+\begin_inset Formula 
+\[
+D_{u}\left(f\left(x\right)\right)=\lim_{h\to0}\frac{f\left(x\right)+\nabla f\left(x\right)hu+\epsilon\left(h\right)-f\left(x\right)}{h}=\nabla f\left(x\right)u
+\]
+
+\end_inset
+
+נשתמש באי שוויון קושי 
+\begin_inset Formula $\left\Vert ab\right\Vert \le\left\Vert a\right\Vert \left\Vert b\right\Vert $
+\end_inset
+
+ ו
+\begin_inset Formula $\left\Vert u\right\Vert =1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|D_{u}\left(f\left(x\right)\right)\right|=\left\Vert \nabla f\left(x\right)u\right\Vert \le\left\Vert \nabla f\left(x\right)\right\Vert 
+\]
+
+\end_inset
+
+וזה הכי גדול כאשר שני הווקטורים קו-לינארים - כלומר נקבל ערך מקסימלי בכיוון של הגרדיאנט.
+\end_layout
+
+\begin_layout Standard
+למה זה חשוב?
+ כי אם יש לנו פונקציה מאוד מורכבת,
+ אם נעשה צעדים במורד הגרדיאנט נוכל די מהר להגיע למינימום מקומי.
+\end_layout
+
+\end_body
+\end_document

@@ -1,7 +1,10 @@
 #!/usr/bin/env nu
 
 def main [] {
-    let chosen = gen-options | sk -p {} -f {format pattern '{he} {type} {by}'}
+    let options = gen-options | each {{key: ($in | format pattern '{he} {type} {by}'), value: $in}} | transpose -rd
+    let chosen_key = $options | columns | str join "\n" | rofi -dmenu
+    let chosen = $options | get $chosen_key
+    #let chosen = gen-options | sk -p {} -f {format pattern '{he} {type} {by}'}
     let template = open --raw template.lyx
     let lyx_code = $template | str replace --all --regex '<(\w+)>' {|var|
         let orig = $in
@@ -17,9 +20,11 @@ def main [] {
     mkdir $directory
     let filename = $chosen | format pattern '{code}{type}{date}.lyx'
     let full_path = $directory | path join $filename
-    $lyx_code o> $full_path
-    # bash -ce 'nohup lyx "@1"' o> /dev/null e> /dev/null $full_path
-    bash -ce 'nohup lyx "$1"' -- $full_path o> /dev/null e> /dev/null
+    # TODO: this should probably be done earlier, to join similar options into one if their shared path exists
+    if (not ($full_path | path exists)) {
+        $lyx_code o> $full_path
+    }
+    exec lyx $full_path
 }
 
 def gen-options [] {

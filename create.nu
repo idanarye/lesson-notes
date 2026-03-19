@@ -11,6 +11,10 @@ def main [] {
         match $var {
             'he' => $chosen.he
             'code' => ($chosen | format pattern '{code}-{group_code}')
+            'instructor_caption' => (match $chosen.type {
+                'l' => 'מרצה'
+                't' => 'מתרגל'
+            })
             'by' => $chosen.by
             'date' => $chosen.date
             _ => $orig

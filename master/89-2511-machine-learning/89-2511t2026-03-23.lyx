@@ -1,0 +1,1431 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-05
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+ניר בן ארי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-03-23
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+פורמליזציה של קבלת החלטות בייסיאניות
+\end_layout
+
+\begin_layout Itemize
+יש לנו מצבים 
+\begin_inset Formula $\Omega=\left\{ \omega_{i}\right\} $
+\end_inset
+
+.
+ זה העולם האמיתי - אבל אנחנו לא יודעים בוודעות מה המצב האמיתי.
+\end_layout
+
+\begin_layout Itemize
+יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תצפיות:
+ 
+\begin_inset Formula $S_{n}=\left\{ x_{1},\dots,x_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+יש לנו מודל התסברותי 
+\begin_inset Formula $P\left(S_{n}\middle|\omega\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $P\left(\omega\right)$
+\end_inset
+
+.
+ מניחים ידע מלא על ההסתברויות האלה.
+\end_layout
+
+\begin_layout Itemize
+פעולות אפשריות:
+ 
+\begin_inset Formula $A=\left\{ \alpha_{1},\dots,\alpha_{k}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עלויות:
+ 
+\begin_inset Formula $\Lambda=\left\{ \lambda\left(\alpha_{k}\middle|\omega_{j}\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים לבחור את הפעולה בהינתן התצפיות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\omega\middle|x\right)=\frac{P\left(x\middle|\omega\right)}{P\left(x\right)}P\left(\omega\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סיכון מותנה
+\end_layout
+
+\begin_layout Standard
+הסיכון המותנה הוא תוחלת העלות של פעולה 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+ בהינתן תצפית 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+R\left(\alpha_{k}\middle|x_{i}\right)=\sum_{\omega_{j}\in\Omega}\lambda\left(\alpha_{k},\omega_{k}\right)\cdot P\left(\omega_{j}\middle|x_{i}\right)=\mathbb{E}_{P\left(\omega_{j}\middle|x_{i}\right)}\left[\lambda\left(\alpha_{k}\middle|\omega_{j}\right)\right]
+\]
+
+\end_inset
+
+העלות של אסטרטציה 
+\begin_inset Formula $\alpha\left(S_{n}\right)$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+R\left(\alpha\left(S_{n}\right)\right)=\sum_{x_{i}\in S_{n}}R\left(\alpha\left(x_{i}\right)\middle|x_{i}\right)\cdot P\left(x_{i}\right)=\mathbb{E}_{P\left(x_{i}\right)}\left[R\left(\alpha\left(x_{i}\right)\right)\middle|x_{i}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה העלות לפעולה מסויימת בהינתן תצפית.
+\end_layout
+
+\begin_layout Section*
+עלות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MSE
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mean Squared Error
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda\left(a,y\right)=\left(a-y\right)^{2}
+\]
+
+\end_inset
+
+העלות נקבעת לפי המרחב (בריבוע) בין התשובה שאנחנו נותנים 
+\begin_inset Formula $a$
+\end_inset
+
+ לתשובה האמיתית 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בוחרים פעולה 
+\begin_inset Formula $a$
+\end_inset
+
+ שתמזער את ה
+\lang english
+MSE
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+זה אמור לצאת הממוצע (בהתפלגות גאוסיאנית קל להוכיח את זה)
+\end_layout
+
+\begin_layout Section*
+איך זה מתקשר לקורס?
+\end_layout
+
+\begin_layout Standard
+קבלת החלטות בייסיאנית מניחה שאנחנו יודעים את ההתפלגויות.
+ במציאות זה לא ככה - הבעיה של למידת מכונה שאחנו לא יודעים,
+ אלא יש לנו רק אוסף של דוגמאות ממנו אנחנו אמורים ללמוד.
+\end_layout
+
+\begin_layout Part*
+ה
+\lang english
+tradeoff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בין הטייה (
+\lang english
+bias
+\lang hebrew
+) לשונות (
+\lang english
+variance
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Itemize
+הטייה - כמה התחזית שלנו מתרחקת מהממוצע.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אנחנו לא באמת יכולים לדעת אותו בוודאות,
+ כי אנחנו לא יודעים מה הממוצע האמיתי.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+שונות - כמה התחזיות שלנו שונות אחת מהשנייה.
+\end_layout
+
+\begin_layout Section*
+פרוק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MSE
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+MSE
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לוקח בחשבון את שניהם:
+\end_layout
+
+\begin_layout Itemize
+בהינתן סט דוגמאות אימון 
+\begin_inset Formula $S_{n}=\left\{ \left(x_{i},y_{i}\right)\right\} ^{n}_{i=1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ דוגמאות מתוך התפלגות 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+לכל דגימה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+,
+ התווית 
+\begin_inset Formula $y$
+\end_inset
+
+ אינה ידועה.
+\end_layout
+
+\begin_layout Itemize
+אנחנו רוצים לחזות את 
+\begin_inset Formula $y$
+\end_inset
+
+ בהמצעות היפוטזה 
+\begin_inset Formula $h\left(x\right)=h\left(x;S_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ה
+\lang english
+mean squared error
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא תוחלת של כמה אנחנו טועים 
+\series bold
+על כל הדגימות בעולם
+\series default
+ (לא רק על סט האימון שלנו):
+\begin_inset Formula 
+\[
+\mathbb{E}_{\left(x,y\right)\sim D}\left[\left(y-h\left(x\right)\right)^{2}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לסמן תוחלות על כל התויות האפשריות:
+\begin_inset Formula 
+\[
+\mathbb{E}_{\left(x,y\right)}\left[\cdot\right]:=\mathbb{E}_{\left(x,y\right)\sim D}\left[\cdot\right]
+\]
+
+\end_inset
+
+ואפשר גם על כל אוספי האימון האפשריים:
+\begin_inset Formula 
+\[
+\mathbb{E}_{S_{n}}\left[\cdot\right]:=\mathbb{E}_{S_{n}\sim D^{n}}\left[\cdot\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לנו יש את התוחלת על סט האימון שלנו 
+\begin_inset Formula $\mathbb{E}_{\left(x,y\right)}\left[\left(y-h\left(x\right)\right)^{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואפשר להגיע מזה ל:
+\begin_inset Formula 
+\[
+\mathbb{E}_{\left(x,y\right)\sim D}\left[\left(y-h\left(x\right)\right)^{2}\right]=\underset{\textnormal{Squared Bias}}{\underbrace{\mathbb{E}_{\left(x,y\right)}\left[\left(y-\mathbb{E}_{S_{n}}\left[h\left(x\right)\right]^{2}\right)\right]}}+\underset{Variance}{\underbrace{\mathbb{E}_{\left(x,y\right)}\left[\left(\mathbb{E}_{S_{n}}\left[h\left(x\right)\right]-h\left(x\right)\right)^{2}\right]}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+איך אפשר להקטין את ההטייה?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אפשר לבחור 
+\begin_inset Formula $h$
+\end_inset
+
+ יותר מורכבת (למשל פולינום במקום פונקציה לינארית)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+איך אפשר להקטין את שונות?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+להשתמש ביותר נקודות אימון
+\end_layout
+
+\begin_layout Itemize
+להגביל את 
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tradeoff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ביניהם,
+ ורוצים לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sweet spot
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי למזער את ה
+\lang english
+MSE
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Underfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+Overfitting
+\end_layout
+
+\begin_layout Standard
+יש לנו תהליך אימון.
+ יש לנו:
+\end_layout
+
+\begin_layout Itemize
+סט אימון -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+training set
+\end_layout
+
+\begin_layout Itemize
+סט אימות -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+validation set
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ששומרים בצד
+\end_layout
+
+\begin_layout Itemize
+סט בדיקה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+test set
+\lang hebrew
+ - אותו אין לנו,
+ זה הסט של המידע שהמודל יופעל עליו
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים להעריך את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(פונקציית המחיר) על סט הבדיקה.
+ עושים את זה באמצעות סט האימות.
+\end_layout
+
+\begin_layout Standard
+ככל שהמודל יותר מורכב,
+ השגיאה מול סט האימון תהיה יותר נמוכה.
+ אבל לא בהכרח לסט האימות:
+\end_layout
+
+\begin_layout Itemize
+ב
+\lang english
+Underfitting
+\lang hebrew
+,
+ יש שגיאה גבוהה גם בסט האימון וגם בסט האימות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ההטייה תהיה גבוהה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ב
+\lang english
+Good fit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש שגיאה נמוכה בשניהם
+\end_layout
+
+\begin_layout Itemize
+ב
+\lang english
+Overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש שגיאה נמוכה בסט האימון אבל שגיאה גבוהה בסת האימות.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+השונות תהיה גבוהה
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הארה:
+ חוץ מ
+\lang english
+underfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+overfitting
+\lang hebrew
+,
+ תמיד יכול להיות שקיבלנו סט אימון שאין בו סיגנל,
+ רק רעש.
+\end_layout
+
+\begin_layout Subsection*
+איך נמנעים?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Underfitting
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המודל פשוט מדי.
+\end_layout
+
+\begin_layout Itemize
+להגדיל את מורכבות המודל
+\end_layout
+
+\begin_layout Itemize
+לשפר את האופטימיזציה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Overfitting
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המודל מסובך מדי
+\end_layout
+
+\begin_layout Itemize
+או שאין מספיק נקודות בסט האימון
+\end_layout
+
+\begin_layout Itemize
+אפשר לבחור מודל פחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+expressive
+\end_layout
+
+\begin_layout Itemize
+אפשר להשתמש ב
+\lang english
+parameter regularization
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+אימות מוצלב
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+K-fold
+\end_layout
+
+\begin_layout Standard
+יש לנו הרבה פרמטרים שמשפיעים על האימון.
+ אנחנו רוצים לבחור אותם - ועושים את זה לפי סט האימות.
+\end_layout
+
+\begin_layout Standard
+אבל אם יש לנו סט אימון קטן,
+ יש לנו בעיה - אנחנו לא רוצים לחתוך אותו יותר מדי,
+ וגם כאשר חותכים - סט האימות שנחתוך מתוכו יהיה עוד יותר קטן.
+\end_layout
+
+\begin_layout Standard
+הפתרון -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cross validation
+\end_layout
+
+\begin_layout Standard
+אפשר לחתוך בכל פעם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+validation set
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחר מתוך ה
+\lang english
+training set
+\lang hebrew
+,
+ ולעשות ממוצע כדי להעריך את הפרמטרים שבחרנו.
+\end_layout
+
+\end_body
+\end_document

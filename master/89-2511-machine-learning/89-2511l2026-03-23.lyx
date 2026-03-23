@@ -1,0 +1,3084 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+פרופ' גל צ'צ'יק
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-03-23
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+למידה מונחית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נתון:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+training data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- זוגות של דגימות ותגיות 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\in\mathcal{X},y\in\mathcal{Y},i=1\dots n$
+\end_inset
+
+ הנדגמים מתוך התפלגות לא ידועה 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+.
+ זה משקף מיפוי 
+\begin_inset Formula $f:\mathcal{X}\to\mathcal{Y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה:
+ למצוא היפוטזה 
+\begin_inset Formula $h:\mathcal{X}\to\mathcal{Y}$
+\end_inset
+
+ שחושפת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מגדירים:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+loss
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ - 
+\begin_inset Formula $\ell\left(h\left(x\right),y\right)$
+\end_inset
+
+ - שמודדת את חוסר ההתאמה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מחפשים:
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ שתמזער את תוחלת ה
+\lang english
+loss
+\lang hebrew
+
+\begin_inset Formula 
+\[
+\mathbb{E}_{P\left(x,y\right)}\left[\ell\left(h\left(x\right),y\right)\right]=\sum_{\left(x,y\right)}\ell\left(h\left(x\right),y\right)p\left(x,y\right)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $h$
+\end_inset
+
+ היא לא סתם פונקציה,
+ אלא מגיעה מתוך משפחה של היפוטזות 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ ההיפותזות במשפחה 
+\begin_inset Formula $h\in\mathcal{H}$
+\end_inset
+
+ יש פרמטרים שונים (למשל - מקדמי פולינומים),
+ ותהליך האימון מוצא את הפרמטרים הנכונים.
+\end_layout
+
+\begin_layout Standard
+יש שני שלבים:
+\end_layout
+
+\begin_layout Itemize
+שלב האימון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+training phase
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בהינתן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+traininig data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ אלגוריתם הלמידה מוצא מודל 
+\begin_inset Formula $h_{w}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+שלב ההסקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+inference phase
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מפעילים את המודל על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חדש 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ ומוצאים את ה
+\begin_inset Formula $y$
+\end_inset
+
+ שלו לפי 
+\begin_inset Formula $h_{w}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+סוגים עיקריים
+\end_layout
+
+\begin_layout Itemize
+כאשר הפלט הוא קטגוריות,
+ זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Classification
+\lang hebrew
+.
+ לדוגמה - זיהוי אובייקטים.
+ 
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ הוא כל התמונות האפשריות,
+ ו
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ הוא סיווגי התמונה האפשריים (למשל - כלב,
+ חתול,
+ זברה)
+\end_layout
+
+\begin_layout Itemize
+כאשר הפלט הוא משתנה רציף זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Regression
+\lang hebrew
+.
+ למשל - נהיגה אוטונומית.
+ 
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ זה הוידאו והחיישים,
+ ו
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ זה כמה לסובב את ההגה
+\end_layout
+
+\begin_layout Section*
+רגרסיה פולינומית
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Quotes eld
+\end_inset
+
+כלל
+\begin_inset Quotes erd
+\end_inset
+
+ בעולם - כלל שאנחנו לא יודעים.
+ מה שכן יש לנו זה דוגמאות שנדגמו מתוך הכלל הזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - לקחו ערכי 
+\begin_inset Formula $x$
+\end_inset
+
+ ולכל אחד דגמו 
+\begin_inset Formula $y$
+\end_inset
+
+ שהוא ערך הפונקציה בתוספת רעש אקראי.
+\end_layout
+
+\begin_layout Standard
+לא נוכל לגלות את הכלל באמת - אבל כן נוכל לגלות קירוב שלו.
+ נבחר את ה
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ שלנו להיות משפחת הפולינומים:
+\begin_inset Formula 
+\[
+h_{w}\left(x\right)=w_{0}+w_{1}x+w_{2}x^{2}+\cdots+w_{d}x^{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה דווקא פולינומים?
+ בגלל שאם פונקציה חלקה מספיק,
+ נוכל לקרב אותה ע
+\begin_inset Quotes erd
+\end_inset
+
+י פולינומים באמצעות קירוב טיילור.
+\end_layout
+
+\begin_layout Standard
+בהינתן המקדמים של הפולינום,
+ איך נדע אם הוא קירוב טוב?
+ לא נוכל לבדוק מול הכלל האמיתי (שאינו ידוע) אבל נוכל לבדוק מול המדגם שלנו.
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ell\left(w;x_{i},y_{i}\right)=\left(h_{w}\left(x_{i}\right)-y_{i}\right)^{2}
+\]
+
+\end_inset
+
+למה בריבוע?
+\end_layout
+
+\begin_layout Itemize
+גם כדי להעניש יותר על הסטייה
+\end_layout
+
+\begin_layout Itemize
+גם כי זה תמיד חיובי
+\end_layout
+
+\begin_layout Itemize
+פונקציה חלקה,
+ שקל לעבוד איתה
+\end_layout
+
+\begin_layout Standard
+השגיאה הכוללת היא הממוצע של ה
+\lang english
+loss
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+Err\left(w\right)=\frac{1}{n}\sum^{n}_{i=1}\left(h_{w}\left(x_{i}\right)-y_{i}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Standard
+נתחיל במקרה הכי פשוט - מודל של פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $d=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+h_{w}\left(x\right)=w_{0}
+\]
+
+\end_inset
+
+כלומר פשוט קבוע.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+מחפשים 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ שימזער את:
+\begin_inset Formula 
+\[
+\min_{w}\qquad Err\left(w\right)=\frac{1}{n}\sum^{n}_{i=1}\left(h_{w}\left(x_{i}\right)-y_{i}\right)^{2}=\frac{1}{n}\sum^{n}_{i=1}\left(w_{0}-y_{i}\right)^{2}
+\]
+
+\end_inset
+
+אם גוזרים,
+ מוצאים שהמינימום הוא פשוט הממוצע:
+\begin_inset Formula 
+\[
+\min_{w}\qquad w_{0}=\frac{1}{n}\sum^{n}_{i=1}y_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+פולינום ממעלה אחת הוא פונקציה לינארית 
+\begin_inset Formula $h_{w}\left(x\right)=w_{0}+w_{1}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פולינומים ממעלות יותר גבוהות
+\end_layout
+
+\begin_layout Standard
+אפשר לעלות במעלות ולמצוא ע
+\begin_inset Quotes erd
+\end_inset
+
+י גזירה את מקדמי הפולינום שממזערים את השגיאה.
+\end_layout
+
+\begin_layout Standard
+כאשר עולים יותר מדי במעלות,
+ מקבלים מודל לא מוצלח.
+ אבל זה שונה מאשר מעלה נמוכה מדי.
+\end_layout
+
+\begin_layout Itemize
+במעלה נמוכה מדי,
+ השגיאות עקביות - יש להן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטייה (
+\lang english
+bias
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Itemize
+במעלה גבוהה מדי,
+ אין שגיאות על ה
+\lang english
+training data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הוא עובר דרך כל הנקודות.
+ אבל בד
+\begin_inset Quotes erd
+\end_inset
+
+כ הוא לא מתאים לפונקציה שמנסים למצוא,
+ ורכיב השונות (
+\lang english
+variance
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשגיאה של התחזיות יהיה גדול.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המודל ישנן את הרעש של הדגימה.
+\end_layout
+
+\begin_layout Itemize
+אם היינו מגרילים מהכלל נקודות אחרות - הקו היה נראה מאוד שונה.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+אופטימיות יתר
+\end_layout
+
+\begin_layout Standard
+הבעיה היא שאנחנו מאפטמים את סט האימון.
+ אבל אנחנו לא מעוניינים להקטין את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ על סט האימון - אנחנו רוצים למזער את ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הכללי.
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים להקטין את שגיאת ההכללה 
+\begin_inset Formula $Err_{GEN}\left(w\right)=\mathbb{E}_{P\left(x,y\right)}\left[\ell\left(h_{w};x_{i},y_{i}\right)\right]$
+\end_inset
+
+ - לא את שגיאת האימון 
+\begin_inset Formula $Err_{Train}\left(w\right)=\frac{1}{n}\sum\limits^{n}_{1}\ell\left(h_{w};x_{i},y_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם אנחנו יותר מדי אופטימים,
+ אז לא רק שהמודל גרוע - אלא אנחנו גם לא יודעים שהוא גרוע.
+\end_layout
+
+\begin_layout Standard
+נבחר מתוך ה
+\lang english
+training data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(או בנוסף אליו) אוסף דוגמאות שיהיו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+test data
+\lang hebrew
+.
+ עליו לא נעשה אימון,
+ ונבדוק את ה
+\begin_inset Formula $Err_{Test}\left(w\right)$
+\end_inset
+
+ עבור ההיפותזה שמצאנו מה
+\lang english
+training data
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שעבור 
+\begin_inset Formula $d=n-1$
+\end_inset
+
+ יש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ פרמטרים חופשיים בפולינום (
+\begin_inset Formula $w_{0,},w_{1},\dots w_{n}$
+\end_inset
+
+) ולכן שגיאת האימון תהיה אפס - ושגיאת ה
+\lang english
+test
+\lang hebrew
+ תקפוץ.
+ הפער הזה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Generalization Gap
+\lang hebrew
+,
+ או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overfitting
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים לבחור מעלה של הפולינום (בהכללה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - כמות פרמטרים במודל) שתמזער את 
+\begin_inset Formula $Err_{Test}$
+\end_inset
+
+.
+ אבל צריך לשים לב שיכול להיות מצב שמה שאנחנו מחפשים בכלל לא נמצא בנתונים שלנו,
+ ואז אין באמת מה לעשות.
+\end_layout
+
+\begin_layout Section*
+איך מצמצמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Overfitting
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Subsection*
+פתרון -
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ עוד נתונים.
+\end_layout
+
+\begin_layout Standard
+ככל שיש יותר נתונים,
+ אפשר לדייק יותר.
+\end_layout
+
+\begin_layout Itemize
+במודלים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Deep Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש הרבה עבודה להשיג כמויות אדירות של נתונים.
+\end_layout
+
+\begin_layout Itemize
+יש תחומים בהם יש מעט מאוד נתונים.
+\end_layout
+
+\begin_layout Subsection*
+פתרון
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+regularization
+\end_layout
+
+\begin_layout Standard
+ככל שעולים במעלות של הפולינום,
+ המקדמים נעשים יותר גבוהים.
+ המודל מנצל את העובדה שהוא יכול להיות מאוד מאוד עקמומי כדי לעבור דרך כל הנקודות,
+ וזה מתבטא במקדמים מאוד גבוהים.
+\end_layout
+
+\begin_layout Standard
+דרך אחת להגביל את המודל הייתה להגביל את המעלה.
+ אבל דרך אחרת יכולה להיות להרשות מעלה מאוד גבוהה - אבל להעניש מקדמים גבוהים.
+\end_layout
+
+\begin_layout Standard
+נוסיף עוד מרכיב לפונקציית השגיאה:
+\begin_inset Formula 
+\[
+Err\left(w\right)=\underset{\textnormal{loss}}{\underbrace{\sum^{n}_{i=1}\left(h_{w}\left(x_{i}\right)-y_{i}\right)^{2}}}+\underset{\textnormal{regularizer}}{\underbrace{\frac{\lambda}{2}\left\Vert w\right\Vert ^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ 
+\begin_inset Formula $\left\Vert w\right\Vert ^{2}=w^{T}w=w^{2}_{0}+w^{2}_{1}+\cdots+w^{2}_{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה:
+ לא מחלקים את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $n$
+\end_inset
+
+ כאן כדי שכשכמות הנתונים תגדל - המשקל של ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יקטן.
+ אבל אפשר גם לחלק ב
+\begin_inset Formula $n$
+\end_inset
+
+ (לעשות ממוצע)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda$
+\end_inset
+
+ כאן זה מקדם ששולט ברגולריזציה.
+\end_layout
+
+\begin_layout Itemize
+ככל שהוא יותר קטן הרוגלריזציה פחות משפיעה - כשהוא אפס,
+ אין רגולריזציה.
+\end_layout
+
+\begin_layout Itemize
+מצד שני,
+ כשהוא שואף לאינסוף המשקל של ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נעלם ומקבלים את פולינום האפס.
+\end_layout
+
+\begin_layout Standard
+כלומר יש לנו כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+tradeoff
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+סיכום ביניים - מרכיבים עיקריים
+\end_layout
+
+\begin_layout Itemize
+סט אימון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+training data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $n$
+\end_inset
+
+ דגימות מתוייגות 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ מתוך התפלגות לא ידועה 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+סט של היפותזות 
+\begin_inset Formula $h\in\mathcal{H}$
+\end_inset
+
+,
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ מאופיינות ע
+\begin_inset Quotes erd
+\end_inset
+
+י סט פרמטרים 
+\begin_inset Formula $w$
+\end_inset
+
+ שלומדים מתוך הנתונים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Expressivity
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כמה סט הפרמטרים של מחלקת ההיפותזות עשיר.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\lang hebrew
+ 
+\begin_inset Formula $\ell\left(w;x,y\right)$
+\end_inset
+
+ שרוצים למזער עבור 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בעיית אופטימיזציה.
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ לא יהיה פתרון אנליטי ונצטרך להשתמש בשיטות נומריות.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סט בדיקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+test data
+\lang hebrew
+.
+ משמש כדי להעריך את תוחלת השגיאה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מה שבאמת אנחנו רוצים זה תוחלת השגיאה הכללית - אבל אנחנו מוגבלים לנתונים שיש לנו.
+\end_layout
+
+\begin_layout Itemize
+הכללה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Generalization
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הפער בין השגיאה על סט האימון לשגיאה על סט הבדיקה (ובכלל)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+סוגי שגיאות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f$
+\end_inset
+
+ הפונקציה האמיתית
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f_{\mathcal{H}}$
+\end_inset
+
+ הפונקציה האופטימלית בכלל,
+ מתוך משפחת ההיפותזות שלנו 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+,
+ ללא קשר למדגם הנתונים שיש לנו
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f_{\mathcal{H},S}$
+\end_inset
+
+ הפונקציה האופטימלית עבור המדגם המסויים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f^{*}_{\mathcal{H},S}$
+\end_inset
+
+ הפונקציה שהצלחנו למצוא עבור המדגם המסויים
+\end_layout
+
+\begin_layout Itemize
+שגיאת האופטימיזציה - 
+\begin_inset Formula $\left|f_{\mathcal{H},S}-f^{*}_{\mathcal{H},S}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שגיאת ההכללה - 
+\begin_inset Formula $\left|f_{\mathcal{H}}-f_{\mathcal{H},S}\right|$
+\end_inset
+
+ - יכול להיות שנמצא היפותזה שטובה לסט האימון,
+ אבל יהיה פער בין זה לבין תוחלת השגיאה הכללית.
+\end_layout
+
+\begin_layout Itemize
+שגיאת הקירוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\numeric off
+ 
+\begin_inset Formula $\left|f-f_{\mathcal{H}}\right|$
+\end_inset
+
+ - יכול להיות שאין לנו אפשרות בכלל למצוא הכללה טובה תחת המגבלות שיש לנו.
+\end_layout
+
+\begin_layout Section*
+מבחן
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שאלה מה ההבדל בין שגיאת ההכללה לשגיאת הבדיקה?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה שגיאת ההכללה זה מול הפונקציה האמיתית,
+ ושגיאת הבדיקה זה מול סט הנתונים ששמנו בצד לבדיקה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שאלה מה יקרה אם נחליף את הרגולריזר 
+\begin_inset Formula $\ell_{2}=\sqrt{\sum_{j}w^{2}_{j}}$
+\end_inset
+
+ ב
+\begin_inset Formula $\ell_{1}=\sum_{j}\left|w_{j}\right|$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה כשיש לנו ריבוע,
+ אם יש ערכים קרובים לאפס הרגולריזציה לא טטרח להביא אותם ממש לאפס.
+ אבל אם יש ערך מוחלט כן,
+ ונקבל יותר אפסים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שאלה מה עושים אם הפונקציה גזירה,
+ אבל אי אפשר למצוא נקודת מינימום באופן אנליטי?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient descent
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שאלה מה הבעיה של בחירת עצמת הרגולריזציה לפי ה
+\lang english
+test set
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה נקבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על ה
+\lang english
+test set
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Part*
+תורת החלטות בייסיאנית
+\end_layout
+
+\begin_layout Standard
+נראה ששימוש אחד לתורת ההחלטות הבייסיאנית היא למידת פרמטרים.
+\end_layout
+
+\begin_layout Standard
+בהינתן מדגם של דוגמאות,
+ נרצה ללמוד תכונות של העולם.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה:
+ רוצים להחליט אם לקחת מטרייה או לא לקחת מטרייה.
+ יש מצב אמיתי של העולם (ירד או לא ירד גשם) שישפיע על העלות של כל החלטה.
+\end_layout
+
+\begin_layout Section*
+הגדרה
+\end_layout
+
+\begin_layout Itemize
+סט של צבי עולם לא חופפים 
+\begin_inset Formula $\Omega=\left\{ \omega_{i}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הם לא חופפים
+\end_layout
+
+\begin_layout Itemize
+הם מכסים את כל האפשרויות
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+תצפיות 
+\begin_inset Formula $S_{n}=\left\{ x_{1},\dots,x_{n}\right\} $
+\end_inset
+
+.
+ דוגמאות אמפיריות
+\end_layout
+
+\begin_layout Itemize
+מודל הסתברותי 
+\begin_inset Formula $P\left(S_{n}\middle|\omega\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+.
+ המודל אינו תלוי בתצפיות - מניחים ידע מלא על ההתפלגויות האלה.
+\end_layout
+
+\begin_layout Itemize
+פעולות אפשריות 
+\begin_inset Formula $A=\left\{ \alpha_{1},\dots,\alpha_{k}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עלויות 
+\begin_inset Formula $\Lambda=\left\{ \lambda\left(\alpha_{k}\middle|\omega_{j}\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חוק בייס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\omega\middle|x\right)=\frac{P\left(x\middle|\omega\right)}{P\left(x\right)}P\left(\omega\right)
+\]
+
+\end_inset
+
+כאשר:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\left(\omega\right)$
+\end_inset
+
+ ה
+\lang english
+prior
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מה ההסתברות להיות ב
+\begin_inset Formula $\omega$
+\end_inset
+
+ ללא קשר לתצפיות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\left(x\middle|w\right)$
+\end_inset
+
+ ה
+\lang english
+likelihood
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הסיכוי לקבל תצפית 
+\begin_inset Formula $x$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P\left(\omega\middle|x\right)$
+\end_inset
+
+ ה
+\lang english
+posterior
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ההסתברות שאנחנו ב
+\begin_inset Formula $\omega$
+\end_inset
+
+ בהינתן התצפית 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המטרה ב
+\lang english
+Bayes decision theory
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא לתכנן אסטרטציה 
+\begin_inset Formula $\alpha\left(S_{n}\right)$
+\end_inset
+
+ שתקבע איזה פעולה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ לקחת בהינתן תצפיות 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ כדי למזער את העלות.
+\end_layout
+
+\begin_layout Section*
+הגדרה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+conditional risk
+\end_layout
+
+\begin_layout Standard
+המחיר המותנה לפעולה 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+R\left(\alpha_{k}\middle|x\right)\equiv\mathbb{E}_{P\left(\omega\middle|x\right)}\left[\lambda\left(_{k}\middle|\omega\right)\right]=\sum_{\left\{ \omega_{j}\in\Omega\right\} }\lambda\left(\alpha_{k}\middle|\omega_{j}\right)P\left(\omega_{j}\middle|x\right)
+\]
+
+\end_inset
+
+זה בעצם המחיר לפעולה 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $P\left(\omega_{j}\middle|x\right)$
+\end_inset
+
+ לא ידוע לנו ישירות - מחשבים לפי חוק בייס:
+\begin_inset Formula 
+\[
+P\left(\omega_{j}\middle|x\right)=P\left(x\middle|w_{j}\right)\frac{P\left(\omega_{j}\right)}{P\left(x\right)}=P\left(x\middle|\omega_{j}\right)\frac{P\left(\omega_{j}\right)}{\sum_{k}P\left(x\middle|\omega_{k}\right)P\left(\omega_{k}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+במילים:
+ אנחנו רוצים לבחור את הפעולה שבתוחלת תביא את העלות הכי נמוכה.
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מחיר אפס או
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחד
+\end_layout
+
+\begin_layout Standard
+המטרה שלנו היא לנחש מה מצב העולם.
+ אם טועים משלמים מחיר קבוע (
+\numeric on
+1
+\numeric off
+):
+\begin_inset Formula 
+\[
+\lambda\left(\alpha_{k}\middle|\omega_{j}\right)=1-\delta_{kj}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\delta_{kj}=1$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=j$
+\end_inset
+
+ אחרת 
+\begin_inset Formula $\delta_{kj}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\left(\alpha_{k}\middle|x\right)=\cdots=1-P\left(\omega_{k}\middle|x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R\left(\alpha_{k}\middle|x\right)$
+\end_inset
+
+ מינימלי כאשר לוחקים 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $P\left(\omega_{k}\middle|x\right)$
+\end_inset
+
+ מקסימלי (
+\lang english
+maximum posterior
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Subsection*
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שני מצבי עולם ושתי פעולות
+\end_layout
+
+\begin_layout Standard
+מטריצת המחירים היא 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ שנסמן 
+\begin_inset Formula $\lambda_{k,j}=\lambda\left(\alpha_{k}\middle|\omega_{j}\right)$
+\end_inset
+
+.
+ המחיר לכל פעולה הוא:
+\begin_inset Formula 
+\[
+R\left(\alpha_{1}\middle|x\right)=\lambda_{11}P\left(\omega_{1}\middle|x\right)+\lambda_{12}P\left(\omega_{2}\middle|x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\left(\alpha_{2}\middle|x\right)=\lambda_{21}P\left(\omega_{1}\middle|x\right)+\lambda_{22}P\left(\omega_{2}\middle|x\right)
+\]
+
+\end_inset
+
+אנחנו רוצים לבחור את 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ אם הסיכון שלה קטן מ
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{11}P\left(\omega_{1}\middle|x\right)+\lambda_{12}P\left(\omega_{2}\middle|x\right)<\lambda_{21}P\left(\omega_{1}\middle|x\right)+\lambda_{22}P\left(\omega_{2}\middle|x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lambda_{12}-\lambda_{22}\right)P\left(\omega_{2}\middle|x\right)<\left(\lambda_{21}-\lambda_{11}\right)P\left(\omega_{1}\middle|x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{P\left(\omega_{1}\middle|x\right)}{P\left(\omega_{2}\middle|x\right)}>\frac{\lambda_{12}-\lambda_{22}}{\lambda_{21}-\lambda_{11}}
+\]
+
+\end_inset
+
+ונפעיל את חוק בייס:
+\begin_inset Formula 
+\[
+\underset{\textnormal{Likelihood ratio}}{\underbrace{\frac{P\left(x\middle|\omega_{1}\right)}{P\left(x\middle|\omega_{2}\right)}}}>\underset{\textnormal{Decision boundary}}{\underbrace{\frac{P\left(\omega_{2}\right)}{P\left(\omega_{1}\right)}\cdot\frac{\lambda_{12}-\lambda_{22}}{\lambda_{21}-\lambda_{11}}}}
+\]
+
+\end_inset
+
+כלומר עלינו לחשב את ה
+\lang english
+likelihood ratio
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולבדוק האם הוא מעל או מתחת לסף הכרעה.
+\end_layout
+
+\begin_layout Subsection*
+מה קורה כשיש הרבה תצפיות?
+\end_layout
+
+\begin_layout Standard
+נכליל את הדוגמה למצב שיש הרבה תצפיות 
+\begin_inset Formula $x_{1},\dots x_{n}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\underset{\textnormal{Likelihood ratio}}{\underbrace{\frac{P\left(x_{1},\dots x_{n}\middle|\omega_{1}\right)}{P\left(x_{1},\dots x_{n}\middle|\omega_{2}\right)}}}>\underset{\textnormal{Decision boundary}}{\underbrace{\frac{P\left(\omega_{2}\right)}{P\left(\omega_{1}\right)}\cdot\frac{\lambda_{12}-\lambda_{22}}{\lambda_{21}-\lambda_{11}}=\Theta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נניח שהתצפיות בלתי תלויות ושוות התפלגות בהינתן מצב העולם 
+\begin_inset Formula $\omega$
+\end_inset
+
+ (
+\lang english
+i.i.d
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+):
+\begin_inset Formula 
+\[
+\frac{\prod_{i}P\left(x_{i}\middle|\omega_{1}\right)}{\prod_{i}P\left(x_{i}\middle|\omega_{2}\right)}>\Theta
+\]
+
+\end_inset
+
+מבחינה נומרית,
+ כאשר מכפילים מספר גדול של הסתברויות עלולים להיתקל בבעיות של ייצוג מספרים קטנים.
+ לכן נגדיר 
+\begin_inset Formula $\Theta'=\log\Theta$
+\end_inset
+
+ ונעשה:
+\begin_inset Formula 
+\[
+\sum_{i}\log\frac{P\left(x_{i}\middle|\omega_{1}\right)}{P\left(x_{i}\middle|\omega_{2}\right)}>\Theta'
+\]
+
+\end_inset
+
+זה נקרא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+log-likelihood ratio
+\lang hebrew
+.
+\end_layout
+
+\end_body
+\end_document

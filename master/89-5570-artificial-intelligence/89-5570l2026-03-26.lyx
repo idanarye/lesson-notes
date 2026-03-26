@@ -1,0 +1,1549 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+בינה מלאכותית
+\\
+\selectlanguage{english}
+89-5570-06
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+ד"ר אלכסנדר שלייפמן
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-03-26
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+חיפוש מיודע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Heuristic Search
+\end_layout
+
+\begin_layout Standard
+מה זה יוריסטיקה?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ יוריסטיקה היא פונקציה שמעריכה את המרחק ממצב ליעד.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נדבר על יוריסטיקה כמספר טבעי 
+\begin_inset Formula $h:\Sigma\to\mathbb{N}_{0}\cup\left\{ \infty\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+היוריסטיקה מקבלת את קודקוד החיפוש 
+\begin_inset Formula $\sigma$
+\end_inset
+
+,
+ אבל בד
+\begin_inset Quotes erd
+\end_inset
+
+כ היא צריכה רק את המצב 
+\begin_inset Formula $s$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+h\left(\sigma\right)\coloneqq h\left(\textnormal{state}\left(\sigma\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה צריך יוריסטיקה?
+\end_layout
+
+\begin_layout Itemize
+זה עובד טוב בפועל (גם אם לא משפר את הסיבוכיות האסימפטוטית)
+\end_layout
+
+\begin_layout Itemize
+אם יש תכונות על היוריסטיקה,
+ היא יכולה להבטיח דברים - למשל להחזיר פתרון אופטימלי.
+\end_layout
+
+\begin_layout Section*
+יוריסטיקה מושלמת
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ יוריסטיקה אופטימלית או יוריסטיקה מושלמת 
+\begin_inset Formula $h^{*}$
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+משתמשים ב
+\begin_inset Formula $^{*}$
+\end_inset
+
+ בשביל לסמן דברים אופטימליים
+\end_layout
+
+\end_inset
+
+ נותנת את המרחק האמיתי ליעד - או אינסוף עבור מבוי סתום.
+\end_layout
+
+\begin_layout Section*
+תכונות שיכולות להיות ליוריסטיקה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בטוחה:
+ אם לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\sigma\left(\sigma\right)=\infty$
+\end_inset
+
+ אזי 
+\begin_inset Formula $h^{*}\left(\sigma\right)=\infty$
+\end_inset
+
+.
+ כלומר - היא לא יכולה להגיד על מצב שהוא מבוי סתום אם הוא לא מבוי סתום
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מיודעת
+\begin_inset space ~
+\end_inset
+
+מטרה:
+ אם 
+\begin_inset Formula $h\left(\sigma\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+ המהווה קודקוד יעד.
+ נשים לב שיכול להיות 
+\begin_inset Formula $h\left(\sigma\right)=0$
+\end_inset
+
+ גם עבור קודקודים שאינם יעד.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אדמיסבילית:
+ אם 
+\begin_inset Formula $h\left(\sigma\right)\le h^{*}\left(\sigma\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+עקבית:
+ אם 
+\begin_inset Formula $h\left(\sigma\right)\le h\left(\sigma'\right)+cost\left(\sigma,\sigma'\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\sigma,\sigma'\in\Sigma$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\sigma'$
+\end_inset
+
+ בן של 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+עיוורת:
+ אם לכל 
+\begin_inset Formula $\sigma\in\Sigma$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $h\left(\sigma\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב שיוריסטיקה עיוורת מקיימת את כל התכונות הקודמות - אבל היא לא עוזרת לנו.
+ ועדיין - היא לא 
+\begin_inset Quotes eld
+\end_inset
+
+תדפוק
+\begin_inset Quotes erd
+\end_inset
+
+ לנו את האלגוריתם.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+חיפוש חמדני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+best-first
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+GBFS
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Standard
+האלגוריתם משתמש בערימת מינימום ממויינת לפי 
+\begin_inset Formula $\sigma\mapsto h\left(\sigma\right)$
+\end_inset
+
+.
+ לא מפתחים קודקודים עבורם 
+\begin_inset Formula $h\left(\sigma\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בהינתן יוריסטיקה בטוחה,
+ האלגוריתם שלם:
+ הוא יעבור על כל המצבים הנגישים מהמצב ההתחלתי.
+\end_layout
+
+\begin_layout Itemize
+הוא לא אופטימלי - אלא אם כן היוריסטיקה מאוד טובה (מקיימת כמה תכונות מאוד חזקות)
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+אלגוריתם 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ממיין את הערימה לפי 
+\begin_inset Formula $\sigma\mapsto f\left(\sigma\right)=g\left(\sigma\right)+h\left(\sigma\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g\left(\sigma\right)$
+\end_inset
+
+ הוא המחיר של קודקוד (החיפוש) 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בנוסף ל
+\lang english
+closed
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שומרים מילון בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+distance
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמעדכנים אותו:
+\begin_inset Formula 
+\[
+distance\left(state\left(\sigma\right)\right)\coloneqq g\left(\sigma\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ברוב שפות התכנות אפשר לייצג אותם באותו מבנה נתונים (מי שאין לו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+distance
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא בהכרח לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+closed
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי עדיין לא הגענו אליו)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מפתחים קודקודים ב
+\lang english
+closed
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל רק אם 
+\begin_inset Formula $g\left(\sigma\right)<distance\left(state\left(\sigma\right)\right)$
+\end_inset
+
+ (כלומר הגענו אליו בדרך יותר מהירה)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם היוריסטיקה אדמיסבילית,
+ הפתרון אופטימלי.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+הוכחת אופטימליות
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+טרמינולוגיה:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ערך 
+\begin_inset Formula $f$
+\end_inset
+
+ של קודקוד - 
+\begin_inset Formula $f\left(\sigma\right)\coloneqq g\left(\sigma\right)+h\left(\sigma\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+קודקודים מיוצרים - שהוכנסו ל
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשלב מסויים
+\end_layout
+
+\begin_layout Itemize
+קודקודים מפותחים (
+\lang english
+expanded
+\lang hebrew
+) - שהוצאו מ
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והבדיקה מול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+closed
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+distance
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הצליחה
+\end_layout
+
+\begin_layout Itemize
+קודקודים מפותחים מחדש - שפותחו בזמן שהיו ב
+\lang english
+closed
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נניח בשלילה שקיבלנו פתרון לא אופטימלי עבור 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $state\left(\sigma\right)\in G$
+\end_inset
+
+.
+ אזי בהכרח אין קודקוד מטרה עם מסלול אופטימלי 
+\begin_inset Formula $\sigma^{*}$
+\end_inset
+
+ ב
+\lang english
+open
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה:
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ אדמיסבילית ולכן בהכרח 
+\begin_inset Formula $h\left(\sigma^{*}\right)\le h^{*}\left(\sigma^{*}\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(\sigma^{*}\right)<f\left(\sigma\right)$
+\end_inset
+
+ - כלומר היינו אמורים להוציא את 
+\begin_inset Formula $f\left(\sigma^{*}\right)$
+\end_inset
+
+ קודם.
+\end_layout
+
+\begin_layout Standard
+כמו כן,
+ אחד מהקודקודים 
+\begin_inset Formula $\sigma'$
+\end_inset
+
+ במסלול האופטימלי מקודקוד ההתחלה 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ נמצא בהכרח ב
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(שכן פיתחנו את 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+).
+ בגלל שהיוריסטיקה אדמיסבילית (ולכן 
+\begin_inset Formula $h\left(\sigma^{*}\right)=0$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+f\left(\sigma'\right)=g\left(\sigma'\right)+h\left(\sigma'\right)\le g\left(g^{*}\right)<g\left(\sigma\right)=f\left(\sigma\right)
+\]
+
+\end_inset
+
+כלומר בהכרח 
+\begin_inset Formula $f\left(\sigma\right)>f\left(\sigma'\right)$
+\end_inset
+
+ - ולכן האלגוריתם היה אמור להוציא את 
+\begin_inset Formula $\sigma'$
+\end_inset
+
+ לפני 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ קיבלנו סתירה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $A^{*}$
+\end_inset
+
+ ממושקל
+\end_layout
+
+\begin_layout Standard
+משתמשים ב
+\begin_inset Formula 
+\[
+f\left(\sigma\right)=g\left(\sigma\right)+W\cdot h\left(\sigma\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $W\in\mathbb{R}^{+}_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $W=0$
+\end_inset
+
+ זה מתנהג כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $W=1$
+\end_inset
+
+ זה מתנהג כמו 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $W\to\infty$
+\end_inset
+
+ זה מתנהג כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GBFS
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+עבור 
+\begin_inset Formula $W>1$
+\end_inset
+
+ האלגוריתם הזה הוא 
+\begin_inset Formula $W$
+\end_inset
+
+-אופטימלי - כלומר העלות של הפתרון שהוא מוצא לא תהיה יותר מפי 
+\begin_inset Formula $W$
+\end_inset
+
+ מהפתרון האופטימלי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+opt^{*}\le cost\left(\pi\right)\le W\cdot opt^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+אלגוריתמים לא שלמים
+\end_layout
+
+\begin_layout Section*
+
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Hill-climbing
+\end_layout
+
+\begin_layout Standard
+לוקח בכל פעם את הבן עם היוריסטיקה הכי טובה (עם שובר-שוויון אקראי) - ומתעלם מכל האחרים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יכול להיות שהאלגוריתם לא יגיע למטרה וירוץ לנצח - בפועל,
+ עד שיגמר הזיכרון,
+ שכן הוא עדיין מפתח עץ חיפוש וגם אם הוא חוזר על מצבים הוא צריך לשמור את כל המסלול.
+\end_layout
+
+\begin_layout Itemize
+גם עבור יוריסטיקה כבילה יכול להיות שהוא לא ימצא פתרון.
+ למשל - עבור יוריסטיקה עיוורת האלגוריתם יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+random walk
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $h^{*}$
+\end_inset
+
+ האלגוריתם שלם - אבל לא בהכרח אופטימלי,
+ שכן הוא מסתכל על היוריסטיקה של הקודקוד הבן אבל לא על העלות להגיע אליו.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אבל עבור 
+\begin_inset Formula $h^{*}$
+\end_inset
+
+ ומחיר אחיד,
+ הפתרון יהיה אופטימלי.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Enforced hill-climbing
+\end_layout
+
+\begin_layout Standard
+בכל שלב,
+ האלגוריתם מריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהקודקוד 
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ עד שהוא מוצא קודקוד 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $h\left(\sigma\right)<h\left(\sigma^{0}\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - ומחזיר אותו.
+\end_layout
+
+\begin_layout Standard
+כלומר - במקום להסתכל על הבן עם היוריסטיקה הקטנה ביותר,
+ מחפשים פשוט קודקוד עם יוריסטיקה טובה יותר.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם הגרף חד כיווני,
+ האלגוריתם לא יתקע - אבל יכול להיכשל במציאת הפתרון אם הוא מגיע ל
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ שהוא מבוי סתום.
+\end_layout
+
+\begin_layout Itemize
+אם הגרף לא מכוון,
+ האלגוריתם שלם אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $h\left(\sigma\right)=0$
+\end_inset
+
+ לכל קודקודי המטרה - ו
+\begin_inset Formula $h\left(\sigma\right)>0$
+\end_inset
+
+ לכל קודקוד שאינו קודקוד מטרה.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

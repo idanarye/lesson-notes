@@ -1,0 +1,806 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-05
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+ניר בן ארי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-04-13
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Parameter Estimation
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בהינתן סט פרמטרים,
+ אנו יודעים מה התפלגות התצפיות.
+ אנחנו רוצים להעריך את הכיוון השני - מה ההסתברות לפרמטרים בהתאם להתפלגות שקיבלנו.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Parameter Estimation
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bayes Decision Theory
+\end_layout
+
+\begin_layout Standard
+ממזערים את התוחלת של העלות (שמוגדרת לפי גודל הטעות)
+\begin_inset Formula 
+\[
+P\left(\theta\middle|X\right)=\arg\max_{\theta}\frac{P\left(X\middle|\theta\right)}{P\left(X\right)}P\left(\theta\right)
+\]
+
+\end_inset
+
+מוצאים את 
+\begin_inset Formula $\theta$
+\end_inset
+
+ באמצעות גזירה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Maximum Likelihood Estimation
+\end_layout
+
+\begin_layout Standard
+מגדירים את העלות בתור ה
+\lang english
+likelihood
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\theta_{ML}=\arg\max_{\theta}P\left(S_{n}\middle|\theta\right)=\arg\max_{\theta}\sum_{i}\log P\left(x_{i}\middle|\theta\right)
+\]
+
+\end_inset
+
+ההבדל העיקרי בין זה לבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Bayes Decision Theory
+\lang hebrew
+ היא שכאן מתעלמים מ
+\begin_inset Formula $P\left(\theta\right)$
+\end_inset
+
+ - מניחים שאין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+prior
+\lang hebrew
+,
+ או שהוא אחיד
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+גם אין 
+\begin_inset Formula $P\left(X\right)$
+\end_inset
+
+ - אבל זה לא משפיע על התוצאה,
+ כי הוא אינו תלוי ב
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה:
+ משתמשים ב
+\begin_inset Formula $\log$
+\end_inset
+
+ כי יותר נוח לגזור סכומים מאשר מכפלות.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+PAC Learning
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים למצוא מודל 
+\begin_inset Formula $h:x\mapsto\hat{y}$
+\end_inset
+
+ שחוזה 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ שמתאים ל
+\begin_inset Formula $y$
+\end_inset
+
+ האמיתי.
+\end_layout
+
+\begin_layout Standard
+יש טעות אמיתית 
+\begin_inset Formula $Err_{D}\left(h\right)=\mathbb{E}_{P\left(x,y\right)}\left[l\left(h\left(x\right),y\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש את הטעות האמפירית (או טעות אימון) 
+\begin_inset Formula $Err_{S_{n}}\left(h\right)=\frac{1}{n}\sum\limits^{n}_{i=1}l\left(h\left(x_{i}\right),y_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הרעיון של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PAC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+Probably Aproximtately Correct
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ קבוצת היפותזות 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PAC learnable
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם קיים אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ אשר מוצא היפותזה 
+\begin_inset Formula $h^{*}=A\left(S_{n}\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+למרות ה*,
+ לא מדובר כאן על ההיתפוזה ה
+\begin_inset Quotes erd
+\end_inset
+
+אמיתית
+\begin_inset Quotes erd
+\end_inset
+
+.
+ יש יותר מהיפותזה אחת שיכולה לקיים את התכונה הזאת - ההיפותזה האמיתית בהכרח מקיימת אותה.
+\end_layout
+
+\end_inset
+
+ לכל סט דוגמאות 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ המקיים:
+ לכל 
+\begin_inset Formula $\epsilon,\delta>0$
+\end_inset
+
+,
+ קיים 
+\begin_inset Formula $N\left(\epsilon,\delta\right)$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $n>N\left(\epsilon,\delta\right)$
+\end_inset
+
+ ולכל התפלגות 
+\begin_inset Formula $D$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+Pr\left[Err_{D}\left(A\left(S_{n}\right)\right)<\epsilon\right]>1-\delta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במילים:
+ בהינתן מספיק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+data
+\lang hebrew
+,
+ סביר להניח (
+\begin_inset Formula $\epsilon$
+\end_inset
+
+) שנגיע להיפותזה נכונה בקירוב (
+\begin_inset Formula $\delta$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+ה
+\begin_inset Formula $N\left(\epsilon,\delta\right)$
+\end_inset
+
+ נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Sample Complexity
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מספר הנקודות המינימלי הדרוש כדי להגיע לקירוב הרצוי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תכונות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $N\left(\epsilon,\delta\right)$
+\end_inset
+
+ מונוטוני לא-עולה עבור הפרמטר הראשון.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיציה:
+ אם מספר הנקודות מספיק עבור הטעות הקטנה,
+ הוא בהכרח מספיק גם עבור הטעות הגדולה.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

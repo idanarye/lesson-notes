@@ -1,0 +1,1830 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+בינה מלאכותית
+\\
+\selectlanguage{english}
+89-5570-06
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+ד"ר אלכסנדר שלייפמן
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-04-16
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+נרצה למצוא ייצוג לבעיות ככה שנוכל ליצור יוריסטיקות שיתאימו לייצוג אבל לא יהיו תלויות בבעיה עצמה.
+ ככה נוכל להשתמש ביוריסטיקות האלה עבור כל בעיה (שניתן לייצג בייצוג שבחרנו) לאחר שתרגמו אותו לייצוג הזה.
+\end_layout
+
+\begin_layout Standard
+נרצה שהיוריסטיקות האלה יהיו טובות - וגם שיהיה אפשר לחשב אותן בזמן פולינומי.
+\end_layout
+
+\begin_layout Standard
+הייצוג צריך להיות קומפקטי.
+\end_layout
+
+\begin_layout Standard
+איך מצב?
+ יש בד
+\begin_inset Quotes erd
+\end_inset
+
+כ כמה מרכיבים,
+ והייצוג של המצב הוא מכפלה קרטזית.
+ אבל לא כל הקומבינציות האלה חוקיות,
+ ולא כולן נגישות:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+חוקי
+\emph default
+ משהו קונספטואלי - תלוי בהגדרת הבעיה.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+נגיש
+\emph default
+ זה משהו יותר פורמלי - כל מצב שאפשר להגיע אליו מהמצב ההתחלתי באמצעות רצף פעולות אפשריות.
+\end_layout
+
+\begin_layout Standard
+אידיאלית,
+ נרצה שלא יהיו מצבים חוקיים שאינם נגישים.
+\end_layout
+
+\begin_layout Standard
+נרצה לייצג את המצבים בצורה בינארית.
+ למשל - ע
+\begin_inset Quotes erd
+\end_inset
+
+י מתן ערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל 
+\begin_inset Quotes eld
+\end_inset
+
+עובדה
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה:
+ עולם בלוקים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ יכול להיות על השולחן,
+ על 
+\begin_inset Formula $B$
+\end_inset
+
+,
+ או על 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B$
+\end_inset
+
+ יכול להיות על השולחן,
+ על 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ או על 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C$
+\end_inset
+
+ יכול להיות על השולחן,
+ על 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ או על 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+27
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מצבים - לא כולם נגישים.
+ אפשר לייצג בצורה בינארית עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סיביות לכל בלוק (על השולחן,
+ או על כל אחד מהבלוקים האחרים).
+ זה נותן 
+\begin_inset Formula $2^{9}$
+\end_inset
+
+ מצבים,
+ אבל אם מידלנו נכון את הבעיה,
+ רכיב הקשירות של המצבים הנגישים יישאר אותו דבר.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+finate domain representation
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כל המשתנים באים עם ערכים סופיים.
+ גם אם יש מספר,
+ הוא חסום באיזשהו קבוע.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המודל יהיה מיוצג בצורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+implicit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(לא ישיר)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל:
+ בעיית ניווט
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ב
+\lang english
+implicit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש לנו פעולה אחת - 
+\begin_inset Quotes eld
+\end_inset
+
+לנסוע
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ב
+\lang english
+explicit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך לפרק את זה להרבה פעולות:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+לנסוע מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+לנסוע מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+לנסוע מ
+\begin_inset Formula $B$
+\end_inset
+
+ ל
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ וכו.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+STRIPS - STanford Research Insitutde Problem Solver
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+STRIPS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא שפה למידול פעולות שמוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left\langle P,A,I,G\right\rangle $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $P$
+\end_inset
+
+ כל הפרדיקטים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נקראים גם 
+\begin_inset Quotes eld
+\end_inset
+
+עובדות
+\begin_inset Quotes erd
+\end_inset
+
+ או 
+\begin_inset Quotes eld
+\end_inset
+
+אטומים
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ שיש לנו - משתנים בינארים שאומרים אם עובדה בעולם נכונה או לא נכונה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A$
+\end_inset
+
+ פעולות.
+ כל פעולה מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+precondition
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מה צריך להיות נכון כדי שנפעיל את הפעולה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+add effects
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- איזה עובדות הופכות לנכונות לאחר ביצוע הפעולה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+delete effects
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- איזה עובדות הופכות ללא נכונות לאחר ביצוע הפעולה
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I$
+\end_inset
+
+ מצב התחלתי - איזה עובדות נכונות (כל השאר לא נכונות)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $G$
+\end_inset
+
+ תיאור מטרה - סט של פרדיקטים.
+ מצב 
+\begin_inset Formula $s_{*}$
+\end_inset
+
+ הוא מצב מטרה אם 
+\begin_inset Formula $s_{*}\supseteq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A,I,G$
+\end_inset
+
+ כולם מוגדרים לפי הפרדיקטים של 
+\begin_inset Formula $P$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $I\subseteq P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G\subseteq P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ יש 
+\begin_inset Formula $pre\left(a\right),add\left(a\right),del\left(a\right)$
+\end_inset
+
+ שכולם תת-קבוצות של 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אי אפשר לקבוע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+preconditions
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שליליים (פרדיקטים שאסור שיהיו נכונים כשמבצעים את הפעולה).
+ אם רוצים לעשות את זה,
+ צריכים להוסיף פרדיקט הופכי,
+ ולדאוג שכל פעולה שמדליקה פרדיקט מכבה את ההופכי שלו (ולהפך)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מצב 
+\begin_inset Formula $s$
+\end_inset
+
+ הוא אוסף של אטומים.
+ הפעלת פעולה 
+\begin_inset Formula $a$
+\end_inset
+
+ על 
+\begin_inset Formula $s$
+\end_inset
+
+ מייצרת:
+\begin_inset Formula 
+\[
+s'=\left(s\setminus del\left(a\right)\right)\cup add\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+יוריסטיקות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+STRIPS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h\left(s\right)\coloneqq\left|G\setminus s\right|$
+\end_inset
+
+ - כמה אטומים חסרים לנו כדי להגיע למצב המטרה
+\end_layout
+
+\begin_layout Itemize
+היוריסטיקה הזאת מיודעת מטרה - עבור מצב מטרה 
+\begin_inset Formula $s\subseteq G$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|G\setminus s\right|=\left|\emptyset\right|=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+היא לא אדמיסיבילית - בגלל שפעולה יכולה להפעיל יותר ממצב אחד.
+\end_layout
+
+\begin_layout Itemize
+היא לא אינפורמטיבית - רוב הפעולות לא משנות אותה (כי כשמפעילים פרדיקטים שרק עוזרים להגיע ל
+\begin_inset Formula $G$
+\end_inset
+
+ המטרה אבל לא כלולים בו - היא לא קטנה)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Sussman anomaly
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ - אם רק רודפים אחרי עובדות ב
+\begin_inset Formula $G$
+\end_inset
+
+,
+ זה יכול להוליך אותנו שולל.
+\end_layout
+
+\begin_layout Standard
+רוצים יוריסטיקה שתהיה גם אדמיסיבילית,
+ גם מיודעת מטרה,
+ וגם קונסיסטנטית.
+\end_layout
+
+\begin_layout Standard
+העיקרון הכללי - לפתור גרסה יותר קלה של הבעיה.
+ יש שתי דרכים:
+\end_layout
+
+\begin_layout Itemize
+הפשטות (
+\lang english
+abstraction
+\lang hebrew
+) - מקטינים את מרחב המצבים
+\end_layout
+
+\begin_layout Itemize
+החלשות (
+\lang english
+relaxation
+\lang hebrew
+) - מורידים הגבלות על הבעיה
+\end_layout
+
+\begin_layout Standard
+בשביל לבצע החלשה,
+ למשל,
+ נוכל להתעלם מרכיבי ה
+\begin_inset Formula $del$
+\end_inset
+
+ של הפעולות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אי אפשר להתעלם מ
+\begin_inset Formula $add$
+\end_inset
+
+,
+ כי אז לא נוכל להגיע למטרה (אלא אם כן 
+\begin_inset Formula $I\subseteq G$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+אי אפשר להתעלם מ
+\begin_inset Formula $pre$
+\end_inset
+
+,
+ כי אז מאבדים לגמרי את המבנה של הגרף
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לאחר ההחלשה,
+ אין טעם לבצע פעולה יותר מפעם אחת (כי 
+\begin_inset Formula $s\supseteq add\left(a\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $a=\left\langle pre\left(a\right),add\left(a\right),del\left(a\right)\right\rangle \in A$
+\end_inset
+
+,
+ ההחלשה שלה 
+\begin_inset Formula $a^{+}$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+a^{+}=\left\langle pre\left(a\right),add\left(a\right),\emptyset\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+החלשה של בעיה 
+\begin_inset Formula $\Pi^{+}$
+\end_inset
+
+ היא הפיכת כל פעולות שלה למוחלשות.
+\end_layout
+
+\begin_layout Itemize
+החלשה של תוכנית 
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+ היא החלשה של כל הפעולות ב
+\begin_inset Formula $\pi$
+\end_inset
+
+ למוחלשות
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ החלשה היא אידמפוטנטית - ביצוע שלה יותר מפעם אחת לא עושה כלום.
+ אבל היא עדיין חלק מ
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+מצבים שולטים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ 
+\begin_inset Formula $s'$
+\end_inset
+
+ שולט (
+\lang english
+dominates
+\lang hebrew
+) על 
+\begin_inset Formula $s$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $s\subseteq s'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למה:
+ יהי 
+\begin_inset Formula $s$
+\end_inset
+
+ מצב,
+ ו
+\begin_inset Formula $s'$
+\end_inset
+
+ מצב ששולט עליו,
+ ו
+\begin_inset Formula $\pi$
+\end_inset
+
+ רצף פעולות שאפשר לבצע על 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+ ניתן לביצוע על על 
+\begin_inset Formula $s'$
+\end_inset
+
+ ו
+\begin_inset Formula $app_{\pi^{+}}\left(s'\right)$
+\end_inset
+
+ שולט על 
+\begin_inset Formula $app_{\pi}\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\pi$
+\end_inset
+
+ מוביל למצב מטרה מ
+\begin_inset Formula $s$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+ מוביל למצב מטרה מ
+\begin_inset Formula $s'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תוצאה:
+ כל תוכנית היא גם תוכנית מוחלשת.
+ לכן גודל התוכנית המוחלשת האופטימלית קטן או שווה לגודל התוכנית האופטימלית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+מסקנה:
+ אורך התוכנית המוחלשת האופטימלית הוא יוריסטיקה אדמיסיבילית.
+\end_layout
+
+\begin_layout Section*
+רדוקציה ל
+\lang english
+Set Cover
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ בהינתן קבוצה 
+\begin_inset Formula $U$
+\end_inset
+
+ ואוסף תתי קבוצות 
+\begin_inset Formula $C=\left\{ C_{1},\dots,C_{n}\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\forall_{i}C_{i}\subseteq U$
+\end_inset
+
+ ומספר טבעי 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+,
+ האם קיים 
+\begin_inset Formula $S=\left\{ S_{1},\dots,S_{m}\right\} \subseteq C$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $S_{1}\cup\cdots\cup S_{m}=U$
+\end_inset
+
+ ו
+\begin_inset Formula $m\le K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Set Cover
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP
+\lang hebrew
+-שלמה.
+ אם נוכל להמיר אותה לבעיית מציאת תוכנית מוחלשת,
+ נראה שגם היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP
+\lang hebrew
+-שלמה.
+\end_layout
+
+\begin_layout Standard
+אבל...
+ זה עדיין סיבוכיות גבוהה.
+ לכן נרצה למצוא קירוב שיהיה פולינומי.
+ ולהשתמש בו בתור היוריסטיקה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מתחילים מהמצב ההתחלתי.
+\end_layout
+
+\begin_layout Enumerate
+מפעילים את כל הפעולות שאפשר להפעיל מהמצב ההתחלתי.
+\end_layout
+
+\begin_layout Enumerate
+מפעילים,
+ מהמצב שקיבלנו,
+ את כל הפעולות שאפשר להפעיל עליו.
+\end_layout
+
+\begin_layout Enumerate
+ממשיכים על שמגיעים למצב המטרה.
+ אם לא מגיעים למצב המטרה - סימן שהבעיה לא פתירה.
+\end_layout
+
+\begin_layout Standard
+מקבלים מבנה עם שכבות,
+ שבכל שבכה יש פעולות.
+ נשתמש בזה כדי לחשב גם חסם עליון וגם חסם תחתון:
+\end_layout
+
+\begin_layout Itemize
+בשביל החסם התחתון,
+ לוקחים את המחיר של הפעולה הכי יקרה בכל שכבה.
+\end_layout
+
+\begin_layout Itemize
+בשביל החסם העליון,
+ לוקחים את סכום הפעולות של השכבה האחרונה.
+ נשים לב שזה כולל גם פעולות מהשכבות הקודמות,
+ שמפעילים שוב (גם אם אין השפעה)
+\end_layout
+
+\begin_layout Standard
+החסם העליון הזה יותר מדי מרווח.
+ כדי להדק אותו,
+ נגדיר:
+\end_layout
+
+\begin_layout Itemize
+כל הצמתים מתחילים לא מסומנים - חוץ מצמתי המטרה
+\end_layout
+
+\begin_layout Itemize
+צומת פעולה הוא מוצדק אם כל הצמתים הדרושים עבורו מסומנים (כלומר - אפשר להפעיל את הפעולה)
+\end_layout
+
+\begin_layout Itemize
+צומת פרדיקט הוא מוצדק אם לפחות אחד מהצמתים הדרושים עבורו מסומן (כלומר - פעולה כלשהי הפעילה את הצומת)
+\end_layout
+
+\begin_layout Standard
+נפעיל את החוקים הבאים עד שנצדיק את כל האטומים:
+\end_layout
+
+\begin_layout Enumerate
+נסמן כל צומת הדרוש בשביל צומת פעולה מסומן לא-מוצדק
+\end_layout
+
+\begin_layout Enumerate
+נסמן כל צומת הדרוש בשביל צומת פרדיקט מסומן לא-מוצדק שיש לו רק צומת דרוש אחד
+\end_layout
+
+\begin_layout Enumerate
+נסמן כל צומת הדרוש בשביל צומת פרקדיקט מסומן לא-מוצדק שקיבלנו משכבה קודמת עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+idle arc
+\end_layout
+
+\begin_layout Enumerate
+נסמן כל צומת הדרוש בשביל צומת פרדיקט מסומן לא-מוצדק
+\end_layout
+
+\begin_layout Standard
+מבצעים את החוקים לפי הסדר - החוקים הראשונים מקבלים עדיפות.
+ מתחילים מצמתי המטרה (שכולם מוצדקים)
+\end_layout
+
+\end_body
+\end_document

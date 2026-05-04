@@ -1,0 +1,1418 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-05
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+ניר בן ארי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-04
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Gradient Descent
+\end_layout
+
+\begin_layout Standard
+בשביל למצוא את המינימום של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ נרצה ללכת במורד הגרדיאנט של פונקציית ה
+\lang english
+loss
+\lang hebrew
+.
+ עושים את זה לפי:
+\begin_inset Formula 
+\[
+w^{t}=w^{t-1}-\eta\nabla L\left(w^{t-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרמטר 
+\begin_inset Formula $\eta$
+\end_inset
+
+ נקרא 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+learning rate
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ או 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+step size
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ אנחנו רוצים לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+learning rate
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלא יהיה קטן מדי - כי אז יקח לנו יותר מדי זמן (ויותר מדי דוגמאות) להתכנס,
+ וגם כי אז אנחנו עלולים להגיע ל
+\lang english
+local minimum
+\lang hebrew
+.
+ מצד שני,
+ אם ניקח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+learning rate
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גדול מדי אנחנו עלולים 
+\begin_inset Quotes eld
+\end_inset
+
+לדלג
+\begin_inset Quotes erd
+\end_inset
+
+ מעל המינימום שאנחנו מחפשים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+פונקציה היא 
+\begin_inset Formula $\beta-smooth$
+\end_inset
+
+ (או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lipschitz continous
+\lang hebrew
+) אם לכל 
+\begin_inset Formula $x,y\in\mathbb{R}^{d}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\Vert f\left(x\right)-\nabla f\left(y\right)\right\Vert \le\beta\left\Vert x-y\right\Vert 
+\]
+
+\end_inset
+
+כלומר - הפונקציה לא זזה יותר מדי.
+\end_layout
+
+\begin_layout Itemize
+פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ היא קמורה (
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+convex
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+) אם
+\begin_inset Formula 
+\[
+f\left(y\right)\ge f\left(x\right)+\nabla f\left(x\right)^{T}\left(y-x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+משפט:
+ תהי 
+\begin_inset Formula $f:\mathbb{R}^{d}\to\mathbb{R}$
+\end_inset
+
+ פונקצירה וגזירה,
+ ושהגרדיאנט שלה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lipschitz continous
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם קבוע 
+\begin_inset Formula $\beta>0$
+\end_inset
+
+.
+ אזי אם נריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient desscent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במשך 
+\begin_inset Formula $T$
+\end_inset
+
+ צעדים עם גודל צעד 
+\begin_inset Formula $\eta\le\frac{1}{\beta}$
+\end_inset
+
+ נקבל פתרון 
+\begin_inset Formula $x^{T}$
+\end_inset
+
+ המקיים:
+\begin_inset Formula 
+\[
+f\left(x^{T}\right)-f\left(x^{*}\right)\le\frac{\left\Vert x^{0}-x^{*}\right\Vert ^{2}}{2\eta T}\le\epsilon
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $f\left(x^{*}\right)$
+\end_inset
+
+ הוא הערך האופטימלי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיטיבית:
+ זה אומר שירידה בגרדיאנט תגרום לפונקציה להתכנס בקצב 
+\begin_inset Formula $O\left(\frac{1}{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למה:
+ לכל פונקציה 
+\begin_inset Formula $\beta$
+\end_inset
+
+-חלקה,
+ אפשר לחסום אותה באמצעות חסם עליון ריבועי:
+\begin_inset Formula 
+\[
+f\left(y\right)\le f\left(x\right)+\nabla f\left(x\right)^{T}\left(y-x\right)+\frac{\beta}{2}\left\Vert y-x\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לצבור את הגרדיאנט של כל ה
+\lang english
+training set
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשביל לעדכן פרמטרים:
+\begin_inset Formula 
+\[
+w^{t}=w^{t-1}-\eta\frac{1}{n}\sum^{n}_{i=1}\nabla_{w}\ell\left(x_{i_{t}},y_{i},w^{t-1}\right)
+\]
+
+\end_inset
+
+אבל זה איטי.
+ לכן נרצה:
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Stochastic Gradient Descent
+\end_layout
+
+\begin_layout Standard
+לכל איטרציה 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ בוחרים דוגמא אקראית 
+\begin_inset Formula $\left(x_{i_{t}},y_{i_{t}}\right)$
+\end_inset
+
+ ומעדכנים:
+\begin_inset Formula 
+\[
+w^{t}=w^{t-1}-\eta\nabla_{w}\ell\left(x_{i_{t}},y_{i_{t}},w^{t-1}\right)
+\]
+
+\end_inset
+
+יש לנו ככה הרבה יותר צעדים - אבל כל צעד הוא מאוד זול (כי משתמשים רק בדוגמה אחת)
+\end_layout
+
+\begin_layout Standard
+הבעיה בשיטה הזאת שהיא פחות מדוייקת,
+ ושגם יותר קשה למקבל אותה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GPU
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Mini-Batc Gradient Descent
+\end_layout
+
+\begin_layout Standard
+אפשר לבחור משהו באמצע - לא את כל הנקודות אבל יותר מנקודה אחת - נבחר בכל צעד 
+\begin_inset Formula $k$
+\end_inset
+
+ דוגמאות 
+\begin_inset Formula $\mathcal{B}_{t}\subset\left\{ 1,\dots,n\right\} $
+\end_inset
+
+ ונעדכן לפיהן:
+\begin_inset Formula 
+\[
+w^{t}=w^{t-1}-\eta\frac{1}{k}\sum_{i\in\mathcal{B}_{t}}\nabla_{w}\ell\left(x_{i},y_{i},w^{t-1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left|\mathcal{B}_{t}\right|=k$
+\end_inset
+
+ נקרא 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+batch size
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ - בד
+\begin_inset Quotes erd
+\end_inset
+
+כ יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+32
+\numeric off
+,
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+64
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+128
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+רגרסיה לינארית
+\end_layout
+
+\begin_layout Standard
+לעשות ממוצע נאיבי זה בד
+\begin_inset Quotes erd
+\end_inset
+
+כ לא טוב - גם בהנחה שכל הפ'יצרים מנורמלים עדיין יש פיצ'רים יותר ופחות חשובים,
+ ורוצים לעשות משקלים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ יש לנו נתונים - דוגמאות מתוייגות 
+\begin_inset Formula $\mathcal{X}=\left\{ \left(x_{i},y_{i}\right)\right\} ^{n}_{i=1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x_{i}\in\mathbb{R}^{d},y_{i}\in\mathbb{R}$
+\end_inset
+
+.
+ רוצים למצוא פונקציה 
+\begin_inset Formula $f:x_{i}\to\mathbb{R}$
+\end_inset
+
+ שממפה כל דוגמה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ל
+\begin_inset Formula $\hat{y_{i}}=f\left(x_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ברגרסיה לינארית נרצה ש
+\begin_inset Formula $f$
+\end_inset
+
+ תהיה פונקציה לינארית 
+\begin_inset Formula $f\left(x_{i}\right)=x^{T}_{i}\beta$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\beta\in\mathbb{R}^{d}$
+\end_inset
+
+ הוא ווקטור של מקדמים.
+ או בצורת מטריצה:
+ 
+\begin_inset Formula $\hat{y}=X\beta$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $X\in\mathbb{R}^{n\times d}$
+\end_inset
+
+ מייצג את 
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עושים זאת באמצעות מזעור ה
+\lang english
+Mean Squared Error
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+MSE\coloneqq\frac{1}{n}\left(y-X\beta\right)^{T}\left(y-X\beta\right)
+\]
+
+\end_inset
+
+הפתרון שממזער את ה
+\lang english
+MSE
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\begin_inset Formula 
+\[
+\overline{\beta}=\left(X^{T}X\right)^{-1}X^{T}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+רגרסיה לינארית בתור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ERM
+\end_layout
+
+\begin_layout Standard
+יש לנו רגרסיה לינארית
+\begin_inset Formula 
+\[
+\hat{y}_{w}\left(x\right)=w\cdot x
+\]
+
+\end_inset
+
+נרצה למזער את ה
+\lang english
+loss
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\ell\left(X,Y,w\right)=\frac{1}{n}\sum^{n}_{i=1}\frac{1}{2}\left(y_{i}-\hat{y}_{w}\left(x_{i}\right)\right)^{2}
+\]
+
+\end_inset
+
+אם נגזור לפי 
+\begin_inset Formula $w$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\[
+\frac{\partial\ell}{\partial w}=\cdots=\frac{1}{n}\sum^{n}_{i=1}\left(y_{i}-\hat{y}_{w}\left(x_{i}\right)\right)\left(-x_{i}\right)
+\]
+
+\end_inset
+
+אפשר להפוך את זה ל
+\lang english
+gradient descent
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+w^{t}\gets w^{t-1}-\eta\cdot\frac{1}{n}\sum^{n}_{i=1}\left(y_{i}-\hat{y}_{w}\left(x_{i}\right)\right)\left(-x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+האלגוריתם:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בוחרים נקודת התחלה אקראית - פרמטרים 
+\begin_inset Formula $w^{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+חוזרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מנבאים תגיות 
+\begin_inset Formula $\hat{y}_{w}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מחשבים את הגרדיאנט של ה
+\lang english
+loss
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+מעדכנים את הפרמטרים באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient descent
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Linear Classifiers
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Linear Binary Classifiers and Perceptron
+\end_layout
+
+\begin_layout Standard
+מרחב ההיפותזות שלנו הוא:
+\begin_inset Formula 
+\[
+h_{w,b}\left(x\right)=\begin{cases}
++1 & w^{T}x>b\\
+-1 & w^{T}<b
+\end{cases}
+\]
+
+\end_inset
+
+זה בעצם מסווג לנו מה מעל הקו ומה מתחת לקו.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+SGD
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Single Neuron Model
+\end_layout
+
+\begin_layout Standard
+אפשר לעדכן את הפרמטרים של הפרספטרון כאשר בכל צעד,
+ אם 
+\begin_inset Formula $y_{i}w^{T}x_{i}<0$
+\end_inset
+
+,
+ מעדכנים 
+\begin_inset Formula $w\gets w+\eta y_{i}x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה:
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ כאן הוא חלק מ
+\begin_inset Formula $w$
+\end_inset
+
+ - כלומר 
+\begin_inset Quotes eld
+\end_inset
+
+מגדילים
+\begin_inset Quotes erd
+\end_inset
+
+ את 
+\begin_inset Formula $w$
+\end_inset
+
+ ומסמנים 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+איך עושים לזה רגולריזציה?
+ מוסיפים איבר רגולריזציה 
+\begin_inset Formula $\frac{\lambda}{2}\left\Vert w\right\Vert ^{2}=\frac{\lambda}{2}w^{T}w$
+\end_inset
+
+,
+ כלומר:
+\begin_inset Formula 
+\[
+\ell\left(w;x,y\right)\coloneqq\ell_{\textnormal{hinge}}\left(w;x,y\right)+\frac{\lambda}{2}\left\Vert w\right\Vert ^{2}=\begin{cases}
+-yw^{T}x+\frac{\lambda}{2}w^{T}w & yw^{T}x<0\\
+\frac{\lambda}{2}w^{T}w & yw^{T}w>0
+\end{cases}
+\]
+
+\end_inset
+
+ואז בכל עדכון,
+ אם 
+\begin_inset Formula $y_{i}w^{T}x_{i}<0$
+\end_inset
+
+ נעדכן 
+\begin_inset Formula $w\gets w-\eta\left(\lambda w-y_{i}x_{i}\right)$
+\end_inset
+
+ ואם 
+\begin_inset Formula $y_{i}w^{T}x_{i}>0$
+\end_inset
+
+ נעדכן 
+\begin_inset Formula $w\gets w-\eta\left(\lambda w\right)$
+\end_inset
+
+ (כי הסיווג נכון,
+ אבל רוצים עדיין לעדכן לפי הרגולריזציה)
+\end_layout
+
+\end_body
+\end_document

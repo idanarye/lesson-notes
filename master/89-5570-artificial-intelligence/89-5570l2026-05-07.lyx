@@ -1,0 +1,1608 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+בינה מלאכותית
+\\
+\selectlanguage{english}
+89-5570-06
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+ד"ר אלכסנדר שלייפמן
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-07
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תכנון סטוכסטי
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים להתעסק עם מערכות סטוכסטיות,
+ שכן גם אם יש לנו ידע לא-הסתברותי על העולם:
+\end_layout
+
+\begin_layout Itemize
+הפעולות שאנחנו מבצעים יכולות להיכשל - מה שמכניס התסברות לתמונה.
+\end_layout
+
+\begin_layout Itemize
+לפעמים מגלים דברים על העולם רק בעקבות פעולות - ועד שמבצעים את הפעולת,
+ הידע שלו סטוכסטי.
+\end_layout
+
+\begin_layout Standard
+בניגוד לבעיות תכנון קלאסיות (כמו הבעיות שפתרנו עם 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+),
+ שם חיפשנו מטרה,
+ כאן אנחנו רוצים למקסם את תוחלת הרווח.
+ במערכת כשזאת יכולים להיות סוכנים עם בעיות (למשל החליט לפנות שמאלה ופועל פנה ימינה) - אנחנו צריכים לדעת להתמודד עם זה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כלומר:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יכול להיות שהפרסים סטוכסטיים
+\end_layout
+
+\begin_layout Itemize
+יכול להיות שהמעברים סטוכסטיים
+\end_layout
+
+\begin_layout Itemize
+יכול להיות שאנחנו לא יודעים את ההסתברויות
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אם רק הפרסים סטוכסטיים,
+ אפשר פשוט לחשב תוחלת.
+ נשים לב שלפעמים התוחלת שלילית למרות שיש פרסים חיוביים.
+ הפרס שמקבלים בפועל נקרא 
+\begin_inset Quotes eld
+\end_inset
+
+ריאליזציה
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בתכנון קלאסי הגרף אולי אקספוננציאלי - אבל הוא סופי.
+ כאן המצב שונה - אנחנו נמצאים בסביבה פרובביליסטית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בניגוד ל
+\begin_inset Quotes erd
+\end_inset
+
+לא-דטרמינסטי
+\begin_inset Quotes erd
+\end_inset
+
+ שם לא יודעים את ההתסברויות - בסביבה פרובבליסטית יודעים את ההסתברויות.
+\end_layout
+
+\end_inset
+
+ והאופק יכול להיות סופי או אינסופי.
+\end_layout
+
+\begin_layout Standard
+יש סוגים שונים של משחקים:
+\end_layout
+
+\begin_layout Itemize
+משחקים עם מידע חלקי - כמו טאקי
+\end_layout
+
+\begin_layout Itemize
+משחקים עם מידע מלא אבל סטוכסטי - כמו שש-בש
+\end_layout
+
+\begin_layout Itemize
+משחקים עם מידע מלא - כמו שחמט.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Markov Decision Process
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\left\langle S,A,R,T\right\rangle $
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S$
+\end_inset
+
+ אוסף סופי של מצבי עולם 
+\begin_inset Formula $\left|S\right|=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב שבתכנון קלאסי היו לנו משתנים שגרמו ל
+\begin_inset Formula $S$
+\end_inset
+
+ אקספוננציאלי.
+ כאן 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא כל המצבים שלנו.
+ אנחנו מניחים כאן שיש לנו אפשרות להסתכל על כל המצבים.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A$
+\end_inset
+
+ אוסף סופי של פעולות 
+\begin_inset Formula $\left|A\right|=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Tr$
+\end_inset
+
+ פונקציית מעבר (
+\lang english
+Transition Function
+\lang hebrew
+) - בהינתן מצב ופעולה מה ההסתברות להגיע למצב אחר:
+\begin_inset Formula 
+\[
+Tr:S\times A\times S\to\left[0,1\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Tr\left(s,a,s'\right)=P\left(s'\middle|s,a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R$
+\end_inset
+
+ פונקציית תגמול (
+\lang english
+Reward Function
+\lang hebrew
+):
+\begin_inset Formula 
+\[
+R:S\to\left[0,1\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula $R\left(s\right)$
+\end_inset
+
+ הוא תגמול מיידי שמקבלים ברגע שנכנסים למצב 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+המטרה - לבחור פעולות שימקסמו את סך התגמול.
+\end_layout
+
+\begin_layout Standard
+הנחות מרקוביות:
+\end_layout
+
+\begin_layout Itemize
+אי תלות בהיסטוריה (
+\lang english
+History Independence
+\lang hebrew
+):
+\begin_inset Formula 
+\[
+P\left(S^{t+1}\middle|A^{t},S^{t},A^{t-1},S^{t-1},\dots,S^{0}\right)=P\left(S^{t+1}\middle|A^{t},S^{t}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תגמול מרקובי (
+\lang english
+Markovian Reward
+\lang hebrew
+) - לא תלוי בדרך שבה הגענו למצב אלא רק במצב עצמו:
+\begin_inset Formula 
+\[
+P\left(R^{t}\middle|A^{t},S^{t},A^{t-1},S^{t-1},\dots,S^{0}\right)=P\left(R^{t}\middle|S^{t}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אי תלות בזמן (
+\lang english
+Stationary Dynamics
+\lang hebrew
+) - ההסתברויות לא תלויות בזמן:
+\begin_inset Formula 
+\[
+\forall_{t,k}P\left(S^{t+1}\middle|A^{t},S^{t}\right)=P\left(S^{k+1}\middle|A^{k},S^{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Full Observability
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גם אם אנחנו לא יכולי םלעדת לאיזה מצב נגיע בעקבות הפעולה,
+ עדיין נוכל לדעת לאיזה מצב הגענו 
+\emph on
+אחרי
+\emph default
+ שביצענו את הפעולה.
+\end_layout
+
+\begin_layout Part*
+פוליסות
+\end_layout
+
+\begin_layout Standard
+איך נראה הפתרון?
+ בתכנון קלאסי הפתרון הוא סדרה של פעולות (שמפעילים אחת אחרי השנייה).
+ אבל בתכנון סטוכסטי כל פעולה יכולה להגיע לכל מצב - ולכן נרצה לדעת מה לעשות בכל מצב.
+\end_layout
+
+\begin_layout Standard
+הפתרון ל
+\lang english
+MDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקרא 
+\begin_inset Quotes eld
+\end_inset
+
+פוליסה
+\begin_inset Quotes erd
+\end_inset
+
+.
+ יש שני סוגים של פוליסות:
+\end_layout
+
+\begin_layout Itemize
+סטציונריץ (
+\lang english
+stationary
+\lang hebrew
+):
+ לא משנה באיזה זמן הגענו למצב,
+ תעשה פעולה כזאת.
+ 
+\begin_inset Formula $\pi:S\to A$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\pi\left(s\right)$
+\end_inset
+
+ היא הפעולה שעלינו לבצע במצב 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+ מגדירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+continously reactive controller
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+לא-סטציונרית (
+\lang english
+nonstationary
+\lang hebrew
+):
+ יש חשיבות לזמן.
+ זה חשוב,
+ למשל,
+ כאשר פועלים באופק סופי 
+\begin_inset Formula $H$
+\end_inset
+
+ - למשל יש לנו כמות צעדים מוגבלת,
+ ואז הפוליסה תלויה בכמה צעדים נשארו לנו.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פוליסה לא-סטציונרית היא פונקציה גם של המצב וגם של הזמן - 
+\begin_inset Formula $\pi:S\times T\to A$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא קבוצת המספרים הלא-שליליים.
+ 
+\begin_inset Formula $\pi\left(s,t\right)$
+\end_inset
+
+ אומר לנו מה לעשות כאשר המצב הוא 
+\begin_inset Formula $s$
+\end_inset
+
+ והזמן 
+\series bold
+\bar under
+שנותר
+\series default
+\bar default
+ - כלומר מספר הצעדים שנותרו לבצע - הוא 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+כל פוליסה מגדירה שרשרת מרקוב.
+\end_layout
+
+\begin_layout Section*
+ערך הפוליסה
+\end_layout
+
+\begin_layout Standard
+איך מודדים את טיב המדיניות שקיבלנו?
+ בשביל זה נגדיר פונקציית ערך (
+\lang english
+Value Function
+\lang hebrew
+) 
+\begin_inset Formula $V$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+באופק אינסופי 
+\begin_inset Formula $V:S\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+באופק סופי 
+\begin_inset Formula $V:S\times T\to\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{\pi}\left(s\right)$
+\end_inset
+
+ הוא הערך שתיתן לנו מדיניות 
+\begin_inset Formula $\pi$
+\end_inset
+
+ באשר אנחנו במצב 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ זה תלוי בתגמול המיידי - אבל גם איפה ש
+\begin_inset Formula $\pi$
+\end_inset
+
+ לוקח אותנו בהמשך ומה נוכל להשיג שם.
+\end_layout
+
+\begin_layout Subsection*
+במקרה של אופק סופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V^{k}_{\pi}\left(s\right)$
+\end_inset
+
+ הוא התוחלת המותנית
+\begin_inset Formula 
+\[
+V^{k}_{\pi}\left(s\right)=\mathbb{E}\left[\sum^{k}_{t=0}R_{t}\middle|\pi,s\right]=\mathbb{E}\left[\sum^{k}_{t=0}R\left(s_{t}\right)\middle|a_{t}=\pi\left(s_{t},k-t\right),s_{0}=s\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+חישוביות
+\end_layout
+
+\begin_layout Standard
+בשביל לחשב את זה בד
+\begin_inset Quotes erd
+\end_inset
+
+כ לא נחשב את הכל,
+ אלא נעשה מונט-קרלו - כלומר נגריל כמה אפשרויות להרצת הפוליסה ונעשה ממוצע.
+\end_layout
+
+\begin_layout Standard
+אפשר להתייחס ל
+\begin_inset Formula $V^{t}_{\pi}$
+\end_inset
+
+ בתור ווקטור 
+\begin_inset Formula $V^{t}_{\pi}=\left[\begin{matrix}V^{t}_{\pi}\left(s_{1}\right)\\
+\vdots\\
+V^{t}_{\pi}\left(s_{n}\right)
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמות הפוליסות האפשריות היא 
+\begin_inset Formula $\left|A\right|^{H_{n}}$
+\end_inset
+
+ (כאשר 
+\begin_inset Formula $H$
+\end_inset
+
+ הוא האופק)
+\end_layout
+
+\begin_layout Standard
+בשביל לחשב נשתמש בתכנות דינמי.
+ לכל 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ נמצא:
+\begin_inset Formula 
+\[
+V^{0}_{\pi}\left(s\right)=R\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V^{t}_{\pi}\left(s\right)=R\left(s\right)+\sum_{s'}P\left(s'\middle|s,\pi\left(s,t\right)\right)\cdot V^{t-1}_{\pi}\left(s'\right)
+\]
+
+\end_inset
+
+ואפשר,
+ באמצעות כפל מטריצות,
+ לחשב:
+\begin_inset Formula 
+\[
+V^{t}_{\pi}=R+T_{\pi}\cdot V^{t-1}_{\pi}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $T_{\pi}$
+\end_inset
+
+ היא מטריצת המעברים לפי 
+\begin_inset Formula $\pi$
+\end_inset
+
+ - עבור כל מצב 
+\begin_inset Formula $s$
+\end_inset
+
+,
+ מה ההסתברות להגיע לכל מצב אחר כאשר מבצעים 
+\begin_inset Formula $\pi\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בכל צעד (מהסוף) מסתכלים על תוחלת התגמול לכל פעולה אפשרית 
+\begin_inset Formula $Q^{t}_{\pi}\left(s,a\right)$
+\end_inset
+
+ ובוחרים את הפעולה הכי טובה.
+\end_layout
+
+\begin_layout Standard
+החישוב הזה הוא פולינומי:
+ 
+\begin_inset Formula $\left|S\right|\times\left|H\right|\times\left|A\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפוליסה האופטימלית מסומנת ב
+\begin_inset Formula $\pi^{*}$
+\end_inset
+
+,
+ ו
+\begin_inset Formula $\forall_{s\in S}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V^{0}_{\pi^{*}}\left(s\right)=R\left(s\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V^{t}_{\pi^{*}}\left(s\right)=R\left(s\right)+\max_{a}\sum_{s'}P\left(s'\middle|s,a\right)\cdot V^{t-1}_{\pi^{*}}\left(s'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+במקרה של אופק אינסופי
+\end_layout
+
+\begin_layout Standard
+כדי שנוכל לחשב ערך של פוליסה כשהאופק אינסופי,
+ יש בעיה - שגם הערך אינוספי (סכום של אינסוף תגמולים).
+ לכן נבחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+discount factor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מקדם 
+\begin_inset Formula $0\le\gamma<1$
+\end_inset
+
+ - ואז
+\begin_inset Formula 
+\[
+V_{\pi}\left(s\right)=\mathbb{E}\left[\sum^{\infty}_{t=0}\gamma^{t}R_{t}\middle|\pi,s\right]
+\]
+
+\end_inset
+
+נשים לב שהערך הזה חסום מכיוום שהטור ההנדסי מתכנס:
+\begin_inset Formula 
+\[
+V_{\pi}\left(s\right)\le\mathbb{E}\left[\sum^{\infty}_{t=0}\gamma^{t}R_{\max}\right]=\frac{1}{1-\gamma}R_{\max}
+\]
+
+\end_inset
+
+ערכי 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ קטנים יותר מתעדפים תגמולים מיידיים.
+\end_layout
+
+\begin_layout Standard
+בהכרח קיימת פוליסה אופטימלית 
+\begin_inset Formula $\pi^{*}$
+\end_inset
+
+ שממקסמת את הערך בכל מצב (
+\lang english
+Howard,
+ 1960
+\lang hebrew
+).
+ בנוסף,
+ תמיד קיימת פוליסה סטציונרית.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $V^{*}\left(s\right)=V_{\pi^{*}}\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+חישוב
+\end_layout
+
+\begin_layout Standard
+הנוסחה ל
+\lang english
+fixed policy
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+V_{\pi}\left(s\right)=R\left(s\right)+\gamma\sum_{s'}P\left(s'\middle|s,\pi\left(s\right)\right)\cdot V_{\pi}\left(s'\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $V_{\pi}$
+\end_inset
+
+ הוא ווקטור.
+ איך נחשב אותו?
+\begin_inset Formula 
+\[
+V_{\pi}=R+\gamma\overbrace{\left[P\left(s'\middle|s,\pi\left(s\right)\right)\right]_{s,s'\in S}}^{A}\cdot V_{\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(I-\gamma A\right)\cdot V_{\pi}=R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשביל לחשב את זה צריך להפוך את המטריצה 
+\begin_inset Formula $\left(I-\gamma A\right)$
+\end_inset
+
+.
+ אמנם מובטח לנו שהיא הפיכה - אבל הפיכת מטריצה זו פעולה יקרה של 
+\begin_inset Formula $O\left(n^{3}\right)$
+\end_inset
+
+,
+ ואנחנו צריכים לחשב את זה עבור כל פוליסה (ומספר הפוליסות אקספוננציאלי).
+ נרצה לעשות משהו יותר מהיר.
+\end_layout
+
+\begin_layout Section*
+אופרטור בלמן
+\end_layout
+
+\begin_layout Standard
+משוואת בלמן (
+\lang english
+Bellman Equation
+\lang hebrew
+) לערך האופטימלי:
+\begin_inset Formula 
+\[
+V^{*}\left(s\right)=R\left(s\right)+\gamma\cdot\max_{a}\sum_{s'}P\left(s'\middle|s,a\right)\cdot V^{*}\left(s'\right)
+\]
+
+\end_inset
+
+בלמן הוכיח שזה מתקיים לכל פונקציית ערך אופטימלי.
+\end_layout
+
+\begin_layout Standard
+הערך הזה הוא נקודת שבת (
+\lang english
+fixed point
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+) של אופקרטור בלמן 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ (כלומר 
+\begin_inset Formula $\mathcal{B}\left[V^{*}\right]=V^{*}$
+\end_inset
+
+) המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י:
+\begin_inset Formula 
+\[
+\mathcal{B}\left[V\right]\left(s\right)=R\left(s\right)+\gamma\cdot\max_{a}\sum_{s'}P\left(s'\middle|s,a\right)\cdot V\left(s'\right)
+\]
+
+\end_inset
+
+האופרטור תמיד יקרב אותנו לפונקציה,
+ ולכן על ידי הפעלה איטרטיבית שלו נוכל להתכנס לאופטימום.
+\end_layout
+
+\begin_layout Standard
+כמה פעמים?
+ הדרך ה
+\lang english
+greedy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- היא עד שמגיעים מספיק קרוב (מרחק פחות מ
+\begin_inset Formula $\frac{2\epsilon\gamma}{1-\gamma}$
+\end_inset
+
+),
+ אבל זה מתכנס מאוד לאט.
+\end_layout
+
+\begin_layout Standard
+במקום זה אפשר לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+policy iteration
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+V_{\pi}\left(s\right)=\mathbb{E}\left[\sum^{\infty}_{t=0}\gamma^{t}R_{t}\middle|\pi,s\right]
+\]
+
+\end_inset
+
+ואז עוצרים כאשר אין שינוי.
+ בניגוד למה שעשינו קודם (
+\lang english
+value iteration
+\lang hebrew
+),
+ כאשר אפשר ממש להגיע לפוליסה האופטימלית שכן מרחב הפוליסות הוא סופי ובדיד.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+האלגוריתם:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בוחרים 
+\begin_inset Formula $\pi$
+\end_inset
+
+ אקראי
+\end_layout
+
+\begin_layout Itemize
+לולאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מחשבים את 
+\begin_inset Formula $V_{\pi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $s$
+\end_inset
+
+,
+ מגדירים 
+\begin_inset Formula $\pi'\left(s\right)\coloneqq\arg\max_{a}\sum_{s'}P\left(s'\middle|s,a\right)\cdot V_{\pi}\left(s'\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\pi\gets\pi'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשיכים בלולאה עד שאין שינוי ב
+\begin_inset Formula $\pi$
+\end_inset
+
+ באף מצב.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+אז במה נשתמש?
+\end_layout
+
+\begin_layout Itemize
+מצד אחד,
+ כל איטרציה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+value iteration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא מאוד זולה.
+\end_layout
+
+\begin_layout Itemize
+מצד שני -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+policy iteartion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מובטח שיתכנס למקסימום.
+\end_layout
+
+\begin_layout Standard
+לכן נרצה להתחיל עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+value iteartion
+\lang hebrew
+,
+ להתקרב,
+ לחשב עם זה פוליסה,
+ ואז לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+policy iteartion
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+סיבוכיות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש 
+\begin_inset Formula $\exp\left(n\right)$
+\end_inset
+
+ פוליסותף ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+policy iteration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יותר גרוע מאקספוננציאלי.
+\end_layout
+
+\begin_layout Itemize
+אמפירית,
+ צריך 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ איטרציות ל
+\lang english
+policy iteration
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+עד לפני כעשור חסם פולינומי על מספר האיטרציות היה בעיה פתוחה.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,1495 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-05
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+ניר בן ארי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-11
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+SVM
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Support Vector Machine
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Standard
+אפשר לחשוב על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SVM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאלגוריתם שממזער:
+\begin_inset Formula 
+\[
+\min_{\begin{matrix}w\in\mathbb{R}^{d}\\
+\forall_{i}y_{i}w^{T}x_{i}\ge1
+\end{matrix}}\frac{1}{2}\left\Vert w\right\Vert ^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש לנו נתונים שאינם ניתנים להפרדה לינארית,
+ נשתמש ב
+\lang english
+soft-SVM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- נוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+soft margin
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\min_{w}\frac{1}{2}\left\Vert w\right\Vert ^{2}+C\sum^{n}_{i=1}\xi_{i}
+\]
+
+\end_inset
+
+ונשנה את התנאי על 
+\begin_inset Formula $w$
+\end_inset
+
+ ל:
+\begin_inset Formula 
+\[
+\forall_{i}\qquad y_{i}\left(w^{T}x_{i}\right)\ge1-\xi_{i}\qquad\xi_{i}\ge0
+\]
+
+\end_inset
+
+הרעיון הוא למקסם את השוליים תוך מתן אפשרות לחריגות.
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Constrained Optimization
+\end_layout
+
+\begin_layout Standard
+עד עכשיו,
+ אם הייו להוסיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+prior
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לבעיה היינו מוסיפים אותו כמרכיב ל
+\lang english
+loss
+\lang hebrew
+.
+ למשל - אם הינו רוצים שהפרמטרים יהיו קטנים היינו מוסיפים 
+\begin_inset Formula $\mathcal{L}=\dots+\lambda\cdot\frac{1}{2}\left\Vert w\right\Vert ^{2}$
+\end_inset
+
+.
+ אבל יש גם מקרים עם אילוצים קשיחים כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hard-SVM
+\lang hebrew
+.
+ במקרים כאלה אי אפשר להפעיל שיטות כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient descent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- צריך לעשות משהו אחר.
+\end_layout
+
+\begin_layout Subsection*
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ נסתכל על בעיות מינימיזציה מהצורה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+גם המינימיזציה וגם הקביעה שהאילוצים יהיו מהצורה 
+\begin_inset Formula $g_{i}\left(x\right)\le0$
+\end_inset
+
+ הן לצורך אחידות.
+\end_layout
+
+\end_inset
+
+:
+ 
+\begin_inset Formula 
+\[
+\min_{x}f\left(x\right)\qquad\forall_{i=1,\dots,m}g_{i}\left(x\right)\le0
+\]
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Lagrangian Funtion
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב את הבעיה בצורה:
+\begin_inset Formula 
+\[
+\max_{\lambda_{i}}\min_{x}f\left(x\right)+\lambda_{i}g_{i}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז הלגראנג'יאן הוא:
+\begin_inset Formula 
+\[
+\mathcal{L}\left(x,\lambda\right)=f\left(x\right)+\lambda_{i}g_{i}\left(x\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא ה
+\lang english
+Lagrangian multiplier
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אם הפתרון האופטימלי גם ככה נמצא באזור שעונה לאילוץ,
+ אז אפשר לקבל מקסימום גם באמצעות 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ - כלומר האילוץ לא פעיל.
+\end_layout
+
+\begin_layout Standard
+כדי לפתור,
+ נגזור את הלגראנג'יאן לפי כל המרכיבים של הווקטור 
+\begin_inset Formula $x$
+\end_inset
+
+ ולפי כל המרכיבים של הווקטור 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מיקסום האנתרופיה
+\end_layout
+
+\begin_layout Standard
+בד
+\begin_inset Quotes erd
+\end_inset
+
+כ יכולות להיות הרבה התפלגויות שיתאימו לנתונים,
+ ונרצה איזה קריטריון בשביל לבחור איזו התפלגות לבחור.
+ הנחה סבירה היא שאנחנו רוצים להניח כמה שפחות (מעבר למה שאנחנו כבר יודעים)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ אנתרופיה של התפלגות 
+\begin_inset Formula $P$
+\end_inset
+
+ היא:
+\begin_inset Formula 
+\[
+H\left(P\right)=-\sum_{x}P\left(x\right)\log P\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אפשר להסתכל על האנתרופיה כעל 
+\begin_inset Quotes eld
+\end_inset
+
+חוסר מידע
+\begin_inset Quotes erd
+\end_inset
+
+.
+ ההתפלגות עם הכי הרבה אנתרופיה היא ההתפלגות האחידה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+במקרה הסופי - במקרה הרציף,
+ אם יודעים ממוצע וסטיית תקן,
+ זו תהיה ההתפלגות הנורמלית.
+\end_layout
+
+\end_inset
+
+ - אנחנו לא יודעים כלום.
+ התפלגות עם אנתרופיה אפס היא כאשר יש הסתברות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאחת מהאפשרויות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אם נרצה למקסם אנתרופיה תחת אילוצים,
+ נשתמש בלגרנג'יאן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+מטריקות להערכת מודלים
+\end_layout
+
+\begin_layout Standard
+להשתמש באחוזי דיוק זה לא תמיד מספיק טוב,
+ כי גם מספרים שנראים גבוהים לא תמיד אומרים הרבה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+למשל:
+ אם יש 
+\begin_inset Formula $9\%$
+\end_inset
+
+ חולים,
+ והמודל שלנו אומר שכולם בריאים - אז הוא מדייק ב
+\begin_inset Formula $91\%$
+\end_inset
+
+.
+ מספר גבוה - אבל לא שווה הרבה.
+\end_layout
+
+\begin_layout Standard
+כשמדברים על קלאסיפיקציה בינארית,
+ יש שני סוגי טעויות:
+\end_layout
+
+\begin_layout Itemize
+אם ניחשנו 
+\begin_inset Quotes eld
+\end_inset
+
+חיובי
+\begin_inset Quotes erd
+\end_inset
+
+ ובאמת זה שלילי - אז זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false positive
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אם ניחשנו 
+\begin_inset Quotes eld
+\end_inset
+
+שלילי
+\begin_inset Quotes erd
+\end_inset
+
+ ובאמת זה חיובי - אז זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+false negative
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Precision & Recall
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נסמן:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $TP$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+True Positive
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $FP$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+False Positive
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $TN$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+True Negative
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $FN$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+False Negative
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+במקום דיוק,
+ נגדיר את ה
+\lang english
+precision
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור מספר החיוביים הנכונים מתוך כל אלו שאמרנו שהם חיוביים,
+ ואת ה
+\lang english
+recall
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור כל אלו שאמרנו שהם חיוביים מתוך אלו שהם חיוביים בפועל:
+\begin_inset Formula 
+\[
+Precision=\frac{TP}{TP+FP}\qquad Recall=\frac{TP}{TP+FN}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אידיאלית היינו רוצים להגיע ל
+\begin_inset Formula $Precision=Recall=1$
+\end_inset
+
+ - אבל בד
+\begin_inset Quotes erd
+\end_inset
+
+כ אי אפשר,
+ אז נרצה למצוא איזון.
+ נגדיר 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ (
+\lang english
+F-score
+\lang hebrew
+) שמחבר אותם:
+\begin_inset Formula 
+\[
+F_{1}=\frac{2}{\textnormal{recall}^{-1}+\textnormal{precision}^{-1}}=2\frac{\textnormal{precision}\cdot\textnormal{recall}}{\textnormal{precision}+\textnormal{recall}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+ROC Curve
+\end_layout
+
+\begin_layout Standard
+כשיש מודל סיווג עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+threshold
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בנוסף לפרמטרים האחרים של המודל.
+ כלומר המודל נותן מספר,
+ ואז רוצים להשתמש במספר הזה לצרכי סיווג.
+\end_layout
+
+\end_inset
+
+,
+ ה
+\lang english
+threshold
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הזה שבוחרים משפיע על כמה המודל יהיה טוב.
+ בשביל להעריך את איכות המודל ללא תלות בסף הנבחר,
+ נרצה לצייר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ROC (receiver operating characteristic) curve
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר:
+\end_layout
+
+\begin_layout Itemize
+ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ הוא 
+\begin_inset Formula $TPR$
+\end_inset
+
+ (
+\lang english
+True Positive Rates
+\lang hebrew
+):
+ 
+\begin_inset Formula $\frac{TP}{TP+FN}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ הוא 
+\begin_inset Formula $FPR$
+\end_inset
+
+ (
+\lang english
+False Positive Rates
+\lang hebrew
+):
+ 
+\begin_inset Formula $\frac{FP}{FP+TN}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האלכסון של הגרף הוא 
+\begin_inset Quotes eld
+\end_inset
+
+מודל אקראי
+\begin_inset Quotes erd
+\end_inset
+
+ - אנחנו רוצים להתרחק ממנו כמה שיותר (בכיוון הנכון)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+AUC
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Area Under Curve
+\end_layout
+
+\begin_layout Standard
+מחשבים את השטח מתחת ל
+\lang english
+ROC Curve
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בין 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ זו האיכות של המודל ללא תלות ב
+\lang english
+threshold
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ - אם ניקח דוגמה שלילית אקראית ודוגמה חיובית אקראית,
+ מה ההסתברות שהערך שהמודל נותן לדגימה החיובית יהיה גדול מהערך שהוא נותן לדגימה השלילית.
+\end_layout
+
+\end_body
+\end_document

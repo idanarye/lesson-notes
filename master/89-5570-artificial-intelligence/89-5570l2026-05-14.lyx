@@ -1,0 +1,2977 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+בינה מלאכותית
+\\
+\selectlanguage{english}
+89-5570-06
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+פרופ' גל קמינקא
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-14
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Multiarm Bandits
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Multiarm Bandit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ היא בעיית ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RL
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Reinforcement Learning
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הכי קטנה שאפשר לדבר עליה,
+ אבל עדיין משתמשים בה המון במחקר ובתעשייה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נדבר
+\begin_inset space ~
+\end_inset
+
+על:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+MDP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם מצב יחיד 
+\begin_inset Formula $S=\left\{ s_{1}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k$
+\end_inset
+
+ פעולות,
+ שכל פעולה 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ לוקחת אותנו מ
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ חזרה ל
+\begin_inset Formula $s_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+התגמול הוא 
+\begin_inset Formula $R\left(a_{i}\right)=R\left(s_{1},a_{i},s_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר תמיד נגיע לאותו מצב,
+ אבל התגמול יכול להיות שונה - וב
+\lang english
+Multiarm Bandit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התגמול הוא סטוכסטי.
+ אנחנו לא יודעים מה התגמול של כל זרוע,
+ ולכן ה
+\lang english
+policy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צריך גם לגלות אותו.
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+policy
+\lang hebrew
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+ תלוי בזמן:
+\end_layout
+
+\begin_layout Itemize
+אם יש אופק סופי 
+\begin_inset Formula $T$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V_{\pi}\left(s_{1}\right)=\mathbb{E}\left[\sum^{T}_{t=0}R_{t}\left(a\right)\middle|a\in\pi\right]
+\]
+
+\end_inset
+
+אם האופן אינסופי,
+ אז מסתכלים על התגמול הממוצע:
+\begin_inset Formula 
+\[
+V_{\pi}\left(s_{1}\right)=\lim_{T\to\infty}\frac{1}{T}\mathbb{E}\left[\sum^{T}_{t=0}R_{t}\left(a\right)\middle|a\in\pi\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הבעיה היא ש
+\lang english
+rewards
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא ידועים - וסטוכסטיים.
+\end_layout
+
+\begin_layout Itemize
+אם ה
+\lang english
+rewards
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היו ידועים - היינו פשוט לוחצים על הכפתור עם תוחלת התגמול הכי גדולה.
+\end_layout
+
+\begin_layout Itemize
+אם זה היה דטרמיניסטי זה היה מאוד קל - פשוט מנסים כל כפתור פעם אחת כדי לדעת את כל ה
+\lang english
+rewards
+\lang hebrew
+,
+ ואז בוחרים
+\end_layout
+
+\begin_layout Standard
+השאלה,
+ אם כן,
+ היא מתי יודעים ש
+\begin_inset Quotes erd
+\end_inset
+
+למדנו מספיק
+\begin_inset Quotes erd
+\end_inset
+
+.
+ אם היינו יכולים ללחוץ על כל כפתור אינסוף פעמים היינו יכולים ללמוד את ההתפלגויות המדוייקות.
+ אבל בפועל זה לא אפשרי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+פורמלית:
+ 
+\lang english
+
+\begin_inset Formula $K$
+\end_inset
+
+-armed bandit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $\left\langle K,\mathcal{A},\mathcal{D},R,T\right\rangle $
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+ כמות ה
+\lang english
+arms
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(פעולות)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ סט של פעולות,
+ 
+\begin_inset Formula $\left|\mathcal{A}\right|=K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+ סט סטציונרי של התפלגויות על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a\in\mathcal{A}\implies D_{a}\in\mathcal{D}
+\]
+
+\end_inset
+
+אנחנו לא יודעים את ה
+\begin_inset Formula $D_{a}$
+\end_inset
+
+ - אנחנו רק יודעים שהם קיימים.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R\left(a\right)\sim D_{a}$
+\end_inset
+
+ משתנה מקרי,
+ נדגם באופן בלתי תלוי מ
+\begin_inset Formula $D_{a}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R\left(a\right)$
+\end_inset
+
+ הוא חסום.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $T\in\mathbb{N}$
+\end_inset
+
+ אופק סופי (מספר צעדים)
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+המטרה:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למקסם את 
+\begin_inset Formula $\mathbb{E}\left[\sum^{T}_{t=1}R\left(a\right)\middle|a\in\mathcal{A}\right]$
+\end_inset
+
+ (כלומר למצוא את ה
+\begin_inset Formula $a$
+\end_inset
+
+ הכי טוב)
+\end_layout
+
+\begin_layout Itemize
+לעשות את זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Online
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כלומר ההחלטה מה לעשות (איזה 
+\begin_inset Formula $a$
+\end_inset
+
+ לבחור) בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+ מתבצעת בזמן 
+\begin_inset Formula $t-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אלגוריתמים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+explore first
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ עובדים בשני שלבים:
+\end_layout
+
+\begin_layout Itemize
+שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בוחרים פעולות לא בגלל שהן הכי טובות,
+ אלא כדי לגלות ו/או לבסס עוד ידע.
+\end_layout
+
+\begin_layout Itemize
+שלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploitation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בוחרים פעולה כי חושבים שהיא הכי טובה.
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+explore first
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחלקים את הזמן - 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים ראשונים משקיעים ב
+\lang english
+exploration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואת השאר ב
+\lang english
+exploitation
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+איך עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+evaluation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לאלגוריתמים?
+ משווים לאלגוריתם 
+\begin_inset Quotes eld
+\end_inset
+
+הכי טוב
+\begin_inset Quotes erd
+\end_inset
+
+.
+ נגדיר את התוחלת האמיתית:
+\begin_inset Formula 
+\[
+\mu\left(a\right)\coloneqq\mathbb{E}_{\infty}\left[R\left(a\right)\right]=\mathbb{E}_{\infty}\left[D_{a}\right]
+\]
+
+\end_inset
+
+ואת 
+\begin_inset Formula $\mu^{*}=\max\limits_{a\in\mathcal{A}}\mu\left(a\right)$
+\end_inset
+
+ התוחלת הכי טובה.
+ לכן התואצה התיאורתית האופטימלית היא 
+\begin_inset Formula $\mu^{*}\cdot T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ החרטה (
+\lang english
+regret
+\lang hebrew
+) היא:
+\begin_inset Formula 
+\[
+\rho\left(T\right)\coloneqq\mu^{*}\cdot T-\sum^{T}_{t=1}\mu\left(a_{t}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלגוריתמים טובים מניבים חרטה יותר נמוכה.
+\end_layout
+
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+explore first
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-first
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Standard
+זהו האלגוריתם הכי פשוט.
+ בוחרים 
+\begin_inset Formula $N=\epsilon T$
+\end_inset
+
+ צעדים (כלומר אחוז מתוך האופק שלנו) ובזמן הזה עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+round robin
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על הפעולות בשביל לאסוף עליהן סטטיסטיקה.
+ אחרי זה,
+ נבחר את הפעולה עם הממוצע הכי טוב ונריץ אותה שוב ושוב.
+\end_layout
+
+\begin_layout Standard
+תוחלת החרטה של זה היא 
+\begin_inset Formula $\mathcal{O}\left(T\right)$
+\end_inset
+
+ (שכן יש 
+\begin_inset Formula $\mathcal{O}\left(T\right)$
+\end_inset
+
+ צעדים בהם בוחרים באקראי).
+ אבל עם בחירה חכמה של 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ (ספציפית 
+\begin_inset Formula $N=\left(\frac{T}{K}\right)^{\frac{2}{3}}$
+\end_inset
+
+) אפשר להשיג זמן סאב-לינארי.
+\end_layout
+
+\begin_layout Subsection*
+שדרוג - טכניקת
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+constant 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-greedy
+\end_layout
+
+\begin_layout Standard
+בכל צעד,
+ מגרילים מטבע ממושקל ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+,
+ ולפי זה בוחרים אם הצעד הזה יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploitation
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+גם הצעדים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploitation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ עוזרים ל
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration
+\lang hebrew
+,
+ שכן אם מקבלים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+reward
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוך מעדכנים את ההסתברות להמשיך לבחור בו.
+\end_layout
+
+\begin_layout Itemize
+לא צריך כאן את 
+\begin_inset Formula $T$
+\end_inset
+
+ - ולכן זה עובד גם עבור אופק אינסופי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+יש בעיה עם 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ קבוע - בשלב מסויים אנחנו יודעים מספיק וזה כבר לא רעיון טוב להמשיך לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באותה הסתברות כמו בהתחלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+עוד שדרוג - 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ קטן עם 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי כל איטרציה של הלולאה,
+ מעדכנים את 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ אפשר לעדכן בצורה פשוטה:
+\begin_inset Formula 
+\[
+\epsilon_{t}\gets\epsilon_{t-1}\cdot\lambda
+\]
+
+\end_inset
+
+או בצורה קצת יותר מתוחכמת:
+\begin_inset Formula 
+\[
+\epsilon_{t}\gets\epsilon_{\textnormal{end}}+\left(\epsilon_{\textnormal{start}}-\epsilon_{\textnormal{end}}\right)\cdot e^{t\cdot\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+פסילת זרועות באמצעות 
+\lang english
+Confidence Bounds
+\end_layout
+
+\begin_layout Standard
+אם אנחנו יודעים שהכי טוב שזרוע מסויימת יכולה לתת פחות טובה מהכי גרוע שזרוע אחרת יכולה לתת - אפשר לפסול את הזרוע הראשונה ולהפסיק לבחור אותה.
+\end_layout
+
+\begin_layout Standard
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UCB1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+Upper Confidence Bound
+\lang hebrew
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+UCB
+\lang hebrew
+ זאת משפחה של אלגוריתמים
+\end_layout
+
+\end_inset
+
+ מחשב מה הכי טוב שזרוע יכולה לתת - ונבחר לפי זה:
+\end_layout
+
+\begin_layout Itemize
+זרוע שהיא נכונה,
+ תיבחר.
+\end_layout
+
+\begin_layout Itemize
+זרוע שהיא לא נכונה,
+ נבחר אותה אולי בהתחלה - אבל כשהיא תתחיל לקבל תגמולים נמוכים נפסיק לבחור בה.
+\end_layout
+
+\begin_layout Standard
+מעדכנים לפי
+\begin_inset Formula 
+\[
+UCB\left(a_{i}\right)\gets\hat{\mu}\left(a_{i}\right)+\sqrt{\frac{2\ln t}{n_{i}}}
+\]
+
+\end_inset
+
+כאשר המרכיב 
+\begin_inset Formula $\sqrt{\frac{2\ln t}{n_{i}}}$
+\end_inset
+
+ יש בו שני מרכיבים:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $2\ln t$
+\end_inset
+
+ ילך ויגדל לפי מספר הצעדים
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ מספר הפעמים שבחרתי בזרוע הזאת
+\end_layout
+
+\begin_layout Standard
+אם יש זרוע לא טובה,
+ ה
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ שלה ישאר מאוד קטן אבל ה
+\begin_inset Formula $2\ln t$
+\end_inset
+
+ שלה יגדל.
+ לכן הרווח-בר-סמך שלה ילך ויגדל,
+ ומתישהו היא תקבל הזדמנות - אבל ככל שנתקדם בצעדים היא תצטרך להתגבר על יותר ויותר.
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+regret
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של האלגוריתם הזה מאוד נמוך - עבור 
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+ על 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ החרטה היא 
+\begin_inset Formula $\mathcal{O}\left(\sqrt{K\cdot t\cdot\log t}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+גירסת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UCB1-Tuned
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עובדת יותר טוב:
+\begin_inset Formula 
+\[
+UCB\left(a\right)=\sqrt{\frac{C\cdot2\ln t}{n}}\qquad C=\min\left(\frac{1}{4},V_{i}\left(n_{i}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+גירסאות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAB
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Markovian Bandits
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בכל פעם שנכנסים לזרוע ה
+\lang english
+state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלה משתנה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Contextual Bandits
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לכל מצב יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משלו
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula $\infty$
+\end_inset
+
+-armed Bandits
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מרחב הפעולות הוא רציף
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+דוגמה מהחיים (מחקר אמיתי)
+\end_layout
+
+\begin_layout Standard
+מחקר שנעשה עם חברת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ElliQ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מוצר שמציע פעילויות מותאמות למשתמש בבתי אבות.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Enahcning Recommendations using Learning to Prolong Interactions
+\end_layout
+
+\begin_layout Standard
+האופק לא קבוע - האלגוריתם צריך לבחור פעולות (מה להציע למשתמש) שיאריכו את ה
+\lang english
+session
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+בניגוד לאפליקציות כמו נטלפיקס או טיק-אוק בהן יש המון אפשרויות,
+ ב
+\lang english
+ElliQ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקטלוג יחסית מוגבל (
+\numeric on
+150
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות)
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+MAB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המודל יבחר את מה שאמרו לו הכי הרבה פעמים 
+\begin_inset Quotes eld
+\end_inset
+
+כן
+\begin_inset Quotes erd
+\end_inset
+
+ - אבל זה לא טוב,
+ כי אז זה יחזור על עצמו והמשתמש ישתעמם.
+\end_layout
+
+\begin_layout Standard
+פתרון פשוט (בלי להתעסק במתמטיקה) הוא להשתמש ב
+\lang english
+Constraind Multiarmed Bandit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- להוסיף כלל שאי אפשר להציע את אותו דבר פעמיים באותו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+session
+\lang hebrew
+.
+ אבל אפשר לעשות יותר חכם.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נגדיר:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מרחב הפעולות - הפעילויות שאפשר להציע למשתמש.
+\end_layout
+
+\begin_layout Itemize
+התגמול - בינארי (למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1/0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5/0
+\numeric off
+)
+\end_layout
+
+\begin_layout Itemize
+מצבים:
+ ב
+\lang english
+MAB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש רק מצב אחד,
+ אבל בבעיות אמיתיות יש יותר ממצב אחד.
+ כל פרט שמוסיפים מגדיל את מרחב המצבים באופן אקספוננציאלי.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לפעמים עדיף פשוט להתעלם מהמצב ולעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פשוט.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Contextual UCB1
+\end_layout
+
+\begin_layout Standard
+הבעיה בד
+\begin_inset Quotes erd
+\end_inset
+
+כ היא לא לדעת מה ה
+\lang english
+state
+\lang hebrew
+,
+ אלא לדעת מה מתוכו מעניין.
+ אחת מהדרכים לנתח את ה
+\lang english
+state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה לבצע כל מיני חלוקות,
+ ולראות איזה חלוקות (לפי איזה פרמטרים של ה
+\lang english
+state
+\lang hebrew
+) משפיעות הכי הרבה.
+\end_layout
+
+\begin_layout Standard
+רוצים מספר מצבים קטן,
+ כי אז יהיו פחות דוגמאות לכל מצב - שיהיה בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בפי עצמו - וזמן הלמידה יהיה יותר גדול.
+\end_layout
+
+\begin_layout Section*
+למה זה עבד?
+\end_layout
+
+\begin_layout Itemize
+אין חלוקה לימים/שעות (שהייתה דורשת יותר נתונים ממה שיש)
+\end_layout
+
+\begin_layout Itemize
+האלגוריתם התבצע לאחר שהחברה כבר עשתה סינון ראשוני לפעילויות.
+\end_layout
+
+\begin_layout Section*
+איך בחרו כמה זמן לחכות לפני שמציעים שוב את אותה פעילות?
+\end_layout
+
+\begin_layout Standard
+עשו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration first
+\lang hebrew
+.
+ הניחו שהתגובה של בן אדם היא סיגמואידית - כלומר יש איזהו משך זמן שהתשובה מתחלפת משלילית לפניו לחיובית אחריו מאוד מהר.
+ בשלב ה
+\lang english
+exploration
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למדו את הסיגמואידים האלה.
+\end_layout
+
+\end_body
+\end_document

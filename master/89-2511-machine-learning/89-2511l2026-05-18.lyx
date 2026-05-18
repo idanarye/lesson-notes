@@ -1,0 +1,3356 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+ד"ר אורן גליקמן
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-18
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+SVM
+\lang hebrew
+ים לא-לינאריים:
+
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+kernels
+\end_layout
+
+\begin_layout Standard
+לפעמים קלאסיפיקציה לינארית לא מספיקה,
+ כי הנקודות לא מתחלקות לפי קו ישר - למרות שיכול להיות שעדיין יש איזו צורה גיאומטרית.
+ אבל אולי אם נוסיף מימד,
+ כאשר הקואורדינטה על המימד החדש היא פונקציה (לא לינארית) של שאר הממדים,
+ נוכל לקבל הפרדה לינארית.
+\end_layout
+
+\begin_layout Standard
+לא חייבים ממש להוסיף מימד - אפשר פשוט לעשות טרנספורמציה לא-לינארית באותו מימד.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ יש לנו נקודות אימון במרחב 
+\begin_inset Formula $\mathbb{R}^{d}$
+\end_inset
+
+,
+ אנחנו עושים להן טרנספורמציה ל
+\lang english
+feature space
+\lang hebrew
+ 
+\begin_inset Formula $\mathbb{R}^{D}$
+\end_inset
+
+ שבו אפשר למצוא הפרדה לינארית.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן את המיפוי 
+\begin_inset Formula $\phi:\mathbb{R}^{d}\to\mathbb{R}^{D}$
+\end_inset
+
+.
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $D>d$
+\end_inset
+
+ (מרחיבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+feature
+\lang hebrew
+ים)
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הבעיה החדשה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+high bias problem
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אבל אפשר לפתור את זה באמצעות רגולריזציה ובאמצעות הוספת נתונים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+עלות חישובית של עבודה במימד יותר גבוה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+בשביל להתמודד עם זה,
+ נשתמש בטריק עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SVM
+\lang hebrew
+.
+ כשעושים מינימיזציה ל
+\lang english
+SVM
+\lang hebrew
+ לא תלויים בערכי ה
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+,
+ אלא רק במכפלות 
+\begin_inset Formula $\mathbf{x}^{T}_{i}\mathbf{x}_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הטריק - רוצים לחשב את 
+\begin_inset Formula $\phi\left(\mathbf{x}\right)^{T}\phi\left(\mathbf{z}\right)$
+\end_inset
+
+ בלי לחשב את 
+\begin_inset Formula $\phi\left(\mathbf{x}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\phi\left(\mathbf{z}\right)$
+\end_inset
+
+,
+ ב
+\begin_inset Formula $\mathcal{O}\left(d\right)$
+\end_inset
+
+.
+ בשביל זה משתמשים בפוקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+kernel
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+K\left(\mathbf{x},\mathbf{z}\right)=\phi\left(\mathbf{x}\right)^{T}\phi\left(\mathbf{z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמה:
+ במרחב דו-מימדי עם 
+\begin_inset Formula $\phi\left(\mathbf{x}\right)=\begin{bmatrix}x^{2}_{1}\\
+\sqrt{1}x_{1}x_{2}\\
+x^{2}_{2}
+\end{bmatrix}$
+\end_inset
+
+ הקרנל הוא
+\begin_inset Formula 
+\[
+\phi\left(\mathbf{x}\right)^{T}\phi\left(\mathbf{z}\right)=\cdots=\left(\mathbf{x}^{T}\mathbf{z}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ לא תמיד זה עוזר לנו.
+ לפעמים עלות החישוב של 
+\begin_inset Formula $K\left(\mathbf{x},\mathbf{z}\right)$
+\end_inset
+
+ היא עדיין ב
+\begin_inset Formula $\mathcal{O}\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+קרנל פולינומי
+\end_layout
+
+\begin_layout Standard
+אפשר להכליל את הקרנל הפולינומי מדרגה 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K\left(\mathbf{x},\mathbf{z}\right)=\left(\mathbf{x}^{T}\mathbf{z}+1\right)^{p}
+\]
+
+\end_inset
+
+שכולל את כל המרכיבים:
+\begin_inset Formula 
+\[
+\left(1,x_{i},z_{i},x_{i}z_{j},x^{2}_{i},z^{2}_{i},x_{i}z^{2}_{j},x^{2}_{i}z_{j},\dots,x^{p}_{i}z^{p}_{j},\dots\right)
+\]
+
+\end_inset
+
+המימד של ה
+\lang english
+feature space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $D\binom{d+p}{d}$
+\end_inset
+
+.
+ אם,
+ למשל,
+ 
+\begin_inset Formula $d=100$
+\end_inset
+
+ ו
+\begin_inset Formula $p=5$
+\end_inset
+
+ אז המימד של המרחב הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+96
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מיליון!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+The Radial Basis Function (RBF) Kernel
+\end_layout
+
+\begin_layout Standard
+ה
+\lang english
+RBF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ידוע גם בתור קרנל גאוסיאני - הוא הקרנל הכי נפוץ ב
+\lang english
+SVM
+\lang hebrew
+,
+ ומוגדר בתור:
+\begin_inset Formula 
+\[
+K\left(\mathbf{x},\mathbf{z}\right)=e^{-\frac{\left\Vert \mathbf{x}-\mathbf{z}\right\Vert ^{2}}{2\sigma^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אינטואיציה:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ מאוד קרוב ל
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+,
+ אז 
+\begin_inset Formula $\left\Vert \mathbf{x}-\mathbf{z}\right\Vert \approx0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $K\left(\mathbf{x},\mathbf{z}\right)\approx1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+באופן דומה,
+ אם 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+ מאוד רחוקים,
+ 
+\begin_inset Formula $K\left(\mathbf{x},\mathbf{z}\right)\approx0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כלומר הקרנל הזה,
+ במקום לחצות את המרחב עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hyperplane
+\lang hebrew
+,
+ מחבר ביחד נקודות קרובות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+ה
+\lang english
+RBF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ מקביל ל
+\begin_inset Formula $\phi$
+\end_inset
+
+ שממפה למרחב פיצ'רים אינסופי:
+\begin_inset Formula 
+\[
+\phi\left(\mathbf{x}\right)=e^{-\frac{\left\Vert \mathbf{x}\right\Vert ^{2}}{2\sigma^{2}}}\left(1,\frac{x_{1}}{\sigma},\frac{x_{2}}{\sigma},\dots,\frac{x_{i}x_{j}}{\sqrt{2}\sigma^{2}},\dots\right)
+\]
+
+\end_inset
+
+מקבלים כאן מכפלה אינסופית,
+ אבל היא טור טיילור שמתכנס לקרנל הסופי.
+\end_layout
+
+\begin_layout Section*
+מה הופך קרנל לואלידי?
+\end_layout
+
+\begin_layout Standard
+אי אפשר לבחור סתם כל טרנספורמציה שאנחנו רוצים.
+ הקרנל חייב לייצג מכפלה פנימית 
+\begin_inset Formula $K\left(\mathbf{x},\mathbf{z}\right)=\phi\left(\mathbf{x}\right)^{T}\phi\left(\mathbf{z}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ 
+\begin_inset Formula $\phi\left(\mathbf{x}\right)$
+\end_inset
+
+ יכול למפות למימד אינסופי (למשל ב
+\lang english
+RBF
+\lang hebrew
+) אבל עדיין מייצג מכפלה פנימית.
+\end_layout
+
+\begin_layout Standard
+לכל אוסף סופי של 
+\begin_inset Formula $n$
+\end_inset
+
+ נקודות אימון,
+ מטריצת גראם היא
+\begin_inset Formula 
+\[
+G_{ij}=K\left(\mathbf{x}_{i},\mathbf{x}_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Mercer
+\lang hebrew
+:
+ קרנל הוא ואלידי אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מטריצת גראם שלו הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+positive semi-definite
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section*
+חזרה ל
+\lang english
+SVM
+\end_layout
+
+\begin_layout Standard
+למרות שזה כבר לא לינארי,
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SVM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עדיין ינסה למצוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+margin
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+עצי החלטה
+\end_layout
+
+\begin_layout Standard
+באמצעות חלוקת המרחב למלבנים אפשר להתאים היפותזה לכל מדגם
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אלא אם כן יש 
+\begin_inset Formula $\begin{array}{c}
+\mathbf{x}_{i}=\mathbf{x}_{j}\\
+y_{i}\neq y_{j}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ נייצג את זה באמצעות עצי החלטה - וככה נוכל גם להתחשב במימדים שהם לא באמת מספרים.
+\end_layout
+
+\begin_layout Section*
+אימון מודל מבוסס עצי החלטה
+\end_layout
+
+\begin_layout Standard
+אנחנו רוצים למצוא עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ שממזער את השגיאה:
+\begin_inset Formula 
+\[
+\min_{T}Loss\left(T,D\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+בעיה:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $d$
+\end_inset
+
+ פיצ'רים בולאנים,
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{2^{d}}$
+\end_inset
+
+ פונקציות בוליאניות אפשריות - ומספר עצי ההחלטה האפשריים אפילו יותר גדול.
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $X\in\mathbb{R}^{n\times d}$
+\end_inset
+
+,
+ מרחב ההיפותזות האפקטיבי הוא בערך 
+\begin_inset Formula $\left(dn\right)^{n}$
+\end_inset
+
+.
+ המרחב הכולל הוא אמנם אינסופי,
+ אבל ההחלטות שלנו הן לפי 
+\begin_inset Formula $n$
+\end_inset
+
+ הנתונים.
+\end_layout
+
+\begin_layout Standard
+זאת בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NP
+\lang hebrew
+-קשה
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הפתרון:
+ חיפוש יוריסטי.
+ לא נמצא את העץ הכי טוב
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגישה:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+top-down
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\lang english
+greedy
+\lang hebrew
+ - נבנה את העץ מלמעלה למטה,
+ וכל פעם נבחר את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\lang english
+split
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הכי טוב לאותו שלב.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+החלוקה לא חייבת להיות ל
+\numeric on
+2
+\numeric off
+.
+ אם למשל יש פי'צר איכותני עם יותר מ
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+רקורסיבי - מחלקים את הנתונים בכל שלב,
+ ואז נכנסים לכל אחד מהחלקים ומחלקים שוב.
+\end_layout
+
+\begin_layout Itemize
+ממשיכים עד שמקבלים מלבנים הומוגניים.
+\end_layout
+
+\begin_layout Itemize
+אם אי אפשר לחלק (למשל כי אין פיצ'ר) אזור לא הומוגני,
+ אז אין ברירה - מתייגים אותו עם התווית הכי נפוצה (בתוכו)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך בוחרים חלוקה?
+ באמצעות אנטרופיה:
+\end_layout
+
+\begin_layout Itemize
+אנטרופיה נמוכה אומרת שהקבוצה היא 
+\begin_inset Quotes eld
+\end_inset
+
+טהורה
+\begin_inset Quotes erd
+\end_inset
+
+,
+ שאפשר לומר עליה דברים בביטחון.
+\end_layout
+
+\begin_layout Itemize
+אנטרופיה גבוהה אומרת שהקבוצה היא 
+\begin_inset Quotes eld
+\end_inset
+
+מבולגנת
+\begin_inset Quotes erd
+\end_inset
+
+,
+ שיש ערבוב של תוויות.
+\end_layout
+
+\begin_layout Standard
+עבור קבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+ שכוללת דוגמאות חיוביות ושליליות,
+ האנטרופיה מוגדרת כ:
+\begin_inset Formula 
+\[
+H\left(S\right)=-p_{+}\log_{2}p_{+}-p_{-}\log_{2}p_{-}
+\]
+
+\end_inset
+
+או - עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+multiclass
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+H\left(S\right)=\sum^{c}_{i=1}-p_{i}\log_{2}p_{i}
+\]
+
+\end_inset
+
+(
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ היא ההסתברות לקבל את ה
+\lang english
+class
+\lang hebrew
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $S$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $c$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+class
+\lang hebrew
+ים שונים)
+\end_layout
+
+\begin_layout Standard
+האנטרופיה המקסימלית היא 
+\begin_inset Formula $\max H=\log_{2}c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לבחור חלוקה,
+ נרצה לחשב את ה
+\lang english
+Information Gain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלה:
+\begin_inset Formula 
+\[
+IG\left(S,A\right)=H\left(S\right)-\sum_{v\in\textnormal{Values}\left(A\right)}\frac{\left|S_{v}\right|}{\left|S\right|}H\left(S_{v}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא המאפיין לפיו מחלקים ו
+\begin_inset Formula $S_{v}$
+\end_inset
+
+ היא תת הקבוצה של 
+\begin_inset Formula $S$
+\end_inset
+
+ בה 
+\begin_inset Formula $A=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי שה
+\lang english
+IG
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהי הכי גדול,
+ נרצה שהרכיב של הממוצע המשוקלל יהיה קטן.
+\end_layout
+
+\begin_layout Subsection*
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CART
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+Classification and Regression Trees
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Standard
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CART
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יודע להתמודד גם עם משתנים קטגוריים וגם עם משתנים מספריים.
+ הוא בונה עצים בינארים - כלומר בכל צומת יש רק שתי אפשרויות.
+\end_layout
+
+\begin_layout Standard
+במקום אנטרופיה,
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CART
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתמש במדד ג'יני:
+\begin_inset Formula 
+\[
+Gini=1-\sum^{c}_{i=1}p^{2}_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+איך נמנעים מ
+\lang english
+overfitting
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Standard
+נימנע מ
+\lang english
+overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pruning
+\lang hebrew
+,
+ כאשר המטרה היא להגביל את מרחב ההיפותזות.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+pre-pruning
+\end_layout
+
+\begin_layout Standard
+מונעים מהעץ לגדול יותר מדי.
+\end_layout
+
+\begin_layout Itemize
+להגביל את העומק המקסימלי.
+\end_layout
+
+\begin_layout Itemize
+לקבוע מינימום נקודות לעלה - אם פיצול יקטין אותנו מתחת לזה,
+ לא מפצלים.
+\end_layout
+
+\begin_layout Itemize
+לא לפצל אם ה
+\lang english
+IG
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוך מ
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ מסויים.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+post-pruning
+\end_layout
+
+\begin_layout Standard
+בונים את העץ עד הסוף - ואז מתחילים לקצוץ.
+\end_layout
+
+\begin_layout Standard
+בשביל להחליט מה לקצוץ,
+ נבדוק את העץ לפי ה
+\lang english
+validation data
+\lang hebrew
+.
+ בכל מקרה כל קיצוץ יפגע קצת ב
+\lang english
+training data
+\lang hebrew
+,
+ אבל אם הפגיעה ב
+\lang english
+validation data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא גדולה אז כנראה שהחלוקה הייתה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואפשר לוותר עליה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Boosting
+\end_layout
+
+\begin_layout Standard
+עצי החלטה הם מודל מאוד חזק,
+ אבל יש לו חסרונות:
+\end_layout
+
+\begin_layout Itemize
+הם יכולים לפצל רק לפי פיצ'ר אחד בכל פעם (כלומר הם לא יכולים לעשות חלוקה לפי פונקציה לינארית)
+\end_layout
+
+\begin_layout Itemize
+לא יציבים - הבדלים קטנים בנתונים האימון יכולים לגרום להבדלים מהותיים בעץ.
+\end_layout
+
+\begin_layout Standard
+(אפשר ללמוד עצי החלטה הרבה פעמים (בכל פעם מגבילים את המאפיינים שאפשר ללמוד,
+ כדי לקבל עץ שונה).
+ זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Random Forest
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Weak Learners
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weak Learner
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא כל מודל שעובד קצת יותר טוב מניחוש אקראי.
+\end_layout
+
+\begin_layout Standard
+הלומד החלש לא צריך לתת תשובה מדוייקת - אבל הוא צריך להביא לנו 
+\emph on
+משהו
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Boosting
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Boosting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שייך למשפחה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Ensamble Learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שילובים של מודלים שונים (נקראים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+base models
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+weak leaerners
+\lang hebrew
+) למודל אחד יותר חזק.
+ התוצאה בד
+\begin_inset Quotes erd
+\end_inset
+
+כ היא משהו שיש לה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+bias
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוך ו
+\lang english
+variance
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמוך.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Gradient Boosting
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(עם
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XGBoost
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Standard
+יש לנו מדגם אימון מתוייג:
+\begin_inset Formula 
+\[
+\left\{ \left(\mathbf{x}_{1},y_{1},\dots\left(\mathbf{x}_{n},y_{n}\right)\right)\right\} 
+\]
+
+\end_inset
+
+נדגם מתוך התפלגות 
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mathbf{x}_{i}\in\mathbb{R}^{d}$
+\end_inset
+
+ ו
+\begin_inset Formula $y_{i}\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פונקציית ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלנו היא
+\begin_inset Formula $\ell\left(\textnormal{true},\textnormal{predicted}\right)$
+\end_inset
+
+ ו:
+\begin_inset Formula 
+\[
+\mathcal{L}\left(f\right)=\frac{1}{n}\sum^{n}_{i=1}\ell\left(y_{i},f\left(x_{i}\right)\right)
+\]
+
+\end_inset
+
+המטרה:
+ לבנות מודל מדוייק ע
+\begin_inset Quotes erd
+\end_inset
+
+י שילוב כמה מודלים.
+ אנחנו רוצים ללמוד את:
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum^{M}_{m=1}\gamma_{m}h_{m}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $M$
+\end_inset
+
+ מספר העצים ב
+\lang english
+ensemble
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלנו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $h_{m}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Weak Learner
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלשהו.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\gamma_{m}$
+\end_inset
+
+ המשקל של העץ הספציפי.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הרעיון - בונים עצים,
+ כאשר כל עץ מנסה לחזות את הטעויות של ה
+\lang english
+ensemble
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הנוכחי.
+ כלומר:
+\begin_inset Formula 
+\[
+f_{\textnormal{new}}\left(\mathbf{x}\right)=f_{\textnormal{old}}\left(\mathbf{x}\right)+h_{\textnormal{next}}\left(\mathbf{x}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $h_{\textnormal{next}}$
+\end_inset
+
+ לומד את 
+\begin_inset Formula $\mathbf{x}_{i}$
+\end_inset
+
+ים אבל במקום 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ים התוויות שלו הן ה
+\begin_inset Formula $Err$
+\end_inset
+
+ של 
+\begin_inset Formula $f_{\textnormal{old}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לפשט את האלגוריתם אפשר להתחיל עם 
+\begin_inset Formula $\hat{y}^{\left(0\right)}_{i}=0$
+\end_inset
+
+ (ואז השגיאה תהיה ה
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ המקוריים)
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Gradient Descent
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+במרחב הפונקציות
+\end_layout
+
+\begin_layout Standard
+אלגוריתם ה
+\lang english
+boosting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה הוא בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient descent
+\lang hebrew
+.
+ עבור מרחב כל הפונקציות האפשריות,
+ אנחנו מנסים למצוא פונקציה שממזערת את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלנו.
+\end_layout
+
+\begin_layout Standard
+אם היינו יכולים לגזור את מרחב הפונקציות,
+ היינו מעדכנים
+\begin_inset Formula 
+\[
+f_{t+1}=f_{t}+\alpha\frac{\partial\mathcal{L}\left(f\right)}{\partial f}
+\]
+
+\end_inset
+
+אנחנו לא באמת יכולים לגזור לפי פונקציה,
+ אבל בגלל שה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדר רק בנקודות האימון אנחנו יכולים לשערך את הגרדיאנט של המרחב האינסופי לפי גרדיאנט במרחב ה
+\begin_inset Formula $n$
+\end_inset
+
+-מימדי שמוגדר לפי נקודות האימון.
+\end_layout
+
+\begin_layout Subsection*
+בעיות מעשיות
+\end_layout
+
+\begin_layout Itemize
+העץ צריך להיות רדוד יחסית,
+ כדי שהוא לא ילמד רעש.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+MSE
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא טוב לנו,
+ כי אז ה
+\lang english
+XGBoost
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יתעקש לתקן לכיוון ה
+\lang english
+outliers
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+עדיף לקחת עצים חלשים - שלכל אחד מהם יש אמנם הרבה רעש,
+ אבל החיבור שלהם יתן פרדיקציה טובה.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Adaptive Boosting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ עם 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+AdaBoost
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+AdaBoost
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מנסה ללמוד גם את המקדמים:
+\begin_inset Formula 
+\[
+H\left(\mathbf{x}\right)=\textnormal{sign}\left(\sum^{M}_{m=1}\alpha_{m}h_{m}\left(\mathbf{x}\right)\right)
+\]
+
+\end_inset
+
+כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+weak learner
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבל משקל 
+\begin_inset Formula $\alpha_{m}$
+\end_inset
+
+ בהחלטה הסופית לפי רמת הדיוק שלו.
+\end_layout
+
+\end_body
+\end_document

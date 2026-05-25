@@ -1,0 +1,292 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-05
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+ניר בן ארי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-25
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Multilayer Perceptron
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+Forward Propogation
+\lang hebrew
+,
+ ווקטור הקלט 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ נכנס לשכבה הראשונה 
+\begin_inset Formula $W_{1}\mathbf{x}+\mathbf{b}_{1}$
+\end_inset
+
+,
+ והופך ל
+\begin_inset Formula $\mathbf{z}_{1}$
+\end_inset
+
+.
+ מפעילים עליו פונציית אקטיבציה לא-לינארית שעובדת איבר איבר (למשל סיגמואיד) שהופכת אותו ל
+\begin_inset Formula $\mathbf{h}_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathbf{h}_{1}$
+\end_inset
+
+ נכנס לשכבה השנייה 
+\begin_inset Formula $W_{2}\mathbf{h}_{1}+\mathbf{b}_{2}$
+\end_inset
+
+ והופך ל
+\begin_inset Formula $\mathbf{z}_{2}$
+\end_inset
+
+,
+ וכן הלאה.
+\end_layout
+
+\begin_layout Standard
+ב
+\lang english
+Backward Propogation
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+,
+ מחשבים את הגרדיאנט על ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ אחורה לפי כלל השרשרת:
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial W_{1}}=\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial z_{n}}\frac{\partial z_{n}}{\partial h_{n-1}}\frac{\partial h_{n-1}}{\partial z_{n-1}}\cdots\frac{\partial z_{2}}{\partial h_{1}}\frac{\partial h_{1}}{\partial z_{1}}\frac{\partial z_{1}}{\partial W_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial\mathbf{b}_{1}}=\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial z_{n}}\frac{\partial z_{n}}{\partial h_{n-1}}\frac{\partial h_{n-1}}{\partial z_{n-1}}\cdots\frac{\partial z_{2}}{\partial h_{1}}\frac{\partial h_{1}}{\partial z_{1}}\frac{\partial z_{1}}{\partial b_{1}}
+\]
+
+\end_inset
+
+ולהפעיל 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gradient descent
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+W^{t}_{1}=W^{t-1}_{1}-\eta\frac{\partial\mathcal{L}}{\partial W_{1}}\qquad b^{t}_{1}=b^{t-1}_{1}-\eta\frac{\partial\mathcal{L}}{\partial b_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר על כל השכבות (מתחילים מהשכבה האחרונה).
+ בכל איטרציה עוברים על כל השכבות.
+\end_layout
+
+\end_body
+\end_document

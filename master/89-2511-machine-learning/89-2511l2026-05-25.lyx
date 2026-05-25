@@ -1,0 +1,2375 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+פרופ' גל צ'צ'יק
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-05-25
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+למידה עמוקה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Multi-layer Perceptrons
+\end_layout
+
+\begin_layout Standard
+למידה עמוקה היא נושא בתוך למידת מכונה.
+ ה
+\lang english
+perceptron
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגבל בגלל שהוא מפריד לינארית.
+ למשל - הוא לא יודע לפתור את בעיית הזוגיות (האם מספר הביטים הדולקים זוגי) אפילו בהינתן אינסוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואפילו עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+ (כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR
+\lang hebrew
+)- למרות שזו בעיה מאוד פשוטה אלגוריתמית.
+\end_layout
+
+\begin_layout Standard
+אבל זה שפרספטרון לא יכול לפתור את הבעיה,
+ לא אומר שאי אפשר ללמוד מנתונים.
+ פרספטרון הוא מודל לינארי - הוא יכול לפתור רק בעיות לינאריות.
+ מה שהוציא את התחום מתוך 
+\begin_inset Quotes eld
+\end_inset
+
+החורף הגרעיני
+\begin_inset Quotes erd
+\end_inset
+
+ של הפרספטרונים הוא רעיון שבמקום להאכיל את הפרספטרון ישר בנתונים אפשר לעשות עליהם מניפולציה כדי שיהפוך להיות פריד לינארית.
+\end_layout
+
+\begin_layout Standard
+למשל - עבור בעיית ה
+\lang english
+XOR
+\lang hebrew
+,
+ אם יש לנו 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ אפשר להפוך אותם ל
+\begin_inset Formula $x_{1}+x_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $x_{1}\cdot x_{2}$
+\end_inset
+
+,
+ מה שהופך את ה
+\lang english
+XOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפריד לינארית.
+ אבל זו בעיה פשוטה - במימד יותר גבוה:
+\end_layout
+
+\begin_layout Itemize
+יותר קשה לראות את זה.
+\end_layout
+
+\begin_layout Itemize
+איזה טרנספורמציות מותר לעשות?
+\end_layout
+
+\begin_layout Itemize
+איזה אסור לעשות?
+\end_layout
+
+\begin_layout Itemize
+איך למצוא אותם?
+\end_layout
+
+\begin_layout Standard
+אנחנו יכולים להשתמש בסוג פשוט של טרנספורמציות,
+ שמורכבות רכיב לינארי - פרספטרון - ורכיב לא-לינארי.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+האתגר:
+ במקום להמציא משקלים לטרנספורמציות האלה בעצמנו,
+ איך נוכל ללמוד אותם מתוך נתונים?
+\end_layout
+
+\begin_layout Standard
+הדבר זה נותן פונקציה,
+ עם מבנה מאוד מסויים - אבל מסתבר שאם הגודל של הרשת הזאת מספיק גדול,
+ היא יכולה ללמוד כל פונקציה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+ארכיטקטורה
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ ה
+\lang english
+workflow
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הסטנדרטי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+machine learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מורכב משני שלבים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+שלב למידה
+\end_layout
+
+\begin_layout Enumerate
+שלב הסקה
+\end_layout
+
+\begin_layout Standard
+נניח קודם שמישהו למד כבר את המודל ונראה איך מבצעים את ההסקה.
+ אחרי זה נראה איך הלמידה מתבצע.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מתחילים מיחידה בודדת שמתנהגת כמו פרספטרון - כלומר ווקטור קלט 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ ווקטור משקלות 
+\begin_inset Formula $\mathbf{w}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+הפרספטרון מחשב 
+\begin_inset Formula $\mathbf{w}^{T}\mathbf{x}=\sum_{i}w_{i}x_{i}$
+\end_inset
+
+ ומפעיל עליו פונקציית הפרדה - למשל 
+\begin_inset Formula $z=\textnormal{sign}\left(\mathbf{w}^{T}\mathbf{x}\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $z=\sigma\left(\mathbf{w}^{T}\mathbf{x}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+שאלה:
+ למה צריך אי-לינאריות?
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תשובה:
+ בלי זה,
+ כל שכבה בעצם הייתה הפעלת מטריצה - ואז היה אפשר באמצעות כפל מטריצות לכנס אותן למטריצה בודדת והכל יהיה שקול לשכבה אחת בודדת.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+אבל:
+ יכול להיות שתהליך הלמידה יכנס אותנו לפתרונות אחרים מאשר שכבה בודדת (למרות שמחלקת הפתרונות אותו הדבר)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+אנחנו נשתמש בכמה כאלה בכל שכבה - כלומר נחשב 
+\begin_inset Formula $\begin{array}{c}
+z_{1}=\sigma\left(\mathbf{w}^{T}_{1}\mathbf{x}\right)\\
+z_{2}=\sigma\left(\mathbf{w}^{T}_{1}\mathbf{x}\right)\\
+\vdots
+\end{array}$
+\end_inset
+
+.
+ זה נותן לנו ווקטור 
+\begin_inset Formula $\mathbf{z}=\begin{bmatrix}z_{1}\\
+z_{2}\\
+\vdots
+\end{bmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+את הווקטור הזה אנחנו מכניסים לשכבה הבאה - עם משקלות משלה (נסמן 
+\begin_inset Formula $\mathbf{u}$
+\end_inset
+
+) - ונחשב 
+\begin_inset Formula $\sigma\left(\mathbf{u}^{T}\mathbf{z}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אפשר לעשות כמה שכבות כאלה,
+ ובסוף לעשות למשל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+softmax
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+איך בוחרים איזה פונקציה של אי-לינאריות לשים?
+\end_layout
+
+\begin_layout Itemize
+פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+sign
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא לא טובה,
+ שכן היא לא חלקה ולא גזירה - קשה לפעפעה דרכה מידע איך הפרמטרים משפיעים על הפלט.
+\end_layout
+
+\begin_layout Itemize
+סיגמואיד (
+\begin_inset Formula $\sigma\left(x\right)=\frac{1}{1+e^{-x}}$
+\end_inset
+
+) הוא גזיר,
+ אבל הוא מעביר מידע אחורה רק בתחום הדינאמי (קרוב לאפס,
+ איפה שהוא מתחלף) וגם קשה יותר לחשב אותו (אקספוננט דורש פנייה לטבלאות - יותר קשה לממש אותו בחומרה)
+\end_layout
+
+\begin_layout Itemize
+יש פונקציית אקטיבציה פשוטה בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ReLU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+Recified Linear Unit
+\lang hebrew
+) - שהיא בעצם 
+\begin_inset Formula $\max\left(0,x\right)$
+\end_inset
+
+.
+ היא מאוד מהירה לחישוב,
+ אבל עלולה להתפוצץ עבור ערכים גבוהים.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יש גם שיפור כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Leaky ReLU
+\lang hebrew
+,
+ שהוא 
+\begin_inset Formula $\max\left(0.1x,x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+למידה
+\end_layout
+
+\begin_layout Standard
+אנחנו צריכים להגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss function
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולהביא ולהביא אותו למינימום באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Stochastic Gradient Descent
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה:
+ בשלב הזה לא נראה איך לומדים את הצורה של המודל אלא רק את המשקלים.
+ בעבר היה מאוד חשוב לבחור ארכיטקטורה,
+ אבל כיום,
+ עם שיטות מודרניות,
+ כל עוד הארכיטקטורה עשירה מספיק,
+ הביצועים של הרשת לא רגישים יותר מדי למבנה שלה.
+\end_layout
+
+\begin_layout Standard
+מה צריך ללמוד?
+\end_layout
+
+\begin_layout Itemize
+את המשקלות 
+\begin_inset Formula $\mathbf{w}$
+\end_inset
+
+ של כל השכבות.
+\end_layout
+
+\begin_layout Itemize
+את הביאס 
+\begin_inset Formula $\mathbf{b}$
+\end_inset
+
+.
+ למרות שאפשר במקום זה לשים בכל שכבה רכיב אחד בקלט שערכו קבוע ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+איזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נבחר?
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאוד טבעי הוא לספור את מספר הטעויות (
+\lang english
+0-1 loss
+\lang hebrew
+).
+ אבל:
+\end_layout
+
+\begin_layout Itemize
+זה מידע מאוד גס - עבר או נכשל.
+ רוצים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+feedback
+\lang hebrew
+ יותר עדין.
+\end_layout
+
+\begin_layout Itemize
+זו לא פונקציה רציפה,
+ לא גזירה,
+ ובמקומות בהן היא גזירה - הנגזרת היא אפס.
+ במקום היחיד המעניין הנגזרת היא אפס.
+\end_layout
+
+\begin_layout Standard
+פונקציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יותר טובה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hinge-loss
+\lang hebrew
+,
+ שבה משלמים מחיר גם אם צדקנו - מחיר שקטן ככל שאנחנו 
+\begin_inset Quotes eld
+\end_inset
+
+מתרחקים
+\begin_inset Quotes erd
+\end_inset
+
+ מנקודת ההפרדה (אבל כמובן אם טועים משלמים יותר)
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Back-propagation of the gradient
+\end_layout
+
+\begin_layout Standard
+יש המון פרמטרים (במקרים של מודל שפה - מיליארדים גם עבור המודלים הקטנים) ולכן חשוב למצוא שיטה יעילה לחישוב הגרדיאנט.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בגלל שהמודל בנוי בשכבות,
+ אפשר לגזור לפי כלל השרשרת.
+\end_layout
+
+\begin_layout Itemize
+אפשר לשמור חישובים בין שכבות בשביל לחסוך כפילויות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+יש לנו 
+\begin_inset Formula $\textnormal{loss}_{W}\left(f\left(\mathbf{x}_{i}\right),y_{i}\right)$
+\end_inset
+
+.
+ אנחנו רוצים לחשב את הגרדיאנט.
+\end_layout
+
+\begin_layout Standard
+למצוא את המשקלות של השכבה האחרונה 
+\begin_inset Formula $\mathbf{u}$
+\end_inset
+
+ זה מאוד פשוט.
+ בשביל לגזור את 
+\begin_inset Formula $W$
+\end_inset
+
+ משתמשים בכלל השרשרת:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}}{\mathrm{d}\mathbf{w}}\textnormal{loss}_{W}\left(f\left(\mathbf{x}_{i}\right),y_{i}\right)=\frac{\mathrm{d}\textnormal{loss}}{\mathrm{d}f_{\mathbf{w}}}\frac{\mathrm{d}f_{\mathbf{w}}}{\mathrm{d}\sigma\left(\mathbf{w}^{T}\mathbf{x}\right)}\frac{\mathrm{d}\sigma\left(\mathbf{w}^{T}\mathbf{x}\right)}{\mathrm{d}\mathbf{w}}
+\]
+
+\end_inset
+
+למשל - אם פונקציית האי-לינאריות שלנו היא סיגמואיד,
+ אז:
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\textnormal{loss}}{\mathrm{d}\mathbf{w}}=\frac{\mathrm{d}\textnormal{loss}}{\mathrm{d}f_{\mathbf{w}}}\frac{\mathrm{d}f_{\mathbf{w}}}{\mathrm{d}\sigma}\frac{\mathrm{d}\sigma}{\mathrm{d}\mathbf{z}}\frac{\mathrm{d}\mathbf{z}}{\mathrm{d}\mathbf{w}}=\left(-y\right)\sum_{j}u_{j}\sigma\left(a_{j}\left(1-\sigma\left(a_{j}\right)\right)\right)\mathbf{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+האלגוריתם:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+forward pass
+\lang hebrew
+,
+ ושומרים את חישובי הביניים.
+\end_layout
+
+\begin_layout Itemize
+עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+backward pass
+\lang hebrew
+.
+ מסתכלים על ה
+\lang english
+loss
+\lang hebrew
+,
+ מפעפעים אותו בחזרה,
+ ומתקנים בכל שלב 
+את המשקלות.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+ארכיטקטורת למידה עמוקה -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Convolution Neural Networks
+\end_layout
+
+\begin_layout Standard
+המחלקה של רשתות ניורונים הבנויות משכבות מאוד אקפרסיבית,
+ ובהינתן מספיק ניורונים יכולה לייצג בפועל כל פונקציה.
+ אבל יש לה בעיות:
+\end_layout
+
+\begin_layout Itemize
+המורכבות מאוד גדולה.
+ למשל - נגיד תמונה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פיקסלים,
+ עם ערכי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RGB
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל פיקסל,
+ ווקטור הקלט הוא בגודל 
+\begin_inset Formula $1000\times2000\times3=6,000,000$
+\end_inset
+
+.
+ אז לכל ניורון בשכבה השנייה נצטרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מיליון משקלות (אחד לכל ערך בקלט) - וזה רק לניורון בודד.
+\end_layout
+
+\begin_layout Itemize
+הנגזרת של הסיגמואיד די מוגבלת בגודל שלה (בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\numeric on
+1
+\numeric off
+).
+ כלל השרשרת הוא מכפלה של הרבה נגזרות,
+ מה שמקטין מאוד את המספרים - ואז קשה ללמוד כי עד שמפעפעים לשכבה הראשונה השינויים מאוד קטנים.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם מנרמלים שיהיה יותר מאחד,
+ זה מתפוצץ.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כל משקולת בשכבה הראשונה יכולה להשפיע על הפלט בהרבה מאוד דרכים - ואז באופן ממוצע,
+ בגלל שיש הרבה נתיבים לעדכן אותן,
+ המשקלות נעשות מאוד קרובות לאפס (כי יש עדכונים חיוביים ושליליים דרך נתיבים שונים)
+\end_layout
+
+\begin_layout Itemize
+מאתחלים במשהו רנדומי - ואז כל ההמשך נהיה רנדומי.
+\end_layout
+
+\begin_layout Itemize
+יש הרבה רשתות שקולות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למשל - אם פשוט המשקלות של צמתים באותה שכבה פנימית מתחלפים אחד עם השני.
+\end_layout
+
+\begin_layout Itemize
+פונקציית הסיגמואיד היא אנטי-סימטרית - 
+\begin_inset Formula $\sigma\left(-x\right)=-\sigma\left(x\right)$
+\end_inset
+
+ - לכן אפשר להפכיל משקולות ב
+\begin_inset Formula $-1$
+\end_inset
+
+ גם בכניסה וגם ביציאה מצומת ולקבל רשת שקולה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+לפונקציית ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש הרבה מימדים - ולכן הרבה דרכים למצוא מינימום - ובגלל כל השכפולים יש גם הרבה מינימומים לוקאליים גרועים.
+\end_layout
+
+\begin_layout Standard
+לכן הרשתות האלה בהתחלה,
+ בשנות ה
+\numeric on
+80
+\numeric off
+,
+ היו מוגבלות ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכבות - כי אם יש יותר שכבות נעשה מאוד קשה לאמן.
+ גם לא הייתה הבנה טובה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+overfitting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והגדלים של ה
+\lang english
+datasets
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היו מאוד קטנים - בעיקר בהשוואה למספר הפרמטרים העצום.
+\end_layout
+
+\begin_layout Standard
+היינו רוצים להקטין את מרחב הפרמטרים - אבל בלי להקטין את האקספרסיביות.
+ כלומר - 
+\begin_inset Quotes eld
+\end_inset
+
+לזרוק
+\begin_inset Quotes erd
+\end_inset
+
+ רק פונקציות אפשריות שלא מעניינות אותנו.
+\end_layout
+
+\begin_layout Section*
+בעיות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MLP
+\end_layout
+
+\begin_layout Itemize
+כל ניורון בשכבה הראשונה עושה ממוצע משוקלל על ערכי הקלט.
+ הרשת לא מודעת באמת לסדר - אם מחליפים פיקסלים (באופן עקבי) הרשת תלמד משהו מאוד דומה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זוהי אינווריאנטיות שאנחנו לא רוצים - הרשת מנסה לפתור בעיה הרבה יותר קשה מסתם ללמוד תמונות.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הרשת לא אינווריאנטית להזזות.
+ אם קצת מזיזים את התמונה (לא באופן עקבי!) המודל רואה משהו אחר לגמרי,
+ כי כל פיקסל מראה משהו אחר ממה שהוא למד.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+זוהי אינווריאנטיות שכן היינו רוצים שתהיה.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+הפתרון -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Convolution Neural Network
+\end_layout
+
+\begin_layout Standard
+הרעיון הבסיסי דומה,
+ אבל המבנה של המשקלות שונה:
+\end_layout
+
+\begin_layout Itemize
+במקום שכל שכבה תסתכל על כל השכבה הקודמת,
+ כל ניורון בשכבה מסתכל רק על אזור מוגבל.
+\end_layout
+
+\begin_layout Itemize
+ווקטור המשקלות - נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+filter
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- זהה לכל הניורונים בשכבה.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אינטואיטיבית - אם ווקטור המשקלות הזה יודע לתפוס איזו תבנית בתמונה,
+ זה לא משנה איפה התבנית תהיה - כי מפעילים אותן משקלות על כל הקלט.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כל שכבה קצת יותר קטנה מהשכבה הקודמת (כי הקונבולוציה לא חורגת מהקצוות)
+\end_layout
+
+\begin_layout Itemize
+אפשר לשים כמה פילטרים בכל שכבה - כל אחד הוא ווקטור משקלות משל עצמו שפועל שוב ושוב על השכבה הקודמת.
+\end_layout
+
+\begin_layout Itemize
+על כל שכבה כזאת מפעילים אי-לינאריות (שוב - איבר איבר) ולהפעיל את השכבה הבאה.
+\end_layout
+
+\begin_layout Itemize
+נשים לב שבשיטה הזאת התמונה שלנו היא תלת-מימדית - אם מחשיבים את הצבע (
+\lang english
+RGB
+\lang hebrew
+) בתור מימד.
+ בשכבות הבאות מימד העומק מייצד פיצ'רים.
+ כל צומת מפעיל קונבולוציה על כל העומק.
+\end_layout
+
+\begin_layout Itemize
+אפשר באיזהו שלב לעבור ל
+\lang english
+fully connected
+\lang hebrew
+.
+ אבל עושים את זה רק בשכבות האחרונות,
+ כי זה מאוד בזבזני במספר הפרמטרים.
+\end_layout
+
+\begin_layout Itemize
+בנוסף לשכבות האי-לינאריות הרגילות,
+ יש גם שכבות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+MAX-Pooling
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- לוקחים את המקסימום מתוך איזור (לכל פיצ'ר בנפרד)
+\end_layout
+
+\begin_layout Itemize
+ככל שמתקדמים בשכבות,
+ כל יחידה מושפעת מאזור יותר גדול מהקלט - ולכן כנראה עובדות לא על פיקסלים גולמיים אלא על פיצ'רים שהשכבות הקודמות למדו להוציא.
+\end_layout
+
+\begin_layout Subsection*
+חומר למחשבה
+\end_layout
+
+\begin_layout Itemize
+אינווריאנטיות:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אין אינווריאנטיות לסיבוב
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לפעמים רוצים,
+ לפעמים לא
+\end_layout
+
+\begin_layout Itemize
+אפשר לעשות מניפולציה ל
+\lang english
+data
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אין אינווריאנטיות להגדלה
+\end_layout
+
+\begin_layout Standard
+יש ארכיטקטורות אחרות בשביל להשיג אינווריאנטיות לדברים אחרים.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+איך בוחרים את גודל הקונבולוציות?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+פילטרים יותר גדולים יכולים למצוא פי'צרים יותר גדולים ומסובכים.
+\end_layout
+
+\begin_layout Itemize
+מצד שני,
+ משלמים על זה בפרמטרים ובהכללה.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

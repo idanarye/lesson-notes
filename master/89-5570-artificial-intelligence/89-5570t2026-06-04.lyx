@@ -1,0 +1,899 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+בינה מלאכותית
+\\
+\selectlanguage{english}
+89-5570-10
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מתרגל}:
+דוד יצחקי
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-06-04
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+משחקים דטרמיניסטיים
+\end_layout
+
+\begin_layout Section*
+...
+\end_layout
+
+\begin_layout Section*
+משאבים מוגבלים
+\end_layout
+
+\begin_layout Standard
+מה קורה אם יש עץ יותר מדי גדול?
+ עדיין רוצים לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minmax
+\lang hebrew
+,
+ אבל לא לפתח את העץ עד הסוף.
+\end_layout
+
+\begin_layout Standard
+יש שני חוקים שאפשר לבחור ביניהם:
+\end_layout
+
+\begin_layout Enumerate
+הגבלת עומק העץ שמפתחים
+\end_layout
+
+\begin_layout Enumerate
+הגבלת זמן החיפוש - בשביל זה לא נעשה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DFS
+\lang hebrew
+,
+ כי אנחנו רוצים לתעדף רוחב על פני עומק.
+\end_layout
+
+\begin_layout Standard
+קודקודים שלא מפתחים,
+ נתייחס אליהם כאל עלים - למרות שהם לא סוף המשחק.
+ זה אומר שצריך יוריסטיקה.
+\end_layout
+
+\begin_layout Standard
+יוריסטיקה יכולה להיות משקלים על פיצ'רים:
+\begin_inset Formula 
+\[
+h\left(s\right)=w_{1}f_{1}\left(s\right)+\cdots+w_{n}f_{n}\left(s\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היוריסטיקה חייבת להיות מונוטוניות - כלומר לשמר את הסדר בין הבחירות.
+ אבל הסדר חשוב רק בין אפשרויות שיש ביניהם בחירה.
+\end_layout
+
+\begin_layout Part*
+משחקים לא דטרמיניסטיים
+\end_layout
+
+\begin_layout Standard
+במשחקים לא דטרמיניסטיים אי אפשר לבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minmax
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ רגיל כי יש הסתברות בכל שלב.
+ עכשיו צריך לעשות 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minmax
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לתוחלת - כלומר להשתמש באלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+expect-minmax
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אי אפשר לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pruning
+\lang hebrew
+,
+ כי אנחנו לא יודעים לאן נגיע (בגלל ההסתברויות)
+\end_layout
+
+\begin_layout Standard
+בגלל שכאן מסתכלים על תוחלות,
+ היוריסטיקה חייבת לקיים שתי תכונות:
+\end_layout
+
+\begin_layout Enumerate
+לינארית - כדי לשמר את התוחלת בכפל.
+\end_layout
+
+\begin_layout Enumerate
+חיובית - כדי לשמר את המונוטוניות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הערה:
+ יש מקרים לא לינאריים שעדיין משמרים את התוחלת.
+ למשל במקרים ספציפיים יכול להיות שהעלאה בשלישית משמרת את התוחלת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+חיפוש בעץ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Monte Carlo
+\end_layout
+
+\begin_layout Standard
+משתמשים באלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UCT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(פיתוח של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+UCB
+\lang hebrew
+) עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+selection rule
+\lang hebrew
+:
+\begin_inset Formula 
+\[
+\textnormal{score}_{i}=Q_{i}+c\cdot\sqrt{\frac{\ln\left(N_{\textnormal{parent}}\right)}{n_{i}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+כאשר:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ התגמול הממוצע של הקודקוד הבן 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ מספר הפעמים שביקרנו בקודקוד הבן 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{\textnormal{parent}}$
+\end_inset
+
+ מספר הפעמים שביקרנו בקודקוד ההורה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+exploration constant
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הרעיון:
+ בוחרים קודקוד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+score
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הכי גבוה,
+ שעוד לא פיתחנו לו את כל הילדים,
+ ומפתחים לו ילד חדש.
+ מסמלצים משחק מאותו ילד - כלומר משחקים כאשר בוחרים פעולה בכל שלב לפי התפלגות אחידה.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בכל איטרציה מתחילים מהשורש.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם אפשר לפתח לו ילד (כלומר לא פיתחנו את הכל) - מפתחים.
+\end_layout
+
+\begin_layout Itemize
+אם אי אפשר - בוחרים את הילד שלו עם ה
+\lang english
+score
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הכי גבוה,
+ ושוב בודקים אם אפשר לפתח לו ילד.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+בכל פעם שמפתחים ילד,
+ מריצים עליו סימולציה (למשל - בוחרים כל פעולה בהתפלגות אחידה) כדי לראות מי ניצח.
+\end_layout
+
+\begin_layout Itemize
+שומרים לכל קודקוד כמה פעמים שיחקנו דרכו וכמה פעמים ניצחנו.
+ זה כולל את הילדים שלו.
+\end_layout
+
+\begin_layout Itemize
+בסוף עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minmax
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על העץ שקיבלנו.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

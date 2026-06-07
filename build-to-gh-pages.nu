@@ -33,3 +33,8 @@ if ($faulty | is-not-empty) {
     print "Could not build:"
     print $faulty
 }
+
+do {
+    cd wt.gh-pages/
+    git status
+}

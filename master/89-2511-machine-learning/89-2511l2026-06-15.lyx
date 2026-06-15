@@ -1,0 +1,3157 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\inputencoding{cp1255}
+\subsection*{
+\selectlanguage{hebrew}
+למידת מכונה
+\\
+\selectlanguage{english}
+89-2511-02
+}%
+}
+\rhead{
+\inputencoding{cp1255}
+\small{
+\textbf{\foreignlanguage{hebrew}{}מקליד}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{}מרצה}:
+פרופ' גל צ'צ'יק
+\\
+\textbf{\foreignlanguage{hebrew}{}תאריך:}
+\beginL
+2026-06-15
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Self-supervised learning
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא היכולת ללמוד בלי תגיות על הנתונים.
+\end_layout
+
+\begin_layout Standard
+הבעיה בלמידה מונחית היא שהיא דורשת המון נתונים,
+ והרבה פעמים קשה לאסוף כמויות כאלה של נתונים:
+\end_layout
+
+\begin_layout Itemize
+לפעמים מאוד קשה לתייג אותם,
+ כי זה דורש אנשים מומחים (למשל - רדיולוגיה)
+\end_layout
+
+\begin_layout Itemize
+לפעמים פשוט אין מספיק נתונים (למשל - מחלות נדירות)
+\end_layout
+
+\begin_layout Itemize
+לפעמים המומחים שנותנים את התוויות לא מסכימים על התוויות.
+\end_layout
+
+\begin_layout Itemize
+רעיון נפוץ זה לאסוף את הנתונים והתוויות מהרשת - אבל המידע באינטרנט לא תמיד נכון,
+ וגם בד
+\begin_inset Quotes erd
+\end_inset
+
+כ אם יש טקסט ליד תמונה הטקסט לא אומר מה יש בתמונה אלא נותן קונטקסט (שלא עוזר לנו למשימת הלמידה המונחית)
+\end_layout
+
+\begin_layout Standard
+אם ניקח דוגמה מתינוקות שלומדים - רוב הלמידה שלהם בהתחלה היא לא מתוייגת.
+ איך אנחנו יכולים לעשות משהו דומה?
+ ללמוד בלי תיוגים?
+\end_layout
+
+\begin_layout Standard
+חלק גדול ממה שהרשת עושה זה ללמוד ייצוג,
+ ורק בסוף שמים מסווג על הייצוג שמצאנו.
+ זה אומר שאנחנו לומדים שני דברים - גם את המסווג וגם את הייצוג.
+ ראינו שהרבה פעמים הייצוגים הם אוניברסליים,
+ ולא קשורים הדוק לסיווג.
+ אז יש פה תקווה שהייצוג שאנחנו לומדים שימושי לעוד דברים.
+\end_layout
+
+\begin_layout Standard
+דרך אחת להשתמש בזה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+transfer learning
+\lang hebrew
+.
+ הרעיון - אחרי שאימנו רשת על כמה מחלקות,
+ 
+\bar under
+מקפיאים
+\bar default
+ את רוב השכבות ומאמנים רק את השכבה האחרונה,
+ של המסווגים.
+ בגלל שיש הרבה פחות פרמטרים (רק שכבה אחת),
+ צריך הרבה פחות נתונים בשביל לאמן את הרשת.
+\end_layout
+
+\begin_layout Standard
+לפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Yann LeCun
+\lang hebrew
+,
+ לסיגנל של ה
+\lang english
+supervision
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חלקים:
+\end_layout
+
+\begin_layout Enumerate
+העיקר זה האינפורמציה הוויזואלית על העולם שנמצאת בתמונה.
+\end_layout
+
+\begin_layout Enumerate
+רכיב של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervised learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- התוויות.
+ כמות האינפורמציה כאן היא מוגבלת.
+\end_layout
+
+\begin_layout Enumerate
+רכיב של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+reinforcement learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תגמול שמקבלים על פעולות,
+ וצריך ללמוד באמצעותו מתוך מספר קטן של פעולות.
+\end_layout
+
+\begin_layout Standard
+הרכיב הראשון זה ה
+\lang english
+self-supervised learning
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ לפתור בעיית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervised learning
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ כשיש לנו מידע לא מתוייג.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בשביל לעשות את זה משתמשים בחלק מהנתונים בתור תגיות.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ ב
+\lang english
+unsupervised learning
+\lang hebrew
+,
+ המטרה הייתה למצוא ייצוג טוב של הנתונים שתופס את המבנה וזורק דברים לא חשובים.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Autoencoders
+\end_layout
+
+\begin_layout Standard
+הדרך לעשות את זה היא עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+autoencoders
+\lang hebrew
+,
+ שזו רשת שבה ה
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא ה
+\lang english
+label
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של עצמו.
+ אם השכבות הפנימיות הן ממימד יותר נמוך מאשר הנתונים,
+ אז הן יהיו חייבות ללמוד איזשהו מבנה כדי שיוכלו לשחזר.
+\end_layout
+
+\begin_layout Standard
+אפשר,
+ בנוסף לזה,
+ להוסיף שלב של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+corruption
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- ולאמן את הרשת לשחזר את ה
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המקורי,
+ לפני ה
+\lang english
+corruption
+\lang hebrew
+.
+ זה מכריח את הרשת ללמוד את המבנה כדי שתוכל להתגבר על ה
+\lang english
+corruption
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+בעצם יש שני דברים שגורמים למודל ללמוד את המבנה:
+\end_layout
+
+\begin_layout Itemize
+צוואר בקבוק - המימד של השכבות הפנימיות יותר נמוך.
+ אבל זה לא מספיק,
+ ולכן צריך גם:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+corruption
+\lang hebrew
+,
+ שהמודל נאלץ לנקות באמצעות למידה של המבנה.
+\end_layout
+
+\begin_layout Standard
+זוהי הדרך שהמודלים המודרניים עובדים - קודם לומדים את המבנה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+self-supervised
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ורק אחרי זה עושים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervised
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ללמוד גם את התוויות.
+ בלי זה רשתות עמוקות לא עובדות.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Spatial Relations
+\end_layout
+
+\begin_layout Standard
+אפשר ליצור משימות אימון שבה ה
+\lang english
+input
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וה
+\lang english
+data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הן מאותה דגימה.
+ למשל - לקחת תמונה,
+ לקחת באקראי שני אזורים,
+ ולהשתמש באותו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+CNN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ (לפני ה
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+classifier
+\lang hebrew
+) כדי ללמוד איפה האזור השני נמצא לעומת האזור הראשון.
+ אחרי שלומדים את זה - אפשר להשתמש ב
+\lang english
+CNN
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הזה (שכבר למד ייצוג) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשביל ללמוד סיווגים אחרים.
+\end_layout
+
+\begin_layout Standard
+המודלים יכולים לרמות:
+\end_layout
+
+\begin_layout Itemize
+הם יכולים ללמוד את הקצוות של האזורים במקום את התמונה,
+ ולכן צריך לשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gap
+\lang hebrew
+ים וגם להזיז קצת את האזורים (שלא יהיו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+grid
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סדור)
+\end_layout
+
+\begin_layout Itemize
+הם יכולים ללמוד כל מיני דברים סטטיסטיים שלא באמת קשורים למבנה (למשל - לנחש שמשהו נמצא למעלה בגלל שהוא נראה כמו שמיים).
+ זה ערוץ של קורלציה שנמצא והמודל יכול למצוא אותו וללמוד משהו אחר ממה שהתכוונו.
+\end_layout
+
+\begin_layout Subsection*
+איך בודקים איזה ייצוג נלמד?
+\end_layout
+
+\begin_layout Standard
+בשביל להבין את הייצוג שלמדנו,
+ אנחנו רוצים לייצג אותו חזותית.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+גישות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+למפות את המיפוי לדו-מימד.
+ למשל עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+PCA
+\lang hebrew
+.
+ זה בעייתי בגלל שאנחנו מאבדים יותר מידי נתונים.
+\end_layout
+
+\begin_layout Enumerate
+נשארים במימד הגבוה,
+ ומחשבים לכל ה
+\lang english
+dataset
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איפה הוא נמצא במימד הגבוה.
+ מחשבים לכל תמונה מי השכנים שלה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+מסתבר שכשלומדים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+self-supervised
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ על 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+spatial relations
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ וכשלומדים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervised
+\lang hebrew
+,
+ ה
+\lang english
+nearest neighbors
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נראה מאוד דומה.
+\end_layout
+
+\begin_layout Subsection*
+עוד אפשרויות
+\end_layout
+
+\begin_layout Enumerate
+ללמד מודל לשחזר צבעים.
+ אפשר להשיג נתונים בקלות - פשוט מורידים את הצבע מהתמונה.
+\end_layout
+
+\begin_layout Enumerate
+אפשר גם סתם לחתוך או לעוות את התמונה.
+\end_layout
+
+\begin_layout Enumerate
+אפשר לסובב את התמונה,
+ ולבקש מהמודל ללמוד מה הכיוון הנכון.
+\end_layout
+
+\begin_layout Subsection*
+טרמינולוגיה
+\end_layout
+
+\begin_layout Standard
+כל השיטות השאלה הן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+self-supervised
+\lang hebrew
+.
+ ספציפית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+autoencoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה השיטות בהן הפלט של הרשת שלומדת את הייצוג הוא הקלט המקורי (לפני עיוות)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Masked Autoencoders
+\end_layout
+
+\begin_layout Itemize
+לוקחים תמונה.
+\end_layout
+
+\begin_layout Itemize
+מחלקים אותה ל
+\lang english
+patch
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Itemize
+מסתירים חלק גדול מאוד מה
+\lang english
+patch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\begin_inset Formula $75\%-90\%$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+מאמנים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+encoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על ה
+\lang english
+patch
+\lang hebrew
+ים שנשארו,
+ ו
+\lang english
+decoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שישחזר את התמונה.
+\end_layout
+
+\begin_layout Itemize
+זורקים את ה
+\lang english
+decoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונשארים רק עם ה
+\lang english
+encoder
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+זה עובד מאוד טוב,
+ כי המימד של ה
+\lang english
+input
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יורד משמעותית כשזורקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+patch
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Section*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Contrastive Learning
+\end_layout
+
+\begin_layout Standard
+עד עכשיו ראינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SSL
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Self-Supervised Learning
+\lang hebrew
+.
+\end_layout
+
+\end_inset
+
+ שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+reconstruction-based
+\lang hebrew
+.
+ סוג אחר זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Constructive SSL
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ יוצרים מהתמונה המקורית שני עיוותים,
+ ומלמדים רשת שתעבוד על שני העיוותים ותקטין את ההבדל ביניהם.
+\end_layout
+
+\begin_layout Standard
+בעצם מגדירים את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתור המרחק בין הייצוגים 
+\begin_inset Formula $\ell=\textnormal{sim}\left(\mathbf{z}_{i},\mathbf{z}_{j}\right)$
+\end_inset
+
+.
+ למשל - מרחק קוסיני.
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ נרצה לעשות 
+\begin_inset Formula $\exp\left(\frac{\textnormal{sim}\left(\mathbf{z}_{i},\mathbf{z}_{j}\right)}{\tau}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+המודל יכול לרמות - למפות את הכל לאותו מקום,
+ ואז תמיד נקבל 
+\begin_inset Formula $\ell=0$
+\end_inset
+
+.
+ לכן נרצה איזה כוח דוחה שיאזן את הכוח המקרב הזה:
+\begin_inset Formula 
+\[
+\ell_{i,j}=-\log\frac{\exp\left(\frac{\textnormal{sim}\left(\mathbf{z}_{i},\mathbf{z}_{j}\right)}{\tau}\right)}{\sum^{2N}_{k=1}\mathds{1}_{\left[k\neq i\right]}\exp\left(\frac{\textnormal{sim}\left(\mathbf{z}_{i},\mathbf{z}_{k}\right)}{\tau}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+דברים שלא עובדים ב
+\lang english
+SSL
+\end_layout
+
+\begin_layout Enumerate
+ללמד לחזות את ה
+\lang english
+frame
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ הבא.
+ זה לא עובד כי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+אי אפשר לחזות את העתיד - 
+\begin_inset Formula $L2$
+\end_inset
+
+ נוטה למצע את התמונות,
+ וזה לא איך שהעולם נראה.
+\end_layout
+
+\begin_layout Itemize
+אם יש לנו רק 
+\begin_inset Formula $L2$
+\end_inset
+
+,
+ אז כל תנועה קטנה בתחזית נותנת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מאוד גדול.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+למידת ייצוגים עם 
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+weak
+\begin_inset Quotes erd
+\end_inset
+
+ supervision
+\end_layout
+
+\begin_layout Standard
+לפעמים יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+supervision
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אבל הוא מאוד חלש.
+ בד
+\begin_inset Quotes erd
+\end_inset
+
+כ כשהתיוגים הם קורולציות מהאינטרנט.
+ למשל:
+ שתי תמונות הן דומות אם אנשים שחיפשו אותו דבר לוחצים על שתיהן.
+\end_layout
+
+\begin_layout Standard
+מחפשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+triplet relative similarity
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציה 
+\begin_inset Formula $f\left(x\right):R^{D}\to D^{d}$
+\end_inset
+
+.
+ רוצים שהמרחק לדוגמה חיובית יהיה יותר קטן מהמרחק לדוגמה השלילית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textnormal{Distance}\left(f\left(\textnormal{query}\right),f\left(\textnormal{pos}\right)\right)<\textnormal{Distance}\left(f\left(\textnormal{query}\right),f\left(\textnormal{neg}\right)\right)
+\]
+
+\end_inset
+
+הגרדיאנט שאנחנו מחפשים דוחף את הדוגמה השלילית ומושך את הדוגמה החיובית.
+\end_layout
+
+\begin_layout Standard
+אפשר להכליל את הדבר הזה למשהו מוליט-מודאלי.
+ נניח שיש לנו אינפורמציה על דברים שמופיעים ביחד.
+ למשל - אם בסרט רואים כלב ושומעים את הנביחה שלו,
+ נרצה שהתמונה והסאונד יהיו קרובים במיפוי שלהם למרחב הסמנטי.
+\end_layout
+
+\begin_layout Standard
+חשוב לבחור כאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+negative
+\lang hebrew
+ים קשים.
+ אבל אסור להתעקש על דוגמאות שאנחנו לא מצליחים לסווג ולהשתמש בהן שוב ושוב,
+ כי אז נלמד את הרעש בדוגמאות הספציפיות האלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+Diffusion Models
+\end_layout
+
+\begin_layout Standard
+זו דרך 
+\emph on
+לייצר
+\emph default
+ תמונות.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לוקחים תמונה של חתול.
+\end_layout
+
+\begin_layout Enumerate
+מוסיפים בכל שלב עוד ועוד רעש,
+ עד שנשארים רק עם רעש.
+\end_layout
+
+\begin_layout Enumerate
+מאמנים מודל שילמד זוגות עוקבים,
+ וילמד לנקות את הרעש ולהגיע לתמונה הקודמת.
+\end_layout
+
+\begin_layout Enumerate
+מפעילים את המודל על רעש אקראי - זה מוביל לתמונה חדשה.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+החיסרון:
+ זה מאוד כבד,
+ ודורש הרבה צעדים.
+ יש טריקים לגרום לזה להיות יותר יעיל.
+\end_layout
+
+\begin_layout Standard
+בעצם יש תהליך שמוסיף רעש אקראי בכל צעד.
+ מתחילים ב
+\begin_inset Formula $\mathbf{x}^{0}$
+\end_inset
+
+ (שאין בו רעש) ומפעילים פונקציה סטוכסטית 
+\begin_inset Formula $q$
+\end_inset
+
+ שמגרילה איזה רעש נוסיף ל
+\begin_inset Formula $\mathbf{x}^{t}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $q$
+\end_inset
+
+ היא פונקציה גאוסיאנית:
+\begin_inset Formula 
+\[
+q\left(x^{t+1}\middle|x^{t}\right)=\mathcal{N}\left(\sqrt{1-\beta_{t}}\mathbf{x}^{t},\beta_{t}I\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\beta_{t}$
+\end_inset
+
+ הם היפר-פרמטרים.
+\end_layout
+
+\begin_layout Standard
+לחלופין:
+\begin_inset Formula 
+\[
+x^{t+1}=\sqrt{1-\beta_{t}}\mathbf{x}^{t}+\beta_{t}\epsilon\qquad\epsilon\sim\mathcal{N}\left(0,I\right)
+\]
+
+\end_inset
+
+נשים לב שכשסוכמים התפלגות נורמלית מקבלים התפלגות נורמלית (עם פרמטרים אחרים),
+ ולכן:
+\begin_inset Formula 
+\[
+q\left(\mathbf{x}^{T}\middle|\mathbf{x}^{0}\right)=\mathcal{N}\left(\sqrt{\alpha_{t}}\mathbf{x}^{0},\sqrt{1-\alpha_{t}}I\right)\qquad\alpha_{t}=\prod^{t}_{s=0}\left(1-\beta_{s}\right)
+\]
+
+\end_inset
+
+ולכן אפשר גם לנקות במרווחים.
+\end_layout
+
+\begin_layout Standard
+דרך אחרת להסתכל על זה - המודל לומד למפות מהתפלגות גאוסיאנית להתפלגות המקורית.
+\end_layout
+
+\begin_layout Standard
+כדי למנוע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+model collapse
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(שהמודלים תמיד יתנו אותן תמונות) בכל שלב של ניקוי המודל מוסיף קצת רעש חדש משל עצמו.
+\end_layout
+
+\begin_layout Subsection*
+ארכיטקטורה
+\end_layout
+
+\begin_layout Standard
+אנחנו לא עובדים במרחב הפיקסלים.
+ יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+encoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ (שגם הוא רשת) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמוריד אותנו למימד הרבה יותר נמוך - למשל 
+\begin_inset Formula $32\times32\times4$
+\end_inset
+
+,
+ והוא נפרד מהמודל של ה
+\lang english
+diffusion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי הוא אומן מראש (יחד עם ה
+\lang english
+decoder
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלו) והרבה מודלים של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+diffusion
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ משתמשים באותו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+encoder
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+כדי לחבר את הטקסט לתמונה יש רכיב שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cross-attention
+\lang hebrew
+.
+ אפשר לחשוב עליו בתור חלק ברשת שאומר לך כמה כל פיקסל בתמונה מושפע ממילים שונות בטקסט.
+ מנרמלים אותו שיגיד לנו איזה פיקסלים מושפעים מאיזו מילה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\lang english
+post-training
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+text-to-image
+\end_layout
+
+\begin_layout Itemize
+הרבה פעמים אם מבקשים מהמודל משהו שלא מסתדר עם ה
+\lang english
+prior
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(למשל 
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+a golden strawberry with a red crown
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+,
+ הוא מצייר לך את מה שהוא מכיר (תות אדום עם כתר זהוב).
+ הפתרון הוא שאחרי כל צעד ניקוי עושים צעד תיקון שמוזיז אותנו קצת ב
+\lang english
+latent space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי להקטין את ה
+\lang english
+loss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה
+\lang english
+overlap
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+צעדי הניקוי - מגיעים מה
+\lang english
+prior
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+צעדי התיקון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מגיעים מהבקשה.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+דוגמה אחרת - ספירה של אובייקטים.
+ קשה ללמד מודל לספור.
+ הפתרון הוא להסתכל על ה
+\lang english
+cross-attention maps
+\lang hebrew
+,
+ ולראות כמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+blob
+\lang hebrew
+ים יש.
+ ואז אפשר להוסיף צעד תיקון שמתקן את מספר ה
+\lang english
+blob
+\lang hebrew
+ים.
+\end_layout
+
+\begin_layout Itemize
+עוד משימה - הוספה של פרטים לתמונה קיימת.
+ כאן צעדי התיקון צריכים להכריח את המודל לשמור על התמונה החדשה קרובה לתמונה המקורית.
+\end_layout
+
+\begin_layout Itemize
+הפרדת ווידאו ל
+\lang english
+layer
+\lang hebrew
+ים.
+ זו בעיה קשה,
+ כי איך קובעים מה שייך למה?
+ למשל צל - שייך לרקע או לאובייקט?
+ באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+self-attention
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר להבין איזה פיקסלים משפיעים אחד על השני - המודל בכל מקרה חייב ללמוד על הקשר בין הצל (או ההשתקפות) לאובייקט.
+\end_layout
+
+\end_body
+\end_document

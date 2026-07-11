@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>{{basedir}}</h1>
+        {{#each pdfs}}
+            <h2>{{title}}</h2>
+            {{#each items}}
+                <ul>
+                    <li>
+                        <a href="{{file}}">
+                            {{date}}
+                        </a>
+                    </li>
+                </ul>
+            {{/each}}
+        {{/each}}
+    </body>
+</html>

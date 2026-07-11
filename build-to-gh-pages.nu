@@ -34,6 +34,8 @@ if ($faulty | is-not-empty) {
     print $faulty
 }
 
+./render-for-gh-pages.nu
+
 do {
     cd wt.gh-pages/
     git status

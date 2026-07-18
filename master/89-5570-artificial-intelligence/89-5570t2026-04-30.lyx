@@ -633,14 +633,81 @@ leak
 .
 \begin_inset Formula 
 \[
-P\left(\textnormal{Effect}=1\right)=1-P\left(\textnormal{no cause triggers the effect}\right)=1-\textnormal{leak}\cdot\prod_{\textnormal{cause}}P\left(\textnormal{cause}\right)
+P\left(\textnormal{Effect}=1\right)=1-P\left(\textnormal{no cause triggers the effect}\right)=1-\left(1-\textnormal{leak}\right)\cdot\prod_{\textnormal{cause}}\left(1-P\left(\textnormal{effect}\middle|\textnormal{cause}\right)\right)^{\textnormal{cause}}
 \]
+
+\end_inset
+
+(בעוד ש
+\begin_inset Formula $P\left(\textnormal{effect}\middle|\textnormal{cause}\right)$
+\end_inset
+
+ הוא ההסתברות לקבל את האפקט בהינתן הסיבה,
+ 
+\begin_inset Formula $\textnormal{cause}\in\left\{ 0,1\right\} $
+\end_inset
+
+ אומר לנו אם הסיבה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ קיימת
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ או לא)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הרעיון:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+כל סיבה יכולה לגרום לתוצאה.
+\end_layout
+
+\begin_layout Itemize
+מספיק שסיבה אחת תצליח לגרום לתוצאה בשביל שהתוצאה תקרה.
+\end_layout
+
+\begin_layout Itemize
+גם אם אף סיבה לא גורמת לתוצאה - היא יכולה להיגרם בגלל גורם שאינו נכלל במשתנים שלנו.
+\end_layout
+
+\end_deeper
 \begin_layout Section*
 \begin_inset ERT
 status open

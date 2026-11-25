@@ -1,0 +1,1986 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\date{}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headsep}{50pt}
+\setlength{\columnseprule}{1pt}
+\chead{
+\subsection*{
+\foreignlanguage{hebrew}{אוטומטים, משחקים, ואימות פורמלי}
+\\
+87-89602-01
+}%
+}
+\rhead{
+\small{
+\textbf{\foreignlanguage{hebrew}{מקליד}}:
+{עידן אריה}
+\\
+\textbf{\foreignlanguage{hebrew}{מרצה}}:
+\foreignlanguage{hebrew}{ד"ר הדר פרנקל}
+\\
+\textbf{\foreignlanguage{hebrew}{תאריך}}:
+\beginL
+2026-11-25
+\endL
+\\
+}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+לוגיקה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+:
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Linear Temporal Logic
+\end_layout
+
+\begin_layout Section*
+סינטקס
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $AP=\left\{ p_{1},\dots p_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדרות באינדוקציה:
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $i$
+\end_inset
+
+:
+ 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ היא נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $\varphi_{1},\varphi_{2}$
+\end_inset
+
+ הן נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+,
+ אז 
+\begin_inset Formula $\varphi_{1}\wedge\varphi_{2}$
+\end_inset
+
+ הן נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(ולכן גם 
+\begin_inset Formula $\varphi_{1}\vee\varphi_{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi_{1}\to\varphi_{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi_{1}\leftrightarrow\varphi_{2}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אופרטורים טמפרוליים:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $\varphi_{1},\varphi_{2}$
+\end_inset
+
+ הן נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אז:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\circ\varphi_{1}$
+\end_inset
+
+ היא נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+Next 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varphi_{1}u\varphi_{2}$
+\end_inset
+
+ היא נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ until 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ 
+\lang hebrew
+
+\begin_inset Quotes eld
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אופרטורים נגזרים:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\diamond\varphi_{1}$
+\end_inset
+
+ = 
+\begin_inset Formula $\textnormal{true}\textnormal{u}\varphi_{1}$
+\end_inset
+
+ (
+\begin_inset Formula $F\varphi_{1}$
+\end_inset
+
+) - 
+\begin_inset Quotes eld
+\end_inset
+
+בסופו של דבר 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\square\varphi_{1}$
+\end_inset
+
+ = 
+\begin_inset Formula $\neg\diamond\neg\varphi_{1}$
+\end_inset
+
+ (
+\begin_inset Formula $G\varphi_{1}$
+\end_inset
+
+) - 
+\begin_inset Quotes eld
+\end_inset
+
+תמיד 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+נפרש נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעל מילים אינוספייות מעל 
+\begin_inset Formula $\Sigma=2^{AP}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $\alpha\in\left(2^{AP}\right)^{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+סמנטיקה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models p_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $p_{i}\in\alpha\left[0\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\in F\varphi_{1}\wedge\varphi_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha\models\varphi_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\alpha\models\varphi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models\neg\varphi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha\cancel{\models}\varphi_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models\circ\varphi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha\left[1,\infty\right]\models\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models\varphi_{1}u\varphi_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים 
+\begin_inset Formula $j\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha\left[j,\infty\right]\models\varphi_{2}$
+\end_inset
+
+ וגם לכל 
+\begin_inset Formula $0\le i<j$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha\left[i,\infty\right]\models\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models\diamond\varphi_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיים 
+\begin_inset Formula $j\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha\left[j,\infty\right]\models\varphi_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\models\square\varphi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha\left[i,\infty\right]\models\varphi_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\square\varphi_{1}\coloneqq\neg\diamond\neg\varphi_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמאות:
+ 
+\begin_inset Formula $\square\diamond p_{1}$
+\end_inset
+
+ = 
+\begin_inset Quotes eld
+\end_inset
+
+אינסוף 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\diamond\square\neg p_{1}$
+\end_inset
+
+ = 
+\begin_inset Quotes eld
+\end_inset
+
+מספר סופי של 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+משפט
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+:
+ לכל נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קיים אוטומט בוקי שקול (אי-דטרמיניסטי)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+משפט
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+:
+ קיימת נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלא קיים לה אוטומט בוקי דטרמיניסטי שקול.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+:
+ לנוסחה 
+\begin_inset Formula $\diamond\square\neg p_{1}$
+\end_inset
+
+ לא קיים אוטומט בוקי דטרמיניסטי שקול עבור 
+\begin_inset Formula $AP=\left\{ p_{1}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\Sigma=\left\{ \underbrace{\left\{ p_{1}\right\} }_{a},\underbrace{\emptyset}_{b}\right\} $
+\end_inset
+
+ .
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+משפט
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+3
+\numeric off
+:
+ קיים אוטומט בוקי (דטרמיניסטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+/ אי-דטרמיניסטי) שלא קיימת לו נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שקול.
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
++ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+ 
+\begin_inset Formula 
+\[
+\textnormal{LTL}\subsetneq\textnormal{Büchi}
+\]
+
+\end_inset
+
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
++ משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\begin_inset Formula 
+\[
+\textnormal{LTL}\nsubseteq\textnormal{Det. Büchi}\qquad\textnormal{LTL}\nsupseteq\textnormal{Det. Büchi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ שפה 
+\begin_inset Formula $L\subseteq\Sigma^{\omega}$
+\end_inset
+
+ נקראת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+non-counting
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ
+\begin_inset Formula 
+\[
+\exists n_{0}\in\mathbb{N}\qquad\forall n\ge n_{0}\qquad\forall u,v\in\Sigma^{*},\alpha_{0}\in\Sigma^{\omega}
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+uv^{n}\alpha\in L\iff uv^{n+1}\alpha\in L
+\]
+
+\end_inset
+
+כלומר - השפה אינה רגישה לחזרות החל ממספר מסויים של חזרות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הגדרה:
+ השפה של נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L\left(\varphi\right)=\left\{ \alpha\in\left(2^{AP}\right)^{\omega}\middle|\alpha\models\varphi\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+משפט
+\begin_inset space ~
+\end_inset
+
+
+\numeric on
+4
+\numeric off
+:
+ לכל נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\lang hebrew
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ השפה 
+\begin_inset Formula $L\left(\varphi\right)$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+non-counting
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+תזכורת:
+ 
+\begin_inset Formula $2^{AP}$
+\end_inset
+
+:
+ תת קבוצה של 
+\begin_inset Formula $AP$
+\end_inset
+
+ 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ אוסף הפונקציות 
+\begin_inset Formula $f:AP\to\left\{ 0,1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+דוגמאות:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\square\diamond p_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\emptyset\left\{ p_{1}\right\} \emptyset\emptyset\left\{ p_{1}\right\} \emptyset\emptyset\emptyset\left\{ p_{1}\right\} \cdots
+\]
+
+\end_inset
+
+לא איכפת לנו מחזרות באמצע,
+ כי תמיד יהיו לנו סיפוקים של 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\circ\circ\circ\left(p_{1}\wedge\circ p_{2}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+???\left\{ p_{1},\dots\right\} \left\{ p_{2},\dots\right\} 
+\]
+
+\end_inset
+
+לשפה לא איכפת מכל חזרה שלא תזיז את 
+\begin_inset Formula $\left\{ p_{1},\dots\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $\left\{ p_{2},\dots\right\} $
+\end_inset
+
+ מהמיקום שלהן.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(*)למה:
+ קיים אוטומט בוקי שהשפה שלו היא לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+non-counting
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+הוכחה:
+ 
+\begin_inset Formula $L=\left(\emptyset\emptyset\right)^{*}\left\{ p_{1}\right\} ^{\omega}$
+\end_inset
+
+.
+ נראה ש
+\begin_inset Formula $L$
+\end_inset
+
+ היא לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+non-counting
+\lang hebrew
+:
+ נראה שלכל 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+ וקיימות מילים 
+\begin_inset Formula $u,v\in\Sigma^{*}$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha\in\Sigma^{\omega}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $uv^{n}\alpha\in L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $uv^{n+1}\alpha\notin L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+יהי 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+.
+ נתבונן ב
+\begin_inset Formula $\emptyset^{n}\left\{ p_{1}\right\} ^{\omega}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+ זוגי:
+\begin_inset Formula 
+\[
+v=\emptyset\qquad u=\varepsilon\qquad\alpha=\left\{ p_{1}\right\} ^{\omega}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\emptyset^{n}\left\{ p_{1}\right\} ^{\omega}\in L
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\emptyset^{n+1}\left\{ p_{1}\right\} ^{\omega}\notin L$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+נשים
+\begin_inset space ~
+\end_inset
+
+לב:
+ אוטומט הבוקי הזה דטרמיניסטי:
+\begin_inset Formula 
+\[
+\xymatrix{ & *++[o][F=]{}\ar@(ul,ur)^{\left\{ p_{1}\right\} }\\
+\ar[r] & *++[o][F]{}\ar[u]^{\left\{ p_{1}\right\} }\ar@(ur,ul)[rr]^{\emptyset} &  & *++[o][F]{}\ar@(dl,dr)[ll]^{\emptyset}
+}
+\]
+
+\end_inset
+
+כלומר גם אוטומטי בוקי דטרמיניסטיים - שאנחנו יודעים שהם יותר חלשים - יכולים לזהות שפות שנוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LTL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יכולות.
+\end_layout
+
+\end_body
+\end_document

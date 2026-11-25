@@ -480,7 +480,7 @@ LTL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\circ\varphi_{1}$
+\begin_inset Formula $\Circle\varphi_{1}$
 \end_inset
 
  היא נוסחת
@@ -561,7 +561,7 @@ Next
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\varphi_{1}U\varphi_{2}$
+\begin_inset Formula $\varphi_{1}\mathbin{\mathrm{U}}\varphi_{2}$
 \end_inset
 
  היא נוסחת
@@ -652,15 +652,15 @@ LTL
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset Formula $\diamond\varphi_{1}$
+\begin_inset Formula $\Diamond\varphi_{1}$
 \end_inset
 
  = 
-\begin_inset Formula $\textnormal{true}U\varphi_{1}$
+\begin_inset Formula $\mathtt{true}\mathbin{\mathrm{U}}\varphi_{1}$
 \end_inset
 
  (
-\begin_inset Formula $F\varphi_{1}$
+\begin_inset Formula $\mathop{\mathrm{F}}\varphi_{1}$
 \end_inset
 
 ) - 
@@ -683,11 +683,11 @@ LTL
 \end_inset
 
  = 
-\begin_inset Formula $\neg\diamond\neg\varphi_{1}$
+\begin_inset Formula $\neg\Diamond\neg\varphi_{1}$
 \end_inset
 
  (
-\begin_inset Formula $G\varphi_{1}$
+\begin_inset Formula $\mathop{\mathrm{G}}\varphi_{1}$
 \end_inset
 
 ) - 
@@ -804,7 +804,7 @@ LTL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\alpha\in F\varphi_{1}\wedge\varphi_{2}$
+\begin_inset Formula $\alpha\models\varphi_{1}\wedge\varphi_{2}$
 \end_inset
 
  
@@ -831,14 +831,14 @@ LTL
 \end_inset
 
  
-\begin_inset Formula $\alpha\cancel{\models}\varphi_{1}$
+\begin_inset Formula $\alpha\nvDash\varphi_{1}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\alpha\models\circ\varphi_{1}$
+\begin_inset Formula $\alpha\models\Circle\varphi_{1}$
 \end_inset
 
  
@@ -853,7 +853,7 @@ LTL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\alpha\models\varphi_{1}U\varphi_{2}$
+\begin_inset Formula $\alpha\models\varphi_{1}\mathbin{\mathrm{U}}\varphi_{2}$
 \end_inset
 
  
@@ -880,7 +880,7 @@ LTL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\alpha\models\diamond\varphi_{2}$
+\begin_inset Formula $\alpha\models\Diamond\varphi_{2}$
 \end_inset
 
  
@@ -907,6 +907,11 @@ LTL
 \end_inset
 
  לכל 
+\begin_inset Formula $i\ge0$
+\end_inset
+
+,
+ 
 \begin_inset Formula $\alpha\left[i,\infty\right]\models\varphi_{1}$
 \end_inset
 
@@ -915,7 +920,7 @@ LTL
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\square\varphi_{1}\coloneqq\neg\diamond\neg\varphi_{1}$
+\begin_inset Formula $\square\varphi_{1}\coloneqq\neg\Diamond\neg\varphi_{1}$
 \end_inset
 
  
@@ -926,7 +931,7 @@ LTL
 \labelwidthstring 00.00.0000
 דוגמאות:
  
-\begin_inset Formula $\square\diamond p_{1}$
+\begin_inset Formula $\square\Diamond p_{1}$
 \end_inset
 
  = 
@@ -946,7 +951,7 @@ LTL
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\diamond\square\neg p_{1}$
+\begin_inset Formula $\Diamond\square\neg p_{1}$
 \end_inset
 
  = 
@@ -1121,7 +1126,7 @@ LTL
 \numeric off
 :
  לנוסחה 
-\begin_inset Formula $\diamond\square\neg p_{1}$
+\begin_inset Formula $\Diamond\square\neg p_{1}$
 \end_inset
 
  לא קיים אוטומט בוקי דטרמיניסטי שקול עבור 
@@ -1531,7 +1536,7 @@ uv^{n}\alpha\in L\iff uv^{n+1}\alpha\in L
 
 \end_inset
 
-כלומר - השפה אינה רגישה לחזרות החל ממספר מסויים של חזרות.
+כלומר - השפה אינה רגישה לחזרות באינסוף (כלומר יש שלב מסויים שבו חזרות כבר לא משפיעות על השאלה אם השפה מקבלת את המילה או לא)
 \end_layout
 
 \begin_layout Standard
@@ -1714,7 +1719,7 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset Formula $\square\diamond p_{1}$
+\begin_inset Formula $\square\Diamond p_{1}$
 \end_inset
 
 
@@ -1734,7 +1739,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\circ\circ\circ\left(p_{1}\wedge\circ p_{2}\right)$
+\begin_inset Formula $\Circle\Circle\Circle\left(p_{1}\wedge\circ p_{2}\right)$
 \end_inset
 
 
